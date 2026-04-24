@@ -15,40 +15,37 @@ import {
   bandColor,
   computeBand,
   correctCount,
+  growthIndicator,
+  recommendPrerequisites,
   summarizeMisconceptions,
-  type Response,
-  type Session,
+  summarizeSession,
+  type Band,
+  type GrowthIndicator,
 } from './lib/scoring';
+import {
+  findOrCreateStudent,
+  generateId,
+  getCompletedSessionsForStudent,
+  loadSessions,
+  loadStudents,
+  saveSession,
+} from './lib/storage';
+import {
+  ASSESSMENT_WINDOWS,
+  ASSESSMENT_WINDOW_DESCRIPTIONS,
+  ASSESSMENT_WINDOW_LABELS,
+  type AssessmentWindow,
+  type Session,
+  type Student,
+} from './types';
 
-type View = 'landing' | 'assessment' | 'results' | 'teacher';
-
-const STORAGE_KEY = 'cbse-growth-assessment-session-v1';
-
-function loadSession(): Session | null {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return null;
-    return JSON.parse(raw) as Session;
-  } catch {
-    return null;
-  }
-}
-
-function saveSession(s: Session) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(s));
-  } catch {
-    /* ignore quota or private-mode errors */
-  }
-}
-
-function clearSession() {
-  try {
-    localStorage.removeItem(STORAGE_KEY);
-  } catch {
-    /* ignore */
-  }
-}
+type View =
+  | 'landing'
+  | 'startForm'
+  | 'assessment'
+  | 'results'
+  | 'teacher'
+  | 'studentDetail';
 
 export default function App() {
   const [view, setView] = useState<View>('landing');
@@ -56,41 +53,79 @@ export default function App() {
   const [current, setCurrent] = useState<Item | null>(null);
   const [selected, setSelected] = useState<number | null>(null);
   const [itemStartTs, setItemStartTs] = useState<number>(0);
+  const [submitting, setSubmitting] = useState(false);
+
+  // Active session being filled in (also persisted to localStorage as we go).
   const [session, setSession] = useState<Session | null>(null);
 
-  // On first mount, try to restore a completed session so the teacher
-  // dashboard can be revisited after a refresh.
+  // For the teacher dashboard "open this student" flow.
+  const [selectedStudentId, setSelectedStudentId] = useState<string | null>(
+    null
+  );
+
+  // Refresh trigger so UI updates after writes to localStorage. Bumping this
+  // forces dependent useMemo / list reads to re-execute.
+  const [storeVersion, setStoreVersion] = useState(0);
+  const bumpStore = () => setStoreVersion((v) => v + 1);
+
+  // ---------------------------------------------------------------------
+  // Lifecycle: nothing to restore on mount, since the teacher dashboard
+  // always reads the persisted store fresh. We deliberately do NOT reload
+  // an in-flight session into the assessment view (would let stale state
+  // back into a fresh attempt).
+  // ---------------------------------------------------------------------
   useEffect(() => {
-    const existing = loadSession();
-    if (existing && existing.completedAt) {
-      setSession(existing);
-    }
+    /* no-op for now */
   }, []);
 
-  const startAssessment = () => {
-    clearSession();
+  // ---------------------------------------------------------------------
+  // Start a new assessment for a specific student + window.
+  // ---------------------------------------------------------------------
+  const startAssessmentFor = (
+    student: Student,
+    window: AssessmentWindow
+  ) => {
     const fresh = createInitialState();
     const first = pickNextItem(ITEMS, fresh.attemptedIds, fresh.ability);
-    setEngine(fresh);
-    setCurrent(first);
-    setSelected(null);
-    setItemStartTs(Date.now());
-    setSession({
+    const newSession: Session = {
+      id: generateId(),
+      studentId: student.id,
+      studentSnapshot: {
+        name: student.name,
+        grade: student.grade,
+        school: student.school,
+      },
+      window,
+      skillId: 'FR.06',
       startedAt: Date.now(),
       completedAt: null,
       responses: [],
       finalAbility: fresh.ability,
-    });
+    };
+    setEngine(fresh);
+    setCurrent(first);
+    setSelected(null);
+    setSubmitting(false);
+    setItemStartTs(Date.now());
+    setSession(newSession);
     setView('assessment');
   };
 
+  // ---------------------------------------------------------------------
+  // Submit answer for the current item.
+  // submitting flag is set immediately on click, cleared after we've moved
+  // past the item — prevents double submissions even on slow devices.
+  // ---------------------------------------------------------------------
   const submitAnswer = () => {
+    if (submitting) return;
     if (!current || selected === null || !session) return;
+    setSubmitting(true);
+
     const correct = selected === current.correctIndex;
     const abilityBefore = engine.ability;
     const abilityAfter = updateAbility(engine.ability, correct);
 
-    const response: Response = {
+    const response = {
       itemId: current.id,
       chosenIndex: selected,
       correct,
@@ -108,36 +143,30 @@ export default function App() {
     };
     const nextResponses = [...session.responses, response];
 
-    if (shouldStop(nextEngine, ITEMS.length)) {
+    const finalize = () => {
       const finalSession: Session = {
         ...session,
         responses: nextResponses,
         completedAt: Date.now(),
         finalAbility: abilityAfter,
       };
-      setSession(finalSession);
       saveSession(finalSession);
+      setSession(finalSession);
       setEngine(nextEngine);
       setCurrent(null);
       setSelected(null);
+      setSubmitting(false);
+      bumpStore();
       setView('results');
+    };
+
+    if (shouldStop(nextEngine, ITEMS.length)) {
+      finalize();
       return;
     }
-
     const nextItem = pickNextItem(ITEMS, nextAttempted, abilityAfter);
     if (!nextItem) {
-      const finalSession: Session = {
-        ...session,
-        responses: nextResponses,
-        completedAt: Date.now(),
-        finalAbility: abilityAfter,
-      };
-      setSession(finalSession);
-      saveSession(finalSession);
-      setEngine(nextEngine);
-      setCurrent(null);
-      setSelected(null);
-      setView('results');
+      finalize();
       return;
     }
 
@@ -145,24 +174,65 @@ export default function App() {
     setSession({ ...session, responses: nextResponses });
     setCurrent(nextItem);
     setSelected(null);
+    setSubmitting(false);
     setItemStartTs(Date.now());
   };
 
-  const resetAll = () => {
-    clearSession();
+  const goLanding = () => {
+    setView('landing');
     setSession(null);
-    setEngine(createInitialState());
     setCurrent(null);
     setSelected(null);
-    setView('landing');
+    setSubmitting(false);
   };
+
+  const startNewForSameStudent = () => {
+    if (!session) return;
+    // Re-find or create the student from the snapshot — we already saved them.
+    const student = findOrCreateStudent(
+      session.studentSnapshot.name,
+      session.studentSnapshot.grade,
+      session.studentSnapshot.school
+    );
+    setView('startForm');
+    // pre-fill is handled inside StartForm via `prefillStudent`
+    setPrefillStudent(student);
+  };
+
+  const [prefillStudent, setPrefillStudent] = useState<Student | null>(null);
 
   return (
     <div className="min-h-full bg-slate-50">
-      <NavBar view={view} onNav={setView} hasSession={Boolean(session?.completedAt)} />
+      <NavBar
+        view={view}
+        onNavLanding={goLanding}
+        onNavTeacher={() => {
+          setSelectedStudentId(null);
+          setView('teacher');
+        }}
+      />
 
-      <main className="mx-auto max-w-4xl px-4 py-8 md:py-12">
-        {view === 'landing' && <Landing onStart={startAssessment} />}
+      <main className="mx-auto max-w-5xl px-4 py-8 md:py-12">
+        {view === 'landing' && (
+          <Landing
+            onStart={() => {
+              setPrefillStudent(null);
+              setView('startForm');
+            }}
+            onTeacher={() => {
+              setSelectedStudentId(null);
+              setView('teacher');
+            }}
+          />
+        )}
+
+        {view === 'startForm' && (
+          <StartForm
+            prefill={prefillStudent}
+            onCancel={goLanding}
+            onStart={(student, window) => startAssessmentFor(student, window)}
+          />
+        )}
 
         {view === 'assessment' && current && session && (
           <Assessment
@@ -170,25 +240,50 @@ export default function App() {
             selected={selected}
             onSelect={setSelected}
             onSubmit={submitAnswer}
+            submitting={submitting}
             progress={session.responses.length + 1}
             total={MAX_ITEMS}
+            studentName={session.studentSnapshot.name}
+            window={session.window}
           />
         )}
 
         {view === 'results' && session?.completedAt && (
           <Results
             session={session}
-            onViewTeacher={() => setView('teacher')}
-            onRestart={resetAll}
+            onAnotherSession={startNewForSameStudent}
+            onTeacher={() => {
+              setSelectedStudentId(session.studentId);
+              setView('studentDetail');
+            }}
+            onHome={goLanding}
           />
         )}
 
-        {view === 'teacher' && session?.completedAt && (
-          <TeacherDashboard session={session} onBack={() => setView('results')} />
+        {view === 'teacher' && (
+          <TeacherStudentList
+            key={`teacher-${storeVersion}`}
+            onOpenStudent={(id) => {
+              setSelectedStudentId(id);
+              setView('studentDetail');
+            }}
+            onStart={() => {
+              setPrefillStudent(null);
+              setView('startForm');
+            }}
+          />
         )}
 
-        {view === 'teacher' && !session?.completedAt && (
-          <EmptyDashboard onStart={startAssessment} />
+        {view === 'studentDetail' && selectedStudentId && (
+          <StudentDetail
+            key={`detail-${storeVersion}-${selectedStudentId}`}
+            studentId={selectedStudentId}
+            onBack={() => setView('teacher')}
+            onNewSession={(student) => {
+              setPrefillStudent(student);
+              setView('startForm');
+            }}
+          />
         )}
       </main>
 
@@ -197,40 +292,44 @@ export default function App() {
   );
 }
 
-// --------------------------------------------------------------------------
+// ===========================================================================
 // NavBar
-// --------------------------------------------------------------------------
+// ===========================================================================
 function NavBar({
   view,
-  onNav,
-  hasSession,
+  onNavLanding,
+  onNavTeacher,
 }: {
   view: View;
-  onNav: (v: View) => void;
-  hasSession: boolean;
+  onNavLanding: () => void;
+  onNavTeacher: () => void;
 }) {
+  const teacherActive = view === 'teacher' || view === 'studentDetail';
   return (
     <header className="border-b border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
         <button
-          onClick={() => onNav('landing')}
+          onClick={onNavLanding}
           className="flex items-center gap-2 text-left"
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">
-            C
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-base font-bold text-white">
+            P
           </div>
           <div>
-            <div className="text-sm font-semibold text-slate-900">
-              CBSE Growth Assessment
+            <div className="text-sm font-semibold text-slate-900">Pragati</div>
+            <div className="text-xs text-slate-500">
+              Growth assessment prototype · Class 6 Math
             </div>
-            <div className="text-xs text-slate-500">Prototype · Class 6 Math</div>
           </div>
         </button>
         <nav className="flex items-center gap-2 text-sm">
           <button
-            onClick={() => onNav('teacher')}
-            disabled={!hasSession && view !== 'teacher'}
-            className="rounded-lg px-3 py-1.5 font-medium text-slate-600 hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-50"
+            onClick={onNavTeacher}
+            className={`rounded-lg px-3 py-1.5 font-medium transition ${
+              teacherActive
+                ? 'bg-brand-50 text-brand-700 ring-1 ring-brand-200'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
           >
             Teacher dashboard
           </button>
@@ -240,10 +339,19 @@ function NavBar({
   );
 }
 
-// --------------------------------------------------------------------------
+// ===========================================================================
 // Landing
-// --------------------------------------------------------------------------
-function Landing({ onStart }: { onStart: () => void }) {
+// ===========================================================================
+function Landing({
+  onStart,
+  onTeacher,
+}: {
+  onStart: () => void;
+  onTeacher: () => void;
+}) {
+  const totalSessions = loadSessions().length;
+  const totalStudents = loadStudents().length;
+
   return (
     <div className="space-y-8">
       <div className="card">
@@ -251,23 +359,39 @@ function Landing({ onStart }: { onStart: () => void }) {
           Prototype · Pre-pilot
         </div>
         <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-          CBSE Growth Assessment
+          Pragati
         </h1>
-        <p className="mt-3 max-w-2xl text-base text-slate-600">
-          A prototype adaptive assessment for CBSE Class 6 Math. This short
-          assessment focuses on one skill —{' '}
-          <span className="font-semibold">adding fractions with unlike denominators</span>{' '}
+        <p className="mt-1 text-sm font-medium text-slate-500">
+          Growth assessment prototype for CBSE Class 6 Math
+        </p>
+        <p className="mt-4 max-w-2xl text-base text-slate-600">
+          A short adaptive assessment that focuses on one skill —{' '}
+          <span className="font-semibold">
+            adding fractions with unlike denominators
+          </span>{' '}
           — and demonstrates the assessment flow, simple adaptive routing,
-          and teacher-facing diagnostic reporting.
+          per-student session history, and a teacher-facing diagnostic
+          dashboard.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button onClick={onStart} className="btn-primary">
-            Start Assessment
+            Take an assessment
+          </button>
+          <button onClick={onTeacher} className="btn-secondary">
+            Open teacher dashboard
           </button>
           <span className="text-sm text-slate-500">
             About 8–10 questions · 5–10 minutes
           </span>
         </div>
+        {(totalSessions > 0 || totalStudents > 0) && (
+          <div className="mt-5 inline-flex items-center gap-2 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
+            <span className="font-medium text-slate-700">On this device:</span>
+            {totalStudents} student{totalStudents === 1 ? '' : 's'},{' '}
+            {totalSessions} session{totalSessions === 1 ? '' : 's'} stored
+            locally.
+          </div>
+        )}
       </div>
 
       <div className="grid gap-4 md:grid-cols-3">
@@ -280,18 +404,20 @@ function Landing({ onStart }: { onStart: () => void }) {
           body="Every wrong-answer option is tagged with the misconception it represents, so teachers see why a student answered the way they did."
         />
         <FeatureCard
-          title="Transparent"
-          body="Uses seed difficulty values on a 1–10 scale. No claim of IRT calibration. Meant as the starting point for a real calibration study."
+          title="Longitudinal"
+          body="Sessions are stored per student. Take a baseline now, a mid-year check later, and the dashboard shows an early growth indicator across them."
         />
       </div>
 
       <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
         <div className="font-semibold">What this is not</div>
         <p className="mt-1">
-          This is a pre-pilot prototype. It is not a validated measurement
-          instrument, does not produce RIT scores, and has not been calibrated
-          with student response data. Use it to demonstrate the flow and
-          collect feedback from teachers, not to make decisions about students.
+          This is a pre-pilot prototype. It does not produce a calibrated score
+          or a RIT-equivalent. The "growth indicator" is an early signal from a
+          rule-based heuristic on a 12-item bank, not a validated growth metric.
+          Use it to demonstrate the flow, run a teacher-validation review, and
+          collect feedback — not to make placement, promotion, or remediation
+          decisions about a student.
         </p>
       </div>
     </div>
@@ -307,32 +433,228 @@ function FeatureCard({ title, body }: { title: string; body: string }) {
   );
 }
 
-// --------------------------------------------------------------------------
+// ===========================================================================
+// Start form: capture student + window
+// ===========================================================================
+function StartForm({
+  prefill,
+  onStart,
+  onCancel,
+}: {
+  prefill: Student | null;
+  onStart: (student: Student, window: AssessmentWindow) => void;
+  onCancel: () => void;
+}) {
+  const [name, setName] = useState(prefill?.name ?? '');
+  const [grade, setGrade] = useState(prefill?.grade ?? 'Class 6');
+  const [school, setSchool] = useState(prefill?.school ?? '');
+  const [window, setWindow] = useState<AssessmentWindow>('baseline');
+  const [error, setError] = useState<string | null>(null);
+
+  // If a student is pre-filled and they already have a baseline session,
+  // default the next attempt to mid-year. Pure UX nicety.
+  useEffect(() => {
+    if (!prefill) return;
+    const prior = getCompletedSessionsForStudent(prefill.id);
+    if (prior.length === 0) return;
+    const usedWindows = new Set(prior.map((s) => s.window));
+    if (!usedWindows.has('baseline')) {
+      setWindow('baseline');
+      return;
+    }
+    if (!usedWindows.has('midyear')) {
+      setWindow('midyear');
+      return;
+    }
+    if (!usedWindows.has('endyear')) {
+      setWindow('endyear');
+      return;
+    }
+    setWindow('practice');
+  }, [prefill]);
+
+  const handleStart = () => {
+    if (!name.trim()) {
+      setError('Please enter a student name.');
+      return;
+    }
+    if (!grade.trim()) {
+      setError('Please enter a grade.');
+      return;
+    }
+    setError(null);
+    const student = findOrCreateStudent(name, grade, school);
+    onStart(student, window);
+  };
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={onCancel}
+          className="text-sm font-medium text-slate-500 hover:text-slate-700"
+        >
+          ← Back
+        </button>
+      </div>
+
+      <div className="card">
+        <h1 className="text-2xl font-bold text-slate-900">
+          Who is taking this assessment?
+        </h1>
+        <p className="mt-1 text-sm text-slate-600">
+          Enter the student's details so this attempt can be saved alongside any
+          previous attempts. All data stays on this device — there is no server
+          in this prototype.
+        </p>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <Field label="Student name" required>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="e.g., Aarav Sharma"
+              className="form-input"
+              autoFocus
+            />
+          </Field>
+          <Field label="Grade" required>
+            <input
+              value={grade}
+              onChange={(e) => setGrade(e.target.value)}
+              placeholder="e.g., Class 6"
+              className="form-input"
+            />
+          </Field>
+          <Field label="School (optional)">
+            <input
+              value={school}
+              onChange={(e) => setSchool(e.target.value)}
+              placeholder="e.g., DPS Indirapuram"
+              className="form-input"
+            />
+          </Field>
+        </div>
+
+        <div className="mt-8">
+          <div className="text-sm font-semibold text-slate-900">
+            Assessment window
+          </div>
+          <p className="mt-1 text-sm text-slate-600">
+            Tag this attempt so the teacher dashboard can compare across the
+            year.
+          </p>
+          <div className="mt-4 grid gap-3 md:grid-cols-2">
+            {ASSESSMENT_WINDOWS.map((w) => (
+              <label
+                key={w}
+                className={`flex cursor-pointer items-start gap-3 rounded-xl border-2 p-4 transition ${
+                  window === w
+                    ? 'border-brand-600 bg-brand-50'
+                    : 'border-slate-200 bg-white hover:border-brand-300'
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="window"
+                  value={w}
+                  checked={window === w}
+                  onChange={() => setWindow(w)}
+                  className="mt-1 h-4 w-4 accent-brand-600"
+                />
+                <div>
+                  <div className="text-sm font-semibold text-slate-900">
+                    {ASSESSMENT_WINDOW_LABELS[w]}
+                  </div>
+                  <div className="mt-0.5 text-xs text-slate-600">
+                    {ASSESSMENT_WINDOW_DESCRIPTIONS[w]}
+                  </div>
+                </div>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {error && (
+          <div className="mt-4 rounded-lg bg-rose-50 px-3 py-2 text-sm text-rose-700 ring-1 ring-rose-200">
+            {error}
+          </div>
+        )}
+
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <button onClick={handleStart} className="btn-primary">
+            Start assessment
+          </button>
+          <button onClick={onCancel} className="btn-secondary">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Field({
+  label,
+  required,
+  children,
+}: {
+  label: string;
+  required?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <label className="block">
+      <span className="text-sm font-medium text-slate-700">
+        {label}
+        {required && <span className="ml-0.5 text-rose-500">*</span>}
+      </span>
+      <div className="mt-1.5">{children}</div>
+    </label>
+  );
+}
+
+// ===========================================================================
 // Assessment
-// --------------------------------------------------------------------------
+// ===========================================================================
 function Assessment({
   item,
   selected,
   onSelect,
   onSubmit,
+  submitting,
   progress,
   total,
+  studentName,
+  window,
 }: {
   item: Item;
   selected: number | null;
   onSelect: (i: number) => void;
   onSubmit: () => void;
+  submitting: boolean;
   progress: number;
   total: number;
+  studentName: string;
+  window: AssessmentWindow;
 }) {
   const pct = Math.min(100, Math.round((progress / total) * 100));
   return (
     <div className="space-y-6">
+      <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-white px-4 py-3 shadow-sm ring-1 ring-slate-200">
+        <div className="text-sm text-slate-700">
+          <span className="font-semibold text-slate-900">{studentName}</span>
+          <span className="mx-2 text-slate-400">·</span>
+          <span>{ASSESSMENT_WINDOW_LABELS[window]} session</span>
+        </div>
+        <div className="text-xs text-slate-500">
+          Question {progress} of up to {total}
+        </div>
+      </div>
+
       <div>
         <div className="flex items-center justify-between text-xs font-medium text-slate-500">
-          <span>
-            Question {progress} of up to {total}
-          </span>
+          <span>Progress</span>
           <span>{pct}%</span>
         </div>
         <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-slate-200">
@@ -368,11 +690,12 @@ function Assessment({
               <button
                 key={i}
                 onClick={() => onSelect(i)}
+                disabled={submitting}
                 className={`flex w-full items-start gap-4 rounded-xl border-2 p-4 text-left transition ${
                   isSelected
                     ? 'border-brand-600 bg-brand-50'
                     : 'border-slate-200 bg-white hover:border-brand-300 hover:bg-slate-50'
-                }`}
+                } disabled:cursor-not-allowed disabled:opacity-60`}
               >
                 <span
                   className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${
@@ -392,10 +715,10 @@ function Assessment({
         <div className="mt-6 flex items-center justify-end">
           <button
             onClick={onSubmit}
-            disabled={selected === null}
+            disabled={selected === null || submitting}
             className="btn-primary"
           >
-            Submit answer
+            {submitting ? 'Saving…' : 'Submit answer'}
           </button>
         </div>
       </div>
@@ -403,22 +726,38 @@ function Assessment({
   );
 }
 
-// --------------------------------------------------------------------------
+// ===========================================================================
 // Results (student-facing)
-// --------------------------------------------------------------------------
+// ===========================================================================
 function Results({
   session,
-  onViewTeacher,
-  onRestart,
+  onAnotherSession,
+  onTeacher,
+  onHome,
 }: {
   session: Session;
-  onViewTeacher: () => void;
-  onRestart: () => void;
+  onAnotherSession: () => void;
+  onTeacher: () => void;
+  onHome: () => void;
 }) {
   const band = computeBand(session.finalAbility);
   const correct = correctCount(session.responses);
   const total = session.responses.length;
   const misconceptions = summarizeMisconceptions(session.responses).slice(0, 3);
+
+  // Build the "growth since last session" indicator if we have a strictly
+  // earlier completed session for the same student.
+  const growth = useMemo<GrowthIndicator | null>(() => {
+    const all = getCompletedSessionsForStudent(session.studentId);
+    const prior = all.filter(
+      (s) => s.id !== session.id && (s.completedAt ?? 0) < (session.completedAt ?? 0)
+    );
+    if (prior.length === 0) return null;
+    const mostRecentPrior = prior.reduce((a, b) =>
+      (a.completedAt ?? 0) > (b.completedAt ?? 0) ? a : b
+    );
+    return growthIndicator(mostRecentPrior, session);
+  }, [session]);
 
   return (
     <div className="space-y-6">
@@ -427,8 +766,15 @@ function Results({
           Assessment complete
         </div>
         <h1 className="mt-2 text-3xl font-bold text-slate-900">
-          Your prototype estimate
+          {session.studentSnapshot.name}'s prototype estimate
         </h1>
+        <div className="mt-1 text-sm text-slate-600">
+          {ASSESSMENT_WINDOW_LABELS[session.window]} session ·{' '}
+          {session.studentSnapshot.grade}
+          {session.studentSnapshot.school
+            ? ` · ${session.studentSnapshot.school}`
+            : ''}
+        </div>
 
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           <Stat
@@ -438,21 +784,26 @@ function Results({
           />
           <Stat label="Correct answers" value={`${correct} / ${total}`} />
           <Stat
-            label="Final ability estimate"
+            label="Prototype ability estimate"
             value={`${session.finalAbility.toFixed(1)} / 10`}
           />
         </div>
 
-        <p className="mt-5 text-sm text-slate-600">
-          {BAND_DESCRIPTIONS[band]}
-        </p>
+        <p className="mt-5 text-sm text-slate-600">{BAND_DESCRIPTIONS[band]}</p>
       </div>
 
+      {growth && <GrowthCard growth={growth} session={session} />}
+
       <div className="card">
-        <h2 className="text-lg font-semibold text-slate-900">Skills demonstrated</h2>
+        <h2 className="text-lg font-semibold text-slate-900">
+          Skills demonstrated
+        </h2>
         <p className="mt-1 text-sm text-slate-600">
-          Based on items you answered on the one skill tested in this prototype:
-          <span className="font-medium"> FR.06 — Add fractions with unlike denominators.</span>
+          Based on items answered on the one skill tested in this prototype:
+          <span className="font-medium">
+            {' '}
+            FR.06 — Add fractions with unlike denominators.
+          </span>
         </p>
         <BandAccuracyTable session={session} />
       </div>
@@ -463,8 +814,8 @@ function Results({
             Likely misconception patterns
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            These are the patterns most consistent with the wrong answers chosen.
-            A teacher should confirm them before acting.
+            These are the patterns most consistent with the wrong answers
+            chosen. Teacher review required before acting on any of them.
           </p>
           <ul className="mt-4 space-y-2">
             {misconceptions.map((m) => (
@@ -489,21 +840,100 @@ function Results({
       <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
         <div className="font-semibold">Important disclaimer</div>
         <p className="mt-1">
-          This is a prototype estimate based on seed difficulty values. It is
-          not a calibrated score. Real reporting requires student response data
-          and an IRT model fit, plus teacher review of every item. Do not use
-          these bands to make placement, promotion, or remediation decisions.
+          This is a prototype estimate based on seed difficulty values, not a
+          calibrated score. Real reporting requires student response data and
+          an IRT model fit, plus teacher review of every item. Do not use these
+          bands to make placement, promotion, or remediation decisions.
         </p>
       </div>
 
       <div className="flex flex-wrap gap-3">
-        <button onClick={onViewTeacher} className="btn-primary">
-          View teacher dashboard
+        <button onClick={onTeacher} className="btn-primary">
+          View teacher dashboard for this student
         </button>
-        <button onClick={onRestart} className="btn-secondary">
-          Start over
+        <button onClick={onAnotherSession} className="btn-secondary">
+          Start another session for {session.studentSnapshot.name}
+        </button>
+        <button onClick={onHome} className="btn-secondary">
+          Home
         </button>
       </div>
+    </div>
+  );
+}
+
+function GrowthCard({
+  growth,
+  session,
+}: {
+  growth: GrowthIndicator;
+  session: Session;
+}) {
+  const arrow =
+    growth.direction === 'up' ? '↑' : growth.direction === 'down' ? '↓' : '→';
+  const tone =
+    growth.direction === 'up'
+      ? 'bg-emerald-50 text-emerald-700 ring-emerald-200'
+      : growth.direction === 'down'
+        ? 'bg-rose-50 text-rose-700 ring-rose-200'
+        : 'bg-slate-50 text-slate-700 ring-slate-200';
+  const sign = growth.delta >= 0 ? '+' : '−';
+  return (
+    <div className="card">
+      <div className="flex items-center gap-2">
+        <h2 className="text-lg font-semibold text-slate-900">
+          Early growth indicator
+        </h2>
+        <span className="rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700 ring-1 ring-amber-200">
+          Prototype · not calibrated
+        </span>
+      </div>
+      <p className="mt-1 text-sm text-slate-600">
+        Comparing this {ASSESSMENT_WINDOW_LABELS[session.window].toLowerCase()}{' '}
+        session against {session.studentSnapshot.name}'s most recent prior
+        session on the same skill.
+      </p>
+
+      <div className="mt-4 flex flex-wrap items-stretch gap-4">
+        <div className="flex-1 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+            Prior session
+          </div>
+          <div className="mt-1 text-2xl font-bold text-slate-900">
+            {growth.prevAbility.toFixed(1)} / 10
+          </div>
+          <div className="mt-1 text-xs text-slate-500">
+            Band: {growth.prevBand} · {formatDate(growth.prevAt)}
+          </div>
+        </div>
+        <div
+          className={`flex-1 rounded-xl p-4 ring-1 ${tone} text-center`}
+        >
+          <div className="text-xs font-medium uppercase tracking-wide opacity-80">
+            Change
+          </div>
+          <div className="mt-1 text-2xl font-bold">
+            {arrow} {sign}
+            {Math.abs(growth.delta).toFixed(1)}
+          </div>
+          <div className="mt-1 text-xs opacity-80">
+            on the 1–10 seed scale
+          </div>
+        </div>
+        <div className="flex-1 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+            This session
+          </div>
+          <div className="mt-1 text-2xl font-bold text-slate-900">
+            {growth.currentAbility.toFixed(1)} / 10
+          </div>
+          <div className="mt-1 text-xs text-slate-500">
+            Band: {growth.currentBand} · {formatDate(growth.currentAt)}
+          </div>
+        </div>
+      </div>
+
+      <p className="mt-4 text-sm text-slate-700">{growth.summary}</p>
     </div>
   );
 }
@@ -567,41 +997,443 @@ function BandAccuracyTable({ session }: { session: Session }) {
   );
 }
 
-// --------------------------------------------------------------------------
-// Teacher dashboard
-// --------------------------------------------------------------------------
-function TeacherDashboard({
-  session,
-  onBack,
+// ===========================================================================
+// Teacher: list of students with filters
+// ===========================================================================
+function TeacherStudentList({
+  onOpenStudent,
+  onStart,
 }: {
-  session: Session;
-  onBack: () => void;
+  onOpenStudent: (studentId: string) => void;
+  onStart: () => void;
 }) {
+  const [query, setQuery] = useState('');
+  const [windowFilter, setWindowFilter] = useState<'all' | AssessmentWindow>(
+    'all'
+  );
+
+  const students = loadStudents();
+  const sessions = loadSessions();
+
+  const rows = useMemo(() => {
+    return students
+      .map((student) => {
+        const studentSessions = sessions
+          .filter((s) => s.studentId === student.id && s.completedAt !== null)
+          .sort((a, b) => (b.completedAt ?? 0) - (a.completedAt ?? 0));
+        const filtered =
+          windowFilter === 'all'
+            ? studentSessions
+            : studentSessions.filter((s) => s.window === windowFilter);
+        const latest = filtered[0] ?? null;
+        return {
+          student,
+          totalSessions: studentSessions.length,
+          filteredSessions: filtered,
+          latest,
+        };
+      })
+      .filter((row) => {
+        if (windowFilter !== 'all' && row.filteredSessions.length === 0) {
+          return false;
+        }
+        if (!query.trim()) return true;
+        const q = query.trim().toLowerCase();
+        return (
+          row.student.name.toLowerCase().includes(q) ||
+          (row.student.school || '').toLowerCase().includes(q) ||
+          row.student.grade.toLowerCase().includes(q)
+        );
+      })
+      .sort((a, b) => {
+        const at = a.latest?.completedAt ?? 0;
+        const bt = b.latest?.completedAt ?? 0;
+        return bt - at;
+      });
+  }, [students, sessions, query, windowFilter]);
+
+  if (students.length === 0) {
+    return <EmptyDashboard onStart={onStart} />;
+  }
+
+  return (
+    <div className="space-y-6">
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+            Teacher dashboard
+          </div>
+          <h1 className="mt-1 text-2xl font-bold text-slate-900">Students</h1>
+          <p className="mt-1 text-sm text-slate-600">
+            One row per student. Click a row to open their growth history,
+            item-by-item responses, and recommended next steps.
+          </p>
+        </div>
+        <button onClick={onStart} className="btn-primary">
+          New session
+        </button>
+      </div>
+
+      <div className="card">
+        <div className="flex flex-wrap items-end gap-3">
+          <Field label="Search">
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Name, school, or grade"
+              className="form-input w-64"
+            />
+          </Field>
+          <Field label="Filter by window">
+            <select
+              value={windowFilter}
+              onChange={(e) =>
+                setWindowFilter(e.target.value as 'all' | AssessmentWindow)
+              }
+              className="form-input w-44"
+            >
+              <option value="all">All windows</option>
+              {ASSESSMENT_WINDOWS.map((w) => (
+                <option key={w} value={w}>
+                  {ASSESSMENT_WINDOW_LABELS[w]}
+                </option>
+              ))}
+            </select>
+          </Field>
+          <div className="ml-auto text-xs text-slate-500">
+            Showing {rows.length} of {students.length} students
+          </div>
+        </div>
+
+        <div className="mt-5 overflow-x-auto">
+          <table className="w-full min-w-[640px] text-left text-sm">
+            <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Student</th>
+                <th className="px-3 py-2">School / Grade</th>
+                <th className="px-3 py-2">Sessions</th>
+                <th className="px-3 py-2">Latest window</th>
+                <th className="px-3 py-2">Latest band</th>
+                <th className="px-3 py-2">Latest est.</th>
+                <th className="px-3 py-2">Last attempted</th>
+                <th className="px-3 py-2"></th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100">
+              {rows.map(({ student, totalSessions, latest }) => {
+                const band = latest ? computeBand(latest.finalAbility) : null;
+                return (
+                  <tr
+                    key={student.id}
+                    className="cursor-pointer hover:bg-slate-50"
+                    onClick={() => onOpenStudent(student.id)}
+                  >
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      {student.name}
+                    </td>
+                    <td className="px-3 py-3 text-slate-700">
+                      {student.school ? (
+                        <span>
+                          {student.school}
+                          <span className="ml-1 text-slate-400">
+                            · {student.grade}
+                          </span>
+                        </span>
+                      ) : (
+                        student.grade
+                      )}
+                    </td>
+                    <td className="px-3 py-3 text-slate-700">
+                      {totalSessions}
+                    </td>
+                    <td className="px-3 py-3 text-slate-700">
+                      {latest
+                        ? ASSESSMENT_WINDOW_LABELS[latest.window]
+                        : '—'}
+                    </td>
+                    <td className="px-3 py-3">
+                      {band ? <BandPill band={band} /> : '—'}
+                    </td>
+                    <td className="px-3 py-3 text-slate-700">
+                      {latest
+                        ? `${latest.finalAbility.toFixed(1)} / 10`
+                        : '—'}
+                    </td>
+                    <td className="px-3 py-3 text-slate-700">
+                      {latest?.completedAt
+                        ? formatDate(latest.completedAt)
+                        : '—'}
+                    </td>
+                    <td className="px-3 py-3 text-right">
+                      <span className="text-brand-700">Open →</span>
+                    </td>
+                  </tr>
+                );
+              })}
+              {rows.length === 0 && (
+                <tr>
+                  <td
+                    colSpan={8}
+                    className="px-3 py-8 text-center text-sm text-slate-500"
+                  >
+                    No students match the current filter.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="rounded-2xl border border-slate-200 bg-white p-5 text-xs text-slate-500">
+        <div className="font-semibold text-slate-700">
+          Storage note (read before sharing this device)
+        </div>
+        <p className="mt-1">
+          All student names, sessions, and responses are stored in this
+          browser's localStorage only. There is no backend in this prototype.
+          Clearing the browser will erase the data. Do not enter PII you would
+          not want stored unencrypted on this device.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function BandPill({ band }: { band: Band }) {
+  return (
+    <span
+      className={`rounded-full px-2 py-0.5 text-xs font-semibold ring-1 ${bandColor(band)}`}
+    >
+      {band}
+    </span>
+  );
+}
+
+function EmptyDashboard({ onStart }: { onStart: () => void }) {
+  return (
+    <div className="card text-center">
+      <h1 className="text-xl font-semibold text-slate-900">No students yet</h1>
+      <p className="mx-auto mt-2 max-w-md text-sm text-slate-600">
+        Take the first assessment to register a student. Their result and any
+        future sessions will appear here in the teacher dashboard.
+      </p>
+      <button onClick={onStart} className="btn-primary mt-4">
+        Start assessment
+      </button>
+    </div>
+  );
+}
+
+// ===========================================================================
+// Student detail: growth history + latest session deep dive
+// ===========================================================================
+function StudentDetail({
+  studentId,
+  onBack,
+  onNewSession,
+}: {
+  studentId: string;
+  onBack: () => void;
+  onNewSession: (student: Student) => void;
+}) {
+  const student = loadStudents().find((s) => s.id === studentId);
+  const sessions = student ? getCompletedSessionsForStudent(student.id) : [];
+
+  if (!student) {
+    return (
+      <div className="card text-center">
+        <h1 className="text-xl font-semibold text-slate-900">
+          Student not found
+        </h1>
+        <p className="mt-2 text-sm text-slate-600">
+          That record may have been cleared from this browser.
+        </p>
+        <button onClick={onBack} className="btn-secondary mt-4">
+          Back to students
+        </button>
+      </div>
+    );
+  }
+
+  const latest = sessions[sessions.length - 1] ?? null;
+  const prevToLatest =
+    sessions.length >= 2 ? sessions[sessions.length - 2] : null;
+  const growth =
+    latest && prevToLatest ? growthIndicator(prevToLatest, latest) : null;
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={onBack}
+          className="text-sm font-medium text-slate-500 hover:text-slate-700"
+        >
+          ← All students
+        </button>
+      </div>
+
+      <div className="card">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+              Student profile
+            </div>
+            <h1 className="mt-1 text-2xl font-bold text-slate-900">
+              {student.name}
+            </h1>
+            <div className="mt-1 text-sm text-slate-600">
+              {student.school ? `${student.school} · ` : ''}
+              {student.grade} · {sessions.length} completed session
+              {sessions.length === 1 ? '' : 's'}
+            </div>
+          </div>
+          <button onClick={() => onNewSession(student)} className="btn-primary">
+            Start a new session
+          </button>
+        </div>
+      </div>
+
+      {sessions.length === 0 && (
+        <div className="card text-center text-sm text-slate-600">
+          No completed sessions yet for this student.
+        </div>
+      )}
+
+      {sessions.length > 0 && (
+        <GrowthHistory sessions={sessions} growthForLatest={growth} />
+      )}
+
+      {latest && <LatestSessionPanel session={latest} />}
+    </div>
+  );
+}
+
+function GrowthHistory({
+  sessions,
+  growthForLatest,
+}: {
+  sessions: Session[];
+  growthForLatest: GrowthIndicator | null;
+}) {
+  // Render in reverse chronological order so the most recent is on top.
+  const rows = [...sessions].reverse();
+  return (
+    <div className="card">
+      <div className="flex items-center gap-2">
+        <h2 className="text-lg font-semibold text-slate-900">
+          Growth history
+        </h2>
+        <span className="rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700 ring-1 ring-amber-200">
+          Prototype · not calibrated
+        </span>
+      </div>
+      <p className="mt-1 text-sm text-slate-600">
+        One row per completed session. The "change vs. previous" column is an
+        early growth indicator on the 1–10 seed scale, not a validated growth
+        metric. Practice sessions are included for completeness.
+      </p>
+
+      {growthForLatest && (
+        <div className="mt-4 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200 text-sm text-slate-700">
+          {growthForLatest.summary}
+        </div>
+      )}
+
+      <div className="mt-4 overflow-x-auto">
+        <table className="w-full min-w-[640px] text-left text-sm">
+          <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Date</th>
+              <th className="px-3 py-2">Window</th>
+              <th className="px-3 py-2">Items</th>
+              <th className="px-3 py-2">Correct</th>
+              <th className="px-3 py-2">Avg. diff. attempted</th>
+              <th className="px-3 py-2">Band</th>
+              <th className="px-3 py-2">Estimate</th>
+              <th className="px-3 py-2">Δ vs. previous</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {rows.map((s, idx) => {
+              const summary = summarizeSession(s);
+              const band = computeBand(s.finalAbility);
+              // "previous" in chronological order = next in `rows` array
+              const previous = rows[idx + 1] ?? null;
+              const delta = previous
+                ? s.finalAbility - previous.finalAbility
+                : null;
+              return (
+                <tr key={s.id}>
+                  <td className="px-3 py-3 text-slate-700">
+                    {formatDate(s.completedAt ?? s.startedAt)}
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {ASSESSMENT_WINDOW_LABELS[s.window]}
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">{summary.total}</td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {summary.correct}
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {summary.avgDifficulty.toFixed(1)}
+                  </td>
+                  <td className="px-3 py-3">
+                    <BandPill band={band} />
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {s.finalAbility.toFixed(1)} / 10
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {delta === null ? (
+                      <span className="text-slate-400">—</span>
+                    ) : (
+                      <span
+                        className={
+                          Math.abs(delta) < 0.5
+                            ? 'text-slate-700'
+                            : delta > 0
+                              ? 'text-emerald-700'
+                              : 'text-rose-700'
+                        }
+                      >
+                        {delta >= 0 ? '+' : '−'}
+                        {Math.abs(delta).toFixed(1)}
+                      </span>
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function LatestSessionPanel({ session }: { session: Session }) {
   const itemById = useMemo(() => new Map(ITEMS.map((it) => [it.id, it])), []);
   const band = computeBand(session.finalAbility);
   const correct = correctCount(session.responses);
   const total = session.responses.length;
   const avgTime = averageTimeSec(session.responses);
   const misconceptions = summarizeMisconceptions(session.responses);
+  const prereqs = recommendPrerequisites(session.responses);
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Teacher dashboard
-          </div>
-          <h1 className="mt-1 text-2xl font-bold text-slate-900">
-            Student result summary
-          </h1>
-        </div>
-        <button onClick={onBack} className="btn-secondary">
-          Back to student view
-        </button>
-      </div>
-
+    <>
       <div className="card">
-        <div className="grid gap-4 md:grid-cols-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-semibold text-slate-900">
+            Most recent session
+          </h2>
+          <span className="text-xs text-slate-500">
+            {ASSESSMENT_WINDOW_LABELS[session.window]} ·{' '}
+            {formatDate(session.completedAt ?? session.startedAt)}
+          </span>
+        </div>
+        <div className="mt-4 grid gap-4 md:grid-cols-4">
           <Stat
             label="Band"
             value={band}
@@ -611,7 +1443,9 @@ function TeacherDashboard({
           <Stat label="Correct" value={`${correct} / ${total}`} />
           <Stat label="Avg. time / item" value={`${avgTime}s`} />
         </div>
-        <p className="mt-4 text-sm text-slate-600">{BAND_DESCRIPTIONS[band]}</p>
+        <p className="mt-4 text-sm text-slate-600">
+          {BAND_DESCRIPTIONS[band]}
+        </p>
       </div>
 
       <div className="card">
@@ -619,9 +1453,9 @@ function TeacherDashboard({
           Item-by-item responses
         </h2>
         <p className="mt-1 text-sm text-slate-600">
-          Every distractor is tagged with the specific misconception it represents.
-          The final column is a teacher-facing suggestion; use it as a starting
-          point and adapt to what you already know about the student.
+          Every distractor is tagged with the misconception it represents. Use
+          this as a starting point and adapt to what you already know about the
+          student.
         </p>
 
         <div className="mt-4 overflow-x-auto">
@@ -690,13 +1524,12 @@ function TeacherDashboard({
       {misconceptions.length > 0 && (
         <div className="card">
           <h2 className="text-lg font-semibold text-slate-900">
-            Suggested next teaching steps
+            Misconception summary &amp; suggested next steps
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            One suggestion per observed misconception pattern, ordered by
-            frequency. These are generic starting points derived from the
-            misconception tag — judgement from the teacher always takes
-            priority.
+            One row per observed misconception pattern, ordered by frequency.
+            These are generic starting points derived from the misconception
+            tag — teacher judgement always takes priority.
           </p>
           <ul className="mt-4 space-y-3">
             {misconceptions.map((m) => (
@@ -704,15 +1537,43 @@ function TeacherDashboard({
                 key={m.code}
                 className="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="text-sm font-semibold text-slate-900">
-                    {m.label}
+                    {session.studentSnapshot.name} selected the "{m.label.toLowerCase()}"
+                    distractor {m.count} time{m.count > 1 ? 's' : ''}.
                   </div>
                   <div className="text-xs text-slate-500">
-                    Seen on: {m.itemIds.join(', ')}
+                    Items: {m.itemIds.join(', ')}
                   </div>
                 </div>
                 <p className="mt-2 text-sm text-slate-700">{m.nextStep}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {prereqs.length > 0 && (
+        <div className="card">
+          <h2 className="text-lg font-semibold text-slate-900">
+            Prerequisite skills to consider revisiting
+          </h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Mapped from the misconception patterns above to direct prerequisite
+            skills in the Class 6 Math skill tree. Confirm before assigning.
+          </p>
+          <ul className="mt-4 space-y-3">
+            {prereqs.map((rec) => (
+              <li
+                key={rec.skill.code}
+                className="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <div className="text-sm font-semibold text-slate-900">
+                    {rec.skill.code} — {rec.skill.name}
+                  </div>
+                </div>
+                <p className="mt-1 text-sm text-slate-700">{rec.reason}</p>
               </li>
             ))}
           </ul>
@@ -725,41 +1586,40 @@ function TeacherDashboard({
         </div>
         <p className="mt-1">
           All numbers here are derived from seed difficulty estimates, not from
-          a calibrated IRT model. Treat the "band" as a conversation starter,
-          not a diagnosis. Validity requires a cognitive-lab pilot with real
+          a calibrated IRT model. Treat the band as a conversation starter, not
+          a diagnosis. Validity requires a cognitive-lab pilot with real
           students, item revision, and a calibration study (e.g., fitting a
           Rasch model to 200+ responses per item). See README for next steps.
         </p>
       </div>
-    </div>
+    </>
   );
 }
 
-function EmptyDashboard({ onStart }: { onStart: () => void }) {
-  return (
-    <div className="card text-center">
-      <h1 className="text-xl font-semibold text-slate-900">
-        No completed assessment yet
-      </h1>
-      <p className="mt-2 text-sm text-slate-600">
-        Take the student assessment first — the teacher dashboard will appear
-        here once the session is complete.
-      </p>
-      <button onClick={onStart} className="btn-primary mt-4">
-        Start assessment
-      </button>
-    </div>
-  );
-}
-
-// --------------------------------------------------------------------------
+// ===========================================================================
 // Footer
-// --------------------------------------------------------------------------
+// ===========================================================================
 function Footer() {
   return (
-    <footer className="mx-auto mt-10 max-w-4xl px-4 pb-10 text-center text-xs text-slate-500">
-      Prototype. Pre-pilot content. Not a calibrated assessment. Requires teacher
-      validation and a calibration study before any operational use.
+    <footer className="mx-auto mt-10 max-w-5xl px-4 pb-10 text-center text-xs text-slate-500">
+      Pragati prototype · Pre-pilot content · Not a calibrated assessment.
+      Requires teacher validation and a calibration study before any
+      operational use.
     </footer>
   );
+}
+
+// ===========================================================================
+// Helpers
+// ===========================================================================
+function formatDate(ts: number): string {
+  try {
+    return new Date(ts).toLocaleDateString(undefined, {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+    });
+  } catch {
+    return '—';
+  }
 }
