@@ -14,6 +14,7 @@
 //   - All writes swallow quota / private-mode errors so the UI keeps working.
 
 import type { Session, Student } from '../types';
+export type { Session, Student };
 
 const STUDENTS_KEY = 'pragati.students.v1';
 const SESSIONS_KEY = 'pragati.sessions.v1';
@@ -143,4 +144,48 @@ export function clearAll(): void {
   } catch {
     /* ignore */
   }
+}
+
+// ---------------------------------------------------------------------------
+// Delete a student
+// ---------------------------------------------------------------------------
+// Removes the student record AND every session that belonged to them. This
+// is destructive; the UI must confirm before calling.
+export function deleteStudent(studentId: string): void {
+  const students = loadStudents().filter((s) => s.id !== studentId);
+  const sessions = loadSessions().filter((s) => s.studentId !== studentId);
+  try {
+    localStorage.setItem(STUDENTS_KEY, JSON.stringify(students));
+    localStorage.setItem(SESSIONS_KEY, JSON.stringify(sessions));
+  } catch {
+    /* ignore quota / private-mode errors */
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Export everything (for future calibration work)
+// ---------------------------------------------------------------------------
+// Returns a JSON-serialisable bundle of all students and sessions on this
+// device. The shape is intentionally simple so a downstream calibration
+// pipeline (R / Python) can consume it directly.
+export type ExportBundle = {
+  exportedAt: string;       // ISO timestamp
+  app: 'pragati';
+  schemaVersion: 1;
+  students: Student[];
+  sessions: Session[];
+};
+
+export function buildExportBundle(): ExportBundle {
+  return {
+    exportedAt: new Date().toISOString(),
+    app: 'pragati',
+    schemaVersion: 1,
+    students: loadStudents(),
+    sessions: loadSessions(),
+  };
+}
+
+export function exportAllAsJSON(): string {
+  return JSON.stringify(buildExportBundle(), null, 2);
 }

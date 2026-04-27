@@ -1,11 +1,21 @@
 // FR.06 item bank (pre-pilot drafts).
-// Every MCQ option is tagged with a misconception code so the teacher
+// Every distractor is tagged with a misconception code so the teacher
 // dashboard can aggregate diagnostic signal across a student's responses.
 //
 // IMPORTANT: These items are pre-pilot. Difficulty values are SEED estimates
 // on a 1-10 scale, not calibrated IRT parameters. Do not treat outputs as
 // validated scores.
+//
+// v0.3 additions:
+//   - Bank expanded from 12 to 24 items.
+//   - Items are now a discriminated union: MCQ items (kind: 'mcq') and
+//     numeric-entry items (kind: 'numeric').
+//   - Items can carry an optional `visual` spec (fraction bars or area
+//     grids) that the assessment view renders inline above the stem.
 
+// ---------------------------------------------------------------------------
+// Misconception taxonomy
+// ---------------------------------------------------------------------------
 export type MisconceptionCode =
   | 'add_across'
   | 'incomplete_conversion'
@@ -15,6 +25,7 @@ export type MisconceptionCode =
   | 'conceptual_gap'
   | 'arithmetic_slip'
   | 'form_error'
+  | 'visual_misread'
   | 'none';
 
 export const MISCONCEPTION_LABELS: Record<MisconceptionCode, string> = {
@@ -25,31 +36,65 @@ export const MISCONCEPTION_LABELS: Record<MisconceptionCode, string> = {
   mixed_number_error: 'Handles whole and fractional parts incorrectly',
   conceptual_gap: 'Misunderstands when fractions can be added',
   arithmetic_slip: 'Basic arithmetic error, not a fraction misconception',
-  form_error: 'Answer not in required form (e.g., not simplified)',
+  form_error: 'Answer not in required form (e.g., not simplified or improper fractional part)',
+  visual_misread: 'Misreads the fraction shown in the diagram',
   none: 'Correct answer',
 };
 
 export const MISCONCEPTION_NEXT_STEP: Record<MisconceptionCode, string> = {
   add_across:
-    'Revisit the meaning of a denominator. Use fraction-bar or area models to show why 1/2 + 1/4 cannot be 2/6. Practice 3 like-denominator problems first, then bridge to unlike denominators with one common multiple.',
+    'Revisit the meaning of a denominator. Use fraction-bar or area models to show why 1/2 + 1/4 cannot be 2/6. Practise 3 like-denominator problems first, then bridge to unlike denominators with one common multiple.',
   incomplete_conversion:
-    'Emphasize that multiplying the denominator by k requires multiplying the numerator by the same k. Drill equivalent-fraction practice with side-by-side models before returning to addition.',
+    'Emphasise that multiplying the denominator by k requires multiplying the numerator by the same k. Drill equivalent-fraction practice with side-by-side models before returning to addition.',
   product_not_lcm:
-    'Contrast LCM vs. product of denominators side by side. Have the student simplify an answer produced via the product method, and notice the extra work. Reinforce LCM via prime factorization for non-coprime pairs.',
+    'Contrast LCM vs. product of denominators side by side. Have the student simplify an answer produced via the product method, and notice the extra work. Reinforce LCM via prime factorisation for non-coprime pairs.',
   operation_confusion:
     'Explicitly separate the rules for adding vs. multiplying fractions. Short-answer drill mixing +, -, x on like-denominator pairs first to consolidate operation identification.',
   mixed_number_error:
     'Two parallel methods: (a) whole and fractional parts separately, (b) convert to improper fractions. Let the student try both on the same problem and compare. Flag whichever method produces the mistake.',
   conceptual_gap:
-    'Step back from procedure and address "why a common denominator?" using models. Show that 1/2 + 1/3 is adding unequal pieces - common denominator makes them comparable.',
+    'Step back from procedure and address "why a common denominator?" using models. Show that 1/2 + 1/3 is adding unequal pieces — a common denominator makes them comparable.',
   arithmetic_slip:
     'Not a fraction-specific issue. Encourage rechecking arithmetic. Monitor for repeated pattern across items.',
   form_error:
-    'Reinforce the convention: answers should be in simplest form (or as a mixed number, as specified). Practice HCF-based simplification on a few sums.',
+    'Reinforce the convention: answers should be in simplest form (or as a mixed number, as specified). Practise HCF-based simplification on a few sums and improper-fraction-to-mixed-number conversion.',
+  visual_misread:
+    'Use side-by-side bar/area models with explicit row counts. Have the student recount the shaded vs. total cells aloud before writing the fraction. Check that they recognise pictorial equivalence (e.g., 2/4 of a bar shaded ≡ 1/2).',
   none: '',
 };
 
-export type Item = {
+// ---------------------------------------------------------------------------
+// Visual support
+// ---------------------------------------------------------------------------
+// Two simple visual primitives that the UI can render as inline SVG:
+//   - 'bars': one or more horizontal bars; each bar has a denominator (cells)
+//     and a numerator (number of cells shaded), plus a label (e.g., "1/3").
+//   - 'grid': one or more square grids divided rows x cols, with a count of
+//     shaded cells, plus a label.
+// Both intentionally limited so they're trivially correct to render and
+// trivially correct to author.
+
+export type FractionBar = {
+  numerator: number;
+  denominator: number;
+  label: string;
+};
+
+export type AreaGrid = {
+  rows: number;
+  cols: number;
+  shaded: number;
+  label: string;
+};
+
+export type VisualSpec =
+  | { kind: 'bars'; bars: FractionBar[] }
+  | { kind: 'grid'; grids: AreaGrid[] };
+
+// ---------------------------------------------------------------------------
+// Item types
+// ---------------------------------------------------------------------------
+type BaseItem = {
   id: string;
   skillId: 'FR.06';
   skillName: string;
@@ -58,16 +103,63 @@ export type Item = {
   cognitiveType:
     | 'Procedural fluency'
     | 'Conceptual understanding'
-    | 'Application / word problem';
+    | 'Application / word problem'
+    | 'Visual representation';
   stem: string;
-  options: Array<{ text: string; misconception: MisconceptionCode }>;
-  correctIndex: 0 | 1 | 2 | 3;
   solution: string;
   estimatedTimeSec: number;
+  visual?: VisualSpec;
 };
 
-// The 12 pre-pilot items for FR.06.
+export type MCQItem = BaseItem & {
+  kind: 'mcq';
+  options: Array<{ text: string; misconception: MisconceptionCode }>;
+  correctIndex: 0 | 1 | 2 | 3;
+};
+
+export type NumericItem = BaseItem & {
+  kind: 'numeric';
+  // Canonical accepted forms after normalisation. We accept any string the
+  // student types if it normalises into one of these.
+  acceptedAnswers: string[];
+  // Patterns of common wrong answers and which misconception they map to.
+  // First match wins; an unmatched wrong answer is tagged 'arithmetic_slip'.
+  errorPatterns: Array<{
+    answers: string[];
+    misconception: MisconceptionCode;
+  }>;
+  // Short hint about the expected form (shown next to the input box).
+  inputHint: string;
+};
+
+export type Item = MCQItem | NumericItem;
+
+// ---------------------------------------------------------------------------
+// Numeric-entry helpers
+// ---------------------------------------------------------------------------
+// Normalise a free-form student answer so we can compare against the item's
+// accepted answers. Accepts the same fraction in many spellings:
+//   "5/6", "5 / 6", " 5/6 " -> "5/6"
+//   "1 7/12", "1  7/12", "1+7/12", "1 and 7/12" -> "1 7/12"
+export function normalizeNumericAnswer(input: string): string {
+  if (!input) return '';
+  let s = input.trim().toLowerCase();
+  // Replace " and " with a single space.
+  s = s.replace(/\s+and\s+/g, ' ');
+  // Replace "+" between whole and fraction with a space.
+  s = s.replace(/(\d)\s*\+\s*(\d)/g, '$1 $2');
+  // Collapse repeated whitespace.
+  s = s.replace(/\s+/g, ' ');
+  // Remove spaces around the slash.
+  s = s.replace(/\s*\/\s*/g, '/');
+  return s.trim();
+}
+
+// ---------------------------------------------------------------------------
+// The 24 pre-pilot items for FR.06 (12 original + 12 new in v0.3).
+// ---------------------------------------------------------------------------
 export const ITEMS: Item[] = [
+  // ----- Original 12 (v0.1) -----
   {
     id: 'FR.06-01',
     skillId: 'FR.06',
@@ -75,6 +167,7 @@ export const ITEMS: Item[] = [
     difficulty: 2,
     band: 'foundational',
     cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
     stem: 'Add: 1/2 + 1/4',
     options: [
       { text: '2/6', misconception: 'add_across' },
@@ -94,6 +187,7 @@ export const ITEMS: Item[] = [
     difficulty: 2,
     band: 'foundational',
     cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
     stem:
       'Ravi wants to add 1/3 + 1/6. What should he do FIRST before adding the numerators?',
     options: [
@@ -120,6 +214,7 @@ export const ITEMS: Item[] = [
     difficulty: 3,
     band: 'foundational',
     cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
     stem: 'Find the value of 2/3 + 1/6.',
     options: [
       { text: '3/9', misconception: 'add_across' },
@@ -139,6 +234,7 @@ export const ITEMS: Item[] = [
     difficulty: 4,
     band: 'core',
     cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
     stem: 'Compute 1/3 + 1/4.',
     options: [
       { text: '2/7', misconception: 'add_across' },
@@ -158,6 +254,7 @@ export const ITEMS: Item[] = [
     difficulty: 4,
     band: 'core',
     cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
     stem: 'Find the sum: 2/5 + 1/3.',
     options: [
       { text: '3/8', misconception: 'add_across' },
@@ -177,6 +274,7 @@ export const ITEMS: Item[] = [
     difficulty: 5,
     band: 'core',
     cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
     stem: 'Simplify: 3/8 + 5/12. Express your answer in simplest form.',
     options: [
       { text: '8/20', misconception: 'add_across' },
@@ -196,6 +294,7 @@ export const ITEMS: Item[] = [
     difficulty: 5,
     band: 'core',
     cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
     stem:
       'Which of the following statements about adding 2/3 and 1/4 is correct?',
     options: [
@@ -229,6 +328,7 @@ export const ITEMS: Item[] = [
     difficulty: 6,
     band: 'core',
     cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
     stem: 'Add the mixed numbers: 2 1/2 + 1 1/3.',
     options: [
       { text: '3 2/5', misconception: 'add_across' },
@@ -248,6 +348,7 @@ export const ITEMS: Item[] = [
     difficulty: 7,
     band: 'advanced',
     cognitiveType: 'Application / word problem',
+    kind: 'mcq',
     stem:
       'Ananya drank 1/4 litre of milk in the morning and 2/3 litre of milk in the evening. How much milk did she drink in all that day?',
     options: [
@@ -268,6 +369,7 @@ export const ITEMS: Item[] = [
     difficulty: 7,
     band: 'advanced',
     cognitiveType: 'Application / word problem',
+    kind: 'mcq',
     stem:
       'Rohan ran 1 1/2 km on Monday and 2 1/4 km on Tuesday. What is the total distance he ran on these two days?',
     options: [
@@ -288,6 +390,7 @@ export const ITEMS: Item[] = [
     difficulty: 8,
     band: 'advanced',
     cognitiveType: 'Application / word problem',
+    kind: 'mcq',
     stem:
       'A jug holds 3/5 litre of orange juice. Priya pours in 1/4 litre more from a bottle, and then her younger brother adds another 1/10 litre. How much juice is in the jug now?',
     options: [
@@ -308,6 +411,7 @@ export const ITEMS: Item[] = [
     difficulty: 9,
     band: 'advanced',
     cognitiveType: 'Application / word problem',
+    kind: 'mcq',
     stem:
       "Meera walked 2 3/4 km from her home to school. After school, she walked 1 2/3 km to her grandmother's house, and then 1/2 km to a nearby shop. What is the total distance Meera walked that day? Give your answer as a mixed number in its simplest form.",
     options: [
@@ -321,4 +425,320 @@ export const ITEMS: Item[] = [
       '2 3/4 = 11/4, 1 2/3 = 5/3. LCM(4,3,2)=12. So 11/4 = 33/12, 5/3 = 20/12, 1/2 = 6/12. Sum = 59/12 = 4 11/12 km.',
     estimatedTimeSec: 150,
   },
+
+  // ===== v0.3 additions =====
+
+  // ----- Foundational (2) -----
+  {
+    id: 'FR.06-13',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 1, denominator: 4, label: '1/4' },
+        { numerator: 1, denominator: 8, label: '1/8' },
+      ],
+    },
+    stem:
+      'The two bars below show 1/4 and 1/8 of the same whole. What is 1/4 + 1/8?',
+    options: [
+      { text: '2/12', misconception: 'add_across' },
+      { text: '2/8', misconception: 'incomplete_conversion' },
+      { text: '3/8', misconception: 'none' },
+      { text: '1/32', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 2,
+    solution:
+      'LCM(4, 8) = 8. The first bar shows 1/4 = 2/8 (look: 1 of 4 cells = 2 of 8 cells of the same whole). Then 2/8 + 1/8 = 3/8.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.06-14',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Add: 1/2 + 1/3.',
+    inputHint: 'Enter as a fraction, e.g., 5/6',
+    acceptedAnswers: ['5/6'],
+    errorPatterns: [
+      { answers: ['2/5', '2/6'], misconception: 'add_across' },
+      { answers: ['1/6', '1/5'], misconception: 'operation_confusion' },
+      { answers: ['3/6', '2/3', '1/2'], misconception: 'incomplete_conversion' },
+    ],
+    solution:
+      'LCM(2, 3) = 6. Convert: 1/2 = 3/6 and 1/3 = 2/6. Then 3/6 + 2/6 = 5/6.',
+    estimatedTimeSec: 60,
+  },
+
+  // ----- Core (6) -----
+  {
+    id: 'FR.06-15',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 1, denominator: 4, label: '1/4' },
+        { numerator: 5, denominator: 12, label: '5/12' },
+      ],
+    },
+    stem:
+      'The two bars below show 1/4 and 5/12 shaded. What is the total shaded amount, in simplest form?',
+    options: [
+      { text: '6/16', misconception: 'add_across' },
+      { text: '2/3', misconception: 'none' },
+      { text: '8/24', misconception: 'product_not_lcm' },
+      { text: '1/3', misconception: 'visual_misread' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(4, 12) = 12. Convert: 1/4 = 3/12. Then 3/12 + 5/12 = 8/12 = 2/3 in simplest form.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.06-16',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 1/6 + 1/9.',
+    options: [
+      { text: '2/15', misconception: 'add_across' },
+      { text: '5/18', misconception: 'none' },
+      { text: '15/54', misconception: 'product_not_lcm' },
+      { text: '5/54', misconception: 'incomplete_conversion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(6, 9) = 18. Convert: 1/6 = 3/18 and 1/9 = 2/18. Then 3/18 + 2/18 = 5/18.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.06-17',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Find the value of 5/6 + 3/4.',
+    inputHint: 'Enter as a fraction or mixed number, e.g., 19/12 or 1 7/12',
+    acceptedAnswers: ['19/12', '1 7/12'],
+    errorPatterns: [
+      { answers: ['8/10', '4/5'], misconception: 'add_across' },
+      { answers: ['8/12', '2/3'], misconception: 'incomplete_conversion' },
+      { answers: ['15/24', '15/12'], misconception: 'arithmetic_slip' },
+      { answers: ['15/96', '5/32'], misconception: 'operation_confusion' },
+    ],
+    solution:
+      'LCM(6, 4) = 12. Convert: 5/6 = 10/12 and 3/4 = 9/12. Then 10/12 + 9/12 = 19/12 = 1 7/12.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.06-18',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'grid',
+      grids: [
+        { rows: 1, cols: 3, shaded: 2, label: '2/3 of square A' },
+        { rows: 3, cols: 4, shaded: 5, label: '5/12 of square B' },
+      ],
+    },
+    stem:
+      'Two equal-sized squares are divided into smaller pieces, as shown. The first has 2 of its 3 columns shaded; the second has 5 of its 12 small squares shaded. What is the total shaded amount, expressed as a fraction of one square?',
+    options: [
+      { text: '7/15', misconception: 'add_across' },
+      { text: '1 1/12', misconception: 'none' },
+      { text: '7/12', misconception: 'incomplete_conversion' },
+      { text: '10/36', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      '2/3 = 8/12. So total = 8/12 + 5/12 = 13/12 = 1 1/12 of one square.',
+    estimatedTimeSec: 100,
+  },
+  {
+    id: 'FR.06-19',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Aanya cycled 7/10 km from home to the park, then 1/4 km from the park to the library. What total distance did she cycle?',
+    options: [
+      { text: '8/14 km', misconception: 'add_across' },
+      { text: '19/20 km', misconception: 'none' },
+      { text: '5/20 km', misconception: 'operation_confusion' },
+      { text: '7/40 km', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Total = 7/10 + 1/4. LCM(10, 4) = 20. Convert: 7/10 = 14/20 and 1/4 = 5/20. Sum = 19/20 km.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.06-20',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Add the mixed numbers: 1 3/4 + 2 1/6.',
+    options: [
+      { text: '3 4/10', misconception: 'add_across' },
+      { text: '3 11/12', misconception: 'none' },
+      { text: '2 11/12', misconception: 'mixed_number_error' },
+      { text: '3 1/12', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Whole parts: 1 + 2 = 3. Fractional parts: 3/4 + 1/6. LCM(4, 6) = 12, so 3/4 = 9/12 and 1/6 = 2/12. 9/12 + 2/12 = 11/12. Total = 3 11/12.',
+    estimatedTimeSec: 90,
+  },
+
+  // ----- Advanced (4) -----
+  {
+    id: 'FR.06-21',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 7,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Asha walked 1 1/4 km to her friend\'s house and then 5/8 km to the playground. What total distance did she walk?',
+    options: [
+      { text: '1 6/12 km', misconception: 'add_across' },
+      { text: '1 7/8 km', misconception: 'none' },
+      { text: '7/8 km', misconception: 'mixed_number_error' },
+      { text: '1 5/12 km', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Whole part = 1. Fractional parts: 1/4 + 5/8. LCM(4, 8) = 8, so 1/4 = 2/8. Then 2/8 + 5/8 = 7/8. Total = 1 7/8 km.',
+    estimatedTimeSec: 100,
+  },
+  {
+    id: 'FR.06-22',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 1, denominator: 2, label: 'Bottle A: 1/2 full' },
+        { numerator: 1, denominator: 3, label: 'Bottle B: 1/3 full' },
+        { numerator: 1, denominator: 6, label: 'Bottle C: 1/6 full' },
+      ],
+    },
+    stem:
+      'Three identical bottles are filled to different levels, as shown. Together, how full are they (expressed as a fraction of one bottle)?',
+    options: [
+      { text: '3/11', misconception: 'add_across' },
+      { text: '1', misconception: 'none' },
+      { text: '5/6', misconception: 'arithmetic_slip' },
+      { text: '1/3', misconception: 'visual_misread' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Total = 1/2 + 1/3 + 1/6. LCM(2, 3, 6) = 6. Convert: 1/2 = 3/6, 1/3 = 2/6, 1/6 = 1/6. Sum = 6/6 = 1 (one full bottle).',
+    estimatedTimeSec: 120,
+  },
+  {
+    id: 'FR.06-23',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A tailor uses 2 1/3 metres of red ribbon and 3/4 metre of blue ribbon for a single project. What is the total length of ribbon used, as a mixed number in simplest form?',
+    options: [
+      { text: '2 4/7 m', misconception: 'add_across' },
+      { text: '3 1/12 m', misconception: 'none' },
+      { text: '2 13/12 m', misconception: 'form_error' },
+      { text: '2 1/12 m', misconception: 'mixed_number_error' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Whole part = 2 (the blue ribbon contributes only a fractional part). Fractional parts: 1/3 + 3/4. LCM(3, 4) = 12, so 1/3 = 4/12 and 3/4 = 9/12. Sum = 13/12 = 1 1/12. Carry the 1: total = 2 + 1 + 1/12 = 3 1/12 m.',
+    estimatedTimeSec: 130,
+  },
+  {
+    id: 'FR.06-24',
+    skillId: 'FR.06',
+    skillName: 'Add fractions with unlike denominators',
+    difficulty: 9,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'numeric',
+    stem:
+      'Vikram studies for 1/2 hour of Maths, 3/4 hour of Science, and 1/3 hour of English. How much time does he study altogether? Enter your answer as an improper fraction or as a mixed number in simplest form.',
+    inputHint: 'Enter as a fraction or mixed number, e.g., 19/12 or 1 7/12',
+    acceptedAnswers: ['19/12', '1 7/12'],
+    errorPatterns: [
+      { answers: ['5/9', '6/9', '5/12'], misconception: 'add_across' },
+      { answers: ['9/12', '3/4', '6/12', '1/2'], misconception: 'incomplete_conversion' },
+      { answers: ['13/12', '1 1/12', '7/12'], misconception: 'arithmetic_slip' },
+      { answers: ['1/8', '3/24'], misconception: 'operation_confusion' },
+    ],
+    solution:
+      'LCM(2, 4, 3) = 12. Convert: 1/2 = 6/12, 3/4 = 9/12, 1/3 = 4/12. Sum = 19/12 = 1 7/12 hours.',
+    estimatedTimeSec: 150,
+  },
 ];
+
+// ---------------------------------------------------------------------------
+// Validation helpers (used by the UI)
+// ---------------------------------------------------------------------------
+
+// Check whether `input` is a correct numeric answer for a given numeric item.
+export function checkNumericAnswer(item: NumericItem, input: string): boolean {
+  const norm = normalizeNumericAnswer(input);
+  if (!norm) return false;
+  return item.acceptedAnswers.some(
+    (a) => normalizeNumericAnswer(a) === norm
+  );
+}
+
+// Map a wrong numeric answer to a misconception code via the item's
+// errorPatterns. Returns 'arithmetic_slip' if no specific pattern matches.
+export function tagNumericError(
+  item: NumericItem,
+  input: string
+): MisconceptionCode {
+  const norm = normalizeNumericAnswer(input);
+  if (!norm) return 'arithmetic_slip';
+  for (const pat of item.errorPatterns) {
+    if (pat.answers.some((a) => normalizeNumericAnswer(a) === norm)) {
+      return pat.misconception;
+    }
+  }
+  return 'arithmetic_slip';
+}

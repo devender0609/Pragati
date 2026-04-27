@@ -62,7 +62,10 @@ export type StudentSnapshot = {
 // ---------------------------------------------------------------------------
 export type Response = {
   itemId: string;
+  // For MCQ items: the chosen option index (0..3). For numeric items, -1.
   chosenIndex: number;
+  // For numeric items: the raw text the student typed. Optional for MCQ.
+  chosenText?: string;
   correct: boolean;
   timeMs: number;
   difficultyAtAttempt: number; // the item's seed difficulty (1-10)

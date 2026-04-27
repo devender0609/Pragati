@@ -1,11 +1,23 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ITEMS, MISCONCEPTION_LABELS, type Item } from './data/items';
 import {
+  ITEMS,
+  MISCONCEPTION_LABELS,
+  checkNumericAnswer,
+  tagNumericError,
+  type AreaGrid,
+  type FractionBar,
+  type Item,
+  type MCQItem,
+  type NumericItem,
+  type VisualSpec,
+} from './data/items';
+import {
+  buildSessionPool,
   createInitialState,
   pickNextItem,
   updateAbility,
   shouldStop,
-  MAX_ITEMS,
+  SESSION_SIZE,
   type EngineState,
 } from './lib/adaptiveEngine';
 import {
@@ -17,12 +29,17 @@ import {
   correctCount,
   growthIndicator,
   recommendPrerequisites,
+  sessionConfidence,
   summarizeMisconceptions,
   summarizeSession,
   type Band,
   type GrowthIndicator,
+  type SessionSummary,
 } from './lib/scoring';
 import {
+  buildExportBundle,
+  deleteStudent,
+  exportAllAsJSON,
   findOrCreateStudent,
   generateId,
   getCompletedSessionsForStudent,
@@ -50,43 +67,41 @@ type View =
 export default function App() {
   const [view, setView] = useState<View>('landing');
   const [engine, setEngine] = useState<EngineState>(createInitialState);
+  const [sessionPool, setSessionPool] = useState<Item[]>([]);
   const [current, setCurrent] = useState<Item | null>(null);
   const [selected, setSelected] = useState<number | null>(null);
+  const [numericInput, setNumericInput] = useState<string>('');
   const [itemStartTs, setItemStartTs] = useState<number>(0);
   const [submitting, setSubmitting] = useState(false);
 
-  // Active session being filled in (also persisted to localStorage as we go).
   const [session, setSession] = useState<Session | null>(null);
 
-  // For the teacher dashboard "open this student" flow.
   const [selectedStudentId, setSelectedStudentId] = useState<string | null>(
     null
   );
 
-  // Refresh trigger so UI updates after writes to localStorage. Bumping this
-  // forces dependent useMemo / list reads to re-execute.
+  // Refresh trigger so UI updates after writes to localStorage.
   const [storeVersion, setStoreVersion] = useState(0);
   const bumpStore = () => setStoreVersion((v) => v + 1);
 
-  // ---------------------------------------------------------------------
-  // Lifecycle: nothing to restore on mount, since the teacher dashboard
-  // always reads the persisted store fresh. We deliberately do NOT reload
-  // an in-flight session into the assessment view (would let stale state
-  // back into a fresh attempt).
-  // ---------------------------------------------------------------------
+  const [prefillStudent, setPrefillStudent] = useState<Student | null>(null);
+
   useEffect(() => {
     /* no-op for now */
   }, []);
 
-  // ---------------------------------------------------------------------
-  // Start a new assessment for a specific student + window.
-  // ---------------------------------------------------------------------
   const startAssessmentFor = (
     student: Student,
     window: AssessmentWindow
   ) => {
+    // Build a stratified, mostly-fresh session pool of 10 items.
+    const priorIds = getCompletedSessionsForStudent(student.id).flatMap((s) =>
+      s.responses.map((r) => r.itemId)
+    );
+    const pool = buildSessionPool(ITEMS, priorIds);
     const fresh = createInitialState();
-    const first = pickNextItem(ITEMS, fresh.attemptedIds, fresh.ability);
+    const first = pickNextItem(pool, fresh.attemptedIds, fresh.ability);
+
     const newSession: Session = {
       id: generateId(),
       studentId: student.id,
@@ -103,37 +118,57 @@ export default function App() {
       finalAbility: fresh.ability,
     };
     setEngine(fresh);
+    setSessionPool(pool);
     setCurrent(first);
     setSelected(null);
+    setNumericInput('');
     setSubmitting(false);
     setItemStartTs(Date.now());
     setSession(newSession);
     setView('assessment');
   };
 
-  // ---------------------------------------------------------------------
-  // Submit answer for the current item.
-  // submitting flag is set immediately on click, cleared after we've moved
-  // past the item — prevents double submissions even on slow devices.
-  // ---------------------------------------------------------------------
   const submitAnswer = () => {
     if (submitting) return;
-    if (!current || selected === null || !session) return;
+    if (!current || !session) return;
+
+    // Decide the response from the current item kind.
+    let chosenIndex: number;
+    let chosenText: string | undefined;
+    let correct: boolean;
+    let misconception: ReturnType<typeof tagNumericError>;
+    if (current.kind === 'mcq') {
+      if (selected === null) return;
+      chosenIndex = selected;
+      correct = selected === current.correctIndex;
+      misconception = correct
+        ? 'none'
+        : current.options[selected].misconception;
+    } else {
+      // numeric
+      const raw = numericInput.trim();
+      if (!raw) return;
+      chosenIndex = -1;
+      chosenText = raw;
+      correct = checkNumericAnswer(current, raw);
+      misconception = correct ? 'none' : tagNumericError(current, raw);
+    }
+
     setSubmitting(true);
 
-    const correct = selected === current.correctIndex;
     const abilityBefore = engine.ability;
     const abilityAfter = updateAbility(engine.ability, correct);
 
     const response = {
       itemId: current.id,
-      chosenIndex: selected,
+      chosenIndex,
+      ...(chosenText !== undefined ? { chosenText } : {}),
       correct,
       timeMs: Date.now() - itemStartTs,
       difficultyAtAttempt: current.difficulty,
       abilityBefore,
       abilityAfter,
-      misconceptionTriggered: current.options[selected].misconception,
+      misconceptionTriggered: misconception,
     };
 
     const nextAttempted = [...engine.attemptedIds, current.id];
@@ -155,16 +190,17 @@ export default function App() {
       setEngine(nextEngine);
       setCurrent(null);
       setSelected(null);
+      setNumericInput('');
       setSubmitting(false);
       bumpStore();
       setView('results');
     };
 
-    if (shouldStop(nextEngine, ITEMS.length)) {
+    if (shouldStop(nextEngine, sessionPool.length)) {
       finalize();
       return;
     }
-    const nextItem = pickNextItem(ITEMS, nextAttempted, abilityAfter);
+    const nextItem = pickNextItem(sessionPool, nextAttempted, abilityAfter);
     if (!nextItem) {
       finalize();
       return;
@@ -174,6 +210,7 @@ export default function App() {
     setSession({ ...session, responses: nextResponses });
     setCurrent(nextItem);
     setSelected(null);
+    setNumericInput('');
     setSubmitting(false);
     setItemStartTs(Date.now());
   };
@@ -183,23 +220,20 @@ export default function App() {
     setSession(null);
     setCurrent(null);
     setSelected(null);
+    setNumericInput('');
     setSubmitting(false);
   };
 
   const startNewForSameStudent = () => {
     if (!session) return;
-    // Re-find or create the student from the snapshot — we already saved them.
     const student = findOrCreateStudent(
       session.studentSnapshot.name,
       session.studentSnapshot.grade,
       session.studentSnapshot.school
     );
-    setView('startForm');
-    // pre-fill is handled inside StartForm via `prefillStudent`
     setPrefillStudent(student);
+    setView('startForm');
   };
-
-  const [prefillStudent, setPrefillStudent] = useState<Student | null>(null);
 
   return (
     <div className="min-h-full bg-slate-50">
@@ -239,10 +273,12 @@ export default function App() {
             item={current}
             selected={selected}
             onSelect={setSelected}
+            numericInput={numericInput}
+            onNumericChange={setNumericInput}
             onSubmit={submitAnswer}
             submitting={submitting}
             progress={session.responses.length + 1}
-            total={MAX_ITEMS}
+            total={SESSION_SIZE}
             studentName={session.studentSnapshot.name}
             window={session.window}
           />
@@ -282,6 +318,11 @@ export default function App() {
             onNewSession={(student) => {
               setPrefillStudent(student);
               setView('startForm');
+            }}
+            onDeleted={() => {
+              bumpStore();
+              setSelectedStudentId(null);
+              setView('teacher');
             }}
           />
         )}
@@ -414,10 +455,15 @@ function Landing({
         <p className="mt-1">
           This is a pre-pilot prototype. It does not produce a calibrated score
           or a RIT-equivalent. The "growth indicator" is an early signal from a
-          rule-based heuristic on a 12-item bank, not a validated growth metric.
-          Use it to demonstrate the flow, run a teacher-validation review, and
-          collect feedback — not to make placement, promotion, or remediation
-          decisions about a student.
+          rule-based heuristic on a small item bank, not a validated growth
+          metric. Use it to demonstrate the flow, run a teacher-validation
+          review, and collect feedback — not to make placement, promotion, or
+          remediation decisions about a student.
+        </p>
+        <p className="mt-2">
+          Each session draws 10 items from a pool of 24, but with a small bank
+          some overlap across attempts is expected — you may see similar
+          question types across attempts.
         </p>
       </div>
     </div>
@@ -451,25 +497,14 @@ function StartForm({
   const [window, setWindow] = useState<AssessmentWindow>('baseline');
   const [error, setError] = useState<string | null>(null);
 
-  // If a student is pre-filled and they already have a baseline session,
-  // default the next attempt to mid-year. Pure UX nicety.
   useEffect(() => {
     if (!prefill) return;
     const prior = getCompletedSessionsForStudent(prefill.id);
     if (prior.length === 0) return;
     const usedWindows = new Set(prior.map((s) => s.window));
-    if (!usedWindows.has('baseline')) {
-      setWindow('baseline');
-      return;
-    }
-    if (!usedWindows.has('midyear')) {
-      setWindow('midyear');
-      return;
-    }
-    if (!usedWindows.has('endyear')) {
-      setWindow('endyear');
-      return;
-    }
+    if (!usedWindows.has('baseline')) return setWindow('baseline');
+    if (!usedWindows.has('midyear')) return setWindow('midyear');
+    if (!usedWindows.has('endyear')) return setWindow('endyear');
     setWindow('practice');
   }, [prefill]);
 
@@ -575,6 +610,11 @@ function StartForm({
           </div>
         </div>
 
+        <div className="mt-6 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
+          The bank has 24 items; each session shows 10. With a small bank, you
+          may see similar question types across attempts.
+        </div>
+
         {error && (
           <div className="mt-4 rounded-lg bg-rose-50 px-3 py-2 text-sm text-rose-700 ring-1 ring-rose-200">
             {error}
@@ -615,12 +655,108 @@ function Field({
 }
 
 // ===========================================================================
+// Visual renderer (fraction bars + area grids, inline SVG)
+// ===========================================================================
+function Visual({ visual }: { visual: VisualSpec }) {
+  if (visual.kind === 'bars') {
+    return (
+      <div className="mt-1 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+        {visual.bars.map((bar, i) => (
+          <FractionBarSVG key={i} bar={bar} />
+        ))}
+      </div>
+    );
+  }
+  return (
+    <div className="mt-1 flex flex-wrap items-end gap-6 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+      {visual.grids.map((grid, i) => (
+        <AreaGridSVG key={i} grid={grid} />
+      ))}
+    </div>
+  );
+}
+
+function FractionBarSVG({ bar }: { bar: FractionBar }) {
+  // Render a horizontal bar split into `denominator` cells, with the first
+  // `numerator` cells shaded.
+  const cellWidth = 32;
+  const cellHeight = 36;
+  const totalWidth = cellWidth * bar.denominator;
+  const fillColor = '#2563eb'; // brand-600
+  const strokeColor = '#cbd5e1'; // slate-300
+  return (
+    <div className="flex flex-col gap-1">
+      <svg
+        width={totalWidth}
+        height={cellHeight}
+        viewBox={`0 0 ${totalWidth} ${cellHeight}`}
+        role="img"
+        aria-label={`Fraction bar showing ${bar.numerator} of ${bar.denominator} cells shaded.`}
+      >
+        {Array.from({ length: bar.denominator }, (_, i) => (
+          <rect
+            key={i}
+            x={i * cellWidth}
+            y={0}
+            width={cellWidth}
+            height={cellHeight}
+            fill={i < bar.numerator ? fillColor : '#ffffff'}
+            stroke={strokeColor}
+            strokeWidth={1.5}
+          />
+        ))}
+      </svg>
+      <div className="text-xs font-medium text-slate-700">{bar.label}</div>
+    </div>
+  );
+}
+
+function AreaGridSVG({ grid }: { grid: AreaGrid }) {
+  const cell = 28;
+  const width = cell * grid.cols;
+  const height = cell * grid.rows;
+  const fillColor = '#2563eb';
+  const strokeColor = '#cbd5e1';
+  return (
+    <div className="flex flex-col gap-1">
+      <svg
+        width={width}
+        height={height}
+        viewBox={`0 0 ${width} ${height}`}
+        role="img"
+        aria-label={`Grid: ${grid.shaded} of ${grid.rows * grid.cols} cells shaded.`}
+      >
+        {Array.from({ length: grid.rows * grid.cols }, (_, i) => {
+          const r = Math.floor(i / grid.cols);
+          const c = i % grid.cols;
+          return (
+            <rect
+              key={i}
+              x={c * cell}
+              y={r * cell}
+              width={cell}
+              height={cell}
+              fill={i < grid.shaded ? fillColor : '#ffffff'}
+              stroke={strokeColor}
+              strokeWidth={1.5}
+            />
+          );
+        })}
+      </svg>
+      <div className="text-xs font-medium text-slate-700">{grid.label}</div>
+    </div>
+  );
+}
+
+// ===========================================================================
 // Assessment
 // ===========================================================================
 function Assessment({
   item,
   selected,
   onSelect,
+  numericInput,
+  onNumericChange,
   onSubmit,
   submitting,
   progress,
@@ -631,6 +767,8 @@ function Assessment({
   item: Item;
   selected: number | null;
   onSelect: (i: number) => void;
+  numericInput: string;
+  onNumericChange: (s: string) => void;
   onSubmit: () => void;
   submitting: boolean;
   progress: number;
@@ -639,6 +777,14 @@ function Assessment({
   window: AssessmentWindow;
 }) {
   const pct = Math.min(100, Math.round((progress / total) * 100));
+
+  // Whether the submit button should be enabled.
+  const canSubmit =
+    !submitting &&
+    (item.kind === 'mcq'
+      ? selected !== null
+      : numericInput.trim().length > 0);
+
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-white px-4 py-3 shadow-sm ring-1 ring-slate-200">
@@ -676,52 +822,132 @@ function Assessment({
           <span className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700">
             {item.cognitiveType}
           </span>
+          {item.kind === 'numeric' && (
+            <span className="inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700 ring-1 ring-amber-200">
+              Type your answer
+            </span>
+          )}
         </div>
 
-        <h2 className="mt-5 text-xl font-semibold leading-relaxed text-slate-900 md:text-2xl">
+        {item.visual && (
+          <div className="mt-6">
+            <Visual visual={item.visual} />
+          </div>
+        )}
+
+        <h2 className="mt-6 text-xl font-semibold leading-relaxed text-slate-900 md:text-2xl">
           {item.stem}
         </h2>
 
-        <div className="mt-6 space-y-3">
-          {item.options.map((opt, i) => {
-            const letter = String.fromCharCode(65 + i);
-            const isSelected = selected === i;
-            return (
-              <button
-                key={i}
-                onClick={() => onSelect(i)}
-                disabled={submitting}
-                className={`flex w-full items-start gap-4 rounded-xl border-2 p-4 text-left transition ${
-                  isSelected
-                    ? 'border-brand-600 bg-brand-50'
-                    : 'border-slate-200 bg-white hover:border-brand-300 hover:bg-slate-50'
-                } disabled:cursor-not-allowed disabled:opacity-60`}
-              >
-                <span
-                  className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${
-                    isSelected
-                      ? 'bg-brand-600 text-white'
-                      : 'bg-slate-100 text-slate-700'
-                  }`}
-                >
-                  {letter}
-                </span>
-                <span className="text-base text-slate-900">{opt.text}</span>
-              </button>
-            );
-          })}
-        </div>
+        {item.kind === 'mcq' ? (
+          <McqOptions
+            item={item}
+            selected={selected}
+            onSelect={onSelect}
+            disabled={submitting}
+          />
+        ) : (
+          <NumericEntry
+            item={item}
+            value={numericInput}
+            onChange={onNumericChange}
+            onSubmit={onSubmit}
+            disabled={submitting}
+          />
+        )}
 
-        <div className="mt-6 flex items-center justify-end">
+        <div className="mt-8 flex items-center justify-end">
           <button
             onClick={onSubmit}
-            disabled={selected === null || submitting}
+            disabled={!canSubmit}
             className="btn-primary"
           >
             {submitting ? 'Saving…' : 'Submit answer'}
           </button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function McqOptions({
+  item,
+  selected,
+  onSelect,
+  disabled,
+}: {
+  item: MCQItem;
+  selected: number | null;
+  onSelect: (i: number) => void;
+  disabled: boolean;
+}) {
+  return (
+    <div className="mt-7 space-y-3">
+      {item.options.map((opt, i) => {
+        const letter = String.fromCharCode(65 + i);
+        const isSelected = selected === i;
+        return (
+          <button
+            key={i}
+            onClick={() => onSelect(i)}
+            disabled={disabled}
+            className={`flex w-full items-start gap-4 rounded-xl border-2 p-4 text-left transition ${
+              isSelected
+                ? 'border-brand-600 bg-brand-50'
+                : 'border-slate-200 bg-white hover:border-brand-300 hover:bg-slate-50'
+            } disabled:cursor-not-allowed disabled:opacity-60`}
+          >
+            <span
+              className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${
+                isSelected
+                  ? 'bg-brand-600 text-white'
+                  : 'bg-slate-100 text-slate-700'
+              }`}
+            >
+              {letter}
+            </span>
+            <span className="text-base text-slate-900">{opt.text}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function NumericEntry({
+  item,
+  value,
+  onChange,
+  onSubmit,
+  disabled,
+}: {
+  item: NumericItem;
+  value: string;
+  onChange: (s: string) => void;
+  onSubmit: () => void;
+  disabled: boolean;
+}) {
+  return (
+    <div className="mt-7">
+      <label className="block text-sm font-medium text-slate-700">
+        Your answer
+      </label>
+      <input
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' && value.trim().length > 0 && !disabled) {
+            e.preventDefault();
+            onSubmit();
+          }
+        }}
+        placeholder={item.inputHint}
+        disabled={disabled}
+        className="form-input mt-1.5 max-w-sm text-lg disabled:opacity-60"
+        inputMode="text"
+        autoFocus
+      />
+      <p className="mt-2 text-xs text-slate-500">{item.inputHint}</p>
     </div>
   );
 }
@@ -745,12 +971,12 @@ function Results({
   const total = session.responses.length;
   const misconceptions = summarizeMisconceptions(session.responses).slice(0, 3);
 
-  // Build the "growth since last session" indicator if we have a strictly
-  // earlier completed session for the same student.
   const growth = useMemo<GrowthIndicator | null>(() => {
     const all = getCompletedSessionsForStudent(session.studentId);
     const prior = all.filter(
-      (s) => s.id !== session.id && (s.completedAt ?? 0) < (session.completedAt ?? 0)
+      (s) =>
+        s.id !== session.id &&
+        (s.completedAt ?? 0) < (session.completedAt ?? 0)
     );
     if (prior.length === 0) return null;
     const mostRecentPrior = prior.reduce((a, b) =>
@@ -758,6 +984,9 @@ function Results({
     );
     return growthIndicator(mostRecentPrior, session);
   }, [session]);
+
+  const summary = summarizeSession(session);
+  const conf = sessionConfidence(summary);
 
   return (
     <div className="space-y-6">
@@ -790,6 +1019,13 @@ function Results({
         </div>
 
         <p className="mt-5 text-sm text-slate-600">{BAND_DESCRIPTIONS[band]}</p>
+
+        {conf.confidence === 'low' && (
+          <div className="mt-4 rounded-xl bg-amber-50 p-3 text-xs text-amber-800 ring-1 ring-amber-200">
+            <span className="font-semibold">Low-confidence estimate.</span>{' '}
+            {conf.reasons.join(' ')}
+          </div>
+        )}
       </div>
 
       {growth && <GrowthCard growth={growth} session={session} />}
@@ -877,15 +1113,25 @@ function GrowthCard({
       : growth.direction === 'down'
         ? 'bg-rose-50 text-rose-700 ring-rose-200'
         : 'bg-slate-50 text-slate-700 ring-slate-200';
-  const sign = growth.delta >= 0 ? '+' : '−';
+  const accPct = Math.round(growth.accuracyDelta * 100);
+  const misPct = Math.round(growth.misconceptionDelta * 100);
   return (
     <div className="card">
-      <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2">
         <h2 className="text-lg font-semibold text-slate-900">
-          Early growth indicator
+          Prototype change indicator
         </h2>
         <span className="rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700 ring-1 ring-amber-200">
-          Prototype · not calibrated
+          Early signal · not calibrated growth
+        </span>
+        <span
+          className={`rounded-full px-2 py-0.5 text-xs font-semibold ring-1 ${
+            growth.confidence === 'low'
+              ? 'bg-rose-50 text-rose-700 ring-rose-200'
+              : 'bg-slate-50 text-slate-700 ring-slate-200'
+          }`}
+        >
+          Confidence: {growth.confidence}
         </span>
       </div>
       <p className="mt-1 text-sm text-slate-600">
@@ -895,45 +1141,86 @@ function GrowthCard({
       </p>
 
       <div className="mt-4 flex flex-wrap items-stretch gap-4">
-        <div className="flex-1 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
-          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Prior session
-          </div>
-          <div className="mt-1 text-2xl font-bold text-slate-900">
-            {growth.prevAbility.toFixed(1)} / 10
-          </div>
-          <div className="mt-1 text-xs text-slate-500">
-            Band: {growth.prevBand} · {formatDate(growth.prevAt)}
-          </div>
-        </div>
-        <div
-          className={`flex-1 rounded-xl p-4 ring-1 ${tone} text-center`}
-        >
-          <div className="text-xs font-medium uppercase tracking-wide opacity-80">
-            Change
-          </div>
-          <div className="mt-1 text-2xl font-bold">
-            {arrow} {sign}
-            {Math.abs(growth.delta).toFixed(1)}
-          </div>
-          <div className="mt-1 text-xs opacity-80">
-            on the 1–10 seed scale
-          </div>
-        </div>
-        <div className="flex-1 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
-          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            This session
-          </div>
-          <div className="mt-1 text-2xl font-bold text-slate-900">
-            {growth.currentAbility.toFixed(1)} / 10
-          </div>
-          <div className="mt-1 text-xs text-slate-500">
-            Band: {growth.currentBand} · {formatDate(growth.currentAt)}
-          </div>
-        </div>
+        <DeltaCell
+          label="Accuracy"
+          prior={`${Math.round(growth.prevSummary.accuracy * 100)}%`}
+          current={`${Math.round(growth.currentSummary.accuracy * 100)}%`}
+          deltaText={`${accPct >= 0 ? '+' : '−'}${Math.abs(accPct)} pts`}
+          deltaPositive={accPct > 0}
+          deltaNegative={accPct < 0}
+        />
+        <DeltaCell
+          label="Avg. difficulty attempted"
+          prior={growth.prevSummary.avgDifficulty.toFixed(1)}
+          current={growth.currentSummary.avgDifficulty.toFixed(1)}
+          deltaText={`${growth.difficultyDelta >= 0 ? '+' : '−'}${Math.abs(growth.difficultyDelta).toFixed(1)}`}
+          deltaPositive={growth.difficultyDelta > 0.1}
+          deltaNegative={growth.difficultyDelta < -0.1}
+        />
+        <DeltaCell
+          label="Misconception rate"
+          prior={`${Math.round(growth.prevSummary.misconceptionRate * 100)}%`}
+          current={`${Math.round(growth.currentSummary.misconceptionRate * 100)}%`}
+          deltaText={`${misPct >= 0 ? '+' : '−'}${Math.abs(misPct)} pts`}
+          deltaPositive={misPct < 0}
+          deltaNegative={misPct > 0}
+        />
       </div>
 
-      <p className="mt-4 text-sm text-slate-700">{growth.summary}</p>
+      <div className={`mt-4 flex items-center gap-3 rounded-xl p-3 ring-1 ${tone}`}>
+        <span className="text-2xl">{arrow}</span>
+        <span className="text-sm font-medium">{growth.summary}</span>
+      </div>
+
+      {growth.confidence === 'low' && growth.confidenceReasons.length > 0 && (
+        <ul className="mt-3 list-inside list-disc text-xs text-slate-600">
+          {growth.confidenceReasons.map((r, i) => (
+            <li key={i}>{r}</li>
+          ))}
+        </ul>
+      )}
+
+      <p className="mt-4 text-xs text-slate-500">
+        Composite is an average of three normalised deltas (accuracy, avg
+        difficulty attempted, misconception rate). It is a better signal than
+        the single ability number, but it is still a heuristic on a 24-item
+        bank — not a calibrated growth measurement.
+      </p>
+    </div>
+  );
+}
+
+function DeltaCell({
+  label,
+  prior,
+  current,
+  deltaText,
+  deltaPositive,
+  deltaNegative,
+}: {
+  label: string;
+  prior: string;
+  current: string;
+  deltaText: string;
+  deltaPositive?: boolean;
+  deltaNegative?: boolean;
+}) {
+  const tone = deltaPositive
+    ? 'text-emerald-700'
+    : deltaNegative
+      ? 'text-rose-700'
+      : 'text-slate-600';
+  return (
+    <div className="flex-1 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+      <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+        {label}
+      </div>
+      <div className="mt-2 flex items-baseline gap-2 text-slate-900">
+        <span className="text-base font-semibold text-slate-500">{prior}</span>
+        <span className="text-slate-400">→</span>
+        <span className="text-xl font-bold">{current}</span>
+      </div>
+      <div className={`mt-1 text-xs font-semibold ${tone}`}>{deltaText}</div>
     </div>
   );
 }
@@ -998,7 +1285,7 @@ function BandAccuracyTable({ session }: { session: Session }) {
 }
 
 // ===========================================================================
-// Teacher: list of students with filters
+// Teacher: list of students with filters + export
 // ===========================================================================
 function TeacherStudentList({
   onOpenStudent,
@@ -1052,9 +1339,25 @@ function TeacherStudentList({
       });
   }, [students, sessions, query, windowFilter]);
 
+  const handleExport = () => {
+    const json = exportAllAsJSON();
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const ts = new Date().toISOString().replace(/[:.]/g, '-');
+    a.href = url;
+    a.download = `pragati-export-${ts}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   if (students.length === 0) {
     return <EmptyDashboard onStart={onStart} />;
   }
+
+  const bundle = buildExportBundle();
 
   return (
     <div className="space-y-6">
@@ -1069,9 +1372,14 @@ function TeacherStudentList({
             item-by-item responses, and recommended next steps.
           </p>
         </div>
-        <button onClick={onStart} className="btn-primary">
-          New session
-        </button>
+        <div className="flex gap-2">
+          <button onClick={handleExport} className="btn-secondary">
+            Export data (JSON)
+          </button>
+          <button onClick={onStart} className="btn-primary">
+            New session
+          </button>
+        </div>
       </div>
 
       <div className="card">
@@ -1101,12 +1409,14 @@ function TeacherStudentList({
             </select>
           </Field>
           <div className="ml-auto text-xs text-slate-500">
-            Showing {rows.length} of {students.length} students
+            Showing {rows.length} of {students.length} students ·{' '}
+            {bundle.sessions.length} session
+            {bundle.sessions.length === 1 ? '' : 's'} total
           </div>
         </div>
 
         <div className="mt-5 overflow-x-auto">
-          <table className="w-full min-w-[640px] text-left text-sm">
+          <table className="w-full min-w-[720px] text-left text-sm">
             <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
               <tr>
                 <th className="px-3 py-2">Student</th>
@@ -1147,17 +1457,13 @@ function TeacherStudentList({
                       {totalSessions}
                     </td>
                     <td className="px-3 py-3 text-slate-700">
-                      {latest
-                        ? ASSESSMENT_WINDOW_LABELS[latest.window]
-                        : '—'}
+                      {latest ? ASSESSMENT_WINDOW_LABELS[latest.window] : '—'}
                     </td>
                     <td className="px-3 py-3">
                       {band ? <BandPill band={band} /> : '—'}
                     </td>
                     <td className="px-3 py-3 text-slate-700">
-                      {latest
-                        ? `${latest.finalAbility.toFixed(1)} / 10`
-                        : '—'}
+                      {latest ? `${latest.finalAbility.toFixed(1)} / 10` : '—'}
                     </td>
                     <td className="px-3 py-3 text-slate-700">
                       {latest?.completedAt
@@ -1192,8 +1498,9 @@ function TeacherStudentList({
         <p className="mt-1">
           All student names, sessions, and responses are stored in this
           browser's localStorage only. There is no backend in this prototype.
-          Clearing the browser will erase the data. Do not enter PII you would
-          not want stored unencrypted on this device.
+          Clearing the browser will erase the data. Export to JSON to back up
+          before that happens; that file is also the format a future
+          calibration pipeline would consume.
         </p>
       </div>
     </div>
@@ -1232,13 +1539,16 @@ function StudentDetail({
   studentId,
   onBack,
   onNewSession,
+  onDeleted,
 }: {
   studentId: string;
   onBack: () => void;
   onNewSession: (student: Student) => void;
+  onDeleted: () => void;
 }) {
   const student = loadStudents().find((s) => s.id === studentId);
   const sessions = student ? getCompletedSessionsForStudent(student.id) : [];
+  const [confirmingDelete, setConfirmingDelete] = useState(false);
 
   if (!student) {
     return (
@@ -1261,6 +1571,11 @@ function StudentDetail({
     sessions.length >= 2 ? sessions[sessions.length - 2] : null;
   const growth =
     latest && prevToLatest ? growthIndicator(prevToLatest, latest) : null;
+
+  const handleDelete = () => {
+    deleteStudent(student.id);
+    onDeleted();
+  };
 
   return (
     <div className="space-y-6">
@@ -1288,11 +1603,31 @@ function StudentDetail({
               {sessions.length === 1 ? '' : 's'}
             </div>
           </div>
-          <button onClick={() => onNewSession(student)} className="btn-primary">
-            Start a new session
-          </button>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => onNewSession(student)}
+              className="btn-primary"
+            >
+              Start a new session
+            </button>
+            <button
+              onClick={() => setConfirmingDelete(true)}
+              className="inline-flex items-center justify-center rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-rose-700 shadow-sm ring-1 ring-rose-200 transition hover:bg-rose-50"
+            >
+              Delete student
+            </button>
+          </div>
         </div>
       </div>
+
+      {confirmingDelete && (
+        <DeleteConfirm
+          studentName={student.name}
+          sessionCount={sessions.length}
+          onCancel={() => setConfirmingDelete(false)}
+          onConfirm={handleDelete}
+        />
+      )}
 
       {sessions.length === 0 && (
         <div className="card text-center text-sm text-slate-600">
@@ -1309,6 +1644,43 @@ function StudentDetail({
   );
 }
 
+function DeleteConfirm({
+  studentName,
+  sessionCount,
+  onCancel,
+  onConfirm,
+}: {
+  studentName: string;
+  sessionCount: number;
+  onCancel: () => void;
+  onConfirm: () => void;
+}) {
+  return (
+    <div className="rounded-2xl border border-rose-200 bg-rose-50 p-5 ring-1 ring-rose-200">
+      <div className="text-sm font-semibold text-rose-900">
+        Delete {studentName} and all of their {sessionCount} session
+        {sessionCount === 1 ? '' : 's'}?
+      </div>
+      <p className="mt-1 text-sm text-rose-800">
+        This cannot be undone. Their record and every response they have
+        submitted will be removed from this device. Consider exporting the
+        data first if you might need it.
+      </p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        <button
+          onClick={onConfirm}
+          className="inline-flex items-center justify-center rounded-lg bg-rose-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-rose-700"
+        >
+          Yes, delete {studentName}
+        </button>
+        <button onClick={onCancel} className="btn-secondary">
+          Cancel
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function GrowthHistory({
   sessions,
   growthForLatest,
@@ -1316,32 +1688,42 @@ function GrowthHistory({
   sessions: Session[];
   growthForLatest: GrowthIndicator | null;
 }) {
-  // Render in reverse chronological order so the most recent is on top.
   const rows = [...sessions].reverse();
   return (
     <div className="card">
-      <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2">
         <h2 className="text-lg font-semibold text-slate-900">
           Growth history
         </h2>
         <span className="rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700 ring-1 ring-amber-200">
           Prototype · not calibrated
         </span>
+        {growthForLatest && (
+          <span
+            className={`rounded-full px-2 py-0.5 text-xs font-semibold ring-1 ${
+              growthForLatest.confidence === 'low'
+                ? 'bg-rose-50 text-rose-700 ring-rose-200'
+                : 'bg-slate-50 text-slate-700 ring-slate-200'
+            }`}
+          >
+            Latest comparison: {growthForLatest.confidence} confidence
+          </span>
+        )}
       </div>
       <p className="mt-1 text-sm text-slate-600">
         One row per completed session. The "change vs. previous" column is an
-        early growth indicator on the 1–10 seed scale, not a validated growth
-        metric. Practice sessions are included for completeness.
+        early signal on the 1–10 seed scale, not a validated growth metric.
+        Practice sessions are included for completeness.
       </p>
 
       {growthForLatest && (
-        <div className="mt-4 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200 text-sm text-slate-700">
+        <div className="mt-4 rounded-xl bg-slate-50 p-4 text-sm text-slate-700 ring-1 ring-slate-200">
           {growthForLatest.summary}
         </div>
       )}
 
       <div className="mt-4 overflow-x-auto">
-        <table className="w-full min-w-[640px] text-left text-sm">
+        <table className="w-full min-w-[720px] text-left text-sm">
           <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
             <tr>
               <th className="px-3 py-2">Date</th>
@@ -1349,6 +1731,7 @@ function GrowthHistory({
               <th className="px-3 py-2">Items</th>
               <th className="px-3 py-2">Correct</th>
               <th className="px-3 py-2">Avg. diff. attempted</th>
+              <th className="px-3 py-2">Misconception rate</th>
               <th className="px-3 py-2">Band</th>
               <th className="px-3 py-2">Estimate</th>
               <th className="px-3 py-2">Δ vs. previous</th>
@@ -1356,9 +1739,8 @@ function GrowthHistory({
           </thead>
           <tbody className="divide-y divide-slate-100">
             {rows.map((s, idx) => {
-              const summary = summarizeSession(s);
+              const summary: SessionSummary = summarizeSession(s);
               const band = computeBand(s.finalAbility);
-              // "previous" in chronological order = next in `rows` array
               const previous = rows[idx + 1] ?? null;
               const delta = previous
                 ? s.finalAbility - previous.finalAbility
@@ -1377,6 +1759,9 @@ function GrowthHistory({
                   </td>
                   <td className="px-3 py-3 text-slate-700">
                     {summary.avgDifficulty.toFixed(1)}
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {Math.round(summary.misconceptionRate * 100)}%
                   </td>
                   <td className="px-3 py-3">
                     <BandPill band={band} />
@@ -1424,7 +1809,7 @@ function LatestSessionPanel({ session }: { session: Session }) {
   return (
     <>
       <div className="card">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-lg font-semibold text-slate-900">
             Most recent session
           </h2>
@@ -1443,9 +1828,7 @@ function LatestSessionPanel({ session }: { session: Session }) {
           <Stat label="Correct" value={`${correct} / ${total}`} />
           <Stat label="Avg. time / item" value={`${avgTime}s`} />
         </div>
-        <p className="mt-4 text-sm text-slate-600">
-          {BAND_DESCRIPTIONS[band]}
-        </p>
+        <p className="mt-4 text-sm text-slate-600">{BAND_DESCRIPTIONS[band]}</p>
       </div>
 
       <div className="card">
@@ -1459,7 +1842,7 @@ function LatestSessionPanel({ session }: { session: Session }) {
         </p>
 
         <div className="mt-4 overflow-x-auto">
-          <table className="w-full min-w-[640px] text-left text-sm">
+          <table className="w-full min-w-[720px] text-left text-sm">
             <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
               <tr>
                 <th className="px-3 py-2">Item</th>
@@ -1473,10 +1856,16 @@ function LatestSessionPanel({ session }: { session: Session }) {
             <tbody className="divide-y divide-slate-100">
               {session.responses.map((r) => {
                 const it = itemById.get(r.itemId);
-                const letter = String.fromCharCode(65 + r.chosenIndex);
-                const correctLetter = it
-                  ? String.fromCharCode(65 + it.correctIndex)
-                  : '?';
+                const answered =
+                  r.chosenIndex >= 0
+                    ? `${String.fromCharCode(65 + r.chosenIndex)}`
+                    : `"${r.chosenText ?? ''}"`;
+                const correctAnswer =
+                  it && it.kind === 'mcq'
+                    ? `correct: ${String.fromCharCode(65 + it.correctIndex)}`
+                    : it && it.kind === 'numeric'
+                      ? `correct: ${it.acceptedAnswers[0]}`
+                      : '';
                 return (
                   <tr key={r.itemId} className="align-top">
                     <td className="px-3 py-3 font-medium text-slate-900">
@@ -1489,10 +1878,12 @@ function LatestSessionPanel({ session }: { session: Session }) {
                       {r.difficultyAtAttempt}
                     </td>
                     <td className="px-3 py-3 text-slate-700">
-                      {letter}
-                      <span className="ml-1 text-xs text-slate-500">
-                        (correct: {correctLetter})
-                      </span>
+                      {answered}
+                      {correctAnswer && (
+                        <span className="ml-1 text-xs text-slate-500">
+                          ({correctAnswer})
+                        </span>
+                      )}
                     </td>
                     <td className="px-3 py-3">
                       {r.correct ? (
@@ -1539,8 +1930,9 @@ function LatestSessionPanel({ session }: { session: Session }) {
               >
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="text-sm font-semibold text-slate-900">
-                    {session.studentSnapshot.name} selected the "{m.label.toLowerCase()}"
-                    distractor {m.count} time{m.count > 1 ? 's' : ''}.
+                    {session.studentSnapshot.name} selected the "
+                    {m.label.toLowerCase()}" pattern {m.count} time
+                    {m.count > 1 ? 's' : ''}.
                   </div>
                   <div className="text-xs text-slate-500">
                     Items: {m.itemIds.join(', ')}
