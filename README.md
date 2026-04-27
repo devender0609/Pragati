@@ -61,7 +61,35 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.3.1)
+## What this version adds (v0.3.2)
+
+Two interpretation-quality changes on top of v0.3.1:
+
+- **Growth card refocused on accuracy + misconception + composite.** The
+  per-session growth card no longer shows "average difficulty attempted"
+  as a headline tile, since that number was the closest analog to a raw
+  ability delta and was the easiest to over-interpret. The three headline
+  tiles are now **Accuracy change**, **Misconception change**, and the
+  **Prototype change indicator** itself (composite arrow with a numeric
+  composite in the −1…+1 range). The composite still uses average
+  difficulty internally so it stays robust, but the headline is now the
+  two interpretable per-session deltas plus the hedged composite.
+- **Class-level teacher dashboard.** A new view, reachable from the
+  "Class dashboard" button on the teacher's student list, rolls up every
+  completed session on the device:
+  - Total students and how many have at least one completed session.
+  - Total completed sessions and total response-level data points.
+  - Average accuracy and average time per item across the whole class.
+  - **Misconception distribution** — every non-`none` misconception code,
+    sorted by total occurrences, with a horizontal bar and the list of
+    students who triggered each one (clickable, drills through to that
+    student's detail page).
+  - **Most difficult items** — bottom 10 items by class-wide accuracy,
+    with attempts, correct count, accuracy, and average time per item.
+    Tie-break is attempt count so a 0/4 item ranks above a 0/1 item.
+  Everything is a pure read of localStorage; no backend, no new schema.
+
+## What v0.3.1 added
 
 A focused integrity pass on top of v0.3:
 

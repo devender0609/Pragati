@@ -47,6 +47,12 @@ import {
   saveSession,
 } from './lib/storage';
 import {
+  buildClassAggregate,
+  type ClassAggregate,
+  type ClassMisconceptionRow,
+  type ClassHardestItem,
+} from './lib/classDashboard';
+import {
   ASSESSMENT_WINDOWS,
   ASSESSMENT_WINDOW_DESCRIPTIONS,
   ASSESSMENT_WINDOW_LABELS,
@@ -61,6 +67,7 @@ type View =
   | 'assessment'
   | 'results'
   | 'teacher'
+  | 'classDashboard'
   | 'studentDetail';
 
 export default function App() {
@@ -309,6 +316,18 @@ export default function App() {
               setPrefillStudent(null);
               setView('startForm');
             }}
+            onOpenClassDashboard={() => setView('classDashboard')}
+          />
+        )}
+
+        {view === 'classDashboard' && (
+          <ClassDashboard
+            key={`class-${storeVersion}`}
+            onBack={() => setView('teacher')}
+            onOpenStudent={(id) => {
+              setSelectedStudentId(id);
+              setView('studentDetail');
+            }}
           />
         )}
 
@@ -347,7 +366,10 @@ function NavBar({
   onNavLanding: () => void;
   onNavTeacher: () => void;
 }) {
-  const teacherActive = view === 'teacher' || view === 'studentDetail';
+  const teacherActive =
+    view === 'teacher' ||
+    view === 'studentDetail' ||
+    view === 'classDashboard';
   return (
     <header className="border-b border-slate-200 bg-white">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
@@ -1176,9 +1198,9 @@ function GrowthCard({
         session on the same skill.
       </p>
 
-      <div className="mt-4 flex flex-wrap items-stretch gap-4">
+      <div className="mt-4 grid gap-4 sm:grid-cols-3">
         <DeltaCell
-          label="Accuracy"
+          label="Accuracy change"
           prior={`${Math.round(growth.prevSummary.accuracy * 100)}%`}
           current={`${Math.round(growth.currentSummary.accuracy * 100)}%`}
           deltaText={`${accPct >= 0 ? '+' : '−'}${Math.abs(accPct)} pts`}
@@ -1186,27 +1208,24 @@ function GrowthCard({
           deltaNegative={accPct < 0}
         />
         <DeltaCell
-          label="Avg. difficulty attempted"
-          prior={growth.prevSummary.avgDifficulty.toFixed(1)}
-          current={growth.currentSummary.avgDifficulty.toFixed(1)}
-          deltaText={`${growth.difficultyDelta >= 0 ? '+' : '−'}${Math.abs(growth.difficultyDelta).toFixed(1)}`}
-          deltaPositive={growth.difficultyDelta > 0.1}
-          deltaNegative={growth.difficultyDelta < -0.1}
-        />
-        <DeltaCell
-          label="Misconception rate"
+          label="Misconception change"
           prior={`${Math.round(growth.prevSummary.misconceptionRate * 100)}%`}
           current={`${Math.round(growth.currentSummary.misconceptionRate * 100)}%`}
           deltaText={`${misPct >= 0 ? '+' : '−'}${Math.abs(misPct)} pts`}
           deltaPositive={misPct < 0}
           deltaNegative={misPct > 0}
         />
+        <CompositeCell
+          arrow={arrow}
+          tone={tone}
+          direction={growth.direction}
+          composite={growth.composite}
+        />
       </div>
 
-      <div className={`mt-4 flex items-center gap-3 rounded-xl p-3 ring-1 ${tone}`}>
-        <span className="text-2xl">{arrow}</span>
-        <span className="text-sm font-medium">{growth.summary}</span>
-      </div>
+      <p className={`mt-4 rounded-xl p-3 text-sm ring-1 ${tone}`}>
+        {growth.summary}
+      </p>
 
       {growth.confidence === 'low' && growth.confidenceReasons.length > 0 && (
         <ul className="mt-3 list-inside list-disc text-xs text-slate-600">
@@ -1217,11 +1236,47 @@ function GrowthCard({
       )}
 
       <p className="mt-4 text-xs text-slate-500">
-        Composite is an average of three normalised deltas (accuracy, avg
-        difficulty attempted, misconception rate). It is a better signal than
-        the single ability number, but it is still a heuristic on a 24-item
-        bank — not a calibrated growth measurement.
+        Headline figures are accuracy change and misconception change between
+        the two sessions. The "prototype change indicator" combines both with
+        the average difficulty attempted into a single hedged direction. None
+        of these are a calibrated growth measurement — they are an early
+        signal on a 24-item bank, useful for a teacher conversation, not for
+        placement or reporting.
       </p>
+    </div>
+  );
+}
+
+function CompositeCell({
+  arrow,
+  tone,
+  direction,
+  composite,
+}: {
+  arrow: string;
+  tone: string;
+  direction: 'up' | 'down' | 'flat';
+  composite: number;
+}) {
+  const directionLabel =
+    direction === 'up'
+      ? 'Early signal: improving'
+      : direction === 'down'
+        ? 'Early signal: regressing'
+        : 'Roughly flat';
+  return (
+    <div className={`flex flex-col rounded-xl p-4 ring-1 ${tone}`}>
+      <div className="text-xs font-medium uppercase tracking-wide opacity-80">
+        Prototype change indicator
+      </div>
+      <div className="mt-2 flex items-baseline gap-2">
+        <span className="text-3xl font-bold">{arrow}</span>
+        <span className="text-sm font-semibold">{directionLabel}</span>
+      </div>
+      <div className="mt-1 text-xs opacity-80">
+        composite {composite >= 0 ? '+' : '−'}
+        {Math.abs(composite).toFixed(2)} (−1…+1)
+      </div>
     </div>
   );
 }
@@ -1326,9 +1381,11 @@ function BandAccuracyTable({ session }: { session: Session }) {
 function TeacherStudentList({
   onOpenStudent,
   onStart,
+  onOpenClassDashboard,
 }: {
   onOpenStudent: (studentId: string) => void;
   onStart: () => void;
+  onOpenClassDashboard: () => void;
 }) {
   const [query, setQuery] = useState('');
   const [windowFilter, setWindowFilter] = useState<'all' | AssessmentWindow>(
@@ -1408,7 +1465,10 @@ function TeacherStudentList({
             item-by-item responses, and recommended next steps.
           </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
+          <button onClick={onOpenClassDashboard} className="btn-secondary">
+            Class dashboard
+          </button>
           <button onClick={handleExport} className="btn-secondary">
             Export data (JSON)
           </button>
@@ -1550,6 +1610,254 @@ function BandPill({ band }: { band: Band }) {
     >
       {band}
     </span>
+  );
+}
+
+// ===========================================================================
+// Class-level dashboard
+// ===========================================================================
+function ClassDashboard({
+  onBack,
+  onOpenStudent,
+}: {
+  onBack: () => void;
+  onOpenStudent: (studentId: string) => void;
+}) {
+  const aggregate = useMemo<ClassAggregate>(() => {
+    return buildClassAggregate(loadStudents(), loadSessions());
+  }, []);
+
+  const hasData = aggregate.totalResponses > 0;
+
+  return (
+    <div className="space-y-6">
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <button
+            onClick={onBack}
+            className="text-sm text-brand-700 hover:underline"
+          >
+            ← Back to students
+          </button>
+          <div className="mt-2 text-xs font-medium uppercase tracking-wide text-slate-500">
+            Teacher dashboard · class roll-up
+          </div>
+          <h1 className="mt-1 text-2xl font-bold text-slate-900">
+            Class dashboard
+          </h1>
+          <p className="mt-1 text-sm text-slate-600">
+            Aggregates across every completed session on this device. Useful
+            for spotting which misconceptions and which items are tripping the
+            class as a whole — not a substitute for the per-student view.
+          </p>
+        </div>
+      </div>
+
+      <ClassHeadlineTiles aggregate={aggregate} />
+
+      {!hasData && (
+        <div className="card text-center">
+          <p className="text-sm text-slate-600">
+            No completed sessions yet. Once a student finishes an attempt,
+            their responses will appear in the roll-up.
+          </p>
+        </div>
+      )}
+
+      {hasData && (
+        <>
+          <ClassMisconceptionDistribution
+            rows={aggregate.misconceptionRows}
+            onOpenStudent={onOpenStudent}
+          />
+          <ClassHardestItems items={aggregate.hardestItems} />
+        </>
+      )}
+
+      <p className="text-xs text-slate-500">
+        All figures here are descriptive statistics over response-level data
+        on a 24-item bank. Sample sizes can be very small in a pilot — read
+        the attempt counts before drawing conclusions.
+      </p>
+    </div>
+  );
+}
+
+function ClassHeadlineTiles({ aggregate }: { aggregate: ClassAggregate }) {
+  const accuracyPct = Math.round(aggregate.averageAccuracy * 100);
+  return (
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <HeadlineTile
+        label="Total students"
+        value={String(aggregate.totalStudents)}
+        sub={`${aggregate.studentsWithSessions} with at least one completed session`}
+      />
+      <HeadlineTile
+        label="Completed sessions"
+        value={String(aggregate.totalSessions)}
+        sub={`${aggregate.totalResponses} item responses recorded`}
+      />
+      <HeadlineTile
+        label="Average accuracy"
+        value={`${accuracyPct}%`}
+        sub="Unweighted across every response"
+      />
+      <HeadlineTile
+        label="Avg. time per item"
+        value={`${aggregate.averageTimeSecPerItem}s`}
+        sub="From first prompt to submit"
+      />
+    </div>
+  );
+}
+
+function HeadlineTile({
+  label,
+  value,
+  sub,
+}: {
+  label: string;
+  value: string;
+  sub?: string;
+}) {
+  return (
+    <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
+      <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+        {label}
+      </div>
+      <div className="mt-2 text-3xl font-bold text-slate-900">{value}</div>
+      {sub && <div className="mt-1 text-xs text-slate-500">{sub}</div>}
+    </div>
+  );
+}
+
+function ClassMisconceptionDistribution({
+  rows,
+  onOpenStudent,
+}: {
+  rows: ClassMisconceptionRow[];
+  onOpenStudent: (studentId: string) => void;
+}) {
+  if (rows.length === 0) {
+    return (
+      <div className="card">
+        <h2 className="text-lg font-semibold text-slate-900">
+          Misconception distribution
+        </h2>
+        <p className="mt-2 text-sm text-slate-600">
+          No misconception-tagged wrong answers yet. Either every wrong
+          answer was a generic slip, or no incorrect responses have been
+          recorded.
+        </p>
+      </div>
+    );
+  }
+  const maxOcc = rows[0].occurrences || 1;
+  return (
+    <div className="card">
+      <h2 className="text-lg font-semibold text-slate-900">
+        Misconception distribution
+      </h2>
+      <p className="mt-1 text-sm text-slate-600">
+        Sorted by total response-level hits. Click a student name to open
+        their detail page.
+      </p>
+      <div className="mt-4 space-y-4">
+        {rows.map((row) => {
+          const widthPct = Math.max(6, Math.round((row.occurrences / maxOcc) * 100));
+          return (
+            <div
+              key={row.code}
+              className="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200"
+            >
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <div className="text-sm font-semibold text-slate-900">
+                  {row.label}
+                </div>
+                <div className="text-xs text-slate-600">
+                  {row.occurrences} occurrence
+                  {row.occurrences === 1 ? '' : 's'} ·{' '}
+                  {row.studentCount} student
+                  {row.studentCount === 1 ? '' : 's'}
+                </div>
+              </div>
+              <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-200">
+                <div
+                  className="h-2 rounded-full bg-rose-400"
+                  style={{ width: `${widthPct}%` }}
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {row.students.map((s) => (
+                  <button
+                    key={s.studentId}
+                    onClick={() => onOpenStudent(s.studentId)}
+                    className="rounded-full bg-white px-2.5 py-1 text-xs font-medium text-slate-700 ring-1 ring-slate-300 hover:bg-slate-100"
+                    title={`${s.count} hit${s.count === 1 ? '' : 's'}`}
+                  >
+                    {s.name} · {s.count}
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function ClassHardestItems({ items }: { items: ClassHardestItem[] }) {
+  // Show the bottom-10 by accuracy to keep the table readable.
+  const top = items.slice(0, 10);
+  return (
+    <div className="card">
+      <h2 className="text-lg font-semibold text-slate-900">
+        Most difficult items (lowest accuracy across the class)
+      </h2>
+      <p className="mt-1 text-sm text-slate-600">
+        Sorted by class-wide accuracy ascending. Tie-break is attempt count
+        (more-attempted items rank higher when accuracy ties), so an item
+        that 6 students missed sits above an item that 1 student missed.
+      </p>
+      <div className="mt-4 overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead className="text-left text-xs uppercase tracking-wide text-slate-500">
+            <tr>
+              <th className="py-2 pr-3">Item</th>
+              <th className="py-2 pr-3">Band</th>
+              <th className="py-2 pr-3">Seed diff.</th>
+              <th className="py-2 pr-3">Attempts</th>
+              <th className="py-2 pr-3">Correct</th>
+              <th className="py-2 pr-3">Accuracy</th>
+              <th className="py-2">Avg. time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {top.map((it) => (
+              <tr
+                key={it.itemId}
+                className="border-t border-slate-100 align-top"
+              >
+                <td className="py-2 pr-3">
+                  <div className="font-medium text-slate-900">{it.itemId}</div>
+                  <div className="text-xs text-slate-600">{it.stem}</div>
+                </td>
+                <td className="py-2 pr-3 text-slate-700">{it.band}</td>
+                <td className="py-2 pr-3 text-slate-700">{it.difficulty}</td>
+                <td className="py-2 pr-3 text-slate-700">{it.attempts}</td>
+                <td className="py-2 pr-3 text-slate-700">{it.correct}</td>
+                <td className="py-2 pr-3 text-slate-700">
+                  {Math.round(it.accuracy * 100)}%
+                </td>
+                <td className="py-2 text-slate-700">{it.avgTimeSec}s</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 }
 
