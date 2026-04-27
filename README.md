@@ -61,7 +61,34 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.3)
+## What this version adds (v0.3.1)
+
+A focused integrity pass on top of v0.3:
+
+- **Visual fractions now share a common whole.** Every fraction bar in the
+  app renders at the same outer width (so a 1/4 bar and a 1/8 bar are
+  literally the same length, with only the partition count differing).
+  Every area model uses the same outer dimensions. This was the single
+  biggest mathematical-correctness bug in v0.3 — a 1/8 bar had previously
+  been drawn twice as wide as a 1/4 bar, which actively contradicts what
+  the item is teaching.
+- **Visuals are accessible.** Every fraction-bar and area-grid SVG now
+  carries a math-aware `aria-label` ("a whole bar split into 8 equal
+  parts, with 1 part shaded") and a visible `<figcaption>` describing the
+  fraction in words, so screen-reader users and sighted users get the
+  same information.
+- **Numeric-entry validation by mathematical equivalence.** Typed answers
+  are parsed into rational numbers and compared by cross-multiplication.
+  `5/6`, `1 7/12`, `19/12`, `1 and 7/12`, `1+7/12` and any whitespace
+  variants all work. Decimals are intentionally rejected — fraction
+  arithmetic should be answered in fractions.
+- **`form_error` is now caught automatically.** If a student types
+  `10/12` for an answer of `5/6`, the value is right but the form is not.
+  Pragati now marks that as wrong with misconception `form_error` and
+  surfaces it on the teacher dashboard, instead of silently accepting it
+  or counting it as a generic slip.
+
+## What v0.3 added
 
 Compared with v0.2:
 

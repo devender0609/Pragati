@@ -2,8 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import {
   ITEMS,
   MISCONCEPTION_LABELS,
-  checkNumericAnswer,
-  tagNumericError,
+  evaluateNumericAnswer,
   type AreaGrid,
   type FractionBar,
   type Item,
@@ -136,7 +135,7 @@ export default function App() {
     let chosenIndex: number;
     let chosenText: string | undefined;
     let correct: boolean;
-    let misconception: ReturnType<typeof tagNumericError>;
+    let misconception: ReturnType<typeof evaluateNumericAnswer>['misconception'];
     if (current.kind === 'mcq') {
       if (selected === null) return;
       chosenIndex = selected;
@@ -145,13 +144,16 @@ export default function App() {
         ? 'none'
         : current.options[selected].misconception;
     } else {
-      // numeric
+      // numeric: parse-and-compare by rational equivalence; a value-correct
+      // but unsimplified answer (e.g., "10/12" for "5/6") is reported as
+      // wrong with misconception='form_error'.
       const raw = numericInput.trim();
       if (!raw) return;
       chosenIndex = -1;
       chosenText = raw;
-      correct = checkNumericAnswer(current, raw);
-      misconception = correct ? 'none' : tagNumericError(current, raw);
+      const result = evaluateNumericAnswer(current, raw);
+      correct = result.correct;
+      misconception = result.misconception;
     }
 
     setSubmitting(true);
@@ -676,75 +678,109 @@ function Visual({ visual }: { visual: VisualSpec }) {
   );
 }
 
+// All fraction bars share the same outer width so a 1/4 bar and a 1/8 bar
+// represent the SAME whole. Only the partition count changes. Using a
+// fixed-sized viewBox plus `preserveAspectRatio` keeps every bar visually
+// comparable even when several stack vertically in one item.
+const BAR_OUTER_WIDTH = 280;
+const BAR_OUTER_HEIGHT = 40;
+
+// Likewise for area grids: outer dimensions are fixed, only the row/col
+// partition changes.
+const GRID_OUTER_SIZE = 168;
+
 function FractionBarSVG({ bar }: { bar: FractionBar }) {
-  // Render a horizontal bar split into `denominator` cells, with the first
-  // `numerator` cells shaded.
-  const cellWidth = 32;
-  const cellHeight = 36;
-  const totalWidth = cellWidth * bar.denominator;
   const fillColor = '#2563eb'; // brand-600
-  const strokeColor = '#cbd5e1'; // slate-300
+  const strokeColor = '#1e3a8a'; // brand-900
+  const cellWidth = BAR_OUTER_WIDTH / bar.denominator;
+  const ariaLabel = `Fraction bar for ${bar.label}: a whole bar split into ${bar.denominator} equal parts, with ${bar.numerator} part${bar.numerator === 1 ? '' : 's'} shaded.`;
   return (
-    <div className="flex flex-col gap-1">
+    <figure className="flex flex-col gap-1">
       <svg
-        width={totalWidth}
-        height={cellHeight}
-        viewBox={`0 0 ${totalWidth} ${cellHeight}`}
+        width={BAR_OUTER_WIDTH}
+        height={BAR_OUTER_HEIGHT}
+        viewBox={`0 0 ${BAR_OUTER_WIDTH} ${BAR_OUTER_HEIGHT}`}
         role="img"
-        aria-label={`Fraction bar showing ${bar.numerator} of ${bar.denominator} cells shaded.`}
+        aria-label={ariaLabel}
+        className="block"
       >
+        {/* Outer bar outline (the "whole"). Drawn first so partitions sit on top. */}
+        <rect
+          x={0.5}
+          y={0.5}
+          width={BAR_OUTER_WIDTH - 1}
+          height={BAR_OUTER_HEIGHT - 1}
+          fill="#ffffff"
+          stroke={strokeColor}
+          strokeWidth={1.5}
+        />
         {Array.from({ length: bar.denominator }, (_, i) => (
           <rect
             key={i}
             x={i * cellWidth}
             y={0}
             width={cellWidth}
-            height={cellHeight}
-            fill={i < bar.numerator ? fillColor : '#ffffff'}
+            height={BAR_OUTER_HEIGHT}
+            fill={i < bar.numerator ? fillColor : 'transparent'}
             stroke={strokeColor}
-            strokeWidth={1.5}
+            strokeWidth={1}
           />
         ))}
       </svg>
-      <div className="text-xs font-medium text-slate-700">{bar.label}</div>
-    </div>
+      <figcaption className="text-xs font-medium text-slate-700">
+        {bar.label} — {bar.numerator} of {bar.denominator} equal parts shaded
+      </figcaption>
+    </figure>
   );
 }
 
 function AreaGridSVG({ grid }: { grid: AreaGrid }) {
-  const cell = 28;
-  const width = cell * grid.cols;
-  const height = cell * grid.rows;
   const fillColor = '#2563eb';
-  const strokeColor = '#cbd5e1';
+  const strokeColor = '#1e3a8a';
+  const cellW = GRID_OUTER_SIZE / grid.cols;
+  const cellH = GRID_OUTER_SIZE / grid.rows;
+  const totalCells = grid.rows * grid.cols;
+  const ariaLabel = `Area model for ${grid.label}: a whole rectangle split into a ${grid.rows} by ${grid.cols} grid (${totalCells} equal cells), with ${grid.shaded} cell${grid.shaded === 1 ? '' : 's'} shaded.`;
   return (
-    <div className="flex flex-col gap-1">
+    <figure className="flex flex-col gap-1">
       <svg
-        width={width}
-        height={height}
-        viewBox={`0 0 ${width} ${height}`}
+        width={GRID_OUTER_SIZE}
+        height={GRID_OUTER_SIZE}
+        viewBox={`0 0 ${GRID_OUTER_SIZE} ${GRID_OUTER_SIZE}`}
         role="img"
-        aria-label={`Grid: ${grid.shaded} of ${grid.rows * grid.cols} cells shaded.`}
+        aria-label={ariaLabel}
+        className="block"
       >
-        {Array.from({ length: grid.rows * grid.cols }, (_, i) => {
+        <rect
+          x={0.5}
+          y={0.5}
+          width={GRID_OUTER_SIZE - 1}
+          height={GRID_OUTER_SIZE - 1}
+          fill="#ffffff"
+          stroke={strokeColor}
+          strokeWidth={1.5}
+        />
+        {Array.from({ length: totalCells }, (_, i) => {
           const r = Math.floor(i / grid.cols);
           const c = i % grid.cols;
           return (
             <rect
               key={i}
-              x={c * cell}
-              y={r * cell}
-              width={cell}
-              height={cell}
-              fill={i < grid.shaded ? fillColor : '#ffffff'}
+              x={c * cellW}
+              y={r * cellH}
+              width={cellW}
+              height={cellH}
+              fill={i < grid.shaded ? fillColor : 'transparent'}
               stroke={strokeColor}
-              strokeWidth={1.5}
+              strokeWidth={1}
             />
           );
         })}
       </svg>
-      <div className="text-xs font-medium text-slate-700">{grid.label}</div>
-    </div>
+      <figcaption className="text-xs font-medium text-slate-700">
+        {grid.label} — {grid.shaded} of {totalCells} equal cells shaded
+      </figcaption>
+    </figure>
   );
 }
 

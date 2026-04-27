@@ -137,22 +137,122 @@ export type Item = MCQItem | NumericItem;
 // ---------------------------------------------------------------------------
 // Numeric-entry helpers
 // ---------------------------------------------------------------------------
-// Normalise a free-form student answer so we can compare against the item's
-// accepted answers. Accepts the same fraction in many spellings:
-//   "5/6", "5 / 6", " 5/6 " -> "5/6"
-//   "1 7/12", "1  7/12", "1+7/12", "1 and 7/12" -> "1 7/12"
-export function normalizeNumericAnswer(input: string): string {
-  if (!input) return '';
+// ---------------------------------------------------------------------------
+// Numeric-entry parsing
+// ---------------------------------------------------------------------------
+// We treat the student's typed answer as a *rational number* and compare by
+// mathematical equivalence, not string identity. This lets us:
+//
+//   - accept "5/6", "5 / 6", " 5/6 ", "5 over 6 typed by hand"
+//   - accept the same value in proper, improper, or mixed-number form
+//     ("19/12", "1 7/12", "1 and 7/12", "1+7/12")
+//   - distinguish "value-correct but not in simplest form" (a real cognitive
+//     error worth tagging as `form_error`) from "value-wrong"
+//
+// We deliberately do NOT accept decimal answers. The skill being tested is
+// fraction arithmetic; a "0.5" response is treated as a parse miss so the
+// teacher can see that the student computed in decimals rather than in
+// fractions.
+
+export type Rational = {
+  // Always non-negative; sign is carried separately.
+  num: number;
+  // Always positive.
+  den: number;
+  sign: 1 | -1;
+};
+
+export function parseFraction(input: string): Rational | null {
+  if (!input) return null;
+  // Lowercase + collapse whitespace; replace 'and'/'+' between whole and
+  // fraction with a single space.
   let s = input.trim().toLowerCase();
-  // Replace " and " with a single space.
+  if (!s) return null;
   s = s.replace(/\s+and\s+/g, ' ');
-  // Replace "+" between whole and fraction with a space.
   s = s.replace(/(\d)\s*\+\s*(\d)/g, '$1 $2');
-  // Collapse repeated whitespace.
-  s = s.replace(/\s+/g, ' ');
-  // Remove spaces around the slash.
-  s = s.replace(/\s*\/\s*/g, '/');
-  return s.trim();
+  s = s.replace(/\s+/g, ' ').trim();
+
+  // Mixed number: "1 7/12", "-1 7/12", with any whitespace around the slash.
+  const mixedMatch = s.match(/^(-?\d+)\s+(\d+)\s*\/\s*(\d+)$/);
+  if (mixedMatch) {
+    const w = parseInt(mixedMatch[1], 10);
+    const n = parseInt(mixedMatch[2], 10);
+    const d = parseInt(mixedMatch[3], 10);
+    if (d === 0) return null;
+    const sign: 1 | -1 = w < 0 ? -1 : 1;
+    return { num: Math.abs(w) * d + n, den: d, sign };
+  }
+
+  // Simple fraction: "5/6", "-5/6".
+  const fracMatch = s.match(/^(-?\d+)\s*\/\s*(\d+)$/);
+  if (fracMatch) {
+    const n = parseInt(fracMatch[1], 10);
+    const d = parseInt(fracMatch[2], 10);
+    if (d === 0) return null;
+    return { num: Math.abs(n), den: d, sign: n < 0 ? -1 : 1 };
+  }
+
+  // Whole number: "3", "-3".
+  const wholeMatch = s.match(/^(-?\d+)$/);
+  if (wholeMatch) {
+    const n = parseInt(wholeMatch[1], 10);
+    return { num: Math.abs(n), den: 1, sign: n < 0 ? -1 : 1 };
+  }
+
+  return null;
+}
+
+function gcd(a: number, b: number): number {
+  a = Math.abs(a);
+  b = Math.abs(b);
+  while (b) {
+    [a, b] = [b, a % b];
+  }
+  return a || 1;
+}
+
+export function rationalsEqual(a: Rational, b: Rational): boolean {
+  // 0 has no sign for equivalence purposes.
+  const aIsZero = a.num === 0;
+  const bIsZero = b.num === 0;
+  if (aIsZero && bIsZero) return true;
+  if (a.sign !== b.sign) return false;
+  return a.num * b.den === b.num * a.den;
+}
+
+// Returns true iff the user's typed answer is in canonical "simplest" form:
+//   - integer (e.g., "3")
+//   - simplified proper or improper fraction with gcd(num, den) = 1
+//     (both "3/4" and "19/12" qualify)
+//   - simplified mixed number with proper, simplified fractional part
+//     (e.g., "1 7/12") — but NOT "1 19/12" (improper part) or "1 14/24"
+//     (un-reduced part).
+export function isSimplifiedFractionForm(input: string): boolean {
+  const parsed = parseFraction(input);
+  if (!parsed) return false;
+
+  let s = input.trim().toLowerCase();
+  s = s.replace(/\s+and\s+/g, ' ');
+  s = s.replace(/(\d)\s*\+\s*(\d)/g, '$1 $2');
+  s = s.replace(/\s+/g, ' ').trim();
+
+  const mixed = s.match(/^-?\d+\s+(\d+)\s*\/\s*(\d+)$/);
+  if (mixed) {
+    const n = parseInt(mixed[1], 10);
+    const d = parseInt(mixed[2], 10);
+    if (d === 0) return false;
+    return n < d && gcd(n, d) === 1;
+  }
+
+  const frac = s.match(/^-?(\d+)\s*\/\s*(\d+)$/);
+  if (frac) {
+    const n = parseInt(frac[1], 10);
+    const d = parseInt(frac[2], 10);
+    if (d === 0) return false;
+    return gcd(n, d) === 1;
+  }
+
+  return /^-?\d+$/.test(s);
 }
 
 // ---------------------------------------------------------------------------
@@ -718,27 +818,68 @@ export const ITEMS: Item[] = [
 // Validation helpers (used by the UI)
 // ---------------------------------------------------------------------------
 
-// Check whether `input` is a correct numeric answer for a given numeric item.
-export function checkNumericAnswer(item: NumericItem, input: string): boolean {
-  const norm = normalizeNumericAnswer(input);
-  if (!norm) return false;
-  return item.acceptedAnswers.some(
-    (a) => normalizeNumericAnswer(a) === norm
-  );
+// Evaluate a numeric-entry response. Returns whether the answer is correct
+// and the misconception code to record.
+//
+// Logic:
+//   1. Parse the user's input as a rational. If parsing fails, the answer
+//      is wrong and tagged 'arithmetic_slip' (covers blanks, decimals,
+//      garbage text, malformed fractions).
+//   2. Parse the item's first acceptedAnswer as the canonical value. All
+//      acceptedAnswer entries are expected to be mathematically equivalent.
+//   3. If the user's value equals the canonical value:
+//        a. If the typed form is in simplest form, mark correct.
+//        b. Otherwise (e.g., "10/12" instead of "5/6", or "1 14/24" instead
+//           of "1 7/12"), mark incorrect with misconception 'form_error'.
+//   4. If the user's value does NOT equal the canonical value, walk the
+//      item's errorPatterns by *value* (not string) and return the matching
+//      misconception. Fallback: 'arithmetic_slip'.
+export function evaluateNumericAnswer(
+  item: NumericItem,
+  input: string
+): { correct: boolean; misconception: MisconceptionCode } {
+  const userValue = parseFraction(input);
+  if (!userValue) {
+    return { correct: false, misconception: 'arithmetic_slip' };
+  }
+
+  const canonical = parseFraction(item.acceptedAnswers[0]);
+  if (!canonical) {
+    // Bank misconfiguration: the canonical answer didn't parse. Treat as
+    // a slip rather than crashing.
+    return { correct: false, misconception: 'arithmetic_slip' };
+  }
+
+  if (rationalsEqual(userValue, canonical)) {
+    if (isSimplifiedFractionForm(input)) {
+      return { correct: true, misconception: 'none' };
+    }
+    return { correct: false, misconception: 'form_error' };
+  }
+
+  for (const pattern of item.errorPatterns) {
+    for (const ans of pattern.answers) {
+      const patternValue = parseFraction(ans);
+      if (patternValue && rationalsEqual(userValue, patternValue)) {
+        return { correct: false, misconception: pattern.misconception };
+      }
+    }
+  }
+
+  return { correct: false, misconception: 'arithmetic_slip' };
 }
 
-// Map a wrong numeric answer to a misconception code via the item's
-// errorPatterns. Returns 'arithmetic_slip' if no specific pattern matches.
+// Backwards-compat wrappers so any caller still on the old API keeps
+// working. Prefer `evaluateNumericAnswer` for new code — it returns the
+// misconception code in the same pass and handles form_error properly.
+export function checkNumericAnswer(item: NumericItem, input: string): boolean {
+  return evaluateNumericAnswer(item, input).correct;
+}
+
 export function tagNumericError(
   item: NumericItem,
   input: string
 ): MisconceptionCode {
-  const norm = normalizeNumericAnswer(input);
-  if (!norm) return 'arithmetic_slip';
-  for (const pat of item.errorPatterns) {
-    if (pat.answers.some((a) => normalizeNumericAnswer(a) === norm)) {
-      return pat.misconception;
-    }
-  }
-  return 'arithmetic_slip';
+  const result = evaluateNumericAnswer(item, input);
+  return result.correct ? 'none' : result.misconception;
 }
