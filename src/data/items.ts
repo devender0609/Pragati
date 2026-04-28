@@ -22,6 +22,19 @@
 //   - Each Item now declares `skillId: 'FR.06' | 'FR.07'`. The adaptive
 //     engine and class dashboard can scope the pool by skill; the UI can
 //     also run a "mixed" session that draws from both banks.
+//
+// v0.5 additions (full Class 6 Fractions Module):
+//   - Five more skill banks:
+//       FR.02 (Represent fractions visually)         — 12 items
+//       FR.03 (Equivalent fractions)                 — 12 items
+//       FR.04 (Mixed numbers and improper fractions) — 12 items
+//       FR.05 (Add/subtract with like denominators)  — 12 items
+//       FR.08 (Fraction word problems)               — 12 items
+//   - BaseItem.skillId widened to all 7 fraction skills.
+//   - All existing misconception codes are reused; no new codes needed
+//     because the FR.02–FR.05/FR.08 errors are well-described by the
+//     existing taxonomy (visual_misread, incomplete_conversion,
+//     mixed_number_error, add_across, operation_confusion, etc.).
 
 // ---------------------------------------------------------------------------
 // Misconception taxonomy
@@ -121,7 +134,14 @@ export type VisualSpec =
 // ---------------------------------------------------------------------------
 type BaseItem = {
   id: string;
-  skillId: 'FR.06' | 'FR.07';
+  skillId:
+    | 'FR.02'
+    | 'FR.03'
+    | 'FR.04'
+    | 'FR.05'
+    | 'FR.06'
+    | 'FR.07'
+    | 'FR.08';
   skillName: string;
   difficulty: number; // 1-10 seed difficulty
   band: 'foundational' | 'core' | 'advanced';
@@ -282,11 +302,14 @@ export function isSimplifiedFractionForm(input: string): boolean {
 
 // ---------------------------------------------------------------------------
 // Pre-pilot item bank.
-//   - FR.06 (Add unlike denominators): 24 items (12 original v0.1 + 12 new
-//     in v0.3). Bands: 5 foundational, 11 core, 8 advanced.
-//   - FR.07 (Subtract unlike denominators): 20 items, all new in v0.4.
-//     Bands: 4 foundational, 12 core, 4 advanced.
-// Total bank: 44 items across 2 skills.
+//   - FR.02 (Visualise):                  12 items, all new in v0.5.
+//   - FR.03 (Equivalent fractions):       12 items, all new in v0.5.
+//   - FR.04 (Mixed/improper):             12 items, all new in v0.5.
+//   - FR.05 (Like denominators):          12 items, all new in v0.5.
+//   - FR.06 (Add unlike denominators):    24 items (v0.1 + v0.3).
+//   - FR.07 (Subtract unlike denominators):20 items (v0.4).
+//   - FR.08 (Word problems):              12 items, all new in v0.5.
+// Total bank: 104 items across 7 skills (Class 6 Fractions Module).
 // ---------------------------------------------------------------------------
 export const ITEMS: Item[] = [
   // ----- Original 12 (v0.1) -----
@@ -1299,6 +1322,1285 @@ export const ITEMS: Item[] = [
     solution:
       'Used = 5 1/4 − 1 5/6. LCM(4, 6) = 12, so 1/4 = 3/12 and 5/6 = 10/12. Now 5 3/12 − 1 10/12. Since 3/12 < 10/12, borrow: 5 3/12 = 4 15/12. Then 4 15/12 − 1 10/12 = 3 5/12 litres.',
     estimatedTimeSec: 200,
+  },
+
+  // ===== v0.5 additions: FR.02 (Represent fractions visually) =====
+  // 12 items: 4 foundational, 5 core, 3 advanced. Includes 6 visual items.
+  {
+    id: 'FR.02-01',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 1,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: { kind: 'bars', bars: [{ numerator: 1, denominator: 4, label: 'Bar A' }] },
+    stem: 'What fraction of the bar is shaded?',
+    options: [
+      { text: '1/4', misconception: 'none' },
+      { text: '1/3', misconception: 'visual_misread' },
+      { text: '4/1', misconception: 'visual_misread' },
+      { text: '3/4', misconception: 'visual_misread' },
+    ],
+    correctIndex: 0,
+    solution:
+      'The bar is split into 4 equal cells (denominator = 4) and 1 cell is shaded (numerator = 1). The fraction shaded is 1/4.',
+    estimatedTimeSec: 30,
+  },
+  {
+    id: 'FR.02-02',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: { kind: 'grid', grids: [{ rows: 1, cols: 3, shaded: 2, label: 'Square A' }] },
+    stem: 'A square is divided into 3 equal columns. 2 of them are shaded. Which fraction does this show?',
+    options: [
+      { text: '2/3', misconception: 'none' },
+      { text: '3/2', misconception: 'visual_misread' },
+      { text: '1/3', misconception: 'visual_misread' },
+      { text: '2/5', misconception: 'add_across' },
+    ],
+    correctIndex: 0,
+    solution:
+      'Total equal pieces = 3 (denominator). Shaded pieces = 2 (numerator). Fraction = 2/3.',
+    estimatedTimeSec: 30,
+  },
+  {
+    id: 'FR.02-03',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'In the fraction 3/8, what does the denominator (8) tell you?',
+    options: [
+      { text: 'How many equal parts the whole is divided into.', misconception: 'none' },
+      { text: 'How many parts are shaded.', misconception: 'conceptual_gap' },
+      { text: 'How many wholes there are.', misconception: 'conceptual_gap' },
+      { text: 'How many parts are unshaded.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 0,
+    solution:
+      'In any fraction a/b, the denominator b is the total number of equal parts the whole has been split into. The numerator a is how many of those parts the fraction picks out.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.02-04',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: { kind: 'bars', bars: [{ numerator: 3, denominator: 5, label: 'Bar B' }] },
+    stem: 'What fraction of the bar is shaded?',
+    options: [
+      { text: '5/3', misconception: 'visual_misread' },
+      { text: '3/5', misconception: 'none' },
+      { text: '3/8', misconception: 'add_across' },
+      { text: '2/5', misconception: 'visual_misread' },
+    ],
+    correctIndex: 1,
+    solution:
+      '5 equal cells in the bar (denominator). 3 are shaded (numerator). Fraction shaded = 3/5.',
+    estimatedTimeSec: 40,
+  },
+  {
+    id: 'FR.02-05',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Visual representation',
+    kind: 'numeric',
+    visual: { kind: 'grid', grids: [{ rows: 2, cols: 4, shaded: 5, label: 'Square C' }] },
+    stem:
+      'A square is divided into 8 equal cells. 5 cells are shaded. Write the fraction shaded (in any form).',
+    inputHint: 'Enter as a fraction, e.g., 5/8',
+    acceptedAnswers: ['5/8'],
+    errorPatterns: [
+      { answers: ['8/5'], misconception: 'visual_misread' },
+      { answers: ['5/3', '3/5'], misconception: 'visual_misread' },
+      { answers: ['5/13', '5/16'], misconception: 'add_across' },
+    ],
+    solution:
+      'Denominator = total equal cells = 8. Numerator = shaded cells = 5. Fraction shaded = 5/8.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.02-06',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'A circle is split into 4 unequal slices. 1 slice is shaded. Which fraction CORRECTLY describes the shaded part?',
+    options: [
+      { text: '1/4 of the circle.', misconception: 'conceptual_gap' },
+      {
+        text: 'You cannot use a single fraction here, because the slices are not equal.',
+        misconception: 'none',
+      },
+      { text: '1/3, since one out of the other three is shaded.', misconception: 'visual_misread' },
+      { text: 'The shaded slice is always 1/2.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 1,
+    solution:
+      'A fraction a/b assumes the whole is split into b EQUAL parts. If the slices are not equal, "1/4" is meaningless — you would need to measure the actual area first.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.02-07',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 2, denominator: 4, label: 'Bar X' },
+        { numerator: 1, denominator: 2, label: 'Bar Y' },
+      ],
+    },
+    stem: 'Two equal bars are shown, both with the same length. Bar X shows 2/4 shaded; Bar Y shows 1/2 shaded. Which statement is true?',
+    options: [
+      { text: 'Bar X has more shaded than Bar Y.', misconception: 'visual_misread' },
+      { text: 'Bar Y has more shaded than Bar X.', misconception: 'visual_misread' },
+      { text: 'They show the same amount because 2/4 = 1/2.', misconception: 'none' },
+      { text: 'The fractions cannot be compared.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 2,
+    solution:
+      '2 of 4 equal cells is the same area as 1 of 2 equal cells of the same whole. So 2/4 and 1/2 represent the same amount — they are equivalent fractions.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.02-08',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: { kind: 'grid', grids: [{ rows: 3, cols: 4, shaded: 7, label: 'Big square' }] },
+    stem: 'A big square is split into a 3×4 grid of 12 equal cells. 7 are shaded. What fraction is shaded?',
+    options: [
+      { text: '7/12', misconception: 'none' },
+      { text: '12/7', misconception: 'visual_misread' },
+      { text: '5/12', misconception: 'visual_misread' },
+      { text: '7/19', misconception: 'add_across' },
+    ],
+    correctIndex: 0,
+    solution:
+      'Total cells = 3 × 4 = 12. Shaded = 7. Fraction = 7/12.',
+    estimatedTimeSec: 50,
+  },
+  {
+    id: 'FR.02-09',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'Riya says "1/3 is bigger than 1/4 because 4 is bigger than 3." Is she right?',
+    options: [
+      { text: 'Yes, the bigger denominator means a bigger fraction.', misconception: 'conceptual_gap' },
+      { text: 'No. 1/3 IS bigger than 1/4, but the reason is that the whole is split into FEWER pieces, so each piece is bigger.', misconception: 'none' },
+      { text: 'No. 1/4 is bigger than 1/3 because 4 > 3.', misconception: 'conceptual_gap' },
+      { text: 'You cannot compare them without a calculator.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Both fractions take 1 part. 1/3 splits the whole into 3 equal parts (each 1/3 of the whole). 1/4 splits it into 4 equal parts (each smaller). So 1/3 > 1/4.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.02-10',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A pizza is cut into 8 equal slices. Aarav eats 3 slices and Bhavna eats 2 slices. What fraction of the pizza was eaten in all?',
+    options: [
+      { text: '5/8', misconception: 'none' },
+      { text: '5/16', misconception: 'add_across' },
+      { text: '3/8', misconception: 'visual_misread' },
+      { text: '8/5', misconception: 'visual_misread' },
+    ],
+    correctIndex: 0,
+    solution:
+      'Slices eaten = 3 + 2 = 5 out of 8 equal slices. Fraction eaten = 5/8.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.02-11',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 7,
+    band: 'advanced',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    stem:
+      'On a number line from 0 to 1 split into 5 equal parts, where does 3/5 sit?',
+    options: [
+      { text: 'At the third tick after 0 (3 of 5 parts of the way to 1).', misconception: 'none' },
+      { text: 'At the second tick after 0.', misconception: 'visual_misread' },
+      { text: 'Past 1, because 3 is more than 1.', misconception: 'conceptual_gap' },
+      { text: 'At the very first tick after 0.', misconception: 'visual_misread' },
+    ],
+    correctIndex: 0,
+    solution:
+      'The line from 0 to 1 has 5 equal parts. 3/5 means 3 of those 5 parts, so the third tick after 0.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.02-12',
+    skillId: 'FR.02',
+    skillName: 'Represent fractions visually',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A rectangular field is divided into 10 equal plots. 4 plots are used for tomatoes and 3 for chillies. What fraction of the field is NOT yet used?',
+    options: [
+      { text: '7/10', misconception: 'operation_confusion' },
+      { text: '3/10', misconception: 'none' },
+      { text: '1/10', misconception: 'arithmetic_slip' },
+      { text: '4/10', misconception: 'visual_misread' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Used = 4 + 3 = 7 plots out of 10. Not used = 10 − 7 = 3. Fraction = 3/10.',
+    estimatedTimeSec: 90,
+  },
+
+  // ===== v0.5 additions: FR.03 (Equivalent fractions) =====
+  // 12 items: 4 foundational, 5 core, 3 advanced. Includes 1 visual item.
+  {
+    id: 'FR.03-01',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Fill in the blank: 1/2 = ?/4',
+    options: [
+      { text: '1', misconception: 'incomplete_conversion' },
+      { text: '2', misconception: 'none' },
+      { text: '4', misconception: 'arithmetic_slip' },
+      { text: '8', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Multiply both top and bottom of 1/2 by 2: (1×2)/(2×2) = 2/4. So the missing numerator is 2.',
+    estimatedTimeSec: 30,
+  },
+  {
+    id: 'FR.03-02',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 1, denominator: 2, label: 'Bar A: 1/2' },
+        { numerator: 2, denominator: 4, label: 'Bar B: 2/4' },
+      ],
+    },
+    stem: 'The two equal bars below are shaded as shown. What does this picture tell us about 1/2 and 2/4?',
+    options: [
+      { text: '1/2 is bigger than 2/4.', misconception: 'visual_misread' },
+      { text: '2/4 is bigger than 1/2.', misconception: 'visual_misread' },
+      { text: '1/2 and 2/4 are equivalent — they shade the same amount.', misconception: 'none' },
+      { text: 'They cannot be compared because the denominators differ.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 2,
+    solution:
+      'Both bars shade the same area of the same whole. So 1/2 = 2/4 — they are equivalent fractions.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.03-03',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Fill in the blank: 2/3 = ?/6',
+    options: [
+      { text: '2', misconception: 'incomplete_conversion' },
+      { text: '3', misconception: 'arithmetic_slip' },
+      { text: '4', misconception: 'none' },
+      { text: '6', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 2,
+    solution:
+      'Denominator multiplied by 2 (3 → 6), so multiply numerator by the same: 2 × 2 = 4. Hence 2/3 = 4/6.',
+    estimatedTimeSec: 30,
+  },
+  {
+    id: 'FR.03-04',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'Why is multiplying both the top and bottom of a fraction by the same non-zero number safe?',
+    options: [
+      { text: 'Because it changes both equally and so the value stays the same.', misconception: 'none' },
+      { text: 'Because multiplying always makes the fraction bigger.', misconception: 'conceptual_gap' },
+      { text: 'Because the denominator gets bigger and the value goes down.', misconception: 'conceptual_gap' },
+      { text: 'It is not safe — it changes the fraction.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 0,
+    solution:
+      'Multiplying both numerator and denominator by the same k means we are multiplying the fraction by k/k = 1. Multiplying by 1 leaves the value unchanged.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.03-05',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Fill in the blank: 3/4 = ?/12',
+    options: [
+      { text: '3', misconception: 'incomplete_conversion' },
+      { text: '6', misconception: 'arithmetic_slip' },
+      { text: '9', misconception: 'none' },
+      { text: '12', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 2,
+    solution:
+      '4 × 3 = 12, so multiply the numerator by 3: 3 × 3 = 9. Hence 3/4 = 9/12.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.03-06',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Simplify 4/6 to its simplest form.',
+    inputHint: 'Enter as a fraction, e.g., 2/3',
+    acceptedAnswers: ['2/3'],
+    errorPatterns: [
+      { answers: ['4/6'], misconception: 'form_error' },
+      { answers: ['2/4', '1/3', '3/2'], misconception: 'incomplete_conversion' },
+    ],
+    solution:
+      'HCF(4, 6) = 2. Divide both by 2: (4÷2)/(6÷2) = 2/3.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.03-07',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Which fraction is equivalent to 5/10?',
+    options: [
+      { text: '1/2', misconception: 'none' },
+      { text: '5/2', misconception: 'incomplete_conversion' },
+      { text: '2/5', misconception: 'visual_misread' },
+      { text: '10/5', misconception: 'visual_misread' },
+    ],
+    correctIndex: 0,
+    solution:
+      'Divide both by HCF(5, 10) = 5: 5/10 = (5÷5)/(10÷5) = 1/2.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.03-08',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Simplify 12/16 to its simplest form.',
+    options: [
+      { text: '6/8', misconception: 'form_error' },
+      { text: '3/4', misconception: 'none' },
+      { text: '4/3', misconception: 'visual_misread' },
+      { text: '12/16', misconception: 'form_error' },
+    ],
+    correctIndex: 1,
+    solution:
+      'HCF(12, 16) = 4. Divide both by 4: 12/16 = 3/4.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.03-09',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Which of the following is NOT equivalent to 2/3?',
+    options: [
+      { text: '4/6', misconception: 'none' },
+      { text: '6/9', misconception: 'none' },
+      { text: '8/12', misconception: 'none' },
+      { text: '3/4', misconception: 'incomplete_conversion' },
+    ],
+    correctIndex: 3,
+    solution:
+      '4/6, 6/9 and 8/12 all reduce to 2/3 by dividing top and bottom by 2, 3, and 4 respectively. 3/4 reduces to 3/4 — it is not equivalent to 2/3.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.03-10',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Out of 20 marbles, Lakshmi has 8 blue ones. What fraction is blue, in simplest form?',
+    options: [
+      { text: '8/20', misconception: 'form_error' },
+      { text: '4/10', misconception: 'form_error' },
+      { text: '2/5', misconception: 'none' },
+      { text: '5/2', misconception: 'visual_misread' },
+    ],
+    correctIndex: 2,
+    solution:
+      '8/20 = (8÷4)/(20÷4) = 2/5. Simplest form is 2/5.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.03-11',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 7,
+    band: 'advanced',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Simplify 18/24 to its simplest form.',
+    inputHint: 'Enter as a fraction, e.g., 3/4',
+    acceptedAnswers: ['3/4'],
+    errorPatterns: [
+      { answers: ['9/12', '6/8'], misconception: 'form_error' },
+      { answers: ['18/24'], misconception: 'form_error' },
+      { answers: ['4/3'], misconception: 'visual_misread' },
+    ],
+    solution:
+      'HCF(18, 24) = 6. Divide both by 6: 18/24 = 3/4.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.03-12',
+    skillId: 'FR.03',
+    skillName: 'Equivalent fractions',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Find the equivalent fraction of 5/6 with denominator 36.',
+    options: [
+      { text: '5/36', misconception: 'incomplete_conversion' },
+      { text: '30/36', misconception: 'none' },
+      { text: '36/30', misconception: 'visual_misread' },
+      { text: '11/36', misconception: 'add_across' },
+    ],
+    correctIndex: 1,
+    solution:
+      '36 ÷ 6 = 6. Multiply numerator by 6: 5 × 6 = 30. So 5/6 = 30/36.',
+    estimatedTimeSec: 90,
+  },
+
+  // ===== v0.5 additions: FR.04 (Mixed numbers and improper fractions) =====
+  // 12 items: 4 foundational, 5 core, 3 advanced. Includes 1 visual item.
+  {
+    id: 'FR.04-01',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Convert the mixed number 1 1/2 to an improper fraction.',
+    options: [
+      { text: '1/2', misconception: 'mixed_number_error' },
+      { text: '2/2', misconception: 'mixed_number_error' },
+      { text: '3/2', misconception: 'none' },
+      { text: '11/2', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 2,
+    solution:
+      '1 1/2 = (1 × 2 + 1)/2 = 3/2. (Multiply whole part by denominator, add numerator.)',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.04-02',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Convert the improper fraction 7/2 to a mixed number.',
+    options: [
+      { text: '3 1/2', misconception: 'none' },
+      { text: '2 3/2', misconception: 'mixed_number_error' },
+      { text: '1 7/2', misconception: 'conceptual_gap' },
+      { text: '3 1/7', misconception: 'visual_misread' },
+    ],
+    correctIndex: 0,
+    solution:
+      '7 ÷ 2 = 3 remainder 1. So 7/2 = 3 1/2.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.04-03',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 4, denominator: 4, label: 'Bar 1' },
+        { numerator: 1, denominator: 4, label: 'Bar 2' },
+      ],
+    },
+    stem:
+      'The picture shows one fully shaded bar and a second bar of the same size with 1/4 shaded. As a mixed number, how much is shaded altogether?',
+    options: [
+      { text: '5/4', misconception: 'form_error' },
+      { text: '1 1/4', misconception: 'none' },
+      { text: '1 4/4', misconception: 'mixed_number_error' },
+      { text: '4 1/4', misconception: 'mixed_number_error' },
+    ],
+    correctIndex: 1,
+    solution:
+      'One whole + 1/4 of another whole = 1 1/4. As an improper fraction this is 5/4.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.04-04',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'Which statement about an improper fraction (numerator ≥ denominator) is correct?',
+    options: [
+      { text: 'It is always less than 1.', misconception: 'conceptual_gap' },
+      { text: 'It is at least 1.', misconception: 'none' },
+      { text: 'It cannot be written as a mixed number.', misconception: 'conceptual_gap' },
+      { text: 'It always equals exactly 1.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 1,
+    solution:
+      'An improper fraction has numerator ≥ denominator, so it represents one or more wholes — i.e., a value ≥ 1. It can always be rewritten as a whole number plus a proper fraction (a mixed number).',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.04-05',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Convert the mixed number 2 3/4 to an improper fraction.',
+    options: [
+      { text: '11/4', misconception: 'none' },
+      { text: '5/4', misconception: 'mixed_number_error' },
+      { text: '23/4', misconception: 'conceptual_gap' },
+      { text: '8/4', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 0,
+    solution:
+      '2 3/4 = (2 × 4 + 3)/4 = (8 + 3)/4 = 11/4.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.04-06',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Convert the improper fraction 11/3 to a mixed number.',
+    inputHint: 'Enter as a mixed number, e.g., 3 2/3',
+    acceptedAnswers: ['3 2/3'],
+    errorPatterns: [
+      { answers: ['3 1/3'], misconception: 'arithmetic_slip' },
+      { answers: ['2 3/3', '2 5/3'], misconception: 'mixed_number_error' },
+      { answers: ['11/3'], misconception: 'form_error' },
+    ],
+    solution:
+      '11 ÷ 3 = 3 remainder 2. So 11/3 = 3 2/3.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.04-07',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Convert 3 2/5 to an improper fraction.',
+    options: [
+      { text: '32/5', misconception: 'conceptual_gap' },
+      { text: '17/5', misconception: 'none' },
+      { text: '11/5', misconception: 'mixed_number_error' },
+      { text: '5/17', misconception: 'visual_misread' },
+    ],
+    correctIndex: 1,
+    solution:
+      '3 2/5 = (3 × 5 + 2)/5 = (15 + 2)/5 = 17/5.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.04-08',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Convert 17/4 to a mixed number in simplest form.',
+    inputHint: 'Enter as a mixed number, e.g., 4 1/4',
+    acceptedAnswers: ['4 1/4'],
+    errorPatterns: [
+      { answers: ['3 5/4'], misconception: 'mixed_number_error' },
+      { answers: ['4 4/1', '1 4/4'], misconception: 'mixed_number_error' },
+      { answers: ['17/4'], misconception: 'form_error' },
+    ],
+    solution:
+      '17 ÷ 4 = 4 remainder 1. So 17/4 = 4 1/4.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.04-09',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem: 'Which of the following equals 5 1/2?',
+    options: [
+      { text: '11/2', misconception: 'none' },
+      { text: '6/2', misconception: 'mixed_number_error' },
+      { text: '5/2', misconception: 'conceptual_gap' },
+      { text: '51/2', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 0,
+    solution:
+      '5 1/2 = (5 × 2 + 1)/2 = 11/2.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.04-10',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Sahil cuts each chapati into 4 equal pieces. He has 9 pieces. As a mixed number of full chapatis, how many does he have?',
+    options: [
+      { text: '2 1/4', misconception: 'none' },
+      { text: '2 4/9', misconception: 'mixed_number_error' },
+      { text: '9/4', misconception: 'form_error' },
+      { text: '4 1/2', misconception: 'visual_misread' },
+    ],
+    correctIndex: 0,
+    solution:
+      '9 ÷ 4 = 2 remainder 1, so 9/4 = 2 1/4 chapatis.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.04-11',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 7,
+    band: 'advanced',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Convert 4 5/6 to an improper fraction.',
+    options: [
+      { text: '29/6', misconception: 'none' },
+      { text: '24/6', misconception: 'mixed_number_error' },
+      { text: '9/6', misconception: 'mixed_number_error' },
+      { text: '45/6', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 0,
+    solution:
+      '4 5/6 = (4 × 6 + 5)/6 = (24 + 5)/6 = 29/6.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.04-12',
+    skillId: 'FR.04',
+    skillName: 'Mixed numbers and improper fractions',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'numeric',
+    stem:
+      'Each glass holds 1/3 litre of milk. Asha has 2 1/3 litres of milk. How many full glasses can she fill, and how many additional thirds will be left over? (Enter the answer as a single improper fraction of glasses, e.g., 7/1, where the numerator is the number of one-third-glasses worth of milk.)',
+    inputHint: 'Enter as a fraction, e.g., 7/1',
+    acceptedAnswers: ['7/1', '7'],
+    errorPatterns: [
+      { answers: ['2 1/3'], misconception: 'conceptual_gap' },
+      { answers: ['7/3'], misconception: 'mixed_number_error' },
+      { answers: ['6/1', '6'], misconception: 'arithmetic_slip' },
+    ],
+    solution:
+      '2 1/3 = 7/3 litres. Each glass is 1/3 litre, so the number of (1/3)-litre glasses she can fill is 7 (i.e., 7/1).',
+    estimatedTimeSec: 120,
+  },
+
+  // ===== v0.5 additions: FR.05 (Add and subtract with like denominators) =====
+  // 12 items: 4 foundational, 5 core, 3 advanced. Includes 1 visual item.
+  {
+    id: 'FR.05-01',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Add: 1/4 + 2/4',
+    options: [
+      { text: '3/8', misconception: 'add_across' },
+      { text: '3/4', misconception: 'none' },
+      { text: '2/4', misconception: 'arithmetic_slip' },
+      { text: '1/2', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Denominators already match. Add the numerators only: 1 + 2 = 3. Keep the denominator: 3/4.',
+    estimatedTimeSec: 30,
+  },
+  {
+    id: 'FR.05-02',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Subtract: 3/5 − 1/5',
+    options: [
+      { text: '2/0', misconception: 'subtract_across' },
+      { text: '2/5', misconception: 'none' },
+      { text: '4/5', misconception: 'operation_confusion' },
+      { text: '1/5', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Denominators match. Subtract the numerators only: 3 − 1 = 2. Keep the denominator: 2/5.',
+    estimatedTimeSec: 30,
+  },
+  {
+    id: 'FR.05-03',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 2, denominator: 5, label: 'Bar A: 2/5' },
+        { numerator: 1, denominator: 5, label: 'Bar B: 1/5' },
+      ],
+    },
+    stem: 'The two bars below show 2/5 and 1/5 of the same whole. What is the total shaded amount?',
+    options: [
+      { text: '3/10', misconception: 'add_across' },
+      { text: '3/5', misconception: 'none' },
+      { text: '2/5', misconception: 'arithmetic_slip' },
+      { text: '1/5', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Denominators are the same, so the cells are the same size. Total shaded cells = 2 + 1 = 3 out of 5 cells of the same whole. So 2/5 + 1/5 = 3/5.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.05-04',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'When you add two fractions that already have the same denominator, why does the denominator stay the same?',
+    options: [
+      { text: 'Because the size of each piece does not change — only how many pieces you have.', misconception: 'none' },
+      { text: 'Because you should add denominators too.', misconception: 'add_across' },
+      { text: 'Because the denominator is always 1.', misconception: 'conceptual_gap' },
+      { text: 'You should subtract denominators when adding.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 0,
+    solution:
+      'The denominator labels the size of each equal piece. Adding more pieces of the same size keeps the size the same; only the count (the numerator) changes.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.05-05',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 5/8 + 3/8.',
+    options: [
+      { text: '8/16', misconception: 'add_across' },
+      { text: '1', misconception: 'none' },
+      { text: '8/8', misconception: 'form_error' },
+      { text: '15/8', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      '5/8 + 3/8 = (5 + 3)/8 = 8/8 = 1.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.05-06',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Compute 7/10 − 3/10. Give your answer in simplest form.',
+    inputHint: 'Enter as a fraction, e.g., 2/5',
+    acceptedAnswers: ['2/5'],
+    errorPatterns: [
+      { answers: ['4/10'], misconception: 'form_error' },
+      { answers: ['4/0'], misconception: 'subtract_across' },
+      { answers: ['10/10', '1'], misconception: 'operation_confusion' },
+    ],
+    solution:
+      '7/10 − 3/10 = 4/10 = 2/5 in simplest form.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.05-07',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 5/6 − 2/6 in simplest form.',
+    options: [
+      { text: '3/0', misconception: 'subtract_across' },
+      { text: '1/2', misconception: 'none' },
+      { text: '3/6', misconception: 'form_error' },
+      { text: '7/6', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      '5/6 − 2/6 = 3/6 = 1/2 in simplest form.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.05-08',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 2/3 + 2/3. Give your answer as a mixed number in simplest form.',
+    options: [
+      { text: '4/6', misconception: 'add_across' },
+      { text: '4/3', misconception: 'form_error' },
+      { text: '1 1/3', misconception: 'none' },
+      { text: '1 1/6', misconception: 'mixed_number_error' },
+    ],
+    correctIndex: 2,
+    solution:
+      '2/3 + 2/3 = 4/3 = 1 1/3.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.05-09',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Out of an 8-slice pizza, Vivaan eats 3 slices and Mira eats 2. What fraction of the pizza is left?',
+    options: [
+      { text: '5/8', misconception: 'operation_confusion' },
+      { text: '3/8', misconception: 'none' },
+      { text: '5/16', misconception: 'add_across' },
+      { text: '8/8', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Eaten = 3/8 + 2/8 = 5/8. Left = 8/8 − 5/8 = 3/8.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.05-10',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Compute 9/12 − 3/12. Give your answer in simplest form.',
+    inputHint: 'Enter as a fraction, e.g., 1/2',
+    acceptedAnswers: ['1/2'],
+    errorPatterns: [
+      { answers: ['6/12'], misconception: 'form_error' },
+      { answers: ['6/0'], misconception: 'subtract_across' },
+      { answers: ['12/12', '1'], misconception: 'operation_confusion' },
+      { answers: ['3/4'], misconception: 'arithmetic_slip' },
+    ],
+    solution:
+      '9/12 − 3/12 = 6/12 = 1/2 in simplest form.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.05-11',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 7,
+    band: 'advanced',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 1 2/5 + 1/5.',
+    options: [
+      { text: '1 3/5', misconception: 'none' },
+      { text: '1 3/10', misconception: 'add_across' },
+      { text: '2 3/5', misconception: 'mixed_number_error' },
+      { text: '2/5', misconception: 'mixed_number_error' },
+    ],
+    correctIndex: 0,
+    solution:
+      'Whole = 1, fractional = 2/5 + 1/5 = 3/5. Total = 1 3/5.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.05-12',
+    skillId: 'FR.05',
+    skillName: 'Add and subtract with like denominators',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A bottle holds 9/10 litre of juice. Aanya pours out 4/10 litre into a glass and 2/10 litre into a second glass. How much juice is left in the bottle?',
+    options: [
+      { text: '6/10 litre', misconception: 'arithmetic_slip' },
+      { text: '3/10 litre', misconception: 'none' },
+      { text: '15/10 litre', misconception: 'operation_confusion' },
+      { text: '6/30 litre', misconception: 'add_across' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Poured out = 4/10 + 2/10 = 6/10. Left = 9/10 − 6/10 = 3/10 litre.',
+    estimatedTimeSec: 90,
+  },
+
+  // ===== v0.5 additions: FR.08 (Fraction word problems) =====
+  // 12 items: 4 foundational, 5 core, 3 advanced. All word problems.
+  {
+    id: 'FR.08-01',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A ribbon is 1/2 metre long. Another ribbon is 1/2 metre long. What is the total length when joined end to end?',
+    options: [
+      { text: '1 metre', misconception: 'none' },
+      { text: '1/4 metre', misconception: 'operation_confusion' },
+      { text: '2/4 metre', misconception: 'add_across' },
+      { text: '2/2 metre', misconception: 'form_error' },
+    ],
+    correctIndex: 0,
+    solution:
+      '1/2 + 1/2 = 2/2 = 1. Total = 1 metre.',
+    estimatedTimeSec: 30,
+  },
+  {
+    id: 'FR.08-02',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Jaya has 3/4 of a chocolate bar. She eats 1/4 of the bar. How much is left?',
+    options: [
+      { text: '4/4', misconception: 'operation_confusion' },
+      { text: '1/2', misconception: 'none' },
+      { text: '2/0', misconception: 'subtract_across' },
+      { text: '1/4', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 1,
+    solution:
+      '3/4 − 1/4 = 2/4 = 1/2 of the bar.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.08-03',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A jug holds 1/3 litre of water. A second jug holds 1/3 litre. Together, do the two jugs hold less than, equal to, or more than 1 litre?',
+    options: [
+      { text: 'Less than 1 litre.', misconception: 'none' },
+      { text: 'Exactly 1 litre.', misconception: 'arithmetic_slip' },
+      { text: 'More than 1 litre.', misconception: 'conceptual_gap' },
+      { text: 'You cannot tell without more information.', misconception: 'conceptual_gap' },
+    ],
+    correctIndex: 0,
+    solution:
+      '1/3 + 1/3 = 2/3 of a litre, which is less than 1 litre.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.08-04',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'Rohan walks 3/4 km to school and his friend walks 1/4 km. The question asks: "How much further does Rohan walk?" Which operation should you use?',
+    options: [
+      { text: 'Add: 3/4 + 1/4.', misconception: 'operation_confusion' },
+      { text: 'Subtract: 3/4 − 1/4.', misconception: 'none' },
+      { text: 'Multiply: 3/4 × 1/4.', misconception: 'operation_confusion' },
+      { text: 'Divide: 3/4 ÷ 1/4.', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      '"How much further" asks for the difference, so subtract: 3/4 − 1/4 = 1/2 km.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.08-05',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Anita drinks 1/4 litre of milk in the morning and 1/2 litre in the evening. How much milk does she drink in all?',
+    options: [
+      { text: '2/6 litre', misconception: 'add_across' },
+      { text: '3/4 litre', misconception: 'none' },
+      { text: '2/4 litre', misconception: 'incomplete_conversion' },
+      { text: '1/4 litre', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      '1/4 + 1/2 = 1/4 + 2/4 = 3/4 litre.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.08-06',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A piece of cloth is 2 1/2 metres long. The tailor uses 1 1/4 metres for a shirt. How much cloth is left?',
+    options: [
+      { text: '1 1/4 m', misconception: 'none' },
+      { text: '1 3/4 m', misconception: 'operation_confusion' },
+      { text: '1 1/2 m', misconception: 'mixed_number_error' },
+      { text: '3 3/4 m', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 0,
+    solution:
+      '2 1/2 − 1 1/4 = 2 2/4 − 1 1/4 = 1 1/4 m.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.08-07',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'numeric',
+    stem:
+      'Aman ate 2/8 of a cake and his sister ate 3/8. What fraction of the cake is left? Give your answer in simplest form.',
+    inputHint: 'Enter as a fraction, e.g., 3/8',
+    acceptedAnswers: ['3/8'],
+    errorPatterns: [
+      { answers: ['5/8'], misconception: 'operation_confusion' },
+      { answers: ['1/8'], misconception: 'arithmetic_slip' },
+      { answers: ['5/16'], misconception: 'add_across' },
+    ],
+    solution:
+      'Eaten = 2/8 + 3/8 = 5/8. Left = 8/8 − 5/8 = 3/8.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.08-08',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Ravi spent 1/3 of his pocket money on a comic book and 1/4 on stickers. What fraction of his pocket money is left?',
+    options: [
+      { text: '5/12', misconception: 'none' },
+      { text: '7/12', misconception: 'operation_confusion' },
+      { text: '2/7', misconception: 'add_across' },
+      { text: '1/2', misconception: 'arithmetic_slip' },
+    ],
+    correctIndex: 0,
+    solution:
+      'Spent = 1/3 + 1/4. LCM(3, 4) = 12. So 1/3 = 4/12 and 1/4 = 3/12. Spent = 7/12. Left = 12/12 − 7/12 = 5/12.',
+    estimatedTimeSec: 100,
+  },
+  {
+    id: 'FR.08-09',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A water tank is 2/3 full. Another 1/6 of the tank is filled with water from a pipe. What fraction of the tank is now filled?',
+    options: [
+      { text: '3/9', misconception: 'add_across' },
+      { text: '5/6', misconception: 'none' },
+      { text: '1/2', misconception: 'arithmetic_slip' },
+      { text: '1/3', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      '2/3 + 1/6 = 4/6 + 1/6 = 5/6.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.08-10',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Geeta scored 7/10 in a Maths test and 4/5 in a Science test. By how much did her Science score exceed her Maths score?',
+    options: [
+      { text: '3/5', misconception: 'incomplete_conversion' },
+      { text: '1/10', misconception: 'none' },
+      { text: '11/10', misconception: 'operation_confusion' },
+      { text: '3/0', misconception: 'subtract_across' },
+    ],
+    correctIndex: 1,
+    solution:
+      '4/5 = 8/10. Difference = 8/10 − 7/10 = 1/10.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.08-11',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 7,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Karan finished 1/3 of his project on Monday, 1/4 on Tuesday, and 1/6 on Wednesday. How much of the project is left to do?',
+    options: [
+      { text: '3/13', misconception: 'add_across' },
+      { text: '3/4', misconception: 'arithmetic_slip' },
+      { text: '1/4', misconception: 'none' },
+      { text: '7/12', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 2,
+    solution:
+      'Done = 1/3 + 1/4 + 1/6. LCM(3,4,6) = 12. So 1/3 = 4/12, 1/4 = 3/12, 1/6 = 2/12. Sum = 9/12. Left = 12/12 − 9/12 = 3/12 = 1/4.',
+    estimatedTimeSec: 120,
+  },
+  {
+    id: 'FR.08-12',
+    skillId: 'FR.08',
+    skillName: 'Fraction word problems',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'numeric',
+    stem:
+      'A jug contains 3 1/2 litres of juice. Two friends drink 1 1/4 litres in total. How much juice is left? Give your answer as a mixed number in simplest form.',
+    inputHint: 'Enter as a mixed number, e.g., 2 1/4',
+    acceptedAnswers: ['2 1/4', '9/4'],
+    errorPatterns: [
+      { answers: ['2 1/2'], misconception: 'arithmetic_slip' },
+      { answers: ['4 3/4'], misconception: 'operation_confusion' },
+      { answers: ['1 1/4'], misconception: 'mixed_number_error' },
+    ],
+    solution:
+      '3 1/2 − 1 1/4 = 3 2/4 − 1 1/4 = 2 1/4 litres left.',
+    estimatedTimeSec: 150,
   },
 ];
 

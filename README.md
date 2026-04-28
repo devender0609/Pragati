@@ -1,11 +1,12 @@
 # Pragati — Growth Assessment Prototype
 
-A pre-pilot prototype adaptive assessment for CBSE Class 6 Math. As of
-v0.4 this MVP exercises **two related skills** — FR.06 ("Add fractions
-with unlike denominators") and FR.07 ("Subtract fractions with unlike
-denominators") — over a **44-item bank** (24 FR.06 + 20 FR.07) with mixed
-item types (MCQ, numeric entry, visual fraction bars and area grids), and
-demonstrates:
+A pre-pilot prototype adaptive assessment **and Learn module** for CBSE
+Class 6 Math. As of v0.5 this MVP covers the **complete Class 6
+Fractions Module** — seven skills (FR.02, FR.03, FR.04, FR.05, FR.06,
+FR.07, FR.08) — over a **104-item bank** with mixed item types (MCQ,
+numeric entry, visual fraction bars and area grids), plus a Learn
+section with a reteach lesson, visual explanation, five practice
+questions, and teacher / parent notes for every skill, and demonstrates:
 
 1. a simple adaptive routing rule that picks the next item based on the
    previous answer,
@@ -69,7 +70,59 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.4)
+## What this version adds (v0.5)
+
+The headline change in v0.5 is that Pragati now covers the **complete
+Class 6 Fractions Module**, with a Learn section alongside the
+assessment.
+
+- **Five new skill banks (60 new items).**
+  - **FR.02 — Represent fractions visually** (12 items, 6 visual)
+  - **FR.03 — Equivalent fractions** (12 items)
+  - **FR.04 — Mixed numbers and improper fractions** (12 items)
+  - **FR.05 — Add and subtract with like denominators** (12 items)
+  - **FR.08 — Fraction word problems** (12 items)
+  Each bank follows the same gold-standard schema (id, skillId,
+  difficulty, band, cognitiveType, MCQ options or numeric answer,
+  misconception-tagged distractors, worked solution, estimated time)
+  and spans foundational / core / advanced bands. The module total is
+  now 104 items across 7 skills.
+- **Learn section.** A new top-level **Learn** view in the navigation
+  opens the Fractions Module dashboard, with one card per skill. Each
+  card opens a Learn page with: a **short reteach lesson** (numbered
+  steps), a **visual explanation** (inline fraction-bar or area-grid
+  diagram with caption), **5 hand-picked practice questions** (with
+  show/hide solutions), a **teacher intervention note**, and a
+  **parent-friendly home-practice note**.
+- **Skill cards and Fractions Module dashboard.** The dashboard shows
+  every skill with its prerequisites, item count, and quick links to
+  Learn or to a single-skill assessment. There's also a
+  Mixed Fractions Assessment shortcut at the top.
+- **Skill-aware band copy and prerequisites.** Performance-band
+  descriptions are now per-skill for all 7 skills (an FR.04
+  Foundational student gets pointed at FR.02/FR.03 prereqs, an FR.08
+  Foundational student at FR.05/FR.06/FR.07, and so on). Static
+  prereqs follow the curriculum tree: FR.02 → FR.03 → FR.04 → FR.05 →
+  FR.06 / FR.07 → FR.08.
+- **Polished landing and mobile layout.** New gradient hero with
+  feature cards, a teaser strip of skill cards, sticky condensed nav
+  on mobile, and a more confident "what this is / what this is not"
+  block. Skill picker on the StartForm is now a dropdown (cleaner with
+  8 modes) with the per-mode description shown live.
+- **Class dashboard skill filter expanded.** The teacher's class
+  dashboard skill filter now offers all 7 skills plus "all". Mixed-mode
+  sessions are still included for any single-skill view, contributing
+  only their relevant responses.
+- **No data migration.** Old v0.3 / v0.4 sessions (with `skillId` =
+  `'FR.06'`, `'FR.07'`, or `'mixed'`) load unchanged; mixed-mode
+  sessions are still backwards-compatible because mixed now just means
+  "across the whole module".
+
+What v0.5 deliberately does NOT do, per the brief: no other classes (only
+Class 6), no English (only Maths), no Supabase (still localStorage-only),
+no claim of official CBSE alignment or validated scoring.
+
+## What v0.4 added
 
 The headline change in v0.4 is that the assessment is no longer a single
 skill. Pragati now covers **two related skills**, with shared
@@ -304,7 +357,8 @@ cbse-growth-app/
     ├── types.ts                 # Student, Session, Response, AssessmentWindow, SkillId, SkillMode
     ├── vite-env.d.ts
     ├── data/
-    │   └── items.ts             # 44 items (24 FR.06 + 20 FR.07; MCQ + numeric entry + visual specs)
+    │   ├── items.ts             # 104 items across 7 fraction skills (MCQ + numeric entry + visual specs)
+    │   └── lessons.ts           # Per-skill Learn content (reteach + visual + practice + teacher/parent notes)
     └── lib/
         ├── adaptiveEngine.ts    # session-pool sampling (skill-aware), next-item selection, ability update, stop rule
         ├── scoring.ts           # bands (per-skill), misconception aggregation, per-skill summaries, composite change indicator, prerequisite recommendations
@@ -417,7 +471,7 @@ regression.
 This prototype is the beginning, not the end. Before any student sees this
 outside a pilot setting, the following are required:
 
-1. **Teacher validation of the 44 items.** A CBSE Class 6 math teacher
+1. **Teacher validation of the 104 items.** A CBSE Class 6 math teacher
    should read every stem, every option, every accepted numeric answer,
    and every worked solution across both FR.06 and FR.07. Register,
    phrasing, and context (names, units, everyday scenes) must feel

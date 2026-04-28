@@ -75,34 +75,78 @@ export type Response = {
 };
 
 // ---------------------------------------------------------------------------
-// Skills
+// Skills (Class 6 Fractions Module)
 // ---------------------------------------------------------------------------
-// Each Item belongs to exactly one skill. A Session can target one skill or
-// a "mixed" pool drawn from both. Old (v0.3) sessions in localStorage have
-// skillId === 'FR.06' which is still a valid SkillMode, so no migration is
-// required.
+// As of v0.5 the bank covers seven fraction skills. A Session can target one
+// skill or a "mixed" pool drawn across the whole module. Old (v0.3/v0.4)
+// sessions in localStorage have skillId === 'FR.06', 'FR.07', or 'mixed',
+// all still valid SkillMode values, so no migration is required.
 
-export type SkillId = 'FR.06' | 'FR.07';
+export type SkillId =
+  | 'FR.02'
+  | 'FR.03'
+  | 'FR.04'
+  | 'FR.05'
+  | 'FR.06'
+  | 'FR.07'
+  | 'FR.08';
 export type SkillMode = SkillId | 'mixed';
 
+// Ordered for consistent UI rendering across the Fractions Module
+// (Learn dashboard, skill cards, dropdowns).
+export const SKILL_IDS_ORDERED: SkillId[] = [
+  'FR.02',
+  'FR.03',
+  'FR.04',
+  'FR.05',
+  'FR.06',
+  'FR.07',
+  'FR.08',
+];
+
 export const SKILL_LABELS: Record<SkillId, string> = {
+  'FR.02': 'Represent fractions visually',
+  'FR.03': 'Equivalent fractions',
+  'FR.04': 'Mixed numbers and improper fractions',
+  'FR.05': 'Add and subtract with like denominators',
   'FR.06': 'Add fractions with unlike denominators',
   'FR.07': 'Subtract fractions with unlike denominators',
+  'FR.08': 'Fraction word problems',
+};
+
+// Short labels used on chips, dropdowns, and table cells.
+export const SKILL_SHORT_LABELS: Record<SkillId, string> = {
+  'FR.02': 'FR.02 — Visualise',
+  'FR.03': 'FR.03 — Equivalent',
+  'FR.04': 'FR.04 — Mixed/Improper',
+  'FR.05': 'FR.05 — Like denominators',
+  'FR.06': 'FR.06 — Add unlike',
+  'FR.07': 'FR.07 — Subtract unlike',
+  'FR.08': 'FR.08 — Word problems',
 };
 
 export const SKILL_MODE_LABELS: Record<SkillMode, string> = {
-  'FR.06': 'FR.06 — Add unlike',
-  'FR.07': 'FR.07 — Subtract unlike',
-  mixed: 'Mixed (FR.06 + FR.07)',
+  ...SKILL_SHORT_LABELS,
+  mixed: 'Mixed Fractions Assessment',
 };
 
 export const SKILL_MODE_DESCRIPTIONS: Record<SkillMode, string> = {
+  'FR.02':
+    'Adaptive session drawn only from the FR.02 bank (reading and representing fractions on visual models).',
+  'FR.03':
+    'Adaptive session drawn only from the FR.03 bank (equivalent fractions and simplifying).',
+  'FR.04':
+    'Adaptive session drawn only from the FR.04 bank (mixed numbers and improper fractions).',
+  'FR.05':
+    'Adaptive session drawn only from the FR.05 bank (adding and subtracting with like denominators).',
   'FR.06':
     'Adaptive session drawn only from the FR.06 bank (adding fractions with unlike denominators).',
   'FR.07':
     'Adaptive session drawn only from the FR.07 bank (subtracting fractions with unlike denominators).',
+  'FR.08':
+    'Adaptive session drawn only from the FR.08 bank (multi-step word problems on fractions).',
   mixed:
-    'Mixed-skill session. Items are drawn from both FR.06 and FR.07 banks; the per-skill breakdown appears on the results screen.',
+    'Mixed-skill session. Items are drawn from across the whole Class 6 Fractions Module; the per-skill breakdown appears on the results screen.',
 };
 
 // ---------------------------------------------------------------------------
