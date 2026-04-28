@@ -1,25 +1,33 @@
 # Pragati — Growth Assessment Prototype
 
-A pre-pilot prototype adaptive assessment for CBSE Class 6 Math. This MVP
-exercises **one skill** — FR.06, "Add fractions with unlike denominators" —
-over a **24-item bank** with mixed item types (MCQ, numeric entry, visual
-fraction bars and area grids), and demonstrates:
+A pre-pilot prototype adaptive assessment for CBSE Class 6 Math. As of
+v0.4 this MVP exercises **two related skills** — FR.06 ("Add fractions
+with unlike denominators") and FR.07 ("Subtract fractions with unlike
+denominators") — over a **44-item bank** (24 FR.06 + 20 FR.07) with mixed
+item types (MCQ, numeric entry, visual fraction bars and area grids), and
+demonstrates:
 
 1. a simple adaptive routing rule that picks the next item based on the
    previous answer,
 2. **per-student session history** (multiple sessions per student, never
    overwritten),
 3. **a stratified random session pool** so two attempts by the same student
-   draw a different 10-item subset of the 24-item bank,
-4. **a composite, hedged change indicator** that compares the most recent
-   session to the prior session on three dimensions (accuracy, average
-   difficulty attempted, misconception rate) with an explicit confidence
-   band,
-5. a student-facing results page with a performance band and likely
-   misconception patterns, and
-6. a teacher-facing dashboard with a student list, growth history, item-by-item
-   responses, error tags, suggested next teaching steps, recommended
-   prerequisite skills, an "Export data (JSON)" download, and a destructive
+   draw a different 10-item subset of the relevant skill bank,
+4. **a skill picker** at session start (FR.06, FR.07, or a mixed
+   FR.06+FR.07 session), with per-skill accuracy breakdowns on the
+   results screen for mixed sessions and a same-skill-only growth
+   comparison on every session,
+5. **a composite, hedged change indicator** that compares the most recent
+   session to the most recent prior session **on the same skill mode**
+   (so an FR.06 baseline isn't compared against an FR.07 mid-year) on
+   three dimensions (accuracy, average difficulty attempted, misconception
+   rate) with an explicit confidence band,
+6. a student-facing results page with a performance band, per-skill
+   accuracy (for mixed sessions), and likely misconception patterns, and
+7. a teacher-facing dashboard with a student list, growth history,
+   item-by-item responses, error tags, suggested next teaching steps,
+   recommended prerequisite skills, an "Export data (JSON)" download, a
+   class roll-up dashboard with a **per-skill filter**, and a destructive
    delete-student affordance.
 
 It is built in React + Vite + TypeScript + Tailwind CSS, has no backend, and
@@ -49,10 +57,10 @@ deploys to Vercel out of the box.
   conservative — "prototype estimate", "pre-pilot", "seed difficulty",
   "prototype change indicator", "early signal, not calibrated growth".
 - **Not a validated growth metric.** The change indicator is a normalised
-  composite of three heuristics on a 24-item bank and is reported with an
-  explicit "low" or "moderate" confidence band. It is useful as a
-  conversation starter; it is not a validated growth score and is not
-  RIT-equivalent.
+  composite of three heuristics on a small per-skill bank (24 items for
+  FR.06, 20 for FR.07) and is reported with an explicit "low" or
+  "moderate" confidence band. It is useful as a conversation starter; it
+  is not a validated growth score and is not RIT-equivalent.
 - **Not validated.** Items have not been through a full teacher-validation
   review or a student cognitive lab yet. They should be before any real
   student sees them.
@@ -61,7 +69,54 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.3.2)
+## What this version adds (v0.4)
+
+The headline change in v0.4 is that the assessment is no longer a single
+skill. Pragati now covers **two related skills**, with shared
+infrastructure for adding more later:
+
+- **New skill bank: FR.07 — Subtract fractions with unlike denominators.**
+  20 new items spanning the same gold-standard schema as FR.06: 4
+  foundational (difficulty 2–3), 12 core (difficulty 4–6), 4 advanced
+  (difficulty 7–9). Includes 3 visual items (fraction bars and an area
+  grid), 4 numeric-entry items, 5 word problems, and 4 mixed-number
+  subtractions of which 3 require borrowing. Every distractor and every
+  numeric error pattern is tagged with a misconception code.
+- **Two new misconception codes.** `subtract_across` (mirror of
+  `add_across` — the student subtracts numerators and denominators
+  separately, e.g., 3/4 − 1/2 = 2/2) and `borrowing_error` (in
+  mixed-number subtraction, the student avoids the borrow by subtracting
+  the smaller fractional part from the larger, e.g., 3 1/4 − 1 3/4 = 2
+  1/2). Both have full teacher-facing "next step" guidance.
+- **Skill picker at session start.** The Start form now asks the teacher
+  which skill bank to draw from: FR.06 only, FR.07 only, or a **mixed
+  session** that draws from both banks together. Mixed sessions are
+  routed by the same stratified pool builder; the only thing that
+  changes is which items are eligible.
+- **Per-skill breakdown on results.** A mixed session's results screen
+  splits accuracy by skill so the teacher can see, for example, that the
+  student is solid on FR.06 but stuck on FR.07. The same breakdown
+  appears in the teacher's per-student detail view.
+- **Skill-aware growth comparison.** The growth card and Δ-vs-previous
+  column on the growth-history table now compare a session only against
+  prior sessions in the **same skill mode**. This is the most important
+  correctness change in v0.4: a per-skill accuracy delta computed across
+  different skills was not meaningful.
+- **Class dashboard skill filter.** The teacher's class dashboard has a
+  new dropdown to scope the entire roll-up — average accuracy,
+  misconception distribution, hardest items — to FR.06 responses,
+  FR.07 responses, or all responses. Mixed-mode sessions are included
+  for either single-skill view, but only the responses for that skill
+  count toward the aggregate.
+- **Skill-aware band copy and prerequisite mapping.** Performance-band
+  descriptions are now per-skill (an FR.07 "Foundational" student is
+  pointed at FR.05 + FR.06, not at FR.06 prereqs), and the new
+  misconception codes have their own prerequisite recommendations.
+- **No data migration required.** Old v0.3 sessions are stored with
+  `skillId: 'FR.06'`, which is still a valid `SkillMode`. They render
+  unchanged in v0.4 with an `FR.06 — Add unlike` chip on every row.
+
+## What v0.3.2 added
 
 Two interpretation-quality changes on top of v0.3.1:
 
@@ -243,16 +298,17 @@ cbse-growth-app/
 ├── vite.config.ts
 ├── README.md
 └── src/
-    ├── App.tsx                  # all views (landing, start form, assessment, results, teacher list, student detail)
+    ├── App.tsx                  # all views (landing, start form, assessment, results, teacher list, student detail, class dashboard)
     ├── main.tsx                 # React entry point
     ├── index.css                # Tailwind layers + component utilities
-    ├── types.ts                 # Student, Session, Response, AssessmentWindow
+    ├── types.ts                 # Student, Session, Response, AssessmentWindow, SkillId, SkillMode
     ├── vite-env.d.ts
     ├── data/
-    │   └── items.ts             # 24 FR.06 items (MCQ + numeric entry + visual specs)
+    │   └── items.ts             # 44 items (24 FR.06 + 20 FR.07; MCQ + numeric entry + visual specs)
     └── lib/
-        ├── adaptiveEngine.ts    # session-pool sampling, next-item selection, ability update, stop rule
-        ├── scoring.ts           # bands, misconception aggregation, composite change indicator, prerequisite recommendations
+        ├── adaptiveEngine.ts    # session-pool sampling (skill-aware), next-item selection, ability update, stop rule
+        ├── scoring.ts           # bands (per-skill), misconception aggregation, per-skill summaries, composite change indicator, prerequisite recommendations
+        ├── classDashboard.ts    # class-level aggregator (with optional skill filter)
         └── storage.ts           # localStorage CRUD for students + sessions, delete + export bundle
 ```
 
@@ -262,38 +318,45 @@ A **Student** stores an id, name, grade, optional school, and createdAt.
 
 A **Session** stores an id, the studentId, a snapshot of the student's
 attributes at the time of the attempt, the assessment window
-(`baseline | midyear | endyear | practice`), the skillId, startedAt /
-completedAt timestamps, every individual response, and the final running
-ability estimate.
+(`baseline | midyear | endyear | practice`), the **skill mode**
+(`'FR.06' | 'FR.07' | 'mixed'` — field name kept as `skillId` for v0.3
+backwards compatibility), startedAt / completedAt timestamps, every
+individual response, and the final running ability estimate.
 
 An **Item** is a discriminated union of `MCQItem` and `NumericItem`.
-Both share `stem`, `difficulty` (1–10), `band`, `cognitiveType`, optional
-`visual` (fraction bars or area grid), and a worked `solution`. MCQ items
-add four `options` — each tagged with the misconception code it
-represents — and a `correctIndex`. Numeric items add `acceptedAnswers`,
-named `errorPatterns` (each with its own misconception tag), and an
+Both share `id`, `skillId` (`'FR.06' | 'FR.07'`), `stem`, `difficulty`
+(1–10), `band`, `cognitiveType`, optional `visual` (fraction bars or
+area grid), and a worked `solution`. MCQ items add four `options` —
+each tagged with the misconception code it represents — and a
+`correctIndex`. Numeric items add `acceptedAnswers`, named
+`errorPatterns` (each with its own misconception tag), and an
 `inputHint`.
 
-Misconception codes include `add_across`, `incomplete_conversion`,
-`product_not_lcm`, `operation_confusion`, `mixed_number_error`,
-`conceptual_gap`, `form_error`, `arithmetic_slip`, and the new
-`visual_misread`. Each code has a human label, a suggested next teaching
-step that the teacher dashboard surfaces, and (in `scoring.ts`) a list of
-prerequisite skills it points to.
+Misconception codes include `add_across`, **`subtract_across`**,
+`incomplete_conversion`, `product_not_lcm`, `operation_confusion`,
+`mixed_number_error`, **`borrowing_error`**, `conceptual_gap`,
+`form_error`, `arithmetic_slip`, and `visual_misread`. Each code has a
+human label, a suggested next teaching step that the teacher dashboard
+surfaces, and (in `scoring.ts`) a list of prerequisite skills it points
+to.
 
 ### Adaptive rule
 
-- **Build a session pool.** For each attempt, draw 2 foundational + 5 core
-  + 3 advanced items from the 24-item bank, preferring items this student
-  has not seen on prior attempts. If the unseen-by-band set is too small,
-  fall back to seen items in the same band so we still hit the stratified
-  target. Top up cross-band only as a last resort.
+- **Scope the bank by skill mode.** The teacher's selection on the Start
+  form (FR.06, FR.07, or mixed) restricts which items are eligible:
+  `filterItemsBySkillMode(ITEMS, mode)`. For mixed, both banks are in
+  play together.
+- **Build a session pool.** For each attempt, draw 2 foundational + 5
+  core + 3 advanced items from the eligible bank, preferring items this
+  student has not seen on prior attempts. If the unseen-by-band set is
+  too small, fall back to seen items in the same band so we still hit
+  the stratified target. Top up cross-band only as a last resort.
 - **Start at ability = 5.**
 - On a correct answer, ability += 1 (capped at 10).
 - On an incorrect answer, ability -= 1 (floored at 1).
 - **Pick the next item from the session pool** (not the full bank) whose
-  difficulty is closest to the current ability. Deterministic tiebreak by
-  item id.
+  difficulty is closest to the current ability. Deterministic tiebreak
+  by item id.
 - Stop after 10 items or when the session pool is exhausted.
 
 This is a transparent heuristic meant to demonstrate adaptive flow. It is
@@ -354,10 +417,12 @@ regression.
 This prototype is the beginning, not the end. Before any student sees this
 outside a pilot setting, the following are required:
 
-1. **Teacher validation of the 24 items.** A CBSE Class 6 math teacher
+1. **Teacher validation of the 44 items.** A CBSE Class 6 math teacher
    should read every stem, every option, every accepted numeric answer,
-   and every worked solution. Register, phrasing, and context (names,
-   units, everyday scenes) must feel natural.
+   and every worked solution across both FR.06 and FR.07. Register,
+   phrasing, and context (names, units, everyday scenes) must feel
+   natural. Pay particular attention to the new mixed-number subtraction
+   items in FR.07, where the borrowing step is the load-bearing piece.
 2. **Cognitive-lab pilot with ~5 students.** Watch students take the
    assessment and talk aloud. Which items confuse them for reasons
    unrelated to the math? Which distractors are they eliminating and which
@@ -368,21 +433,21 @@ outside a pilot setting, the following are required:
    re-tag items as needed. Resolve cross-skill contamination (e.g., the
    three-term LCM items probably over-measure LCM rather than fraction
    addition).
-4. **Add at least one more skill.** Multi-skill coverage is the only way
-   to make growth claims that are not trivially attributable to one item
-   bank. The natural next is **FR.07 — Subtract fractions with unlike
-   denominators**.
-5. **Calibration study.** Collect ~200 responses per item from a
+4. **Calibration study.** Collect ~200 responses per item from a
    representative sample of Class 6 students (the JSON export is
    structured for this). Fit a Rasch or 2PL IRT model (for example with
    `mirt` in R or `py-irt` in Python). Replace seed difficulty with
    calibrated parameters. Re-compute bands from a proper cut-score study.
-6. **Backend + identity.** Replace localStorage with a real database
+   With two skills now in scope, the model fit can support a multi-skill
+   ability estimate rather than a single number.
+5. **Backend + identity.** Replace localStorage with a real database
    (e.g., Supabase or Firebase). Add teacher authentication. Add
    per-school rosters and class management. Support sync across devices.
-7. **Expand skill coverage.** Apply the same template (≥24 items, tagged
-   distractors, teacher-validated, cognitive-lab piloted, calibrated) to
-   the remaining 67 skills in the Class 6 Math skill tree.
+6. **Expand skill coverage.** Apply the same template (≥20 items per
+   skill, tagged distractors, teacher-validated, cognitive-lab piloted,
+   calibrated) to more skills in the Class 6 Math skill tree —
+   multiplication and division of fractions are the natural next step
+   after addition + subtraction.
 
 ## Honest notes
 

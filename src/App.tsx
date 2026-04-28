@@ -13,6 +13,7 @@ import {
 import {
   buildSessionPool,
   createInitialState,
+  filterItemsBySkillMode,
   pickNextItem,
   updateAbility,
   shouldStop,
@@ -22,18 +23,21 @@ import {
 import {
   averageTimeSec,
   bandAccuracy,
-  BAND_DESCRIPTIONS,
+  bandDescription,
   bandColor,
   computeBand,
   correctCount,
   growthIndicator,
+  isMixedSession,
   recommendPrerequisites,
   sessionConfidence,
+  summarizeBySkill,
   summarizeMisconceptions,
   summarizeSession,
   type Band,
   type GrowthIndicator,
   type SessionSummary,
+  type SkillBreakdown,
 } from './lib/scoring';
 import {
   buildExportBundle,
@@ -51,15 +55,33 @@ import {
   type ClassAggregate,
   type ClassMisconceptionRow,
   type ClassHardestItem,
+  type ClassSkillFilter,
 } from './lib/classDashboard';
 import {
   ASSESSMENT_WINDOWS,
   ASSESSMENT_WINDOW_DESCRIPTIONS,
   ASSESSMENT_WINDOW_LABELS,
+  SKILL_LABELS,
+  SKILL_MODE_DESCRIPTIONS,
+  SKILL_MODE_LABELS,
   type AssessmentWindow,
   type Session,
+  type SkillMode,
   type Student,
 } from './types';
+
+const SKILL_MODES: SkillMode[] = ['FR.06', 'FR.07', 'mixed'];
+
+const skillChipClass = (mode: SkillMode): string => {
+  switch (mode) {
+    case 'FR.06':
+      return 'bg-brand-50 text-brand-700 ring-brand-200';
+    case 'FR.07':
+      return 'bg-violet-50 text-violet-700 ring-violet-200';
+    case 'mixed':
+      return 'bg-slate-100 text-slate-700 ring-slate-200';
+  }
+};
 
 type View =
   | 'landing'
@@ -98,13 +120,17 @@ export default function App() {
 
   const startAssessmentFor = (
     student: Student,
-    window: AssessmentWindow
+    window: AssessmentWindow,
+    skillMode: SkillMode
   ) => {
-    // Build a stratified, mostly-fresh session pool of 10 items.
+    // Build a stratified, mostly-fresh session pool of 10 items, scoped to
+    // the chosen skill mode. For 'mixed' the entire 44-item bank is in
+    // play; for a single skill, only that skill's items.
     const priorIds = getCompletedSessionsForStudent(student.id).flatMap((s) =>
       s.responses.map((r) => r.itemId)
     );
-    const pool = buildSessionPool(ITEMS, priorIds);
+    const skillItems = filterItemsBySkillMode(ITEMS, skillMode);
+    const pool = buildSessionPool(skillItems, priorIds);
     const fresh = createInitialState();
     const first = pickNextItem(pool, fresh.attemptedIds, fresh.ability);
 
@@ -117,7 +143,7 @@ export default function App() {
         school: student.school,
       },
       window,
-      skillId: 'FR.06',
+      skillId: skillMode,
       startedAt: Date.now(),
       completedAt: null,
       responses: [],
@@ -273,7 +299,9 @@ export default function App() {
           <StartForm
             prefill={prefillStudent}
             onCancel={goLanding}
-            onStart={(student, window) => startAssessmentFor(student, window)}
+            onStart={(student, window, skillMode) =>
+              startAssessmentFor(student, window, skillMode)
+            }
           />
         )}
 
@@ -290,6 +318,7 @@ export default function App() {
             total={SESSION_SIZE}
             studentName={session.studentSnapshot.name}
             window={session.window}
+            skillMode={session.skillId}
           />
         )}
 
@@ -430,13 +459,15 @@ function Landing({
           Growth assessment prototype for CBSE Class 6 Math
         </p>
         <p className="mt-4 max-w-2xl text-base text-slate-600">
-          A short adaptive assessment that focuses on one skill —{' '}
+          A short adaptive assessment covering two related skills —{' '}
           <span className="font-semibold">
-            adding fractions with unlike denominators
+            adding (FR.06) and subtracting (FR.07) fractions with unlike
+            denominators
           </span>{' '}
-          — and demonstrates the assessment flow, simple adaptive routing,
+          — that demonstrates the assessment flow, simple adaptive routing,
           per-student session history, and a teacher-facing diagnostic
-          dashboard.
+          dashboard. Sessions can target either skill or run as a mixed
+          assessment drawing from both.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button onClick={onStart} className="btn-primary">
@@ -485,7 +516,8 @@ function Landing({
           remediation decisions about a student.
         </p>
         <p className="mt-2">
-          Each session draws 10 items from a pool of 24, but with a small bank
+          Each session draws 10 items from the relevant skill bank (24 for
+          FR.06, 20 for FR.07, or both for mixed sessions). With a small bank
           some overlap across attempts is expected — you may see similar
           question types across attempts.
         </p>
@@ -512,13 +544,18 @@ function StartForm({
   onCancel,
 }: {
   prefill: Student | null;
-  onStart: (student: Student, window: AssessmentWindow) => void;
+  onStart: (
+    student: Student,
+    window: AssessmentWindow,
+    skillMode: SkillMode
+  ) => void;
   onCancel: () => void;
 }) {
   const [name, setName] = useState(prefill?.name ?? '');
   const [grade, setGrade] = useState(prefill?.grade ?? 'Class 6');
   const [school, setSchool] = useState(prefill?.school ?? '');
   const [window, setWindow] = useState<AssessmentWindow>('baseline');
+  const [skillMode, setSkillMode] = useState<SkillMode>('FR.06');
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -543,7 +580,7 @@ function StartForm({
     }
     setError(null);
     const student = findOrCreateStudent(name, grade, school);
-    onStart(student, window);
+    onStart(student, window, skillMode);
   };
 
   return (
@@ -597,6 +634,45 @@ function StartForm({
 
         <div className="mt-8">
           <div className="text-sm font-semibold text-slate-900">
+            Skill to assess
+          </div>
+          <p className="mt-1 text-sm text-slate-600">
+            Choose which skill bank to draw items from. The mixed option draws
+            from both banks within a single session.
+          </p>
+          <div className="mt-4 grid gap-3 md:grid-cols-3">
+            {SKILL_MODES.map((m) => (
+              <label
+                key={m}
+                className={`flex cursor-pointer items-start gap-3 rounded-xl border-2 p-4 transition ${
+                  skillMode === m
+                    ? 'border-brand-600 bg-brand-50'
+                    : 'border-slate-200 bg-white hover:border-brand-300'
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="skillMode"
+                  value={m}
+                  checked={skillMode === m}
+                  onChange={() => setSkillMode(m)}
+                  className="mt-1 h-4 w-4 accent-brand-600"
+                />
+                <div>
+                  <div className="text-sm font-semibold text-slate-900">
+                    {SKILL_MODE_LABELS[m]}
+                  </div>
+                  <div className="mt-0.5 text-xs text-slate-600">
+                    {SKILL_MODE_DESCRIPTIONS[m]}
+                  </div>
+                </div>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <div className="text-sm font-semibold text-slate-900">
             Assessment window
           </div>
           <p className="mt-1 text-sm text-slate-600">
@@ -635,8 +711,9 @@ function StartForm({
         </div>
 
         <div className="mt-6 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
-          The bank has 24 items; each session shows 10. With a small bank, you
-          may see similar question types across attempts.
+          The bank has 44 items across 2 skills (FR.06: 24 items, FR.07: 20
+          items); each session shows 10. With a small bank, you may see similar
+          question types across attempts.
         </div>
 
         {error && (
@@ -821,6 +898,7 @@ function Assessment({
   total,
   studentName,
   window,
+  skillMode,
 }: {
   item: Item;
   selected: number | null;
@@ -833,6 +911,7 @@ function Assessment({
   total: number;
   studentName: string;
   window: AssessmentWindow;
+  skillMode: SkillMode;
 }) {
   const pct = Math.min(100, Math.round((progress / total) * 100));
 
@@ -846,10 +925,11 @@ function Assessment({
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-white px-4 py-3 shadow-sm ring-1 ring-slate-200">
-        <div className="text-sm text-slate-700">
+        <div className="flex flex-wrap items-center gap-2 text-sm text-slate-700">
           <span className="font-semibold text-slate-900">{studentName}</span>
-          <span className="mx-2 text-slate-400">·</span>
+          <span className="text-slate-400">·</span>
           <span>{ASSESSMENT_WINDOW_LABELS[window]} session</span>
+          <SkillChip mode={skillMode} />
         </div>
         <div className="text-xs text-slate-500">
           Question {progress} of up to {total}
@@ -1029,11 +1109,15 @@ function Results({
   const total = session.responses.length;
   const misconceptions = summarizeMisconceptions(session.responses).slice(0, 3);
 
+  // Growth comparisons should only use prior sessions in the *same* skill
+  // mode. A FR.06 session and an FR.07 session aren't comparable on
+  // skill-specific axes (accuracy, difficulty, misconception rate).
   const growth = useMemo<GrowthIndicator | null>(() => {
     const all = getCompletedSessionsForStudent(session.studentId);
     const prior = all.filter(
       (s) =>
         s.id !== session.id &&
+        s.skillId === session.skillId &&
         (s.completedAt ?? 0) < (session.completedAt ?? 0)
     );
     if (prior.length === 0) return null;
@@ -1046,6 +1130,13 @@ function Results({
   const summary = summarizeSession(session);
   const conf = sessionConfidence(summary);
 
+  const skillBreakdowns = useMemo(
+    () => summarizeBySkill(session.responses, ITEMS),
+    [session]
+  );
+  const showsMixedBreakdown =
+    session.skillId === 'mixed' && isMixedSession(session.responses, ITEMS);
+
   return (
     <div className="space-y-6">
       <div className="card">
@@ -1055,12 +1146,15 @@ function Results({
         <h1 className="mt-2 text-3xl font-bold text-slate-900">
           {session.studentSnapshot.name}'s prototype estimate
         </h1>
-        <div className="mt-1 text-sm text-slate-600">
-          {ASSESSMENT_WINDOW_LABELS[session.window]} session ·{' '}
-          {session.studentSnapshot.grade}
-          {session.studentSnapshot.school
-            ? ` · ${session.studentSnapshot.school}`
-            : ''}
+        <div className="mt-1 flex flex-wrap items-center gap-2 text-sm text-slate-600">
+          <span>
+            {ASSESSMENT_WINDOW_LABELS[session.window]} session ·{' '}
+            {session.studentSnapshot.grade}
+            {session.studentSnapshot.school
+              ? ` · ${session.studentSnapshot.school}`
+              : ''}
+          </span>
+          <SkillChip mode={session.skillId} />
         </div>
 
         <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -1076,7 +1170,9 @@ function Results({
           />
         </div>
 
-        <p className="mt-5 text-sm text-slate-600">{BAND_DESCRIPTIONS[band]}</p>
+        <p className="mt-5 text-sm text-slate-600">
+          {bandDescription(band, session.skillId)}
+        </p>
 
         {conf.confidence === 'low' && (
           <div className="mt-4 rounded-xl bg-amber-50 p-3 text-xs text-amber-800 ring-1 ring-amber-200">
@@ -1088,16 +1184,34 @@ function Results({
 
       {growth && <GrowthCard growth={growth} session={session} />}
 
+      {showsMixedBreakdown && (
+        <div className="card">
+          <h2 className="text-lg font-semibold text-slate-900">
+            Per-skill accuracy
+          </h2>
+          <p className="mt-1 text-sm text-slate-600">
+            This was a mixed session, so accuracy is split by skill bank
+            below. Only skills with at least one item attempted are shown.
+          </p>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            {skillBreakdowns
+              .filter((b) => b.attempted > 0)
+              .map((b) => (
+                <SkillBreakdownCard key={b.skillId} breakdown={b} />
+              ))}
+          </div>
+        </div>
+      )}
+
       <div className="card">
         <h2 className="text-lg font-semibold text-slate-900">
           Skills demonstrated
         </h2>
         <p className="mt-1 text-sm text-slate-600">
-          Based on items answered on the one skill tested in this prototype:
-          <span className="font-medium">
-            {' '}
-            FR.06 — Add fractions with unlike denominators.
-          </span>
+          Based on items answered on{' '}
+          {session.skillId === 'mixed'
+            ? 'the mixed assessment (FR.06 + FR.07).'
+            : `${session.skillId} — ${SKILL_LABELS[session.skillId]}.`}
         </p>
         <BandAccuracyTable session={session} />
       </div>
@@ -1237,11 +1351,12 @@ function GrowthCard({
 
       <p className="mt-4 text-xs text-slate-500">
         Headline figures are accuracy change and misconception change between
-        the two sessions. The "prototype change indicator" combines both with
-        the average difficulty attempted into a single hedged direction. None
-        of these are a calibrated growth measurement — they are an early
-        signal on a 24-item bank, useful for a teacher conversation, not for
-        placement or reporting.
+        the two sessions (compared only against prior attempts on the{' '}
+        <span className="font-medium">same skill mode</span>). The "prototype
+        change indicator" combines both with the average difficulty attempted
+        into a single hedged direction. None of these are a calibrated growth
+        measurement — they are an early signal on a small item bank, useful
+        for a teacher conversation, not for placement or reporting.
       </p>
     </div>
   );
@@ -1337,6 +1452,61 @@ function Stat({
       >
         {value}
       </div>
+    </div>
+  );
+}
+
+// Small inline skill-mode chip used on session rows and result headers.
+function SkillChip({ mode }: { mode: SkillMode }) {
+  return (
+    <span
+      className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ring-1 ${skillChipClass(mode)}`}
+      title={SKILL_MODE_DESCRIPTIONS[mode]}
+    >
+      {SKILL_MODE_LABELS[mode]}
+    </span>
+  );
+}
+
+// Per-skill summary card for mixed sessions, showing accuracy plus the
+// most-frequent misconceptions on that skill.
+function SkillBreakdownCard({ breakdown }: { breakdown: SkillBreakdown }) {
+  const accPct = Math.round(breakdown.accuracy * 100);
+  const top = breakdown.misconceptions.slice(0, 2);
+  return (
+    <div className="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+      <div className="flex items-center justify-between gap-2">
+        <SkillChip mode={breakdown.skillId} />
+        <div className="text-xs text-slate-500">
+          {breakdown.attempted} item{breakdown.attempted === 1 ? '' : 's'}
+        </div>
+      </div>
+      <div className="mt-3 flex items-baseline gap-2">
+        <div className="text-3xl font-bold text-slate-900">{accPct}%</div>
+        <div className="text-sm text-slate-600">
+          ({breakdown.correct}/{breakdown.attempted} correct)
+        </div>
+      </div>
+      <div className="mt-1 text-xs text-slate-500">
+        avg time {breakdown.avgTimeSec}s/item
+      </div>
+      {top.length > 0 && (
+        <div className="mt-3">
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+            Top misconception{top.length > 1 ? 's' : ''}
+          </div>
+          <ul className="mt-1 space-y-1 text-xs text-slate-700">
+            {top.map((m) => (
+              <li key={m.code} className="flex items-start gap-2">
+                <span className="font-medium">{m.label}</span>
+                <span className="text-slate-500">
+                  ({m.count}×)
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
@@ -1512,13 +1682,14 @@ function TeacherStudentList({
         </div>
 
         <div className="mt-5 overflow-x-auto">
-          <table className="w-full min-w-[720px] text-left text-sm">
+          <table className="w-full min-w-[820px] text-left text-sm">
             <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
               <tr>
                 <th className="px-3 py-2">Student</th>
                 <th className="px-3 py-2">School / Grade</th>
                 <th className="px-3 py-2">Sessions</th>
                 <th className="px-3 py-2">Latest window</th>
+                <th className="px-3 py-2">Latest skill</th>
                 <th className="px-3 py-2">Latest band</th>
                 <th className="px-3 py-2">Latest est.</th>
                 <th className="px-3 py-2">Last attempted</th>
@@ -1556,6 +1727,9 @@ function TeacherStudentList({
                       {latest ? ASSESSMENT_WINDOW_LABELS[latest.window] : '—'}
                     </td>
                     <td className="px-3 py-3">
+                      {latest ? <SkillChip mode={latest.skillId} /> : '—'}
+                    </td>
+                    <td className="px-3 py-3">
                       {band ? <BandPill band={band} /> : '—'}
                     </td>
                     <td className="px-3 py-3 text-slate-700">
@@ -1575,7 +1749,7 @@ function TeacherStudentList({
               {rows.length === 0 && (
                 <tr>
                   <td
-                    colSpan={8}
+                    colSpan={9}
                     className="px-3 py-8 text-center text-sm text-slate-500"
                   >
                     No students match the current filter.
@@ -1623,9 +1797,16 @@ function ClassDashboard({
   onBack: () => void;
   onOpenStudent: (studentId: string) => void;
 }) {
+  const [skillFilter, setSkillFilter] = useState<ClassSkillFilter>('all');
+
   const aggregate = useMemo<ClassAggregate>(() => {
-    return buildClassAggregate(loadStudents(), loadSessions());
-  }, []);
+    return buildClassAggregate(
+      loadStudents(),
+      loadSessions(),
+      ITEMS,
+      skillFilter
+    );
+  }, [skillFilter]);
 
   const hasData = aggregate.totalResponses > 0;
 
@@ -1651,6 +1832,27 @@ function ClassDashboard({
             class as a whole — not a substitute for the per-student view.
           </p>
         </div>
+        <div className="flex flex-col items-end gap-1">
+          <Field label="Filter by skill">
+            <select
+              value={skillFilter}
+              onChange={(e) =>
+                setSkillFilter(e.target.value as ClassSkillFilter)
+              }
+              className="form-input w-56"
+            >
+              <option value="all">All skills (FR.06 + FR.07)</option>
+              <option value="FR.06">FR.06 — Add unlike denominators</option>
+              <option value="FR.07">FR.07 — Subtract unlike denominators</option>
+            </select>
+          </Field>
+          {skillFilter !== 'all' && (
+            <p className="text-xs text-slate-500">
+              Showing {skillFilter} responses only. Mixed-mode sessions are
+              included but filtered to their {skillFilter} responses.
+            </p>
+          )}
+        </div>
       </div>
 
       <ClassHeadlineTiles aggregate={aggregate} />
@@ -1658,8 +1860,9 @@ function ClassDashboard({
       {!hasData && (
         <div className="card text-center">
           <p className="text-sm text-slate-600">
-            No completed sessions yet. Once a student finishes an attempt,
-            their responses will appear in the roll-up.
+            {skillFilter === 'all'
+              ? 'No completed sessions yet. Once a student finishes an attempt, their responses will appear in the roll-up.'
+              : `No ${skillFilter} responses yet. Switch the skill filter or run an assessment on this skill.`}
           </p>
         </div>
       )}
@@ -1676,8 +1879,8 @@ function ClassDashboard({
 
       <p className="text-xs text-slate-500">
         All figures here are descriptive statistics over response-level data
-        on a 24-item bank. Sample sizes can be very small in a pilot — read
-        the attempt counts before drawing conclusions.
+        on a 44-item bank across two skills. Sample sizes can be very small in
+        a pilot — read the attempt counts before drawing conclusions.
       </p>
     </div>
   );
@@ -1911,10 +2114,18 @@ function StudentDetail({
   }
 
   const latest = sessions[sessions.length - 1] ?? null;
-  const prevToLatest =
-    sessions.length >= 2 ? sessions[sessions.length - 2] : null;
+  // Pair the latest session with the most-recent earlier session in the
+  // same skill mode. Comparing across skills is misleading on a per-skill
+  // accuracy axis.
+  const prevSameSkill = latest
+    ? [...sessions]
+        .reverse()
+        .find(
+          (s) => s.id !== latest.id && s.skillId === latest.skillId
+        ) ?? null
+    : null;
   const growth =
-    latest && prevToLatest ? growthIndicator(prevToLatest, latest) : null;
+    latest && prevSameSkill ? growthIndicator(prevSameSkill, latest) : null;
 
   const handleDelete = () => {
     deleteStudent(student.id);
@@ -2056,8 +2267,10 @@ function GrowthHistory({
       </div>
       <p className="mt-1 text-sm text-slate-600">
         One row per completed session. The "change vs. previous" column is an
-        early signal on the 1–10 seed scale, not a validated growth metric.
-        Practice sessions are included for completeness.
+        early signal on the 1–10 seed scale, not a validated growth metric;
+        deltas are only computed against earlier sessions on the{' '}
+        <span className="font-medium">same skill mode</span>. Practice
+        sessions are included for completeness.
       </p>
 
       {growthForLatest && (
@@ -2067,25 +2280,29 @@ function GrowthHistory({
       )}
 
       <div className="mt-4 overflow-x-auto">
-        <table className="w-full min-w-[720px] text-left text-sm">
+        <table className="w-full min-w-[820px] text-left text-sm">
           <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
             <tr>
               <th className="px-3 py-2">Date</th>
               <th className="px-3 py-2">Window</th>
+              <th className="px-3 py-2">Skill</th>
               <th className="px-3 py-2">Items</th>
               <th className="px-3 py-2">Correct</th>
               <th className="px-3 py-2">Avg. diff. attempted</th>
               <th className="px-3 py-2">Misconception rate</th>
               <th className="px-3 py-2">Band</th>
               <th className="px-3 py-2">Estimate</th>
-              <th className="px-3 py-2">Δ vs. previous</th>
+              <th className="px-3 py-2">Δ vs. previous (same skill)</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
             {rows.map((s, idx) => {
               const summary: SessionSummary = summarizeSession(s);
               const band = computeBand(s.finalAbility);
-              const previous = rows[idx + 1] ?? null;
+              // Find previous session in the same skill mode (if any).
+              const previous = rows
+                .slice(idx + 1)
+                .find((r) => r.skillId === s.skillId) ?? null;
               const delta = previous
                 ? s.finalAbility - previous.finalAbility
                 : null;
@@ -2096,6 +2313,9 @@ function GrowthHistory({
                   </td>
                   <td className="px-3 py-3 text-slate-700">
                     {ASSESSMENT_WINDOW_LABELS[s.window]}
+                  </td>
+                  <td className="px-3 py-3">
+                    <SkillChip mode={s.skillId} />
                   </td>
                   <td className="px-3 py-3 text-slate-700">{summary.total}</td>
                   <td className="px-3 py-3 text-slate-700">
@@ -2149,14 +2369,23 @@ function LatestSessionPanel({ session }: { session: Session }) {
   const avgTime = averageTimeSec(session.responses);
   const misconceptions = summarizeMisconceptions(session.responses);
   const prereqs = recommendPrerequisites(session.responses);
+  const skillBreakdowns = useMemo(
+    () => summarizeBySkill(session.responses, ITEMS),
+    [session]
+  );
+  const showsMixedBreakdown =
+    session.skillId === 'mixed' && isMixedSession(session.responses, ITEMS);
 
   return (
     <>
       <div className="card">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 className="text-lg font-semibold text-slate-900">
-            Most recent session
-          </h2>
+          <div className="flex flex-wrap items-center gap-2">
+            <h2 className="text-lg font-semibold text-slate-900">
+              Most recent session
+            </h2>
+            <SkillChip mode={session.skillId} />
+          </div>
           <span className="text-xs text-slate-500">
             {ASSESSMENT_WINDOW_LABELS[session.window]} ·{' '}
             {formatDate(session.completedAt ?? session.startedAt)}
@@ -2172,8 +2401,30 @@ function LatestSessionPanel({ session }: { session: Session }) {
           <Stat label="Correct" value={`${correct} / ${total}`} />
           <Stat label="Avg. time / item" value={`${avgTime}s`} />
         </div>
-        <p className="mt-4 text-sm text-slate-600">{BAND_DESCRIPTIONS[band]}</p>
+        <p className="mt-4 text-sm text-slate-600">
+          {bandDescription(band, session.skillId)}
+        </p>
       </div>
+
+      {showsMixedBreakdown && (
+        <div className="card">
+          <h2 className="text-lg font-semibold text-slate-900">
+            Per-skill accuracy (mixed session)
+          </h2>
+          <p className="mt-1 text-sm text-slate-600">
+            FR.06 and FR.07 items appeared together in this session; the
+            breakdown below is split by skill so the teacher can see whether
+            one skill is pulling the other up or down.
+          </p>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            {skillBreakdowns
+              .filter((b) => b.attempted > 0)
+              .map((b) => (
+                <SkillBreakdownCard key={b.skillId} breakdown={b} />
+              ))}
+          </div>
+        </div>
+      )}
 
       <div className="card">
         <h2 className="text-lg font-semibold text-slate-900">

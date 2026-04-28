@@ -12,16 +12,34 @@
 //     numeric-entry items (kind: 'numeric').
 //   - Items can carry an optional `visual` spec (fraction bars or area
 //     grids) that the assessment view renders inline above the stem.
+//
+// v0.4 additions:
+//   - Second skill bank: FR.07 (Subtract fractions with unlike denominators).
+//     20 new items (4 foundational, 12 core, 4 advanced).
+//   - New misconception codes: `subtract_across` (mirror of add_across) and
+//     `borrowing_error` (mishandles the borrow when subtracting mixed
+//     numbers).
+//   - Each Item now declares `skillId: 'FR.06' | 'FR.07'`. The adaptive
+//     engine and class dashboard can scope the pool by skill; the UI can
+//     also run a "mixed" session that draws from both banks.
 
 // ---------------------------------------------------------------------------
 // Misconception taxonomy
 // ---------------------------------------------------------------------------
+// Codes added in v0.4 for FR.07:
+//   - subtract_across: subtracts numerators AND denominators (mirror of
+//     add_across).
+//   - borrowing_error: mishandles the borrow when subtracting mixed
+//     numbers (e.g., 3 1/4 - 1 3/4 produces 2 1/2 because the student
+//     "subtracted the smaller fraction from the larger").
 export type MisconceptionCode =
   | 'add_across'
+  | 'subtract_across'
   | 'incomplete_conversion'
   | 'product_not_lcm'
   | 'operation_confusion'
   | 'mixed_number_error'
+  | 'borrowing_error'
   | 'conceptual_gap'
   | 'arithmetic_slip'
   | 'form_error'
@@ -30,11 +48,14 @@ export type MisconceptionCode =
 
 export const MISCONCEPTION_LABELS: Record<MisconceptionCode, string> = {
   add_across: 'Adds numerators and denominators separately',
+  subtract_across: 'Subtracts numerators and denominators separately',
   incomplete_conversion: 'Finds common denominator but does not scale numerators',
   product_not_lcm: 'Uses product of denominators instead of LCM',
-  operation_confusion: 'Confuses addition with another operation',
+  operation_confusion: 'Confuses the operation (e.g., adds when asked to subtract)',
   mixed_number_error: 'Handles whole and fractional parts incorrectly',
-  conceptual_gap: 'Misunderstands when fractions can be added',
+  borrowing_error:
+    'Borrowing slip in mixed-number subtraction (subtracts smaller part from larger to avoid the borrow)',
+  conceptual_gap: 'Misunderstands when fractions can be combined',
   arithmetic_slip: 'Basic arithmetic error, not a fraction misconception',
   form_error: 'Answer not in required form (e.g., not simplified or improper fractional part)',
   visual_misread: 'Misreads the fraction shown in the diagram',
@@ -44,16 +65,20 @@ export const MISCONCEPTION_LABELS: Record<MisconceptionCode, string> = {
 export const MISCONCEPTION_NEXT_STEP: Record<MisconceptionCode, string> = {
   add_across:
     'Revisit the meaning of a denominator. Use fraction-bar or area models to show why 1/2 + 1/4 cannot be 2/6. Practise 3 like-denominator problems first, then bridge to unlike denominators with one common multiple.',
+  subtract_across:
+    'Same fix as add_across, but in the subtraction direction. Show with bars why 3/4 − 1/2 cannot be 2/2. Re-establish that the denominator names the size of the piece, and only numerators move when the denominators already match.',
   incomplete_conversion:
-    'Emphasise that multiplying the denominator by k requires multiplying the numerator by the same k. Drill equivalent-fraction practice with side-by-side models before returning to addition.',
+    'Emphasise that multiplying the denominator by k requires multiplying the numerator by the same k. Drill equivalent-fraction practice with side-by-side models before returning to addition or subtraction.',
   product_not_lcm:
     'Contrast LCM vs. product of denominators side by side. Have the student simplify an answer produced via the product method, and notice the extra work. Reinforce LCM via prime factorisation for non-coprime pairs.',
   operation_confusion:
-    'Explicitly separate the rules for adding vs. multiplying fractions. Short-answer drill mixing +, -, x on like-denominator pairs first to consolidate operation identification.',
+    'Explicitly separate the rules for adding, subtracting, and multiplying fractions. Short-answer drill mixing +, −, × on like-denominator pairs first to consolidate operation identification.',
   mixed_number_error:
     'Two parallel methods: (a) whole and fractional parts separately, (b) convert to improper fractions. Let the student try both on the same problem and compare. Flag whichever method produces the mistake.',
+  borrowing_error:
+    'Walk through borrowing on a number line: 3 1/4 = 2 + 5/4, so 3 1/4 − 1 3/4 = (2 − 1) + (5/4 − 3/4). Practise 3-4 borrowing pairs side by side. The improper-fraction method is also a clean fallback.',
   conceptual_gap:
-    'Step back from procedure and address "why a common denominator?" using models. Show that 1/2 + 1/3 is adding unequal pieces — a common denominator makes them comparable.',
+    'Step back from procedure and address "why a common denominator?" using models. Show that 1/2 + 1/3 (or 1/2 − 1/3) is combining unequal pieces — a common denominator makes them comparable.',
   arithmetic_slip:
     'Not a fraction-specific issue. Encourage rechecking arithmetic. Monitor for repeated pattern across items.',
   form_error:
@@ -96,7 +121,7 @@ export type VisualSpec =
 // ---------------------------------------------------------------------------
 type BaseItem = {
   id: string;
-  skillId: 'FR.06';
+  skillId: 'FR.06' | 'FR.07';
   skillName: string;
   difficulty: number; // 1-10 seed difficulty
   band: 'foundational' | 'core' | 'advanced';
@@ -256,7 +281,12 @@ export function isSimplifiedFractionForm(input: string): boolean {
 }
 
 // ---------------------------------------------------------------------------
-// The 24 pre-pilot items for FR.06 (12 original + 12 new in v0.3).
+// Pre-pilot item bank.
+//   - FR.06 (Add unlike denominators): 24 items (12 original v0.1 + 12 new
+//     in v0.3). Bands: 5 foundational, 11 core, 8 advanced.
+//   - FR.07 (Subtract unlike denominators): 20 items, all new in v0.4.
+//     Bands: 4 foundational, 12 core, 4 advanced.
+// Total bank: 44 items across 2 skills.
 // ---------------------------------------------------------------------------
 export const ITEMS: Item[] = [
   // ----- Original 12 (v0.1) -----
@@ -811,6 +841,464 @@ export const ITEMS: Item[] = [
     solution:
       'LCM(2, 4, 3) = 12. Convert: 1/2 = 6/12, 3/4 = 9/12, 1/3 = 4/12. Sum = 19/12 = 1 7/12 hours.',
     estimatedTimeSec: 150,
+  },
+
+  // ===== v0.4 additions: FR.07 (Subtract fractions with unlike denominators) =====
+  // 20 items spanning foundational, core, and advanced bands.
+  // Distribution: 4 foundational, 12 core, 4 advanced.
+  // Diversity: 3 visuals (2 bars + 1 grid), 4 numeric-entry, 5 word
+  // problems, 4 mixed-number subtractions (3 require borrowing).
+
+  // ----- Foundational (4) -----
+  {
+    id: 'FR.07-01',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Subtract: 3/4 − 1/2.',
+    options: [
+      { text: '2/2', misconception: 'subtract_across' },
+      { text: '1/2', misconception: 'incomplete_conversion' },
+      { text: '1/4', misconception: 'none' },
+      { text: '1 1/4', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 2,
+    solution:
+      'LCM(4, 2) = 4. Convert 1/2 to 2/4. Then 3/4 − 2/4 = 1/4.',
+    estimatedTimeSec: 45,
+  },
+  {
+    id: 'FR.07-02',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 2,
+    band: 'foundational',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 1, denominator: 2, label: '1/2' },
+        { numerator: 1, denominator: 4, label: '1/4' },
+      ],
+    },
+    stem:
+      'The two bars below show 1/2 and 1/4 of the same whole. What is 1/2 − 1/4?',
+    options: [
+      { text: '0/2', misconception: 'subtract_across' },
+      { text: '1/4', misconception: 'none' },
+      { text: '1/2', misconception: 'incomplete_conversion' },
+      { text: '3/4', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(2, 4) = 4. The first bar shows 1/2 = 2/4 (1 of 2 cells = 2 of 4 cells of the same whole). Then 2/4 − 1/4 = 1/4.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.07-03',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Find the value of 2/3 − 1/2.',
+    inputHint: 'Enter as a fraction, e.g., 1/6',
+    acceptedAnswers: ['1/6'],
+    errorPatterns: [
+      { answers: ['1/1', '1'], misconception: 'subtract_across' },
+      { answers: ['1/3', '1/2'], misconception: 'incomplete_conversion' },
+      { answers: ['7/6', '1 1/6'], misconception: 'operation_confusion' },
+    ],
+    solution:
+      'LCM(3, 2) = 6. Convert: 2/3 = 4/6 and 1/2 = 3/6. Then 4/6 − 3/6 = 1/6.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.07-04',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 3,
+    band: 'foundational',
+    cognitiveType: 'Conceptual understanding',
+    kind: 'mcq',
+    stem:
+      'Aarav wants to compute 5/6 − 1/3. What should he do FIRST?',
+    options: [
+      {
+        text: 'Subtract the denominators to get 5/3.',
+        misconception: 'conceptual_gap',
+      },
+      {
+        text: 'Rewrite both fractions with a common denominator.',
+        misconception: 'none',
+      },
+      {
+        text: 'Multiply the two fractions first.',
+        misconception: 'operation_confusion',
+      },
+      {
+        text: 'Subtract 1 from 5 and 3 from 6 to get 4/3.',
+        misconception: 'subtract_across',
+      },
+    ],
+    correctIndex: 1,
+    solution:
+      'Fractions can be subtracted only when they have the same denominator. LCM(6, 3) = 6, so 1/3 = 2/6 and 5/6 − 2/6 = 3/6 = 1/2.',
+    estimatedTimeSec: 60,
+  },
+
+  // ----- Core (12) -----
+  {
+    id: 'FR.07-05',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 5/6 − 1/3.',
+    options: [
+      { text: '4/3', misconception: 'subtract_across' },
+      { text: '4/6', misconception: 'incomplete_conversion' },
+      { text: '1/2', misconception: 'none' },
+      { text: '7/6', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 2,
+    solution:
+      'LCM(6, 3) = 6. Convert: 1/3 = 2/6. Then 5/6 − 2/6 = 3/6 = 1/2.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.07-06',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Find: 7/8 − 1/2.',
+    options: [
+      { text: '6/6', misconception: 'subtract_across' },
+      { text: '3/8', misconception: 'none' },
+      { text: '6/8', misconception: 'incomplete_conversion' },
+      { text: '11/8', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(8, 2) = 8. Convert: 1/2 = 4/8. Then 7/8 − 4/8 = 3/8.',
+    estimatedTimeSec: 60,
+  },
+  {
+    id: 'FR.07-07',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 4,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'numeric',
+    stem: 'Find the value of 5/6 − 3/4.',
+    inputHint: 'Enter as a fraction, e.g., 1/12',
+    acceptedAnswers: ['1/12'],
+    errorPatterns: [
+      { answers: ['2/2', '1'], misconception: 'subtract_across' },
+      { answers: ['2/12', '1/6'], misconception: 'incomplete_conversion' },
+      { answers: ['19/12', '1 7/12'], misconception: 'operation_confusion' },
+      { answers: ['1/24', '2/24'], misconception: 'product_not_lcm' },
+    ],
+    solution:
+      'LCM(6, 4) = 12. Convert: 5/6 = 10/12 and 3/4 = 9/12. Then 10/12 − 9/12 = 1/12.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.07-08',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'bars',
+      bars: [
+        { numerator: 4, denominator: 5, label: '4/5' },
+        { numerator: 2, denominator: 3, label: '2/3' },
+      ],
+    },
+    stem:
+      'The two bars below show 4/5 and 2/3 of the same whole. By how much does 4/5 exceed 2/3?',
+    options: [
+      { text: '2/2', misconception: 'subtract_across' },
+      { text: '2/15', misconception: 'none' },
+      { text: '2/5', misconception: 'incomplete_conversion' },
+      { text: '22/15', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(5, 3) = 15. Convert: 4/5 = 12/15 and 2/3 = 10/15. Then 12/15 − 10/15 = 2/15.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.07-09',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Simplify: 11/12 − 1/4. Express your answer in simplest form.',
+    options: [
+      { text: '10/8', misconception: 'subtract_across' },
+      { text: '8/12', misconception: 'form_error' },
+      { text: '2/3', misconception: 'none' },
+      { text: '10/12', misconception: 'incomplete_conversion' },
+    ],
+    correctIndex: 2,
+    solution:
+      'LCM(12, 4) = 12. Convert: 1/4 = 3/12. Then 11/12 − 3/12 = 8/12 = 2/3 in simplest form.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.07-10',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Visual representation',
+    kind: 'mcq',
+    visual: {
+      kind: 'grid',
+      grids: [
+        { rows: 2, cols: 3, shaded: 5, label: '5/6 of square A' },
+        { rows: 2, cols: 3, shaded: 3, label: '1/2 of square B (3 of 6 cells)' },
+      ],
+    },
+    stem:
+      'Two equal-sized squares are each divided into 6 equal cells. Square A has 5 of its 6 cells shaded; square B has 3 cells shaded (which equals 1/2 of the square). What is 5/6 − 1/2 in simplest form?',
+    options: [
+      { text: '4/4', misconception: 'subtract_across' },
+      { text: '1/3', misconception: 'none' },
+      { text: '2/3', misconception: 'incomplete_conversion' },
+      { text: '4/3', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(6, 2) = 6, so 1/2 = 3/6. Then 5/6 − 3/6 = 2/6 = 1/3 in simplest form.',
+    estimatedTimeSec: 100,
+  },
+  {
+    id: 'FR.07-11',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'Saanvi had 3/4 litre of juice. She drank 1/3 litre. How much juice is left?',
+    options: [
+      { text: '2/1 litre', misconception: 'subtract_across' },
+      { text: '5/12 litre', misconception: 'none' },
+      { text: '2/4 litre', misconception: 'incomplete_conversion' },
+      { text: '1 1/12 litres', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Juice left = 3/4 − 1/3. LCM(4, 3) = 12. Convert: 3/4 = 9/12 and 1/3 = 4/12. Then 9/12 − 4/12 = 5/12 litre.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.07-12',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 5,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 9/10 − 2/5.',
+    options: [
+      { text: '7/5', misconception: 'subtract_across' },
+      { text: '7/10', misconception: 'incomplete_conversion' },
+      { text: '1/2', misconception: 'none' },
+      { text: '13/10', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 2,
+    solution:
+      'LCM(10, 5) = 10. Convert: 2/5 = 4/10. Then 9/10 − 4/10 = 5/10 = 1/2.',
+    estimatedTimeSec: 75,
+  },
+  {
+    id: 'FR.07-13',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Find: 5/6 − 1/4.',
+    options: [
+      { text: '4/2', misconception: 'subtract_across' },
+      { text: '7/12', misconception: 'none' },
+      { text: '14/24', misconception: 'product_not_lcm' },
+      { text: '13/12', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(6, 4) = 12. Convert: 5/6 = 10/12 and 1/4 = 3/12. Then 10/12 − 3/12 = 7/12.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.07-14',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem: 'Compute 7/12 − 1/4. Express your answer in simplest form.',
+    options: [
+      { text: '6/8', misconception: 'subtract_across' },
+      { text: '4/12', misconception: 'form_error' },
+      { text: '1/3', misconception: 'none' },
+      { text: '6/12', misconception: 'incomplete_conversion' },
+    ],
+    correctIndex: 2,
+    solution:
+      'LCM(12, 4) = 12. Convert: 1/4 = 3/12. Then 7/12 − 3/12 = 4/12 = 1/3 in simplest form.',
+    estimatedTimeSec: 90,
+  },
+  {
+    id: 'FR.07-15',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A bottle holds 7/8 litre of water. After Vivaan drinks 1/3 litre, how much water is left in the bottle?',
+    options: [
+      { text: '6/5 litre', misconception: 'subtract_across' },
+      { text: '13/24 litre', misconception: 'none' },
+      { text: '6/8 litre', misconception: 'incomplete_conversion' },
+      { text: '1 5/24 litres', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Water left = 7/8 − 1/3. LCM(8, 3) = 24. Convert: 7/8 = 21/24 and 1/3 = 8/24. Then 21/24 − 8/24 = 13/24 litre.',
+    estimatedTimeSec: 100,
+  },
+  {
+    id: 'FR.07-16',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 6,
+    band: 'core',
+    cognitiveType: 'Application / word problem',
+    kind: 'numeric',
+    stem:
+      'Ishaan has 1 whole pizza. He eats 5/8 of it. How much pizza is left? Enter your answer as a fraction in simplest form.',
+    inputHint: 'Enter as a fraction, e.g., 3/8',
+    acceptedAnswers: ['3/8'],
+    errorPatterns: [
+      { answers: ['4/7'], misconception: 'subtract_across' },
+      { answers: ['5/8', '1', '8/8'], misconception: 'conceptual_gap' },
+      { answers: ['1 5/8', '13/8'], misconception: 'operation_confusion' },
+    ],
+    solution:
+      'Rewrite 1 as 8/8. Then 8/8 − 5/8 = 3/8. So 3/8 of the pizza is left.',
+    estimatedTimeSec: 100,
+  },
+
+  // ----- Advanced (4) -----
+  {
+    id: 'FR.07-17',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 7,
+    band: 'advanced',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem:
+      'Subtract the mixed numbers: 3 1/4 − 1 1/2.',
+    options: [
+      { text: '2 1/4', misconception: 'borrowing_error' },
+      { text: '1 3/4', misconception: 'none' },
+      { text: '4 3/4', misconception: 'operation_confusion' },
+      { text: '2 1/2', misconception: 'mixed_number_error' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(4, 2) = 4, so 1/2 = 2/4. Now compare fractional parts: 1/4 < 2/4, so borrow 1 = 4/4 from the whole: 3 1/4 = 2 5/4. Then 2 5/4 − 1 2/4 = 1 3/4.',
+    estimatedTimeSec: 120,
+  },
+  {
+    id: 'FR.07-18',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Procedural fluency',
+    kind: 'mcq',
+    stem:
+      'Subtract: 4 1/3 − 2 5/6. Give your answer as a mixed number in simplest form.',
+    options: [
+      { text: '2 1/2', misconception: 'borrowing_error' },
+      { text: '1 1/2', misconception: 'none' },
+      { text: '2 1/3', misconception: 'mixed_number_error' },
+      { text: '7 1/6', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'LCM(3, 6) = 6, so 1/3 = 2/6. Now 4 1/3 = 4 2/6 and 2 5/6 stays as is. Since 2/6 < 5/6, borrow: 4 2/6 = 3 8/6. Then 3 8/6 − 2 5/6 = 1 3/6 = 1 1/2.',
+    estimatedTimeSec: 150,
+  },
+  {
+    id: 'FR.07-19',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 8,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'mcq',
+    stem:
+      'A 5-metre roll of ribbon is used for a school decoration. After cutting off 2 3/8 metres, how much ribbon is left?',
+    options: [
+      { text: '3 3/8 m', misconception: 'borrowing_error' },
+      { text: '2 5/8 m', misconception: 'none' },
+      { text: '2 3/8 m', misconception: 'mixed_number_error' },
+      { text: '7 3/8 m', misconception: 'operation_confusion' },
+    ],
+    correctIndex: 1,
+    solution:
+      'Rewrite 5 as 4 + 8/8. Then 5 − 2 3/8 = 4 8/8 − 2 3/8 = 2 5/8 metres.',
+    estimatedTimeSec: 150,
+  },
+  {
+    id: 'FR.07-20',
+    skillId: 'FR.07',
+    skillName: 'Subtract fractions with unlike denominators',
+    difficulty: 9,
+    band: 'advanced',
+    cognitiveType: 'Application / word problem',
+    kind: 'numeric',
+    stem:
+      'A water tank holds 5 1/4 litres. After watering the plants, only 1 5/6 litres remain. How much water was used? Enter your answer as a mixed number in simplest form.',
+    inputHint: 'Enter as a fraction or mixed number, e.g., 3 5/12',
+    acceptedAnswers: ['3 5/12', '41/12'],
+    errorPatterns: [
+      { answers: ['4 7/12', '55/12'], misconception: 'borrowing_error' },
+      { answers: ['4 1/4', '17/4'], misconception: 'mixed_number_error' },
+      { answers: ['7 1/12', '85/12'], misconception: 'operation_confusion' },
+      { answers: ['3 7/12', '43/12'], misconception: 'arithmetic_slip' },
+    ],
+    solution:
+      'Used = 5 1/4 − 1 5/6. LCM(4, 6) = 12, so 1/4 = 3/12 and 5/6 = 10/12. Now 5 3/12 − 1 10/12. Since 3/12 < 10/12, borrow: 5 3/12 = 4 15/12. Then 4 15/12 − 1 10/12 = 3 5/12 litres.',
+    estimatedTimeSec: 200,
   },
 ];
 

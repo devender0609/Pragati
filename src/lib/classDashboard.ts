@@ -10,6 +10,15 @@
 //   - "most difficult items" sorts by the actual proportion of students who
 //     got the item wrong; sample sizes can be very small in a pilot, so the
 //     UI surfaces the attempt count alongside the rate.
+//
+// v0.4: an optional skill filter scopes the aggregate to a single skill
+// bank (FR.06 or FR.07) by:
+//   - dropping responses to items that aren't in that bank, AND
+//   - dropping sessions whose mode disagrees with the selected skill
+//     (so an FR.07 student in a mixed session is still partially
+//     reflected via their FR.07 responses, but a pure FR.06 session
+//     does not contaminate an FR.07-only view).
+// The default ('all') reproduces the v0.3 behaviour exactly.
 
 import {
   ITEMS,
@@ -17,7 +26,9 @@ import {
   type Item,
   type MisconceptionCode,
 } from '../data/items';
-import type { Session, Student } from '../types';
+import type { Session, SkillId, Student } from '../types';
+
+export type ClassSkillFilter = SkillId | 'all';
 
 export type ClassMisconceptionRow = {
   code: MisconceptionCode;
@@ -47,23 +58,48 @@ export type ClassAggregate = {
   averageTimeSecPerItem: number;  // seconds per response
   misconceptionRows: ClassMisconceptionRow[];
   hardestItems: ClassHardestItem[];
+  skillFilter: ClassSkillFilter;
 };
 
 export function buildClassAggregate(
   students: Student[],
   sessions: Session[],
-  items: Item[] = ITEMS
+  items: Item[] = ITEMS,
+  skillFilter: ClassSkillFilter = 'all'
 ): ClassAggregate {
-  const completed = sessions.filter((s) => s.completedAt !== null);
+  const itemsById = new Map(items.map((i) => [i.id, i]));
+
+  const matchesSkill = (itemId: string): boolean => {
+    if (skillFilter === 'all') return true;
+    const it = itemsById.get(itemId);
+    if (!it) return false;
+    return it.skillId === skillFilter;
+  };
+
+  const sessionMatchesSkill = (s: Session): boolean => {
+    if (skillFilter === 'all') return true;
+    // Sessions in 'mixed' mode contain both FR.06 and FR.07 responses, so
+    // they should be eligible for either single-skill view (their
+    // responses will be filtered by item below).
+    if (s.skillId === 'mixed') return true;
+    return s.skillId === skillFilter;
+  };
+
+  const completed = sessions.filter(
+    (s) => s.completedAt !== null && sessionMatchesSkill(s)
+  );
 
   const studentById = new Map(students.map((s) => [s.id, s]));
   const studentIdsWithSessions = new Set(completed.map((s) => s.studentId));
 
   // Flatten every response with its student id for downstream aggregation.
+  // When a skill filter is active, responses to items outside the selected
+  // skill are dropped here.
   type Flat = { studentId: string } & Session['responses'][number];
   const flat: Flat[] = [];
   for (const session of completed) {
     for (const r of session.responses) {
+      if (!matchesSkill(r.itemId)) continue;
       flat.push({ studentId: session.studentId, ...r });
     }
   }
@@ -136,7 +172,6 @@ export function buildClassAggregate(
     correct: number;
     timeMs: number;
   };
-  const itemsById = new Map(items.map((i) => [i.id, i]));
   const itemAccum = new Map<string, ItemAccum>();
   for (const r of flat) {
     const item = itemsById.get(r.itemId);
@@ -177,5 +212,6 @@ export function buildClassAggregate(
     averageTimeSecPerItem,
     misconceptionRows,
     hardestItems,
+    skillFilter,
   };
 }

@@ -75,6 +75,37 @@ export type Response = {
 };
 
 // ---------------------------------------------------------------------------
+// Skills
+// ---------------------------------------------------------------------------
+// Each Item belongs to exactly one skill. A Session can target one skill or
+// a "mixed" pool drawn from both. Old (v0.3) sessions in localStorage have
+// skillId === 'FR.06' which is still a valid SkillMode, so no migration is
+// required.
+
+export type SkillId = 'FR.06' | 'FR.07';
+export type SkillMode = SkillId | 'mixed';
+
+export const SKILL_LABELS: Record<SkillId, string> = {
+  'FR.06': 'Add fractions with unlike denominators',
+  'FR.07': 'Subtract fractions with unlike denominators',
+};
+
+export const SKILL_MODE_LABELS: Record<SkillMode, string> = {
+  'FR.06': 'FR.06 — Add unlike',
+  'FR.07': 'FR.07 — Subtract unlike',
+  mixed: 'Mixed (FR.06 + FR.07)',
+};
+
+export const SKILL_MODE_DESCRIPTIONS: Record<SkillMode, string> = {
+  'FR.06':
+    'Adaptive session drawn only from the FR.06 bank (adding fractions with unlike denominators).',
+  'FR.07':
+    'Adaptive session drawn only from the FR.07 bank (subtracting fractions with unlike denominators).',
+  mixed:
+    'Mixed-skill session. Items are drawn from both FR.06 and FR.07 banks; the per-skill breakdown appears on the results screen.',
+};
+
+// ---------------------------------------------------------------------------
 // Session: one attempt at the assessment by one student
 // ---------------------------------------------------------------------------
 export type Session = {
@@ -82,7 +113,9 @@ export type Session = {
   studentId: string;
   studentSnapshot: StudentSnapshot;
   window: AssessmentWindow;
-  skillId: 'FR.06';
+  // The mode the student was assessed under. Field name kept as `skillId`
+  // for backwards-compatibility with v0.3 localStorage records.
+  skillId: SkillMode;
   startedAt: number;
   completedAt: number | null;
   responses: Response[];

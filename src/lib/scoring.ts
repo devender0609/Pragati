@@ -14,6 +14,18 @@
 //     items in the current session and the spread of difficulties seen.
 //   - Language is hedged: "prototype change indicator", "early signal,
 //     not calibrated growth".
+//
+// v0.4 changes:
+//   - Added new misconception codes (`subtract_across`, `borrowing_error`)
+//     to PREREQUISITE_FOR_MISCONCEPTION. Added FR.06 as a prerequisite
+//     code (FR.07 is built on top of FR.06).
+//   - Added `responsesBySkill`, `summarizeSessionBySkill`, and
+//     `summarizeMisconceptionsBySkill` helpers so the results screen
+//     and class dashboard can show per-skill breakdowns for mixed
+//     sessions.
+//   - Band descriptions are now per-skill so an FR.07 "Foundational"
+//     student gets pointed at FR.06 (and earlier prereqs), not at
+//     fictitious FR.06-prereq advice.
 
 import {
   MISCONCEPTION_LABELS,
@@ -21,22 +33,53 @@ import {
   type Item,
   type MisconceptionCode,
 } from '../data/items';
-import type { Response, Session } from '../types';
+import type { Response, Session, SkillId, SkillMode } from '../types';
 
 export type { Response, Session };
 
 export type Band = 'Foundational' | 'Developing' | 'On Track' | 'Advanced';
 
-export const BAND_DESCRIPTIONS: Record<Band, string> = {
-  Foundational:
-    'Early signs that the core idea of a common denominator is not yet in place. Strong candidate for revisiting FR.05 (like denominators) and equivalent fractions before continuing.',
-  Developing:
-    'Can add fractions when the conversion is very simple. Stumbles once LCM is required or the numerator has to be scaled. Needs targeted practice on core-band items.',
-  'On Track':
-    'Reliably adds fractions with unlike denominators, including standard two-term and mixed-number sums. Ready for FR.07 (subtraction) and for word-problem application work.',
-  Advanced:
-    'Fluent with three-term sums, mixed numbers, and multi-step word problems in this skill. Appropriate to begin bridging to more complex fraction operations and pre-algebra.',
+// Per-skill band descriptions. The "mixed" mode reuses FR.06 phrasing as a
+// neutral default, since a mixed session covers both skills.
+export const BAND_DESCRIPTIONS_BY_SKILL: Record<SkillMode, Record<Band, string>> = {
+  'FR.06': {
+    Foundational:
+      'Early signs that the core idea of a common denominator is not yet in place when adding. Strong candidate for revisiting FR.05 (like denominators) and equivalent fractions before continuing.',
+    Developing:
+      'Can add fractions when the conversion is very simple. Stumbles once LCM is required or the numerator has to be scaled. Needs targeted practice on core-band addition items.',
+    'On Track':
+      'Reliably adds fractions with unlike denominators, including standard two-term and mixed-number sums. Ready for FR.07 (subtraction) and for word-problem application work.',
+    Advanced:
+      'Fluent with three-term sums, mixed numbers, and multi-step word problems in addition. Appropriate to begin bridging to more complex fraction operations and pre-algebra.',
+  },
+  'FR.07': {
+    Foundational:
+      'Early signs that subtraction with unlike denominators is not yet stable. Likely to benefit from revisiting FR.05 (like-denominator subtraction), equivalent fractions, and FR.06 (addition with unlike denominators) before continuing.',
+    Developing:
+      'Can subtract fractions when the conversion is very simple. Stumbles once LCM is required, or once a borrow is needed for mixed-number subtraction. Needs targeted practice on core-band subtraction items.',
+    'On Track':
+      'Reliably subtracts fractions with unlike denominators, including standard two-term and basic mixed-number differences. Ready for borrowing-required mixed-number subtraction and word-problem application work.',
+    Advanced:
+      'Fluent with mixed-number subtraction (including borrowing) and multi-step word problems. Appropriate to begin bridging to more complex fraction operations and pre-algebra.',
+  },
+  mixed: {
+    Foundational:
+      'Early signs that the core idea of a common denominator is not yet in place. Strong candidate for revisiting FR.05 (like denominators) and equivalent fractions before continuing.',
+    Developing:
+      'Can combine fractions when the conversion is very simple. Stumbles once LCM is required or the numerator has to be scaled. Needs targeted practice on core-band items in both addition and subtraction.',
+    'On Track':
+      'Reliably adds and subtracts fractions with unlike denominators, including standard two-term sums and differences. Ready for mixed-number work (including borrowing) and for word-problem application.',
+    Advanced:
+      'Fluent with three-term sums, mixed-number addition and subtraction (including borrowing), and multi-step word problems. Appropriate to begin bridging to more complex fraction operations and pre-algebra.',
+  },
 };
+
+// Backwards-compatible default (FR.06 phrasing, kept for any caller that
+// doesn't yet pass a skill).
+export const BAND_DESCRIPTIONS: Record<Band, string> = BAND_DESCRIPTIONS_BY_SKILL['FR.06'];
+
+export const bandDescription = (band: Band, skill: SkillMode): string =>
+  BAND_DESCRIPTIONS_BY_SKILL[skill][band];
 
 export const computeBand = (ability: number): Band => {
   if (ability < 3.5) return 'Foundational';
@@ -143,9 +186,14 @@ export const bandAccuracy = (
 //   FR.03 - Equivalent fractions
 //   FM.07 - Find LCM
 // Plus FR.04 (mixed-number conversion) and FR.02 (fraction-as-model).
+//
+// FR.07 (subtract unlike denominators) shares those prerequisites, plus
+// FR.06 itself: a student who cannot add fractions with unlike denominators
+// is unlikely to subtract them reliably, so FR.06 is included as a
+// prerequisite for the FR.07-specific misconceptions.
 
 export type PrerequisiteSkill = {
-  code: 'FR.05' | 'FR.03' | 'FM.07' | 'FR.04' | 'FR.02';
+  code: 'FR.05' | 'FR.03' | 'FM.07' | 'FR.04' | 'FR.02' | 'FR.06';
   name: string;
 };
 
@@ -157,6 +205,10 @@ export const PREREQUISITE_FOR_MISCONCEPTION: Record<
     { code: 'FR.02', name: 'Read and represent fractions on a model' },
     { code: 'FR.05', name: 'Add fractions with like denominators' },
   ],
+  subtract_across: [
+    { code: 'FR.02', name: 'Read and represent fractions on a model' },
+    { code: 'FR.05', name: 'Add and subtract fractions with like denominators' },
+  ],
   incomplete_conversion: [
     { code: 'FR.03', name: 'Equivalent fractions' },
   ],
@@ -164,14 +216,18 @@ export const PREREQUISITE_FOR_MISCONCEPTION: Record<
     { code: 'FM.07', name: 'Find LCM of two or three numbers' },
   ],
   operation_confusion: [
-    { code: 'FR.05', name: 'Add fractions with like denominators' },
+    { code: 'FR.05', name: 'Add and subtract fractions with like denominators' },
   ],
   mixed_number_error: [
     { code: 'FR.04', name: 'Convert between mixed numbers and improper fractions' },
   ],
+  borrowing_error: [
+    { code: 'FR.04', name: 'Convert between mixed numbers and improper fractions' },
+    { code: 'FR.06', name: 'Add fractions with unlike denominators' },
+  ],
   conceptual_gap: [
     { code: 'FR.02', name: 'Read and represent fractions on a model' },
-    { code: 'FR.05', name: 'Add fractions with like denominators' },
+    { code: 'FR.05', name: 'Add and subtract fractions with like denominators' },
   ],
   visual_misread: [
     { code: 'FR.02', name: 'Read and represent fractions on a model' },
@@ -181,6 +237,26 @@ export const PREREQUISITE_FOR_MISCONCEPTION: Record<
     { code: 'FR.03', name: 'Equivalent fractions' },
   ],
   none: [],
+};
+
+// Static prerequisite list per skill, surfaced to the teacher as "what
+// FR.0x is built on" reference text — independent of misconception
+// observations. Used in the assessment results screen.
+export const STATIC_PREREQUISITES_BY_SKILL: Record<SkillId, PrerequisiteSkill[]> = {
+  'FR.06': [
+    { code: 'FR.02', name: 'Read and represent fractions on a model' },
+    { code: 'FR.03', name: 'Equivalent fractions' },
+    { code: 'FR.05', name: 'Add and subtract fractions with like denominators' },
+    { code: 'FR.04', name: 'Convert between mixed numbers and improper fractions' },
+    { code: 'FM.07', name: 'Find LCM of two or three numbers' },
+  ],
+  'FR.07': [
+    { code: 'FR.03', name: 'Equivalent fractions' },
+    { code: 'FR.05', name: 'Add and subtract fractions with like denominators' },
+    { code: 'FR.06', name: 'Add fractions with unlike denominators' },
+    { code: 'FR.04', name: 'Convert between mixed numbers and improper fractions' },
+    { code: 'FM.07', name: 'Find LCM of two or three numbers' },
+  ],
 };
 
 export type PrerequisiteRecommendation = {
@@ -425,3 +501,80 @@ function describeComponents(
 function capitalise(s: string): string {
   return s.length === 0 ? s : s[0].toUpperCase() + s.slice(1);
 }
+
+// ---------------------------------------------------------------------------
+// Per-skill helpers (v0.4)
+// ---------------------------------------------------------------------------
+// A "mixed" session may contain responses to both FR.06 and FR.07 items.
+// These helpers split a response array by the item's skillId so the UI can
+// surface per-skill accuracy and misconception breakdowns.
+
+// Build a quick lookup from itemId -> skillId for the items the student
+// actually saw in this session. Returns 'FR.06' as the safest default for
+// any item not found in the pool (this should be vanishingly rare and
+// only happens if the bank changes between sessions).
+const responseSkillLookup = (
+  responses: Response[],
+  pool: Item[]
+): Map<string, SkillId> => {
+  const byId = new Map(pool.map((it) => [it.id, it.skillId]));
+  const m = new Map<string, SkillId>();
+  for (const r of responses) {
+    m.set(r.itemId, byId.get(r.itemId) ?? 'FR.06');
+  }
+  return m;
+};
+
+export const responsesBySkill = (
+  responses: Response[],
+  pool: Item[]
+): Record<SkillId, Response[]> => {
+  const lookup = responseSkillLookup(responses, pool);
+  const out: Record<SkillId, Response[]> = {
+    'FR.06': [],
+    'FR.07': [],
+  };
+  for (const r of responses) {
+    const skill = lookup.get(r.itemId) ?? 'FR.06';
+    out[skill].push(r);
+  }
+  return out;
+};
+
+export type SkillBreakdown = {
+  skillId: SkillId;
+  attempted: number;
+  correct: number;
+  accuracy: number; // 0..1; 0 if attempted === 0
+  avgTimeSec: number;
+  misconceptions: MisconceptionSummary[];
+};
+
+export const summarizeBySkill = (
+  responses: Response[],
+  pool: Item[]
+): SkillBreakdown[] => {
+  const split = responsesBySkill(responses, pool);
+  const skills: SkillId[] = ['FR.06', 'FR.07'];
+  return skills.map((skill) => {
+    const subset = split[skill];
+    const correct = correctCount(subset);
+    return {
+      skillId: skill,
+      attempted: subset.length,
+      correct,
+      accuracy: subset.length === 0 ? 0 : correct / subset.length,
+      avgTimeSec: averageTimeSec(subset),
+      misconceptions: summarizeMisconceptions(subset),
+    };
+  });
+};
+
+// True iff the session draws from more than one skill bank.
+export const isMixedSession = (
+  responses: Response[],
+  pool: Item[]
+): boolean => {
+  const split = responsesBySkill(responses, pool);
+  return split['FR.06'].length > 0 && split['FR.07'].length > 0;
+};

@@ -16,8 +16,18 @@
 //       converges to a small region.
 // Real calibration still requires student response data and a model fit
 // (e.g., mirt / py-irt). See README for the next steps.
+//
+// v0.4: the adaptive engine is now skill-aware. The caller scopes the
+// item bank to a SkillMode before building a session pool:
+//   - 'FR.06'  → only FR.06 items
+//   - 'FR.07'  → only FR.07 items
+//   - 'mixed'  → both FR.06 and FR.07 items, drawn together
+// `filterItemsBySkillMode` is the helper for that scoping. The pool
+// builder itself is unchanged: it just stratifies whatever items it is
+// given.
 
 import type { Item } from '../data/items';
+import type { SkillMode } from '../types';
 
 export const INITIAL_ABILITY = 5;
 export const SESSION_SIZE = 10; // items administered per session
@@ -48,6 +58,22 @@ export const updateAbility = (ability: number, correct: boolean): number => {
   const next = ability + (correct ? 1 : -1);
   return Math.max(1, Math.min(10, next));
 };
+
+// ---------------------------------------------------------------------------
+// Skill-mode scoping
+// ---------------------------------------------------------------------------
+/**
+ * Restrict an item bank to the items in a given skill mode. For 'mixed',
+ * returns the bank unchanged (both FR.06 and FR.07 items are eligible).
+ * Returns a new array; the input is not mutated.
+ */
+export function filterItemsBySkillMode(
+  allItems: Item[],
+  mode: SkillMode
+): Item[] {
+  if (mode === 'mixed') return allItems.slice();
+  return allItems.filter((it) => it.skillId === mode);
+}
 
 // ---------------------------------------------------------------------------
 // Random utilities
