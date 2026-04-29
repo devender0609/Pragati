@@ -70,7 +70,51 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.5)
+## What this version adds (v0.6)
+
+The headline change in v0.6 is a tighter learning loop: every assessment
+now ends with an actionable next step, and every Learn page now contains
+worked examples and common-mistake notes alongside the reteach lesson.
+Skill progression is surfaced device-wide.
+
+- **Next Step for You.** Every Results page now opens with a "Next Step
+  for You" card that runs `suggestNextStep(session, items, progress)`:
+  - If a skill in the just-completed session was weak (≥ 2 attempted,
+    accuracy < 70%), the weakest one is the focus and three buttons
+    appear: open the lesson, jump to the practice questions, and
+    **retake just that skill**.
+  - If everything in the session was solid, the suggestion is the next
+    non-strong skill in curriculum order.
+  - If every skill in the device's history is in the Strong band, the
+    suggestion is a careful "looking solid" mastery message.
+- **Skill progression.** A new `src/lib/progression.ts` library
+  computes per-skill `not_started` / `developing` / `strong` status from
+  device-wide session history. Thresholds: ≥ 5 attempts and ≥ 70%
+  accuracy ⇒ Strong; otherwise Developing; otherwise Not started. These
+  are deliberate prototype heuristics, NOT calibrated mastery cuts.
+- **Fractions Module dashboard polish.** The dashboard now shows a
+  one-line summary of progression ("3/7 skills Strong, 5/7 skills
+  started"), a horizontal recommended-order strip with status pips, and
+  a per-skill card that includes a status pill, an accuracy bar, and a
+  prereq chain visualised with check / open icons. A "Continue with
+  ${skill}" CTA is the next non-strong skill in the recommended order.
+- **Lessons rewritten and expanded.** Every skill page now has, in
+  addition to the v0.5 reteach + visual + practice + notes:
+  - **Step-by-step reading of the visual** (`readingSteps[]` instead of
+    a single paragraph).
+  - **Two worked examples** (`workedExamples[]`) — one foundational and
+    one core/advanced — each with numbered steps and a final answer.
+  - **Three common mistakes** (`commonMistakes[]`) — pattern, "looks
+    like" example, why students do it, and how to fix it.
+  Generic copy in intros and notes has been tightened or replaced with
+  skill-specific guidance.
+- **UI polish.** Tighter typography (system font with `-letter-spacing`
+  on headings, looser body line-height), a section utility class for
+  consistent card hierarchy, button micro-interactions, sticky
+  back-blurred nav, and explicit mobile-first padding on cards. Teacher
+  dashboard headings get the same hierarchy treatment.
+
+## What v0.5 added
 
 The headline change in v0.5 is that Pragati now covers the **complete
 Class 6 Fractions Module**, with a Learn section alongside the

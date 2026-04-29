@@ -62,6 +62,16 @@ import {
   STATIC_PREREQUISITES_BY_SKILL,
 } from './lib/scoring';
 import {
+  computeSkillProgress,
+  RECOMMENDED_ORDER,
+  SKILL_STATUS_COLOR,
+  SKILL_STATUS_LABELS,
+  suggestNextStep,
+  type NextStepSuggestion,
+  type SkillProgress,
+  type SkillStatus,
+} from './lib/progression';
+import {
   ASSESSMENT_WINDOWS,
   ASSESSMENT_WINDOW_DESCRIPTIONS,
   ASSESSMENT_WINDOW_LABELS,
@@ -388,6 +398,8 @@ export default function App() {
               setView('studentDetail');
             }}
             onHome={goLanding}
+            onOpenLesson={goLearn}
+            onStartAssessment={goAssessmentForSkill}
           />
         )}
 
@@ -694,6 +706,25 @@ function FractionsModuleDashboard({
   onBack: () => void;
 }) {
   const totalItems = ITEMS.length;
+  // Compute progression once for the dashboard so every SkillCard sees the
+  // same snapshot.
+  const progress = useMemo(
+    () => computeSkillProgress(loadSessions(), ITEMS),
+    []
+  );
+  const focus = useMemo(() => {
+    for (const s of RECOMMENDED_ORDER) {
+      if (progress[s].status !== 'strong') return s;
+    }
+    return null;
+  }, [progress]);
+  const startedSkills = SKILL_IDS_ORDERED.filter(
+    (s) => progress[s].status !== 'not_started'
+  ).length;
+  const strongSkills = SKILL_IDS_ORDERED.filter(
+    (s) => progress[s].status === 'strong'
+  ).length;
+
   return (
     <div className="space-y-6">
       <div>
@@ -708,14 +739,14 @@ function FractionsModuleDashboard({
         <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
           Class 6 · Fractions Module
         </div>
-        <h1 className="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl">
+        <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
           Learn and assess every Class 6 fraction skill.
         </h1>
-        <p className="mt-2 max-w-2xl text-sm text-slate-600">
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
           Seven skills, {totalItems} items, with a short reteach lesson, a
-          visual explanation, five practice questions, and teacher / parent
-          notes for every skill. Pick a skill to study, or run a
-          mixed-skills assessment that draws across all of them.
+          visual explanation, two worked examples, three common-mistake notes,
+          and five practice questions for every skill. Pick a skill to study,
+          or run a mixed-skills assessment that draws across all of them.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <button
@@ -724,20 +755,39 @@ function FractionsModuleDashboard({
           >
             Take the Mixed Fractions Assessment
           </button>
-          <button
-            onClick={() => onOpenLesson('FR.02')}
-            className="btn-secondary"
-          >
-            Start with FR.02 (Visualise)
-          </button>
+          {focus !== null && (
+            <button
+              onClick={() => onOpenLesson(focus)}
+              className="btn-secondary"
+            >
+              Continue with {focus}
+            </button>
+          )}
+        </div>
+        <div className="mt-5 flex flex-wrap gap-2 text-xs text-slate-600">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-2.5 py-1 ring-1 ring-slate-200">
+            <span className="font-semibold text-slate-700">
+              {strongSkills}/{SKILL_IDS_ORDERED.length}
+            </span>
+            <span>skills marked Strong on this device</span>
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-2.5 py-1 ring-1 ring-slate-200">
+            <span className="font-semibold text-slate-700">
+              {startedSkills}/{SKILL_IDS_ORDERED.length}
+            </span>
+            <span>skills started</span>
+          </span>
         </div>
       </div>
+
+      <SkillProgressionStrip progress={progress} onOpenLesson={onOpenLesson} />
 
       <div className="grid gap-4 sm:grid-cols-2">
         {SKILL_IDS_ORDERED.map((s) => (
           <SkillCard
             key={s}
             skillId={s}
+            progress={progress[s]}
             onOpenLesson={onOpenLesson}
             onStartAssessment={onStartAssessment}
           />
@@ -749,38 +799,99 @@ function FractionsModuleDashboard({
         <p className="mt-1">
           The lessons here are content drafts for a prototype, not a published
           curriculum. They should be reviewed by a CBSE Class 6 math teacher
-          before any real student sees them. Difficulty and band labels come
-          from seed estimates, not a calibrated study.
+          before any real student sees them. Skill-status labels come from a
+          rule-based heuristic on a small bank, not from a calibrated mastery
+          study.
         </p>
       </div>
     </div>
   );
 }
 
+// Compact horizontal "recommended order" strip showing all 7 skills with
+// their status pip. Clicking opens the Learn page for that skill.
+function SkillProgressionStrip({
+  progress,
+  onOpenLesson,
+}: {
+  progress: Record<SkillId, SkillProgress>;
+  onOpenLesson: (s: SkillId) => void;
+}) {
+  return (
+    <div className="rounded-2xl bg-white p-4 ring-1 ring-slate-200 sm:p-5">
+      <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+        Recommended learning order
+      </div>
+      <p className="mt-1 text-xs text-slate-500">
+        FR.02 first; word problems (FR.08) last. Status pips are a prototype
+        signal from session history on this device — not a calibrated mastery
+        claim.
+      </p>
+      <ol className="mt-3 flex flex-wrap items-center gap-x-1 gap-y-2 sm:gap-x-2">
+        {RECOMMENDED_ORDER.map((s, i) => {
+          const p = progress[s];
+          return (
+            <li key={s} className="flex items-center gap-1 sm:gap-2">
+              <button
+                onClick={() => onOpenLesson(s)}
+                className="group inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 ring-1 ring-slate-200 hover:bg-slate-50"
+                title={`${s} — status: ${SKILL_STATUS_LABELS[p.status]}`}
+              >
+                <span
+                  className={`inline-flex h-2 w-2 flex-none rounded-full ${
+                    p.status === 'strong'
+                      ? 'bg-emerald-500'
+                      : p.status === 'developing'
+                        ? 'bg-amber-500'
+                        : 'bg-slate-300'
+                  }`}
+                />
+                <span className="text-xs font-semibold text-slate-700 group-hover:text-slate-900">
+                  {s}
+                </span>
+              </button>
+              {i < RECOMMENDED_ORDER.length - 1 && (
+                <span className="text-slate-300">→</span>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+}
+
 // One row in the Fractions Module grid: a colourful card per skill, with
-// item count, prereqs (if any), a "Learn" CTA, and a quick-start assessment
-// button.
+// item count, prereqs (if any), status pill + accuracy bar, a "Learn" CTA,
+// and a quick-start assessment button. Locks (visual hint only — never
+// gating) appear when prereqs haven't been started yet.
 function SkillCard({
   skillId,
+  progress,
   onOpenLesson,
   onStartAssessment,
 }: {
   skillId: SkillId;
+  progress: SkillProgress;
   onOpenLesson: (s: SkillId) => void;
   onStartAssessment: (mode: SkillMode) => void;
 }) {
   const itemCount = ITEMS.filter((i) => i.skillId === skillId).length;
   const prereqs = STATIC_PREREQUISITES_BY_SKILL[skillId];
   const lesson = LESSONS[skillId];
+  const accPct = Math.round(progress.accuracy * 100);
   return (
-    <article
-      className={`flex flex-col rounded-2xl bg-white p-5 ring-1 ring-slate-200 transition hover:shadow-md`}
-    >
+    <article className="flex flex-col rounded-2xl bg-white p-5 ring-1 ring-slate-200 transition hover:shadow-md">
       <div className="flex flex-wrap items-start justify-between gap-2">
-        <div className="flex flex-col gap-1">
-          <span className={`inline-flex w-fit items-center rounded-full px-2 py-0.5 text-xs font-bold ring-1 ${skillChipClass(skillId)}`}>
-            {skillId}
-          </span>
+        <div className="flex flex-col gap-1.5">
+          <div className="flex items-center gap-2">
+            <span
+              className={`inline-flex w-fit items-center rounded-full px-2 py-0.5 text-xs font-bold ring-1 ${skillChipClass(skillId)}`}
+            >
+              {skillId}
+            </span>
+            <SkillStatusPill status={progress.status} />
+          </div>
           <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
             {SKILL_LABELS[skillId]}
           </h3>
@@ -789,18 +900,61 @@ function SkillCard({
           {itemCount} item{itemCount === 1 ? '' : 's'}
         </span>
       </div>
-      <p className="mt-3 text-sm text-slate-600">{lesson.intro}</p>
+      <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        {lesson.intro}
+      </p>
+      {progress.status !== 'not_started' && (
+        <div className="mt-3">
+          <div className="flex items-center justify-between text-xs text-slate-500">
+            <span>
+              Accuracy on this device · {progress.attempted} attempt
+              {progress.attempted === 1 ? '' : 's'}
+            </span>
+            <span className="font-semibold text-slate-700">{accPct}%</span>
+          </div>
+          <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
+            <div
+              className={`h-full rounded-full transition-all ${
+                progress.status === 'strong' ? 'bg-emerald-500' : 'bg-amber-500'
+              }`}
+              style={{ width: `${Math.max(4, accPct)}%` }}
+            />
+          </div>
+        </div>
+      )}
       {prereqs.length > 0 && (
         <div className="mt-3 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
           <span className="font-medium text-slate-600">Builds on:</span>
-          {prereqs.map((p) => (
-            <span
-              key={p.code}
-              className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 ring-1 ring-slate-200"
-            >
-              {p.code}
-            </span>
-          ))}
+          {prereqs.map((p) => {
+            const pCode = p.code;
+            const isCurrSkill = (SKILL_IDS_ORDERED as string[]).includes(pCode);
+            const remaining = progress.prereqsRemaining as readonly string[];
+            const isRemaining = remaining.includes(pCode);
+            return (
+              <span
+                key={pCode}
+                className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 ring-1 ${
+                  isCurrSkill && !isRemaining
+                    ? 'bg-emerald-50 text-emerald-700 ring-emerald-200'
+                    : 'bg-slate-100 ring-slate-200'
+                }`}
+                title={
+                  isCurrSkill
+                    ? isRemaining
+                      ? `${pCode} not started yet`
+                      : `${pCode} started`
+                    : `${pCode} (outside this module)`
+                }
+              >
+                {isCurrSkill && !isRemaining ? '✓' : isRemaining ? '○' : '·'} {pCode}
+              </span>
+            );
+          })}
+        </div>
+      )}
+      {!progress.unlocked && progress.prereqsRemaining.length > 0 && (
+        <div className="mt-3 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
+          Tip: prerequisites not started yet ({progress.prereqsRemaining.join(', ')}). You can still open this skill — it just builds on those.
         </div>
       )}
       <div className="mt-auto flex flex-wrap gap-2 pt-4">
@@ -818,6 +972,16 @@ function SkillCard({
         </button>
       </div>
     </article>
+  );
+}
+
+function SkillStatusPill({ status }: { status: SkillStatus }) {
+  return (
+    <span
+      className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ring-1 ${SKILL_STATUS_COLOR[status]}`}
+    >
+      {SKILL_STATUS_LABELS[status]}
+    </span>
   );
 }
 
@@ -847,6 +1011,10 @@ function LearnView({
     idx >= 0 && idx < SKILL_IDS_ORDERED.length - 1
       ? SKILL_IDS_ORDERED[idx + 1]
       : null;
+  const progress = useMemo(
+    () => computeSkillProgress(loadSessions(), ITEMS)[skill],
+    [skill]
+  );
 
   return (
     <div className="space-y-6">
@@ -882,14 +1050,15 @@ function LearnView({
           <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold ring-1 ${skillChipClass(skill)}`}>
             {skill}
           </span>
+          <SkillStatusPill status={progress.status} />
           <span className="text-xs text-slate-500">
-            Learn · reteach + visual + practice
+            Learn · reteach + visual + worked examples + common mistakes + practice
           </span>
         </div>
-        <h1 className="mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">
+        <h1 className="mt-3 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
           {SKILL_LABELS[skill]}
         </h1>
-        <p className="mt-3 max-w-3xl text-sm text-slate-600 sm:text-base">
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 sm:text-base">
           {lesson.intro}
         </p>
         {prereqs.length > 0 && (
@@ -955,9 +1124,50 @@ function LearnView({
         <div className="mt-3">
           <Visual visual={lesson.visualExplanation.visual} />
         </div>
-        <p className="mt-3 text-sm text-slate-700">
-          {lesson.visualExplanation.explanation}
+        <ol className="mt-4 space-y-2 text-sm text-slate-700">
+          {lesson.visualExplanation.readingSteps.map((step, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="mt-0.5 flex h-5 w-5 flex-none items-center justify-center rounded-full bg-slate-200 text-[10px] font-bold text-slate-700">
+                {i + 1}
+              </span>
+              <span>{step}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="card">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg font-semibold text-slate-900">
+            Worked examples
+          </h2>
+          <span className="text-xs text-slate-500">
+            {lesson.workedExamples.length} fully-worked problems
+          </span>
+        </div>
+        <p className="mt-1 text-sm text-slate-600">
+          Each example walks through the steps the student should write down.
         </p>
+        <div className="mt-4 space-y-4">
+          {lesson.workedExamples.map((ex, i) => (
+            <WorkedExampleCard key={i} index={i + 1} example={ex} />
+          ))}
+        </div>
+      </section>
+
+      <section className="card">
+        <h2 className="text-lg font-semibold text-slate-900">
+          Common mistakes
+        </h2>
+        <p className="mt-1 text-sm text-slate-600">
+          Three error patterns to look out for. Each row names the mistake,
+          why it happens, and how to fix it.
+        </p>
+        <div className="mt-4 space-y-3">
+          {lesson.commonMistakes.map((m, i) => (
+            <CommonMistakeCard key={i} mistake={m} />
+          ))}
+        </div>
       </section>
 
       <section className="card">
@@ -998,6 +1208,74 @@ function LearnView({
         teacher before classroom use.
       </p>
     </div>
+  );
+}
+
+function WorkedExampleCard({
+  index,
+  example,
+}: {
+  index: number;
+  example: import('./data/lessons').WorkedExample;
+}) {
+  return (
+    <article className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
+      <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+        Worked example {index}
+      </div>
+      <p className="mt-1 text-sm font-semibold text-slate-900">
+        {example.problem}
+      </p>
+      <ol className="mt-3 space-y-2 text-sm text-slate-700">
+        {example.steps.map((step, i) => (
+          <li key={i} className="flex gap-3">
+            <span className="mt-0.5 flex h-5 w-5 flex-none items-center justify-center rounded-full bg-brand-600 text-[10px] font-bold text-white">
+              {i + 1}
+            </span>
+            <span>{step}</span>
+          </li>
+        ))}
+      </ol>
+      <div className="mt-3 flex items-baseline gap-2 text-sm">
+        <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+          Answer
+        </span>
+        <span className="text-base font-bold text-slate-900">
+          {example.answer}
+        </span>
+      </div>
+    </article>
+  );
+}
+
+function CommonMistakeCard({
+  mistake,
+}: {
+  mistake: import('./data/lessons').CommonMistake;
+}) {
+  return (
+    <article className="rounded-2xl border border-rose-200 bg-rose-50 p-4">
+      <div className="text-xs font-semibold uppercase tracking-wide text-rose-700">
+        {mistake.pattern}
+      </div>
+      <p className="mt-1 text-sm font-medium text-rose-900">
+        Looks like: <span className="font-normal italic">{mistake.example}</span>
+      </p>
+      <dl className="mt-3 grid gap-3 sm:grid-cols-2">
+        <div>
+          <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+            Why students do this
+          </dt>
+          <dd className="mt-1 text-sm text-slate-700">{mistake.why}</dd>
+        </div>
+        <div>
+          <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+            How to fix it
+          </dt>
+          <dd className="mt-1 text-sm text-slate-700">{mistake.fix}</dd>
+        </div>
+      </dl>
+    </article>
   );
 }
 
@@ -1650,11 +1928,15 @@ function Results({
   onAnotherSession,
   onTeacher,
   onHome,
+  onOpenLesson,
+  onStartAssessment,
 }: {
   session: Session;
   onAnotherSession: () => void;
   onTeacher: () => void;
   onHome: () => void;
+  onOpenLesson: (s: SkillId) => void;
+  onStartAssessment: (mode: SkillMode) => void;
 }) {
   const band = computeBand(session.finalAbility);
   const correct = correctCount(session.responses);
@@ -1689,13 +1971,21 @@ function Results({
   const showsMixedBreakdown =
     session.skillId === 'mixed' && isMixedSession(session.responses, ITEMS);
 
+  // "Next Step for You" — runs on the just-completed session and on the
+  // device-wide progression so we can suggest the right place to go next.
+  const nextStep = useMemo<NextStepSuggestion>(() => {
+    const allSessions = loadSessions();
+    const progress = computeSkillProgress(allSessions, ITEMS);
+    return suggestNextStep(session, ITEMS, progress);
+  }, [session]);
+
   return (
     <div className="space-y-6">
       <div className="card">
-        <div className="text-sm font-medium uppercase tracking-wide text-slate-500">
+        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
           Assessment complete
         </div>
-        <h1 className="mt-2 text-3xl font-bold text-slate-900">
+        <h1 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
           {session.studentSnapshot.name}'s prototype estimate
         </h1>
         <div className="mt-1 flex flex-wrap items-center gap-2 text-sm text-slate-600">
@@ -1734,6 +2024,12 @@ function Results({
         )}
       </div>
 
+      <NextStepCard
+        suggestion={nextStep}
+        onOpenLesson={onOpenLesson}
+        onStartAssessment={onStartAssessment}
+      />
+
       {growth && <GrowthCard growth={growth} session={session} />}
 
       {showsMixedBreakdown && (
@@ -1762,7 +2058,7 @@ function Results({
         <p className="mt-1 text-sm text-slate-600">
           Based on items answered on{' '}
           {session.skillId === 'mixed'
-            ? 'the mixed assessment (FR.06 + FR.07).'
+            ? 'the Mixed Fractions Assessment (across the whole module).'
             : `${session.skillId} — ${SKILL_LABELS[session.skillId]}.`}
         </p>
         <BandAccuracyTable session={session} />
@@ -1809,10 +2105,10 @@ function Results({
 
       <div className="flex flex-wrap gap-3">
         <button onClick={onTeacher} className="btn-primary">
-          View teacher dashboard for this student
+          Teacher view for {session.studentSnapshot.name}
         </button>
         <button onClick={onAnotherSession} className="btn-secondary">
-          Start another session for {session.studentSnapshot.name}
+          Another session for {session.studentSnapshot.name}
         </button>
         <button onClick={onHome} className="btn-secondary">
           Home
@@ -2020,6 +2316,88 @@ function SkillChip({ mode }: { mode: SkillMode }) {
   );
 }
 
+// "Next Step for You" card surfaced right after the headline on Results.
+// Built on the suggestNextStep heuristic: weakest skill in this session if
+// any, else the next non-strong skill in curriculum order, else a mastery
+// message.
+function NextStepCard({
+  suggestion,
+  onOpenLesson,
+  onStartAssessment,
+}: {
+  suggestion: NextStepSuggestion;
+  onOpenLesson: (s: SkillId) => void;
+  onStartAssessment: (mode: SkillMode) => void;
+}) {
+  const tone =
+    suggestion.kind === 'practice_skill'
+      ? 'from-amber-50 to-rose-50 ring-amber-200'
+      : suggestion.kind === 'next_skill'
+        ? 'from-brand-50 to-violet-50 ring-brand-200'
+        : 'from-emerald-50 to-teal-50 ring-emerald-200';
+  return (
+    <section
+      className={`rounded-3xl bg-gradient-to-br p-5 ring-1 sm:p-6 ${tone}`}
+    >
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="text-xs font-semibold uppercase tracking-wide text-slate-700">
+          Next step for you
+        </span>
+        <SkillChip mode={suggestion.skillId} />
+      </div>
+      <h2 className="mt-2 text-xl font-bold text-slate-900 sm:text-2xl">
+        {suggestion.headline}
+      </h2>
+      <p className="mt-2 max-w-3xl text-sm text-slate-700">
+        {suggestion.detail}
+      </p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        <button
+          onClick={() => onOpenLesson(suggestion.skillId)}
+          className="btn-primary"
+        >
+          Open the {suggestion.skillId} lesson
+        </button>
+        <button
+          onClick={() => onOpenLesson(suggestion.skillId)}
+          className="btn-secondary"
+        >
+          See {suggestion.skillId} practice questions
+        </button>
+        <button
+          onClick={() => onStartAssessment(suggestion.skillId)}
+          className="btn-secondary"
+        >
+          {suggestion.kind === 'practice_skill'
+            ? `Retake ${suggestion.skillId} only`
+            : `Take a ${suggestion.skillId} assessment`}
+        </button>
+      </div>
+      {suggestion.perSkillSummary.length > 1 && (
+        <div className="mt-4 rounded-xl bg-white/70 p-3 ring-1 ring-slate-200">
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+            What you did this session
+          </div>
+          <ul className="mt-2 grid gap-1 text-xs text-slate-700 sm:grid-cols-2">
+            {suggestion.perSkillSummary.map((row) => (
+              <li
+                key={row.skillId}
+                className="flex items-center justify-between rounded-md bg-white px-2 py-1 ring-1 ring-slate-100"
+              >
+                <span className="font-medium">{row.skillId}</span>
+                <span className="text-slate-500">
+                  {Math.round(row.accuracy * 100)}% · {row.attempted} item
+                  {row.attempted === 1 ? '' : 's'}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </section>
+  );
+}
+
 // Per-skill summary card for mixed sessions, showing accuracy plus the
 // most-frequent misconceptions on that skill.
 function SkillBreakdownCard({ breakdown }: { breakdown: SkillBreakdown }) {
@@ -2181,9 +2559,11 @@ function TeacherStudentList({
           <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
             Teacher dashboard
           </div>
-          <h1 className="mt-1 text-2xl font-bold text-slate-900">Students</h1>
-          <p className="mt-1 text-sm text-slate-600">
-            One row per student. Click a row to open their growth history,
+          <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            Students
+          </h1>
+          <p className="mt-1 text-sm leading-relaxed text-slate-600">
+            One row per student. Tap a row to open their growth history,
             item-by-item responses, and recommended next steps.
           </p>
         </div>
@@ -2192,7 +2572,7 @@ function TeacherStudentList({
             Class dashboard
           </button>
           <button onClick={handleExport} className="btn-secondary">
-            Export data (JSON)
+            Export JSON
           </button>
           <button onClick={onStart} className="btn-primary">
             New session
