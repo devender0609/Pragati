@@ -112,15 +112,209 @@ export const BAND_DESCRIPTIONS_BY_SKILL: Record<SkillMode, Record<Band, string>>
     Advanced:
       'Fluent with multi-step fraction word problems involving mixed numbers and unlike denominators. Appropriate to bridge into ratio and percentage problem solving.',
   },
-  mixed: {
+  // ----- Decimals -----
+  'DE.01': {
+    Foundational:
+      'Decimal place value is not yet anchored — the student confuses tenths with hundredths or treats the decimal as two whole numbers. Revisit place value with a place-value chart.',
+    Developing:
+      'Identifies tenths and hundredths on simple examples but slips on three-place decimals or on writing decimals from words. Needs more place-value-chart practice.',
+    'On Track':
+      'Reads and writes decimals to thousandths and recognises trailing-zero equivalence. Ready for DE.02 (conversions) and DE.03 (compare).',
+    Advanced:
+      'Fluent with decimal place value, including word-form ↔ standard-form conversions. Appropriate to move into decimal arithmetic.',
+  },
+  'DE.02': {
+    Foundational:
+      'Trips up on the basic equivalences (1/2 = 0.5, 1/4 = 0.25, 3/4 = 0.75). Revisit FR.03 (equivalent fractions) alongside DE.01 (place value).',
+    Developing:
+      'Knows the common conversions but slips on tenths-vs-hundredths or on simplifying the resulting fraction.',
+    'On Track':
+      'Converts both directions reliably for fractions with denominators 2, 4, 5, 10, 100. Ready for DE.03 / DE.04.',
+    Advanced:
+      'Fluent with conversions including 1/8, 3/8, mixed numbers ↔ decimals. Appropriate for decimal arithmetic word problems.',
+  },
+  'DE.03': {
+    Foundational:
+      '"Length bias" present — thinks 0.65 > 0.7 because it has more digits. Re-anchor with the pad-with-zeros idea (0.7 = 0.70).',
+    Developing:
+      'Compares simple pairs but trips on three-place decimals or on ordering 3+ values.',
+    'On Track':
+      'Compares and orders decimals reliably to thousandths. Ready for DE.04 (arithmetic) and DE.05 (word problems).',
+    Advanced:
+      'Fluent with comparison and ordering across many decimals; recognises trailing-zero equivalence. Appropriate to apply to measurement problems.',
+  },
+  'DE.04': {
+    Foundational:
+      'Decimal points are not lined up — adds tenths to hundredths digit-by-digit. Revisit place-value alignment with a column-style layout.',
+    Developing:
+      'Aligns decimals on simple cases but slips when the operands have different numbers of decimal places. Needs explicit padding-with-zeros practice.',
+    'On Track':
+      'Adds and subtracts decimals reliably, including borrowing. Ready for DE.05 (word problems).',
+    Advanced:
+      'Fluent with three-term sums and multi-step subtraction. Appropriate to begin decimal × / ÷ work in later grades.',
+  },
+  'DE.05': {
+    Foundational:
+      'Right arithmetic, wrong operation in word problems. Re-read the problem; underline question words ("left", "in total"). Re-anchor in DE.04.',
+    Developing:
+      'Picks the right operation in one-step problems but trips on multi-step ones. Needs to write the calculation explicitly with units.',
+    'On Track':
+      'Solves one- and two-step decimal word problems reliably. Ready for harder multi-step problems and bridges into ratio.',
+    Advanced:
+      'Fluent across multi-step decimal word problems with money / measurement contexts. Appropriate to move on.',
+  },
+  // ----- Factors & Multiples -----
+  'FM.03': {
+    Foundational:
+      'Confuses prime / composite — calls 1 prime, calls 9 prime, etc. Re-anchor with the "exactly two factors" definition.',
+    Developing:
+      'Identifies primes ≤ 20 reliably but slips on larger numbers and on prime factorisation steps.',
+    'On Track':
+      'Recognises primes ≤ 100 and writes correct prime factorisations. Ready for FM.06 (HCF) and FM.07 (LCM).',
+    Advanced:
+      'Fluent with prime factorisation of larger numbers and the special place of 2 (the only even prime). Appropriate for HCF/LCM word problems.',
+  },
+  'FM.04': {
+    Foundational:
+      'Mixes up divisibility rules (e.g., applies the divisibility-by-3 rule to test for 4). Revisit the rules one at a time, on small examples.',
+    Developing:
+      'Knows the rules for 2, 5, and 10 but slips on 3, 6, 9. Practise digit-sum on more examples.',
+    'On Track':
+      'Applies divisibility rules for 2, 3, 4, 5, 6, 9, 10 reliably. Ready for FM.06 (HCF).',
+    Advanced:
+      'Confident with multi-rule combinations (e.g., divisible by 6 ⇔ by 2 and 3) and with finding missing-digit problems.',
+  },
+  'FM.06': {
+    Foundational:
+      'Confuses HCF with LCM, or with simple "common factor". Revisit prime factorisation (FM.03) alongside the "lowest common power" rule for HCF.',
+    Developing:
+      'Finds HCF on small numbers by listing factors but slips on larger ones. Needs the prime-factorisation method.',
+    'On Track':
+      'Finds HCF reliably for two and three numbers using prime factorisation. Ready for HCF word problems (FM.08).',
+    Advanced:
+      'Fluent with HCF on larger numbers and recognises coprime pairs. Appropriate for application problems.',
+  },
+  'FM.07': {
+    Foundational:
+      'Confuses LCM with HCF, or with the product of the numbers. Revisit FM.03 (primes) and the "highest common power" rule for LCM.',
+    Developing:
+      'Finds LCM on small numbers by listing multiples but slips on larger ones or three-number cases.',
+    'On Track':
+      'Finds LCM reliably using prime factorisation. Ready for LCM word problems (FM.08) and for FR.06 / FR.07 (where LCM is the prereq).',
+    Advanced:
+      'Fluent with LCM on three-or-more numbers; uses the formula a × b = HCF × LCM where helpful.',
+  },
+  'FM.08': {
+    Foundational:
+      'Picks HCF when LCM is needed (or vice versa). Revisit cue words: "together again / smallest common" → LCM; "maximum equal / greatest common" → HCF.',
+    Developing:
+      'Picks the right operation on simple problems but slips on multi-step or three-number cases.',
+    'On Track':
+      'Reliably solves single-step HCF/LCM word problems and explains the choice of operation. Ready for multi-step problems.',
+    Advanced:
+      'Fluent with multi-step HCF/LCM problems including bell/light cycles and grouping. Appropriate to bridge into ratio reasoning.',
+  },
+  // ----- Ratio & Proportion -----
+  'RP.01': {
+    Foundational:
+      'Writes ratios in the wrong order, or fails to simplify. Revisit the "out of" sense and FR.03 (simplification).',
+    Developing:
+      'Writes simple ratios in the right order but does not always simplify. Needs more HCF practice.',
+    'On Track':
+      'Writes and simplifies two- and three-term ratios reliably; converts unit-mismatched ratios. Ready for RP.02 / RP.03.',
+    Advanced:
+      'Fluent with three-term ratios and unit conversions inside ratios. Appropriate for application problems.',
+  },
+  'RP.02': {
+    Foundational:
+      'Multiplies one term but forgets the other (the FR.03 mistake repeated). Revisit the "k/k = 1" idea.',
+    Developing:
+      'Builds equivalent ratios on small examples but slips on larger multipliers or simplification.',
+    'On Track':
+      'Generates equivalent ratios reliably; finds missing terms when one term is the multiplier base. Ready for RP.03 (proportion).',
+    Advanced:
+      'Fluent with equivalent ratios across reduce-and-scale chains. Appropriate for proportion problems.',
+  },
+  'RP.03': {
+    Foundational:
+      'Doesn\'t reach for cross-multiplication; tests proportion by comparing one side only. Re-anchor in the rule a×d = b×c.',
+    Developing:
+      'Cross-multiplies on simple problems but slips on missing-term setups or larger numbers.',
+    'On Track':
+      'Tests for proportion and finds missing terms reliably using cross-multiplication.',
+    Advanced:
+      'Fluent with proportion problems including word-problem applications. Appropriate for the unitary method.',
+  },
+  'RP.04': {
+    Foundational:
+      'Skips the unit-quantity step or applies it only sometimes. Revisit the explicit "first find the cost / amount per 1 unit" routine.',
+    Developing:
+      'Applies the unitary method on direct-proportion problems but slips when the relationship is "more workers ⇒ fewer days".',
+    'On Track':
+      'Solves unitary-method problems in cost, distance, and rate contexts. Ready for multi-step word problems.',
+    Advanced:
+      'Fluent with unitary-method applications across direct and inverse contexts. Appropriate for ratio word problems.',
+  },
+  'RP.05': {
+    Foundational:
+      'Solid arithmetic, weak problem identification — picks ratio when proportion is needed, or vice versa. Re-anchor in question wording.',
+    Developing:
+      'Sets up the right calculation on simple problems but slips on multi-step or "share in ratio" problems.',
+    'On Track':
+      'Solves one- and two-step ratio / proportion word problems reliably.',
+    Advanced:
+      'Fluent across multi-step word problems including share-and-find-larger contexts.',
+  },
+  // ----- Module-mixed and full-mixed -----
+  mixed_fractions: {
     Foundational:
       'Across the Fractions Module, the basics (visualising, equivalence, like denominators) are not yet stable. Strong candidate for the Learn section before more assessments.',
     Developing:
-      'Some skills are coming together but there is still drift on more procedural skills (LCM, borrowing) or on word problems. Use the per-skill breakdown to choose what to revisit.',
+      'Some Fractions skills are coming together but there is still drift on procedural skills (LCM, borrowing) or word problems. Use the per-skill breakdown.',
     'On Track':
-      'Most fraction skills are reliable. Use the per-skill breakdown to spot the one or two skills still in transition and target them.',
+      'Most Fractions skills are reliable. Spot the one or two skills still in transition and target them.',
     Advanced:
-      'Fluent across the whole Class 6 Fractions Module on this prototype. Appropriate to begin bridging to multiplication and division of fractions.',
+      'Fluent across the Fractions module on this prototype. Appropriate to bridge to multiplication / division of fractions.',
+  },
+  mixed_decimals: {
+    Foundational:
+      'Across the Decimals module, place value is not yet anchored. Revisit DE.01 with a place-value chart before continuing.',
+    Developing:
+      'Some Decimals skills are coming together but trip on multi-place comparison or decimal arithmetic alignment.',
+    'On Track':
+      'Most Decimals skills are reliable. Practise on word problems (DE.05) to consolidate.',
+    Advanced:
+      'Fluent across the Decimals module. Appropriate for decimal × / ÷ work in later grades.',
+  },
+  mixed_factors_multiples: {
+    Foundational:
+      'Across F&M, the prime / composite definition and divisibility rules need more time. Revisit FM.03 + FM.04.',
+    Developing:
+      'Knows some divisibility rules and finds HCF/LCM on small numbers; slips on larger numbers and on word problems.',
+    'On Track':
+      'Most F&M skills are reliable, including HCF and LCM via prime factorisation. Practise word-problem identification.',
+    Advanced:
+      'Fluent across F&M including multi-step HCF/LCM word problems.',
+  },
+  mixed_ratio_proportion: {
+    Foundational:
+      'Across R&P, the order of terms in a ratio and the cross-multiplication rule are not yet stable. Revisit RP.01 and RP.03.',
+    Developing:
+      'Sets up simple ratio and proportion problems but slips on multi-step or "share in ratio" problems.',
+    'On Track':
+      'Most R&P skills are reliable. Push into multi-step word problems.',
+    Advanced:
+      'Fluent across R&P including age, share, and rate problems.',
+  },
+  mixed: {
+    Foundational:
+      'Across the whole Class 6 Math prototype, basics in multiple modules are not yet stable. Use the per-module / per-skill breakdown and the Learn section before more assessments.',
+    Developing:
+      'Some modules are coming together but there is still drift on others. Use the per-skill breakdown to pick a focus.',
+    'On Track':
+      'Most skills across the four modules are reliable. Spot the one or two skills still in transition and target them.',
+    Advanced:
+      'Fluent across the whole Class 6 Math prototype on this device. Appropriate to begin bridging to harder topics.',
   },
 };
 
@@ -244,13 +438,32 @@ export const bandAccuracy = (
 
 export type PrerequisiteSkill = {
   code:
+    // Fractions
     | 'FR.02'
     | 'FR.03'
     | 'FR.04'
     | 'FR.05'
     | 'FR.06'
     | 'FR.07'
-    | 'FM.07';
+    | 'FR.08'
+    // Decimals
+    | 'DE.01'
+    | 'DE.02'
+    | 'DE.03'
+    | 'DE.04'
+    | 'DE.05'
+    // Factors & Multiples
+    | 'FM.03'
+    | 'FM.04'
+    | 'FM.06'
+    | 'FM.07'
+    | 'FM.08'
+    // Ratio & Proportion
+    | 'RP.01'
+    | 'RP.02'
+    | 'RP.03'
+    | 'RP.04'
+    | 'RP.05';
   name: string;
 };
 
@@ -332,6 +545,54 @@ export const STATIC_PREREQUISITES_BY_SKILL: Record<SkillId, PrerequisiteSkill[]>
     { code: 'FR.05', name: 'Add and subtract fractions with like denominators' },
     { code: 'FR.06', name: 'Add fractions with unlike denominators' },
     { code: 'FR.07', name: 'Subtract fractions with unlike denominators' },
+  ],
+  // Decimals
+  'DE.01': [],
+  'DE.02': [
+    { code: 'DE.01', name: 'Decimal place value' },
+    { code: 'FR.03', name: 'Equivalent fractions' },
+  ],
+  'DE.03': [
+    { code: 'DE.01', name: 'Decimal place value' },
+  ],
+  'DE.04': [
+    { code: 'DE.01', name: 'Decimal place value' },
+    { code: 'DE.03', name: 'Compare and order decimals' },
+  ],
+  'DE.05': [
+    { code: 'DE.04', name: 'Add and subtract decimals' },
+  ],
+  // Factors & Multiples
+  'FM.03': [],
+  'FM.04': [],
+  'FM.06': [
+    { code: 'FM.03', name: 'Prime and composite numbers' },
+  ],
+  'FM.07': [
+    { code: 'FM.03', name: 'Prime and composite numbers' },
+  ],
+  'FM.08': [
+    { code: 'FM.06', name: 'Highest Common Factor (HCF)' },
+    { code: 'FM.07', name: 'Lowest Common Multiple (LCM)' },
+  ],
+  // Ratio & Proportion
+  'RP.01': [
+    { code: 'FR.03', name: 'Equivalent fractions' },
+    { code: 'FM.06', name: 'Highest Common Factor (HCF)' },
+  ],
+  'RP.02': [
+    { code: 'RP.01', name: 'Concept of ratio' },
+  ],
+  'RP.03': [
+    { code: 'RP.01', name: 'Concept of ratio' },
+    { code: 'RP.02', name: 'Equivalent ratios' },
+  ],
+  'RP.04': [
+    { code: 'RP.03', name: 'Proportion' },
+  ],
+  'RP.05': [
+    { code: 'RP.03', name: 'Proportion' },
+    { code: 'RP.04', name: 'Unitary method' },
   ],
 };
 
@@ -603,15 +864,11 @@ const responseSkillLookup = (
   return m;
 };
 
-const emptyBySkill = (): Record<SkillId, Response[]> => ({
-  'FR.02': [],
-  'FR.03': [],
-  'FR.04': [],
-  'FR.05': [],
-  'FR.06': [],
-  'FR.07': [],
-  'FR.08': [],
-});
+const emptyBySkill = (): Record<SkillId, Response[]> => {
+  const out = {} as Record<SkillId, Response[]>;
+  for (const s of SKILL_IDS_ORDERED) out[s] = [];
+  return out;
+};
 
 export const responsesBySkill = (
   responses: Response[],

@@ -87,24 +87,14 @@ export const computeSkillProgress = (
 ): Record<SkillId, SkillProgress> => {
   const itemSkillById = new Map(items.map((it) => [it.id, it.skillId]));
 
-  const totals: Record<SkillId, { attempted: number; correct: number }> = {
-    'FR.02': { attempted: 0, correct: 0 },
-    'FR.03': { attempted: 0, correct: 0 },
-    'FR.04': { attempted: 0, correct: 0 },
-    'FR.05': { attempted: 0, correct: 0 },
-    'FR.06': { attempted: 0, correct: 0 },
-    'FR.07': { attempted: 0, correct: 0 },
-    'FR.08': { attempted: 0, correct: 0 },
-  };
-  const sessionsTouched: Record<SkillId, Set<string>> = {
-    'FR.02': new Set(),
-    'FR.03': new Set(),
-    'FR.04': new Set(),
-    'FR.05': new Set(),
-    'FR.06': new Set(),
-    'FR.07': new Set(),
-    'FR.08': new Set(),
-  };
+  // Build empty totals from SKILL_IDS_ORDERED so this function automatically
+  // covers any new skill added to the type later.
+  const totals = {} as Record<SkillId, { attempted: number; correct: number }>;
+  const sessionsTouched = {} as Record<SkillId, Set<string>>;
+  for (const s of SKILL_IDS_ORDERED) {
+    totals[s] = { attempted: 0, correct: 0 };
+    sessionsTouched[s] = new Set();
+  }
 
   for (const s of sessions) {
     if (s.completedAt === null) continue;
@@ -213,18 +203,13 @@ export const suggestNextStep = (
 ): NextStepSuggestion => {
   const itemSkillById = new Map(items.map((it) => [it.id, it.skillId]));
 
-  const perSkillTotals: Record<
+  const perSkillTotals = {} as Record<
     SkillId,
     { attempted: number; correct: number }
-  > = {
-    'FR.02': { attempted: 0, correct: 0 },
-    'FR.03': { attempted: 0, correct: 0 },
-    'FR.04': { attempted: 0, correct: 0 },
-    'FR.05': { attempted: 0, correct: 0 },
-    'FR.06': { attempted: 0, correct: 0 },
-    'FR.07': { attempted: 0, correct: 0 },
-    'FR.08': { attempted: 0, correct: 0 },
-  };
+  >;
+  for (const s of SKILL_IDS_ORDERED) {
+    perSkillTotals[s] = { attempted: 0, correct: 0 };
+  }
   for (const r of session.responses) {
     const skill = itemSkillById.get(r.itemId);
     if (!skill) continue;
@@ -282,12 +267,13 @@ export const suggestNextStep = (
   }
 
   // 3. Every skill is 'strong'. (Prototype heuristic only.)
+  const lastSkill = SKILL_IDS_ORDERED[SKILL_IDS_ORDERED.length - 1];
   return {
     kind: 'mastery',
-    skillId: 'FR.08',
-    headline: 'Solid across the whole Fractions Module on this device.',
+    skillId: lastSkill,
+    headline: 'Solid across the whole Class 6 Math prototype on this device.',
     detail:
-      'Every skill in the Class 6 Fractions Module is in the Strong band on this device (prototype signal — not a calibrated mastery claim). You can keep practising any skill or revisit the Learn pages for review.',
+      'Every skill across the four Class 6 Math modules is in the Strong band on this device (prototype signal — not a calibrated mastery claim). You can keep practising any skill or revisit the Learn pages for review.',
     perSkillSummary,
   };
 };
