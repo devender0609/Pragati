@@ -12,13 +12,17 @@
 //     UI surfaces the attempt count alongside the rate.
 //
 // v0.4: an optional skill filter scopes the aggregate to a single skill
-// bank (FR.06 or FR.07) by:
+// bank by:
 //   - dropping responses to items that aren't in that bank, AND
 //   - dropping sessions whose mode disagrees with the selected skill
-//     (so an FR.07 student in a mixed session is still partially
-//     reflected via their FR.07 responses, but a pure FR.06 session
-//     does not contaminate an FR.07-only view).
+//     (so a student in a mixed session is still partially reflected via
+//     their matching responses, but a single-skill session for a
+//     different skill does not contaminate the view).
 // The default ('all') reproduces the v0.3 behaviour exactly.
+//
+// v0.7: the filter accepts a ModuleId too — `module:fractions`,
+// `module:decimals`, etc. — which scopes by the module of the item /
+// session rather than a single skill.
 
 import {
   ITEMS,
@@ -26,9 +30,48 @@ import {
   type Item,
   type MisconceptionCode,
 } from '../data/items';
-import type { Session, SkillId, Student } from '../types';
+import {
+  MODULE_FOR_SKILL,
+  moduleForSkillMode,
+  type ModuleId,
+  type Session,
+  type SkillId,
+  type Student,
+} from '../types';
 
-export type ClassSkillFilter = SkillId | 'all';
+export type ClassSkillFilter =
+  | { kind: 'all' }
+  | { kind: 'skill'; skillId: SkillId }
+  | { kind: 'module'; moduleId: ModuleId };
+
+// Convenience constructors so call-sites don't have to remember the shape.
+export const filterAll = (): ClassSkillFilter => ({ kind: 'all' });
+export const filterSkill = (s: SkillId): ClassSkillFilter => ({
+  kind: 'skill',
+  skillId: s,
+});
+export const filterModule = (m: ModuleId): ClassSkillFilter => ({
+  kind: 'module',
+  moduleId: m,
+});
+
+// Encode/decode a filter as a string for use in select dropdowns.
+//   'all'       → all
+//   skill ID    → that skill
+//   'module:fractions' etc.
+export const filterToValue = (f: ClassSkillFilter): string => {
+  if (f.kind === 'all') return 'all';
+  if (f.kind === 'skill') return f.skillId;
+  return `module:${f.moduleId}`;
+};
+
+export const filterFromValue = (v: string): ClassSkillFilter => {
+  if (v === 'all') return filterAll();
+  if (v.startsWith('module:')) {
+    return filterModule(v.slice('module:'.length) as ModuleId);
+  }
+  return filterSkill(v as SkillId);
+};
 
 export type ClassMisconceptionRow = {
   code: MisconceptionCode;
@@ -65,24 +108,42 @@ export function buildClassAggregate(
   students: Student[],
   sessions: Session[],
   items: Item[] = ITEMS,
-  skillFilter: ClassSkillFilter = 'all'
+  skillFilter: ClassSkillFilter = filterAll()
 ): ClassAggregate {
   const itemsById = new Map(items.map((i) => [i.id, i]));
 
+  // Item-level: does this response's item belong to the filter?
   const matchesSkill = (itemId: string): boolean => {
-    if (skillFilter === 'all') return true;
+    if (skillFilter.kind === 'all') return true;
     const it = itemsById.get(itemId);
     if (!it) return false;
-    return it.skillId === skillFilter;
+    if (skillFilter.kind === 'skill') {
+      return it.skillId === skillFilter.skillId;
+    }
+    // module
+    return MODULE_FOR_SKILL[it.skillId] === skillFilter.moduleId;
   };
 
+  // Session-level: should this session be eligible at all?
+  // - 'all' mode → always include
+  // - skill filter → include if session is that skill, OR a mixed session
+  //   that may contain responses to it (full-mixed or that skill's module).
+  // - module filter → include if the session's mode is that module's mixed,
+  //   that module's full-mixed, or any single skill in that module, plus
+  //   the across-everything 'mixed'.
   const sessionMatchesSkill = (s: Session): boolean => {
-    if (skillFilter === 'all') return true;
-    // Sessions in 'mixed' mode contain both FR.06 and FR.07 responses, so
-    // they should be eligible for either single-skill view (their
-    // responses will be filtered by item below).
+    if (skillFilter.kind === 'all') return true;
     if (s.skillId === 'mixed') return true;
-    return s.skillId === skillFilter;
+    const sessionModule = moduleForSkillMode(s.skillId);
+    if (skillFilter.kind === 'skill') {
+      // single-skill session, only matches if the skill matches; any
+      // mixed-within-module session matches if the skill is in that module
+      if (s.skillId === skillFilter.skillId) return true;
+      if (sessionModule === MODULE_FOR_SKILL[skillFilter.skillId]) return true;
+      return false;
+    }
+    // module filter: include any session whose module is the chosen module
+    return sessionModule === skillFilter.moduleId;
   };
 
   const completed = sessions.filter(

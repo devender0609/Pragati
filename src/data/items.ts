@@ -224,10 +224,12 @@ export type Item = MCQItem | NumericItem;
 //   - distinguish "value-correct but not in simplest form" (a real cognitive
 //     error worth tagging as `form_error`) from "value-wrong"
 //
-// We deliberately do NOT accept decimal answers. The skill being tested is
-// fraction arithmetic; a "0.5" response is treated as a parse miss so the
-// teacher can see that the student computed in decimals rather than in
-// fractions.
+// As of v0.7 the parser also accepts decimals (e.g., "0.75" → 75/100,
+// "3.4" → 34/10). This is so the Decimals module can accept decimal
+// answers naturally. A side-effect: a student who types a value-correct
+// decimal in answer to a Fractions question will now be marked correct
+// rather than getting a parse miss; the per-item solution text and
+// per-skill breakdowns still preserve the Fractions context.
 
 export type Rational = {
   // Always non-negative; sign is carried separately.
@@ -265,6 +267,19 @@ export function parseFraction(input: string): Rational | null {
     const d = parseInt(fracMatch[2], 10);
     if (d === 0) return null;
     return { num: Math.abs(n), den: d, sign: n < 0 ? -1 : 1 };
+  }
+
+  // Decimal: "0.75", "-3.4", "1.05", ".5". Convert to a rational by
+  // shifting the decimal point.
+  const decMatch = s.match(/^(-?)(\d*)\.(\d+)$/);
+  if (decMatch) {
+    const sign: 1 | -1 = decMatch[1] === '-' ? -1 : 1;
+    const intPart = decMatch[2] === '' ? '0' : decMatch[2];
+    const fracPart = decMatch[3];
+    const denom = Math.pow(10, fracPart.length);
+    const numer = parseInt(intPart, 10) * denom + parseInt(fracPart, 10);
+    if (denom === 0) return null;
+    return { num: numer, den: denom, sign };
   }
 
   // Whole number: "3", "-3".
@@ -326,6 +341,10 @@ export function isSimplifiedFractionForm(input: string): boolean {
     if (d === 0) return false;
     return gcd(n, d) === 1;
   }
+
+  // A bare decimal literal (e.g., "0.75", "3.4", ".5") is a canonical form.
+  // (For Decimals-module items, the canonical answer is itself a decimal.)
+  if (/^-?\d*\.\d+$/.test(s)) return true;
 
   return /^-?\d+$/.test(s);
 }

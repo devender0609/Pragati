@@ -27,7 +27,7 @@
 // given.
 
 import type { Item } from '../data/items';
-import type { SkillMode } from '../types';
+import { MODULE_FOR_SKILL, moduleForSkillMode, type SkillMode } from '../types';
 
 export const INITIAL_ABILITY = 5;
 export const SESSION_SIZE = 10; // items administered per session
@@ -63,8 +63,10 @@ export const updateAbility = (ability: number, correct: boolean): number => {
 // Skill-mode scoping
 // ---------------------------------------------------------------------------
 /**
- * Restrict an item bank to the items in a given skill mode. For 'mixed',
- * returns the bank unchanged (both FR.06 and FR.07 items are eligible).
+ * Restrict an item bank to the items in a given skill mode.
+ *   - 'mixed' (across-everything) → entire bank
+ *   - 'mixed_<module>'            → all items in that module
+ *   - SkillId                     → only items for that skill
  * Returns a new array; the input is not mutated.
  */
 export function filterItemsBySkillMode(
@@ -72,6 +74,19 @@ export function filterItemsBySkillMode(
   mode: SkillMode
 ): Item[] {
   if (mode === 'mixed') return allItems.slice();
+  const m = moduleForSkillMode(mode);
+  // 'mixed_<module>' modes: scope to the module.
+  if (
+    mode === 'mixed_fractions' ||
+    mode === 'mixed_decimals' ||
+    mode === 'mixed_factors_multiples' ||
+    mode === 'mixed_ratio_proportion'
+  ) {
+    return allItems.filter(
+      (it) => MODULE_FOR_SKILL[it.skillId] === m
+    );
+  }
+  // Otherwise it's a single skill.
   return allItems.filter((it) => it.skillId === mode);
 }
 

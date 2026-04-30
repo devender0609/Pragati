@@ -1,12 +1,14 @@
 # Pragati — Growth Assessment Prototype
 
 A pre-pilot prototype adaptive assessment **and Learn module** for CBSE
-Class 6 Math. As of v0.5 this MVP covers the **complete Class 6
-Fractions Module** — seven skills (FR.02, FR.03, FR.04, FR.05, FR.06,
-FR.07, FR.08) — over a **104-item bank** with mixed item types (MCQ,
-numeric entry, visual fraction bars and area grids), plus a Learn
-section with a reteach lesson, visual explanation, five practice
-questions, and teacher / parent notes for every skill, and demonstrates:
+Class 6 Math. As of v0.7 this MVP covers **four Class 6 Math modules** —
+**Fractions** (7 skills), **Decimals** (5 skills), **Factors &
+Multiples** (5 skills), and **Ratio & Proportion** (5 skills) —
+over a **254-item bank** with mixed item types (MCQ, numeric entry,
+visual fraction bars and area grids), plus a Learn section with a
+reteach lesson, visual explanation, two worked examples, three
+common-mistake notes, and five practice questions for every skill, and
+demonstrates:
 
 1. a simple adaptive routing rule that picks the next item based on the
    previous answer,
@@ -70,7 +72,61 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.6)
+## What this version adds (v0.7)
+
+The headline change in v0.7 is that Pragati is no longer Fractions-only
+— it now covers **four Class 6 Math modules** with a module-aware UI
+on top of v0.6's existing learning loop and skill-progression system.
+
+- **Three new modules, 15 new skills, 150 new items.**
+  - **Decimals** (5 skills): DE.01 (Place value), DE.02 (Fraction ↔
+    decimal), DE.03 (Compare and order), DE.04 (Add / subtract),
+    DE.05 (Word problems).
+  - **Factors & Multiples** (5 skills): FM.03 (Prime / composite),
+    FM.04 (Divisibility rules), FM.06 (HCF), FM.07 (LCM), FM.08
+    (HCF/LCM word problems).
+  - **Ratio & Proportion** (5 skills): RP.01 (Ratio concept), RP.02
+    (Equivalent ratios), RP.03 (Proportion), RP.04 (Unitary method),
+    RP.05 (Word problems).
+  - 10 items per skill, foundational / core / advanced bands, MCQ +
+    numeric entry, misconception-tagged distractors, worked solutions,
+    estimated time. Total module bank is now **254 items across 22
+    skills**.
+- **15 new Learn pages** (one per new skill), each with a reteach
+  lesson, a visual explanation with step-by-step reading, two worked
+  examples, three common-mistake notes, five practice questions, and
+  teacher / parent notes — same shape as the Fractions Learn pages.
+- **New top-level Class 6 Math dashboard.** The Learn nav now opens a
+  Class 6 Math dashboard with one card per module, showing per-module
+  stats (Strong / started / item count) and a Mixed Class 6 Math
+  Assessment shortcut.
+- **Per-module dashboards.** Each module card opens a per-module
+  dashboard (the v0.6 Fractions dashboard, generalised) with that
+  module's recommended order strip, skill cards with status pills and
+  accuracy bars, and a Mixed-within-module assessment CTA.
+- **Module-aware skill picker.** The StartForm dropdown is now grouped
+  by module: across-everything Mixed, then per-module sections each
+  with a Mixed-within-module option plus all the single skills.
+- **Module-aware class dashboard filter.** The teacher's class-level
+  dashboard filter accepts a module ("All Decimals"), a single skill,
+  or "All Class 6 Math". Mixed-mode sessions are still included for any
+  scoped view, contributing only their relevant responses.
+- **Per-module Mixed Assessment modes.** New `mixed_fractions`,
+  `mixed_decimals`, `mixed_factors_multiples`, and
+  `mixed_ratio_proportion` SkillModes complement the existing 'mixed'
+  (across all modules). They're surfaced on every module dashboard.
+- **No data migration.** Old v0.3 / v0.4 / v0.5 / v0.6 sessions in
+  localStorage continue to load unchanged. Sessions whose `skillId`
+  was 'FR.06', 'FR.07', or 'mixed' (= mixed-fractions in v0.5/v0.6)
+  still render correctly — 'mixed' now means "across all modules"
+  but the responses themselves are unchanged.
+
+What v0.7 deliberately does NOT do, per the brief: no new classes
+(only Class 6), no new subjects (only Maths), no Supabase (still
+localStorage-only), no claim of official CBSE alignment or validated
+scoring.
+
+## What v0.6 added
 
 The headline change in v0.6 is a tighter learning loop: every assessment
 now ends with an actionable next step, and every Learn page now contains
@@ -401,7 +457,7 @@ cbse-growth-app/
     ├── types.ts                 # Student, Session, Response, AssessmentWindow, SkillId, SkillMode
     ├── vite-env.d.ts
     ├── data/
-    │   ├── items.ts             # 104 items across 7 fraction skills (MCQ + numeric entry + visual specs)
+    │   ├── items.ts             # 254 items across 22 skills in 4 modules (MCQ + numeric entry + visual specs)
     │   └── lessons.ts           # Per-skill Learn content (reteach + visual + practice + teacher/parent notes)
     └── lib/
         ├── adaptiveEngine.ts    # session-pool sampling (skill-aware), next-item selection, ability update, stop rule
@@ -515,7 +571,7 @@ regression.
 This prototype is the beginning, not the end. Before any student sees this
 outside a pilot setting, the following are required:
 
-1. **Teacher validation of the 104 items.** A CBSE Class 6 math teacher
+1. **Teacher validation of the 254 items.** A CBSE Class 6 math teacher
    should read every stem, every option, every accepted numeric answer,
    and every worked solution across both FR.06 and FR.07. Register,
    phrasing, and context (names, units, everyday scenes) must feel

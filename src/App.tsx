@@ -52,10 +52,10 @@ import {
 } from './lib/storage';
 import {
   buildClassAggregate,
+  filterFromValue,
   type ClassAggregate,
   type ClassMisconceptionRow,
   type ClassHardestItem,
-  type ClassSkillFilter,
 } from './lib/classDashboard';
 import { LESSONS, type Lesson } from './data/lessons';
 import {
@@ -75,42 +75,48 @@ import {
   ASSESSMENT_WINDOWS,
   ASSESSMENT_WINDOW_DESCRIPTIONS,
   ASSESSMENT_WINDOW_LABELS,
+  MODULE_DESCRIPTIONS,
+  MODULE_FOR_SKILL,
+  MODULE_IDS_ORDERED,
+  MODULE_LABELS,
+  SKILLS_BY_MODULE,
   SKILL_IDS_ORDERED,
   SKILL_LABELS,
   SKILL_MODE_DESCRIPTIONS,
   SKILL_MODE_LABELS,
+  moduleForSkillMode,
   type AssessmentWindow,
+  type ModuleId,
   type Session,
   type SkillId,
   type SkillMode,
   type Student,
 } from './types';
 
-// Per-skill colour palette for chips, cards, and accent rings.
+// Per-module colour palette. We colour skill chips by which module the skill
+// belongs to so the ~22 skills don't each need a unique palette.
+const MODULE_CHIP_CLASS: Record<ModuleId, string> = {
+  fractions: 'bg-brand-50 text-brand-700 ring-brand-200',
+  decimals: 'bg-sky-50 text-sky-700 ring-sky-200',
+  factors_multiples: 'bg-amber-50 text-amber-700 ring-amber-200',
+  ratio_proportion: 'bg-violet-50 text-violet-700 ring-violet-200',
+};
+
+const FULL_MIXED_CHIP_CLASS = 'bg-slate-100 text-slate-700 ring-slate-200';
+
+// Per-skill colour palette for chips, cards, and accent rings. Looks up the
+// module the skill belongs to (or returns the neutral chip for the
+// across-the-whole-module 'mixed' mode).
 const skillChipClass = (mode: SkillMode): string => {
-  switch (mode) {
-    case 'FR.02':
-      return 'bg-sky-50 text-sky-700 ring-sky-200';
-    case 'FR.03':
-      return 'bg-teal-50 text-teal-700 ring-teal-200';
-    case 'FR.04':
-      return 'bg-amber-50 text-amber-700 ring-amber-200';
-    case 'FR.05':
-      return 'bg-emerald-50 text-emerald-700 ring-emerald-200';
-    case 'FR.06':
-      return 'bg-brand-50 text-brand-700 ring-brand-200';
-    case 'FR.07':
-      return 'bg-violet-50 text-violet-700 ring-violet-200';
-    case 'FR.08':
-      return 'bg-rose-50 text-rose-700 ring-rose-200';
-    case 'mixed':
-      return 'bg-slate-100 text-slate-700 ring-slate-200';
-  }
+  if (mode === 'mixed') return FULL_MIXED_CHIP_CLASS;
+  const module = moduleForSkillMode(mode);
+  return module ? MODULE_CHIP_CLASS[module] : FULL_MIXED_CHIP_CLASS;
 };
 
 type View =
   | 'landing'
-  | 'fractionsModule'
+  | 'class6math'    // top-level: 4 module cards
+  | 'module'        // per-module dashboard (skill cards in that module)
   | 'learn'
   | 'startForm'
   | 'assessment'
@@ -143,11 +149,13 @@ export default function App() {
 
   // The skill currently being studied in the Learn view, and (optionally)
   // the skill the StartForm should pre-select when navigated from a
-  // skill card or the Fractions Module dashboard.
+  // skill card or a module dashboard.
   const [learnSkill, setLearnSkill] = useState<SkillId>('FR.02');
   const [prefillSkillMode, setPrefillSkillMode] = useState<SkillMode | null>(
     null
   );
+  // The module the user has drilled into from the Class 6 Math dashboard.
+  const [currentModule, setCurrentModule] = useState<ModuleId>('fractions');
 
   useEffect(() => {
     /* no-op for now */
@@ -155,7 +163,13 @@ export default function App() {
 
   const goLearn = (skill: SkillId) => {
     setLearnSkill(skill);
+    setCurrentModule(MODULE_FOR_SKILL[skill]);
     setView('learn');
+  };
+
+  const goModule = (m: ModuleId) => {
+    setCurrentModule(m);
+    setView('module');
   };
 
   const goAssessmentForSkill = (mode: SkillMode) => {
@@ -321,7 +335,7 @@ export default function App() {
       <NavBar
         view={view}
         onNavLanding={goLanding}
-        onNavLearn={() => setView('fractionsModule')}
+        onNavLearn={() => setView('class6math')}
         onNavTeacher={() => {
           setSelectedStudentId(null);
           setView('teacher');
@@ -336,7 +350,7 @@ export default function App() {
               setPrefillSkillMode(null);
               setView('startForm');
             }}
-            onLearn={() => setView('fractionsModule')}
+            onLearn={() => setView('class6math')}
             onTeacher={() => {
               setSelectedStudentId(null);
               setView('teacher');
@@ -344,18 +358,27 @@ export default function App() {
           />
         )}
 
-        {view === 'fractionsModule' && (
-          <FractionsModuleDashboard
-            onOpenLesson={goLearn}
+        {view === 'class6math' && (
+          <Class6MathDashboard
+            onOpenModule={goModule}
             onStartAssessment={goAssessmentForSkill}
             onBack={goLanding}
+          />
+        )}
+
+        {view === 'module' && (
+          <ModuleDashboard
+            moduleId={currentModule}
+            onOpenLesson={goLearn}
+            onStartAssessment={goAssessmentForSkill}
+            onBack={() => setView('class6math')}
           />
         )}
 
         {view === 'learn' && (
           <LearnView
             skill={learnSkill}
-            onBack={() => setView('fractionsModule')}
+            onBack={() => goModule(MODULE_FOR_SKILL[learnSkill])}
             onStartAssessment={goAssessmentForSkill}
             onOpenLesson={goLearn}
           />
@@ -466,7 +489,8 @@ function NavBar({
   onNavLearn: () => void;
   onNavTeacher: () => void;
 }) {
-  const learnActive = view === 'fractionsModule' || view === 'learn';
+  const learnActive =
+    view === 'class6math' || view === 'module' || view === 'learn';
   const teacherActive =
     view === 'teacher' ||
     view === 'studentDetail' ||
@@ -535,28 +559,30 @@ function Landing({
   const totalStudents = loadStudents().length;
   const totalItems = ITEMS.length;
   const totalSkills = SKILL_IDS_ORDERED.length;
+  const totalModules = MODULE_IDS_ORDERED.length;
 
   return (
     <div className="space-y-8">
       <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-50 via-white to-violet-50 p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">
         <div className="inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700 ring-1 ring-brand-200">
-          Prototype · Pre-pilot · Class 6
+          Prototype · Pre-pilot · Class 6 Math
         </div>
         <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
-          Practise, learn, and check growth on Class 6 fractions.
+          Practise, learn, and check growth on Class 6 Math.
         </h1>
         <p className="mt-3 max-w-2xl text-base text-slate-600 sm:text-lg">
-          Pragati is a short, adaptive assessment around the Class 6 Fractions
-          Module — {totalSkills} skills, {totalItems} hand-authored items, with
-          a Learn section, per-student growth, and a teacher-facing diagnostic
-          dashboard. All data stays on this device.
+          Pragati is a short, adaptive assessment across {totalModules} Class 6
+          Math modules — {totalSkills} skills and {totalItems} hand-authored
+          items in total. Every skill has a Learn page (reteach + worked
+          examples + common mistakes + practice). All data stays on this
+          device.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button onClick={onStart} className="btn-primary">
             Take an assessment
           </button>
           <button onClick={onLearn} className="btn-secondary">
-            Open the Fractions Module
+            Open Class 6 Math
           </button>
           <button
             onClick={onTeacher}
@@ -584,26 +610,22 @@ function Landing({
         <div className="flex items-end justify-between">
           <div>
             <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-              Class 6 Fractions Module
+              Class 6 Math · 4 modules
             </div>
             <h2 className="mt-1 text-xl font-bold text-slate-900 sm:text-2xl">
-              Seven skills, taught and assessed together.
+              Pick a module to learn or assess.
             </h2>
           </div>
           <button
             onClick={onLearn}
             className="hidden text-sm font-medium text-brand-700 hover:underline sm:block"
           >
-            Open all skills →
+            Open Class 6 Math →
           </button>
         </div>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {SKILL_IDS_ORDERED.slice(0, 6).map((s) => (
-            <SkillTeaserCard
-              key={s}
-              skillId={s}
-              onLearn={onLearn}
-            />
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          {MODULE_IDS_ORDERED.map((m) => (
+            <ModuleTeaserCard key={m} moduleId={m} onLearn={onLearn} />
           ))}
         </div>
         <div className="mt-3 text-right sm:hidden">
@@ -611,7 +633,7 @@ function Landing({
             onClick={onLearn}
             className="text-sm font-medium text-brand-700 hover:underline"
           >
-            Open all 7 skills →
+            Open Class 6 Math →
           </button>
         </div>
       </section>
@@ -651,34 +673,33 @@ function Landing({
   );
 }
 
-// Compact skill card used in the Landing teaser strip and as a nav target on
-// the Fractions Module dashboard.
-function SkillTeaserCard({
-  skillId,
+// Compact module card used in the Landing teaser strip.
+function ModuleTeaserCard({
+  moduleId,
   onLearn,
 }: {
-  skillId: SkillId;
-  onLearn: (s: SkillId) => void;
+  moduleId: ModuleId;
+  onLearn: () => void;
 }) {
-  const itemCount = ITEMS.filter((i) => i.skillId === skillId).length;
+  const skills = SKILLS_BY_MODULE[moduleId];
+  const itemCount = ITEMS.filter((i) => MODULE_FOR_SKILL[i.skillId] === moduleId)
+    .length;
   return (
     <button
-      onClick={() => onLearn(skillId)}
-      className={`group flex flex-col items-start rounded-2xl bg-white p-4 text-left ring-1 transition hover:shadow-md ${skillChipClass(
-        skillId
-      )}`}
+      onClick={onLearn}
+      className={`group flex flex-col items-start rounded-2xl bg-white p-4 text-left ring-1 transition hover:shadow-md ${MODULE_CHIP_CLASS[moduleId]}`}
     >
       <div className="text-xs font-bold uppercase tracking-wide opacity-80">
-        {skillId}
+        {MODULE_LABELS[moduleId]}
       </div>
       <div className="mt-1 text-sm font-semibold text-slate-900">
-        {SKILL_LABELS[skillId]}
+        {skills.length} skills · {itemCount} items
       </div>
-      <div className="mt-3 text-xs text-slate-600">
-        {itemCount} items · 1 reteach lesson · 5 practice questions
-      </div>
+      <p className="mt-2 text-xs leading-relaxed text-slate-700">
+        {MODULE_DESCRIPTIONS[moduleId]}
+      </p>
       <div className="mt-3 text-xs font-semibold text-slate-900 group-hover:underline">
-        Learn →
+        Open module →
       </div>
     </button>
   );
@@ -694,36 +715,42 @@ function FeatureCard({ title, body }: { title: string; body: string }) {
 }
 
 // ===========================================================================
-// Fractions Module dashboard — overview of all 7 skills
+// Class 6 Math dashboard — top-level (4 module cards)
 // ===========================================================================
-function FractionsModuleDashboard({
-  onOpenLesson,
+function Class6MathDashboard({
+  onOpenModule,
   onStartAssessment,
   onBack,
 }: {
-  onOpenLesson: (s: SkillId) => void;
+  onOpenModule: (m: ModuleId) => void;
   onStartAssessment: (mode: SkillMode) => void;
   onBack: () => void;
 }) {
-  const totalItems = ITEMS.length;
-  // Compute progression once for the dashboard so every SkillCard sees the
-  // same snapshot.
   const progress = useMemo(
     () => computeSkillProgress(loadSessions(), ITEMS),
     []
   );
-  const focus = useMemo(() => {
-    for (const s of RECOMMENDED_ORDER) {
-      if (progress[s].status !== 'strong') return s;
+
+  // Per-module aggregate stats for the module cards.
+  const perModuleStats = useMemo(() => {
+    const out = {} as Record<
+      ModuleId,
+      { totalSkills: number; started: number; strong: number; itemCount: number }
+    >;
+    for (const m of MODULE_IDS_ORDERED) {
+      const skills = SKILLS_BY_MODULE[m];
+      const itemCount = ITEMS.filter((i) => MODULE_FOR_SKILL[i.skillId] === m)
+        .length;
+      out[m] = {
+        totalSkills: skills.length,
+        started: skills.filter((s) => progress[s].status !== 'not_started')
+          .length,
+        strong: skills.filter((s) => progress[s].status === 'strong').length,
+        itemCount,
+      };
     }
-    return null;
+    return out;
   }, [progress]);
-  const startedSkills = SKILL_IDS_ORDERED.filter(
-    (s) => progress[s].status !== 'not_started'
-  ).length;
-  const strongSkills = SKILL_IDS_ORDERED.filter(
-    (s) => progress[s].status === 'strong'
-  ).length;
 
   return (
     <div className="space-y-6">
@@ -737,23 +764,181 @@ function FractionsModuleDashboard({
       </div>
       <div className="rounded-3xl bg-gradient-to-br from-brand-50 via-white to-violet-50 p-6 ring-1 ring-slate-200 sm:p-8">
         <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-          Class 6 · Fractions Module
+          Class 6 · Math
         </div>
         <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Learn and assess every Class 6 fraction skill.
+          Four modules, {ITEMS.length} items, all on this device.
         </h1>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
-          Seven skills, {totalItems} items, with a short reteach lesson, a
-          visual explanation, two worked examples, three common-mistake notes,
-          and five practice questions for every skill. Pick a skill to study,
-          or run a mixed-skills assessment that draws across all of them.
+          Pick a module to learn or assess one skill at a time, or run a
+          Mixed Class 6 Math Assessment that draws across every module.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <button
             onClick={() => onStartAssessment('mixed')}
             className="btn-primary"
           >
-            Take the Mixed Fractions Assessment
+            Take the Mixed Class 6 Math Assessment
+          </button>
+        </div>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        {MODULE_IDS_ORDERED.map((m) => (
+          <ModuleCard
+            key={m}
+            moduleId={m}
+            stats={perModuleStats[m]}
+            onOpen={() => onOpenModule(m)}
+            onStartAssessment={() =>
+              onStartAssessment(`mixed_${m}` as SkillMode)
+            }
+          />
+        ))}
+      </div>
+
+      <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
+        <div className="font-semibold">Reminder</div>
+        <p className="mt-1">
+          The content here is a prototype, not a published curriculum. Status
+          labels come from a rule-based heuristic on a small bank — a useful
+          signal, but not a calibrated mastery claim and not an official CBSE
+          score.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function ModuleCard({
+  moduleId,
+  stats,
+  onOpen,
+  onStartAssessment,
+}: {
+  moduleId: ModuleId;
+  stats: {
+    totalSkills: number;
+    started: number;
+    strong: number;
+    itemCount: number;
+  };
+  onOpen: () => void;
+  onStartAssessment: () => void;
+}) {
+  const ringClass = MODULE_CHIP_CLASS[moduleId];
+  return (
+    <article className="flex flex-col rounded-2xl bg-white p-5 ring-1 ring-slate-200 transition hover:shadow-md sm:p-6">
+      <div className="flex flex-wrap items-start justify-between gap-2">
+        <div className="flex flex-col gap-1.5">
+          <span
+            className={`inline-flex w-fit items-center rounded-full px-2 py-0.5 text-xs font-bold uppercase tracking-wide ring-1 ${ringClass}`}
+          >
+            {MODULE_LABELS[moduleId]}
+          </span>
+          <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
+            {MODULE_LABELS[moduleId]}
+          </h3>
+        </div>
+        <span className="text-xs text-slate-500">
+          {stats.totalSkills} skills · {stats.itemCount} items
+        </span>
+      </div>
+      <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        {MODULE_DESCRIPTIONS[moduleId]}
+      </p>
+      <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+        <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 ring-1 ring-slate-200">
+          <span className="font-semibold text-slate-700">
+            {stats.strong}/{stats.totalSkills}
+          </span>
+          Strong
+        </span>
+        <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 ring-1 ring-slate-200">
+          <span className="font-semibold text-slate-700">
+            {stats.started}/{stats.totalSkills}
+          </span>
+          started
+        </span>
+      </div>
+      <div className="mt-auto flex flex-wrap gap-2 pt-4">
+        <button onClick={onOpen} className="btn-primary text-sm">
+          Open module
+        </button>
+        <button onClick={onStartAssessment} className="btn-secondary text-sm">
+          Take {MODULE_LABELS[moduleId]} assessment
+        </button>
+      </div>
+    </article>
+  );
+}
+
+// ===========================================================================
+// Per-module dashboard — overview of all skills in one module
+// ===========================================================================
+function ModuleDashboard({
+  moduleId,
+  onOpenLesson,
+  onStartAssessment,
+  onBack,
+}: {
+  moduleId: ModuleId;
+  onOpenLesson: (s: SkillId) => void;
+  onStartAssessment: (mode: SkillMode) => void;
+  onBack: () => void;
+}) {
+  const skills = SKILLS_BY_MODULE[moduleId];
+  const itemCount = ITEMS.filter((i) => MODULE_FOR_SKILL[i.skillId] === moduleId)
+    .length;
+  // Compute progression once so every SkillCard sees the same snapshot.
+  const progress = useMemo(
+    () => computeSkillProgress(loadSessions(), ITEMS),
+    []
+  );
+  const focus = useMemo(() => {
+    for (const s of skills) {
+      if (progress[s].status !== 'strong') return s;
+    }
+    return null;
+  }, [progress, skills]);
+  const startedSkills = skills.filter(
+    (s) => progress[s].status !== 'not_started'
+  ).length;
+  const strongSkills = skills.filter(
+    (s) => progress[s].status === 'strong'
+  ).length;
+
+  const moduleMixedMode = `mixed_${moduleId}` as SkillMode;
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={onBack}
+          className="text-sm font-medium text-slate-500 hover:text-slate-700"
+        >
+          ← Back to Class 6 Math
+        </button>
+      </div>
+      <div className="rounded-3xl bg-gradient-to-br from-brand-50 via-white to-violet-50 p-6 ring-1 ring-slate-200 sm:p-8">
+        <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+          Class 6 · {MODULE_LABELS[moduleId]} module
+        </div>
+        <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          Learn and assess every {MODULE_LABELS[moduleId]} skill.
+        </h1>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+          {skills.length} skills · {itemCount} items, with a short reteach
+          lesson, a visual explanation, two worked examples, three
+          common-mistake notes, and five practice questions for every skill.
+          Pick a skill to study, or run a mixed-skills assessment.
+        </p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <button
+            onClick={() => onStartAssessment(moduleMixedMode)}
+            className="btn-primary"
+          >
+            Take the Mixed {MODULE_LABELS[moduleId]} Assessment
           </button>
           {focus !== null && (
             <button
@@ -767,23 +952,27 @@ function FractionsModuleDashboard({
         <div className="mt-5 flex flex-wrap gap-2 text-xs text-slate-600">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-2.5 py-1 ring-1 ring-slate-200">
             <span className="font-semibold text-slate-700">
-              {strongSkills}/{SKILL_IDS_ORDERED.length}
+              {strongSkills}/{skills.length}
             </span>
             <span>skills marked Strong on this device</span>
           </span>
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-2.5 py-1 ring-1 ring-slate-200">
             <span className="font-semibold text-slate-700">
-              {startedSkills}/{SKILL_IDS_ORDERED.length}
+              {startedSkills}/{skills.length}
             </span>
             <span>skills started</span>
           </span>
         </div>
       </div>
 
-      <SkillProgressionStrip progress={progress} onOpenLesson={onOpenLesson} />
+      <SkillProgressionStrip
+        skills={skills}
+        progress={progress}
+        onOpenLesson={onOpenLesson}
+      />
 
       <div className="grid gap-4 sm:grid-cols-2">
-        {SKILL_IDS_ORDERED.map((s) => (
+        {skills.map((s) => (
           <SkillCard
             key={s}
             skillId={s}
@@ -808,12 +997,14 @@ function FractionsModuleDashboard({
   );
 }
 
-// Compact horizontal "recommended order" strip showing all 7 skills with
-// their status pip. Clicking opens the Learn page for that skill.
+// Compact horizontal "recommended order" strip. Default shows every skill
+// (RECOMMENDED_ORDER); a `skills` prop scopes it to one module's skills.
 function SkillProgressionStrip({
+  skills = RECOMMENDED_ORDER,
   progress,
   onOpenLesson,
 }: {
+  skills?: SkillId[];
   progress: Record<SkillId, SkillProgress>;
   onOpenLesson: (s: SkillId) => void;
 }) {
@@ -823,12 +1014,11 @@ function SkillProgressionStrip({
         Recommended learning order
       </div>
       <p className="mt-1 text-xs text-slate-500">
-        FR.02 first; word problems (FR.08) last. Status pips are a prototype
-        signal from session history on this device — not a calibrated mastery
-        claim.
+        Status pips are a prototype signal from session history on this device
+        — not a calibrated mastery claim.
       </p>
       <ol className="mt-3 flex flex-wrap items-center gap-x-1 gap-y-2 sm:gap-x-2">
-        {RECOMMENDED_ORDER.map((s, i) => {
+        {skills.map((s, i) => {
           const p = progress[s];
           return (
             <li key={s} className="flex items-center gap-1 sm:gap-2">
@@ -850,7 +1040,7 @@ function SkillProgressionStrip({
                   {s}
                 </span>
               </button>
-              {i < RECOMMENDED_ORDER.length - 1 && (
+              {i < skills.length - 1 && (
                 <span className="text-slate-300">→</span>
               )}
             </li>
@@ -1473,8 +1663,8 @@ function StartForm({
             Skill to assess
           </div>
           <p className="mt-1 text-sm text-slate-600">
-            Choose which skill bank to draw items from. The Mixed Fractions
-            Assessment draws across the whole module.
+            Pick a single skill, a single module, or the Mixed Class 6 Math
+            Assessment that draws across every module.
           </p>
           <div className="mt-3 flex items-center gap-3">
             <SkillChip mode={skillMode} />
@@ -1484,16 +1674,19 @@ function StartForm({
               className="form-input w-full max-w-md"
               aria-label="Skill mode"
             >
-              <optgroup label="Single skill">
-                {SKILL_IDS_ORDERED.map((s) => (
-                  <option key={s} value={s}>
-                    {SKILL_MODE_LABELS[s]}
+              <option value="mixed">{SKILL_MODE_LABELS.mixed}</option>
+              {MODULE_IDS_ORDERED.map((m) => (
+                <optgroup key={m} label={MODULE_LABELS[m]}>
+                  <option value={`mixed_${m}`}>
+                    {SKILL_MODE_LABELS[`mixed_${m}` as SkillMode]}
                   </option>
-                ))}
-              </optgroup>
-              <optgroup label="Module-wide">
-                <option value="mixed">{SKILL_MODE_LABELS.mixed}</option>
-              </optgroup>
+                  {SKILLS_BY_MODULE[m].map((s) => (
+                    <option key={s} value={s}>
+                      {SKILL_MODE_LABELS[s]}
+                    </option>
+                  ))}
+                </optgroup>
+              ))}
             </select>
           </div>
           <p className="mt-3 text-xs text-slate-600">
@@ -1541,9 +1734,9 @@ function StartForm({
         </div>
 
         <div className="mt-6 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
-          The bank has 104 items across 7 fraction skills; each session shows
-          10. With a small bank, you may see similar question types across
-          attempts.
+          The bank has 254 items across 22 skills in 4 modules; each session
+          shows 10. With a small bank, you may see similar question types
+          across attempts.
         </div>
 
         {error && (
@@ -2056,10 +2249,7 @@ function Results({
           Skills demonstrated
         </h2>
         <p className="mt-1 text-sm text-slate-600">
-          Based on items answered on{' '}
-          {session.skillId === 'mixed'
-            ? 'the Mixed Fractions Assessment (across the whole module).'
-            : `${session.skillId} — ${SKILL_LABELS[session.skillId]}.`}
+          Based on items answered on {SKILL_MODE_LABELS[session.skillId]}.
         </p>
         <BandAccuracyTable session={session} />
       </div>
@@ -2729,7 +2919,8 @@ function ClassDashboard({
   onBack: () => void;
   onOpenStudent: (studentId: string) => void;
 }) {
-  const [skillFilter, setSkillFilter] = useState<ClassSkillFilter>('all');
+  const [filterValue, setFilterValue] = useState<string>('all');
+  const skillFilter = useMemo(() => filterFromValue(filterValue), [filterValue]);
 
   const aggregate = useMemo<ClassAggregate>(() => {
     return buildClassAggregate(
@@ -2741,6 +2932,14 @@ function ClassDashboard({
   }, [skillFilter]);
 
   const hasData = aggregate.totalResponses > 0;
+
+  // Friendly description of the active filter for the header / empty state.
+  const filterLabel =
+    skillFilter.kind === 'all'
+      ? 'all Class 6 Math modules'
+      : skillFilter.kind === 'module'
+        ? `${MODULE_LABELS[skillFilter.moduleId]} module`
+        : `${skillFilter.skillId} — ${SKILL_LABELS[skillFilter.skillId]}`;
 
   return (
     <div className="space-y-6">
@@ -2765,26 +2964,30 @@ function ClassDashboard({
           </p>
         </div>
         <div className="flex flex-col items-end gap-1">
-          <Field label="Filter by skill">
+          <Field label="Filter by skill or module">
             <select
-              value={skillFilter}
-              onChange={(e) =>
-                setSkillFilter(e.target.value as ClassSkillFilter)
-              }
-              className="form-input w-64"
+              value={filterValue}
+              onChange={(e) => setFilterValue(e.target.value)}
+              className="form-input w-72"
             >
-              <option value="all">All skills (Fractions Module)</option>
-              {SKILL_IDS_ORDERED.map((s) => (
-                <option key={s} value={s}>
-                  {s} — {SKILL_LABELS[s]}
-                </option>
+              <option value="all">All Class 6 Math (every module)</option>
+              {MODULE_IDS_ORDERED.map((m) => (
+                <optgroup key={m} label={MODULE_LABELS[m]}>
+                  <option value={`module:${m}`}>
+                    All {MODULE_LABELS[m]}
+                  </option>
+                  {SKILLS_BY_MODULE[m].map((s) => (
+                    <option key={s} value={s}>
+                      {s} — {SKILL_LABELS[s]}
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </select>
           </Field>
-          {skillFilter !== 'all' && (
+          {skillFilter.kind !== 'all' && (
             <p className="text-xs text-slate-500">
-              Showing {skillFilter} responses only. Mixed-mode sessions are
-              included but filtered to their {skillFilter} responses.
+              Showing responses for <span className="font-medium">{filterLabel}</span>. Mixed sessions are included but filtered.
             </p>
           )}
         </div>
@@ -2795,9 +2998,9 @@ function ClassDashboard({
       {!hasData && (
         <div className="card text-center">
           <p className="text-sm text-slate-600">
-            {skillFilter === 'all'
+            {skillFilter.kind === 'all'
               ? 'No completed sessions yet. Once a student finishes an attempt, their responses will appear in the roll-up.'
-              : `No ${skillFilter} responses yet. Switch the skill filter or run an assessment on this skill.`}
+              : `No responses yet for ${filterLabel}. Switch the filter or run an assessment on this skill / module.`}
           </p>
         </div>
       )}
