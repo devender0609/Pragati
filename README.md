@@ -72,7 +72,69 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.7)
+## What this version adds (v0.8)
+
+The headline change in v0.8 is that Pragati turns its attention from
+content (more items / modules) to **quality control, pilot readiness,
+and teacher usefulness**. No new items, classes, or subjects in this
+version — every change is workflow / planning / UX.
+
+- **Item Review workflow.** A new "Item Review" teacher view walks the
+  bank item-by-item with a structured form: correct-answer verified,
+  wording clear, grade-appropriate, visual helpful, difficulty rating,
+  ambiguity concern, comments, reviewer name. Each review carries a
+  status — Not reviewed / Needs revision / Approved — and is stored on
+  the device by item id. The list view filters by status, module, and
+  quality flag, and shows per-item attempts / accuracy / quality flags
+  alongside.
+- **Pilot mode.** A new "Pilot setup" view starts a tagged pilot with
+  teacher name, class name, school, date, default skill mode, and notes.
+  Every session started while a pilot is active is tagged with that
+  pilot's id (`Session.pilotId`); the active pilot is shown as a chip in
+  the nav bar and the pilot can be ended at any time. Past pilots are
+  archived.
+- **Session feedback on Results.** After every session the student is
+  asked four short questions — easy / okay / hard, were any questions
+  confusing, did the pictures help, what was the hardest part. Stored
+  per session and surfaced on the Results page (and exported).
+- **Teaching Plan page.** A new "Teaching plan" view auto-generates
+  next-lesson guidance from session history: top 3 weakest skills, top 3
+  misconceptions, suggested small groups (students grouped by their
+  personal weakest skill), recommended reteach skill (with a one-click
+  open-the-lesson CTA), recommended practice item IDs, and a list of
+  students needing support (each with their weak skills as chips,
+  click-through to detail).
+- **Item Quality Flags.** New `src/lib/itemQuality.ts` derives, per
+  item: `low_accuracy` (< 50% correct over ≥ 3 attempts), `high_avg_time`
+  (> 1.5× the seed estimate), `frequent_misconception` (one code
+  triggers ≥ 50% of wrong answers), `too_few_attempts` (< 3 attempts
+  yet), and `needs_teacher_review` (review marked needs-revision OR ≥ 2
+  other flags). Flags appear on the Item Review list and in the JSON
+  export.
+- **Student vs teacher mode.** A new app-mode toggle (persisted to
+  localStorage) splits the home screen in two:
+  - **Student mode** is the default. Home is a focused 3-card screen:
+    *Start recommended assessment*, *Practise a weak skill*, *Learn the
+    next skill*. The "weak" and "next" skill picks come from
+    device-wide progression. Students don't have to navigate 22 skills.
+  - **Teacher mode** unlocks the Class 6 Math dashboard, students,
+    class dashboard, item review, pilot setup, teaching plan, and
+    Learn nav. The teacher home has a tool-card grid with stats per
+    tool.
+  The toggle lives in the nav and is one click.
+- **Export bundle now schemaVersion 2.** `buildExportBundle()` now
+  includes `itemReviews`, `pilots`, `sessionFeedback`, and (from the
+  Teacher Students dashboard "Export JSON" button) snapshots of the
+  current `teachingPlanSummary` and `itemQualityFlags`. Old v0.3-v0.7
+  consumers can still parse the v2 bundle — they just lack the new
+  fields.
+
+What v0.8 deliberately does NOT do, per the brief: no new items, no new
+modules, no new classes, no new subjects, no Supabase. Existing
+functionality is intact (FR.02–FR.08, DE.*, FM.*, RP.* all still work
+exactly as before; old sessions still load).
+
+## What v0.7 added
 
 The headline change in v0.7 is that Pragati is no longer Fractions-only
 — it now covers **four Class 6 Math modules** with a module-aware UI

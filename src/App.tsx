@@ -42,14 +42,39 @@ import {
 import {
   buildExportBundle,
   deleteStudent,
+  endActivePilot,
   exportAllAsJSON,
   findOrCreateStudent,
   generateId,
+  getActivePilot,
   getCompletedSessionsForStudent,
+  getItemReview,
+  getSessionFeedback,
+  loadAppMode,
+  loadItemReviews,
+  loadPilots,
   loadSessions,
   loadStudents,
+  newItemReview,
+  reviewStatusCounts,
+  saveAppMode,
+  saveItemReview,
+  savePilot,
   saveSession,
+  saveSessionFeedback,
 } from './lib/storage';
+import {
+  buildItemQualitySummary,
+  buildItemQualityById,
+  flagCounts,
+  FLAG_LABELS,
+  type ItemQualityFlag,
+} from './lib/itemQuality';
+import {
+  buildTeachingPlan,
+  type TeachingPlan,
+  type WeakSkill,
+} from './lib/teachingPlan';
 import {
   buildClassAggregate,
   filterFromValue,
@@ -85,12 +110,22 @@ import {
   SKILL_MODE_DESCRIPTIONS,
   SKILL_MODE_LABELS,
   moduleForSkillMode,
+  type AppMode,
   type AssessmentWindow,
+  type DifficultyRating,
+  type ItemReview,
+  type ItemReviewStatus,
   type ModuleId,
+  type PicturesHelped,
+  type PilotMetadata,
   type Session,
+  type SessionFeedback,
+  type SessionFeedbackDifficulty,
   type SkillId,
   type SkillMode,
   type Student,
+  type YesNo,
+  type YesNoNa,
 } from './types';
 
 // Per-module colour palette. We colour skill chips by which module the skill
@@ -114,16 +149,20 @@ const skillChipClass = (mode: SkillMode): string => {
 };
 
 type View =
-  | 'landing'
-  | 'class6math'    // top-level: 4 module cards
-  | 'module'        // per-module dashboard (skill cards in that module)
+  | 'landing'        // student-mode home
+  | 'teacherLanding' // teacher-mode home
+  | 'class6math'     // top-level: 4 module cards (teacher-only nav target)
+  | 'module'         // per-module dashboard (skill cards in that module)
   | 'learn'
   | 'startForm'
   | 'assessment'
   | 'results'
   | 'teacher'
   | 'classDashboard'
-  | 'studentDetail';
+  | 'studentDetail'
+  | 'itemReview'     // v0.8: per-item review list + form
+  | 'pilotSetup'     // v0.8: start / end a pilot
+  | 'teachingPlan';  // v0.8: planning summary
 
 export default function App() {
   const [view, setView] = useState<View>('landing');
@@ -156,10 +195,32 @@ export default function App() {
   );
   // The module the user has drilled into from the Class 6 Math dashboard.
   const [currentModule, setCurrentModule] = useState<ModuleId>('fractions');
+  // The item currently open in the Item Review form. Null = list view.
+  const [reviewItemId, setReviewItemId] = useState<string | null>(null);
+
+  // v0.8: app-mode (student / teacher), persisted to localStorage.
+  const [appMode, setAppModeState] = useState<AppMode>(() => loadAppMode());
+  const setAppMode = (mode: AppMode) => {
+    setAppModeState(mode);
+    saveAppMode(mode);
+  };
 
   useEffect(() => {
-    /* no-op for now */
-  }, []);
+    // If the student lands on a teacher-only view but is in student mode,
+    // bounce them back to the student home.
+    const teacherViews: View[] = [
+      'teacher',
+      'teacherLanding',
+      'classDashboard',
+      'studentDetail',
+      'itemReview',
+      'pilotSetup',
+      'teachingPlan',
+    ];
+    if (appMode === 'student' && teacherViews.includes(view)) {
+      setView('landing');
+    }
+  }, [appMode, view]);
 
   const goLearn = (skill: SkillId) => {
     setLearnSkill(skill);
@@ -194,6 +255,7 @@ export default function App() {
     const fresh = createInitialState();
     const first = pickNextItem(pool, fresh.attemptedIds, fresh.ability);
 
+    const activePilot = getActivePilot();
     const newSession: Session = {
       id: generateId(),
       studentId: student.id,
@@ -208,6 +270,7 @@ export default function App() {
       completedAt: null,
       responses: [],
       finalAbility: fresh.ability,
+      ...(activePilot ? { pilotId: activePilot.id } : {}),
     };
     setEngine(fresh);
     setSessionPool(pool);
@@ -311,7 +374,7 @@ export default function App() {
   };
 
   const goLanding = () => {
-    setView('landing');
+    setView(appMode === 'teacher' ? 'teacherLanding' : 'landing');
     setSession(null);
     setCurrent(null);
     setSelected(null);
@@ -334,11 +397,13 @@ export default function App() {
     <div className="min-h-full bg-slate-50">
       <NavBar
         view={view}
+        appMode={appMode}
+        onSetAppMode={setAppMode}
         onNavLanding={goLanding}
         onNavLearn={() => setView('class6math')}
         onNavTeacher={() => {
           setSelectedStudentId(null);
-          setView('teacher');
+          setView('teacherLanding');
         }}
       />
 
@@ -468,6 +533,58 @@ export default function App() {
             }}
           />
         )}
+
+        {view === 'teacherLanding' && (
+          <TeacherLanding
+            key={`teacher-landing-${storeVersion}`}
+            onOpenStudents={() => setView('teacher')}
+            onOpenClassDashboard={() => setView('classDashboard')}
+            onOpenItemReview={() => {
+              setReviewItemId(null);
+              setView('itemReview');
+            }}
+            onOpenPilotSetup={() => setView('pilotSetup')}
+            onOpenTeachingPlan={() => setView('teachingPlan')}
+            onOpenLearn={() => setView('class6math')}
+            onStart={() => {
+              setPrefillStudent(null);
+              setPrefillSkillMode(null);
+              setView('startForm');
+            }}
+          />
+        )}
+
+        {view === 'itemReview' && (
+          <ItemReviewView
+            key={`item-review-${storeVersion}-${reviewItemId ?? 'list'}`}
+            currentItemId={reviewItemId}
+            onSelectItem={(id) => setReviewItemId(id)}
+            onBackToList={() => setReviewItemId(null)}
+            onBack={() => setView('teacherLanding')}
+            onSaved={bumpStore}
+          />
+        )}
+
+        {view === 'pilotSetup' && (
+          <PilotSetupView
+            key={`pilot-${storeVersion}`}
+            onBack={() => setView('teacherLanding')}
+            onSaved={bumpStore}
+          />
+        )}
+
+        {view === 'teachingPlan' && (
+          <TeachingPlanView
+            key={`teaching-plan-${storeVersion}`}
+            onBack={() => setView('teacherLanding')}
+            onOpenStudent={(id) => {
+              setSelectedStudentId(id);
+              setView('studentDetail');
+            }}
+            onOpenLesson={goLearn}
+            onStartAssessment={goAssessmentForSkill}
+          />
+        )}
       </main>
 
       <Footer />
@@ -480,11 +597,15 @@ export default function App() {
 // ===========================================================================
 function NavBar({
   view,
+  appMode,
+  onSetAppMode,
   onNavLanding,
   onNavLearn,
   onNavTeacher,
 }: {
   view: View;
+  appMode: AppMode;
+  onSetAppMode: (m: AppMode) => void;
   onNavLanding: () => void;
   onNavLearn: () => void;
   onNavTeacher: () => void;
@@ -493,8 +614,13 @@ function NavBar({
     view === 'class6math' || view === 'module' || view === 'learn';
   const teacherActive =
     view === 'teacher' ||
+    view === 'teacherLanding' ||
     view === 'studentDetail' ||
-    view === 'classDashboard';
+    view === 'classDashboard' ||
+    view === 'itemReview' ||
+    view === 'pilotSetup' ||
+    view === 'teachingPlan';
+  const activePilot = getActivePilot();
   return (
     <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:py-4">
@@ -516,35 +642,68 @@ function NavBar({
           </div>
         </button>
         <nav className="flex items-center gap-1 text-sm sm:gap-2">
-          <button
-            onClick={onNavLearn}
-            className={`rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
-              learnActive
-                ? 'bg-brand-50 text-brand-700 ring-1 ring-brand-200'
-                : 'text-slate-600 hover:bg-slate-100'
-            }`}
-          >
-            Learn
-          </button>
-          <button
-            onClick={onNavTeacher}
-            className={`rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
-              teacherActive
-                ? 'bg-brand-50 text-brand-700 ring-1 ring-brand-200'
-                : 'text-slate-600 hover:bg-slate-100'
-            }`}
-          >
-            <span className="hidden sm:inline">Teacher dashboard</span>
-            <span className="sm:hidden">Teacher</span>
-          </button>
+          {appMode === 'teacher' && activePilot && (
+            <span
+              className="hidden items-center gap-1 rounded-full bg-rose-50 px-2 py-1 text-xs font-semibold text-rose-700 ring-1 ring-rose-200 sm:inline-flex"
+              title={`Active pilot: ${activePilot.teacherName} · ${activePilot.className} (${activePilot.school})`}
+            >
+              <span className="h-2 w-2 rounded-full bg-rose-500" />
+              Pilot
+            </span>
+          )}
+          {appMode === 'teacher' && (
+            <>
+              <button
+                onClick={onNavLearn}
+                className={`rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
+                  learnActive
+                    ? 'bg-brand-50 text-brand-700 ring-1 ring-brand-200'
+                    : 'text-slate-600 hover:bg-slate-100'
+                }`}
+              >
+                Learn
+              </button>
+              <button
+                onClick={onNavTeacher}
+                className={`rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
+                  teacherActive
+                    ? 'bg-brand-50 text-brand-700 ring-1 ring-brand-200'
+                    : 'text-slate-600 hover:bg-slate-100'
+                }`}
+              >
+                <span className="hidden sm:inline">Teacher dashboard</span>
+                <span className="sm:hidden">Teacher</span>
+              </button>
+            </>
+          )}
+          <ModeToggle appMode={appMode} onSetAppMode={onSetAppMode} />
         </nav>
       </div>
     </header>
   );
 }
 
+function ModeToggle({
+  appMode,
+  onSetAppMode,
+}: {
+  appMode: AppMode;
+  onSetAppMode: (m: AppMode) => void;
+}) {
+  const next: AppMode = appMode === 'student' ? 'teacher' : 'student';
+  return (
+    <button
+      onClick={() => onSetAppMode(next)}
+      className="ml-1 rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-slate-600 ring-1 ring-slate-200 hover:bg-slate-200 sm:ml-2 sm:text-xs"
+      title={`Switch to ${next} mode`}
+    >
+      {appMode === 'student' ? 'Student mode' : 'Teacher mode'}
+    </button>
+  );
+}
+
 // ===========================================================================
-// Landing
+// Landing — student home (v0.8: simplified, three big actions)
 // ===========================================================================
 function Landing({
   onStart,
@@ -555,162 +714,313 @@ function Landing({
   onLearn: () => void;
   onTeacher: () => void;
 }) {
+  // Compute device-wide progression so we can pick a "weak skill" and a
+  // "next skill" suggestion. Both fall back to FR.02 if there's no
+  // session history yet.
+  const progress = useMemo(
+    () => computeSkillProgress(loadSessions(), ITEMS),
+    []
+  );
+  // Weak skill: the first skill (in curriculum order) with a 'developing'
+  // status. Falls back to the first non-strong skill, then to FR.02.
+  const weakSkill: SkillId = useMemo(() => {
+    for (const s of SKILL_IDS_ORDERED) {
+      if (progress[s].status === 'developing') return s;
+    }
+    for (const s of SKILL_IDS_ORDERED) {
+      if (progress[s].status !== 'strong') return s;
+    }
+    return SKILL_IDS_ORDERED[0];
+  }, [progress]);
+  // Next skill: first skill that hasn't been started yet, or the first
+  // non-strong skill. Same fallback.
+  const nextSkill: SkillId = useMemo(() => {
+    for (const s of SKILL_IDS_ORDERED) {
+      if (progress[s].status === 'not_started') return s;
+    }
+    for (const s of SKILL_IDS_ORDERED) {
+      if (progress[s].status !== 'strong') return s;
+    }
+    return SKILL_IDS_ORDERED[SKILL_IDS_ORDERED.length - 1];
+  }, [progress]);
+
+  // Has the student done anything yet on this device?
   const totalSessions = loadSessions().length;
-  const totalStudents = loadStudents().length;
-  const totalItems = ITEMS.length;
-  const totalSkills = SKILL_IDS_ORDERED.length;
-  const totalModules = MODULE_IDS_ORDERED.length;
+  const hasHistory = totalSessions > 0;
 
   return (
     <div className="space-y-8">
       <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-50 via-white to-violet-50 p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">
         <div className="inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700 ring-1 ring-brand-200">
-          Prototype · Pre-pilot · Class 6 Math
+          Class 6 Math · Student
         </div>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
-          Practise, learn, and check growth on Class 6 Math.
+        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          What do you want to do today?
         </h1>
-        <p className="mt-3 max-w-2xl text-base text-slate-600 sm:text-lg">
-          Pragati is a short, adaptive assessment across {totalModules} Class 6
-          Math modules — {totalSkills} skills and {totalItems} hand-authored
-          items in total. Every skill has a Learn page (reteach + worked
-          examples + common mistakes + practice). All data stays on this
-          device.
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+          {hasHistory
+            ? 'Pick one of the three options below. We picked them based on what you have done so far on this device.'
+            : 'Pick one of the three options below to get started.'}
         </p>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <button onClick={onStart} className="btn-primary">
-            Take an assessment
-          </button>
-          <button onClick={onLearn} className="btn-secondary">
-            Open Class 6 Math
-          </button>
-          <button
-            onClick={onTeacher}
-            className="text-sm font-medium text-slate-600 hover:text-slate-900"
-          >
-            Teacher dashboard →
-          </button>
-        </div>
-        <div className="mt-5 text-xs text-slate-500">
-          A session has about 8–10 questions and takes 5–10 minutes.
-        </div>
-        {(totalSessions > 0 || totalStudents > 0) && (
-          <div className="mt-5 inline-flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg bg-white px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
-            <span className="font-medium text-slate-700">On this device:</span>
-            <span>
-              {totalStudents} student{totalStudents === 1 ? '' : 's'} ·{' '}
-              {totalSessions} session{totalSessions === 1 ? '' : 's'} stored
-              locally.
-            </span>
-          </div>
-        )}
       </section>
 
-      <section>
-        <div className="flex items-end justify-between">
+      <section className="grid gap-4 md:grid-cols-3">
+        <StudentActionCard
+          title="Start recommended assessment"
+          subtitle="Mixed Class 6 Math · 8–10 questions"
+          body="A short adaptive check across the whole module. The questions adjust to your answers."
+          ctaLabel="Start assessment"
+          tone="brand"
+          onClick={onStart}
+        />
+        <StudentActionCard
+          title="Practise a weak skill"
+          subtitle={`${weakSkill} — ${SKILL_LABELS[weakSkill]}`}
+          body={
+            hasHistory
+              ? `Open the Learn page for ${weakSkill} — reteach + worked examples + 5 practice questions.`
+              : `No sessions yet, so we picked ${weakSkill} as a sensible starting point.`
+          }
+          ctaLabel={`Open ${weakSkill} practice`}
+          tone="rose"
+          onClick={onLearn}
+        />
+        <StudentActionCard
+          title="Learn the next skill"
+          subtitle={`${nextSkill} — ${SKILL_LABELS[nextSkill]}`}
+          body={
+            hasHistory
+              ? `The next skill in the recommended order, based on what you have done so far.`
+              : `${nextSkill} is the next skill in the recommended order.`
+          }
+          ctaLabel={`Open ${nextSkill} lesson`}
+          tone="violet"
+          onClick={onLearn}
+        />
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
+        <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-              Class 6 Math · 4 modules
+              For your teacher
             </div>
-            <h2 className="mt-1 text-xl font-bold text-slate-900 sm:text-2xl">
-              Pick a module to learn or assess.
-            </h2>
+            <p className="mt-1 text-sm text-slate-700">
+              Looking for the teacher dashboard, item review, or pilot setup?
+            </p>
           </div>
-          <button
-            onClick={onLearn}
-            className="hidden text-sm font-medium text-brand-700 hover:underline sm:block"
-          >
-            Open Class 6 Math →
+          <button onClick={onTeacher} className="btn-secondary">
+            Switch to teacher mode →
           </button>
         </div>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          {MODULE_IDS_ORDERED.map((m) => (
-            <ModuleTeaserCard key={m} moduleId={m} onLearn={onLearn} />
-          ))}
-        </div>
-        <div className="mt-3 text-right sm:hidden">
-          <button
-            onClick={onLearn}
-            className="text-sm font-medium text-brand-700 hover:underline"
-          >
-            Open Class 6 Math →
-          </button>
-        </div>
-      </section>
-
-      <section className="grid gap-3 sm:grid-cols-3">
-        <FeatureCard
-          title="Adaptive"
-          body="The next question is chosen based on the previous answer — correct moves the student up a level, incorrect moves them down."
-        />
-        <FeatureCard
-          title="Diagnostic"
-          body="Every wrong-answer option is tagged with the misconception it represents, so teachers see why a student answered the way they did."
-        />
-        <FeatureCard
-          title="Longitudinal"
-          body="Sessions are stored per student. The dashboard shows an early growth indicator across baseline, mid-year, and end-of-year attempts."
-        />
       </section>
 
       <section className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
         <div className="font-semibold">What this is not</div>
         <p className="mt-1">
           This is a pre-pilot prototype. It does not produce a calibrated score
-          and does not claim official CBSE alignment. The "growth indicator" is
-          an early signal from a rule-based heuristic on a small item bank, not
-          a validated growth metric. Use it to demonstrate the flow, run a
-          teacher-validation review, and collect feedback — not to make
-          placement, promotion, or remediation decisions about a student.
-        </p>
-        <p className="mt-2">
-          Each session draws 10 items from the relevant skill bank (typically
-          12–24 items per skill); with a small bank some overlap across
-          attempts is expected.
+          and does not claim official CBSE alignment. The "growth indicator"
+          is an early signal from a rule-based heuristic on a small item bank,
+          not a validated growth metric.
         </p>
       </section>
     </div>
   );
 }
 
-// Compact module card used in the Landing teaser strip.
-function ModuleTeaserCard({
-  moduleId,
-  onLearn,
+function StudentActionCard({
+  title,
+  subtitle,
+  body,
+  ctaLabel,
+  tone,
+  onClick,
 }: {
-  moduleId: ModuleId;
-  onLearn: () => void;
+  title: string;
+  subtitle: string;
+  body: string;
+  ctaLabel: string;
+  tone: 'brand' | 'rose' | 'violet';
+  onClick: () => void;
 }) {
-  const skills = SKILLS_BY_MODULE[moduleId];
-  const itemCount = ITEMS.filter((i) => MODULE_FOR_SKILL[i.skillId] === moduleId)
-    .length;
+  const ringClass =
+    tone === 'brand'
+      ? 'border-brand-200 bg-brand-50/40'
+      : tone === 'rose'
+        ? 'border-rose-200 bg-rose-50/40'
+        : 'border-violet-200 bg-violet-50/40';
   return (
-    <button
-      onClick={onLearn}
-      className={`group flex flex-col items-start rounded-2xl bg-white p-4 text-left ring-1 transition hover:shadow-md ${MODULE_CHIP_CLASS[moduleId]}`}
+    <article
+      className={`flex flex-col rounded-2xl border bg-white p-5 ring-1 ring-slate-100 transition hover:shadow-md sm:p-6 ${ringClass}`}
     >
-      <div className="text-xs font-bold uppercase tracking-wide opacity-80">
-        {MODULE_LABELS[moduleId]}
+      <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+        {subtitle}
       </div>
-      <div className="mt-1 text-sm font-semibold text-slate-900">
-        {skills.length} skills · {itemCount} items
-      </div>
-      <p className="mt-2 text-xs leading-relaxed text-slate-700">
-        {MODULE_DESCRIPTIONS[moduleId]}
-      </p>
-      <div className="mt-3 text-xs font-semibold text-slate-900 group-hover:underline">
-        Open module →
-      </div>
-    </button>
+      <h3 className="mt-1 text-lg font-bold tracking-tight text-slate-900">
+        {title}
+      </h3>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{body}</p>
+      <button onClick={onClick} className="btn-primary mt-4 w-fit text-sm">
+        {ctaLabel}
+      </button>
+    </article>
   );
 }
 
-function FeatureCard({ title, body }: { title: string; body: string }) {
+// (v0.7's ModuleTeaserCard and v0.5's FeatureCard were retired in v0.8 when
+// Landing became the simple student home and TeacherLanding took over the
+// module-grid responsibility.)
+
+// ===========================================================================
+// Teacher landing — the home screen seen in teacher mode
+// ===========================================================================
+function TeacherLanding({
+  onOpenStudents,
+  onOpenClassDashboard,
+  onOpenItemReview,
+  onOpenPilotSetup,
+  onOpenTeachingPlan,
+  onOpenLearn,
+  onStart,
+}: {
+  onOpenStudents: () => void;
+  onOpenClassDashboard: () => void;
+  onOpenItemReview: () => void;
+  onOpenPilotSetup: () => void;
+  onOpenTeachingPlan: () => void;
+  onOpenLearn: () => void;
+  onStart: () => void;
+}) {
+  const totalSessions = loadSessions().length;
+  const totalStudents = loadStudents().length;
+  const totalItems = ITEMS.length;
+  const totalSkills = SKILL_IDS_ORDERED.length;
+  const totalModules = MODULE_IDS_ORDERED.length;
+  const reviews = loadItemReviews();
+  const reviewCounts = reviewStatusCounts(reviews);
+  const reviewedCount = reviewCounts.approved + reviewCounts.needs_revision;
+  const activePilot = getActivePilot();
+
   return (
-    <div className="card">
-      <div className="text-sm font-semibold text-slate-900">{title}</div>
-      <p className="mt-2 text-sm text-slate-600">{body}</p>
+    <div className="space-y-8">
+      <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-50 via-white to-violet-50 p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">
+        <div className="inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700 ring-1 ring-brand-200">
+          Teacher · Class 6 Math
+        </div>
+        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Plan a lesson, run a pilot, review the bank.
+        </h1>
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+          Pragati covers {totalModules} Class 6 Math modules ({totalSkills}{' '}
+          skills · {totalItems} items). All data stays on this device.
+        </p>
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <button onClick={onStart} className="btn-primary">
+            Start a session
+          </button>
+          <button onClick={onOpenLearn} className="btn-secondary">
+            Open Class 6 Math
+          </button>
+        </div>
+        {(totalSessions > 0 || totalStudents > 0) && (
+          <div className="mt-5 inline-flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg bg-white px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
+            <span className="font-medium text-slate-700">On this device:</span>
+            <span>
+              {totalStudents} student{totalStudents === 1 ? '' : 's'} ·{' '}
+              {totalSessions} session{totalSessions === 1 ? '' : 's'} ·{' '}
+              {reviewedCount} item review{reviewedCount === 1 ? '' : 's'}
+              {activePilot ? ` · pilot active (${activePilot.className})` : ''}
+            </span>
+          </div>
+        )}
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <TeacherToolCard
+          title="Students"
+          subtitle="Per-student growth + history"
+          body="One row per student with sessions, growth history, item-by-item responses, and recommended next steps."
+          onClick={onOpenStudents}
+        />
+        <TeacherToolCard
+          title="Class dashboard"
+          subtitle="Class-level roll-up"
+          body="Misconception distribution, hardest items, class average accuracy. Filter by skill or module."
+          onClick={onOpenClassDashboard}
+        />
+        <TeacherToolCard
+          title="Teaching plan"
+          subtitle="Top 3 weak skills + small groups"
+          body="Auto-generated next-lesson plan: weakest skills, top misconceptions, suggested groupings, recommended reteach."
+          onClick={onOpenTeachingPlan}
+        />
+        <TeacherToolCard
+          title="Item review"
+          subtitle={`${reviewedCount} of ${ITEMS.length} reviewed · ${reviewCounts.needs_revision} flagged`}
+          body="Walk the bank item-by-item: verify correctness, wording, grade-fit, visuals, difficulty, and ambiguity. Add comments."
+          onClick={onOpenItemReview}
+        />
+        <TeacherToolCard
+          title="Pilot mode"
+          subtitle={
+            activePilot
+              ? `Active: ${activePilot.className} · ${activePilot.school}`
+              : 'No pilot active'
+          }
+          body="Tag every session in this run with a teacher / class / school context. End the pilot when the run is over."
+          onClick={onOpenPilotSetup}
+        />
+        <TeacherToolCard
+          title="Learn"
+          subtitle="Lesson pages for all 22 skills"
+          body="Open the Class 6 Math module dashboard. Every skill has a reteach lesson, two worked examples, three common-mistake notes, and 5 practice items."
+          onClick={onOpenLearn}
+        />
+      </section>
+
+      <section className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
+        <div className="font-semibold">Reminder</div>
+        <p className="mt-1">
+          This is a pre-pilot prototype. Skill-status labels and item
+          quality flags come from rule-based heuristics on a small bank,
+          not calibrated psychometrics. Use them to focus a teacher
+          conversation — not to make placement decisions or to claim
+          official CBSE alignment.
+        </p>
+      </section>
     </div>
+  );
+}
+
+function TeacherToolCard({
+  title,
+  subtitle,
+  body,
+  onClick,
+}: {
+  title: string;
+  subtitle: string;
+  body: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="group flex flex-col items-start rounded-2xl bg-white p-5 text-left ring-1 ring-slate-200 transition hover:shadow-md sm:p-6"
+    >
+      <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+        {subtitle}
+      </div>
+      <h3 className="mt-1 text-lg font-bold tracking-tight text-slate-900">
+        {title}
+      </h3>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+        {body}
+      </p>
+      <span className="mt-3 text-xs font-semibold text-brand-700 group-hover:underline">
+        Open →
+      </span>
+    </button>
   );
 }
 
@@ -2223,6 +2533,8 @@ function Results({
         onStartAssessment={onStartAssessment}
       />
 
+      <SessionFeedbackCard sessionId={session.id} />
+
       {growth && <GrowthCard growth={growth} session={session} />}
 
       {showsMixedBreakdown && (
@@ -2590,6 +2902,180 @@ function NextStepCard({
 
 // Per-skill summary card for mixed sessions, showing accuracy plus the
 // most-frequent misconceptions on that skill.
+// ===========================================================================
+// Session feedback (v0.8): student-facing strip on Results
+// ===========================================================================
+function SessionFeedbackCard({ sessionId }: { sessionId: string }) {
+  const [existing, setExisting] = useState<SessionFeedback | null>(() =>
+    getSessionFeedback(sessionId)
+  );
+  const [difficulty, setDifficulty] = useState<SessionFeedbackDifficulty | null>(
+    existing?.difficulty ?? null
+  );
+  const [picturesHelped, setPicturesHelped] = useState<PicturesHelped | null>(
+    existing?.picturesHelped ?? null
+  );
+  const [confusing, setConfusing] = useState(existing?.confusingQuestions ?? '');
+  const [hardest, setHardest] = useState(existing?.hardestPart ?? '');
+
+  const submit = () => {
+    if (!difficulty || !picturesHelped) return;
+    const fb: SessionFeedback = {
+      sessionId,
+      difficulty,
+      picturesHelped,
+      confusingQuestions: confusing,
+      hardestPart: hardest,
+      submittedAt: Date.now(),
+    };
+    saveSessionFeedback(fb);
+    setExisting(fb);
+  };
+
+  if (existing && existing.submittedAt > 0 && difficulty === existing.difficulty) {
+    return (
+      <section className="rounded-2xl bg-white p-5 ring-1 ring-emerald-200 sm:p-6">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+            Feedback saved · thank you
+          </span>
+        </div>
+        <div className="mt-2 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-slate-500">
+              Difficulty
+            </span>
+            <div className="mt-0.5 font-semibold">{existing.difficulty}</div>
+          </div>
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-slate-500">
+              Pictures helped
+            </span>
+            <div className="mt-0.5 font-semibold">{existing.picturesHelped}</div>
+          </div>
+          {existing.confusingQuestions && (
+            <div className="sm:col-span-2">
+              <span className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                Confusing questions
+              </span>
+              <p className="mt-0.5">{existing.confusingQuestions}</p>
+            </div>
+          )}
+          {existing.hardestPart && (
+            <div className="sm:col-span-2">
+              <span className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                Hardest part
+              </span>
+              <p className="mt-0.5">{existing.hardestPart}</p>
+            </div>
+          )}
+        </div>
+        <button
+          onClick={() => setExisting(null)}
+          className="mt-3 text-xs font-semibold text-brand-700 hover:underline"
+        >
+          Edit feedback
+        </button>
+      </section>
+    );
+  }
+
+  return (
+    <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200 sm:p-6">
+      <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+        Feedback (optional)
+      </div>
+      <h2 className="mt-1 text-base font-semibold text-slate-900 sm:text-lg">
+        Tell us how the assessment went.
+      </h2>
+      <p className="mt-1 text-sm text-slate-600">
+        Your answers stay on this device and help the teacher review the items.
+      </p>
+
+      <div className="mt-4 space-y-4">
+        <div>
+          <div className="text-sm font-medium text-slate-700">
+            Was the assessment easy, okay, or hard?
+          </div>
+          <div className="mt-1.5 flex flex-wrap gap-2">
+            {(['easy', 'okay', 'hard'] as SessionFeedbackDifficulty[]).map(
+              (d) => (
+                <button
+                  key={d}
+                  onClick={() => setDifficulty(d)}
+                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize ring-1 ${
+                    difficulty === d
+                      ? 'bg-brand-50 text-brand-700 ring-brand-200'
+                      : 'bg-white text-slate-600 ring-slate-200 hover:bg-slate-50'
+                  }`}
+                >
+                  {d}
+                </button>
+              )
+            )}
+          </div>
+        </div>
+
+        <div>
+          <div className="text-sm font-medium text-slate-700">
+            Did the pictures help?
+          </div>
+          <div className="mt-1.5 flex flex-wrap gap-2">
+            {(
+              [
+                { v: 'yes', l: 'Yes' },
+                { v: 'mixed', l: 'Mixed' },
+                { v: 'no', l: 'No' },
+                { v: 'na', l: 'No pictures' },
+              ] as { v: PicturesHelped; l: string }[]
+            ).map(({ v, l }) => (
+              <button
+                key={v}
+                onClick={() => setPicturesHelped(v)}
+                className={`rounded-full px-3 py-1 text-xs font-semibold ring-1 ${
+                  picturesHelped === v
+                    ? 'bg-brand-50 text-brand-700 ring-brand-200'
+                    : 'bg-white text-slate-600 ring-slate-200 hover:bg-slate-50'
+                }`}
+              >
+                {l}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <Field label="Were any questions confusing? (optional)">
+          <textarea
+            value={confusing}
+            onChange={(e) => setConfusing(e.target.value)}
+            placeholder="e.g., the wording in question 3 was tricky"
+            className="form-input min-h-[60px]"
+          />
+        </Field>
+
+        <Field label="What was the hardest part? (optional)">
+          <textarea
+            value={hardest}
+            onChange={(e) => setHardest(e.target.value)}
+            placeholder="e.g., subtracting mixed numbers when borrowing was needed"
+            className="form-input min-h-[60px]"
+          />
+        </Field>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        <button
+          onClick={submit}
+          disabled={!difficulty || !picturesHelped}
+          className="btn-primary"
+        >
+          Save feedback
+        </button>
+      </div>
+    </section>
+  );
+}
+
 function SkillBreakdownCard({ breakdown }: { breakdown: SkillBreakdown }) {
   const accPct = Math.round(breakdown.accuracy * 100);
   const top = breakdown.misconceptions.slice(0, 2);
@@ -2723,7 +3209,21 @@ function TeacherStudentList({
   }, [students, sessions, query, windowFilter]);
 
   const handleExport = () => {
-    const json = exportAllAsJSON();
+    // Snapshot the current teaching plan + item quality flags so the
+    // exported JSON matches what's on screen right now.
+    const currentSessions = loadSessions();
+    const reviews = loadItemReviews();
+    const teachingPlanSummary = buildTeachingPlan(
+      students,
+      currentSessions,
+      ITEMS
+    );
+    const itemQualityFlags = buildItemQualitySummary(
+      currentSessions,
+      reviews,
+      ITEMS
+    );
+    const json = exportAllAsJSON({ teachingPlanSummary, itemQualityFlags });
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -3723,6 +4223,1155 @@ function LatestSessionPanel({ session }: { session: Session }) {
         </p>
       </div>
     </>
+  );
+}
+
+// ===========================================================================
+// Item Review (v0.8)
+// ===========================================================================
+function ItemReviewView({
+  currentItemId,
+  onSelectItem,
+  onBackToList,
+  onBack,
+  onSaved,
+}: {
+  currentItemId: string | null;
+  onSelectItem: (id: string) => void;
+  onBackToList: () => void;
+  onBack: () => void;
+  onSaved: () => void;
+}) {
+  const [statusFilter, setStatusFilter] = useState<'all' | ItemReviewStatus>(
+    'all'
+  );
+  const [moduleFilter, setModuleFilter] = useState<'all' | ModuleId>('all');
+  const [flagFilter, setFlagFilter] = useState<'all' | ItemQualityFlag>('all');
+  const [search, setSearch] = useState('');
+
+  // Reload reviews + recompute quality whenever the list view re-mounts.
+  const reviews = useMemo(() => loadItemReviews(), []);
+  const reviewsById = useMemo(
+    () => new Map(reviews.map((r) => [r.itemId, r])),
+    [reviews]
+  );
+  const qualityById = useMemo(
+    () => buildItemQualityById(loadSessions(), reviews, ITEMS),
+    [reviews]
+  );
+
+  if (currentItemId) {
+    return (
+      <ItemReviewForm
+        itemId={currentItemId}
+        onCancel={onBackToList}
+        onSaved={() => {
+          onSaved();
+          onBackToList();
+        }}
+      />
+    );
+  }
+
+  const filteredItems = ITEMS.filter((it) => {
+    const review = reviewsById.get(it.id);
+    const status: ItemReviewStatus = review?.status ?? 'not_reviewed';
+    if (statusFilter !== 'all' && status !== statusFilter) return false;
+    if (
+      moduleFilter !== 'all' &&
+      MODULE_FOR_SKILL[it.skillId] !== moduleFilter
+    ) {
+      return false;
+    }
+    if (flagFilter !== 'all') {
+      const q = qualityById[it.id];
+      if (!q || !q.flags.includes(flagFilter)) return false;
+    }
+    if (search.trim()) {
+      const q = search.trim().toLowerCase();
+      if (
+        !it.id.toLowerCase().includes(q) &&
+        !it.stem.toLowerCase().includes(q)
+      ) {
+        return false;
+      }
+    }
+    return true;
+  });
+
+  const counts = reviewStatusCounts(reviews);
+  const allFlagCounts = flagCounts(Object.values(qualityById));
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={onBack}
+          className="text-sm font-medium text-slate-500 hover:text-slate-700"
+        >
+          ← Teacher dashboard
+        </button>
+      </div>
+
+      <div className="rounded-3xl bg-gradient-to-br from-slate-50 via-white to-brand-50 p-6 ring-1 ring-slate-200 sm:p-8">
+        <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+          Quality control · Item review
+        </div>
+        <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          Walk the bank, item by item.
+        </h1>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
+          For each item: verify the correct answer, flag wording or visual
+          issues, mark the difficulty, and add comments. Reviews are stored
+          on this device and appear in the JSON export.
+        </p>
+        <div className="mt-5 grid gap-3 sm:grid-cols-3">
+          <ReviewStatusTile
+            label="Approved"
+            value={counts.approved}
+            total={ITEMS.length}
+            tone="emerald"
+          />
+          <ReviewStatusTile
+            label="Needs revision"
+            value={counts.needs_revision}
+            total={ITEMS.length}
+            tone="rose"
+          />
+          <ReviewStatusTile
+            label="Not reviewed"
+            value={counts.not_reviewed}
+            total={ITEMS.length}
+            tone="slate"
+          />
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <Field label="Search items">
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Item ID or stem text"
+              className="form-input"
+            />
+          </Field>
+          <Field label="Filter by status">
+            <select
+              value={statusFilter}
+              onChange={(e) =>
+                setStatusFilter(e.target.value as 'all' | ItemReviewStatus)
+              }
+              className="form-input"
+            >
+              <option value="all">All statuses</option>
+              <option value="not_reviewed">Not reviewed</option>
+              <option value="needs_revision">Needs revision</option>
+              <option value="approved">Approved</option>
+            </select>
+          </Field>
+          <Field label="Filter by module">
+            <select
+              value={moduleFilter}
+              onChange={(e) =>
+                setModuleFilter(e.target.value as 'all' | ModuleId)
+              }
+              className="form-input"
+            >
+              <option value="all">All modules</option>
+              {MODULE_IDS_ORDERED.map((m) => (
+                <option key={m} value={m}>
+                  {MODULE_LABELS[m]}
+                </option>
+              ))}
+            </select>
+          </Field>
+          <Field label="Filter by quality flag">
+            <select
+              value={flagFilter}
+              onChange={(e) =>
+                setFlagFilter(e.target.value as 'all' | ItemQualityFlag)
+              }
+              className="form-input"
+            >
+              <option value="all">No flag filter</option>
+              {(Object.keys(allFlagCounts) as ItemQualityFlag[]).map((f) => (
+                <option key={f} value={f}>
+                  {FLAG_LABELS[f]} ({allFlagCounts[f]})
+                </option>
+              ))}
+            </select>
+          </Field>
+        </div>
+        <div className="mt-3 text-xs text-slate-500">
+          Showing {filteredItems.length} of {ITEMS.length} items.
+        </div>
+      </div>
+
+      <div className="overflow-hidden rounded-2xl bg-white ring-1 ring-slate-200">
+        <table className="w-full min-w-[820px] text-left text-sm">
+          <thead className="border-b border-slate-200 bg-slate-50 text-xs font-medium uppercase tracking-wide text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Item</th>
+              <th className="px-3 py-2">Skill</th>
+              <th className="px-3 py-2">Diff.</th>
+              <th className="px-3 py-2">Attempts</th>
+              <th className="px-3 py-2">Accuracy</th>
+              <th className="px-3 py-2">Flags</th>
+              <th className="px-3 py-2">Status</th>
+              <th className="px-3 py-2"></th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {filteredItems.map((it) => {
+              const review = reviewsById.get(it.id);
+              const status: ItemReviewStatus = review?.status ?? 'not_reviewed';
+              const q = qualityById[it.id];
+              return (
+                <tr
+                  key={it.id}
+                  className="cursor-pointer hover:bg-slate-50"
+                  onClick={() => onSelectItem(it.id)}
+                >
+                  <td className="px-3 py-3 font-medium text-slate-900">
+                    <div>{it.id}</div>
+                    <div className="mt-0.5 max-w-xs truncate text-xs text-slate-500">
+                      {it.stem}
+                    </div>
+                  </td>
+                  <td className="px-3 py-3">
+                    <SkillChip mode={it.skillId} />
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {it.difficulty}
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {q?.attempts ?? 0}
+                  </td>
+                  <td className="px-3 py-3 text-slate-700">
+                    {q && q.attempts > 0
+                      ? `${Math.round(q.accuracy * 100)}%`
+                      : '—'}
+                  </td>
+                  <td className="px-3 py-3">
+                    <div className="flex flex-wrap gap-1">
+                      {q?.flags.map((f) => (
+                        <span
+                          key={f}
+                          className="inline-flex items-center rounded-full bg-amber-50 px-1.5 py-0.5 text-[10px] font-semibold text-amber-700 ring-1 ring-amber-200"
+                          title={FLAG_LABELS[f]}
+                        >
+                          {FLAG_LABELS[f]}
+                        </span>
+                      ))}
+                      {(!q || q.flags.length === 0) && (
+                        <span className="text-xs text-slate-400">—</span>
+                      )}
+                    </div>
+                  </td>
+                  <td className="px-3 py-3">
+                    <ReviewStatusPill status={status} />
+                  </td>
+                  <td className="px-3 py-3 text-right">
+                    <span className="text-brand-700">Open →</span>
+                  </td>
+                </tr>
+              );
+            })}
+            {filteredItems.length === 0 && (
+              <tr>
+                <td
+                  colSpan={8}
+                  className="px-3 py-8 text-center text-sm text-slate-500"
+                >
+                  No items match the current filter.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function ReviewStatusTile({
+  label,
+  value,
+  total,
+  tone,
+}: {
+  label: string;
+  value: number;
+  total: number;
+  tone: 'emerald' | 'rose' | 'slate';
+}) {
+  const ring =
+    tone === 'emerald'
+      ? 'border-emerald-200 bg-emerald-50 text-emerald-900'
+      : tone === 'rose'
+        ? 'border-rose-200 bg-rose-50 text-rose-900'
+        : 'border-slate-200 bg-slate-50 text-slate-900';
+  return (
+    <div className={`rounded-2xl border p-4 ${ring}`}>
+      <div className="text-xs font-semibold uppercase tracking-wide opacity-80">
+        {label}
+      </div>
+      <div className="mt-1 flex items-baseline gap-2">
+        <div className="text-2xl font-bold">{value}</div>
+        <div className="text-xs opacity-70">of {total}</div>
+      </div>
+    </div>
+  );
+}
+
+function ReviewStatusPill({ status }: { status: ItemReviewStatus }) {
+  const tone =
+    status === 'approved'
+      ? 'bg-emerald-50 text-emerald-700 ring-emerald-200'
+      : status === 'needs_revision'
+        ? 'bg-rose-50 text-rose-700 ring-rose-200'
+        : 'bg-slate-100 text-slate-600 ring-slate-200';
+  const label =
+    status === 'approved'
+      ? 'Approved'
+      : status === 'needs_revision'
+        ? 'Needs revision'
+        : 'Not reviewed';
+  return (
+    <span
+      className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ring-1 ${tone}`}
+    >
+      {label}
+    </span>
+  );
+}
+
+function ItemReviewForm({
+  itemId,
+  onCancel,
+  onSaved,
+}: {
+  itemId: string;
+  onCancel: () => void;
+  onSaved: () => void;
+}) {
+  const item = useMemo(() => ITEMS.find((it) => it.id === itemId), [itemId]);
+  const existing = useMemo(
+    () => getItemReview(itemId) ?? newItemReview(itemId),
+    [itemId]
+  );
+  const [status, setStatus] = useState<ItemReviewStatus>(existing.status);
+  const [correctAnswerVerified, setCorrectAnswerVerified] = useState<
+    YesNo | null
+  >(existing.correctAnswerVerified);
+  const [wordingClear, setWordingClear] = useState<YesNo | null>(
+    existing.wordingClear
+  );
+  const [gradeAppropriate, setGradeAppropriate] = useState<YesNo | null>(
+    existing.gradeAppropriate
+  );
+  const [visualHelpful, setVisualHelpful] = useState<YesNoNa | null>(
+    existing.visualHelpful
+  );
+  const [difficultyRating, setDifficultyRating] = useState<DifficultyRating | null>(
+    existing.difficultyRating
+  );
+  const [ambiguityConcern, setAmbiguityConcern] = useState<YesNo | null>(
+    existing.ambiguityConcern
+  );
+  const [comments, setComments] = useState(existing.comments);
+  const [reviewerName, setReviewerName] = useState(existing.reviewerName ?? '');
+
+  if (!item) {
+    return (
+      <div className="card text-center">
+        <div className="text-lg font-semibold text-slate-900">
+          Item not found
+        </div>
+        <p className="mt-2 text-sm text-slate-600">
+          That item may have been removed from the bank.
+        </p>
+        <button onClick={onCancel} className="btn-secondary mt-4">
+          Back
+        </button>
+      </div>
+    );
+  }
+
+  const handleSave = (newStatus: ItemReviewStatus) => {
+    const review: ItemReview = {
+      itemId: item.id,
+      status: newStatus,
+      correctAnswerVerified,
+      wordingClear,
+      gradeAppropriate,
+      visualHelpful,
+      difficultyRating,
+      ambiguityConcern,
+      comments,
+      reviewerName: reviewerName.trim() || undefined,
+      reviewedAt: Date.now(),
+    };
+    saveItemReview(review);
+    onSaved();
+  };
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={onCancel}
+          className="text-sm font-medium text-slate-500 hover:text-slate-700"
+        >
+          ← Item review list
+        </button>
+      </div>
+
+      <div className="card">
+        <div className="flex flex-wrap items-center gap-2">
+          <SkillChip mode={item.skillId} />
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+            {item.id} · seed difficulty {item.difficulty} · {item.band}
+          </span>
+          <ReviewStatusPill status={status} />
+        </div>
+        <p className="mt-3 text-base font-semibold text-slate-900">
+          {item.stem}
+        </p>
+        {item.visual && (
+          <div className="mt-3">
+            <Visual visual={item.visual} />
+          </div>
+        )}
+        {item.kind === 'mcq' && (
+          <ol className="mt-3 grid gap-1.5 text-sm text-slate-700 sm:grid-cols-2">
+            {item.options.map((o, i) => (
+              <li
+                key={i}
+                className={`rounded-lg px-3 py-2 ring-1 ${
+                  i === item.correctIndex
+                    ? 'bg-emerald-50 ring-emerald-200'
+                    : 'bg-slate-50 ring-slate-200'
+                }`}
+              >
+                <span className="font-semibold text-slate-500">
+                  {String.fromCharCode(65 + i)}.
+                </span>{' '}
+                {o.text}
+                {i === item.correctIndex && (
+                  <span className="ml-2 text-xs font-semibold text-emerald-700">
+                    correct
+                  </span>
+                )}
+              </li>
+            ))}
+          </ol>
+        )}
+        {item.kind === 'numeric' && (
+          <div className="mt-3 text-xs text-slate-500">
+            Numeric entry · canonical answer:{' '}
+            <span className="font-semibold text-slate-700">
+              {item.acceptedAnswers[0]}
+            </span>{' '}
+            · {item.inputHint}
+          </div>
+        )}
+        <div className="mt-3 rounded-lg bg-white p-3 text-sm text-slate-700 ring-1 ring-slate-200">
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+            Worked solution
+          </div>
+          <p className="mt-1">{item.solution}</p>
+        </div>
+      </div>
+
+      <div className="card space-y-5">
+        <ReviewYesNoRow
+          label="Is the correct answer verified?"
+          value={correctAnswerVerified}
+          onChange={setCorrectAnswerVerified}
+        />
+        <ReviewYesNoRow
+          label="Is the wording clear and unambiguous?"
+          value={wordingClear}
+          onChange={setWordingClear}
+        />
+        <ReviewYesNoRow
+          label="Is the item grade-appropriate (Class 6)?"
+          value={gradeAppropriate}
+          onChange={setGradeAppropriate}
+        />
+        <ReviewYesNoNaRow
+          label="Is the visual helpful?"
+          value={visualHelpful}
+          onChange={setVisualHelpful}
+        />
+        <ReviewDifficultyRow
+          label="Difficulty rating"
+          value={difficultyRating}
+          onChange={setDifficultyRating}
+        />
+        <ReviewYesNoRow
+          label="Any ambiguity / multiple-correct concern?"
+          value={ambiguityConcern}
+          onChange={setAmbiguityConcern}
+        />
+
+        <Field label="Comments">
+          <textarea
+            value={comments}
+            onChange={(e) => setComments(e.target.value)}
+            placeholder="Wording fix suggestion, alternative phrasing, language note…"
+            className="form-input min-h-[100px]"
+          />
+        </Field>
+
+        <Field label="Reviewer name (optional)">
+          <input
+            value={reviewerName}
+            onChange={(e) => setReviewerName(e.target.value)}
+            placeholder="e.g., Ms. Sharma"
+            className="form-input"
+          />
+        </Field>
+      </div>
+
+      <div className="flex flex-wrap gap-3">
+        <button
+          onClick={() => {
+            setStatus('approved');
+            handleSave('approved');
+          }}
+          className="btn-primary"
+        >
+          Save & mark Approved
+        </button>
+        <button
+          onClick={() => {
+            setStatus('needs_revision');
+            handleSave('needs_revision');
+          }}
+          className="inline-flex items-center justify-center rounded-lg bg-rose-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-rose-700 sm:px-5"
+        >
+          Save & flag Needs revision
+        </button>
+        <button onClick={() => handleSave(status)} className="btn-secondary">
+          Save as draft
+        </button>
+        <button onClick={onCancel} className="btn-secondary">
+          Cancel
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function ReviewYesNoRow({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: YesNo | null;
+  onChange: (v: YesNo | null) => void;
+}) {
+  return (
+    <div>
+      <div className="text-sm font-medium text-slate-700">{label}</div>
+      <div className="mt-1.5 flex flex-wrap gap-2">
+        {(['yes', 'no'] as YesNo[]).map((v) => (
+          <button
+            key={v}
+            onClick={() => onChange(v === value ? null : v)}
+            className={`rounded-full px-3 py-1 text-xs font-semibold ring-1 ${
+              value === v
+                ? 'bg-brand-50 text-brand-700 ring-brand-200'
+                : 'bg-white text-slate-600 ring-slate-200 hover:bg-slate-50'
+            }`}
+          >
+            {v === 'yes' ? 'Yes' : 'No'}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ReviewYesNoNaRow({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: YesNoNa | null;
+  onChange: (v: YesNoNa | null) => void;
+}) {
+  const labels: Record<YesNoNa, string> = { yes: 'Yes', no: 'No', na: 'N/A' };
+  return (
+    <div>
+      <div className="text-sm font-medium text-slate-700">{label}</div>
+      <div className="mt-1.5 flex flex-wrap gap-2">
+        {(['yes', 'no', 'na'] as YesNoNa[]).map((v) => (
+          <button
+            key={v}
+            onClick={() => onChange(v === value ? null : v)}
+            className={`rounded-full px-3 py-1 text-xs font-semibold ring-1 ${
+              value === v
+                ? 'bg-brand-50 text-brand-700 ring-brand-200'
+                : 'bg-white text-slate-600 ring-slate-200 hover:bg-slate-50'
+            }`}
+          >
+            {labels[v]}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ReviewDifficultyRow({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: DifficultyRating | null;
+  onChange: (v: DifficultyRating | null) => void;
+}) {
+  const labels: Record<DifficultyRating, string> = {
+    too_easy: 'Too easy',
+    right_level: 'Right level',
+    too_hard: 'Too hard',
+  };
+  return (
+    <div>
+      <div className="text-sm font-medium text-slate-700">{label}</div>
+      <div className="mt-1.5 flex flex-wrap gap-2">
+        {(['too_easy', 'right_level', 'too_hard'] as DifficultyRating[]).map(
+          (v) => (
+            <button
+              key={v}
+              onClick={() => onChange(v === value ? null : v)}
+              className={`rounded-full px-3 py-1 text-xs font-semibold ring-1 ${
+                value === v
+                  ? 'bg-brand-50 text-brand-700 ring-brand-200'
+                  : 'bg-white text-slate-600 ring-slate-200 hover:bg-slate-50'
+              }`}
+            >
+              {labels[v]}
+            </button>
+          )
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ===========================================================================
+// Pilot setup (v0.8)
+// ===========================================================================
+function PilotSetupView({
+  onBack,
+  onSaved,
+}: {
+  onBack: () => void;
+  onSaved: () => void;
+}) {
+  const active = useMemo(() => getActivePilot(), []);
+  const archive = useMemo(
+    () => loadPilots().filter((p) => !p.active).sort((a, b) => b.createdAt - a.createdAt),
+    []
+  );
+  const [teacherName, setTeacherName] = useState(active?.teacherName ?? '');
+  const [className, setClassName] = useState(active?.className ?? '');
+  const [school, setSchool] = useState(active?.school ?? '');
+  const [date, setDate] = useState<string>(
+    active?.date
+      ? new Date(active.date).toISOString().slice(0, 10)
+      : new Date().toISOString().slice(0, 10)
+  );
+  const [defaultMode, setDefaultMode] = useState<SkillMode>(
+    active?.defaultMode ?? 'mixed'
+  );
+  const [notes, setNotes] = useState(active?.notes ?? '');
+  const [error, setError] = useState<string | null>(null);
+
+  const handleStart = () => {
+    if (!teacherName.trim() || !className.trim() || !school.trim()) {
+      setError('Teacher name, class, and school are all required.');
+      return;
+    }
+    setError(null);
+    const pilot: PilotMetadata = {
+      id: active?.id ?? generateId(),
+      teacherName: teacherName.trim(),
+      className: className.trim(),
+      school: school.trim(),
+      date: new Date(date).getTime(),
+      defaultMode,
+      notes,
+      active: true,
+      createdAt: active?.createdAt ?? Date.now(),
+    };
+    savePilot(pilot);
+    onSaved();
+  };
+
+  const handleEnd = () => {
+    endActivePilot();
+    onSaved();
+  };
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={onBack}
+          className="text-sm font-medium text-slate-500 hover:text-slate-700"
+        >
+          ← Teacher dashboard
+        </button>
+      </div>
+
+      <div className="rounded-3xl bg-gradient-to-br from-rose-50 via-white to-brand-50 p-6 ring-1 ring-rose-200 sm:p-8">
+        <div className="text-xs font-medium uppercase tracking-wide text-rose-700">
+          Pilot mode
+        </div>
+        <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          Tag this run with a classroom context.
+        </h1>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
+          When a pilot is active, every session you start is tagged with this
+          pilot's id. The tag carries through into the JSON export. End the
+          pilot when the run is over.
+        </p>
+        {active && (
+          <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-rose-100 px-2.5 py-1 text-xs font-semibold text-rose-700 ring-1 ring-rose-200">
+            <span className="h-2 w-2 rounded-full bg-rose-500" />
+            Active pilot: {active.teacherName} · {active.className} ·{' '}
+            {active.school}
+          </div>
+        )}
+      </div>
+
+      <div className="card space-y-4">
+        <div className="grid gap-4 md:grid-cols-2">
+          <Field label="Teacher name" required>
+            <input
+              value={teacherName}
+              onChange={(e) => setTeacherName(e.target.value)}
+              placeholder="e.g., Ms. Sharma"
+              className="form-input"
+            />
+          </Field>
+          <Field label="Class name" required>
+            <input
+              value={className}
+              onChange={(e) => setClassName(e.target.value)}
+              placeholder="e.g., 6-A"
+              className="form-input"
+            />
+          </Field>
+          <Field label="School" required>
+            <input
+              value={school}
+              onChange={(e) => setSchool(e.target.value)}
+              placeholder="e.g., DPS Indirapuram"
+              className="form-input"
+            />
+          </Field>
+          <Field label="Date">
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              className="form-input"
+            />
+          </Field>
+        </div>
+        <Field label="Default skill mode for this pilot">
+          <select
+            value={defaultMode}
+            onChange={(e) => setDefaultMode(e.target.value as SkillMode)}
+            className="form-input"
+          >
+            <option value="mixed">{SKILL_MODE_LABELS.mixed}</option>
+            {MODULE_IDS_ORDERED.map((m) => (
+              <optgroup key={m} label={MODULE_LABELS[m]}>
+                <option value={`mixed_${m}`}>
+                  {SKILL_MODE_LABELS[`mixed_${m}` as SkillMode]}
+                </option>
+                {SKILLS_BY_MODULE[m].map((s) => (
+                  <option key={s} value={s}>
+                    {SKILL_MODE_LABELS[s]}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </Field>
+        <Field label="Notes">
+          <textarea
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            placeholder="What is the goal of this pilot? What population? Any caveats?"
+            className="form-input min-h-[80px]"
+          />
+        </Field>
+        {error && (
+          <div className="rounded-lg bg-rose-50 px-3 py-2 text-sm text-rose-700 ring-1 ring-rose-200">
+            {error}
+          </div>
+        )}
+        <div className="flex flex-wrap gap-3 pt-2">
+          <button onClick={handleStart} className="btn-primary">
+            {active ? 'Update active pilot' : 'Start pilot'}
+          </button>
+          {active && (
+            <button onClick={handleEnd} className="btn-secondary">
+              End active pilot
+            </button>
+          )}
+        </div>
+      </div>
+
+      {archive.length > 0 && (
+        <div className="card">
+          <h2 className="text-base font-semibold text-slate-900 sm:text-lg">
+            Past pilots
+          </h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Sessions from these pilots remain tagged with their pilot id.
+          </p>
+          <div className="mt-3 overflow-x-auto">
+            <table className="w-full min-w-[560px] text-left text-sm">
+              <thead className="border-b border-slate-200 text-xs font-medium uppercase tracking-wide text-slate-500">
+                <tr>
+                  <th className="px-3 py-2">Teacher</th>
+                  <th className="px-3 py-2">Class</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Date</th>
+                  <th className="px-3 py-2">Mode</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {archive.map((p) => (
+                  <tr key={p.id}>
+                    <td className="px-3 py-3 text-slate-700">
+                      {p.teacherName}
+                    </td>
+                    <td className="px-3 py-3 text-slate-700">{p.className}</td>
+                    <td className="px-3 py-3 text-slate-700">{p.school}</td>
+                    <td className="px-3 py-3 text-slate-700">
+                      {formatDate(p.date)}
+                    </td>
+                    <td className="px-3 py-3">
+                      <SkillChip mode={p.defaultMode} />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ===========================================================================
+// Teaching Plan (v0.8)
+// ===========================================================================
+function TeachingPlanView({
+  onBack,
+  onOpenStudent,
+  onOpenLesson,
+  onStartAssessment,
+}: {
+  onBack: () => void;
+  onOpenStudent: (id: string) => void;
+  onOpenLesson: (s: SkillId) => void;
+  onStartAssessment: (mode: SkillMode) => void;
+}) {
+  const plan = useMemo<TeachingPlan>(
+    () => buildTeachingPlan(loadStudents(), loadSessions(), ITEMS),
+    []
+  );
+  const itemById = useMemo(() => new Map(ITEMS.map((it) => [it.id, it])), []);
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={onBack}
+          className="text-sm font-medium text-slate-500 hover:text-slate-700"
+        >
+          ← Teacher dashboard
+        </button>
+      </div>
+
+      <div className="rounded-3xl bg-gradient-to-br from-violet-50 via-white to-brand-50 p-6 ring-1 ring-violet-200 sm:p-8">
+        <div className="text-xs font-medium uppercase tracking-wide text-violet-700">
+          Teacher planning
+        </div>
+        <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          Teaching plan
+        </h1>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
+          Auto-generated from {plan.totalCompletedSessions} completed session
+          {plan.totalCompletedSessions === 1 ? '' : 's'} across{' '}
+          {plan.totalStudentsWithSessions} student
+          {plan.totalStudentsWithSessions === 1 ? '' : 's'}. Each section is a
+          starting point — review before acting.
+        </p>
+      </div>
+
+      {plan.totalCompletedSessions === 0 && (
+        <div className="card text-center">
+          <p className="text-sm text-slate-600">
+            No completed sessions yet. Once students take some sessions, the
+            teaching plan will fill in.
+          </p>
+        </div>
+      )}
+
+      {plan.totalCompletedSessions > 0 && (
+        <>
+          <section className="card">
+            <h2 className="h-section">Top weakest skills</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Skills with the lowest class-wide accuracy (and at least 3
+              attempts to be confident the weakness is real).
+            </p>
+            {plan.weakestSkills.length === 0 ? (
+              <p className="mt-3 text-sm text-slate-500">
+                No skill is weak enough to flag. Nice.
+              </p>
+            ) : (
+              <ol className="mt-3 space-y-2">
+                {plan.weakestSkills.map((w, i) => (
+                  <WeakSkillRow
+                    key={w.skillId}
+                    rank={i + 1}
+                    weak={w}
+                    onOpenLesson={() => onOpenLesson(w.skillId)}
+                    onStartAssessment={() => onStartAssessment(w.skillId)}
+                  />
+                ))}
+              </ol>
+            )}
+          </section>
+
+          <section className="card">
+            <h2 className="h-section">Top misconceptions</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              The most-common wrong-answer patterns across the class.
+            </p>
+            {plan.topMisconceptions.length === 0 ? (
+              <p className="mt-3 text-sm text-slate-500">
+                No tagged misconceptions yet.
+              </p>
+            ) : (
+              <ul className="mt-3 space-y-2">
+                {plan.topMisconceptions.map((m) => (
+                  <li
+                    key={m.code}
+                    className="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200"
+                  >
+                    <div className="text-sm font-semibold text-slate-900">
+                      {m.label}
+                    </div>
+                    <div className="mt-0.5 text-xs text-slate-500">
+                      {m.occurrences} occurrence{m.occurrences === 1 ? '' : 's'}{' '}
+                      across {m.studentsAffected} student
+                      {m.studentsAffected === 1 ? '' : 's'} · seen on{' '}
+                      {m.itemIds.length} item{m.itemIds.length === 1 ? '' : 's'}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+
+          <section className="card">
+            <h2 className="h-section">Suggested small groups</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Students grouped by their personal weakest skill (in
+              curriculum order).
+            </p>
+            {plan.suggestedGroups.length === 0 ? (
+              <p className="mt-3 text-sm text-slate-500">
+                No groups of two or more students share a weak skill yet.
+              </p>
+            ) : (
+              <ul className="mt-3 space-y-2">
+                {plan.suggestedGroups.map((g) => (
+                  <li
+                    key={g.skillId}
+                    className="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200"
+                  >
+                    <div className="flex flex-wrap items-center gap-2">
+                      <SkillChip mode={g.skillId} />
+                      <span className="text-sm font-semibold text-slate-900">
+                        {SKILL_LABELS[g.skillId]}
+                      </span>
+                      <span className="text-xs text-slate-500">
+                        {g.studentNames.length} students
+                      </span>
+                    </div>
+                    <div className="mt-1 text-sm text-slate-700">
+                      {g.studentNames.join(', ')}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+
+          {plan.reteachSkill && (
+            <section className="card">
+              <h2 className="h-section">Recommended reteach</h2>
+              <p className="mt-1 text-sm text-slate-600">
+                Start with the weakest skill in the class.
+              </p>
+              <div className="mt-3 rounded-xl bg-violet-50 p-4 ring-1 ring-violet-200">
+                <div className="flex flex-wrap items-center gap-2">
+                  <SkillChip mode={plan.reteachSkill} />
+                  <span className="text-sm font-semibold text-slate-900">
+                    {SKILL_LABELS[plan.reteachSkill]}
+                  </span>
+                </div>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <button
+                    onClick={() => onOpenLesson(plan.reteachSkill!)}
+                    className="btn-primary text-sm"
+                  >
+                    Open the {plan.reteachSkill} reteach lesson
+                  </button>
+                  <button
+                    onClick={() => onStartAssessment(plan.reteachSkill!)}
+                    className="btn-secondary text-sm"
+                  >
+                    Take a {plan.reteachSkill} assessment
+                  </button>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {plan.recommendedPracticeItems.length > 0 && (
+            <section className="card">
+              <h2 className="h-section">Recommended practice items</h2>
+              <p className="mt-1 text-sm text-slate-600">
+                Hand-picked items from the lessons of the weakest skills.
+              </p>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {plan.recommendedPracticeItems.map((id) => {
+                  const it = itemById.get(id);
+                  return (
+                    <li
+                      key={id}
+                      className="rounded-xl bg-slate-50 p-3 ring-1 ring-slate-200"
+                    >
+                      <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500">
+                        <span className="font-semibold text-slate-700">
+                          {id}
+                        </span>
+                        {it && <SkillChip mode={it.skillId} />}
+                        {it && <span>diff. {it.difficulty}</span>}
+                      </div>
+                      {it && (
+                        <div className="mt-1 text-sm text-slate-700">
+                          {it.stem}
+                        </div>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          )}
+
+          {plan.studentsNeedingSupport.length > 0 && (
+            <section className="card">
+              <h2 className="h-section">Students needing support</h2>
+              <p className="mt-1 text-sm text-slate-600">
+                Each student is shown with the skills they're currently weak
+                on. Click a name to open their detail page.
+              </p>
+              <ul className="mt-3 space-y-2">
+                {plan.studentsNeedingSupport.map((s) => (
+                  <li
+                    key={s.studentId}
+                    className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-slate-50 p-3 ring-1 ring-slate-200"
+                  >
+                    <button
+                      onClick={() => onOpenStudent(s.studentId)}
+                      className="text-sm font-semibold text-slate-900 hover:underline"
+                    >
+                      {s.name} →
+                    </button>
+                    <div className="flex flex-wrap gap-1">
+                      {s.weakSkills.map((skill) => (
+                        <SkillChip key={skill} mode={skill} />
+                      ))}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </>
+      )}
+
+      <p className="text-xs text-slate-500">
+        This plan is a prototype heuristic — useful as a starting point for a
+        teacher conversation, not a calibrated diagnostic.
+      </p>
+    </div>
+  );
+}
+
+function WeakSkillRow({
+  rank,
+  weak,
+  onOpenLesson,
+  onStartAssessment,
+}: {
+  rank: number;
+  weak: WeakSkill;
+  onOpenLesson: () => void;
+  onStartAssessment: () => void;
+}) {
+  const accPct = Math.round(weak.accuracy * 100);
+  return (
+    <li className="rounded-xl bg-rose-50 p-4 ring-1 ring-rose-200">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-600 text-xs font-bold text-white">
+            {rank}
+          </span>
+          <SkillChip mode={weak.skillId} />
+          <span className="text-sm font-semibold text-slate-900">
+            {SKILL_LABELS[weak.skillId]}
+          </span>
+        </div>
+        <span className="text-xs text-slate-600">
+          {accPct}% across {weak.attempted} attempt
+          {weak.attempted === 1 ? '' : 's'} · {weak.studentsAffected} student
+          {weak.studentsAffected === 1 ? '' : 's'}
+        </span>
+      </div>
+      <div className="mt-3 flex flex-wrap gap-2">
+        <button onClick={onOpenLesson} className="btn-primary text-xs">
+          Open {weak.skillId} lesson
+        </button>
+        <button onClick={onStartAssessment} className="btn-secondary text-xs">
+          Take {weak.skillId} assessment
+        </button>
+      </div>
+    </li>
   );
 }
 

@@ -342,4 +342,77 @@ export type Session = {
   completedAt: number | null;
   responses: Response[];
   finalAbility: number; // running ability estimate at the end of the session
+  // v0.8: optional. Set on sessions started while a pilot was active.
+  // Old sessions never have it; any view that needs it falls back to "no pilot".
+  pilotId?: string;
+};
+
+// ---------------------------------------------------------------------------
+// App mode (v0.8)
+// ---------------------------------------------------------------------------
+// Default is 'student' — the simpler home screen with three recommended
+// actions. 'teacher' unlocks the teacher dashboard, item review, pilot
+// setup, and teaching plan views. Persisted to localStorage so it survives
+// reloads.
+export type AppMode = 'student' | 'teacher';
+
+// ---------------------------------------------------------------------------
+// Item review (v0.8)
+// ---------------------------------------------------------------------------
+// One per item, keyed by itemId. A teacher fills this out via the
+// "Item Review" workflow on the teacher dashboard.
+export type ItemReviewStatus = 'not_reviewed' | 'needs_revision' | 'approved';
+
+// Tri-state UI: yes / no / null (unanswered). For visualHelpful the third
+// option is explicitly "n/a" because some items have no visual.
+export type YesNo = 'yes' | 'no';
+export type YesNoNa = 'yes' | 'no' | 'na';
+export type DifficultyRating = 'too_easy' | 'right_level' | 'too_hard';
+
+export type ItemReview = {
+  itemId: string;
+  status: ItemReviewStatus;
+  correctAnswerVerified: YesNo | null;
+  wordingClear: YesNo | null;
+  gradeAppropriate: YesNo | null;
+  visualHelpful: YesNoNa | null;
+  difficultyRating: DifficultyRating | null;
+  ambiguityConcern: YesNo | null;
+  comments: string;
+  reviewerName?: string;
+  reviewedAt: number; // ms epoch
+};
+
+// ---------------------------------------------------------------------------
+// Pilot mode (v0.8)
+// ---------------------------------------------------------------------------
+// A pilot wraps a set of sessions taken in one classroom context: which
+// teacher, which class, which school, which date. Sessions started while a
+// pilot is "active" are tagged with that pilot's id (Session.pilotId).
+export type PilotMetadata = {
+  id: string;
+  teacherName: string;
+  className: string;
+  school: string;
+  date: number;             // ms epoch — typically the start of the pilot
+  defaultMode: SkillMode;   // suggested skill mode for this pilot's sessions
+  notes: string;
+  active: boolean;          // exactly one pilot can be active at a time
+  createdAt: number;
+};
+
+// ---------------------------------------------------------------------------
+// Session feedback (v0.8)
+// ---------------------------------------------------------------------------
+// Captured from the student on the Results page. One feedback per session.
+export type SessionFeedbackDifficulty = 'easy' | 'okay' | 'hard';
+export type PicturesHelped = 'yes' | 'no' | 'mixed' | 'na';
+
+export type SessionFeedback = {
+  sessionId: string;
+  difficulty: SessionFeedbackDifficulty;
+  confusingQuestions: string;   // free text, can be empty
+  picturesHelped: PicturesHelped;
+  hardestPart: string;          // free text, can be empty
+  submittedAt: number;
 };
