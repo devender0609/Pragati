@@ -1815,6 +1815,401 @@ export const LESSONS: Record<SkillId, Lesson> = {
     parentNote:
       'Sharing snacks or money in proportion to age is a natural everyday context: "share these 12 chocolates in the ratio 1 : 2 between your two cousins." Have your child explain how they decided who gets how much.',
   },
+
+  // -------------------------------------------------------------------------
+  // ALGEBRA BASICS module (v0.9)
+  // -------------------------------------------------------------------------
+  'AL.01': {
+    skillId: 'AL.01',
+    intro:
+      'A variable is a letter (like x or y) that stands for a number. The number can be unknown, or can change depending on the situation. The letter is just a name we choose; the maths is the same whether we use x, y, n, or m.',
+    reteach: {
+      title: 'Reteach: variables as unknowns',
+      steps: [
+        'Read the symbol as a number, not as a letter. "x" means "some number we will call x".',
+        'A variable can stand for one specific (but unknown) number, OR for any number, depending on the question.',
+        'Different letters can be used for different unknowns. The choice is up to us.',
+        'When the question gives us a value (e.g., x = 4), we can REPLACE the letter with that number wherever it appears.',
+      ],
+    },
+    visualExplanation: {
+      caption:
+        'A bar with the label "x" reminds us that the bar stands for some number — even though we have not written what number yet.',
+      visual: {
+        kind: 'bars',
+        bars: [{ numerator: 1, denominator: 1, label: 'x (some number)' }],
+      },
+      readingSteps: [
+        'The bar represents one quantity called x.',
+        'We have not said what x is yet. It could be 5, 10, or any number.',
+        'When the problem tells us a value (e.g., x = 4), the bar then represents that value.',
+        'The point of the picture: x is a placeholder for a number, not a different kind of object.',
+      ],
+    },
+    workedExamples: [
+      {
+        problem: 'In the expression 3y + 2, what is the variable?',
+        steps: [
+          'Look for the LETTER. The numbers (3 and 2) are constants; the + is an operator.',
+          'The letter is y.',
+          'So y is the variable. (3 is the coefficient of y; 2 is the constant.)',
+        ],
+        answer: 'y',
+      },
+      {
+        problem: 'A box has m mangoes. The shopkeeper says it has 12 mangoes. What is m?',
+        steps: [
+          'm is the variable for the number of mangoes in the box.',
+          'The shopkeeper tells us the actual number is 12.',
+          'So m = 12.',
+        ],
+        answer: '12',
+      },
+    ],
+    commonMistakes: [
+      {
+        pattern: 'Treating the letter as just a letter',
+        example: 'Says "x is a letter, not a number" and refuses to compute.',
+        why: 'Has not yet made the jump from arithmetic (numbers only) to algebra (numbers + named placeholders).',
+        fix: 'Read the letter aloud as "some number". When a value is given, replace the letter with the number on paper.',
+      },
+      {
+        pattern: 'Insisting the unknown must be x',
+        example: 'Marks "n + 5" as wrong because it should be "x + 5".',
+        why: 'Treats x as the only valid letter for unknowns.',
+        fix: 'The choice of letter is just a name. n + 5 and x + 5 say exactly the same thing if we agreed n and x both stand for the unknown.',
+      },
+      {
+        pattern: 'Believing a variable always equals zero',
+        example: 'Says x must be 0 because nothing is written.',
+        why: 'Confuses "value not stated" with "value is zero".',
+        fix: 'Without more information, a variable can be ANY number. We only know its value when the problem (or an equation we solve) tells us.',
+      },
+    ],
+    practice: ['AL.01-01', 'AL.01-03', 'AL.01-06', 'AL.01-07', 'AL.01-10'],
+    teacherNote:
+      'When a student stalls because "x is a letter", give a concrete example: "Imagine you have x rupees. If I say x = 50, how many rupees do you have?" Repeat with two or three different values until the student feels comfortable substituting.',
+    parentNote:
+      'Pick a small object (apples, pencils, marbles). Hold some in your hand and say "I have x of these — that\'s a number we don\'t know yet." Show the actual count and write x = (the number). The kitchen and pencil case are the easiest places to practise.',
+  },
+
+  'AL.02': {
+    skillId: 'AL.02',
+    intro:
+      'An expression mixes variables (x, y, …) with numbers using +, −, ×, ÷. It does NOT contain an "=". An expression by itself has no answer — it represents some quantity. Once we know the value of the variable(s), we can EVALUATE the expression to get a number.',
+    reteach: {
+      title: 'Reteach: writing simple expressions',
+      steps: [
+        'Identify the variable in the question (e.g., "a number" → use x).',
+        'Translate each English word/phrase to a maths symbol: "plus" → +, "minus" → −, "times" / "of" → ×, "divided by" → ÷.',
+        'Be careful with order: "3 less than x" = x − 3, NOT 3 − x.',
+        'Write the final expression. It should have variables, constants, and operators — but NO "=".',
+      ],
+    },
+    visualExplanation: {
+      caption:
+        'A bar of length x with another small bar of length 3 added on the end shows the expression x + 3.',
+      visual: {
+        kind: 'bars',
+        bars: [
+          { numerator: 1, denominator: 1, label: 'x' },
+          { numerator: 1, denominator: 3, label: '3 (added)' },
+        ],
+      },
+      readingSteps: [
+        'The first bar is x — some number.',
+        'We add a small extra of size 3.',
+        'The total length represents x + 3.',
+        'Note: there is no "=" anywhere — just a description of "x then add 3".',
+      ],
+    },
+    workedExamples: [
+      {
+        problem: 'Write "twice y, plus 7" as an expression.',
+        steps: [
+          '"Twice y" means 2 × y, which we write as 2y.',
+          '"Plus 7" means + 7.',
+          'Putting them together: 2y + 7.',
+        ],
+        answer: '2y + 7',
+      },
+      {
+        problem: 'Ravi has x apples. His brother gives him 5 more. Write the total as an expression.',
+        steps: [
+          'Start with what Ravi already has: x.',
+          '"5 more" → add 5.',
+          'Total = x + 5.',
+        ],
+        answer: 'x + 5',
+      },
+    ],
+    commonMistakes: [
+      {
+        pattern: 'Order swap on "less than"',
+        example: 'Writes "3 less than x" as 3 − x.',
+        why: 'Reads the words in left-to-right order.',
+        fix: '"Less than" reverses the order. "3 less than x" means we start with x and take 3 away → x − 3. Re-read as "x, less 3".',
+      },
+      {
+        pattern: 'Confusing an expression with an equation',
+        example: 'Writes the answer as "x + 5 = 12" when only an expression was asked.',
+        why: 'Adds an "=" by habit because most maths sums had one.',
+        fix: 'An expression has NO "=". If the question asks for an expression, stop after the right-hand side.',
+      },
+      {
+        pattern: 'Mixing operations',
+        example: 'Writes "twice y" as y + 2.',
+        why: 'Confuses "twice" (which means × 2) with "plus 2".',
+        fix: 'Memorise: "twice" → multiply by 2. "Plus 2" → + 2. They are different.',
+      },
+    ],
+    practice: ['AL.02-01', 'AL.02-04', 'AL.02-05', 'AL.02-08', 'AL.02-09'],
+    teacherNote:
+      'The hardest moment for many students is "3 less than x". Drill the phrase pattern before drilling the symbols. "3 less than x" → "x, less 3" → x − 3. Once this re-reading habit is in place, the rest of word→symbol translation is much easier.',
+    parentNote:
+      'Make up tiny word problems at home: "I have x rupees. I spend 10. Write that as an expression." Start with situations the child cares about (saving for a toy, sharing snacks).',
+  },
+
+  'AL.03': {
+    skillId: 'AL.03',
+    intro:
+      'To EVALUATE an expression for a given value, we replace the variable with that value (substitution) and then compute the resulting arithmetic. For 3x with x = 4: replace x with 4, getting 3 × 4 = 12.',
+    reteach: {
+      title: 'Reteach: evaluating expressions',
+      steps: [
+        'Read the expression and find the variable(s).',
+        'Substitute each variable with the given value, KEEPING any × or ÷ that was implied.',
+        'In particular: 3x with x = 4 becomes 3 × 4 = 12 (NOT 34).',
+        'Carry out the arithmetic, following the order of operations: brackets first, then × and ÷, then + and −.',
+        'Write the final number — that is the value of the expression at this value of x.',
+      ],
+    },
+    visualExplanation: {
+      caption:
+        'For the expression 3x with x = 4: replace x with 4 and multiply. 3 × 4 = 12.',
+      visual: {
+        kind: 'grid',
+        grids: [
+          { rows: 3, cols: 4, shaded: 12, label: '3 × 4 = 12 (3 rows of x = 4)' },
+        ],
+      },
+      readingSteps: [
+        'The grid has 3 rows and 4 columns.',
+        '3 stands for the coefficient (3 of something).',
+        '4 stands for the value of x.',
+        '3 × 4 = 12 cells in total — that is the value of 3x when x = 4.',
+      ],
+    },
+    workedExamples: [
+      {
+        problem: 'If x = 5, find 3x + 2.',
+        steps: [
+          'Substitute: 3x + 2 = 3 × 5 + 2.',
+          'Multiply first: 3 × 5 = 15.',
+          'Then add: 15 + 2 = 17.',
+        ],
+        answer: '17',
+      },
+      {
+        problem: 'Find the value of 2x + 3y when x = 2 and y = 4.',
+        steps: [
+          'Substitute both variables: 2 × 2 + 3 × 4.',
+          'Multiply first (each term): 4 + 12.',
+          'Add: 16.',
+        ],
+        answer: '16',
+      },
+    ],
+    commonMistakes: [
+      {
+        pattern: 'Concatenating instead of multiplying',
+        example: 'For 2x with x = 4, writes 24 (the digit 2 next to the digit 4).',
+        why: 'Reads "2x" as a single two-character symbol, not as "2 times x".',
+        fix: 'Always rewrite "2x" as "2 × x" when substituting. With x = 4: 2 × 4 = 8.',
+      },
+      {
+        pattern: 'Wrong order of operations',
+        example: 'For 5(x + 1) with x = 2, writes 5 × x + 1 = 10 + 1 = 11.',
+        why: 'Skipped the brackets.',
+        fix: 'Brackets first. (x + 1) = (2 + 1) = 3. Then 5 × 3 = 15.',
+      },
+      {
+        pattern: 'Missing one variable in two-variable evaluation',
+        example: 'For 2x + 3y with x = 2 and y = 4, only substitutes x and writes 4 + 3y.',
+        why: 'Lost track of the second variable.',
+        fix: 'Substitute ALL variables before doing arithmetic. Underline each variable in the expression and tick it off as you replace.',
+      },
+    ],
+    practice: ['AL.03-01', 'AL.03-04', 'AL.03-06', 'AL.03-08', 'AL.03-10'],
+    teacherNote:
+      'When the student writes "23" for "2x with x = 3", do not just say "wrong". Ask "what does 2x mean?" and write 2 × x in front of them. The fix is almost always re-establishing that 2x is multiplication, not concatenation.',
+    parentNote:
+      'Use shopping or recipes. "If one apple costs ₹15 and we buy x apples, the cost is 15x. If x = 4, what is the cost?" Practising in real contexts builds the substitute-and-multiply habit.',
+  },
+
+  'AL.04': {
+    skillId: 'AL.04',
+    intro:
+      'A one-step equation has a variable on one side and a number on the other, joined by ONE arithmetic operation: x + 5 = 9, x − 3 = 4, 2x = 10, x ÷ 4 = 2. To solve, do the OPPOSITE operation to BOTH sides so the variable is left alone.',
+    reteach: {
+      title: 'Reteach: solving one-step equations',
+      steps: [
+        'Identify the operation that is being done to the variable: + a, − a, × a, or ÷ a.',
+        'Apply the OPPOSITE operation to BOTH sides:',
+        '  • + a  →  subtract a from both sides.',
+        '  • − a  →  add a to both sides.',
+        '  • × a  →  divide both sides by a.',
+        '  • ÷ a  →  multiply both sides by a.',
+        'Simplify to get x = (some number).',
+        'Always CHECK by substituting back into the original equation.',
+      ],
+    },
+    visualExplanation: {
+      caption:
+        'A balance: left pan holds x + 3, right pan holds 7. Take 3 away from BOTH pans → left has x, right has 4. So x = 4.',
+      visual: {
+        kind: 'bars',
+        bars: [
+          { numerator: 4, denominator: 7, label: 'Left: x + 3 (= 7)' },
+          { numerator: 4, denominator: 7, label: 'Right: 7' },
+        ],
+      },
+      readingSteps: [
+        'Both sides are equal — that is what the "=" sign means.',
+        'If we take the same amount from BOTH sides, they stay equal.',
+        'Take 3 from each side: left becomes x, right becomes 4.',
+        'So x = 4. Check: 4 + 3 = 7 ✓.',
+      ],
+    },
+    workedExamples: [
+      {
+        problem: 'Solve x + 3 = 7.',
+        steps: [
+          'The operation on x is "+ 3". The opposite is "− 3".',
+          'Subtract 3 from both sides: x + 3 − 3 = 7 − 3.',
+          'Simplify: x = 4.',
+          'Check: 4 + 3 = 7 ✓.',
+        ],
+        answer: 'x = 4',
+      },
+      {
+        problem: 'Solve 2x = 10.',
+        steps: [
+          'The operation on x is "× 2". The opposite is "÷ 2".',
+          'Divide both sides by 2: 2x ÷ 2 = 10 ÷ 2.',
+          'Simplify: x = 5.',
+          'Check: 2 × 5 = 10 ✓.',
+        ],
+        answer: 'x = 5',
+      },
+    ],
+    commonMistakes: [
+      {
+        pattern: 'Doing the same operation instead of the opposite',
+        example: 'For x + 3 = 7, ADDS 3 to both sides → x + 6 = 10 (still has x + 6 on the left).',
+        why: 'Misremembers the rule as "do the same thing".',
+        fix: 'The rule is: do the OPPOSITE of the operation on x. To undo "+ 3", we subtract 3.',
+      },
+      {
+        pattern: 'Multiplying both sides instead of dividing',
+        example: 'For 2x = 10, multiplies both sides by 2 → 4x = 20.',
+        why: 'Saw the 2 and reached for multiplication.',
+        fix: '"2x" already has × 2 on x. To undo it, DIVIDE both sides by 2. Result: x = 5.',
+      },
+      {
+        pattern: 'Doing the operation to only one side',
+        example: 'For x + 3 = 7, subtracts 3 from the left only → x = 7.',
+        why: 'Forgets that the equation must stay balanced.',
+        fix: 'Whatever you do to one side, do it to the OTHER side too. That is what keeps the equality true.',
+      },
+    ],
+    practice: ['AL.04-01', 'AL.04-03', 'AL.04-04', 'AL.04-08', 'AL.04-09'],
+    teacherNote:
+      'Drawing a balance scale (or actually using a balance) is the most reliable way to install the "do it to both sides" rule. Once the picture is internalised, the symbolic step becomes natural.',
+    parentNote:
+      'Use a real balance, even a simple seesaw of paper. "If both sides are equal and we take 3 candies from one side, what must we do to the other to keep it equal?" The picture transfers to algebra without any extra work.',
+  },
+
+  'AL.05': {
+    skillId: 'AL.05',
+    intro:
+      'An algebra word problem turns a story into a one-step (sometimes two-step) equation. The hardest step is usually the translation: "Let x be …", then write the equation, THEN solve it using AL.04 methods.',
+    reteach: {
+      title: 'Reteach: turning a word problem into an equation',
+      steps: [
+        'Read the problem twice. Underline what is being asked.',
+        'Decide what x will stand for, and write it down: "Let x = …".',
+        'Translate the English sentence into an equation. Look for + (added, more, increased), − (less, fewer, decreased), × (twice, of, times), ÷ (shared, divided).',
+        'Solve the equation (AL.04) for x.',
+        'Read the question again. Make sure the answer is in the right units, and that the value makes sense.',
+      ],
+    },
+    visualExplanation: {
+      caption:
+        'Anita has x books. She gets 5 more. Now she has 12. Picture: a bar of length x and an extra of length 5 together = 12.',
+      visual: {
+        kind: 'bars',
+        bars: [
+          { numerator: 7, denominator: 12, label: 'x books (start)' },
+          { numerator: 5, denominator: 12, label: '5 more (gets)' },
+        ],
+      },
+      readingSteps: [
+        'The first bar is what Anita started with: x.',
+        'The second is what she added: 5.',
+        'Together they reach 12. So x + 5 = 12.',
+        'Solve: subtract 5 from both sides → x = 7.',
+      ],
+    },
+    workedExamples: [
+      {
+        problem: 'I think of a number, add 4, and get 11. What is the number?',
+        steps: [
+          'Let x = the number.',
+          'Translate: "the number plus 4 = 11" → x + 4 = 11.',
+          'Solve: subtract 4 from both sides → x = 7.',
+          'Check: 7 + 4 = 11 ✓.',
+        ],
+        answer: 'x = 7',
+      },
+      {
+        problem: 'Five added to twice a number gives 17. Find the number.',
+        steps: [
+          'Let x = the number.',
+          'Translate: "twice the number" = 2x. "5 added to" = + 5. So 2x + 5 = 17.',
+          'Subtract 5 from both sides: 2x = 12.',
+          'Divide both sides by 2: x = 6.',
+          'Check: 2 × 6 + 5 = 17 ✓.',
+        ],
+        answer: 'x = 6',
+      },
+    ],
+    commonMistakes: [
+      {
+        pattern: 'Picking the wrong operation',
+        example: 'For "Anita has x books, gets 5 more, now has 12", writes x − 5 = 12.',
+        why: 'Did not parse the words; reached for any operation.',
+        fix: '"5 more" → ADD 5. Always read the operation word and write the matching symbol BEFORE solving.',
+      },
+      {
+        pattern: 'Forgetting to define x',
+        example: 'Writes the equation first without saying what x stands for, then forgets which quantity is which.',
+        why: 'Skipped the "Let x = …" step.',
+        fix: 'ALWAYS write "Let x = (the unknown thing)" first. It is the most useful 6 words in algebra.',
+      },
+      {
+        pattern: 'Solving for the wrong quantity',
+        example: 'Solves the equation correctly but writes the answer as x + 5 instead of x.',
+        why: 'Lost track of what was being asked.',
+        fix: 'Re-read the QUESTION at the end. If the question asked for "the number", give x. If it asked for the friend\'s score, give x + 5.',
+      },
+    ],
+    practice: ['AL.05-01', 'AL.05-04', 'AL.05-05', 'AL.05-08', 'AL.05-10'],
+    teacherNote:
+      'When students struggle, slow down on translation, not arithmetic. Give 4–5 problems and ask only for the equation (no solving). Once equations are reliable, the AL.04 step is easy.',
+    parentNote:
+      'Make up everyday word problems: "I had some chocolates. I gave 3 away and have 5 left. How many did I have?" Ask your child to write "Let x be …" and the equation BEFORE solving.',
+  },
 };
 
 export const lessonFor = (skill: SkillId): Lesson => LESSONS[skill];

@@ -135,6 +135,7 @@ const MODULE_CHIP_CLASS: Record<ModuleId, string> = {
   decimals: 'bg-sky-50 text-sky-700 ring-sky-200',
   factors_multiples: 'bg-amber-50 text-amber-700 ring-amber-200',
   ratio_proportion: 'bg-violet-50 text-violet-700 ring-violet-200',
+  algebra: 'bg-indigo-50 text-indigo-700 ring-indigo-200',
 };
 
 const FULL_MIXED_CHIP_CLASS = 'bg-slate-100 text-slate-700 ring-slate-200';
@@ -2044,7 +2045,7 @@ function StartForm({
         </div>
 
         <div className="mt-6 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
-          The bank has 254 items across 22 skills in 4 modules; each session
+          The bank has 304 items across 27 skills in 5 modules; each session
           shows 10. With a small bank, you may see similar question types
           across attempts.
         </div>

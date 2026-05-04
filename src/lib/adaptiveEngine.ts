@@ -80,7 +80,8 @@ export function filterItemsBySkillMode(
     mode === 'mixed_fractions' ||
     mode === 'mixed_decimals' ||
     mode === 'mixed_factors_multiples' ||
-    mode === 'mixed_ratio_proportion'
+    mode === 'mixed_ratio_proportion' ||
+    mode === 'mixed_algebra'
   ) {
     return allItems.filter(
       (it) => MODULE_FOR_SKILL[it.skillId] === m

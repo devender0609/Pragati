@@ -1,14 +1,14 @@
 # Pragati — Growth Assessment Prototype
 
 A pre-pilot prototype adaptive assessment **and Learn module** for CBSE
-Class 6 Math. As of v0.7 this MVP covers **four Class 6 Math modules** —
+Class 6 Math. As of v0.9 this MVP covers **five Class 6 Math modules** —
 **Fractions** (7 skills), **Decimals** (5 skills), **Factors &
-Multiples** (5 skills), and **Ratio & Proportion** (5 skills) —
-over a **254-item bank** with mixed item types (MCQ, numeric entry,
-visual fraction bars and area grids), plus a Learn section with a
-reteach lesson, visual explanation, two worked examples, three
-common-mistake notes, and five practice questions for every skill, and
-demonstrates:
+Multiples** (5 skills), **Ratio & Proportion** (5 skills), and
+**Algebra Basics** (5 skills) — over a **304-item bank** with mixed
+item types (MCQ, numeric entry, visual fraction bars and area grids),
+plus a Learn section with a reteach lesson, visual explanation, two
+worked examples, three common-mistake notes, and five practice
+questions for every skill, and demonstrates:
 
 1. a simple adaptive routing rule that picks the next item based on the
    previous answer,
@@ -72,7 +72,49 @@ deploys to Vercel out of the box.
 
 ---
 
-## What this version adds (v0.8)
+## What this version adds (v0.9)
+
+The headline change in v0.9 is one new module — **Algebra Basics** —
+added in a controlled way: 5 skills, 50 items, 5 lessons, no other
+content changes. The pilot-readiness work from v0.8 (item review,
+pilot mode, teaching plan, item quality flags, student/teacher modes)
+is unchanged.
+
+- **Algebra Basics module (5 skills, 50 items).**
+  - **AL.01 Understanding variables** — what x and y mean as
+    placeholders for numbers; reading 3y as "three times some number".
+  - **AL.02 Simple expressions** — translating words to symbols
+    (twice y → 2y; 3 less than x → x − 3); identifying coefficient,
+    constant, and variable.
+  - **AL.03 Evaluate expressions** — substitute a value for the
+    variable, then compute. Includes one- and two-variable cases and
+    bracketed expressions.
+  - **AL.04 One-step equations** — x + a = b, x − a = b, ax = b,
+    x/a = b. The "do the opposite to both sides" rule.
+  - **AL.05 Word problems** — turning a story into a one-step (or
+    light two-step) equation, with explicit "Let x = …" practice.
+  10 items per skill, foundational / core / advanced bands, MCQ +
+  numeric entry, misconception-tagged distractors, worked solutions,
+  estimated time. Total bank is now **304 items across 27 skills**.
+- **5 new Learn pages** (one per AL skill) with intro, reteach steps,
+  visual + step-by-step reading, two worked examples, three
+  common-mistake notes (concatenation in 2x, "less than" order swap,
+  doing the same operation instead of the opposite, etc.), five
+  practice IDs, teacher and parent notes.
+- **App integration.** The Algebra module appears automatically on
+  the Class 6 Math dashboard, with its own colour (indigo). New
+  per-module mixed mode `mixed_algebra` joins the StartForm picker
+  and the class-dashboard filter. Teaching plan, item quality flags,
+  item review, and student-mode "weak skill" / "next skill"
+  suggestions all pick up the new skills automatically because they
+  iterate over `SKILL_IDS_ORDERED` / `MODULE_IDS_ORDERED`.
+
+What v0.9 deliberately does NOT do, per the brief: no other new
+modules, no item changes to existing modules, no Supabase, no claim
+of official CBSE alignment. Existing FR / DE / FM / RP functionality
+and previous-version sessions in localStorage are intact.
+
+## What v0.8 added
 
 The headline change in v0.8 is that Pragati turns its attention from
 content (more items / modules) to **quality control, pilot readiness,
@@ -519,7 +561,7 @@ cbse-growth-app/
     ├── types.ts                 # Student, Session, Response, AssessmentWindow, SkillId, SkillMode
     ├── vite-env.d.ts
     ├── data/
-    │   ├── items.ts             # 254 items across 22 skills in 4 modules (MCQ + numeric entry + visual specs)
+    │   ├── items.ts             # 304 items across 27 skills in 5 modules (MCQ + numeric entry + visual specs)
     │   └── lessons.ts           # Per-skill Learn content (reteach + visual + practice + teacher/parent notes)
     └── lib/
         ├── adaptiveEngine.ts    # session-pool sampling (skill-aware), next-item selection, ability update, stop rule
@@ -633,7 +675,7 @@ regression.
 This prototype is the beginning, not the end. Before any student sees this
 outside a pilot setting, the following are required:
 
-1. **Teacher validation of the 254 items.** A CBSE Class 6 math teacher
+1. **Teacher validation of the 304 items.** A CBSE Class 6 math teacher
    should read every stem, every option, every accepted numeric answer,
    and every worked solution across both FR.06 and FR.07. Register,
    phrasing, and context (names, units, everyday scenes) must feel

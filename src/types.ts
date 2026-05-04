@@ -93,7 +93,8 @@ export type ModuleId =
   | 'fractions'
   | 'decimals'
   | 'factors_multiples'
-  | 'ratio_proportion';
+  | 'ratio_proportion'
+  | 'algebra';
 
 export type SkillId =
   // Fractions
@@ -121,7 +122,13 @@ export type SkillId =
   | 'RP.02'
   | 'RP.03'
   | 'RP.04'
-  | 'RP.05';
+  | 'RP.05'
+  // Algebra Basics (v0.9)
+  | 'AL.01'
+  | 'AL.02'
+  | 'AL.03'
+  | 'AL.04'
+  | 'AL.05';
 
 // "Mixed within one module" modes. 'mixed' (without suffix) remains for
 // the across-everything assessment, kept compatible with v0.5 / v0.6.
@@ -129,7 +136,8 @@ export type ModuleMixedMode =
   | 'mixed_fractions'
   | 'mixed_decimals'
   | 'mixed_factors_multiples'
-  | 'mixed_ratio_proportion';
+  | 'mixed_ratio_proportion'
+  | 'mixed_algebra';
 
 export type SkillMode = SkillId | 'mixed' | ModuleMixedMode;
 
@@ -138,6 +146,7 @@ export const MODULE_IDS_ORDERED: ModuleId[] = [
   'decimals',
   'factors_multiples',
   'ratio_proportion',
+  'algebra',
 ];
 
 export const SKILLS_BY_MODULE: Record<ModuleId, SkillId[]> = {
@@ -145,6 +154,7 @@ export const SKILLS_BY_MODULE: Record<ModuleId, SkillId[]> = {
   decimals: ['DE.01', 'DE.02', 'DE.03', 'DE.04', 'DE.05'],
   factors_multiples: ['FM.03', 'FM.04', 'FM.06', 'FM.07', 'FM.08'],
   ratio_proportion: ['RP.01', 'RP.02', 'RP.03', 'RP.04', 'RP.05'],
+  algebra: ['AL.01', 'AL.02', 'AL.03', 'AL.04', 'AL.05'],
 };
 
 // Reverse map: skill → module. Built from SKILLS_BY_MODULE so it can never
@@ -168,6 +178,7 @@ export const MODULE_LABELS: Record<ModuleId, string> = {
   decimals: 'Decimals',
   factors_multiples: 'Factors & Multiples',
   ratio_proportion: 'Ratio & Proportion',
+  algebra: 'Algebra Basics',
 };
 
 export const MODULE_DESCRIPTIONS: Record<ModuleId, string> = {
@@ -179,6 +190,8 @@ export const MODULE_DESCRIPTIONS: Record<ModuleId, string> = {
     'Prime/composite numbers, divisibility rules, HCF, LCM, and HCF/LCM word problems. 5 skills.',
   ratio_proportion:
     'Concept of ratio, equivalent ratios, proportion, the unitary method, and ratio word problems. 5 skills.',
+  algebra:
+    'Variables as unknowns, simple expressions, evaluating for given values, one-step equations, and word problems. 5 skills.',
 };
 
 export const SKILL_LABELS: Record<SkillId, string> = {
@@ -208,6 +221,12 @@ export const SKILL_LABELS: Record<SkillId, string> = {
   'RP.03': 'Proportion',
   'RP.04': 'Unitary method',
   'RP.05': 'Ratio and proportion word problems',
+  // Algebra Basics
+  'AL.01': 'Understanding variables',
+  'AL.02': 'Simple expressions',
+  'AL.03': 'Evaluate expressions',
+  'AL.04': 'One-step equations',
+  'AL.05': 'Algebra word problems',
 };
 
 // Short labels used on chips, dropdowns, and table cells.
@@ -234,6 +253,11 @@ export const SKILL_SHORT_LABELS: Record<SkillId, string> = {
   'RP.03': 'RP.03 — Proportion',
   'RP.04': 'RP.04 — Unitary method',
   'RP.05': 'RP.05 — Ratio word problems',
+  'AL.01': 'AL.01 — Variables',
+  'AL.02': 'AL.02 — Expressions',
+  'AL.03': 'AL.03 — Evaluate',
+  'AL.04': 'AL.04 — One-step equations',
+  'AL.05': 'AL.05 — Algebra word problems',
 };
 
 const MODULE_MIXED_LABEL: Record<ModuleMixedMode, string> = {
@@ -241,6 +265,7 @@ const MODULE_MIXED_LABEL: Record<ModuleMixedMode, string> = {
   mixed_decimals: 'Mixed — Decimals',
   mixed_factors_multiples: 'Mixed — Factors & Multiples',
   mixed_ratio_proportion: 'Mixed — Ratio & Proportion',
+  mixed_algebra: 'Mixed — Algebra Basics',
 };
 
 const MODULE_MIXED_DESC: Record<ModuleMixedMode, string> = {
@@ -252,6 +277,8 @@ const MODULE_MIXED_DESC: Record<ModuleMixedMode, string> = {
     'Mixed-skill session drawn from across the Factors & Multiples module (FM.03 → FM.08).',
   mixed_ratio_proportion:
     'Mixed-skill session drawn from across the Ratio & Proportion module (RP.01 → RP.05).',
+  mixed_algebra:
+    'Mixed-skill session drawn from across the Algebra Basics module (AL.01 → AL.05).',
 };
 
 export const SKILL_MODE_LABELS: Record<SkillMode, string> = {
@@ -306,6 +333,16 @@ export const SKILL_MODE_DESCRIPTIONS: Record<SkillMode, string> = {
     'Adaptive session drawn only from the RP.04 bank (unitary method).',
   'RP.05':
     'Adaptive session drawn only from the RP.05 bank (ratio and proportion word problems).',
+  'AL.01':
+    'Adaptive session drawn only from the AL.01 bank (variables as unknowns).',
+  'AL.02':
+    'Adaptive session drawn only from the AL.02 bank (writing and reading simple algebraic expressions).',
+  'AL.03':
+    'Adaptive session drawn only from the AL.03 bank (evaluating expressions for given values).',
+  'AL.04':
+    'Adaptive session drawn only from the AL.04 bank (one-step equations like x + 3 = 7).',
+  'AL.05':
+    'Adaptive session drawn only from the AL.05 bank (word problems leading to one-step equations).',
   // Per-module mixed descriptions.
   ...MODULE_MIXED_DESC,
   // Class-6-Math-wide mixed.
@@ -324,6 +361,7 @@ export const moduleForSkillMode = (mode: SkillMode): ModuleId | null => {
   if (mode === 'mixed_decimals') return 'decimals';
   if (mode === 'mixed_factors_multiples') return 'factors_multiples';
   if (mode === 'mixed_ratio_proportion') return 'ratio_proportion';
+  if (mode === 'mixed_algebra') return 'algebra';
   return MODULE_FOR_SKILL[mode];
 };
 

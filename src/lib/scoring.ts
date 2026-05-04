@@ -306,6 +306,67 @@ export const BAND_DESCRIPTIONS_BY_SKILL: Record<SkillMode, Record<Band, string>>
     Advanced:
       'Fluent across R&P including age, share, and rate problems.',
   },
+  // ----- Algebra Basics -----
+  'AL.01': {
+    Foundational:
+      'Treats x as a literal letter, not as a placeholder for a number. Re-anchor with concrete examples ("x is the number of pencils"). Practise reading 3y as "three times some number".',
+    Developing:
+      'Recognises a variable on simple expressions but slips when more than one variable appears. Needs more examples connecting words to letters.',
+    'On Track':
+      'Comfortable with variables as placeholders for unknown numbers. Ready for AL.02 (writing simple expressions).',
+    Advanced:
+      'Fluent with the idea of a variable; sees that the choice of letter is arbitrary. Appropriate to begin algebraic manipulation.',
+  },
+  'AL.02': {
+    Foundational:
+      'Confuses an expression with an equation, or with a single variable. Re-anchor: an expression has variables AND constants joined by +, −, ×, ÷, but no equals sign.',
+    Developing:
+      'Can write basic expressions but slips on word→symbol translation ("3 less than x" → x − 3, NOT 3 − x).',
+    'On Track':
+      'Reliably writes expressions for word phrases and identifies coefficients and constants. Ready for AL.03 (evaluation).',
+    Advanced:
+      'Fluent with expressions of two variables and natural constants. Ready for AL.04 (one-step equations).',
+  },
+  'AL.03': {
+    Foundational:
+      'Confuses substitution with concatenation (e.g., x = 3 in 2x → "23" instead of 6). Re-anchor: substituting MULTIPLIES the coefficient by the value.',
+    Developing:
+      'Substitutes correctly on simple expressions but slips on order of operations or two-variable cases.',
+    'On Track':
+      'Evaluates one- and two-variable expressions reliably, with bracket / order-of-operations care. Ready for AL.04.',
+    Advanced:
+      'Fluent across multi-term expressions and word-problem evaluation. Appropriate to bridge into solving equations.',
+  },
+  'AL.04': {
+    Foundational:
+      'Picks the wrong inverse operation (adds when subtraction was needed, or vice versa). Re-anchor with the "do the opposite to undo it" idea on a number-line picture.',
+    Developing:
+      'Solves x + a = b reliably but trips on multiplicative or division equations.',
+    'On Track':
+      'Solves all four one-step equation types (+, −, ×, ÷) and checks the answer. Ready for AL.05 (word problems).',
+    Advanced:
+      'Fluent with one-step equations including those that ask for an expression of x (e.g., "find x + 2 if 3x = 21"). Ready for two-step equations in later grades.',
+  },
+  'AL.05': {
+    Foundational:
+      'Right arithmetic, wrong equation. The translation from words to an equation is the load-bearing step. Underline the question, then write "let x be …" before any maths.',
+    Developing:
+      'Translates one-step problems into equations but slips on two-step problems or on identifying what x represents.',
+    'On Track':
+      'Reliably writes and solves equations for one- and two-step word problems. Ready for harder multi-step problems.',
+    Advanced:
+      'Fluent with a range of word problems including age, cost-and-quantity, and "more / less than" framings.',
+  },
+  mixed_algebra: {
+    Foundational:
+      'Across Algebra Basics, the role of a variable and the reading of an expression are not yet stable. Revisit AL.01 and AL.02 before continuing.',
+    Developing:
+      'Some Algebra skills are coming together; trips on substitution or on choosing the right inverse operation.',
+    'On Track':
+      'Most Algebra Basics skills are reliable. Practise word problems (AL.05) to consolidate.',
+    Advanced:
+      'Fluent across Algebra Basics. Appropriate to bridge into two-step equations in later grades.',
+  },
   mixed: {
     Foundational:
       'Across the whole Class 6 Math prototype, basics in multiple modules are not yet stable. Use the per-module / per-skill breakdown and the Learn section before more assessments.',
@@ -463,7 +524,13 @@ export type PrerequisiteSkill = {
     | 'RP.02'
     | 'RP.03'
     | 'RP.04'
-    | 'RP.05';
+    | 'RP.05'
+    // Algebra Basics
+    | 'AL.01'
+    | 'AL.02'
+    | 'AL.03'
+    | 'AL.04'
+    | 'AL.05';
   name: string;
 };
 
@@ -593,6 +660,23 @@ export const STATIC_PREREQUISITES_BY_SKILL: Record<SkillId, PrerequisiteSkill[]>
   'RP.05': [
     { code: 'RP.03', name: 'Proportion' },
     { code: 'RP.04', name: 'Unitary method' },
+  ],
+  // Algebra Basics
+  'AL.01': [],
+  'AL.02': [
+    { code: 'AL.01', name: 'Understanding variables' },
+  ],
+  'AL.03': [
+    { code: 'AL.01', name: 'Understanding variables' },
+    { code: 'AL.02', name: 'Simple expressions' },
+  ],
+  'AL.04': [
+    { code: 'AL.02', name: 'Simple expressions' },
+    { code: 'AL.03', name: 'Evaluate expressions' },
+  ],
+  'AL.05': [
+    { code: 'AL.03', name: 'Evaluate expressions' },
+    { code: 'AL.04', name: 'One-step equations' },
   ],
 };
 
