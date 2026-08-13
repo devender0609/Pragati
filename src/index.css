@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Slightly looser body line-height for readability across long lesson text. */
+@layer base {
+  p,
+  li {
+    line-height: 1.55;
+  }
+  h1 {
+    letter-spacing: -0.015em;
+  }
+  h2,
+  h3 {
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sm:px-5;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-slate-200 transition hover:bg-slate-50 active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 sm:px-5;
+  }
+  .card {
+    /* v0.41 — tighter mobile padding (3.5) so 320-360 px screens fit cards
+       without horizontal scroll; scales back up on sm+. */
+    @apply rounded-2xl bg-white p-3.5 shadow-card ring-1 ring-slate-100 sm:p-5 md:p-6;
+  }
+  .form-input {
+    @apply block w-full rounded-lg border-0 bg-white px-3 py-2 text-sm text-slate-900 ring-1 ring-inset ring-slate-300 transition placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500;
+  }
+  /* Section headings — used by Results, Learn, Teacher dashboard */
+  .h-section {
+    @apply text-base font-semibold text-slate-900 sm:text-lg;
+  }
+}
