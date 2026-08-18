@@ -155,7 +155,7 @@ export function ClassroomsView({ onBack }: { onBack: () => void }) {
           <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">
             Active ({active.length})
           </h2>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {active.map((c) => (
               <ClassroomCard
                 key={c.id}
@@ -178,7 +178,7 @@ export function ClassroomsView({ onBack }: { onBack: () => void }) {
           <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
             Archived ({archived.length})
           </h2>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {archived.map((c) => (
               <ClassroomCard
                 key={c.id}

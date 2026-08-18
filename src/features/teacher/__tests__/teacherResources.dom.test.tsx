@@ -162,8 +162,12 @@ describe('§9 the resource page exposes what actually exists', () => {
         onOpenLesson={noop}
       />
     );
-    // The seed record is 'unverified'; the page must say so.
-    expect(screen.getByText(/Not verified against a source/i)).toBeTruthy();
+    // The Fractions record is corroborated by secondary sources only.
+    // The page must say exactly that — never imply full verification.
+    expect(screen.getByText(/Secondary sources only/i)).toBeTruthy();
+    expect(screen.queryByText(/^Verified against the official source$/i)).toBeNull();
+    // And it must disclose what was not checked.
+    expect(screen.getByText(/What was and was not checked/i)).toBeTruthy();
   });
 
   it('an unrecognised chapter shows a clear message, not a broken page', () => {

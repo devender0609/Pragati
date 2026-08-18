@@ -22,6 +22,25 @@ import { LESSONS, lessonFor } from '../../data/lessons';
 import { SKILL_LABELS, type SkillId } from '../../types';
 import { resolveChapter } from '../../curriculum/chapterResolver';
 import { blueprintForChapter } from '../../curriculum/chapterBlueprints';
+import type { VerificationStatus } from '../../curriculum/officialChapters';
+
+// v0.50 §16 — the resource page states verification precisely. A record
+// corroborated only by secondary sources must never read as verified.
+const VERIFICATION_LABELS: Record<VerificationStatus, string> = {
+  unverified: 'Not verified against a source',
+  secondary_corroborated: 'Secondary sources only',
+  source_verified: 'Verified against the official source',
+  teacher_verified: 'Verified by a subject teacher',
+};
+
+const VERIFICATION_NOTES: Record<VerificationStatus, string | undefined> = {
+  unverified:
+    'No authoritative NCERT/CBSE source has been recorded for this chapter yet.',
+  secondary_corroborated:
+    'The textbook and edition were confirmed on the publisher site, but the chapter details still need checking against the official PDF.',
+  source_verified: undefined,
+  teacher_verified: undefined,
+};
 
 export type ChapterResourceRow = {
   skillId: SkillId;
@@ -139,17 +158,24 @@ export function TeacherResourceOutlet({
           />
           <Fact
             label="Curriculum verification"
-            value={
-              resolved.officialRecord.verificationStatus === 'unverified'
-                ? 'Not verified against a source'
-                : resolved.officialRecord.verificationStatus.replace('_', ' ')
-            }
-            note={
-              resolved.officialRecord.verificationStatus === 'unverified'
-                ? 'No authoritative NCERT/CBSE source has been recorded for this chapter yet.'
-                : undefined
-            }
+            value={VERIFICATION_LABELS[resolved.officialRecord.verificationStatus]}
+            note={VERIFICATION_NOTES[resolved.officialRecord.verificationStatus]}
           />
+          {resolved.officialRecord.verifierNotes && (
+            <div className="rounded-xl bg-amber-50 p-3 ring-1 ring-amber-200 sm:col-span-2">
+              <dt className="text-[11px] font-semibold uppercase tracking-wider text-amber-800">
+                What was and was not checked
+              </dt>
+              <dd className="mt-0.5 text-xs text-amber-900">
+                {resolved.officialRecord.verifierNotes}
+              </dd>
+              {resolved.officialRecord.sourceReference && (
+                <dd className="mt-1 break-all text-xs text-amber-800">
+                  Source: {resolved.officialRecord.sourceReference}
+                </dd>
+              )}
+            </div>
+          )}
         </dl>
       </Card>
 

@@ -35,13 +35,79 @@ export type StaticMappingRow = {
 };
 
 export const STATIC_MAPPING: StaticMappingRow[] = [
+  // -------------------------------------------------------------------
+  // v0.50 §15/§16 — mapping Pragati's Class 6 modules onto the CURRENT
+  // NCERT textbook (Ganita Prakash, 10 chapters).
+  //
+  // The honest headline: Pragati's Class 6 module set was built against
+  // the OLD 14-chapter "Mathematics" textbook. Three of its six modules
+  // have no standalone chapter in the current book at all. Those rows
+  // are recorded as 'unmapped' rather than being forced onto a
+  // plausible-looking chapter, because inventing a mapping here is
+  // exactly how a curriculum claim becomes false.
+  // -------------------------------------------------------------------
   {
-    officialChapterId: 'g06_fractions_officialplaceholder',
+    officialChapterId: 'ncert_gp_c6_ch07_fractions',
     legacyModuleIds: ['fractions'],
     mappingType: 'exact',
     notes:
-      'Class 6 Mathematics — Fractions. Exact mapping is the maintainer claim; ' +
-      'the official chapter itself is still unverified until a reviewer cites the NCERT source.',
+      'Fractions is Chapter 7 in both the old and current textbooks. Pragati\'s ' +
+      'reference module maps here. Skill-level alignment to Ganita Prakash\'s ' +
+      'actual treatment still needs a teacher review.',
+  },
+  {
+    officialChapterId: 'ncert_gp_c6_ch05_prime_time',
+    legacyModuleIds: ['factors_multiples'],
+    mappingType: 'partial',
+    notes:
+      'Pragati\'s factors_multiples module was written against the old ' +
+      '"Playing with Numbers" chapter. Prime Time covers related ground but ' +
+      'is not the same chapter. Partial until reviewed.',
+  },
+  {
+    officialChapterId: 'ncert_gp_c6_ch02_lines_angles',
+    legacyModuleIds: ['geometry'],
+    mappingType: 'partial',
+    notes:
+      'Pragati\'s single geometry module spans what the current book splits ' +
+      'across Lines and Angles, Perimeter and Area, Playing with Constructions, ' +
+      'and Symmetry. Recorded as partial against the first of these.',
+  },
+
+  // NOTE: the legacy 'g06_fractions_officialplaceholder' ID deliberately
+  // has NO mapping row. It is an ALIAS of ncert_gp_c6_ch07_fractions,
+  // resolved in chapterResolver, so the fractions module has exactly one
+  // official chapter and cannot be double-counted in coverage.
+];
+
+/** v0.50 §16 — Pragati modules with NO standalone chapter in the
+ *  current NCERT Class 6 textbook. Recorded explicitly so the gap is
+ *  visible in Admin & Research instead of being silently absent.
+ *  These were chapters in the OLD 14-chapter book. */
+export const UNMAPPED_LEGACY_MODULES: Array<{
+  legacyModuleId: LegacyModuleId;
+  oldChapter: string;
+  reason: string;
+}> = [
+  {
+    legacyModuleId: 'decimals',
+    oldChapter: 'Old NCERT Class 6 Mathematics, Chapter 8 — Decimals',
+    reason:
+      'Ganita Prakash has no standalone Decimals chapter at Class 6. Content ' +
+      'placement in the current curriculum needs to be established before this ' +
+      'module is presented as Class 6 curriculum.',
+  },
+  {
+    legacyModuleId: 'ratio_proportion',
+    oldChapter: 'Old NCERT Class 6 Mathematics, Chapter 12 — Ratio and Proportion',
+    reason:
+      'No standalone Ratio and Proportion chapter in Ganita Prakash Class 6.',
+  },
+  {
+    legacyModuleId: 'algebra',
+    oldChapter: 'Old NCERT Class 6 Mathematics, Chapter 11 — Algebra',
+    reason:
+      'No standalone Algebra chapter in Ganita Prakash Class 6.',
   },
 ];
 

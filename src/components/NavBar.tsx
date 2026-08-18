@@ -73,7 +73,7 @@ export function NavBar({
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:py-4">
         <button
           onClick={onNavLanding}
-          className="flex items-center gap-2 text-left"
+          className="flex min-h-[44px] items-center gap-2 text-left"
         >
           <div
             className={`flex h-9 w-9 items-center justify-center rounded-lg text-base font-bold text-white shadow-sm ${accentLogo}`}
@@ -114,7 +114,7 @@ export function NavBar({
             <>
               <button
                 onClick={onNavLearn}
-                className={`rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
+                className={`inline-flex min-h-[44px] items-center rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
                   learnActive
                     ? accentPill + ' ring-1'
                     : 'text-slate-600 hover:bg-slate-100'
@@ -124,7 +124,7 @@ export function NavBar({
               </button>
               <button
                 onClick={onNavTeacher}
-                className={`rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
+                className={`inline-flex min-h-[44px] items-center rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3 ${
                   teacherActive
                     ? accentPill + ' ring-1'
                     : 'text-slate-600 hover:bg-slate-100'

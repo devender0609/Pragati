@@ -13,7 +13,7 @@ export function ModeToggle({
   return (
     <button
       onClick={() => onSetAppMode(next)}
-      className="ml-1 rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-slate-600 ring-1 ring-slate-200 hover:bg-slate-200 sm:ml-2 sm:text-xs"
+      className="ml-1 inline-flex min-h-[44px] items-center rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-slate-600 ring-1 ring-slate-200 hover:bg-slate-200 sm:ml-2 sm:text-xs"
       title={`Switch to ${next} mode`}
     >
       {appMode === 'student' ? 'Student mode' : 'Teacher mode'}

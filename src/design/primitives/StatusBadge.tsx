@@ -25,17 +25,22 @@ const TONE: Record<DerivedStatus, string> = {
 export function StatusBadge({
   status,
   title,
+  label,
 }: {
   status: DerivedStatus;
   /** Reviewer tooltip explaining WHY the status is what it is. */
   title?: string;
+  /** v0.50 §5 — plain-language override for student surfaces. When
+   *  omitted the authoring vocabulary is used, which is correct for
+   *  teacher and admin screens. */
+  label?: string;
 }) {
   return (
     <span
       title={title}
       className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-semibold ${TONE[status]}`}
     >
-      {DERIVED_STATUS_LABEL[status]}
+      {label ?? DERIVED_STATUS_LABEL[status]}
     </span>
   );
 }

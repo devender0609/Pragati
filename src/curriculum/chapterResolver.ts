@@ -47,6 +47,19 @@ export type ResolvedChapter = {
 
 /** Resolve any chapter identifier the UI passes around. Returns
  *  null when the identifier is not recognised at all. */
+/** v0.50 §16 — legacy chapter IDs that now have a canonical official
+ *  record. Stored sessions, blueprints, and deep links still carry the
+ *  old ID; resolving through this table keeps them working without
+ *  duplicating the chapter in the catalogue. */
+export const CHAPTER_ID_ALIASES: Record<string, string> = {
+  'g06_fractions_officialplaceholder': 'ncert_gp_c6_ch07_fractions',
+};
+
+/** Apply the alias table to a bare (unprefixed) official chapter id. */
+export function canonicalOfficialId(id: string): string {
+  return CHAPTER_ID_ALIASES[id] ?? id;
+}
+
 export function resolveChapter(chapterId: string): ResolvedChapter | null {
   if (!chapterId || typeof chapterId !== 'string') return null;
 
@@ -58,9 +71,12 @@ export function resolveChapter(chapterId: string): ResolvedChapter | null {
   }
 
   // --- Case 1/2: official chapter (with or without prefix) ---
-  const officialId = chapterId.startsWith('official:')
+  const rawOfficialId = chapterId.startsWith('official:')
     ? chapterId.slice('official:'.length)
     : chapterId;
+  // Legacy IDs resolve to their canonical replacement, so an old stored
+  // session or blueprint lands on the real official chapter record.
+  const officialId = canonicalOfficialId(rawOfficialId);
   const record = OFFICIAL_CHAPTERS.find(
     (c) => c.officialChapterId === officialId
   );
@@ -107,6 +123,9 @@ function resolveLegacyModule(modId: ModuleId): ResolvedChapter {
     sourceReference: null,
     edition: null,
     dateVerified: null,
+    sourceOrganization: null,
+    pageReference: null,
+    verifierNotes: null,
     verificationStatus: 'unverified',
     notes: '',
   };

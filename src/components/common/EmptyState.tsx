@@ -41,9 +41,9 @@ export function EmptyState({
           {icon}
         </div>
       )}
-      <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
+      <h2 className="text-base font-semibold text-slate-900 sm:text-lg">
         {title}
-      </h3>
+      </h2>
       <div className="mx-auto mt-1 max-w-md text-sm text-slate-600">
         {message}
       </div>

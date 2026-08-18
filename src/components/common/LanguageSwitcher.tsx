@@ -22,7 +22,10 @@ export function LanguageSwitcher() {
           role="radio"
           aria-checked={lang === l}
           onClick={() => setLang(l)}
-          className={`rounded-full px-2.5 py-1 text-xs font-semibold transition ${
+          // v0.50 §13 — 44px minimum touch target. These were 24px
+          // tall, which is below every published guideline and hard to
+          // hit for the youngest users the app targets.
+          className={`inline-flex min-h-[44px] items-center rounded-full px-3 py-1 text-xs font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
             lang === l
               ? 'bg-white text-slate-900 shadow-sm ring-1 ring-slate-200'
               : 'text-slate-600 hover:text-slate-900'

@@ -21,6 +21,7 @@ function renderShell(
   const launchCheck = vi.fn();
   const launchLesson = vi.fn();
   const exit = vi.fn();
+  const chooseConcept = vi.fn();
   render(
     <StudentShell
       activeTab={overrides.activeTab ?? 'home'}
@@ -35,10 +36,14 @@ function renderShell(
       onLaunchMixedChapterPractice={launchMixed}
       onLaunchChapterCheck={launchCheck}
       onExitSession={exit}
+      onChooseConcept={chooseConcept}
       {...overrides}
     />
   );
-  return { setTab, setChapter, launchConcept, launchMixed, launchCheck, launchLesson, exit };
+  return {
+    setTab, setChapter, launchConcept, launchMixed, launchCheck,
+    launchLesson, exit, chooseConcept,
+  };
 }
 
 describe('§2 navigation during an active session', () => {
@@ -142,23 +147,33 @@ describe('§4 Practice actions match their labels', () => {
     const { setChapter, launchMixed, launchCheck } = renderShell({
       activeTab: 'practice',
     });
-    fireEvent.click(screen.getAllByRole('button', { name: /^open chapter$/i })[0]);
+    // Target the Fractions card specifically: since v0.50 the Class 6
+    // catalogue follows the real Ganita Prakash chapter order, so
+    // Fractions is no longer the first card.
+    const openButtons = screen.getAllByRole('button', { name: /^open chapter$/i });
+    const fractionsCard = openButtons.find((b) =>
+      /fraction/i.test(b.closest('div')?.parentElement?.textContent ?? '')
+    ) ?? openButtons[0];
+    fireEvent.click(fractionsCard);
     expect(setChapter).toHaveBeenCalledTimes(1);
     expect(String(setChapter.mock.calls[0][0])).toMatch(/fractions/i);
     expect(launchMixed).not.toHaveBeenCalled();
     expect(launchCheck).not.toHaveBeenCalled();
   });
 
-  it('"Practise a concept" launches one skill, not a chapter run', () => {
-    const { launchConcept, launchMixed, launchCheck } = renderShell({
+  it('"Practise a concept" opens a chooser instead of silently picking the first skill', () => {
+    // v0.50 §3 — v0.49 launched skillIds[0] directly, so the student
+    // never got the choice the label promised.
+    const { chooseConcept, launchMixed, launchCheck } = renderShell({
       activeTab: 'practice',
     });
     fireEvent.click(
       screen.getAllByRole('button', { name: /practise a concept/i })[0]
     );
-    expect(launchConcept).toHaveBeenCalledTimes(1);
-    // A SkillId, not a ModuleId.
-    expect(String(launchConcept.mock.calls[0][0])).toMatch(/^[A-Z]{2}\.\d{2}$/);
+    expect(chooseConcept).toHaveBeenCalledTimes(1);
+    // It asks for a CHAPTER, not a pre-selected skill.
+    const [, chapterId] = chooseConcept.mock.calls[0];
+    expect(String(chapterId)).toMatch(/^(official|legacy):/);
     expect(launchMixed).not.toHaveBeenCalled();
     expect(launchCheck).not.toHaveBeenCalled();
   });
@@ -176,7 +191,7 @@ describe('§4 Practice actions match their labels', () => {
     // as many times as it has buttons — i.e. no shared target.
     for (const b of cardButtons) fireEvent.click(b);
     const total =
-      handlers.launchConcept.mock.calls.length +
+      handlers.chooseConcept.mock.calls.length +
       handlers.launchMixed.mock.calls.length +
       handlers.launchCheck.mock.calls.length +
       handlers.setChapter.mock.calls.length;

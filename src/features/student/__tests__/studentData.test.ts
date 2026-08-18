@@ -55,7 +55,7 @@ describe('§4 — student data isolation by ID', () => {
 
 describe('§5 — findContinueTarget', () => {
   const CLASS6_LAUNCHABLE = [
-    'official:g06_fractions_officialplaceholder',
+    'official:ncert_gp_c6_ch07_fractions',
     'legacy:fractions',
     'legacy:decimals',
     'legacy:geometry',

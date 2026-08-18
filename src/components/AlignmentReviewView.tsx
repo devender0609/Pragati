@@ -504,7 +504,7 @@ function SkillAlignmentBlock({ skillId }: { skillId: SkillId }) {
         </div>
         <p className="mt-0.5">{a.competencyStatement}</p>
       </div>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <div>
           <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
             Cognitive focus

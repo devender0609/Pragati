@@ -106,7 +106,7 @@ export function DesktopNavigation<Id extends string>({
             role="tab"
             aria-selected={isActive}
             onClick={() => onSelect(item.id)}
-            className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 ${MOTION.fast} ${FOCUS_RING} ${
+            className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-1.5 ${MOTION.fast} ${FOCUS_RING} ${
               isActive
                 ? 'bg-brand-50 text-brand-700 ring-1 ring-brand-200'
                 : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'

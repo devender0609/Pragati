@@ -19,6 +19,9 @@ describe('inventory — derived content status', () => {
       sourceReference: null,
       edition: null,
       dateVerified: null,
+      sourceOrganization: null,
+      pageReference: null,
+      verifierNotes: null,
       verificationStatus: 'unverified' as const,
       notes: '',
     };
@@ -29,7 +32,7 @@ describe('inventory — derived content status', () => {
 
   it('Fractions maps to a status better than no_content', () => {
     const fractions = OFFICIAL_CHAPTERS.find(
-      (c) => c.officialChapterId === 'g06_fractions_officialplaceholder'
+      (c) => c.officialChapterId === 'ncert_gp_c6_ch07_fractions'
     );
     expect(fractions, 'seed record must exist').toBeDefined();
     const inv = inventoryChapter(fractions!);
@@ -66,6 +69,9 @@ describe('inventory — derived content status', () => {
       sourceReference: null,
       edition: null,
       dateVerified: null,
+      sourceOrganization: null,
+      pageReference: null,
+      verifierNotes: null,
       verificationStatus: 'unverified' as const,
       notes: '',
     };
@@ -75,7 +81,7 @@ describe('inventory — derived content status', () => {
 
   it('synthesised lessons are NOT counted as hand-authored', () => {
     const fractions = OFFICIAL_CHAPTERS.find(
-      (c) => c.officialChapterId === 'g06_fractions_officialplaceholder'
+      (c) => c.officialChapterId === 'ncert_gp_c6_ch07_fractions'
     )!;
     const inv = inventoryChapter(fractions);
     // handAuthoredLessonCount comes from real LESSONS keys; the

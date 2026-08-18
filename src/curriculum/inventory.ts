@@ -45,6 +45,25 @@ export type DerivedStatus =
   | 'pilot_ready'
   | 'published';
 
+/** v0.50 §5 — what a CHILD sees. The authoring vocabulary below
+ *  ('prototype', 'ready for review', 'shell') describes Pragati's
+ *  build state and is meaningless — and slightly alarming — to a
+ *  student. These labels describe what the student can DO instead.
+ *
+ *  DERIVED_STATUS_LABEL is retained unchanged for Teacher Resources
+ *  and Admin & Research, which genuinely need the build state. */
+export const STUDENT_STATUS_LABEL: Record<DerivedStatus, string> = {
+  no_content: 'Coming soon',
+  shell: 'Coming soon',
+  assessment_prototype: 'Practice available',
+  lesson_prototype: 'Lessons available',
+  partial_prototype: 'Ready to learn',
+  prototype_ready_review: 'Ready to learn',
+  teacher_reviewed: 'Ready to learn',
+  pilot_ready: 'Ready to learn',
+  published: 'Ready to learn',
+};
+
 export const DERIVED_STATUS_LABEL: Record<DerivedStatus, string> = {
   no_content: 'No content',
   shell: 'Shell only',

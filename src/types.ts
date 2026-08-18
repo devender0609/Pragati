@@ -1761,6 +1761,39 @@ export type Session = {
   // students who have since left the roster.
   classroomId?: string;
   academicYear?: string;
+
+  // v0.50 §1 — session lifecycle + resume state. All optional: every
+  // session written before v0.50 loads unchanged, and `lifecycleOf()`
+  // derives a status for those records from `completedAt`.
+  //
+  //   lifecycle          'in_progress' | 'completed' | 'exited'.
+  //                      'exited' means the student left early — real
+  //                      answers, but NOT a completed attempt.
+  //   lastActivityAt     ms epoch of the last answer, for ordering
+  //                      resumable sets.
+  //   resumePoolItemIds  the administered pool, IN ORDER. Storing IDs
+  //                      rather than items keeps the record small and
+  //                      lets the pool be rehydrated from the bank.
+  //   resumeCurrentIndex index into resumePoolItemIds of the question
+  //                      the student is on.
+  //   resumeAbility      engine ability at the point of exit.
+  //   resumeAttemptedIds items already attempted this session.
+  //   resumeChapterId / resumeSkillId / resumeReturnTab
+  //                      where to put the student back when they return.
+  lifecycle?: string;
+  lastActivityAt?: number;
+  resumePoolItemIds?: string[];
+  resumeCurrentIndex?: number;
+  resumeAbility?: number;
+  resumeAttemptedIds?: string[];
+  resumeChapterId?: string;
+  resumeSkillId?: string;
+  resumeReturnTab?: string;
+
+  // v0.50 §4 — chapter-check coverage, persisted for audit.
+  requestedItemCount?: number;
+  administeredItemCount?: number;
+  missingRequiredSkillIdsAtLaunch?: string[];
 };
 
 // ---------------------------------------------------------------------------

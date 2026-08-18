@@ -11,6 +11,7 @@
 // so no other chapter can pretend to have a check.
 
 import type { ModuleId, SkillId } from '../types';
+import { canonicalOfficialId } from './chapterResolver';
 import { SKILLS_BY_MODULE } from '../types';
 
 export type ChapterBlueprint = {
@@ -31,6 +32,10 @@ export type ChapterBlueprint = {
   /** Target number of items in the check. Actual count depends on
    *  the adaptive engine's minItems/maxItems. */
   targetItemCount: number;
+  /** v0.50 §4 — the smallest pool this blueprint will still accept for
+   *  a chapter check. Omit to require the full targetItemCount. Set it
+   *  only where a deliberately shorter check is pedagogically valid. */
+  minimumItemCount?: number;
   /** How mixed-chapter practice differs from a chapter check.
    *  Mixed practice draws a smaller sample and is untimed; chapter
    *  check draws the full targetItemCount. */
@@ -40,7 +45,7 @@ export type ChapterBlueprint = {
 const FRACTIONS_BLUEPRINT: ChapterBlueprint = {
   blueprintId: 'chapter_check.class6.fractions',
   blueprintVersion: 'v1',
-  chapterId: 'official:g06_fractions_officialplaceholder',
+  chapterId: 'official:ncert_gp_c6_ch07_fractions',
   legacyModuleId: 'fractions',
   // FR.02..FR.08 are the seven Class 6 Fractions skills registered in
   // SKILLS_BY_MODULE.fractions.
@@ -65,7 +70,17 @@ const BLUEPRINT_BY_CHAPTER_ID: Record<string, ChapterBlueprint> = {
 export function blueprintForChapter(
   chapterId: string
 ): ChapterBlueprint | null {
-  return BLUEPRINT_BY_CHAPTER_ID[chapterId] ?? null;
+  const direct = BLUEPRINT_BY_CHAPTER_ID[chapterId];
+  if (direct) return direct;
+  // v0.50 §16 — a stored session or deep link may carry a legacy
+  // chapter ID that has since been superseded by a canonical official
+  // record. Resolve through the alias table so old data keeps working.
+  const bare = chapterId.startsWith('official:')
+    ? chapterId.slice('official:'.length)
+    : chapterId;
+  const canonical = canonicalOfficialId(bare);
+  if (canonical === bare) return null;
+  return BLUEPRINT_BY_CHAPTER_ID[`official:${canonical}`] ?? null;
 }
 
 /** Find the blueprint by Pragati module id. Most launch call sites hold

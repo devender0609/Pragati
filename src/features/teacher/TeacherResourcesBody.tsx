@@ -47,7 +47,7 @@ export function TeacherResourcesBody({
               <button
                 key={g}
                 onClick={() => setGrade(g)}
-                className={`rounded-lg px-2.5 py-1 text-xs font-semibold ring-1 transition ${
+                className={`inline-flex min-h-[44px] items-center rounded-lg px-3 py-1 text-xs font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500  ring-1 transition ${
                   active
                     ? 'bg-brand-50 text-brand-700 ring-brand-200'
                     : 'bg-white text-slate-600 ring-slate-200 hover:bg-slate-50'
@@ -66,7 +66,7 @@ export function TeacherResourcesBody({
           message={`Class ${grade.replace('class', '')} has no chapters ready in Pragati yet.`}
         />
       ) : (
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {chapters.map((c) => {
             return (
               <Card key={c.chapterId}>

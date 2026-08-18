@@ -101,7 +101,7 @@ export function CurriculumCoverageView({ onBack }: { onBack?: () => void }) {
       </header>
 
       {/* Rollup counters */}
-      <section className="grid gap-3 sm:grid-cols-3">
+      <section className="grid grid-cols-1 gap-3 sm:grid-cols-3">
         <RollupCard
           label="Total chapters catalogued"
           value={summary.total}

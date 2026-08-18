@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import {
   ITEMS,
   evaluateNumericAnswer,
@@ -36,7 +36,7 @@ import {
 } from './lib/scoring';
 import {
   MODULE_FOR_SKILL,
-  SKILLS_BY_MODULE,
+  SKILL_LABELS,
   SKILL_MODE_LABELS,
   type AppMode,
   type AssessmentAssignment,
@@ -63,6 +63,10 @@ import {
   type SessionPurpose,
 } from './features/session/sessionPurpose';
 import { blueprintForModule } from './curriculum/chapterBlueprints';
+import {
+  modulePracticeBlueprint,
+  buildModulePracticePlan,
+} from './features/session/modulePracticeBlueprint';
 import { ProfileCorrectionScreen } from './features/student/ProfileCorrectionScreen';
 import { renderInStudentShell } from './features/student/wrapInStudentShell';
 import { Assessment } from './features/session/AssessmentView';
@@ -70,6 +74,9 @@ import { TeacherShell, TeacherOverviewBody } from './features/teacher/TeacherShe
 import { TeacherInsightsBody } from './features/teacher/TeacherInsightsBody';
 import { TeacherResourcesBody } from './features/teacher/TeacherResourcesBody';
 import { TeacherResourceOutlet } from './features/teacher/TeacherResourceOutlet';
+import { computeOverviewAnalytics } from './features/teacher/overviewAnalytics';
+import { scopeSessions } from './features/teacher/teacherInsights';
+import { loadClassrooms } from './lib/classroomStore';
 import { normalizeGrade } from './lib/gradeNormalization';
 // v0.48 §9 — TeacherWorkflowHome removed as a primary render; the
 // new TeacherShell + its tab-body components take over.
@@ -190,6 +197,9 @@ export default function App() {
   // v0.49 §8 — the classroom Insights is scoped to. null = all local data.
   const [teacherClassroomId, setTeacherClassroomId] =
     useState<string | null>(null);
+
+
+
   const [engine, setEngine] = useState<EngineState>(createInitialState);
   const [sessionPool, setSessionPool] = useState<Item[]>([]);
   const [current, setCurrent] = useState<Item | null>(null);
@@ -211,6 +221,32 @@ export default function App() {
   // Refresh trigger so UI updates after writes to localStorage.
   const [storeVersion, setStoreVersion] = useState(0);
   const bumpStore = () => setStoreVersion((v) => v + 1);
+
+  // v0.50 §7/§8 — the teacher's working context. Everything on the
+  // teacher side reads from this one scope, so Overview and Insights
+  // can never silently describe different populations.
+  const teacherScope = useMemo(
+    () =>
+      scopeSessions({
+        sessions: loadSessions(),
+        classrooms: loadClassrooms(),
+        students: loadStudents(),
+        scope: { classroomId: teacherClassroomId },
+      }),
+    [teacherClassroomId, storeVersion]
+  );
+
+  const teacherOverviewAnalytics = useMemo(
+    () =>
+      computeOverviewAnalytics({
+        sessions: teacherScope.sessions,
+        students: loadStudents(),
+        itemSkillOf: (id) =>
+          (ITEMS.find((i) => i.id === id)?.skillId as string) ?? null,
+      }),
+    [teacherScope]
+  );
+
 
   const [prefillStudent, setPrefillStudent] = useState<Student | null>(null);
 
@@ -466,6 +502,36 @@ export default function App() {
     startAssessmentFor(student, 'practice', skill as SkillMode);
   };
 
+  /** v0.50 §1 — resume an unfinished set. Rehydrates the stored pool
+   *  from the item bank by ID, restores ability and attempted IDs, and
+   *  drops the student back on the next unanswered question. */
+  const resumeSession = (sessionId: string) => {
+    const stored = loadSessions().find((s) => s.id === sessionId);
+    if (!stored || !stored.resumePoolItemIds) return;
+    const pool = stored.resumePoolItemIds
+      .map((id) => ITEMS.find((i) => i.id === id))
+      .filter(Boolean) as typeof ITEMS;
+    if (pool.length === 0) return;
+    const attempted = stored.resumeAttemptedIds ?? stored.responses.map((r) => r.itemId);
+    const ability = stored.resumeAbility ?? stored.finalAbility ?? 5;
+    const next = pickNextItem(pool, attempted, ability);
+    if (!next) return;
+    setBannerError(null);
+    setSessionPurpose(
+      (stored.sessionPurpose as SessionPurpose | undefined) ?? 'practice'
+    );
+    setEngine({ ability, attemptedIds: attempted });
+    setSessionPool(pool);
+    setCurrent(next);
+    setSelected(null);
+    setNumericInput('');
+    setSubmitting(false);
+    setItemStartTs(Date.now());
+    setSession(stored);
+    setStudentLocation({ kind: 'tab' });
+    setView('assessment');
+  };
+
   // v0.49 §3 — the real chapter-session launcher. Mixed practice and a
   // chapter check both come through here with a different
   // SessionPurpose, and the purpose genuinely changes what is built:
@@ -490,19 +556,90 @@ export default function App() {
         );
         return;
       }
-      // Mixed practice on an unblueprinted chapter keeps the legacy
-      // SkillMode path, which still works and still has items.
-      const mixedMode = `mixed_${moduleId}` as SkillMode;
-      const fallback: SkillMode = SKILL_MODE_LABELS[mixedMode]
-        ? mixedMode
-        : (SKILLS_BY_MODULE[moduleId]?.[0] as SkillMode);
-      if (fallback) {
-        startAssessmentFor(student, 'practice', fallback);
-      } else {
+      // v0.50 §2 — generic module practice. This replaces the v0.49
+      // fallback that quietly collapsed to `SKILLS_BY_MODULE[m][0]`,
+      // administering ONE concept under a "Mixed practice" label for
+      // every module outside Classes 6–7.
+      const genericBp = modulePracticeBlueprint(moduleId, ITEMS);
+      if (genericBp.usableSkillIds.length === 0) {
         setBannerError(
           'This chapter has no questions ready yet. Try another chapter, or ask your teacher.'
         );
+        return;
       }
+      const priorGeneric = getCompletedSessionsForStudent(student.id).flatMap((s) =>
+        s.responses.map((r) => r.itemId)
+      );
+      const genericPlan = buildModulePracticePlan({
+        blueprint: genericBp,
+        items: ITEMS,
+        priorAttemptedIds: priorGeneric,
+      });
+      if (genericPlan.pool.length === 0) {
+        setBannerError(
+          'This chapter has no questions ready yet. Try another chapter, or ask your teacher.'
+        );
+        return;
+      }
+      const legacyMode = `mixed_${moduleId}` as SkillMode;
+      const genericSkillMode: SkillMode = SKILL_MODE_LABELS[legacyMode]
+        ? legacyMode
+        : (genericPlan.sampledSkillIds[0] as SkillMode);
+      const genericSession: Session = {
+        id: generateId(),
+        studentId: student.id,
+        studentSnapshot: {
+          name: student.name,
+          grade: student.grade,
+          school: student.school,
+        },
+        window: 'practice',
+        skillId: genericSkillMode,
+        startedAt: Date.now(),
+        completedAt: null,
+        responses: [],
+        finalAbility: 5,
+        // Honest metadata: this is module practice, NOT a chapter
+        // blueprint session, so no blueprint id is recorded.
+        sessionPurpose: 'practice',
+        sampledSkillIds: genericPlan.sampledSkillIds,
+        chapterModuleId: moduleId,
+        lifecycle: 'in_progress',
+        lastActivityAt: Date.now(),
+        resumePoolItemIds: genericPlan.pool.map((i) => i.id),
+        resumeCurrentIndex: 0,
+        resumeAbility: 5,
+        resumeAttemptedIds: [],
+        requestedItemCount: genericBp.itemCount,
+        administeredItemCount: 0,
+        ...(student.primaryClassroomId
+          ? { classroomId: student.primaryClassroomId }
+          : {}),
+      };
+      const freshGeneric = createInitialState();
+      const firstGeneric = pickNextItem(
+        genericPlan.pool,
+        freshGeneric.attemptedIds,
+        freshGeneric.ability
+      );
+      if (!firstGeneric) {
+        setBannerError(
+          'This chapter has no questions ready yet. Try another chapter, or ask your teacher.'
+        );
+        return;
+      }
+      setBannerError(null);
+      setSessionPurpose('practice');
+      setEngine(freshGeneric);
+      setSessionPool(genericPlan.pool);
+      setCurrent(firstGeneric);
+      setSelected(null);
+      setNumericInput('');
+      setSubmitting(false);
+      setItemStartTs(Date.now());
+      setSession(genericSession);
+      setStudentLocation({ kind: 'tab' });
+      setView('assessment');
       return;
     }
 
@@ -570,17 +707,24 @@ export default function App() {
     exitActiveSession();
   };
 
-  /** v0.49 §2 — Save & Exit. The answers already submitted are stored
-   *  as a completed short session (the response records are already in
-   *  `session.responses`), so nothing the student did is lost. We do
-   *  not fabricate a "paused" state the storage layer cannot represent. */
+  /** v0.50 §1 — Save & Exit now keeps the set OPEN and resumable.
+   *
+   *  v0.49 wrote `completedAt` here, which made a 2-of-10 chapter check
+   *  indistinguishable from a finished one in every report. The session
+   *  is now stored with lifecycle 'in_progress' and its resume state, so
+   *  "come back later" is a promise the app actually keeps. */
   const exitActiveSession = () => {
     if (!session) return;
     if (session.responses.length > 0) {
       const saved: Session = {
         ...session,
-        completedAt: Date.now(),
+        completedAt: null,
+        lifecycle: 'in_progress',
+        lastActivityAt: Date.now(),
         finalAbility: engine.ability,
+        resumeCurrentIndex: session.responses.length,
+        resumeAbility: engine.ability,
+        resumeAttemptedIds: engine.attemptedIds,
       };
       saveSession(saved);
       bumpStore();
@@ -648,12 +792,38 @@ export default function App() {
     };
     const nextResponses = [...session.responses, response];
 
+    // v0.50 §1 — persist progress after EVERY answer, not only at the
+    // end. Without this a resume would lose everything on a tab close,
+    // and the "you can come back" promise would still be false.
+    const persistProgress = (nextIndex: number) => {
+      const open: Session = {
+        ...session,
+        responses: nextResponses,
+        completedAt: null,
+        lifecycle: 'in_progress',
+        lastActivityAt: Date.now(),
+        finalAbility: abilityAfter,
+        resumeCurrentIndex: nextIndex,
+        resumeAbility: abilityAfter,
+        resumeAttemptedIds: nextAttempted,
+      };
+      saveSession(open);
+      setSession(open);
+      return open;
+    };
+
     const finalize = () => {
       const finalSession: Session = {
         ...session,
         responses: nextResponses,
         completedAt: Date.now(),
         finalAbility: abilityAfter,
+        // v0.50 §1 — an explicit completed status. Analytics key off
+        // this, not off `completedAt`, so an abandoned attempt can
+        // never be counted as a finished one.
+        lifecycle: 'completed',
+        lastActivityAt: Date.now(),
+        administeredItemCount: nextResponses.length,
       };
       saveSession(finalSession);
       // v0.20/0.21: if the student is in a joined classroom and this
@@ -688,7 +858,9 @@ export default function App() {
     }
 
     setEngine(nextEngine);
-    setSession({ ...session, responses: nextResponses });
+    // §1 — write the open session to storage before advancing, so a
+    // closed tab or refresh resumes exactly here.
+    persistProgress(nextResponses.length);
     setCurrent(nextItem);
     setSelected(null);
     setNumericInput('');
@@ -723,7 +895,24 @@ export default function App() {
         appMode={appMode}
         onSetAppMode={setAppMode}
         onNavLanding={goLanding}
-        onNavLearn={() => setView('class6math')}
+        // v0.50 §12 — Learn goes to the student's OWN shell. The legacy
+        // Class 6 dashboard stays reachable only through stored deep
+        // links and the teacher preview.
+        onNavLearn={() => {
+          const students = loadStudents();
+          const active =
+            (selectedStudentId
+              ? students.find((s) => s.id === selectedStudentId)
+              : null) ?? students[0] ?? null;
+          if (active && normalizeGrade(active.grade)) {
+            setStudentTab('learn');
+            setOpenChapterId(null);
+            setStudentLocation({ kind: 'tab' });
+            setView('landing');
+            return;
+          }
+          setView('startForm');
+        }}
         onNavTeacher={() => {
           setSelectedStudentId(null);
           setView('teacherLanding');
@@ -802,7 +991,15 @@ export default function App() {
                     setPrefillSkillMode(null);
                     setView('startForm');
                   }}
-                  onLearn={() => setView('class6math')}
+                  // v0.50 §12 — a brand-new user has no grade yet, so
+                  // "Learn" enters the canonical onboarding flow. v0.49
+                  // sent them straight to the legacy Class 6 dashboard
+                  // whatever class they were actually in.
+                  onLearn={() => {
+                    setPrefillStudent(null);
+                    setPrefillSkillMode(null);
+                    setView('startForm');
+                  }}
                   onTeacher={() => {
                     setAppMode('teacher');
                     setSelectedStudentId(null);
@@ -857,6 +1054,7 @@ export default function App() {
                 onLaunchFromLesson={(mode) =>
                   startAssessmentFor(activeStudent, 'practice', mode)
                 }
+                onResumeSession={resumeSession}
               />
             );
           })()
@@ -943,8 +1141,8 @@ export default function App() {
               >
                 <div className="font-semibold">Leave this set?</div>
                 <p className="mt-1">
-                  You have not answered this question yet. Your earlier answers
-                  are saved either way.
+                  You have not answered this question yet. We'll save your
+                  place and you can finish this set later.
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <button
@@ -1122,22 +1320,21 @@ export default function App() {
             onOpenCurriculumCoverage={() => setView('curriculumCoverage')}
             onOpenWorkflowTest={() => setView('classroomTest')}
             onOpenExports={() => setView('pilotReport')}
+            classrooms={loadClassrooms().filter((c) => !c.archived)}
+            selectedClassroomId={teacherClassroomId}
+            onSelectClassroom={setTeacherClassroomId}
           >
             {teacherTab === 'overview' && (
               <TeacherOverviewBody
-                recentSessionCount={
-                  loadSessions().filter(
-                    (s) =>
-                      s.completedAt &&
-                      s.completedAt > Date.now() - 7 * 24 * 60 * 60 * 1000
-                  ).length
-                }
-                studentsNeedingAttention={0}
+                // v0.50 §7/§8 — real evidence, scoped to the selected
+                // classroom. Replaces the hard-coded zero that v0.49
+                // rendered as "Nobody on the flag list right now".
+                analytics={teacherOverviewAnalytics}
+                scopeLabel={teacherScope.scopeLabel}
+                skillLabelFor={(id) => SKILL_LABELS[id as SkillId] ?? id}
                 activeAssignmentTitle={
                   loadAssignments().find((a) => a.active)?.title ?? null
                 }
-                weakestSkillLabel={null}
-                nextRecommendationLabel={null}
                 onOpenAssign={() => setView('assignments')}
                 onOpenClasses={() => setView('teacher')}
               />
@@ -1293,7 +1490,7 @@ export default function App() {
         </Suspense>
       </main>
 
-      <Footer />
+      <Footer appMode={appMode} />
     </div>
   );
 }

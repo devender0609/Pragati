@@ -12,6 +12,11 @@
 
 import { useState, type ReactNode } from 'react';
 import { Card } from '../../design/primitives/Card';
+import {
+  attentionSummary,
+  ATTENTION_REASON_LABEL,
+  type OverviewAnalytics,
+} from './overviewAnalytics';
 import { PageHeader } from '../../design/primitives/PageHeader';
 import { PrimaryButton } from '../../design/primitives/PrimaryButton';
 import { SecondaryButton } from '../../design/primitives/SecondaryButton';
@@ -43,6 +48,10 @@ export type TeacherShellProps = {
   onOpenCurriculumCoverage: () => void;
   onOpenWorkflowTest?: () => void;
   onOpenExports: () => void;
+  /** v0.50 §8 — persistent teacher class context. */
+  classrooms?: Array<{ id: string; name: string }>;
+  selectedClassroomId?: string | null;
+  onSelectClassroom?: (id: string | null) => void;
 
   /** Body content for the active tab, supplied by the caller so the
    *  shell stays presentation-only. */
@@ -54,6 +63,7 @@ export function TeacherShell(props: TeacherShellProps) {
     activeTab, onSwitchTab, children,
     onOpenPilotSetup, onOpenItemReview, onOpenAlignmentReview,
     onOpenCurriculumCoverage, onOpenWorkflowTest, onOpenExports,
+    classrooms = [], selectedClassroomId = null, onSelectClassroom,
   } = props;
 
   const [adminOpen, setAdminOpen] = useState(false);
@@ -70,8 +80,36 @@ export function TeacherShell(props: TeacherShellProps) {
     <div className="space-y-4">
       {/* Chrome */}
       <div className="flex flex-wrap items-center justify-between gap-2 rounded-2xl bg-white px-4 py-3 ring-1 ring-slate-200">
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
-          Teacher · Mathematics · Prototype
+        <div>
+          <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+            Teacher · Mathematics · Prototype
+          </div>
+          {/* v0.50 §8 — the current class is part of the shell chrome, so
+              it persists across Overview / Insights / Assign / Resources
+              instead of each tab choosing its own scope. */}
+          {classrooms.length > 0 && (
+            <label className="mt-1 flex items-center gap-2 text-xs">
+              <span className="font-medium text-slate-600">Class:</span>
+              <select
+                value={selectedClassroomId ?? '__all__'}
+                onChange={(e) =>
+                  onSelectClassroom?.(
+                    e.target.value === '__all__' ? null : e.target.value
+                  )
+                }
+                className="min-h-[44px] rounded-lg bg-white px-2 py-1 text-xs font-semibold text-slate-800 ring-1 ring-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+              >
+                {classrooms.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                  </option>
+                ))}
+                {/* Aggregate stays available, but as an explicit
+                    secondary choice — never the silent default. */}
+                <option value="__all__">All local data (aggregate)</option>
+              </select>
+            </label>
+          )}
         </div>
         <div className="flex flex-wrap items-center gap-2">
           <DesktopNavigation
@@ -82,7 +120,7 @@ export function TeacherShell(props: TeacherShellProps) {
           <button
             onClick={() => setAdminOpen((v) => !v)}
             aria-expanded={adminOpen}
-            className="inline-flex items-center gap-1.5 rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700 ring-1 ring-slate-200 hover:bg-slate-200"
+            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700 ring-1 ring-slate-200 hover:bg-slate-200"
             title="Admin & Research tools (kept off the standard tabs on purpose)"
           >
             <CogIcon width={14} height={14} />
@@ -132,42 +170,66 @@ export function TeacherShell(props: TeacherShellProps) {
 // ---------------------------------------------------------------------------
 
 export function TeacherOverviewBody({
-  recentSessionCount, studentsNeedingAttention, activeAssignmentTitle,
-  weakestSkillLabel, nextRecommendationLabel,
+  analytics, scopeLabel, activeAssignmentTitle,
+  skillLabelFor = (s) => s,
   onOpenAssign, onOpenClasses,
 }: {
-  recentSessionCount: number;
-  studentsNeedingAttention: number;
+  /** v0.50 §7 — real, classroom-scoped evidence. v0.49 received a
+   *  hard-coded `studentsNeedingAttention={0}` and rendered it as
+   *  "Nobody on the flag list right now" — a placeholder presented as
+   *  a finding. */
+  analytics: OverviewAnalytics;
+  /** Which class these numbers describe, stated on screen. */
+  scopeLabel: string;
   activeAssignmentTitle: string | null;
-  weakestSkillLabel: string | null;
-  nextRecommendationLabel: string | null;
+  skillLabelFor?: (skillId: string) => string;
   onOpenAssign: () => void;
   onOpenClasses: () => void;
 }) {
+  const flagged = analytics.flagged;
+  const difficult = analytics.difficultSkills;
   return (
     <div className="space-y-4">
       <PageHeader
         eyebrow="Today"
         title="What happened recently"
-        subtitle="Five questions, one screen."
+        subtitle={scopeLabel}
       />
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <OverviewCard
           question="What happened recently?"
-          answer={`${recentSessionCount} session${recentSessionCount === 1 ? '' : 's'} in the last 7 days.`}
+          answer={
+            analytics.isEmpty
+              ? 'No completed sessions in this class yet.'
+              : `${analytics.completedSessionCount} completed session${analytics.completedSessionCount === 1 ? '' : 's'} from ${analytics.activeStudentCount} student${analytics.activeStudentCount === 1 ? '' : 's'}.`
+          }
         />
         <OverviewCard
-          question="Which students need attention?"
-          answer={
-            studentsNeedingAttention === 0
-              ? 'Nobody on the flag list right now.'
-              : `${studentsNeedingAttention} student${studentsNeedingAttention === 1 ? '' : 's'} flagged.`
+          question="Which students may need attention?"
+          answer={attentionSummary(analytics)}
+          // Only offer the drill-down when there is something to drill into.
+          action={
+            flagged && flagged.length > 0
+              ? { label: 'Open Classes', onClick: onOpenClasses }
+              : undefined
           }
-          action={studentsNeedingAttention > 0 ? {
-            label: 'Open Classes',
-            onClick: onOpenClasses,
-          } : undefined}
-        />
+        >
+          {flagged && flagged.length > 0 && (
+            <ul className="mt-2 space-y-1 text-xs text-slate-600">
+              {flagged.slice(0, 3).map((f) => (
+                <li key={f.studentId}>
+                  <span className="font-medium text-slate-800">
+                    {f.studentName}
+                  </span>{' '}
+                  — {f.reasons.map((r) => ATTENTION_REASON_LABEL[r]).join('; ')}
+                  {f.accuracy !== null && (
+                    <> ({Math.round(f.accuracy * 100)}% of {f.attempted})</>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </OverviewCard>
         <OverviewCard
           question="Which assignment is active?"
           answer={activeAssignmentTitle ?? 'No active assignment.'}
@@ -175,11 +237,24 @@ export function TeacherOverviewBody({
         />
         <OverviewCard
           question="Which skills were difficult?"
-          answer={weakestSkillLabel ?? 'Not enough sessions yet.'}
+          answer={
+            difficult === null
+              ? 'Not enough recent activity yet.'
+              : difficult
+                  .map(
+                    (d) =>
+                      `${skillLabelFor(d.skillId)} (${Math.round(d.accuracy * 100)}% of ${d.attempted})`
+                  )
+                  .join(' \u00b7 ')
+          }
         />
         <OverviewCard
           question="What should I teach next?"
-          answer={nextRecommendationLabel ?? 'Once students have practised more, recommendations will appear here.'}
+          answer={
+            difficult === null
+              ? 'Not enough recent activity yet.'
+              : `Revisit ${skillLabelFor(difficult[0].skillId)} — it has the lowest recent accuracy in this class.`
+          }
           action={{ label: 'Open Classes', onClick: onOpenClasses }}
         />
       </div>
@@ -198,11 +273,13 @@ export function TeacherOverviewBody({
 }
 
 function OverviewCard({
-  question, answer, action,
+  question, answer, action, children,
 }: {
   question: string;
   answer: string;
   action?: { label: string; onClick: () => void };
+  /** Optional supporting detail, e.g. which students were flagged. */
+  children?: ReactNode;
 }) {
   return (
     <Card>
@@ -210,6 +287,7 @@ function OverviewCard({
         {question}
       </div>
       <div className="mt-1 text-sm text-slate-900">{answer}</div>
+      {children}
       {action && (
         <div className="mt-3">
           <SecondaryButton onClick={action.onClick}>

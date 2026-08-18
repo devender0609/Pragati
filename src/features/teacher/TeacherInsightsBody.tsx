@@ -133,7 +133,7 @@ export function TeacherInsightsBody({
         />
       ) : (
         <>
-          <div className="grid gap-3 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
             <Card>
               <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
                 Completed sessions

@@ -39,7 +39,64 @@ export type StartChapterSessionArgs = {
 
 export type StartChapterSessionResult =
   | { ok: true; session: Session; pool: Item[]; plan: ChapterSessionPlan }
-  | { ok: false; reason: string };
+  | { ok: false; reason: string; readiness?: ChapterCheckReadiness };
+
+export type ChapterCheckReadiness = {
+  ready: boolean;
+  reason: string;
+  /** Required skills with no eligible item at all. */
+  missingRequiredSkillIds: string[];
+  /** Distinct required skills the pool can actually sample. */
+  coveredSkillCount: number;
+  requiredSkillCount: number;
+  administrableItemCount: number;
+  requestedItemCount: number;
+};
+
+/** Student-facing message when a chapter check cannot run. Deliberately
+ *  identical regardless of which condition failed — a child does not
+ *  need to know which skill's item bank is thin. */
+export const CHAPTER_CHECK_NOT_READY =
+  "Chapter check isn't ready yet. You can keep practising this chapter.";
+
+/**
+ * §4 — decide whether a chapter check may launch.
+ *
+ * Conditions, all required:
+ *   - every required skill has at least one eligible item;
+ *   - the pool samples every required skill;
+ *   - the pool reaches targetItemCount, OR the blueprint declares an
+ *     explicit `minimumItemCount` and the pool reaches that.
+ */
+export function chapterCheckReadiness(
+  plan: ChapterSessionPlan,
+  blueprint: ChapterBlueprint
+): ChapterCheckReadiness {
+  const requiredSkillCount = blueprint.requiredSkillIds.length;
+  const coveredSkillCount = blueprint.requiredSkillIds.filter((s) =>
+    plan.sampledSkillIds.includes(s)
+  ).length;
+  const floor = blueprint.minimumItemCount ?? plan.requestedItemCount;
+
+  const base = {
+    missingRequiredSkillIds: plan.missingRequiredSkillIds,
+    coveredSkillCount,
+    requiredSkillCount,
+    administrableItemCount: plan.pool.length,
+    requestedItemCount: plan.requestedItemCount,
+  };
+
+  if (plan.missingRequiredSkillIds.length > 0) {
+    return { ...base, ready: false, reason: CHAPTER_CHECK_NOT_READY };
+  }
+  if (coveredSkillCount < requiredSkillCount) {
+    return { ...base, ready: false, reason: CHAPTER_CHECK_NOT_READY };
+  }
+  if (plan.pool.length < floor) {
+    return { ...base, ready: false, reason: CHAPTER_CHECK_NOT_READY };
+  }
+  return { ...base, ready: true, reason: '' };
+}
 
 /** Minimum items we are willing to administer. Below this the session
  *  is not worth starting and the caller must show the reason instead
@@ -71,6 +128,21 @@ export function startChapterSession(
     };
   }
 
+  // v0.50 §4 — chapter-check readiness. A check is a claim about the
+  // WHOLE chapter, so it may not launch on a partial item bank. v0.49
+  // would happily administer a "chapter check" that sampled two of
+  // seven required skills; the resulting session then looked like a
+  // full check in every report.
+  //
+  // Practice is deliberately exempt: partial coverage is fine when the
+  // session does not claim chapter-level coverage.
+  if (purpose === 'chapter_check') {
+    const readiness = chapterCheckReadiness(plan, blueprint);
+    if (!readiness.ready) {
+      return { ok: false, reason: readiness.reason, readiness };
+    }
+  }
+
   const session: Session = {
     id: newId(),
     studentId: student.id,
@@ -99,6 +171,21 @@ export function startChapterSession(
     chapterModuleId: plan.moduleId,
     ...(classroomId ? { classroomId } : {}),
     ...(academicYear ? { academicYear } : {}),
+    // v0.50 §1 — resume state, written at creation so a session is
+    // resumable from the very first question.
+    lifecycle: 'in_progress',
+    lastActivityAt: now,
+    resumePoolItemIds: plan.pool.map((i) => i.id),
+    resumeCurrentIndex: 0,
+    resumeAbility: 5,
+    resumeAttemptedIds: [],
+    resumeChapterId: plan.chapterId,
+    // v0.50 §4 — coverage audit fields.
+    requestedItemCount: plan.requestedItemCount,
+    administeredItemCount: 0,
+    ...(plan.missingRequiredSkillIds.length > 0
+      ? { missingRequiredSkillIdsAtLaunch: plan.missingRequiredSkillIds }
+      : {}),
   };
 
   return { ok: true, session, pool: plan.pool, plan };
