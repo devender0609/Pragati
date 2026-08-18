@@ -248,6 +248,70 @@ export function officialChaptersForGrade(grade: Grade): OfficialChapterRecord[] 
   return OFFICIAL_CHAPTERS.filter((c) => c.grade === grade);
 }
 
+/**
+ * v0.51 §10 — the exact manual step required to advance Class 6 from
+ * `secondary_corroborated` to `primary_source_verified`.
+ *
+ * Automated retrieval is impossible: ncert.nic.in serves robots.txt
+ * rules that block it. This is not a temporary outage and re-trying
+ * does not help, so the step is written down for a human instead.
+ */
+export const MANUAL_VERIFICATION_STEPS = {
+  class6: {
+    sourceUrl: 'https://ncert.nic.in/textbook/pdf/fegp1ps.pdf',
+    alternateUrl: 'https://ncert.nic.in/textbook.php?fegp1=0-10',
+    blocker:
+      'ncert.nic.in disallows automated access (robots.txt). The PDF must be opened by a person.',
+    steps: [
+      'Open the source URL in a browser.',
+      'Go to the Contents page.',
+      'Confirm the textbook title reads "Ganita Prakash" and the edition matches the record.',
+      'Confirm all ten chapter numbers and exact titles against the records in OFFICIAL_CHAPTERS.',
+      'Record the contents page number in `pageReference`.',
+      'Set `dateVerified` to the date of inspection and `verificationStatus` to `source_verified`.',
+      'Record the verifier name in `verifierNotes`.',
+    ],
+    doNot:
+      'Do not advance the status from any secondary source, however many agree. Class 7 shows why: independent secondary sources disagree about whether the book has 15 or 16 chapters.',
+  },
+} as const;
+
+/**
+ * v0.51 §7/§10 — Grade 7 proof-of-process.
+ *
+ * Attempting the same verification for Grade 7 produced a CONTRADICTION
+ * between secondary sources, which is the most useful result this
+ * exercise could have given us:
+ *
+ *   - Part 1's eight chapters agree across three independent sources.
+ *   - The Part 2 chapter count does NOT agree: one source implies 15
+ *     chapters in total, another states 16.
+ *
+ * For Class 6 the secondary sources happened to agree, which felt like
+ * confirmation but was not evidence. Grade 7 demonstrates the failure
+ * mode directly, so it is recorded rather than resolved by picking the
+ * more common answer.
+ */
+export const GRADE7_VERIFICATION_FINDING = {
+  grade: 'class7',
+  textbookTitle: 'Ganita Prakash',
+  parts: ['Part 1', 'Part 2'],
+  primarySourceSeen: 'https://ncert.nic.in/textbook/pdf/gegp1ps.pdf (title/preface via search snippet only)',
+  part1ChaptersCorroborated: [
+    'Large Numbers Around Us',
+    'Arithmetic Expressions',
+    'A Peek Beyond the Point',
+    'Expressions using Letter-Numbers',
+    'Parallel and Intersecting Lines',
+    'Number Play',
+    'A Tale of Three Intersecting Lines',
+    'Working with Fractions',
+  ],
+  contradiction:
+    'Secondary sources disagree on the total chapter count (15 vs 16) and therefore on the Part 2 contents. No Grade 7 record may be created until the primary source is inspected.',
+  status: 'blocked_pending_primary_source',
+} as const;
+
 export function verifiedChapterCount(): number {
   return OFFICIAL_CHAPTERS.filter(
     (c) => c.verificationStatus !== 'unverified'

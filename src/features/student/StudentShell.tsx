@@ -19,6 +19,7 @@ import {
   MODULE_LABELS,
 } from '../../types';
 import { GRADE_COLORS } from '../../components/common/gradePalette';
+import { studentChapterTitle } from '../../curriculum/studentNames';
 import {
   layoutForGrade,
   tokensForGrade,
@@ -353,7 +354,7 @@ function HomeTab({
                 {target.isResume ? 'Continue learning' : 'Start learning'}
               </div>
               <div className={`mt-0.5 font-semibold text-slate-900 ${tokens.h1}`}>
-                {target.resolved.displayTitle}
+                {studentChapterTitle(target.resolved.displayTitle, target.resolved.primaryLegacyModuleId)}
               </div>
             </div>
             <PrimaryButton
@@ -677,7 +678,7 @@ function ChapterDetail({
   if (!canLaunchAssessment(resolved.inventory)) {
     return (
       <ChapterUnavailableView
-        chapterTitle={resolved.displayTitle}
+        chapterTitle={studentChapterTitle(resolved.displayTitle, resolved.primaryLegacyModuleId)}
         status={resolved.inventory.status}
         reasons={resolved.inventory.reasons}
         onBack={onBack}
@@ -688,7 +689,7 @@ function ChapterDetail({
   if (!legacyModule) {
     return (
       <ChapterUnavailableView
-        chapterTitle={resolved.displayTitle}
+        chapterTitle={studentChapterTitle(resolved.displayTitle, resolved.primaryLegacyModuleId)}
         status={resolved.inventory.status}
         reasons={['This chapter has no mapped Pragati content to launch yet.']}
         onBack={onBack}
@@ -735,7 +736,8 @@ export function chaptersForStudentGrade(grade: Grade): ChapterRow[] {
     const resolved = resolveChapter(`official:${c.officialChapterId}`)!;
     return {
       chapterId: resolved.chapterId,
-      title: resolved.displayTitle,
+      // §3 — strip authoring metadata before a student sees it.
+      title: studentChapterTitle(resolved.displayTitle, resolved.primaryLegacyModuleId),
       subtitle:
         resolved.inventory.status === 'no_content'
           ? 'Not yet mapped'
@@ -756,7 +758,7 @@ export function chaptersForStudentGrade(grade: Grade): ChapterRow[] {
       const resolved = resolveChapter(`legacy:${m}`)!;
       return {
         chapterId: resolved.chapterId,
-        title: resolved.displayTitle,
+        title: studentChapterTitle(resolved.displayTitle, resolved.primaryLegacyModuleId),
         subtitle:
           resolved.inventory.status === 'no_content'
             ? 'No content yet'

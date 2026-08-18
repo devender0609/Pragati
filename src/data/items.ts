@@ -56,6 +56,8 @@
 //   - borrowing_error: mishandles the borrow when subtracting mixed
 //     numbers (e.g., 3 1/4 - 1 3/4 produces 2 1/2 because the student
 //     "subtracted the smaller fraction from the larger").
+import type { ItemUse } from '../features/assessment/itemUse';
+
 export type MisconceptionCode =
   | 'add_across'
   | 'subtract_across'
@@ -145,6 +147,15 @@ export type VisualSpec =
 // ---------------------------------------------------------------------------
 type BaseItem = {
   id: string;
+  // v0.51 §13 — item use classification. Optional because every item
+  // authored before v0.51 predates the field; `useOf()` defaults those
+  // to 'independent_practice', which is the only safe default (see
+  // features/assessment/itemUse.ts). Declared here so the compiler
+  // enforces the vocabulary instead of call sites casting.
+  use?: ItemUse;
+  // v0.51 §12 — the ItemSpecification this item was authored from.
+  // REQUIRED for any Growth item; validated by requireSpecification().
+  specificationId?: string;
   skillId:
     // Fractions
     | 'FR.02'
