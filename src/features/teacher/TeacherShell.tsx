@@ -28,7 +28,7 @@ import {
 } from '../../design/primitives/Icons';
 
 export type TeacherPrimaryTab =
-  | 'overview' | 'classes' | 'assign' | 'insights' | 'resources';
+  | 'overview' | 'classes' | 'assign' | 'assess' | 'insights' | 'resources';
 
 export type TeacherShellProps = {
   activeTab: TeacherPrimaryTab;
@@ -72,6 +72,7 @@ export function TeacherShell(props: TeacherShellProps) {
     { id: 'overview', label: 'Overview', icon: <HomeIcon /> },
     { id: 'classes', label: 'Classes', icon: <UsersIcon /> },
     { id: 'assign', label: 'Assign', icon: <ClipboardIcon /> },
+    { id: 'assess', label: 'Assess', icon: <ChartIcon /> },
     { id: 'insights', label: 'Insights', icon: <ChartIcon /> },
     { id: 'resources', label: 'Resources', icon: <FolderIcon /> },
   ];

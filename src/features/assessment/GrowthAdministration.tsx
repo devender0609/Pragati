@@ -88,7 +88,9 @@ export function GrowthAssignPanel({
             This assessment cannot be assigned yet
           </h2>
           <p className="mt-1 text-sm text-slate-700">{readiness.reason}</p>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-slate-600">
+          {/* break-words: the detail lines cite file paths, which are
+              unbreakable tokens and overflowed a 320px viewport. */}
+          <ul className="mt-2 list-disc space-y-1 break-words pl-5 text-xs text-slate-600">
             {readiness.detail.map((d) => (
               <li key={d}>{d}</li>
             ))}

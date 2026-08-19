@@ -75,6 +75,7 @@ import { TeacherInsightsBody } from './features/teacher/TeacherInsightsBody';
 import { TeacherResourcesBody } from './features/teacher/TeacherResourcesBody';
 import { TeacherResourceOutlet } from './features/teacher/TeacherResourceOutlet';
 import { computeOverviewAnalytics } from './features/teacher/overviewAnalytics';
+import { GrowthAssignPanel } from './features/assessment/GrowthAdministration';
 import { scopeSessions } from './features/teacher/teacherInsights';
 import { loadClassrooms } from './lib/classroomStore';
 import { normalizeGrade } from './lib/gradeNormalization';
@@ -189,7 +190,7 @@ export default function App() {
   // they either confirm or go back to the question.
   const [exitPromptOpen, setExitPromptOpen] = useState(false);
   const [teacherTab, setTeacherTab] =
-    useState<'overview' | 'classes' | 'assign' | 'insights' | 'resources'>('overview');
+    useState<'overview' | 'classes' | 'assign' | 'assess' | 'insights' | 'resources'>('overview');
   // v0.49 §9 — the chapter a teacher has drilled into on the Resources
   // tab. Rendered INSIDE TeacherShell, so the teacher never leaves the
   // canonical shell to read a chapter's contents.
@@ -1337,6 +1338,21 @@ export default function App() {
                 }
                 onOpenAssign={() => setView('assignments')}
                 onOpenClasses={() => setView('teacher')}
+              />
+            )}
+            {/* v0.52 §14 — Pragati Growth, wired in. The panel reports
+                truthfully that no eligible item bank exists rather than
+                offering an assessment that cannot run. */}
+            {teacherTab === 'assess' && (
+              <GrowthAssignPanel
+                classrooms={loadClassrooms().filter((c) => !c.archived)}
+                selectedClassroomId={teacherClassroomId}
+                onSelectClassroom={setTeacherClassroomId}
+                onAssign={() => {
+                  /* Unreachable today: the panel disables assignment
+                     while the bank is ineligible. Wired for when it
+                     is not. */
+                }}
               />
             )}
             {teacherTab === 'insights' && (

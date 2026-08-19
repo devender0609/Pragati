@@ -29,9 +29,13 @@ describe('§4 domains are stable and student-safe', () => {
   it('the framework does not overclaim its provenance', () => {
     // It must NOT say it was checked against documents it wasn't.
     expect(frameworkSourceStatus.status).toBe('draft_internal');
-    expect(frameworkSourceStatus.notReviewedAgainst).toContain(
-      'NCF-SE 2023 primary document'
+    expect(frameworkSourceStatus.notReviewedAgainst.join(' ')).toMatch(
+      /NCF-SE 2023 primary document/
     );
+    // v0.52 — PARAKH remains unreviewed and must be declared so.
+    expect(frameworkSourceStatus.notReviewedAgainst.join(' ')).toMatch(/PARAKH/);
+    // One primary source was read; it does NOT promote the status.
+    expect(frameworkSourceStatus.reviewedAgainst.join(' ')).toMatch(/PRIMARY/);
     expect(frameworkSourceStatus.notReviewedAgainst.length).toBeGreaterThan(0);
   });
 

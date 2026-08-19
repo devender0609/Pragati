@@ -197,19 +197,50 @@ export function logGrowthExposure(
 // §19 — Reporting
 // ---------------------------------------------------------------------------
 
+/**
+ * v0.52 §6 — how far a report may go in interpreting a domain.
+ *
+ * v0.51 had `MIN_ITEMS_FOR_DOMAIN_COMMENT = 4` and a
+ * `sufficientForComment` flag. Four was invented. There is no evidence
+ * that four items support reliable domain interpretation — that is
+ * precisely the kind of unearned threshold this project exists to
+ * avoid, and a `true` on that flag would have licensed a strength
+ * claim downstream.
+ *
+ * The flag is replaced by a state that is currently constant:
+ *
+ *   observed_counts_only          — report what happened. Nothing more.
+ *   interpretable_domain_estimate — reserved. Unreachable until
+ *                                   calibration and precision evidence
+ *                                   exist for the domain.
+ */
+export type DomainReportingState =
+  | 'observed_counts_only'
+  | 'interpretable_domain_estimate';
+
 export type DomainEvidence = {
   domainId: string;
   domainTitle: string;
   itemsAdministered: number;
   correctResponses: number;
-  /** True only when enough items were administered to say anything at
-   *  all about this domain. Below the threshold we report the counts
-   *  and explicitly decline to characterise performance. */
-  sufficientForComment: boolean;
+  /** Always 'observed_counts_only' today. */
+  reportingState: DomainReportingState;
+  /** The only sentence a report may currently make about this domain.
+   *  Descriptive by construction: it states counts, never a judgement. */
+  descriptiveSummary: string;
 };
 
-/** Minimum items in a domain before any characterisation is offered. */
-export const MIN_ITEMS_FOR_DOMAIN_COMMENT = 4;
+/**
+ * Whether a domain estimate may be interpreted.
+ *
+ * Returns false unconditionally. Interpretation requires calibrated
+ * items and a conditional standard error for the domain, neither of
+ * which exists. The function is the single place that changes when
+ * they do.
+ */
+export function mayInterpretDomain(): boolean {
+  return false;
+}
 
 export type GrowthReport = {
   administeredAt: number;
@@ -255,12 +286,18 @@ export function buildGrowthReport(args: {
       domainTitle: d.domainTitle,
       itemsAdministered: d.administered,
       correctResponses: d.correct,
-      sufficientForComment: d.administered >= MIN_ITEMS_FOR_DOMAIN_COMMENT,
+      reportingState: mayInterpretDomain()
+        ? ('interpretable_domain_estimate' as const)
+        : ('observed_counts_only' as const),
+      // "4 of 5 sampled Fractions questions were answered correctly."
+      // NOT "Fractions is a strength."
+      descriptiveSummary: `${d.correct} of ${d.administered} sampled ${d.domainTitle} question${d.administered === 1 ? '' : 's'} answered correctly.`,
     })),
     reportStatus: REPORT_STATUS_LINE,
     limitations: [
       'This is not a calibrated assessment. The questions have not been field tested or analysed.',
       'No score, percentile, grade equivalent, or growth measure can be reported.',
+      'Domain figures are counts of what was sampled. They are not estimates of strength or weakness, and a higher count in one domain than another is not evidence of a difference.',
       'Results should not be used for placement, promotion, streaming, or selection.',
       completed
         ? 'The student completed the full set of questions.'

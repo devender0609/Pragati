@@ -28,6 +28,7 @@ import type { Item } from '../../data/items';
 import type { SkillId } from '../../types';
 import type { ChapterBlueprint } from '../../curriculum/chapterBlueprints';
 import type { SessionPurpose } from './sessionPurpose';
+import { itemsFor } from '../assessment/itemUse';
 
 export type ChapterSessionPlan = {
   purpose: SessionPurpose;
@@ -109,12 +110,17 @@ export function buildChapterSessionPlan(
   const {
     blueprint,
     purpose,
-    items,
+    items: allItems,
     priorAttemptedIds = [],
     shuffle = defaultShuffle,
   } = args;
 
   const seen = new Set(priorAttemptedIds);
+  // v0.52 — enforce the instructional/secure split HERE, at the point of
+  // assembly. Until now the builder filtered by skillId only and simply
+  // happened to receive a clean bank; the moment a Growth item was
+  // authored into ITEMS it would have flowed straight into practice.
+  const items = itemsFor(allItems, 'practice');
   const scopeSkills = skillsInScopeFor(blueprint, purpose);
   const requested = targetCountFor(blueprint, purpose);
 

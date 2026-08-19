@@ -5,7 +5,7 @@ import { ITEMS } from '../../../data/items';
 import {
   buildGrowthPool, assertNoLeak, GROWTH_RULES, PRACTICE_RULES, rulesFor,
   logGrowthExposure, buildGrowthReport, REPORT_STATUS_LINE,
-  FORBIDDEN_REPORT_CLAIMS, MIN_ITEMS_FOR_DOMAIN_COMMENT,
+  FORBIDDEN_REPORT_CLAIMS, mayInterpretDomain,
   isGrowthAssignmentActive, activeAssignmentFor,
   type GrowthAssignment,
 } from '../growthSession';
@@ -150,12 +150,21 @@ describe('§19 reports contain only defensible evidence', () => {
     expect(report.domainEvidence.length).toBe(2);
   });
 
-  it('declines to characterise a domain with too few items', () => {
-    const rat = report.domainEvidence.find((d) => d.domainId === 'RAT')!;
-    const num = report.domainEvidence.find((d) => d.domainId === 'NUM')!;
-    expect(rat.sufficientForComment).toBe(true);
-    expect(num.sufficientForComment).toBe(false);
-    expect(MIN_ITEMS_FOR_DOMAIN_COMMENT).toBeGreaterThan(1);
+  it('reports domains descriptively and never interprets them (v0.52 §6)', () => {
+    // v0.51 flagged a 4-item domain as "sufficient for comment" on an
+    // invented threshold. Every domain is now observed counts only,
+    // regardless of how many items were administered.
+    expect(mayInterpretDomain()).toBe(false);
+    for (const d of report.domainEvidence) {
+      expect(d.reportingState).toBe('observed_counts_only');
+      expect(d.descriptiveSummary).toMatch(/answered correctly/);
+      // No judgement vocabulary.
+      expect(d.descriptiveSummary).not.toMatch(/strength|weakness|strong|weak|mastery|below|above/i);
+    }
+  });
+
+  it('states that domain counts are not evidence of a difference', () => {
+    expect(report.limitations.join(' ')).toMatch(/not evidence of a difference/i);
   });
 
   it('carries the prototype status line', () => {

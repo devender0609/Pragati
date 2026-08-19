@@ -30,22 +30,63 @@ export type FrameworkStatus =
   | 'expert_reviewed'
   | 'operational';
 
-/** What evidence actually stands behind the framework right now. */
+/** What evidence actually stands behind the framework right now.
+ *
+ *  v0.52: one PRIMARY source was obtained and read in full — the CBSE
+ *  Curriculum 2026-27 for Class IX Mathematics, which reproduces the
+ *  NCF-SE 2023 Curricular Goals (CG-1..CG-11) and Competencies with
+ *  their codes. The full review is in
+ *  docs/MATHEMATICS_COMPETENCY_FRAMEWORK_REVIEW.md.
+ *
+ *  The status stays `draft_internal`. One primary source covering one
+ *  stage does not make a framework reviewed, and the review's own
+ *  recommendations have not been applied — they need human expert
+ *  sign-off first. */
 export const frameworkSourceStatus = {
   status: 'draft_internal' as FrameworkStatus,
   reviewedAgainst: [
+    'CBSE Curriculum 2026-27, Mathematics Class IX (cbseacademic.nic.in) — PRIMARY, full text read. Reproduces NCF-SE 2023 CG-1..CG-11 verbatim.',
+    'CBSE Curriculum 2026-27, Mathematics Class X — introduction only.',
     'NCERT Ganita Prakash Grade 6 chapter structure (secondary sources)',
     'NCERT Ganita Prakash Grade 7 Part 1 chapter structure (secondary sources)',
   ],
   notReviewedAgainst: [
-    'NCF-SE 2023 primary document',
+    'NCF-SE 2023 primary document (pp. 181-187)',
     'PARAKH National Assessment Framework',
-    'CBSE competency-based education framework',
     'NCERT Learning Outcomes documents',
+    'Any NCF-aligned CBSE syllabus for Classes 6-8 — none appears to have been published',
   ],
   note:
-    'This is an internal draft. The domain list is defensible mathematically but has NOT been checked against the primary Indian curriculum-framework documents. Doing so is the first task of v0.52.',
+    'Informed by one primary source at the secondary stage. The review recommends: merge Patterns into Algebra; merge Data and Probability into one domain (NCF-SE treats them as one goal, CG-6); reclassify Reasoning and Modelling as cross-cutting processes; and ADD Computational Thinking, which is curricular goal CG-9 and is absent from this draft. None of these changes has been applied — they require expert sign-off.',
+  /** The single largest gap: Pragati's pilot targets Classes 5-8, and
+   *  that is the stage with the weakest primary evidence. */
+  largestGap:
+    'No NCF-aligned primary competency source was found for Classes 6-8. CBSE has published the 2026-27 NCF-aligned curriculum for Classes 9-12 only.',
 } as const;
+
+/** v0.52 — NCF-SE 2023 Curricular Goals for Secondary Mathematics, as
+ *  reproduced verbatim in the CBSE Class IX curriculum 2026-27. Recorded
+ *  so competency mappings can cite a code rather than a vague claim. */
+export const NCF_SE_2023_SECONDARY_GOALS: Array<{
+  code: string;
+  goal: string;
+  pragatiDomainId: AssessmentDomainId | 'cross_cutting' | 'not_assessed';
+}> = [
+  { code: 'CG-1', goal: 'Understands numbers, representation, relationships, and number sets.', pragatiDomainId: 'NUM' },
+  { code: 'CG-2', goal: 'Builds deductive and inductive logic to prove theorems related to numbers.', pragatiDomainId: 'cross_cutting' },
+  { code: 'CG-3', goal: 'Discovers and proves algebraic identities; models real-life situations as equations.', pragatiDomainId: 'ALG' },
+  { code: 'CG-4', goal: 'Analyses properties of 2-D shapes and develops mathematical arguments. Includes coordinate geometry and trigonometry.', pragatiDomainId: 'GEO' },
+  { code: 'CG-5', goal: 'Derives and uses formulae for areas, surface areas, and volumes.', pragatiDomainId: 'MEA' },
+  { code: 'CG-6', goal: 'Analyses and interprets data using statistical concepts AND probability (one goal).', pragatiDomainId: 'DAT' },
+  { code: 'CG-7', goal: 'Perceives the axiomatic and deductive structure of Mathematics.', pragatiDomainId: 'cross_cutting' },
+  { code: 'CG-8', goal: 'Visualisation, optimisation, representation, and mathematical modelling.', pragatiDomainId: 'cross_cutting' },
+  { code: 'CG-9', goal: 'Computational thinking: decomposition, algorithms, generalising procedures.', pragatiDomainId: 'cross_cutting' },
+  { code: 'CG-10', goal: 'Knows and appreciates contributions of mathematicians from India and elsewhere.', pragatiDomainId: 'not_assessed' },
+  { code: 'CG-11', goal: 'Explores connections of Mathematics with other subjects.', pragatiDomainId: 'cross_cutting' },
+];
+
+export const NCF_SE_2023_SOURCE =
+  'CBSE Curriculum 2026-27, Mathematics Class IX, "Curricular Goals (CGs) and Competencies (Cs) from the NCF-SE 2023". https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1IX_2026-27.pdf — retrieved and read 2026-08-18.';
 
 export type AssessmentDomainId =
   | 'NUM'

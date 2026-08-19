@@ -30,6 +30,7 @@
 import type { Item } from '../../data/items';
 import type { ModuleId, SkillId } from '../../types';
 import { SKILLS_BY_MODULE } from '../../types';
+import { itemsFor } from '../assessment/itemUse';
 
 /** Default size of a generic practice set. Short by design — this is
  *  low-stakes practice, not an assessment. */
@@ -55,9 +56,13 @@ export type ModulePracticeBlueprint = {
 /** Build the runtime practice plan for a module. Pure. */
 export function modulePracticeBlueprint(
   moduleId: ModuleId,
-  items: Item[],
+  allItems: Item[],
   itemCount: number = DEFAULT_MODULE_PRACTICE_ITEM_COUNT
 ): ModulePracticeBlueprint {
+  // v0.52 — secure items are excluded before anything else is computed,
+  // so a Growth item can never contribute to a practice blueprint's
+  // usable-skill count.
+  const items = itemsFor(allItems, 'practice');
   const registered = (SKILLS_BY_MODULE[moduleId] ?? []) as SkillId[];
   const usableSkillIds = registered.filter((s) =>
     items.some((it) => it.skillId === s)
@@ -108,10 +113,11 @@ export function buildModulePracticePlan(args: {
 }): ModulePracticePlan {
   const {
     blueprint,
-    items,
+    items: allItems,
     priorAttemptedIds = [],
     shuffle = defaultShuffle,
   } = args;
+  const items = itemsFor(allItems, 'practice');
   const seen = new Set(priorAttemptedIds);
 
   const bySkill = new Map<SkillId, Item[]>();
