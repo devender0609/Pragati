@@ -1,0 +1,212 @@
+{
+  "_comment": "v0.65 - INTERNAL import representation. The educator fills PACKAGE_B_FOR_REVIEWER.md; someone transcribes into this. Do not send this file to the reviewer.",
+  "_decisions": [
+    "accept",
+    "revise",
+    "reject",
+    "insufficient_evidence"
+  ],
+  "_roles": [
+    "practising_teacher",
+    "curriculum_specialist",
+    "mathematics_subject_expert",
+    "accessibility_reviewer"
+  ],
+  "packageId": "B_demonstration",
+  "questionSetVersion": 1,
+  "contentArtifactId": "ncert_gp_c6_s7_4_lesson",
+  "contentArtifactVersion": 1,
+  "contentFingerprint": "1a934663",
+  "_fingerprintNote": "Must match the CURRENT content at import time. A mismatch means the lesson changed after this review was prepared; import will reject it.",
+  "reviewerId": "",
+  "reviewerName": "",
+  "reviewerRole": "practising_teacher",
+  "reviewDate": "YYYY-MM-DD",
+  "responses": [
+    {
+      "itemId": "M1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "M2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "M3",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "M4",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "M5",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "M6",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "M7",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "S1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "S2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "S3",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "A1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "A2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "A3",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "A4",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "V1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "V2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "V3",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "V4",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "V5",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "V6",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "X1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "X2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "X3",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "X4",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "X5",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "X6",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "P1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "P2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "P3",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "P4",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "T1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "T2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "T3",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "T4",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "O1",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "O2",
+      "decision": "",
+      "rationale": ""
+    },
+    {
+      "itemId": "O3",
+      "decision": "",
+      "rationale": ""
+    }
+  ]
+}

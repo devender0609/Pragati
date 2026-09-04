@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pragati — Growth Assessment Prototype</title>
+    <meta name="description" content="Pragati: prototype adaptive growth assessment for CBSE Class 6 Math (FR.06)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      v0.76 §11 — TYPOGRAPHY, ACTUALLY LOADED.
+
+      tailwind.config declared `font-display: Bricolage Grotesque` from
+      v0.69 onward and index.html never loaded it, so every `font-display`
+      class in the product silently rendered as Inter. Nine months of
+      "expressive headings" were one typeface wearing a different class
+      name. Caught by reading the font stack against the <link> tags.
+
+      The replacement is a deliberate choice, not a fix-in-place:
+
+        Anek Latin      headings and display. Drawn by Ek Type (Mumbai)
+                        as one superfamily across nine Indian scripts, so
+                        the Latin and the Devanagari were designed by the
+                        same hand for the same page. A grotesque with a
+                        width axis — it can be set tight and tall for a
+                        chapter title without becoming a poster face.
+        Anek Devanagari प्रगति, and any Hindi UI. Same superfamily, so the
+                        wordmark's two scripts share a skeleton.
+        Inter           body, UI, and data. Kept: it is the best-tested
+                        screen text face there is, and a product a child
+                        reads for ten minutes should not experiment here.
+
+      Both are SIL OFL and served from Google Fonts, so there is no
+      licensing question for production.
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Anek+Latin:wght@500;600;700;800&family=Anek+Devanagari:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
