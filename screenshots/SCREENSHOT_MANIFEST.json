@@ -1,0 +1,14 @@
+{
+  "reviewCandidate": "S74-v1-A1A3FF",
+  "contentFingerprint": "a1a3ff57",
+  "contentArtifactId": "ncert_gp_c6_s7_4_lesson",
+  "contentArtifactVersion": 1,
+  "reviewBuildId": "pragati-v0.66.0-review-candidate",
+  "applicationVersion": "0.66.0",
+  "widths": [
+    390,
+    768,
+    1440
+  ],
+  "note": "Reference images of the frozen candidate. Not a substitute for interacting with the build."
+}
