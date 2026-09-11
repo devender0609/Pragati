@@ -1,0 +1,182 @@
+[
+  {
+    "id": "overview",
+    "width": 360,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "classes",
+    "width": 360,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assign",
+    "width": 360,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assess",
+    "width": 360,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "insights",
+    "width": 360,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "resources",
+    "width": 360,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "overview",
+    "width": 390,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "classes",
+    "width": 390,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assign",
+    "width": 390,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assess",
+    "width": 390,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "insights",
+    "width": 390,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "resources",
+    "width": 390,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "overview",
+    "width": 430,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "classes",
+    "width": 430,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assign",
+    "width": 430,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assess",
+    "width": 430,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "insights",
+    "width": 430,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "resources",
+    "width": 430,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "overview",
+    "width": 768,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "classes",
+    "width": 768,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assign",
+    "width": 768,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assess",
+    "width": 768,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "insights",
+    "width": 768,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "resources",
+    "width": 768,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "overview",
+    "width": 1440,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "classes",
+    "width": 1440,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assign",
+    "width": 1440,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "assess",
+    "width": 1440,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "insights",
+    "width": 1440,
+    "status": "OK",
+    "overflow": false
+  },
+  {
+    "id": "resources",
+    "width": 1440,
+    "status": "OK",
+    "overflow": false
+  }
+]

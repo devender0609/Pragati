@@ -1,0 +1,69 @@
+{
+  "generated": "v0.75",
+  "packages": [
+    {
+      "section": "7.1",
+      "file": "SECTION_7_1_FOR_REVIEWER.md",
+      "code": "S71-v1-0E86DC",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_1_lesson",
+      "fingerprint": "0e86dc26"
+    },
+    {
+      "section": "7.2",
+      "file": "SECTION_7_2_FOR_REVIEWER.md",
+      "code": "S72-v1-37B369",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_2_lesson",
+      "fingerprint": "37b369c5"
+    },
+    {
+      "section": "7.3",
+      "file": "SECTION_7_3_FOR_REVIEWER.md",
+      "code": "S73-v1-E47D40",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_3_lesson",
+      "fingerprint": "e47d40a7"
+    },
+    {
+      "section": "7.5",
+      "file": "SECTION_7_5_FOR_REVIEWER.md",
+      "code": "S75-v1-7D271B",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_5_lesson",
+      "fingerprint": "7d271b43"
+    },
+    {
+      "section": "7.6",
+      "file": "SECTION_7_6_FOR_REVIEWER.md",
+      "code": "S76-v1-08C5FD",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_6_lesson",
+      "fingerprint": "08c5fda1"
+    },
+    {
+      "section": "7.7",
+      "file": "SECTION_7_7_FOR_REVIEWER.md",
+      "code": "S77-v1-32067E",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_7_lesson",
+      "fingerprint": "32067e71"
+    },
+    {
+      "section": "7.8",
+      "file": "SECTION_7_8_FOR_REVIEWER.md",
+      "code": "S78-v1-051989",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_8_lesson",
+      "fingerprint": "051989ae"
+    },
+    {
+      "section": "7.9",
+      "file": "SECTION_7_9_FOR_REVIEWER.md",
+      "code": "S79-v1-36C902",
+      "questions": 12,
+      "artifact": "ncert_gp_c6_s7_9_lesson",
+      "fingerprint": "36c902d0"
+    }
+  ]
+}
