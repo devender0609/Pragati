@@ -269,11 +269,23 @@ export const ROUTE_CONTRACTS = {
   // "Assess" as everyday checking and finds a refusal.
   teacher_assess: {
     id: 'teacher_assess',
-    label: 'Teacher — Assess (formal Growth path)',
+    label: 'Teacher — Assess (instructional check and the governed Growth path)',
     mustContain: [
       'Pragati Growth',
-      // The separation, stated on the screen the teacher actually sees.
-      'Separate from everyday practice',
+      // v0.78.1 §9 — the OBLIGATION is unchanged: the screen must state
+      // that Growth is separate from everyday classroom practice. The
+      // sentence carrying it moved.
+      //
+      // It used to sit in the Growth setup's own subtitle, which meant
+      // the separation was only stated inside the thing it was
+      // separating from — and when the setup was folded away (because a
+      // non-operational track should not be the largest actionable part
+      // of Assess), the statement went with it. It is now made above
+      // both tracks, before either is offered, which is where it should
+      // always have been.
+      'Two different things',
+      'Instructional check',
+      'never derived from an instructional check',
     ],
     mustNotContain: [
       'STUDENT MODE',

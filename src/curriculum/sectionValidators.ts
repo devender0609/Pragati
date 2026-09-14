@@ -14,6 +14,7 @@ import { validateVisual } from './visualSpecification';
 import { classifyReadingLoad, type ReadingLoadClass } from './instructionalInteraction';
 import { officialSectionById } from './officialSections';
 import { FRACTIONS_MISCONCEPTIONS } from './fractionsMisconceptions';
+import { NUMBER_PLAY_MISCONCEPTIONS } from './numberPlayMisconceptions';
 
 export function validateAuthoredSection(s: AuthoredSection): string[] {
   const e: string[] = [];
@@ -73,11 +74,19 @@ export function validateAuthoredSection(s: AuthoredSection): string[] {
   }
 
   // --- misconceptions -------------------------------------------------
-  const known = new Set(FRACTIONS_MISCONCEPTIONS.map((m) => m.id));
+  // v0.79 §2 — the validator knew one chapter's registry by name, so a
+  // second chapter's authored draft could not reference its own
+  // misconceptions without being reported as unknown. Chapters register
+  // here; the check itself is unchanged and still rejects an id that
+  // exists nowhere.
+  const known = new Set<string>([
+    ...FRACTIONS_MISCONCEPTIONS.map((m) => m.id as string),
+    ...NUMBER_PLAY_MISCONCEPTIONS.map((m) => m.id as string),
+  ]);
   for (const m of s.misconceptionIds) {
     // §7.4 uses the older per-section misconception objects; those IDs
     // are legitimately outside the chapter registry.
-    if (!known.has(m as never) && !m.startsWith('M')) {
+    if (!known.has(m) && !m.startsWith('M')) {
       e.push(`${id}: unknown misconception '${m}'`);
     }
   }

@@ -11,7 +11,7 @@ import { Card } from '../../design/primitives/Card';
 import { StatusBadge } from '../../design/primitives/StatusBadge';
 import { EmptyState } from '../../components/common/EmptyState';
 import { chaptersForStudentGrade } from '../student/StudentShell';
-import { isClass6Core, dispositionFor } from '../../curriculum/legacyDisposition';
+import { isClass6Core } from '../../curriculum/legacyDisposition';
 import type { Grade } from '../../types';
 
 const GRADE_OPTIONS: Grade[] = [
@@ -138,40 +138,28 @@ export function TeacherResourcesBody({
         </div>
       </Card>
 
+      {/* v0.78.1 §13 — WHAT A TEACHER NEEDS FROM THIS, AND WHAT THEY DO NOT.
+          This listed every displaced legacy module with its migration
+          detail: which chapter of which later-year book now teaches
+          Decimals, Ratio & Proportion and Algebra. That history is a
+          content-governance record — it explains a decision WE made —
+          and a teacher planning Thursday's lesson needs one sentence of
+          it: this is not Class 6, so you cannot assign it.
+          The per-module disposition stays in Admin & Research, where
+          the audit trail is the subject. */}
       {displaced.length > 0 && (
-        <section className="rounded-lg border border-slate-300 bg-slate-50 p-4">
-          <h3 className="text-sm font-semibold text-slate-900">
-            Legacy content awaiting a curriculum decision
-          </h3>
-          <p className="mt-1 text-sm text-slate-600">
-            These were written for the previous Class 6 textbook. The
-            current book teaches them in later years, so they are not
-            part of Class 6 and cannot be assigned as Class 6 work.
-            Nothing has been deleted.
+        <TeacherPanel
+          title="Not part of the current Class 6 curriculum"
+          detail={`${displaced.length} older ${displaced.length === 1 ? 'topic was' : 'topics were'} written for the previous Class 6 textbook. The current book teaches them in later years, so they cannot be assigned as Class 6 work. Nothing has been deleted.`}
+        >
+          <p className="text-sm text-ink-500">
+            {displaced.map((c) => c.title).join(' · ')}
           </p>
-          <ul className="mt-3 space-y-2">
-            {displaced.map((c) => {
-              const d = dispositionFor(c.legacyModuleId ?? '');
-              return (
-                <li
-                  key={c.chapterId}
-                  className="rounded border border-slate-200 bg-white p-3 text-sm"
-                >
-                  <span className="font-medium text-slate-800">{c.title}</span>
-                  <span className="ml-2 text-slate-500">
-                    {c.itemCount} questions
-                  </span>
-                  {d?.evidencedHome && (
-                    <p className="mt-1 text-slate-600">
-                      Now taught in{' '}
-                      {d.evidencedHome.replace('Ganita Prakash ', '')}
-                    </p>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
-        </section>
+          <p className="mt-3 text-sm text-ink-400">
+            Where each one now sits in the curriculum is recorded under
+            Admin &amp; Research.
+          </p>
+        </TeacherPanel>
       )}
 
       {chapters.length === 0 ? (
@@ -188,7 +176,7 @@ export function TeacherResourcesBody({
                   <div className="text-sm font-semibold text-slate-900">
                     {c.title}
                   </div>
-                  <StatusBadge status={c.inventory.status} title={c.inventory.reasons.join(' ')} />
+                  <StatusBadge audience="teacher" status={c.inventory.status} title={c.inventory.reasons.join(' ')} />
                 </div>
                 <p className="mt-1 text-xs text-slate-500">{c.subtitle}</p>
                 <div className="mt-3">

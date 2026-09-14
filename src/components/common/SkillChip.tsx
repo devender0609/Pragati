@@ -155,7 +155,23 @@ export function GradeBadge({ moduleId }: { moduleId: ModuleId }) {
 }
 
 // Small inline skill-mode chip used on session rows and result headers.
-export function SkillChip({ mode }: { mode: SkillMode }) {
+export function SkillChip({
+  mode,
+  audience = 'admin',
+}: {
+  mode: SkillMode;
+  /**
+   * v0.78.1 §6/§13 — SKILL_MODE_LABELS reads "FR.02 — Visualise": the
+   * internal code first, the human words second. That is the right
+   * order for someone auditing an item bank and the wrong one for a
+   * teacher reading their own assignment list, where the code is noise
+   * they cannot act on. Teacher gets the words; Admin keeps the code.
+   */
+  audience?: 'teacher' | 'admin';
+}) {
+  const full = SKILL_MODE_LABELS[mode];
+  const label =
+    audience === 'teacher' ? full.replace(/^[A-Z]{2}\.\d+\s*—\s*/, '') : full;
   return (
     <span
       className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ring-1 ${skillChipClass(
@@ -163,7 +179,7 @@ export function SkillChip({ mode }: { mode: SkillMode }) {
       )}`}
       title={SKILL_MODE_DESCRIPTIONS[mode]}
     >
-      {SKILL_MODE_LABELS[mode]}
+      {label}
     </span>
   );
 }

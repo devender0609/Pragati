@@ -11,9 +11,10 @@
 import { useMemo, useState } from 'react';
 import { loadSessions, loadStudents } from '../../lib/storage';
 import { loadClassrooms } from '../../lib/classroomStore';
-import { ITEMS } from '../../data/items';
+import { ITEMS, MISCONCEPTION_LABELS } from '../../data/items';
 import { summarizeMisconceptions } from '../../lib/scoring';
-import { TeacherEmptyState, TeacherPageHeader, TeacherPanel } from '../../design/TeacherKit';
+import { SKILL_LABELS, type SkillId } from '../../types';
+import { TeacherEmptyState, TeacherPageHeader } from '../../design/TeacherKit';
 import { Card } from '../../design/primitives/Card';
 import { scopeSessions, summarizeScopedSessions } from './teacherInsights';
 
@@ -122,6 +123,48 @@ export function TeacherInsightsBody({
         )}
       </Card>
 
+      {/* v0.78.1 §11 — THE SAFEGUARD SURVIVED ONLY THE EMPTY STATE.
+          The "what Insights will not show" panel rendered in the empty
+          branch alone, so the moment a class had activity it vanished —
+          exactly when a teacher starts reading numbers and is most
+          likely to over-read them. §11 asked to reduce its prominence,
+          not to let data delete it.
+          It is now one disclosure, rendered in both states: closed it is
+          a line, open it is the same three limits, word for word. */}
+      <details className="group rounded-2xl bg-attend-50 px-5 py-4">
+        <summary className="cursor-pointer list-none font-display text-sm font-bold text-attend-900">
+          How to read these numbers
+          <span className="ml-2 font-normal text-attend-800/70">
+            what Insights does not measure
+          </span>
+        </summary>
+        <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-ink-600">
+          <li>
+            <span className="font-semibold text-ink-800">
+              No mastery or ability score.
+            </span>{' '}
+            Pragati records what a student did. Turning counts of correct
+            answers into a measure of what they know needs a calibrated
+            instrument, which is the Growth track and is not this.
+          </li>
+          <li>
+            <span className="font-semibold text-ink-800">
+              No class-level growth.
+            </span>{' '}
+            Growth is change measured on a stable scale over time. Nothing
+            here establishes one.
+          </li>
+          <li>
+            <span className="font-semibold text-ink-800">
+              No diagnosis from a single wrong answer.
+            </span>{' '}
+            Where a response pattern points at a specific misconception the
+            item was written to detect, it is named. Otherwise it is
+            reported as a response, not a cause.
+          </li>
+        </ul>
+      </details>
+
       {summary.totalSessions === 0 ? (
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-start">
         <TeacherEmptyState
@@ -141,31 +184,6 @@ export function TeacherInsightsBody({
             { label: 'Assign practice', onClick: onOpenAssign, primary: true },
           ]}
         />
-        {/* The empty state says what will appear; this says what it will
-            NOT. Both matter, and the second is the one a teacher is
-            likely to assume wrongly — Pragati records what students did
-            and does not measure what they are. */}
-        <TeacherPanel title="What Insights will not show" tone="attention">
-          <ul className="space-y-2.5 text-sm leading-relaxed text-ink-500">
-            <li>
-              <span className="font-semibold text-ink-700">No mastery or ability score.</span>{' '}
-              Pragati records what a student did. Turning counts of correct
-              answers into a measure of what they know needs a calibrated
-              instrument, which is the Growth track and is not this.
-            </li>
-            <li>
-              <span className="font-semibold text-ink-700">No class-level growth.</span>{' '}
-              Growth is change measured on a stable scale over time. Nothing
-              here establishes one.
-            </li>
-            <li>
-              <span className="font-semibold text-ink-700">No diagnosis from a single wrong answer.</span>{' '}
-              Where a response pattern points at a specific misconception the
-              item was written to detect, it is named. Otherwise it is
-              reported as a response, not a cause.
-            </li>
-          </ul>
-        </TeacherPanel>
         </div>
       ) : (
         <>
@@ -190,8 +208,13 @@ export function TeacherInsightsBody({
               </p>
             </Card>
             <Card>
-              <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
-                Top misconceptions
+              {/* v0.78.1 §10/§17 — this printed raw codes: a teacher saw
+                  "counts_shaded_only". That is our identifier for a
+                  misconception, not its name, and no teacher should have
+                  to decode snake_case to read their own class. The
+                  authored label exists and is now used. */}
+              <div className="font-display text-sm font-bold text-ink-900">
+                Most common wrong answers
               </div>
               {misconceptions.length === 0 ? (
                 <div className="mt-2 text-sm text-slate-600">
@@ -201,7 +224,14 @@ export function TeacherInsightsBody({
                 <ul className="mt-2 space-y-1 text-sm">
                   {misconceptions.map((m) => (
                     <li key={m.code} className="flex justify-between gap-2">
-                      <span>{m.code}</span>
+                      <span>
+                        {/* The fallback must not be the code. An
+                            unmapped identifier reaching a teacher is the
+                            same leak as a mapped one, and it is the
+                            unmapped case that slips through review. */}
+                        {MISCONCEPTION_LABELS[m.code] ??
+                          'Other repeated wrong answer'}
+                      </span>
                       <span className="text-slate-500">{m.count}</span>
                     </li>
                   ))}
@@ -210,13 +240,19 @@ export function TeacherInsightsBody({
             </Card>
           </div>
           <Card>
-            <h3 className="text-sm font-semibold text-slate-900">
-              Weakest skills
+            {/* v0.78.1 §10 — "Weakest skills" is a proficiency judgement
+                about students, drawn from a percentage of attempts. What
+                the data supports is narrower and more useful: these are
+                the activities where answers went wrong most often, which
+                is a fact about the responses and an invitation to look,
+                not a verdict on the class. */}
+            <h3 className="font-display text-sm font-bold text-ink-900">
+              Where responses may be worth reviewing
             </h3>
             {summary.weakest.length === 0 ? (
-              <p className="mt-2 text-xs text-slate-500">
-                Not enough attempts on any single skill yet (minimum 3
-                attempts each).
+              <p className="mt-2 text-xs text-ink-400">
+                Not enough attempts on any single activity yet — at least
+                three are needed before a pattern means anything.
               </p>
             ) : (
               <ul className="mt-2 divide-y divide-slate-100 text-sm">
@@ -225,7 +261,8 @@ export function TeacherInsightsBody({
                     key={w.skill}
                     className="flex flex-wrap justify-between gap-2 py-2"
                   >
-                    <span>{w.skill}</span>
+                    {/* Plain label, not the internal skill code. */}
+                    <span>{SKILL_LABELS[w.skill as SkillId] ?? w.skill}</span>
                     <span className="text-slate-500">
                       {Math.round(w.accuracy * 100)}% correct across{' '}
                       {w.attempted} attempts

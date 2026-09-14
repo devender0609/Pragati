@@ -1683,19 +1683,70 @@ export default function App({ deps }: { deps?: AppDependencies } = {}) {
                 detail="Assess covers both, and they are not interchangeable."
                 tone="attention"
               >
+                {/* v0.78.1 §8/§9 — A DESCRIPTION IS NOT A CAPABILITY.
+                    v0.78 explained both tracks and then gave the teacher
+                    a route to exactly one of them: the actionable body
+                    of Assess was a Growth setup, for a track that is not
+                    operational, while the everyday check a teacher
+                    actually runs had no button anywhere on the page.
+                    Describing a capability without providing a route to
+                    it is worse than omitting it — the teacher goes
+                    looking. */}
                 <AvailabilityRow
                   title="Instructional check"
                   available
                   count="built from the item bank"
                   detail="Ordinary classroom evidence: a set of questions you choose, for a class or a student, to see how a piece of teaching landed. You read the responses; Pragati does not score them against a scale."
+                  action={
+                    <div className="flex flex-wrap gap-2">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setEditingAssignmentId(null);
+                          setView('assignmentForm');
+                        }}
+                        className="tap rounded-full bg-ink-900 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-ink-800"
+                      >
+                        Create an instructional check
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setTeacherTab('assign')}
+                        className="tap rounded-full bg-white px-5 py-2.5 text-sm font-bold text-ink-800 ring-1 ring-ink-200 transition hover:bg-paper-100"
+                      >
+                        See what is assigned
+                      </button>
+                    </div>
+                  }
                 />
                 <AvailabilityRow
                   title="Pragati Growth"
                   available={false}
                   count="governed track"
-                  detail="A formal assessment instrument. It carries calibration and norming requirements that ordinary classroom practice cannot support, so it is administered through its own governed path and never derived from an instructional check."
+                  detail="A formal assessment instrument. It carries calibration and norming requirements that ordinary classroom practice cannot support, so it is administered through its own governed path and never derived from an instructional check. It is not operational: no calibration study has been run."
                 />
               </TeacherPanel>
+              {/* v0.78.1 §9 — THE BALANCE PROBLEM.
+                  v0.78 named both tracks and then gave the whole body of
+                  the screen to a three-step Growth setup — for a track
+                  the same screen says is not operational. That is a
+                  Growth page with a disclaimer on top, which is exactly
+                  what §9 rules out.
+                  The setup is not deleted: Growth is governed, not gone,
+                  and someone administering it through the governed path
+                  still needs it. It is folded, so the everyday check is
+                  the largest actionable thing on a teacher's Assess
+                  screen and the non-operational track is one click away
+                  rather than three screens tall. */}
+              <details className="group rounded-2xl bg-paper-200/60 p-5">
+                <summary className="cursor-pointer list-none font-display text-base font-bold text-ink-800">
+                  Growth Check setup
+                  <span className="ml-2 text-sm font-normal text-ink-400">
+                    not operational — open only if you are administering
+                    Growth through its governed path
+                  </span>
+                </summary>
+                <div className="mt-5">
               <GrowthAssignPanel
                 // §5 — pass the real grade, not just id and name.
                 classrooms={loadClassrooms()
@@ -1781,6 +1832,8 @@ export default function App({ deps }: { deps?: AppDependencies } = {}) {
                   bumpStore();
                 }}
               />
+                </div>
+              </details>
               {/* v0.60 §14/§15 — management and participation. */}
               <AssignmentManagementPanel
                 assignments={formalAssignments
@@ -1852,6 +1905,18 @@ export default function App({ deps }: { deps?: AppDependencies } = {}) {
                     Pragati has for it, which is what the depth panel and
                     the chapter list below now say in a teacher's terms.
                   */}
+                  {/* v0.63 §6 — assignment by official section. Shows
+                      the real (empty) eligible set rather than a
+                      fabricated example. */}
+                  <SectionAssignmentPanel />
+                  <TeacherResourcesBody onOpenChapter={setTeacherChapterId} />
+
+                  {/* v0.78.1 §14 — ORDER IS AN ARGUMENT.
+                      This panel used to open the screen, so the first
+                      thing a teacher met under "Resources" was a pointer
+                      to the governance matrix. Resources answers "what
+                      can I teach"; the evidence apparatus is a footnote
+                      to that, not a preface. It now sits last. */}
                   <TeacherPanel
                     title="Curriculum coverage across Classes 1–12"
                     detail="The full verification and review matrix — which classes are primary-source verified, what Pragati has authored, and what has been reviewed — is under Admin & Research."
@@ -1864,11 +1929,6 @@ export default function App({ deps }: { deps?: AppDependencies } = {}) {
                       Open in Admin &amp; Research
                     </button>
                   </TeacherPanel>
-                  {/* v0.63 §6 — assignment by official section. Shows
-                      the real (empty) eligible set rather than a
-                      fabricated example. */}
-                  <SectionAssignmentPanel />
-                  <TeacherResourcesBody onOpenChapter={setTeacherChapterId} />
                 </div>
               ))}
             {teacherTab === 'classes' && (

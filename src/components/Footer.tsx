@@ -21,10 +21,31 @@ export function Footer({ appMode = 'student' }: { appMode?: 'student' | 'teacher
     //
     // The full statement, including the pilot status, is in Admin &
     // Research and in the release documentation.
-    <footer className="mx-auto mt-10 max-w-6xl px-4 pb-10 text-center text-xs text-slate-500">
-      Pragati does not produce a calibrated score. Results need teacher
-      judgement, and a calibration study is required before any operational
-      use.
+    // v0.78.1 §15 — SAME CLAIM, LESS SHOUTING.
+    //
+    // The sentence is correct and must not weaken. Printing it in full
+    // under all six teacher destinations made the product read as a
+    // research prototype rather than a tool, and a caveat repeated six
+    // times a day is a caveat nobody reads by the third.
+    //
+    // It is now a disclosure the teacher opens. Closed, it names the
+    // subject — how to read these numbers — which is the cue a teacher
+    // needs; open, it says exactly what it always said, word for word.
+    // Nothing is hidden behind a hover or a tooltip: the text is in the
+    // DOM, findable and printable.
+    <footer className="mx-auto mt-10 max-w-[84rem] px-4 pb-10">
+      <details className="group mx-auto max-w-2xl rounded-xl bg-paper-200/60 px-4 py-3">
+        <summary className="cursor-pointer list-none text-center text-xs font-semibold text-ink-500 marker:content-none">
+          About these results
+          <span className="ml-1 text-ink-300 group-open:hidden">▾</span>
+          <span className="ml-1 hidden text-ink-300 group-open:inline">▴</span>
+        </summary>
+        <p className="mt-3 text-center text-xs leading-relaxed text-ink-500">
+          Pragati does not produce a calibrated score. Results need teacher
+          judgement, and a calibration study is required before any
+          operational use.
+        </p>
+      </details>
     </footer>
   );
 }

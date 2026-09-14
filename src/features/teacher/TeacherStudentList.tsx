@@ -11,7 +11,6 @@ import { ITEMS } from '../../data/items';
 import { SKILL_ALIGNMENT, buildItemAlignments } from '../../data/alignment';
 import { buildItemQualitySummary } from '../../lib/itemQuality';
 import { buildTeachingPlan } from '../../lib/teachingPlan';
-import { computeBand } from '../../lib/scoring';
 import { formatDate } from '../../lib/format';
 import {
   buildExportBundle,
@@ -26,7 +25,6 @@ import {
   type AssessmentWindow,
 } from '../../types';
 import { SkillChip } from '../../components/common/SkillChip';
-import { BandPill } from '../../components/common/BandPill';
 import { Field } from '../../components/common/Field';
 
 export function TeacherStudentList({
@@ -192,15 +190,28 @@ export function TeacherStudentList({
                 <th className="px-3 py-2">Sessions</th>
                 <th className="px-3 py-2">Latest window</th>
                 <th className="px-3 py-2">Latest skill</th>
-                <th className="px-3 py-2">Latest band</th>
-                <th className="px-3 py-2">Latest est.</th>
+                {/* v0.78.1 §4 — TWO UNSUPPORTED CLAIMS, REMOVED.
+                    The roster showed "Latest band: Foundational" and
+                    "Latest est. 0.0 / 10" for every student. Both are
+                    ability-scale claims: a band is a proficiency
+                    classification and an estimate on a 0-10 scale is a
+                    measurement. Pragati has no calibrated instrument, so
+                    neither number means what a teacher would reasonably
+                    read it to mean — and the page footer says so in the
+                    same breath, which makes the contradiction worse
+                    rather than better.
+                    They were invisible while every screenshot was an
+                    empty state. The populated fixture printed them
+                    eight times in a column and they became obvious.
+                    `computeBand` and `finalAbility` remain in the model
+                    and in Admin, where a research reading is the point. */}
+                <th className="px-3 py-2">Questions answered</th>
                 <th className="px-3 py-2">Last attempted</th>
                 <th className="px-3 py-2"></th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {rows.map(({ student, totalSessions, latest }) => {
-                const band = latest ? computeBand(latest.finalAbility) : null;
                 return (
                   <tr
                     key={student.id}
@@ -231,11 +242,8 @@ export function TeacherStudentList({
                     <td className="px-3 py-3">
                       {latest ? <SkillChip mode={latest.skillId} /> : '—'}
                     </td>
-                    <td className="px-3 py-3">
-                      {band ? <BandPill band={band} /> : '—'}
-                    </td>
                     <td className="px-3 py-3 text-slate-700">
-                      {latest ? `${latest.finalAbility.toFixed(1)} / 10` : '—'}
+                      {latest ? latest.responses.length : '—'}
                     </td>
                     <td className="px-3 py-3 text-slate-700">
                       {latest?.completedAt

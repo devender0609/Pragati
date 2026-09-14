@@ -67,6 +67,34 @@ export const STUDENT_STATUS_LABEL: Record<DerivedStatus, string> = {
   published: 'Ready to learn',
 };
 
+/**
+ * v0.78.1 §12 — WHAT A TEACHER SEES.
+ *
+ * DERIVED_STATUS_LABEL below is authoring vocabulary: "Prototype —
+ * ready for review", "Shell only", "Assessment prototype". Those
+ * describe where a piece of content sits in OUR build pipeline. The
+ * comment above STUDENT_STATUS_LABEL already argued that such words are
+ * meaningless and slightly alarming to a child, and then said
+ * DERIVED_STATUS_LABEL "is retained unchanged for Teacher Resources" —
+ * as though a teacher were a developer.
+ *
+ * They are not. A teacher needs to know whether they can teach the
+ * thing, which is four states and no more. The build vocabulary stays
+ * exactly as it is for Admin & Research, where the pipeline is the
+ * subject.
+ */
+export const TEACHER_STATUS_LABEL: Record<DerivedStatus, string> = {
+  no_content: 'Not available yet',
+  shell: 'Not available yet',
+  assessment_prototype: 'Practice available',
+  lesson_prototype: 'Lesson in review',
+  partial_prototype: 'Lesson in review',
+  prototype_ready_review: 'Lesson in review',
+  teacher_reviewed: 'Lesson available',
+  pilot_ready: 'Lesson available',
+  published: 'Lesson available',
+};
+
 export const DERIVED_STATUS_LABEL: Record<DerivedStatus, string> = {
   no_content: 'No content',
   shell: 'Shell only',

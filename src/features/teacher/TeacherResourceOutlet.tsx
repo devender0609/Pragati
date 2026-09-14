@@ -124,6 +124,7 @@ export function TeacherResourceOutlet({
           subtitle={resolved.displaySubtitle}
         />
         <StatusBadge
+          audience="teacher"
           status={resolved.inventory.status}
           title={resolved.inventory.reasons.join(' ')}
         />

@@ -185,7 +185,13 @@ describe('§9 every top-level destination has a route contract', () => {
     // reads "Assess" as everyday checking and meets a refusal.
     const c = ROUTE_CONTRACTS.teacher_assess;
     expect(c.mustContain).toContain('Pragati Growth');
-    expect(c.mustContain).toContain('Separate from everyday practice');
+    // v0.78.1 §9 — the obligation is unchanged and the sentence moved.
+    // It used to live inside the Growth setup's own subtitle, so the
+    // separation was stated only inside the thing it separated from;
+    // folding that setup away took the statement with it. It is now made
+    // above both tracks, before either is offered.
+    expect(c.mustContain).toContain('never derived from an instructional check');
+    expect(c.mustContain).toContain('Instructional check');
     expect(c.mustNotContain).toContain('mastery');
   });
 });

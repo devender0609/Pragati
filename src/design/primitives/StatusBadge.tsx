@@ -7,6 +7,7 @@
 import { SEMANTIC } from '../tokens';
 import {
   DERIVED_STATUS_LABEL,
+  TEACHER_STATUS_LABEL,
   type DerivedStatus,
 } from '../../curriculum/inventory';
 
@@ -26,8 +27,15 @@ export function StatusBadge({
   status,
   title,
   label,
+  audience = 'admin',
 }: {
   status: DerivedStatus;
+  /**
+   * v0.78.1 §12 — who is reading this badge. 'teacher' maps to the four
+   * states a teacher can act on; 'admin' keeps the build vocabulary,
+   * which is the point of the Admin surfaces.
+   */
+  audience?: 'teacher' | 'admin';
   /** Reviewer tooltip explaining WHY the status is what it is. */
   title?: string;
   /** v0.50 §5 — plain-language override for student surfaces. When
@@ -40,7 +48,10 @@ export function StatusBadge({
       title={title}
       className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-semibold ${TONE[status]}`}
     >
-      {label ?? DERIVED_STATUS_LABEL[status]}
+      {label ??
+        (audience === 'teacher'
+          ? TEACHER_STATUS_LABEL[status]
+          : DERIVED_STATUS_LABEL[status])}
     </span>
   );
 }

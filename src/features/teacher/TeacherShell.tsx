@@ -331,6 +331,11 @@ export function TeacherOverviewBody({
         scope={scopeLabel}
       />
 
+      {/* v0.78.1 §3 — "what can I assign" is a question a teacher asks
+          more often once a class IS active, not less. The first version
+          put this panel only in the empty branch, so it vanished the
+          moment there was any activity — which the populated capture
+          caught immediately. It renders in both states now. */}
       {analytics.isEmpty ? (
         <>
           {/* §9 — a new teacher gets a path, not a gradient banner
@@ -349,6 +354,78 @@ export function TeacherOverviewBody({
             ]}
           />
 
+        </>
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <OverviewCard
+            question="What happened recently?"
+            answer={`${analytics.completedSessionCount} completed session${analytics.completedSessionCount === 1 ? '' : 's'} from ${analytics.activeStudentCount} student${analytics.activeStudentCount === 1 ? '' : 's'}.`}
+          />
+          {/* Shown only when there IS something to say. v0.70 rendered
+              "Nobody on the flag list right now" as though the absence
+              of a finding were itself a finding. */}
+          {flagged && flagged.length > 0 && (
+            <OverviewCard
+              question="Which students may need attention?"
+              answer={attentionSummary(analytics)}
+              action={{ label: 'Open Classes', onClick: onOpenClasses }}
+            >
+              <ul className="mt-2 space-y-1 text-xs text-slate-600">
+                {flagged.slice(0, 3).map((f) => (
+                  <li key={f.studentId}>
+                    <span className="font-medium text-slate-800">
+                      {f.studentName}
+                    </span>{' '}
+                    — {f.reasons.map((r) => ATTENTION_REASON_LABEL[r]).join('; ')}
+                    {f.accuracy !== null && (
+                      <> ({Math.round(f.accuracy * 100)}% of {f.attempted})</>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </OverviewCard>
+          )}
+          <OverviewCard
+            question="Which assignment is active?"
+            answer={activeAssignmentTitle ?? 'No active assignment.'}
+            action={{ label: 'Manage assignments', onClick: onOpenAssign }}
+          />
+          {/* v0.78.1 §13 — "difficult" is a property of the mathematics;
+              what Pragati has is a count of wrong answers, which is a
+              property of the responses. The first is a claim about the
+              subject and about the students, the second is a fact. Say
+              the fact and let the teacher draw the conclusion. */}
+          {difficult !== null && (
+            <OverviewCard
+              question="Where did answers go wrong most often?"
+              answer={difficult
+                .map(
+                  (d) =>
+                    `${skillLabelFor(d.skillId)} (${Math.round(d.accuracy * 100)}% of ${d.attempted})`
+                )
+                .join(' \u00b7 ')}
+            />
+          )}
+          {/* Likewise: the product does not know what to teach next. It
+              knows where responses clustered wrong, and what that means
+              is the teacher's judgement. §13's register is "worth a
+              closer look", not an instruction. */}
+          {difficult !== null && (
+            <OverviewCard
+              question="Worth a closer look?"
+              answer={`${skillLabelFor(difficult[0].skillId)} — the lowest recent accuracy in this class. Whether it needs revisiting is your call.`}
+              action={{ label: 'Open Classes', onClick: onOpenClasses }}
+            />
+          )}
+        </div>
+      )}
+
+      {/* v0.71 §16 — the pilot notice, removed from the teacher's daily
+          screen. It read: "This overview does not include pilot
+          administration or item-review counters — those live under
+          Admin & Research." A teacher does not know what an item-review
+          counter is and has no reason to. The statement is true and
+          belongs where the person reading it is the person it concerns. */}
           <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
             <TeacherPanel
               title="What you can assign today"
@@ -387,69 +464,7 @@ export function TeacherOverviewBody({
               </div>
             </TeacherPanel>
           </div>
-        </>
-      ) : (
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <OverviewCard
-            question="What happened recently?"
-            answer={`${analytics.completedSessionCount} completed session${analytics.completedSessionCount === 1 ? '' : 's'} from ${analytics.activeStudentCount} student${analytics.activeStudentCount === 1 ? '' : 's'}.`}
-          />
-          {/* Shown only when there IS something to say. v0.70 rendered
-              "Nobody on the flag list right now" as though the absence
-              of a finding were itself a finding. */}
-          {flagged && flagged.length > 0 && (
-            <OverviewCard
-              question="Which students may need attention?"
-              answer={attentionSummary(analytics)}
-              action={{ label: 'Open Classes', onClick: onOpenClasses }}
-            >
-              <ul className="mt-2 space-y-1 text-xs text-slate-600">
-                {flagged.slice(0, 3).map((f) => (
-                  <li key={f.studentId}>
-                    <span className="font-medium text-slate-800">
-                      {f.studentName}
-                    </span>{' '}
-                    — {f.reasons.map((r) => ATTENTION_REASON_LABEL[r]).join('; ')}
-                    {f.accuracy !== null && (
-                      <> ({Math.round(f.accuracy * 100)}% of {f.attempted})</>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </OverviewCard>
-          )}
-          <OverviewCard
-            question="Which assignment is active?"
-            answer={activeAssignmentTitle ?? 'No active assignment.'}
-            action={{ label: 'Manage assignments', onClick: onOpenAssign }}
-          />
-          {difficult !== null && (
-            <OverviewCard
-              question="Which skills were difficult?"
-              answer={difficult
-                .map(
-                  (d) =>
-                    `${skillLabelFor(d.skillId)} (${Math.round(d.accuracy * 100)}% of ${d.attempted})`
-                )
-                .join(' \u00b7 ')}
-            />
-          )}
-          {difficult !== null && (
-            <OverviewCard
-              question="What should I teach next?"
-              answer={`Revisit ${skillLabelFor(difficult[0].skillId)} — it has the lowest recent accuracy in this class.`}
-              action={{ label: 'Open Classes', onClick: onOpenClasses }}
-            />
-          )}
-        </div>
-      )}
 
-      {/* v0.71 §16 — the pilot notice, removed from the teacher's daily
-          screen. It read: "This overview does not include pilot
-          administration or item-review counters — those live under
-          Admin & Research." A teacher does not know what an item-review
-          counter is and has no reason to. The statement is true and
-          belongs where the person reading it is the person it concerns. */}
       <TeacherPanel>
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="max-w-xl text-sm text-ink-500">

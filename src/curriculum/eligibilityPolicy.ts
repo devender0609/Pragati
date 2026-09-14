@@ -209,10 +209,14 @@ export function sectionEligibility(
   let withheldReason: string | null = null;
   if (availability === 'not_available_yet') {
     if (ambiguous.length > 0) {
-      withheldReason = `only multi-section content available (${ambiguous.join(', ')})`;
+      // v0.78.1 §17 — the skill codes used to be interpolated here and
+      // this string is rendered in normal Teacher Resources, so a
+      // teacher read "(FR.08)". The codes stay available on the record
+      // for Admin; the sentence a teacher reads names the situation.
+      withheldReason = 'only multi-section content available';
     } else if (record && record.pragatiSkillIds.length > 0) {
       // The §7.1 case, named explicitly.
-      withheldReason = `related content exists (${record.pragatiSkillIds.join(', ')}) but is aligned to another section`;
+      withheldReason = 'related content exists but is aligned to another section';
     } else if (demoIsThisSection) {
       withheldReason = 'authored draft awaiting educator review';
     } else {

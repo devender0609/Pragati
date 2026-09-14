@@ -301,7 +301,7 @@ export function AssignmentsView({
                     )}
                   </div>
                   <div className="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-600">
-                    <SkillChip mode={a.skillMode} />
+                    <SkillChip audience="teacher" mode={a.skillMode} />
                     <span>{a.itemCount} items</span>
                     <span>Created {formatDate(a.createdAt)}</span>
                   </div>
