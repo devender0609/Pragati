@@ -16,6 +16,8 @@ import {
   stripValue,
   toDecimal,
   type NumberLineSpec,
+  type NumberGridSpec,
+  supercellsFor,
   type FractionStripSpec,
   type ExactFraction,
 } from '../../curriculum/visualSpecification';
@@ -214,6 +216,115 @@ export function FractionStripFigure({ spec }: { spec: FractionStripSpec }) {
         })}
       </svg>
       <figcaption className="mt-1 text-sm text-slate-600">
+        {spec.caption}
+      </figcaption>
+    </figure>
+  );
+}
+
+/**
+ * v0.80 §A — NUMBER GRID.
+ *
+ * Draws the grid and, where the spec asserts them, rings the supercells.
+ * The rings come from `supercellsFor()` — the same computation the
+ * validator runs — so the picture cannot disagree with the caption. The
+ * spec never stores which cells are supercells, precisely so that this
+ * is impossible.
+ *
+ * ACCESSIBILITY. A grid is a table of numbers, and a screen reader that
+ * gets a flat list of values learns nothing about adjacency, which is
+ * the whole mathematical point. So the figure carries a real <table>
+ * alongside the drawing, visually hidden: the SVG is `aria-hidden` and
+ * the table is what assistive technology reads, with each supercell
+ * announced as such.
+ */
+export function NumberGridFigure({ spec }: { spec: NumberGridSpec }) {
+  const rows = spec.rows;
+  const cols = rows[0]?.length ?? 0;
+  const CELL = 64;
+  const PAD = 12;
+  const W = cols * CELL + PAD * 2;
+  const H = rows.length * CELL + PAD * 2;
+  const supers = new Set(
+    (spec.assertsSupercellsAt ? supercellsFor(spec) : []).map(
+      ([r, c]) => `${r},${c}`
+    )
+  );
+
+  return (
+    <figure className="my-4">
+      <svg
+        viewBox={`0 0 ${W} ${H}`}
+        className="mx-auto h-auto w-full max-w-xl"
+        aria-hidden="true"
+        focusable="false"
+      >
+        {rows.map((row, r) =>
+          row.map((cell, c) => {
+            const x = PAD + c * CELL;
+            const y = PAD + r * CELL;
+            const isSuper = supers.has(`${r},${c}`);
+            return (
+              <g key={`${r}-${c}`}>
+                <rect
+                  x={x}
+                  y={y}
+                  width={CELL}
+                  height={CELL}
+                  className={
+                    cell.highlighted
+                      ? 'fill-sky-50 stroke-slate-700'
+                      : 'fill-white stroke-slate-700'
+                  }
+                  strokeWidth={1.5}
+                />
+                {isSuper && (
+                  <rect
+                    x={x + 5}
+                    y={y + 5}
+                    width={CELL - 10}
+                    height={CELL - 10}
+                    rx={6}
+                    className="fill-none stroke-amber-500"
+                    strokeWidth={3.5}
+                  />
+                )}
+                <text
+                  x={x + CELL / 2}
+                  y={y + CELL / 2 + 7}
+                  textAnchor="middle"
+                  fontSize={21}
+                  className={
+                    isSuper
+                      ? 'fill-slate-900 font-bold'
+                      : 'fill-slate-800 font-medium'
+                  }
+                >
+                  {cell.value}
+                </text>
+              </g>
+            );
+          })
+        )}
+      </svg>
+
+      <table className="sr-only">
+        <caption>{spec.altText}</caption>
+        <tbody>
+          {rows.map((row, r) => (
+            <tr key={r}>
+              {row.map((cell, c) => (
+                <td key={c}>
+                  {cell.value}
+                  {supers.has(`${r},${c}`) ? ' (supercell)' : ''}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <figcaption className="mt-2 text-center text-sm text-slate-600">
         {spec.caption}
       </figcaption>
     </figure>

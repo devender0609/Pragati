@@ -12,7 +12,7 @@
 // to reviewer contexts so it can never leak into student UI.
 
 import { useState } from 'react';
-import { NumberLineFigure, FractionStripFigure } from './MathVisuals';
+import { NumberGridFigure, NumberLineFigure, FractionStripFigure } from './MathVisuals';
 import {
   ConceptIntro,
   PriorKnowledge,
@@ -26,6 +26,7 @@ import {
 } from '../../design/LessonBlocks';
 import type {
   NumberLineSpec,
+  NumberGridSpec,
   FractionStripSpec,
   VisualSpec,
 } from '../../curriculum/visualSpecification';
@@ -67,6 +68,10 @@ function Visual({ spec }: { spec: VisualSpec }) {
     return <NumberLineFigure spec={spec as NumberLineSpec} />;
   if (spec.type === 'fraction_strip')
     return <FractionStripFigure spec={spec as FractionStripSpec} />;
+  // v0.80 §A — adjacency-based reasoning. Without this branch §3.2's
+  // visuals would validate and never appear.
+  if (spec.type === 'number_grid')
+    return <NumberGridFigure spec={spec as NumberGridSpec} />;
   return null;
 }
 

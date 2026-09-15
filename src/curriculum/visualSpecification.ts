@@ -39,6 +39,8 @@ export const VISUAL_TYPES = [
   'graph',
   'data_table',
   'algebra_tiles',
+  // v0.80 §A — adjacency-based reasoning (Ganita Prakash §3.2).
+  'number_grid',
 ] as const;
 export type VisualType = (typeof VISUAL_TYPES)[number];
 
@@ -178,10 +180,133 @@ export type FractionAreaModelSpec = {
   altText: string;
 };
 
+/**
+ * v0.80 §A — NUMBER GRID.
+ *
+ * WHY THIS EXISTS
+ *
+ * Ganita Prakash §3.2 defines a supercell as a cell whose number is
+ * larger than every one of its neighbours. That definition is about
+ * ADJACENCY, and adjacency is a property of a layout — it cannot be
+ * stated in a number line, a strip or an area model, which is why §3.2
+ * could not be authored in v0.79.
+ *
+ * WHAT THE SPEC HOLDS AND WHAT IT REFUSES TO HOLD
+ *
+ * It holds the numbers and the layout. It does NOT hold which cells are
+ * supercells: that is derivable from the numbers by the chapter's own
+ * rule, and a spec that stored it would let a caption and a grid
+ * disagree — the precise failure the fraction-strip schema was rewritten
+ * in v0.61 to eliminate. `supercellsFor()` below computes them, and the
+ * validator checks any claim the author makes against that computation
+ * rather than trusting it.
+ *
+ * ADJACENCY IS DECLARED, NOT ASSUMED. The textbook's first supercell
+ * exercises use a single row, where neighbours are left and right; a
+ * grid of several rows raises the question of whether the cell above
+ * counts. Rather than pick silently, `neighbourhood` states which rule
+ * this visual uses, so a renderer, a validator and a teacher all read
+ * the same definition.
+ */
+export type NumberGridCell = {
+  value: number;
+  /** Marked for attention — a cell under discussion, not an answer. */
+  highlighted?: boolean;
+  label?: string;
+};
+
+export type NumberGridSpec = {
+  type: 'number_grid';
+  purpose: VisualPurpose;
+  status: VisualStatusLevel;
+  /** Row-major. Every row must have the same length. */
+  rows: NumberGridCell[][];
+  /**
+   * Which cells count as neighbours.
+   *   'horizontal' — left and right only. The textbook's single-row case.
+   *   'orthogonal' — up, down, left, right.
+   */
+  neighbourhood: 'horizontal' | 'orthogonal';
+  /**
+   * When set, the visual ASSERTS these cells are the supercells, and
+   * validation recomputes them. Positions are [row, column], zero-based.
+   */
+  assertsSupercellsAt?: Array<[number, number]>;
+  caption: string;
+  altText: string;
+};
+
 export type VisualSpec =
   | NumberLineSpec
   | FractionStripSpec
-  | FractionAreaModelSpec;
+  | FractionAreaModelSpec
+  | NumberGridSpec;
+
+/**
+ * The supercells of a grid, by the chapter's definition: strictly
+ * greater than every neighbour.
+ *
+ * Strictly. A cell equal to its neighbour is not larger than it, so a
+ * tie produces no supercell — which is the case an author is most
+ * likely to get wrong by eye and the reason this is computed rather
+ * than declared.
+ */
+export function supercellsFor(spec: NumberGridSpec): Array<[number, number]> {
+  const out: Array<[number, number]> = [];
+  const rows = spec.rows;
+  const deltas =
+    spec.neighbourhood === 'horizontal'
+      ? [[0, -1], [0, 1]]
+      : [[0, -1], [0, 1], [-1, 0], [1, 0]];
+
+  rows.forEach((row, r) => {
+    row.forEach((cell, c) => {
+      let isSuper = true;
+      let hasNeighbour = false;
+      for (const [dr, dc] of deltas) {
+        const n = rows[r + dr]?.[c + dc];
+        if (!n) continue;
+        hasNeighbour = true;
+        if (n.value >= cell.value) isSuper = false;
+      }
+      // A cell with no neighbours at all is not a supercell: there is
+      // nothing for it to be larger than.
+      if (isSuper && hasNeighbour) out.push([r, c]);
+    });
+  });
+  return out;
+}
+
+function validateNumberGrid(spec: NumberGridSpec): string[] {
+  const e: string[] = [];
+  if (spec.rows.length === 0) e.push('number grid has no rows');
+  const width = spec.rows[0]?.length ?? 0;
+  if (width === 0) e.push('number grid has no columns');
+  for (const [i, row] of spec.rows.entries()) {
+    if (row.length !== width) {
+      e.push(`row ${i} has ${row.length} cells, expected ${width}`);
+    }
+    for (const [j, cell] of row.entries()) {
+      if (!Number.isFinite(cell.value)) {
+        e.push(`cell ${i},${j} has a non-finite value`);
+      }
+    }
+  }
+  if (spec.assertsSupercellsAt) {
+    const computed = supercellsFor(spec)
+      .map(([r, c]) => `${r},${c}`)
+      .sort();
+    const claimed = spec.assertsSupercellsAt
+      .map(([r, c]) => `${r},${c}`)
+      .sort();
+    if (computed.join('|') !== claimed.join('|')) {
+      e.push(
+        `asserted supercells [${claimed.join(' ')}] do not match the grid, which gives [${computed.join(' ')}]`
+      );
+    }
+  }
+  return e;
+}
 
 // ---------------------------------------------------------------------------
 // Exact rational arithmetic — so the renderer never guesses
@@ -318,5 +443,7 @@ export function validateVisual(spec: VisualSpec): string[] {
       return spec.shadedParts > spec.partitions
         ? ['shadedParts cannot exceed partitions']
         : [];
+    case 'number_grid':
+      return validateNumberGrid(spec);
   }
 }

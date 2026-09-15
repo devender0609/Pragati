@@ -27,12 +27,16 @@ describe('§1 identity comes from the verified source, not from memory', () => {
   });
 
   it('authors in the book’s order and claims no more than it has', () => {
-    // §3.2 blocks on a grid representation that does not exist, so the
-    // chapter must not quietly skip ahead to a section it can draw.
+    // v0.80 — §3.2 is authored now that `number_grid` exists. The
+    // invariant this guards is unchanged and is the one that matters:
+    // the chapter grows in the book's order and never skips a section
+    // because a later one happens to be easier to draw. §3.3 would have
+    // been authorable in v0.79 on the existing number line; it is still
+    // not authored, because §3.2 came first in the book.
     const authored = numberPlayChapterSections().map(
       (s) => s.source.sectionNumber
     );
-    expect(authored).toEqual(['3.1']);
+    expect(authored).toEqual(['3.1', '3.2']);
   });
 });
 

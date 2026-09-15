@@ -42,6 +42,7 @@
 // ===========================================================================
 
 import type { AuthoredSection } from './authoredSection';
+import type { NumberGridSpec } from './visualSpecification';
 
 const SRC = 'https://ncert.nic.in/textbook/pdf/fegp1dd.zip';
 const BOOK = 'Ganita Prakash, Grade 6 (NCERT, Reprint 2026-27)';
@@ -341,10 +342,368 @@ export const SECTION_3_1: AuthoredSection = {
   reviewStatus: 'authored_draft',
 };
 
+
+// ===========================================================================
+// §3.2 — SUPERCELLS
+//
+// v0.79 could not author this section: a supercell is a cell larger than
+// every one of its neighbours, and adjacency cannot be expressed in a
+// number line, a strip or an area model. v0.80 added the `number_grid`
+// spec, so it can be authored now — and it is authored in the book's
+// order, immediately after §3.1, rather than skipping to §3.3 because a
+// number line already existed.
+//
+// TWO DECISIONS WORTH STATING
+//
+// 1. The definition is STRICT. A supercell is greater than each
+//    neighbour, so a tie produces no supercell. That case is taught
+//    explicitly here, because it is the one students get wrong by
+//    scanning for "the big one" instead of comparing.
+//
+// 2. Adjacency is declared per visual. §3.2 opens on a single row, where
+//    neighbours are unambiguously left and right, and only then moves to
+//    a rectangular grid where "does the cell above count?" is a real
+//    question a student should be asked rather than have answered for
+//    them silently.
+//
+// The visuals never store which cells are supercells. `supercellsFor()`
+// derives them and the validator recomputes every assertion, so a
+// caption and a grid cannot drift apart.
+// ===========================================================================
+
+const ROW_OF_SIX: NumberGridSpec = {
+  type: 'number_grid',
+  purpose: 'introduce_concept',
+  status: 'concept_specific',
+  neighbourhood: 'horizontal',
+  rows: [
+    [
+      { value: 626 },
+      { value: 4188 },
+      { value: 5353 },
+      { value: 2126 },
+      { value: 1552 },
+      { value: 1555 },
+    ],
+  ],
+  assertsSupercellsAt: [[0, 2], [0, 5]],
+  caption:
+    'In a single row, a cell’s neighbours are the cells to its left and right.',
+  altText:
+    'A row of six numbers: 626, 4188, 5353, 2126, 1552, 1555. 5353 is larger than both of its neighbours, and 1555 is larger than the neighbour on its left and has no neighbour on its right.',
+};
+
+const TIE_ROW: NumberGridSpec = {
+  type: 'number_grid',
+  purpose: 'expose_misconception',
+  status: 'concept_specific',
+  neighbourhood: 'horizontal',
+  rows: [[{ value: 340 }, { value: 910 }, { value: 910 }, { value: 275 }]],
+  // Deliberately asserts NONE. Neither 910 beats the other, so neither
+  // is a supercell — and the validator proves that rather than trusting
+  // this comment.
+  assertsSupercellsAt: [],
+  caption: 'Two equal neighbours: neither is larger than the other.',
+  altText:
+    'A row of four numbers: 340, 910, 910, 275. Neither 910 is a supercell, because a supercell must be larger than every neighbour and 910 is not larger than 910.',
+};
+
+const GRID_OF_NINE: NumberGridSpec = {
+  type: 'number_grid',
+  purpose: 'reveal_structure',
+  status: 'concept_specific',
+  neighbourhood: 'orthogonal',
+  rows: [
+    [{ value: 210 }, { value: 640 }, { value: 155 }],
+    [{ value: 480 }, { value: 905 }, { value: 320 }],
+    [{ value: 175 }, { value: 260 }, { value: 118 }],
+  ],
+  assertsSupercellsAt: [[1, 1]],
+  caption:
+    'In a grid, decide first which cells count as neighbours. Here: up, down, left and right.',
+  altText:
+    'A three by three grid. The centre cell, 905, is larger than the four cells directly above, below, left and right of it, so it is the only supercell under this rule.',
+};
+
+export const SECTION_3_2: AuthoredSection = {
+  contentArtifactId: 'ncert_gp_c6_s3_2_lesson',
+  contentArtifactVersion: 1,
+  source: source('3.2', 'Supercells', 56, 'ncert_gp_c6_s3_2'),
+
+  competencyCandidates: [
+    {
+      id: 'MIDDLE:C-1.1',
+      justification:
+        'Comparing multi-digit whole numbers in a structured layout is number sense. Proposed by a maintainer and not reviewed.',
+    },
+  ],
+  competencyMappingStatus: 'competency_proposed',
+
+  sequence: {
+    prerequisiteSectionIds: ['ncert_gp_c6_s3_1'],
+    mayAssume: [
+      'A number means something only when you know what it counts (§3.1)',
+      'Comparing two whole numbers',
+      'Reading numbers up to five digits',
+    ],
+    mustNotIntroduce: [
+      { concept: 'Number line patterns', belongsToSection: 'ncert_gp_c6_s3_3' },
+      { concept: 'Digit and place-value patterns', belongsToSection: 'ncert_gp_c6_s3_4' },
+    ],
+  },
+
+  learningGoal:
+    'You will find supercells in a row and in a grid, and you will be able to say why a cell is not a supercell.',
+
+  priorKnowledgeCheck: {
+    prompt: 'Before you start, can you do these?',
+    checks: [
+      'Say which is larger: 4188 or 5353.',
+      'In the row 12, 40, 31, which numbers sit next to 40?',
+      'Finish: "A number tells you something only when you know what it ___."',
+    ],
+    ifNotReady:
+      'Practise comparing four-digit numbers by looking at the leftmost digit first, and go back over §3.1.',
+  },
+
+  vocabulary: [
+    {
+      term: 'neighbour',
+      meaning:
+        'A cell touching this one, under the rule you have agreed. In a row, the cells left and right.',
+    },
+    {
+      term: 'supercell',
+      meaning: 'A cell whose number is larger than every one of its neighbours.',
+    },
+  ],
+
+  explanation: [
+    'Write some numbers in a row of boxes. Each box is a cell.',
+    'A cell’s neighbours are the cells next to it. In a row, that means the one on its left and the one on its right. A cell at the end of the row has only one neighbour.',
+    'A cell is a supercell when its number is larger than every one of its neighbours. Every one — not most of them.',
+    'Look at 626, 4188, 5353, 2126, 1552, 1555. Is 4188 a supercell? It beats 626 on its left, but 5353 on its right is larger. So no.',
+    'Is 5353 a supercell? It beats 4188 and it beats 2126. Yes.',
+    'Now a trap. In the row 340, 910, 910, 275, is either 910 a supercell? Each one has a neighbour that is equal to it, not smaller. Larger means larger, so neither is a supercell.',
+    'When the numbers are in a grid rather than a row, you must decide first what counts as a neighbour. If neighbours are the cells directly above, below, left and right, then a cell in the middle has four of them and a corner cell has two.',
+    'The rule never changes: larger than every neighbour. What changes is which cells are neighbours — so say the rule out loud before you start hunting.',
+  ],
+
+  representations: [
+    'A row of cells, where neighbours are left and right',
+    'A rectangular grid, where the neighbour rule is stated before use',
+  ],
+
+  visuals: [ROW_OF_SIX, TIE_ROW, GRID_OF_NINE],
+  visualsById: {
+    row_of_six: ROW_OF_SIX,
+    tie_row: TIE_ROW,
+    grid_of_nine: GRID_OF_NINE,
+  },
+
+  workedExamples: [
+    {
+      id: 's32.we1',
+      prompt: 'In the row 626, 4188, 5353, 2126, 1552, 1555, which cells are supercells?',
+      steps: [
+        {
+          text: 'Check 626: its only neighbour is 4188, which is larger.',
+          reasoning: 'An end cell has one neighbour, and 626 does not beat it.',
+        },
+        {
+          text: 'Check 4188: it beats 626 but loses to 5353.',
+          reasoning: 'Losing to even one neighbour is enough to rule it out.',
+        },
+        {
+          text: 'Check 5353: it beats 4188 and 2126.',
+          reasoning: 'Larger than every neighbour, so it is a supercell.',
+        },
+        {
+          text: 'Check 1555: its only neighbour is 1552, and 1555 is larger.',
+          reasoning: 'An end cell can be a supercell — it just has fewer neighbours to beat.',
+        },
+      ],
+      answer: '5353 and 1555.',
+    },
+    {
+      id: 's32.we2',
+      prompt: 'In the row 340, 910, 910, 275, is either 910 a supercell?',
+      steps: [
+        {
+          text: 'Take the first 910. Its neighbours are 340 and 910.',
+          reasoning: 'List the neighbours before comparing.',
+        },
+        {
+          text: 'It beats 340, but it does not beat 910 — they are equal.',
+          reasoning: 'Equal is not larger, and the definition says larger than every neighbour.',
+        },
+        {
+          text: 'The same argument applies to the second 910.',
+          reasoning: 'Ties rule out both cells, not just one of them.',
+        },
+      ],
+      answer: 'Neither. A tie means no supercell.',
+    },
+    {
+      id: 's32.we3',
+      prompt:
+        'In the grid with rows (210, 640, 155), (480, 905, 320), (175, 260, 118), taking neighbours as up, down, left and right, which cells are supercells?',
+      steps: [
+        {
+          text: 'State the neighbour rule first: up, down, left, right.',
+          reasoning: 'In a grid the answer depends on the rule, so the rule comes first.',
+        },
+        {
+          text: 'Check 640: neighbours are 210, 155 and 905. It loses to 905.',
+          reasoning: 'The cell below it is larger, so it is out.',
+        },
+        {
+          text: 'Check 905: neighbours are 640, 175 wait — no. Its neighbours are 640 above, 260 below, 480 left and 320 right.',
+          reasoning:
+            'Corner cells are not neighbours under this rule. Listing them carefully is the whole task.',
+        },
+        {
+          text: '905 beats 640, 260, 480 and 320.',
+          reasoning: 'Larger than all four, so it is a supercell.',
+        },
+      ],
+      answer: 'Only 905.',
+    },
+  ],
+
+  misconceptionIds: [
+    'supercell_needs_only_one_bigger_neighbour',
+    'tie_counts_as_larger',
+    'neighbourhood_assumed_not_stated',
+    'largest_in_the_row_is_the_only_supercell',
+  ],
+
+  guidedPractice: [
+    {
+      id: 's32.g1',
+      prompt: 'In the row 12, 45, 45, 9, find every supercell.',
+      hint: 'What happens when two neighbours are equal?',
+      answer: 'None.',
+      rationale: 'Each 45 has an equal neighbour, and equal is not larger.',
+    },
+    {
+      id: 's32.g2',
+      prompt: 'In the row 88, 12, 90, 7, find every supercell.',
+      hint: 'Check the end cells too.',
+      answer: '88 and 90.',
+      rationale:
+        '88 beats its only neighbour 12; 90 beats 12 and 7. End cells count.',
+    },
+    {
+      id: 's32.g3',
+      prompt:
+        'Someone finds a supercell in a grid without saying which cells are neighbours. Why is that a problem?',
+      hint: 'Would the answer change if diagonals counted?',
+      answer: 'Because the answer depends on the rule.',
+      rationale:
+        'A cell can be a supercell under one neighbour rule and not under another, so the rule must be stated.',
+    },
+  ],
+
+  independentPractice: [
+    {
+      id: 's32.i1',
+      prompt: 'Row: 5, 9, 4. Which cells are supercells?',
+      answer: '9',
+      rationale: '9 beats both 5 and 4.',
+    },
+    {
+      id: 's32.i2',
+      prompt: 'Row: 700, 700. Which cells are supercells?',
+      answer: 'None.',
+      rationale: 'Each is equal to its only neighbour, and equal is not larger.',
+    },
+    {
+      id: 's32.i3',
+      prompt: 'Row: 31, 12, 28, 6. Which cells are supercells?',
+      answer: '31 and 28',
+      rationale: '31 beats 12; 28 beats 12 and 6.',
+    },
+    {
+      id: 's32.i4',
+      prompt:
+        'Can two cells that sit next to each other both be supercells? Explain.',
+      answer: 'No.',
+      rationale:
+        'Each would have to be larger than the other, which is impossible.',
+    },
+    {
+      id: 's32.i5',
+      prompt:
+        'A row has six cells and exactly one supercell. Where could it be? Give two possibilities.',
+      answer: 'Any position, including either end.',
+      rationale:
+        'Being at an end means fewer neighbours to beat, not that it cannot be a supercell.',
+    },
+  ],
+
+  reasoningApplication: [
+    {
+      id: 's32.r1',
+      prompt:
+        'Arrange the numbers 1 to 6 in a row so that there are exactly two supercells. Then explain why your arrangement works.',
+      expectedReasoning:
+        'Two peaks separated by a lower cell, e.g. 2, 6, 1, 5, 3, 4 — 6 and 5 each beat both neighbours, and no two supercells are adjacent because each would have to beat the other.',
+    },
+    {
+      id: 's32.r2',
+      prompt:
+        'A classmate says "the biggest number in the row is always a supercell." Is that true? Is the reverse true — is every supercell the biggest number in the row?',
+      expectedReasoning:
+        'The first is true when no neighbour ties it: the largest beats everything, so it beats its neighbours. The second is false — a small number can still beat both of its own neighbours.',
+    },
+  ],
+
+  interactivePractice: [],
+
+  summary:
+    'A supercell is larger than every one of its neighbours. Ties do not count, end cells can qualify, and in a grid you must say which cells are neighbours before you start.',
+  nextStep:
+    'Next: what patterns appear when numbers are placed along a number line.',
+
+  teacher: {
+    objective:
+      'Students apply a strict definition — larger than EVERY neighbour — and state the neighbour rule before answering.',
+    prerequisiteKnowledge: [
+      'Comparing multi-digit numbers',
+      '§3.1: a number means something only with what it counts',
+    ],
+    modelLanguage: [
+      '"List its neighbours first. Now, does it beat every one of them?"',
+      '"Equal is not larger."',
+    ],
+    teachingNotes: [
+      'Open with the textbook’s own supercell activity. Pragati has the verified contents structure for Chapter 3 but not a page-level reading of its exercises, so this draft teaches the idea the section names rather than reproducing the book’s tasks.',
+      'The tie case is the one worth slowing down on. Students scan for "the big one" and stop comparing; a tie forces them back to the definition.',
+      'When you move to a grid, ask the class what should count as a neighbour BEFORE you tell them. The question is mathematically real and the discussion is the lesson.',
+      'Do not introduce number-line patterns or digit patterns here — §3.3 and §3.4 own those.',
+    ],
+    quickChecks: [
+      'Row: 4, 4. Any supercells? Why not?',
+      'Can a cell at the end of a row be a supercell?',
+    ],
+    supportForStrugglingLearners: [
+      'Cover every cell except the one being tested and its neighbours, then compare just those.',
+      'Say the comparison out loud: "Is 4188 bigger than 626? Yes. Bigger than 5353? No. So not a supercell."',
+    ],
+    extension: [
+      'Arrange 1 to 9 in a three-by-three grid with exactly one supercell, then with as many as you can.',
+    ],
+    materialsNeeded: ['Squared paper', 'Number cards'],
+  },
+
+  reviewStatus: 'authored_draft',
+};
+
 /** Authored sections of Chapter 3, in the book's order. */
 export function numberPlayChapterSections(): AuthoredSection[] {
-  // §3.2 onward are not authored yet. §3.2 blocks on a `number_grid`
-  // representation; §3.3 and §3.4 block on their own. The list grows in
-  // book order and never out of it.
-  return [SECTION_3_1];
+  // §3.3 and §3.4 are not authored yet. §3.4 blocks on a place-value
+  // representation that does not exist. The list grows in book order and
+  // never out of it.
+  return [SECTION_3_1, SECTION_3_2];
 }
