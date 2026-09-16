@@ -34,6 +34,7 @@
 
 import type { AuthoredSection } from './authoredSection';
 import { misconceptionsForSection } from './fractionsMisconceptions';
+import { NUMBER_PLAY_MISCONCEPTIONS } from './numberPlayMisconceptions';
 import { SECTION_7_4_MISCONCEPTION_IDS } from './section74Misconceptions';
 
 export type RequirementStatus =
@@ -148,10 +149,17 @@ export function assessSection(
   // none for it. Counting only the registry reported the most
   // thoroughly audited section in the chapter as missing misconception
   // support — a false gap produced by the model, not by the content.
+  // v0.81 §A — this counted the Fractions registry and nothing else, so
+  // a Number Play section with four documented misconceptions was
+  // assessed as having none. The same class of false gap the §7.4 case
+  // above describes, one chapter wider: the content was fine and the
+  // model could not see it.
   const misconceptions =
     id === 'ncert_gp_c6_s7_4'
       ? SECTION_7_4_MISCONCEPTION_IDS.length
-      : misconceptionsForSection(id).length;
+      : misconceptionsForSection(id).length +
+        NUMBER_PLAY_MISCONCEPTIONS.filter((m) => m.sections.includes(id))
+          .length;
 
   // Every practice item carries a rationale, or the section cannot
   // explain a wrong answer to anyone.

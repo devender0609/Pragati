@@ -36,7 +36,7 @@ describe('§1 identity comes from the verified source, not from memory', () => {
     const authored = numberPlayChapterSections().map(
       (s) => s.source.sectionNumber
     );
-    expect(authored).toEqual(['3.1', '3.2']);
+    expect(authored).toEqual(['3.1', '3.2', '3.3']);
   });
 });
 

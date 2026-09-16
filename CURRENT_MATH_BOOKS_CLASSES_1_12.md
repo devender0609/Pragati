@@ -1,6 +1,6 @@
 # Current Mathematics sources, Classes 1–12
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.80.0. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.81.0. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 This document exists because a hand-written version of it contradicted
 the registry in v0.77.3. It is now derived from the same records the

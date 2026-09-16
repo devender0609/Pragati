@@ -24,7 +24,12 @@ export type NumberPlayMisconceptionId =
   | 'supercell_needs_only_one_bigger_neighbour'
   | 'tie_counts_as_larger'
   | 'neighbourhood_assumed_not_stated'
-  | 'largest_in_the_row_is_the_only_supercell';
+  | 'largest_in_the_row_is_the_only_supercell'
+  // §3.3 — errors about reading DISTANCE from a line, not about the
+  // numbers themselves.
+  | 'list_order_means_even_spacing'
+  | 'step_assumed_constant'
+  | 'position_read_from_label_not_length';
 
 export type NumberPlayMisconceptionRecord = {
   id: NumberPlayMisconceptionId;
@@ -135,5 +140,40 @@ export const NUMBER_PLAY_MISCONCEPTIONS: NumberPlayMisconceptionRecord[] = [
       'A smaller number can still beat both of its own neighbours. How many supercells does this row really have?',
     teacherNote:
       'Give a row with two clear peaks. It also sets up the reasoning task: two supercells can never sit next to each other.',
+  },
+  {
+    id: 'list_order_means_even_spacing',
+    description:
+      'Assumes numbers written next to each other in a list or table are close together, or evenly spaced, on a number line.',
+    sections: ['ncert_gp_c6_s3_3'],
+    diagnosticSignal:
+      'Answers that 10, 20 and 60 are evenly spaced, or places them at equal intervals.',
+    feedback:
+      'They are next to each other in the list, but look at the gaps: 10 to 20 is a small jump and 20 to 60 is a big one.',
+    teacherNote:
+      'Draw it before saying anything. Students see the gap immediately and the explanation then costs one sentence.',
+  },
+  {
+    id: 'step_assumed_constant',
+    description:
+      'Reads the first gap in a pattern and assumes every later gap is the same, without checking.',
+    sections: ['ncert_gp_c6_s3_3'],
+    diagnosticSignal:
+      'Continues 5, 10, 20 as 30 — adding the first step rather than testing whether the step changes.',
+    feedback:
+      'Check the second gap as well as the first. Does the step stay the same all the way along?',
+    teacherNote:
+      'Ask for the step between EVERY pair, written down, before anyone predicts the next number.',
+  },
+  {
+    id: 'position_read_from_label_not_length',
+    description:
+      'Judges which number is larger by where its label appears or how it is written, rather than by its distance along the line.',
+    sections: ['ncert_gp_c6_s3_3'],
+    diagnosticSignal: null,
+    feedback:
+      'On a number line, further right means larger. Measure the distance from 0 rather than reading the order the labels were written in.',
+    teacherNote:
+      'Show an unlabelled line with two marks and ask which is larger. Removing the labels removes the crutch.',
   },
 ];

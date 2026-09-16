@@ -42,7 +42,7 @@
 // ===========================================================================
 
 import type { AuthoredSection } from './authoredSection';
-import type { NumberGridSpec } from './visualSpecification';
+import type { NumberGridSpec, NumberLineSpec } from './visualSpecification';
 
 const SRC = 'https://ncert.nic.in/textbook/pdf/fegp1dd.zip';
 const BOOK = 'Ganita Prakash, Grade 6 (NCERT, Reprint 2026-27)';
@@ -700,10 +700,343 @@ export const SECTION_3_2: AuthoredSection = {
   reviewStatus: 'authored_draft',
 };
 
+
+// ===========================================================================
+// §3.3 — PATTERNS OF NUMBERS ON THE NUMBER LINE
+//
+// Authored on the EXISTING `NumberLineSpec`. This section was already
+// drawable in v0.79 and was deliberately left until now, because §3.2
+// comes before it in the book and a chapter must not grow in the order
+// its representations happen to arrive.
+//
+// The number line here is a whole-number line, not the fractional one
+// §7.4 uses. `ExactFraction` with denominator 1 is how this spec states
+// a whole number, so the same renderer serves both without a second
+// representation — the right reuse, as against inventing a parallel
+// integer line that would then drift.
+// ===========================================================================
+
+const whole = (n: number) => ({ numerator: n, denominator: 1 });
+
+const COUNT_BY_TENS: NumberLineSpec = {
+  type: 'number_line',
+  purpose: 'reveal_structure',
+  status: 'concept_specific',
+  min: whole(0),
+  max: whole(100),
+  partitions: 10,
+  labelTicks: true,
+  markedPoints: [
+    { value: whole(20), label: '20' },
+    { value: whole(50), label: '50' },
+    { value: whole(80), label: '80' },
+  ],
+  orientation: 'horizontal',
+  caption: 'Counting in tens: every jump is the same length.',
+  altText:
+    'A number line from 0 to 100 divided into ten equal intervals, with 20, 50 and 80 marked. The gap between consecutive marks is always the same.',
+};
+
+const UNEVEN_JUMPS: NumberLineSpec = {
+  type: 'number_line',
+  purpose: 'expose_misconception',
+  status: 'concept_specific',
+  min: whole(0),
+  max: whole(100),
+  partitions: 10,
+  labelTicks: true,
+  markedPoints: [
+    { value: whole(10), label: '10' },
+    { value: whole(20), label: '20' },
+    { value: whole(60), label: '60' },
+  ],
+  orientation: 'horizontal',
+  caption:
+    'These three are evenly spaced in the list, but not on the line.',
+  altText:
+    'A number line from 0 to 100 with 10, 20 and 60 marked. The gap from 10 to 20 is much shorter than the gap from 20 to 60, even though each is the next number written down.',
+};
+
+const DOUBLING: NumberLineSpec = {
+  type: 'number_line',
+  purpose: 'reveal_structure',
+  status: 'concept_specific',
+  min: whole(0),
+  max: whole(80),
+  partitions: 8,
+  labelTicks: true,
+  markedPoints: [
+    { value: whole(5), label: '5' },
+    { value: whole(10), label: '10' },
+    { value: whole(20), label: '20' },
+    { value: whole(40), label: '40' },
+    { value: whole(80), label: '80' },
+  ],
+  orientation: 'horizontal',
+  caption: 'Doubling: each jump is longer than the one before it.',
+  altText:
+    'A number line from 0 to 80 with 5, 10, 20, 40 and 80 marked. Each gap is twice the length of the previous gap, so the marks spread out as they go right.',
+};
+
+export const SECTION_3_3: AuthoredSection = {
+  contentArtifactId: 'ncert_gp_c6_s3_3_lesson',
+  contentArtifactVersion: 1,
+  source: source(
+    '3.3',
+    'Patterns of Numbers on the Number Line',
+    59,
+    'ncert_gp_c6_s3_3'
+  ),
+
+  competencyCandidates: [
+    {
+      id: 'MIDDLE:C-1.1',
+      justification:
+        'Placing whole numbers on a line and reading the spacing between them is number sense. Proposed by a maintainer and not reviewed.',
+    },
+  ],
+  competencyMappingStatus: 'competency_proposed',
+
+  sequence: {
+    prerequisiteSectionIds: ['ncert_gp_c6_s3_1', 'ncert_gp_c6_s3_2'],
+    mayAssume: [
+      'Comparing whole numbers (§3.1, §3.2)',
+      'Counting on in steps',
+      'Reading a scale with equal intervals',
+    ],
+    mustNotIntroduce: [
+      { concept: 'Digit and place-value patterns', belongsToSection: 'ncert_gp_c6_s3_4' },
+      // The line here carries whole numbers only. Fractional positions
+      // belong to Chapter 7 and arrive with their own teaching.
+      { concept: 'Fractions on the number line', belongsToSection: 'ncert_gp_c6_s7_4' },
+    ],
+  },
+
+  learningGoal:
+    'You will read a pattern from the SPACING of numbers on a line, not just from the numbers themselves.',
+
+  priorKnowledgeCheck: {
+    prompt: 'Before you start, can you do these?',
+    checks: [
+      'Count on in tens from 0 to 100.',
+      'On a line from 0 to 10, roughly where does 7 go?',
+      'Which is further from 0: 12 or 21?',
+    ],
+    ifNotReady:
+      'Practise counting on in steps out loud, and mark numbers on a line you draw yourself.',
+  },
+
+  vocabulary: [
+    { term: 'number line', meaning: 'A line where each position stands for a number.' },
+    { term: 'interval', meaning: 'The gap between two marks on the line.' },
+    { term: 'step', meaning: 'How much you add each time you jump along the line.' },
+  ],
+
+  explanation: [
+    'A number line turns numbers into positions. The further right a number sits, the larger it is.',
+    'Because positions have length, a number line shows you something a list cannot: how far apart numbers are.',
+    'Count in tens: 0, 10, 20, 30. On the line, every jump is the same length. A constant step looks like even spacing.',
+    'Now mark 10, 20 and 60. In your list they are the first, second and third numbers — evenly spaced as a list. On the line they are not: the jump from 20 to 60 is four times the jump from 10 to 20.',
+    'That is the whole idea of this section. Being next to each other in a list says nothing about being close together on a line.',
+    'Some patterns grow by adding the same amount each time, and those spread evenly. Others grow by doubling — 5, 10, 20, 40, 80 — and those spread out more and more as you go right.',
+    'So when you meet a pattern, ask two questions: what is the step, and does the step stay the same?',
+  ],
+
+  representations: [
+    'A whole-number line with equal intervals',
+    'Marked points whose spacing carries the pattern',
+  ],
+
+  visuals: [COUNT_BY_TENS, UNEVEN_JUMPS, DOUBLING],
+  visualsById: {
+    count_by_tens: COUNT_BY_TENS,
+    uneven_jumps: UNEVEN_JUMPS,
+    doubling: DOUBLING,
+  },
+
+  workedExamples: [
+    {
+      id: 's33.we1',
+      prompt: 'On a line from 0 to 100, mark 20, 50 and 80. What do you notice about the gaps?',
+      steps: [
+        {
+          text: 'From 20 to 50 is a jump of 30.',
+          reasoning: 'Subtract to find the size of the gap.',
+        },
+        {
+          text: 'From 50 to 80 is also a jump of 30.',
+          reasoning: 'Same step, so the same length on the line.',
+        },
+        {
+          text: 'The marks are evenly spaced.',
+          reasoning: 'A constant step always looks like even spacing.',
+        },
+      ],
+      answer: 'The gaps are equal — each is 30.',
+    },
+    {
+      id: 's33.we2',
+      prompt: '10, 20 and 60 are written next to each other in a list. Are they evenly spaced on the line?',
+      steps: [
+        {
+          text: 'Gap from 10 to 20 is 10.',
+          reasoning: 'Read the step, do not assume it.',
+        },
+        {
+          text: 'Gap from 20 to 60 is 40.',
+          reasoning: 'Four times the first gap.',
+        },
+        {
+          text: 'So no — next to each other in the list, far apart on the line.',
+          reasoning:
+            'Position in a list is about order; position on a line is about size.',
+        },
+      ],
+      answer: 'No. The second gap is four times the first.',
+    },
+    {
+      id: 's33.we3',
+      prompt: 'Describe the pattern 5, 10, 20, 40, 80 by its steps.',
+      steps: [
+        {
+          text: 'The steps are 5, 10, 20 and 40.',
+          reasoning: 'Each gap is the difference between consecutive numbers.',
+        },
+        {
+          text: 'The step is not constant — it doubles each time.',
+          reasoning: 'So this is not counting on; it is doubling.',
+        },
+        {
+          text: 'On the line, the marks spread further apart as you go right.',
+          reasoning: 'A growing step looks like widening gaps.',
+        },
+      ],
+      answer: 'The step doubles, so the gaps widen.',
+    },
+  ],
+
+  misconceptionIds: [
+    'list_order_means_even_spacing',
+    'step_assumed_constant',
+    'position_read_from_label_not_length',
+  ],
+
+  guidedPractice: [
+    {
+      id: 's33.g1',
+      prompt: '3, 6, 9, 12. What is the step, and will the gaps be even?',
+      hint: 'Subtract each pair.',
+      answer: 'Step 3; yes, even.',
+      rationale: 'A constant step gives equal gaps on the line.',
+    },
+    {
+      id: 's33.g2',
+      prompt: '1, 2, 4, 8. What is the step, and will the gaps be even?',
+      hint: 'Is the step the same each time?',
+      answer: 'The step doubles; no, the gaps widen.',
+      rationale: 'A growing step spreads the marks out.',
+    },
+    {
+      id: 's33.g3',
+      prompt:
+        'Two numbers are written side by side in a table. Does that mean they are close together on a number line?',
+      hint: 'Think about 10 and 60.',
+      answer: 'No.',
+      rationale: 'A table shows order; a line shows distance.',
+    },
+  ],
+
+  independentPractice: [
+    {
+      id: 's33.i1',
+      prompt: 'Find the step: 4, 8, 12, 16.',
+      answer: '4',
+      rationale: 'Each number is 4 more than the one before.',
+    },
+    {
+      id: 's33.i2',
+      prompt: 'Find the step: 100, 90, 80, 70.',
+      answer: '−10 (counting back in tens)',
+      rationale: 'The step can be a subtraction; the gaps are still equal.',
+    },
+    {
+      id: 's33.i3',
+      prompt: 'Which spreads out faster on a line: adding 10 each time, or doubling each time?',
+      answer: 'Doubling',
+      rationale: 'A constant step keeps gaps equal; a doubling step grows them.',
+    },
+    {
+      id: 's33.i4',
+      prompt: 'On a line from 0 to 50, which is further from 0: 18 or 31?',
+      answer: '31',
+      rationale: 'Further right means larger means further from 0.',
+    },
+    {
+      id: 's33.i5',
+      prompt: '2, 4, 6, 20. Is this a constant step?',
+      answer: 'No.',
+      rationale: 'The first three steps are 2, then the last is 14.',
+    },
+  ],
+
+  reasoningApplication: [
+    {
+      id: 's33.r1',
+      prompt:
+        'Ishita says "these numbers are next to each other in my table, so they must be close together." Draw a number line that shows her she is wrong.',
+      expectedReasoning:
+        'Any line marking two adjacent table entries that are far apart, e.g. 10 and 60 — adjacency in a table is order, not distance.',
+    },
+    {
+      id: 's33.r2',
+      prompt:
+        'Make up a pattern of five numbers whose gaps get smaller as you go right, and explain how you knew it would.',
+      expectedReasoning:
+        'Any shrinking step, e.g. 0, 40, 60, 70, 75 — the step halves each time, so the marks bunch up.',
+    },
+  ],
+
+  interactivePractice: [],
+
+  summary:
+    'A number line shows distance, not just order. Ask what the step is and whether it stays the same: a constant step spaces marks evenly, a growing step spreads them out.',
+  nextStep:
+    'Next: what happens when you look inside the digits of a number rather than at the number as a whole.',
+
+  teacher: {
+    objective:
+      'Students read a pattern from spacing on a line, and stop treating list adjacency as closeness.',
+    prerequisiteKnowledge: ['Comparing whole numbers', 'Counting on in steps'],
+    modelLanguage: [
+      '"What is the step? Does it stay the same?"',
+      '"Next to each other in the list is not the same as close together on the line."',
+    ],
+    teachingNotes: [
+      'Open with the textbook’s own activity for this section. Pragati has the verified contents structure for Chapter 3 but not a page-level reading of its exercises.',
+      'The 10, 20, 60 example is the hinge. Draw it before you say anything, and let them notice the gap themselves.',
+      'Keep the line to whole numbers. Fractional positions belong to Chapter 7 and arrive with their own teaching.',
+      'Do not introduce digit or place-value patterns — §3.4 owns those.',
+    ],
+    quickChecks: [
+      '5, 10, 15 — even gaps or not?',
+      '5, 10, 40 — even gaps or not?',
+    ],
+    supportForStrugglingLearners: [
+      'Use a ruler or a metre tape as the line so the distance is physical.',
+      'Write the step between each pair of numbers before drawing anything.',
+    ],
+    extension: [
+      'Find a pattern whose gaps shrink but never reach zero. What happens to the marks?',
+    ],
+    materialsNeeded: ['Metre tape or ruler', 'Squared paper'],
+  },
+
+  reviewStatus: 'authored_draft',
+};
+
 /** Authored sections of Chapter 3, in the book's order. */
 export function numberPlayChapterSections(): AuthoredSection[] {
-  // §3.3 and §3.4 are not authored yet. §3.4 blocks on a place-value
-  // representation that does not exist. The list grows in book order and
-  // never out of it.
-  return [SECTION_3_1, SECTION_3_2];
+  // §3.4 is not authored: it blocks on a place-value representation
+  // that does not exist. See V0.81_REPORT.md §C for the specification.
+  return [SECTION_3_1, SECTION_3_2, SECTION_3_3];
 }

@@ -38,7 +38,15 @@
 // fingerprint is `a1a3ff57`. Nothing here touches it.
 
 import { fingerprintOf } from './contentArtifact';
-import { fractionsChapterSections, authoredSectionById } from './fractionsChapter';
+// v0.81 §A — the packaging system used to import the Fractions
+// accessors directly, so it could only ever see one chapter. Number Play
+// §3.1 and §3.2 were complete drafts with no route to a reviewer. It now
+// reads the cross-chapter registry.
+import {
+  allAuthoredSections,
+  anyAuthoredSectionById as authoredSectionById,
+  authoredSectionsForChapter,
+} from './authoredSections';
 import { assessSection } from './instructionalCompleteness';
 import type { ReviewRecord } from './educatorReview';
 
@@ -182,8 +190,11 @@ export function questionsForSection(officialSectionId: string): ReviewQuestion[]
 }
 
 /** The seven sections needing a package. Derived, never hard-coded. */
-export function sectionsNeedingPackages(): string[] {
-  return fractionsChapterSections()
+export function sectionsNeedingPackages(officialChapterId?: string): string[] {
+  const sections = officialChapterId
+    ? authoredSectionsForChapter(officialChapterId)
+    : allAuthoredSections();
+  return sections
     .filter((s) => {
       const id = s.source.officialSectionId;
       if (id === ALREADY_PACKAGED) return false;
