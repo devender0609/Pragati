@@ -43,6 +43,11 @@
 
 import type { AuthoredSection } from './authoredSection';
 import type { NumberGridSpec, NumberLineSpec } from './visualSpecification';
+import {
+  SECTION_3_1_PRACTICE,
+  SECTION_3_2_PRACTICE,
+  SECTION_3_3_PRACTICE,
+} from './numberPlayPracticeItems';
 
 const SRC = 'https://ncert.nic.in/textbook/pdf/fegp1dd.zip';
 const BOOK = 'Ganita Prakash, Grade 6 (NCERT, Reprint 2026-27)';
@@ -304,7 +309,7 @@ export const SECTION_3_1: AuthoredSection = {
   // aligns items by official section ID, and authoring items for §3.1
   // before the chapter's item bank exists would create practice with no
   // bank behind it.
-  interactivePractice: [],
+  interactivePractice: SECTION_3_1_PRACTICE,
 
   summary:
     'A number tells you something only when you know what it counts. Comparing two numbers means comparing two situations — and whether "more" is good depends entirely on what is being counted.',
@@ -659,7 +664,7 @@ export const SECTION_3_2: AuthoredSection = {
     },
   ],
 
-  interactivePractice: [],
+  interactivePractice: SECTION_3_2_PRACTICE,
 
   summary:
     'A supercell is larger than every one of its neighbours. Ties do not count, end cells can qualify, and in a grid you must say which cells are neighbours before you start.',
@@ -996,7 +1001,7 @@ export const SECTION_3_3: AuthoredSection = {
     },
   ],
 
-  interactivePractice: [],
+  interactivePractice: SECTION_3_3_PRACTICE,
 
   summary:
     'A number line shows distance, not just order. Ask what the step is and whether it stays the same: a constant step spaces marks evenly, a growing step spreads them out.',

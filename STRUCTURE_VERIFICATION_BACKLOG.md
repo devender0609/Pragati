@@ -1,6 +1,6 @@
 # Structure Verification Backlog — classes awaiting primary evidence
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.81.0. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.0. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 

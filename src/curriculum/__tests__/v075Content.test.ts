@@ -1,5 +1,6 @@
 // v0.75 §21/§22/§36 — REVIEW PACKAGES AND §7.9 COMPLETION.
 
+import { FRACTIONS_CHAPTER_ID } from '../authoredSections';
 import { describe, it, expect } from 'vitest';
 import {
   sectionsNeedingPackages, sectionReviewRecords,
@@ -16,12 +17,17 @@ const url = (p: string) => new URL(`../../../${p}`, import.meta.url);
 
 describe('§21 packages are section-scoped, not Package B clones', () => {
   it('builds one for every complete draft except the frozen §7.4', () => {
-    expect(sectionsNeedingPackages()).toHaveLength(8);
-    expect(sectionsNeedingPackages()).not.toContain(ALREADY_PACKAGED);
+    expect(sectionsNeedingPackages(FRACTIONS_CHAPTER_ID)).toHaveLength(8);
+    expect(sectionsNeedingPackages(FRACTIONS_CHAPTER_ID)).not.toContain(ALREADY_PACKAGED);
   });
 
   it('gives each package its own artifact and fingerprint', () => {
-    const recs = sectionReviewRecords();
+    // v0.82 — `sectionReviewRecords()` is now product-wide, and this
+    // test is about the Chapter 7 package set. Scope it rather than
+    // widening the pattern, which would stop it checking anything.
+    const recs = sectionReviewRecords().filter((r) =>
+      r.contentArtifactId?.startsWith('ncert_gp_c6_s7_')
+    );
     const fps = new Set(recs.map((r) => sectionFingerprint(r.contentArtifactId!.replace('_lesson', ''))));
     expect(fps.size).toBe(recs.length);
     for (const r of recs) {
@@ -51,7 +57,7 @@ describe('§21 packages are section-scoped, not Package B clones', () => {
   });
 
   it('stays far shorter than 37 questions per section', () => {
-    for (const id of sectionsNeedingPackages()) {
+    for (const id of sectionsNeedingPackages(FRACTIONS_CHAPTER_ID)) {
       const n = questionsForSection(id).length;
       expect(n).toBeGreaterThan(8);
       expect(n).toBeLessThanOrEqual(20);
@@ -84,7 +90,7 @@ describe('§21 packages are section-scoped, not Package B clones', () => {
   it('leaves the §7.4 frozen identity untouched', () => {
     expect(computeContentFingerprint()).toBe('a1a3ff57');
     // §7.4 must not acquire a generated code alongside its frozen one.
-    expect(sectionsNeedingPackages()).not.toContain('ncert_gp_c6_s7_4');
+    expect(sectionsNeedingPackages(FRACTIONS_CHAPTER_ID)).not.toContain('ncert_gp_c6_s7_4');
   });
 });
 

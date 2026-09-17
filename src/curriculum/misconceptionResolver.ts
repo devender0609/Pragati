@@ -48,6 +48,10 @@ import {
   type FractionsMisconceptionId,
   type MisconceptionRecord,
 } from './fractionsMisconceptions';
+import {
+  NUMBER_PLAY_MISCONCEPTIONS,
+  type NumberPlayMisconceptionId,
+} from './numberPlayMisconceptions';
 
 export type MisconceptionSource =
   /** The four values frozen inside the §7.4 fingerprint payload. */
@@ -57,7 +61,11 @@ export type MisconceptionSource =
 
 export type MisconceptionRef =
   | { source: 'section_7_4_map'; id: MisconceptionId }
-  | { source: 'fractions_chapter_registry'; id: FractionsMisconceptionId };
+  | { source: 'fractions_chapter_registry'; id: FractionsMisconceptionId }
+  // v0.82 — a reference, per chapter registry, exactly as the design
+  // note above intends. Adding a chapter adds a member here; it does
+  // not widen either existing enum, so §7.4's payload is untouched.
+  | { source: 'number_play_chapter_registry'; id: NumberPlayMisconceptionId };
 
 export type ResolvedMisconception = {
   ref: MisconceptionRef;
@@ -76,7 +84,20 @@ export type ResolvedMisconception = {
   record: MisconceptionRecord | null;
 };
 
-const REGISTRY = new Map(FRACTIONS_MISCONCEPTIONS.map((m) => [m.id, m]));
+// v0.82 — every chapter registry, keyed by id. The records share a
+// shape, so resolution does not care which chapter an id came from; the
+// only thing that had to change is which maps are loaded.
+// The two record types are structurally identical for everything the
+// resolver reads — id, description, sections, diagnosticSignal,
+// feedback, teacherNote — so one map serves both.
+const REGISTRY = new Map<string, MisconceptionRecord>([
+  ...FRACTIONS_MISCONCEPTIONS.map(
+    (m) => [m.id as string, m as MisconceptionRecord] as const
+  ),
+  ...NUMBER_PLAY_MISCONCEPTIONS.map(
+    (m) => [m.id as string, m as unknown as MisconceptionRecord] as const
+  ),
+]);
 
 export function isSection74MisconceptionId(id: string): id is MisconceptionId {
   return Object.prototype.hasOwnProperty.call(MISCONCEPTION_FEEDBACK, id);
@@ -139,9 +160,19 @@ export function assertDiagnosable(ref: MisconceptionRef): ResolvedMisconception 
   return r;
 }
 
-/** Convenience for the common case: a chapter-registry reference. */
-export function chapterRef(id: FractionsMisconceptionId): MisconceptionRef {
-  return { source: 'fractions_chapter_registry', id };
+/**
+ * Convenience for the common case: a chapter-registry reference.
+ *
+ * Which registry is decided by the id itself rather than by a caller
+ * argument, so an item cannot attach a Number Play error and label it
+ * as a Fractions one.
+ */
+export function chapterRef(
+  id: FractionsMisconceptionId | NumberPlayMisconceptionId
+): MisconceptionRef {
+  return NUMBER_PLAY_MISCONCEPTIONS.some((m) => m.id === id)
+    ? { source: 'number_play_chapter_registry', id: id as NumberPlayMisconceptionId }
+    : { source: 'fractions_chapter_registry', id: id as FractionsMisconceptionId };
 }
 
 /** Convenience for the frozen §7.4 four. */

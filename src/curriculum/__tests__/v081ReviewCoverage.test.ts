@@ -71,19 +71,28 @@ describe('§A completeness counts every chapter’s misconceptions', () => {
 });
 
 describe('§A the remaining gaps are reported honestly', () => {
-  it('Number Play sections are INCOMPLETE drafts, and say why', () => {
-    // v0.79 and v0.80 reported these as authored. True — and by the
-    // product's own standard they are not yet complete, which neither
-    // report checked. Every one still lacks interactive practice, and
-    // §3.1 has no visual. Until those close, no package can be emitted
-    // for them, and that is the correct behaviour rather than a bug.
-    for (const s of numberPlayChapterSections()) {
-      const a = assessSection(s);
-      expect(a.level, s.source.sectionNumber).toBe('incomplete_draft');
-      expect(a.gaps, s.source.sectionNumber).toContain('no interactive practice');
+  it('§3.2 and §3.3 are complete drafts once practice exists', () => {
+    // v0.81 found all three incomplete for want of interactive
+    // practice. v0.82 authored it, and the gap closed for two of them.
+    const by = (n: string) =>
+      numberPlayChapterSections().find((s) => s.source.sectionNumber === n)!;
+    for (const n of ['3.2', '3.3']) {
+      const a = assessSection(by(n));
+      expect(a.level, n).toBe('complete_instructional_draft');
+      expect(a.gaps, n).toEqual([]);
     }
-    expect(assessSection(numberPlayChapterSections()[0]).gaps).toContain(
-      'no visual'
+  });
+
+  it('§3.1 is complete only because its visual requirement is waived', () => {
+    // The waiver is a judgement a reviewer may overturn, and it is
+    // recorded where a reviewer will see it rather than asserted here.
+    const a = assessSection(
+      numberPlayChapterSections().find((s) => s.source.sectionNumber === '3.1')!
     );
+    expect(a.visualRequirement.required).toBe(false);
+    if (a.visualRequirement.required === false) {
+      expect(a.visualRequirement.reason).toMatch(/decorative/i);
+    }
+    expect(a.level).toBe('complete_instructional_draft');
   });
 });

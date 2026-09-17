@@ -14,6 +14,7 @@
 //
 // Regenerate:  PRAGATI_EMIT_DOCS=1 npx vitest run v078ReviewScope
 
+import { FRACTIONS_CHAPTER_ID } from '../authoredSections';
 import { describe, it, expect } from 'vitest';
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 import {
@@ -29,7 +30,7 @@ const fileFor = (id: string) => {
 };
 
 // §7.4's package is frozen and is never regenerated.
-const ids = sectionsNeedingPackages();
+const ids = sectionsNeedingPackages(FRACTIONS_CHAPTER_ID);
 
 if (process.env.PRAGATI_EMIT_DOCS) {
   for (const id of ids) writeFileSync(fileFor(id), sectionPackageMarkdown(id));

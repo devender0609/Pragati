@@ -35,6 +35,7 @@ import {
   type ExactFraction,
 } from './visualSpecification';
 import type { FractionsMisconceptionId } from './fractionsMisconceptions';
+import type { NumberPlayMisconceptionId } from './numberPlayMisconceptions';
 import {
   resolveMisconception,
   chapterRef,
@@ -86,7 +87,17 @@ export type Choice = {
    *
    * Setting both is a mistake and `auditItemMisconceptions` reports it.
    */
-  chapterMisconceptionId?: FractionsMisconceptionId;
+  /**
+   * v0.82 — widened from `FractionsMisconceptionId`.
+   *
+   * A third instance of the scoping defect v0.81 §A found twice: the
+   * type that lets a distractor name the error it diagnoses could only
+   * name a Fractions error, so a Number Play item was structurally
+   * incapable of carrying a diagnosis. The §7.4 payload is unaffected —
+   * its choices never set this key, so the frozen fingerprint does not
+   * move.
+   */
+  chapterMisconceptionId?: FractionsMisconceptionId | NumberPlayMisconceptionId;
 };
 
 type Base = {
@@ -178,7 +189,17 @@ export type AreaModelOption = {
   /** Screen-reader text. Describes the partition, not the answer. */
   altText: string;
   misconceptionId?: MisconceptionId;
-  chapterMisconceptionId?: FractionsMisconceptionId;
+  /**
+   * v0.82 — widened from `FractionsMisconceptionId`.
+   *
+   * A third instance of the scoping defect v0.81 §A found twice: the
+   * type that lets a distractor name the error it diagnoses could only
+   * name a Fractions error, so a Number Play item was structurally
+   * incapable of carrying a diagnosis. The §7.4 payload is unaffected —
+   * its choices never set this key, so the frozen fingerprint does not
+   * move.
+   */
+  chapterMisconceptionId?: FractionsMisconceptionId | NumberPlayMisconceptionId;
 };
 
 export type AreaModelSelectionItem = Base & {
@@ -312,7 +333,17 @@ function diagnosed(ref: MisconceptionRef): Judgement {
  */
 export function refForOption(o: {
   misconceptionId?: MisconceptionId | null;
-  chapterMisconceptionId?: FractionsMisconceptionId;
+  /**
+   * v0.82 — widened from `FractionsMisconceptionId`.
+   *
+   * A third instance of the scoping defect v0.81 §A found twice: the
+   * type that lets a distractor name the error it diagnoses could only
+   * name a Fractions error, so a Number Play item was structurally
+   * incapable of carrying a diagnosis. The §7.4 payload is unaffected —
+   * its choices never set this key, so the frozen fingerprint does not
+   * move.
+   */
+  chapterMisconceptionId?: FractionsMisconceptionId | NumberPlayMisconceptionId;
 }): MisconceptionRef | null {
   if (o.misconceptionId) return section74Ref(o.misconceptionId);
   if (o.chapterMisconceptionId) return chapterRef(o.chapterMisconceptionId);
@@ -433,7 +464,17 @@ export function auditItemMisconceptions(
     isCorrectOption: boolean,
     o: {
       misconceptionId?: MisconceptionId | null;
-      chapterMisconceptionId?: FractionsMisconceptionId;
+      /**
+   * v0.82 — widened from `FractionsMisconceptionId`.
+   *
+   * A third instance of the scoping defect v0.81 §A found twice: the
+   * type that lets a distractor name the error it diagnoses could only
+   * name a Fractions error, so a Number Play item was structurally
+   * incapable of carrying a diagnosis. The §7.4 payload is unaffected —
+   * its choices never set this key, so the frozen fingerprint does not
+   * move.
+   */
+  chapterMisconceptionId?: FractionsMisconceptionId | NumberPlayMisconceptionId;
     }
   ) => {
     if (o.misconceptionId && o.chapterMisconceptionId) {

@@ -113,6 +113,22 @@ const WAIVERS: Record<
   string,
   Partial<Record<'visual' | 'interaction' | 'reasoning' | 'misconception', string>>
 > = {
+  // v0.82 §B — §3.1 teaches that a number carries information only
+  // alongside what it counts. The work is choosing an interpretation,
+  // and there is no mathematical object to draw: a picture of "12
+  // students" would be twelve stick figures, which illustrates the
+  // sentence without teaching the idea, and a bar chart would import
+  // comparison machinery the section deliberately does not use yet.
+  // Decorative or misleading, so waived rather than faked.
+  //
+  // Interaction is NOT waived. It is authored: three multiple-choice
+  // items whose distractors are the interpretations students actually
+  // make.
+  ncert_gp_c6_s3_1: {
+    visual:
+      'The section is about interpreting a number in context. Any drawing would either illustrate the sentence decoratively (twelve stick figures for "12 students") or import comparison machinery from later sections. A reviewer may disagree.',
+  },
+
   ncert_gp_c6_s7_9: {
     visual:
       'A history and context section. v0.72 §17 considered a timeline and concluded a decorative one would add no mathematical learning; a sourced facsimile is a rights and authoring decision for review, not a completeness gap.',
