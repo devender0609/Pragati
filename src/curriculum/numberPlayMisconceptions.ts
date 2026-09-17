@@ -14,10 +14,14 @@
 // ===========================================================================
 
 export type NumberPlayMisconceptionId =
-  | 'bigger_number_always_better'
-  | 'number_without_its_unit'
-  | 'compares_across_different_wholes'
-  | 'reads_position_as_value'
+  // v0.82.1 — the previous four described errors in a lesson that
+  // taught the wrong mathematics. These are the errors the SOURCE's
+  // mathematics actually produces: counting the wrong things, or
+  // forgetting that an end position has one neighbour.
+  | 'counts_all_taller_not_adjacent'
+  | 'counts_shorter_neighbours'
+  | 'end_position_given_two_neighbours'
+  | 'reads_code_as_height'
   // §3.2 — all four are errors about the DEFINITION, not about
   // comparing numbers. Students can compare 4188 and 5353 perfectly well
   // and still get every supercell wrong.
@@ -27,9 +31,10 @@ export type NumberPlayMisconceptionId =
   | 'largest_in_the_row_is_the_only_supercell'
   // §3.3 — errors about reading DISTANCE from a line, not about the
   // numbers themselves.
-  | 'list_order_means_even_spacing'
-  | 'step_assumed_constant'
-  | 'position_read_from_label_not_length';
+  | 'assumes_line_starts_at_zero'
+  | 'assumes_ticks_step_by_one'
+  | 'ignores_scale_reads_picture'
+  | 'places_by_digit_appearance';
 
 export type NumberPlayMisconceptionRecord = {
   id: NumberPlayMisconceptionId;
@@ -41,56 +46,6 @@ export type NumberPlayMisconceptionRecord = {
 };
 
 export const NUMBER_PLAY_MISCONCEPTIONS: NumberPlayMisconceptionRecord[] = [
-  {
-    id: 'bigger_number_always_better',
-    description:
-      'Treats a larger number as automatically the better or preferred one, regardless of what is being counted.',
-    sections: ['ncert_gp_c6_s3_1'],
-    // A student choosing the larger number is not evidence on its own:
-    // in most questions the larger number IS the right answer. Only an
-    // item where "more" is worse — mistakes, absences, cost — separates
-    // the two, and this section has such items.
-    diagnosticSignal:
-      'Chooses the larger number on an item where more of the quantity is worse (mistakes made, days absent).',
-    feedback:
-      'A bigger number is not always better news. It depends what is being counted — more runs is good, more mistakes is not.',
-    teacherNote:
-      'Ask what the number counts before asking which is bigger. Students who answer fast are usually comparing digits, not meaning.',
-  },
-  {
-    id: 'number_without_its_unit',
-    description:
-      'Reports or compares a bare number and drops what it was counting, so the number stops meaning anything.',
-    sections: ['ncert_gp_c6_s3_1'],
-    diagnosticSignal: null,
-    feedback:
-      'A number on its own does not tell you much. Say what it counts: 12 what?',
-    teacherNote:
-      'Insist on the noun every time — "12 students", not "12". This is the habit the whole chapter rests on, and it is cheap to build here and expensive to repair later.',
-  },
-  {
-    id: 'compares_across_different_wholes',
-    description:
-      'Compares two counts taken from groups of different sizes as though they were directly comparable.',
-    sections: ['ncert_gp_c6_s3_1'],
-    diagnosticSignal:
-      'Declares the larger raw count the winner when the two groups are stated to be different sizes.',
-    feedback:
-      'Both counts came from groups of different sizes, so the bigger count does not settle it. What would make this a fair comparison?',
-    teacherNote:
-      'This is the seed of proportional reasoning and it appears here in a form students can argue about without any fractions. Let them argue.',
-  },
-  {
-    id: 'reads_position_as_value',
-    description:
-      'Reads where a number sits in a list or table as a claim about its size, rather than reading the number itself.',
-    sections: ['ncert_gp_c6_s3_1'],
-    diagnosticSignal: null,
-    feedback:
-      'Being first in the list does not make it the largest. Read the numbers, not the order they are written in.',
-    teacherNote:
-      'Show the same data in two different orders and ask whether anything changed. Nothing did, and that surprises them.',
-  },
   {
     id: 'supercell_needs_only_one_bigger_neighbour',
     description:
@@ -142,38 +97,98 @@ export const NUMBER_PLAY_MISCONCEPTIONS: NumberPlayMisconceptionRecord[] = [
       'Give a row with two clear peaks. It also sets up the reasoning task: two supercells can never sit next to each other.',
   },
   {
-    id: 'list_order_means_even_spacing',
+    id: 'counts_all_taller_not_adjacent',
     description:
-      'Assumes numbers written next to each other in a list or table are close together, or evenly spaced, on a number line.',
-    sections: ['ncert_gp_c6_s3_3'],
+      'Counts every taller object anywhere in the row rather than only the ones directly beside this position.',
+    sections: ['ncert_gp_c6_s3_1'],
     diagnosticSignal:
-      'Answers that 10, 20 and 60 are evenly spaced, or places them at equal intervals.',
+      'Reports a number larger than 2 for a middle position, which only the whole-row count can produce.',
     feedback:
-      'They are next to each other in the list, but look at the gaps: 10 to 20 is a small jump and 20 to 60 is a big one.',
+      'Only the positions directly next to this one count. How many of those two are taller?',
     teacherNote:
-      'Draw it before saying anything. Students see the gap immediately and the explanation then costs one sentence.',
+      'Cover the rest of the row with a hand. The error disappears when the distant objects are out of sight.',
   },
   {
-    id: 'step_assumed_constant',
+    id: 'counts_shorter_neighbours',
     description:
-      'Reads the first gap in a pattern and assumes every later gap is the same, without checking.',
-    sections: ['ncert_gp_c6_s3_3'],
-    diagnosticSignal:
-      'Continues 5, 10, 20 as 30 — adding the first step rather than testing whether the step changes.',
+      'Counts the neighbours that are SHORTER instead of taller, so the code comes out reversed.',
+    sections: ['ncert_gp_c6_s3_1'],
+    // A reversed count is not distinguishable from a careless one on a
+    // single position; it shows in a whole row, which a single response
+    // does not give us.
+    diagnosticSignal: null,
     feedback:
-      'Check the second gap as well as the first. Does the step stay the same all the way along?',
+      'Check which way round you are counting: this number reports the TALLER neighbours.',
     teacherNote:
-      'Ask for the step between EVERY pair, written down, before anyone predicts the next number.',
+      'Ask for the whole row rather than one position. A consistent reversal is obvious across five answers and invisible in one.',
   },
   {
-    id: 'position_read_from_label_not_length',
+    id: 'end_position_given_two_neighbours',
     description:
-      'Judges which number is larger by where its label appears or how it is written, rather than by its distance along the line.',
+      'Treats a position at either end of the row as though it had a neighbour on both sides.',
+    sections: ['ncert_gp_c6_s3_1'],
+    diagnosticSignal:
+      'Reports 2 for an end position, or accepts a proposed code that begins or ends with 2.',
+    feedback:
+      'This one is at the end of the row. How many positions are actually next to it?',
+    teacherNote:
+      'Two facts carry most of this section: an end has one neighbour, and the tallest reports 0. Most impossibility arguments come from one of them.',
+  },
+  {
+    id: 'reads_code_as_height',
+    description:
+      'Reads the reported number as a height or a rank rather than as a count of taller neighbours.',
+    sections: ['ncert_gp_c6_s3_1'],
+    diagnosticSignal: null,
+    feedback:
+      'That number is not how tall it is, and not its place in the line. It counts something.',
+    teacherNote:
+      'Show two very different rows that produce the same code. Nothing else makes the point as quickly.',
+  },
+  {
+    id: 'assumes_line_starts_at_zero',
+    description:
+      'Assumes the left end of any number line is 0, and reads or places numbers accordingly.',
+    sections: ['ncert_gp_c6_s3_3'],
+    diagnosticSignal:
+      'Reads a tick as though the window began at 0 when the stated left end is not 0.',
+    feedback:
+      'Look at the number written at the left end of this line. It does not start at 0.',
+    teacherNote:
+      'Every line in this section should be drawn with a non-zero start at least once before students work alone.',
+  },
+  {
+    id: 'assumes_ticks_step_by_one',
+    description:
+      'Assumes consecutive ticks differ by 1 regardless of the window and the number of intervals.',
+    sections: ['ncert_gp_c6_s3_3'],
+    diagnosticSignal:
+      'Counts ticks as units on a line whose interval is not 1.',
+    feedback:
+      'Work out the span first, then share it between the intervals. One step here is not 1.',
+    teacherNote:
+      'The 86,000-to-88,000 window with a step of 250 exists for this error. Students expect round thousands.',
+  },
+  {
+    id: 'ignores_scale_reads_picture',
+    description:
+      'Judges magnitude from how the line looks on the page rather than from its labelled scale.',
     sections: ['ncert_gp_c6_s3_3'],
     diagnosticSignal: null,
     feedback:
-      'On a number line, further right means larger. Measure the distance from 0 rather than reading the order the labels were written in.',
+      'Two lines drawn the same width can show completely different numbers. What do the ends say?',
     teacherNote:
-      'Show an unlabelled line with two marks and ask which is larger. Removing the labels removes the crutch.',
+      'Draw a 0-to-10 line and an 86,000-to-88,000 line at identical width, side by side. The image does the teaching.',
+  },
+  {
+    id: 'places_by_digit_appearance',
+    description:
+      'Places a number by how its digits look — length or leading digit — rather than by its magnitude relative to the window.',
+    sections: ['ncert_gp_c6_s3_3'],
+    diagnosticSignal: null,
+    feedback:
+      'Compare this number with the tick values, not with how the digits look written down.',
+    teacherNote:
+      'Pair numbers such as 15,073 and 15,037 so that leading digits give no help.',
   },
 ];

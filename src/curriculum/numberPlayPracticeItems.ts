@@ -50,72 +50,62 @@ export const SECTION_3_1_PRACTICE: InstructionalItem[] = [
     officialSectionId: S31,
     format: 'multiple_choice',
     prompt:
-      'Asha made 3 mistakes in her test. Bhavna made 8. Who did better on mistakes?',
+      'Plants stand in a row with heights 30, 52, 41, 60, 35 cm. What number does the 41 cm plant report?',
     choices: [
-      { id: 'a', text: 'Asha', misconceptionId: null },
+      { id: 'a', text: '2', misconceptionId: null },
       {
         id: 'b',
-        text: 'Bhavna, because 8 is bigger',
+        text: '3',
         misconceptionId: null,
-        // The stated reason is the error itself: choosing the larger
-        // number on an item where more is worse admits no other reading.
-        chapterMisconceptionId: 'bigger_number_always_better',
+        // Three is only reachable by counting every taller plant in the
+        // row rather than the two beside it.
+        chapterMisconceptionId: 'counts_all_taller_not_adjacent',
       },
-      { id: 'c', text: 'They did the same', misconceptionId: null },
+      { id: 'c', text: '0', misconceptionId: null },
     ],
     correctChoiceId: 'a',
-    correctFeedback:
-      'Yes. Fewer mistakes is the better result, so here the smaller number wins.',
+    correctFeedback: 'Yes. Both neighbours, 52 and 60, are taller than 41.',
     neutralIncorrectFeedback:
-      'Ask what the number counts before comparing. These are mistakes, so fewer is better.',
+      'Name its two neighbours first, then check each one against 41.',
   },
   {
     itemId: 's31.p2',
     use: 'instructional_practice',
     officialSectionId: S31,
     format: 'multiple_choice',
-    prompt: 'A scoreboard shows just the number 7. What does it tell you?',
+    prompt: 'Could a row of four plants report 2, 0, 0, 1?',
     choices: [
+      { id: 'a', text: 'No — the first position is at an end', misconceptionId: null },
       {
-        id: 'a',
-        text: 'Not much yet — you need to know what the 7 counts',
+        id: 'b',
+        text: 'Yes',
         misconceptionId: null,
+        chapterMisconceptionId: 'end_position_given_two_neighbours',
       },
-      { id: 'b', text: 'That the team is winning', misconceptionId: null },
-      { id: 'c', text: 'That seven players are on the field', misconceptionId: null },
+      { id: 'c', text: 'Only if the plants are all the same height', misconceptionId: null },
     ],
     correctChoiceId: 'a',
     correctFeedback:
-      'Right. Seven runs, seven wickets and seven overs are three different pieces of news.',
+      'Right. An end position has one neighbour, so it can never report 2.',
     neutralIncorrectFeedback:
-      'The number is real, but what it counts has not been said. Which would you need to ask?',
+      'How many positions are next to the very first plant in a row?',
   },
   {
     itemId: 's31.p3',
     use: 'instructional_practice',
     officialSectionId: S31,
     format: 'multiple_choice',
-    prompt:
-      'Class A has 20 students and 4 absences. Class B has 50 students and 6 absences. Does the bigger number of absences settle which class attended better?',
+    prompt: 'In any row of plants of different heights, what does the tallest plant report?',
     choices: [
-      {
-        id: 'a',
-        text: 'No — the classes are different sizes',
-        misconceptionId: null,
-      },
-      {
-        id: 'b',
-        text: 'Yes — 6 is more than 4, so Class B attended worse',
-        misconceptionId: null,
-        chapterMisconceptionId: 'compares_across_different_wholes',
-      },
-      { id: 'c', text: 'Yes — Class B is bigger, so it attended better', misconceptionId: null },
+      { id: 'a', text: '0', misconceptionId: null },
+      { id: 'b', text: '2', misconceptionId: null },
+      { id: 'c', text: 'It depends where it stands', misconceptionId: null },
     ],
     correctChoiceId: 'a',
     correctFeedback:
-      'Exactly. Two counts taken from groups of different sizes are not directly comparable.',
+      'Yes — nothing beside it can be taller, wherever it stands.',
     neutralIncorrectFeedback:
-      'Both counts are real, but they came from groups of different sizes. What would make the comparison fair?',
+      'Could anything next to the tallest plant be taller than it?',
   },
 ];
 
@@ -203,30 +193,32 @@ export const SECTION_3_3_PRACTICE: InstructionalItem[] = [
     use: 'instructional_practice',
     officialSectionId: S33,
     format: 'select_point_on_number_line',
-    prompt: 'This line runs from 0 to 100 in steps of 10. Tap where 30 belongs.',
-    min: whole(0),
-    max: whole(100),
-    partitions: 10,
+    prompt:
+      'This line runs from 1000 to 10,000 in nine equal intervals. Tap the tick for 4000.',
+    min: whole(1000),
+    max: whole(10000),
+    partitions: 9,
     correctTickIndex: 3,
     labelTicks: false,
-    correctFeedback: 'Yes — three jumps of ten from 0.',
+    correctFeedback: 'Yes. Each interval is 1000, so three steps on from 1000.',
     neutralIncorrectFeedback:
-      'Each interval is 10. Count the jumps from 0 rather than looking for a label.',
+      'Work out the span, share it between the nine intervals, then count on from the left end.',
   },
   {
     itemId: 's33.p2',
     use: 'instructional_practice',
     officialSectionId: S33,
     format: 'select_point_on_number_line',
-    prompt: 'Same line, 0 to 100 in tens. Tap where 80 belongs.',
-    min: whole(0),
-    max: whole(100),
+    prompt:
+      'This line runs from 15,070 to 15,080 in ten equal intervals. Tap the tick for 15,077.',
+    min: whole(15070),
+    max: whole(15080),
     partitions: 10,
-    correctTickIndex: 8,
+    correctTickIndex: 7,
     labelTicks: false,
-    correctFeedback: 'Correct. Eight jumps of ten, well to the right of the middle.',
+    correctFeedback: 'Correct. Here each interval is worth just 1.',
     neutralIncorrectFeedback:
-      'Find the middle first — that is 50 — then count on in tens.',
+      'The window is only 10 wide. What is one interval worth on this line?',
   },
   {
     itemId: 's33.p3',
@@ -234,45 +226,44 @@ export const SECTION_3_3_PRACTICE: InstructionalItem[] = [
     officialSectionId: S33,
     format: 'multiple_choice',
     prompt:
-      '10, 20 and 60 are written next to each other in a table. On a number line, are the gaps between them equal?',
+      'A line has 86,000 at the left end and 88,000 at the right, divided into eight equal intervals. What is one interval worth?',
     choices: [
-      { id: 'a', text: 'No — the second gap is much bigger', misconceptionId: null },
+      { id: 'a', text: '250', misconceptionId: null },
       {
         id: 'b',
-        text: 'Yes — they are next to each other in the table',
+        text: '1000',
         misconceptionId: null,
-        chapterMisconceptionId: 'list_order_means_even_spacing',
+        // Expecting a round thousand rather than dividing the span.
+        chapterMisconceptionId: 'assumes_ticks_step_by_one',
       },
-      { id: 'c', text: 'Yes — every number line has equal gaps', misconceptionId: null },
+      { id: 'c', text: '2000', misconceptionId: null },
     ],
     correctChoiceId: 'a',
-    correctFeedback:
-      'Right. 10 to 20 is a jump of 10; 20 to 60 is a jump of 40.',
+    correctFeedback: 'Yes. A span of 2000 shared between eight intervals is 250.',
     neutralIncorrectFeedback:
-      'Work out each gap by subtracting. Are the two answers the same?',
+      'Subtract to find the span, then divide by the number of intervals.',
   },
   {
     itemId: 's33.p4',
     use: 'instructional_practice',
     officialSectionId: S33,
     format: 'multiple_choice',
-    prompt: 'What comes next in 5, 10, 20, 40?',
+    prompt: 'Does every number line start at 0?',
     choices: [
-      { id: 'a', text: '80', misconceptionId: null },
+      { id: 'a', text: 'No — read the number at the left end', misconceptionId: null },
       {
         id: 'b',
-        text: '45',
+        text: 'Yes',
         misconceptionId: null,
-        // Adding the FIRST step to the last term. Only one route gets
-        // to 45 here.
-        chapterMisconceptionId: 'step_assumed_constant',
+        chapterMisconceptionId: 'assumes_line_starts_at_zero',
       },
-      { id: 'c', text: '60', misconceptionId: null },
+      { id: 'c', text: 'Only when the numbers are large', misconceptionId: null },
     ],
     correctChoiceId: 'a',
-    correctFeedback: 'Yes. The step doubles each time, so the gaps widen.',
+    correctFeedback:
+      'Right. A window can start anywhere — 15,070, or 86,000.',
     neutralIncorrectFeedback:
-      'Write the gap between each pair: 5, 10, 20. Is the step staying the same?',
+      'Look back at the line running from 15,070 to 15,080. Where does it begin?',
   },
 ];
 

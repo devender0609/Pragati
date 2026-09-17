@@ -70,16 +70,67 @@ const source = (
   inspectionDate: INSPECTED,
 });
 
+// ===========================================================================
+// NUMBER PLAY — Chapter 3 of Ganita Prakash, Grade 6.
+//
+// v0.82.1 — §3.1 AND §3.3 REWRITTEN AGAINST THE PRIMARY PAGES.
+//
+// The chapter PDF was read on 2026-09-17. It showed that §3.1 and §3.3
+// had been authored from their titles plus a plausible reading, and
+// taught mathematics the source does not teach. Both are rewritten
+// here. §3.2 survived the audit and is unchanged apart from labelling
+// its one enrichment honestly.
+//
+// The verdicts live in `numberPlayAlignment.ts`, which is the record a
+// reviewer reads. This file is the content.
+//
+// WHAT THE REWRITE COST, WORTH STATING ONCE
+//
+// §3.1's real mathematics — each position reporting how many of its
+// ADJACENT neighbours are taller — is the direct precursor to §3.2's
+// supercells: same line, same notion of neighbour, same special case at
+// the ends. Authoring from the title missed a structure the chapter had
+// put in plain sight, and two sections had to be thrown away to find
+// it. Read the pages first.
+// ===========================================================================
+
+
+const HEIGHTS_ROW: NumberGridSpec = {
+  type: 'number_grid',
+  purpose: 'introduce_concept',
+  status: 'concept_specific',
+  neighbourhood: 'horizontal',
+  rows: [[{ value: 30 }, { value: 52 }, { value: 41 }, { value: 60 }, { value: 35 }]],
+  caption:
+    'Heights in centimetres. Each position reports how many of the positions NEXT TO it are taller.',
+  altText:
+    'A row of five heights in centimetres: 30, 52, 41, 60, 35. The 30 at the left end has one neighbour, 52, which is taller, so it reports 1. The 52 has neighbours 30 and 41, both shorter, so it reports 0. The 41 has neighbours 52 and 60, both taller, so it reports 2. The 60 has neighbours 41 and 35, both shorter, so it reports 0. The 35 at the right end has one neighbour, 60, which is taller, so it reports 1. The code for the row is 1, 0, 2, 0, 1.',
+};
+
+const ENDS_ROW: NumberGridSpec = {
+  type: 'number_grid',
+  purpose: 'expose_misconception',
+  status: 'concept_specific',
+  neighbourhood: 'horizontal',
+  rows: [[{ value: 60 }, { value: 50 }, { value: 40 }, { value: 30 }]],
+  caption: 'Arranged tallest to shortest. Watch what the two ends report.',
+  altText:
+    'A row of four heights in centimetres, descending: 60, 50, 40, 30. The 60 at the left end has one neighbour, 50, which is shorter, so it reports 0. Each of the other three has exactly one taller neighbour, the one to its left, so they each report 1. The code is 0, 1, 1, 1. Neither end reports 2, because an end position has only one neighbour.',
+};
+
+
 export const SECTION_3_1: AuthoredSection = {
   contentArtifactId: 'ncert_gp_c6_s3_1_lesson',
-  contentArtifactVersion: 1,
+  // Bumped: this is not an edit of the v0.79 draft, it is a different
+  // lesson. A reviewer comparing versions should see a new artifact.
+  contentArtifactVersion: 2,
   source: source('3.1', 'Numbers can Tell us Things', 55, 'ncert_gp_c6_s3_1'),
 
   competencyCandidates: [
     {
       id: 'MIDDLE:C-1.1',
       justification:
-        'The section uses numbers to describe and compare real collections, which is the number-sense strand C-1.1 names. Proposed by a maintainer and not reviewed.',
+        'Reasoning about which sequences of neighbour-counts can occur is number sense applied to structure. Proposed by a maintainer and not reviewed.',
     },
   ],
   competencyMappingStatus: 'competency_proposed',
@@ -87,204 +138,171 @@ export const SECTION_3_1: AuthoredSection = {
   sequence: {
     prerequisiteSectionIds: [],
     mayAssume: [
-      'Counting a collection accurately',
-      'Reading and writing whole numbers',
-      'The words more, less and the same',
+      'Comparing two whole numbers',
+      'The words taller, shorter, next to',
+      'Counting a small collection',
     ],
     mustNotIntroduce: [
-      // Each of these belongs to a later section of this chapter, and
-      // reaching for one here teaches the chapter out of order.
-      { concept: 'Supercells and neighbour comparison', belongsToSection: 'ncert_gp_c6_s3_2' },
-      { concept: 'Number line patterns', belongsToSection: 'ncert_gp_c6_s3_3' },
-      { concept: 'Digit and place-value patterns', belongsToSection: 'ncert_gp_c6_s3_4' },
+      { concept: 'Supercells and larger-than-all-neighbours', belongsToSection: 'ncert_gp_c6_s3_2' },
+      { concept: 'Number line placement', belongsToSection: 'ncert_gp_c6_s3_3' },
+      { concept: 'Digit sums and digit patterns', belongsToSection: 'ncert_gp_c6_s3_4' },
     ],
   },
 
   learningGoal:
-    'You will see that a number only means something when you know what it counts — and that comparing two numbers is comparing two situations, not two digits.',
+    'You will work out what a number is reporting about an arrangement, and decide whether a proposed row of numbers could happen at all.',
 
   priorKnowledgeCheck: {
     prompt: 'Before you start, can you do these?',
     checks: [
-      'Count how many windows are in this room.',
-      'Say which is more: 34 or 43.',
-      'Finish this sentence: "There are 12 ___ in my bag."',
+      'Say which is taller: something 142 cm or something 138 cm.',
+      'In a line of five people, who is standing next to the person at the very end?',
+      'Count how many of three objects are taller than a fourth one.',
     ],
     ifNotReady:
-      'Count real collections around you and say the full sentence out loud each time — the number and the thing it counts.',
+      'Line up five objects of different heights and point at the neighbours of each one before counting anything.',
   },
 
   vocabulary: [
+    { term: 'neighbour', meaning: 'A position directly next to this one in the line.' },
     {
-      term: 'count',
-      meaning: 'How many of something there are.',
+      term: 'end position',
+      meaning: 'The first or last position in a line. It has only one neighbour.',
     },
-    {
-      term: 'compare',
-      meaning: 'To decide which is more, which is less, or whether they are the same.',
-    },
-    {
-      term: 'collection',
-      meaning: 'The group of things being counted.',
-    },
+    { term: 'code', meaning: 'A number that reports something, rather than counting the objects themselves.' },
   ],
 
   explanation: [
-    'Say the number 12 out loud. On its own, it tells you almost nothing. Twelve what?',
-    'Now try: 12 students. 12 rupees. 12 mistakes. Same number, three completely different pieces of news.',
-    'So a number carries information only when you know what it counts. In mathematics we keep the thing attached: not "12", but "12 students".',
-    'Once you know what is being counted, a number can tell you something. If a bus has 40 seats and 44 people want to travel, the two numbers together tell you that four people will have to stand.',
-    'Numbers also let you compare. 18 is more than 11 — but whether that is good news depends entirely on what is being counted. More runs scored is good. More mistakes is not. More days absent is not.',
-    'Be careful with one thing: two counts can only be compared fairly if they come from situations you can fairly compare. If one class has 20 students and another has 50, saying "the second class had more absences" does not yet tell you which class attended better.',
+    'Stand six plants of different heights in a row. Now give each plant a number — but not its height.',
+    'Each plant reports how many of the plants standing NEXT TO IT are taller than it is.',
+    'A plant in the middle has two neighbours, one on each side. So its number can be 0, 1 or 2.',
+    'A plant at either end has only one neighbour, so its number can only be 0 or 1. It can never say 2, because there is no second plant beside it to be taller.',
+    'Read that again, because it is the useful part: the number is not a height and it is not a position. It reports a relationship between a plant and the plants beside it.',
+    'That means the same row of numbers can come from more than one arrangement, and some rows of numbers cannot come from any arrangement at all.',
+    'Try 2, 2, 2, 2. Could that happen? The first plant is at an end and has one neighbour, so it cannot say 2. The row is impossible before you check anything else.',
+    'Now try 0, 1, 2, 1, 0 with five plants of different heights. Work along the line and see whether you can build it. Deciding which codes are possible is the real work of this section.',
   ],
 
   representations: [
-    'A number written with the thing it counts, in a full sentence',
-    'Two counts side by side, with what each one counts stated',
+    'A row of positions, each showing a height',
+    'The code underneath each position: how many adjacent neighbours are taller',
   ],
 
-  // §3.1 needs no diagram. Its whole point is that the meaning lives in
-  // the words attached to the number, and a picture here would quietly
-  // do the work the student is supposed to do. Empty on purpose, not by
-  // omission.
-  visuals: [],
-  visualsById: {},
+  visuals: [HEIGHTS_ROW, ENDS_ROW],
+  visualsById: { heights_row: HEIGHTS_ROW, ends_row: ENDS_ROW },
 
   workedExamples: [
     {
       id: 's31.we1',
       prompt:
-        'A cricket scoreboard says 7. What extra information do you need before this number means anything?',
+        'Five plants stand in a row with heights 30, 52, 41, 60, 35 cm. What number does the 41 cm plant report?',
       steps: [
         {
-          text: 'Ask what the 7 counts.',
-          reasoning: 'A number with no noun attached carries no information.',
+          text: 'Find its neighbours: the 52 cm plant on one side and the 60 cm plant on the other.',
+          reasoning: 'Only the plants directly beside it count — not every taller plant in the row.',
         },
         {
-          text: '7 could be runs, wickets, overs, or players.',
-          reasoning:
-            'Each reading tells a completely different story about the match, so the number alone cannot settle it.',
+          text: 'Is 52 taller than 41? Yes. Is 60 taller than 41? Yes.',
+          reasoning: 'Compare it with each neighbour separately.',
         },
-        {
-          text: 'You need the label: "7 wickets" or "7 runs".',
-          reasoning: 'The number plus what it counts is the smallest piece of real information.',
-        },
+        { text: 'Both neighbours are taller, so it reports 2.', reasoning: 'The code is the COUNT of taller neighbours.' },
       ],
-      answer: 'What the 7 counts.',
+      answer: '2',
     },
     {
       id: 's31.we2',
-      prompt:
-        'Asha made 3 mistakes in her test. Bhavna made 8. Who did better on mistakes?',
+      prompt: 'In the same row, what does the 30 cm plant at the end report?',
       steps: [
         {
-          text: 'Work out what is being counted: mistakes.',
-          reasoning: 'Before comparing, name the quantity.',
+          text: 'It is at the end, so it has one neighbour: the 52 cm plant.',
+          reasoning: 'An end position has only one neighbour, whatever the heights are.',
         },
-        {
-          text: 'Decide whether more is better or worse here.',
-          reasoning: 'For mistakes, fewer is better — which is the opposite of runs or marks.',
-        },
-        {
-          text: '3 is fewer than 8, so Asha made fewer mistakes.',
-          reasoning: 'The smaller number is the better result because of what it counts.',
-        },
+        { text: '52 is taller than 30, so that is one taller neighbour.', reasoning: 'Count only the neighbour it has.' },
+        { text: 'It reports 1.', reasoning: 'An end position can only ever report 0 or 1.' },
       ],
-      answer: 'Asha — she made fewer mistakes.',
+      answer: '1',
     },
     {
       id: 's31.we3',
-      prompt:
-        'Class A has 20 students and 4 were absent. Class B has 50 students and 6 were absent. Someone says "Class B had more absences, so Class B attended worse." Is that settled?',
+      prompt: 'Could a row of five plants report 1, 1, 1, 1, 1?',
       steps: [
         {
-          text: '6 is indeed more than 4.',
-          reasoning: 'The raw counts are what they are.',
+          text: 'Look at the tallest plant in the whole row.',
+          reasoning: 'Start from the thing you can be certain about.',
         },
         {
-          text: 'But the two classes are different sizes.',
-          reasoning:
-            'A count of absences from 50 students and from 20 students are not directly comparable.',
+          text: 'No plant beside it can be taller than it, because it is the tallest.',
+          reasoning: 'So the tallest plant must report 0.',
         },
-        {
-          text: 'So the claim is not settled by these two numbers alone.',
-          reasoning:
-            'To compare fairly you would need to take the class sizes into account.',
-        },
+        { text: 'The row has no 0 in it, so it is impossible.', reasoning: 'One forced value rules the whole row out.' },
       ],
-      answer: 'No — the classes are different sizes, so the raw counts do not settle it.',
+      answer: 'No — the tallest plant always reports 0.',
     },
   ],
 
   misconceptionIds: [
-    'bigger_number_always_better',
-    'number_without_its_unit',
-    'compares_across_different_wholes',
-    'reads_position_as_value',
+    'counts_all_taller_not_adjacent',
+    'counts_shorter_neighbours',
+    'end_position_given_two_neighbours',
+    'reads_code_as_height',
   ],
 
   guidedPractice: [
     {
       id: 's31.g1',
-      prompt: 'A sign says 250. Write two different things it could be counting.',
-      hint: 'Where might you see a number like this?',
-      answer: 'Any two sensible readings, e.g. 250 rupees; 250 kilometres.',
-      rationale:
-        'The number is the same both times; the meaning is entirely in what it counts.',
+      prompt: 'Heights 20, 45, 30 cm. What does the 45 cm plant report?',
+      hint: 'Are either of its neighbours taller than it?',
+      answer: '0',
+      rationale: 'Both neighbours are shorter, so it has no taller neighbour to count.',
     },
     {
       id: 's31.g2',
-      prompt:
-        'Farhan scored 15 marks. Gauri made 15 spelling mistakes. Both got 15. Did they get the same news?',
-      hint: 'Is more marks good? Is more mistakes good?',
+      prompt: 'Can a plant at the end of a row ever report 2?',
+      hint: 'How many neighbours does an end position have?',
       answer: 'No.',
-      rationale:
-        'The same number means good news in one case and bad in the other, because it counts different things.',
+      rationale: 'It has one neighbour, so the largest number it can report is 1.',
     },
     {
       id: 's31.g3',
-      prompt:
-        'A list reads: Chetan 42, Diya 39, Ishita 51. Chetan is written first. Does that mean Chetan has the most?',
-      hint: 'Read the numbers, not the order.',
-      answer: 'No — Ishita has the most.',
+      prompt: 'Heights 15, 40, 25, 55 cm. Write the code for the whole row.',
+      hint: 'Do one position at a time, and remember the two ends.',
+      answer: '1, 0, 2, 0',
       rationale:
-        'Position in a list says nothing about size. Only the numbers do.',
+        'Each position counts only its own neighbours, and the two ends each have one.',
     },
   ],
 
   independentPractice: [
     {
       id: 's31.i1',
-      prompt: 'Write what each number counts: "Our school has 8." Finish the sentence sensibly.',
-      answer: 'Any sensible noun, e.g. "8 classrooms".',
-      rationale: 'A number needs the thing it counts before it says anything.',
+      prompt: 'Heights 12, 30, 22. What code does the row report?',
+      answer: '1, 0, 1',
+      rationale: 'The middle plant is tallest, so it reports 0; each end has one taller neighbour.',
     },
     {
       id: 's31.i2',
-      prompt: 'Which is better news: 2 absences or 9 absences?',
-      answer: '2 absences',
-      rationale: 'Fewer absences is better, so here the smaller number is the better result.',
+      prompt: 'Could a row of four plants report 2, 0, 0, 1?',
+      answer: 'No.',
+      rationale: 'The first position is an end and has one neighbour, so it cannot report 2.',
     },
     {
       id: 's31.i3',
-      prompt: 'Which is better news: 2 goals scored or 9 goals scored?',
-      answer: '9 goals',
-      rationale: 'For goals, more is better — the opposite of absences.',
+      prompt: 'In any row, what does the tallest plant always report?',
+      answer: '0',
+      rationale: 'Nothing beside it can be taller than it.',
     },
     {
       id: 's31.i4',
-      prompt:
-        'A bus has 40 seats. 36 passengers board. What do these two numbers together tell you?',
-      answer: '4 seats are empty.',
-      rationale: 'Two counts about the same situation can tell you something neither says alone.',
+      prompt: 'Heights 60, 50, 40, 30 — arranged tallest to shortest. Write the code.',
+      answer: '0, 1, 1, 1',
+      rationale:
+        'Each plant after the first has exactly one taller neighbour, the one before it.',
     },
     {
       id: 's31.i5',
-      prompt:
-        'Team A won 7 of 10 matches. Team B won 9 of 20 matches. Does Team B have the better record because 9 is more than 7?',
-      answer: 'No.',
-      rationale:
-        'The two teams played different numbers of matches, so the raw wins do not settle it.',
+      prompt: 'Give two different arrangements of three plants that both report 1, 0, 1.',
+      answer: 'Any two rows whose middle plant is tallest, e.g. 10, 50, 20 and 30, 90, 40.',
+      rationale: 'The code reports a relationship, so many different heights produce it.',
     },
   ],
 
@@ -292,56 +310,53 @@ export const SECTION_3_1: AuthoredSection = {
     {
       id: 's31.r1',
       prompt:
-        'Harsh says "a bigger number is always better." Give him one example where that is true and one where it is false, and explain what makes the difference.',
+        'With five plants of different heights, what is the largest number of positions that can report 2? Explain why you cannot do better.',
       expectedReasoning:
-        'More marks is better; more mistakes is worse. What decides it is what the number counts, not the number itself.',
+        'Two. A position reporting 2 must be shorter than both neighbours, and two such positions cannot sit next to each other; the ends are excluded, leaving three middle positions of which only alternate ones can qualify.',
     },
     {
       id: 's31.r2',
       prompt:
-        'Two shops both say "we sold 30 today". What would you need to ask before deciding which shop had the better day?',
+        'Is 0, 1, 2, 1, 0 possible with five plants of different heights? Build it or show why not.',
       expectedReasoning:
-        'What was sold, and how big each shop is. Thirty of a cheap item in a large shop and thirty of an expensive item in a small one are not the same day.',
+        'Yes — for example 50, 40, 20, 45, 55: each end is taller than its single neighbour, and the middle plant is shorter than both of its own.',
     },
   ],
 
-  // No section-specific interactive items yet. The interaction engine
-  // aligns items by official section ID, and authoring items for §3.1
-  // before the chapter's item bank exists would create practice with no
-  // bank behind it.
   interactivePractice: SECTION_3_1_PRACTICE,
 
   summary:
-    'A number tells you something only when you know what it counts. Comparing two numbers means comparing two situations — and whether "more" is good depends entirely on what is being counted.',
+    'These numbers are not heights. Each one reports how many of the positions NEXT TO it are taller. End positions have one neighbour, the tallest always reports 0, and some codes cannot happen at all.',
   nextStep:
-    'Next: what happens when you line numbers up in a grid and compare each one with its neighbours.',
+    'Next: numbers written in a table, where a cell is marked when it beats every neighbour.',
 
   teacher: {
     objective:
-      'Students attach a quantity to every number they say, and treat a comparison as a comparison of situations rather than of digits.',
-    prerequisiteKnowledge: ['Counting a collection', 'Reading whole numbers', 'More / less / same'],
+      'Students decode a neighbour-count, and argue about which codes can and cannot occur.',
+    prerequisiteKnowledge: ['Comparing two numbers', 'Identifying who is next to whom in a line'],
     modelLanguage: [
-      '"Twelve what?"',
-      '"More runs is good news. More mistakes is not. What is this number counting?"',
+      '"Who is standing next to you? Only those two count."',
+      '"What must the tallest one say? Why must it?"',
     ],
     teachingNotes: [
-      'Open with the textbook\'s own activity for this section. Pragati has the verified contents structure for Chapter 3 but not a page-level reading of its exercises, so this draft teaches the idea the section names rather than reproducing the book\'s tasks. Use both.',
-      'The habit to build is saying the noun aloud every single time. It costs nothing here and it is what makes §3.2 and §3.4 readable later.',
-      'Do NOT introduce supercells, the number line or digit patterns. Each belongs to a later section of this chapter and arrives with its own representation.',
-      'The different-sized-groups example is the seed of proportional reasoning. Let students argue about it; do not resolve it into a fraction or a percentage here — they have not met either in this chapter.',
+      'The primary pages (55-56) were read on 2026-09-17 and this lesson teaches their mathematics: each position reports how many ADJACENT neighbours are taller, and the work is deciding which sequences can occur. Pragati uses plants rather than the book\u2019s children so the examples are original; run the book\u2019s own activity alongside it.',
+      'Do the lining-up physically before anything is written down. Students who only see numbers start counting every taller object in the row instead of the two beside them.',
+      'The two forced facts carry the whole section: an end position has one neighbour, and the tallest reports 0. Most impossibility arguments come straight from one of them.',
+      'This is the direct precursor to supercells in \u00a73.2 \u2014 same line, same neighbours, same special case at the ends. Say so when you get there.',
+      'Do not introduce supercells, number lines or digit patterns here.',
     ],
     quickChecks: [
-      'I say "seventeen". What do you need to ask me?',
-      'Give me a number where bigger is worse.',
+      'What can a plant at the end never say?',
+      'What does the tallest plant always say?',
     ],
     supportForStrugglingLearners: [
-      'Count real objects in the room and always say the full sentence: "There are 9 desks."',
-      'Sort statements into "more is better" and "more is worse" before comparing any numbers.',
+      'Cover everything except the position being counted and its neighbours.',
+      'Have students physically stand in a line and point at their own neighbours before saying a number.',
     ],
     extension: [
-      'Find a number in a newspaper headline. What does it count, and would a bigger one be better or worse?',
+      'With six plants, which codes are impossible? Find a rule for spotting one at a glance.',
     ],
-    materialsNeeded: ['Everyday objects to count', 'A newspaper or a price list'],
+    materialsNeeded: ['Objects of clearly different heights', 'Space to line up'],
   },
 
   reviewStatus: 'authored_draft',
@@ -683,7 +698,7 @@ export const SECTION_3_2: AuthoredSection = {
       '"Equal is not larger."',
     ],
     teachingNotes: [
-      'Open with the textbook’s own supercell activity. Pragati has the verified contents structure for Chapter 3 but not a page-level reading of its exercises, so this draft teaches the idea the section names rather than reproducing the book’s tasks.',
+      'The primary pages (57-59) were read on 2026-09-17 and this lesson matches the section: larger than every adjacent cell, end cells qualifying, a single row before a grid, and left/right/top/bottom adjacency are all source-explicit. The tie case is Pragati enrichment - the source tables use distinct numbers - so teach it as an extension of the definition rather than as the book emphasis.',
       'The tie case is the one worth slowing down on. Students scan for "the big one" and stop comparing; a tie forces them back to the definition.',
       'When you move to a grid, ask the class what should count as a neighbour BEFORE you tell them. The question is mathematically real and the discussion is the lesson.',
       'Do not introduce number-line patterns or digit patterns here — §3.3 and §3.4 own those.',
@@ -723,69 +738,80 @@ export const SECTION_3_2: AuthoredSection = {
 
 const whole = (n: number) => ({ numerator: n, denominator: 1 });
 
-const COUNT_BY_TENS: NumberLineSpec = {
+// ===========================================================================
+// §3.3 — PATTERNS OF NUMBERS ON THE NUMBER LINE (pp. 59-60)
+//
+// REWRITTEN. The v0.81 draft taught constant-versus-doubling steps and
+// widening gaps; the pages contain no geometric sequence at all. What
+// the source actually does is place four- and five-digit numbers on a
+// 1000-10,000 line, then read lines at OTHER SCALES — 2010 to 2020,
+// 9996 to 9997, 15,077 to 15,083, 86,705 to 87,705 — identifying the
+// marked numbers and labelling the rest.
+//
+// So the mathematics is: work out what one interval is worth on THIS
+// line, then place or read a number. The trap is assuming every line
+// starts at zero and steps by one.
+//
+// Pragati's windows are original; the source's exact exercise numbers
+// are not reproduced. `NumberLineSpec` needed no extension — `min` and
+// `max` are exact fractions, so a window from 86,000 to 88,000 is
+// expressible with denominator 1 exactly as a 0-to-1 line is.
+// ===========================================================================
+
+const THOUSANDS_LINE: NumberLineSpec = {
+  type: 'number_line',
+  purpose: 'introduce_concept',
+  status: 'concept_specific',
+  min: whole(1000),
+  max: whole(10000),
+  partitions: 9,
+  labelTicks: true,
+  markedPoints: [
+    { value: whole(2000), label: '2000' },
+    { value: whole(6000), label: '6000' },
+  ],
+  orientation: 'horizontal',
+  caption: 'This line does not start at 0, and each interval is 1000.',
+  altText:
+    'A number line running from 1000 on the left to 10,000 on the right, divided into nine equal intervals, so each interval is 1000. Ticks at 2000 and 6000 are labelled.',
+};
+
+const TIGHT_WINDOW: NumberLineSpec = {
   type: 'number_line',
   purpose: 'reveal_structure',
   status: 'concept_specific',
-  min: whole(0),
-  max: whole(100),
+  min: whole(15070),
+  max: whole(15080),
   partitions: 10,
   labelTicks: true,
-  markedPoints: [
-    { value: whole(20), label: '20' },
-    { value: whole(50), label: '50' },
-    { value: whole(80), label: '80' },
-  ],
+  markedPoints: [{ value: whole(15073), label: '15,073' }],
   orientation: 'horizontal',
-  caption: 'Counting in tens: every jump is the same length.',
+  caption: 'A window ten wide, around a five-digit number. Each interval is 1.',
   altText:
-    'A number line from 0 to 100 divided into ten equal intervals, with 20, 50 and 80 marked. The gap between consecutive marks is always the same.',
+    'A number line from 15,070 to 15,080 divided into ten equal intervals, so each interval is 1. The tick at 15,073 is labelled.',
 };
 
-const UNEVEN_JUMPS: NumberLineSpec = {
+const UNLABELLED_WINDOW: NumberLineSpec = {
   type: 'number_line',
   purpose: 'expose_misconception',
   status: 'concept_specific',
-  min: whole(0),
-  max: whole(100),
-  partitions: 10,
-  labelTicks: true,
-  markedPoints: [
-    { value: whole(10), label: '10' },
-    { value: whole(20), label: '20' },
-    { value: whole(60), label: '60' },
-  ],
-  orientation: 'horizontal',
-  caption:
-    'These three are evenly spaced in the list, but not on the line.',
-  altText:
-    'A number line from 0 to 100 with 10, 20 and 60 marked. The gap from 10 to 20 is much shorter than the gap from 20 to 60, even though each is the next number written down.',
-};
-
-const DOUBLING: NumberLineSpec = {
-  type: 'number_line',
-  purpose: 'reveal_structure',
-  status: 'concept_specific',
-  min: whole(0),
-  max: whole(80),
+  min: whole(86000),
+  max: whole(88000),
   partitions: 8,
-  labelTicks: true,
+  labelTicks: false,
   markedPoints: [
-    { value: whole(5), label: '5' },
-    { value: whole(10), label: '10' },
-    { value: whole(20), label: '20' },
-    { value: whole(40), label: '40' },
-    { value: whole(80), label: '80' },
+    { value: whole(86000), label: '86,000' },
+    { value: whole(88000), label: '88,000' },
   ],
   orientation: 'horizontal',
-  caption: 'Doubling: each jump is longer than the one before it.',
+  caption: 'Only the two ends are labelled. What is one interval worth here?',
   altText:
-    'A number line from 0 to 80 with 5, 10, 20, 40 and 80 marked. Each gap is twice the length of the previous gap, so the marks spread out as they go right.',
+    'A number line with 86,000 at the left end and 88,000 at the right end, divided into eight equal intervals. No other tick is labelled. The span is 2000 across eight intervals, so each interval is 250.',
 };
 
 export const SECTION_3_3: AuthoredSection = {
   contentArtifactId: 'ncert_gp_c6_s3_3_lesson',
-  contentArtifactVersion: 1,
+  contentArtifactVersion: 2,
   source: source(
     '3.3',
     'Patterns of Numbers on the Number Line',
@@ -797,7 +823,7 @@ export const SECTION_3_3: AuthoredSection = {
     {
       id: 'MIDDLE:C-1.1',
       justification:
-        'Placing whole numbers on a line and reading the spacing between them is number sense. Proposed by a maintainer and not reviewed.',
+        'Placing and reading large whole numbers on a scaled line is number sense. Proposed by a maintainer and not reviewed.',
     },
   ],
   competencyMappingStatus: 'competency_proposed',
@@ -805,182 +831,153 @@ export const SECTION_3_3: AuthoredSection = {
   sequence: {
     prerequisiteSectionIds: ['ncert_gp_c6_s3_1', 'ncert_gp_c6_s3_2'],
     mayAssume: [
-      'Comparing whole numbers (§3.1, §3.2)',
+      'Reading and comparing four- and five-digit numbers',
       'Counting on in steps',
-      'Reading a scale with equal intervals',
+      'That a number line shows larger numbers further right',
     ],
     mustNotIntroduce: [
-      { concept: 'Digit and place-value patterns', belongsToSection: 'ncert_gp_c6_s3_4' },
-      // The line here carries whole numbers only. Fractional positions
-      // belong to Chapter 7 and arrive with their own teaching.
+      { concept: 'Digit sums and digit patterns', belongsToSection: 'ncert_gp_c6_s3_4' },
       { concept: 'Fractions on the number line', belongsToSection: 'ncert_gp_c6_s7_4' },
     ],
   },
 
   learningGoal:
-    'You will read a pattern from the SPACING of numbers on a line, not just from the numbers themselves.',
+    'You will work out what one interval is worth on a number line, and use that to place or read large numbers — including on lines that do not start at zero.',
 
   priorKnowledgeCheck: {
     prompt: 'Before you start, can you do these?',
     checks: [
-      'Count on in tens from 0 to 100.',
-      'On a line from 0 to 10, roughly where does 7 go?',
-      'Which is further from 0: 12 or 21?',
+      'Say which is larger: 15,073 or 15,037.',
+      'Count on in 250s from 1000.',
+      'Work out 2000 shared equally into 8 parts.',
     ],
     ifNotReady:
-      'Practise counting on in steps out loud, and mark numbers on a line you draw yourself.',
+      'Practise reading five-digit numbers aloud, and dividing a span into equal steps.',
   },
 
   vocabulary: [
-    { term: 'number line', meaning: 'A line where each position stands for a number.' },
-    { term: 'interval', meaning: 'The gap between two marks on the line.' },
-    { term: 'step', meaning: 'How much you add each time you jump along the line.' },
+    { term: 'scale', meaning: 'What one interval on the line is worth.' },
+    { term: 'interval', meaning: 'The gap between two ticks.' },
+    { term: 'window', meaning: 'The part of the number line being shown, from its left end to its right end.' },
   ],
 
   explanation: [
-    'A number line turns numbers into positions. The further right a number sits, the larger it is.',
-    'Because positions have length, a number line shows you something a list cannot: how far apart numbers are.',
-    'Count in tens: 0, 10, 20, 30. On the line, every jump is the same length. A constant step looks like even spacing.',
-    'Now mark 10, 20 and 60. In your list they are the first, second and third numbers — evenly spaced as a list. On the line they are not: the jump from 20 to 60 is four times the jump from 10 to 20.',
-    'That is the whole idea of this section. Being next to each other in a list says nothing about being close together on a line.',
-    'Some patterns grow by adding the same amount each time, and those spread evenly. Others grow by doubling — 5, 10, 20, 40, 80 — and those spread out more and more as you go right.',
-    'So when you meet a pattern, ask two questions: what is the step, and does the step stay the same?',
+    'A number line does not have to start at 0, and its ticks do not have to go up by 1. Before you read anything from a line, work out what it is showing.',
+    'Two questions, always in this order. Where does this window start and end? And how many intervals is that span cut into?',
+    'Take a line from 1000 to 10,000 cut into nine intervals. The span is 9000, shared into 9, so each interval is worth 1000.',
+    'Now take a line from 15,070 to 15,080 cut into ten intervals. Same picture, completely different scale: the span is 10, so each interval is worth 1. Only the labels tell you which line you are looking at.',
+    'This is where mistakes happen. A line drawn the same width can be worth 1000 a step or 1 a step, so the picture alone never tells you. Read the ends first.',
+    'Once you know the scale, placing a number is counting. On the 1000-to-10,000 line, 3600 sits between the ticks for 3000 and 4000, a bit past halfway.',
+    'And reading works the same way backwards: if only the two ends are labelled, divide the span by the number of intervals to find what one step is worth, then count along.',
   ],
 
   representations: [
-    'A whole-number line with equal intervals',
-    'Marked points whose spacing carries the pattern',
+    'A number line whose window and scale must be read before anything else',
+    'Lines at several different scales, including one with unlabelled ticks',
   ],
 
-  visuals: [COUNT_BY_TENS, UNEVEN_JUMPS, DOUBLING],
+  visuals: [THOUSANDS_LINE, TIGHT_WINDOW, UNLABELLED_WINDOW],
   visualsById: {
-    count_by_tens: COUNT_BY_TENS,
-    uneven_jumps: UNEVEN_JUMPS,
-    doubling: DOUBLING,
+    thousands_line: THOUSANDS_LINE,
+    tight_window: TIGHT_WINDOW,
+    unlabelled_window: UNLABELLED_WINDOW,
   },
 
   workedExamples: [
     {
       id: 's33.we1',
-      prompt: 'On a line from 0 to 100, mark 20, 50 and 80. What do you notice about the gaps?',
+      prompt: 'A line runs from 1000 to 10,000 with nine equal intervals. What is one interval worth?',
       steps: [
-        {
-          text: 'From 20 to 50 is a jump of 30.',
-          reasoning: 'Subtract to find the size of the gap.',
-        },
-        {
-          text: 'From 50 to 80 is also a jump of 30.',
-          reasoning: 'Same step, so the same length on the line.',
-        },
-        {
-          text: 'The marks are evenly spaced.',
-          reasoning: 'A constant step always looks like even spacing.',
-        },
+        { text: 'The span is 10,000 - 1000 = 9000.', reasoning: 'Read both ends before anything else.' },
+        { text: 'There are nine intervals, so 9000 divided by 9.', reasoning: 'Equal intervals share the span equally.' },
+        { text: 'Each interval is worth 1000.', reasoning: 'Now every tick can be labelled by counting on in 1000s.' },
       ],
-      answer: 'The gaps are equal — each is 30.',
+      answer: '1000',
     },
     {
       id: 's33.we2',
-      prompt: '10, 20 and 60 are written next to each other in a list. Are they evenly spaced on the line?',
+      prompt: 'Where does 3600 go on that line?',
       steps: [
-        {
-          text: 'Gap from 10 to 20 is 10.',
-          reasoning: 'Read the step, do not assume it.',
-        },
-        {
-          text: 'Gap from 20 to 60 is 40.',
-          reasoning: 'Four times the first gap.',
-        },
-        {
-          text: 'So no — next to each other in the list, far apart on the line.',
-          reasoning:
-            'Position in a list is about order; position on a line is about size.',
-        },
+        { text: 'Ticks run 1000, 2000, 3000, and so on.', reasoning: 'Using the scale worked out above.' },
+        { text: '3600 is between 3000 and 4000.', reasoning: 'It is larger than one tick and smaller than the next.' },
+        { text: 'It sits a little past halfway between them.', reasoning: '600 out of the 1000 in that interval.' },
       ],
-      answer: 'No. The second gap is four times the first.',
+      answer: 'Between the 3000 and 4000 ticks, slightly past the middle.',
     },
     {
       id: 's33.we3',
-      prompt: 'Describe the pattern 5, 10, 20, 40, 80 by its steps.',
+      prompt:
+        'A line has 86,000 at one end and 88,000 at the other, with eight equal intervals and no other labels. What is the third tick from the left?',
       steps: [
-        {
-          text: 'The steps are 5, 10, 20 and 40.',
-          reasoning: 'Each gap is the difference between consecutive numbers.',
-        },
-        {
-          text: 'The step is not constant — it doubles each time.',
-          reasoning: 'So this is not counting on; it is doubling.',
-        },
-        {
-          text: 'On the line, the marks spread further apart as you go right.',
-          reasoning: 'A growing step looks like widening gaps.',
-        },
+        { text: 'Span is 88,000 - 86,000 = 2000.', reasoning: 'Both ends are given, so the span is known.' },
+        { text: '2000 shared into 8 intervals is 250 each.', reasoning: 'This is the step, and it is not a round thousand.' },
+        { text: 'Three steps of 250 from 86,000 is 86,750.', reasoning: 'Count on from the left end.' },
       ],
-      answer: 'The step doubles, so the gaps widen.',
+      answer: '86,750',
     },
   ],
 
   misconceptionIds: [
-    'list_order_means_even_spacing',
-    'step_assumed_constant',
-    'position_read_from_label_not_length',
+    'assumes_line_starts_at_zero',
+    'assumes_ticks_step_by_one',
+    'ignores_scale_reads_picture',
+    'places_by_digit_appearance',
   ],
 
   guidedPractice: [
     {
       id: 's33.g1',
-      prompt: '3, 6, 9, 12. What is the step, and will the gaps be even?',
-      hint: 'Subtract each pair.',
-      answer: 'Step 3; yes, even.',
-      rationale: 'A constant step gives equal gaps on the line.',
+      prompt: 'A line runs 2000 to 2010 with ten intervals. What is one interval worth?',
+      hint: 'Span first, then share it.',
+      answer: '1',
+      rationale: 'The span is 10 and there are ten intervals.',
     },
     {
       id: 's33.g2',
-      prompt: '1, 2, 4, 8. What is the step, and will the gaps be even?',
-      hint: 'Is the step the same each time?',
-      answer: 'The step doubles; no, the gaps widen.',
-      rationale: 'A growing step spreads the marks out.',
+      prompt: 'A line runs 0 to 100,000 with ten intervals. What is one interval worth?',
+      hint: 'Same method, much bigger span.',
+      answer: '10,000',
+      rationale: 'The method does not change when the numbers get large.',
     },
     {
       id: 's33.g3',
-      prompt:
-        'Two numbers are written side by side in a table. Does that mean they are close together on a number line?',
-      hint: 'Think about 10 and 60.',
-      answer: 'No.',
-      rationale: 'A table shows order; a line shows distance.',
+      prompt: 'Two lines are drawn the same width. Can you tell from the picture which shows larger numbers?',
+      hint: 'What is the only thing that tells you the scale?',
+      answer: 'No — you must read the labels at the ends.',
+      rationale: 'The drawing carries no information about scale on its own.',
     },
   ],
 
   independentPractice: [
     {
       id: 's33.i1',
-      prompt: 'Find the step: 4, 8, 12, 16.',
-      answer: '4',
-      rationale: 'Each number is 4 more than the one before.',
+      prompt: 'A line runs 9990 to 10,000 in ten intervals. What is the fourth tick from the left?',
+      answer: '9994',
+      rationale: 'Each interval is 1, so four steps from 9990.',
     },
     {
       id: 's33.i2',
-      prompt: 'Find the step: 100, 90, 80, 70.',
-      answer: '−10 (counting back in tens)',
-      rationale: 'The step can be a subtraction; the gaps are still equal.',
+      prompt: 'A line runs 1000 to 10,000 in nine intervals. Between which ticks does 8400 sit?',
+      answer: 'Between 8000 and 9000',
+      rationale: 'Each interval is 1000, and 8400 falls inside that one.',
     },
     {
       id: 's33.i3',
-      prompt: 'Which spreads out faster on a line: adding 10 each time, or doubling each time?',
-      answer: 'Doubling',
-      rationale: 'A constant step keeps gaps equal; a doubling step grows them.',
+      prompt: 'A line runs 15,070 to 15,080 in ten intervals. Which tick is 15,077?',
+      answer: 'The seventh from the left',
+      rationale: 'Each interval is 1, so count seven on from 15,070.',
     },
     {
       id: 's33.i4',
-      prompt: 'On a line from 0 to 50, which is further from 0: 18 or 31?',
-      answer: '31',
-      rationale: 'Further right means larger means further from 0.',
+      prompt: 'Of 2754, 1050 and 9590, which sits furthest right on a 1000-to-10,000 line?',
+      answer: '9590',
+      rationale: 'Furthest right means largest.',
     },
     {
       id: 's33.i5',
-      prompt: '2, 4, 6, 20. Is this a constant step?',
-      answer: 'No.',
-      rationale: 'The first three steps are 2, then the last is 14.',
+      prompt: 'A line runs 40,000 to 44,000 in eight intervals. What is one interval worth?',
+      answer: '500',
+      rationale: 'A span of 4000 shared into eight is 500.',
     },
   ],
 
@@ -988,56 +985,57 @@ export const SECTION_3_3: AuthoredSection = {
     {
       id: 's33.r1',
       prompt:
-        'Ishita says "these numbers are next to each other in my table, so they must be close together." Draw a number line that shows her she is wrong.',
+        'Two number lines are drawn the same length. One runs 0 to 10; the other runs 86,000 to 88,000. A classmate says the second must be longer because its numbers are bigger. What would you say?',
       expectedReasoning:
-        'Any line marking two adjacent table entries that are far apart, e.g. 10 and 60 — adjacency in a table is order, not distance.',
+        'The drawn length says nothing about the numbers. What differs is the scale: one interval is worth 1 on the first line and 250 on the second.',
     },
     {
       id: 's33.r2',
       prompt:
-        'Make up a pattern of five numbers whose gaps get smaller as you go right, and explain how you knew it would.',
+        'Draw a number line where 9996 and 9997 are far apart on the page. What window and scale did you choose, and why does it work?',
       expectedReasoning:
-        'Any shrinking step, e.g. 0, 40, 60, 70, 75 — the step halves each time, so the marks bunch up.',
+        'A narrow window such as 9995 to 10,000 with five intervals of 1. Shrinking the span while keeping the drawn length spreads consecutive numbers out.',
     },
   ],
 
   interactivePractice: SECTION_3_3_PRACTICE,
 
   summary:
-    'A number line shows distance, not just order. Ask what the step is and whether it stays the same: a constant step spaces marks evenly, a growing step spreads them out.',
+    'Read the two ends first, then work out what one interval is worth. A number line need not start at zero, and ticks need not go up by one — the scale is the only thing that tells you what the picture means.',
   nextStep:
-    'Next: what happens when you look inside the digits of a number rather than at the number as a whole.',
+    'Next: looking inside numbers at their digits, rather than at where they sit.',
 
   teacher: {
     objective:
-      'Students read a pattern from spacing on a line, and stop treating list adjacency as closeness.',
-    prerequisiteKnowledge: ['Comparing whole numbers', 'Counting on in steps'],
+      'Students determine the scale of a line before reading or placing anything on it.',
+    prerequisiteKnowledge: ['Reading four- and five-digit numbers', 'Sharing a span into equal steps'],
     modelLanguage: [
-      '"What is the step? Does it stay the same?"',
-      '"Next to each other in the list is not the same as close together on the line."',
+      '"Where does this line start and end? How many intervals?"',
+      '"What is one step worth here?"',
     ],
     teachingNotes: [
-      'Open with the textbook’s own activity for this section. Pragati has the verified contents structure for Chapter 3 but not a page-level reading of its exercises.',
-      'The 10, 20, 60 example is the hinge. Draw it before you say anything, and let them notice the gap themselves.',
-      'Keep the line to whole numbers. Fractional positions belong to Chapter 7 and arrive with their own teaching.',
-      'Do not introduce digit or place-value patterns — §3.4 owns those.',
+      'The primary pages (59-60) were read on 2026-09-17 and this lesson teaches their mathematics: placing large numbers on a 1000-to-10,000 line and reading lines at other scales, including tight five-digit windows. Pragati\u2019s windows are original; run the book\u2019s own number lines alongside them.',
+      'Draw two lines of identical width with wildly different scales before saying anything. That single image does most of the teaching.',
+      'The unlabelled window with a step of 250 is the one worth time. Students expect round thousands and have to divide to find out otherwise.',
+      'Do not teach digit sums or digit patterns here \u2014 \u00a73.4 owns those. Keep the line to whole numbers; fractional positions belong to Chapter 7.',
     ],
     quickChecks: [
-      '5, 10, 15 — even gaps or not?',
-      '5, 10, 40 — even gaps or not?',
+      'A line runs 500 to 600 in ten intervals. What is one step?',
+      'Does every number line start at 0?',
     ],
     supportForStrugglingLearners: [
-      'Use a ruler or a metre tape as the line so the distance is physical.',
-      'Write the step between each pair of numbers before drawing anything.',
+      'Write the span and the number of intervals down before dividing.',
+      'Label every tick in pencil before placing anything.',
     ],
     extension: [
-      'Find a pattern whose gaps shrink but never reach zero. What happens to the marks?',
+      'Find a window and scale that puts 9996 and 9997 a whole hand-width apart.',
     ],
-    materialsNeeded: ['Metre tape or ruler', 'Squared paper'],
+    materialsNeeded: ['Ruler', 'Squared paper'],
   },
 
   reviewStatus: 'authored_draft',
 };
+
 
 /** Authored sections of Chapter 3, in the book's order. */
 export function numberPlayChapterSections(): AuthoredSection[] {
