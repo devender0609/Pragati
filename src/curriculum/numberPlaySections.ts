@@ -907,11 +907,11 @@ export const SECTION_3_3: AuthoredSection = {
     {
       id: 's33.we3',
       prompt:
-        'A line has 86,000 at one end and 88,000 at the other, with eight equal intervals and no other labels. What is the third tick from the left?',
+        'A line has 86,000 at one end and 88,000 at the other, with eight equal intervals and no other labels. What number sits three intervals to the right of 86,000?',
       steps: [
         { text: 'Span is 88,000 - 86,000 = 2000.', reasoning: 'Both ends are given, so the span is known.' },
         { text: '2000 shared into 8 intervals is 250 each.', reasoning: 'This is the step, and it is not a round thousand.' },
-        { text: 'Three steps of 250 from 86,000 is 86,750.', reasoning: 'Count on from the left end.' },
+        { text: 'Three intervals of 250 to the right of 86,000 is 86,750.', reasoning: 'Count on from the left end, one interval at a time.' },
       ],
       answer: '86,750',
     },
@@ -951,9 +951,9 @@ export const SECTION_3_3: AuthoredSection = {
   independentPractice: [
     {
       id: 's33.i1',
-      prompt: 'A line runs 9990 to 10,000 in ten intervals. What is the fourth tick from the left?',
+      prompt: 'A line runs 9990 to 10,000 in ten intervals. What number sits four intervals to the right of 9990?',
       answer: '9994',
-      rationale: 'Each interval is 1, so four steps from 9990.',
+      rationale: 'Each interval is 1, so four intervals to the right of 9990.',
     },
     {
       id: 's33.i2',
@@ -963,9 +963,9 @@ export const SECTION_3_3: AuthoredSection = {
     },
     {
       id: 's33.i3',
-      prompt: 'A line runs 15,070 to 15,080 in ten intervals. Which tick is 15,077?',
-      answer: 'The seventh from the left',
-      rationale: 'Each interval is 1, so count seven on from 15,070.',
+      prompt: 'A line runs 15,070 to 15,080 in ten intervals. How many intervals to the right of 15,070 does 15,077 sit?',
+      answer: 'Seven',
+      rationale: 'Each interval is 1, so 15,077 is seven intervals along from 15,070.',
     },
     {
       id: 's33.i4',
@@ -1039,7 +1039,15 @@ export const SECTION_3_3: AuthoredSection = {
 
 /** Authored sections of Chapter 3, in the book's order. */
 export function numberPlayChapterSections(): AuthoredSection[] {
-  // §3.4 is not authored: it blocks on a place-value representation
-  // that does not exist. See V0.81_REPORT.md §C for the specification.
+  // v0.82.1 §C — §3.4 is deliberately not authored yet, and the reason
+  // recorded here until now was wrong. It said §3.4 "blocks on a
+  // place-value representation that does not exist"; the primary pages
+  // (60-61) show the section works with digit LENGTHS, digit SUMS and
+  // digit-occurrence counts, where position is largely irrelevant —
+  // 68, 176 and 545 share a digit sum precisely because place does not
+  // matter. `PlaceValueSpec` would represent a different idea.
+  //
+  // What §3.4 actually needs has not been decided. See
+  // SECTION_3_4_REPRESENTATION_FINDING in numberPlayAlignment.ts.
   return [SECTION_3_1, SECTION_3_2, SECTION_3_3];
 }

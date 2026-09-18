@@ -88,6 +88,25 @@ export type Choice = {
    * Setting both is a mistake and `auditItemMisconceptions` reports it.
    */
   /**
+   * @deprecated v0.82.1 §E — LEGACY FIELD. Use `misconceptionRef` for
+   * anything new.
+   *
+   * THE CONTRACT, STATED ONCE SO THE TWO APIS STOP LOOKING ALIKE:
+   *
+   *   `misconceptionRef` is the modern mechanism. It is a REFERENCE —
+   *   `{ source, id }` — so it names which registry an id belongs to,
+   *   and adding a chapter adds a member to that union.
+   *
+   *   `chapterMisconceptionId` is a bare id with the registry implied.
+   *   It exists because §7.4's frozen payload predates the reference,
+   *   and its choices never set it, so the fingerprint does not move.
+   *
+   * It accepts Number Play ids as well as Fractions ones — `chapterRef`
+   * decides the registry from the id itself — but nothing new should
+   * use it. Two apparently-general fields with chapter-dependent
+   * semantics is how the v0.82 defect happened; this comment is the
+   * decision, and `misconceptionRef` is the answer.
+   *
    * v0.82 — widened from `FractionsMisconceptionId`.
    *
    * A third instance of the scoping defect v0.81 §A found twice: the
@@ -190,6 +209,25 @@ export type AreaModelOption = {
   altText: string;
   misconceptionId?: MisconceptionId;
   /**
+   * @deprecated v0.82.1 §E — LEGACY FIELD. Use `misconceptionRef` for
+   * anything new.
+   *
+   * THE CONTRACT, STATED ONCE SO THE TWO APIS STOP LOOKING ALIKE:
+   *
+   *   `misconceptionRef` is the modern mechanism. It is a REFERENCE —
+   *   `{ source, id }` — so it names which registry an id belongs to,
+   *   and adding a chapter adds a member to that union.
+   *
+   *   `chapterMisconceptionId` is a bare id with the registry implied.
+   *   It exists because §7.4's frozen payload predates the reference,
+   *   and its choices never set it, so the fingerprint does not move.
+   *
+   * It accepts Number Play ids as well as Fractions ones — `chapterRef`
+   * decides the registry from the id itself — but nothing new should
+   * use it. Two apparently-general fields with chapter-dependent
+   * semantics is how the v0.82 defect happened; this comment is the
+   * decision, and `misconceptionRef` is the answer.
+   *
    * v0.82 — widened from `FractionsMisconceptionId`.
    *
    * A third instance of the scoping defect v0.81 §A found twice: the
@@ -334,6 +372,25 @@ function diagnosed(ref: MisconceptionRef): Judgement {
 export function refForOption(o: {
   misconceptionId?: MisconceptionId | null;
   /**
+   * @deprecated v0.82.1 §E — LEGACY FIELD. Use `misconceptionRef` for
+   * anything new.
+   *
+   * THE CONTRACT, STATED ONCE SO THE TWO APIS STOP LOOKING ALIKE:
+   *
+   *   `misconceptionRef` is the modern mechanism. It is a REFERENCE —
+   *   `{ source, id }` — so it names which registry an id belongs to,
+   *   and adding a chapter adds a member to that union.
+   *
+   *   `chapterMisconceptionId` is a bare id with the registry implied.
+   *   It exists because §7.4's frozen payload predates the reference,
+   *   and its choices never set it, so the fingerprint does not move.
+   *
+   * It accepts Number Play ids as well as Fractions ones — `chapterRef`
+   * decides the registry from the id itself — but nothing new should
+   * use it. Two apparently-general fields with chapter-dependent
+   * semantics is how the v0.82 defect happened; this comment is the
+   * decision, and `misconceptionRef` is the answer.
+   *
    * v0.82 — widened from `FractionsMisconceptionId`.
    *
    * A third instance of the scoping defect v0.81 §A found twice: the
@@ -465,6 +522,25 @@ export function auditItemMisconceptions(
     o: {
       misconceptionId?: MisconceptionId | null;
       /**
+   * @deprecated v0.82.1 §E — LEGACY FIELD. Use `misconceptionRef` for
+   * anything new.
+   *
+   * THE CONTRACT, STATED ONCE SO THE TWO APIS STOP LOOKING ALIKE:
+   *
+   *   `misconceptionRef` is the modern mechanism. It is a REFERENCE —
+   *   `{ source, id }` — so it names which registry an id belongs to,
+   *   and adding a chapter adds a member to that union.
+   *
+   *   `chapterMisconceptionId` is a bare id with the registry implied.
+   *   It exists because §7.4's frozen payload predates the reference,
+   *   and its choices never set it, so the fingerprint does not move.
+   *
+   * It accepts Number Play ids as well as Fractions ones — `chapterRef`
+   * decides the registry from the id itself — but nothing new should
+   * use it. Two apparently-general fields with chapter-dependent
+   * semantics is how the v0.82 defect happened; this comment is the
+   * decision, and `misconceptionRef` is the answer.
+   *
    * v0.82 — widened from `FractionsMisconceptionId`.
    *
    * A third instance of the scoping defect v0.81 §A found twice: the

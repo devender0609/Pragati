@@ -35,7 +35,17 @@
 // it, so the number cannot drift from the artifacts again.
 
 import { REVIEW_RECORDS } from './educatorReview';
-import { fractionsChapterSections } from './fractionsChapter';
+// v0.82.1 §D — readiness reached the Fractions accessor directly, so a
+// Number Play section could be complete and aligned and still be
+// invisible to the only system that decides what goes to a reviewer.
+// It now reads the canonical registry and takes a chapter.
+import {
+  anyAuthoredSectionById,
+  authoredSectionsForChapter,
+  AUTHORED_CHAPTERS,
+  FRACTIONS_CHAPTER_ID,
+} from './authoredSections';
+import { isReviewEligible } from './numberPlayAlignment';
 import { assessSection } from './instructionalCompleteness';
 import { section74Artifact } from './contentArtifact';
 import {
@@ -133,14 +143,27 @@ function packageFor(officialSectionId: string) {
 export function assessReviewReadiness(
   officialSectionId: string
 ): SectionReviewReadiness {
-  const section = fractionsChapterSections().find(
-    (s) => s.source.officialSectionId === officialSectionId
-  );
+  const section = anyAuthoredSectionById(officialSectionId) ?? undefined;
   const completeness = section ? assessSection(section) : null;
   const sectionNumber = section?.source.sectionNumber ?? '—';
 
+  // v0.82.1 §6 — ALIGNMENT IS PART OF THE GATE, NOT A SEPARATE OPINION.
+  //
+  // A section can populate every structural field and still teach
+  // mathematics the source does not teach; §3.1 and §3.3 did exactly
+  // that for three releases. `isReviewEligible` fails closed — no
+  // alignment record means not eligible — and Fractions sections have
+  // no Number Play alignment record, so they are exempted explicitly
+  // rather than by accident: their alignment was established chapter-
+  // wide in v0.74 and is not re-litigated here.
+  const alignmentChecked =
+    section?.source.officialChapterId !== FRACTIONS_CHAPTER_ID;
+  const alignmentOk =
+    !alignmentChecked ||
+    isReviewEligible(officialSectionId, completeness?.level ?? 'none');
+
   const isCompleteDraft =
-    completeness?.level === 'complete_instructional_draft';
+    completeness?.level === 'complete_instructional_draft' && alignmentOk;
 
   const pkg = packageFor(officialSectionId);
   const candidate = frozenCandidateFor(officialSectionId);
@@ -227,10 +250,41 @@ export function assessReviewReadiness(
 }
 
 /** Readiness for every authored Chapter 7 section, in section order. */
-export function chapterReviewReadiness(): SectionReviewReadiness[] {
-  return fractionsChapterSections().map((s) =>
+/**
+ * Readiness for one chapter. A reviewer receives a chapter, never a
+ * product-wide dump, so the scope is a parameter and the default is the
+ * chapter every existing caller meant.
+ */
+export function reviewReadinessForChapter(
+  officialChapterId: string
+): SectionReviewReadiness[] {
+  return authoredSectionsForChapter(officialChapterId).map((s) =>
     assessReviewReadiness(s.source.officialSectionId)
   );
+}
+
+export function reviewReadinessForSection(
+  officialSectionId: string
+): SectionReviewReadiness {
+  return assessReviewReadiness(officialSectionId);
+}
+
+/** Every authored chapter, each with its own rows. Never merged. */
+export function reviewReadinessByChapter(): Array<{
+  officialChapterId: string;
+  title: string;
+  rows: SectionReviewReadiness[];
+}> {
+  return AUTHORED_CHAPTERS.map((c) => ({
+    officialChapterId: c.officialChapterId,
+    title: c.title,
+    rows: reviewReadinessForChapter(c.officialChapterId),
+  }));
+}
+
+/** @deprecated use `reviewReadinessForChapter`. Fractions, by history. */
+export function chapterReviewReadiness(): SectionReviewReadiness[] {
+  return reviewReadinessForChapter(FRACTIONS_CHAPTER_ID);
 }
 
 export type ReviewReadinessSummary = {
@@ -243,8 +297,18 @@ export type ReviewReadinessSummary = {
   headline: string;
 };
 
+export function reviewReadinessSummaryForChapter(
+  officialChapterId: string
+): ReviewReadinessSummary {
+  return summarise(reviewReadinessForChapter(officialChapterId));
+}
+
+/** @deprecated use `reviewReadinessSummaryForChapter`. Fractions only. */
 export function reviewReadinessSummary(): ReviewReadinessSummary {
-  const rows = chapterReviewReadiness();
+  return summarise(reviewReadinessForChapter(FRACTIONS_CHAPTER_ID));
+}
+
+function summarise(rows: SectionReviewReadiness[]): ReviewReadinessSummary {
   const count = (s: ReviewReadinessState) =>
     rows.filter((r) => r.state === s).length;
 

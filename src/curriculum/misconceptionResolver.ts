@@ -103,10 +103,19 @@ export function isSection74MisconceptionId(id: string): id is MisconceptionId {
   return Object.prototype.hasOwnProperty.call(MISCONCEPTION_FEEDBACK, id);
 }
 
+/**
+ * v0.82.1 §E — the guard narrowed to `FractionsMisconceptionId` while
+ * REGISTRY had already grown to hold Number Play ids too. So it returned
+ * true for a Number Play id and then told the compiler it was a
+ * Fractions one: a lie the type system could not catch, and exactly the
+ * "two APIs whose semantics differ by chapter" problem in miniature.
+ *
+ * It now narrows to the union it actually tests.
+ */
 export function isChapterMisconceptionId(
   id: string
-): id is FractionsMisconceptionId {
-  return REGISTRY.has(id as FractionsMisconceptionId);
+): id is FractionsMisconceptionId | NumberPlayMisconceptionId {
+  return REGISTRY.has(id);
 }
 
 /**

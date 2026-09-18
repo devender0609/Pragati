@@ -33,7 +33,14 @@ import {
 } from './officialCurriculum';
 import { checkOfficialCompleteness } from './officialCompleteness';
 import { sectionsForChapter } from './officialSections';
-import { authoredSectionById, fractionsChapterSections } from './fractionsChapter';
+// v0.82.1 §7/§8 — Class 6 authored coverage derived from the Fractions
+// accessor, so Number Play's three sections counted as no content at
+// all: authored work reported as absent, which is the one thing a
+// coverage matrix exists to prevent.
+import {
+  anyAuthoredSectionById as authoredSectionById,
+  allAuthoredSections,
+} from './authoredSections';
 import { assessSection, totalsFor } from './instructionalCompleteness';
 import { sectionIsOpenable } from './sectionRouting';
 import { ALL_TWELVE_GRADES } from './curriculumCompletenessAudit';
@@ -84,7 +91,11 @@ export function coverageForGrade(grade: Grade): GradeCoverageRow {
   // only Chapter 7 within it. Everywhere else the counts are genuinely
   // zero — which is the point of the matrix, not a gap in it.
   const authored =
-    grade === 'class6' ? fractionsChapterSections().map(assessSection) : [];
+    grade === 'class6'
+      ? allAuthoredSections()
+          .filter((s) => s.source.officialChapterId.includes('_c6_'))
+          .map(assessSection)
+      : [];
   const t = totalsFor(authored);
 
   const chaptersWithLearn =

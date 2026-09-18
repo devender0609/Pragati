@@ -88,7 +88,10 @@ describe('the plan tells the truth about who is blocked', () => {
     // "blocked on a person" must be TRUE only when it is operationally
     // true, and it now is for all nine.
     const s = planSummary();
-    expect(s.blockedOnEducatorReviewOnly).toBe(9);
+    // v0.82.1 §7 — Chapter 3's three authored sections became visible
+    // to Class 6 coverage. The figure moved because authored work
+    // stopped being reported as absent.
+    expect(s.blockedOnEducatorReviewOnly).toBe(12);
     expect(s.reviewPackagesToPrepare).toBe(0);
   });
 

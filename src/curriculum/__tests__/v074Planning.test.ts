@@ -168,7 +168,11 @@ describe('§3 unauthored work is represented completely', () => {
     const unauthored = contentPlan().filter(
       (p) => p.outcome === 'planned' && p.assessment === null
     );
-    expect(unauthored.length).toBe(56);
+    // v0.82.1 §7 — Class 6 coverage now includes Chapter 3's three
+    // authored sections as well as Chapter 7's nine. These figures
+    // moved because authored work stopped being invisible, which is
+    // the fix, not a regression.
+    expect(unauthored.length).toBe(53);
     for (const p of unauthored) {
       const design = p.work.filter(
         (w) => w.applicability === 'undetermined_requires_design_review'
@@ -212,9 +216,19 @@ describe('§3 unauthored work is represented completely', () => {
     expect(s.records).toBe(89);
     expect(s.plannable).toBe(65);
     expect(s.requiresDeeperStructure).toBe(24);
-    expect(s.determinedAuthoringItems).toBe(339);
-    expect(s.undeterminedDesignDecisions).toBe(168);
-    expect(s.waivedWithReason).toBe(3);
+    // v0.82.1 §7 — Class 6 coverage now includes Chapter 3's three
+    // authored sections as well as Chapter 7's nine. These figures
+    // moved because authored work stopped being invisible, which is
+    // the fix, not a regression.
+    expect(s.determinedAuthoringItems).toBe(321);
+    // v0.82.1 §7 — Chapter 3's three authored sections became visible
+    // to Class 6 coverage. The figure moved because authored work
+    // stopped being reported as absent.
+    expect(s.undeterminedDesignDecisions).toBe(159);
+    // v0.82.1 — a fourth justified waiver: §3.1's visual. Its
+    // mathematics is relational rather than drawn-quantity, and the
+    // reason is recorded rather than implied.
+    expect(s.waivedWithReason).toBe(4);
     // And the sum is NOT the headline number, because the two are not
     // the same kind of thing.
     expect(s.determinedAuthoringItems).not.toBe(483);
@@ -237,6 +251,11 @@ describe('§7 review readiness is checked, not assumed', () => {
     // whole chapter is waiting on people. The v0.74 assertion encoded
     // the state BEFORE that work, not a behaviour being reversed.
     const s = reviewReadinessSummary();
+    // v0.82.1 — `reviewReadinessSummary()` is the FRACTIONS summary,
+    // now that readiness is chapter-scoped, so it stays at 9. Number
+    // Play has its own summary and its three complete drafts are
+    // awaiting package preparation, not review — the engineering queue
+    // that was empty for Chapter 7 is not empty for Chapter 3.
     expect(s.completeDrafts).toBe(9);
     expect(s.reviewReady).toBe(9);
     expect(s.awaitingPackagePreparation).toBe(0);
@@ -274,7 +293,11 @@ describe('§7 review readiness is checked, not assumed', () => {
     const s = planSummary();
     // Both are "a person must act", and they are not the same request.
     // v0.75: 1 -> 9. Every Chapter 7 section is now waiting on a person.
-    expect(s.blockedOnEducatorReviewOnly).toBe(9);
+    // v0.82.1 §7 — Class 6 coverage now includes Chapter 3's three
+    // authored sections as well as Chapter 7's nine. These figures
+    // moved because authored work stopped being invisible, which is
+    // the fix, not a regression.
+    expect(s.blockedOnEducatorReviewOnly).toBe(12);
     expect(s.blockedOnStructureVerification).toBe(24);
     expect(s.blockedOnHumanOnly).toBe(
       s.blockedOnEducatorReviewOnly + s.blockedOnStructureVerification
@@ -303,6 +326,10 @@ describe('§5 reports cannot contradict their own data', () => {
     expect(c.structure_only).toBe(80);
     // v0.75 §22 — §7.9 was the one incomplete draft. It is complete now.
     expect(c.incomplete_draft).toBe(0);
+    // v0.82.1 — `recordStateCounts()` reads the content registry, which
+    // is still Chapter 7's, so this stays at 9. Chapter 3's three
+    // complete drafts are not in it: they need review packages, and
+    // that is the honest remaining gap rather than a number to adjust.
     expect(c.review_package_preparation + c.awaiting_review).toBe(9);
     expect(c.reviewed).toBe(0);
     expect(c.published).toBe(0);
@@ -373,7 +400,11 @@ describe('§24 the Class 6 roadmap is complete and ordered', () => {
   });
 
   it('leaves 56 sections un-authored', () => {
-    expect(class6RoadmapSummary().sectionsRemaining).toBe(56);
+    // v0.82.1 §7 — Class 6 coverage now includes Chapter 3's three
+    // authored sections as well as Chapter 7's nine. These figures
+    // moved because authored work stopped being invisible, which is
+    // the fix, not a regression.
+    expect(class6RoadmapSummary().sectionsRemaining).toBe(53);
   });
 
   it('gives every chapter its own pedagogy, not the Fractions template', () => {

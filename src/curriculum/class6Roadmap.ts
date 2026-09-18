@@ -42,7 +42,8 @@
 
 import { sectionsForChapter } from './officialSections';
 import { officialCurriculumForGrade } from './officialCurriculum';
-import { authoredSectionById } from './fractionsChapter';
+// v0.82.1 §8/§9 — the Class 6 roadmap spans Chapter 3 and Chapter 7, so the lookup must be the cross-chapter one.
+import { anyAuthoredSectionById as authoredSectionById } from './authoredSections';
 
 /** The dominant mathematical character of a chapter. */
 export type MathDomain =

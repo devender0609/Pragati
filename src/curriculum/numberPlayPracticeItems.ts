@@ -232,9 +232,21 @@ export const SECTION_3_3_PRACTICE: InstructionalItem[] = [
       {
         id: 'b',
         text: '1000',
+        // v0.82.1 §A — DIAGNOSIS REMOVED.
+        //
+        // This was attached to `assumes_ticks_step_by_one`, which means
+        // the student believes consecutive ticks differ by 1. Choosing
+        // 1000 shows nothing of the kind — the comment beside it even
+        // described a different error, expecting a familiar round
+        // thousand. Two reasoning paths reach 1000 (reaching for a
+        // round number, or dividing 2000 by 2 rather than by 8) and a
+        // response that admits more than one reading is not evidence
+        // for either.
+        //
+        // No replacement misconception was invented to keep the
+        // attachment: that would be manufacturing a record to justify a
+        // label. Neutral corrective feedback instead.
         misconceptionId: null,
-        // Expecting a round thousand rather than dividing the span.
-        chapterMisconceptionId: 'assumes_ticks_step_by_one',
       },
       { id: 'c', text: '2000', misconceptionId: null },
     ],

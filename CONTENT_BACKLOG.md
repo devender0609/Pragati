@@ -18,10 +18,10 @@ above is wrong by an unknown margin.
 | | |
 |---|---|
 | Known backlog records | 89 |
-| Missing Learn | 80 |
-| Missing practice | 80 |
+| Missing Learn | 77 |
+| Missing practice | 77 |
 | Needing review | 89 |
-| P1 / P2 / P3 | 9 / 56 / 24 |
+| P1 / P2 / P3 | 12 / 53 / 24 |
 | Classes with unknown denominator | 7 |
 
 ## By class
@@ -62,9 +62,9 @@ a person reading a package.
 | P2 | Class 6 | Lines and Angles | Measuring Angles | missing | missing | needed |
 | P2 | Class 6 | Lines and Angles | Drawing Angles | missing | missing | needed |
 | P2 | Class 6 | Lines and Angles | Types of Angles and their Measures | missing | missing | needed |
-| P2 | Class 6 | Number Play | Numbers can Tell us Things | missing | missing | needed |
-| P2 | Class 6 | Number Play | Supercells | missing | missing | needed |
-| P2 | Class 6 | Number Play | Patterns of Numbers on the Number Line | missing | missing | needed |
+| P1 | Class 6 | Number Play | Numbers can Tell us Things | present | present | needed |
+| P1 | Class 6 | Number Play | Supercells | present | present | needed |
+| P1 | Class 6 | Number Play | Patterns of Numbers on the Number Line | present | present | needed |
 | P2 | Class 6 | Number Play | Playing with Digits | missing | missing | needed |
 | P2 | Class 6 | Number Play | Pretty Palindromic Patterns | missing | missing | needed |
 | P2 | Class 6 | Number Play | The Magic Number of Kaprekar | missing | missing | needed |

@@ -115,13 +115,17 @@ describe('§3 the coverage matrix keeps three truths separate', () => {
 
   it('never collapses a draft into student-ready', () => {
     const c6 = coverageForGrade('class6');
-    expect(c6.drafts).toBe(9);
+    // v0.82.1 §7 — Class 6 coverage now includes Chapter 3's three
+    // authored sections as well as Chapter 7's nine. These figures
+    // moved because authored work stopped being invisible, which is
+    // the fix, not a regression.
+    expect(c6.drafts).toBe(12);
     // v0.75 §22: 8 -> 9. §7.9 was one worked example and one
     // independent item short; both were authored. The point of this
     // test is the LAST THREE assertions — complete is still not
     // reviewed, and reviewed is still not published — and they are
     // unchanged.
-    expect(c6.completeInstructionalDrafts).toBe(9);
+    expect(c6.completeInstructionalDrafts).toBe(12);
     expect(c6.educatorReviewed).toBe(0);
     expect(c6.studentReady).toBe(0);
     expect(c6.published).toBe(0);
@@ -137,6 +141,10 @@ describe('§4-§5 instructional completeness is honest', () => {
     // v0.75 §22 — was 8 complete / 1 incomplete.
     const rows = fractionsChapterSections().map(assessSection);
     const t = totalsFor(rows);
+    // v0.82.1 — this test builds its rows from
+    // `fractionsChapterSections()` deliberately: it is about Chapter 7,
+    // and Chapter 7 still has nine. The Class 6 COVERAGE row is the
+    // figure that moved to 12, and it is asserted separately above.
     expect(t.total).toBe(9);
     expect(t.complete_instructional_draft).toBe(9);
     expect(t.incomplete_draft).toBe(0);

@@ -59,7 +59,8 @@ import {
   assessSection,
   type InstructionalCompleteness,
 } from './instructionalCompleteness';
-import { authoredSectionById } from './fractionsChapter';
+// v0.82.1 §8/§9 — planning covers every authored section, not one chapter, so the lookup must be the cross-chapter one.
+import { anyAuthoredSectionById as authoredSectionById } from './authoredSections';
 import { sectionsForChapter } from './officialSections';
 import { officialCurriculumForGrade } from './officialCurriculum';
 import {

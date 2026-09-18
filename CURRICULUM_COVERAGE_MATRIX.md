@@ -9,7 +9,7 @@
 | Truth | Question it answers | Current answer |
 |---|---|---|
 | Curriculum completeness | Does Pragati represent every official record for a verified class? | 5 of 12 classes primary-source verified; 0 omissions across them |
-| Instructional completeness | Has Pragati written the teaching for those records? | 9 complete instructional drafts, all in Class 6 Chapter 7 |
+| Instructional completeness | Has Pragati written the teaching for those records? | 12 complete instructional drafts, all in Class 6 Chapter 7 |
 | Review / publication | Has an educator approved it, and is it published? | 0 reviewed, 0 published |
 
 An unverified class is **not** a class with no curriculum. It is a class
@@ -44,7 +44,7 @@ and its denominator is unknown rather than zero.
 | Class 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Class 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Class 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Class 6 | 1 | 9 | 9 | 9 | 9 | 8 | 9 | 9 |
+| Class 6 | 1 | 12 | 12 | 12 | 12 | 11 | 12 | 12 |
 | Class 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Class 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Class 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -61,7 +61,7 @@ and its denominator is unknown rather than zero.
 | Class 3 | 0 | 0 | 0 | 0 |
 | Class 4 | 0 | 0 | 0 | 0 |
 | Class 5 | 0 | 0 | 0 | 0 |
-| Class 6 | 9 | 0 | 0 | 0 |
+| Class 6 | 12 | 0 | 0 | 0 |
 | Class 7 | 0 | 0 | 0 | 0 |
 | Class 8 | 0 | 0 | 0 | 0 |
 | Class 9 | 0 | 0 | 0 | 0 |

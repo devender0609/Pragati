@@ -57,13 +57,17 @@ describe('§A2 current-state documents agree with the live model', () => {
 describe('§A2 the facts those documents must carry', () => {
   const c6 = () => coverageMatrix().find((r) => r.grade === 'class6')!;
 
-  it('reports 9 authored Fractions drafts, all complete', () => {
-    expect(c6().drafts).toBe(9);
-    expect(c6().completeInstructionalDrafts).toBe(9);
+  it('reports 12 authored Class 6 drafts — 9 Fractions, 3 Number Play', () => {
+    // v0.82.1 §7 — the row is Class 6, not Chapter 7. It counted only
+    // Fractions until Number Play became visible to coverage.
+    expect(c6().drafts).toBe(12);
+    expect(c6().completeInstructionalDrafts).toBe(12);
   });
 
   it('reports 9 review-ready and nothing waiting on engineering', () => {
     const rr = reviewReadinessSummary();
+    // Readiness is chapter-scoped, and this summary is the Fractions
+    // one — so it stays at 9. Number Play has its own.
     expect(rr.completeDrafts).toBe(9);
     expect(rr.reviewReady).toBe(9);
     expect(rr.awaitingPackagePreparation).toBe(0);
