@@ -97,7 +97,10 @@ describe('§3 the coverage matrix keeps three truths separate', () => {
     for (const r of coverageMatrix()) {
       if (!r.verified) continue;
       expect(r.omissions, r.gradeLabel).toBe(0);
-      expect(r.recordsRepresented, r.gradeLabel).toBe(r.officialUnits);
+      // v0.82.4 — measured against TOP-LEVEL records. Class 6's are
+      // chapters, so `officialUnits` is null for it and comparing
+      // against that would assert the wrong thing.
+      expect(r.recordsRepresented, r.gradeLabel).toBe(r.officialTopLevel);
     }
   });
 
@@ -108,7 +111,7 @@ describe('§3 the coverage matrix keeps three truths separate', () => {
     ]);
     for (const r of empty) {
       // Curriculum present, content absent. Two different facts.
-      expect(r.officialUnits, r.gradeLabel).toBeGreaterThan(0);
+      expect(r.officialTopLevel, r.gradeLabel).toBeGreaterThan(0);
       expect(r.drafts, r.gradeLabel).toBe(0);
     }
   });

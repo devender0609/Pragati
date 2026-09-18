@@ -1,6 +1,6 @@
 # Curriculum Coverage Matrix — Classes 1–12 Mathematics
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.3. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.4. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -20,20 +20,20 @@ and its denominator is unknown rather than zero.
 
 ## 1. Curriculum completeness
 
-| Class | Primary verified | Source | Units | Chapters | Topics | Records represented | Omissions |
-|---|---|---|---|---|---|---|---|
-| Class 1 | not yet | Joyful Mathematics (NCERT) | — | — | — | — | — |
-| Class 2 | not yet | Joyful Mathematics (NCERT) | — | — | — | — | — |
-| Class 3 | not yet | Maths Mela (NCERT) | — | — | — | — | — |
-| Class 4 | not yet | Maths Mela (NCERT) | — | — | — | — | — |
-| Class 5 | not yet | Maths Mela (NCERT) | — | — | — | — | — |
-| Class 6 | yes | Ganita Prakash — Textbook of Mathematics for Grade 6 | 10 | 10 | 65 | 10 | 0 |
-| Class 7 | not yet | Ganita Prakash, Grade 7 (NCERT), Parts I and II | — | — | — | — | — |
-| Class 8 | not yet | Ganita Prakash, Grade 8 (NCERT), Part I | — | — | — | — | — |
-| Class 9 | yes | Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | 15 | 6 | 0 |
-| Class 10 | yes | Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | 15 | 7 | 0 |
-| Class 11 | yes | Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | 14 | 5 | 0 |
-| Class 12 | yes | Mathematics, Class XII — CBSE Curriculum 2026-27 | 6 | — | 13 | 6 | 0 |
+| Class | Primary verified | Source | Units | Chapters | Sections | Topics | Records represented | Omissions |
+|---|---|---|---|---|---|---|---|---|
+| Class 1 | not yet | Joyful Mathematics (NCERT) | — | — | — | — | — | — |
+| Class 2 | not yet | Joyful Mathematics (NCERT) | — | — | — | — | — | — |
+| Class 3 | not yet | Maths Mela (NCERT) | — | — | — | — | — | — |
+| Class 4 | not yet | Maths Mela (NCERT) | — | — | — | — | — | — |
+| Class 5 | not yet | Maths Mela (NCERT) | — | — | — | — | — | — |
+| Class 6 | yes | Ganita Prakash — Textbook of Mathematics for Grade 6 | — | 10 | 65 | — | 10 | 0 |
+| Class 7 | not yet | Ganita Prakash, Grade 7 (NCERT), Parts I and II | — | — | — | — | — | — |
+| Class 8 | not yet | Ganita Prakash, Grade 8 (NCERT), Part I | — | — | — | — | — | — |
+| Class 9 | yes | Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | 15 | 6 | 0 |
+| Class 10 | yes | Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | 15 | 7 | 0 |
+| Class 11 | yes | Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | — | 14 | 5 | 0 |
+| Class 12 | yes | Mathematics, Class XII — CBSE Curriculum 2026-27 | 6 | — | — | 13 | 6 | 0 |
 
 ## 2. Instructional content completeness
 

@@ -1,6 +1,6 @@
 # Structure Verification Backlog — classes awaiting primary evidence
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.3. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.4. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -26,7 +26,7 @@ Recording it as zero would let an unverified class look complete.
 
 | Class | Source | Units | Chapters | Topics |
 |---|---|---|---|---|
-| Class 6 | Ganita Prakash — Textbook of Mathematics for Grade 6 | 10 | 10 | 65 |
+| Class 6 | Ganita Prakash — Textbook of Mathematics for Grade 6 | — | 10 | — |
 | Class 9 | Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | 15 |
 | Class 10 | Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | 15 |
 | Class 11 | Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | 14 |

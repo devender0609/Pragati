@@ -3,6 +3,8 @@
 
 import { describe, it, expect } from 'vitest';
 import {
+  officialChapterCount,
+  officialSectionCount,
   OFFICIAL_CURRICULA,
   officialCurriculumForGrade,
   officialUnitCount,
@@ -90,14 +92,21 @@ describe('§A/§C unknown means unknown, never zero', () => {
   it('returns null rather than 0 for an unverified official unit count', () => {
     expect(officialUnitCount('class3')).toBeNull();
     expect(officialUnitCount('class7')).toBeNull();
-    expect(officialUnitCount('class6')).toBe(10);
+    // v0.82.4 §2 — Ganita Prakash defines chapters, not units. The old
+    // expectation read the storage array's name as curriculum
+    // terminology, which is what printed "Units 10 / Chapters 10".
+    expect(officialUnitCount('class6')).toBeNull();
+    expect(officialChapterCount('class6')).toBe(10);
     expect(officialUnitCount('class10')).toBe(7);
   });
 
   it('returns null for topic depth that was never read', () => {
     expect(officialTopicCount('class1')).toBeNull();
     // Class 6 is section-verified for all ten chapters.
-    expect(officialTopicCount('class6')).toBe(65);
+    // §3 — 65 SECTIONS, not topics. Topics are what a syllabus lists
+    // under a unit; sections are what a textbook lists under a chapter.
+    expect(officialTopicCount('class6')).toBeNull();
+    expect(officialSectionCount('class6')).toBe(65);
     expect(officialTopicCount('class9')).toBe(15);
   });
 

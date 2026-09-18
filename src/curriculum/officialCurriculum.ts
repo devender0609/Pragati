@@ -682,10 +682,58 @@ export function isGradeStructureVerified(grade: Grade): boolean {
  * grade has no curriculum, which is the exact defect this file exists
  * to remove.
  */
+/**
+ * v0.82.4 §2 — UNITS, ONLY WHERE THE SOURCE HAS UNITS.
+ *
+ * This returned `c.units.length` unconditionally, and `units` is the
+ * name of the storage array, not a claim about the book. For Classes
+ * 9-12 the array does hold units. For Class 6 it holds top-level
+ * CHAPTER records, so the function reported 10 units for a textbook
+ * that defines none — and the coverage matrix printed "Units 10 /
+ * Chapters 10", inventing a layer of hierarchy Ganita Prakash does not
+ * have.
+ *
+ * A storage-array name must not define curriculum terminology. Where
+ * the source's top level is the chapter, there is no unit count, and
+ * null says that rather than guessing.
+ */
 export function officialUnitCount(grade: Grade): number | null {
   const c = officialCurriculumForGrade(grade);
   if (!c || c.status !== 'primary_source_verified') return null;
+  if (c.topLevel !== 'unit') return null;
   return c.units.length;
+}
+
+/**
+ * v0.82.4 — how many TOP-LEVEL records the source defines, whatever it
+ * calls them: units for a syllabus, chapters for a textbook.
+ *
+ * The completeness audit asks "does the registry hold the structure",
+ * which is a question about presence rather than about terminology. It
+ * used `officialUnitCount` for this, which was fine while that function
+ * answered the same question by accident — and broke the moment it was
+ * corrected to mean units specifically. This is the question the audit
+ * actually asks, under its own name.
+ */
+export function officialTopLevelCount(grade: Grade): number | null {
+  const c = officialCurriculumForGrade(grade);
+  if (!c || c.status !== 'primary_source_verified') return null;
+  return c.units.length;
+}
+
+/**
+ * Sections, in the source's own sense: the level BELOW a chapter.
+ *
+ * Class 6's 65 are sections of chapters, which is not the same thing as
+ * Class 9-12's topics listed under a syllabus unit. Reporting both in
+ * one "Topics" column flattened two different levels into one word.
+ */
+export function officialSectionCount(grade: Grade): number | null {
+  const c = officialCurriculumForGrade(grade);
+  if (!c || c.status !== 'primary_source_verified') return null;
+  if (c.topLevel !== 'chapter') return null;
+  if (c.units.some((u) => !u.topicsKnown)) return null;
+  return c.units.reduce((n, u) => n + u.topics.length, 0);
 }
 
 /**
@@ -699,6 +747,10 @@ export function officialUnitCount(grade: Grade): number | null {
 export function officialTopicCount(grade: Grade): number | null {
   const c = officialCurriculumForGrade(grade);
   if (!c || c.status !== 'primary_source_verified') return null;
+  // v0.82.4 §3 — topics are what a SYLLABUS lists under a unit. Where
+  // the top level is the chapter, the sub-level is sections, and
+  // `officialSectionCount` reports it under its own name.
+  if (c.topLevel !== 'unit') return null;
   if (c.units.some((u) => !u.topicsKnown)) return null;
   return c.units.reduce((n, u) => n + u.topics.length, 0);
 }

@@ -29,6 +29,8 @@ import {
   officialChapterCount,
   officialTopicCount,
   officialUnitCount,
+  officialTopLevelCount,
+  officialSectionCount,
   structureNoun,
 } from './officialCurriculum';
 import { checkOfficialCompleteness } from './officialCompleteness';
@@ -53,8 +55,18 @@ export type GradeCoverageRow = {
   verified: boolean;
   source: string | null;
   /** Null means UNKNOWN. Never rendered as zero. */
+  /** Units, only where the source defines a unit layer (Classes 9-12). */
   officialUnits: number | null;
+  /**
+   * v0.82.4 — top-level records, whatever the source calls them. This is
+   * the figure `recordsRepresented` is measured against, because
+   * representation is about records, not about terminology.
+   */
+  officialTopLevel: number | null;
   officialChapters: number | null;
+  /** Sections, where the source's top level is the chapter (Class 6). */
+  officialSections: number | null;
+  /** Topics, where the source's top level is the unit (Classes 9-12). */
   officialTopics: number | null;
   recordsRepresented: number | null;
   omissions: number | null;
@@ -98,9 +110,10 @@ export function coverageForGrade(grade: Grade): GradeCoverageRow {
   const verified = c?.status === 'primary_source_verified';
   const failures = checkOfficialCompleteness().filter((f) => f.grade === grade);
 
-  // Class 6 is the only grade with authored instructional content, and
-  // only Chapter 7 within it. Everywhere else the counts are genuinely
-  // zero — which is the point of the matrix, not a gap in it.
+  // v0.82.4 §6 — Class 6 is the only grade with authored instructional
+  // content, now in two chapters: Chapter 3 (Number Play) and Chapter 7
+  // (Fractions). Everywhere else the counts are genuinely zero — which
+  // is the point of the matrix, not a gap in it.
   const authored =
     grade === 'class6'
       ? allAuthoredSections()
@@ -124,7 +137,9 @@ export function coverageForGrade(grade: Grade): GradeCoverageRow {
     verified,
     source: c?.documentTitle ?? null,
     officialUnits: officialUnitCount(grade),
+    officialTopLevel: officialTopLevelCount(grade),
     officialChapters: officialChapterCount(grade),
+    officialSections: officialSectionCount(grade),
     officialTopics: officialTopicCount(grade),
     recordsRepresented: verified ? (c?.units.length ?? 0) : null,
     omissions: verified ? failures.length : null,
@@ -281,7 +296,7 @@ export function backlogSummary(): BacklogSummary {
  *  curriculum gap. Surfaced for the teacher and admin views. */
 export function verifiedGradesWithNoContent(): GradeCoverageRow[] {
   return coverageMatrix().filter(
-    (r) => r.verified && r.drafts === 0 && (r.officialUnits ?? 0) > 0
+    (r) => r.verified && r.drafts === 0 && (r.officialTopLevel ?? 0) > 0
   );
 }
 

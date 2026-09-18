@@ -139,13 +139,17 @@ and its denominator is unknown rather than zero.
 ## 1. Curriculum completeness
 
 ${table(
-  ['Class', 'Primary verified', 'Source', 'Units', 'Chapters', 'Topics', 'Records represented', 'Omissions'],
+  // v0.82.4 §3 — four hierarchy columns, because the sources do not
+  // share one. A dash means the source does not define that level, not
+  // that we failed to count it.
+  ['Class', 'Primary verified', 'Source', 'Units', 'Chapters', 'Sections', 'Topics', 'Records represented', 'Omissions'],
   rows.map((r) => [
     r.gradeLabel,
     r.verified ? 'yes' : 'not yet',
     r.source ?? '—',
     n(r.officialUnits),
     n(r.officialChapters),
+    n(r.officialSections),
     n(r.officialTopics),
     n(r.recordsRepresented),
     n(r.omissions),
@@ -481,9 +485,9 @@ ${table(
       // hierarchy the book does not have and makes two unlike
       // structures look equivalent. Where the source's top level IS the
       // chapter, the unit column is empty.
-      c?.topLevel === 'chapter' ? '—' : n(r.officialUnits),
+      n(r.officialUnits),
       c?.topLevel === 'chapter' ? n(r.officialChapters) : chapterNamesFrom(c),
-      n(r.officialTopics),
+      n(r.officialSections ?? r.officialTopics),
       depthOf(r.grade),
     ];
   })

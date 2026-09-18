@@ -14,6 +14,7 @@ import {
   officialCurriculumForGrade,
   officialChapterCount,
   officialUnitCount,
+  officialTopLevelCount,
   type OfficialCurriculum,
 } from '../officialCurriculum';
 import { validateCurriculumRegistry } from '../validate';
@@ -80,7 +81,10 @@ describe('curriculum completeness invariant', () => {
   });
 
   it('keeps Class 6 at all ten verified Ganita Prakash chapters', () => {
-    expect(officialUnitCount('class6')).toBe(10);
+    // v0.82.4 — Class 6's ten are CHAPTERS. `officialUnitCount` now
+    // answers only the units question, and Ganita Prakash has no units.
+    expect(officialUnitCount('class6')).toBeNull();
+    expect(officialChapterCount('class6')).toBe(10);
     expect(officialChapterCount('class6')).toBe(10);
     expect(expectedFor('class6')!.unitTitles).toHaveLength(10);
     // And the student surface shows every one, content or not.
@@ -96,7 +100,8 @@ describe('curriculum completeness invariant', () => {
     for (const g of ['class10', 'class11', 'class12'] as const) {
       // Units are known; chapters are NOT, because no one has read those
       // textbooks. Null and a number are different claims.
-      expect(officialUnitCount(g), g).not.toBeNull();
+      // Top-level records, whatever the source calls them.
+      expect(officialTopLevelCount(g), g).not.toBeNull();
       expect(officialChapterCount(g), g).toBeNull();
       expect(expectedFor(g)!.chapters, g).toBeNull();
     }

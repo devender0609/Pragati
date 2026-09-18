@@ -21,7 +21,8 @@ import {
   OFFICIAL_CURRICULA,
   officialCurriculumForGrade,
   officialTopicCount,
-  officialUnitCount,
+  officialTopLevelCount,
+  officialSectionCount,
   officialChapterCount,
   structureNoun,
   type OfficialCurriculum,
@@ -140,8 +141,10 @@ function class6Coverage() {
 
 export function auditGrade(grade: Grade): GradeCurriculumAudit {
   const c = officialCurriculumForGrade(grade);
-  const units = officialUnitCount(grade);
-  const topics = officialTopicCount(grade);
+  // v0.82.4 — top-level records, not units: Class 6's ten are chapters.
+  const units = officialTopLevelCount(grade);
+  // Sub-level records, whichever level the source defines.
+  const topics = officialTopicCount(grade) ?? officialSectionCount(grade);
   const legacyRows = CHAPTER_CATALOGUE.filter(
     (r) => r.grade === GRADE_TO_CATALOGUE_KEY[grade]
   ).length;
