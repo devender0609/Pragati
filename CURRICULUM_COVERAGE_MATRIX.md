@@ -1,6 +1,6 @@
 # Curriculum Coverage Matrix — Classes 1–12 Mathematics
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.2. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.3. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -9,7 +9,7 @@
 | Truth | Question it answers | Current answer |
 |---|---|---|
 | Curriculum completeness | Does Pragati represent every official record for a verified class? | 5 of 12 classes primary-source verified; 0 omissions across them |
-| Instructional completeness | Has Pragati written the teaching for those records? | 12 complete instructional drafts, all in Class 6 Chapter 7 |
+| Instructional completeness | Has Pragati written the teaching for those records? | 12 complete instructional drafts — 3 in Number Play, 9 in Fractions |
 | Review / publication | Has an educator approved it, and is it published? | 0 reviewed, 0 published |
 
 An unverified class is **not** a class with no curriculum. It is a class
@@ -37,7 +37,7 @@ and its denominator is unknown rather than zero.
 
 ## 2. Instructional content completeness
 
-| Class | Chapters with Learn | Topics: Learn | Guided | Independent | Reasoning | Visual | Teacher notes | Complete drafts |
+| Class | Student-openable Learn chapters | Topics: Learn | Guided | Independent | Reasoning | Visual | Teacher notes | Complete drafts |
 |---|---|---|---|---|---|---|---|---|
 | Class 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Class 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -95,8 +95,18 @@ collapsing any two of them is how a draft starts looking like a lesson.
 4. **Complete draft, review-ready** — blocked on a person, not on us.
 5. **Reviewed and published** — the only state a student may see.
 
-Currently: **9** sections are in state 4, **0** in state 3, and
-**0** in state 5.
+Currently, by chapter:
+
+| Chapter | Complete drafts | Review-ready (state 4) |
+|---|---|---|
+| Number Play | 3 | 3 |
+| Fractions | 9 | 9 |
+
+**Total: 12**
+sections in state 4, **0** in state 3, and **0** in state 5.
+
+The packages stay chapter-scoped — a reviewer receives one chapter — so
+this total is a report, not a queue.
 
 ---
 

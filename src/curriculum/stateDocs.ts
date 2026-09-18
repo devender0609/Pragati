@@ -42,7 +42,15 @@ import {
   backlogSummary,
   type GradeCoverageRow,
 } from './coverageMatrix';
-import { reviewReadinessSummary } from './reviewReadiness';
+// v0.82.3 §3 — state documents made product-wide claims out of a
+// deprecated Fractions-only wrapper, so every "current state" sentence
+// silently meant Chapter 7.
+import {
+  reviewReadinessByChapter,
+  reviewReadinessSummaryForChapter,
+} from './reviewReadiness';
+import { AUTHORED_CHAPTERS } from './authoredSections';
+import { assessSection } from './instructionalCompleteness';
 import {
   officialCurriculumForGrade,
   OFFICIAL_CURRICULA,
@@ -66,9 +74,45 @@ const n = (v: number | null) => (v === null ? '—' : String(v));
 
 // ---------------------------------------------------------------------------
 
+
+/**
+ * v0.82.3 §1/§2 — chapter distribution, derived.
+ *
+ * The matrix said "12 complete instructional drafts, all in Class 6
+ * Chapter 7", which stopped being true the moment Number Play was
+ * authored — and would have gone on being printed as fact. The
+ * breakdown is computed from the authored registry, so a chapter added
+ * later appears here without anyone remembering to edit a sentence.
+ */
+function authoredChapterBreakdown(): Array<{
+  title: string;
+  complete: number;
+  reviewReady: number;
+}> {
+  return AUTHORED_CHAPTERS.map((c) => {
+    const sections = c.sections();
+    return {
+      title: c.title,
+      complete: sections.filter(
+        (s) => assessSection(s).level === 'complete_instructional_draft'
+      ).length,
+      reviewReady: reviewReadinessSummaryForChapter(c.officialChapterId)
+        .reviewReady,
+    };
+  });
+}
+
+function breakdownSentence(): string {
+  const parts = authoredChapterBreakdown()
+    .filter((c) => c.complete > 0)
+    .map((c) => `${c.complete} in ${c.title}`);
+  const total = authoredChapterBreakdown().reduce((a, c) => a + c.complete, 0);
+  return `${total} complete instructional drafts — ${parts.join(', ')}`;
+}
+
 export function renderCoverageMatrix(version: string): string {
   const rows = coverageMatrix();
-  const rr = reviewReadinessSummary();
+  const rr = reviewReadinessSummaryForChapter(AUTHORED_CHAPTERS[1].officialChapterId);
   const verified = rows.filter((r) => r.verified);
   const unverified = rows.filter((r) => !r.verified);
 
@@ -83,7 +127,7 @@ ${STAMP(version)}
 | Truth | Question it answers | Current answer |
 |---|---|---|
 | Curriculum completeness | Does Pragati represent every official record for a verified class? | ${verified.length} of 12 classes primary-source verified; ${verified.reduce((a, r) => a + (r.omissions ?? 0), 0)} omissions across them |
-| Instructional completeness | Has Pragati written the teaching for those records? | ${rows.reduce((a, r) => a + r.completeInstructionalDrafts, 0)} complete instructional drafts, all in Class 6 Chapter 7 |
+| Instructional completeness | Has Pragati written the teaching for those records? | ${breakdownSentence()} |
 | Review / publication | Has an educator approved it, and is it published? | ${rows.reduce((a, r) => a + r.educatorReviewed, 0)} reviewed, ${rows.reduce((a, r) => a + r.published, 0)} published |
 
 An unverified class is **not** a class with no curriculum. It is a class
@@ -111,7 +155,7 @@ ${table(
 ## 2. Instructional content completeness
 
 ${table(
-  ['Class', 'Chapters with Learn', 'Topics: Learn', 'Guided', 'Independent', 'Reasoning', 'Visual', 'Teacher notes', 'Complete drafts'],
+  ['Class', 'Student-openable Learn chapters', 'Topics: Learn', 'Guided', 'Independent', 'Reasoning', 'Visual', 'Teacher notes', 'Complete drafts'],
   rows.map((r) => [
     r.gradeLabel,
     String(r.chaptersWithLearn),
@@ -164,8 +208,22 @@ collapsing any two of them is how a draft starts looking like a lesson.
 4. **Complete draft, review-ready** — blocked on a person, not on us.
 5. **Reviewed and published** — the only state a student may see.
 
-Currently: **${rr.reviewReady}** sections are in state 4, **0** in state 3, and
-**0** in state 5.
+Currently, by chapter:
+
+${table(
+  ['Chapter', 'Complete drafts', 'Review-ready (state 4)'],
+  authoredChapterBreakdown().map((c) => [
+    c.title,
+    String(c.complete),
+    String(c.reviewReady),
+  ])
+)}
+
+**Total: ${authoredChapterBreakdown().reduce((a, c) => a + c.reviewReady, 0)}**
+sections in state 4, **0** in state 3, and **0** in state 5.
+
+The packages stay chapter-scoped — a reviewer receives one chapter — so
+this total is a report, not a queue.
 
 ---
 
@@ -192,7 +250,6 @@ tracked in \`STRUCTURE_VERIFICATION_BACKLOG.md\`.
 export function renderContentBacklog(version: string): string {
   const entries = coverageBacklog();
   const s = backlogSummary();
-  const rr = reviewReadinessSummary();
   // Read from the same matrix everything else reads, so the backlog and
   // the coverage document cannot disagree about which classes are
   // verified.
@@ -231,12 +288,23 @@ ${table(
   Object.entries(s.byGrade).map(([g, c]) => [g, String(c)])
 )}
 
-## Review state, Class 6 Chapter 7
+${reviewReadinessByChapter()
+  .filter((c) => c.rows.length > 0)
+  .map((c) => {
+    const summary = reviewReadinessSummaryForChapter(c.officialChapterId);
+    return `## Review state — Class 6, ${c.title}
 
-${rr.headline}
+${summary.headline}
 
-Nothing in this chapter is waiting on engineering. The remaining step is
-a person reading a package.
+- Complete drafts: **${summary.completeDrafts}**
+- Review-ready: **${summary.reviewReady}**
+- Awaiting package preparation: **${summary.awaitingPackagePreparation}**
+- Sent: **${summary.reviewSent}** · Received: **${summary.reviewReceived}**`;
+  })
+  .join('\n\n')}
+
+Nothing in either chapter is waiting on engineering. The remaining step
+is a person reading a package.
 
 ## The records
 

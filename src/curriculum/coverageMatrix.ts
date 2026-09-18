@@ -60,6 +60,17 @@ export type GradeCoverageRow = {
   omissions: number | null;
 
   // --- 2. Pragati content ------------------------------------------
+  /**
+   * v0.82.3 §5 — chapters with a STUDENT-OPENABLE section, not chapters
+   * with authored Learn. It reads 1 while authored content exists in
+   * Chapters 3 and 7, which looks wrong until you know which question
+   * it answers: nothing in Chapter 3 is published, and neither is
+   * anything in Chapter 7 except the one openable section.
+   *
+   * The value is right; the old column name ("Chapters with Learn") was
+   * what misled. The generated document now calls it "Student-openable
+   * Learn chapters".
+   */
   chaptersWithLearn: number;
   topicsWithLearn: number;
   topicsWithGuidedPractice: number;

@@ -1,6 +1,6 @@
 # Content Backlog — what is missing, and in what order
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.2. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.3. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -34,12 +34,26 @@ above is wrong by an unknown margin.
 | Class 11 | 5 |
 | Class 12 | 6 |
 
-## Review state, Class 6 Chapter 7
+## Review state — Class 6, Number Play
+
+3 complete drafts. 3 are review-ready and blocked on a person. No section is waiting on engineering.
+
+- Complete drafts: **3**
+- Review-ready: **3**
+- Awaiting package preparation: **0**
+- Sent: **0** · Received: **0**
+
+## Review state — Class 6, Fractions
 
 9 complete drafts. 9 are review-ready and blocked on a person. No section is waiting on engineering.
 
-Nothing in this chapter is waiting on engineering. The remaining step is
-a person reading a package.
+- Complete drafts: **9**
+- Review-ready: **9**
+- Awaiting package preparation: **0**
+- Sent: **0** · Received: **0**
+
+Nothing in either chapter is waiting on engineering. The remaining step
+is a person reading a package.
 
 ## The records
 
