@@ -83,16 +83,19 @@ describe('§A the remaining gaps are reported honestly', () => {
     }
   });
 
-  it('§3.1 is complete only because its visual requirement is waived', () => {
-    // The waiver is a judgement a reviewer may overturn, and it is
-    // recorded where a reviewer will see it rather than asserted here.
+  it('§3.1 requires a semantic visual and has one', () => {
+    // v0.82.2 §2 — this used to assert the opposite, and passed for two
+    // releases on a waiver written for a lesson that no longer exists.
+    // A test that still passes is not the same as a test that still
+    // says something true.
     const a = assessSection(
       numberPlayChapterSections().find((s) => s.source.sectionNumber === '3.1')!
     );
-    expect(a.visualRequirement.required).toBe(false);
-    if (a.visualRequirement.required === false) {
-      expect(a.visualRequirement.reason).toMatch(/decorative/i);
+    expect(a.visualRequirement.required).toBe(true);
+    if (a.visualRequirement.required) {
+      expect(a.visualRequirement.satisfied).toBe(true);
     }
+    expect(a.semanticVisualCount).toBeGreaterThanOrEqual(2);
     expect(a.level).toBe('complete_instructional_draft');
   });
 });

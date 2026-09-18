@@ -42,18 +42,35 @@ import { fingerprintOf } from './contentArtifact';
 // accessors directly, so it could only ever see one chapter. Number Play
 // §3.1 and §3.2 were complete drafts with no route to a reviewer. It now
 // reads the cross-chapter registry.
+import { isReviewEligible } from './numberPlayAlignment';
 import {
   allAuthoredSections,
   anyAuthoredSectionById as authoredSectionById,
   authoredSectionsForChapter,
+  FRACTIONS_CHAPTER_ID,
 } from './authoredSections';
 import { assessSection } from './instructionalCompleteness';
 import type { ReviewRecord } from './educatorReview';
 
-/** The question set version for the short section instrument. */
+/**
+ * v0.82.2 §14 — TWO VERSIONS, DELIBERATELY DIFFERENT THINGS.
+ *
+ *   SECTION_QUESTION_SET_VERSION versions the REVIEW INSTRUMENT — the
+ *   shape of the questions a reviewer answers. It is global because the
+ *   instrument is the same for every section.
+ *
+ *   `section.contentArtifactVersion` versions the LESSON. It is
+ *   per-section because lessons change independently, and §3.1 is at
+ *   version 2 because it was replaced rather than edited after the
+ *   source audit.
+ *
+ * Conflating them was the bug: every package reported artifact version
+ * 1, so a reviewer handed the rewritten §3.1 would have been told they
+ * were reading the draft it replaced.
+ */
 export const SECTION_QUESTION_SET_VERSION = 1;
 
-/** Bumped by hand when a section lesson is deliberately revised. */
+/** @deprecated use `section.contentArtifactVersion`. */
 export const SECTION_ARTIFACT_VERSION = 1;
 
 /** §7.4 already has a frozen package; it is never regenerated here. */
@@ -102,7 +119,10 @@ export function sectionFingerprint(officialSectionId: string): string {
 export function sectionReviewCode(officialSectionId: string): string {
   const n = officialSectionId.split('_s').pop()?.replace('_', '') ?? '??';
   const fp = sectionFingerprint(officialSectionId);
-  return `S${n}-v${SECTION_ARTIFACT_VERSION}-${fp.slice(0, 6).toUpperCase()}`;
+  // The review CODE carries the instrument version, not the lesson's:
+  // it identifies a response sheet. Changing it would invalidate the
+  // eight Fractions codes already generated.
+  return `S${n}-v${SECTION_QUESTION_SET_VERSION}-${fp.slice(0, 6).toUpperCase()}`;
 }
 
 /**
@@ -190,6 +210,92 @@ export function questionsForSection(officialSectionId: string): ReviewQuestion[]
 }
 
 /** The seven sections needing a package. Derived, never hard-coded. */
+
+/**
+ * v0.82.2 §10 — the chapter, named from the section rather than
+ * hard-coded. The generic function said "a Class 6 fractions chapter"
+ * for every package, which would be simply false on a Number Play one.
+ */
+function chapterDescription(sec: {
+  source: { officialChapterId: string };
+}): string {
+  return sec.source.officialChapterId.includes('ch03')
+    ? 'Chapter 3, Number Play, of Class 6 Mathematics'
+    : 'Chapter 7, Fractions, of Class 6 Mathematics';
+}
+
+/**
+ * v0.82.2 §11 — supplementary notes belong to the chapter that earned
+ * them.
+ *
+ * The shaded-pieces note is a FRACTIONS obligation: v0.77.2 added
+ * second-person misconception paraphrases to that chapter's lessons.
+ * Putting it in a Number Play package would ask an educator to review
+ * wording that does not exist there, which wastes their time and erodes
+ * their trust in the rest of the package.
+ *
+ * Number Play's notes are its real enrichment — what Pragati added or
+ * chose that the source does not state — not template filler.
+ */
+function chapterReviewerNotes(sec: {
+  source: { officialChapterId: string; officialSectionId: string };
+}): string {
+  if (!sec.source.officialChapterId.includes('ch03')) {
+    return [
+      '### Also unreviewed: the student-facing "watch out for" wording',
+      '',
+      "v0.77.2 added short second-person paraphrases of this chapter's",
+      'misconceptions, so that a Class 6 student reading a lesson sees "You',
+      'might count just the shaded pieces and write 3" rather than the',
+      'teacher-facing "Why students do this / How to fix it".',
+      '',
+      '**That paraphrase wording is presentation copy written by Pragati and',
+      'has not been reviewed by any educator.** It restates the authored',
+      'misconception and its correction in second person and introduces no',
+      'new mathematical claim — but that is our assessment, not yours, and',
+      'it is exactly the judgement a reviewer should make rather than',
+      'inherit. Please read those lines as part of this package and say if',
+      'any of them is wrong, unclear, or unkind.',
+      '',
+      'The underlying misconception records are unchanged.',
+    ].join('\n');
+  }
+
+  const perSection: Record<string, string[]> = {
+    ncert_gp_c6_s3_1: [
+      '- Pragati uses **plants of stated heights** where the source uses',
+      '  children standing in a line. The mathematics is the same; the',
+      '  scenario is ours. Does it carry the idea as well?',
+      '- Stating outright that **the tallest always reports 0**. The source',
+      '  leads students to it through questions instead. Is naming it early',
+      '  a help or a giveaway?',
+    ],
+    ncert_gp_c6_s3_2: [
+      '- The **tie case** — two equal neighbours, so neither is a supercell',
+      '  — is Pragati enrichment. The source tables use distinct numbers and',
+      '  never raise it. We think it sharpens the definition; you may think',
+      "  it distracts from the section's own emphasis.",
+      '- All grid numbers are original rather than the source’s.',
+    ],
+    ncert_gp_c6_s3_3: [
+      "- The **number-line windows are Pragati's**, not the source's,",
+      '  including an 86,000–88,000 line whose interval is 250 rather than',
+      '  a round thousand.',
+      '- Stating the **method** explicitly — divide the span by the number',
+      '  of intervals — where the source expects it without naming it.',
+    ],
+  };
+
+  return [
+    "### What in this section is Pragati's, not the book's",
+    '',
+    'The primary pages were read and this lesson follows their mathematics.',
+    'These choices are ours, and are the parts most worth your judgement:',
+    '',
+    ...(perSection[sec.source.officialSectionId] ?? ['- (none recorded)']),
+  ].join('\n');
+}
+
 export function sectionsNeedingPackages(officialChapterId?: string): string[] {
   const sections = officialChapterId
     ? authoredSectionsForChapter(officialChapterId)
@@ -198,7 +304,21 @@ export function sectionsNeedingPackages(officialChapterId?: string): string[] {
     .filter((s) => {
       const id = s.source.officialSectionId;
       if (id === ALREADY_PACKAGED) return false;
-      return assessSection(s).level === 'complete_instructional_draft';
+      const level = assessSection(s).level;
+      if (level !== 'complete_instructional_draft') return false;
+      // v0.82.2 §8 — ALIGNMENT GATES PACKAGING, NOT JUST READINESS.
+      //
+      // Structural completeness says every field is populated. It says
+      // nothing about whether the section teaches what the source
+      // teaches, and §3.1 and §3.3 were complete and wrong for three
+      // releases. Sending a reviewer a wrong lesson wastes the scarcest
+      // thing in this project — an educator's afternoon.
+      //
+      // Fractions keeps the chapter-wide legacy exemption already
+      // documented in readiness: its alignment was established in
+      // v0.74, section by section, before per-section records existed.
+      if (s.source.officialChapterId === FRACTIONS_CHAPTER_ID) return true;
+      return isReviewEligible(id, level);
     })
     .map((s) => s.source.officialSectionId);
 }
@@ -212,12 +332,14 @@ export function sectionsNeedingPackages(officialChapterId?: string): string[] {
  */
 export function sectionReviewRecord(officialSectionId: string): ReviewRecord {
   const questions = questionsForSection(officialSectionId);
+  const section = authoredSectionById(officialSectionId);
   return {
     packageId: `S_section:${officialSectionId}`,
     packageVersion: 'v0.75',
     questionSetVersion: SECTION_QUESTION_SET_VERSION,
     contentArtifactId: `${officialSectionId}_lesson`,
-    contentArtifactVersion: SECTION_ARTIFACT_VERSION,
+    // §13 — the real per-section version, not a package-wide constant.
+    contentArtifactVersion: section?.contentArtifactVersion ?? SECTION_ARTIFACT_VERSION,
     expectedFingerprint: () => sectionFingerprint(officialSectionId),
     expectedItemIds: questions.map((q) => q.id),
     submissions: [],
@@ -260,27 +382,12 @@ Questions: ${qs.length}
 
 ## What you are being asked
 
-This is one section of a Class 6 fractions chapter, authored by Pragati and
+This is one section of ${chapterDescription(s)}, authored by Pragati and
 **not yet seen by any student**. Nothing here is published.
 
-### Also unreviewed: the student-facing "watch out for" wording
+${chapterReviewerNotes(s)}
 
-v0.77.2 added short second-person paraphrases of this chapter's
-misconceptions, so that a Class 6 student reading a lesson sees "You
-might count just the shaded pieces and write 3" rather than the
-teacher-facing "Why students do this / How to fix it".
-
-**That paraphrase wording is presentation copy written by Pragati and has
-not been reviewed by any educator.** It restates the authored
-misconception and its correction in second person and introduces no new
-mathematical claim — but "introduces no new claim" is our assessment,
-not yours, and it is exactly the sort of judgement a reviewer should
-make rather than inherit. Please read those lines as part of this
-package and say if any of them is wrong, unclear, or unkind.
-
-The underlying misconception records are unchanged.
-
-You are the ${officialSectionId === 'ncert_gp_c6_s7_1' ? 'first' : 'a'} reviewer of this
+You are a reviewer of this
 section. Please answer as a teacher, not as a proofreader: if the explanation
 would not work in your classroom, that matters more than any wording.
 

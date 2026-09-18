@@ -28,7 +28,10 @@
 // Time", and the brief has to say so or it adds nothing.
 
 import type { Grade } from '../types';
-import { authoredSectionById } from './fractionsChapter';
+// v0.82.2 §6 — briefsForChapter() asked a Fractions-only lookup whether
+// a section was authored, so an authored Number Play section would be
+// handed a "write this from scratch" production brief.
+import { anyAuthoredSectionById as authoredSectionById } from './authoredSections';
 import { sectionsForChapter } from './officialSections';
 import { officialCurriculumForGrade } from './officialCurriculum';
 import {

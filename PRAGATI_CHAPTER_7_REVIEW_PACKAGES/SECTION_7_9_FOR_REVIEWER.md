@@ -10,7 +10,7 @@ Questions: 12
 
 ## What you are being asked
 
-This is one section of a Class 6 fractions chapter, authored by Pragati and
+This is one section of Chapter 7, Fractions, of Class 6 Mathematics, authored by Pragati and
 **not yet seen by any student**. Nothing here is published.
 
 ### Also unreviewed: the student-facing "watch out for" wording
@@ -20,17 +20,17 @@ misconceptions, so that a Class 6 student reading a lesson sees "You
 might count just the shaded pieces and write 3" rather than the
 teacher-facing "Why students do this / How to fix it".
 
-**That paraphrase wording is presentation copy written by Pragati and has
-not been reviewed by any educator.** It restates the authored
-misconception and its correction in second person and introduces no new
-mathematical claim — but "introduces no new claim" is our assessment,
-not yours, and it is exactly the sort of judgement a reviewer should
-make rather than inherit. Please read those lines as part of this
-package and say if any of them is wrong, unclear, or unkind.
+**That paraphrase wording is presentation copy written by Pragati and
+has not been reviewed by any educator.** It restates the authored
+misconception and its correction in second person and introduces no
+new mathematical claim — but that is our assessment, not yours, and
+it is exactly the judgement a reviewer should make rather than
+inherit. Please read those lines as part of this package and say if
+any of them is wrong, unclear, or unkind.
 
 The underlying misconception records are unchanged.
 
-You are the a reviewer of this
+You are a reviewer of this
 section. Please answer as a teacher, not as a proofreader: if the explanation
 would not work in your classroom, that matters more than any wording.
 

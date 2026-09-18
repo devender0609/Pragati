@@ -29,9 +29,12 @@ import {
   coverageBacklog,
   type GradeCoverageRow,
 } from './coverageMatrix';
-import { fractionsChapterSections } from './fractionsChapter';
+// v0.82.2 §3 — recordStateCounts() is a PRODUCT-WIDE tally and it read
+// one chapter, so Chapter 3's three authored sections were missing from
+// every current-state count derived from it.
+import { allAuthoredSections } from './authoredSections';
 import { assessSection } from './instructionalCompleteness';
-import { chapterReviewReadiness } from './reviewReadiness';
+import { reviewReadinessByChapter } from './reviewReadiness';
 
 /**
  * §6 — the states a verified official record can be in.
@@ -120,11 +123,11 @@ function emptyCounts(): RecordStateCounts {
 export function recordStateCounts(): RecordStateCounts {
   const counts = emptyCounts();
   const readinessById = new Map(
-    chapterReviewReadiness().map((r) => [r.officialSectionId, r])
+    reviewReadinessByChapter().flatMap((c) => c.rows).map((r) => [r.officialSectionId, r])
   );
 
   const authoredById = new Map(
-    fractionsChapterSections().map((s) => [
+    allAuthoredSections().map((s) => [
       s.source.officialSectionId,
       assessSection(s),
     ])

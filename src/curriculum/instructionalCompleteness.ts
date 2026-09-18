@@ -113,21 +113,18 @@ const WAIVERS: Record<
   string,
   Partial<Record<'visual' | 'interaction' | 'reasoning' | 'misconception', string>>
 > = {
-  // v0.82 §B — §3.1 teaches that a number carries information only
-  // alongside what it counts. The work is choosing an interpretation,
-  // and there is no mathematical object to draw: a picture of "12
-  // students" would be twelve stick figures, which illustrates the
-  // sentence without teaching the idea, and a bar chart would import
-  // comparison machinery the section deliberately does not use yet.
-  // Decorative or misleading, so waived rather than faked.
+  // v0.82.2 §1 — THE §3.1 VISUAL WAIVER IS GONE.
   //
-  // Interaction is NOT waived. It is authored: three multiple-choice
-  // items whose distractors are the interpretations students actually
-  // make.
-  ncert_gp_c6_s3_1: {
-    visual:
-      'The section is about interpreting a number in context. Any drawing would either illustrate the sentence decoratively (twelve stick figures for "12 students") or import comparison machinery from later sections. A reviewer may disagree.',
-  },
+  // It argued that a picture here would be decorative, because §3.1 was
+  // about interpreting a number in context. That reading was wrong and
+  // the lesson was rewritten: §3.1 now teaches adjacent taller
+  // neighbours, which is spatial and relational, and it carries two
+  // semantic NumberGrid visuals that do real teaching work.
+  //
+  // So the requirement applies normally and is satisfied by the
+  // authored visuals. No replacement waiver: a waiver that outlives the
+  // argument for it is worse than no waiver, because it keeps asserting
+  // a judgement nobody currently holds.
 
   ncert_gp_c6_s7_9: {
     visual:

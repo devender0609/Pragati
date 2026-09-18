@@ -225,10 +225,10 @@ describe('§3 unauthored work is represented completely', () => {
     // to Class 6 coverage. The figure moved because authored work
     // stopped being reported as absent.
     expect(s.undeterminedDesignDecisions).toBe(159);
-    // v0.82.1 — a fourth justified waiver: §3.1's visual. Its
-    // mathematics is relational rather than drawn-quantity, and the
-    // reason is recorded rather than implied.
-    expect(s.waivedWithReason).toBe(4);
+    // v0.82.2 §1 — back to 3. The §3.1 visual waiver was removed: it
+    // was written for the rejected v0.79 reading of the section, and
+    // the rewritten §3.1 has two semantic visuals that do real work.
+    expect(s.waivedWithReason).toBe(3);
     // And the sum is NOT the headline number, because the two are not
     // the same kind of thing.
     expect(s.determinedAuthoringItems).not.toBe(483);
@@ -323,14 +323,16 @@ describe('§5 reports cannot contradict their own data', () => {
 
   it('states the five states separately', () => {
     const c = recordStateCounts();
-    expect(c.structure_only).toBe(80);
+    // v0.82.2 §3 — 80 → 77. Three Chapter 3 sections stopped being
+    // counted as bare structure with no content, because the tally can
+    // finally see that they were authored.
+    expect(c.structure_only).toBe(77);
     // v0.75 §22 — §7.9 was the one incomplete draft. It is complete now.
     expect(c.incomplete_draft).toBe(0);
-    // v0.82.1 — `recordStateCounts()` reads the content registry, which
-    // is still Chapter 7's, so this stays at 9. Chapter 3's three
-    // complete drafts are not in it: they need review packages, and
-    // that is the honest remaining gap rather than a number to adjust.
-    expect(c.review_package_preparation + c.awaiting_review).toBe(9);
+    // v0.82.2 — now 12: Chapter 3's three joined Chapter 7's nine once
+    // the tally became cross-chapter. Which of the two states they sit
+    // in is the subject of §15 below.
+    expect(c.review_package_preparation + c.awaiting_review).toBe(12);
     expect(c.reviewed).toBe(0);
     expect(c.published).toBe(0);
   });
@@ -338,7 +340,7 @@ describe('§5 reports cannot contradict their own data', () => {
   it('writes a sentence that matches the counts', () => {
     const s = backlogCoverageSentence();
     expect(s).toMatch(/89 verified official records/);
-    expect(s).toMatch(/80 hold no instructional content at all/);
+    expect(s).toMatch(/77 hold no instructional content at all/);
     expect(s).toMatch(/0 are reviewed and 0 are published/);
     expect(s).not.toMatch(/89 .{0,40}no content at all/);
   });

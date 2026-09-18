@@ -1,19 +1,62 @@
-// v0.75 §21 — write the eight section review packages to disk.
-// Generated, never hand-written, so a package cannot drift from the
-// lesson it describes. §7.4 is NOT regenerated; its package is frozen.
+// v0.82.2 §9 — CHAPTER-SCOPED PACKAGE EMISSION.
+//
+// This wrote every package into PRAGATI_CHAPTER_7_REVIEW_PACKAGES and
+// called `sectionsNeedingPackages()` with no scope, so the moment
+// Number Play became complete its sections would have been written into
+// the Fractions folder under Fractions naming — a reviewer opening
+// "Chapter 7" would have found a Number Play lesson in it.
+//
+// Chapters now emit separately, into their own folders, and §7.4 is
+// still never regenerated: its package is frozen and its fingerprint is
+// a release invariant.
 import { writeFileSync, mkdirSync } from 'node:fs';
 const m = await import('../src/curriculum/sectionReviewPackages.ts');
-const out = 'PRAGATI_CHAPTER_7_REVIEW_PACKAGES';
-mkdirSync(out, { recursive: true });
-const ids = m.sectionsNeedingPackages();
-const index = [];
-for (const id of ids) {
-  const n = id.split('_s').pop().replace('_', '.');
-  const file = `SECTION_${n.replace('.', '_')}_FOR_REVIEWER.md`;
-  writeFileSync(`${out}/${file}`, m.sectionPackageMarkdown(id));
-  const rec = m.sectionReviewRecord(id);
-  index.push({ section: n, file, code: m.sectionReviewCode(id), questions: rec.expectedItemIds.length, artifact: rec.contentArtifactId, fingerprint: m.sectionFingerprint(id) });
+const reg = await import('../src/curriculum/authoredSections.ts');
+
+const CHAPTERS = [
+  {
+    id: reg.FRACTIONS_CHAPTER_ID,
+    out: 'PRAGATI_CHAPTER_7_REVIEW_PACKAGES',
+    label: 'Chapter 7 — Fractions',
+  },
+  {
+    id: reg.NUMBER_PLAY_CHAPTER_ID,
+    out: 'PRAGATI_CHAPTER_3_REVIEW_PACKAGES',
+    label: 'Chapter 3 — Number Play',
+  },
+];
+
+let total = 0;
+for (const ch of CHAPTERS) {
+  const ids = m.sectionsNeedingPackages(ch.id);
+  if (ids.length === 0) {
+    console.log(`${ch.label}: nothing eligible`);
+    continue;
+  }
+  mkdirSync(ch.out, { recursive: true });
+  const index = [];
+  for (const id of ids) {
+    const n = id.split('_s').pop().replace('_', '.');
+    const file = `SECTION_${n.replace('.', '_')}_FOR_REVIEWER.md`;
+    writeFileSync(`${ch.out}/${file}`, m.sectionPackageMarkdown(id));
+    const rec = m.sectionReviewRecord(id);
+    index.push({
+      section: n,
+      file,
+      code: m.sectionReviewCode(id),
+      questions: rec.expectedItemIds.length,
+      artifact: rec.contentArtifactId,
+      artifactVersion: rec.contentArtifactVersion,
+      fingerprint: m.sectionFingerprint(id),
+    });
+  }
+  writeFileSync(
+    `${ch.out}/index.json`,
+    JSON.stringify({ chapter: ch.label, generated: 'v0.82.2', packages: index }, null, 2)
+  );
+  total += index.length;
+  console.log(`${ch.label}: wrote ${index.length} packages into ${ch.out}`);
+  for (const p of index)
+    console.log(`  §${p.section}  ${p.code}  artifact v${p.artifactVersion}  ${p.questions} questions`);
 }
-writeFileSync(`${out}/index.json`, JSON.stringify({ generated: 'v0.75', packages: index }, null, 2));
-console.log(`wrote ${index.length} packages`);
-for (const p of index) console.log(`  §${p.section}  ${p.code}  ${p.questions} questions`);
+console.log(`total ${total}`);

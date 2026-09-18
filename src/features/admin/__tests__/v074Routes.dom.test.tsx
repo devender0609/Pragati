@@ -176,7 +176,7 @@ describe('§5 the in-app coverage panel matches the document', () => {
     // The same derived sentence the markdown carries, so the app and
     // the document cannot disagree about how many records hold nothing.
     expect(
-      screen.getByText(/80 hold no instructional content at all/)
+      screen.getByText(/77 hold no instructional content at all/)
     ).toBeTruthy();
     expect(screen.getByText(/0 are reviewed and 0 are published/)).toBeTruthy();
   });

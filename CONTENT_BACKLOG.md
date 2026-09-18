@@ -1,6 +1,6 @@
 # Content Backlog — what is missing, and in what order
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.1. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.2. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
