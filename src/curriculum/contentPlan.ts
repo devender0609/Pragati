@@ -482,8 +482,19 @@ export type PlanSummary = {
   headline: string;
 };
 
-export function planSummary(): PlanSummary {
-  const plans = contentPlan();
+/**
+ * v0.82.7 §2 — ONE SUMMARISER, TWO SCOPES.
+ *
+ * `planSummary()` is product-wide and stays exactly as it was: other
+ * Admin views legitimately want the whole-product picture. The Chapter 7
+ * panel needed the same figures for Chapter 7 alone and had been showing
+ * the product-wide ones under a Chapter 7 heading.
+ *
+ * Rather than copy forty lines of counting, both scopes call this. The
+ * only thing that differs between them is which plans go in and how the
+ * headline names its scope — so the figures cannot drift apart.
+ */
+function summarisePlans(plans: SectionPlan[], scope: 'product' | string): PlanSummary {
   const byKind: Record<string, number> = {};
   const byPriority: Record<string, number> = { P1: 0, P2: 0, P3: 0 };
   const byOutcome: Record<PlanningOutcome, number> = {
@@ -537,13 +548,31 @@ export function planSummary(): PlanSummary {
     byPriority,
     byOutcome,
     headline:
-      `${plans.length} verified official records need work. ` +
+      (scope === 'product'
+        ? `${plans.length} verified official records need work. `
+        : `${plans.length} verified official records in ${scope} need work. `) +
       `${plannable} can be planned against an audited standard; ` +
       `${byOutcome.requires_deeper_curriculum_structure} are syllabus units whose sections ` +
       `nobody has read, and cannot responsibly receive a lesson plan. ` +
       `The plannable records need ${determined} authoring items and ` +
       `${undetermined} design decisions that must be answered first.`,
   };
+}
+
+/** Product-wide. Unchanged in meaning and in output. */
+export function planSummary(): PlanSummary {
+  return summarisePlans(contentPlan(), 'product');
+}
+
+/**
+ * Chapter-scoped. Every figure is derived from `planForChapter` and
+ * nothing else, so a chapter panel cannot show a product-wide number.
+ */
+export function planSummaryForChapter(
+  officialChapterId: string,
+  chapterLabel: string
+): PlanSummary {
+  return summarisePlans(planForChapter(officialChapterId), chapterLabel);
 }
 
 /**

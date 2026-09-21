@@ -12,7 +12,7 @@
 
 import { useState } from 'react';
 import {
-  planSummary,
+  planSummaryForChapter,
   planForChapter,
   observedMiddleStageFractionsShape,
 } from '../../curriculum/contentPlan';
@@ -21,7 +21,19 @@ import {
   PRODUCTION_STAGE_LABEL,
   type ProductionStage,
 } from '../../curriculum/productionStage';
-import { reviewReadinessSummary } from '../../curriculum/reviewReadiness';
+// v0.82.6 — OPTION A: this panel is Fractions-specific, and now says so.
+//
+// It planned Chapter 7 (`planForChapter` for ch07), explained §7.4's
+// frozen candidate, and read the deprecated Fractions-only summary —
+// under a heading that said only "Authoring plan". Its count of 9
+// review-ready was correct for Chapter 7 and wrong as a product claim,
+// because Number Play has 3 more.
+//
+// Widening it to every chapter would have meant rewriting the §7.4
+// copy that makes it useful. Naming its scope costs one heading and
+// keeps every number true.
+import { reviewReadinessSummaryForChapter } from '../../curriculum/reviewReadiness';
+import { FRACTIONS_CHAPTER_ID } from '../../curriculum/authoredSections';
 
 const STAGES: ProductionStage[] = [
   'PRIMARY_EARLY',
@@ -32,10 +44,16 @@ const STAGES: ProductionStage[] = [
 ];
 
 export function ContentPlanPanel() {
-  const summary = planSummary();
-  const readiness = reviewReadinessSummary();
+  // v0.82.7 §3 — the heading said Chapter 7 and these six metrics were
+  // product-wide. Every figure on this panel now comes from the same
+  // chapter the heading names.
+  const summary = planSummaryForChapter(
+    FRACTIONS_CHAPTER_ID,
+    'Chapter 7, Fractions'
+  );
+  const readiness = reviewReadinessSummaryForChapter(FRACTIONS_CHAPTER_ID);
   const [open, setOpen] = useState(false);
-  const chapterPlans = planForChapter('ncert_gp_c6_ch07_fractions');
+  const chapterPlans = planForChapter(FRACTIONS_CHAPTER_ID);
   const observed = observedMiddleStageFractionsShape();
   const middle = authoringStandardForStage('MIDDLE');
 
@@ -43,8 +61,12 @@ export function ContentPlanPanel() {
     <section className="space-y-4">
       <header>
         <h2 className="font-display text-base font-bold text-slate-900">
-          Authoring plan
+          Authoring plan — Chapter 7, Fractions
         </h2>
+        <p className="mt-1 text-xs text-slate-500">
+          Chapter-scoped. Number Play has its own review state in the
+          coverage matrix.
+        </p>
         <p className="mt-1 text-sm text-slate-600">{summary.headline}</p>
       </header>
 
@@ -102,8 +124,11 @@ export function ContentPlanPanel() {
           Authoring standard by stage
         </p>
         <p className="mt-1 text-xs leading-relaxed text-slate-600">
-          Pragati has audited one body of content: Class 6 Chapter 7, Middle
-          Stage, at section grain. Every other stage returns
+          The current Middle Stage authoring standard was derived from the
+          fully audited Class 6 Chapter 7 Fractions set, at section grain.
+          (Chapter 3, Number Play, has since been source-aligned against its
+          primary pages too; the standard was not re-derived from it.) Every
+          other stage returns
           <strong> production standard pending</strong> — which is the true
           state of the evidence, not a gap in this table. A Class 11 unit must
           not inherit the shape of a Class 6 Fractions section.

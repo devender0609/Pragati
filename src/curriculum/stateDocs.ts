@@ -190,7 +190,11 @@ ${table(
   ])
 )}
 
-### Review readiness, Class 6 Chapter 7
+### Fractions detail — Class 6, Chapter 7
+
+The per-chapter table below is the cross-chapter source of truth. This
+block is kept because it carries Chapter 7's sent / received /
+adjudicated counts, which the table does not.
 
 - Complete drafts: **${rr.completeDrafts}**
 - Review-ready (blocked on a person): **${rr.reviewReady}**

@@ -1,6 +1,6 @@
 # Curriculum Coverage Matrix — Classes 1–12 Mathematics
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.5. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.7. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -69,7 +69,11 @@ and its denominator is unknown rather than zero.
 | Class 11 | 0 | 0 | 0 | 0 |
 | Class 12 | 0 | 0 | 0 | 0 |
 
-### Review readiness, Class 6 Chapter 7
+### Fractions detail — Class 6, Chapter 7
+
+The per-chapter table below is the cross-chapter source of truth. This
+block is kept because it carries Chapter 7's sent / received /
+adjudicated counts, which the table does not.
 
 - Complete drafts: **9**
 - Review-ready (blocked on a person): **9**
