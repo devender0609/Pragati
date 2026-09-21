@@ -159,7 +159,11 @@ ${table(
 ## 2. Instructional content completeness
 
 ${table(
-  ['Class', 'Student-openable Learn chapters', 'Topics: Learn', 'Guided', 'Independent', 'Reasoning', 'Visual', 'Teacher notes', 'Complete drafts'],
+  // v0.82.5 §5 — "Topics: Learn" called Class 6's authored records
+  // topics, and they are sections. These counts are per authored
+  // RECORD, whatever level the source calls it, so the labels say so.
+  // The values are unchanged; only the words were wrong.
+  ['Class', 'Student-openable Learn chapters', 'Records with Learn', 'Records with guided practice', 'Records with independent practice', 'Records with reasoning', 'Records with a visual', 'Records with teacher notes', 'Complete drafts'],
   rows.map((r) => [
     r.gradeLabel,
     String(r.chaptersWithLearn),
@@ -354,11 +358,12 @@ the number of units, chapters and topics for that class is **unknown**.
 Recording it as zero would let an unverified class look complete.
 
 ${table(
-  ['Class', 'Units', 'Chapters', 'Topics', 'Status'],
+  ['Class', 'Units', 'Chapters', 'Sections', 'Topics', 'Status'],
   unverified.map((r) => [
     r.gradeLabel,
     n(r.officialUnits),
     n(r.officialChapters),
+    n(r.officialSections),
     n(r.officialTopics),
     'awaiting primary source verification',
   ])
@@ -367,7 +372,11 @@ ${table(
 ## Verified classes, for contrast
 
 ${table(
-  ['Class', 'Source', 'Units', 'Chapters', 'Topics'],
+  // v0.82.5 §6 — found by the bounded audit. This table had no Sections
+  // column, so once v0.82.4 correctly stopped reporting Class 6's 65 as
+  // topics they vanished from it entirely: a verified count silently
+  // dropped from a document about verification.
+  ['Class', 'Source', 'Units', 'Chapters', 'Sections', 'Topics'],
   rows
     .filter((r) => r.verified)
     .map((r) => [
@@ -375,6 +384,7 @@ ${table(
       r.source ?? '—',
       n(r.officialUnits),
       n(r.officialChapters),
+      n(r.officialSections),
       n(r.officialTopics),
     ])
 )}
@@ -468,7 +478,7 @@ proving anything about NCERT textbook chapter structure. The two are
 recorded separately below and must never be collapsed.
 
 ${table(
-  ['Class', 'Book identity', 'Structure', 'Document', 'Authority', 'Year', 'Inspected', 'Top level', 'Units', 'Chapters', 'Topics', 'Verification depth'],
+  ['Class', 'Book identity', 'Structure', 'Document', 'Authority', 'Year', 'Inspected', 'Top level', 'Units', 'Chapters', 'Sections', 'Topics', 'Verification depth'],
   rows.map((r) => {
     const c = officialCurriculumForGrade(r.grade);
     return [
@@ -487,7 +497,11 @@ ${table(
       // chapter, the unit column is empty.
       n(r.officialUnits),
       c?.topLevel === 'chapter' ? n(r.officialChapters) : chapterNamesFrom(c),
-      n(r.officialSections ?? r.officialTopics),
+      // v0.82.5 §1 — this was `officialSections ?? officialTopics` in one
+      // cell under a "Topics" header, so Class 6's 65 sections were
+      // printed as topics. Two levels, two cells.
+      n(r.officialSections),
+      n(r.officialTopics),
       depthOf(r.grade),
     ];
   })

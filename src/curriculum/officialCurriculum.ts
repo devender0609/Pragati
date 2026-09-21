@@ -580,8 +580,8 @@ const CLASS_6: OfficialCurriculum = {
     'v0.61 §9 — read from the primary source. The per-chapter PDF endpoint refuses automated access, but the full-book archive ' +
     'serves normally and contains the prelims plus all ten chapter PDFs. Chapter number and exact title were taken from the ' +
     'Contents page and cross-checked against each chapter\'s own opening page. Section depth is recorded for all ten chapters ' +
-    '(65 sections, every one primary_source_verified), which makes Class 6 the only grade with a trustworthy topic-level ' +
-    'denominator as well as a unit-level one.',
+    '(65 sections, every one primary_source_verified), which makes Class 6 the only grade with a trustworthy chapter- and ' +
+    'section-level denominator. The book defines chapters and sections; it has no unit layer and no topics.',
   manualVerificationStep: null,
   units: OFFICIAL_CHAPTERS.filter(
     (c) => c.grade === 'class6' && c.officialChapterNumber !== null
@@ -602,8 +602,20 @@ const CLASS_6: OfficialCurriculum = {
           officialTopicId: s.officialSectionId,
           title: s.exactTitle,
         })),
-        // Only Chapter 7 has been read at section depth. An empty topic
-        // list elsewhere means NOT READ, not "has no sections".
+        // v0.82.5 §4 — this used to say "Only Chapter 7 has been read at
+        // section depth", which stopped being true when all 65 sections
+        // across all ten chapters were verified from the contents pages.
+        //
+        // There IS a real distinction, and it is this one, not that one:
+        // every section's number, title and start page is verified from
+        // the source; the page-level MATHEMATICAL INTENT has been read
+        // only for the sections Pragati has authored (Chapter 3 §3.1-3.3
+        // in v0.82.1, Chapter 7 in the Fractions work). Structure verified
+        // is not the same claim as intent inspected.
+        //
+        // The field is named `topics` for storage reasons; for a chapter
+        // it holds SECTIONS. An empty list would mean not read, not "has
+        // no sections".
         topicsKnown: sections.length > 0,
       };
     }),

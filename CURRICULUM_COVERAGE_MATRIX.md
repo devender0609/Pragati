@@ -1,6 +1,6 @@
 # Curriculum Coverage Matrix — Classes 1–12 Mathematics
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.4. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.5. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -37,7 +37,7 @@ and its denominator is unknown rather than zero.
 
 ## 2. Instructional content completeness
 
-| Class | Student-openable Learn chapters | Topics: Learn | Guided | Independent | Reasoning | Visual | Teacher notes | Complete drafts |
+| Class | Student-openable Learn chapters | Records with Learn | Records with guided practice | Records with independent practice | Records with reasoning | Records with a visual | Records with teacher notes | Complete drafts |
 |---|---|---|---|---|---|---|---|---|
 | Class 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Class 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |

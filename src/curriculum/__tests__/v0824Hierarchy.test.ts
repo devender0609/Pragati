@@ -23,8 +23,6 @@ import {
 
 const read = (f: string) =>
   readFileSync(new URL(`../../../${f}`, import.meta.url), 'utf8');
-const rowFor = (doc: string, label: string) =>
-  doc.split('\n').find((l) => l.startsWith(`| ${label} |`)) ?? '';
 
 describe('§1/§2 Class 6 has chapters and sections, not units and topics', () => {
   it('reports no unit layer, because Ganita Prakash defines none', () => {
@@ -58,26 +56,90 @@ describe('§3 Classes 9-12 keep units and topics', () => {
   });
 });
 
-describe('§5 the two generated documents agree', () => {
-  it('shows Class 6 the same way in both', () => {
-    const inventory = rowFor(read('CURRENT_MATH_BOOKS_CLASSES_1_12.md'), 'Class 6');
-    const matrix = rowFor(read('CURRICULUM_COVERAGE_MATRIX.md'), 'Class 6');
-    expect(inventory).toContain('chapter');
-    // Neither may print a unit count for a book with no units.
-    for (const row of [inventory, matrix]) {
-      const cells = row.split('|').map((c) => c.trim());
-      expect(cells).toContain('10');
-      expect(cells).toContain('65');
+/**
+ * v0.82.5 §2 — READ THE TABLE BY ITS HEADERS.
+ *
+ * The v0.82.4 version of this test checked that each document's Class 6
+ * row CONTAINED 10 and 65. That passed while the source inventory
+ * printed 65 under "Topics" — the right number in the wrong column,
+ * which is exactly the error the test existed to catch. A test whose
+ * description claims more than its assertion proves is worse than no
+ * test, because it hands out false confidence.
+ *
+ * This version finds the header row, maps each column name to its
+ * index, and reads the cell under a named column.
+ */
+function cellsByHeader(
+  doc: string,
+  classLabel: string
+): Record<string, string> {
+  const lines = doc.split('\n');
+  // A document may hold several tables with different column sets, so
+  // the header is the nearest hierarchy header ABOVE the row — not the
+  // first one in the file. Reading the first would misalign every
+  // column of a later table, which is its own version of the bug.
+  const rowIndex = lines.findIndex((l) => l.startsWith(`| ${classLabel} |`)
+    && lines.slice(0, lines.indexOf(l)).reverse().find((h) => h.startsWith('| Class |'))
+      ?.includes('Sections'));
+  if (rowIndex < 0) throw new Error(`no row for ${classLabel}`);
+  const row = lines[rowIndex];
+  const header = lines
+    .slice(0, rowIndex)
+    .reverse()
+    .find((l) => l.startsWith('| Class |'));
+  if (!header || !header.includes('Sections')) {
+    throw new Error('no hierarchy header found');
+  }
+  const names = header.split('|').map((c) => c.trim());
+  const cells = row.split('|').map((c) => c.trim());
+  return Object.fromEntries(names.map((n, i) => [n, cells[i]]));
+}
+
+const DOCS = [
+  'CURRENT_MATH_BOOKS_CLASSES_1_12.md',
+  'CURRICULUM_COVERAGE_MATRIX.md',
+  // v0.82.5 — added after the audit found Class 6's sections had
+  // dropped out of this document altogether.
+  'STRUCTURE_VERIFICATION_BACKLOG.md',
+];
+
+describe('§5 the generated documents agree column by column', () => {
+  it('put Class 6 under Chapters and Sections, never Units or Topics', () => {
+    for (const d of DOCS) {
+      const c = cellsByHeader(read(d), 'Class 6');
+      expect(c.Units, d).toBe('—');
+      expect(c.Chapters, d).toBe('10');
+      expect(c.Sections, d).toBe('65');
+      expect(c.Topics, d).toBe('—');
     }
-    expect(matrix).not.toMatch(/\| 10 \| 10 \|/);
   });
 
-  it('never labels Class 6 sections as topics', () => {
+  it('put Class 9 under Units, Chapters and Topics, never Sections', () => {
+    for (const d of DOCS) {
+      const c = cellsByHeader(read(d), 'Class 9');
+      expect(c.Units, d).toBe('6');
+      expect(c.Chapters, d).toBe('15');
+      expect(c.Sections, d).toBe('—');
+      expect(c.Topics, d).toBe('15');
+    }
+  });
+
+  it('give Class 10 units and topics, and no textbook chapter count', () => {
+    for (const d of DOCS) {
+      const c = cellsByHeader(read(d), 'Class 10');
+      expect(c.Units, d).not.toBe('—');
+      expect(c.Chapters, d).toBe('—');
+      expect(c.Sections, d).toBe('—');
+      expect(c.Topics, d).not.toBe('—');
+    }
+  });
+});
+
+describe('§5 instructional counts are labelled by record, not by level', () => {
+  it('does not call Class 6 sections topics in the completeness table', () => {
     const doc = read('CURRICULUM_COVERAGE_MATRIX.md');
-    // The table now carries both columns, so the 65 can sit under the
-    // level the source actually defines.
-    expect(doc).toContain('Sections');
-    expect(doc).toContain('Topics');
+    expect(doc).not.toContain('Topics: Learn');
+    expect(doc).toContain('Records with Learn');
   });
 });
 
@@ -89,5 +151,24 @@ describe('§6 the stale Chapter-7-only commentary is gone', () => {
     );
     expect(src).not.toMatch(/only\s+Chapter 7 within it/);
     expect(src).toMatch(/Number Play/);
+  });
+});
+
+describe('§3/§4 the Class 6 evidence speaks the book’s vocabulary', () => {
+  it('describes a chapter- and section-level denominator', () => {
+    const note = officialCurriculumForGrade('class6')!.evidenceNote;
+    expect(note).toMatch(/chapter- and section-level denominator/);
+    expect(note).not.toMatch(/topic-level denominator/);
+    expect(note).not.toMatch(/unit-level/);
+  });
+
+  it('no longer claims only Chapter 7 was read at section depth', () => {
+    const src = readFileSync(
+      new URL('../officialCurriculum.ts', import.meta.url),
+      'utf8'
+    );
+    expect(src).not.toMatch(/Only Chapter 7 has been read at section depth/);
+    // The real distinction, stated instead of the false shorthand.
+    expect(src).toMatch(/Structure verified[\s\S]{0,40}is not the same claim as intent inspected/);
   });
 });
