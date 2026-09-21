@@ -5,7 +5,11 @@ approved or published, and nothing will be until an educator responds.
 
 ## What to send
 
-The folder **`PRAGATI_CHAPTER_3_REVIEW_PACKAGES/`** — three files:
+The folder **`PRAGATI_CHAPTER_3_REVIEW_PACKAGES/`** contains three reviewer
+files plus a manifest (`index.json`). **Send the reviewer the three markdown
+files only.** `index.json` is Pragati's record of the codes, fingerprints and
+artifact versions; the reviewer does not need it, and each markdown file
+already carries its own review code.
 
 | File | Section | Artifact |
 |---|---|---|
@@ -44,11 +48,23 @@ and those are the parts most worth their judgement:
 ## How responses come back
 
 Each package carries a **review code** (for example `S31-v1-20BA61`) and
-sixteen questions. For each: **accept**, **revise**, **reject** or
+sixteen questions.
+
+**The `v1` in a review code is the version of the review question set (the
+instrument), not the lesson.** All three Chapter 3 codes read `v1` because
+all three use version 1 of the questions — including §3.1 and §3.3, whose
+lessons are at artifact version 2. The lesson being reviewed is identified by
+its artifact version and content fingerprint, as recorded in `index.json`:
+
+| Section | Review code | Artifact version | Fingerprint |
+|---|---|---|---|
+| 3.1 | `S31-v1-20BA61` | 2 | `20ba61e4` |
+| 3.2 | `S32-v1-4F4A92` | 1 | `4f4a922f` |
+| 3.3 | `S33-v1-F85783` | 2 | `f85783be` | For each: **accept**, **revise**, **reject** or
 **insufficient evidence**, with a reason. A decision without a reason
 cannot be adjudicated and is treated as unanswered.
 
-The code fixes which artifact was reviewed. If a lesson changes after
+The code's fingerprint part fixes which artifact was reviewed. If a lesson changes after
 the package is sent, the fingerprint changes and the response is
 matched to the version it was actually about.
 

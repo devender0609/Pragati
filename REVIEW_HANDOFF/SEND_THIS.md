@@ -1,6 +1,12 @@
 # §7.4 review handoff — exactly what to send, and to whom
 
 **Status: NOT SENT.** Nothing in this repository has been emailed to anyone.
+
+**Current state (v0.82.7):** Fractions has 9 complete drafts, all
+review-ready; none sent, reviewed or published. §7.4 goes first because it
+is the anchor/template section, not because it is the only lesson written.
+Its packages are frozen and still say "one lesson"; the covering messages
+below correct that by hand rather than unfreezing the packages.
 This document prepares the handoff; it does not perform it, and no part of
 Pragati will record a review as received until a real response is imported.
 
@@ -31,17 +37,31 @@ is about whether the explanation lands with an eleven-year-old.
 
 > Hi [name],
 >
-> I've built one complete Class 6 fractions lesson in Pragati — section 7.4 of
-> Ganita Prakash, "Marking Fraction Lengths on the Number Line" — and before I
-> write any more, I'd like someone who actually teaches this to tell me whether
-> it's any good.
+> I'm building Pragati, a mathematics learning app for Indian schools, and I'd
+> value a review from someone who actually teaches Class 6.
 >
-> There are 37 questions attached, covering the mathematics, the visuals and
-> the practice. Roughly an hour. Please be blunt: if the explanation wouldn't
-> work in your classroom, that's the single most useful thing you can tell me.
+> Pragati now has nine complete draft lessons for Chapter 7, Fractions, of
+> Ganita Prakash. I'm asking you to review one of them first: section 7.4,
+> "Marking Fraction Lengths on the Number Line". It's the anchor section — the
+> one the other Fractions drafts were modelled on — so what you tell me about
+> it will shape how I judge and revise the other eight before anyone else sees
+> them.
 >
-> Nothing is published and no student has seen it. This one lesson decides the
-> shape of the next fifty, so I'd rather find out now that it's wrong.
+> There are 37 questions attached. They ask whether the lesson suits an
+> eleven-year-old, whether the mathematics is explained clearly, whether the
+> number lines and other visuals help, whether the practice is right in amount
+> and difficulty, and whether you could actually use it in a classroom. Roughly
+> an hour. Please be blunt: if the explanation wouldn't work in your classroom,
+> that's the single most useful thing you can tell me.
+>
+> Two notes. The attached files were frozen when §7.4 was the only draft, so
+> they still describe it as "one lesson"; I've left them unchanged so the
+> review code matches exactly what you read. And the lesson shows students
+> short "watch out for" lines, which restate common mistakes in the second
+> person ("You might count just the shaded pieces…"). No educator has read
+> that wording yet — if any line is wrong, unclear or unkind, please say so.
+>
+> Nothing is published and no student has seen any of it.
 >
 > Thank you — [your name]
 
@@ -67,14 +87,25 @@ member. This is not the same person as above and should not be.
 
 > Hi [name],
 >
-> I'm checking whether Pragati has mapped one Class 6 fractions section to the
-> right place in the current curriculum. It's section 7.4 of Ganita Prakash,
-> and I want to confirm the competency mapping and the prerequisite ordering
-> are defensible before the same mapping gets applied to sixty more sections.
+> I'm building Pragati, a mathematics learning app for Indian schools, and I
+> need someone who knows the NCF-SE 2023 / Ganita Prakash structure to check
+> its curriculum placement.
 >
-> The questions and the evidence I used are attached — about half an hour.
-> If the mapping is wrong, or if I've assumed prior knowledge that the book
-> introduces later, that's exactly what I need to hear.
+> Pragati has nine complete draft lessons for Chapter 7, Fractions. I'm asking
+> about one of them: section 7.4, "Marking Fraction Lengths on the Number
+> Line", which is the anchor section for the chapter. There are three
+> questions — whether the section is placed correctly, whether the competency
+> mapping is defensible, and whether the prerequisites I've assumed are
+> actually taught before it. What you tell me will guide how I check the
+> placement of the other drafts. About half an hour.
+>
+> I'm not asking about teaching quality; a practising Class 6 teacher is
+> reviewing that separately. If the mapping is wrong, or I've assumed prior
+> knowledge the book introduces later, that's exactly what I need to hear.
+>
+> The attached files were frozen when §7.4 was the only draft, so they still
+> say "one lesson"; I've left them unchanged so they match what you're
+> reviewing. Nothing is published.
 >
 > Thank you — [your name]
 
@@ -120,8 +151,8 @@ should make rather than inherit. The reviewer is asked to read those
 lines and say if any is wrong, unclear or unkind.
 
 **The gap:** §7.4's package is frozen by design and is NOT regenerated,
-so it does not carry this note. If §7.4 goes to a reviewer, mention the
-paraphrases in the covering message by hand. Unfreezing the package to
+so it does not carry this note. The educator covering message above now
+mentions the paraphrases by hand. Unfreezing the package to
 add a paragraph would change its fingerprint, which is a worse trade
 than one sentence in an email.
 
