@@ -14,6 +14,7 @@
 
 import { describe, it, expect } from 'vitest';
 import { readFileSync, writeFileSync } from 'node:fs';
+import { renderMasterMapDocument, renderMasterMapJson } from '../masterMapDocs';
 import {
   renderCoverageMatrix,
   renderContentBacklog,
@@ -32,6 +33,9 @@ const DOCS: Array<[string, () => string]> = [
   ['CONTENT_BACKLOG.md', () => renderContentBacklog(VERSION)],
   ['STRUCTURE_VERIFICATION_BACKLOG.md', () => renderStructureVerificationBacklog(VERSION)],
   ['CURRENT_MATH_BOOKS_CLASSES_1_12.md', () => renderSourceInventory(VERSION)],
+  // v0.83 — the Classes 1–12 master map, human- and machine-readable.
+  ['CURRICULUM_MASTER_MAP.md', () => renderMasterMapDocument(VERSION)],
+  ['CURRICULUM_MASTER_MAP.json', () => renderMasterMapJson(VERSION)],
 ];
 
 const path = (f: string) => new URL(`../../../${f}`, import.meta.url);

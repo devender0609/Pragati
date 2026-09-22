@@ -124,9 +124,15 @@ describe('§5 the generated documents agree column by column', () => {
     }
   });
 
-  it('give Class 10 units and topics, and no textbook chapter count', () => {
+  // v0.83 — this used to assert that Class 10 has no textbook chapter
+  // count, which was true only because the NCERT book had not been read.
+  // It has now. The CBSE syllabus row still has units and topics and no
+  // chapters; the NCERT textbook is a SEPARATE row with 14 chapters and
+  // 55 sections. The first Class 10 row is the syllabus row.
+  it('give Class 10 syllabus units and topics, with no chapter count on that row', () => {
     for (const d of DOCS) {
       const c = cellsByHeader(read(d), 'Class 10');
+      expect(c.Source, d).toMatch(/^CBSE syllabus/);
       expect(c.Units, d).not.toBe('—');
       expect(c.Chapters, d).toBe('—');
       expect(c.Sections, d).toBe('—');

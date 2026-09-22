@@ -1,6 +1,6 @@
 # Curriculum Coverage Matrix — Classes 1–12 Mathematics
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.82.7. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.83.0. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -8,32 +8,59 @@
 
 | Truth | Question it answers | Current answer |
 |---|---|---|
-| Curriculum completeness | Does Pragati represent every official record for a verified class? | 5 of 12 classes primary-source verified; 0 omissions across them |
+| Curriculum completeness | Does Pragati represent every official record? | 11 of 12 classes complete at structure level in the master map; 677 official records represented; none omitted |
 | Instructional completeness | Has Pragati written the teaching for those records? | 12 complete instructional drafts — 3 in Number Play, 9 in Fractions |
 | Review / publication | Has an educator approved it, and is it published? | 0 reviewed, 0 published |
 
-An unverified class is **not** a class with no curriculum. It is a class
-whose curriculum Pragati has not yet confirmed against a primary source,
-and its denominator is unknown rather than zero.
+A class whose structure is not fully known is **not** a class with no
+curriculum. Its denominator is UNKNOWN, never zero.
+
+**The in-app registry is behind this map.** The Student and Teacher screens read `OFFICIAL_CURRICULA`, which still records Classes 1, 2, 3, 4, 5, 7, 8 as pending verification. Their structure is verified here; it has not been wired into those screens because that changes frozen Student and Teacher surfaces (and the two-part books restart chapter numbering). That is a separate step awaiting approval. Until then this map, not the in-app registry, is the curriculum truth.
 
 ---
 
 ## 1. Curriculum completeness
 
-| Class | Primary verified | Source | Units | Chapters | Sections | Topics | Records represented | Omissions |
-|---|---|---|---|---|---|---|---|---|
-| Class 1 | not yet | Joyful Mathematics (NCERT) | — | — | — | — | — | — |
-| Class 2 | not yet | Joyful Mathematics (NCERT) | — | — | — | — | — | — |
-| Class 3 | not yet | Maths Mela (NCERT) | — | — | — | — | — | — |
-| Class 4 | not yet | Maths Mela (NCERT) | — | — | — | — | — | — |
-| Class 5 | not yet | Maths Mela (NCERT) | — | — | — | — | — | — |
-| Class 6 | yes | Ganita Prakash — Textbook of Mathematics for Grade 6 | — | 10 | 65 | — | 10 | 0 |
-| Class 7 | not yet | Ganita Prakash, Grade 7 (NCERT), Parts I and II | — | — | — | — | — | — |
-| Class 8 | not yet | Ganita Prakash, Grade 8 (NCERT), Part I | — | — | — | — | — | — |
-| Class 9 | yes | Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | 15 | 6 | 0 |
-| Class 10 | yes | Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | 15 | 7 | 0 |
-| Class 11 | yes | Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | — | 14 | 5 | 0 |
-| Class 12 | yes | Mathematics, Class XII — CBSE Curriculum 2026-27 | 6 | — | — | 13 | 6 | 0 |
+Read from the curriculum master map. One row per source hierarchy: for
+Classes 9–12 the CBSE syllabus and the NCERT textbook are separate rows
+and neither is folded into the other. A dash means the source does not
+define that level; UNKNOWN means it has not been fully read.
+
+| Class | Source | Units | Chapters | Sections | Sub-sections | Topics | Structure status |
+|---|---|---|---|---|---|---|---|
+| Class 1 | NCERT textbook: Joyful Mathematics | — | 13 | — | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 2 | NCERT textbook: Joyful Mathematics | — | 11 | — | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 3 | NCERT textbook: Maths Mela | — | 14 | — | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 4 | NCERT textbook: Math-Mela | — | 14 | — | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 5 | NCERT textbook: Math-Mela | — | 15 | — | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 6 | NCERT textbook: Ganita Prakash | — | 10 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 7 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 15 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 58 | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 9 | CBSE syllabus: Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | — | 15 | primary source verified |
+| Class 9 | NCERT textbook: Ganita Manjari (Part I) | — | 8 (Part I only; class total UNKNOWN) | 53 (Part I only; class total UNKNOWN) | UNKNOWN | — | PARTIAL — see finding F1 |
+| Class 10 | CBSE syllabus: Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | — | 15 | primary source verified |
+| Class 10 | NCERT textbook: Mathematics | — | 14 | 55 | 2 | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 11 | CBSE syllabus: Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | — | — | 14 | primary source verified |
+| Class 11 | NCERT textbook: Mathematics | — | 14 | 63 | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 12 | CBSE syllabus: Mathematics, Class XII — CBSE Curriculum 2026-27 | 6 | — | — | — | 13 | primary source verified |
+| Class 12 | NCERT textbook: Mathematics (Part I + Part II) | — | 13 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
+
+## 1b. Content gap report — every class, honest denominators
+
+| Class | Structure | Authoring unit | Verified records | Unverified records | Learn authored | Learn missing | Practice authored | Practice missing | Instructionally complete | Review-ready | Sent | Reviewed | Published |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Class 1 | COMPLETE AT STRUCTURE LEVEL | chapter | 13 | 0 | 0 | 13 | 0 | 13 | 0 | 0 | 0 | 0 | 0 |
+| Class 2 | COMPLETE AT STRUCTURE LEVEL | chapter | 11 | 0 | 0 | 11 | 0 | 11 | 0 | 0 | 0 | 0 | 0 |
+| Class 3 | COMPLETE AT STRUCTURE LEVEL | chapter | 14 | 0 | 0 | 14 | 0 | 14 | 0 | 0 | 0 | 0 | 0 |
+| Class 4 | COMPLETE AT STRUCTURE LEVEL | chapter | 14 | 0 | 0 | 14 | 0 | 14 | 0 | 0 | 0 | 0 | 0 |
+| Class 5 | COMPLETE AT STRUCTURE LEVEL | chapter | 15 | 0 | 0 | 15 | 0 | 15 | 0 | 0 | 0 | 0 | 0 |
+| Class 6 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 12 | 53 | 12 | 53 | 12 | 12 | 0 | 0 | 0 |
+| Class 7 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
+| Class 8 | COMPLETE AT STRUCTURE LEVEL | section | 58 | 0 | 0 | 58 | 0 | 58 | 0 | 0 | 0 | 0 | 0 |
+| Class 9 | PARTIAL — see finding F1 | section | 53 | UNKNOWN | 0 | 53 | 0 | 53 | 0 | 0 | 0 | 0 | 0 |
+| Class 10 | COMPLETE AT STRUCTURE LEVEL | section | 41 | 0 | 0 | 41 | 0 | 41 | 0 | 0 | 0 | 0 | 0 |
+| Class 11 | COMPLETE AT STRUCTURE LEVEL | section | 63 | 0 | 0 | 63 | 0 | 63 | 0 | 0 | 0 | 0 | 0 |
+| Class 12 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
 
 ## 2. Instructional content completeness
 

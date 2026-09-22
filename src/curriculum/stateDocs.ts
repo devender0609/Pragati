@@ -38,9 +38,6 @@
 
 import {
   coverageMatrix,
-  coverageBacklog,
-  backlogSummary,
-  type GradeCoverageRow,
 } from './coverageMatrix';
 // v0.82.3 §3 — state documents made product-wide claims out of a
 // deprecated Fractions-only wrapper, so every "current state" sentence
@@ -51,11 +48,19 @@ import {
 } from './reviewReadiness';
 import { AUTHORED_CHAPTERS } from './authoredSections';
 import { assessSection } from './instructionalCompleteness';
+
+import { MASTER_RECORDS, classStructureStatus, CLASS_NUMBERS } from './curriculumMasterMap';
 import {
-  officialCurriculumForGrade,
-  OFFICIAL_CURRICULA,
-  type OfficialCurriculum,
-} from './officialCurriculum';
+  hierarchyTable,
+  gapReportTable,
+  registryLagParagraph,
+  renderProductionBacklogSection,
+  renderStructureBacklogDocument,
+  renderBooksDocument,
+} from './masterMapDocs';
+
+const masterCompleteClasses = () =>
+  CLASS_NUMBERS.filter((n) => classStructureStatus(n) === 'complete_at_structure_level').length;
 
 const STAMP = (version: string) =>
   `**Generated** from the live model by \`src/curriculum/stateDocs.ts\` at ` +
@@ -70,7 +75,6 @@ function table(headers: string[], rows: string[][]): string {
   return [head, rule, body].join('\n');
 }
 
-const n = (v: number | null) => (v === null ? '—' : String(v));
 
 // ---------------------------------------------------------------------------
 
@@ -113,7 +117,6 @@ function breakdownSentence(): string {
 export function renderCoverageMatrix(version: string): string {
   const rows = coverageMatrix();
   const rr = reviewReadinessSummaryForChapter(AUTHORED_CHAPTERS[1].officialChapterId);
-  const verified = rows.filter((r) => r.verified);
   const unverified = rows.filter((r) => !r.verified);
 
   return `# Curriculum Coverage Matrix — Classes 1–12 Mathematics
@@ -126,35 +129,29 @@ ${STAMP(version)}
 
 | Truth | Question it answers | Current answer |
 |---|---|---|
-| Curriculum completeness | Does Pragati represent every official record for a verified class? | ${verified.length} of 12 classes primary-source verified; ${verified.reduce((a, r) => a + (r.omissions ?? 0), 0)} omissions across them |
+| Curriculum completeness | Does Pragati represent every official record? | ${masterCompleteClasses()} of 12 classes complete at structure level in the master map; ${MASTER_RECORDS.length} official records represented; none omitted |
 | Instructional completeness | Has Pragati written the teaching for those records? | ${breakdownSentence()} |
 | Review / publication | Has an educator approved it, and is it published? | ${rows.reduce((a, r) => a + r.educatorReviewed, 0)} reviewed, ${rows.reduce((a, r) => a + r.published, 0)} published |
 
-An unverified class is **not** a class with no curriculum. It is a class
-whose curriculum Pragati has not yet confirmed against a primary source,
-and its denominator is unknown rather than zero.
+A class whose structure is not fully known is **not** a class with no
+curriculum. Its denominator is UNKNOWN, never zero.
+
+${registryLagParagraph()}
 
 ---
 
 ## 1. Curriculum completeness
 
-${table(
-  // v0.82.4 §3 — four hierarchy columns, because the sources do not
-  // share one. A dash means the source does not define that level, not
-  // that we failed to count it.
-  ['Class', 'Primary verified', 'Source', 'Units', 'Chapters', 'Sections', 'Topics', 'Records represented', 'Omissions'],
-  rows.map((r) => [
-    r.gradeLabel,
-    r.verified ? 'yes' : 'not yet',
-    r.source ?? '—',
-    n(r.officialUnits),
-    n(r.officialChapters),
-    n(r.officialSections),
-    n(r.officialTopics),
-    n(r.recordsRepresented),
-    n(r.omissions),
-  ])
-)}
+Read from the curriculum master map. One row per source hierarchy: for
+Classes 9–12 the CBSE syllabus and the NCERT textbook are separate rows
+and neither is folded into the other. A dash means the source does not
+define that level; UNKNOWN means it has not been fully read.
+
+${hierarchyTable()}
+
+## 1b. Content gap report — every class, honest denominators
+
+${gapReportTable()}
 
 ## 2. Instructional content completeness
 
@@ -260,12 +257,9 @@ tracked in \`STRUCTURE_VERIFICATION_BACKLOG.md\`.
 // ---------------------------------------------------------------------------
 
 export function renderContentBacklog(version: string): string {
-  const entries = coverageBacklog();
-  const s = backlogSummary();
   // Read from the same matrix everything else reads, so the backlog and
   // the coverage document cannot disagree about which classes are
   // verified.
-  const unverified = coverageMatrix().filter((r) => !r.verified);
 
   return `# Content Backlog — what is missing, and in what order
 
@@ -273,32 +267,7 @@ ${STAMP(version)}
 
 ---
 
-## Headline, stated honestly
-
-**Known instructional backlog: ${s.total} records.**
-
-That figure covers only classes whose curriculum has been verified
-against a primary source. **${unverified.length} of 12 classes are not
-yet verified**, so their backlog is *unknown*, not zero — see §33 of the
-v0.78 brief and \`STRUCTURE_VERIFICATION_BACKLOG.md\`. Any statement of
-the form "Pragati has N items of work left" that quotes only the number
-above is wrong by an unknown margin.
-
-| | |
-|---|---|
-| Known backlog records | ${s.total} |
-| Missing Learn | ${s.learnMissing} |
-| Missing practice | ${s.practiceMissing} |
-| Needing review | ${s.reviewNeed} |
-| P1 / P2 / P3 | ${s.byPriority.P1} / ${s.byPriority.P2} / ${s.byPriority.P3} |
-| Classes with unknown denominator | ${unverified.length} |
-
-## By class
-
-${table(
-  ['Class', 'Known backlog records'],
-  Object.entries(s.byGrade).map(([g, c]) => [g, String(c)])
-)}
+${renderProductionBacklogSection()}
 
 ${reviewReadinessByChapter()
   .filter((c) => c.rows.length > 0)
@@ -317,83 +286,15 @@ ${summary.headline}
 
 Nothing in either chapter is waiting on engineering. The remaining step
 is a person reading a package.
-
-## The records
-
-${
-  entries.length === 0
-    ? 'No known backlog records.'
-    : table(
-        ['Priority', 'Class', 'Chapter', 'Section', 'Learn', 'Practice', 'Review'],
-        entries
-          .slice(0, 200)
-          .map((e) => [
-            e.priority,
-            e.gradeLabel,
-            e.officialUnitTitle,
-            e.officialSectionTitle ?? '(whole unit — no verified section depth)',
-            e.learnMissing ? 'missing' : 'present',
-            e.practiceMissing ? 'missing' : 'present',
-            e.reviewNeed ? 'needed' : '—',
-          ])
-      )
-}
-${entries.length > 200 ? `\n_${entries.length - 200} further records omitted from this table; the full set is in the model._\n` : ''}`;
+`;
 }
 
 // ---------------------------------------------------------------------------
 
 export function renderStructureVerificationBacklog(version: string): string {
-  const rows: GradeCoverageRow[] = coverageMatrix();
-  const unverified = rows.filter((r) => !r.verified);
-
-  return `# Structure Verification Backlog — classes awaiting primary evidence
-
-${STAMP(version)}
-
----
-
-**${unverified.length} of 12 classes have no primary-source-verified
-curriculum in Pragati.**
-
-For each, the official book almost certainly exists and Pragati simply
-has not confirmed its structure against a primary source. Until it does,
-the number of units, chapters and topics for that class is **unknown**.
-Recording it as zero would let an unverified class look complete.
-
-${table(
-  ['Class', 'Units', 'Chapters', 'Sections', 'Topics', 'Status'],
-  unverified.map((r) => [
-    r.gradeLabel,
-    n(r.officialUnits),
-    n(r.officialChapters),
-    n(r.officialSections),
-    n(r.officialTopics),
-    'awaiting primary source verification',
-  ])
-)}
-
-## Verified classes, for contrast
-
-${table(
-  // v0.82.5 §6 — found by the bounded audit. This table had no Sections
-  // column, so once v0.82.4 correctly stopped reporting Class 6's 65 as
-  // topics they vanished from it entirely: a verified count silently
-  // dropped from a document about verification.
-  ['Class', 'Source', 'Units', 'Chapters', 'Sections', 'Topics'],
-  rows
-    .filter((r) => r.verified)
-    .map((r) => [
-      r.gradeLabel,
-      r.source ?? '—',
-      n(r.officialUnits),
-      n(r.officialChapters),
-      n(r.officialSections),
-      n(r.officialTopics),
-    ])
-)}
-`;
+  return renderStructureBacklogDocument(version);
 }
+
 
 // ---------------------------------------------------------------------------
 // v0.78 §A1-§A4 — THE SOURCE INVENTORY, GENERATED.
@@ -432,98 +333,9 @@ ${table(
 //                             source lists none — different from not
 //                             having looked.
 
-/**
- * Chapters a syllabus actually names, rather than a count inferred from
- * its topics. Classes 10-12 print no chapter column; their topic titles
- * resemble NCERT chapter names and resembling is not evidence.
- */
-function chapterNamesFrom(c: OfficialCurriculum | null | undefined): string {
-  if (!c) return '—';
-  const named = c.units.reduce(
-    (a, u) => a + (u.chaptersEstablished ? u.chapters.length : 0),
-    0
-  );
-  return named > 0 ? String(named) : '—';
-}
 
-function depthOf(grade: Parameters<typeof officialCurriculumForGrade>[0]): string {
-  const c = officialCurriculumForGrade(grade);
-  if (!c || c.status !== 'primary_source_verified') return 'not verified';
-  if (c.topLevel === 'chapter') return 'textbook chapters read from source';
-  const withChapters = c.units.filter((u) => u.chaptersEstablished).length;
-  return withChapters > 0
-    ? `syllabus units verified; chapter names printed by the source for ${withChapters} of ${c.units.length} units`
-    : 'syllabus units and topics verified; textbook chapter denominator NOT verified';
-}
 
 export function renderSourceInventory(version: string): string {
-  const rows = coverageMatrix();
-  return `# Current Mathematics sources, Classes 1–12
-
-${STAMP(version)}
-
-This document exists because a hand-written version of it contradicted
-the registry in v0.77.3. It is now derived from the same records the
-product reads, so it cannot disagree with them.
-
-## Two separate questions
-
-**Book identity** — do we know which book this is? **Structure** — have
-we read what is in it? They are answered by different evidence and are
-recorded separately. A title carried by agreeing secondary sources is
-\`secondary_discovery_only\`: a usable lead, not an established fact.
-v0.51 is why — secondary sources agreed about Class 6 and disagreed
-about Class 7, and agreement felt like confirmation both times.
-
-## Verification depth is not one thing
-
-A CBSE syllabus can primary-verify units and named topics without
-proving anything about NCERT textbook chapter structure. The two are
-recorded separately below and must never be collapsed.
-
-${table(
-  ['Class', 'Book identity', 'Structure', 'Document', 'Authority', 'Year', 'Inspected', 'Top level', 'Units', 'Chapters', 'Sections', 'Topics', 'Verification depth'],
-  rows.map((r) => {
-    const c = officialCurriculumForGrade(r.grade);
-    return [
-      r.gradeLabel,
-      c?.bookIdentityStatus ?? 'unverified',
-      c?.structureVerificationStatus ?? 'pending_verification',
-      c?.documentTitle ?? 'unknown',
-      c?.authority ?? '—',
-      c?.academicYear ?? '—',
-      c?.inspectionDate ?? '—',
-      c?.topLevel ?? '—',
-      // §2 — Ganita Prakash defines chapters and sections and no unit
-      // layer above them. Printing "Units 10 / Chapters 10" invents a
-      // hierarchy the book does not have and makes two unlike
-      // structures look equivalent. Where the source's top level IS the
-      // chapter, the unit column is empty.
-      n(r.officialUnits),
-      c?.topLevel === 'chapter' ? n(r.officialChapters) : chapterNamesFrom(c),
-      // v0.82.5 §1 — this was `officialSections ?? officialTopics` in one
-      // cell under a "Topics" header, so Class 6's 65 sections were
-      // printed as topics. Two levels, two cells.
-      n(r.officialSections),
-      n(r.officialTopics),
-      depthOf(r.grade),
-    ];
-  })
-)}
-
-## Evidence notes, verbatim
-
-${OFFICIAL_CURRICULA.filter((c: OfficialCurriculum) => c.status === 'primary_source_verified')
-  .map(
-    (c: OfficialCurriculum) =>
-      `### ${c.grade} — ${c.documentTitle}\n\n- Source: ${c.sourceUrl ?? '—'}\n- Inspected: ${c.inspectionDate ?? '—'}\n\n${c.evidenceNote}`
-  )
-  .join('\n\n')}
-
-## Still unverified
-
-${rows.filter((r) => !r.verified).map((r) => `- ${r.gradeLabel}`).join('\n')}
-
-For these the denominator is **unknown, not zero**.
-`;
+  return renderBooksDocument(version);
 }
+

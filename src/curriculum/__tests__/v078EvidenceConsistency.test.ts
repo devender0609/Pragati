@@ -141,13 +141,22 @@ describe('§2 the source hierarchy is preserved, not normalised', () => {
       new URL('../../../CURRENT_MATH_BOOKS_CLASSES_1_12.md', import.meta.url),
       'utf8'
     );
-    const row = doc.split('\n').find((l) => l.startsWith('| Class 6 |'))!;
-    const cells = row.split('|').map((x) => x.trim());
-    // ... | top level | units | chapters | topics | ...
-    const top = cells.indexOf('chapter');
-    expect(cells[top + 1]).toBe('—');
-    expect(cells[top + 2]).toBe('10');
-    expect(cells[top + 3]).toBe('65');
+    // v0.83 — read by column name, not by position. The positional
+    // version found the cell after the word 'chapter', which stopped
+    // meaning anything when the table gained a Source column.
+    const lines = doc.split('\n');
+    const rowIdx = lines.findIndex((l) => l.startsWith('| Class 6 |'));
+    const header = lines
+      .slice(0, rowIdx)
+      .reverse()
+      .find((l) => l.startsWith('| Class |'))!;
+    const names = header.split('|').map((x) => x.trim());
+    const cells = lines[rowIdx].split('|').map((x) => x.trim());
+    const col = (n: string) => cells[names.indexOf(n)];
+    expect(col('Units')).toBe('—');
+    expect(col('Chapters')).toBe('10');
+    expect(col('Sections')).toBe('65');
+    expect(col('Topics')).toBe('—');
   });
 
   it('gives syllabus classes units, and chapters only where named', () => {

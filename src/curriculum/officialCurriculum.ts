@@ -533,7 +533,7 @@ const CLASS_12: OfficialCurriculum = {
         'Continuity and Differentiability',
         'Applications of Derivatives',
         'Integrals',
-        'Applications of the Integrals',
+        'Application of the Integrals',
         'Differential Equations',
       ],
       35
