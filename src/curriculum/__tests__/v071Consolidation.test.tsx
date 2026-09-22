@@ -11,7 +11,6 @@ import {
 } from '../officialCompleteness';
 import {
   OFFICIAL_CURRICULA,
-  officialCurriculumForGrade,
   officialChapterCount,
   officialUnitCount,
   officialTopLevelCount,
@@ -107,21 +106,23 @@ describe('curriculum completeness invariant', () => {
     }
   });
 
-  it('records no expected structure for an unverified grade', () => {
-    for (const g of ['class1', 'class3', 'class7', 'class8'] as const) {
-      expect(expectedFor(g), g).toBeNull();
-      expect(officialCurriculumForGrade(g)!.status).toBe(
-        'official_structure_pending_verification'
-      );
+  it('records an expected structure for every verified grade, and none for an unverified one', () => {
+    // v0.83.1 — every grade in the registry is verified now, so the
+    // "no expected structure" half is proved against a synthetic
+    // unverified grade rather than a real one.
+    for (const c of OFFICIAL_CURRICULA) {
+      if (c.status === 'primary_source_verified') expect(expectedFor(c.grade), c.grade).not.toBeNull();
     }
+    expect(expectedFor('class99' as never)).toBeNull();
   });
 
   it('demands an expected structure for any grade that becomes verified', () => {
     // Otherwise the invariant silently does not apply to a new grade,
-    // which is how a guard stops guarding.
+    // which is how a guard stops guarding. The synthetic grade stands in
+    // for a future class: every real one now has an expected structure.
     const clone: OfficialCurriculum[] = OFFICIAL_CURRICULA.map((c) => ({ ...c }));
-    const c7 = clone.find((c) => c.grade === 'class7')!;
-    c7.status = 'primary_source_verified';
+    const c7 = { ...clone[0], grade: 'class99' as never, status: 'primary_source_verified' as const };
+    clone.push(c7);
     expect(
       checkOfficialCompleteness(clone, EXPECTED_STRUCTURES).map((f) => f.code)
     ).toContain('VERIFIED_GRADE_HAS_NO_EXPECTED_STRUCTURE');
@@ -240,7 +241,7 @@ describe('§9 the official journey means the official journey', () => {
 
 describe('§21 content semantics survived the redesign', () => {
   it('leaves the §7.4 fingerprint unchanged', () => {
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
   });
 
   it('leaves Class 6 availability truthful', () => {

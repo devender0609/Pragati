@@ -155,6 +155,18 @@ export function structureVerificationSummary(): StructureVerificationSummary {
  */
 export function unknownCurriculumCaveat(): string {
   const s = structureVerificationSummary();
+  if (s.gradesUnverified === 0) {
+    // v0.83.1 §A — every class has a verified structure now, so the
+    // caveat changes rather than disappearing: the remaining unknown is
+    // depth, not existence.
+    return (
+      `Every class has a primary-source-verified official structure, so this ` +
+      `figure covers all twelve. It is a SOURCE-GRAIN count of official ` +
+      `records, not a count of Pragati lessons, and the page-level ` +
+      `mathematical intent behind those records has not been inspected ` +
+      `except where Pragati has already authored.`
+    );
+  }
   return (
     `This is the workload knowable from verified sources. ` +
     `${s.gradesUnverified} grades (${s.gradeLabels.join(', ')}) have no verified official structure ` +

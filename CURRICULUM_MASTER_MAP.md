@@ -1,6 +1,6 @@
 # Curriculum Master Map — Mathematics, Classes 1–12
 
-**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.0. Do not hand-edit: the test suite compares this file to the model on every run.
+**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.1. Do not hand-edit: the test suite compares this file to the model on every run.
 
 This map answers **what should exist**. It does not mean Pragati already
 teaches it. Every official record is listed whether or not Pragati has
@@ -27,7 +27,7 @@ any content for it.
 | Class 12 | CBSE syllabus: Mathematics, Class XII — CBSE Curriculum 2026-27 | 6 | — | — | — | 13 | primary source verified |
 | Class 12 | NCERT textbook: Mathematics (Part I + Part II) | — | 13 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
 
-**The in-app registry is behind this map.** The Student and Teacher screens read `OFFICIAL_CURRICULA`, which still records Classes 1, 2, 3, 4, 5, 7, 8 as pending verification. Their structure is verified here; it has not been wired into those screens because that changes frozen Student and Teacher surfaces (and the two-part books restart chapter numbering). That is a separate step awaiting approval. Until then this map, not the in-app registry, is the curriculum truth.
+The in-app curriculum registry agrees with the master map for every class.
 
 Machine-readable form: `CURRICULUM_MASTER_MAP.json` (same data, generated
 from the same model). Primary evidence: `src/curriculum/data/mathCurriculumMasterEvidence.json`,
@@ -162,78 +162,78 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_gp_c6_ch01_patterns | chapter | 1 | Patterns in Mathematics | 1 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s1_1 | section | 1.1 | What is Mathematics? | 1 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s1_2 | section | 1.2 | Patterns in Numbers | 2 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s1_3 | section | 1.3 | Visualising Number Sequences | 3 (registry: 4) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s1_4 | section | 1.4 | Relations among Number Sequences | 6 (registry: 7) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s1_3 | section | 1.3 | Visualising Number Sequences | 3 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s1_4 | section | 1.4 | Relations among Number Sequences | 6 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s1_5 | section | 1.5 | Patterns in Shapes | 9 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s1_6 | section | 1.6 | Relation to Number Sequences | 11 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch02_lines_angles | chapter | 2 | Lines and Angles | 13 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s2_1 | section | 2.1 | Point | 13 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s2_2 | section | 2.2 | Line Segment | 14 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_3 | section | 2.3 | Line | 14 (registry: 15) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_4 | section | 2.4 | Ray | 15 (registry: 17) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_5 | section | 2.5 | Angle | 17 (registry: 19) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_6 | section | 2.6 | Comparing Angles | 21 (registry: 22) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_7 | section | 2.7 | Making Rotating Arms | 25 (registry: 26) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_8 | section | 2.8 | Special Types of Angles | 27 (registry: 28) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_3 | section | 2.3 | Line | 14 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_4 | section | 2.4 | Ray | 15 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_5 | section | 2.5 | Angle | 17 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_6 | section | 2.6 | Comparing Angles | 21 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_7 | section | 2.7 | Making Rotating Arms | 25 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_8 | section | 2.8 | Special Types of Angles | 27 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s2_9 | section | 2.9 | Measuring Angles | 32 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_10 | section | 2.10 | Drawing Angles | 46 (registry: 42) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s2_11 | section | 2.11 | Types of Angles and their Measures | 50 (registry: 47) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_10 | section | 2.10 | Drawing Angles | 46 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s2_11 | section | 2.11 | Types of Angles and their Measures | 50 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch03_number_play | chapter | 3 | Number Play | 55 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s3_1 | section | 3.1 | Numbers can Tell us Things | 55 | inspected | authored | authored | review_ready | unpublished |  |
-| ncert_gp_c6_s3_2 | section | 3.2 | Supercells | 57 (registry: 56) | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s3_2 | section | 3.2 | Supercells | 57 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s3_3 | section | 3.3 | Patterns of Numbers on the Number Line | 59 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s3_4 | section | 3.4 | Playing with Digits | 60 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_5 | section | 3.5 | Pretty Palindromic Patterns | 61 (registry: 62) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_6 | section | 3.6 | The Magic Number of Kaprekar | 62 (registry: 64) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_7 | section | 3.7 | Clock and Calendar Numbers | 64 (registry: 66) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_8 | section | 3.8 | Mental Math | 65 (registry: 67) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_9 | section | 3.9 | Playing with Number Patterns | 67 (registry: 69) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_10 | section | 3.10 | An Unsolved Mystery — the Collatz Conjecture! | 68 (registry: 70) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_11 | section | 3.11 | Simple Estimation | 69 (registry: 71) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s3_12 | section | 3.12 | Games and Winning Strategies | 71 (registry: 72) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_5 | section | 3.5 | Pretty Palindromic Patterns | 61 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_6 | section | 3.6 | The Magic Number of Kaprekar | 62 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_7 | section | 3.7 | Clock and Calendar Numbers | 64 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_8 | section | 3.8 | Mental Math | 65 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_9 | section | 3.9 | Playing with Number Patterns | 67 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_10 | section | 3.10 | An Unsolved Mystery — the Collatz Conjecture! | 68 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_11 | section | 3.11 | Simple Estimation | 69 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s3_12 | section | 3.12 | Games and Winning Strategies | 71 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch04_data_handling | chapter | 4 | Data Handling and Presentation | 74 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s4_1 | section | 4.1 | Collecting and Organising Data | 74 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s4_2 | section | 4.2 | Pictographs | 79 (registry: 76) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s4_3 | section | 4.3 | Bar Graphs | 85 (registry: 82) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s4_2 | section | 4.2 | Pictographs | 79 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s4_3 | section | 4.3 | Bar Graphs | 85 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s4_4 | section | 4.4 | Drawing a Bar Graph | 89 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s4_5 | section | 4.5 | Artistic and Aesthetic Considerations | 101 (registry: 100) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s4_5 | section | 4.5 | Artistic and Aesthetic Considerations | 101 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch05_prime_time | chapter | 5 | Prime Time | 107 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_1 | section | 5.1 | Common Multiples and Common Factors | 107 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s5_2 | section | 5.2 | Prime Numbers | 112 (registry: 111) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s5_2 | section | 5.2 | Prime Numbers | 112 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_3 | section | 5.3 | Co-prime numbers for safekeeping treasures | 115 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s5_4 | section | 5.4 | Prime Factorisation | 117 (registry: 118) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s5_4 | section | 5.4 | Prime Factorisation | 117 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_5 | section | 5.5 | Divisibility Tests | 122 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_6 | section | 5.6 | Fun with numbers | 126 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch06_perimeter_area | chapter | 6 | Perimeter and Area | 129 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s6_1 | section | 6.1 | Perimeter | 129 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s6_2 | section | 6.2 | Area | 137 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s6_3 | section | 6.3 | Area of a Triangle | 142 (registry: 145) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s6_3 | section | 6.3 | Area of a Triangle | 142 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch07_fractions | chapter | 7 | Fractions | 151 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s7_1 | section | 7.1 | Fractional Units and Equal Shares | 152 (registry: 151) | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s7_1 | section | 7.1 | Fractional Units and Equal Shares | 152 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s7_2 | section | 7.2 | Fractional Units as Parts of a Whole | 154 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s7_3 | section | 7.3 | Measuring Using Fractional Units | 156 | inspected | authored | authored | review_ready | unpublished |  |
-| ncert_gp_c6_s7_4 | section | 7.4 | Marking Fraction Lengths on the Number Line | 159 (registry: 160) | inspected | authored | authored | review_ready | unpublished |  |
-| ncert_gp_c6_s7_5 | section | 7.5 | Mixed Fractions | 161 (registry: 165) | inspected | authored | authored | review_ready | unpublished |  |
-| ncert_gp_c6_s7_6 | section | 7.6 | Equivalent Fractions | 163 (registry: 169) | inspected | authored | authored | review_ready | unpublished |  |
-| ncert_gp_c6_s7_7 | section | 7.7 | Comparing Fractions | 173 (registry: 174) | inspected | authored | authored | review_ready | unpublished |  |
-| ncert_gp_c6_s7_8 | section | 7.8 | Addition and Subtraction of Fractions | 175 (registry: 178) | inspected | authored | authored | review_ready | unpublished |  |
-| ncert_gp_c6_s7_9 | section | 7.9 | A Pinch of History | 182 (registry: 185) | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s7_4 | section | 7.4 | Marking Fraction Lengths on the Number Line | 159 | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s7_5 | section | 7.5 | Mixed Fractions | 161 | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s7_6 | section | 7.6 | Equivalent Fractions | 163 | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s7_7 | section | 7.7 | Comparing Fractions | 173 | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s7_8 | section | 7.8 | Addition and Subtraction of Fractions | 175 | inspected | authored | authored | review_ready | unpublished |  |
+| ncert_gp_c6_s7_9 | section | 7.9 | A Pinch of History | 182 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_ch08_constructions | chapter | 8 | Playing with Constructions | 187 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s8_1 | section | 8.1 | Artwork | 187 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s8_2 | section | 8.2 | Squares and Rectangles | 192 (registry: 195) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s8_3 | section | 8.3 | Constructing Squares and Rectangles | 195 (registry: 199) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s8_4 | section | 8.4 | An Exploration in Rectangles | 197 (registry: 205) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s8_5 | section | 8.5 | Exploring Diagonals of Rectangles and Squares | 203 (registry: 209) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s8_6 | section | 8.6 | Points Equidistant from Two Given Points | 211 (registry: 213) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s8_2 | section | 8.2 | Squares and Rectangles | 192 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s8_3 | section | 8.3 | Constructing Squares and Rectangles | 195 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s8_4 | section | 8.4 | An Exploration in Rectangles | 197 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s8_5 | section | 8.5 | Exploring Diagonals of Rectangles and Squares | 203 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s8_6 | section | 8.6 | Points Equidistant from Two Given Points | 211 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch09_symmetry | chapter | 9 | Symmetry | 217 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s9_1 | section | 9.1 | Line of Symmetry | 219 (registry: 217) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s9_2 | section | 9.2 | Rotational Symmetry | 230 (registry: 229) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s9_1 | section | 9.1 | Line of Symmetry | 219 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s9_2 | section | 9.2 | Rotational Symmetry | 230 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_ch10_other_side_of_zero | chapter | 10 | The Other Side of Zero | 242 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s10_1 | section | 10.1 | Bela's Building of Fun | 243 (registry: 242) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s10_2 | section | 10.2 | The Token Model | 256 (registry: 252) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s10_3 | section | 10.3 | Integers in Other Places | 259 (registry: 258) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s10_4 | section | 10.4 | Explorations with Integers | 263 (registry: 262) | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_s10_5 | section | 10.5 | A Pinch of History | 266 (registry: 268) | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s10_1 | section | 10.1 | Bela's Building of Fun | 243 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s10_2 | section | 10.2 | The Token Model | 256 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s10_3 | section | 10.3 | Integers in Other Places | 259 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s10_4 | section | 10.4 | Explorations with Integers | 263 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_s10_5 | section | 10.5 | A Pinch of History | 266 | not inspected | missing | missing | not_started | unpublished |  |
 
 ## Class 7
 

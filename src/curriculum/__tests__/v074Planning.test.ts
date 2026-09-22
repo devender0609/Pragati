@@ -213,9 +213,11 @@ describe('§3 unauthored work is represented completely', () => {
     const s = planSummary();
     // The corrected figures. Recorded so a regression to a single
     // conflated number is visible.
-    expect(s.records).toBe(89);
+    // v0.83.1 §A — 89 → 185. Seven grades' chapter lists entered the
+    // registry; none of the old records changed.
+    expect(s.records).toBe(185);
     expect(s.plannable).toBe(65);
-    expect(s.requiresDeeperStructure).toBe(24);
+    expect(s.requiresDeeperStructure).toBe(120);
     // v0.82.1 §7 — Class 6 coverage now includes Chapter 3's three
     // authored sections as well as Chapter 7's nine. These figures
     // moved because authored work stopped being invisible, which is
@@ -298,7 +300,7 @@ describe('§7 review readiness is checked, not assumed', () => {
     // moved because authored work stopped being invisible, which is
     // the fix, not a regression.
     expect(s.blockedOnEducatorReviewOnly).toBe(12);
-    expect(s.blockedOnStructureVerification).toBe(24);
+    expect(s.blockedOnStructureVerification).toBe(120);
     expect(s.blockedOnHumanOnly).toBe(
       s.blockedOnEducatorReviewOnly + s.blockedOnStructureVerification
     );
@@ -315,7 +317,7 @@ describe('§5 reports cannot contradict their own data', () => {
   });
 
   it('catches the exact v0.73 sentence', () => {
-    const bad = 'including the 89 for which Pragati has no content at all.';
+    const bad = 'including the 185 for which Pragati has no content at all.';
     const violations = assertCoverageWordingConsistent(bad);
     expect(violations.length).toBeGreaterThan(0);
     expect(violations[0]).toMatch(/no content at all/);
@@ -326,7 +328,8 @@ describe('§5 reports cannot contradict their own data', () => {
     // v0.82.2 §3 — 80 → 77. Three Chapter 3 sections stopped being
     // counted as bare structure with no content, because the tally can
     // finally see that they were authored.
-    expect(c.structure_only).toBe(77);
+    // v0.83.1 §A — 77 → 173, all of it newly represented curriculum.
+    expect(c.structure_only).toBe(173);
     // v0.75 §22 — §7.9 was the one incomplete draft. It is complete now.
     expect(c.incomplete_draft).toBe(0);
     // v0.82.2 — now 12: Chapter 3's three joined Chapter 7's nine once
@@ -339,10 +342,10 @@ describe('§5 reports cannot contradict their own data', () => {
 
   it('writes a sentence that matches the counts', () => {
     const s = backlogCoverageSentence();
-    expect(s).toMatch(/89 verified official records/);
-    expect(s).toMatch(/77 hold no instructional content at all/);
+    expect(s).toMatch(/185 verified official records/);
+    expect(s).toMatch(/173 hold no instructional content at all/);
     expect(s).toMatch(/0 are reviewed and 0 are published/);
-    expect(s).not.toMatch(/89 .{0,40}no content at all/);
+    expect(s).not.toMatch(/185 .{0,40}no content at all/);
   });
 });
 
@@ -351,19 +354,20 @@ describe('§5 reports cannot contradict their own data', () => {
 // ---------------------------------------------------------------------------
 
 describe('§20 unknown curriculum is work, not zero', () => {
-  it('lists the seven unverified grades', () => {
+  // v0.83.1 §A — the seven grades this backlog existed for were read on
+  // 2026-09-22. The backlog is empty, and that is what it must now say.
+  it('has no unverified grades left', () => {
     const s = structureVerificationSummary();
-    expect(s.gradesUnverified).toBe(7);
-    expect(s.gradeLabels).toEqual([
-      'Class 1', 'Class 2', 'Class 3', 'Class 4', 'Class 5', 'Class 7', 'Class 8',
-    ]);
+    expect(s.gradesUnverified).toBe(0);
+    expect(s.gradeLabels).toEqual([]);
+    expect(structureVerificationBacklog()).toEqual([]);
   });
 
   it('reports the unknown record count as null, never zero', () => {
     expect(structureVerificationSummary().unknownRecordCount).toBeNull();
   });
 
-  it('gives every unverified grade a template and a human action', () => {
+  it('would still give an unverified grade a template and a human action', () => {
     for (const e of structureVerificationBacklog()) {
       expect(e.templatePath).toMatch(/curriculum-verification\/grade\d+_/);
       expect(e.action.length).toBeGreaterThan(30);
@@ -379,8 +383,9 @@ describe('§20 unknown curriculum is work, not zero', () => {
   });
 
   it('supplies a caveat any backlog total must carry', () => {
-    expect(unknownCurriculumCaveat()).toMatch(/7 grades/);
-    expect(unknownCurriculumCaveat()).toMatch(/contribute nothing/);
+    // No grade is unverified, so the caveat now says so rather than
+    // naming a number of missing grades.
+    expect(unknownCurriculumCaveat()).toMatch(/0 grades|no grades|every class/i);
   });
 });
 
@@ -489,7 +494,7 @@ describe('§26 the brief specifies without authoring', () => {
 
 describe('v0.74 changed no content', () => {
   it('leaves the §7.4 fingerprint untouched', () => {
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
   });
 
   it('publishes nothing and reviews nothing', () => {
@@ -499,10 +504,11 @@ describe('v0.74 changed no content', () => {
     expect(c.publication_ready).toBe(0);
   });
 
-  it('plans only for verified grades', () => {
+  it('plans for every verified grade', () => {
     const grades = new Set(contentPlan().map((p) => p.grade));
     expect([...grades].sort()).toEqual([
-      'class10', 'class11', 'class12', 'class6', 'class9',
+      'class1', 'class10', 'class11', 'class12', 'class2', 'class3',
+      'class4', 'class5', 'class6', 'class7', 'class8', 'class9',
     ]);
   });
 

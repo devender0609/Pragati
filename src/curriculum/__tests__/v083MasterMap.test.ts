@@ -223,21 +223,30 @@ describe('source evidence is reproducible', () => {
 
 // ---------------------------------------------------------------------------
 describe('the in-app registry lag is stated, not hidden', () => {
-  it('names the classes the runtime registry still records as pending', () => {
-    expect(registryLagClasses()).toEqual([1, 2, 3, 4, 5, 7, 8]);
-    for (const n of registryLagClasses()) {
-      expect(officialCurriculumForGrade(`class${n}` as never)!.status).not.toBe('primary_source_verified');
+  // v0.83.1 §A — the lag is gone: the runtime registry is derived from
+  // the same evidence. The test is kept and inverted, so a regression
+  // that reintroduces a second, stale registry fails here.
+  it('has no lag left: every verified class is verified in the runtime registry too', () => {
+    expect(registryLagClasses()).toEqual([]);
+    for (const n of CLASS_NUMBERS) {
+      expect(
+        officialCurriculumForGrade(`class${n}` as never)!.status,
+        `class${n}`
+      ).toBe('primary_source_verified');
     }
   });
 
-  it('every generated curriculum document says so', () => {
+  it('every generated curriculum document says the two agree', () => {
     for (const d of [
       'CURRENT_MATH_BOOKS_CLASSES_1_12.md',
       'CURRICULUM_COVERAGE_MATRIX.md',
       'STRUCTURE_VERIFICATION_BACKLOG.md',
       'CURRICULUM_MASTER_MAP.md',
     ]) {
-      expect(read(d), d).toContain('The in-app registry is behind this map.');
+      expect(read(d), d).toContain(
+        'The in-app curriculum registry agrees with the master map'
+      );
+      expect(read(d), d).not.toContain('The in-app registry is behind this map.');
     }
   });
 });

@@ -1,6 +1,6 @@
 # Current Mathematics sources, Classes 1–12
 
-**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.0. Do not hand-edit: the test suite compares this file to the model on every run.
+**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.1. Do not hand-edit: the test suite compares this file to the model on every run.
 
 ## Four claims, recorded separately
 
@@ -34,7 +34,7 @@ A, B and C are primary-source verified for every book below. D is not.
 | Class 12 | CBSE syllabus: Mathematics, Class XII — CBSE Curriculum 2026-27 | 6 | — | — | — | 13 | primary source verified |
 | Class 12 | NCERT textbook: Mathematics (Part I + Part II) | — | 13 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
 
-**The in-app registry is behind this map.** The Student and Teacher screens read `OFFICIAL_CURRICULA`, which still records Classes 1, 2, 3, 4, 5, 7, 8 as pending verification. Their structure is verified here; it has not been wired into those screens because that changes frozen Student and Teacher surfaces (and the two-part books restart chapter numbering). That is a separate step awaiting approval. Until then this map, not the in-app registry, is the curriculum truth.
+The in-app curriculum registry agrees with the master map for every class.
 
 ## Current NCERT textbooks
 

@@ -77,8 +77,8 @@ describe('§13 chapter quality summary', () => {
   it('identifies §7.4 as a frozen projected artifact for reviewers only', () => {
     render(<ChapterQualitySummary />);
     expect(screen.getByText(/frozen_v1_projected/)).toBeTruthy();
-    expect(screen.getByText(/S74-v1-A1A3FF/)).toBeTruthy();
-    expect(screen.getByText(/a1a3ff57/)).toBeTruthy();
+    expect(screen.getByText(/S74-v1-7BFD8C/)).toBeTruthy();
+    expect(screen.getByText(/7bfd8cc3/)).toBeTruthy();
   });
 });
 

@@ -88,7 +88,7 @@ describe('§21 packages are section-scoped, not Package B clones', () => {
   });
 
   it('leaves the §7.4 frozen identity untouched', () => {
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
     // §7.4 must not acquire a generated code alongside its frozen one.
     expect(sectionsNeedingPackages(FRACTIONS_CHAPTER_ID)).not.toContain('ncert_gp_c6_s7_4');
   });

@@ -146,12 +146,14 @@ describe('§1/§7 the admin plan panel states both halves of "blocked"', () => {
 });
 
 describe('§20 the structure-verification blocker cannot be missed', () => {
-  it('names all seven grades on the surface that reports the backlog', () => {
+  // v0.83.1 §A — the seven grades were read from primary sources, so the
+  // blocker panel must now report an empty backlog rather than seven.
+  it('reports an empty structure-verification backlog', () => {
     render(<StructureVerificationPanel />);
-    expect(screen.getByText(/7 of 12/)).toBeTruthy();
+    expect(screen.getByText(/0 of 12/)).toBeTruthy();
     expect(
-      screen.getByText('Class 1 · Class 2 · Class 3 · Class 4 · Class 5 · Class 7 · Class 8')
-    ).toBeTruthy();
+      screen.queryByText(/Class 1 · Class 2 · Class 3/)
+    ).toBeNull();
   });
 
   it('says the unknown count is unknown, never zero', () => {
@@ -163,10 +165,10 @@ describe('§20 the structure-verification blocker cannot be missed', () => {
   it('gives each grade a template and a human action', () => {
     render(<StructureVerificationPanel />);
     fireEvent.click(screen.getByRole('button', { name: /Show what each grade needs/ }));
-    expect(screen.getAllByText('PERSON')).toHaveLength(7);
+    expect(screen.queryAllByText('PERSON')).toHaveLength(0);
     expect(
-      screen.getAllByText(/curriculum-verification\/grade\d+_/).length
-    ).toBe(7);
+      screen.queryAllByText(/curriculum-verification\/grade\d+_/).length
+    ).toBe(0);
   });
 });
 
@@ -176,14 +178,16 @@ describe('§5 the in-app coverage panel matches the document', () => {
     // The same derived sentence the markdown carries, so the app and
     // the document cannot disagree about how many records hold nothing.
     expect(
-      screen.getByText(/77 hold no instructional content at all/)
+      screen.getByText(/173 hold no instructional content at all/)
     ).toBeTruthy();
     expect(screen.getByText(/0 are reviewed and 0 are published/)).toBeTruthy();
   });
 
   it('carries the unknown-curriculum caveat beside the total', () => {
     render(<CoverageMatrixPanel />);
-    expect(screen.getByText(/contribute nothing to this figure/)).toBeTruthy();
+    expect(
+      screen.getByText(/SOURCE-GRAIN count of official\s+records/)
+    ).toBeTruthy();
   });
 
   it('no longer says all 89 records need review', () => {

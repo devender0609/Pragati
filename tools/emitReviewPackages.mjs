@@ -16,12 +16,16 @@ const reg = await import('../src/curriculum/authoredSections.ts');
 const CHAPTERS = [
   {
     id: reg.FRACTIONS_CHAPTER_ID,
-    out: 'PRAGATI_CHAPTER_7_REVIEW_PACKAGES',
+    out: process.env.PRAGATI_PACKAGE_OUT_SUFFIX
+      ? `PRAGATI_CHAPTER_7_REVIEW_PACKAGES${process.env.PRAGATI_PACKAGE_OUT_SUFFIX}`
+      : 'PRAGATI_CHAPTER_7_REVIEW_PACKAGES',
     label: 'Chapter 7 — Fractions',
   },
   {
     id: reg.NUMBER_PLAY_CHAPTER_ID,
-    out: 'PRAGATI_CHAPTER_3_REVIEW_PACKAGES',
+    out: process.env.PRAGATI_PACKAGE_OUT_SUFFIX
+      ? `PRAGATI_CHAPTER_3_REVIEW_PACKAGES${process.env.PRAGATI_PACKAGE_OUT_SUFFIX}`
+      : 'PRAGATI_CHAPTER_3_REVIEW_PACKAGES',
     label: 'Chapter 3 — Number Play',
   },
 ];
@@ -52,7 +56,7 @@ for (const ch of CHAPTERS) {
   }
   writeFileSync(
     `${ch.out}/index.json`,
-    JSON.stringify({ chapter: ch.label, generated: 'v0.82.2', packages: index }, null, 2)
+    JSON.stringify({ chapter: ch.label, generated: process.env.PRAGATI_PACKAGE_STAMP ?? 'v0.82.2', packages: index }, null, 2)
   );
   total += index.length;
   console.log(`${ch.label}: wrote ${index.length} packages into ${ch.out}`);

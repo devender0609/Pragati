@@ -1,0 +1,78 @@
+{
+  "chapter": "Chapter 7 — Fractions",
+  "generated": "v0.83.1",
+  "packages": [
+    {
+      "section": "7.1",
+      "file": "SECTION_7_1_FOR_REVIEWER.md",
+      "code": "S71-v1-0AC279",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_1_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "0ac27993"
+    },
+    {
+      "section": "7.2",
+      "file": "SECTION_7_2_FOR_REVIEWER.md",
+      "code": "S72-v1-37B369",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_2_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "37b369c5"
+    },
+    {
+      "section": "7.3",
+      "file": "SECTION_7_3_FOR_REVIEWER.md",
+      "code": "S73-v1-E47D40",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_3_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "e47d40a7"
+    },
+    {
+      "section": "7.5",
+      "file": "SECTION_7_5_FOR_REVIEWER.md",
+      "code": "S75-v1-FCD012",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_5_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "fcd012df"
+    },
+    {
+      "section": "7.6",
+      "file": "SECTION_7_6_FOR_REVIEWER.md",
+      "code": "S76-v1-040E88",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_6_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "040e880b"
+    },
+    {
+      "section": "7.7",
+      "file": "SECTION_7_7_FOR_REVIEWER.md",
+      "code": "S77-v1-399A76",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_7_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "399a7612"
+    },
+    {
+      "section": "7.8",
+      "file": "SECTION_7_8_FOR_REVIEWER.md",
+      "code": "S78-v1-98DE49",
+      "questions": 16,
+      "artifact": "ncert_gp_c6_s7_8_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "98de49ef"
+    },
+    {
+      "section": "7.9",
+      "file": "SECTION_7_9_FOR_REVIEWER.md",
+      "code": "S79-v1-156D6E",
+      "questions": 12,
+      "artifact": "ncert_gp_c6_s7_9_lesson",
+      "artifactVersion": 1,
+      "fingerprint": "156d6eed"
+    }
+  ]
+}

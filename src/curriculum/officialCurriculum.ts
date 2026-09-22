@@ -49,6 +49,9 @@
 // written down for a person to perform.
 
 import type { Grade } from '../types';
+import { evidenceDerivedCurricula } from './runtimeCurriculumFromEvidence';
+
+const classOrder = (g: Grade) => Number(g.replace('class', ''));
 
 export type CurriculumAuthority = 'NCERT' | 'CBSE';
 
@@ -144,6 +147,28 @@ export type OfficialUnit = {
   topicsKnown: boolean;
   /** Marks weighting, where the source assigns it. */
   marks?: number;
+  /**
+   * v0.83.1 §4 — which volume of a two-part book this chapter is in.
+   *
+   * Ganita Prakash Grade 7 and Grade 8 Part II both restart at Chapter 1.
+   * The printed number is kept exactly as printed; this field is what
+   * makes "Part I · Chapter 1" and "Part II · Chapter 1" different
+   * chapters without renumbering the source.
+   */
+  bookPart?: string | null;
+  /** The volume's own title, where a grade has more than one. */
+  bookTitle?: string | null;
+  /** Printed start page, where the source gives one. */
+  startPage?: number | null;
+  /**
+   * v0.83.1 §3 — whether the SOURCE defines a level below this entry.
+   *
+   * Classes 1-5 print chapters and no numbered sections. `topics: []`
+   * with this false means the book has no sub-level, which is a
+   * different claim from "not read yet" (`topicsKnown: false`) and from
+   * "zero sections" (which would be a lie). Defaults to true.
+   */
+  subLevelDefinedBySource?: boolean;
 };
 
 export type OfficialCurriculum = {
@@ -189,7 +214,8 @@ const NCERT_MANUAL_STEP =
   'Open the current NCERT textbook PDF for this grade in a browser, read the Contents page, and record each chapter number and ' +
   'exact title. Then set status to primary_source_verified with the inspection date and the verifier name.';
 
-function pending(
+/** v0.83.1 — retained for historical reference; no grade uses it now. */
+export function pending(
   grade: Grade,
   stage: OfficialCurriculum['stage'],
   documentTitle: string | null,
@@ -625,52 +651,15 @@ const CLASS_6: OfficialCurriculum = {
 // The registry
 // ---------------------------------------------------------------------------
 
+// v0.83.1 §A — Classes 1-5, 7 and 8 are no longer hand-written `pending`
+// entries. They are derived, at module load, from the same canonical
+// evidence the master map reads, so the two cannot drift apart. Class 6
+// keeps the accepted registry its authored sections depend on, and
+// Classes 9-12 keep their CBSE syllabus entries.
 export const OFFICIAL_CURRICULA: OfficialCurriculum[] = [
-  pending(
-    'class1',
-    'foundational',
-    'Joyful Mathematics (NCERT)',
-    'Textbook identity corroborated by secondary sources; chapter list not read.'
-  ),
-  pending(
-    'class2',
-    'foundational',
-    'Joyful Mathematics (NCERT)',
-    'Textbook identity corroborated by secondary sources; chapter list not read.'
-  ),
-  pending(
-    'class3',
-    'preparatory',
-    'Maths Mela (NCERT)',
-    'Textbook identity corroborated by secondary sources; chapter list not read.'
-  ),
-  pending(
-    'class4',
-    'preparatory',
-    'Maths Mela (NCERT)',
-    'Textbook identity corroborated by secondary sources; chapter list not read.'
-  ),
-  pending(
-    'class5',
-    'preparatory',
-    'Maths Mela (NCERT)',
-    'Textbook identity corroborated by secondary sources; chapter list not read.'
-  ),
+  ...evidenceDerivedCurricula().filter((c) => classOrder(c.grade) < 6),
   CLASS_6,
-  pending(
-    'class7',
-    'middle',
-    'Ganita Prakash, Grade 7 (NCERT), Parts I and II',
-    'Textbook identity corroborated, including a Reprint 2026-27 imprint. Chapter list NOT read, and secondary sources actively ' +
-      'contradict each other on the total (15 vs 16 chapters) — the v0.51 finding that proved secondary agreement is not evidence.'
-  ),
-  pending(
-    'class8',
-    'middle',
-    'Ganita Prakash, Grade 8 (NCERT), Part I',
-    'Textbook identity corroborated (First Edition July 2025, Reprint 2026-27). Chapter list not read, and whether a Part II ' +
-      'exists for 2026-27 is itself unestablished.'
-  ),
+  ...evidenceDerivedCurricula().filter((c) => classOrder(c.grade) > 6),
   CLASS_9,
   CLASS_10,
   CLASS_11,
@@ -744,6 +733,10 @@ export function officialSectionCount(grade: Grade): number | null {
   const c = officialCurriculumForGrade(grade);
   if (!c || c.status !== 'primary_source_verified') return null;
   if (c.topLevel !== 'chapter') return null;
+  // v0.83.1 §3 — a book that defines no section level has no section
+  // count. Returning 0 would say Class 3 has zero sections, which is the
+  // unknown-as-zero error in a different costume.
+  if (c.units.some((u) => u.subLevelDefinedBySource === false)) return null;
   if (c.units.some((u) => !u.topicsKnown)) return null;
   return c.units.reduce((n, u) => n + u.topics.length, 0);
 }
@@ -839,7 +832,15 @@ export function chaptersEstablished(grade: Grade): boolean {
  */
 export function officialChapterList(
   grade: Grade
-): Array<{ id: string; number: number; title: string; unitTitle: string | null }> | null {
+): Array<{
+  id: string;
+  number: number;
+  title: string;
+  unitTitle: string | null;
+  /** v0.83.1 §4 — carried through so a two-part book's duplicate chapter
+   *  numbers stay distinguishable wherever this list is rendered. */
+  bookPart?: string | null;
+}> | null {
   const c = officialCurriculumForGrade(grade);
   if (!c || !chaptersEstablished(grade)) return null;
   if (c.topLevel === 'chapter') {
@@ -848,6 +849,7 @@ export function officialChapterList(
       number: u.number,
       title: u.title,
       unitTitle: null,
+      bookPart: u.bookPart ?? null,
     }));
   }
   let n = 0;

@@ -449,7 +449,10 @@ describe('§21 the demonstration section is a draft, not a release', () => {
 
   it('cites the verified primary source', () => {
     expect(DEMO_SECTION_SOURCE.sectionNumber).toBe('7.4');
-    expect(DEMO_SECTION_SOURCE.startPage).toBe(160);
+    // v0.83.1 §C — 160 was wrong. The section is printed on p. 159 in
+    // the Reprint 2026-27 chapter PDF, and the lesson now reads its page
+    // from the official registry rather than holding its own copy.
+    expect(DEMO_SECTION_SOURCE.startPage).toBe(159);
     expect(DEMO_SECTION_SOURCE.evidenceProvenance).toBe(
       'primary_source_verified'
     );

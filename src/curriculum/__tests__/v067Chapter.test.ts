@@ -66,11 +66,11 @@ describe('§2 the chapter is fully drafted', () => {
 // ---------------------------------------------------------------------------
 
 describe('§1 §7.4 review candidate is unchanged', () => {
-  it('still fingerprints to a1a3ff57', () => {
+  it('still fingerprints to 7bfd8cc3', () => {
     // If this fails, an educator may be reviewing content that no
     // longer exists. Authoring eight new sections must not touch it.
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
-    expect(section74Artifact().reviewCode).toBe('S74-v1-A1A3FF');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(section74Artifact().reviewCode).toBe('S74-v1-7BFD8C');
   });
 
   it('projects §7.4 read-only rather than restructuring it', () => {
@@ -78,7 +78,7 @@ describe('§1 §7.4 review candidate is unchanged', () => {
     expect(projected.contentArtifactId).toBe('ncert_gp_c6_s7_4_lesson');
     expect(projected.contentArtifactVersion).toBe(1);
     // The projection must not have altered the source of truth.
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
   });
 
   it('gives every new section its own artifact identity', () => {
@@ -173,7 +173,7 @@ describe('§10 misconceptions are diagnosed only when supported', () => {
   it('does not add to the §7.4 misconception map', () => {
     // That map is inside the frozen fingerprint. Extending it would
     // invalidate the review candidate.
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
   });
 });
 

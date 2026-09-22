@@ -68,30 +68,40 @@ describe('§B evidence is recorded, and its absence is recorded too', () => {
     expect(c.units).toHaveLength(10);
   });
 
-  it('leaves Classes 1-5, 7 and 8 explicitly unverified with the reason stated', () => {
+  // v0.83.1 §A — these seven grades WERE pending, and this test pinned
+  // that. They were read from the primary sources on 2026-09-22, so the
+  // assertion is inverted rather than deleted: the same grades must now
+  // carry a real chapter list and no manual step.
+  it('has Classes 1-5, 7 and 8 verified from primary sources, with chapters', () => {
     for (const g of ['class1', 'class2', 'class3', 'class4', 'class5', 'class7', 'class8'] as const) {
       const c = officialCurriculumForGrade(g)!;
-      expect(c.status).toBe('official_structure_pending_verification');
-      expect(c.units).toEqual([]);
-      expect(c.evidenceNote).toMatch(/robots\.txt|not read/i);
-      // A manual step must exist, or the gap is not actionable.
-      expect(c.manualVerificationStep).toBeTruthy();
+      expect(c.status, g).toBe('primary_source_verified');
+      expect(c.units.length, g).toBeGreaterThan(0);
+      expect(c.evidenceNote, g).toMatch(/canonical curriculum evidence/i);
+      expect(c.manualVerificationStep, g).toBeNull();
     }
-    expect(gradesPendingVerification()).toHaveLength(7);
+    expect(gradesPendingVerification()).toHaveLength(0);
   });
 
   it('does not silently fall back to a superseded edition', () => {
-    for (const c of gradesPendingVerification()) {
-      // No pre-NCF chapter list may be inherited to fill the gap.
-      expect(c.units).toEqual([]);
+    for (const c of OFFICIAL_CURRICULA) {
+      // No pre-NCF chapter list may be inherited. Every verified grade
+      // names the document it was read from.
+      if (c.status === 'primary_source_verified') expect(c.documentTitle, c.grade).toBeTruthy();
+      else expect(c.units, c.grade).toEqual([]);
     }
   });
 });
 
 describe('§A/§C unknown means unknown, never zero', () => {
   it('returns null rather than 0 for an unverified official unit count', () => {
+    // v0.83.1 — Classes 3 and 7 are textbooks: they have chapters and
+    // no units, so the unit count is null for that reason now, not for
+    // want of evidence.
     expect(officialUnitCount('class3')).toBeNull();
     expect(officialUnitCount('class7')).toBeNull();
+    expect(officialChapterCount('class3')).toBe(14);
+    expect(officialChapterCount('class7')).toBe(15);
     // v0.82.4 §2 — Ganita Prakash defines chapters, not units. The old
     // expectation read the storage array's name as curriculum
     // terminology, which is what printed "Units 10 / Chapters 10".
@@ -112,14 +122,20 @@ describe('§A/§C unknown means unknown, never zero', () => {
 
   it('reports "not yet available" as null when the denominator is unknown', () => {
     // You cannot subtract Pragati's coverage from an unknown total.
-    expect(auditGrade('class4').missingFromPragati).toBeNull();
+    // v0.83.1 — Class 4's denominator is known now (14 chapters), so
+    // the "unknown total" case is Class 9's textbook, whose Part II is
+    // unpublished. Class 4 instead reports a real gap: 14 records, none
+    // authored.
+    expect(auditGrade('class4').missingFromPragati).toBe(14);
     expect(auditGrade('class10').missingFromPragati).toBe(7);
   });
 
   it('never sums unknown grades into a headline figure', () => {
     const h = completenessHeadline();
-    expect(h.gradesVerified).toBe(5);
-    expect(h.gradesPending).toBe(7);
+    // v0.83.1 — every grade in the registry is verified at its source's
+    // own depth; the sentence must still refuse to call an unknown zero.
+    expect(h.gradesVerified).toBe(12);
+    expect(h.gradesPending).toBe(0);
     expect(h.sentence).toMatch(/not zero/i);
   });
 });
@@ -154,7 +170,10 @@ describe('§J official curriculum and Pragati coverage stay independent', () => 
     const reasons = new Set(auditAllGrades().map((r) => r.mismatchReason));
     // Class 3 (never read) and Class 10 (read, no content) are
     // different problems and must not share a label.
-    expect(auditGrade('class3').mismatchReason).toBe('legacy_module_inventory_only');
+    // v0.83.1 — Class 3 is verified now and has no Pragati content, so
+    // it reports the same reason as Class 10 rather than the
+    // legacy-inventory one. Class 1 still holds legacy rows.
+    expect(auditGrade('class3').mismatchReason).toBe('no_pragati_coverage');
     expect(auditGrade('class10').mismatchReason).toBe('no_pragati_coverage');
     expect(auditGrade('class6').mismatchReason).toBe('partial_pragati_coverage');
     expect(reasons.size).toBeGreaterThan(1);
@@ -188,12 +207,16 @@ describe('§E the student sees the official structure, or an honest gap', () => 
   });
 
   it('refuses to present legacy modules as an official chapter list', () => {
+    // v0.83.1 — Class 3's official chapters are known now, so the view is
+    // verified. The point of the test survives: the list a student sees
+    // is the BOOK's 14 chapters, not the six legacy Pragati modules, and
+    // every one of them reads as unavailable.
     const v = gradeCurriculumView('class3');
-    expect(v.kind).toBe('structure_not_ready');
-    if (v.kind !== 'structure_not_ready') return;
-    // Six legacy rows exist for Class 3 and none of them appear.
+    if (v.kind !== 'verified') throw new Error('expected a verified view');
     expect(auditGrade('class3').legacyModuleRows).toBeGreaterThan(0);
-    expect(v.message).not.toMatch(/module|legacy|verif|registry/i);
+    expect(v.chapters).toHaveLength(14);
+    expect(v.chapters.every((c) => c.availability === 'not_available_yet')).toBe(true);
+    expect(v.chapters.map((c) => c.title)).toContain('Fun with Shapes');
   });
 
   it('uses no governance vocabulary in student-facing text', () => {

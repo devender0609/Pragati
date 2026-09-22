@@ -32,6 +32,8 @@ const f = (numerator: number, denominator: number) => ({
 // Source and mapping
 // ---------------------------------------------------------------------------
 
+import { officialStartPage } from './officialSections';
+
 export const DEMO_SECTION_SOURCE = {
   officialSectionId: 'ncert_gp_c6_s7_4',
   officialChapterId: 'ncert_gp_c6_ch07_fractions',
@@ -39,7 +41,10 @@ export const DEMO_SECTION_SOURCE = {
   chapterTitle: 'Fractions',
   sectionNumber: '7.4',
   exactTitle: 'Marking Fraction Lengths on the Number Line',
-  startPage: 160,
+  // v0.83.1 §C — was 160. The printed folio is 159, confirmed by the
+  // page itself and by the typesetting marker on it. Read from the
+  // official registry so the two can never disagree again.
+  startPage: officialStartPage('ncert_gp_c6_s7_4'),
   textbook: 'Ganita Prakash, Grade 6 (NCERT, Reprint 2026-27)',
   sourceReference: 'https://ncert.nic.in/textbook/pdf/fegp1dd.zip',
   chapterFile: 'fegp107.pdf',

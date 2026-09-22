@@ -1,6 +1,6 @@
 # Curriculum Coverage Matrix — Classes 1–12 Mathematics
 
-**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.83.0. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
+**Generated** from the live model by `src/curriculum/stateDocs.ts` at version 0.83.1. Do not hand-edit: `v078StateDocs.test.ts` compares this file to the model on every run, so an edit here fails the suite and a model change that is not regenerated fails it too.
 
 ---
 
@@ -15,7 +15,7 @@
 A class whose structure is not fully known is **not** a class with no
 curriculum. Its denominator is UNKNOWN, never zero.
 
-**The in-app registry is behind this map.** The Student and Teacher screens read `OFFICIAL_CURRICULA`, which still records Classes 1, 2, 3, 4, 5, 7, 8 as pending verification. Their structure is verified here; it has not been wired into those screens because that changes frozen Student and Teacher surfaces (and the two-part books restart chapter numbering). That is a separate step awaiting approval. Until then this map, not the in-app registry, is the curriculum truth.
+The in-app curriculum registry agrees with the master map for every class.
 
 ---
 
@@ -152,13 +152,7 @@ understate the real total by an unknown amount.
 
 ## Classes awaiting primary verification
 
-- Class 1
-- Class 2
-- Class 3
-- Class 4
-- Class 5
-- Class 7
-- Class 8
+None.
 
 For these classes every count above is unknown, not zero. They are
 tracked in `STRUCTURE_VERIFICATION_BACKLOG.md`.

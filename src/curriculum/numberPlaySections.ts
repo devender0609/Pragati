@@ -49,22 +49,29 @@ import {
   SECTION_3_3_PRACTICE,
 } from './numberPlayPracticeItems';
 
+import { officialStartPage } from './officialSections';
+
 const SRC = 'https://ncert.nic.in/textbook/pdf/fegp1dd.zip';
 const BOOK = 'Ganita Prakash, Grade 6 (NCERT, Reprint 2026-27)';
 const CH = 'ncert_gp_c6_ch03_number_play';
 const INSPECTED = '2026-08-24';
 
+// v0.83.1 §C — the start page is READ FROM THE OFFICIAL REGISTRY, not
+// repeated here. Two copies of the same page number is how 43 Class 6
+// pages drifted from the printed book in the first place; the argument
+// is kept only so the call sites still read like the contents page, and
+// `officialStartPage` is what is recorded.
 const source = (
   sectionNumber: string,
   exactTitle: string,
-  startPage: number,
+  _startPageAsWritten: number,
   officialSectionId: string
 ) => ({
   officialChapterId: CH,
   officialSectionId,
   sectionNumber,
   exactTitle,
-  startPage,
+  startPage: officialStartPage(officialSectionId),
   textbook: BOOK,
   sourceReference: SRC,
   inspectionDate: INSPECTED,

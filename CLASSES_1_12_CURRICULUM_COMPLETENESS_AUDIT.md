@@ -1,5 +1,13 @@
 # Classes 1–12 Mathematics Curriculum Completeness Audit
 
+> **SUPERSEDED — v0.83.1.** This audit describes the state of 2026-08-27, when
+> Classes 1–5, 7 and 8 had no primary-source-verified structure. All twelve
+> classes have been read from primary sources since (2026-09-22). It is kept as
+> a historical record of how the gap was described at the time. For the current
+> state read `CURRICULUM_MASTER_MAP.md`, `CURRICULUM_COVERAGE_MATRIX.md` and
+> `STRUCTURE_VERIFICATION_BACKLOG.md`, all generated from the live model.
+
+
 **Version:** v0.68.0 · **Date:** 2026-08-27
 
 ---

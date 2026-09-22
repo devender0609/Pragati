@@ -34,7 +34,7 @@ describe('§0 the v0.74 report agrees with the v0.74 release', () => {
 
   it('keeps the frozen review identity in the report', () => {
     const r = read('V0.74_REPORT.md');
-    expect(r).toMatch(/a1a3ff57/);
-    expect(r).toMatch(/S74-v1-A1A3FF/);
+    expect(r).toMatch(/a1a3ff57/); // the v0.74 report is history: it names the fingerprint of the day
+    expect(r).toMatch(/S74-v1-A1A3FF/); // history: the code as it stood at v0.74
   });
 });

@@ -11,6 +11,8 @@ import {
   officialUnitCount,
   officialChapterCount,
   officialTopicCount,
+  officialSectionCount,
+  officialCurriculumForGrade,
   officialChapterList,
   chaptersEstablished,
   structureNoun,
@@ -133,17 +135,15 @@ const GOOD: ManualCurriculumSubmission = {
 };
 
 describe('§16-§17 the manual ingestion workflow', () => {
-  it('accepts a complete, well-formed submission', () => {
-    expect(validateManualSubmission(GOOD)).toEqual([]);
-    expect(submissionIsImportable(GOOD)).toBe(true);
-    const c = submissionToCurriculum(GOOD)!;
-    expect(c.status).toBe('primary_source_verified');
-    expect(c.units).toHaveLength(3);
-    expect(c.topLevel).toBe('chapter');
-    // The verifier and date must survive into the evidence note, or the
-    // record cannot be challenged later.
-    expect(c.evidenceNote).toContain('A. Sharma');
-    expect(c.evidenceNote).toContain('2026-08-28');
+  // v0.83.1 §A/§12 — this workflow existed because seven grades had no
+  // primary reading. All of them now do, so the interesting behaviour is
+  // the refusal: an import must NOT be able to overwrite verified
+  // evidence. The shape checks below still run on the same submission.
+  it('refuses to import over a grade that is already primary-source verified', () => {
+    const issues = validateManualSubmission(GOOD);
+    expect(issues.some((i) => /already primary-source verified/i.test(i.message))).toBe(true);
+    expect(submissionIsImportable(GOOD)).toBe(false);
+    expect(submissionToCurriculum(GOOD)).toBeNull();
   });
 
   it('refuses a blank title rather than inferring one', () => {
@@ -209,10 +209,18 @@ describe('§16-§17 the manual ingestion workflow', () => {
   });
 
   it('distinguishes "no sections read" from "chapter has no sections"', () => {
-    const c = submissionToCurriculum(GOOD)!;
-    // No sections were supplied, so depth is UNKNOWN, not zero.
-    expect(c.units.every((u) => u.topicsKnown === false)).toBe(true);
+    // v0.83.1 — and the third state, now that Classes 1-5 are verified:
+    // a book that defines NO section level reports null sections rather
+    // than 0, without claiming its depth was never read.
     expect(officialTopicCount('class7')).toBeNull();
+    expect(officialSectionCount('class7')).toBe(65);
+    expect(officialSectionCount('class3')).toBeNull();
+    expect(
+      officialCurriculumForGrade('class3')!.units.every(
+        (u: { subLevelDefinedBySource?: boolean; topics: unknown[] }) =>
+          u.subLevelDefinedBySource === false && u.topics.length === 0
+      )
+    ).toBe(true);
   });
 
   it('returns issues instead of throwing on malformed JSON', () => {
@@ -233,8 +241,8 @@ describe('§16-§17 the manual ingestion workflow', () => {
 
 describe('§40 no functional regression for design', () => {
   it('leaves the §7.4 fingerprint untouched', () => {
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
-    expect(section74Artifact().reviewCode).toBe('S74-v1-A1A3FF');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(section74Artifact().reviewCode).toBe('S74-v1-7BFD8C');
   });
 
   it('leaves student eligibility exactly where it was', () => {

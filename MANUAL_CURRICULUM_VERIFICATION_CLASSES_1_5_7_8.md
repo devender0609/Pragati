@@ -1,5 +1,14 @@
 # Manual Curriculum Verification — Classes 1–5, 7 and 8
 
+> **SUPERSEDED — v0.83.1.** This document asked a human to read the Contents
+> pages of Classes 1–5, 7 and 8 because NCERT was blocking automated retrieval.
+> That block was not reproducible on 2026-09-22: the books were downloaded and
+> read, and every one of those classes is now primary-source verified. No task
+> in this document is outstanding. It is retained as the record of the manual
+> route, which is still the fallback if a future source cannot be fetched.
+> Current state: `CURRICULUM_MASTER_MAP.md`.
+
+
 **For:** anyone who can open an NCERT textbook and read its Contents page.
 **Not for:** developers only. Nothing here requires editing code.
 **Time:** about 15 minutes per class.

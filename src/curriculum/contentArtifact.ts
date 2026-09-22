@@ -229,6 +229,37 @@ export function computeContentFingerprint(): string {
  *  fingerprint catches accidental drift; the version records intent. */
 export const SECTION_7_4_ARTIFACT_VERSION = 1;
 
+/**
+ * v0.83.1 §C/§9 — SOURCE PROVENANCE IS VERSIONED SEPARATELY.
+ *
+ * The lesson did not change. Its printed page citation did: §7.4 was
+ * recorded as p. 160 and is printed on p. 159, confirmed by the page
+ * folio and the typesetting marker. The page is part of what a reviewer
+ * is shown and is therefore inside the fingerprint, so the fingerprint
+ * moved — a1a3ff57 → 7bfd8cc3 — with no instructional edit at all.
+ *
+ * Two things follow, and neither is a version bump of the lesson:
+ *   1. `SECTION_7_4_ARTIFACT_VERSION` stays 1. Bumping it would claim a
+ *      content revision that did not happen.
+ *   2. The packages built from the old provenance are retained,
+ *      unmodified, as superseded historical artifacts. Nothing was sent
+ *      against them, so no reviewer is holding a code that vanished.
+ */
+export const SECTION_7_4_SOURCE_PROVENANCE_VERSION = 2;
+
+export const SECTION_7_4_SUPERSEDED_PROVENANCE = {
+  provenanceVersion: 1,
+  contentFingerprint: 'a1a3ff57',
+  reviewCode: 'S74-v1-A1A3FF',
+  startPageAsRecorded: 160,
+  supersededOn: '2026-09-22',
+  reason:
+    'Start page corrected to the printed folio 159 from the Reprint 2026-27 ' +
+    'chapter PDF. Instructional content unchanged; artifact version unchanged.',
+  retainedAt: 'PRAGATI_SECTION_7_4_REVIEW_FINAL/, PRAGATI_SECTION_7_4_CURRICULUM_REVIEW/, ' +
+    'PRAGATI_CHAPTER_3_REVIEW_PACKAGES/, PRAGATI_CHAPTER_7_REVIEW_PACKAGES/ — unmodified',
+} as const;
+
 export function section74Artifact(): ContentArtifact {
   const fp = computeContentFingerprint();
   return {

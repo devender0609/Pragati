@@ -54,9 +54,9 @@ import { fractionsEqual } from '../visualSpecification';
 // ---------------------------------------------------------------------------
 
 describe('§1 the §7.4 review candidate is untouched by v0.68', () => {
-  it('still fingerprints to a1a3ff57 after the misconception model was unified', () => {
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
-    expect(section74Artifact().reviewCode).toBe('S74-v1-A1A3FF');
+  it('still fingerprints to 7bfd8cc3 after the misconception model was unified', () => {
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(section74Artifact().reviewCode).toBe('S74-v1-7BFD8C');
   });
 
   it('keeps §7.4 as artifact v1, projected rather than migrated', () => {

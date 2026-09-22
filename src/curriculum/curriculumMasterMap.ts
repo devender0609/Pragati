@@ -107,6 +107,17 @@ export type MasterSource = {
   levelEvidence: string;
   /** For a syllabus: the book it prescribes, exactly as printed. */
   prescribedBookAsPrinted: string | null;
+  /**
+   * v0.83.1 §B — is every volume of this book published and read?
+   *
+   * Recorded as evidence state on the source itself. v0.83 inferred the
+   * Class 9 answer from whether a findings entry happened to carry
+   * severity 'unresolved', which meant an unrelated future finding could
+   * silently invalidate a known denominator — a fact decided by a list
+   * it has nothing to do with.
+   */
+  volumeCompleteness: 'complete_series_published' | 'partial_series_published' | 'unknown';
+  volumeCompletenessNote: string;
   backmatter: Array<{ title: string; page: string | null }>;
 };
 
@@ -161,6 +172,8 @@ type EvidenceFile = {
     inspectedOn: string;
     levels: Record<string, string>;
     levelEvidence: string;
+    volumeCompleteness?: string;
+    volumeCompletenessNote?: string;
     backmatter?: Array<{ title: string; page: string | null }>;
   }>;
   records: Array<{
@@ -229,6 +242,8 @@ function textbookSources(): MasterSource[] {
     },
     levelEvidence: s.levelEvidence,
     prescribedBookAsPrinted: null,
+    volumeCompleteness: (s.volumeCompleteness ?? 'unknown') as MasterSource['volumeCompleteness'],
+    volumeCompletenessNote: s.volumeCompletenessNote ?? '',
     backmatter: s.backmatter ?? [],
   }));
 }
@@ -270,6 +285,9 @@ function syllabusSources(): MasterSource[] {
           ? 'The course-structure table prints a chapter name for each topic, so chapters are recorded at this level too.'
           : 'No chapter-name column is printed, so no chapters are recorded for this syllabus.'),
       prescribedBookAsPrinted: c.prescribedBookAsPrinted,
+      // A syllabus is one document; series completeness does not apply.
+      volumeCompleteness: 'complete_series_published' as const,
+      volumeCompletenessNote: 'Single document, read in full.',
       backmatter: [],
     };
   });
@@ -486,8 +504,12 @@ export function syllabusCounts(n: number): HierarchyCounts | null {
  * The Part I count is real; the class total is not known (finding F1).
  */
 export function textbookDenominatorKnown(n: number): boolean {
-  return !MASTER_EVIDENCE.findings.some(
-    (f) => f.grade === n && f.severity === 'unresolved'
+  const books = sourcesForClass(n).filter((s) => s.kind === 'textbook');
+  if (books.length === 0) return false;
+  return books.every(
+    (b) =>
+      b.volumeCompleteness === 'complete_series_published' &&
+      b.levels.chapter === 'primary_source_verified'
   );
 }
 

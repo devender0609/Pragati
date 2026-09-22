@@ -110,13 +110,25 @@ function unmapped(
  *
  * Titles are as printed. Where a Pragati skill is recorded, the mapping
  * is a MAINTAINER's proposal and is marked as such.
+ *
+ * v0.83.1 §C — START PAGES CORRECTED.
+ *
+ * All 65 start pages were re-read from the same Reprint 2026-27 chapter
+ * PDFs on 2026-09-22 and compared with what was recorded here. 43 were
+ * wrong — §7.4, for instance, was recorded as p. 160 and is printed on
+ * p. 159, which the page folio and the typesetting file name both
+ * confirm. Every one now carries the printed page.
+ *
+ * Titles, numbering, section ids and chapter membership were unchanged
+ * by this correction, and no lesson content was touched. The full
+ * 65-row comparison is in CLASS6_PAGE_CORRECTION_AUDIT.md.
  */
 export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
   // --- Chapter 1: Patterns in Mathematics (p. 1) ---------------------
   unmapped('ncert_gp_c6_ch01_patterns', '1.1', 'What is Mathematics?', 1),
   unmapped('ncert_gp_c6_ch01_patterns', '1.2', 'Patterns in Numbers', 2),
-  unmapped('ncert_gp_c6_ch01_patterns', '1.3', 'Visualising Number Sequences', 4),
-  unmapped('ncert_gp_c6_ch01_patterns', '1.4', 'Relations among Number Sequences', 7),
+  unmapped('ncert_gp_c6_ch01_patterns', '1.3', 'Visualising Number Sequences', 3),
+  unmapped('ncert_gp_c6_ch01_patterns', '1.4', 'Relations among Number Sequences', 6),
   unmapped('ncert_gp_c6_ch01_patterns', '1.5', 'Patterns in Shapes', 9),
   unmapped('ncert_gp_c6_ch01_patterns', '1.6', 'Relation to Number Sequences', 11),
 
@@ -154,7 +166,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch02_lines_angles',
     sectionNumber: '2.3',
     exactTitle: 'Line',
-    startPage: 15,
+    startPage: 14,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -168,7 +180,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch02_lines_angles',
     sectionNumber: '2.4',
     exactTitle: 'Ray',
-    startPage: 17,
+    startPage: 15,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -182,7 +194,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch02_lines_angles',
     sectionNumber: '2.5',
     exactTitle: 'Angle',
-    startPage: 19,
+    startPage: 17,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -191,15 +203,15 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     mappingType: 'partial',
     mappingReviewStatus: 'maintainer_proposed',
   },
-  unmapped('ncert_gp_c6_ch02_lines_angles', '2.6', 'Comparing Angles', 22),
+  unmapped('ncert_gp_c6_ch02_lines_angles', '2.6', 'Comparing Angles', 21),
   unmapped(
     'ncert_gp_c6_ch02_lines_angles',
     '2.7',
     'Making Rotating Arms',
-    26,
+    25,
     'Angle as ROTATION, built hands-on. Pragati treats angle statically throughout.'
   ),
-  unmapped('ncert_gp_c6_ch02_lines_angles', '2.8', 'Special Types of Angles', 28),
+  unmapped('ncert_gp_c6_ch02_lines_angles', '2.8', 'Special Types of Angles', 27),
   {
     officialSectionId: 'ncert_gp_c6_s2_9',
     officialChapterId: 'ncert_gp_c6_ch02_lines_angles',
@@ -219,7 +231,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch02_lines_angles',
     sectionNumber: '2.10',
     exactTitle: 'Drawing Angles',
-    startPage: 42,
+    startPage: 46,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -233,7 +245,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch02_lines_angles',
     sectionNumber: '2.11',
     exactTitle: 'Types of Angles and their Measures',
-    startPage: 47,
+    startPage: 50,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -245,24 +257,24 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
 
   // --- Chapter 3: Number Play (p. 55) --------------------------------
   unmapped('ncert_gp_c6_ch03_number_play', '3.1', 'Numbers can Tell us Things', 55),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.2', 'Supercells', 56),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.2', 'Supercells', 57),
   unmapped('ncert_gp_c6_ch03_number_play', '3.3', 'Patterns of Numbers on the Number Line', 59),
   unmapped('ncert_gp_c6_ch03_number_play', '3.4', 'Playing with Digits', 60),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.5', 'Pretty Palindromic Patterns', 62),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.6', 'The Magic Number of Kaprekar', 64),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.7', 'Clock and Calendar Numbers', 66),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.8', 'Mental Math', 67),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.9', 'Playing with Number Patterns', 69),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.10', 'An Unsolved Mystery — the Collatz Conjecture!', 70),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.11', 'Simple Estimation', 71),
-  unmapped('ncert_gp_c6_ch03_number_play', '3.12', 'Games and Winning Strategies', 72),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.5', 'Pretty Palindromic Patterns', 61),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.6', 'The Magic Number of Kaprekar', 62),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.7', 'Clock and Calendar Numbers', 64),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.8', 'Mental Math', 65),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.9', 'Playing with Number Patterns', 67),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.10', 'An Unsolved Mystery — the Collatz Conjecture!', 68),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.11', 'Simple Estimation', 69),
+  unmapped('ncert_gp_c6_ch03_number_play', '3.12', 'Games and Winning Strategies', 71),
 
   // --- Chapter 4: Data Handling and Presentation (p. 74) -------------
   unmapped('ncert_gp_c6_ch04_data_handling', '4.1', 'Collecting and Organising Data', 74),
-  unmapped('ncert_gp_c6_ch04_data_handling', '4.2', 'Pictographs', 76),
-  unmapped('ncert_gp_c6_ch04_data_handling', '4.3', 'Bar Graphs', 82),
+  unmapped('ncert_gp_c6_ch04_data_handling', '4.2', 'Pictographs', 79),
+  unmapped('ncert_gp_c6_ch04_data_handling', '4.3', 'Bar Graphs', 85),
   unmapped('ncert_gp_c6_ch04_data_handling', '4.4', 'Drawing a Bar Graph', 89),
-  unmapped('ncert_gp_c6_ch04_data_handling', '4.5', 'Artistic and Aesthetic Considerations', 100),
+  unmapped('ncert_gp_c6_ch04_data_handling', '4.5', 'Artistic and Aesthetic Considerations', 101),
 
   // --- Chapter 5: Prime Time (p. 107) --------------------------------
   {
@@ -286,7 +298,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch05_prime_time',
     sectionNumber: '5.2',
     exactTitle: 'Prime Numbers',
-    startPage: 111,
+    startPage: 112,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -296,7 +308,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     mappingReviewStatus: 'maintainer_proposed',
   },
   unmapped('ncert_gp_c6_ch05_prime_time', '5.3', 'Co-prime numbers for safekeeping treasures', 115),
-  unmapped('ncert_gp_c6_ch05_prime_time', '5.4', 'Prime Factorisation', 118),
+  unmapped('ncert_gp_c6_ch05_prime_time', '5.4', 'Prime Factorisation', 117),
   {
     officialSectionId: 'ncert_gp_c6_s5_5',
     officialChapterId: 'ncert_gp_c6_ch05_prime_time',
@@ -316,7 +328,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
   // --- Chapter 6: Perimeter and Area (p. 129) ------------------------
   unmapped('ncert_gp_c6_ch06_perimeter_area', '6.1', 'Perimeter', 129),
   unmapped('ncert_gp_c6_ch06_perimeter_area', '6.2', 'Area', 137),
-  unmapped('ncert_gp_c6_ch06_perimeter_area', '6.3', 'Area of a Triangle', 145),
+  unmapped('ncert_gp_c6_ch06_perimeter_area', '6.3', 'Area of a Triangle', 142),
 
   // --- Chapter 7: Fractions (p. 151) — the pilot chapter -------------
   {
@@ -324,7 +336,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch07_fractions',
     sectionNumber: '7.1',
     exactTitle: 'Fractional Units and Equal Shares',
-    startPage: 151,
+    startPage: 152,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -360,7 +372,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch07_fractions',
     sectionNumber: '7.4',
     exactTitle: 'Marking Fraction Lengths on the Number Line',
-    startPage: 160,
+    startPage: 159,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     // v0.61 §12 — the DEMONSTRATION SECTION. Competency is proposed
@@ -380,7 +392,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch07_fractions',
     sectionNumber: '7.5',
     exactTitle: 'Mixed Fractions',
-    startPage: 165,
+    startPage: 161,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -394,7 +406,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch07_fractions',
     sectionNumber: '7.6',
     exactTitle: 'Equivalent Fractions',
-    startPage: 169,
+    startPage: 163,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -407,7 +419,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     'ncert_gp_c6_ch07_fractions',
     '7.7',
     'Comparing Fractions',
-    174,
+    173,
     'No Pragati skill. Comparison is assumed rather than taught.'
   ),
   {
@@ -415,7 +427,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch07_fractions',
     sectionNumber: '7.8',
     exactTitle: 'Addition and Subtraction of Fractions',
-    startPage: 178,
+    startPage: 175,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -428,17 +440,17 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     'ncert_gp_c6_ch07_fractions',
     '7.9',
     'A Pinch of History',
-    185,
+    182,
     'Realises Middle CG-9 (history of mathematics), a first-class curricular goal. Pragati has no history content anywhere.'
   ),
 
   // --- Chapter 8: Playing with Constructions (p. 187) ----------------
   unmapped('ncert_gp_c6_ch08_constructions', '8.1', 'Artwork', 187),
-  unmapped('ncert_gp_c6_ch08_constructions', '8.2', 'Squares and Rectangles', 195),
-  unmapped('ncert_gp_c6_ch08_constructions', '8.3', 'Constructing Squares and Rectangles', 199),
-  unmapped('ncert_gp_c6_ch08_constructions', '8.4', 'An Exploration in Rectangles', 205),
-  unmapped('ncert_gp_c6_ch08_constructions', '8.5', 'Exploring Diagonals of Rectangles and Squares', 209),
-  unmapped('ncert_gp_c6_ch08_constructions', '8.6', 'Points Equidistant from Two Given Points', 213),
+  unmapped('ncert_gp_c6_ch08_constructions', '8.2', 'Squares and Rectangles', 192),
+  unmapped('ncert_gp_c6_ch08_constructions', '8.3', 'Constructing Squares and Rectangles', 195),
+  unmapped('ncert_gp_c6_ch08_constructions', '8.4', 'An Exploration in Rectangles', 197),
+  unmapped('ncert_gp_c6_ch08_constructions', '8.5', 'Exploring Diagonals of Rectangles and Squares', 203),
+  unmapped('ncert_gp_c6_ch08_constructions', '8.6', 'Points Equidistant from Two Given Points', 211),
 
   // --- Chapter 9: Symmetry (p. 217) ----------------------------------
   {
@@ -446,7 +458,7 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     officialChapterId: 'ncert_gp_c6_ch09_symmetry',
     sectionNumber: '9.1',
     exactTitle: 'Line of Symmetry',
-    startPage: 217,
+    startPage: 219,
     verificationStatus: 'primary_source_verified',
     sourceReference: SRC,
     competencyMappingStatus: 'competency_mapping_pending',
@@ -459,16 +471,16 @@ export const CLASS6_OFFICIAL_SECTIONS: OfficialSectionRecord[] = [
     'ncert_gp_c6_ch09_symmetry',
     '9.2',
     'Rotational Symmetry',
-    229,
+    230,
     'Absent from Pragati entirely.'
   ),
 
   // --- Chapter 10: The Other Side of Zero (p. 242) -------------------
-  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.1', "Bela's Building of Fun", 242),
-  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.2', 'The Token Model', 252),
-  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.3', 'Integers in Other Places', 258),
-  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.4', 'Explorations with Integers', 262),
-  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.5', 'A Pinch of History', 268),
+  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.1', "Bela's Building of Fun", 243),
+  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.2', 'The Token Model', 256),
+  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.3', 'Integers in Other Places', 259),
+  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.4', 'Explorations with Integers', 263),
+  unmapped('ncert_gp_c6_ch10_other_side_of_zero', '10.5', 'A Pinch of History', 266),
 ];
 
 // ---------------------------------------------------------------------------
@@ -551,4 +563,24 @@ export function sectionCoverageForChapter(
 export function allClass6SectionCoverage(): ChapterSectionCoverage[] {
   const ids = [...new Set(CLASS6_OFFICIAL_SECTIONS.map((s) => s.officialChapterId))];
   return ids.map(sectionCoverageForChapter);
+}
+
+/**
+ * v0.83.1 §C — the one place a Class 6 section's printed start page
+ * lives.
+ *
+ * Authored sections used to repeat the page in their own source blocks,
+ * so a correction here left them behind. They call this instead.
+ */
+export function officialStartPage(officialSectionId: string): number {
+  const s = CLASS6_OFFICIAL_SECTIONS.find(
+    (x) => x.officialSectionId === officialSectionId
+  );
+  if (!s) {
+    throw new Error(
+      `no official Class 6 section '${officialSectionId}' — a lesson may not ` +
+        'cite a page for a record that does not exist'
+    );
+  }
+  return s.startPage;
 }

@@ -1,3 +1,83 @@
+# Pragati — Mathematics learning platform for CBSE/NCERT Classes 1–12
+
+**Current as of v0.83.1. Everything below the "Historical release notes"
+line is kept for the record and describes earlier states of the product.**
+
+## What Pragati is for
+
+To become a complete Mathematics learning platform for CBSE/NCERT
+Classes 1–12: every official record represented at the depth its source
+establishes, and original Pragati teaching and practice written for the
+mathematical objectives inside those records.
+
+The chain is fixed and no step is skipped:
+
+primary official source → verified official structure → page-level
+mathematical intent → Pragati instructional decomposition → original
+Learn and Practice → completeness → human review → adjudication →
+publication.
+
+## Where the curriculum stands
+
+- The Classes 1–12 master map is established from primary sources
+  (NCERT textbook PDFs and CBSE syllabi, read 2026-09-22).
+- **11 of 12 classes are complete at structure level** — every chapter,
+  and every numbered section where the book defines one.
+- **Class 9 is partial.** Only Ganita Manjari Part I is published, while
+  the CBSE syllabus prescribes a book with 15 chapters, so the Class 9
+  textbook denominator is UNKNOWN, not zero.
+- Classes 1–5 print chapters and no numbered sections. That is recorded
+  as "the source defines no section level", never as zero sections.
+- NCERT textbook structure and CBSE syllabus structure are kept as
+  separate hierarchies. No CBSE unit is equated to an NCERT chapter.
+- `CURRICULUM_MASTER_MAP.md` and `.json` are the map; the runtime
+  curriculum the app reads is derived from the same evidence file, so
+  there is one curriculum truth.
+
+## Where the instructional content stands
+
+- **12 instructional records are complete and review-ready**, all in
+  Class 6: Chapter 7 Fractions (9) and Chapter 3 Number Play (3).
+- **Nothing else is authored.** Every other official record has no Learn
+  and no Practice.
+- **0 sent, 0 reviewed, 0 published.** Review state changes only on a
+  real educator response.
+- The official record count (source grain) is **not** a lesson count. How
+  many lessons a record needs is decided by reading its pages, which has
+  not been done outside the authored sections.
+
+## Student and Teacher
+
+Both read the canonical curriculum. Every official chapter appears for
+every class, including the classes with no content, where it reads as
+unavailable and is not clickable. Two-part books (Classes 7 and 8)
+restart chapter numbering at 1, so chapters are labelled by part —
+"Part II · Chapter 1". The Math Studio visual language is unchanged.
+
+## Growth
+
+Historical Growth engineering exists in the codebase and is **frozen**.
+It is not operational.
+
+## What Pragati is NOT
+
+- not complete Classes 1–12 instructional content;
+- not a validated adaptive assessment;
+- not RIT-equivalent;
+- not normed;
+- not calibrated;
+- not a validated growth measure.
+
+Any of those would need an item bank with field-tested, calibrated
+parameters, validated ability estimation and linking — none of which
+exists.
+
+---
+
+# Historical release notes
+
+The sections below predate v0.83.1 and are retained unedited.
+
 # Pragati — Growth Assessment Prototype
 
 A **CBSE/NCERT-informed prototype**, mapped to a draft skill framework

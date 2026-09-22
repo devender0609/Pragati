@@ -166,20 +166,23 @@ describe('the plan tells the truth about who is blocked', () => {
     }
   });
 
-  it('plans only for verified grades', () => {
+  it('plans for every verified grade, and for no unverified one', () => {
+    // v0.83.1 — all twelve are verified now, so the plan covers all
+    // twelve. The rule is unchanged: planning follows verification.
     const grades = new Set(contentPlan().map((p) => p.grade));
     expect([...grades].sort()).toEqual([
-      'class10', 'class11', 'class12', 'class6', 'class9',
+      'class1', 'class10', 'class11', 'class12', 'class2', 'class3',
+      'class4', 'class5', 'class6', 'class7', 'class8', 'class9',
     ]);
     for (const g of ['class1', 'class3', 'class7'] as const) {
-      expect(planForGrade(g), g).toEqual([]);
+      expect(planForGrade(g).length, g).toBeGreaterThan(0);
     }
   });
 });
 
 describe('the pipeline changed no content', () => {
   it('leaves the fingerprint and all nine drafts untouched', () => {
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
     const sections = fractionsChapterSections();
     expect(sections).toHaveLength(9);
     for (const s of sections) expect(s.reviewStatus).toBe('authored_draft');

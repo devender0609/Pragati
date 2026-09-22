@@ -83,13 +83,17 @@ describe('§3 the coverage matrix keeps three truths separate', () => {
     expect(coverageMatrix()).toHaveLength(12);
   });
 
-  it('reports UNKNOWN, not zero, for an unverified grade', () => {
-    for (const g of ['class1', 'class3', 'class7', 'class8'] as const) {
+  // v0.83.1 — no grade is unverified any more, so the unknown-is-not-zero
+  // rule is checked where an unknown still genuinely exists: Classes 1-5
+  // define no section level (null sections, never 0) and Class 9's
+  // textbook denominator is unknown.
+  it('reports UNKNOWN, not zero, where the source leaves something unknown', () => {
+    for (const g of ['class1', 'class3'] as const) {
       const r = coverageForGrade(g);
-      expect(r.verified, g).toBe(false);
+      expect(r.verified, g).toBe(true);
       expect(r.officialUnits, g).toBeNull();
-      expect(r.recordsRepresented, g).toBeNull();
-      expect(r.omissions, g).toBeNull();
+      expect(r.officialSections, g).toBeNull();
+      expect(r.officialChapters, g).toBeGreaterThan(0);
     }
   });
 
@@ -106,8 +110,11 @@ describe('§3 the coverage matrix keeps three truths separate', () => {
 
   it('§26 — a verified grade with no content keeps its curriculum', () => {
     const empty = verifiedGradesWithNoContent();
+    // v0.83.1 — eleven grades now have a verified curriculum and no
+    // content. Class 6 is the only one with any.
     expect(empty.map((r) => r.gradeLabel).sort()).toEqual([
-      'Class 10', 'Class 11', 'Class 12', 'Class 9',
+      'Class 1', 'Class 10', 'Class 11', 'Class 12', 'Class 2', 'Class 3',
+      'Class 4', 'Class 5', 'Class 7', 'Class 8', 'Class 9',
     ]);
     for (const r of empty) {
       // Curriculum present, content absent. Two different facts.
@@ -240,10 +247,11 @@ describe('§23 every uncovered verified record is in the backlog', () => {
     }
   });
 
-  it('covers all five verified grades and no unverified one', () => {
+  it('covers every verified grade', () => {
     const s = backlogSummary();
     expect(Object.keys(s.byGrade).sort()).toEqual([
-      'Class 10', 'Class 11', 'Class 12', 'Class 6', 'Class 9',
+      'Class 1', 'Class 10', 'Class 11', 'Class 12', 'Class 2', 'Class 3',
+      'Class 4', 'Class 5', 'Class 6', 'Class 7', 'Class 8', 'Class 9',
     ]);
     expect(s.total).toBeGreaterThan(80);
   });
@@ -318,6 +326,6 @@ describe('§28 review state is untouched', () => {
     const sections = fractionsChapterSections();
     expect(sections).toHaveLength(9);
     for (const s of sections) expect(s.reviewStatus).toBe('authored_draft');
-    expect(computeContentFingerprint()).toBe('a1a3ff57');
+    expect(computeContentFingerprint()).toBe('7bfd8cc3');
   });
 });

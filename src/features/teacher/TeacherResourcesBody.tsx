@@ -47,7 +47,16 @@ function CurriculumDepthPanel({ grade }: { grade: Grade }) {
       title={`${label} — ${c.documentTitle}`}
       detail={
         chapterDepth
-          ? `Read from the textbook itself, so chapters and sections are both real. ${c.units.length} chapters, ${topicCount} sections.`
+          ? c.units.some((u) => u.subLevelDefinedBySource === false)
+            // v0.83.1 §3 — Classes 1-5 print chapters and no numbered
+            // sections. Saying "0 sections" would claim the book has
+            // none listed rather than none defined.
+            ? `Read from the textbook itself. ${c.units.length} chapters. This book does not number sections, so there is no section count.`
+            : `Read from the textbook itself, so chapters and sections are both real. ${c.units.length} chapters, ${topicCount} sections.${
+                c.units.some((u) => u.bookPart)
+                  ? ' Published in two parts; Part II restarts at Chapter 1, so chapters are shown with their part.'
+                  : ''
+              }`
           : `Read from the ${c.authority} syllabus, so units and topics are real. ${namedChapters > 0 ? `The syllabus prints chapter names for ${namedChapters} of ${c.units.length} units.` : 'The syllabus prints no chapter names, so Pragati does not show a textbook chapter list for this class.'}`
       }
       tone="learn"
@@ -58,7 +67,7 @@ function CurriculumDepthPanel({ grade }: { grade: Grade }) {
           label={chapterDepth ? 'chapters' : 'syllabus units'}
         />
         <TeacherStat
-          value={topicCount || '—'}
+          value={c.units.some((u) => u.subLevelDefinedBySource === false) ? '—' : topicCount || '—'}
           label={chapterDepth ? 'sections' : 'named topics'}
         />
         <TeacherStat

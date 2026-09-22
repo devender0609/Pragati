@@ -38,6 +38,10 @@ export type OfficialChapterAvailability =
   | 'not_available_yet';
 
 export type OfficialChapterCard = {
+  /** Which volume of a two-part book, where the grade has two. */
+  bookPart?: string | null;
+  /** What a student reads. Unambiguous across two-part books. */
+  chapterLabel?: string;
   officialUnitId: string;
   number: number;
   title: string;
@@ -114,6 +118,7 @@ export function gradeCurriculumView(grade: Grade): GradeCurriculumView {
           title: ch.title,
           topicsKnown: false,
           topicCount: 0,
+          bookPart: (ch.bookPart ?? null) as string | null,
         }))
       : c.units.map((u) => ({
           id: u.officialUnitId,
@@ -121,6 +126,7 @@ export function gradeCurriculumView(grade: Grade): GradeCurriculumView {
           title: u.title,
           topicsKnown: u.topicsKnown,
           topicCount: u.topics.length,
+          bookPart: u.bookPart ?? null,
         }));
 
   const chapters: OfficialChapterCard[] = entries.map((u) => {
@@ -135,6 +141,11 @@ export function gradeCurriculumView(grade: Grade): GradeCurriculumView {
       officialUnitId: u.id,
       number: u.number,
       title: u.title,
+      // v0.83.1 §4 — Grade 7 and Grade 8 Part II restart at Chapter 1,
+      // so a number alone is ambiguous. The label a student reads is
+      // "Part II · Chapter 1"; the source number is untouched.
+      bookPart: u.bookPart,
+      chapterLabel: u.bookPart ? `${u.bookPart} · Chapter ${u.number}` : `Chapter ${u.number}`,
       availability,
       statusLine: STATUS_LINE[availability],
       topicCount: u.topicsKnown ? u.topicCount : null,

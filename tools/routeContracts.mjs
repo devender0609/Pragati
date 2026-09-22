@@ -352,7 +352,7 @@ export const ROUTE_CONTRACTS = {
   admin_chapter_quality: {
     id: 'admin_chapter_quality',
     label: 'Admin — chapter quality summary',
-    mustContain: ['quality summary', 'a1a3ff57'],
+    mustContain: ['quality summary', '7bfd8cc3'],
     mustNotContain: ['STUDENT MODE'],
   },
 };
