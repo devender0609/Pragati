@@ -34,6 +34,7 @@
 // full-book archive. Ten chapters, primary-source verified.
 //
 // Classes I–V, VII, VIII: NOT VERIFIED, and deliberately so.
+// [HISTORICAL — see v0.83.2 §16. Superseded on 2026-09-22.]
 // ncert.nic.in disallows automated access, and every attempt in this
 // iteration was refused. Secondary sources agree on the TEXTBOOK
 // TITLES (Joyful Mathematics, Maths Mela, Ganita Prakash) and those are
@@ -204,13 +205,20 @@ export type OfficialCurriculum = {
   manualVerificationStep: string | null;
 };
 
-const NCERT_BLOCKED =
+// v0.83.2 §16 — HISTORICAL, and no longer used by any grade.
+//
+// Every NCERT-textbook grade is derived from the primary documents now.
+// `robots.txt` returned HTTP 404 with no directives on 2026-09-22, so
+// the blocker this text describes was not reproducible. Kept only so
+// the reason the old records said UNKNOWN can still be read.
+const HISTORICAL_NCERT_BLOCKED_NOTE_v0_68 =
   'ncert.nic.in disallows automated access (robots.txt), so the chapter list could not be read from the primary document. ' +
   'The textbook title is corroborated by independent secondary sources only. Secondary agreement is not evidence: for Class 7 ' +
   'independent sources disagree on whether the book has 15 or 16 chapters, and for Class 6 they agreed while still not having ' +
   'been checked. The unit count is therefore UNKNOWN, not estimated.';
 
-const NCERT_MANUAL_STEP =
+/** v0.83.2 §16 — HISTORICAL. No grade requires this step today. */
+const HISTORICAL_NCERT_MANUAL_STEP_v0_68 =
   'Open the current NCERT textbook PDF for this grade in a browser, read the Contents page, and record each chapter number and ' +
   'exact title. Then set status to primary_source_verified with the inspection date and the verifier name.';
 
@@ -243,9 +251,9 @@ export function pending(
     // A textbook's contents page yields chapters. Until it is read we
     // do not know how many, but we do know what they will be called.
     topLevel: 'chapter',
-    evidenceNote: `${note} ${NCERT_BLOCKED}`,
+    evidenceNote: `${note} ${HISTORICAL_NCERT_BLOCKED_NOTE_v0_68}`,
     units: [],
-    manualVerificationStep: NCERT_MANUAL_STEP,
+    manualVerificationStep: HISTORICAL_NCERT_MANUAL_STEP_v0_68,
   };
 }
 

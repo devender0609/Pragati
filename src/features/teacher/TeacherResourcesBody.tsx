@@ -99,7 +99,13 @@ export function TeacherResourcesBody({
   // The items are not deleted. They move to a clearly separate panel
   // below, labelled as awaiting a curriculum decision.
   const allChapters = chaptersForStudentGrade(grade);
-  const chapters = allChapters.filter((c) => isClass6Core(c.legacyModuleId ?? ''));
+  // v0.83.2 §4 — the Class 6 filter silently emptied every other class.
+  // Class 6 keeps its curated core; the other classes show the official
+  // chapters of their book, in the book's order, content or not.
+  const chapters =
+    grade === 'class6'
+      ? allChapters.filter((c) => isClass6Core(c.legacyModuleId ?? ''))
+      : allChapters.filter((c) => c.official === true);
   const displaced =
     grade === 'class6'
       ? allChapters.filter((c) => !isClass6Core(c.legacyModuleId ?? ''))
@@ -182,19 +188,28 @@ export function TeacherResourcesBody({
             return (
               <Card key={c.chapterId}>
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div className="text-sm font-semibold text-slate-900">
+                  <div className="text-sm font-semibold text-slate-900" data-chapter-title="official">
                     {c.title}
                   </div>
                   <StatusBadge audience="teacher" status={c.inventory.status} title={c.inventory.reasons.join(' ')} />
                 </div>
                 <p className="mt-1 text-xs text-slate-500">{c.subtitle}</p>
                 <div className="mt-3">
-                  <button
-                    onClick={() => onOpenChapter(c.chapterId)}
-                    className="min-h-[44px] rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700 ring-1 ring-slate-200 hover:bg-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
-                  >
-                    Open chapter resources
-                  </button>
+                  {/* v0.83.2 §5 — a chapter Pragati has nothing for must
+                      not offer a working-looking button. The record is
+                      still shown; the action is not. */}
+                  {c.inventory.status === 'no_content' ? (
+                    <span className="inline-flex min-h-[44px] items-center rounded-lg bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-400 ring-1 ring-slate-200">
+                      Resources not available yet
+                    </span>
+                  ) : (
+                    <button
+                      onClick={() => onOpenChapter(c.chapterId)}
+                      className="min-h-[44px] rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700 ring-1 ring-slate-200 hover:bg-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
+                    >
+                      Open chapter resources
+                    </button>
+                  )}
                 </div>
               </Card>
             );

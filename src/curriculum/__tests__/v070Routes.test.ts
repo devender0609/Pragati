@@ -237,6 +237,6 @@ describe('§24 manual verification produces a committable artefact', () => {
 
 describe('§20 the redesign changed no content', () => {
   it('leaves the §7.4 fingerprint unchanged', () => {
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
   });
 });

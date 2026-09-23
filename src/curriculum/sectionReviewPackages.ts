@@ -70,6 +70,15 @@ import type { ReviewRecord } from './educatorReview';
  */
 export const SECTION_QUESTION_SET_VERSION = 1;
 
+/**
+ * v0.83.2 §11 — versions the SOURCE CITATION, not the lesson.
+ *
+ * 1: pages as first recorded (2026-08-24 reading).
+ * 2: pages corrected to the printed folios (2026-09-22 reading); 44 of
+ *    the 65 Class 6 sections moved. No instructional text changed.
+ */
+export const SOURCE_PROVENANCE_VERSION = 2;
+
 /** @deprecated use `section.contentArtifactVersion`. */
 export const SECTION_ARTIFACT_VERSION = 1;
 
@@ -95,11 +104,18 @@ export function sectionReviewContent(officialSectionId: string): unknown {
   const s = authoredSectionById(officialSectionId);
   if (!s) return null;
   return {
+    // v0.83.2 §11 — THE PAGE IS NOT IN HERE ANY MORE.
+    //
+    // At v0.83.1 correcting §7.4's citation from p.160 to p.159 moved
+    // this hash, so a code identifying "the lesson an educator read"
+    // changed although not one word of the lesson did. Content identity
+    // and source provenance are now two identities: this one covers what
+    // is taught, `sectionProvenanceFingerprint` covers where it came
+    // from, and a package carries both.
     section: {
       chapter: s.source.officialChapterId,
       section: s.source.officialSectionId,
       title: s.source.exactTitle,
-      page: s.source.startPage,
     },
     learningGoal: s.learningGoal,
     explanation: s.explanation,
@@ -114,6 +130,48 @@ export function sectionReviewContent(officialSectionId: string): unknown {
 
 export function sectionFingerprint(officialSectionId: string): string {
   return fingerprintOf(sectionReviewContent(officialSectionId));
+}
+
+/**
+ * v0.83.2 §11 — where the lesson came from, hashed separately.
+ *
+ * A curriculum reviewer judges exactly this: the book, the edition and
+ * the pages. If it changes, their review needs re-checking even when the
+ * teaching did not change — and an educator's pedagogy review does not.
+ */
+export function sectionProvenanceContent(officialSectionId: string): unknown {
+  const s = authoredSectionById(officialSectionId);
+  if (!s) return null;
+  return {
+    section: s.source.officialSectionId,
+    sectionNumber: s.source.sectionNumber,
+    title: s.source.exactTitle,
+    page: s.source.startPage,
+    textbook: s.source.textbook,
+    sourceReference: s.source.sourceReference,
+    inspectionDate: s.source.inspectionDate,
+  };
+}
+
+export function sectionProvenanceFingerprint(officialSectionId: string): string {
+  return fingerprintOf(sectionProvenanceContent(officialSectionId));
+}
+
+/** Content identity + provenance identity, as a reviewer is shown them. */
+export function sectionReviewIdentity(officialSectionId: string): {
+  reviewCode: string;
+  contentFingerprint: string;
+  provenanceFingerprint: string;
+  provenanceVersion: number;
+  questionSetVersion: number;
+} {
+  return {
+    reviewCode: sectionReviewCode(officialSectionId),
+    contentFingerprint: sectionFingerprint(officialSectionId),
+    provenanceFingerprint: sectionProvenanceFingerprint(officialSectionId),
+    provenanceVersion: SOURCE_PROVENANCE_VERSION,
+    questionSetVersion: SECTION_QUESTION_SET_VERSION,
+  };
 }
 
 export function sectionReviewCode(officialSectionId: string): string {
@@ -375,7 +433,7 @@ export function sectionPackageMarkdown(officialSectionId: string): string {
 **${s.source.exactTitle}**
 
 Review code: \`${code}\`
-Source: ${s.source.sourceReference}, p. ${s.source.startPage}
+Source: ${s.source.sourceReference}, p. ${s.source.startPage} (provenance v${SOURCE_PROVENANCE_VERSION}, ${sectionProvenanceFingerprint(officialSectionId)})
 Questions: ${qs.length}
 
 ---

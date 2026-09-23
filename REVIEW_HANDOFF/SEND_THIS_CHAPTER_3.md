@@ -1,11 +1,17 @@
 # Chapter 3 — Number Play: what to send, and what to ask
 
+> **v0.83.2 — send `PRAGATI_CHAPTER_3_REVIEW_PACKAGES_CURRENT/` only.** The
+> folder without `_CURRENT` is historical: it cites the pre-correction
+> pages and the old codes. Codes below are the current ones, and each
+> package now carries both a content fingerprint (what is taught) and a
+> source provenance fingerprint (where it came from).
+
 **Status: NOT SENT.** Nothing in this chapter has been reviewed,
 approved or published, and nothing will be until an educator responds.
 
 ## What to send
 
-The folder **`PRAGATI_CHAPTER_3_REVIEW_PACKAGES/`** contains three reviewer
+The folder **`PRAGATI_CHAPTER_3_REVIEW_PACKAGES_CURRENT/`** contains three reviewer
 files plus a manifest (`index.json`). **Send the reviewer the three markdown
 files only.** `index.json` is Pragati's record of the codes, fingerprints and
 artifact versions; the reviewer does not need it, and each markdown file
@@ -47,7 +53,7 @@ and those are the parts most worth their judgement:
 
 ## How responses come back
 
-Each package carries a **review code** (for example `S31-v1-20BA61`) and
+Each package carries a **review code** (for example `S31-v1-1C9870`) and
 sixteen questions.
 
 **The `v1` in a review code is the version of the review question set (the
@@ -58,9 +64,9 @@ its artifact version and content fingerprint, as recorded in `index.json`:
 
 | Section | Review code | Artifact version | Fingerprint |
 |---|---|---|---|
-| 3.1 | `S31-v1-20BA61` | 2 | `20ba61e4` |
-| 3.2 | `S32-v1-4F4A92` | 1 | `4f4a922f` |
-| 3.3 | `S33-v1-F85783` | 2 | `f85783be` | For each: **accept**, **revise**, **reject** or
+| 3.1 | `S31-v1-1C9870` | 2 | `1c98708f` |
+| 3.2 | `S32-v1-14F313` | 1 | `14f31341` |
+| 3.3 | `S33-v1-164AF7` | 2 | `164af795` | For each: **accept**, **revise**, **reject** or
 **insufficient evidence**, with a reason. A decision without a reason
 cannot be adjudicated and is treated as unanswered.
 

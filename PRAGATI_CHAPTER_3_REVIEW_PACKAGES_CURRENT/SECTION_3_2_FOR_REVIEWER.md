@@ -2,8 +2,8 @@
 
 **Supercells**
 
-Review code: `S32-v1-1265C8`
-Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 57
+Review code: `S32-v1-14F313`
+Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 57 (provenance v2, fb55c183)
 Questions: 16
 
 ---
@@ -106,7 +106,7 @@ _Asked because: Every lesson is judged on this._
 
 ## Returning this
 
-Send your answers back with the review code `S32-v1-1265C8` quoted at the top.
+Send your answers back with the review code `S32-v1-14F313` quoted at the top.
 
 Pragati recomputes the content fingerprint when your answers are imported. If
 the lesson changes after you receive this, your response will be rejected

@@ -1,6 +1,8 @@
 // v0.69 §16/§17 — THE MANUAL CURRICULUM VERIFICATION SCREEN.
 //
 // Seven grades have an unknown official chapter list because
+// [HISTORICAL — see v0.83.2. The block below was not reproducible on
+// 2026-09-22 and no grade is pending verification now.]
 // ncert.nic.in disallows automated access, and v0.68's remedy was a
 // prose note saying "edit the TypeScript". That made curriculum
 // verification a developer task, which is backwards: reading a contents

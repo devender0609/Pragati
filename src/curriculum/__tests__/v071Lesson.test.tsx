@@ -182,13 +182,13 @@ describe('§14 the pedagogy audit exists and is honest about itself', () => {
   it('leaves §7.4 alone, because it is the frozen review anchor', () => {
     const f = findingsForSection('7.4').find((x) => x.sectionNumber === '7.4')!;
     expect(f.disposition).toBe('considered_and_kept');
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
   });
 });
 
 describe('§21 the restaging changed no content', () => {
   it('leaves the fingerprint and all nine drafts untouched', () => {
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
     const sections = fractionsChapterSections();
     expect(sections).toHaveLength(9);
     for (const s of sections) expect(s.reviewStatus).toBe('authored_draft');

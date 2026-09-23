@@ -182,7 +182,7 @@ describe('the plan tells the truth about who is blocked', () => {
 
 describe('the pipeline changed no content', () => {
   it('leaves the fingerprint and all nine drafts untouched', () => {
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
     const sections = fractionsChapterSections();
     expect(sections).toHaveLength(9);
     for (const s of sections) expect(s.reviewStatus).toBe('authored_draft');

@@ -326,6 +326,6 @@ describe('§28 review state is untouched', () => {
     const sections = fractionsChapterSections();
     expect(sections).toHaveLength(9);
     for (const s of sections) expect(s.reviewStatus).toBe('authored_draft');
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
   });
 });

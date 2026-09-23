@@ -1,10 +1,10 @@
-# Pragati review — Section 7.7
+# Pragati review — Section 7.9
 
-**Comparing Fractions**
+**A Pinch of History**
 
-Review code: `S77-v1-399A76`
-Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 173
-Questions: 16
+Review code: `S79-v1-24DFEA`
+Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 182 (provenance v2, 0ff18dfa)
+Questions: 12
 
 ---
 
@@ -38,6 +38,17 @@ For each question answer **accept**, **revise**, **reject** or
 **insufficient evidence**, and give a reason. A decision without a reason
 cannot be adjudicated and will be treated as unanswered.
 
+## Not included, on purpose
+
+This section deliberately has no:
+
+- visual — A history and context section. v0.72 §17 considered a timeline and concluded a decorative one would add no mathematical learning; a sourced facsimile is a rights and authoring decision for review, not a completeness gap.
+- interactive practice — v0.68 §5 recorded the argument: a multiple-choice quiz on names and dates would assess recall of facts the section never asks anyone to memorise, and would misrepresent what it teaches.
+- documented misconception — No documented mathematical misconception attaches to a historical narrative.
+
+You are **not** asked about these. If you think that judgement is wrong, say so
+under O2 — that is more useful than a guessed answer about something that does
+not exist.
 
 ---
 
@@ -59,45 +70,29 @@ _Asked because: Every lesson is judged on this._
 
 _Asked because: Every lesson is judged on this._
 
-**W1.** Do the 4 worked example(s) show the reasoning at every step, not just the answer?
+**W1.** Do the 2 worked example(s) show the reasoning at every step, not just the answer?
 
-_Asked because: This section has 4 worked example(s)._
+_Asked because: This section has 2 worked example(s)._
 
 **W2.** Could a student reproduce these steps unaided afterwards?
 
-_Asked because: This section has 4 worked example(s)._
+_Asked because: This section has 2 worked example(s)._
 
 **X1.** Are the practice items at the right difficulty for this point in the chapter?
 
-_Asked because: This section has 3 guided and 5 independent item(s)._
+_Asked because: This section has 2 guided and 3 independent item(s)._
 
 **X2.** Does any item test something this section never taught?
 
-_Asked because: This section has 3 guided and 5 independent item(s)._
+_Asked because: This section has 2 guided and 3 independent item(s)._
 
 **X3.** Is the feedback on a wrong answer useful rather than merely corrective?
 
 _Asked because: Every practice item carries a rationale._
 
-**V1.** Does the visual carry mathematics, or is it decoration?
-
-_Asked because: This section has a semantic visual._
-
-**V2.** Does the alt text convey the mathematics to a student who cannot see it?
-
-_Asked because: This section has a semantic visual._
-
-**P1.** Does the interactive item teach, or does it test recall the section never asked for?
-
-_Asked because: This section has an interactive practice item._
-
 **R1.** Is the reasoning task genuinely reasoning, rather than another computation?
 
 _Asked because: This section has a reasoning or application task._
-
-**C1.** Is the documented misconception one you actually see, and is the feedback safe to show a child?
-
-_Asked because: This section documents a misconception._
 
 **O1.** Is the reading load appropriate for one sitting at this age?
 
@@ -112,7 +107,7 @@ _Asked because: Every lesson is judged on this._
 
 ## Returning this
 
-Send your answers back with the review code `S77-v1-399A76` quoted at the top.
+Send your answers back with the review code `S79-v1-24DFEA` quoted at the top.
 
 Pragati recomputes the content fingerprint when your answers are imported. If
 the lesson changes after you receive this, your response will be rejected

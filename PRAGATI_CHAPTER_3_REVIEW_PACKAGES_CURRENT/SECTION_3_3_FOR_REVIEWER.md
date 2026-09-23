@@ -1,34 +1,28 @@
-# Pragati review — Section 7.3
+# Pragati review — Section 3.3
 
-**Measuring Using Fractional Units**
+**Patterns of Numbers on the Number Line**
 
-Review code: `S73-v1-E47D40`
-Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 156
+Review code: `S33-v1-164AF7`
+Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 59 (provenance v2, ce6aa554)
 Questions: 16
 
 ---
 
 ## What you are being asked
 
-This is one section of Chapter 7, Fractions, of Class 6 Mathematics, authored by Pragati and
+This is one section of Chapter 3, Number Play, of Class 6 Mathematics, authored by Pragati and
 **not yet seen by any student**. Nothing here is published.
 
-### Also unreviewed: the student-facing "watch out for" wording
+### What in this section is Pragati's, not the book's
 
-v0.77.2 added short second-person paraphrases of this chapter's
-misconceptions, so that a Class 6 student reading a lesson sees "You
-might count just the shaded pieces and write 3" rather than the
-teacher-facing "Why students do this / How to fix it".
+The primary pages were read and this lesson follows their mathematics.
+These choices are ours, and are the parts most worth your judgement:
 
-**That paraphrase wording is presentation copy written by Pragati and
-has not been reviewed by any educator.** It restates the authored
-misconception and its correction in second person and introduces no
-new mathematical claim — but that is our assessment, not yours, and
-it is exactly the judgement a reviewer should make rather than
-inherit. Please read those lines as part of this package and say if
-any of them is wrong, unclear, or unkind.
-
-The underlying misconception records are unchanged.
+- The **number-line windows are Pragati's**, not the source's,
+  including an 86,000–88,000 line whose interval is 250 rather than
+  a round thousand.
+- Stating the **method** explicitly — divide the span by the number
+  of intervals — where the source expects it without naming it.
 
 You are a reviewer of this
 section. Please answer as a teacher, not as a proofreader: if the explanation
@@ -112,7 +106,7 @@ _Asked because: Every lesson is judged on this._
 
 ## Returning this
 
-Send your answers back with the review code `S73-v1-E47D40` quoted at the top.
+Send your answers back with the review code `S33-v1-164AF7` quoted at the top.
 
 Pragati recomputes the content fingerprint when your answers are imported. If
 the lesson changes after you receive this, your response will be rejected

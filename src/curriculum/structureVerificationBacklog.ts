@@ -28,7 +28,8 @@
 // is a filled-in-the-blanks form. The validator refuses gaps in
 // numbering, blank titles, a missing edition line and a verifier who is
 // not a person. Nothing more is needed and nothing more should be
-// built: ncert.nic.in blocks automated fetch, so the missing input is a
+// built: [HISTORICAL — until 2026-09-22 ncert.nic.in appeared to block
+// automated fetch, so the missing input was a
 // person with a book.
 
 import type { Grade } from '../types';
@@ -107,7 +108,7 @@ export function structureVerificationBacklog(): StructureVerificationEntry[] {
         c?.manualVerificationStep ??
         'Open the printed or official-PDF textbook, transcribe every chapter title exactly as the Contents page prints it into the template, and import it through Admin → Verify a curriculum from its textbook.',
       whyNotEngineering:
-        'ncert.nic.in blocks automated fetch. The template, validator and import path have existed since v0.70; the missing input is a person with the book.',
+        'HISTORICAL (v0.83.2): this backlog is empty. Until 2026-09-22 ncert.nic.in appeared to block automated fetch and the missing input was a person with the book; the books were downloaded and read that day. The template, validator and import path remain as the fallback for a future source that cannot be fetched.',
     });
   }
 

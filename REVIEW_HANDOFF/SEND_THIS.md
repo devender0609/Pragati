@@ -1,5 +1,11 @@
 # §7.4 review handoff — exactly what to send, and to whom
 
+**v0.83.2 — send the `_CURRENT` folders only.** The folders without
+`_CURRENT` are historical: they cite §7.4 as page 160 and code
+S74-v1-A1A3FF. Every current package states one identity — code
+`S74-v1-DFC56A`, content fingerprint `dfc56ab5`, provenance fingerprint
+`efeccb48`, page 159 — and there is nothing for a reviewer to reconcile.
+
 **Status: NOT SENT.** Nothing in this repository has been emailed to anyone.
 
 **Current state (v0.82.7):** Fractions has 9 complete drafts, all
@@ -23,9 +29,9 @@ produces a response that cannot be adjudicated.
 
 | File | What it is |
 |---|---|
-| `PRAGATI_SECTION_7_4_REVIEW_FINAL/PACKAGE_B_FOR_REVIEWER.md` | The 37 questions |
-| `PRAGATI_SECTION_7_4_REVIEW_FINAL/README.md` | How to answer, and what happens next |
-| `PRAGATI_SECTION_7_4_REVIEW_FINAL/review-candidate.json` | The frozen artifact identity |
+| `PRAGATI_SECTION_7_4_REVIEW_CURRENT/PACKAGE_B_FOR_REVIEWER.md` | The 37 questions |
+| `PRAGATI_SECTION_7_4_REVIEW_CURRENT/README.md` | How to answer, and what happens next |
+| `PRAGATI_SECTION_7_4_REVIEW_CURRENT/review-candidate.json` | The frozen artifact identity |
 
 **Who:** somebody who has actually taught fractions to Class 6. A mathematics
 graduate who has not taught this age is the wrong reviewer — most of Package B
@@ -73,9 +79,9 @@ is about whether the explanation lands with an eleven-year-old.
 
 | File | What it is |
 |---|---|
-| `PRAGATI_SECTION_7_4_CURRICULUM_REVIEW/PACKAGE_A_CURRICULUM_QUESTIONS.md` | The placement questions |
-| `PRAGATI_SECTION_7_4_CURRICULUM_REVIEW/README.md` | Context |
-| `PRAGATI_SECTION_7_4_CURRICULUM_REVIEW/curriculum-evidence.json` | The mapping evidence |
+| `PRAGATI_SECTION_7_4_CURRICULUM_REVIEW_CURRENT/PACKAGE_A_CURRICULUM_QUESTIONS.md` | The placement questions |
+| `PRAGATI_SECTION_7_4_CURRICULUM_REVIEW_CURRENT/README.md` | Context |
+| `PRAGATI_SECTION_7_4_CURRICULUM_REVIEW_CURRENT/curriculum-evidence.json` | The mapping evidence |
 
 **Who:** somebody who knows the NCF-SE 2023 / Ganita Prakash structure — a
 curriculum coordinator, a textbook-aligned teacher trainer, or a DIET faculty
@@ -126,7 +132,7 @@ Until a response is imported:
 - `reviewed` stays **0**
 - `published` stays **0**
 - §7.4 stays `review_ready`
-- the fingerprint stays `a1a3ff57`
+- the fingerprint stays `dfc56ab5`
 
 **Do not mark this done because it was sent.** Sent and reviewed are separate
 states, and collapsing them is the one elision that could let unreviewed

@@ -2,8 +2,8 @@
 
 **Fractional Units and Equal Shares**
 
-Review code: `S71-v1-0AC279`
-Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 152
+Review code: `S71-v1-0BE67E`
+Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 152 (provenance v2, e07e4530)
 Questions: 16
 
 ---
@@ -112,7 +112,7 @@ _Asked because: Every lesson is judged on this._
 
 ## Returning this
 
-Send your answers back with the review code `S71-v1-0AC279` quoted at the top.
+Send your answers back with the review code `S71-v1-0BE67E` quoted at the top.
 
 Pragati recomputes the content fingerprint when your answers are imported. If
 the lesson changes after you receive this, your response will be rejected

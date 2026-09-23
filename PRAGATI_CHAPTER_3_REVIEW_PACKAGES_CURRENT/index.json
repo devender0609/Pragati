@@ -1,33 +1,33 @@
 {
   "chapter": "Chapter 3 — Number Play",
-  "generated": "v0.83.1",
+  "generated": "v0.83.2",
   "packages": [
     {
       "section": "3.1",
       "file": "SECTION_3_1_FOR_REVIEWER.md",
-      "code": "S31-v1-20BA61",
+      "code": "S31-v1-1C9870",
       "questions": 16,
       "artifact": "ncert_gp_c6_s3_1_lesson",
       "artifactVersion": 2,
-      "fingerprint": "20ba61e4"
+      "fingerprint": "1c98708f"
     },
     {
       "section": "3.2",
       "file": "SECTION_3_2_FOR_REVIEWER.md",
-      "code": "S32-v1-1265C8",
+      "code": "S32-v1-14F313",
       "questions": 16,
       "artifact": "ncert_gp_c6_s3_2_lesson",
       "artifactVersion": 1,
-      "fingerprint": "1265c8f6"
+      "fingerprint": "14f31341"
     },
     {
       "section": "3.3",
       "file": "SECTION_3_3_FOR_REVIEWER.md",
-      "code": "S33-v1-F85783",
+      "code": "S33-v1-164AF7",
       "questions": 16,
       "artifact": "ncert_gp_c6_s3_3_lesson",
       "artifactVersion": 2,
-      "fingerprint": "f85783be"
+      "fingerprint": "164af795"
     }
   ]
 }

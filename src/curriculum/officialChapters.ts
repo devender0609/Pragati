@@ -25,6 +25,7 @@
 // the previous "60 unverified rows" story.
 
 import type { Grade } from '../types';
+import { evidenceDerivedCurricula } from './runtimeCurriculumFromEvidence';
 
 export type Curriculum = 'CBSE_NCERT';
 
@@ -38,7 +39,8 @@ export type VerificationStatus =
   // v0.50: the textbook's existence, title, and edition were confirmed
   // on the publisher's own domain, but the chapter list came from
   // independent secondary sources because ncert.nic.in refuses
-  // automated access (robots.txt). Honest middle ground — NOT a
+  // automated access (robots.txt) — HISTORICAL, see v0.83.2 §16.
+  // Honest middle ground — NOT a
   // substitute for source_verified.
   | 'secondary_corroborated'
   | 'source_verified'    // reviewer confirmed against an authoritative PDF
@@ -92,6 +94,10 @@ export type OfficialChapterRecord = {
 
   /** Free-text note visible to reviewers only. */
   notes: string;
+  /** v0.83.2 §2 — which volume of a two-part book, where a grade has
+   *  two. Part II restarts at Chapter 1, so a number alone cannot
+   *  identify a chapter. */
+  bookPart?: string | null;
 };
 
 /** Returns the list of required fields still missing. Empty means the
@@ -217,7 +223,44 @@ const GANITA_PRAKASH_C6: Array<{
   },
 ];
 
+// ---------------------------------------------------------------------------
+// v0.83.2 §2 — THE OTHER ELEVEN CLASSES ARE NOT SEEDED BY HAND.
+//
+// v0.83.1 made the runtime CURRICULUM canonical but left this registry
+// Class-6-centric, and `chaptersForStudentGrade()` reads THIS. So a
+// Class 3 student still saw six legacy Pragati modules where the book
+// has fourteen chapters: the model tests passed while the screen was
+// wrong. Deriving the records here from the same canonical evidence
+// closes that gap without copying a single row by hand.
+// ---------------------------------------------------------------------------
+
+function derivedOfficialChapters(): OfficialChapterRecord[] {
+  return evidenceDerivedCurricula().flatMap((c) =>
+    c.units.map((u) =>
+      chapter({
+        officialChapterId: u.officialUnitId,
+        grade: c.grade,
+        officialChapterNumber: u.number,
+        officialTitle: u.title,
+        textbookTitle: u.bookTitle ?? c.documentTitle,
+        bookPart: u.bookPart ?? null,
+        sourceReference: c.sourceUrl,
+        edition: c.edition,
+        dateVerified: c.inspectionDate,
+        verificationStatus: 'primary_source_verified',
+        sourceOrganization: 'NCERT',
+        pageReference: u.startPage === null ? null : `p. ${u.startPage}`,
+        verifierNotes:
+          'Derived from the canonical curriculum evidence; not hand-entered. ' +
+          'Structure verified; page-level mathematical intent NOT inspected.',
+        notes: '',
+      })
+    )
+  );
+}
+
 export const OFFICIAL_CHAPTERS: OfficialChapterRecord[] = [
+  ...derivedOfficialChapters(),
   // -------------------------------------------------------------------
   // CLASS 6 MATHEMATICS — NCERT "Ganita Prakash".
   //
@@ -242,6 +285,7 @@ export const OFFICIAL_CHAPTERS: OfficialChapterRecord[] = [
   //   2026-27". The 10-chapter list is corroborated by several
   //   independent secondary sources that agree exactly.
   //
+  //   [HISTORICAL, superseded 2026-09-22]
   //   ncert.nic.in serves robots.txt rules that block automated
   //   retrieval, so the chapter list could NOT be read from the primary
   //   PDF programmatically. Every record below is therefore
@@ -296,9 +340,17 @@ export function officialChaptersForGrade(grade: Grade): OfficialChapterRecord[] 
  * v0.51 §10 — the exact manual step required to advance Class 6 from
  * `secondary_corroborated` to `primary_source_verified`.
  *
- * Automated retrieval is impossible: ncert.nic.in serves robots.txt
+ * [HISTORICAL] Automated retrieval was impossible: ncert.nic.in served robots.txt
  * rules that block it. This is not a temporary outage and re-trying
  * does not help, so the step is written down for a human instead.
+ */
+/**
+ * v0.83.2 §16 — HISTORICAL. Class 6 was verified from the primary source
+ * on 2026-08-24 and every other textbook grade on 2026-09-22, by
+ * download rather than by hand. The `robots.txt` block described below
+ * was not reproducible on 2026-09-22 (HTTP 404, no directives). This
+ * record is retained because the manual route is still the fallback if a
+ * future source cannot be fetched — not because anything is pending.
  */
 export const MANUAL_VERIFICATION_STEPS = {
   class6: {
@@ -335,6 +387,13 @@ export const MANUAL_VERIFICATION_STEPS = {
  * confirmation but was not evidence. Grade 7 demonstrates the failure
  * mode directly, so it is recorded rather than resolved by picking the
  * more common answer.
+ */
+/**
+ * v0.83.2 §16 — HISTORICAL, and now resolved. The contradiction below
+ * (15 vs 16 chapters from secondary sources) was settled by reading the
+ * primary source: Ganita Prakash Grade 7 is published in two parts,
+ * 8 + 7 = 15 chapters, and Part II restarts its numbering at 1 — which
+ * is very likely what the secondary sources were disagreeing about.
  */
 export const GRADE7_VERIFICATION_FINDING = {
   grade: 'class7',

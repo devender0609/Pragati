@@ -494,7 +494,7 @@ describe('§26 the brief specifies without authoring', () => {
 
 describe('v0.74 changed no content', () => {
   it('leaves the §7.4 fingerprint untouched', () => {
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
   });
 
   it('publishes nothing and reviews nothing', () => {

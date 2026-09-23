@@ -1,9 +1,9 @@
-# Pragati review — Section 7.2
+# Pragati review — Section 7.3
 
-**Fractional Units as Parts of a Whole**
+**Measuring Using Fractional Units**
 
-Review code: `S72-v1-37B369`
-Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 154
+Review code: `S73-v1-789436`
+Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 156 (provenance v2, 6895ec7a)
 Questions: 16
 
 ---
@@ -112,7 +112,7 @@ _Asked because: Every lesson is judged on this._
 
 ## Returning this
 
-Send your answers back with the review code `S72-v1-37B369` quoted at the top.
+Send your answers back with the review code `S73-v1-789436` quoted at the top.
 
 Pragati recomputes the content fingerprint when your answers are imported. If
 the lesson changes after you receive this, your response will be rejected

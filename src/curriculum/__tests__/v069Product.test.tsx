@@ -241,8 +241,8 @@ describe('§16-§17 the manual ingestion workflow', () => {
 
 describe('§40 no functional regression for design', () => {
   it('leaves the §7.4 fingerprint untouched', () => {
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
-    expect(section74Artifact().reviewCode).toBe('S74-v1-7BFD8C');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
+    expect(section74Artifact().reviewCode).toBe('S74-v1-DFC56A');
   });
 
   it('leaves student eligibility exactly where it was', () => {

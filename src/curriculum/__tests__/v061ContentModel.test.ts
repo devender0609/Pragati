@@ -135,8 +135,10 @@ describe('§21 an unverified module cannot count as official coverage', () => {
 
 describe('§21 completeness needs a primary-verified denominator', () => {
   it('returns null, not zero, for every grade without a primary source', () => {
+    // v0.83.2 — eight grades have a primary-verified chapter list now.
+    // The rule is unchanged for the four that do not: null, never zero.
     for (const grade of ALL_GRADES) {
-      if (grade === 'class6') continue;
+      if (!['class9', 'class10', 'class11', 'class12'].includes(grade)) continue;
       const g = completenessForGrade(grade);
       expect(g.officialUnitsKnown).toBeNull();
       expect(g.completenessPercent).toBeNull();
@@ -163,7 +165,7 @@ describe('§21 completeness needs a primary-verified denominator', () => {
   it('states in the headline how many grades cannot be measured', () => {
     const h = coverageHeadline();
     expect(h).toMatch(/Class 6/);
-    expect(h).toMatch(/cannot be calculated for the other 11/);
+    expect(h).toMatch(/cannot be calculated for the other 4/);
   });
 });
 

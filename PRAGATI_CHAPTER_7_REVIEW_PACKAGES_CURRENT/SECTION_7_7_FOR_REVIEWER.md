@@ -1,9 +1,9 @@
-# Pragati review — Section 7.5
+# Pragati review — Section 7.7
 
-**Mixed Fractions**
+**Comparing Fractions**
 
-Review code: `S75-v1-FCD012`
-Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 161
+Review code: `S77-v1-E30A0E`
+Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 173 (provenance v2, e018fbe3)
 Questions: 16
 
 ---
@@ -112,7 +112,7 @@ _Asked because: Every lesson is judged on this._
 
 ## Returning this
 
-Send your answers back with the review code `S75-v1-FCD012` quoted at the top.
+Send your answers back with the review code `S77-v1-E30A0E` quoted at the top.
 
 Pragati recomputes the content fingerprint when your answers are imported. If
 the lesson changes after you receive this, your response will be rejected

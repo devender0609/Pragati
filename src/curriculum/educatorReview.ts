@@ -1,3 +1,4 @@
+import { section74ProvenanceFingerprint } from './contentArtifact';
 import {
   PACKAGE_B_QUESTION_SET_VERSION,
   SECTION_7_4_ARTIFACT_VERSION,
@@ -66,6 +67,8 @@ export type ReviewSubmission = {
   contentArtifactId?: string;
   contentArtifactVersion?: number;
   contentFingerprint?: string;
+  /** v0.83.2 §11 — the source citation the reviewer was shown. */
+  sourceProvenanceFingerprint?: string;
   reviewerId: string;
   reviewerName: string;
   reviewerRole: ReviewerRole;
@@ -114,6 +117,15 @@ export type ReviewRecord = {
   /** Computed at import time from the CURRENT content, never stored
    *  stale — see `importReviewSubmission`. */
   expectedFingerprint?: () => string;
+  /**
+   * v0.83.2 §11 — the SOURCE PROVENANCE identity of the package.
+   *
+   * Separate from the content fingerprint on purpose: a response quoting
+   * an old provenance is not a response to the wrong lesson, it is a
+   * response to the right lesson with the wrong citation, and the two
+   * failures need different handling.
+   */
+  expectedProvenanceFingerprint?: () => string;
   /** Item IDs the package asks about. Used to detect partial returns. */
   expectedItemIds: string[];
   submissions: ReviewSubmission[];
@@ -252,6 +264,7 @@ export const REVIEW_RECORDS: ReviewRecord[] = [
     contentArtifactId: 'ncert_gp_c6_s7_4_lesson',
     contentArtifactVersion: SECTION_7_4_ARTIFACT_VERSION,
     expectedFingerprint: computeContentFingerprint,
+    expectedProvenanceFingerprint: section74ProvenanceFingerprint,
     expectedItemIds: [
       'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7',
       'S1', 'S2', 'S3',
@@ -365,6 +378,16 @@ export function importReviewSubmission(
     if (o.contentArtifactVersion !== record.contentArtifactVersion) {
       errors.push(
         `contentArtifactVersion ${String(o.contentArtifactVersion)} does not match ${String(record.contentArtifactVersion)}`
+      );
+    }
+    const expectedProv = record.expectedProvenanceFingerprint?.();
+    if (
+      expectedProv &&
+      o.sourceProvenanceFingerprint !== undefined &&
+      o.sourceProvenanceFingerprint !== expectedProv
+    ) {
+      errors.push(
+        `sourceProvenanceFingerprint '${String(o.sourceProvenanceFingerprint)}' does not match the current provenance '${expectedProv}'. This response was written against a superseded source citation (for example §7.4 as page 160). It is evidence about the same lesson and must be quarantined for provenance re-check, not attached to the current record.`
       );
     }
     const expected = record.expectedFingerprint?.();

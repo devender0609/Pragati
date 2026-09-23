@@ -66,6 +66,7 @@ import { ChapterMotif } from '../../design/ChapterMotif';
 import { class6ChapterCards } from '../../curriculum/studentChapterModel';
 import { nextActionForChapter } from '../../curriculum/nextAction';
 import { officialChapterRows } from './OfficialChapterLanding';
+import { EVIDENCE_DERIVED_GRADES } from '../../curriculum/runtimeCurriculumFromEvidence';
 import { OFFICIAL_CHAPTERS } from '../../curriculum/officialChapters';
 import {
   resolveChapter,
@@ -528,7 +529,13 @@ function LearnTab({
               {available.map((c) => (
                 <ChapterCard
                   key={c.chapterId}
-                  title={studentChapterTitle(c.title, c.legacyModuleId)}
+                  title={
+                    // v0.83.2 — marked so QA can read the rendered chapter
+                    // list from the DOM instead of guessing from page text.
+                    <span data-chapter-title={c.official ? 'official' : undefined}>
+                      {studentChapterTitle(c.title, c.legacyModuleId)}
+                    </span>
+                  }
                   subtitle={c.subtitle}
                   artwork={chapterArtFor(c.legacyModuleId)}
                   status={c.inventory.status}
@@ -552,8 +559,23 @@ function LearnTab({
                     key={c.chapterId}
                     className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-white px-3 py-2 ring-1 ring-slate-200"
                   >
-                    <span className={`text-slate-500 ${tokens.bodyText}`}>
-                      {studentChapterTitle(c.title, c.legacyModuleId)}
+                    <span className={`flex flex-wrap items-baseline gap-x-2 text-slate-500 ${tokens.bodyText}`}>
+                      {/* v0.83.2 §3 — a two-part book has two Chapter 1s.
+                          The part is its own element so the two are
+                          distinguishable on screen, while the chapter
+                          title stays one unbroken piece of text. The
+                          book's own numbering is left exactly as
+                          printed. */}
+                      {c.official && c.chapterNumber != null && (
+                        <span className="text-xs font-semibold text-slate-400">
+                          {c.bookPart
+                            ? `${c.bookPart} · Chapter ${c.chapterNumber}`
+                            : `Chapter ${c.chapterNumber}`}
+                        </span>
+                      )}
+                      <span data-chapter-title={c.official ? 'official' : undefined}>
+                        {studentChapterTitle(c.title, c.legacyModuleId)}
+                      </span>
                     </span>
                     {/* Plain student language. No source, review, or
                         readiness codes ever reach this list. */}
@@ -1090,6 +1112,11 @@ function ChapterDetail({
 type ChapterRow = {
   chapterId: string;
   title: string;
+  /** Null for a legacy Pragati bundle; set for an official chapter. */
+  chapterNumber?: number | null;
+  /** "Part I" / "Part II" for a two-part book. */
+  bookPart?: string | null;
+  official?: boolean;
   subtitle: string;
   legacyModuleId: ModuleId | null;
   inventory: ResolvedChapter['inventory'];
@@ -1106,16 +1133,39 @@ export function chaptersForStudentGrade(grade: Grade): ChapterRow[] {
       chapterId: resolved.chapterId,
       // §3 — strip authoring metadata before a student sees it.
       title: studentChapterTitle(resolved.displayTitle, resolved.primaryLegacyModuleId),
+      // v0.83.2 §3 — a two-part book has two Chapter 1s, so the part is
+      // named here. The book's own numbering is left exactly as printed.
       subtitle:
         resolved.inventory.status === 'no_content'
-          ? 'Not yet mapped'
+          ? c.bookPart
+            ? `${c.bookPart} · Chapter ${c.officialChapterNumber}`
+            : 'Not yet mapped'
           : `${resolved.inventory.registeredSkillCount} skills · ${resolved.inventory.totalItemCount} questions`,
       legacyModuleId: resolved.primaryLegacyModuleId,
       inventory: resolved.inventory,
       itemCount: resolved.inventory.totalItemCount,
       canLaunch: canLaunchAssessment(resolved.inventory),
+      // v0.83.2 §3 — Part II restarts at Chapter 1, so the number alone
+      // is ambiguous. The part is shown, the source number is untouched.
+      bookPart: c.bookPart ?? null,
+      chapterNumber: c.officialChapterNumber,
+      official: true,
     };
   });
+
+  // v0.83.2 §3 — LEGACY MODULES ARE NOT CHAPTERS OF THE CURRENT BOOK.
+  //
+  // Before this release a Class 3 student saw six legacy Pragati modules
+  // where Maths Mela has fourteen chapters, because no official record
+  // existed for the grade and the legacy list was the fallback. Now that
+  // the book's own chapters are known, showing old-syllabus bundles
+  // beside them would present Pragati's inventory as the curriculum —
+  // the defect v0.56 named. For a grade whose official structure is
+  // verified, the official list is the list.
+  // v0.83.2 §3 — legacy bundles are kept (they are real practice a
+  // student can do) but they are NOT dressed as chapters of the current
+  // book. Where the official chapter list is known, every legacy row
+  // says what it is.
 
   const mappedLegacy = new Set(
     officials.flatMap((r) => (r.legacyModuleId ? [r.legacyModuleId] : []))
@@ -1127,14 +1177,20 @@ export function chaptersForStudentGrade(grade: Grade): ChapterRow[] {
       return {
         chapterId: resolved.chapterId,
         title: studentChapterTitle(resolved.displayTitle, resolved.primaryLegacyModuleId),
-        subtitle:
-          resolved.inventory.status === 'no_content'
+        subtitle: (EVIDENCE_DERIVED_GRADES as Grade[]).includes(grade)
+          ? resolved.inventory.status === 'no_content'
+            ? 'Extra practice — not a chapter of your book'
+            : `Extra practice — not a chapter of your book · ${resolved.inventory.totalItemCount} questions`
+          : resolved.inventory.status === 'no_content'
             ? 'No content yet'
             : `${resolved.inventory.registeredSkillCount} skills · ${resolved.inventory.totalItemCount} questions`,
         legacyModuleId: m,
         inventory: resolved.inventory,
         itemCount: resolved.inventory.totalItemCount,
         canLaunch: canLaunchAssessment(resolved.inventory),
+        bookPart: null,
+        chapterNumber: null,
+        official: false,
       };
     });
 

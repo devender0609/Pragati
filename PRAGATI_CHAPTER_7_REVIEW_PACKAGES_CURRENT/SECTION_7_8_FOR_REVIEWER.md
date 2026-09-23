@@ -1,9 +1,9 @@
-# Pragati review — Section 7.6
+# Pragati review — Section 7.8
 
-**Equivalent Fractions**
+**Addition and Subtraction of Fractions**
 
-Review code: `S76-v1-040E88`
-Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 163
+Review code: `S78-v1-472447`
+Source: https://ncert.nic.in/textbook/pdf/fegp1dd.zip, p. 175 (provenance v2, d0c5ec5d)
 Questions: 16
 
 ---
@@ -59,21 +59,21 @@ _Asked because: Every lesson is judged on this._
 
 _Asked because: Every lesson is judged on this._
 
-**W1.** Do the 3 worked example(s) show the reasoning at every step, not just the answer?
+**W1.** Do the 5 worked example(s) show the reasoning at every step, not just the answer?
 
-_Asked because: This section has 3 worked example(s)._
+_Asked because: This section has 5 worked example(s)._
 
 **W2.** Could a student reproduce these steps unaided afterwards?
 
-_Asked because: This section has 3 worked example(s)._
+_Asked because: This section has 5 worked example(s)._
 
 **X1.** Are the practice items at the right difficulty for this point in the chapter?
 
-_Asked because: This section has 3 guided and 5 independent item(s)._
+_Asked because: This section has 3 guided and 6 independent item(s)._
 
 **X2.** Does any item test something this section never taught?
 
-_Asked because: This section has 3 guided and 5 independent item(s)._
+_Asked because: This section has 3 guided and 6 independent item(s)._
 
 **X3.** Is the feedback on a wrong answer useful rather than merely corrective?
 
@@ -112,7 +112,7 @@ _Asked because: Every lesson is judged on this._
 
 ## Returning this
 
-Send your answers back with the review code `S76-v1-040E88` quoted at the top.
+Send your answers back with the review code `S78-v1-472447` quoted at the top.
 
 Pragati recomputes the content fingerprint when your answers are imported. If
 the lesson changes after you receive this, your response will be rejected

@@ -126,11 +126,13 @@ function visualSemantics(v: VisualSpec): unknown {
  */
 export function reviewRelevantContent(): unknown {
   return {
+    // v0.83.2 §11 — the page moved out of the instructional identity.
+    // See sectionReviewPackages.sectionProvenanceContent: what is taught
+    // and where it came from are two claims and need two fingerprints.
     section: {
       chapter: DEMO_SECTION_SOURCE.officialChapterId,
       section: DEMO_SECTION_SOURCE.officialSectionId,
       title: DEMO_SECTION_SOURCE.exactTitle,
-      page: DEMO_SECTION_SOURCE.startPage,
     },
     learningGoal: DEMO_SECTION_STUDENT.learningGoal,
     prerequisites: DEMO_SECTION_STUDENT.prerequisiteCheck,
@@ -259,6 +261,23 @@ export const SECTION_7_4_SUPERSEDED_PROVENANCE = {
   retainedAt: 'PRAGATI_SECTION_7_4_REVIEW_FINAL/, PRAGATI_SECTION_7_4_CURRICULUM_REVIEW/, ' +
     'PRAGATI_CHAPTER_3_REVIEW_PACKAGES/, PRAGATI_CHAPTER_7_REVIEW_PACKAGES/ — unmodified',
 } as const;
+
+export function section74ProvenanceContent(): unknown {
+  return {
+    section: DEMO_SECTION_SOURCE.officialSectionId,
+    sectionNumber: DEMO_SECTION_SOURCE.sectionNumber,
+    title: DEMO_SECTION_SOURCE.exactTitle,
+    page: DEMO_SECTION_SOURCE.startPage,
+    textbook: DEMO_SECTION_SOURCE.textbook,
+    sourceReference: DEMO_SECTION_SOURCE.sourceReference,
+    chapterFile: DEMO_SECTION_SOURCE.chapterFile,
+    inspectionDate: DEMO_SECTION_SOURCE.inspectionDate,
+  };
+}
+
+export function section74ProvenanceFingerprint(): string {
+  return fingerprintOf(section74ProvenanceContent());
+}
 
 export function section74Artifact(): ContentArtifact {
   const fp = computeContentFingerprint();

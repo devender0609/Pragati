@@ -92,7 +92,7 @@ export const INSPECTED_SOURCES: InspectedSource[] = [
     supportsClaim: 'NOT INSPECTED — see inaccessibleReason.',
     accessible: false,
     inaccessibleReason:
-      'ncert.nic.in serves robots.txt rules blocking automated retrieval. The CG list is available second-hand through the CBSE Class IX curriculum, which reproduces it verbatim. A human should confirm against the primary document.',
+      'HISTORICAL NOTE (v0.83.2): ncert.nic.in was recorded as serving robots.txt rules blocking automated retrieval; that was not reproducible on 2026-09-22, when retrieval succeeded, but the CG document itself has still not been read. The CG list here remains second-hand, through the CBSE Class IX curriculum that reproduces it verbatim, and should be confirmed against the primary document.',
   },
 ];
 

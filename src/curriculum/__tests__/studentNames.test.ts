@@ -124,8 +124,18 @@ describe('§10 primary-source verification remains unclaimed', () => {
     expect(GRADE7_VERIFICATION_FINDING.contradiction).toMatch(/15 vs 16/);
   });
 
-  it('no Grade 7 official record was created from contradictory sources', async () => {
+  // v0.83.2 §2 — Grade 7 records exist now, and the rule that produced
+  // this test is what made them acceptable: they come from the primary
+  // source (both parts, read 2026-09-22), not from the contradictory
+  // secondary sources this test was written against.
+  it('creates Grade 7 records only from the primary source', async () => {
     const { OFFICIAL_CHAPTERS } = await import('../officialChapters');
-    expect(OFFICIAL_CHAPTERS.filter((c) => c.grade === 'class7')).toEqual([]);
+    const c7 = OFFICIAL_CHAPTERS.filter((c) => c.grade === 'class7');
+    expect(c7).toHaveLength(15);
+    for (const c of c7) {
+      expect(c.verificationStatus).toBe('primary_source_verified');
+      expect(c.sourceOrganization).toBe('NCERT');
+      expect(c.dateVerified).toBe('2026-09-22');
+    }
   });
 });

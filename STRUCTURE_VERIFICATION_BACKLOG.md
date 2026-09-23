@@ -1,6 +1,6 @@
 # Structure Verification Backlog — Classes 1–12
 
-**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.1. Do not hand-edit: the test suite compares this file to the model on every run.
+**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.2. Do not hand-edit: the test suite compares this file to the model on every run.
 
 ---
 

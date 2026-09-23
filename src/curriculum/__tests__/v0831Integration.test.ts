@@ -205,8 +205,8 @@ describe('§9 review provenance is versioned, and history survives', () => {
   it('keeps the superseded identity recorded rather than overwritten', () => {
     expect(SECTION_7_4_SUPERSEDED_PROVENANCE.contentFingerprint).toBe('a1a3ff57');
     expect(SECTION_7_4_SUPERSEDED_PROVENANCE.startPageAsRecorded).toBe(160);
-    expect(computeContentFingerprint()).toBe('7bfd8cc3');
-    expect(section74Artifact().reviewCode).toBe('S74-v1-7BFD8C');
+    expect(computeContentFingerprint()).toBe('dfc56ab5');
+    expect(section74Artifact().reviewCode).toBe('S74-v1-DFC56A');
   });
 
   it('keeps the superseded packages byte-identical and names which set to send', () => {
@@ -216,8 +216,11 @@ describe('§9 review provenance is versioned, and history survives', () => {
     expect(manifest).toContain('f462c776');
     expect(manifest).toContain('CURRENT FOR SENDING');
     expect(manifest).toContain('SUPERSEDED / HISTORICAL');
+    // v0.83.2 — the historical folder still holds the OLD codes, which is
+    // the point of keeping it; the current folder holds the new ones.
     expect(read('PRAGATI_CHAPTER_3_REVIEW_PACKAGES/index.json')).toContain('S31-v1-20BA61');
-    expect(read('PRAGATI_CHAPTER_3_REVIEW_PACKAGES_PROVENANCE_V2/index.json')).toContain('S32-v1-1265C8');
+    expect(read('PRAGATI_CHAPTER_3_REVIEW_PACKAGES/DO_NOT_SEND.md')).toContain('DO NOT SEND');
+    expect(read('PRAGATI_CHAPTER_3_REVIEW_PACKAGES_CURRENT/index.json')).toContain('S32-v1-14F313');
   });
 
   it('says nothing has been sent', () => {
