@@ -66,7 +66,7 @@ import { ChapterMotif } from '../../design/ChapterMotif';
 import { class6ChapterCards } from '../../curriculum/studentChapterModel';
 import { nextActionForChapter } from '../../curriculum/nextAction';
 import { officialChapterRows } from './OfficialChapterLanding';
-import { EVIDENCE_DERIVED_GRADES } from '../../curriculum/runtimeCurriculumFromEvidence';
+import { partialStructureNoteForGrade } from '../../curriculum/runtimeCurriculumFromEvidence';
 import { OFFICIAL_CHAPTERS } from '../../curriculum/officialChapters';
 import {
   resolveChapter,
@@ -520,6 +520,14 @@ function LearnTab({
         />
       ) : (
         <>
+          {partialStructureNoteForGrade(studentGrade) && (
+            // v0.83.3 §4 — the student is told the book is published so
+            // far in one part, rather than being shown eight chapters as
+            // if they were the whole year.
+            <p className="mb-3 rounded-xl bg-amber-50 px-3 py-2 text-xs text-amber-900 ring-1 ring-amber-200">
+              {partialStructureNoteForGrade(studentGrade)}
+            </p>
+          )}
           {/* v0.55 §13 — available chapters lead. Unavailable ones move
               into a subdued, collapsed section so a Class 12 student
               does not open Learn to a wall of greyed-out cards. The gap
@@ -532,7 +540,10 @@ function LearnTab({
                   title={
                     // v0.83.2 — marked so QA can read the rendered chapter
                     // list from the DOM instead of guessing from page text.
-                    <span data-chapter-title={c.official ? 'official' : undefined}>
+                    <span
+                      data-chapter-title={c.official ? 'official' : undefined}
+                      data-chapter-available="true"
+                    >
                       {studentChapterTitle(c.title, c.legacyModuleId)}
                     </span>
                   }
@@ -573,7 +584,10 @@ function LearnTab({
                             : `Chapter ${c.chapterNumber}`}
                         </span>
                       )}
-                      <span data-chapter-title={c.official ? 'official' : undefined}>
+                      <span
+                        data-chapter-title={c.official ? 'official' : undefined}
+                        data-chapter-available="false"
+                      >
                         {studentChapterTitle(c.title, c.legacyModuleId)}
                       </span>
                     </span>
@@ -1177,7 +1191,7 @@ export function chaptersForStudentGrade(grade: Grade): ChapterRow[] {
       return {
         chapterId: resolved.chapterId,
         title: studentChapterTitle(resolved.displayTitle, resolved.primaryLegacyModuleId),
-        subtitle: (EVIDENCE_DERIVED_GRADES as Grade[]).includes(grade)
+        subtitle: officials.length > 0 && grade !== 'class6'
           ? resolved.inventory.status === 'no_content'
             ? 'Extra practice — not a chapter of your book'
             : `Extra practice — not a chapter of your book · ${resolved.inventory.totalItemCount} questions`

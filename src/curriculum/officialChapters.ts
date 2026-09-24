@@ -25,7 +25,7 @@
 // the previous "60 unverified rows" story.
 
 import type { Grade } from '../types';
-import { evidenceDerivedCurricula } from './runtimeCurriculumFromEvidence';
+import { textbookCurricula } from './runtimeCurriculumFromEvidence';
 
 export type Curriculum = 'CBSE_NCERT';
 
@@ -235,7 +235,7 @@ const GANITA_PRAKASH_C6: Array<{
 // ---------------------------------------------------------------------------
 
 function derivedOfficialChapters(): OfficialChapterRecord[] {
-  return evidenceDerivedCurricula().flatMap((c) =>
+  return textbookCurricula().flatMap((c) =>
     c.units.map((u) =>
       chapter({
         officialChapterId: u.officialUnitId,

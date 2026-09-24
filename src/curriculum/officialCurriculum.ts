@@ -51,6 +51,7 @@
 
 import type { Grade } from '../types';
 import { evidenceDerivedCurricula } from './runtimeCurriculumFromEvidence';
+import { OFFICIAL_CHAPTERS as NCERT_CHAPTER_RECORDS } from './officialChapters';
 
 const classOrder = (g: Grade) => Number(g.replace('class', ''));
 
@@ -849,6 +850,30 @@ export function officialChapterList(
    *  numbers stay distinguishable wherever this list is rendered. */
   bookPart?: string | null;
 }> | null {
+  // v0.83.3 §2 — THE TEXTBOOK IS THE BROWSING HIERARCHY.
+  //
+  // Where a grade's NCERT textbook chapters are verified they are what a
+  // student and a teacher see, including Classes 9-12 whose
+  // OFFICIAL_CURRICULA entry is a CBSE syllabus. The syllabus stays
+  // available for alignment and reporting; it is not a chapter list and
+  // must never be rendered as one.
+  const textbook = NCERT_CHAPTER_RECORDS.filter(
+    (r) =>
+      r.grade === grade &&
+      r.sourceOrganization === 'NCERT' &&
+      r.verificationStatus === 'primary_source_verified' &&
+      r.officialChapterNumber !== null
+  );
+  if (textbook.length > 0) {
+    return textbook.map((r) => ({
+      id: r.officialChapterId,
+      number: r.officialChapterNumber as number,
+      title: r.officialTitle as string,
+      unitTitle: null,
+      bookPart: r.bookPart ?? null,
+    }));
+  }
+
   const c = officialCurriculumForGrade(grade);
   if (!c || !chaptersEstablished(grade)) return null;
   if (c.topLevel === 'chapter') {

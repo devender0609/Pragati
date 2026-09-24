@@ -1,5 +1,10 @@
 # Review request: one Class 6 Fractions lesson
 
+> **HISTORICAL COPY — DO NOT SEND.** This is the pre-correction §7.4
+> package (page 160, code S74-v1-A1A3FF). The current package is
+> `PRAGATI_SECTION_7_4_REVIEW_CURRENT/`.
+
+
 **Review candidate: `S74-v1-A1A3FF`**
 
 Please quote that code when you send your answers back. It tells us

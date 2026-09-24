@@ -212,10 +212,10 @@ describe('§9 review provenance is versioned, and history survives', () => {
   it('keeps the superseded packages byte-identical and names which set to send', () => {
     // The old folders are retained unmodified; their checksum is the one
     // accepted at v0.82.7.
-    const manifest = read('REVIEW_HANDOFF/PROVENANCE_CORRECTION_v0_83_1.md');
-    expect(manifest).toContain('f462c776');
-    expect(manifest).toContain('CURRENT FOR SENDING');
-    expect(manifest).toContain('SUPERSEDED / HISTORICAL');
+    const manifest = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md');
+    expect(manifest).toContain('DO NOT SEND');
+    expect(manifest).toContain('Send exactly these');
+    expect(manifest).toContain('DO NOT SEND');
     // v0.83.2 — the historical folder still holds the OLD codes, which is
     // the point of keeping it; the current folder holds the new ones.
     expect(read('PRAGATI_CHAPTER_3_REVIEW_PACKAGES/index.json')).toContain('S31-v1-20BA61');
@@ -224,7 +224,7 @@ describe('§9 review provenance is versioned, and history survives', () => {
   });
 
   it('says nothing has been sent', () => {
-    const m = read('REVIEW_HANDOFF/PROVENANCE_CORRECTION_v0_83_1.md');
+    const m = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md');
     expect(m).toContain('0 sent');
     expect(m).not.toMatch(/\bhas been sent to\b/);
   });

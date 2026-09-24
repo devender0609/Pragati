@@ -19,6 +19,7 @@ import {
 import {
   section74Artifact,
   computeContentFingerprint,
+  section74ProvenanceFingerprint,
   reviewRelevantContent,
   PACKAGE_B_QUESTION_SET_VERSION,
   SECTION_7_4_ARTIFACT_VERSION,
@@ -210,6 +211,9 @@ const validBody = () => ({
   contentArtifactId: 'ncert_gp_c6_s7_4_lesson',
   contentArtifactVersion: SECTION_7_4_ARTIFACT_VERSION,
   contentFingerprint: computeContentFingerprint(),
+  // v0.83.3 §11 — provenance is no longer optional for a package that
+  // has one: omitting it used to skip the gate.
+  sourceProvenanceFingerprint: section74ProvenanceFingerprint(),
   reviewerId: 'r1',
   reviewerName: 'A Teacher',
   reviewerRole: 'practising_teacher' as const,

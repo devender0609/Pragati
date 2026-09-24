@@ -1,5 +1,5 @@
 {
-  "_comment": "v0.66 §3 — frozen REVIEW CANDIDATE. Not published content.",
+  "_comment": "v0.66 \u00a73 \u2014 frozen REVIEW CANDIDATE. Not published content.",
   "reviewCandidate": "S74-v1-A1A3FF",
   "contentArtifactId": "ncert_gp_c6_s7_4_lesson",
   "contentArtifactVersion": 1,
@@ -15,7 +15,7 @@
       "src/features/admin/DemonstrationSectionPreview.tsx",
       "tailwind.config.js"
     ],
-    "runInstructions": "Unzip pragati-v0.66.0.zip, run `npm ci` then `npm run build` and `npm run preview`, and open the printed address. This is a fixed copy — it cannot change while you review it.",
+    "runInstructions": "Unzip pragati-v0.66.0.zip, run `npm ci` then `npm run build` and `npm run preview`, and open the printed address. This is a fixed copy \u2014 it cannot change while you review it.",
     "immutableUrl": null,
     "builtAt": "2026-08-25"
   },
@@ -106,5 +106,6 @@
     "O1": "both",
     "O2": "both",
     "O3": "both"
-  }
+  },
+  "_historical": "HISTORICAL SNAPSHOT. This records the \u00a77.4 identity at the time it was written (page 160, code S74-v1-A1A3FF). The current identity is S74-v1-DFC56A, content dfc56ab5, provenance efeccb48, page 159. Do not send or quote this as current."
 }

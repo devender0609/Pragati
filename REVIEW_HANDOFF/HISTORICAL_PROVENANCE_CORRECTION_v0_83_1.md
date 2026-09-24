@@ -1,5 +1,13 @@
 # Which reviewer package is current — v0.83.1 provenance correction
 
+> **SUPERSEDED — HISTORICAL, v0.83.1 ONLY. DO NOT FOLLOW.** This document
+> describes the v0.83.1 architecture: `*_PROVENANCE_V2` folders, the §7.4
+> addendum workflow, and code `S74-v1-7BFD8C`. None of those exist now.
+> v0.83.2 replaced them with `*_CURRENT` folders and separate content and
+> provenance identities. The current instructions are in
+> `REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md`.
+
+
 **Nothing has been sent.** Fractions: 9 complete · 9 review-ready · 0 sent ·
 0 reviewed · 0 published. Number Play: 3 complete · 3 aligned · 3 review-ready ·
 0 sent · 0 reviewed · 0 published.

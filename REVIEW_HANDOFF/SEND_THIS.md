@@ -8,13 +8,12 @@ S74-v1-A1A3FF. Every current package states one identity — code
 
 **Status: NOT SENT.** Nothing in this repository has been emailed to anyone.
 
-**Current state (v0.82.7):** Fractions has 9 complete drafts, all
+**Current state (v0.83.3):** Fractions has 9 complete drafts, all
 review-ready; none sent, reviewed or published. §7.4 goes first because it
 is the anchor/template section, not because it is the only lesson written.
-Its packages are frozen and still say "one lesson"; the covering messages
-below correct that by hand rather than unfreezing the packages.
-This document prepares the handoff; it does not perform it, and no part of
-Pragati will record a review as received until a real response is imported.
+Its CURRENT packages were regenerated with the corrected source page
+(159) and carry separate instructional and provenance identities, so
+nothing in them has to be corrected by hand.
 
 Two different people are being asked two different questions. Do not merge the
 packages — a curriculum specialist judging placement and a Grade 6 teacher
@@ -60,9 +59,9 @@ is about whether the explanation lands with an eleven-year-old.
 > an hour. Please be blunt: if the explanation wouldn't work in your classroom,
 > that's the single most useful thing you can tell me.
 >
-> Two notes. The attached files were frozen when §7.4 was the only draft, so
-> they still describe it as "one lesson"; I've left them unchanged so the
-> review code matches exactly what you read. And the lesson shows students
+> Two notes. The attached files are the current package: the source page
+> reads 159, which is the printed page, and the review code inside them is
+> the one to quote back. And the lesson shows students
 > short "watch out for" lines, which restate common mistakes in the second
 > person ("You might count just the shaded pieces…"). No educator has read
 > that wording yet — if any line is wrong, unclear or unkind, please say so.
@@ -109,9 +108,8 @@ member. This is not the same person as above and should not be.
 > reviewing that separately. If the mapping is wrong, or I've assumed prior
 > knowledge the book introduces later, that's exactly what I need to hear.
 >
-> The attached files were frozen when §7.4 was the only draft, so they still
-> say "one lesson"; I've left them unchanged so they match what you're
-> reviewing. Nothing is published.
+> The attached files are the current package, citing the printed page 159.
+> Nothing is published.
 >
 > Thank you — [your name]
 

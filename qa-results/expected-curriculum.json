@@ -1,0 +1,1135 @@
+{
+  "class1": {
+    "chapters": [
+      {
+        "id": "official:ncert_aejm1_ch01",
+        "title": "Finding the Furry Cat!",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch02",
+        "title": "What is Long? What is Round?",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch03",
+        "title": "Mango Treat",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch04",
+        "title": "Making 10",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch05",
+        "title": "How Many?",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch06",
+        "title": "Vegetable Farm",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch07",
+        "title": "Lina’s Family",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch08",
+        "title": "Fun with Numbers",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch09",
+        "title": "Utsav",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch10",
+        "title": "How do I Spend my Day?",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch11",
+        "title": "How Many Times?",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch12",
+        "title": "How Much Can We Spend?",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_aejm1_ch13",
+        "title": "So Many Toys",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class2": {
+    "chapters": [
+      {
+        "id": "official:ncert_bejm1_ch01",
+        "title": "A Day at the Beach",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch02",
+        "title": "Shapes Around Us",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch03",
+        "title": "Fun with Numbers",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch04",
+        "title": "Shadow Story (Togalu)",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch05",
+        "title": "Playing with Lines",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch06",
+        "title": "Decoration for Festival",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch07",
+        "title": "Rani’s Gift",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch08",
+        "title": "Grouping and Sharing",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch09",
+        "title": "Which Season is it?",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch10",
+        "title": "Fun at the Fair",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_bejm1_ch11",
+        "title": "Data Handling",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class3": {
+    "chapters": [
+      {
+        "id": "official:ncert_cemm1_ch01",
+        "title": "What’s in a Name?",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch02",
+        "title": "Toy Joy",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch03",
+        "title": "Double Century",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch04",
+        "title": "Vacation with My Nani Maa",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch05",
+        "title": "Fun with Shapes",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch06",
+        "title": "House of Hundreds – I",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch07",
+        "title": "Raksha Bandhan",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch08",
+        "title": "Fair Share",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch09",
+        "title": "House of Hundreds – II",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch10",
+        "title": "Fun at Class Party!",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch11",
+        "title": "Filling and Lifting",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch12",
+        "title": "Give and Take",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch13",
+        "title": "Time Goes On",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_cemm1_ch14",
+        "title": "The Surajkund Fair",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class4": {
+    "chapters": [
+      {
+        "id": "official:ncert_demm1_ch01",
+        "title": "Shapes Around Us",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch02",
+        "title": "Hide and Seek",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch03",
+        "title": "Pattern Around Us",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch04",
+        "title": "Thousands Around Us",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch05",
+        "title": "Sharing and Measuring",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch06",
+        "title": "Measuring Length",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch07",
+        "title": "The Cleanest Village",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch08",
+        "title": "Weigh it, Pour it",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch09",
+        "title": "Equal Groups",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch10",
+        "title": "Elephants,Tigers, and Leopards",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch11",
+        "title": "Fun with Symmetry",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch12",
+        "title": "Ticking Clocks and Turning Calendar",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch13",
+        "title": "The Transport Museum",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_demm1_ch14",
+        "title": "Data Handling",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class5": {
+    "chapters": [
+      {
+        "id": "official:ncert_eemm1_ch01",
+        "title": "We the Travellers — I",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch02",
+        "title": "Fractions",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch03",
+        "title": "Angles as Turns",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch04",
+        "title": "We the Travellers — II",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch05",
+        "title": "Far and Near",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch06",
+        "title": "The Dairy Farm",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch07",
+        "title": "Shapes and Patterns",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch08",
+        "title": "Weight and Capacity",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch09",
+        "title": "Coconut Farm",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch10",
+        "title": "Symmetrical Designs",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch11",
+        "title": "Grandmother’s Quilt",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch12",
+        "title": "Racing Seconds",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch13",
+        "title": "Animal Jumps",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch14",
+        "title": "Maps and Locations",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_eemm1_ch15",
+        "title": "Data Through Pictures",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class6": {
+    "chapters": [
+      {
+        "id": "official:ncert_gp_c6_ch01_patterns",
+        "title": "Patterns in Mathematics",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gp_c6_ch02_lines_angles",
+        "title": "Lines and Angles",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": true
+      },
+      {
+        "id": "official:ncert_gp_c6_ch03_number_play",
+        "title": "Number Play",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gp_c6_ch04_data_handling",
+        "title": "Data Handling and Presentation",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gp_c6_ch05_prime_time",
+        "title": "Prime Time",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": true
+      },
+      {
+        "id": "official:ncert_gp_c6_ch06_perimeter_area",
+        "title": "Perimeter and Area",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": true
+      },
+      {
+        "id": "official:ncert_gp_c6_ch07_fractions",
+        "title": "Fractions",
+        "bookPart": null,
+        "available": true,
+        "hasTeacherResource": true
+      },
+      {
+        "id": "official:ncert_gp_c6_ch08_constructions",
+        "title": "Playing with Constructions",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gp_c6_ch09_symmetry",
+        "title": "Symmetry",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": true
+      },
+      {
+        "id": "official:ncert_gp_c6_ch10_other_side_of_zero",
+        "title": "The Other Side of Zero",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class7": {
+    "chapters": [
+      {
+        "id": "official:ncert_gegp1_ch01",
+        "title": "Large Numbers Around Us",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp1_ch02",
+        "title": "Arithmetic Expressions",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp1_ch03",
+        "title": "A Peek Beyond the Point",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp1_ch04",
+        "title": "Expressions using Letter-Numbers",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp1_ch05",
+        "title": "Parallel and Intersecting Lines",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp1_ch06",
+        "title": "Number Play",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp1_ch07",
+        "title": "A Tale of Three Intersecting Lines",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp1_ch08",
+        "title": "Working with Fractions",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp2_ch01",
+        "title": "Geometric Twins",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp2_ch02",
+        "title": "Operations with Integers",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp2_ch03",
+        "title": "Finding Common Ground",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp2_ch04",
+        "title": "Another Peek Beyond the Point",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp2_ch05",
+        "title": "Connecting the Dots...",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp2_ch06",
+        "title": "Constructions and Tilings",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_gegp2_ch07",
+        "title": "Finding the Unknown",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class8": {
+    "chapters": [
+      {
+        "id": "official:ncert_hegp1_ch01",
+        "title": "A Square and A Cube",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp1_ch02",
+        "title": "Power Play",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp1_ch03",
+        "title": "A Story of Numbers",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp1_ch04",
+        "title": "Quadrilaterals",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp1_ch05",
+        "title": "Number Play",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp1_ch06",
+        "title": "We Distribute, Yet Things Multiply",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp1_ch07",
+        "title": "Proportional Reasoning-1",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp2_ch01",
+        "title": "Fractions in Disguise",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp2_ch02",
+        "title": "The Baudhayana-Pythagoras Theorem",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp2_ch03",
+        "title": "Proportional Reasoning-2",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp2_ch04",
+        "title": "Exploring Some Geometric Themes",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp2_ch05",
+        "title": "Tales by Dots and Lines",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp2_ch06",
+        "title": "Algebra Play",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_hegp2_ch07",
+        "title": "Area",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class9": {
+    "chapters": [
+      {
+        "id": "official:ncert_iemh1_ch01",
+        "title": "Orienting Yourself: The Use of Coordinates",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_iemh1_ch02",
+        "title": "Introduction to Linear Polynomials",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_iemh1_ch03",
+        "title": "The World of Numbers",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_iemh1_ch04",
+        "title": "Exploring Algebraic Identities",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_iemh1_ch05",
+        "title": "I’m Up and Down, and Round and Round",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_iemh1_ch06",
+        "title": "Measuring Space: Perimeter and Area",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_iemh1_ch07",
+        "title": "The Mathematics of Maybe: Introduction to Probability",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_iemh1_ch08",
+        "title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class10": {
+    "chapters": [
+      {
+        "id": "official:ncert_jemh1_ch01",
+        "title": "Real Numbers",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch02",
+        "title": "Polynomials",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch03",
+        "title": "Pair of Linear Equations in Two Variables",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch04",
+        "title": "Quadratic Equations",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch05",
+        "title": "Arithmetic Progressions",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch06",
+        "title": "Triangles",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch07",
+        "title": "Coordinate Geometry",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch08",
+        "title": "Introduction to Trigonometry",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch09",
+        "title": "Some Applications of Trigonometry",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch10",
+        "title": "Circles",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch11",
+        "title": "Areas Related to Circles",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch12",
+        "title": "Surface Areas and Volumes",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch13",
+        "title": "Statistics",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_jemh1_ch14",
+        "title": "Probability",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class11": {
+    "chapters": [
+      {
+        "id": "official:ncert_kemh1_ch01",
+        "title": "Sets",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch02",
+        "title": "Relations and Functions",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch03",
+        "title": "Trigonometric Functions",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch04",
+        "title": "Complex Numbers and Quadratic Equations",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch05",
+        "title": "Linear Inequalities",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch06",
+        "title": "Permutations and Combinations",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch07",
+        "title": "Binomial Theorem",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch08",
+        "title": "Sequences and Series",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch09",
+        "title": "Straight Lines",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch10",
+        "title": "Conic Sections",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch11",
+        "title": "Introduction to Three Dimensional Geometry",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch12",
+        "title": "Limits and Derivatives",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch13",
+        "title": "Statistics",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_kemh1_ch14",
+        "title": "Probability",
+        "bookPart": null,
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  },
+  "class12": {
+    "chapters": [
+      {
+        "id": "official:ncert_lemh1_ch01",
+        "title": "Relations and Functions",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh1_ch02",
+        "title": "Inverse Trigonometric Functions",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh1_ch03",
+        "title": "Matrices",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh1_ch04",
+        "title": "Determinants",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh1_ch05",
+        "title": "Continuity and Differentiability",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh1_ch06",
+        "title": "Application of Derivatives",
+        "bookPart": "Part I",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh2_ch07",
+        "title": "Integrals",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh2_ch08",
+        "title": "Application of Integrals",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh2_ch09",
+        "title": "Differential Equations",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh2_ch10",
+        "title": "Vector Algebra",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh2_ch11",
+        "title": "Three Dimensional Geometry",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh2_ch12",
+        "title": "Linear Programming",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      },
+      {
+        "id": "official:ncert_lemh2_ch13",
+        "title": "Probability",
+        "bookPart": "Part II",
+        "available": false,
+        "hasTeacherResource": false
+      }
+    ]
+  }
+}

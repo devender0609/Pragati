@@ -279,6 +279,35 @@ export function section74ProvenanceFingerprint(): string {
   return fingerprintOf(section74ProvenanceContent());
 }
 
+/**
+ * v0.83.3 §14 — CURRICULUM REVIEW IS NOT LESSON REVIEW.
+ *
+ * Package A asks a curriculum specialist about placement, competencies
+ * and prerequisites — about the MAPPING, not the teaching. Reusing the
+ * lesson's content fingerprint to identify it would tie their answer to
+ * an artifact they were not judging, and would leave the mapping itself
+ * unidentified. This binds their response to exactly what they saw: the
+ * official section, the book and verified page, and the mapping
+ * snapshot they were shown.
+ */
+export const MAPPING_SNAPSHOT_VERSION = 1;
+
+export function curriculumEvidenceContent(): unknown {
+  return {
+    officialSectionId: DEMO_SECTION_SOURCE.officialSectionId,
+    sectionNumber: DEMO_SECTION_SOURCE.sectionNumber,
+    title: DEMO_SECTION_SOURCE.exactTitle,
+    page: DEMO_SECTION_SOURCE.startPage,
+    textbook: DEMO_SECTION_SOURCE.textbook,
+    sourceReference: DEMO_SECTION_SOURCE.sourceReference,
+    mappingSnapshotVersion: MAPPING_SNAPSHOT_VERSION,
+  };
+}
+
+export function curriculumEvidenceFingerprint(): string {
+  return fingerprintOf(curriculumEvidenceContent());
+}
+
 export function section74Artifact(): ContentArtifact {
   const fp = computeContentFingerprint();
   return {

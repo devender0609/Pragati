@@ -1,6 +1,6 @@
 {
   "chapter": "Chapter 7 — Fractions",
-  "generated": "v0.83.2",
+  "generated": "v0.83.3",
   "packages": [
     {
       "section": "7.1",
@@ -9,6 +9,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s7_1_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "0be67e22",
+      "sourceProvenanceFingerprint": "e07e4530",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "0be67e22"
     },
     {
@@ -18,6 +22,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s7_2_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "62f37b3e",
+      "sourceProvenanceFingerprint": "7c38b78e",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "62f37b3e"
     },
     {
@@ -27,6 +35,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s7_3_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "78943616",
+      "sourceProvenanceFingerprint": "6895ec7a",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "78943616"
     },
     {
@@ -36,6 +48,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s7_5_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "52a4d148",
+      "sourceProvenanceFingerprint": "7d0214df",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "52a4d148"
     },
     {
@@ -45,6 +61,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s7_6_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "3f32be22",
+      "sourceProvenanceFingerprint": "3ece0f34",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "3f32be22"
     },
     {
@@ -54,6 +74,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s7_7_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "e30a0efe",
+      "sourceProvenanceFingerprint": "e018fbe3",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "e30a0efe"
     },
     {
@@ -63,6 +87,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s7_8_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "472447e7",
+      "sourceProvenanceFingerprint": "d0c5ec5d",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "472447e7"
     },
     {
@@ -72,6 +100,10 @@
       "questions": 12,
       "artifact": "ncert_gp_c6_s7_9_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "24dfea77",
+      "sourceProvenanceFingerprint": "0ff18dfa",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "24dfea77"
     }
   ]

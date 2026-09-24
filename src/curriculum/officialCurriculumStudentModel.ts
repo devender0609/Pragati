@@ -29,6 +29,7 @@ import {
   structureNoun,
   chaptersEstablished,
 } from './officialCurriculum';
+import { partialStructureNoteForGrade } from './runtimeCurriculumFromEvidence';
 import { getStudentChapterAvailability } from './eligibilityPolicy';
 
 export type OfficialChapterAvailability =
@@ -70,6 +71,8 @@ export type GradeCurriculumView =
       readyCount: number;
       /** One plain sentence for the student. */
       summaryLine: string;
+      /** Set when the source book is not complete (Class 9 today). */
+      partialStructureNote?: string | null;
     }
   | {
       kind: 'structure_not_ready';
@@ -171,6 +174,10 @@ export function gradeCurriculumView(grade: Grade): GradeCurriculumView {
     entryNoun: noun,
     chapters,
     readyCount: ready,
+    // v0.83.3 §4 — a book published so far in one part says so. Eight
+    // verified chapters is eight verified chapters; it is not a claim
+    // that the Class 9 textbook has eight.
+    partialStructureNote: partialStructureNoteForGrade(grade),
     summaryLine:
       ready === 0
         ? `${chapters.length} ${noun.plural}. None are ready yet.`

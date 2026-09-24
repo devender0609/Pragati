@@ -23,7 +23,7 @@ nine parts:
 | 7.1 | Fractional Units and Equal Shares | 151 |
 | 7.2 | Fractional Units as Parts of a Whole | 154 |
 | 7.3 | Measuring Using Fractional Units | 156 |
-| **7.4** | **Marking Fraction Lengths on the Number Line** | **160** |
+| **7.4** | **Marking Fraction Lengths on the Number Line** | **159** |
 | 7.5 | Mixed Fractions | 165 |
 | 7.6 | Equivalent Fractions | 169 |
 | 7.7 | Comparing Fractions | 174 |

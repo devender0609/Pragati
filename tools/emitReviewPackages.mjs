@@ -51,6 +51,12 @@ for (const ch of CHAPTERS) {
       questions: rec.expectedItemIds.length,
       artifact: rec.contentArtifactId,
       artifactVersion: rec.contentArtifactVersion,
+      // v0.83.3 §13 — the manifest carries every identity the importer
+      // checks, so the markdown, the manifest and the gate agree.
+      contentFingerprint: m.sectionFingerprint(id),
+      sourceProvenanceFingerprint: m.sectionProvenanceFingerprint(id),
+      sourceProvenanceVersion: m.SOURCE_PROVENANCE_VERSION,
+      questionSetVersion: m.SECTION_QUESTION_SET_VERSION,
       fingerprint: m.sectionFingerprint(id),
     });
   }

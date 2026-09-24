@@ -25,7 +25,8 @@ import { SECTION_7_4_ARTIFACT_VERSION } from './contentArtifact';
  * §7.4 in the authored shape — a PROJECTION, not a rewrite.
  *
  * Reading from the frozen objects rather than restructuring them means
- * the fingerprint of review candidate S74-v1-A1A3FF is untouched. The
+ * the fingerprint of review candidate S74-v1-A1A3FF (HISTORICAL; current
+ * S74-v1-DFC56A) is untouched. The
  * cost is that a few fields (vocabulary, quickChecks) are thinner here
  * than in a natively authored section, because the original shape had
  * no place for them. That is honest: §7.4 was authored before the

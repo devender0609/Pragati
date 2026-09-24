@@ -22,7 +22,8 @@
 // — are written about §7.4's number line. They cannot be handed to a
 // reviewer for §7.2.
 //
-// The frozen candidate `S74-v1-A1A3FF` likewise names one section, one
+// The frozen candidate `S74-v1-A1A3FF` (HISTORICAL; the current code is
+// S74-v1-DFC56A) likewise names one section, one
 // artifact, one fingerprint, and one pinned review build.
 //
 // So of the eight complete drafts, ONE is review-ready and SEVEN need

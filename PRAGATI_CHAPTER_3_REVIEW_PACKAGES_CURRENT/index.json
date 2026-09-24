@@ -1,6 +1,6 @@
 {
   "chapter": "Chapter 3 — Number Play",
-  "generated": "v0.83.2",
+  "generated": "v0.83.3",
   "packages": [
     {
       "section": "3.1",
@@ -9,6 +9,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s3_1_lesson",
       "artifactVersion": 2,
+      "contentFingerprint": "1c98708f",
+      "sourceProvenanceFingerprint": "0df9fe37",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "1c98708f"
     },
     {
@@ -18,6 +22,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s3_2_lesson",
       "artifactVersion": 1,
+      "contentFingerprint": "14f31341",
+      "sourceProvenanceFingerprint": "fb55c183",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "14f31341"
     },
     {
@@ -27,6 +35,10 @@
       "questions": 16,
       "artifact": "ncert_gp_c6_s3_3_lesson",
       "artifactVersion": 2,
+      "contentFingerprint": "164af795",
+      "sourceProvenanceFingerprint": "ce6aa554",
+      "sourceProvenanceVersion": 2,
+      "questionSetVersion": 1,
       "fingerprint": "164af795"
     }
   ]

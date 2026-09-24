@@ -6,7 +6,8 @@
 //
 // A NOTE ON WHY §7.4 IS NOT MIGRATED INTO THIS FILE
 //
-// The frozen review candidate S74-v1-A1A3FF is identified by a
+// The frozen review candidate S74-v1-A1A3FF (HISTORICAL; current
+// S74-v1-DFC56A) is identified by a
 // fingerprint over its exact serialised content. Restructuring it into
 // this schema would change that serialisation and therefore the
 // fingerprint, invalidating a review that may already be underway.

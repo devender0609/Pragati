@@ -126,7 +126,11 @@ export function Class6ChapterList({
                   Open now
                 </span>
               </div>
-              <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-6xl">
+              <h2
+                className="mt-3 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-6xl"
+                data-chapter-title="official"
+                data-chapter-available="true"
+              >
                 {featured.title}
               </h2>
 
@@ -271,6 +275,8 @@ export function Class6ChapterList({
                     className={`mt-1 font-display text-lg font-bold leading-tight lg:text-xl ${
                       live ? 'text-ink-900' : 'text-ink-500'
                     }`}
+                    data-chapter-title="official"
+                    data-chapter-available={live ? 'true' : 'false'}
                   >
                     {c.title}
                   </p>

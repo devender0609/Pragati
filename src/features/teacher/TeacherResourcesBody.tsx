@@ -10,6 +10,7 @@ import { officialCurriculumForGrade } from '../../curriculum/officialCurriculum'
 import { Card } from '../../design/primitives/Card';
 import { StatusBadge } from '../../design/primitives/StatusBadge';
 import { EmptyState } from '../../components/common/EmptyState';
+import { partialStructureNoteForGrade } from '../../curriculum/runtimeCurriculumFromEvidence';
 import { chaptersForStudentGrade } from '../student/StudentShell';
 import { isClass6Core } from '../../curriculum/legacyDisposition';
 import type { Grade } from '../../types';
@@ -177,6 +178,13 @@ export function TeacherResourcesBody({
         </TeacherPanel>
       )}
 
+      {/* v0.83.3 §4 — the limitation is stated where the chapters are
+          shown, not only in a document. */}
+      {partialStructureNoteForGrade(grade) && (
+        <p className="mb-3 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-900 ring-1 ring-amber-200">
+          {partialStructureNoteForGrade(grade)}
+        </p>
+      )}
       {chapters.length === 0 ? (
         <EmptyState
           title="No chapters yet"

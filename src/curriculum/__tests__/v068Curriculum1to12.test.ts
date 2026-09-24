@@ -162,7 +162,12 @@ describe('§J official curriculum and Pragati coverage stay independent', () => 
     expect(c10.representedInPragati).toBe(0);
     expect(c10.officialUnitTitles).toHaveLength(7);
     for (const g of ALL_TWELVE_GRADES) {
-      expect(officialChaptersAlwaysListed(g), g).toBe(true);
+      // v0.83.3 — Classes 10-12 now list textbook chapters, which the
+      // CBSE-unit-based helper does not know about; the guarantee it
+      // checks is asserted directly against the browsing hierarchy.
+      const list = officialChapterList(g);
+      if (list) expect(list.length, g).toBeGreaterThan(0);
+      else expect(officialChaptersAlwaysListed(g), g).toBe(true);
     }
   });
 
@@ -237,11 +242,15 @@ describe('§E the student sees the official structure, or an honest gap', () => 
     // the student view now shows the 15 chapters rather than the 6 unit
     // headings. Both are true; the chapter list is the more useful one
     // and the source establishes it.
+    // v0.83.3 §4 — the registry a student view reads is now the NCERT
+    // textbook: Ganita Manjari Part I, eight verified chapters. The CBSE
+    // syllabus's fifteen chapter names remain a separate hierarchy and
+    // are not mapped onto these eight.
     const v = gradeCurriculumView('class9');
     if (v.kind !== 'verified') throw new Error('expected a verified view');
     const official = officialChapterList('class9')!.map((c) => c.title);
     expect(v.chapters.map((c) => c.title)).toEqual(official);
-    expect(v.chapters).toHaveLength(15);
+    expect(v.chapters).toHaveLength(8);
   });
 });
 

@@ -1,4 +1,8 @@
-import { section74ProvenanceFingerprint } from './contentArtifact';
+import {
+  section74ProvenanceFingerprint,
+  curriculumEvidenceFingerprint,
+  MAPPING_SNAPSHOT_VERSION,
+} from './contentArtifact';
 import {
   PACKAGE_B_QUESTION_SET_VERSION,
   SECTION_7_4_ARTIFACT_VERSION,
@@ -69,6 +73,9 @@ export type ReviewSubmission = {
   contentFingerprint?: string;
   /** v0.83.2 §11 — the source citation the reviewer was shown. */
   sourceProvenanceFingerprint?: string;
+  /** v0.83.3 §14 — for curriculum review: the mapping they judged. */
+  curriculumEvidenceFingerprint?: string;
+  mappingSnapshotVersion?: number;
   reviewerId: string;
   reviewerName: string;
   reviewerRole: ReviewerRole;
@@ -126,6 +133,12 @@ export type ReviewRecord = {
    * failures need different handling.
    */
   expectedProvenanceFingerprint?: () => string;
+  /**
+   * v0.83.3 §14 — for a curriculum-mapping review: the identity of the
+   * MAPPING the specialist judged, not of any lesson.
+   */
+  expectedCurriculumEvidenceFingerprint?: () => string;
+  mappingSnapshotVersion?: number;
   /** Item IDs the package asks about. Used to detect partial returns. */
   expectedItemIds: string[];
   submissions: ReviewSubmission[];
@@ -242,6 +255,9 @@ export const REVIEW_RECORDS: ReviewRecord[] = [
     packageId: 'A_curriculum',
     packageVersion: 'v0.61',
     questionSetVersion: 1,
+    expectedCurriculumEvidenceFingerprint: curriculumEvidenceFingerprint,
+    expectedProvenanceFingerprint: section74ProvenanceFingerprint,
+    mappingSnapshotVersion: MAPPING_SNAPSHOT_VERSION,
     // Package A asks about curriculum mapping, not a lesson artifact.
     contentArtifactId: null,
     contentArtifactVersion: null,
@@ -381,6 +397,14 @@ export function importReviewSubmission(
       );
     }
     const expectedProv = record.expectedProvenanceFingerprint?.();
+    // v0.83.3 §11 — an omitted field used to skip the gate entirely, so
+    // the cheapest way to pass the provenance check was not to answer
+    // it. A package that has a provenance identity requires one.
+    if (expectedProv && o.sourceProvenanceFingerprint === undefined) {
+      errors.push(
+        'sourceProvenanceFingerprint is required for this package: the response must say which source citation the reviewer was shown.'
+      );
+    }
     if (
       expectedProv &&
       o.sourceProvenanceFingerprint !== undefined &&
@@ -397,6 +421,43 @@ export function importReviewSubmission(
       // the product would publish.
       errors.push(
         `contentFingerprint '${String(o.contentFingerprint)}' does not match the current content '${expected}'. The lesson changed after this review was prepared; the affected items need re-review.`
+      );
+    }
+  }
+
+  // v0.83.3 §14/§15 — the curriculum-mapping gate. It runs whether or
+  // not the package identifies a lesson artifact, which is why Package A
+  // could not be validated before: its contentArtifactId is null and the
+  // whole identity check lived inside that branch.
+  const expectedMapping = record.expectedCurriculumEvidenceFingerprint?.();
+  if (expectedMapping) {
+    if (o.curriculumEvidenceFingerprint === undefined) {
+      errors.push(
+        'curriculumEvidenceFingerprint is required for a curriculum-mapping review: the response must identify the mapping and source record the specialist judged.'
+      );
+    } else if (o.curriculumEvidenceFingerprint !== expectedMapping) {
+      errors.push(
+        `curriculumEvidenceFingerprint '${String(o.curriculumEvidenceFingerprint)}' does not match the current mapping '${expectedMapping}'. The placement, page or mapping snapshot changed after this review was prepared; it must be re-checked rather than attached to the current evidence.`
+      );
+    }
+    if (
+      record.mappingSnapshotVersion !== undefined &&
+      o.mappingSnapshotVersion !== undefined &&
+      o.mappingSnapshotVersion !== record.mappingSnapshotVersion
+    ) {
+      errors.push(
+        `mappingSnapshotVersion ${String(o.mappingSnapshotVersion)} does not match ${record.mappingSnapshotVersion}`
+      );
+    }
+    // Provenance applies to Package A too: same book, same page.
+    const prov = record.expectedProvenanceFingerprint?.();
+    if (prov && o.sourceProvenanceFingerprint === undefined) {
+      errors.push(
+        'sourceProvenanceFingerprint is required for this package: the response must say which source citation the reviewer was shown.'
+      );
+    } else if (prov && o.sourceProvenanceFingerprint !== prov) {
+      errors.push(
+        `sourceProvenanceFingerprint '${String(o.sourceProvenanceFingerprint)}' does not match the current provenance '${prov}'. This response was written against a superseded source citation; quarantine it for provenance re-check.`
       );
     }
   }

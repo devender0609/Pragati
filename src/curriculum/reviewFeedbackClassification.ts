@@ -140,7 +140,7 @@ export const PER_SECTION_REVIEW_INSTRUMENT_DRAFT: {
   version: 1,
   status: 'draft_not_activated',
   activationCondition:
-    'Activate only after the §7.4 Package B review (S74-v1-A1A3FF) has been received and adjudicated. Template-wide objections must be resolved before eight more sections are sent out.',
+    'Activate only after the §7.4 Package B review (historical code S74-v1-A1A3FF; current S74-v1-DFC56A) has been received and adjudicated. Template-wide objections must be resolved before eight more sections are sent out.',
   estimatedMinutesPerSection: 20,
   questions: [
     {

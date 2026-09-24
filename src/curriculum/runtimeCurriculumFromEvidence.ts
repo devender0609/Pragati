@@ -50,6 +50,7 @@ type EvidenceSource = {
   inspectedOn: string;
   levels: Record<string, string>;
   levelEvidence: string;
+  volumeCompleteness?: string;
 };
 type EvidenceRecord = {
   recordId: string;
@@ -70,6 +71,20 @@ const EV = evidenceJson as unknown as {
 
 /** Grades whose runtime curriculum is derived here. Class 6 keeps its
  *  accepted registry; Classes 9-12 keep their CBSE syllabus entries. */
+/**
+ * v0.83.3 §2/§3 — every grade whose NCERT TEXTBOOK structure is verified.
+ *
+ * Wider than `EVIDENCE_DERIVED_GRADES`: Classes 9-12 keep the CBSE
+ * syllabus as their `OFFICIAL_CURRICULA` entry (it is a different
+ * hierarchy and it is used for alignment), but their textbook chapters
+ * are now what Student and Teacher browse, because a student opens a
+ * book, not a syllabus.
+ */
+export const TEXTBOOK_GRADES: Grade[] = [
+  'class1', 'class2', 'class3', 'class4', 'class5', 'class6', 'class7',
+  'class8', 'class9', 'class10', 'class11', 'class12',
+];
+
 export const EVIDENCE_DERIVED_GRADES: Grade[] = [
   'class1',
   'class2',
@@ -111,6 +126,17 @@ function sectionsOf(chapterId: string): OfficialTopic[] {
  */
 export function evidenceCurriculumForGrade(grade: Grade): OfficialCurriculum | null {
   if (!EVIDENCE_DERIVED_GRADES.includes(grade)) return null;
+  return textbookCurriculumForGrade(grade);
+}
+
+/**
+ * The NCERT textbook structure for any grade that has one, whether or
+ * not it is that grade's `OFFICIAL_CURRICULA` entry. Class 6 is excluded:
+ * its records are the accepted registry the authored lessons depend on.
+ */
+export function textbookCurriculumForGrade(grade: Grade): OfficialCurriculum | null {
+  if (grade === 'class6') return null;
+  if (!TEXTBOOK_GRADES.includes(grade)) return null;
   const n = classNumber(grade);
   const books = EV.sources.filter((s) => s.grade === n);
   if (books.length === 0) return null;
@@ -178,4 +204,32 @@ export function evidenceCurriculumForGrade(grade: Grade): OfficialCurriculum | n
 
 export function evidenceDerivedCurricula(): OfficialCurriculum[] {
   return EVIDENCE_DERIVED_GRADES.map((g) => evidenceCurriculumForGrade(g)!).filter(Boolean);
+}
+
+/** Every verified NCERT textbook structure, Classes 1-12 (bar Class 6). */
+export function textbookCurricula(): OfficialCurriculum[] {
+  return TEXTBOOK_GRADES.map((g) => textbookCurriculumForGrade(g)).filter(
+    (c): c is OfficialCurriculum => c !== null
+  );
+}
+
+/**
+ * v0.83.3 §4 — what a screen must say about a book that is not complete.
+ *
+ * Class 9's Ganita Manjari Part I is real and verified; the rest of the
+ * Class 9 textbook does not exist to be read. The eight chapters are
+ * shown and the limitation is stated. It is never rounded to "complete"
+ * and never filled in from the CBSE syllabus's fifteen chapter names.
+ */
+export function partialStructureNoteForGrade(grade: Grade): string | null {
+  const books = EV.sources.filter((s) => s.grade === Number(grade.replace('class', '')));
+  if (books.length === 0) return null;
+  if (books.every((b) => (b.volumeCompleteness ?? 'unknown') === 'complete_series_published')) {
+    return null;
+  }
+  const b = books[0];
+  return (
+    `${b.title}${b.part ? ` · ${b.part}` : ''} — current verified textbook structure. ` +
+    'Additional textbook volume/structure has not been established.'
+  );
 }

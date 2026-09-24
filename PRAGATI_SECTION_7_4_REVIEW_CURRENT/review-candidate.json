@@ -106,5 +106,9 @@
     "O1": "both",
     "O2": "both",
     "O3": "both"
-  }
+  },
+  "sourceProvenanceFingerprint": "efeccb48",
+  "sourceProvenanceVersion": 2,
+  "reviewCode": "S74-v1-DFC56A",
+  "identityNote": "Quote reviewCode, contentFingerprint and sourceProvenanceFingerprint with your response. The content fingerprint identifies what is taught; the provenance fingerprint identifies the book, edition and page it was read from. Both are checked on import."
 }

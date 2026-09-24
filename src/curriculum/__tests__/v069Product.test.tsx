@@ -69,12 +69,20 @@ describe('§19 the three structural levels stay distinct', () => {
     expect(officialChapterCount('class6')).toBe(10);
   });
 
-  it('does not claim chapters for Classes 10-12 from syllabus topics', () => {
-    // Several Class X topic titles resemble NCERT chapter names.
-    // Resembling is not evidence.
+  // v0.83.3 §3 — Classes 10-12 DO have chapters now, but not because a
+  // syllabus topic resembled one: the textbooks were read. The original
+  // rule is what still matters, so it is asserted directly — the chapter
+  // list comes from the NCERT books and does NOT equal the CBSE units.
+  it('takes Classes 10-12 chapters from the textbook, never from syllabus topics', () => {
+    const expected = { class10: 14, class11: 14, class12: 13 } as const;
     for (const g of ['class10', 'class11', 'class12'] as const) {
+      const list = officialChapterList(g)!;
+      expect(list, g).not.toBeNull();
+      expect(list.length, g).toBe(expected[g]);
+      // The CBSE syllabus for these grades has units and topics and no
+      // chapters; the two hierarchies remain separate.
+      expect(officialCurriculumForGrade(g)!.topLevel, g).toBe('unit');
       expect(chaptersEstablished(g), g).toBe(false);
-      expect(officialChapterList(g), g).toBeNull();
     }
   });
 });
@@ -90,11 +98,17 @@ describe('§20 Class 10 must not call its 7 units chapters', () => {
     expect(v.summaryLine).not.toContain('chapters');
   });
 
-  it('shows Class 9 as its fifteen named chapters', () => {
+  // v0.83.3 §4 — Class 9 shows the EIGHT verified Ganita Manjari Part I
+  // chapters, not the CBSE syllabus's fifteen chapter names. Mapping the
+  // fifteen onto the eight would be an invented crosswalk, and claiming
+  // fifteen would claim a book that is not published.
+  it('shows Class 9 as its eight verified Part I chapters', () => {
     const v = gradeCurriculumView('class9');
     if (v.kind !== 'verified') throw new Error('expected verified');
-    expect(v.chapters).toHaveLength(15);
+    expect(v.chapters).toHaveLength(8);
     expect(v.entryNoun.plural).toBe('chapters');
+    // The CBSE syllabus still names fifteen, separately.
+    expect(officialCurriculumForGrade('class9')!.units.flatMap((u) => u.chapters)).toHaveLength(15);
   });
 
   it('keeps Class 6 exactly as it was', () => {

@@ -399,6 +399,10 @@ export function sectionReviewRecord(officialSectionId: string): ReviewRecord {
     // §13 — the real per-section version, not a package-wide constant.
     contentArtifactVersion: section?.contentArtifactVersion ?? SECTION_ARTIFACT_VERSION,
     expectedFingerprint: () => sectionFingerprint(officialSectionId),
+    // v0.83.3 §13 — the generated packages PRINT their provenance, so a
+    // response to one must be checked against it. Without this the
+    // markdown said one thing and the importer checked another.
+    expectedProvenanceFingerprint: () => sectionProvenanceFingerprint(officialSectionId),
     expectedItemIds: questions.map((q) => q.id),
     submissions: [],
     adjudications: [],

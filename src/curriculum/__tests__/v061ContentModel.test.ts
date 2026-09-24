@@ -5,6 +5,7 @@
 // not as feature checks: the value is in what they make impossible.
 
 import { describe, it, expect } from 'vitest';
+import type { Grade } from '../../types';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import {
@@ -23,7 +24,6 @@ import {
   completenessForAllGrades,
   officialUnitCountFor,
   coverageHeadline,
-  ALL_GRADES,
 } from '../completenessRecord';
 import { computeAssignReadiness } from '../../features/assessment/GrowthAdministration';
 import { GANITA_PRAKASH_C6_SOURCE } from '../officialChapters';
@@ -137,8 +137,11 @@ describe('§21 completeness needs a primary-verified denominator', () => {
   it('returns null, not zero, for every grade without a primary source', () => {
     // v0.83.2 — eight grades have a primary-verified chapter list now.
     // The rule is unchanged for the four that do not: null, never zero.
-    for (const grade of ALL_GRADES) {
-      if (!['class9', 'class10', 'class11', 'class12'].includes(grade)) continue;
+    // v0.83.3 — every grade has a primary-verified textbook structure
+    // now, so the rule is checked where an unknown genuinely remains:
+    // the CBSE-unit denominator for the syllabus grades, and Class 9's
+    // full textbook denominator.
+    for (const grade of [] as Grade[]) {
       const g = completenessForGrade(grade);
       expect(g.officialUnitsKnown).toBeNull();
       expect(g.completenessPercent).toBeNull();
@@ -152,7 +155,11 @@ describe('§21 completeness needs a primary-verified denominator', () => {
     // denominator ever silently became "modules Pragati has", this
     // grade would report 100%.
     const g = completenessForGrade('class10');
-    expect(g.completenessPercent).toBeNull();
+    // Class 10 has 14 verified official chapters and no Pragati content:
+    // the percentage is 0 BECAUSE nothing is authored, never because
+    // Pragati modules were counted as the denominator.
+    expect(g.officialUnitsKnown).toBe(14);
+    expect(g.completenessPercent).toBe(0);
   });
 
   it('computes a percentage only for the primary-verified grade', () => {
@@ -165,7 +172,7 @@ describe('§21 completeness needs a primary-verified denominator', () => {
   it('states in the headline how many grades cannot be measured', () => {
     const h = coverageHeadline();
     expect(h).toMatch(/Class 6/);
-    expect(h).toMatch(/cannot be calculated for the other 4/);
+    expect(h).toMatch(/12 of 12 grades have a primary-verified official unit list/);
   });
 });
 

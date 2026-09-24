@@ -6,7 +6,8 @@
 // That map is part of the §7.4 semantic fingerprint (contentArtifact.ts
 // includes it, deliberately, because item X6 asks about the wording a
 // student sees after a wrong answer). Adding entries to it would change
-// the fingerprint of frozen review candidate S74-v1-A1A3FF and
+// the fingerprint of frozen review candidate S74-v1-A1A3FF (HISTORICAL;
+// current S74-v1-DFC56A) and
 // invalidate a review that may already be underway.
 //
 // So the chapter-wide registry lives here. §7.4 keeps its four

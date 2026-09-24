@@ -211,12 +211,14 @@ describe('§7 legacy modules are not counted as official chapters', () => {
   // must track EVIDENCE, so a grade whose source has never been opened
   // must still be refused.
   it('only grades whose primary source was actually read are verified', () => {
-    // v0.83.2 — Class 1 was read from the primary source, so the grade
-    // that still has no textbook chapter records is a Secondary one.
-    for (const g of ['class12'] as Grade[]) {
+    // v0.83.3 — every grade's textbook is verified now, so the inverse
+    // is what there is to prove: a chapter reported as
+    // primary_source_verified must actually have a verified record
+    // behind it, and a legacy bundle must never be.
+    for (const g of ['class6', 'class12'] as Grade[]) {
       for (const c of chaptersForStudentGrade(g)) {
-        expect(readinessForChapter(c.chapterId).curriculum)
-          .not.toBe('primary_source_verified');
+        const verified = readinessForChapter(c.chapterId).curriculum === 'primary_source_verified';
+        expect(verified, `${g} ${c.title}`).toBe(Boolean(c.official));
       }
     }
   });
