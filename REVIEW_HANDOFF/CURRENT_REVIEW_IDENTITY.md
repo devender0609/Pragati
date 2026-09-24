@@ -1,4 +1,8 @@
-# Current review identity and paths — v0.83.3
+# Current review identity and paths — CURRENT FOR SENDING
+
+*This document is release-neutral: it changes only when the review
+identity or the package paths change, not at every maintenance release.
+Current as of Pragati v0.83.5.*
 
 **Status: NOT SENT.** Fractions: 9 complete · 9 review-ready · 0 sent ·
 0 reviewed · 0 published. Number Play: 3 complete · 3 aligned ·

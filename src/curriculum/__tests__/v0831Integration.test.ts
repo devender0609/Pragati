@@ -212,7 +212,7 @@ describe('§9 review provenance is versioned, and history survives', () => {
   it('keeps the superseded packages byte-identical and names which set to send', () => {
     // The old folders are retained unmodified; their checksum is the one
     // accepted at v0.82.7.
-    const manifest = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md');
+    const manifest = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md');
     expect(manifest).toContain('DO NOT SEND');
     expect(manifest).toContain('Send exactly these');
     expect(manifest).toContain('DO NOT SEND');
@@ -224,7 +224,7 @@ describe('§9 review provenance is versioned, and history survives', () => {
   });
 
   it('says nothing has been sent', () => {
-    const m = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md');
+    const m = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md');
     expect(m).toContain('0 sent');
     expect(m).not.toMatch(/\bhas been sent to\b/);
   });

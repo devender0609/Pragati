@@ -6,11 +6,11 @@ states one identity — review code `S74-v1-DFC56A`, content fingerprint
 `dfc56ab5`, provenance fingerprint `efeccb48` (provenance version 2),
 lesson artifact version 1, question-set version 1, page 159 — and there
 is nothing for a reviewer to reconcile. Full identity table:
-`REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md`.
+`REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md`.
 
 **Status: NOT SENT.** Nothing in this repository has been emailed to anyone.
 
-**Current state (v0.83.3):** Fractions has 9 complete drafts, all
+**Current state:** Fractions has 9 complete drafts, all
 review-ready; none sent, reviewed or published. §7.4 goes first because it
 is the anchor/template section, not because it is the only lesson written.
 Its CURRENT packages were regenerated with the corrected source page

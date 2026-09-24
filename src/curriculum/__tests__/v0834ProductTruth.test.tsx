@@ -15,7 +15,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { OnboardingFlow } from '../../components/OnboardingFlow';
 import {
   computeContentFingerprint,
@@ -31,8 +31,22 @@ const read = (f: string) => readFileSync(root(f), 'utf8');
 
 // Claims the product may not make about itself while Growth is frozen
 // and Learn content is a fraction of Classes 1-12.
+// Source with every comment removed — line, block and JSX — so a
+// sentence quoted in a comment that explains its own removal does not
+// read as a live string.
+const withoutComments = (src: string) =>
+  src
+    .replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/^\s*\/\/.*$/gm, '');
+
 const FORBIDDEN: Array<[RegExp, string]> = [
   [/adaptive assessment/i, 'calls itself an adaptive assessment'],
+  [/prototype adaptive growth assessment/i, 'calls itself an adaptive growth assessment'],
+  [/adapted to how they answer/i, 'claims calibrated adaptivity'],
+  [/assign an assessment/i, 'presents the retired assessment workflow'],
+  [/ability estimat/i, 'claims ability estimation'],
+  [/nationally normed/i, 'claims national norms'],
   [/Growth Assessment Prototype/i, 'uses the retired product name'],
   [/validated adaptive|scientifically validated/i, 'claims validation'],
   [/\bRIT\b|RIT-equivalent/i, 'claims RIT equivalence'],
@@ -42,6 +56,77 @@ const FORBIDDEN: Array<[RegExp, string]> = [
 ];
 
 // ---------------------------------------------------------------------------
+// v0.83.5 §3 — v0.83.4's version rendered the flow once and read only
+// what Step 1 painted, so Step 2's "Assign an assessment" and "10 short
+// items adapted to how they answer" sailed through. The flow is walked
+// step by step now, and the static metadata is read as well.
+async function walkOnboarding(): Promise<string[]> {
+  const texts: string[] = [];
+  render(<OnboardingFlow open onClose={() => {}} onOpenSignUp={() => {}} />);
+  for (let step = 1; step <= 4; step += 1) {
+    texts.push(document.body.textContent || '');
+    const next = screen.queryAllByRole('button').find((b) => /next|continue/i.test(b.textContent || ''));
+    if (!next) break;
+    fireEvent.click(next);
+  }
+  return texts;
+}
+
+describe('§3 every onboarding step, and the page metadata, tell the truth', () => {
+  it('has no forbidden claim on ANY step', async () => {
+    const texts = await walkOnboarding();
+    expect(texts.length).toBeGreaterThan(1);
+    for (const [i, text] of texts.entries()) {
+      for (const [re, why] of FORBIDDEN) {
+        expect(re.test(text), `step ${i + 1} ${why}`).toBe(false);
+      }
+    }
+  });
+
+  it('describes the current teacher loop on the How it works step', async () => {
+    const texts = await walkOnboarding();
+    const all = texts.join(' ');
+    expect(/Assign learning or practice/i.test(all)).toBe(true);
+    expect(/Students learn and practise/i.test(all)).toBe(true);
+    expect(/decide what is next/i.test(all)).toBe(true);
+  });
+
+  it('keeps the retired assessment loop out of the source, not just off screen', () => {
+    const src = read('src/components/OnboardingFlow.tsx');
+    const rendered = withoutComments(src);
+    expect(/adapted to how they answer/i.test(rendered)).toBe(false);
+    expect(/title="Assign an assessment"/i.test(rendered)).toBe(false);
+  });
+
+  it('has truthful HTML title and meta description', () => {
+    const html = read('index.html');
+    const title = /<title>([^<]*)<\/title>/.exec(html)?.[1] ?? '';
+    const desc = /<meta[^>]*name="description"[^>]*content="([^"]*)"/s.exec(html)?.[1]
+      ?? /content="([^"]*)"\s*\/>/s.exec(html.slice(html.indexOf('name="description"')))?.[1]
+      ?? '';
+    expect(title.length).toBeGreaterThan(5);
+    expect(desc.length).toBeGreaterThan(20);
+    for (const [re, why] of FORBIDDEN) {
+      expect(re.test(title), `<title> ${why}`).toBe(false);
+      expect(re.test(desc), `meta description ${why}`).toBe(false);
+    }
+    expect(/Class 6 Math/i.test(desc), 'meta description still scopes the product to Class 6').toBe(false);
+    expect(/CBSE\/NCERT|CBSE \/ NCERT/i.test(desc)).toBe(true);
+  });
+
+  it('keeps ordinary Student and Teacher navigation free of retired claims', () => {
+    for (const f of [
+      'src/features/student/StudentShell.tsx',
+      'src/features/student/Class6Learn.tsx',
+      'src/features/teacher/TeacherShell.tsx',
+      'src/features/teacher/TeacherResourcesBody.tsx',
+    ]) {
+      const rendered = withoutComments(read(f));
+      expect(/adaptive assessment|adapted to how they answer|Growth Assessment Prototype/i.test(rendered), f).toBe(false);
+    }
+  });
+});
+
 describe('§1/§3 Student onboarding tells the truth', () => {
   it('renders without any forbidden product claim', () => {
     render(
@@ -77,10 +162,7 @@ describe('§1/§3 Student onboarding tells the truth', () => {
     const src = read('src/components/OnboardingFlow.tsx');
     // The sentence may be quoted in the comment that explains its
     // removal; it may not be inside a rendered string.
-    const rendered = src
-      .split('\n')
-      .filter((l) => !/^\s*(\/\/|\*|\{\/\*)/.test(l))
-      .join('\n');
+    const rendered = withoutComments(src);
     expect(/adaptive assessment prototype/i.test(rendered)).toBe(false);
   });
 });
@@ -90,7 +172,7 @@ describe('§4/§5/§13 current handoff documents carry no superseded truth', () 
   const CURRENT_DOCS = [
     'REVIEW_HANDOFF/SEND_THIS.md',
     'REVIEW_HANDOFF/SEND_THIS_CHAPTER_3.md',
-    'REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md',
+    'REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md',
   ];
   const CURRENT_DIRS = [
     'PRAGATI_SECTION_7_4_REVIEW_CURRENT',

@@ -168,7 +168,7 @@ describe('§14 review import, end to end', () => {
   });
 
   it('does not mark anything sent, reviewed or published', () => {
-    const m = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md');
+    const m = read('REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md');
     expect(m).toContain('0 sent');
   });
 });

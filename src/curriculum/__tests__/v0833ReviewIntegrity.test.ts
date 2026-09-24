@@ -251,7 +251,7 @@ describe('§8/§16 exactly one current path', () => {
     for (const f of [
       'REVIEW_HANDOFF/SEND_THIS.md',
       'REVIEW_HANDOFF/SEND_THIS_CHAPTER_3.md',
-      'REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md',
+      'REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md',
     ]) {
       const t = read(f);
       expect(t, f).not.toMatch(/PROVENANCE_V2/);
@@ -273,7 +273,7 @@ describe('§8/§16 exactly one current path', () => {
       'PRAGATI_CHAPTER_7_REVIEW_PACKAGES',
     ]) {
       const t = read(`${d}/DO_NOT_SEND.md`);
-      expect(t, d).toContain('CURRENT_REVIEW_IDENTITY_v0_83_3.md');
+      expect(t, d).toContain('CURRENT_REVIEW_IDENTITY.md');
       expect(t, d).not.toContain('PROVENANCE_CORRECTION_v0_83_1.md');
     }
   });
@@ -281,7 +281,10 @@ describe('§8/§16 exactly one current path', () => {
   it('SEND_THIS no longer claims a regenerated file was left unchanged', () => {
     const t = read('REVIEW_HANDOFF/SEND_THIS.md');
     expect(t).not.toMatch(/left them unchanged/);
-    expect(t).not.toMatch(/Current state \(v0\.82\.7\)/);
-    expect(t).toContain('Current state (v0.83.3)');
+    // v0.83.5 §5 — the sender instructions are release-neutral now, so
+    // the assertion is that no release label appears at all rather than
+    // that a particular one does.
+    expect(t).not.toMatch(/Current state \(v0\.\d/);
+    expect(t).toContain('Current state:');
   });
 });

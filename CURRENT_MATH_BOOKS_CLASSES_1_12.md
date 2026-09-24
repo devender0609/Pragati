@@ -1,6 +1,6 @@
 # Current Mathematics sources, Classes 1–12
 
-**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.4. Do not hand-edit: the test suite compares this file to the model on every run.
+**Generated** from the curriculum master map (`src/curriculum/curriculumMasterMap.ts`) at version 0.83.5. Do not hand-edit: the test suite compares this file to the model on every run.
 
 ## Four claims, recorded separately
 

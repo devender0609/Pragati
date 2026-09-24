@@ -8,4 +8,4 @@ It is retained unmodified, apart from this marker, so the record of what
 existed before the correction survives and any future response quoting an
 old code can still be identified.
 
-Send the folder with the same name plus `_CURRENT` instead. See `REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md`.
+Send the folder with the same name plus `_CURRENT` instead. See `REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md`.

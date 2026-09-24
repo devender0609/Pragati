@@ -5,7 +5,7 @@
 > addendum workflow, and code `S74-v1-7BFD8C`. None of those exist now.
 > v0.83.2 replaced them with `*_CURRENT` folders and separate content and
 > provenance identities. The current instructions are in
-> `REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md`.
+> `REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY.md`.
 
 
 **Nothing has been sent.** Fractions: 9 complete · 9 review-ready · 0 sent ·

@@ -249,6 +249,12 @@ function Step2HowItWorks() {
       <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
         How Pragati works
       </h2>
+      {/* v0.83.5 §1 — STEP 2 WAS STILL THE OLD ASSESSMENT PRODUCT.
+          It said "Assign an assessment" and "Students see 10 short items
+          adapted to how they answer", which describes a calibrated
+          adaptive test. Growth is frozen, the picker is a rule of thumb,
+          and Teacher Assign was reframed around learning. The loop below
+          is the one the product actually runs. */}
       <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
         The teacher loop is short and intentional. Each step has its own
         dashboard inside the teacher console.
@@ -257,16 +263,18 @@ function Step2HowItWorks() {
         <Numbered n={1} title="Create a classroom">
           Add a small roster. Classrooms sync to the cloud when you sign in.
         </Numbered>
-        <Numbered n={2} title="Assign an assessment">
-          Pick a skill (or a mixed mode), set the size, and tell the class
-          what to take next.
+        <Numbered n={2} title="Assign learning or practice">
+          Choose a chapter or a skill from the class's own textbook and set
+          what the class should work on next.
         </Numbered>
-        <Numbered n={3} title="Students complete it">
-          Students see 10 short items adapted to how they answer. No timer.
+        <Numbered n={3} title="Students learn and practise">
+          Students work through a short set of questions at their own pace.
+          No timer, and a wrong answer explains the mistake behind it.
         </Numbered>
-        <Numbered n={4} title="You review the results">
-          The class dashboard surfaces hardest skills, top misconceptions,
-          and flagged items. Build a teaching plan from one screen.
+        <Numbered n={4} title="You review the work and decide what is next">
+          The class dashboard surfaces the hardest skills, the most common
+          mistakes, and anything flagged for you to read. What to teach next
+          is your call, not the software's.
         </Numbered>
       </ol>
     </>

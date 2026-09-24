@@ -1,6 +1,6 @@
 # Chapter 3 — Number Play: what to send, and what to ask
 
-> **v0.83.2 — send `PRAGATI_CHAPTER_3_REVIEW_PACKAGES_CURRENT/` only.** The
+> **CURRENT FOR SENDING — send `PRAGATI_CHAPTER_3_REVIEW_PACKAGES_CURRENT/` only.** The
 > folder without `_CURRENT` is historical: it cites the pre-correction
 > pages and the old codes. Codes below are the current ones, and each
 > package now carries both a content fingerprint (what is taught) and a
