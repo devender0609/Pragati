@@ -1,10 +1,12 @@
 # §7.4 review handoff — exactly what to send, and to whom
 
-**v0.83.2 — send the `_CURRENT` folders only.** The folders without
-`_CURRENT` are historical: they cite §7.4 as page 160 and code
-S74-v1-A1A3FF. Every current package states one identity — code
-`S74-v1-DFC56A`, content fingerprint `dfc56ab5`, provenance fingerprint
-`efeccb48`, page 159 — and there is nothing for a reviewer to reconcile.
+**Send the `_CURRENT` folders only.** The folders without `_CURRENT` are
+historical and each carries a `DO_NOT_SEND.md`. Every current package
+states one identity — review code `S74-v1-DFC56A`, content fingerprint
+`dfc56ab5`, provenance fingerprint `efeccb48` (provenance version 2),
+lesson artifact version 1, question-set version 1, page 159 — and there
+is nothing for a reviewer to reconcile. Full identity table:
+`REVIEW_HANDOFF/CURRENT_REVIEW_IDENTITY_v0_83_3.md`.
 
 **Status: NOT SENT.** Nothing in this repository has been emailed to anyone.
 
@@ -154,10 +156,14 @@ but that is *our* assessment, and it is exactly the judgement a reviewer
 should make rather than inherit. The reviewer is asked to read those
 lines and say if any is wrong, unclear or unkind.
 
-**The gap:** §7.4's package is frozen by design and is NOT regenerated,
-so it does not carry this note. The educator covering message above now
-mentions the paraphrases by hand. Unfreezing the package to
-add a paragraph would change its fingerprint, which is a worse trade
-than one sentence in an email.
+**The gap:** the §7.4 package does not carry this note, so the educator
+covering message above mentions the paraphrases by hand.
+
+(Until v0.83.1 this paragraph also said the §7.4 package was "frozen by
+design and NOT regenerated". That stopped being true at v0.83.2: the
+current package WAS regenerated around the corrected page 159, with
+separate instructional and provenance identities. The historical
+reasoning is kept in
+`REVIEW_HANDOFF/HISTORICAL_PROVENANCE_CORRECTION_v0_83_1.md`.)
 
 **Status is unchanged: NOT SENT.** Sent is not reviewed.

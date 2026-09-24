@@ -6,7 +6,8 @@ Thank you for looking at this. It should take **20–30 minutes**.
 
 ## What we are asking
 
-We have written one lesson for Class 6 Fractions and want to know
+We have drafted nine Class 6 Fractions sections. This is the anchor one,
+and we want to know
 whether we have placed it correctly in the curriculum. **Three
 questions only.** We are not asking you to review the teaching quality —
 a practising Class 6 teacher is doing that separately.

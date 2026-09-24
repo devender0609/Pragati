@@ -205,30 +205,39 @@ function Step1Intro() {
       <h2 id="onboarding-title" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
         Welcome to Pragati
       </h2>
+      {/* v0.83.4 §1 — THE FIRST SENTENCE A STUDENT READS WAS UNTRUE.
+          It called Pragati "a CBSE / NCERT-informed adaptive assessment
+          prototype for Class 6 Math". Growth is frozen and has never
+          been calibrated or validated, so nothing here is an adaptive
+          assessment; and Pragati is no longer a Class 6 product — every
+          class's textbook chapters are listed, most with no lesson yet.
+          The wording below says what the product actually does today. */}
       <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
-        Pragati is a CBSE / NCERT-informed adaptive assessment prototype for
-        Class 6 Math. It is built to help a teacher spot misconceptions across a
-        small bank of items, focus a follow-up lesson, and plan a short
-        classroom intervention.
+        Pragati helps you learn and practise mathematics from your own
+        CBSE / NCERT course. It follows the chapters of your textbook, so what
+        you see here matches the book you use in class.
       </p>
       <ul className="mt-2 space-y-2 text-sm text-slate-700">
         <Bullet>
-          <strong>Adaptive item picker</strong> — students see ~10 items per
-          session, picked from the bank by a simple rule-based engine.
+          <strong>Your book&rsquo;s chapters</strong> — listed in the order your
+          textbook teaches them. Some have lessons ready; the rest are listed
+          so you can see what is coming.
         </Bullet>
         <Bullet>
-          <strong>Misconception-tagged feedback</strong> — every wrong-answer
-          choice is tied to one of a small set of common Class 6 misconceptions.
+          <strong>Practice with feedback</strong> — when an answer is wrong,
+          Pragati explains the mistake behind it rather than only marking it.
         </Bullet>
         <Bullet>
-          <strong>Teacher review built in</strong> — flag items, write notes,
-          and export everything as JSON. Nothing about an item is hidden.
+          <strong>Your teacher can see your work</strong> — what you have
+          practised and where you got stuck, so they can help with the right
+          thing.
         </Bullet>
       </ul>
       <div className="rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs text-amber-900">
-        <strong>Pre-pilot prototype.</strong> This is not a calibrated
-        assessment and is not officially endorsed by CBSE. Every output is
-        teacher-review-first.
+        <strong>Still being built.</strong> Lessons are written for a few
+        chapters so far, and the rest of your book is listed but not ready
+        yet. Nothing here is a score, a grade, or an official CBSE product,
+        and a teacher checks everything Pragati shows.
       </div>
     </>
   );

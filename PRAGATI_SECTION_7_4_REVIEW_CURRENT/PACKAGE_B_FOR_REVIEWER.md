@@ -17,7 +17,8 @@ again rather than treat your answers as covering the new one.
 
 Thank you for looking at this. It should take **45–60 minutes**.
 
-We have built one lesson and want to know whether it is good enough to
+We have drafted nine Fractions sections. This is the anchor one, and we
+want to know whether it is good enough to
 show to children before we build any more. If it is not, we would much
 rather find out now.
 

@@ -12,7 +12,8 @@ Fraction Lengths on the Number Line" (*Ganita Prakash*, page 159).
 
 We want to know whether it is good enough to put in front of children.
 We have built only this one on purpose: if the approach is wrong, we
-would rather find out after one lesson than after fifty.
+would rather find out from this one section than after fifty. Nine
+Fractions sections are drafted; this is the anchor one, reviewed first.
 
 **Please say so if it is not good enough.** That is a useful answer, and
 it is why we are asking before building more.

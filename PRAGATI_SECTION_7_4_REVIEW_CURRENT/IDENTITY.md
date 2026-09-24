@@ -1,4 +1,4 @@
-# Identity of this package (v0.83.2)
+# Identity of this package — CURRENT FOR SENDING (v0.83.4)
 
 Quote this back with your response:
 
@@ -17,7 +17,8 @@ changes when the citation changes — as it did here, when §7.4's page was
 corrected from 160 to 159. Correcting a page no longer pretends the
 lesson was rewritten.
 
-**This folder is CURRENT FOR SENDING.** Every page reference in it says
+**This folder is CURRENT FOR SENDING.** It was regenerated around the
+corrected page; it is not a frozen pre-correction artifact. Every page reference in it says
 159 and every code says DFC56A. There is nothing to reconcile by hand.
 
 The earlier folder without `_CURRENT` is historical: it cites page 160 and
