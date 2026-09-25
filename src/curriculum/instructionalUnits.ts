@@ -92,12 +92,43 @@ export type MisconceptionEvidence =
  * line mentions. So evidence depth is recorded per unit, and a unit
  * cannot be authoring-ready on an index alone.
  */
+/**
+ * v0.84.0 checkpoint 3 — PER-PAGE EVIDENCE.
+ *
+ * Checkpoint 2 recorded evidence per UNIT, which let a unit spanning
+ * four pages count as "FULL_PAGE_INSPECTED" when one page had been
+ * rendered. The name promised more than the data proved. Evidence is now
+ * recorded per page, and the questions are asked per page:
+ *
+ *   was the full text of THIS page read?
+ *   does THIS page carry mathematics that only the visual shows?
+ *   if so, was THIS page actually looked at?
+ *
+ * A page needing no visual inspection says so, with a reason, rather
+ * than being silently excused.
+ */
+export type PageEvidence = {
+  pdfPage: number;
+  printedPage: number | null;
+  fullTextInspected: boolean;
+  /** Does the mathematics of this page live in a diagram, ten frame,
+   *  strip, array, picture task or similar? */
+  visualInspectionRequired: boolean;
+  visualInspected: boolean;
+  /** Why visual inspection was or was not required, in one line. */
+  note: string;
+};
+
 export type EvidenceDepth =
   /** Headings and opening text only. Navigation, not evidence. */
   | 'DIGEST_ONLY'
   /** Complete extracted text of every page in the range. */
   | 'FULL_TEXT_INSPECTED'
-  /** Complete text, and the pages were rendered and looked at. */
+  /**
+   * Every page's full text read, and every page that needed a visual
+   * check actually looked at. This is now derived from the page ledger,
+   * never asserted by hand.
+   */
   | 'FULL_PAGE_INSPECTED';
 
 export type SourceEvidence = {
@@ -117,6 +148,8 @@ export type SourceEvidence = {
   inspectedOn: string;
   /** What these pages establish, in one line. */
   establishes: string;
+  /** Set when the source itself could not be read. */
+  blockedSource?: boolean;
   /** How much of the range was seen. */
   evidenceDepth: EvidenceDepth;
   /** Does the mathematics live in the visuals — ten frames, number
@@ -125,6 +158,13 @@ export type SourceEvidence = {
   visuallyDependent: boolean;
   /** Printed pages actually rendered and looked at, where that was done. */
   visualPagesInspected: number[];
+  /** One entry per PDF page in the range. The authority for every
+   *  evidence question; `evidenceDepth` is derived from it. */
+  pageEvidence: PageEvidence[];
+  /** When the pages were first read, and when the evidence last changed.
+   *  Both are real work dates. */
+  firstInspectedOn: string;
+  lastEvidenceUpdatedOn: string;
 };
 
 export type PragatiInstructionalUnit = {
@@ -196,10 +236,21 @@ export type NonInstructionalRecord = {
   sourceEvidence: SourceEvidence;
 };
 
+/** The full page extent of an official record, so "whole record
+ *  inspected" can be checked rather than assumed. */
+export type RecordExtent = {
+  officialRecordId: string;
+  pdfPageStart: number;
+  pdfPageEnd: number;
+  printedPageStart: number | null;
+  printedPageEnd: number | null;
+};
+
 type DecompositionFile = {
   generatedFrom: string;
   units: PragatiInstructionalUnit[];
   nonInstructional: NonInstructionalRecord[];
+  recordExtents: RecordExtent[];
   /** Classes whose page-level pass is finished, and what remains. */
   classProgress: Array<{
     classNumber: number;
@@ -209,11 +260,30 @@ type DecompositionFile = {
      * rather than unread source. Unread pages keep a class IN_PROGRESS
      * however many units it already has.
      */
-    status: 'COMPLETE' | 'IN_PROGRESS' | 'NOT_STARTED' | 'BLOCKED_SOURCE';
+    /**
+     * v0.84.0 checkpoint 3 §14/§15 — derived, never typed.
+     * DECOMPOSITION_SOURCE_COMPLETE means every page of every official
+     * record was inspected to the depth its mathematics needs. Units may
+     * still be flagged for human judgement in such a class: a curriculum
+     * question is not unread source. Unread pages always mean
+     * IN_PROGRESS.
+     */
+    status:
+      | 'DECOMPOSITION_SOURCE_COMPLETE'
+      | 'COMPLETE'
+      | 'IN_PROGRESS'
+      | 'NOT_STARTED'
+      | 'BLOCKED_SOURCE';
     chaptersInspected: number;
     chaptersTotal: number;
     /** Pages seen through the index only. Navigation, not evidence. */
     pagesIndexed?: number;
+    /** Pages in the official records' full extent. */
+    pagesInScope?: number;
+    /** Pages whose mathematics is carried by the picture. */
+    visualPagesRequired?: number;
+    /** Pages still unread. Non-zero keeps a class IN_PROGRESS. */
+    pagesUnresolved?: number;
     /** Pages whose full extracted text was read. */
     pagesFullyInspected: number;
     /** Pages rendered and actually looked at. */
@@ -230,6 +300,7 @@ const DATA = decompositionJson as unknown as DecompositionFile;
 export const PRAGATI_INSTRUCTIONAL_UNITS: PragatiInstructionalUnit[] = DATA.units;
 export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstructional;
 export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
+export const RECORD_EXTENTS: RecordExtent[] = DATA.recordExtents ?? [];
 
 export function unitsForClass(n: number): PragatiInstructionalUnit[] {
   return PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.classNumber === n);
@@ -262,9 +333,76 @@ export function recordIsCovered(officialRecordId: string): boolean {
 export function meetsEvidenceBar(u: PragatiInstructionalUnit): boolean {
   const e = u.sourceEvidence;
   if (u.intentInspectionStatus !== 'INSPECTED') return false;
-  if (e.evidenceDepth === 'DIGEST_ONLY') return false;
-  if (e.visuallyDependent && e.visualPagesInspected.length === 0) return false;
-  return true;
+  const pages = e.pageEvidence;
+  // Every page of the range must be present in the ledger: an absent
+  // page is an unread page, not a page that needed nothing.
+  const covered = new Set(pages.map((p) => p.pdfPage));
+  for (let p = e.pdfPageStart; p <= e.pdfPageEnd; p += 1) {
+    if (!covered.has(p)) return false;
+  }
+  // Checkpoint 2's gate accepted one rendered page for a whole visually
+  // dependent unit. Now every page answers for itself.
+  return pages.every(
+    (p) => p.fullTextInspected && (!p.visualInspectionRequired || p.visualInspected)
+  );
+}
+
+/** The depth label, computed from the ledger so it cannot overstate. */
+export function evidenceDepthOf(e: SourceEvidence): EvidenceDepth {
+  const pages = e.pageEvidence;
+  if (pages.length === 0 || pages.some((p) => !p.fullTextInspected)) return 'DIGEST_ONLY';
+  const covered = new Set(pages.map((p) => p.pdfPage));
+  for (let p = e.pdfPageStart; p <= e.pdfPageEnd; p += 1) {
+    if (!covered.has(p)) return 'DIGEST_ONLY';
+  }
+  return pages.every((p) => !p.visualInspectionRequired || p.visualInspected)
+    ? 'FULL_PAGE_INSPECTED'
+    : 'FULL_TEXT_INSPECTED';
+}
+
+/**
+ * v0.84.0 checkpoint 3 §6/§7 — RECORD-LEVEL INSPECTION.
+ *
+ * An official record is inspected when its WHOLE instructional extent
+ * is. Checkpoint 2 marked a chapter inspected as soon as any one of its
+ * units had evidence, so a chapter with an unread tail could be reported
+ * as page-level inspected. For Classes 1-5 the record is the chapter;
+ * for the numbered grades it is the section. The same rule serves both.
+ */
+export type RecordInspectionState =
+  | 'NOT_STARTED'
+  | 'INDEXED_ONLY'
+  | 'PARTIALLY_INSPECTED'
+  | 'FULLY_INSPECTED'
+  | 'BLOCKED_SOURCE'
+  | 'NEEDS_HUMAN_CHECK';
+
+export function recordInspectionState(officialRecordId: string): RecordInspectionState {
+  const units = instructionalUnitsFor(officialRecordId);
+  const nonInstr = NON_INSTRUCTIONAL_RECORDS.filter(
+    (r) => r.officialRecordId === officialRecordId
+  );
+  const all = [
+    ...units.map((u) => u.sourceEvidence),
+    ...nonInstr.map((r) => r.sourceEvidence),
+  ];
+  if (all.length === 0) return 'NOT_STARTED';
+  if (all.some((e) => e.blockedSource)) return 'BLOCKED_SOURCE';
+  const extent = RECORD_EXTENTS.find((x) => x.officialRecordId === officialRecordId);
+  const seen = new Set<number>();
+  for (const e of all) {
+    for (const p of e.pageEvidence) {
+      if (p.fullTextInspected && (!p.visualInspectionRequired || p.visualInspected)) {
+        seen.add(p.pdfPage);
+      }
+    }
+  }
+  if (seen.size === 0) return 'INDEXED_ONLY';
+  if (!extent) return 'PARTIALLY_INSPECTED';
+  for (let p = extent.pdfPageStart; p <= extent.pdfPageEnd; p += 1) {
+    if (!seen.has(p)) return 'PARTIALLY_INSPECTED';
+  }
+  return 'FULLY_INSPECTED';
 }
 
 /**
@@ -274,16 +412,52 @@ export function meetsEvidenceBar(u: PragatiInstructionalUnit): boolean {
  * hand-maintained copy that drifts.
  */
 export function inspectedOfficialRecordIds(): Set<string> {
+  // Only FULLY_INSPECTED counts. A chapter half read is partial
+  // progress, and partial progress is not inspection.
+  const ids = new Set<string>();
+  for (const id of officialRecordIdsTouched()) {
+    if (recordInspectionState(id) === 'FULLY_INSPECTED') ids.add(id);
+  }
+  return ids;
+}
+
+export function officialRecordIdsTouched(): string[] {
   const ids = new Set<string>();
   for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
-    if (u.sourceEvidence.evidenceDepth === 'DIGEST_ONLY') continue;
     ids.add(u.officialRecordId);
     for (const extra of u.additionalOfficialRecordIds) ids.add(extra);
   }
-  for (const r of NON_INSTRUCTIONAL_RECORDS) {
-    if (r.sourceEvidence.evidenceDepth !== 'DIGEST_ONLY') ids.add(r.officialRecordId);
-  }
-  return ids;
+  for (const r of NON_INSTRUCTIONAL_RECORDS) ids.add(r.officialRecordId);
+  return [...ids];
+}
+
+/** Partial progress stays visible rather than being rounded away. */
+export function recordInspectionSummary(): Array<{
+  officialRecordId: string;
+  state: RecordInspectionState;
+  pagesInspected: number;
+  pagesInExtent: number | null;
+}> {
+  return officialRecordIdsTouched()
+    .sort()
+    .map((id) => {
+      const extent = RECORD_EXTENTS.find((x) => x.officialRecordId === id);
+      const seen = new Set<number>();
+      for (const u of instructionalUnitsFor(id)) {
+        for (const p of u.sourceEvidence.pageEvidence) {
+          if (p.fullTextInspected) seen.add(p.pdfPage);
+        }
+      }
+      for (const r of NON_INSTRUCTIONAL_RECORDS.filter((r) => r.officialRecordId === id)) {
+        for (const p of r.sourceEvidence.pageEvidence) if (p.fullTextInspected) seen.add(p.pdfPage);
+      }
+      return {
+        officialRecordId: id,
+        state: recordInspectionState(id),
+        pagesInspected: seen.size,
+        pagesInExtent: extent ? extent.pdfPageEnd - extent.pdfPageStart + 1 : null,
+      };
+    });
 }
 
 export function readyForAuthoring(): PragatiInstructionalUnit[] {

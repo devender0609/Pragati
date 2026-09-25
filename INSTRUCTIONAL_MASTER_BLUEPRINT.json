@@ -7,22 +7,28 @@
    "status": "IN_PROGRESS",
    "chaptersInspected": 13,
    "chaptersTotal": 13,
-   "pagesIndexed": 104,
-   "pagesFullyInspected": 63,
-   "visualPagesInspected": 12,
-   "pagesInspected": 63,
-   "note": "All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full text; 12 pages were rendered and looked at. The other chapters rest on the index alone, so their units are drafts."
+   "pagesInScope": 130,
+   "pagesIndexed": 130,
+   "pagesFullyInspected": 123,
+   "visualPagesRequired": 116,
+   "visualPagesInspected": 50,
+   "pagesInspected": 123,
+   "pagesUnresolved": 7,
+   "note": "123 of 130 pages read in full text. 7 pages remain unread, so this class is not source-complete and its unread units are drafts."
   },
   {
    "classNumber": 2,
    "status": "IN_PROGRESS",
-   "chaptersInspected": 11,
-   "chaptersTotal": 11,
-   "pagesIndexed": 88,
-   "pagesFullyInspected": 22,
-   "visualPagesInspected": 12,
-   "pagesInspected": 22,
-   "note": "All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full text; 12 pages were rendered. Every other Class 2 unit rests on the index alone."
+   "chaptersInspected": 10,
+   "chaptersTotal": 10,
+   "pagesInScope": 132,
+   "pagesIndexed": 132,
+   "pagesFullyInspected": 24,
+   "visualPagesRequired": 109,
+   "visualPagesInspected": 16,
+   "pagesInspected": 24,
+   "pagesUnresolved": 108,
+   "note": "24 of 132 pages read in full text. 108 pages remain unread, so this class is not source-complete and its unread units are drafts."
   }
  ],
  "units": [
@@ -45,7 +51,62 @@
     "establishes": "Poem and picture tasks that ask children to place and identify objects by position; ball in/out of the basket.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     4,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 52 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 40 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 13 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 8 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 4 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Where is it? Position words",
    "mathematicalObjective": "Describe where an object is using in/out, on/under, above/below, near/far.",
@@ -82,7 +143,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u2",
@@ -103,7 +164,29 @@
     "establishes": "The train rhyme and the game of naming who is before and after each child.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 8 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Before, after and between in a line",
    "mathematicalObjective": "Describe order in a line using before, after and between.",
@@ -139,7 +222,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u3",
@@ -153,14 +236,26 @@
     "officialChapterId": "ncert_aejm1_ch01",
     "officialSectionId": null,
     "printedPageStart": 9,
-    "printedPageEnd": 10,
+    "printedPageEnd": 9,
     "pdfPageStart": 9,
-    "pdfPageEnd": 10,
+    "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
     "establishes": "Suwali's buttons sorted into three groups, then re-sorted another way.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 9 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Sorting things into groups",
    "mathematicalObjective": "Sort a collection by a chosen attribute and say the rule used.",
@@ -196,7 +291,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u1",
@@ -217,7 +312,46 @@
     "establishes": "Naming long and round things, drawing them in two groups, matching similar shapes.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     2,
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 48 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 11 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 12,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "19 images, 8 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 13,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "19 images, 20 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Long things and round things",
    "mathematicalObjective": "Sort objects by shape attributes: long and round.",
@@ -251,7 +385,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u2",
@@ -272,7 +406,46 @@
     "establishes": "The wise-grandmother story, the carrom picture and the rolls/slides/both table.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     6,
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "5 images, 3 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 3 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 16,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 58 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 17,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "14 images, 46 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Rolls, slides, or both",
    "mathematicalObjective": "Test how a solid moves and classify it as rolling, sliding or both.",
@@ -310,7 +483,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u1",
@@ -331,7 +504,46 @@
     "establishes": "Birds joining the mango one at a time; matching quantities to fingers and to dots.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     3,
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 8 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 19,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 8 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 20,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "15 images, 38 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 21,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 105 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Counting up to 9, and one more",
    "mathematicalObjective": "Count a collection up to 9 and say what one more makes.",
@@ -367,7 +579,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u2",
@@ -388,7 +600,37 @@
     "establishes": "The drawing-day table of objects more than / less than the number of children.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 22,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 23,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 29 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 24,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 19 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "More, less and as many as",
    "mathematicalObjective": "Compare two collections and say which has more, fewer or the same.",
@@ -426,7 +668,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u3",
@@ -445,12 +687,64 @@
     "pdfPageEnd": 13,
     "inspectedOn": "2026-09-24",
     "establishes": "Circle-and-write tasks for 1-9, the 1-to-9 path, shuffled cards and missing numbers.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      8,
      11
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 8,
+      "printedPage": 25,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "11 images, 239 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 26,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 307 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 27,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "17 images, 310 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 28,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "14 images, 13 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 29,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 55 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 30,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 60 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Writing the numerals 1 to 9",
    "mathematicalObjective": "Match a numeral to a quantity, write it, and place numbers in order.",
@@ -482,12 +776,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u1",
@@ -506,11 +800,31 @@
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
     "establishes": "Dot designs made with seeds and the dice-and-colour game.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      1
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 12 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 34,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 123 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Seeing how many without counting",
    "mathematicalObjective": "Recognise small dot arrangements at a glance and make your own.",
@@ -543,12 +857,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u2",
@@ -569,7 +883,27 @@
     "establishes": "The vanishing buttons and the discussion of situations where nothing is there.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 35,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 8 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 36,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 230 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Zero: when there is nothing left",
    "mathematicalObjective": "Use 0 for an empty collection and count down to it.",
@@ -605,7 +939,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u3",
@@ -624,11 +958,31 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
     "establishes": "The tenth-birthday count, ten beads on a string and ten frames of buttons.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      6
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 37,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 43 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 38,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 37 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Ten as one group",
    "mathematicalObjective": "Make a group of ten and use it to count.",
@@ -661,12 +1015,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u4",
@@ -687,7 +1041,27 @@
     "establishes": "The handy five and ten finger game and the number-pairs-of-10 pattern.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 39,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 15 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 40,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "16 images, 28 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Number pairs that make 5 and 10",
    "mathematicalObjective": "Find the pairs of numbers that make 5 and that make 10.",
@@ -725,7 +1099,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u5",
@@ -744,11 +1118,58 @@
     "pdfPageEnd": 13,
     "inspectedOn": "2026-09-24",
     "establishes": "\"10 and 3 is 13\" spreads, ten-frame colouring, sequences and the tallest-tower task.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
-     9
-    ]
+     9,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 41,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 98 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 42,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 97 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 43,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 163 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 44,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 156 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 45,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "16 images, 37 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Numbers 11 to 20 as ten and some more",
    "mathematicalObjective": "Read, write and build the numbers 11-20 as a ten and some ones.",
@@ -783,12 +1204,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u1",
@@ -809,7 +1230,54 @@
     "establishes": "Park scene, \"4 children and 2 children altogether make __\", finger and dice totals.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     2,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 3 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 49,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 58 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 50,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 26 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 51,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 20 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 52,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 155 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Putting groups together: addition to 9",
    "mathematicalObjective": "Find how many altogether by joining two groups.",
@@ -848,7 +1316,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u2",
@@ -867,11 +1335,47 @@
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
     "establishes": "Beads and string, hop-and-find-the-sum, \"add in your own way\" and the number-pair wheels.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      7
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 53,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 13 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 54,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 69 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 55,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "5 images, 21 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 56,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 116 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Ways of adding",
    "mathematicalObjective": "Add by counting on, by hopping on a number strip, and by using pairs.",
@@ -907,12 +1411,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u3",
@@ -933,7 +1437,19 @@
     "establishes": "Shell and marble stories with a \"how many altogether\" question.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 57,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "16 images, 41 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Addition stories",
    "mathematicalObjective": "Solve a word story by deciding it is an addition and finding the total.",
@@ -969,7 +1485,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u4",
@@ -990,7 +1506,37 @@
     "establishes": "The five-little-children rhyme and the \"how many left\" frames with 6 - 2 = __.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 11,
+      "printedPage": 58,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 3 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 59,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 63 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 60,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 49 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Taking away: subtraction to 9",
    "mathematicalObjective": "Find how many are left when some are taken away.",
@@ -1028,7 +1574,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u1",
@@ -1047,9 +1593,55 @@
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
     "establishes": "Rumi and Shami's baskets (7 + 5, 9 + 4) and the ginladi method for 12 + 4.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "5 images, 4 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 65,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 6 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 66,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 67,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 20 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 68,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 49 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Adding past ten on a bead string",
    "mathematicalObjective": "Add a small number to a number beyond ten by counting on.",
@@ -1081,12 +1673,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": "Pages 69 onward of this chapter were not read in this pass; a later unit may be needed for the rest of the chapter.",
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u1",
@@ -1105,9 +1697,47 @@
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
     "establishes": "Lina's family compared by height; longest/shortest picture tasks; the Statue of Unity.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "5 images, 3 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 73,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 74,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 36 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 75,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "18 images, 9 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Comparing how tall and how long",
    "mathematicalObjective": "Compare objects directly and order them by length or height.",
@@ -1139,12 +1769,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u2",
@@ -1163,12 +1793,49 @@
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
     "establishes": "Measuring the table, bag and blackboard; guess-and-find tables for handspans and footspans.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      6,
+     7,
      8
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 76,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 7 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 77,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 78,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 74 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 79,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "14 images, 100 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Measuring with handspans and footspans",
    "mathematicalObjective": "Measure a length by repeating a non-standard unit, after estimating.",
@@ -1201,12 +1868,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u3",
@@ -1225,11 +1892,31 @@
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
     "establishes": "Tick the heavier/lighter object, then \"who is heavier between you and your friend?\"",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      8
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 8,
+      "printedPage": 79,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "14 images, 100 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 80,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "16 images, 13 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Heavier and lighter",
    "mathematicalObjective": "Compare two objects by weight and say which is heavier.",
@@ -1259,12 +1946,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u1",
@@ -1283,9 +1970,63 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
     "establishes": "Packing oranges in boxes of ten; number spreads 21-50; ten-frame fill-ins.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 219 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 85,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 495 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 22,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 339 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 87,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 60 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 88,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "16 images, 39 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 89,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "16 images, 368 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Numbers 21 to 50 as tens and ones",
    "mathematicalObjective": "Build, read and write numbers to 50 using groups of ten.",
@@ -1318,12 +2059,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u2",
@@ -1342,9 +2083,23 @@
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
     "establishes": "Fill-the-missing-number grids (46, 42, 39, 34) and backward counting.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 90,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 7 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Counting forward and back, and missing numbers",
    "mathematicalObjective": "Continue a count in either direction and fill missing numbers to 50.",
@@ -1376,12 +2131,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u3",
@@ -1400,9 +2155,29 @@
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
     "establishes": "Counting and writing 51-60 and 61-80 spreads; the mirror-design count.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 8,
+      "printedPage": 91,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "15 images, 30 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 92,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 54 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Numbers 51 to 99",
    "mathematicalObjective": "Read, write and count numbers from 51 to 99.",
@@ -1433,12 +2208,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": "Pages beyond 92 of this chapter were not read in this pass.",
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u1",
@@ -1457,11 +2232,56 @@
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
     "establishes": "Extending drawn patterns, colouring pattern strips and reasoning about what colour comes next.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
-     3
-    ]
+     3,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 4 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 99,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "5 images, 3 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 100,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "15 images, 11 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 101,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "16 images, 26 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 102,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 185 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Repeating patterns with shapes and colours",
    "mathematicalObjective": "Find the rule of a repeating pattern and extend it.",
@@ -1492,12 +2312,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u2",
@@ -1516,9 +2336,23 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
     "establishes": "Study-the-pattern-and-fill-the-missing-numbers task.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 103,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 3 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Number patterns",
    "mathematicalObjective": "Continue a number pattern and say the rule.",
@@ -1549,12 +2383,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u3",
@@ -1573,9 +2407,21 @@
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
     "establishes": "Completing the kolam Murthy and Vani are drawing.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 104,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 36 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Patterns in kolam and rangoli",
    "mathematicalObjective": "Complete a kolam pattern and describe its repeat.",
@@ -1606,12 +2452,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u1",
@@ -1630,9 +2476,37 @@
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
     "establishes": "Pihu's daily routine and the tick-the-activity tasks for each part of the day.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 28 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 106,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 24 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 107,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "16 images, 23 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Parts of the day and the order of events",
    "mathematicalObjective": "Name parts of the day and put daily events in order.",
@@ -1663,12 +2537,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u2",
@@ -1687,9 +2561,23 @@
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
     "establishes": "Colour the activity that usually takes longer.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 108,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 11 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Which takes longer?",
    "mathematicalObjective": "Compare two activities by how long they take.",
@@ -1719,12 +2607,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u3",
@@ -1743,9 +2631,31 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
     "establishes": "Season pictures matched to objects and clothes.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 109,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 4 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 110,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 14 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Seasons of the year",
    "mathematicalObjective": "Name the seasons and match things to the season they belong to.",
@@ -1776,12 +2686,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": "Mathematically light: cyclic sequence and classification only. Kept because the source teaches it here.",
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch11_u1",
@@ -1800,11 +2710,48 @@
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
     "establishes": "Two children per horse, 3 jalebis per plate, 2 people per bus row: \"9 times 2 =\" and \"5 times 3 =\".",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
-     3
-    ]
+     3,
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 11 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 112,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 17 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 113,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 13 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 114,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 70 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Equal groups and repeated addition",
    "mathematicalObjective": "Find a total of equal groups by adding the same number again and again.",
@@ -1836,12 +2783,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u1",
@@ -1860,9 +2807,29 @@
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
     "establishes": "Riya counting coins and Sahil counting notes; the toy-seller prices.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 80 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 116,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 6 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Knowing our coins and notes",
    "mathematicalObjective": "Recognise Indian coins and notes and say their value.",
@@ -1894,12 +2861,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u2",
@@ -1918,9 +2885,40 @@
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
     "establishes": "Find the total amount, fill combinations for `20, `10, `13, `8 and match equal amounts.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     3,
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 117,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "15 images, 50 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 118,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "16 images, 52 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 119,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 14 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Making an amount in different ways",
    "mathematicalObjective": "Make a given amount with different combinations of coins and notes.",
@@ -1953,12 +2951,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u1",
@@ -1977,11 +2975,32 @@
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
     "establishes": "Counting dolls, cars and elephants; then counting flowers by colour and judging true/false statements.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
-     1
-    ]
+     1,
+     2
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 7 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 121,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 13 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Counting groups in a picture and comparing them",
    "mathematicalObjective": "Count each kind of thing in a picture and compare the counts.",
@@ -2014,12 +3033,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u1",
@@ -2040,7 +3059,35 @@
     "establishes": "Counting coconuts, boats and shell necklaces; packing chikoos into trays of ten.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 81 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 2,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 51 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 3,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 40 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Counting in groups of ten",
    "mathematicalObjective": "Count a large collection by grouping in tens rather than one by one.",
@@ -2076,7 +3123,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u2",
@@ -2100,7 +3147,59 @@
     "visualPagesInspected": [
      4,
      5
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 4,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "11 images, 48 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 5,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 1394 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 6,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 542 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 7,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 49 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 2,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "4 images, 139 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 9,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 90 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Tens and ones with strips and blocks",
    "mathematicalObjective": "Represent a two-digit number as tens and ones and read it from the representation.",
@@ -2139,7 +3238,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u3",
@@ -2160,7 +3259,27 @@
     "establishes": "\"Let us Make 100!\" — ten strips joined, and discussion of other combinations.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 6,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 542 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 7,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 49 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Making 100",
    "mathematicalObjective": "Build 100 from ten tens and describe other ways to make it.",
@@ -2195,7 +3314,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u4",
@@ -2216,7 +3335,19 @@
     "establishes": "Oranges into trays of ten with some left over.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 10,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "4 images, 41 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Trays, groups and leftovers",
    "mathematicalObjective": "Work out how many full groups of ten and how many are left over.",
@@ -2253,7 +3384,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u1",
@@ -2274,7 +3405,27 @@
     "establishes": "Musical instruments circled and matched to their solid shapes.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 2,
+      "printedPage": 17,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "22 images, 59 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 18,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "16 images, 62 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Solid shapes around us",
    "mathematicalObjective": "Match everyday objects to cube, cuboid, cone, cylinder and sphere.",
@@ -2312,7 +3463,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u2",
@@ -2335,7 +3486,43 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      6
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 19,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 40 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 20,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 65 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 21,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 97 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 22,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 78 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Faces, edges and corners",
    "mathematicalObjective": "Count the faces, edges and corners of a solid and use them to tell solids apart.",
@@ -2373,7 +3560,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u1",
@@ -2394,7 +3581,27 @@
     "establishes": "Ginladi bead counts, blank cards, and the guess-my-number / guess-my-place games.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 41 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 24,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 69 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Numbers on the bead string and number strip",
    "mathematicalObjective": "Locate and name numbers to 100 on a bead string and number strip.",
@@ -2431,7 +3638,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u2",
@@ -2455,7 +3662,51 @@
     "visualPagesInspected": [
      4,
      6
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 25,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 302 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 26,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 576 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 27,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 325 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 28,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 151 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 98,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 278 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Skip counting and jumps",
    "mathematicalObjective": "Skip count in 2s, 5s and 10s, forwards and backwards, and describe the pattern.",
@@ -2493,7 +3744,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u3",
@@ -2516,7 +3767,43 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      6
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 28,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 151 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 98,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 278 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 30,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "3 images, 110 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 31,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 161 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Patterns in the number chart",
    "mathematicalObjective": "Find and explain patterns in rows and columns of the hundred chart.",
@@ -2553,7 +3840,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u1",
@@ -2574,7 +3861,35 @@
     "establishes": "Togalu Gombeyaata shadow play; shadows of objects; tracing outlines of everyday things.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 33,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 60 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 34,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 72 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Shadows and flat shapes",
    "mathematicalObjective": "See that a solid casts a flat shape, and name circle, triangle, rectangle and square.",
@@ -2611,7 +3926,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u2",
@@ -2634,7 +3949,51 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      6
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 35,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 59 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 36,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 52 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 37,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 55 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 38,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 39,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 65 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Telling shapes apart by their properties",
    "mathematicalObjective": "Identify a flat shape by its sides and corners, including when it is hidden or tilted.",
@@ -2671,7 +4030,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u3",
@@ -2692,7 +4051,27 @@
     "establishes": "Stamping designs with caps and erasers; leaf patterns.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 40,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 41,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 64 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Making patterns with shapes",
    "mathematicalObjective": "Make and continue a pattern by stamping or arranging shapes.",
@@ -2728,7 +4107,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u1",
@@ -2749,7 +4128,10 @@
     "establishes": "Aasanas sorted by the lines they make; tracing missing lines; \"is it straight?\" with a thread.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Kinds of lines",
    "mathematicalObjective": "Tell apart vertical, horizontal, slanting and curved lines and find them around you.",
@@ -2785,7 +4167,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u2",
@@ -2806,7 +4188,10 @@
     "establishes": "Making shapes with straight lines on dots, curved-line drawings, and designs using two, three and all line types; local art forms.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Drawing with lines",
    "mathematicalObjective": "Make shapes and designs using chosen kinds of lines.",
@@ -2843,7 +4228,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u1",
@@ -2864,7 +4249,35 @@
     "establishes": "Garland flowers: 10 + 2 = 12, 50 + 3 = 53, and totals such as 20 + 43.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 67 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 51,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 60 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 52,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 76 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Adding tens and ones without regrouping",
    "mathematicalObjective": "Add two two-digit numbers by adding tens to tens and ones to ones.",
@@ -2903,7 +4316,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u2",
@@ -2924,7 +4337,27 @@
     "establishes": "\"Let us do it on Ginladi\" and the number-line additions 23 + 14, 24 + 16, 11 + 22.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 54,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 212 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 54,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "4 images, 453 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Adding on a bead string and a number line",
    "mathematicalObjective": "Add two-digit numbers by counting on in tens and ones.",
@@ -2961,7 +4394,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u3",
@@ -2982,7 +4415,35 @@
     "establishes": "Mahi's and Isha's blocks; '7 tens 13 ones' rewritten; addition story problems (43 + 58 runs).",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 55,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 1035 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 56,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "3 images, 3061 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 57,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 83 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Adding with regrouping",
    "mathematicalObjective": "Add two-digit numbers where the ones make more than ten, and exchange ten ones for a ten.",
@@ -3019,7 +4480,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u4",
@@ -3040,7 +4501,27 @@
     "establishes": "Word problems and the two methods shown for 75 - 35 and 32 - 12.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 58,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "14 images, 61 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 59,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 280 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Taking away two-digit numbers",
    "mathematicalObjective": "Subtract a two-digit number, using tens and ones or a number line.",
@@ -3077,7 +4558,7 @@
    "existingArtifact": null,
    "notes": "Pages beyond 59 of this chapter were not read in this pass; further subtraction units may be needed.",
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u1",
@@ -3098,7 +4579,27 @@
     "establishes": "The raja's bed story, where each carpenter's handspan gives a different answer; estimate-then-measure table.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 55 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 72,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 63 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Why we need the same unit",
    "mathematicalObjective": "See that measurements disagree when different people use their own handspans.",
@@ -3134,7 +4635,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u2",
@@ -3157,7 +4658,35 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      4
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 73,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 139 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 74,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 75,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 82 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Measuring with a chosen unit",
    "mathematicalObjective": "Estimate and then measure lengths and heights with a repeated unit.",
@@ -3197,7 +4726,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u3",
@@ -3218,7 +4747,35 @@
     "establishes": "Pumpkin's chaupal comparisons, making your own balance, and marking which side goes down.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 76,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "4 images, 43 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 77,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 59 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 78,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "17 images, 64 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Heavier, lighter and a simple balance",
    "mathematicalObjective": "Compare weights by handling and by using a balance.",
@@ -3256,7 +4813,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u1",
@@ -3279,7 +4836,35 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      2
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 40 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 84,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "11 images, 66 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 85,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 88 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Equal groups and \"times\"",
    "mathematicalObjective": "Describe equal groups as repeated addition and as \"n times m\".",
@@ -3316,7 +4901,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u2",
@@ -3337,7 +4922,19 @@
     "establishes": "Matching 9 + 9 + 9 with 3 x 9, and the completion table.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 86,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 353 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "The multiplication sign",
    "mathematicalObjective": "Write an equal-groups situation with x and read it back.",
@@ -3373,7 +4970,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u3",
@@ -3394,7 +4991,27 @@
     "establishes": "Complete-the-table pages for 2, 3, 5 and 10 with both \"2 threes are 6\" and 2 x 3 = 6 forms.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 87,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 100 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 88,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 100 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Tables of 2, 3, 5 and 10",
    "mathematicalObjective": "Build the tables of 2, 3, 5 and 10 from equal groups.",
@@ -3431,7 +5048,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u4",
@@ -3452,7 +5069,27 @@
     "establishes": "\"4 groups of 5\", \"6 groups of 4\" picture tasks with the number sentence completed.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 89,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 83 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 90,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 104 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Using multiplication in pictures and stories",
    "mathematicalObjective": "Solve picture and word problems by choosing a multiplication.",
@@ -3487,7 +5124,7 @@
    "existingArtifact": null,
    "notes": "Pages beyond 90 were not read in this pass.",
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u1",
@@ -3508,7 +5145,35 @@
     "establishes": "Seasons described, then matched with their names and festivals.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 40 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 99,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 54 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 100,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Seasons and the year",
    "mathematicalObjective": "Name the seasons and place festivals and activities in them.",
@@ -3546,7 +5211,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u2",
@@ -3567,7 +5232,27 @@
     "establishes": "Calendar Fun: filling the months/number-of-days table and discussing February.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 101,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "3 images, 1238 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 102,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 181 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Reading a calendar",
    "mathematicalObjective": "Read a calendar to find days, dates and the number of days in a month.",
@@ -3606,7 +5291,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u3",
@@ -3627,7 +5312,19 @@
     "establishes": "Matching cooking, vacation and other activities to hours, days or months.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 103,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 48 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "How long does it take?",
    "mathematicalObjective": "Choose whether an activity takes hours, days or months.",
@@ -3664,7 +5361,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u4",
@@ -3685,7 +5382,27 @@
     "establishes": "The Vijayawada trip: 11:00 morning, 5:00 evening and other times in the narrative.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 58 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 58 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Telling the time of day",
    "mathematicalObjective": "Read clock times in a story and use morning, afternoon and evening.",
@@ -3721,7 +5438,7 @@
    "existingArtifact": null,
    "notes": "Pages beyond 105 were not read in this pass; the clock work may extend further.",
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u1",
@@ -3742,7 +5459,43 @@
     "establishes": "Rupal's `50 at the fair; the ride-and-money table; notes of `100, `500, `200.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 41 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 114,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 56 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 115,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 76 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 116,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Money: notes, coins and totals",
    "mathematicalObjective": "Recognise Indian notes and coins and find the total of a purchase.",
@@ -3780,7 +5533,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u2",
@@ -3801,7 +5554,19 @@
     "establishes": "Tejal's grandmother's coins: how many 25 paise, how many 20 paise make `1.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 117,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 55 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Paise and making a rupee",
    "mathematicalObjective": "Use paise coins to make one rupee in different ways.",
@@ -3837,7 +5602,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u3",
@@ -3860,7 +5625,67 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      6
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 2,
+      "printedPage": 114,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 56 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 115,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 76 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 116,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 117,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 55 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 118,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "14 images, 50 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 119,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "3 images, 52 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 120,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 114 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Spending, change and different ways to pay",
    "mathematicalObjective": "Find money left over and pay the same amount with different combinations.",
@@ -3898,7 +5723,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u1",
@@ -3919,7 +5744,35 @@
     "establishes": "Favourite colours, picnic fruits and modes of coming to school, each recorded in a table.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 59 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 124,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 62 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 125,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 53 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Collecting data into a table",
    "mathematicalObjective": "Count categories in a picture and record the counts in a table.",
@@ -3956,7 +5809,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u2",
@@ -3980,7 +5833,35 @@
     "visualPagesInspected": [
      4,
      6
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 126,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 59 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 127,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 62 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 128,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 69 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Showing data in a picture chart",
    "mathematicalObjective": "Draw a picture chart from a table and read it back.",
@@ -4018,7 +5899,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u3",
@@ -4039,7 +5920,19 @@
     "establishes": "Project work: favourite vegetables and family sizes collected from classmates and families.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 129,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "4 images, 81 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Asking your own question and collecting answers",
    "mathematicalObjective": "Collect data from classmates and present it.",
@@ -4076,7 +5969,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+   "hardeningNote": "At least one page of the range has not had its full text read; the unit stands as a draft."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u4",
@@ -4097,7 +5990,27 @@
     "establishes": "Counting jamuns and sheep in a picture; \"which two groups together have 8 fruits\"; cups versus spoons.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 31,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 6 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 32,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 7 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Counting in a busy picture, and two groups that make a number",
    "mathematicalObjective": "Count each kind of thing in a picture and find two groups that together make a given number.",
@@ -4134,7 +6047,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u6",
@@ -4155,7 +6068,29 @@
     "establishes": "Tallest tower and most/least blocks; circle the smallest and biggest; write numbers biggest to smallest, with the teacher note that 15 is bigger than 11 because it is 4 more.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 45,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "16 images, 37 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 46,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 34 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Comparing and ordering numbers to 20",
    "mathematicalObjective": "Compare numbers up to 20 and put them in order, explaining why.",
@@ -4193,7 +6128,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u5",
@@ -4214,7 +6149,19 @@
     "establishes": "The hidden-dots project: total 10, hidden and visible recorded in a table, then repeated with 8 dots.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 62,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "11 images, 49 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Hidden dots: the parts of ten",
    "mathematicalObjective": "Find the missing part when a total of ten is split into a visible and a hidden part.",
@@ -4251,7 +6198,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u6",
@@ -4272,7 +6219,19 @@
     "establishes": "Hop backwards on the number strip: 9 - 3, 7 - 4, then six subtractions done \"in your own way\".",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 63,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 85 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Subtracting by hopping back",
    "mathematicalObjective": "Subtract by hopping backwards on a number strip and compare it with taking away.",
@@ -4308,7 +6267,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u2",
@@ -4327,9 +6286,23 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-25",
     "establishes": "A page of subtractions within 20: 16-4, 12-5, 14-7, 15-9, 17-9 and others.",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 69,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "11 images, 111 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Subtraction within 20",
    "mathematicalObjective": "Subtract within 20, including from teen numbers.",
@@ -4361,12 +6334,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u3",
@@ -4385,9 +6358,23 @@
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-25",
     "establishes": "Anjali jumps 2 ahead from 6 and Renu 7 back from 15; add-subtract-and-match pairs onto 12, 14, 15, 17, 18.",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 70,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 112 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Adding and subtracting can land in the same place",
    "mathematicalObjective": "See that an addition and a subtraction can reach the same number, and match pairs that do.",
@@ -4420,12 +6407,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u4",
@@ -4446,7 +6433,19 @@
     "establishes": "Potter diyas (9 - 5 + 7), bus at three stops, seats left on a bus, and two missing-part stories.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 8,
+      "printedPage": 71,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 8 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Two-step and missing-part problem stories",
    "mathematicalObjective": "Solve a story needing two steps, or one where the change is missing.",
@@ -4483,7 +6482,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u4",
@@ -4504,7 +6503,37 @@
     "establishes": "Counting and writing 81-100; placing a random number card on the ginladi; the slide-and-ladder grid with missing numbers to 100.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [
+     12
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 93,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "19 images, 54 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 94,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 95,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 601 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Numbers 81 to 100, and one hundred",
    "mathematicalObjective": "Read, write and sequence numbers to 100 and recognise 100 as ten tens.",
@@ -4542,7 +6571,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u5",
@@ -4563,7 +6592,27 @@
     "establishes": "The Warli painting: counting houses and people, guessing how many lines draw a tree, then drawing your own.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 96,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 5 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 97,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 50 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Counting what you see in a picture",
    "mathematicalObjective": "Count categories in a detailed picture and answer questions about the counts.",
@@ -4599,7 +6648,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u2",
@@ -4618,13 +6667,50 @@
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-25",
     "establishes": "Fill shapes so each occurs once per row and column; \"who am I\" mirror-number riddles; equal-total crosses; the matchstick and jigsaw tasks.",
-    "evidenceDepth": "DIGEST_ONLY",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      5,
      6,
+     7,
      8
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 124,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 46 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 125,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 22 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 126,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 23 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 127,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 28 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Puzzles that need a new kind of reasoning",
    "mathematicalObjective": "Solve constraint and symmetry puzzles: one shape per row and column, mirror numbers, equal-sum crosses.",
@@ -4661,12 +6747,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "DRAFT_DECOMPOSITION",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": "Whether enrichment of this kind belongs in Pragati at Class 1 is a human decision, not a source question.",
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u5",
@@ -4687,7 +6773,35 @@
     "establishes": "Ginladi subtractions (18-9, 30-18, 26-17), then number-line jumps back for 19-15, 26-?, 39-28, 38-11, 22-22.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 11,
+      "printedPage": 60,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 104 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 191 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 62,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 481 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Subtracting on the number line",
    "mathematicalObjective": "Subtract a two-digit number by jumping back in tens and ones.",
@@ -4724,7 +6838,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u6",
@@ -4747,7 +6861,19 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      14
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 63,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 959 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Column subtraction without regrouping",
    "mathematicalObjective": "Subtract in tens and ones columns when no exchange is needed.",
@@ -4783,7 +6909,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u7",
@@ -4802,11 +6928,47 @@
     "pdfPageEnd": 18,
     "inspectedOn": "2026-09-25",
     "establishes": "Jyoti's garlands: 46 - 18 shown as opening a garland, then 54 - 28 and 73 - 47, and a practice set.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      17
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 64,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 40 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 65,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "10 images, 74 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 66,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 84 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 67,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 69 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Subtraction with regrouping: opening a garland",
    "mathematicalObjective": "Subtract when the ones are too few, by exchanging one ten for ten ones.",
@@ -4839,12 +7001,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u8",
@@ -4865,7 +7027,27 @@
     "establishes": "Word problems including \"56 birds became 87, how many came\", the skip-the-rope missing addends, fact families and the addition/subtraction pyramids.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 19,
+      "printedPage": 68,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 55 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 69,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "3 images, 185 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Fact families and missing parts",
    "mathematicalObjective": "Use the link between addition and subtraction to complete fact families and find a missing part.",
@@ -4903,7 +7085,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u5",
@@ -4922,11 +7104,31 @@
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-25",
     "establishes": "Table of 4 from the table of 2, table of 7 from 3 and 4, table of 8 from 2 and 6, and the 24-objects array project.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      10
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 78 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 92,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 134 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Building a table from tables you know",
    "mathematicalObjective": "Make a new table by adding two known tables.",
@@ -4958,12 +7160,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u6",
@@ -4984,7 +7186,27 @@
     "establishes": "The gulab jamun sharing story dealt out one by one, then sharing bindis and laddoos equally.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 11,
+      "printedPage": 93,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "12 images, 52 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 94,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 51 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Sharing equally",
    "mathematicalObjective": "Share a collection equally between or among groups and say how many each gets.",
@@ -5021,7 +7243,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u7",
@@ -5044,7 +7266,19 @@
     "visuallyDependent": true,
     "visualPagesInspected": [
      13
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 95,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 40 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "How many groups?",
    "mathematicalObjective": "Find how many equal groups a collection makes.",
@@ -5080,7 +7314,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page of the range read in full text; every page whose mathematics is carried by the picture was rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u8",
@@ -5101,7 +7335,27 @@
     "establishes": "Strings of 7 beads from 21, 54 flowers into bracelets of 9, 25 roses into vases of 5, 27 candles into 3 boxes, 30 buttons at 6 per shirt, 24 bananas among 3 monkeys.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 96,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 82 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 97,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 295 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Sharing and grouping problems",
    "mathematicalObjective": "Solve word problems that need equal sharing or equal grouping.",
@@ -5138,7 +7392,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u5",
@@ -5157,11 +7411,47 @@
     "pdfPageEnd": 12,
     "inspectedOn": "2026-09-25",
     "establishes": "The trip questions about hours, Gargi's day written as o'clock times, reading clocks and drawing both hands.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      11
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 106,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "8 images, 74 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 107,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "13 images, 788 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 108,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 952 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 109,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 347 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Reading the clock at the hour",
    "mathematicalObjective": "Read o'clock times and draw the hands to show a given time.",
@@ -5193,12 +7483,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u6",
@@ -5219,7 +7509,19 @@
     "establishes": "Sarah's way to school drawn on the map, and the blindfold direction game.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 110,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "7 images, 61 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "Finding the way: left, right and straight",
    "mathematicalObjective": "Give and follow directions using left, right and straight on a route.",
@@ -5257,7 +7559,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u7",
@@ -5278,7 +7580,27 @@
     "establishes": "The east-west-north-south poem, the compass discussion and the classroom plan questions.",
     "evidenceDepth": "FULL_TEXT_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 111,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "6 images, 42 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 112,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "9 images, 69 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    },
    "instructionalTitle": "North, south, east and west",
    "mathematicalObjective": "Use the four cardinal directions to describe where things are.",
@@ -5317,40 +7639,333 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
-  }
- ],
- "nonInstructional": [
+   "hardeningNote": "Every page read in full text, but at least one page whose mathematics is carried by the picture has not been rendered yet."
+  },
   {
-   "officialRecordId": "ncert_aejm1_ch13_puzzles",
+   "instructionalUnitId": "pragati_iu_g01_ch07_u4",
    "grade": "class1",
-   "role": "ENRICHMENT",
-   "justification": "Re-inspected by rendering the pages. Most of the section rehearses taught material and is recorded here, but the constraint and symmetry puzzles on pages 124-127 do introduce new reasoning and are now a unit (pragati_iu_g01_ch13_u2) rather than being hidden inside this record.",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 81,
+    "printedPageEnd": 83,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Filling the bucket with jugs, glasses and bowls; comparing two water bottles; circling the container that holds more; the water-saving discussion.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [],
+    "pageEvidence": [],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
+   },
+   "instructionalTitle": "How much does it hold?",
+   "mathematicalObjective": "Compare capacity and measure it by filling with a repeated container.",
+   "studentCanStatement": "I can say how many glasses of water fill the bottle, and which holds more.",
+   "mathematicalIdeas": [
+    "capacity",
+    "iterating a unit of volume",
+    "comparison of containers"
+   ],
+   "representationsNeeded": [
+    "bucket, jugs, glasses, bowls",
+    "pairs of containers to compare"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch07_u2"
+   ],
+   "vocabulary": [
+    "holds more",
+    "holds less",
+    "fill",
+    "jug"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Capacity is a third measurable attribute in this chapter, alongside length and weight, and the earlier passes missed it entirely.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": "Found only when the full chapter was read: the first pass stopped at the weight pages.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Added in checkpoint 3 after reading pages the earlier passes had not read."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch13_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch13",
+   "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "aejm1",
     "bookPart": null,
     "officialChapterId": "ncert_aejm1_ch13",
     "officialSectionId": null,
-    "printedPageStart": 123,
-    "printedPageEnd": 128,
-    "pdfPageStart": 3,
-    "pdfPageEnd": 9,
-    "inspectedOn": "2026-09-24",
-    "establishes": "Number-search, magic-square-like fills, \"who am I?\" riddles and coin puzzles.",
+    "printedPageStart": 124,
+    "printedPageEnd": 127,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Shapes once per row and column; four objects in a grid; 1-5 in balls so both sides are equal; three chart numbers summing to 17; 5-9 so row and column share a total; the centre-number crosses.",
     "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
      5,
      6,
+     7,
      8
-    ]
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 124,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 46 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 125,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 22 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 126,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 23 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 127,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 28 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
+   },
+   "instructionalTitle": "Puzzles that need constraint reasoning",
+   "mathematicalObjective": "Place numbers or shapes so that a stated condition holds everywhere at once.",
+   "studentCanStatement": "I can fill the grid so each shape appears once in every row and column.",
+   "mathematicalIdeas": [
+    "constraint satisfaction (Latin square)",
+    "equal sums along lines",
+    "searching combinations systematically"
+   ],
+   "representationsNeeded": [
+    "grid of cells",
+    "balls and crosses to label",
+    "number chart for the sum-to-17 task"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u1",
+    "pragati_iu_g01_ch03_u3"
+   ],
+   "vocabulary": [
+    "row",
+    "column",
+    "once",
+    "same total"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "ENRICHMENT",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The first pass called the whole Puzzles section rehearsal. Rendering the pages showed constraint reasoning that appears nowhere else in the book, so it is a unit of its own.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": "Whether Class 1 should carry constraint puzzles at all is a curriculum judgement for a human, not something the source settles.",
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Added in checkpoint 3 after reading pages the earlier passes had not read."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch13_u4",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch13",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch13",
+    "officialSectionId": null,
+    "printedPageStart": 126,
+    "printedPageEnd": 128,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-25",
+    "establishes": "\"How many times can you subtract 5 from 25?\"; the watermelon-and-orange value puzzle; the minimum number of coins for `49; choose three balls for the maximum and minimum score.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     7,
+     8,
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 126,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 23 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 127,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 28 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 128,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 4 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-25",
+    "lastEvidenceUpdatedOn": "2026-09-25"
+   },
+   "instructionalTitle": "Puzzles that reach past Class 1 mathematics",
+   "mathematicalObjective": "Notice where a puzzle needs an idea the book has not taught yet.",
+   "studentCanStatement": "I can find the value of the fruit, and say how many fives are in 25.",
+   "mathematicalIdeas": [
+    "repeated subtraction as division",
+    "symbol standing for an unknown value",
+    "minimising a choice"
+   ],
+   "representationsNeeded": [
+    "fruit-symbol equations",
+    "coins of different values",
+    "number balls"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u4",
+    "pragati_iu_g01_ch12_u2"
+   ],
+   "vocabulary": [
+    "value",
+    "how many times",
+    "fewest"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "REASONING_EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Separated from the constraint puzzles because these require ideas Class 1 has not met: division by repeated subtraction, a symbol standing for a value, and optimisation.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": "Flagged for human decision: this is arguably Class 2-3 mathematics appearing in a Class 1 puzzle page.",
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Added in checkpoint 3 after reading pages the earlier passes had not read."
+  }
+ ],
+ "nonInstructional": [
+  {
+   "officialRecordId": "ncert_aejm1_ch13",
+   "grade": "class1",
+   "role": "REVIEW",
+   "justification": "Re-inspected page by page. Pages 122-123 and the shadow, matchstick and word-search tasks rehearse counting, number names and spatial matching already taught, so they are recorded rather than made authoring targets. The constraint puzzles and the beyond-Class-1 puzzles on the same spread are NOT covered here: they are pragati_iu_g01_ch13_u3 and _u4.",
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch13",
+    "officialSectionId": null,
+    "printedPageStart": 122,
+    "printedPageEnd": 125,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Number-search, magic-square-like fills, \"who am I?\" riddles and coin puzzles.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 12 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 123,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 53 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 124,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 46 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 125,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 22 drawn elements: the extracted text states the task in full, so no visual check is needed."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    }
   },
   {
    "officialRecordId": "ncert_bejm1_ch11_puzzles",
    "grade": "class2",
-   "role": "ENRICHMENT",
-   "justification": "First-pass classification from the page index only. Rendering was not done for this section, so whether its puzzles introduce new reasoning is UNRESOLVED; it must not be treated as settled.",
+   "role": "NON_INSTRUCTIONAL",
+   "justification": "UNRESOLVED. Class 2's puzzle pages have not had their full text read or their visuals rendered, so no classification is justified yet. Class 1's equivalent changed from \"rehearsal\" to three separate roles once its pages were actually read, which is exactly why this one may not be settled from an index.",
    "sourceEvidence": {
     "bookId": "bejm1",
     "bookPart": null,
@@ -5364,7 +7979,19 @@
     "establishes": "Connect-the-shape-pairs without crossing, pattern completion and a small addition puzzle.",
     "evidenceDepth": "DIGEST_ONLY",
     "visuallyDependent": true,
-    "visualPagesInspected": []
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 8,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "5 images, 123 drawn elements: the task is carried by the picture, so the page was judged to need looking at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-25"
    }
   }
  ]

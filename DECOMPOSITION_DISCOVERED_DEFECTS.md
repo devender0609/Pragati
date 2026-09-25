@@ -1,38 +1,57 @@
-# Defects discovered during page-level decomposition
+# Defects and observations found during decomposition
 
-Recorded, not silently fixed. The v0.83.5 infrastructure is locked; a
-defect found here is reported so you can decide.
+Current as of checkpoint 3. Everything below is derived from the canonical
+dataset; nothing here is typed from memory.
 
-## None affecting the locked infrastructure so far
+## Defects in Pragati's own infrastructure
 
-Classes 1 and 2 were read at page level (24 chapters, 192 pages). No
-defect was found in the curriculum master map, the runtime registry, the
-Student or Teacher surfaces, the review importer or the review packages.
-The chapter counts and titles rendered by the product matched the books
-on every page inspected.
+None. No defect was found in the curriculum master map, the runtime
+registry, Student, Teacher, the review importer or the review packages.
+The chapter counts and titles the product renders matched the books on
+every page inspected.
 
-## Observations that are not defects, but are worth your attention
+## Defects found in the DECOMPOSITION itself, and fixed here
 
-1. **Two chapters in each class run past the pages read.** Class 1
-   chapters 6 and 8, and Class 2 chapters 6, 8 and 9, were read only as
-   far as pages 68, 92, 59, 90 and 105 respectively. Their final units
-   are `DRAFT_DECOMPOSITION` and flagged for a second pass. This is an
-   incomplete reading, not a source problem.
+1. **The checkpoint-2 report reversed the per-class unit counts** (it said
+   Class 1 had 46 and Class 2 had 44; the data said the opposite). The
+   numbers were typed into the report by hand. They are now generated
+   from the dataset, and a test compares every reported count with it.
+2. **`FULL_PAGE_INSPECTED` promised more than the data proved.** A unit
+   spanning four pages could carry that label with one page rendered.
+   Evidence is now recorded per page, and the label is derived from the
+   ledger rather than asserted.
+3. **A partially read chapter could be reported as page-level inspected.**
+   `inspectedOfficialRecordIds()` accepted any one unit with evidence.
+   An official record is now FULLY_INSPECTED only when its whole extent
+   is inspected, and partial progress stays visible as
+   PARTIALLY_INSPECTED.
+4. **Class 1 Chapter 7 was missing capacity entirely.** Reading the whole
+   chapter found three pages on filling a bucket with jugs, glasses and
+   bowls and comparing containers. That is a third measurable attribute
+   beside length and weight; it is now `pragati_iu_g01_ch07_u4`.
+5. **The Class 1 Puzzles classification was wrong in both directions.**
+   The first pass called the section rehearsal; checkpoint 2 made it one
+   enrichment unit. Reading every page shows three different roles:
+   rehearsal (REVIEW), constraint reasoning (`_ch13_u3`), and puzzles
+   needing ideas Class 1 has not met — repeated subtraction as division,
+   a symbol standing for a value, optimisation (`_ch13_u4`,
+   REASONING_EXTENSION, flagged for a human scope decision).
 
-2. **Some Class 1 and 2 material is mathematically thin.** Class 1
-   chapter 10's seasons pages and Class 2 chapter 9's season/festival
-   pages carry classification and cyclic sequence and little else. They
-   are recorded as `GUIDED_APPLICATION` rather than dropped, because the
-   book teaches them there, but they should not be given the same
-   authoring weight as, say, regrouping.
+## Open, and honestly open
 
-3. **Two prerequisites could not be resolved to a unit yet** — counting
-   to 100 and money values in rupees, both referenced from Class 2 before
-   the unit that teaches them has been identified. They are recorded in
-   plain language rather than as invented unit ids, exactly as §18 allows
-   for the first pass.
+- **Class 2's puzzle section is UNRESOLVED.** Its pages have not been read
+  in full or rendered, so no classification is justified. It is recorded
+  as unresolved rather than assumed to mirror Class 1 — which changed
+  once its pages were actually read.
+- **Class 1 is not source-complete**: 123 of 130 pages inside unit ranges are read, and
+  66 of 116 picture-carried pages still need rendering.
+- **Class 2 is further behind**: 24 of 132 pages read in full text.
+- **Two prerequisites** (counting to 100; money values in rupees) point at
+  units that do not exist yet and are written in plain language.
 
-4. **The "Puzzles" pages at the end of Class 1 chapter 13 and Class 2
-   chapter 11** are enrichment: they rehearse taught material and
-   introduce nothing new. Recorded as non-instructional with the pages,
-   so they are neither lost nor counted as authoring targets.
+## Historical (superseded, kept for the record)
+
+The checkpoint-1 version of this document said the five chapter tails were
+unread and that both Puzzles sections introduced nothing new. Both
+statements were superseded by checkpoint 2 and again here; they are
+retained only as a record of what was believed at the time.

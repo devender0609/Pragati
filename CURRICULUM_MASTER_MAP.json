@@ -1212,7 +1212,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1241,7 +1241,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1270,7 +1270,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1299,7 +1299,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1328,7 +1328,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1357,7 +1357,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1415,7 +1415,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1734,7 +1734,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1792,7 +1792,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -1821,7 +1821,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "page_level_inspected",
+   "intentStatus": "not_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {

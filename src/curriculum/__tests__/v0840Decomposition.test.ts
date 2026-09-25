@@ -12,6 +12,9 @@ import {
   CLASS_DECOMPOSITION_PROGRESS,
   inspectedOfficialRecordIds,
   meetsEvidenceBar,
+  officialRecordIdsTouched,
+  recordInspectionState,
+  recordInspectionSummary,
   NON_INSTRUCTIONAL_RECORDS,
   PRAGATI_INSTRUCTIONAL_UNITS,
   decompositionCoverage,
@@ -88,7 +91,7 @@ describe('§23 nothing is authoring-ready without page evidence', () => {
       // v0.84.0 hardening — the reason now lives in hardeningNote, which
       // says which evidence is missing rather than only that pages were
       // unread.
-      expect(u.hardeningNote ?? '', u.instructionalUnitId).toMatch(/index|not read|full pages/i);
+      expect(u.hardeningNote ?? '', u.instructionalUnitId).toMatch(/not had its full text read|index|not read/i);
       expect(u.humanReviewStatus, u.instructionalUnitId).toBe('flagged_for_review');
     }
   });
@@ -243,13 +246,62 @@ describe('§3/§15 evidence depth gates authoring readiness', () => {
 });
 
 describe('§7/§8 one meaning of page-level intent inspected', () => {
-  it('the master map derives its status from the decomposition', () => {
+  // v0.84.0 checkpoint 3 §6 — the set is empty on purpose right now: no
+  // official record has had its WHOLE extent inspected to the required
+  // depth yet, and a chapter read in part is not a chapter inspected.
+  it('marks a record inspected only when its whole extent is', () => {
     const inspected = inspectedOfficialRecordIds();
-    expect(inspected.size).toBeGreaterThan(0);
     for (const id of inspected) {
+      expect(recordInspectionState(id), id).toBe('FULLY_INSPECTED');
       const rec = MASTER_RECORDS.find((r) => r.recordId === id);
-      if (!rec) continue;
-      expect(rec.intentStatus, id).toBe('page_level_inspected');
+      if (rec) expect(rec.intentStatus, id).toBe('page_level_inspected');
+    }
+    // Partial progress is visible rather than rounded up or away.
+    const summary = recordInspectionSummary();
+    expect(summary.length).toBeGreaterThan(20);
+    expect(summary.some((r) => r.state === 'PARTIALLY_INSPECTED')).toBe(true);
+    for (const r of summary) {
+      if (r.state === 'PARTIALLY_INSPECTED') {
+        // Partial can mean unread pages OR pages read but not yet
+        // rendered where the picture carries the mathematics — the
+        // text-page count alone does not decide it.
+        expect(r.pagesInspected, r.officialRecordId).toBeGreaterThan(0);
+        expect(recordInspectionState(r.officialRecordId)).not.toBe('FULLY_INSPECTED');
+      }
+    }
+  });
+
+  it('does not call a chapter inspected when one of its units is still an index', () => {
+    for (const id of officialRecordIdsTouched()) {
+      const units = instructionalUnitsFor(id);
+      const anyDigest = units.some((u) => u.sourceEvidence.evidenceDepth === 'DIGEST_ONLY');
+      if (anyDigest) expect(recordInspectionState(id), id).not.toBe('FULLY_INSPECTED');
+    }
+  });
+
+  it('checks the whole range, so one rendered page cannot carry a unit', () => {
+    for (const u of readyForAuthoring()) {
+      const e = u.sourceEvidence;
+      const pages = e.pageEvidence;
+      expect(pages.length, u.instructionalUnitId).toBe(e.pdfPageEnd - e.pdfPageStart + 1);
+      for (const pg of pages) {
+        expect(pg.fullTextInspected, `${u.instructionalUnitId} p${pg.pdfPage}`).toBe(true);
+        if (pg.visualInspectionRequired) {
+          expect(pg.visualInspected, `${u.instructionalUnitId} p${pg.pdfPage}`).toBe(true);
+        } else {
+          // A page excused from rendering must say why.
+          expect(pg.note.length, `${u.instructionalUnitId} p${pg.pdfPage}`).toBeGreaterThan(20);
+        }
+      }
+    }
+  });
+
+  it('reports every per-class unit count from the canonical dataset', () => {
+    const md = read('INSTRUCTIONAL_MASTER_BLUEPRINT.md');
+    for (const p of CLASS_DECOMPOSITION_PROGRESS) {
+      const n = unitsForClass(p.classNumber).length;
+      const row = md.split('\n').find((l) => l.startsWith(`| Class ${p.classNumber} |`))!;
+      expect(row, `class${p.classNumber}`).toContain(`| ${n} |`);
     }
   });
 
@@ -257,7 +309,7 @@ describe('§7/§8 one meaning of page-level intent inspected', () => {
     const c = decompositionCoverage(477);
     expect(c.officialRecordsInspected).toBe(inspectedOfficialRecordIds().size);
     expect(c.unitsWithCompleteEvidence).toBe(readyForAuthoring().length);
-    expect(c.classesFullyInspected).toBe(0); // neither class is complete yet
+    expect(c.classesFullyInspected).toBe(0); // neither class is source-complete yet
     expect(c.projectedLessonCount).toBeNull();
   });
 });

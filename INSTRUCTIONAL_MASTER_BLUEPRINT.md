@@ -20,8 +20,8 @@ NOT STARTED — its unit count is unknown, not zero.
 
 | Class | Official chapters | Official sections | Pages (indexed / full text / visual) | Pragati units drafted | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Class 1 | 13 | — | 104 indexed / 63 full text / 12 visual | 44 | 5 | 39 | 0 | 0 | 44 | IN_PROGRESS |
-| Class 2 | 11 | — | 88 indexed / 22 full text / 12 visual | 46 | 5 | 41 | 0 | 0 | 46 | IN_PROGRESS |
+| Class 1 | 13 | — | 130 indexed / 123 full text / 50 visual | 47 | 9 | 38 | 0 | 0 | 47 | IN_PROGRESS |
+| Class 2 | 11 | — | 132 indexed / 24 full text / 16 visual | 46 | 2 | 44 | 0 | 0 | 46 | IN_PROGRESS |
 | Class 3 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 4 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 5 | 15 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -35,13 +35,13 @@ NOT STARTED — its unit count is unknown, not zero.
 
 ## Class 1
 
-All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full text; 12 pages were rendered and looked at. The other chapters rest on the index alone, so their units are drafts.
+123 of 130 pages read in full text. 7 pages remain unread, so this class is not source-complete and its unread units are drafts.
 
 #### Where is it? Position words
 
 - **Id** `pragati_iu_g01_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch01`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 4, 5
 - **Source** aejm1, printed pp. 1–6 (PDF pp. 1–6), read 2026-09-24. Establishes: Poem and picture tasks that ask children to place and identify objects by position; ball in/out of the basket.
 - **Objective** Describe where an object is using in/out, on/under, above/below, near/far.
 - **Student can** I can say where something is using words like inside, outside, above and below.
@@ -57,7 +57,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch01`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 7
 - **Source** aejm1, printed pp. 7–8 (PDF pp. 7–8), read 2026-09-24. Establishes: The train rhyme and the game of naming who is before and after each child.
 - **Objective** Describe order in a line using before, after and between.
 - **Student can** I can say who is before me, after me and between two friends.
@@ -73,8 +73,8 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch01`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
-- **Source** aejm1, printed pp. 9–10 (PDF pp. 9–10), read 2026-09-24. Establishes: Suwali's buttons sorted into three groups, then re-sorted another way.
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Source** aejm1, printed pp. 9–9 (PDF pp. 9–9), read 2026-09-24. Establishes: Suwali's buttons sorted into three groups, then re-sorted another way.
 - **Objective** Sort a collection by a chosen attribute and say the rule used.
 - **Student can** I can put things into groups and tell how I grouped them.
 - **Mathematical ideas** classification; attribute; sorting rule
@@ -89,7 +89,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch02`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 2, 3
 - **Source** aejm1, printed pp. 10–13 (PDF pp. 1–4), read 2026-09-24. Establishes: Naming long and round things, drawing them in two groups, matching similar shapes.
 - **Objective** Sort objects by shape attributes: long and round.
 - **Student can** I can tell whether a thing is long or round and find others like it.
@@ -105,7 +105,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch02`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 6, 7
 - **Source** aejm1, printed pp. 14–17 (PDF pp. 5–8), read 2026-09-24. Establishes: The wise-grandmother story, the carrom picture and the rolls/slides/both table.
 - **Objective** Test how a solid moves and classify it as rolling, sliding or both.
 - **Student can** I can roll and slide things and say which they do.
@@ -121,7 +121,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch03`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 3, 4
 - **Source** aejm1, printed pp. 18–21 (PDF pp. 1–4), read 2026-09-24. Establishes: Birds joining the mango one at a time; matching quantities to fingers and to dots.
 - **Objective** Count a collection up to 9 and say what one more makes.
 - **Student can** I can count up to 9 things and say the number that is one more.
@@ -137,7 +137,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch03_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch03`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 6
 - **Source** aejm1, printed pp. 22–24 (PDF pp. 5–7), read 2026-09-24. Establishes: The drawing-day table of objects more than / less than the number of children.
 - **Objective** Compare two collections and say which has more, fewer or the same.
 - **Student can** I can compare two groups and say which has more.
@@ -153,7 +153,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch03_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch03`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 11
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 8, 11
 - **Source** aejm1, printed pp. 25–30 (PDF pp. 8–13), read 2026-09-24. Establishes: Circle-and-write tasks for 1-9, the 1-to-9 path, shuffled cards and missing numbers.
 - **Objective** Match a numeral to a quantity, write it, and place numbers in order.
 - **Student can** I can write the numbers 1 to 9 and put them in order.
@@ -162,14 +162,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch03_u1
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Seeing how many without counting
 
 - **Id** `pragati_iu_g01_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch04`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 1
 - **Source** aejm1, printed pp. 33–34 (PDF pp. 1–2), read 2026-09-24. Establishes: Dot designs made with seeds and the dice-and-colour game.
 - **Objective** Recognise small dot arrangements at a glance and make your own.
 - **Student can** I can look at a dot pattern and say how many without counting one by one.
@@ -178,7 +178,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch03_u1
 - **Role** NEW_INSTRUCTION · **reasoning** recall · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Zero: when there is nothing left
@@ -201,7 +201,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch04`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 6
 - **Source** aejm1, printed pp. 37–38 (PDF pp. 5–6), read 2026-09-24. Establishes: The tenth-birthday count, ten beads on a string and ten frames of buttons.
 - **Objective** Make a group of ten and use it to count.
 - **Student can** I can make a group of ten and use it to count things.
@@ -210,7 +210,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch03_u3
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Number pairs that make 5 and 10
@@ -233,7 +233,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch04_u5` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch04`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 9, 11, 12, 13
 - **Source** aejm1, printed pp. 41–45 (PDF pp. 9–13), read 2026-09-24. Establishes: "10 and 3 is 13" spreads, ten-frame colouring, sequences and the tallest-tower task.
 - **Objective** Read, write and build the numbers 11-20 as a ten and some ones.
 - **Student can** I can show a number like 14 as one ten and four more.
@@ -242,14 +242,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch04_u3; pragati_iu_g01_ch04_u4
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Putting groups together: addition to 9
 
 - **Id** `pragati_iu_g01_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch05`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 2, 5
 - **Source** aejm1, printed pp. 48–52 (PDF pp. 1–5), read 2026-09-24. Establishes: Park scene, "4 children and 2 children altogether make __", finger and dice totals.
 - **Objective** Find how many altogether by joining two groups.
 - **Student can** I can put two groups together and say how many there are altogether.
@@ -265,7 +265,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch05`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 7
 - **Source** aejm1, printed pp. 53–56 (PDF pp. 6–9), read 2026-09-24. Establishes: Beads and string, hop-and-find-the-sum, "add in your own way" and the number-pair wheels.
 - **Objective** Add by counting on, by hopping on a number strip, and by using pairs.
 - **Student can** I can add in more than one way and get the same answer.
@@ -274,7 +274,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch05_u1; pragati_iu_g01_ch04_u4
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Addition stories
@@ -297,7 +297,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch05_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch05`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 13
 - **Source** aejm1, printed pp. 58–60 (PDF pp. 11–13), read 2026-09-24. Establishes: The five-little-children rhyme and the "how many left" frames with 6 - 2 = __.
 - **Objective** Find how many are left when some are taken away.
 - **Student can** I can take some away and say how many are left.
@@ -313,7 +313,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch06`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 3
 - **Source** aejm1, printed pp. 64–68 (PDF pp. 1–5), read 2026-09-24. Establishes: Rumi and Shami's baskets (7 + 5, 9 + 4) and the ginladi method for 12 + 4.
 - **Objective** Add a small number to a number beyond ten by counting on.
 - **Student can** I can start at 12 and count on 4 more on my bead string.
@@ -322,7 +322,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch05_u2; pragati_iu_g01_ch04_u5
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 - **Note** Pages 69 onward of this chapter were not read in this pass; a later unit may be needed for the rest of the chapter.
 
@@ -330,7 +330,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch07`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 4
 - **Source** aejm1, printed pp. 72–75 (PDF pp. 1–4), read 2026-09-24. Establishes: Lina's family compared by height; longest/shortest picture tasks; the Statue of Unity.
 - **Objective** Compare objects directly and order them by length or height.
 - **Student can** I can put things in order from shortest to longest.
@@ -339,14 +339,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** none recorded
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Measuring with handspans and footspans
 
 - **Id** `pragati_iu_g01_ch07_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch07`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: 6, 8
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 6, 7, 8
 - **Source** aejm1, printed pp. 76–79 (PDF pp. 5–8), read 2026-09-24. Establishes: Measuring the table, bag and blackboard; guess-and-find tables for handspans and footspans.
 - **Objective** Measure a length by repeating a non-standard unit, after estimating.
 - **Student can** I can guess how many handspans long something is and then check.
@@ -355,14 +355,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch07_u1
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Heavier and lighter
 
 - **Id** `pragati_iu_g01_ch07_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch07`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: 8
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 8
 - **Source** aejm1, printed pp. 79–80 (PDF pp. 8–9), read 2026-09-24. Establishes: Tick the heavier/lighter object, then "who is heavier between you and your friend?"
 - **Objective** Compare two objects by weight and say which is heavier.
 - **Student can** I can hold two things and say which is heavier.
@@ -371,14 +371,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** none recorded
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Numbers 21 to 50 as tens and ones
 
 - **Id** `pragati_iu_g01_ch08_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch08`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 6
 - **Source** aejm1, printed pp. 84–89 (PDF pp. 1–6), read 2026-09-24. Establishes: Packing oranges in boxes of ten; number spreads 21-50; ten-frame fill-ins.
 - **Objective** Build, read and write numbers to 50 using groups of ten.
 - **Student can** I can show 34 as three tens and four ones.
@@ -387,14 +387,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch04_u5
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Counting forward and back, and missing numbers
 
 - **Id** `pragati_iu_g01_ch08_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch08`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7
 - **Source** aejm1, printed pp. 90–90 (PDF pp. 7–7), read 2026-09-24. Establishes: Fill-the-missing-number grids (46, 42, 39, 34) and backward counting.
 - **Objective** Continue a count in either direction and fill missing numbers to 50.
 - **Student can** I can count on and count back, and fill in numbers that are missing.
@@ -403,14 +403,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch08_u1
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Numbers 51 to 99
 
 - **Id** `pragati_iu_g01_ch08_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch08`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
 - **Source** aejm1, printed pp. 91–92 (PDF pp. 8–9), read 2026-09-24. Establishes: Counting and writing 51-60 and 61-80 spreads; the mirror-design count.
 - **Objective** Read, write and count numbers from 51 to 99.
 - **Student can** I can count and write numbers up to 99.
@@ -419,7 +419,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch08_u1
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 - **Note** Pages beyond 92 of this chapter were not read in this pass.
 
@@ -427,7 +427,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch09_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch09`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: 3
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 3, 5
 - **Source** aejm1, printed pp. 98–102 (PDF pp. 1–5), read 2026-09-24. Establishes: Extending drawn patterns, colouring pattern strips and reasoning about what colour comes next.
 - **Objective** Find the rule of a repeating pattern and extend it.
 - **Student can** I can see what repeats in a pattern and draw what comes next.
@@ -436,14 +436,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** none recorded
 - **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Number patterns
 
 - **Id** `pragati_iu_g01_ch09_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch09`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6
 - **Source** aejm1, printed pp. 103–103 (PDF pp. 6–6), read 2026-09-24. Establishes: Study-the-pattern-and-fill-the-missing-numbers task.
 - **Objective** Continue a number pattern and say the rule.
 - **Student can** I can fill the missing numbers in a pattern and say how it grows.
@@ -452,14 +452,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch08_u2
 - **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Patterns in kolam and rangoli
 
 - **Id** `pragati_iu_g01_ch09_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch09`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
 - **Source** aejm1, printed pp. 104–104 (PDF pp. 7–7), read 2026-09-24. Establishes: Completing the kolam Murthy and Vani are drawing.
 - **Objective** Complete a kolam pattern and describe its repeat.
 - **Student can** I can finish a kolam pattern by following its repeat.
@@ -468,14 +468,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch09_u1
 - **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Parts of the day and the order of events
 
 - **Id** `pragati_iu_g01_ch10_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch10`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
 - **Source** aejm1, printed pp. 105–107 (PDF pp. 1–3), read 2026-09-24. Establishes: Pihu's daily routine and the tick-the-activity tasks for each part of the day.
 - **Objective** Name parts of the day and put daily events in order.
 - **Student can** I can say what I do in the morning, afternoon and night, in order.
@@ -484,14 +484,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** none recorded
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Which takes longer?
 
 - **Id** `pragati_iu_g01_ch10_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch10`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4
 - **Source** aejm1, printed pp. 108–108 (PDF pp. 4–4), read 2026-09-24. Establishes: Colour the activity that usually takes longer.
 - **Objective** Compare two activities by how long they take.
 - **Student can** I can say which of two things takes longer.
@@ -500,14 +500,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch10_u1
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Seasons of the year
 
 - **Id** `pragati_iu_g01_ch10_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch10`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 5
 - **Source** aejm1, printed pp. 109–110 (PDF pp. 5–6), read 2026-09-24. Establishes: Season pictures matched to objects and clothes.
 - **Objective** Name the seasons and match things to the season they belong to.
 - **Student can** I can name the seasons and say what belongs to each.
@@ -516,7 +516,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch10_u1
 - **Role** GUIDED_APPLICATION · **reasoning** recall · **complexity** 1/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 - **Note** Mathematically light: cyclic sequence and classification only. Kept because the source teaches it here.
 
@@ -524,7 +524,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch11_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch11`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: 3
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 3, 4
 - **Source** aejm1, printed pp. 111–114 (PDF pp. 1–4), read 2026-09-24. Establishes: Two children per horse, 3 jalebis per plate, 2 people per bus row: "9 times 2 =" and "5 times 3 =".
 - **Objective** Find a total of equal groups by adding the same number again and again.
 - **Student can** I can say "5 times 3" and add 3 five times to find the total.
@@ -533,14 +533,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch05_u1
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** One chapter, one clearly separable idea; recorded as a single unit rather than split, because the pages build one progression.
 
 #### Knowing our coins and notes
 
 - **Id** `pragati_iu_g01_ch12_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch12`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
 - **Source** aejm1, printed pp. 115–116 (PDF pp. 1–2), read 2026-09-24. Establishes: Riya counting coins and Sahil counting notes; the toy-seller prices.
 - **Objective** Recognise Indian coins and notes and say their value.
 - **Student can** I can name the coins and notes and say how much each is worth.
@@ -549,14 +549,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch08_u1
 - **Role** NEW_INSTRUCTION · **reasoning** recall · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Making an amount in different ways
 
 - **Id** `pragati_iu_g01_ch12_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch12`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 3, 4
 - **Source** aejm1, printed pp. 117–119 (PDF pp. 3–5), read 2026-09-24. Establishes: Find the total amount, fill combinations for `20, `10, `13, `8 and match equal amounts.
 - **Objective** Make a given amount with different combinations of coins and notes.
 - **Student can** I can pay the same amount in more than one way.
@@ -565,14 +565,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch12_u1; pragati_iu_g01_ch05_u1
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Counting groups in a picture and comparing them
 
 - **Id** `pragati_iu_g01_ch13_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch13`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: 1
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
 - **Source** aejm1, printed pp. 120–122 (PDF pp. 1–2), read 2026-09-24. Establishes: Counting dolls, cars and elephants; then counting flowers by colour and judging true/false statements.
 - **Objective** Count each kind of thing in a picture and compare the counts.
 - **Student can** I can count each kind of toy and say which there are more of.
@@ -581,7 +581,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch03_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.
 
 #### Counting in a busy picture, and two groups that make a number
@@ -604,7 +604,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch04_u6` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch04`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 13
 - **Source** aejm1, printed pp. 45–46 (PDF pp. 13–14), read 2026-09-25. Establishes: Tallest tower and most/least blocks; circle the smallest and biggest; write numbers biggest to smallest, with the teacher note that 15 is bigger than 11 because it is 4 more.
 - **Objective** Compare numbers up to 20 and put them in order, explaining why.
 - **Student can** I can say which of two numbers is bigger and why.
@@ -652,7 +652,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch06`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6
 - **Source** aejm1, printed pp. 69–69 (PDF pp. 6–6), read 2026-09-25. Establishes: A page of subtractions within 20: 16-4, 12-5, 14-7, 15-9, 17-9 and others.
 - **Objective** Subtract within 20, including from teen numbers.
 - **Student can** I can work out 16 - 7.
@@ -661,14 +661,14 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch05_u4
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.
 
 #### Adding and subtracting can land in the same place
 
 - **Id** `pragati_iu_g01_ch06_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch06`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7
 - **Source** aejm1, printed pp. 70–70 (PDF pp. 7–7), read 2026-09-25. Establishes: Anjali jumps 2 ahead from 6 and Renu 7 back from 15; add-subtract-and-match pairs onto 12, 14, 15, 17, 18.
 - **Objective** See that an addition and a subtraction can reach the same number, and match pairs that do.
 - **Student can** I can show that 8 + 7 and 18 - 3 land on the same number.
@@ -677,7 +677,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch06_u1; pragati_iu_g01_ch06_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.
 
 #### Two-step and missing-part problem stories
@@ -700,7 +700,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch08_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch08`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 12
 - **Source** aejm1, printed pp. 93–95 (PDF pp. 10–12), read 2026-09-25. Establishes: Counting and writing 81-100; placing a random number card on the ginladi; the slide-and-ladder grid with missing numbers to 100.
 - **Objective** Read, write and sequence numbers to 100 and recognise 100 as ten tens.
 - **Student can** I can count and write up to 100.
@@ -732,7 +732,7 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 
 - **Id** `pragati_iu_g01_ch13_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch13`
-- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: 5, 6, 8
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8
 - **Source** aejm1, printed pp. 124–127 (PDF pp. 5–8), read 2026-09-25. Establishes: Fill shapes so each occurs once per row and column; "who am I" mirror-number riddles; equal-total crosses; the matchstick and jigsaw tasks.
 - **Objective** Solve constraint and symmetry puzzles: one shape per row and column, mirror numbers, equal-sum crosses.
 - **Student can** I can place shapes so each one appears once in every row and column.
@@ -741,13 +741,64 @@ All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full
 - **Prerequisites** pragati_iu_g01_ch03_u3; pragati_iu_g01_ch05_u1
 - **Role** ENRICHMENT · **reasoning** generalise · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** The first pass classified the whole Puzzles section as rehearsal. Rendering the pages showed otherwise: the Latin-square constraint, mirror symmetry and equal-sum reasoning are not taught anywhere earlier in the book.
 - **Note** Whether enrichment of this kind belongs in Pragati at Class 1 is a human decision, not a source question.
 
+#### How much does it hold?
+
+- **Id** `pragati_iu_g01_ch07_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_aejm1_ch07`
+- **Evidence depth** DIGEST_ONLY · visually dependent · pages looked at: none yet
+- **Source** aejm1, printed pp. 81–83 (PDF pp. 10–12), read 2026-09-25. Establishes: Filling the bucket with jugs, glasses and bowls; comparing two water bottles; circling the container that holds more; the water-saving discussion.
+- **Objective** Compare capacity and measure it by filling with a repeated container.
+- **Student can** I can say how many glasses of water fill the bottle, and which holds more.
+- **Mathematical ideas** capacity; iterating a unit of volume; comparison of containers
+- **Representations** bucket, jugs, glasses, bowls; pairs of containers to compare
+- **Prerequisites** pragati_iu_g01_ch07_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition DRAFT_DECOMPOSITION · review flagged_for_review
+- **Why this split** Capacity is a third measurable attribute in this chapter, alongside length and weight, and the earlier passes missed it entirely.
+- **Note** Found only when the full chapter was read: the first pass stopped at the weight pages.
+
+#### Puzzles that need constraint reasoning
+
+- **Id** `pragati_iu_g01_ch13_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_aejm1_ch13`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8
+- **Source** aejm1, printed pp. 124–127 (PDF pp. 5–8), read 2026-09-25. Establishes: Shapes once per row and column; four objects in a grid; 1-5 in balls so both sides are equal; three chart numbers summing to 17; 5-9 so row and column share a total; the centre-number crosses.
+- **Objective** Place numbers or shapes so that a stated condition holds everywhere at once.
+- **Student can** I can fill the grid so each shape appears once in every row and column.
+- **Mathematical ideas** constraint satisfaction (Latin square); equal sums along lines; searching combinations systematically
+- **Representations** grid of cells; balls and crosses to label; number chart for the sum-to-17 task
+- **Prerequisites** pragati_iu_g01_ch05_u1; pragati_iu_g01_ch03_u3
+- **Role** ENRICHMENT · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** The first pass called the whole Puzzles section rehearsal. Rendering the pages showed constraint reasoning that appears nowhere else in the book, so it is a unit of its own.
+- **Note** Whether Class 1 should carry constraint puzzles at all is a curriculum judgement for a human, not something the source settles.
+
+#### Puzzles that reach past Class 1 mathematics
+
+- **Id** `pragati_iu_g01_ch13_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_aejm1_ch13`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9
+- **Source** aejm1, printed pp. 126–128 (PDF pp. 7–9), read 2026-09-25. Establishes: "How many times can you subtract 5 from 25?"; the watermelon-and-orange value puzzle; the minimum number of coins for `49; choose three balls for the maximum and minimum score.
+- **Objective** Notice where a puzzle needs an idea the book has not taught yet.
+- **Student can** I can find the value of the fruit, and say how many fives are in 25.
+- **Mathematical ideas** repeated subtraction as division; symbol standing for an unknown value; minimising a choice
+- **Representations** fruit-symbol equations; coins of different values; number balls
+- **Prerequisites** pragati_iu_g01_ch05_u4; pragati_iu_g01_ch12_u2
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Separated from the constraint puzzles because these require ideas Class 1 has not met: division by repeated subtraction, a symbol standing for a value, and optimisation.
+- **Note** Flagged for human decision: this is arguably Class 2-3 mathematics appearing in a Class 1 puzzle page.
+
 ## Class 2
 
-All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full text; 12 pages were rendered. Every other Class 2 unit rests on the index alone.
+24 of 132 pages read in full text. 108 pages remain unread, so this class is not source-complete and its unread units are drafts.
 
 #### Counting in groups of ten
 
@@ -1348,7 +1399,7 @@ All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full
 
 - **Id** `pragati_iu_g02_ch06_u7` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch06`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 17
 - **Source** bejm1, printed pp. 64–67 (PDF pp. 15–18), read 2026-09-25. Establishes: Jyoti's garlands: 46 - 18 shown as opening a garland, then 54 - 28 and 73 - 47, and a practice set.
 - **Objective** Subtract when the ones are too few, by exchanging one ten for ten ones.
 - **Student can** I can open one ten to take away more ones.
@@ -1357,7 +1408,7 @@ All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full
 - **Prerequisites** pragati_iu_g02_ch06_u6
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.
 
 #### Fact families and missing parts
@@ -1380,7 +1431,7 @@ All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full
 
 - **Id** `pragati_iu_g02_ch08_u5` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch08`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 10
 - **Source** bejm1, printed pp. 91–92 (PDF pp. 9–10), read 2026-09-25. Establishes: Table of 4 from the table of 2, table of 7 from 3 and 4, table of 8 from 2 and 6, and the 24-objects array project.
 - **Objective** Make a new table by adding two known tables.
 - **Student can** I can make the table of 7 by adding the tables of 3 and 4.
@@ -1389,7 +1440,7 @@ All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full
 - **Prerequisites** pragati_iu_g02_ch08_u3
 - **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.
 
 #### Sharing equally
@@ -1444,7 +1495,7 @@ All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full
 
 - **Id** `pragati_iu_g02_ch09_u5` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch09`
-- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11
+- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: 11
 - **Source** bejm1, printed pp. 106–109 (PDF pp. 9–12), read 2026-09-25. Establishes: The trip questions about hours, Gargi's day written as o'clock times, reading clocks and drawing both hands.
 - **Objective** Read o'clock times and draw the hands to show a given time.
 - **Student can** I can read 3 o'clock and draw the hands for 9 o'clock.
@@ -1453,7 +1504,7 @@ All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full
 - **Prerequisites** pragati_iu_g02_ch09_u3
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.
 
 #### Finding the way: left, right and straight
@@ -1490,5 +1541,5 @@ All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full
 
 ## Records read and found non-instructional
 
-- **ncert_aejm1_ch13_puzzles** (class1) — ENRICHMENT. Re-inspected by rendering the pages. Most of the section rehearses taught material and is recorded here, but the constraint and symmetry puzzles on pages 124-127 do introduce new reasoning and are now a unit (pragati_iu_g01_ch13_u2) rather than being hidden inside this record. Pages 123–128.
-- **ncert_bejm1_ch11_puzzles** (class2) — ENRICHMENT. First-pass classification from the page index only. Rendering was not done for this section, so whether its puzzles introduce new reasoning is UNRESOLVED; it must not be treated as settled. Pages 130–131.
+- **ncert_aejm1_ch13** (class1) — REVIEW. Re-inspected page by page. Pages 122-123 and the shadow, matchstick and word-search tasks rehearse counting, number names and spatial matching already taught, so they are recorded rather than made authoring targets. The constraint puzzles and the beyond-Class-1 puzzles on the same spread are NOT covered here: they are pragati_iu_g01_ch13_u3 and _u4. Pages 122–125.
+- **ncert_bejm1_ch11_puzzles** (class2) — NON_INSTRUCTIONAL. UNRESOLVED. Class 2's puzzle pages have not had their full text read or their visuals rendered, so no classification is justified yet. Class 1's equivalent changed from "rehearsal" to three separate roles once its pages were actually read, which is exactly why this one may not be settled from an index. Pages 130–131.
