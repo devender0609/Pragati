@@ -32,12 +32,11 @@ export function blueprintClassRows(): string[][] {
     const records = authoringUnits(n);
     const learn = records.filter((r) => productStatus(r).learn === 'authored').length;
     const c = textbookCounts(n);
-    const inspected = p ? p.pagesInspected : 0;
     return [
       `Class ${n}`,
       cell(c.chapter) + (textbookDenominatorKnown(n) ? '' : ' (Part I only; total UNKNOWN)'),
       cell(c.section),
-      p ? String(inspected) : '0',
+      p ? `${p.pagesIndexed ?? p.pagesInspected} indexed / ${p.pagesFullyInspected} full text / ${p.visualPagesInspected ?? 0} visual` : '0',
       p ? String(units.length) : 'NOT STARTED',
       String(units.filter((u) => u.decompositionStatus === 'READY_FOR_AUTHORING').length),
       String(units.filter((u) => u.humanReviewStatus === 'flagged_for_review').length),
@@ -51,7 +50,7 @@ export function blueprintClassRows(): string[][] {
 
 export function blueprintTable(): string {
   return table(
-    ['Class', 'Official chapters', 'Official sections', 'Pages inspected', 'Pragati units', 'Ready for authoring', 'Needs human check', 'Blocked', 'Existing Learn mapped', 'Missing Learn', 'Decomposition'],
+    ['Class', 'Official chapters', 'Official sections', 'Pages (indexed / full text / visual)', 'Pragati units drafted', 'Ready for authoring', 'Needs human check', 'Blocked', 'Existing Learn mapped', 'Missing Learn', 'Decomposition'],
     blueprintClassRows()
   );
 }
@@ -62,6 +61,7 @@ function unitBlock(u: PragatiInstructionalUnit): string {
 
 - **Id** \`${u.instructionalUnitId}\` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** \`${u.officialRecordId}\`${u.additionalOfficialRecordIds.length ? ` (also ${u.additionalOfficialRecordIds.join(', ')})` : ''}
+- **Evidence depth** ${e.evidenceDepth}${e.visuallyDependent ? ` · visually dependent · pages looked at: ${e.visualPagesInspected.length ? e.visualPagesInspected.join(', ') : 'none yet'}` : ''}
 - **Source** ${e.bookId}${e.bookPart ? ` ${e.bookPart}` : ''}, printed pp. ${e.printedPageStart ?? '—'}–${e.printedPageEnd ?? '—'} (PDF pp. ${e.pdfPageStart}–${e.pdfPageEnd}), read ${e.inspectedOn}. Establishes: ${e.establishes}
 - **Objective** ${u.mathematicalObjective}
 - **Student can** ${u.studentCanStatement}
@@ -84,6 +84,13 @@ This blueprint says what Pragati must **teach**. It does not say Pragati
 teaches it. Every unit below is **Pragati-created** and points back at the
 official record it serves; no unit is an NCERT section, and no official
 record was altered to make authoring tidier.
+
+**Evidence vocabulary.** *Indexed* means headings and opening text only —
+navigation, not inspection. *Full text* means every page's extracted text
+was read. *Visual* means the page was rendered and looked at, which
+early-primary mathematics usually needs. A unit is authoring-ready only
+when its whole range is full text and, where the mathematics lives in the
+visuals, those pages were seen.
 
 **Read so far:** ${done.map((p) => `Class ${p.classNumber}`).join(', ') || 'none'}. Every other class is
 NOT STARTED — its unit count is unknown, not zero.

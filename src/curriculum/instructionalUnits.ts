@@ -29,8 +29,9 @@
 // ===========================================================================
 
 import type { Grade } from '../types';
-import { MASTER_RECORDS } from './curriculumMasterMap';
+
 import decompositionJson from './data/instructionalDecomposition.json';
+import { inspectedRecordsRef } from './curriculumMasterMap';
 
 /**
  * v0.84.0 — THE DECOMPOSITION SCHEMA, NOW POPULATED FROM THE PAGES.
@@ -81,6 +82,24 @@ export type MisconceptionEvidence =
   | 'TO_BE_DEVELOPED'
   | 'UNKNOWN';
 
+/**
+ * v0.84.0 hardening — HOW MUCH OF THE PAGE WAS ACTUALLY SEEN.
+ *
+ * The first pass used `digest.py`, which prints each page's folio,
+ * headings and opening text. That is an index, not an inspection: the
+ * mathematics of an early-primary page often lives in the ten frame, the
+ * number strip, the array or the picture task, none of which the opening
+ * line mentions. So evidence depth is recorded per unit, and a unit
+ * cannot be authoring-ready on an index alone.
+ */
+export type EvidenceDepth =
+  /** Headings and opening text only. Navigation, not evidence. */
+  | 'DIGEST_ONLY'
+  /** Complete extracted text of every page in the range. */
+  | 'FULL_TEXT_INSPECTED'
+  /** Complete text, and the pages were rendered and looked at. */
+  | 'FULL_PAGE_INSPECTED';
+
 export type SourceEvidence = {
   /** Book code as published, e.g. "aejm1" (Joyful Mathematics, Class 1). */
   bookId: string;
@@ -98,6 +117,14 @@ export type SourceEvidence = {
   inspectedOn: string;
   /** What these pages establish, in one line. */
   establishes: string;
+  /** How much of the range was seen. */
+  evidenceDepth: EvidenceDepth;
+  /** Does the mathematics live in the visuals — ten frames, number
+   *  strips, arrays, pictographs, shape tasks? If so, text alone cannot
+   *  settle it. */
+  visuallyDependent: boolean;
+  /** Printed pages actually rendered and looked at, where that was done. */
+  visualPagesInspected: number[];
 };
 
 export type PragatiInstructionalUnit = {
@@ -148,6 +175,16 @@ export type PragatiInstructionalUnit = {
     note: string;
   } | null;
   notes: string | null;
+  /** v0.84.0 hardening §4 — the verdict of the re-audit against the
+   *  stronger evidence standard. */
+  hardeningClassification?:
+    | 'CONFIRMED'
+    | 'NEEDS_SPLIT'
+    | 'NEEDS_MERGE'
+    | 'NEEDS_SCOPE_CHANGE'
+    | 'NOT_SUPPORTED'
+    | 'NEEDS_HUMAN_CHECK';
+  hardeningNote?: string;
 };
 
 /** An official record read and found to carry no new teaching. */
@@ -166,9 +203,23 @@ type DecompositionFile = {
   /** Classes whose page-level pass is finished, and what remains. */
   classProgress: Array<{
     classNumber: number;
+    /**
+     * COMPLETE means every page of every chapter was inspected to the
+     * depth its mathematics needs, and what remains is human judgement
+     * rather than unread source. Unread pages keep a class IN_PROGRESS
+     * however many units it already has.
+     */
     status: 'COMPLETE' | 'IN_PROGRESS' | 'NOT_STARTED' | 'BLOCKED_SOURCE';
     chaptersInspected: number;
     chaptersTotal: number;
+    /** Pages seen through the index only. Navigation, not evidence. */
+    pagesIndexed?: number;
+    /** Pages whose full extracted text was read. */
+    pagesFullyInspected: number;
+    /** Pages rendered and actually looked at. */
+    visualPagesInspected?: number;
+    /** Deprecated alias of pagesFullyInspected, kept so older reports
+     *  do not silently read a different number. */
     pagesInspected: number;
     note: string;
   }>;
@@ -201,6 +252,40 @@ export function recordIsCovered(officialRecordId: string): boolean {
   );
 }
 
+/**
+ * The gate, in one place so the data and the tests cannot disagree.
+ *
+ * A unit may be authoring-ready only when its whole page range has been
+ * read in full, and — where the mathematics is carried by the visuals —
+ * those pages have actually been looked at.
+ */
+export function meetsEvidenceBar(u: PragatiInstructionalUnit): boolean {
+  const e = u.sourceEvidence;
+  if (u.intentInspectionStatus !== 'INSPECTED') return false;
+  if (e.evidenceDepth === 'DIGEST_ONLY') return false;
+  if (e.visuallyDependent && e.visualPagesInspected.length === 0) return false;
+  return true;
+}
+
+/**
+ * The official records someone has actually read the pages of — the one
+ * authoritative answer to "page-level intent inspected". The master map
+ * derives its per-record status from this rather than keeping a second,
+ * hand-maintained copy that drifts.
+ */
+export function inspectedOfficialRecordIds(): Set<string> {
+  const ids = new Set<string>();
+  for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+    if (u.sourceEvidence.evidenceDepth === 'DIGEST_ONLY') continue;
+    ids.add(u.officialRecordId);
+    for (const extra of u.additionalOfficialRecordIds) ids.add(extra);
+  }
+  for (const r of NON_INSTRUCTIONAL_RECORDS) {
+    if (r.sourceEvidence.evidenceDepth !== 'DIGEST_ONLY') ids.add(r.officialRecordId);
+  }
+  return ids;
+}
+
 export function readyForAuthoring(): PragatiInstructionalUnit[] {
   return PRAGATI_INSTRUCTIONAL_UNITS.filter(
     (u) => u.decompositionStatus === 'READY_FOR_AUTHORING'
@@ -210,9 +295,17 @@ export function readyForAuthoring(): PragatiInstructionalUnit[] {
 export type DecompositionCoverage = {
   /** Source-grain records. NOT a lesson count. */
   officialAuthoringRecords: number;
-  /** Records whose pages have been read. */
-  intentInspected: number;
-  /** Pragati units that exist. Zero today. */
+  /**
+   * v0.84.0 hardening §8 — three different questions, three numbers.
+   * The old single `intentInspected` came from the master map's own
+   * status field, which no longer knew about Classes 1-2, so the metric
+   * reported the wrong world. It is now derived from the decomposition,
+   * which is the record of who read what.
+   */
+  officialRecordsInspected: number;
+  unitsWithCompleteEvidence: number;
+  classesFullyInspected: number;
+  /** Pragati units that exist. */
   instructionalUnits: number;
   /** How many lessons the product will need: unknowable until the pages
    *  are read, and reported as null rather than guessed from records. */
@@ -222,9 +315,9 @@ export type DecompositionCoverage = {
 export function decompositionCoverage(records: number): DecompositionCoverage {
   return {
     officialAuthoringRecords: records,
-    intentInspected: MASTER_RECORDS.filter(
-      (r) => r.intentStatus === 'page_level_inspected'
-    ).length,
+    officialRecordsInspected: inspectedOfficialRecordIds().size,
+    unitsWithCompleteEvidence: PRAGATI_INSTRUCTIONAL_UNITS.filter(meetsEvidenceBar).length,
+    classesFullyInspected: CLASS_DECOMPOSITION_PROGRESS.filter((p) => p.status === 'COMPLETE').length,
     instructionalUnits: PRAGATI_INSTRUCTIONAL_UNITS.length,
     // Still null, and still for the same reason: the classes whose pages
     // have not been read yet cannot have their lesson count guessed from
@@ -242,7 +335,13 @@ export function sourceGrainCaveat(records: number): string {
     `${records} is a count of OFFICIAL RECORDS at the grain each source defines ` +
     `— sections where a book numbers them, chapters where it does not. It is not ` +
     `a count of Pragati lessons. How many lessons a record needs is decided by ` +
-    `reading its pages, which has not been done except where Pragati has already ` +
-    `authored, so the lesson total is UNKNOWN rather than ${records}.`
+    `reading its pages. That reading is complete for some classes and has not ` +
+    `started for others, so the lesson total for Classes 1-12 is UNKNOWN rather ` +
+    `than ${records}.`
   );
 }
+
+// v0.84.0 §7 — register this module as the master map's source of truth
+// for "page-level intent inspected", so the status exists in one place
+// and is derived, never copied.
+inspectedRecordsRef.current = inspectedOfficialRecordIds;

@@ -305,6 +305,24 @@ export function sourcesForClass(n: number): MasterSource[] {
 
 const AUTHORED_IDS = new Set(allAuthoredSections().map((s) => s.source.officialSectionId));
 
+/**
+ * v0.84.0 §7 — the decomposition dataset is the single record of which
+ * official records have had their pages read. Imported lazily because
+ * the decomposition module reads this one back.
+ */
+const INSPECTED_RECORDS = (): Set<string> => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const mod = inspectedRecordsRef.get();
+  return mod ?? new Set<string>();
+};
+
+export const inspectedRecordsRef = {
+  current: null as null | (() => Set<string>),
+  get(): Set<string> | null {
+    return this.current ? this.current() : null;
+  },
+};
+
 const partOf = (sourceId: string) =>
   MASTER_EVIDENCE.sources.find((s) => s.sourceId === sourceId)?.part ?? null;
 
@@ -374,7 +392,14 @@ function class6Records(): MasterRecord[] {
           : 'printed page observed 2026-09-22 (chapter start + PDF offset)',
         registryStartPage: printed !== null && printed !== s.startPage ? s.startPage : null,
         structureStatus: 'primary_source_verified',
-        intentStatus: AUTHORED_IDS.has(s.officialSectionId) ? 'page_level_inspected' : 'not_inspected',
+        // v0.84.0 §7 — one meaning of "page-level intent inspected".
+        // Class 6's authored sections were inspected when they were
+        // written; everything else is inspected exactly when the
+        // decomposition says someone read its pages.
+        intentStatus:
+          AUTHORED_IDS.has(s.officialSectionId) || INSPECTED_RECORDS().has(s.officialSectionId)
+            ? 'page_level_inspected'
+            : 'not_inspected',
         nonInstructional: false,
         evidence: 'accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22',
       });
@@ -403,7 +428,9 @@ function textbookRecords(): MasterRecord[] {
       pageBasis: r.pageBasis,
       registryStartPage: null,
       structureStatus: 'primary_source_verified' as const,
-      intentStatus: 'not_inspected' as const,
+      intentStatus: (INSPECTED_RECORDS().has(r.recordId)
+        ? 'page_level_inspected'
+        : 'not_inspected') as IntentStatus,
       nonInstructional: isNonInstructional(r.level, r.title),
       evidence: r.evidence,
     }));
@@ -444,12 +471,31 @@ function syllabusRecords(): MasterRecord[] {
   return out;
 }
 
+/**
+ * v0.84.0 §7 — `intentStatus` is a live view of the decomposition, not a
+ * stored copy. A getter is used because the decomposition module reads
+ * this one back, so its data is registered after these records are
+ * built; reading the field at access time keeps the two in step without
+ * either duplicating the other.
+ */
+function withLiveIntent(r: MasterRecord): MasterRecord {
+  const stored = r.intentStatus;
+  return Object.defineProperty(r, 'intentStatus', {
+    enumerable: true,
+    get(): IntentStatus {
+      if (stored === 'page_level_inspected') return stored;
+      const inspected = inspectedRecordsRef.get();
+      return inspected?.has(r.recordId) ? 'page_level_inspected' : 'not_inspected';
+    },
+  });
+}
+
 export const MASTER_RECORDS: MasterRecord[] = [
   ...textbookRecords().filter((r) => r.classNumber < 6),
   ...class6Records(),
   ...textbookRecords().filter((r) => r.classNumber > 6),
   ...syllabusRecords(),
-];
+].map(withLiveIntent);
 
 export function recordsForClass(n: number): MasterRecord[] {
   return MASTER_RECORDS.filter((r) => r.classNumber === n);

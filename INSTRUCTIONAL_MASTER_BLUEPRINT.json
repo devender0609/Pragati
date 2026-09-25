@@ -7,16 +7,22 @@
    "status": "IN_PROGRESS",
    "chaptersInspected": 13,
    "chaptersTotal": 13,
-   "pagesInspected": 104,
-   "note": "All 13 chapters read at page level. Chapters 6 and 8 were read only to pages 68 and 92 respectively; their last pages remain unread, so their final units are DRAFT_DECOMPOSITION and flagged for a second pass."
+   "pagesIndexed": 104,
+   "pagesFullyInspected": 63,
+   "visualPagesInspected": 12,
+   "pagesInspected": 63,
+   "note": "All 13 chapters indexed. Chapters 1-5 and the tails of 6 and 8 were read in full text; 12 pages were rendered and looked at. The other chapters rest on the index alone, so their units are drafts."
   },
   {
    "classNumber": 2,
    "status": "IN_PROGRESS",
    "chaptersInspected": 11,
    "chaptersTotal": 11,
-   "pagesInspected": 88,
-   "note": "All 11 chapters read at page level. Chapters 6, 8 and 9 were read to pages 59, 90 and 105; their remaining pages are unread, so their last units are DRAFT_DECOMPOSITION and flagged."
+   "pagesIndexed": 88,
+   "pagesFullyInspected": 22,
+   "visualPagesInspected": 12,
+   "pagesInspected": 22,
+   "note": "All 11 chapters indexed. Only the tails of chapters 6, 8 and 9 were read in full text; 12 pages were rendered. Every other Class 2 unit rests on the index alone."
   }
  ],
  "units": [
@@ -36,7 +42,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Poem and picture tasks that ask children to place and identify objects by position; ball in/out of the basket."
+    "establishes": "Poem and picture tasks that ask children to place and identify objects by position; ball in/out of the basket.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Where is it? Position words",
    "mathematicalObjective": "Describe where an object is using in/out, on/under, above/below, near/far.",
@@ -68,10 +77,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u2",
@@ -89,7 +100,10 @@
     "pdfPageStart": 7,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "The train rhyme and the game of naming who is before and after each child."
+    "establishes": "The train rhyme and the game of naming who is before and after each child.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Before, after and between in a line",
    "mathematicalObjective": "Describe order in a line using before, after and between.",
@@ -120,10 +134,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u3",
@@ -141,7 +157,10 @@
     "pdfPageStart": 9,
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-24",
-    "establishes": "Suwali's buttons sorted into three groups, then re-sorted another way."
+    "establishes": "Suwali's buttons sorted into three groups, then re-sorted another way.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Sorting things into groups",
    "mathematicalObjective": "Sort a collection by a chosen attribute and say the rule used.",
@@ -172,10 +191,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u1",
@@ -193,7 +214,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "Naming long and round things, drawing them in two groups, matching similar shapes."
+    "establishes": "Naming long and round things, drawing them in two groups, matching similar shapes.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Long things and round things",
    "mathematicalObjective": "Sort objects by shape attributes: long and round.",
@@ -222,10 +246,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u2",
@@ -243,7 +269,10 @@
     "pdfPageStart": 5,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "The wise-grandmother story, the carrom picture and the rolls/slides/both table."
+    "establishes": "The wise-grandmother story, the carrom picture and the rolls/slides/both table.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Rolls, slides, or both",
    "mathematicalObjective": "Test how a solid moves and classify it as rolling, sliding or both.",
@@ -276,10 +305,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u1",
@@ -297,7 +328,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "Birds joining the mango one at a time; matching quantities to fingers and to dots."
+    "establishes": "Birds joining the mango one at a time; matching quantities to fingers and to dots.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Counting up to 9, and one more",
    "mathematicalObjective": "Count a collection up to 9 and say what one more makes.",
@@ -328,10 +362,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u2",
@@ -349,7 +385,10 @@
     "pdfPageStart": 5,
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
-    "establishes": "The drawing-day table of objects more than / less than the number of children."
+    "establishes": "The drawing-day table of objects more than / less than the number of children.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "More, less and as many as",
    "mathematicalObjective": "Compare two collections and say which has more, fewer or the same.",
@@ -382,10 +421,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u3",
@@ -403,7 +444,13 @@
     "pdfPageStart": 8,
     "pdfPageEnd": 13,
     "inspectedOn": "2026-09-24",
-    "establishes": "Circle-and-write tasks for 1-9, the 1-to-9 path, shuffled cards and missing numbers."
+    "establishes": "Circle-and-write tasks for 1-9, the 1-to-9 path, shuffled cards and missing numbers.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     8,
+     11
+    ]
    },
    "instructionalTitle": "Writing the numerals 1 to 9",
    "mathematicalObjective": "Match a numeral to a quantity, write it, and place numbers in order.",
@@ -438,7 +485,9 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u1",
@@ -456,7 +505,12 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
-    "establishes": "Dot designs made with seeds and the dice-and-colour game."
+    "establishes": "Dot designs made with seeds and the dice-and-colour game.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1
+    ]
    },
    "instructionalTitle": "Seeing how many without counting",
    "mathematicalObjective": "Recognise small dot arrangements at a glance and make your own.",
@@ -492,7 +546,9 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u2",
@@ -510,7 +566,10 @@
     "pdfPageStart": 3,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "The vanishing buttons and the discussion of situations where nothing is there."
+    "establishes": "The vanishing buttons and the discussion of situations where nothing is there.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Zero: when there is nothing left",
    "mathematicalObjective": "Use 0 for an empty collection and count down to it.",
@@ -541,10 +600,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u3",
@@ -562,7 +623,12 @@
     "pdfPageStart": 5,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "The tenth-birthday count, ten beads on a string and ten frames of buttons."
+    "establishes": "The tenth-birthday count, ten beads on a string and ten frames of buttons.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6
+    ]
    },
    "instructionalTitle": "Ten as one group",
    "mathematicalObjective": "Make a group of ten and use it to count.",
@@ -598,7 +664,9 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u4",
@@ -616,7 +684,10 @@
     "pdfPageStart": 7,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "The handy five and ten finger game and the number-pairs-of-10 pattern."
+    "establishes": "The handy five and ten finger game and the number-pairs-of-10 pattern.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Number pairs that make 5 and 10",
    "mathematicalObjective": "Find the pairs of numbers that make 5 and that make 10.",
@@ -649,10 +720,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u5",
@@ -670,7 +743,12 @@
     "pdfPageStart": 9,
     "pdfPageEnd": 13,
     "inspectedOn": "2026-09-24",
-    "establishes": "\"10 and 3 is 13\" spreads, ten-frame colouring, sequences and the tallest-tower task."
+    "establishes": "\"10 and 3 is 13\" spreads, ten-frame colouring, sequences and the tallest-tower task.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9
+    ]
    },
    "instructionalTitle": "Numbers 11 to 20 as ten and some more",
    "mathematicalObjective": "Read, write and build the numbers 11-20 as a ten and some ones.",
@@ -708,7 +786,9 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u1",
@@ -726,7 +806,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "Park scene, \"4 children and 2 children altogether make __\", finger and dice totals."
+    "establishes": "Park scene, \"4 children and 2 children altogether make __\", finger and dice totals.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Putting groups together: addition to 9",
    "mathematicalObjective": "Find how many altogether by joining two groups.",
@@ -760,10 +843,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u2",
@@ -781,7 +866,12 @@
     "pdfPageStart": 6,
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
-    "establishes": "Beads and string, hop-and-find-the-sum, \"add in your own way\" and the number-pair wheels."
+    "establishes": "Beads and string, hop-and-find-the-sum, \"add in your own way\" and the number-pair wheels.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     7
+    ]
    },
    "instructionalTitle": "Ways of adding",
    "mathematicalObjective": "Add by counting on, by hopping on a number strip, and by using pairs.",
@@ -820,7 +910,9 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Whole page range read in full text and the pages rendered and looked at; title, objective, representations and page range confirmed."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u3",
@@ -838,7 +930,10 @@
     "pdfPageStart": 10,
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-24",
-    "establishes": "Shell and marble stories with a \"how many altogether\" question."
+    "establishes": "Shell and marble stories with a \"how many altogether\" question.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Addition stories",
    "mathematicalObjective": "Solve a word story by deciding it is an addition and finding the total.",
@@ -869,10 +964,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u4",
@@ -890,7 +987,10 @@
     "pdfPageStart": 11,
     "pdfPageEnd": 13,
     "inspectedOn": "2026-09-24",
-    "establishes": "The five-little-children rhyme and the \"how many left\" frames with 6 - 2 = __."
+    "establishes": "The five-little-children rhyme and the \"how many left\" frames with 6 - 2 = __.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Taking away: subtraction to 9",
    "mathematicalObjective": "Find how many are left when some are taken away.",
@@ -923,10 +1023,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Full text of every page read, but the pages were not rendered. Early-primary mathematics is carried by ten frames, strips, arrays and picture tasks, so a visual pass is required before authoring."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u1",
@@ -944,7 +1046,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "Rumi and Shami's baskets (7 + 5, 9 + 4) and the ginladi method for 12 + 4."
+    "establishes": "Rumi and Shami's baskets (7 + 5, 9 + 4) and the ginladi method for 12 + 4.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Adding past ten on a bead string",
    "mathematicalObjective": "Add a small number to a number beyond ten by counting on.",
@@ -979,7 +1084,9 @@
    "decompositionStatus": "DRAFT_DECOMPOSITION",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Pages 69 onward of this chapter were not read in this pass; a later unit may be needed for the rest of the chapter."
+   "notes": "Pages 69 onward of this chapter were not read in this pass; a later unit may be needed for the rest of the chapter.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u1",
@@ -997,7 +1104,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "Lina's family compared by height; longest/shortest picture tasks; the Statue of Unity."
+    "establishes": "Lina's family compared by height; longest/shortest picture tasks; the Statue of Unity.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Comparing how tall and how long",
    "mathematicalObjective": "Compare objects directly and order them by length or height.",
@@ -1029,10 +1139,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u2",
@@ -1050,7 +1162,13 @@
     "pdfPageStart": 5,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "Measuring the table, bag and blackboard; guess-and-find tables for handspans and footspans."
+    "establishes": "Measuring the table, bag and blackboard; guess-and-find tables for handspans and footspans.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     8
+    ]
    },
    "instructionalTitle": "Measuring with handspans and footspans",
    "mathematicalObjective": "Measure a length by repeating a non-standard unit, after estimating.",
@@ -1083,10 +1201,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u3",
@@ -1104,7 +1224,12 @@
     "pdfPageStart": 8,
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
-    "establishes": "Tick the heavier/lighter object, then \"who is heavier between you and your friend?\""
+    "establishes": "Tick the heavier/lighter object, then \"who is heavier between you and your friend?\"",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     8
+    ]
    },
    "instructionalTitle": "Heavier and lighter",
    "mathematicalObjective": "Compare two objects by weight and say which is heavier.",
@@ -1134,10 +1259,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u1",
@@ -1155,7 +1282,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Packing oranges in boxes of ten; number spreads 21-50; ten-frame fill-ins."
+    "establishes": "Packing oranges in boxes of ten; number spreads 21-50; ten-frame fill-ins.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Numbers 21 to 50 as tens and ones",
    "mathematicalObjective": "Build, read and write numbers to 50 using groups of ten.",
@@ -1188,10 +1318,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u2",
@@ -1209,7 +1341,10 @@
     "pdfPageStart": 7,
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
-    "establishes": "Fill-the-missing-number grids (46, 42, 39, 34) and backward counting."
+    "establishes": "Fill-the-missing-number grids (46, 42, 39, 34) and backward counting.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Counting forward and back, and missing numbers",
    "mathematicalObjective": "Continue a count in either direction and fill missing numbers to 50.",
@@ -1241,10 +1376,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u3",
@@ -1262,7 +1399,10 @@
     "pdfPageStart": 8,
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
-    "establishes": "Counting and writing 51-60 and 61-80 spreads; the mirror-design count."
+    "establishes": "Counting and writing 51-60 and 61-80 spreads; the mirror-design count.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Numbers 51 to 99",
    "mathematicalObjective": "Read, write and count numbers from 51 to 99.",
@@ -1296,7 +1436,9 @@
    "decompositionStatus": "DRAFT_DECOMPOSITION",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Pages beyond 92 of this chapter were not read in this pass."
+   "notes": "Pages beyond 92 of this chapter were not read in this pass.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u1",
@@ -1314,7 +1456,12 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "Extending drawn patterns, colouring pattern strips and reasoning about what colour comes next."
+    "establishes": "Extending drawn patterns, colouring pattern strips and reasoning about what colour comes next.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3
+    ]
    },
    "instructionalTitle": "Repeating patterns with shapes and colours",
    "mathematicalObjective": "Find the rule of a repeating pattern and extend it.",
@@ -1345,10 +1492,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u2",
@@ -1366,7 +1515,10 @@
     "pdfPageStart": 6,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Study-the-pattern-and-fill-the-missing-numbers task."
+    "establishes": "Study-the-pattern-and-fill-the-missing-numbers task.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Number patterns",
    "mathematicalObjective": "Continue a number pattern and say the rule.",
@@ -1397,10 +1549,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u3",
@@ -1418,7 +1572,10 @@
     "pdfPageStart": 7,
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
-    "establishes": "Completing the kolam Murthy and Vani are drawing."
+    "establishes": "Completing the kolam Murthy and Vani are drawing.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Patterns in kolam and rangoli",
    "mathematicalObjective": "Complete a kolam pattern and describe its repeat.",
@@ -1449,10 +1606,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u1",
@@ -1470,7 +1629,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Pihu's daily routine and the tick-the-activity tasks for each part of the day."
+    "establishes": "Pihu's daily routine and the tick-the-activity tasks for each part of the day.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Parts of the day and the order of events",
    "mathematicalObjective": "Name parts of the day and put daily events in order.",
@@ -1501,10 +1663,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u2",
@@ -1522,7 +1686,10 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "Colour the activity that usually takes longer."
+    "establishes": "Colour the activity that usually takes longer.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Which takes longer?",
    "mathematicalObjective": "Compare two activities by how long they take.",
@@ -1552,10 +1719,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u3",
@@ -1573,7 +1742,10 @@
     "pdfPageStart": 5,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Season pictures matched to objects and clothes."
+    "establishes": "Season pictures matched to objects and clothes.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Seasons of the year",
    "mathematicalObjective": "Name the seasons and match things to the season they belong to.",
@@ -1604,10 +1776,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Mathematically light: cyclic sequence and classification only. Kept because the source teaches it here."
+   "notes": "Mathematically light: cyclic sequence and classification only. Kept because the source teaches it here.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch11_u1",
@@ -1625,7 +1799,12 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "Two children per horse, 3 jalebis per plate, 2 people per bus row: \"9 times 2 =\" and \"5 times 3 =\"."
+    "establishes": "Two children per horse, 3 jalebis per plate, 2 people per bus row: \"9 times 2 =\" and \"5 times 3 =\".",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3
+    ]
    },
    "instructionalTitle": "Equal groups and repeated addition",
    "mathematicalObjective": "Find a total of equal groups by adding the same number again and again.",
@@ -1657,10 +1836,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u1",
@@ -1678,7 +1859,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
-    "establishes": "Riya counting coins and Sahil counting notes; the toy-seller prices."
+    "establishes": "Riya counting coins and Sahil counting notes; the toy-seller prices.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Knowing our coins and notes",
    "mathematicalObjective": "Recognise Indian coins and notes and say their value.",
@@ -1710,10 +1894,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u2",
@@ -1731,7 +1917,10 @@
     "pdfPageStart": 3,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "Find the total amount, fill combinations for `20, `10, `13, `8 and match equal amounts."
+    "establishes": "Find the total amount, fill combinations for `20, `10, `13, `8 and match equal amounts.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Making an amount in different ways",
    "mathematicalObjective": "Make a given amount with different combinations of coins and notes.",
@@ -1764,10 +1953,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u1",
@@ -1785,7 +1976,12 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
-    "establishes": "Counting dolls, cars and elephants; then counting flowers by colour and judging true/false statements."
+    "establishes": "Counting dolls, cars and elephants; then counting flowers by colour and judging true/false statements.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1
+    ]
    },
    "instructionalTitle": "Counting groups in a picture and comparing them",
    "mathematicalObjective": "Count each kind of thing in a picture and compare the counts.",
@@ -1818,10 +2014,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u1",
@@ -1839,7 +2037,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Counting coconuts, boats and shell necklaces; packing chikoos into trays of ten."
+    "establishes": "Counting coconuts, boats and shell necklaces; packing chikoos into trays of ten.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Counting in groups of ten",
    "mathematicalObjective": "Count a large collection by grouping in tens rather than one by one.",
@@ -1870,10 +2071,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u2",
@@ -1891,7 +2094,13 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
-    "establishes": "Ten-strip = 10 units, the tens/ones table, \"30 + 1 or 3 tens 1 one\", and making numbers from cards."
+    "establishes": "Ten-strip = 10 units, the tens/ones table, \"30 + 1 or 3 tens 1 one\", and making numbers from cards.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     5
+    ]
    },
    "instructionalTitle": "Tens and ones with strips and blocks",
    "mathematicalObjective": "Represent a two-digit number as tens and ones and read it from the representation.",
@@ -1925,10 +2134,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u3",
@@ -1946,7 +2157,10 @@
     "pdfPageStart": 6,
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
-    "establishes": "\"Let us Make 100!\" — ten strips joined, and discussion of other combinations."
+    "establishes": "\"Let us Make 100!\" — ten strips joined, and discussion of other combinations.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Making 100",
    "mathematicalObjective": "Build 100 from ten tens and describe other ways to make it.",
@@ -1976,10 +2190,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u4",
@@ -1997,7 +2213,10 @@
     "pdfPageStart": 10,
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-24",
-    "establishes": "Oranges into trays of ten with some left over."
+    "establishes": "Oranges into trays of ten with some left over.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Trays, groups and leftovers",
    "mathematicalObjective": "Work out how many full groups of ten and how many are left over.",
@@ -2029,10 +2248,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u1",
@@ -2050,7 +2271,10 @@
     "pdfPageStart": 2,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Musical instruments circled and matched to their solid shapes."
+    "establishes": "Musical instruments circled and matched to their solid shapes.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Solid shapes around us",
    "mathematicalObjective": "Match everyday objects to cube, cuboid, cone, cylinder and sphere.",
@@ -2083,10 +2307,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u2",
@@ -2104,7 +2330,12 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
-    "establishes": "Decorating the gift box with ribbons on edges and balls on corners; the faces/edges/corners table; touch-and-tell."
+    "establishes": "Decorating the gift box with ribbons on edges and balls on corners; the faces/edges/corners table; touch-and-tell.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6
+    ]
    },
    "instructionalTitle": "Faces, edges and corners",
    "mathematicalObjective": "Count the faces, edges and corners of a solid and use them to tell solids apart.",
@@ -2137,10 +2368,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u1",
@@ -2158,7 +2391,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
-    "establishes": "Ginladi bead counts, blank cards, and the guess-my-number / guess-my-place games."
+    "establishes": "Ginladi bead counts, blank cards, and the guess-my-number / guess-my-place games.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Numbers on the bead string and number strip",
    "mathematicalObjective": "Locate and name numbers to 100 on a bead string and number strip.",
@@ -2190,10 +2426,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u2",
@@ -2211,7 +2449,13 @@
     "pdfPageStart": 3,
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
-    "establishes": "Jumpy the frog's jumps, skip counting in 2s and 5s on the chart, backward jumps and 'what comes just before'."
+    "establishes": "Jumpy the frog's jumps, skip counting in 2s and 5s on the chart, backward jumps and 'what comes just before'.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     6
+    ]
    },
    "instructionalTitle": "Skip counting and jumps",
    "mathematicalObjective": "Skip count in 2s, 5s and 10s, forwards and backwards, and describe the pattern.",
@@ -2244,10 +2488,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u3",
@@ -2265,7 +2511,12 @@
     "pdfPageStart": 6,
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
-    "establishes": "Rizwan counting from 20, filling missing numbers in grid fragments, and the Bingo pattern game."
+    "establishes": "Rizwan counting from 20, filling missing numbers in grid fragments, and the Bingo pattern game.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6
+    ]
    },
    "instructionalTitle": "Patterns in the number chart",
    "mathematicalObjective": "Find and explain patterns in rows and columns of the hundred chart.",
@@ -2297,10 +2548,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u1",
@@ -2318,7 +2571,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Togalu Gombeyaata shadow play; shadows of objects; tracing outlines of everyday things."
+    "establishes": "Togalu Gombeyaata shadow play; shadows of objects; tracing outlines of everyday things.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Shadows and flat shapes",
    "mathematicalObjective": "See that a solid casts a flat shape, and name circle, triangle, rectangle and square.",
@@ -2350,10 +2606,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u2",
@@ -2371,7 +2629,12 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "The hide-and-seek shape story, colour-the-carpet sorting, catch-the-corner and origami folding."
+    "establishes": "The hide-and-seek shape story, colour-the-carpet sorting, catch-the-corner and origami folding.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6
+    ]
    },
    "instructionalTitle": "Telling shapes apart by their properties",
    "mathematicalObjective": "Identify a flat shape by its sides and corners, including when it is hidden or tilted.",
@@ -2403,10 +2666,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u3",
@@ -2424,7 +2689,10 @@
     "pdfPageStart": 9,
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-24",
-    "establishes": "Stamping designs with caps and erasers; leaf patterns."
+    "establishes": "Stamping designs with caps and erasers; leaf patterns.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Making patterns with shapes",
    "mathematicalObjective": "Make and continue a pattern by stamping or arranging shapes.",
@@ -2455,10 +2723,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u1",
@@ -2476,7 +2746,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
-    "establishes": "Aasanas sorted by the lines they make; tracing missing lines; \"is it straight?\" with a thread."
+    "establishes": "Aasanas sorted by the lines they make; tracing missing lines; \"is it straight?\" with a thread.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Kinds of lines",
    "mathematicalObjective": "Tell apart vertical, horizontal, slanting and curved lines and find them around you.",
@@ -2507,10 +2780,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u2",
@@ -2528,7 +2803,10 @@
     "pdfPageStart": 3,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Making shapes with straight lines on dots, curved-line drawings, and designs using two, three and all line types; local art forms."
+    "establishes": "Making shapes with straight lines on dots, curved-line drawings, and designs using two, three and all line types; local art forms.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Drawing with lines",
    "mathematicalObjective": "Make shapes and designs using chosen kinds of lines.",
@@ -2560,10 +2838,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u1",
@@ -2581,7 +2861,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Garland flowers: 10 + 2 = 12, 50 + 3 = 53, and totals such as 20 + 43."
+    "establishes": "Garland flowers: 10 + 2 = 12, 50 + 3 = 53, and totals such as 20 + 43.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Adding tens and ones without regrouping",
    "mathematicalObjective": "Add two two-digit numbers by adding tens to tens and ones to ones.",
@@ -2615,10 +2898,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u2",
@@ -2636,7 +2921,10 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "\"Let us do it on Ginladi\" and the number-line additions 23 + 14, 24 + 16, 11 + 22."
+    "establishes": "\"Let us do it on Ginladi\" and the number-line additions 23 + 14, 24 + 16, 11 + 22.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Adding on a bead string and a number line",
    "mathematicalObjective": "Add two-digit numbers by counting on in tens and ones.",
@@ -2668,10 +2956,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u3",
@@ -2689,7 +2979,10 @@
     "pdfPageStart": 6,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "Mahi's and Isha's blocks; '7 tens 13 ones' rewritten; addition story problems (43 + 58 runs)."
+    "establishes": "Mahi's and Isha's blocks; '7 tens 13 ones' rewritten; addition story problems (43 + 58 runs).",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Adding with regrouping",
    "mathematicalObjective": "Add two-digit numbers where the ones make more than ten, and exchange ten ones for a ten.",
@@ -2721,10 +3014,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u4",
@@ -2742,7 +3037,10 @@
     "pdfPageStart": 9,
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-24",
-    "establishes": "Word problems and the two methods shown for 75 - 35 and 32 - 12."
+    "establishes": "Word problems and the two methods shown for 75 - 35 and 32 - 12.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Taking away two-digit numbers",
    "mathematicalObjective": "Subtract a two-digit number, using tens and ones or a number line.",
@@ -2777,7 +3075,9 @@
    "decompositionStatus": "DRAFT_DECOMPOSITION",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Pages beyond 59 of this chapter were not read in this pass; further subtraction units may be needed."
+   "notes": "Pages beyond 59 of this chapter were not read in this pass; further subtraction units may be needed.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u1",
@@ -2795,7 +3095,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-24",
-    "establishes": "The raja's bed story, where each carpenter's handspan gives a different answer; estimate-then-measure table."
+    "establishes": "The raja's bed story, where each carpenter's handspan gives a different answer; estimate-then-measure table.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Why we need the same unit",
    "mathematicalObjective": "See that measurements disagree when different people use their own handspans.",
@@ -2826,10 +3129,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u2",
@@ -2847,7 +3152,12 @@
     "pdfPageStart": 3,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "Longest and shortest paths from A to B; \"how many blocks tall\"; measuring with a tool of your choice."
+    "establishes": "Longest and shortest paths from A to B; \"how many blocks tall\"; measuring with a tool of your choice.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4
+    ]
    },
    "instructionalTitle": "Measuring with a chosen unit",
    "mathematicalObjective": "Estimate and then measure lengths and heights with a repeated unit.",
@@ -2882,10 +3192,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u3",
@@ -2903,7 +3215,10 @@
     "pdfPageStart": 6,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "Pumpkin's chaupal comparisons, making your own balance, and marking which side goes down."
+    "establishes": "Pumpkin's chaupal comparisons, making your own balance, and marking which side goes down.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Heavier, lighter and a simple balance",
    "mathematicalObjective": "Compare weights by handling and by using a balance.",
@@ -2936,10 +3251,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u1",
@@ -2957,7 +3274,12 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Wheels on autorickshaws and wings on butterflies written as repeated addition and as groups."
+    "establishes": "Wheels on autorickshaws and wings on butterflies written as repeated addition and as groups.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     2
+    ]
    },
    "instructionalTitle": "Equal groups and \"times\"",
    "mathematicalObjective": "Describe equal groups as repeated addition and as \"n times m\".",
@@ -2989,10 +3311,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u2",
@@ -3010,7 +3334,10 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "Matching 9 + 9 + 9 with 3 x 9, and the completion table."
+    "establishes": "Matching 9 + 9 + 9 with 3 x 9, and the completion table.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "The multiplication sign",
    "mathematicalObjective": "Write an equal-groups situation with x and read it back.",
@@ -3041,10 +3368,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u3",
@@ -3062,7 +3391,10 @@
     "pdfPageStart": 5,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Complete-the-table pages for 2, 3, 5 and 10 with both \"2 threes are 6\" and 2 x 3 = 6 forms."
+    "establishes": "Complete-the-table pages for 2, 3, 5 and 10 with both \"2 threes are 6\" and 2 x 3 = 6 forms.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Tables of 2, 3, 5 and 10",
    "mathematicalObjective": "Build the tables of 2, 3, 5 and 10 from equal groups.",
@@ -3094,10 +3426,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u4",
@@ -3115,7 +3449,10 @@
     "pdfPageStart": 7,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "\"4 groups of 5\", \"6 groups of 4\" picture tasks with the number sentence completed."
+    "establishes": "\"4 groups of 5\", \"6 groups of 4\" picture tasks with the number sentence completed.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Using multiplication in pictures and stories",
    "mathematicalObjective": "Solve picture and word problems by choosing a multiplication.",
@@ -3148,7 +3485,9 @@
    "decompositionStatus": "DRAFT_DECOMPOSITION",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Pages beyond 90 were not read in this pass."
+   "notes": "Pages beyond 90 were not read in this pass.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u1",
@@ -3166,7 +3505,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Seasons described, then matched with their names and festivals."
+    "establishes": "Seasons described, then matched with their names and festivals.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Seasons and the year",
    "mathematicalObjective": "Name the seasons and place festivals and activities in them.",
@@ -3199,10 +3541,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u2",
@@ -3220,7 +3564,10 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "Calendar Fun: filling the months/number-of-days table and discussing February."
+    "establishes": "Calendar Fun: filling the months/number-of-days table and discussing February.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Reading a calendar",
    "mathematicalObjective": "Read a calendar to find days, dates and the number of days in a month.",
@@ -3254,10 +3601,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u3",
@@ -3275,7 +3624,10 @@
     "pdfPageStart": 6,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Matching cooking, vacation and other activities to hours, days or months."
+    "establishes": "Matching cooking, vacation and other activities to hours, days or months.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "How long does it take?",
    "mathematicalObjective": "Choose whether an activity takes hours, days or months.",
@@ -3307,10 +3659,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u4",
@@ -3328,7 +3682,10 @@
     "pdfPageStart": 7,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "The Vijayawada trip: 11:00 morning, 5:00 evening and other times in the narrative."
+    "establishes": "The Vijayawada trip: 11:00 morning, 5:00 evening and other times in the narrative.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Telling the time of day",
    "mathematicalObjective": "Read clock times in a story and use morning, afternoon and evening.",
@@ -3362,7 +3719,9 @@
    "decompositionStatus": "DRAFT_DECOMPOSITION",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Pages beyond 105 were not read in this pass; the clock work may extend further."
+   "notes": "Pages beyond 105 were not read in this pass; the clock work may extend further.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u1",
@@ -3380,7 +3739,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-24",
-    "establishes": "Rupal's `50 at the fair; the ride-and-money table; notes of `100, `500, `200."
+    "establishes": "Rupal's `50 at the fair; the ride-and-money table; notes of `100, `500, `200.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Money: notes, coins and totals",
    "mathematicalObjective": "Recognise Indian notes and coins and find the total of a purchase.",
@@ -3413,10 +3775,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u2",
@@ -3434,7 +3798,10 @@
     "pdfPageStart": 5,
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-24",
-    "establishes": "Tejal's grandmother's coins: how many 25 paise, how many 20 paise make `1."
+    "establishes": "Tejal's grandmother's coins: how many 25 paise, how many 20 paise make `1.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Paise and making a rupee",
    "mathematicalObjective": "Use paise coins to make one rupee in different ways.",
@@ -3465,10 +3832,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u3",
@@ -3486,7 +3855,12 @@
     "pdfPageStart": 2,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "\"How much Rupal spent\" from `8 left; the pop-the-balloon totals and the `66, `54, `85 combination tables."
+    "establishes": "\"How much Rupal spent\" from `8 left; the pop-the-balloon totals and the `66, `54, `85 combination tables.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6
+    ]
    },
    "instructionalTitle": "Spending, change and different ways to pay",
    "mathematicalObjective": "Find money left over and pay the same amount with different combinations.",
@@ -3519,10 +3893,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u1",
@@ -3540,7 +3916,10 @@
     "pdfPageStart": 1,
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-24",
-    "establishes": "Favourite colours, picnic fruits and modes of coming to school, each recorded in a table."
+    "establishes": "Favourite colours, picnic fruits and modes of coming to school, each recorded in a table.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Collecting data into a table",
    "mathematicalObjective": "Count categories in a picture and record the counts in a table.",
@@ -3572,10 +3951,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u2",
@@ -3593,7 +3974,13 @@
     "pdfPageStart": 4,
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-24",
-    "establishes": "Drawing faces for modes of travel and favourite games, then answering most/least questions."
+    "establishes": "Drawing faces for modes of travel and favourite games, then answering most/least questions.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     6
+    ]
    },
    "instructionalTitle": "Showing data in a picture chart",
    "mathematicalObjective": "Draw a picture chart from a table and read it back.",
@@ -3626,10 +4013,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "READY_FOR_AUTHORING",
-   "humanReviewStatus": "not_reviewed",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u3",
@@ -3647,7 +4036,10 @@
     "pdfPageStart": 7,
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-24",
-    "establishes": "Project work: favourite vegetables and family sizes collected from classmates and families."
+    "establishes": "Project work: favourite vegetables and family sizes collected from classmates and families.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    },
    "instructionalTitle": "Asking your own question and collecting answers",
    "mathematicalObjective": "Collect data from classmates and present it.",
@@ -3679,10 +4071,1253 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Evidence is the page index only (headings and opening text). That is navigation, not inspection: the unit stands as a draft until the full pages are read."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch03_u4",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 31,
+    "printedPageEnd": 32,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Counting jamuns and sheep in a picture; \"which two groups together have 8 fruits\"; cups versus spoons.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Counting in a busy picture, and two groups that make a number",
+   "mathematicalObjective": "Count each kind of thing in a picture and find two groups that together make a given number.",
+   "studentCanStatement": "I can count things in a picture and find two groups that together make 8.",
+   "mathematicalIdeas": [
+    "counting in context",
+    "early combining",
+    "comparison of two groups"
+   ],
+   "representationsNeeded": [
+    "busy picture scene",
+    "groups to circle"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u3"
+   ],
+   "vocabulary": [
+    "count",
+    "together",
+    "less"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Pages the first pass did not read: they add combining and comparison work beyond writing the numerals.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch04_u6",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 45,
+    "printedPageEnd": 46,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Tallest tower and most/least blocks; circle the smallest and biggest; write numbers biggest to smallest, with the teacher note that 15 is bigger than 11 because it is 4 more.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Comparing and ordering numbers to 20",
+   "mathematicalObjective": "Compare numbers up to 20 and put them in order, explaining why.",
+   "studentCanStatement": "I can say which of two numbers is bigger and why.",
+   "mathematicalIdeas": [
+    "comparison of numbers to 20",
+    "ordering",
+    "reasoning with \"how many more\""
+   ],
+   "representationsNeeded": [
+    "ten frames",
+    "number cards",
+    "tower of blocks"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch04_u5"
+   ],
+   "vocabulary": [
+    "bigger",
+    "smaller",
+    "order"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 6,
+   "splitReason": "The first pass stopped at reading and writing the teen numbers; these pages compare and order them, which is a different objective.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch05_u5",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 62,
+    "printedPageEnd": 62,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-09-25",
+    "establishes": "The hidden-dots project: total 10, hidden and visible recorded in a table, then repeated with 8 dots.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Hidden dots: the parts of ten",
+   "mathematicalObjective": "Find the missing part when a total of ten is split into a visible and a hidden part.",
+   "studentCanStatement": "I can say how many dots are hidden if I can see some of the ten.",
+   "mathematicalIdeas": [
+    "part-part-whole",
+    "missing part",
+    "complements of 10 and 8"
+   ],
+   "representationsNeeded": [
+    "ten-dot card with some covered",
+    "ten frame"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch04_u4"
+   ],
+   "vocabulary": [
+    "hidden",
+    "visible",
+    "total"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch05_u6",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 63,
+    "printedPageEnd": 63,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 16,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Hop backwards on the number strip: 9 - 3, 7 - 4, then six subtractions done \"in your own way\".",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Subtracting by hopping back",
+   "mathematicalObjective": "Subtract by hopping backwards on a number strip and compare it with taking away.",
+   "studentCanStatement": "I can jump back on the strip to take away.",
+   "mathematicalIdeas": [
+    "subtraction on a number line",
+    "counting back",
+    "own strategies"
+   ],
+   "representationsNeeded": [
+    "number strip with backward hops"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u4"
+   ],
+   "vocabulary": [
+    "back",
+    "jump",
+    "minus"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch06_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 69,
+    "printedPageEnd": 69,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-25",
+    "establishes": "A page of subtractions within 20: 16-4, 12-5, 14-7, 15-9, 17-9 and others.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Subtraction within 20",
+   "mathematicalObjective": "Subtract within 20, including from teen numbers.",
+   "studentCanStatement": "I can work out 16 - 7.",
+   "mathematicalIdeas": [
+    "subtraction within 20",
+    "bridging ten informally"
+   ],
+   "representationsNeeded": [
+    "bead string",
+    "number strip",
+    "objects"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u4"
+   ],
+   "vocabulary": [
+    "take away",
+    "minus",
+    "left"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch06_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 70,
+    "printedPageEnd": 70,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Anjali jumps 2 ahead from 6 and Renu 7 back from 15; add-subtract-and-match pairs onto 12, 14, 15, 17, 18.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Adding and subtracting can land in the same place",
+   "mathematicalObjective": "See that an addition and a subtraction can reach the same number, and match pairs that do.",
+   "studentCanStatement": "I can show that 8 + 7 and 18 - 3 land on the same number.",
+   "mathematicalIdeas": [
+    "inverse relationship",
+    "equivalence of expressions",
+    "number strip as a common ground"
+   ],
+   "representationsNeeded": [
+    "number strip in the playground",
+    "matching pairs"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch06_u1",
+    "pragati_iu_g01_ch06_u2"
+   ],
+   "vocabulary": [
+    "same place",
+    "match",
+    "equal"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch06_u4",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 71,
+    "printedPageEnd": 71,
+    "pdfPageStart": 8,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Potter diyas (9 - 5 + 7), bus at three stops, seats left on a bus, and two missing-part stories.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Two-step and missing-part problem stories",
+   "mathematicalObjective": "Solve a story needing two steps, or one where the change is missing.",
+   "studentCanStatement": "I can work out how many toffees were shared if 14 became 6.",
+   "mathematicalIdeas": [
+    "two-step problems",
+    "missing addend / missing subtrahend",
+    "choosing operations"
+   ],
+   "representationsNeeded": [
+    "story pictures",
+    "number sentences with a box"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch06_u3"
+   ],
+   "vocabulary": [
+    "how many more",
+    "left",
+    "shared"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch08_u4",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 93,
+    "printedPageEnd": 95,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Counting and writing 81-100; placing a random number card on the ginladi; the slide-and-ladder grid with missing numbers to 100.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Numbers 81 to 100, and one hundred",
+   "mathematicalObjective": "Read, write and sequence numbers to 100 and recognise 100 as ten tens.",
+   "studentCanStatement": "I can count and write up to 100.",
+   "mathematicalIdeas": [
+    "numbers to 100",
+    "hundred as ten tens",
+    "missing numbers in a grid"
+   ],
+   "representationsNeeded": [
+    "ginladi",
+    "hundred grid",
+    "slide-and-ladder board"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch08_u3"
+   ],
+   "vocabulary": [
+    "ninety",
+    "hundred",
+    "between"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch08_u5",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 96,
+    "printedPageEnd": 97,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-09-25",
+    "establishes": "The Warli painting: counting houses and people, guessing how many lines draw a tree, then drawing your own.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Counting what you see in a picture",
+   "mathematicalObjective": "Count categories in a detailed picture and answer questions about the counts.",
+   "studentCanStatement": "I can count the houses and the people in the painting.",
+   "mathematicalIdeas": [
+    "counting in a complex scene",
+    "estimation of a repeated feature"
+   ],
+   "representationsNeeded": [
+    "Warli painting",
+    "own Warli drawing"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch08_u4"
+   ],
+   "vocabulary": [
+    "how many",
+    "guess",
+    "count"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": "Warli painting from Maharashtra",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch13_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch13",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch13",
+    "officialSectionId": null,
+    "printedPageStart": 124,
+    "printedPageEnd": 127,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Fill shapes so each occurs once per row and column; \"who am I\" mirror-number riddles; equal-total crosses; the matchstick and jigsaw tasks.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     5,
+     6,
+     8
+    ]
+   },
+   "instructionalTitle": "Puzzles that need a new kind of reasoning",
+   "mathematicalObjective": "Solve constraint and symmetry puzzles: one shape per row and column, mirror numbers, equal-sum crosses.",
+   "studentCanStatement": "I can place shapes so each one appears once in every row and column.",
+   "mathematicalIdeas": [
+    "constraint reasoning (Latin square)",
+    "mirror symmetry of numerals",
+    "equal sums along lines",
+    "matchstick transformation"
+   ],
+   "representationsNeeded": [
+    "grid of cells",
+    "mirror",
+    "matchsticks",
+    "jigsaw pieces"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u3",
+    "pragati_iu_g01_ch05_u1"
+   ],
+   "vocabulary": [
+    "row",
+    "column",
+    "once",
+    "same total"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "ENRICHMENT",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The first pass classified the whole Puzzles section as rehearsal. Rendering the pages showed otherwise: the Latin-square constraint, mirror symmetry and equal-sum reasoning are not taught anywhere earlier in the book.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": "Whether enrichment of this kind belongs in Pragati at Class 1 is a human decision, not a source question.",
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u5",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 60,
+    "printedPageEnd": 62,
+    "pdfPageStart": 11,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Ginladi subtractions (18-9, 30-18, 26-17), then number-line jumps back for 19-15, 26-?, 39-28, 38-11, 22-22.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Subtracting on the number line",
+   "mathematicalObjective": "Subtract a two-digit number by jumping back in tens and ones.",
+   "studentCanStatement": "I can take 15 from 19 by jumping back on the line.",
+   "mathematicalIdeas": [
+    "subtraction as counting back",
+    "jumping in tens then ones",
+    "drawing your own number line"
+   ],
+   "representationsNeeded": [
+    "ginladi",
+    "hand-drawn number line to 40"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch06_u2"
+   ],
+   "vocabulary": [
+    "back",
+    "jump",
+    "take away"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u6",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 63,
+    "printedPageEnd": 63,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Playing with blocks: 45 - 12 and 37 - 24 shown as blocks and in T/O columns, then money problems.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14
+    ]
+   },
+   "instructionalTitle": "Column subtraction without regrouping",
+   "mathematicalObjective": "Subtract in tens and ones columns when no exchange is needed.",
+   "studentCanStatement": "I can set out 45 - 12 in tens and ones and subtract.",
+   "mathematicalIdeas": [
+    "column method",
+    "place-value subtraction"
+   ],
+   "representationsNeeded": [
+    "blocks and strips",
+    "T/O columns"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch06_u5"
+   ],
+   "vocabulary": [
+    "tens",
+    "ones",
+    "column"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": null
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u7",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 64,
+    "printedPageEnd": 67,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 18,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Jyoti's garlands: 46 - 18 shown as opening a garland, then 54 - 28 and 73 - 47, and a practice set.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     17
+    ]
+   },
+   "instructionalTitle": "Subtraction with regrouping: opening a garland",
+   "mathematicalObjective": "Subtract when the ones are too few, by exchanging one ten for ten ones.",
+   "studentCanStatement": "I can open one ten to take away more ones.",
+   "mathematicalIdeas": [
+    "regrouping in subtraction",
+    "exchange",
+    "why the tens digit drops by one"
+   ],
+   "representationsNeeded": [
+    "garlands of ten flowers",
+    "blocks to exchange",
+    "T/O columns"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch06_u6"
+   ],
+   "vocabulary": [
+    "open",
+    "exchange",
+    "borrow"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u8",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 68,
+    "printedPageEnd": 69,
+    "pdfPageStart": 19,
+    "pdfPageEnd": 20,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Word problems including \"56 birds became 87, how many came\", the skip-the-rope missing addends, fact families and the addition/subtraction pyramids.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Fact families and missing parts",
+   "mathematicalObjective": "Use the link between addition and subtraction to complete fact families and find a missing part.",
+   "studentCanStatement": "I can write all four facts for 20, 30 and 50.",
+   "mathematicalIdeas": [
+    "inverse operations",
+    "fact families",
+    "missing addend",
+    "addition and subtraction pyramids"
+   ],
+   "representationsNeeded": [
+    "fact-family triangle",
+    "pyramid grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch06_u7"
+   ],
+   "vocabulary": [
+    "fact family",
+    "missing",
+    "pyramid"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u5",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 91,
+    "printedPageEnd": 92,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Table of 4 from the table of 2, table of 7 from 3 and 4, table of 8 from 2 and 6, and the 24-objects array project.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     10
+    ]
+   },
+   "instructionalTitle": "Building a table from tables you know",
+   "mathematicalObjective": "Make a new table by adding two known tables.",
+   "studentCanStatement": "I can make the table of 7 by adding the tables of 3 and 4.",
+   "mathematicalIdeas": [
+    "distributive structure of multiplication",
+    "relating tables",
+    "pattern in tables"
+   ],
+   "representationsNeeded": [
+    "table strips to add",
+    "grid of tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch08_u3"
+   ],
+   "vocabulary": [
+    "table",
+    "add",
+    "times"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u6",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 93,
+    "printedPageEnd": 94,
+    "pdfPageStart": 11,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-09-25",
+    "establishes": "The gulab jamun sharing story dealt out one by one, then sharing bindis and laddoos equally.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Sharing equally",
+   "mathematicalObjective": "Share a collection equally between or among groups and say how many each gets.",
+   "studentCanStatement": "I can share 12 things equally between two people.",
+   "mathematicalIdeas": [
+    "division as equal sharing",
+    "one-to-one dealing",
+    "equal groups"
+   ],
+   "representationsNeeded": [
+    "countable objects to deal out",
+    "plates and cones"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch08_u1"
+   ],
+   "vocabulary": [
+    "share",
+    "equally",
+    "each"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u7",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 95,
+    "printedPageEnd": 95,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Garima's 20 beads at 5 per bracelet, counted out as three bracelets and the beads used up.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     13
+    ]
+   },
+   "instructionalTitle": "How many groups?",
+   "mathematicalObjective": "Find how many equal groups a collection makes.",
+   "studentCanStatement": "I can find how many bracelets 20 beads make if each takes 5.",
+   "mathematicalIdeas": [
+    "division as grouping",
+    "repeated subtraction informally"
+   ],
+   "representationsNeeded": [
+    "beads made into bracelets",
+    "objects grouped on a mat"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch08_u6"
+   ],
+   "vocabulary": [
+    "groups",
+    "each",
+    "how many"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u8",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 96,
+    "printedPageEnd": 97,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Strings of 7 beads from 21, 54 flowers into bracelets of 9, 25 roses into vases of 5, 27 candles into 3 boxes, 30 buttons at 6 per shirt, 24 bananas among 3 monkeys.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Sharing and grouping problems",
+   "mathematicalObjective": "Solve word problems that need equal sharing or equal grouping.",
+   "studentCanStatement": "I can work out how many vases 25 roses fill if each holds 5.",
+   "mathematicalIdeas": [
+    "choosing between sharing and grouping",
+    "division word problems"
+   ],
+   "representationsNeeded": [
+    "pictures of the objects",
+    "number sentence frames"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch08_u7"
+   ],
+   "vocabulary": [
+    "share",
+    "group",
+    "each",
+    "total"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch09_u5",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 106,
+    "printedPageEnd": 109,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-09-25",
+    "establishes": "The trip questions about hours, Gargi's day written as o'clock times, reading clocks and drawing both hands.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     11
+    ]
+   },
+   "instructionalTitle": "Reading the clock at the hour",
+   "mathematicalObjective": "Read o'clock times and draw the hands to show a given time.",
+   "studentCanStatement": "I can read 3 o'clock and draw the hands for 9 o'clock.",
+   "mathematicalIdeas": [
+    "hour and minute hands",
+    "reading and setting an hour time",
+    "times of daily events"
+   ],
+   "representationsNeeded": [
+    "clock face with movable hands",
+    "printed clock faces"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch09_u3"
+   ],
+   "vocabulary": [
+    "o'clock",
+    "hour hand",
+    "minute hand"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "CONFIRMED",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch09_u6",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 110,
+    "printedPageEnd": 110,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-25",
+    "establishes": "Sarah's way to school drawn on the map, and the blindfold direction game.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "Finding the way: left, right and straight",
+   "mathematicalObjective": "Give and follow directions using left, right and straight on a route.",
+   "studentCanStatement": "I can tell my friend how to walk to the blackboard.",
+   "mathematicalIdeas": [
+    "route directions",
+    "relative position",
+    "following a path on a map"
+   ],
+   "representationsNeeded": [
+    "route map to school",
+    "blindfold direction game"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch01_u1"
+   ],
+   "vocabulary": [
+    "left",
+    "right",
+    "straight",
+    "path"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch09_u7",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 111,
+    "printedPageEnd": 112,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-09-25",
+    "establishes": "The east-west-north-south poem, the compass discussion and the classroom plan questions.",
+    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
+   },
+   "instructionalTitle": "North, south, east and west",
+   "mathematicalObjective": "Use the four cardinal directions to describe where things are.",
+   "studentCanStatement": "I can say which desk is north of mine.",
+   "mathematicalIdeas": [
+    "cardinal directions",
+    "orientation from the rising sun",
+    "reading a plan of the classroom"
+   ],
+   "representationsNeeded": [
+    "classroom plan",
+    "compass",
+    "direction poem with actions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch09_u6"
+   ],
+   "vocabulary": [
+    "north",
+    "south",
+    "east",
+    "west"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Found by reading the chapter tail that the first pass left unread; the mathematics here is not covered by any earlier unit.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "hardeningClassification": "NEEDS_HUMAN_CHECK",
+   "hardeningNote": "Found during the hardening pass by reading pages the first pass had only indexed."
   }
  ],
  "nonInstructional": [
@@ -3690,7 +5325,7 @@
    "officialRecordId": "ncert_aejm1_ch13_puzzles",
    "grade": "class1",
    "role": "ENRICHMENT",
-   "justification": "The Puzzles pages at the end of Chapter 13 rehearse number recognition, sums and logic already taught; they introduce no new mathematics. Recorded so the pages are not lost, and excluded from the authoring backlog as new instruction.",
+   "justification": "Re-inspected by rendering the pages. Most of the section rehearses taught material and is recorded here, but the constraint and symmetry puzzles on pages 124-127 do introduce new reasoning and are now a unit (pragati_iu_g01_ch13_u2) rather than being hidden inside this record.",
    "sourceEvidence": {
     "bookId": "aejm1",
     "bookPart": null,
@@ -3701,14 +5336,21 @@
     "pdfPageStart": 3,
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-24",
-    "establishes": "Number-search, magic-square-like fills, \"who am I?\" riddles and coin puzzles."
+    "establishes": "Number-search, magic-square-like fills, \"who am I?\" riddles and coin puzzles.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     5,
+     6,
+     8
+    ]
    }
   },
   {
    "officialRecordId": "ncert_bejm1_ch11_puzzles",
    "grade": "class2",
    "role": "ENRICHMENT",
-   "justification": "The puzzle pages closing Chapter 11 practise shape matching, pattern completion and small sums already taught. No new mathematics is introduced, so they are recorded rather than turned into an authoring target.",
+   "justification": "First-pass classification from the page index only. Rendering was not done for this section, so whether its puzzles introduce new reasoning is UNRESOLVED; it must not be treated as settled.",
    "sourceEvidence": {
     "bookId": "bejm1",
     "bookPart": null,
@@ -3719,7 +5361,10 @@
     "pdfPageStart": 8,
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-24",
-    "establishes": "Connect-the-shape-pairs without crossing, pattern completion and a small addition puzzle."
+    "establishes": "Connect-the-shape-pairs without crossing, pattern completion and a small addition puzzle.",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": true,
+    "visualPagesInspected": []
    }
   }
  ]

@@ -8,10 +8,10 @@ PRACTICE COMPLETE, REVIEWED, PUBLISHED. This report is about the first
 four. Pragati's learning content is **not** complete, and a blueprint
 does not make it so.
 
-| Class | Official chapters | Official sections | Pages inspected | Pragati units | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
+| Class | Official chapters | Official sections | Pages (indexed / full text / visual) | Pragati units drafted | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Class 1 | 13 | — | 104 | 34 | 32 | 2 | 0 | 0 | 34 | IN_PROGRESS |
-| Class 2 | 11 | — | 88 | 35 | 32 | 3 | 0 | 0 | 35 | IN_PROGRESS |
+| Class 1 | 13 | — | 104 indexed / 63 full text / 12 visual | 44 | 5 | 39 | 0 | 0 | 44 | IN_PROGRESS |
+| Class 2 | 11 | — | 88 indexed / 22 full text / 12 visual | 46 | 5 | 41 | 0 | 0 | 46 | IN_PROGRESS |
 | Class 3 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 4 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 5 | 15 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |

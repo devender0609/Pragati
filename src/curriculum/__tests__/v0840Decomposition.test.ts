@@ -10,6 +10,8 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   CLASS_DECOMPOSITION_PROGRESS,
+  inspectedOfficialRecordIds,
+  meetsEvidenceBar,
   NON_INSTRUCTIONAL_RECORDS,
   PRAGATI_INSTRUCTIONAL_UNITS,
   decompositionCoverage,
@@ -83,7 +85,10 @@ describe('§23 nothing is authoring-ready without page evidence', () => {
     );
     expect(draft.length).toBeGreaterThan(0);
     for (const u of draft) {
-      expect(u.notes, u.instructionalUnitId).toMatch(/not read|not yet read/i);
+      // v0.84.0 hardening — the reason now lives in hardeningNote, which
+      // says which evidence is missing rather than only that pages were
+      // unread.
+      expect(u.hardeningNote ?? '', u.instructionalUnitId).toMatch(/index|not read|full pages/i);
       expect(u.humanReviewStatus, u.instructionalUnitId).toBe('flagged_for_review');
     }
   });
@@ -176,5 +181,99 @@ describe('§12 review state is untouched by decomposition', () => {
     for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
       expect(u.humanReviewStatus, u.instructionalUnitId).not.toBe('reviewed');
     }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 HARDENING — evidence depth is the gate, not plausibility.
+//
+// The first pass called 64 units authoring-ready on the strength of
+// `digest.py` output: each page's folio, headings and opening text. For
+// early-primary mathematics that is an index, not an inspection, and the
+// re-audit cut the ready count to 10. These tests keep that standard.
+// ---------------------------------------------------------------------------
+
+describe('§3/§15 evidence depth gates authoring readiness', () => {
+  it('an indexed-only unit can never be READY_FOR_AUTHORING', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      if (u.sourceEvidence.evidenceDepth !== 'DIGEST_ONLY') continue;
+      expect(u.decompositionStatus, u.instructionalUnitId).not.toBe('READY_FOR_AUTHORING');
+      expect(u.humanReviewStatus, u.instructionalUnitId).toBe('flagged_for_review');
+    }
+  });
+
+  it('a visually dependent unit needs pages actually looked at', () => {
+    for (const u of readyForAuthoring()) {
+      if (!u.sourceEvidence.visuallyDependent) continue;
+      expect(u.sourceEvidence.visualPagesInspected.length, u.instructionalUnitId).toBeGreaterThan(0);
+    }
+  });
+
+  it('every ready unit passes the single gate the code defines', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      const ready = u.decompositionStatus === 'READY_FOR_AUTHORING';
+      expect(meetsEvidenceBar(u), u.instructionalUnitId).toBe(ready);
+    }
+  });
+
+  it('page ranges are well formed', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      const e = u.sourceEvidence;
+      expect(e.pdfPageEnd, u.instructionalUnitId).toBeGreaterThanOrEqual(e.pdfPageStart);
+      if (e.printedPageStart !== null && e.printedPageEnd !== null) {
+        expect(e.printedPageEnd, u.instructionalUnitId).toBeGreaterThanOrEqual(e.printedPageStart);
+      }
+      for (const p of e.visualPagesInspected) {
+        expect(p, u.instructionalUnitId).toBeGreaterThanOrEqual(e.pdfPageStart);
+        expect(p, u.instructionalUnitId).toBeLessThanOrEqual(e.pdfPageEnd);
+      }
+    }
+  });
+
+  it('a class with unread pages is not COMPLETE', () => {
+    for (const p of CLASS_DECOMPOSITION_PROGRESS) {
+      const units = unitsForClass(p.classNumber);
+      const anyDraft = units.some((u) => u.sourceEvidence.evidenceDepth === 'DIGEST_ONLY');
+      if (anyDraft) expect(p.status, `class${p.classNumber}`).not.toBe('COMPLETE');
+      if (p.status === 'COMPLETE') {
+        expect(units.every((u) => meetsEvidenceBar(u)), `class${p.classNumber}`).toBe(true);
+      }
+    }
+  });
+});
+
+describe('§7/§8 one meaning of page-level intent inspected', () => {
+  it('the master map derives its status from the decomposition', () => {
+    const inspected = inspectedOfficialRecordIds();
+    expect(inspected.size).toBeGreaterThan(0);
+    for (const id of inspected) {
+      const rec = MASTER_RECORDS.find((r) => r.recordId === id);
+      if (!rec) continue;
+      expect(rec.intentStatus, id).toBe('page_level_inspected');
+    }
+  });
+
+  it('reports inspection as three numbers, not one', () => {
+    const c = decompositionCoverage(477);
+    expect(c.officialRecordsInspected).toBe(inspectedOfficialRecordIds().size);
+    expect(c.unitsWithCompleteEvidence).toBe(readyForAuthoring().length);
+    expect(c.classesFullyInspected).toBe(0); // neither class is complete yet
+    expect(c.projectedLessonCount).toBeNull();
+  });
+});
+
+describe('§9 active decomposition code does not describe the old world', () => {
+  it('no longer says there are zero units, or that reading happened only where lessons exist', () => {
+    const src = readFileSync(join(process.cwd(), 'src/curriculum/instructionalUnits.ts'), 'utf8');
+    expect(src).not.toMatch(/Zero today/);
+    expect(src).not.toMatch(/has not been done except where Pragati has already/);
+    expect(PRAGATI_INSTRUCTIONAL_UNITS.length).toBeGreaterThan(0);
+  });
+
+  it('the generated reports separate indexed pages from inspected pages', () => {
+    const md = read('INSTRUCTIONAL_MASTER_BLUEPRINT.md');
+    expect(md).toContain('indexed / ');
+    expect(md).toContain('navigation, not inspection');
+    expect(read('PAGE_LEVEL_INTENT_AUDIT_CLASSES_1_2.md')).toContain('It is not an inspection.');
   });
 });

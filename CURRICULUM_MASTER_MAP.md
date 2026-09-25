@@ -42,14 +42,14 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_aejm1_ch01 | chapter | 1 | Finding the Furry Cat! (Pre-number Concepts) | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_aejm1_ch02 | chapter | 2 | What is Long? What is Round? (Shapes) | 10 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_aejm1_ch03 | chapter | 3 | Mango Treat (Numbers 1 to 9) | 18 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_aejm1_ch04 | chapter | 4 | Making 10 (Numbers 10 to 20) | 33 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_aejm1_ch05 | chapter | 5 | How Many? (Addition and Subtraction of Single Digit Numbers) | 48 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_aejm1_ch06 | chapter | 6 | Vegetable Farm (Addition and Subtraction up to 20) | 64 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_aejm1_ch01 | chapter | 1 | Finding the Furry Cat! (Pre-number Concepts) | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_aejm1_ch02 | chapter | 2 | What is Long? What is Round? (Shapes) | 10 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_aejm1_ch03 | chapter | 3 | Mango Treat (Numbers 1 to 9) | 18 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_aejm1_ch04 | chapter | 4 | Making 10 (Numbers 10 to 20) | 33 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_aejm1_ch05 | chapter | 5 | How Many? (Addition and Subtraction of Single Digit Numbers) | 48 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_aejm1_ch06 | chapter | 6 | Vegetable Farm (Addition and Subtraction up to 20) | 64 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_aejm1_ch07 | chapter | 7 | Lina’s Family (Measurement) | 72 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_aejm1_ch08 | chapter | 8 | Fun with Numbers (Numbers 21 to 99) | 84 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_aejm1_ch08 | chapter | 8 | Fun with Numbers (Numbers 21 to 99) | 84 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_aejm1_ch09 | chapter | 9 | Utsav (Patterns) | 98 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_aejm1_ch10 | chapter | 10 | How do I Spend my Day? (Time) | 105 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_aejm1_ch11 | chapter | 11 | How Many Times? (Multiplication) | 111 | not inspected | missing | missing | not_started | unpublished |  |
@@ -70,10 +70,10 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_bejm1_ch03 | chapter | 3 | Fun with Numbers (Numbers 1 to 100) | 23 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_bejm1_ch04 | chapter | 4 | Shadow Story (Togalu) (2D Shapes) | 32 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_bejm1_ch05 | chapter | 5 | Playing with Lines (Orientations of a line) | 44 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_bejm1_ch06 | chapter | 6 | Decoration for Festival (Addition and Subtraction) | 50 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_bejm1_ch06 | chapter | 6 | Decoration for Festival (Addition and Subtraction) | 50 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_bejm1_ch07 | chapter | 7 | Rani’s Gift (Measurement) | 71 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_bejm1_ch08 | chapter | 8 | Grouping and Sharing (Multiplication and Division) | 83 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_bejm1_ch09 | chapter | 9 | Which Season is it? (Measurement of Time) | 98 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_bejm1_ch08 | chapter | 8 | Grouping and Sharing (Multiplication and Division) | 83 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_bejm1_ch09 | chapter | 9 | Which Season is it? (Measurement of Time) | 98 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_bejm1_ch10 | chapter | 10 | Fun at the Fair (Money) | 113 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_bejm1_ch11 | chapter | 11 | Data Handling | 123 | not inspected | missing | missing | not_started | unpublished |  |
 
