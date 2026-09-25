@@ -232,8 +232,14 @@ describe('§9 review provenance is versioned, and history survives', () => {
 
 // ---------------------------------------------------------------------------
 describe('§E official records and Pragati lessons cannot be confused', () => {
+  // v0.84.0 — units exist now, but the rule that emptied this registry
+  // still holds: a unit may only exist where someone read the pages. The
+  // assertion moves from "none" to "none without evidence".
   it('creates no speculative instructional units', () => {
-    expect(PRAGATI_INSTRUCTIONAL_UNITS).toHaveLength(0);
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      expect(u.intentInspectionStatus, u.instructionalUnitId).not.toBe('NOT_INSPECTED');
+      expect(u.sourceEvidence.printedPageStart, u.instructionalUnitId).not.toBeNull();
+    }
   });
 
   it('never projects a lesson count from a record count', () => {

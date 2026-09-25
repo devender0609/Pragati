@@ -16,6 +16,12 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { renderMasterMapDocument, renderMasterMapJson } from '../masterMapDocs';
 import {
+  renderBlueprintMarkdown,
+  renderBlueprintJson,
+  renderDecompositionGapReport,
+  renderInstructionalBacklog,
+} from '../instructionalBlueprintDocs';
+import {
   renderCoverageMatrix,
   renderContentBacklog,
   renderStructureVerificationBacklog,
@@ -36,6 +42,11 @@ const DOCS: Array<[string, () => string]> = [
   // v0.83 — the Classes 1–12 master map, human- and machine-readable.
   ['CURRICULUM_MASTER_MAP.md', () => renderMasterMapDocument(VERSION)],
   ['CURRICULUM_MASTER_MAP.json', () => renderMasterMapJson(VERSION)],
+  // v0.84.0 — the instructional blueprint and its reports.
+  ['INSTRUCTIONAL_MASTER_BLUEPRINT.md', () => renderBlueprintMarkdown(VERSION)],
+  ['INSTRUCTIONAL_MASTER_BLUEPRINT.json', () => renderBlueprintJson(VERSION)],
+  ['INSTRUCTIONAL_DECOMPOSITION_GAP_REPORT.md', () => renderDecompositionGapReport(VERSION)],
+  ['INSTRUCTIONAL_PRODUCTION_BACKLOG.md', () => renderInstructionalBacklog(VERSION)],
 ];
 
 const path = (f: string) => new URL(`../../../${f}`, import.meta.url);

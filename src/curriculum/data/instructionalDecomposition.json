@@ -1,0 +1,3725 @@
+{
+ "generatedFrom": "curriculum-verification/decomposition/tools — page-level reading of the current NCERT textbooks",
+ "units": [
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch01_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 1,
+    "printedPageEnd": 6,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Poem and picture tasks that ask children to place and identify objects by position; ball in/out of the basket."
+   },
+   "instructionalTitle": "Where is it? Position words",
+   "mathematicalObjective": "Describe where an object is using in/out, on/under, above/below, near/far.",
+   "studentCanStatement": "I can say where something is using words like inside, outside, above and below.",
+   "mathematicalIdeas": [
+    "spatial relations",
+    "position vocabulary"
+   ],
+   "representationsNeeded": [
+    "real objects and a container",
+    "picture scenes"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "inside",
+    "outside",
+    "above",
+    "below",
+    "near",
+    "far"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch01_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 7,
+    "printedPageEnd": 8,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The train rhyme and the game of naming who is before and after each child."
+   },
+   "instructionalTitle": "Before, after and between in a line",
+   "mathematicalObjective": "Describe order in a line using before, after and between.",
+   "studentCanStatement": "I can say who is before me, after me and between two friends.",
+   "mathematicalIdeas": [
+    "ordering",
+    "sequence in a line"
+   ],
+   "representationsNeeded": [
+    "children lined up as a train",
+    "picture of a train"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch01_u1"
+   ],
+   "vocabulary": [
+    "before",
+    "after",
+    "between"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch01_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 9,
+    "printedPageEnd": 10,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Suwali's buttons sorted into three groups, then re-sorted another way."
+   },
+   "instructionalTitle": "Sorting things into groups",
+   "mathematicalObjective": "Sort a collection by a chosen attribute and say the rule used.",
+   "studentCanStatement": "I can put things into groups and tell how I grouped them.",
+   "mathematicalIdeas": [
+    "classification",
+    "attribute",
+    "sorting rule"
+   ],
+   "representationsNeeded": [
+    "buttons and other loose objects",
+    "sorting trays or drawn circles"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "group",
+    "sort",
+    "same",
+    "different"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch02_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch02",
+    "officialSectionId": null,
+    "printedPageStart": 10,
+    "printedPageEnd": 13,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Naming long and round things, drawing them in two groups, matching similar shapes."
+   },
+   "instructionalTitle": "Long things and round things",
+   "mathematicalObjective": "Sort objects by shape attributes: long and round.",
+   "studentCanStatement": "I can tell whether a thing is long or round and find others like it.",
+   "mathematicalIdeas": [
+    "shape attributes",
+    "matching by shape"
+   ],
+   "representationsNeeded": [
+    "everyday objects (ball, bangle, stick)",
+    "picture sorting"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "long",
+    "round",
+    "shape"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch02_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch02",
+    "officialSectionId": null,
+    "printedPageStart": 14,
+    "printedPageEnd": 17,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The wise-grandmother story, the carrom picture and the rolls/slides/both table."
+   },
+   "instructionalTitle": "Rolls, slides, or both",
+   "mathematicalObjective": "Test how a solid moves and classify it as rolling, sliding or both.",
+   "studentCanStatement": "I can roll and slide things and say which they do.",
+   "mathematicalIdeas": [
+    "properties of solids",
+    "classification by behaviour",
+    "flat and curved faces"
+   ],
+   "representationsNeeded": [
+    "real solids on a ramp",
+    "tick table"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch02_u1"
+   ],
+   "vocabulary": [
+    "roll",
+    "slide",
+    "flat",
+    "curved"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch03_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 18,
+    "printedPageEnd": 21,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Birds joining the mango one at a time; matching quantities to fingers and to dots."
+   },
+   "instructionalTitle": "Counting up to 9, and one more",
+   "mathematicalObjective": "Count a collection up to 9 and say what one more makes.",
+   "studentCanStatement": "I can count up to 9 things and say the number that is one more.",
+   "mathematicalIdeas": [
+    "one-to-one counting",
+    "cardinality",
+    "one more"
+   ],
+   "representationsNeeded": [
+    "fingers",
+    "countable objects",
+    "picture scene"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "count",
+    "one more",
+    "how many"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch03_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 22,
+    "printedPageEnd": 24,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The drawing-day table of objects more than / less than the number of children."
+   },
+   "instructionalTitle": "More, less and as many as",
+   "mathematicalObjective": "Compare two collections and say which has more, fewer or the same.",
+   "studentCanStatement": "I can compare two groups and say which has more.",
+   "mathematicalIdeas": [
+    "comparison of quantity",
+    "equal groups",
+    "one-to-one matching"
+   ],
+   "representationsNeeded": [
+    "two groups of objects side by side",
+    "matching lines between groups"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u1"
+   ],
+   "vocabulary": [
+    "more",
+    "less",
+    "equal",
+    "same"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch03_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 25,
+    "printedPageEnd": 30,
+    "pdfPageStart": 8,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Circle-and-write tasks for 1-9, the 1-to-9 path, shuffled cards and missing numbers."
+   },
+   "instructionalTitle": "Writing the numerals 1 to 9",
+   "mathematicalObjective": "Match a numeral to a quantity, write it, and place numbers in order.",
+   "studentCanStatement": "I can write the numbers 1 to 9 and put them in order.",
+   "mathematicalIdeas": [
+    "numeral-quantity link",
+    "number sequence",
+    "missing numbers"
+   ],
+   "representationsNeeded": [
+    "numeral cards",
+    "number track"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u1"
+   ],
+   "vocabulary": [
+    "number name",
+    "numeral",
+    "order"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch04_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 33,
+    "printedPageEnd": 34,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Dot designs made with seeds and the dice-and-colour game."
+   },
+   "instructionalTitle": "Seeing how many without counting",
+   "mathematicalObjective": "Recognise small dot arrangements at a glance and make your own.",
+   "studentCanStatement": "I can look at a dot pattern and say how many without counting one by one.",
+   "mathematicalIdeas": [
+    "subitising",
+    "dot arrangements",
+    "same number, different arrangement"
+   ],
+   "representationsNeeded": [
+    "dot cards",
+    "dice faces",
+    "seeds or buttons"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u1"
+   ],
+   "vocabulary": [
+    "dots",
+    "pattern",
+    "how many"
+   ],
+   "reasoningDemand": "recall",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch04_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 35,
+    "printedPageEnd": 36,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The vanishing buttons and the discussion of situations where nothing is there."
+   },
+   "instructionalTitle": "Zero: when there is nothing left",
+   "mathematicalObjective": "Use 0 for an empty collection and count down to it.",
+   "studentCanStatement": "I can say and write zero when there is nothing there.",
+   "mathematicalIdeas": [
+    "zero as a count",
+    "counting back to zero"
+   ],
+   "representationsNeeded": [
+    "objects removed one at a time",
+    "the vanishing-buttons picture"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u3"
+   ],
+   "vocabulary": [
+    "zero",
+    "none",
+    "left"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch04_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 37,
+    "printedPageEnd": 38,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The tenth-birthday count, ten beads on a string and ten frames of buttons."
+   },
+   "instructionalTitle": "Ten as one group",
+   "mathematicalObjective": "Make a group of ten and use it to count.",
+   "studentCanStatement": "I can make a group of ten and use it to count things.",
+   "mathematicalIdeas": [
+    "unitising ten",
+    "ten frame",
+    "bead string of ten"
+   ],
+   "representationsNeeded": [
+    "ten frame",
+    "string of ten beads",
+    "bundles"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u3"
+   ],
+   "vocabulary": [
+    "ten",
+    "group of ten",
+    "frame"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch04_u4",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 39,
+    "printedPageEnd": 40,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The handy five and ten finger game and the number-pairs-of-10 pattern."
+   },
+   "instructionalTitle": "Number pairs that make 5 and 10",
+   "mathematicalObjective": "Find the pairs of numbers that make 5 and that make 10.",
+   "studentCanStatement": "I can say what goes with a number to make 5 or 10.",
+   "mathematicalIdeas": [
+    "part-part-whole",
+    "number bonds of 5 and 10",
+    "complements"
+   ],
+   "representationsNeeded": [
+    "fingers on two hands",
+    "ten frame",
+    "pair cards"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch04_u3"
+   ],
+   "vocabulary": [
+    "pair",
+    "makes",
+    "altogether"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 4,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch04_u5",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 41,
+    "printedPageEnd": 45,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-24",
+    "establishes": "\"10 and 3 is 13\" spreads, ten-frame colouring, sequences and the tallest-tower task."
+   },
+   "instructionalTitle": "Numbers 11 to 20 as ten and some more",
+   "mathematicalObjective": "Read, write and build the numbers 11-20 as a ten and some ones.",
+   "studentCanStatement": "I can show a number like 14 as one ten and four more.",
+   "mathematicalIdeas": [
+    "place value beginnings",
+    "teen number names",
+    "tens and ones"
+   ],
+   "representationsNeeded": [
+    "ten frames",
+    "ginladi (bead string)",
+    "numeral and word cards"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch04_u3",
+    "pragati_iu_g01_ch04_u4"
+   ],
+   "vocabulary": [
+    "eleven",
+    "twelve",
+    "tens",
+    "ones"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 5,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch05_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 48,
+    "printedPageEnd": 52,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Park scene, \"4 children and 2 children altogether make __\", finger and dice totals."
+   },
+   "instructionalTitle": "Putting groups together: addition to 9",
+   "mathematicalObjective": "Find how many altogether by joining two groups.",
+   "studentCanStatement": "I can put two groups together and say how many there are altogether.",
+   "mathematicalIdeas": [
+    "addition as combining",
+    "the + and = signs",
+    "totals within 9"
+   ],
+   "representationsNeeded": [
+    "countable objects",
+    "pictures of two groups",
+    "dice"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u1"
+   ],
+   "vocabulary": [
+    "altogether",
+    "add",
+    "plus",
+    "total"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch05_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 53,
+    "printedPageEnd": 56,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Beads and string, hop-and-find-the-sum, \"add in your own way\" and the number-pair wheels."
+   },
+   "instructionalTitle": "Ways of adding",
+   "mathematicalObjective": "Add by counting on, by hopping on a number strip, and by using pairs.",
+   "studentCanStatement": "I can add in more than one way and get the same answer.",
+   "mathematicalIdeas": [
+    "counting on",
+    "number line hops",
+    "number pairs as a strategy",
+    "order does not change the total"
+   ],
+   "representationsNeeded": [
+    "bead string",
+    "number strip with hops",
+    "pair wheels"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u1",
+    "pragati_iu_g01_ch04_u4"
+   ],
+   "vocabulary": [
+    "count on",
+    "hop",
+    "sum",
+    "pair"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch05_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 57,
+    "printedPageEnd": 57,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Shell and marble stories with a \"how many altogether\" question."
+   },
+   "instructionalTitle": "Addition stories",
+   "mathematicalObjective": "Solve a word story by deciding it is an addition and finding the total.",
+   "studentCanStatement": "I can turn a story about two groups into an addition and answer it.",
+   "mathematicalIdeas": [
+    "story problems",
+    "choosing the operation"
+   ],
+   "representationsNeeded": [
+    "drawn objects for the story",
+    "number sentence frame"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u1"
+   ],
+   "vocabulary": [
+    "story",
+    "altogether",
+    "how many"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": "shells, marbles and classroom objects",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch05_u4",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 58,
+    "printedPageEnd": 60,
+    "pdfPageStart": 11,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The five-little-children rhyme and the \"how many left\" frames with 6 - 2 = __."
+   },
+   "instructionalTitle": "Taking away: subtraction to 9",
+   "mathematicalObjective": "Find how many are left when some are taken away.",
+   "studentCanStatement": "I can take some away and say how many are left.",
+   "mathematicalIdeas": [
+    "subtraction as take-away",
+    "the - sign",
+    "counting back"
+   ],
+   "representationsNeeded": [
+    "objects removed",
+    "picture sequences",
+    "number strip"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u1"
+   ],
+   "vocabulary": [
+    "take away",
+    "left",
+    "minus"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 4,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch06_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 64,
+    "printedPageEnd": 68,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Rumi and Shami's baskets (7 + 5, 9 + 4) and the ginladi method for 12 + 4."
+   },
+   "instructionalTitle": "Adding past ten on a bead string",
+   "mathematicalObjective": "Add a small number to a number beyond ten by counting on.",
+   "studentCanStatement": "I can start at 12 and count on 4 more on my bead string.",
+   "mathematicalIdeas": [
+    "counting on from a number",
+    "addition crossing into the teens"
+   ],
+   "representationsNeeded": [
+    "ginladi (bead string)",
+    "number strip hops"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u2",
+    "pragati_iu_g01_ch04_u5"
+   ],
+   "vocabulary": [
+    "count on",
+    "add",
+    "sum"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": "Pages 69 onward of this chapter were not read in this pass; a later unit may be needed for the rest of the chapter."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch07_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 72,
+    "printedPageEnd": 75,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Lina's family compared by height; longest/shortest picture tasks; the Statue of Unity."
+   },
+   "instructionalTitle": "Comparing how tall and how long",
+   "mathematicalObjective": "Compare objects directly and order them by length or height.",
+   "studentCanStatement": "I can put things in order from shortest to longest.",
+   "mathematicalIdeas": [
+    "direct comparison",
+    "ordering by length",
+    "tallest and shortest"
+   ],
+   "representationsNeeded": [
+    "real objects laid side by side",
+    "pictures for comparison"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "long",
+    "short",
+    "tall",
+    "longest",
+    "shortest"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch07_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 76,
+    "printedPageEnd": 79,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Measuring the table, bag and blackboard; guess-and-find tables for handspans and footspans."
+   },
+   "instructionalTitle": "Measuring with handspans and footspans",
+   "mathematicalObjective": "Measure a length by repeating a non-standard unit, after estimating.",
+   "studentCanStatement": "I can guess how many handspans long something is and then check.",
+   "mathematicalIdeas": [
+    "iterating a unit",
+    "estimate then measure",
+    "why units must be the same"
+   ],
+   "representationsNeeded": [
+    "handspan and footspan",
+    "measuring table of guess vs finding"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch07_u1"
+   ],
+   "vocabulary": [
+    "handspan",
+    "footspan",
+    "guess",
+    "measure"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch07_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 79,
+    "printedPageEnd": 80,
+    "pdfPageStart": 8,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Tick the heavier/lighter object, then \"who is heavier between you and your friend?\""
+   },
+   "instructionalTitle": "Heavier and lighter",
+   "mathematicalObjective": "Compare two objects by weight and say which is heavier.",
+   "studentCanStatement": "I can hold two things and say which is heavier.",
+   "mathematicalIdeas": [
+    "direct comparison of mass",
+    "balance intuition"
+   ],
+   "representationsNeeded": [
+    "two objects in the hands",
+    "simple balance"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "heavy",
+    "light",
+    "heavier",
+    "lighter"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch08_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 84,
+    "printedPageEnd": 89,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Packing oranges in boxes of ten; number spreads 21-50; ten-frame fill-ins."
+   },
+   "instructionalTitle": "Numbers 21 to 50 as tens and ones",
+   "mathematicalObjective": "Build, read and write numbers to 50 using groups of ten.",
+   "studentCanStatement": "I can show 34 as three tens and four ones.",
+   "mathematicalIdeas": [
+    "place value to 50",
+    "grouping in tens",
+    "number names"
+   ],
+   "representationsNeeded": [
+    "ginladi",
+    "ten frames",
+    "numeral and word cards"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch04_u5"
+   ],
+   "vocabulary": [
+    "tens",
+    "ones",
+    "twenty-one"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch08_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 90,
+    "printedPageEnd": 90,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Fill-the-missing-number grids (46, 42, 39, 34) and backward counting."
+   },
+   "instructionalTitle": "Counting forward and back, and missing numbers",
+   "mathematicalObjective": "Continue a count in either direction and fill missing numbers to 50.",
+   "studentCanStatement": "I can count on and count back, and fill in numbers that are missing.",
+   "mathematicalIdeas": [
+    "number sequence",
+    "counting back",
+    "one more and one less"
+   ],
+   "representationsNeeded": [
+    "number track to 50",
+    "number cards"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch08_u1"
+   ],
+   "vocabulary": [
+    "before",
+    "after",
+    "missing"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch08_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 91,
+    "printedPageEnd": 92,
+    "pdfPageStart": 8,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Counting and writing 51-60 and 61-80 spreads; the mirror-design count."
+   },
+   "instructionalTitle": "Numbers 51 to 99",
+   "mathematicalObjective": "Read, write and count numbers from 51 to 99.",
+   "studentCanStatement": "I can count and write numbers up to 99.",
+   "mathematicalIdeas": [
+    "extending place value to 99",
+    "number names to ninety-nine"
+   ],
+   "representationsNeeded": [
+    "ginladi",
+    "hundred chart segment"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch08_u1"
+   ],
+   "vocabulary": [
+    "fifty-one",
+    "sixty",
+    "ninety-nine"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": "Pages beyond 92 of this chapter were not read in this pass."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch09_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 98,
+    "printedPageEnd": 102,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Extending drawn patterns, colouring pattern strips and reasoning about what colour comes next."
+   },
+   "instructionalTitle": "Repeating patterns with shapes and colours",
+   "mathematicalObjective": "Find the rule of a repeating pattern and extend it.",
+   "studentCanStatement": "I can see what repeats in a pattern and draw what comes next.",
+   "mathematicalIdeas": [
+    "repeating unit",
+    "extending a pattern",
+    "pattern rule"
+   ],
+   "representationsNeeded": [
+    "coloured shapes",
+    "printed border patterns",
+    "objects in a line"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "pattern",
+    "repeat",
+    "next"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch09_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 103,
+    "printedPageEnd": 103,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Study-the-pattern-and-fill-the-missing-numbers task."
+   },
+   "instructionalTitle": "Number patterns",
+   "mathematicalObjective": "Continue a number pattern and say the rule.",
+   "studentCanStatement": "I can fill the missing numbers in a pattern and say how it grows.",
+   "mathematicalIdeas": [
+    "growing and repeating number patterns",
+    "skip counting beginnings"
+   ],
+   "representationsNeeded": [
+    "number strip",
+    "pattern tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch08_u2"
+   ],
+   "vocabulary": [
+    "pattern",
+    "rule",
+    "missing"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch09_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 104,
+    "printedPageEnd": 104,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Completing the kolam Murthy and Vani are drawing."
+   },
+   "instructionalTitle": "Patterns in kolam and rangoli",
+   "mathematicalObjective": "Complete a kolam pattern and describe its repeat.",
+   "studentCanStatement": "I can finish a kolam pattern by following its repeat.",
+   "mathematicalIdeas": [
+    "patterns in cultural designs",
+    "symmetry of a repeat"
+   ],
+   "representationsNeeded": [
+    "dot grid for kolam",
+    "drawn rangoli"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch09_u1"
+   ],
+   "vocabulary": [
+    "kolam",
+    "rangoli",
+    "design"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": "kolam and rangoli drawing",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch10_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch10",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch10",
+    "officialSectionId": null,
+    "printedPageStart": 105,
+    "printedPageEnd": 107,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Pihu's daily routine and the tick-the-activity tasks for each part of the day."
+   },
+   "instructionalTitle": "Parts of the day and the order of events",
+   "mathematicalObjective": "Name parts of the day and put daily events in order.",
+   "studentCanStatement": "I can say what I do in the morning, afternoon and night, in order.",
+   "mathematicalIdeas": [
+    "sequencing events",
+    "parts of the day",
+    "time vocabulary"
+   ],
+   "representationsNeeded": [
+    "picture cards of a child's day",
+    "a day strip"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "morning",
+    "afternoon",
+    "evening",
+    "night"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch10_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch10",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch10",
+    "officialSectionId": null,
+    "printedPageStart": 108,
+    "printedPageEnd": 108,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Colour the activity that usually takes longer."
+   },
+   "instructionalTitle": "Which takes longer?",
+   "mathematicalObjective": "Compare two activities by how long they take.",
+   "studentCanStatement": "I can say which of two things takes longer.",
+   "mathematicalIdeas": [
+    "duration",
+    "comparing time informally"
+   ],
+   "representationsNeeded": [
+    "paired activity pictures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch10_u1"
+   ],
+   "vocabulary": [
+    "longer",
+    "shorter",
+    "time"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch10_u3",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch10",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch10",
+    "officialSectionId": null,
+    "printedPageStart": 109,
+    "printedPageEnd": 110,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Season pictures matched to objects and clothes."
+   },
+   "instructionalTitle": "Seasons of the year",
+   "mathematicalObjective": "Name the seasons and match things to the season they belong to.",
+   "studentCanStatement": "I can name the seasons and say what belongs to each.",
+   "mathematicalIdeas": [
+    "cyclic time",
+    "classification by season"
+   ],
+   "representationsNeeded": [
+    "season picture sets"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch10_u1"
+   ],
+   "vocabulary": [
+    "summer",
+    "monsoon",
+    "winter",
+    "spring"
+   ],
+   "reasoningDemand": "recall",
+   "applicationContext": "clothes, food and weather",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 1,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": "Mathematically light: cyclic sequence and classification only. Kept because the source teaches it here."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch11_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch11",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch11",
+    "officialSectionId": null,
+    "printedPageStart": 111,
+    "printedPageEnd": 114,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Two children per horse, 3 jalebis per plate, 2 people per bus row: \"9 times 2 =\" and \"5 times 3 =\"."
+   },
+   "instructionalTitle": "Equal groups and repeated addition",
+   "mathematicalObjective": "Find a total of equal groups by adding the same number again and again.",
+   "studentCanStatement": "I can say \"5 times 3\" and add 3 five times to find the total.",
+   "mathematicalIdeas": [
+    "equal groups",
+    "repeated addition",
+    "\"times\" language as groups"
+   ],
+   "representationsNeeded": [
+    "equal groups of objects",
+    "array-like pictures (bus seats, jalebi plates)"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch05_u1"
+   ],
+   "vocabulary": [
+    "times",
+    "equal groups",
+    "total"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "One chapter, one clearly separable idea; recorded as a single unit rather than split, because the pages build one progression.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch12_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch12",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch12",
+    "officialSectionId": null,
+    "printedPageStart": 115,
+    "printedPageEnd": 116,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Riya counting coins and Sahil counting notes; the toy-seller prices."
+   },
+   "instructionalTitle": "Knowing our coins and notes",
+   "mathematicalObjective": "Recognise Indian coins and notes and say their value.",
+   "studentCanStatement": "I can name the coins and notes and say how much each is worth.",
+   "mathematicalIdeas": [
+    "currency denominations",
+    "value of a coin or note"
+   ],
+   "representationsNeeded": [
+    "play money",
+    "pictures of coins and notes"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch08_u1"
+   ],
+   "vocabulary": [
+    "rupee",
+    "coin",
+    "note",
+    "value"
+   ],
+   "reasoningDemand": "recall",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch12_u2",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch12",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch12",
+    "officialSectionId": null,
+    "printedPageStart": 117,
+    "printedPageEnd": 119,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Find the total amount, fill combinations for `20, `10, `13, `8 and match equal amounts."
+   },
+   "instructionalTitle": "Making an amount in different ways",
+   "mathematicalObjective": "Make a given amount with different combinations of coins and notes.",
+   "studentCanStatement": "I can pay the same amount in more than one way.",
+   "mathematicalIdeas": [
+    "composing an amount",
+    "equivalent combinations",
+    "totalling money"
+   ],
+   "representationsNeeded": [
+    "play money",
+    "amount cards"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch12_u1",
+    "pragati_iu_g01_ch05_u1"
+   ],
+   "vocabulary": [
+    "amount",
+    "total",
+    "change"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": "buying toys from a shop",
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g01_ch13_u1",
+   "grade": "class1",
+   "classNumber": 1,
+   "officialRecordId": "ncert_aejm1_ch13",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch13",
+    "officialSectionId": null,
+    "printedPageStart": 120,
+    "printedPageEnd": 122,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Counting dolls, cars and elephants; then counting flowers by colour and judging true/false statements."
+   },
+   "instructionalTitle": "Counting groups in a picture and comparing them",
+   "mathematicalObjective": "Count each kind of thing in a picture and compare the counts.",
+   "studentCanStatement": "I can count each kind of toy and say which there are more of.",
+   "mathematicalIdeas": [
+    "categorical counting",
+    "comparing counts",
+    "true/false statements about data"
+   ],
+   "representationsNeeded": [
+    "picture with several categories",
+    "simple tally or column of counts"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch03_u2"
+   ],
+   "vocabulary": [
+    "more than",
+    "less than",
+    "equal to",
+    "how many"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record with several distinct teachable ideas; Classes 1-5 define no sections, so the split is Pragati's and is recorded here with the pages that support each part.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch01_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 1,
+    "printedPageEnd": 3,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Counting coconuts, boats and shell necklaces; packing chikoos into trays of ten."
+   },
+   "instructionalTitle": "Counting in groups of ten",
+   "mathematicalObjective": "Count a large collection by grouping in tens rather than one by one.",
+   "studentCanStatement": "I can count a big pile by making groups of ten.",
+   "mathematicalIdeas": [
+    "grouping as a counting strategy",
+    "tens as units"
+   ],
+   "representationsNeeded": [
+    "objects that pack in tens (chikoo trays)",
+    "bundles of sticks"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch08_u1"
+   ],
+   "vocabulary": [
+    "group",
+    "ten",
+    "pack"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch01_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 4,
+    "printedPageEnd": 9,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Ten-strip = 10 units, the tens/ones table, \"30 + 1 or 3 tens 1 one\", and making numbers from cards."
+   },
+   "instructionalTitle": "Tens and ones with strips and blocks",
+   "mathematicalObjective": "Represent a two-digit number as tens and ones and read it from the representation.",
+   "studentCanStatement": "I can show 34 as 3 ten-strips and 4 units, and read it back.",
+   "mathematicalIdeas": [
+    "place value to 99",
+    "ten strip = 10 units",
+    "expanded form 30 + 4"
+   ],
+   "representationsNeeded": [
+    "ten strips and unit blocks",
+    "tens/ones place chart",
+    "number cards"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch01_u1"
+   ],
+   "vocabulary": [
+    "tens",
+    "ones",
+    "unit",
+    "strip"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch01_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 6,
+    "printedPageEnd": 7,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-24",
+    "establishes": "\"Let us Make 100!\" — ten strips joined, and discussion of other combinations."
+   },
+   "instructionalTitle": "Making 100",
+   "mathematicalObjective": "Build 100 from ten tens and describe other ways to make it.",
+   "studentCanStatement": "I can put ten strips of ten together to make 100.",
+   "mathematicalIdeas": [
+    "100 as ten tens",
+    "composing a hundred"
+   ],
+   "representationsNeeded": [
+    "ten strips joined",
+    "hundred square"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch01_u2"
+   ],
+   "vocabulary": [
+    "hundred",
+    "ten tens"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch01_u4",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 10,
+    "printedPageEnd": 10,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Oranges into trays of ten with some left over."
+   },
+   "instructionalTitle": "Trays, groups and leftovers",
+   "mathematicalObjective": "Work out how many full groups of ten and how many are left over.",
+   "studentCanStatement": "I can say how many full trays of ten I need and how many are left.",
+   "mathematicalIdeas": [
+    "division-like grouping",
+    "remainder informally",
+    "tens and ones in context"
+   ],
+   "representationsNeeded": [
+    "trays of ten oranges",
+    "grouping mat"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch01_u2"
+   ],
+   "vocabulary": [
+    "tray",
+    "left over",
+    "full group"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": "packing fruit for sale",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 4,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch02_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch02",
+    "officialSectionId": null,
+    "printedPageStart": 17,
+    "printedPageEnd": 18,
+    "pdfPageStart": 2,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Musical instruments circled and matched to their solid shapes."
+   },
+   "instructionalTitle": "Solid shapes around us",
+   "mathematicalObjective": "Match everyday objects to cube, cuboid, cone, cylinder and sphere.",
+   "studentCanStatement": "I can name the solid shape an object is like.",
+   "mathematicalIdeas": [
+    "3-D shape recognition",
+    "shape names"
+   ],
+   "representationsNeeded": [
+    "real solids",
+    "objects and instruments to match"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch02_u1"
+   ],
+   "vocabulary": [
+    "cube",
+    "cuboid",
+    "cone",
+    "cylinder",
+    "sphere"
+   ],
+   "reasoningDemand": "recall",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch02_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch02",
+    "officialSectionId": null,
+    "printedPageStart": 19,
+    "printedPageEnd": 22,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Decorating the gift box with ribbons on edges and balls on corners; the faces/edges/corners table; touch-and-tell."
+   },
+   "instructionalTitle": "Faces, edges and corners",
+   "mathematicalObjective": "Count the faces, edges and corners of a solid and use them to tell solids apart.",
+   "studentCanStatement": "I can count the faces, edges and corners of a box.",
+   "mathematicalIdeas": [
+    "attributes of solids",
+    "counting features",
+    "identifying by property"
+   ],
+   "representationsNeeded": [
+    "real solids to handle",
+    "feature table",
+    "blindfold touch-and-tell"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch02_u1"
+   ],
+   "vocabulary": [
+    "face",
+    "edge",
+    "corner"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch03_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 23,
+    "printedPageEnd": 24,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Ginladi bead counts, blank cards, and the guess-my-number / guess-my-place games."
+   },
+   "instructionalTitle": "Numbers on the bead string and number strip",
+   "mathematicalObjective": "Locate and name numbers to 100 on a bead string and number strip.",
+   "studentCanStatement": "I can find where a number sits on the number strip.",
+   "mathematicalIdeas": [
+    "number line position",
+    "order of numbers to 100"
+   ],
+   "representationsNeeded": [
+    "ginladi (bead string)",
+    "number strip",
+    "number chart"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch01_u2"
+   ],
+   "vocabulary": [
+    "before",
+    "after",
+    "between"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch03_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 25,
+    "printedPageEnd": 29,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Jumpy the frog's jumps, skip counting in 2s and 5s on the chart, backward jumps and 'what comes just before'."
+   },
+   "instructionalTitle": "Skip counting and jumps",
+   "mathematicalObjective": "Skip count in 2s, 5s and 10s, forwards and backwards, and describe the pattern.",
+   "studentCanStatement": "I can jump in 2s and 5s on the number chart and say what I notice.",
+   "mathematicalIdeas": [
+    "skip counting",
+    "forward and backward counting",
+    "patterns in a hundred chart"
+   ],
+   "representationsNeeded": [
+    "hundred chart",
+    "number line with hops"
+   ],
+   "prerequisites": [
+    "counting to 100 (prerequisite unit not yet identified)",
+    "pragati_iu_g02_ch03_u1"
+   ],
+   "vocabulary": [
+    "skip count",
+    "jump",
+    "backward"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch03_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 28,
+    "printedPageEnd": 31,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Rizwan counting from 20, filling missing numbers in grid fragments, and the Bingo pattern game."
+   },
+   "instructionalTitle": "Patterns in the number chart",
+   "mathematicalObjective": "Find and explain patterns in rows and columns of the hundred chart.",
+   "studentCanStatement": "I can say what is the same about a column of the number chart.",
+   "mathematicalIdeas": [
+    "structure of the hundred chart",
+    "tens pattern",
+    "reasoning about number sequence"
+   ],
+   "representationsNeeded": [
+    "hundred chart",
+    "grid fragments with missing numbers"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch03_u2"
+   ],
+   "vocabulary": [
+    "pattern",
+    "row",
+    "column"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch04_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 32,
+    "printedPageEnd": 34,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Togalu Gombeyaata shadow play; shadows of objects; tracing outlines of everyday things."
+   },
+   "instructionalTitle": "Shadows and flat shapes",
+   "mathematicalObjective": "See that a solid casts a flat shape, and name circle, triangle, rectangle and square.",
+   "studentCanStatement": "I can name the flat shape a shadow makes.",
+   "mathematicalIdeas": [
+    "2-D shapes from 3-D objects",
+    "shape names"
+   ],
+   "representationsNeeded": [
+    "torch and objects",
+    "traced outlines"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch02_u1"
+   ],
+   "vocabulary": [
+    "circle",
+    "triangle",
+    "rectangle",
+    "square"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch04_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 35,
+    "printedPageEnd": 39,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The hide-and-seek shape story, colour-the-carpet sorting, catch-the-corner and origami folding."
+   },
+   "instructionalTitle": "Telling shapes apart by their properties",
+   "mathematicalObjective": "Identify a flat shape by its sides and corners, including when it is hidden or tilted.",
+   "studentCanStatement": "I can tell a square from a rectangle by looking at its sides and corners.",
+   "mathematicalIdeas": [
+    "sides and corners of 2-D shapes",
+    "shape constancy under position"
+   ],
+   "representationsNeeded": [
+    "cut-out shapes",
+    "hide-and-seek shape pictures",
+    "dot paper"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch04_u1"
+   ],
+   "vocabulary": [
+    "side",
+    "corner",
+    "shape"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch04_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 40,
+    "printedPageEnd": 41,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Stamping designs with caps and erasers; leaf patterns."
+   },
+   "instructionalTitle": "Making patterns with shapes",
+   "mathematicalObjective": "Make and continue a pattern by stamping or arranging shapes.",
+   "studentCanStatement": "I can print shapes to make a pattern that repeats.",
+   "mathematicalIdeas": [
+    "repeating patterns in 2-D",
+    "symmetry of a repeat"
+   ],
+   "representationsNeeded": [
+    "stamping objects",
+    "leaves and cut-outs"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch09_u1"
+   ],
+   "vocabulary": [
+    "pattern",
+    "repeat",
+    "design"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": "printing and craft",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch05_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 44,
+    "printedPageEnd": 45,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Aasanas sorted by the lines they make; tracing missing lines; \"is it straight?\" with a thread."
+   },
+   "instructionalTitle": "Kinds of lines",
+   "mathematicalObjective": "Tell apart vertical, horizontal, slanting and curved lines and find them around you.",
+   "studentCanStatement": "I can point to a standing line, a sleeping line, a slanting line and a curve.",
+   "mathematicalIdeas": [
+    "line orientation",
+    "straight versus curved"
+   ],
+   "representationsNeeded": [
+    "yoga aasana pictures",
+    "thread held taut",
+    "tracing tasks"
+   ],
+   "prerequisites": [],
+   "vocabulary": [
+    "vertical",
+    "horizontal",
+    "slanting",
+    "curved"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch05_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 46,
+    "printedPageEnd": 49,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Making shapes with straight lines on dots, curved-line drawings, and designs using two, three and all line types; local art forms."
+   },
+   "instructionalTitle": "Drawing with lines",
+   "mathematicalObjective": "Make shapes and designs using chosen kinds of lines.",
+   "studentCanStatement": "I can draw a design using straight and curved lines.",
+   "mathematicalIdeas": [
+    "composing figures from lines",
+    "dot-grid construction"
+   ],
+   "representationsNeeded": [
+    "dot paper",
+    "free drawing space"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch05_u1",
+    "pragati_iu_g02_ch04_u2"
+   ],
+   "vocabulary": [
+    "design",
+    "figure",
+    "line"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": "Madhubani, Kalamkari and Warli art",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 50,
+    "printedPageEnd": 53,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Garland flowers: 10 + 2 = 12, 50 + 3 = 53, and totals such as 20 + 43."
+   },
+   "instructionalTitle": "Adding tens and ones without regrouping",
+   "mathematicalObjective": "Add two two-digit numbers by adding tens to tens and ones to ones.",
+   "studentCanStatement": "I can add 23 and 14 by adding the tens and then the ones.",
+   "mathematicalIdeas": [
+    "place-value addition",
+    "partial sums",
+    "no regrouping"
+   ],
+   "representationsNeeded": [
+    "ten strips and units",
+    "tens/ones columns"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch01_u2",
+    "pragati_iu_g01_ch05_u1"
+   ],
+   "vocabulary": [
+    "add",
+    "tens",
+    "ones",
+    "total"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 54,
+    "printedPageEnd": 54,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "\"Let us do it on Ginladi\" and the number-line additions 23 + 14, 24 + 16, 11 + 22."
+   },
+   "instructionalTitle": "Adding on a bead string and a number line",
+   "mathematicalObjective": "Add two-digit numbers by counting on in tens and ones.",
+   "studentCanStatement": "I can add 24 and 16 by jumping tens and then ones on a number line.",
+   "mathematicalIdeas": [
+    "counting on in tens",
+    "number line as an addition tool"
+   ],
+   "representationsNeeded": [
+    "ginladi",
+    "number line with jumps"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch06_u1",
+    "pragati_iu_g02_ch03_u2"
+   ],
+   "vocabulary": [
+    "jump",
+    "number line",
+    "add"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 55,
+    "printedPageEnd": 57,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Mahi's and Isha's blocks; '7 tens 13 ones' rewritten; addition story problems (43 + 58 runs)."
+   },
+   "instructionalTitle": "Adding with regrouping",
+   "mathematicalObjective": "Add two-digit numbers where the ones make more than ten, and exchange ten ones for a ten.",
+   "studentCanStatement": "I can swap ten ones for one ten when I add.",
+   "mathematicalIdeas": [
+    "regrouping",
+    "7 tens 13 ones = 8 tens 3 ones",
+    "exchange"
+   ],
+   "representationsNeeded": [
+    "blocks and strips to exchange",
+    "tens/ones columns"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch06_u1"
+   ],
+   "vocabulary": [
+    "regroup",
+    "exchange",
+    "carry"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch06_u4",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 58,
+    "printedPageEnd": 59,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Word problems and the two methods shown for 75 - 35 and 32 - 12."
+   },
+   "instructionalTitle": "Taking away two-digit numbers",
+   "mathematicalObjective": "Subtract a two-digit number, using tens and ones or a number line.",
+   "studentCanStatement": "I can take 35 away from 75 and show how I did it.",
+   "mathematicalIdeas": [
+    "subtraction with place value",
+    "subtraction on a number line",
+    "checking by addition"
+   ],
+   "representationsNeeded": [
+    "ten strips and units",
+    "number line jumps back"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch06_u3"
+   ],
+   "vocabulary": [
+    "take away",
+    "minus",
+    "difference"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 4,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": "Pages beyond 59 of this chapter were not read in this pass; further subtraction units may be needed."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch07_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 71,
+    "printedPageEnd": 72,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The raja's bed story, where each carpenter's handspan gives a different answer; estimate-then-measure table."
+   },
+   "instructionalTitle": "Why we need the same unit",
+   "mathematicalObjective": "See that measurements disagree when different people use their own handspans.",
+   "studentCanStatement": "I can explain why we must all measure with the same unit.",
+   "mathematicalIdeas": [
+    "need for a standard unit",
+    "repeating a unit end to end"
+   ],
+   "representationsNeeded": [
+    "handspans of different people",
+    "textbook used as a unit"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch07_u2"
+   ],
+   "vocabulary": [
+    "unit",
+    "estimate",
+    "length"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch07_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 73,
+    "printedPageEnd": 75,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Longest and shortest paths from A to B; \"how many blocks tall\"; measuring with a tool of your choice."
+   },
+   "instructionalTitle": "Measuring with a chosen unit",
+   "mathematicalObjective": "Estimate and then measure lengths and heights with a repeated unit.",
+   "studentCanStatement": "I can guess a length, measure it in blocks, and compare my guess.",
+   "mathematicalIdeas": [
+    "iterating a unit",
+    "estimate versus actual",
+    "comparing paths"
+   ],
+   "representationsNeeded": [
+    "blocks",
+    "erasers",
+    "traced hand",
+    "paths on the page"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch07_u1"
+   ],
+   "vocabulary": [
+    "estimate",
+    "actual",
+    "longest",
+    "shortest"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch07_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 76,
+    "printedPageEnd": 78,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Pumpkin's chaupal comparisons, making your own balance, and marking which side goes down."
+   },
+   "instructionalTitle": "Heavier, lighter and a simple balance",
+   "mathematicalObjective": "Compare weights by handling and by using a balance.",
+   "studentCanStatement": "I can use a balance to find which is heavier.",
+   "mathematicalIdeas": [
+    "comparison of mass",
+    "balance as a comparison tool",
+    "ordering by weight"
+   ],
+   "representationsNeeded": [
+    "home-made balance",
+    "fruits and vegetables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch07_u3"
+   ],
+   "vocabulary": [
+    "heavy",
+    "light",
+    "balance",
+    "heaviest"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 83,
+    "printedPageEnd": 85,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Wheels on autorickshaws and wings on butterflies written as repeated addition and as groups."
+   },
+   "instructionalTitle": "Equal groups and \"times\"",
+   "mathematicalObjective": "Describe equal groups as repeated addition and as \"n times m\".",
+   "studentCanStatement": "I can say \"3 groups of 4\" and \"3 times 4\" for the same picture.",
+   "mathematicalIdeas": [
+    "equal groups",
+    "repeated addition",
+    "times language"
+   ],
+   "representationsNeeded": [
+    "equal groups pictures (wheels, wings)",
+    "arrays"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch11_u1"
+   ],
+   "vocabulary": [
+    "groups of",
+    "times",
+    "total"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 86,
+    "printedPageEnd": 86,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Matching 9 + 9 + 9 with 3 x 9, and the completion table."
+   },
+   "instructionalTitle": "The multiplication sign",
+   "mathematicalObjective": "Write an equal-groups situation with x and read it back.",
+   "studentCanStatement": "I can write 3 groups of 9 as 3 x 9.",
+   "mathematicalIdeas": [
+    "multiplication notation",
+    "link between repeated addition and x"
+   ],
+   "representationsNeeded": [
+    "matching cards",
+    "completed tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch08_u1"
+   ],
+   "vocabulary": [
+    "multiply",
+    "times",
+    "product"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 87,
+    "printedPageEnd": 88,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Complete-the-table pages for 2, 3, 5 and 10 with both \"2 threes are 6\" and 2 x 3 = 6 forms."
+   },
+   "instructionalTitle": "Tables of 2, 3, 5 and 10",
+   "mathematicalObjective": "Build the tables of 2, 3, 5 and 10 from equal groups.",
+   "studentCanStatement": "I can build and use the table of 5.",
+   "mathematicalIdeas": [
+    "multiplication tables as patterns",
+    "skip counting and tables"
+   ],
+   "representationsNeeded": [
+    "table grids",
+    "hundred chart for skip counting"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch08_u2",
+    "pragati_iu_g02_ch03_u2"
+   ],
+   "vocabulary": [
+    "table",
+    "twos",
+    "fives"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch08_u4",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 89,
+    "printedPageEnd": 90,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "\"4 groups of 5\", \"6 groups of 4\" picture tasks with the number sentence completed."
+   },
+   "instructionalTitle": "Using multiplication in pictures and stories",
+   "mathematicalObjective": "Solve picture and word problems by choosing a multiplication.",
+   "studentCanStatement": "I can look at 6 groups of 4 and work out the total.",
+   "mathematicalIdeas": [
+    "applying multiplication",
+    "choosing the operation"
+   ],
+   "representationsNeeded": [
+    "grouped pictures (gulab jamuns, bouquets)"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch08_u3"
+   ],
+   "vocabulary": [
+    "groups",
+    "total",
+    "times"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 4,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": "Pages beyond 90 were not read in this pass."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch09_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 98,
+    "printedPageEnd": 100,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Seasons described, then matched with their names and festivals."
+   },
+   "instructionalTitle": "Seasons and the year",
+   "mathematicalObjective": "Name the seasons and place festivals and activities in them.",
+   "studentCanStatement": "I can name the seasons and say which one my birthday is in.",
+   "mathematicalIdeas": [
+    "cyclic time",
+    "classification by season"
+   ],
+   "representationsNeeded": [
+    "season pictures",
+    "festival cards"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch10_u3"
+   ],
+   "vocabulary": [
+    "spring",
+    "summer",
+    "monsoon",
+    "winter",
+    "autumn"
+   ],
+   "reasoningDemand": "recall",
+   "applicationContext": "Indian festivals and seasons",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch09_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 101,
+    "printedPageEnd": 102,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Calendar Fun: filling the months/number-of-days table and discussing February."
+   },
+   "instructionalTitle": "Reading a calendar",
+   "mathematicalObjective": "Read a calendar to find days, dates and the number of days in a month.",
+   "studentCanStatement": "I can use a calendar to say how many days a month has.",
+   "mathematicalIdeas": [
+    "calendar structure",
+    "days of the week",
+    "months and their lengths",
+    "leap year informally"
+   ],
+   "representationsNeeded": [
+    "month calendar page",
+    "year table of months"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch10_u1"
+   ],
+   "vocabulary": [
+    "calendar",
+    "month",
+    "date",
+    "week"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch09_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 103,
+    "printedPageEnd": 103,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Matching cooking, vacation and other activities to hours, days or months."
+   },
+   "instructionalTitle": "How long does it take?",
+   "mathematicalObjective": "Choose whether an activity takes hours, days or months.",
+   "studentCanStatement": "I can say whether something takes hours, days or months.",
+   "mathematicalIdeas": [
+    "units of duration",
+    "ordering durations"
+   ],
+   "representationsNeeded": [
+    "activity cards",
+    "duration columns"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch09_u2"
+   ],
+   "vocabulary": [
+    "hour",
+    "day",
+    "month",
+    "duration"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch09_u4",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch09",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch09",
+    "officialSectionId": null,
+    "printedPageStart": 104,
+    "printedPageEnd": 105,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "The Vijayawada trip: 11:00 morning, 5:00 evening and other times in the narrative."
+   },
+   "instructionalTitle": "Telling the time of day",
+   "mathematicalObjective": "Read clock times in a story and use morning, afternoon and evening.",
+   "studentCanStatement": "I can read a clock time and say if it is morning or evening.",
+   "mathematicalIdeas": [
+    "reading time on a clock",
+    "am/pm informally as parts of the day"
+   ],
+   "representationsNeeded": [
+    "clock faces",
+    "story timeline"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch09_u3"
+   ],
+   "vocabulary": [
+    "o'clock",
+    "morning",
+    "evening"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 4,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "DRAFT_DECOMPOSITION",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": "Pages beyond 105 were not read in this pass; the clock work may extend further."
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch10_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch10",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch10",
+    "officialSectionId": null,
+    "printedPageStart": 113,
+    "printedPageEnd": 116,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Rupal's `50 at the fair; the ride-and-money table; notes of `100, `500, `200."
+   },
+   "instructionalTitle": "Money: notes, coins and totals",
+   "mathematicalObjective": "Recognise Indian notes and coins and find the total of a purchase.",
+   "studentCanStatement": "I can add up what I spent at the fair.",
+   "mathematicalIdeas": [
+    "currency values",
+    "adding money amounts"
+   ],
+   "representationsNeeded": [
+    "play money",
+    "price lists"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch12_u1",
+    "pragati_iu_g02_ch06_u1"
+   ],
+   "vocabulary": [
+    "rupee",
+    "note",
+    "coin",
+    "total"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch10_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch10",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch10",
+    "officialSectionId": null,
+    "printedPageStart": 117,
+    "printedPageEnd": 117,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Tejal's grandmother's coins: how many 25 paise, how many 20 paise make `1."
+   },
+   "instructionalTitle": "Paise and making a rupee",
+   "mathematicalObjective": "Use paise coins to make one rupee in different ways.",
+   "studentCanStatement": "I can say how many 25 paise coins make one rupee.",
+   "mathematicalIdeas": [
+    "paise and rupee relation",
+    "composing a unit from equal parts"
+   ],
+   "representationsNeeded": [
+    "old paise coins",
+    "drawn coin groups"
+   ],
+   "prerequisites": [
+    "money values in rupees (prerequisite unit not yet identified)",
+    "pragati_iu_g02_ch10_u1"
+   ],
+   "vocabulary": [
+    "paise",
+    "rupee"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch10_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch10",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch10",
+    "officialSectionId": null,
+    "printedPageStart": 114,
+    "printedPageEnd": 120,
+    "pdfPageStart": 2,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "\"How much Rupal spent\" from `8 left; the pop-the-balloon totals and the `66, `54, `85 combination tables."
+   },
+   "instructionalTitle": "Spending, change and different ways to pay",
+   "mathematicalObjective": "Find money left over and pay the same amount with different combinations.",
+   "studentCanStatement": "I can pay `66 in more than one way and say how much is left from `50.",
+   "mathematicalIdeas": [
+    "subtraction with money",
+    "equivalent combinations",
+    "optimising a choice"
+   ],
+   "representationsNeeded": [
+    "play money",
+    "combination table"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch10_u1",
+    "pragati_iu_g02_ch06_u4"
+   ],
+   "vocabulary": [
+    "change",
+    "left",
+    "combination"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": "a village fair",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch11_u1",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch11",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch11",
+    "officialSectionId": null,
+    "printedPageStart": 123,
+    "printedPageEnd": 125,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Favourite colours, picnic fruits and modes of coming to school, each recorded in a table."
+   },
+   "instructionalTitle": "Collecting data into a table",
+   "mathematicalObjective": "Count categories in a picture and record the counts in a table.",
+   "studentCanStatement": "I can fill a table with how many children like each colour.",
+   "mathematicalIdeas": [
+    "categorical data",
+    "tallying into a table"
+   ],
+   "representationsNeeded": [
+    "picture scenes",
+    "count tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g01_ch13_u1"
+   ],
+   "vocabulary": [
+    "table",
+    "count",
+    "most",
+    "least"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 1,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch11_u2",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch11",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch11",
+    "officialSectionId": null,
+    "printedPageStart": 126,
+    "printedPageEnd": 128,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Drawing faces for modes of travel and favourite games, then answering most/least questions."
+   },
+   "instructionalTitle": "Showing data in a picture chart",
+   "mathematicalObjective": "Draw a picture chart from a table and read it back.",
+   "studentCanStatement": "I can draw one face for each student and read what the chart says.",
+   "mathematicalIdeas": [
+    "pictograph",
+    "one symbol = one item",
+    "reading a chart"
+   ],
+   "representationsNeeded": [
+    "pictograph grid",
+    "symbol key"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch11_u1"
+   ],
+   "vocabulary": [
+    "chart",
+    "symbol",
+    "most",
+    "least"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 2,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g02_ch11_u3",
+   "grade": "class2",
+   "classNumber": 2,
+   "officialRecordId": "ncert_bejm1_ch11",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch11",
+    "officialSectionId": null,
+    "printedPageStart": 129,
+    "printedPageEnd": 129,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Project work: favourite vegetables and family sizes collected from classmates and families."
+   },
+   "instructionalTitle": "Asking your own question and collecting answers",
+   "mathematicalObjective": "Collect data from classmates and present it.",
+   "studentCanStatement": "I can ask my friends a question and show their answers in a chart.",
+   "mathematicalIdeas": [
+    "survey",
+    "own data collection",
+    "presenting findings"
+   ],
+   "representationsNeeded": [
+    "blank table and chart",
+    "project sheet"
+   ],
+   "prerequisites": [
+    "pragati_iu_g02_ch11_u2"
+   ],
+   "vocabulary": [
+    "survey",
+    "data",
+    "chart"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": "a class survey",
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 3,
+   "splitReason": "The chapter is one official record carrying several distinct teachable ideas. Classes 1-5 define no numbered sections, so this split is Pragati's, with the pages that support each part recorded.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null
+  }
+ ],
+ "nonInstructional": [
+  {
+   "officialRecordId": "ncert_aejm1_ch13_puzzles",
+   "grade": "class1",
+   "role": "ENRICHMENT",
+   "justification": "The Puzzles pages at the end of Chapter 13 rehearse number recognition, sums and logic already taught; they introduce no new mathematics. Recorded so the pages are not lost, and excluded from the authoring backlog as new instruction.",
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch13",
+    "officialSectionId": null,
+    "printedPageStart": 123,
+    "printedPageEnd": 128,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Number-search, magic-square-like fills, \"who am I?\" riddles and coin puzzles."
+   }
+  },
+  {
+   "officialRecordId": "ncert_bejm1_ch11_puzzles",
+   "grade": "class2",
+   "role": "ENRICHMENT",
+   "justification": "The puzzle pages closing Chapter 11 practise shape matching, pattern completion and small sums already taught. No new mathematics is introduced, so they are recorded rather than turned into an authoring target.",
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch11",
+    "officialSectionId": null,
+    "printedPageStart": 130,
+    "printedPageEnd": 131,
+    "pdfPageStart": 8,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Connect-the-shape-pairs without crossing, pattern completion and a small addition puzzle."
+   }
+  }
+ ],
+ "classProgress": [
+  {
+   "classNumber": 1,
+   "status": "IN_PROGRESS",
+   "chaptersInspected": 13,
+   "chaptersTotal": 13,
+   "pagesInspected": 104,
+   "note": "All 13 chapters read at page level. Chapters 6 and 8 were read only to pages 68 and 92 respectively; their last pages remain unread, so their final units are DRAFT_DECOMPOSITION and flagged for a second pass."
+  },
+  {
+   "classNumber": 2,
+   "status": "IN_PROGRESS",
+   "chaptersInspected": 11,
+   "chaptersTotal": 11,
+   "pagesInspected": 88,
+   "note": "All 11 chapters read at page level. Chapters 6, 8 and 9 were read to pages 59, 90 and 105; their remaining pages are unread, so their last units are DRAFT_DECOMPOSITION and flagged."
+  }
+ ]
+}

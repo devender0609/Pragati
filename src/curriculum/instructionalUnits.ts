@@ -30,52 +30,181 @@
 
 import type { Grade } from '../types';
 import { MASTER_RECORDS } from './curriculumMasterMap';
-
-/** How far decomposition has got for one official record. */
-export type DecompositionStatus =
-  /** Nobody has read the pages yet. Every record is here today. */
-  | 'not_started'
-  /** Pages read, objectives listed, units not yet written. */
-  | 'intent_inspected'
-  /** Units proposed by a maintainer, not yet reviewed. */
-  | 'decomposition_proposed'
-  /** An educator or curriculum specialist has accepted the split. */
-  | 'decomposition_reviewed';
-
-export type PragatiInstructionalUnit = {
-  /** Pragati's own id. The `pragati_` prefix is load-bearing: it must be
-   *  impossible to mistake for an NCERT or CBSE record id. */
-  instructionalUnitId: `pragati_iu_${string}`;
-  /** The official record this serves. Always present: a Pragati unit may
-   *  not exist without a source record behind it. */
-  officialRecordId: string;
-  grade: Grade;
-  /** Printed pages this unit was built from, e.g. "159-160". Null is not
-   *  allowed once the status passes 'not_started'. */
-  sourcePageRange: string | null;
-  /** One objective, in Pragati's words, derived from the pages. */
-  objective: string;
-  /** Other instructional units or official records assumed first. */
-  prerequisiteRefs: string[];
-  /** What the mathematics needs to be seen with — decided from the
-   *  pages, never from the title. */
-  representationNeeds: string[];
-  intentInspectionStatus: 'not_inspected' | 'page_level_inspected';
-  decompositionStatus: DecompositionStatus;
-  /** Who decided this split, and when. */
-  provenance: { decidedBy: string; decidedOn: string; evidence: string } | null;
-};
+import decompositionJson from './data/instructionalDecomposition.json';
 
 /**
- * Every Pragati instructional unit. Empty by design at v0.83.1.
+ * v0.84.0 — THE DECOMPOSITION SCHEMA, NOW POPULATED FROM THE PAGES.
  *
- * Populating it is the next approved phase and requires page-level
- * reading per record.
+ * Until v0.83.5 this file was a schema with an empty registry, on
+ * purpose: inventing units from chapter titles is the Number Play
+ * error. Units are now written only after someone has read the actual
+ * instructional pages, and every unit carries the page evidence that
+ * would let another person reproduce the reading.
  */
-export const PRAGATI_INSTRUCTIONAL_UNITS: PragatiInstructionalUnit[] = [];
+
+/** Has anyone read the pages behind this record? Never a boolean: the
+ *  interesting cases are the uncertain ones. */
+export type IntentInspectionStatus =
+  | 'NOT_INSPECTED'
+  | 'INSPECTED'
+  /** Read, but the mathematics the pages intend is genuinely unclear. */
+  | 'AMBIGUOUS'
+  /** The source could not be fetched or read. */
+  | 'BLOCKED_SOURCE'
+  | 'NEEDS_HUMAN_CHECK';
+
+/** How far decomposition has got. "A record exists" is not "ready to write". */
+export type DecompositionStatus =
+  | 'NOT_DECOMPOSED'
+  | 'DRAFT_DECOMPOSITION'
+  | 'EVIDENCE_COMPLETE'
+  | 'NEEDS_HUMAN_CHECK'
+  | 'READY_FOR_AUTHORING';
+
+/** What the source pages are doing, judged from the pages themselves. */
+export type InstructionalRole =
+  | 'NEW_INSTRUCTION'
+  | 'GUIDED_APPLICATION'
+  | 'PRACTICE'
+  | 'REVIEW'
+  | 'ENRICHMENT'
+  | 'ASSESSMENT_LIKE_ACTIVITY'
+  | 'SUMMARY'
+  | 'REFERENCE'
+  | 'NON_INSTRUCTIONAL';
+
+/** Whether the source itself names the misconceptions, or we would be
+ *  inventing them. Never inferred from silence. */
+export type MisconceptionEvidence =
+  | 'SOURCE_EXPLICIT'
+  | 'EVIDENCE_SUPPORTED'
+  | 'TO_BE_DEVELOPED'
+  | 'UNKNOWN';
+
+export type SourceEvidence = {
+  /** Book code as published, e.g. "aejm1" (Joyful Mathematics, Class 1). */
+  bookId: string;
+  bookPart: string | null;
+  officialChapterId: string;
+  /** Null for Classes 1-5, whose books define no numbered sections. */
+  officialSectionId: string | null;
+  /** Printed folio, as on the page. */
+  printedPageStart: number | null;
+  printedPageEnd: number | null;
+  /** PDF page index, kept because the two differ and the Class 6 page
+   *  defect came from recording only one of them. */
+  pdfPageStart: number;
+  pdfPageEnd: number;
+  inspectedOn: string;
+  /** What these pages establish, in one line. */
+  establishes: string;
+};
+
+export type PragatiInstructionalUnit = {
+  /** `pragati_iu_g06_...`. The prefix is load-bearing: it must be
+   *  impossible to mistake for an NCERT or CBSE record id. */
+  instructionalUnitId: `pragati_iu_${string}`;
+  grade: Grade;
+  classNumber: number;
+  /** The official record this serves — chapter for Classes 1-5, section
+   *  where the book numbers them. A unit may not exist without one. */
+  officialRecordId: string;
+  /** Where several official records feed one unit. Each is kept. */
+  additionalOfficialRecordIds: string[];
+  sourceEvidence: SourceEvidence;
+  /** Pragati's title for the teaching unit. NOT an NCERT section name. */
+  instructionalTitle: string;
+  mathematicalObjective: string;
+  /** "I can …", in the student's voice. */
+  studentCanStatement: string;
+  mathematicalIdeas: string[];
+  representationsNeeded: string[];
+  /** Ids of earlier units, or official record ids, or a plain-language
+   *  dependency where the prerequisite unit is not identified yet. */
+  prerequisites: string[];
+  vocabulary: string[];
+  reasoningDemand: 'recall' | 'procedure' | 'explain' | 'generalise' | 'prove';
+  applicationContext: string | null;
+  instructionalRole: InstructionalRole;
+  likelyMisconceptionsStatus: MisconceptionEvidence;
+  /** 1 (short) to 5 (needs several sittings). A planning estimate. */
+  estimatedInstructionalComplexity: 1 | 2 | 3 | 4 | 5;
+  /** Order within its official record. */
+  suggestedUnitSequence: number;
+  /** Why this record was split into more than one unit, or null. */
+  splitReason: string | null;
+  /** Why records were combined, with every source kept, or null. */
+  mergeRelationship: string | null;
+  /** Always 'pragati_created'. Present so the distinction survives
+   *  serialisation into any document or API. */
+  sourceVsPragatiLabel: 'pragati_created';
+  intentInspectionStatus: IntentInspectionStatus;
+  decompositionStatus: DecompositionStatus;
+  humanReviewStatus: 'not_reviewed' | 'flagged_for_review' | 'reviewed';
+  /** Existing Pragati artifact mapped to this unit, and how well. */
+  existingArtifact: {
+    officialSectionId: string;
+    match: 'EXACT_MATCH' | 'PARTIAL_MATCH' | 'MULTI_UNIT_COVERAGE' | 'OVER_SCOPED' | 'UNDER_SCOPED' | 'SOURCE_ALIGNMENT_ISSUE';
+    note: string;
+  } | null;
+  notes: string | null;
+};
+
+/** An official record read and found to carry no new teaching. */
+export type NonInstructionalRecord = {
+  officialRecordId: string;
+  grade: Grade;
+  role: InstructionalRole;
+  justification: string;
+  sourceEvidence: SourceEvidence;
+};
+
+type DecompositionFile = {
+  generatedFrom: string;
+  units: PragatiInstructionalUnit[];
+  nonInstructional: NonInstructionalRecord[];
+  /** Classes whose page-level pass is finished, and what remains. */
+  classProgress: Array<{
+    classNumber: number;
+    status: 'COMPLETE' | 'IN_PROGRESS' | 'NOT_STARTED' | 'BLOCKED_SOURCE';
+    chaptersInspected: number;
+    chaptersTotal: number;
+    pagesInspected: number;
+    note: string;
+  }>;
+};
+
+const DATA = decompositionJson as unknown as DecompositionFile;
+
+export const PRAGATI_INSTRUCTIONAL_UNITS: PragatiInstructionalUnit[] = DATA.units;
+export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstructional;
+export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
+
+export function unitsForClass(n: number): PragatiInstructionalUnit[] {
+  return PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.classNumber === n);
+}
 
 export function instructionalUnitsFor(officialRecordId: string): PragatiInstructionalUnit[] {
-  return PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.officialRecordId === officialRecordId);
+  return PRAGATI_INSTRUCTIONAL_UNITS.filter(
+    (u) =>
+      u.officialRecordId === officialRecordId ||
+      u.additionalOfficialRecordIds.includes(officialRecordId)
+  );
+}
+
+/** A record is covered when a unit serves it OR it was read and judged
+ *  non-instructional. Silence is not coverage. */
+export function recordIsCovered(officialRecordId: string): boolean {
+  return (
+    instructionalUnitsFor(officialRecordId).length > 0 ||
+    NON_INSTRUCTIONAL_RECORDS.some((r) => r.officialRecordId === officialRecordId)
+  );
+}
+
+export function readyForAuthoring(): PragatiInstructionalUnit[] {
+  return PRAGATI_INSTRUCTIONAL_UNITS.filter(
+    (u) => u.decompositionStatus === 'READY_FOR_AUTHORING'
+  );
 }
 
 export type DecompositionCoverage = {
@@ -97,6 +226,9 @@ export function decompositionCoverage(records: number): DecompositionCoverage {
       (r) => r.intentStatus === 'page_level_inspected'
     ).length,
     instructionalUnits: PRAGATI_INSTRUCTIONAL_UNITS.length,
+    // Still null, and still for the same reason: the classes whose pages
+    // have not been read yet cannot have their lesson count guessed from
+    // their chapter count.
     projectedLessonCount: null,
   };
 }
