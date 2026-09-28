@@ -9389,70 +9389,7 @@
    "hardeningNote": "Recovered in checkpoint 6 when the stale segments were re-read."
   }
  ],
- "nonInstructional": [
-  {
-   "officialRecordId": "ncert_aejm1_ch13",
-   "grade": "class1",
-   "role": "REVIEW",
-   "justification": "Re-inspected page by page. Pages 122-123 and the shadow, matchstick and word-search tasks rehearse counting, number names and spatial matching already taught, so they are recorded rather than made authoring targets. The constraint puzzles and the beyond-Class-1 puzzles on the same spread are NOT covered here: they are pragati_iu_g01_ch13_u3 and _u4.",
-   "sourceEvidence": {
-    "bookId": "aejm1",
-    "bookPart": null,
-    "officialChapterId": "ncert_aejm1_ch13",
-    "officialSectionId": null,
-    "printedPageStart": 123,
-    "printedPageEnd": 125,
-    "pdfPageStart": 3,
-    "pdfPageEnd": 6,
-    "inspectedOn": "2026-09-24",
-    "establishes": "Number-search, magic-square-like fills, \"who am I?\" riddles and coin puzzles.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
-    "visuallyDependent": true,
-    "visualPagesInspected": [
-     3,
-     4,
-     5,
-     6
-    ],
-    "pageEvidence": [
-     {
-      "pdfPage": 3,
-      "printedPage": null,
-      "fullTextInspected": true,
-      "visualInspectionRequired": true,
-      "visualInspected": true,
-      "note": "6 images, 12 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
-     },
-     {
-      "pdfPage": 4,
-      "printedPage": 123,
-      "fullTextInspected": true,
-      "visualInspectionRequired": true,
-      "visualInspected": true,
-      "note": "6 images, 53 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
-     },
-     {
-      "pdfPage": 5,
-      "printedPage": 124,
-      "fullTextInspected": true,
-      "visualInspectionRequired": true,
-      "visualInspected": true,
-      "note": "8 images, 46 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
-     },
-     {
-      "pdfPage": 6,
-      "printedPage": 125,
-      "fullTextInspected": true,
-      "visualInspectionRequired": false,
-      "visualInspected": true,
-      "note": "5 images, 22 drawn elements: the extracted text states the task in full; no visual check needed."
-     }
-    ],
-    "firstInspectedOn": "2026-09-24",
-    "lastEvidenceUpdatedOn": "2026-09-28"
-   }
-  }
- ],
+ "nonInstructional": [],
  "classProgress": [
   {
    "classNumber": 1,
@@ -9659,11 +9596,269 @@
  ],
  "sourceSegments": [
   {
+   "sourceSegmentId": "pragati_srcseg_g01_04_seg1",
+   "officialRecordId": "ncert_aejm1_ch04",
+   "sourceLabel": "page 15 of the chapter",
+   "role": "PRACTICE",
+   "justification": "Project work: finding things that come in groups of ten and making number cards for 10 to 20. It rehearses the ten-as-a-unit work of the chapter rather than teaching anything further. Recorded as a source segment so the pages stay accounted for without becoming an authoring target.",
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 47,
+    "printedPageEnd": 47,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-09-26",
+    "establishes": "Project work: finding things that come in groups of ten and making number cards for 10 to 20. It rehearses the ten-as-a-unit work of the chapter rather than teaching anything further.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 47,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 9 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-26",
+    "lastEvidenceUpdatedOn": "2026-09-28"
+   },
+   "sourceLabelIsFromBook": false
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g01_05_seg1",
+   "officialRecordId": "ncert_aejm1_ch05",
+   "sourceLabel": "page 14 of the chapter",
+   "role": "PRACTICE",
+   "justification": "Project work with ten cards numbered 0 to 9, arranged so pairs sum to 9, and the \"how many ways\" question. Practice on the number pairs already taught. Recorded as a source segment so the pages stay accounted for without becoming an authoring target.",
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 61,
+    "printedPageEnd": 61,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-09-26",
+    "establishes": "Project work with ten cards numbered 0 to 9, arranged so pairs sum to 9, and the \"how many ways\" question. Practice on the number pairs already taught.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 42 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-26",
+    "lastEvidenceUpdatedOn": "2026-09-28"
+   },
+   "sourceLabelIsFromBook": false
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g01_ch13_rehearsal",
+   "officialRecordId": "ncert_aejm1_ch13",
+   "sourceLabel": "pages 3–6 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REVIEW",
+   "justification": "Chapter 13 teaches (four instructional units), so the chapter as a whole is not non-instructional: only this part of it is rehearsal. Migrated from a NonInstructionalRecord, which must mean a complete official record that produced no teaching target at all. It shares pages 5-6 with the constraint-puzzle unit on purpose: rehearsal tasks and constraint tasks sit side by side on the same spread, so the segment marks which parts of those pages need no teaching target while the unit takes the parts that do.",
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch13",
+    "officialSectionId": null,
+    "printedPageStart": 123,
+    "printedPageEnd": 125,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-09-24",
+    "establishes": "Hidden number cards, the counting-logs illusion, extending an arrangement of glasses and the number-word search. These rehearse counting, number names and spatial matching already taught in the book; the constraint and beyond-Class-1 puzzles on the same spread are separate units.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 12 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 123,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 53 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 124,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 46 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 125,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 22 drawn elements: the extracted text states the task in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-09-24",
+    "lastEvidenceUpdatedOn": "2026-09-28"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g01_13_seg1",
+   "officialRecordId": "ncert_aejm1_ch13",
+   "sourceLabel": "pages 10–11 of the chapter",
+   "role": "PRACTICE",
+   "justification": "Project work and the closing pages of the chapter: making a bordered card of coloured flowers and surveying letters in classmates' names. Data practice on the counting and comparing already taught. Recorded as a source segment so the pages stay accounted for without becoming an authoring target.",
+   "sourceEvidence": {
+    "bookId": "aejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_aejm1_ch13",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 11,
+    "inspectedOn": "2026-09-26",
+    "establishes": "Project work and the closing pages of the chapter: making a bordered card of coloured flowers and surveying letters in classmates' names. Data practice on the counting and comparing already taught.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [
+     10,
+     11
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 4 drawn elements: the extracted text states the task in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 4 drawn elements: the extracted text states the task in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-09-26",
+    "lastEvidenceUpdatedOn": "2026-09-28"
+   },
+   "sourceLabelIsFromBook": false
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g02_02_seg1",
+   "officialRecordId": "ncert_bejm1_ch02",
+   "sourceLabel": "page 1 of the chapter",
+   "role": "REFERENCE",
+   "justification": "The chapter opening spread: the title \"Shapes Around us\" and the picture that frames the chapter. Context for what follows, not a teaching target. Recorded as a source segment so the pages stay accounted for without becoming an authoring target.",
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch02",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 1,
+    "inspectedOn": "2026-09-26",
+    "establishes": "The chapter opening spread: the title \"Shapes Around us\" and the picture that frames the chapter. Context for what follows, not a teaching target.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 40 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-26",
+    "lastEvidenceUpdatedOn": "2026-09-28"
+   },
+   "sourceLabelIsFromBook": false
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g02_07_seg1",
+   "officialRecordId": "ncert_bejm1_ch07",
+   "sourceLabel": "page 9 of the chapter",
+   "role": "PRACTICE",
+   "justification": "Two paper bags of the same size, one filled with sand and one with dry leaves, compared by weight; the kinds of balance people use, shown in photographs and ticked. The page practises the weight comparison taught earlier in the chapter and introduces no new mathematics. Recorded as a source segment so the pages stay accounted for without becoming an authoring target.",
+   "sourceEvidence": {
+    "bookId": "bejm1",
+    "bookPart": null,
+    "officialChapterId": "ncert_bejm1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 79,
+    "printedPageEnd": 79,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-26",
+    "establishes": "Two paper bags of the same size, one filled with sand and one with dry leaves, compared by weight; the kinds of balance people use, shown in photographs and ticked. The page practises the weight comparison taught earlier in the chapter and introduces no new mathematics.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 79,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 54 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-26",
+    "lastEvidenceUpdatedOn": "2026-09-28"
+   },
+   "sourceLabelIsFromBook": false
+  },
+  {
    "sourceSegmentId": "pragati_srcseg_g02_ch11_puzzles",
    "officialRecordId": "ncert_bejm1_ch11",
    "sourceLabel": "Puzzles",
    "role": "REVIEW",
-   "justification": "RESOLVED from its own pages, not from Class 1. Read in full and rendered. The section holds rehearsal work (now pragati_iu_g02_ch11_u4) and genuine reasoning extension (pragati_iu_g02_ch11_u5): a number trick with an invariant, systematic path and rectangle counting, an equal-sum constraint, and cutting a 6 m cloth into 1 m pieces. The rehearsal pages need no further teaching target, which is what this segment now records.",
+   "justification": "RESOLVED from its own pages, not from Class 1. Read in full and rendered. The section holds rehearsal work (now pragati_iu_g02_ch11_u4) and genuine reasoning extension (pragati_iu_g02_ch11_u5): a number trick with an invariant, systematic path and rectangle counting, an equal-sum constraint, and cutting a 6 m cloth into 1 m pieces. The rehearsal pages need no further teaching target, which is what this segment now records. It shares page 8 with the rehearsal-puzzle unit on purpose: the Puzzles heading and its first tasks fall on the same page, so the segment names the section while the unit carries the teaching intent of the tasks.",
    "sourceEvidence": {
     "bookId": "bejm1",
     "bookPart": null,
@@ -9692,203 +9887,15 @@
     ],
     "firstInspectedOn": "2026-09-24",
     "lastEvidenceUpdatedOn": "2026-09-28"
-   }
-  },
-  {
-   "sourceSegmentId": "pragati_srcseg_g01_04_seg1",
-   "officialRecordId": "ncert_aejm1_ch04",
-   "sourceLabel": "pages 15-15 of the chapter",
-   "role": "PRACTICE",
-   "justification": "Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target.",
-   "sourceEvidence": {
-    "bookId": "aejm1",
-    "bookPart": null,
-    "officialChapterId": "ncert_aejm1_ch04",
-    "officialSectionId": null,
-    "printedPageStart": 47,
-    "printedPageEnd": 47,
-    "pdfPageStart": 15,
-    "pdfPageEnd": 15,
-    "inspectedOn": "2026-09-26",
-    "establishes": "Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
-    "visuallyDependent": true,
-    "visualPagesInspected": [
-     15
-    ],
-    "pageEvidence": [
-     {
-      "pdfPage": 15,
-      "printedPage": 47,
-      "fullTextInspected": true,
-      "visualInspectionRequired": true,
-      "visualInspected": true,
-      "note": "10 images, 9 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
-     }
-    ],
-    "firstInspectedOn": "2026-09-26",
-    "lastEvidenceUpdatedOn": "2026-09-28"
-   }
-  },
-  {
-   "sourceSegmentId": "pragati_srcseg_g01_05_seg1",
-   "officialRecordId": "ncert_aejm1_ch05",
-   "sourceLabel": "pages 14-14 of the chapter",
-   "role": "PRACTICE",
-   "justification": "Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target.",
-   "sourceEvidence": {
-    "bookId": "aejm1",
-    "bookPart": null,
-    "officialChapterId": "ncert_aejm1_ch05",
-    "officialSectionId": null,
-    "printedPageStart": 61,
-    "printedPageEnd": 61,
-    "pdfPageStart": 14,
-    "pdfPageEnd": 14,
-    "inspectedOn": "2026-09-26",
-    "establishes": "Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
-    "visuallyDependent": true,
-    "visualPagesInspected": [
-     14
-    ],
-    "pageEvidence": [
-     {
-      "pdfPage": 14,
-      "printedPage": 61,
-      "fullTextInspected": true,
-      "visualInspectionRequired": true,
-      "visualInspected": true,
-      "note": "13 images, 42 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
-     }
-    ],
-    "firstInspectedOn": "2026-09-26",
-    "lastEvidenceUpdatedOn": "2026-09-28"
-   }
-  },
-  {
-   "sourceSegmentId": "pragati_srcseg_g01_13_seg1",
-   "officialRecordId": "ncert_aejm1_ch13",
-   "sourceLabel": "pages 10-11 of the chapter",
-   "role": "PRACTICE",
-   "justification": "Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target.",
-   "sourceEvidence": {
-    "bookId": "aejm1",
-    "bookPart": null,
-    "officialChapterId": "ncert_aejm1_ch13",
-    "officialSectionId": null,
-    "printedPageStart": null,
-    "printedPageEnd": null,
-    "pdfPageStart": 10,
-    "pdfPageEnd": 11,
-    "inspectedOn": "2026-09-26",
-    "establishes": "Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
-    "visuallyDependent": false,
-    "visualPagesInspected": [
-     10,
-     11
-    ],
-    "pageEvidence": [
-     {
-      "pdfPage": 10,
-      "printedPage": null,
-      "fullTextInspected": true,
-      "visualInspectionRequired": false,
-      "visualInspected": true,
-      "note": "2 images, 4 drawn elements: the extracted text states the task in full; no visual check needed."
-     },
-     {
-      "pdfPage": 11,
-      "printedPage": null,
-      "fullTextInspected": true,
-      "visualInspectionRequired": false,
-      "visualInspected": true,
-      "note": "2 images, 4 drawn elements: the extracted text states the task in full; no visual check needed."
-     }
-    ],
-    "firstInspectedOn": "2026-09-26",
-    "lastEvidenceUpdatedOn": "2026-09-28"
-   }
-  },
-  {
-   "sourceSegmentId": "pragati_srcseg_g02_02_seg1",
-   "officialRecordId": "ncert_bejm1_ch02",
-   "sourceLabel": "pages 1-1 of the chapter",
-   "role": "REFERENCE",
-   "justification": "Chapter opening spread: the title page and the story or picture that frames the chapter. Context, not a teaching target.",
-   "sourceEvidence": {
-    "bookId": "bejm1",
-    "bookPart": null,
-    "officialChapterId": "ncert_bejm1_ch02",
-    "officialSectionId": null,
-    "printedPageStart": null,
-    "printedPageEnd": null,
-    "pdfPageStart": 1,
-    "pdfPageEnd": 1,
-    "inspectedOn": "2026-09-26",
-    "establishes": "Chapter opening spread: the title page and the story or picture that frames the chapter. Context, not a teaching target.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
-    "visuallyDependent": true,
-    "visualPagesInspected": [
-     1
-    ],
-    "pageEvidence": [
-     {
-      "pdfPage": 1,
-      "printedPage": null,
-      "fullTextInspected": true,
-      "visualInspectionRequired": true,
-      "visualInspected": true,
-      "note": "5 images, 40 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
-     }
-    ],
-    "firstInspectedOn": "2026-09-26",
-    "lastEvidenceUpdatedOn": "2026-09-28"
-   }
-  },
-  {
-   "sourceSegmentId": "pragati_srcseg_g02_07_seg1",
-   "officialRecordId": "ncert_bejm1_ch07",
-   "sourceLabel": "pages 9-12 of the chapter",
-   "role": "PRACTICE",
-   "justification": "Read and rendered. Page 79 compares two bags by weight and shows the kinds of balance people use: it practises the weight unit before it rather than teaching anything new.",
-   "sourceEvidence": {
-    "bookId": "bejm1",
-    "bookPart": null,
-    "officialChapterId": "ncert_bejm1_ch07",
-    "officialSectionId": null,
-    "printedPageStart": 79,
-    "printedPageEnd": 79,
-    "pdfPageStart": 9,
-    "pdfPageEnd": 9,
-    "inspectedOn": "2026-09-26",
-    "establishes": "Pages not yet read. Recorded so they cannot disappear from the accounting.",
-    "evidenceDepth": "FULL_PAGE_INSPECTED",
-    "visuallyDependent": true,
-    "visualPagesInspected": [
-     9
-    ],
-    "pageEvidence": [
-     {
-      "pdfPage": 9,
-      "printedPage": 79,
-      "fullTextInspected": true,
-      "visualInspectionRequired": true,
-      "visualInspected": true,
-      "note": "7 images, 54 drawn elements: the task is carried by the picture, and the page was rendered and looked at."
-     }
-    ],
-    "firstInspectedOn": "2026-09-26",
-    "lastEvidenceUpdatedOn": "2026-09-28"
-   }
+   },
+   "sourceLabelIsFromBook": true
   },
   {
    "sourceSegmentId": "pragati_srcseg_g02_11_seg1",
    "officialRecordId": "ncert_bejm1_ch11",
-   "sourceLabel": "pages 9-16 of the chapter",
+   "sourceLabel": "page 16 of the chapter",
    "role": "NON_INSTRUCTIONAL",
-   "justification": "Read and rendered. The closing page carries only the \"Notes\" heading and ruled space; no mathematics.",
+   "justification": "The closing page of the chapter carries the heading \"Notes\" and ruled writing space. No task, no mathematics. Recorded as a source segment so the pages stay accounted for without becoming an authoring target.",
    "sourceEvidence": {
     "bookId": "bejm1",
     "bookPart": null,
@@ -9899,7 +9906,7 @@
     "pdfPageStart": 16,
     "pdfPageEnd": 16,
     "inspectedOn": "2026-09-26",
-    "establishes": "Pages not yet read. Recorded so they cannot disappear from the accounting.",
+    "establishes": "The closing page of the chapter carries the heading \"Notes\" and ruled writing space. No task, no mathematics.",
     "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
     "visualPagesInspected": [
@@ -9917,7 +9924,8 @@
     ],
     "firstInspectedOn": "2026-09-26",
     "lastEvidenceUpdatedOn": "2026-09-28"
-   }
+   },
+   "sourceLabelIsFromBook": false
   }
  ]
 }

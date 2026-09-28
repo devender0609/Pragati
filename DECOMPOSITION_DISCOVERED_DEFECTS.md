@@ -20,6 +20,10 @@ decision nobody has made yet.
 | Six Class 2 segments still said "pages not yet read" inside a class declared source-complete | checkpoint 5 review | checkpoint 6 — segments re-read and resolved; a test forbids an unread-source justification where evidence is complete |
 | Class 2 Chapter 6 printed extent read 51–27: a Project Work answer (30 − 17 = 27) was taken for a folio | checkpoint 5 review | checkpoint 6 — folio detection restricted to the outer bottom margin and cross-checked against neighbours; page 21's folio read as **70** from the rendered page; inverted-range test added |
 | A generated note claimed 130 of 121 picture-carried pages seen | checkpoint 5 review | checkpoint 6 — the note is built from the structured values, and a test rejects any number in it that is not one of them |
+| Two retained segments still carried `sourceEvidence.establishes = "Pages not yet read…"` while their evidence was complete | checkpoint 6 review | checkpoint 7 — text rewritten from the pages; the stale-wording test now reads every evidence-bearing field, not only `justification` |
+| Two retained segments kept `sourceLabel` ranges from the ranges they used to span ("pages 9-12" for a one-page segment) | checkpoint 6 review | checkpoint 7 — generated labels derive from the pdf range, with a flag marking labels that are real book headings |
+| Class 1 Chapter 13's rehearsal pages were a whole-record `NonInstructionalRecord` inside a chapter with four units | checkpoint 6 review | checkpoint 7 — migrated to `pragati_srcseg_g01_ch13_rehearsal`; a gate requires a non-instructional record to span a whole record with no units |
+| The overlap audit checked only unit-to-unit while the report implied it was comprehensive | checkpoint 6 review | checkpoint 7 — `overlapAudit()` covers units, segments and non-instructional records, and every pair must carry a written reason |
 
 None found in Pragati's runtime infrastructure: the master map, registry,
 Student, Teacher, review importer and review packages matched the books on

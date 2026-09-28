@@ -1765,4 +1765,4 @@ All 11 official chapters fully inspected: 138 of 138 pages read in full text and
 
 ## Records read and found non-instructional
 
-- **ncert_aejm1_ch13** (class1) — REVIEW. Re-inspected page by page. Pages 122-123 and the shadow, matchstick and word-search tasks rehearse counting, number names and spatial matching already taught, so they are recorded rather than made authoring targets. The constraint puzzles and the beyond-Class-1 puzzles on the same spread are NOT covered here: they are pragati_iu_g01_ch13_u3 and _u4. Pages 123–125.
+None recorded.

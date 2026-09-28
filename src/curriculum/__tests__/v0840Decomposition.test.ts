@@ -13,6 +13,7 @@ import {
   inspectedOfficialRecordIds,
   meetsEvidenceBar,
   officialRecordAccounting,
+  overlapAudit,
   officialRecordIdsTouched,
   RECORD_EXTENTS,
   SOURCE_SEGMENTS,
@@ -576,5 +577,103 @@ describe('§12 overlapping coverage is deliberate and explained', () => {
         }
       }
     }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 7 — LABELS AND TYPES THAT MEAN WHAT THEY SAY.
+//
+// Four defects. Two segments kept `establishes: "Pages not yet read"`
+// while their evidence was complete — the previous test only read
+// `justification`, so the contradiction sat one field away. Two carried
+// page-range labels left over from the ranges they used to span. Class 1
+// Chapter 13's rehearsal pages were a whole-record NonInstructionalRecord
+// inside a chapter with four units. And the overlap audit checked only
+// unit-against-unit while the report implied it checked everything.
+// ---------------------------------------------------------------------------
+
+describe('§2/§13 no current evidence text claims its pages are unread', () => {
+  const STALE = /not yet read|pages not read|\bunread\b|to be read|placeholder|temporary/i;
+
+  it('checks every evidence-bearing field, not just the justification', () => {
+    for (const s of SOURCE_SEGMENTS) {
+      for (const [field, text] of [
+        ['justification', s.justification],
+        ['establishes', s.sourceEvidence.establishes],
+        ['sourceLabel', s.sourceLabel],
+      ] as const) {
+        if (s.sourceEvidence.evidenceDepth === 'DIGEST_ONLY') continue;
+        expect(STALE.test(text), `${s.sourceSegmentId}.${field}: ${text.slice(0, 80)}`).toBe(false);
+      }
+    }
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      if (u.sourceEvidence.evidenceDepth === 'DIGEST_ONLY') continue;
+      expect(STALE.test(u.sourceEvidence.establishes), u.instructionalUnitId).toBe(false);
+    }
+    for (const r of NON_INSTRUCTIONAL_RECORDS) {
+      expect(STALE.test(r.sourceEvidence.establishes), r.officialRecordId).toBe(false);
+      expect(STALE.test(r.justification), r.officialRecordId).toBe(false);
+    }
+  });
+
+  it('gives every segment a description of what its pages establish', () => {
+    for (const s of SOURCE_SEGMENTS) {
+      expect(s.sourceEvidence.establishes.length, s.sourceSegmentId).toBeGreaterThan(40);
+    }
+  });
+});
+
+describe('§4 a generated range label agrees with the evidence', () => {
+  it('matches the pdf range, and leaves real book headings alone', () => {
+    for (const s of SOURCE_SEGMENTS) {
+      const { pdfPageStart: a, pdfPageEnd: b } = s.sourceEvidence;
+      if (s.sourceLabelIsFromBook) {
+        // A heading printed in the book is not a range and is never rewritten.
+        expect(s.sourceLabel, s.sourceSegmentId).not.toMatch(/^pages? \d/);
+        continue;
+      }
+      const expected = a === b ? `page ${a} of the chapter` : `pages ${a}\u2013${b} of the chapter`;
+      expect(s.sourceLabel, s.sourceSegmentId).toBe(expected);
+    }
+  });
+});
+
+describe('§6/§7/§8 NonInstructionalRecord means a whole record', () => {
+  it('covers the full extent of a record that has no units', () => {
+    for (const r of NON_INSTRUCTIONAL_RECORDS) {
+      const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === r.officialRecordId);
+      expect(ext, r.officialRecordId).toBeDefined();
+      expect(r.sourceEvidence.pdfPageStart, r.officialRecordId).toBe(ext!.pdfPageStart);
+      expect(r.sourceEvidence.pdfPageEnd, r.officialRecordId).toBe(ext!.pdfPageEnd);
+      expect(instructionalUnitsFor(r.officialRecordId), r.officialRecordId).toHaveLength(0);
+    }
+  });
+
+  it('cannot let a small subrange make a whole chapter look covered', () => {
+    // Chapter 13 teaches; its rehearsal pages are a segment, and the
+    // chapter is covered because of its units, not because of them.
+    expect(instructionalUnitsFor('ncert_aejm1_ch13').length).toBeGreaterThan(0);
+    expect(recordIsCovered('ncert_aejm1_ch13')).toBe(true);
+    expect(
+      NON_INSTRUCTIONAL_RECORDS.some((r) => r.officialRecordId === 'ncert_aejm1_ch13')
+    ).toBe(false);
+  });
+});
+
+describe('§9/§10 the overlap audit covers every object type', () => {
+  it('explains every overlap it finds', () => {
+    const overlaps = overlapAudit();
+    expect(overlaps.length).toBeGreaterThan(0);
+    for (const o of overlaps) {
+      expect(o.pages.length, `${o.a} / ${o.b}`).toBeGreaterThan(0);
+      expect((o.reason ?? '').length, `${o.a} / ${o.b} has no written reason`).toBeGreaterThan(40);
+    }
+  });
+
+  it('includes unit-to-segment overlaps, not only unit-to-unit', () => {
+    const kinds = overlapAudit().filter(
+      (o) => o.a.startsWith('pragati_srcseg_') || o.b.startsWith('pragati_srcseg_')
+    );
+    expect(kinds.length).toBeGreaterThan(0);
   });
 });

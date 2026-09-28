@@ -246,14 +246,29 @@ export type SourceSegment = {
   sourceSegmentId: `pragati_srcseg_${string}`;
   /** The real NCERT record these pages belong to. */
   officialRecordId: string;
-  /** The heading as printed, e.g. "Puzzles". A cue, not a section. */
+  /**
+   * Either a heading printed in the book ("Puzzles") or, when there is
+   * none, a page-range description Pragati generates. The flag says
+   * which, because a generated range must agree with the evidence and a
+   * real heading must never be rewritten.
+   */
   sourceLabel: string;
+  sourceLabelIsFromBook?: boolean;
   role: InstructionalRole | 'UNRESOLVED';
   justification: string;
   sourceEvidence: SourceEvidence;
 };
 
-/** An official record read and found to carry no new teaching. */
+/**
+ * v0.84.0 checkpoint 7 §6 — WHOLE RECORDS ONLY.
+ *
+ * This means: a complete official record was inspected and produced no
+ * instructional target at all. It is not a practice page, a review
+ * subrange or a Notes page inside a chapter that does teach — those are
+ * SourceSegments. Class 1 Chapter 13's rehearsal pages were modelled
+ * here while the same chapter carried four units, which made the chapter
+ * look non-instructional; they are a segment now.
+ */
 export type NonInstructionalRecord = {
   officialRecordId: string;
   grade: Grade;
@@ -345,13 +360,80 @@ export function instructionalUnitsFor(officialRecordId: string): PragatiInstruct
   );
 }
 
-/** A record is covered when a unit serves it OR it was read and judged
- *  non-instructional. Silence is not coverage. */
+/**
+ * A record is covered when a unit serves it, or a segment accounts for
+ * part of it, or the whole record was read and judged non-instructional.
+ * Silence is not coverage — and a non-instructional entry only counts
+ * when it spans the record's whole extent, so a small review subrange
+ * can no longer make a chapter look accounted for.
+ */
 export function recordIsCovered(officialRecordId: string): boolean {
-  return (
-    instructionalUnitsFor(officialRecordId).length > 0 ||
-    NON_INSTRUCTIONAL_RECORDS.some((r) => r.officialRecordId === officialRecordId)
-  );
+  if (instructionalUnitsFor(officialRecordId).length > 0) return true;
+  if (SOURCE_SEGMENTS.some((s) => s.officialRecordId === officialRecordId)) return true;
+  return NON_INSTRUCTIONAL_RECORDS.some((r) => {
+    if (r.officialRecordId !== officialRecordId) return false;
+    const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === officialRecordId);
+    if (!ext) return false;
+    return (
+      r.sourceEvidence.pdfPageStart === ext.pdfPageStart &&
+      r.sourceEvidence.pdfPageEnd === ext.pdfPageEnd
+    );
+  });
+}
+
+/** Every overlapping pair of ranges inside one official record, whatever
+ *  kind of object each side is. Duplicate coverage hides stale records,
+ *  so it is listed rather than assumed harmless. */
+export function overlapAudit(): Array<{
+  officialRecordId: string;
+  a: string;
+  b: string;
+  pages: number[];
+  reason: string | null;
+}> {
+  type Item = { id: string; record: string; start: number; end: number; reason: string | null };
+  const items: Item[] = [
+    ...PRAGATI_INSTRUCTIONAL_UNITS.map((u) => ({
+      id: u.instructionalUnitId,
+      record: u.officialRecordId,
+      start: u.sourceEvidence.pdfPageStart,
+      end: u.sourceEvidence.pdfPageEnd,
+      reason: u.mergeRelationship,
+    })),
+    ...SOURCE_SEGMENTS.map((s) => ({
+      id: s.sourceSegmentId,
+      record: s.officialRecordId,
+      start: s.sourceEvidence.pdfPageStart,
+      end: s.sourceEvidence.pdfPageEnd,
+      reason: s.justification,
+    })),
+    ...NON_INSTRUCTIONAL_RECORDS.map((r) => ({
+      id: r.officialRecordId,
+      record: r.officialRecordId,
+      start: r.sourceEvidence.pdfPageStart,
+      end: r.sourceEvidence.pdfPageEnd,
+      reason: r.justification,
+    })),
+  ];
+  const out: Array<{ officialRecordId: string; a: string; b: string; pages: number[]; reason: string | null }> = [];
+  for (let i = 0; i < items.length; i += 1) {
+    for (let j = i + 1; j < items.length; j += 1) {
+      const A = items[i];
+      const B = items[j];
+      if (A.record !== B.record) continue;
+      if (A.start > B.end || B.start > A.end) continue;
+      const pages: number[] = [];
+      for (let p = Math.max(A.start, B.start); p <= Math.min(A.end, B.end); p += 1) pages.push(p);
+      out.push({
+        officialRecordId: A.record,
+        a: A.id,
+        b: B.id,
+        pages,
+        reason: A.reason ?? B.reason ?? null,
+      });
+    }
+  }
+  return out;
 }
 
 /**

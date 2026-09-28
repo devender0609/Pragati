@@ -1,0 +1,32 @@
+# Source coverage overlap audit — Classes 1 and 2
+
+Generated from the canonical decomposition. Coverage tests alone are not
+enough: two records can cover the same pages and one of them be stale, so
+every overlap is listed with the reason it exists.
+
+**20 overlapping pairs**, all INTENTIONAL — each carries a written
+reason in the data itself.
+
+| Official record | A | B | Shared PDF pages | Reason | Status |
+|---|---|---|---|---|---|
+| `ncert_aejm1_ch04` | `pragati_iu_g01_ch04_u5` | `pragati_iu_g01_ch04_u6` | 13 | Deliberate overlap: the teen-number spread and the comparing-and-ordering work share page 45, where the same tower picture is first read as "ten and some more" and then used to compare which tower is tallest. | INTENTIONAL |
+| `ncert_aejm1_ch07` | `pragati_iu_g01_ch07_u2` | `pragati_iu_g01_ch07_u3` | 8 | Deliberate overlap with pragati_iu_g01_ch07_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch01` | `pragati_iu_g02_ch01_u2` | `pragati_iu_g02_ch01_u3` | 6, 7 | Deliberate overlap with pragati_iu_g02_ch01_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch01` | `pragati_iu_g02_ch01_u4` | `pragati_iu_g02_ch01_u5` | 10 | Deliberate overlap with pragati_iu_g02_ch01_u5: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch03` | `pragati_iu_g02_ch03_u2` | `pragati_iu_g02_ch03_u3` | 6, 7 | Deliberate overlap with pragati_iu_g02_ch03_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch03` | `pragati_iu_g02_ch03_u3` | `pragati_iu_g02_ch03_u4` | 9 | Deliberate overlap with pragati_iu_g02_ch03_u4: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch08` | `pragati_iu_g02_ch08_u4` | `pragati_iu_g02_ch08_u9` | 7, 8 | Deliberate overlap with pragati_iu_g02_ch08_u9: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch09` | `pragati_iu_g02_ch09_u4` | `pragati_iu_g02_ch09_u8` | 7, 8 | Deliberate overlap with pragati_iu_g02_ch09_u8: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch10` | `pragati_iu_g02_ch10_u1` | `pragati_iu_g02_ch10_u3` | 2, 3, 4 | Deliberate overlap with pragati_iu_g02_ch10_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch10` | `pragati_iu_g02_ch10_u2` | `pragati_iu_g02_ch10_u3` | 5 | Deliberate overlap with pragati_iu_g02_ch10_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch10` | `pragati_iu_g02_ch10_u3` | `pragati_iu_g02_ch10_u4` | 6, 7 | Deliberate overlap with pragati_iu_g02_ch10_u4: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_aejm1_ch08` | `pragati_iu_g01_ch08_u5` | `pragati_iu_g01_ch08_u6` | 13, 14 | Deliberate overlap with pragati_iu_g01_ch08_u6: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_aejm1_ch13` | `pragati_iu_g01_ch13_u2` | `pragati_iu_g01_ch13_u3` | 5, 6, 7, 8 | Deliberate overlap with pragati_iu_g01_ch13_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_aejm1_ch13` | `pragati_iu_g01_ch13_u2` | `pragati_iu_g01_ch13_u4` | 7, 8 | Deliberate overlap with pragati_iu_g01_ch13_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_aejm1_ch13` | `pragati_iu_g01_ch13_u2` | `pragati_srcseg_g01_ch13_rehearsal` | 5, 6 | Deliberate overlap with pragati_iu_g01_ch13_u3: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch09` | `pragati_iu_g02_ch09_u5` | `pragati_iu_g02_ch09_u8` | 9 | Deliberate overlap with pragati_iu_g02_ch09_u8: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_aejm1_ch13` | `pragati_iu_g01_ch13_u3` | `pragati_iu_g01_ch13_u4` | 7, 8 | Deliberate overlap with pragati_iu_g01_ch13_u4: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_aejm1_ch13` | `pragati_iu_g01_ch13_u3` | `pragati_srcseg_g01_ch13_rehearsal` | 5, 6 | Deliberate overlap with pragati_iu_g01_ch13_u4: the two objectives are taught on the same spread, and the shared page carries both — the split follows the mathematics, not a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch11` | `pragati_iu_g02_ch11_u4` | `pragati_iu_g02_ch11_u5` | 9, 10, 11 | Deliberate overlap with the other Chapter 11 puzzle unit: the rehearsal puzzles and the reasoning-extension puzzles are interleaved on the same spreads, so the two units share pages and are separated by the kind of thinking each task needs, not by a page boundary. | INTENTIONAL |
+| `ncert_bejm1_ch11` | `pragati_iu_g02_ch11_u4` | `pragati_srcseg_g02_ch11_puzzles` | 8 | Deliberate overlap with the other Chapter 11 puzzle unit: the rehearsal puzzles and the reasoning-extension puzzles are interleaved on the same spreads, so the two units share pages and are separated by the kind of thinking each task needs, not by a page boundary. | INTENTIONAL |
+
