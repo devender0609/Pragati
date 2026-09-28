@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-98 units are READY_FOR_AUTHORING and 7 are held back
+100 units are READY_FOR_AUTHORING and 7 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -27,7 +27,7 @@ pedagogical QA plus human review — not for convenience of generation.
 | 10 | Class 1 | 8 | Adding and subtracting can land in the same place; Two-step and missing-part problem stories; Numbers 81 to 100, and one hundred; Counting what you see in a picture; Subtracting on the number line; Column subtraction without regrouping; Subtraction with regrouping: opening a garland; Fact families and missing parts |
 | 11 | Class 2 | 8 | Building a table from tables you know; Sharing equally; How many groups?; Sharing and grouping problems; Reading the clock at the hour; Finding the way: left, right and straight; North, south, east and west; How much does it hold? |
 | 12 | Class 2 | 8 | Comparing and ordering two-digit numbers; Numbers that tell position or act as labels; Growing patterns; Checking someone else's working; Balancing: how many of these equal one of those; How much does it hold, and scaling a recipe; Order does not change the product; How long did it take? |
-| 13 | Class 2 | 2 | Choosing to get the most; Puzzles that rehearse what you know |
+| 13 | Class 2 | 4 | Choosing to get the most; Puzzles that rehearse what you know; Patterns that grow by a fixed step; Working out money left, and money still needed |
 
 ## Held back
 

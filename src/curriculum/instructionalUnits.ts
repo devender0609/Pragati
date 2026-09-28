@@ -311,6 +311,9 @@ type DecompositionFile = {
     visualPagesRequired?: number;
     /** Pages still unread. Non-zero keeps a class IN_PROGRESS. */
     pagesUnresolved?: number;
+    /** Official records in the class, from the curriculum not the data. */
+    officialRecordsTotal?: number;
+    officialRecordsFullyInspected?: number;
     /** Pages whose full extracted text was read. */
     pagesFullyInspected: number;
     /** Pages rendered and actually looked at. */

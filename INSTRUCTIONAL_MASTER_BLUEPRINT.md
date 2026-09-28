@@ -21,7 +21,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class | Official chapters | Official sections | Pages (indexed / full text / visual) | Pragati units drafted | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Class 1 | 13 | — | 130 indexed / 130 full text / 121 visual | 48 | 43 | 5 | 0 | 0 | 48 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 2 | 11 | — | 138 indexed / 138 full text / 138 visual | 57 | 55 | 2 | 0 | 0 | 57 | DECOMPOSITION_SOURCE_COMPLETE |
+| Class 2 | 11 | — | 138 indexed / 138 full text / 138 visual | 59 | 57 | 2 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 3 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 4 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 5 | 15 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -35,14 +35,14 @@ NOT STARTED — its unit count is unknown, not zero.
 
 ## Class 1
 
-130 of 130 pages read; 130 of 121 picture-carried pages seen; 13 of 13 chapters fully inspected.
+All 13 official chapters fully inspected: 130 of 130 pages read in full text and 121 of 121 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source.
 
 #### Where is it? Position words
 
 - **Id** `pragati_iu_g01_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch01`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
-- **Source** aejm1, printed pp. 1–6 (PDF pp. 1–6), read 2026-09-24. Establishes: Poem and picture tasks that ask children to place and identify objects by position; ball in/out of the basket.
+- **Source** aejm1, printed pp. 2–6 (PDF pp. 1–6), read 2026-09-24. Establishes: Poem and picture tasks that ask children to place and identify objects by position; ball in/out of the basket.
 - **Objective** Describe where an object is using in/out, on/under, above/below, near/far.
 - **Student can** I can say where something is using words like inside, outside, above and below.
 - **Mathematical ideas** spatial relations; position vocabulary
@@ -90,7 +90,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch02`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
-- **Source** aejm1, printed pp. 10–13 (PDF pp. 1–4), read 2026-09-24. Establishes: Naming long and round things, drawing them in two groups, matching similar shapes.
+- **Source** aejm1, printed pp. 11–13 (PDF pp. 1–4), read 2026-09-24. Establishes: Naming long and round things, drawing them in two groups, matching similar shapes.
 - **Objective** Sort objects by shape attributes: long and round.
 - **Student can** I can tell whether a thing is long or round and find others like it.
 - **Mathematical ideas** shape attributes; matching by shape
@@ -106,7 +106,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch02`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8
-- **Source** aejm1, printed pp. 14–17 (PDF pp. 5–8), read 2026-09-24. Establishes: The wise-grandmother story, the carrom picture and the rolls/slides/both table.
+- **Source** aejm1, printed pp. 16–17 (PDF pp. 5–8), read 2026-09-24. Establishes: The wise-grandmother story, the carrom picture and the rolls/slides/both table.
 - **Objective** Test how a solid moves and classify it as rolling, sliding or both.
 - **Student can** I can roll and slide things and say which they do.
 - **Mathematical ideas** properties of solids; classification by behaviour; flat and curved faces
@@ -122,7 +122,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch03`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
-- **Source** aejm1, printed pp. 18–21 (PDF pp. 1–4), read 2026-09-24. Establishes: Birds joining the mango one at a time; matching quantities to fingers and to dots.
+- **Source** aejm1, printed pp. 19–21 (PDF pp. 1–4), read 2026-09-24. Establishes: Birds joining the mango one at a time; matching quantities to fingers and to dots.
 - **Objective** Count a collection up to 9 and say what one more makes.
 - **Student can** I can count up to 9 things and say the number that is one more.
 - **Mathematical ideas** one-to-one counting; cardinality; one more
@@ -170,7 +170,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch04`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
-- **Source** aejm1, printed pp. 33–34 (PDF pp. 1–2), read 2026-09-24. Establishes: Dot designs made with seeds and the dice-and-colour game.
+- **Source** aejm1, printed pp. 34–34 (PDF pp. 1–2), read 2026-09-24. Establishes: Dot designs made with seeds and the dice-and-colour game.
 - **Objective** Recognise small dot arrangements at a glance and make your own.
 - **Student can** I can look at a dot pattern and say how many without counting one by one.
 - **Mathematical ideas** subitising; dot arrangements; same number, different arrangement
@@ -250,7 +250,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch05`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
-- **Source** aejm1, printed pp. 48–52 (PDF pp. 1–5), read 2026-09-24. Establishes: Park scene, "4 children and 2 children altogether make __", finger and dice totals.
+- **Source** aejm1, printed pp. 49–52 (PDF pp. 1–5), read 2026-09-24. Establishes: Park scene, "4 children and 2 children altogether make __", finger and dice totals.
 - **Objective** Find how many altogether by joining two groups.
 - **Student can** I can put two groups together and say how many there are altogether.
 - **Mathematical ideas** addition as combining; the + and = signs; totals within 9
@@ -314,7 +314,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch06`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
-- **Source** aejm1, printed pp. 64–68 (PDF pp. 1–5), read 2026-09-24. Establishes: Rumi and Shami's baskets (7 + 5, 9 + 4) and the ginladi method for 12 + 4.
+- **Source** aejm1, printed pp. 65–68 (PDF pp. 1–5), read 2026-09-24. Establishes: Rumi and Shami's baskets (7 + 5, 9 + 4) and the ginladi method for 12 + 4.
 - **Objective** Add a small number to a number beyond ten by counting on.
 - **Student can** I can start at 12 and count on 4 more on my bead string.
 - **Mathematical ideas** counting on from a number; addition crossing into the teens
@@ -331,7 +331,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch07`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
-- **Source** aejm1, printed pp. 72–75 (PDF pp. 1–4), read 2026-09-24. Establishes: Lina's family compared by height; longest/shortest picture tasks; the Statue of Unity.
+- **Source** aejm1, printed pp. 73–75 (PDF pp. 1–4), read 2026-09-24. Establishes: Lina's family compared by height; longest/shortest picture tasks; the Statue of Unity.
 - **Objective** Compare objects directly and order them by length or height.
 - **Student can** I can put things in order from shortest to longest.
 - **Mathematical ideas** direct comparison; ordering by length; tallest and shortest
@@ -379,7 +379,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch08_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch08`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
-- **Source** aejm1, printed pp. 84–89 (PDF pp. 1–6), read 2026-09-24. Establishes: Packing oranges in boxes of ten; number spreads 21-50; ten-frame fill-ins.
+- **Source** aejm1, printed pp. 85–89 (PDF pp. 1–6), read 2026-09-24. Establishes: Packing oranges in boxes of ten; number spreads 21-50; ten-frame fill-ins.
 - **Objective** Build, read and write numbers to 50 using groups of ten.
 - **Student can** I can show 34 as three tens and four ones.
 - **Mathematical ideas** place value to 50; grouping in tens; number names
@@ -428,7 +428,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch09_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch09`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
-- **Source** aejm1, printed pp. 98–102 (PDF pp. 1–5), read 2026-09-24. Establishes: Extending drawn patterns, colouring pattern strips and reasoning about what colour comes next.
+- **Source** aejm1, printed pp. 99–102 (PDF pp. 1–5), read 2026-09-24. Establishes: Extending drawn patterns, colouring pattern strips and reasoning about what colour comes next.
 - **Objective** Find the rule of a repeating pattern and extend it.
 - **Student can** I can see what repeats in a pattern and draw what comes next.
 - **Mathematical ideas** repeating unit; extending a pattern; pattern rule
@@ -476,7 +476,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch10_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch10`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
-- **Source** aejm1, printed pp. 105–107 (PDF pp. 1–3), read 2026-09-24. Establishes: Pihu's daily routine and the tick-the-activity tasks for each part of the day.
+- **Source** aejm1, printed pp. 106–107 (PDF pp. 1–3), read 2026-09-24. Establishes: Pihu's daily routine and the tick-the-activity tasks for each part of the day.
 - **Objective** Name parts of the day and put daily events in order.
 - **Student can** I can say what I do in the morning, afternoon and night, in order.
 - **Mathematical ideas** sequencing events; parts of the day; time vocabulary
@@ -525,7 +525,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch11_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch11`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
-- **Source** aejm1, printed pp. 111–114 (PDF pp. 1–4), read 2026-09-24. Establishes: Two children per horse, 3 jalebis per plate, 2 people per bus row: "9 times 2 =" and "5 times 3 =".
+- **Source** aejm1, printed pp. 112–114 (PDF pp. 1–4), read 2026-09-24. Establishes: Two children per horse, 3 jalebis per plate, 2 people per bus row: "9 times 2 =" and "5 times 3 =".
 - **Objective** Find a total of equal groups by adding the same number again and again.
 - **Student can** I can say "5 times 3" and add 3 five times to find the total.
 - **Mathematical ideas** equal groups; repeated addition; "times" language as groups
@@ -541,7 +541,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch12_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch12`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
-- **Source** aejm1, printed pp. 115–116 (PDF pp. 1–2), read 2026-09-24. Establishes: Riya counting coins and Sahil counting notes; the toy-seller prices.
+- **Source** aejm1, printed pp. 116–116 (PDF pp. 1–2), read 2026-09-24. Establishes: Riya counting coins and Sahil counting notes; the toy-seller prices.
 - **Objective** Recognise Indian coins and notes and say their value.
 - **Student can** I can name the coins and notes and say how much each is worth.
 - **Mathematical ideas** currency denominations; value of a coin or note
@@ -573,7 +573,7 @@ NOT STARTED — its unit count is unknown, not zero.
 - **Id** `pragati_iu_g01_ch13_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_aejm1_ch13`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
-- **Source** aejm1, printed pp. 120–122 (PDF pp. 1–2), read 2026-09-24. Establishes: Counting dolls, cars and elephants; then counting flowers by colour and judging true/false statements.
+- **Source** aejm1, printed pp. 121–121 (PDF pp. 1–2), read 2026-09-24. Establishes: Counting dolls, cars and elephants; then counting flowers by colour and judging true/false statements.
 - **Objective** Count each kind of thing in a picture and compare the counts.
 - **Student can** I can count each kind of toy and say which there are more of.
 - **Mathematical ideas** categorical counting; comparing counts; true/false statements about data
@@ -814,14 +814,14 @@ NOT STARTED — its unit count is unknown, not zero.
 
 ## Class 2
 
-All 11 official chapters fully inspected: every page read in full text and every picture-carried page rendered and looked at. What remains is curriculum judgement, not unread source.
+All 11 official chapters fully inspected: 138 of 138 pages read in full text and 138 of 138 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source.
 
 #### Counting in groups of ten
 
 - **Id** `pragati_iu_g02_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch01`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
-- **Source** bejm1, printed pp. 1–3 (PDF pp. 1–3), read 2026-09-24. Establishes: Counting coconuts, boats and shell necklaces; packing chikoos into trays of ten.
+- **Source** bejm1, printed pp. 2–3 (PDF pp. 1–3), read 2026-09-24. Establishes: Counting coconuts, boats and shell necklaces; packing chikoos into trays of ten.
 - **Objective** Count a large collection by grouping in tens rather than one by one.
 - **Student can** I can count a big pile by making groups of ten.
 - **Mathematical ideas** grouping as a counting strategy; tens as units
@@ -917,7 +917,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch03`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
-- **Source** bejm1, printed pp. 23–24 (PDF pp. 1–2), read 2026-09-24. Establishes: Ginladi bead counts, blank cards, and the guess-my-number / guess-my-place games.
+- **Source** bejm1, printed pp. 24–24 (PDF pp. 1–2), read 2026-09-24. Establishes: Ginladi bead counts, blank cards, and the guess-my-number / guess-my-place games.
 - **Objective** Locate and name numbers to 100 on a bead string and number strip.
 - **Student can** I can find where a number sits on the number strip.
 - **Mathematical ideas** number line position; order of numbers to 100
@@ -965,7 +965,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch04`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
-- **Source** bejm1, printed pp. 32–34 (PDF pp. 1–3), read 2026-09-24. Establishes: Togalu Gombeyaata shadow play; shadows of objects; tracing outlines of everyday things.
+- **Source** bejm1, printed pp. 33–34 (PDF pp. 1–3), read 2026-09-24. Establishes: Togalu Gombeyaata shadow play; shadows of objects; tracing outlines of everyday things.
 - **Objective** See that a solid casts a flat shape, and name circle, triangle, rectangle and square.
 - **Student can** I can name the flat shape a shadow makes.
 - **Mathematical ideas** 2-D shapes from 3-D objects; shape names
@@ -1013,7 +1013,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch05`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
-- **Source** bejm1, printed pp. 44–45 (PDF pp. 1–2), read 2026-09-24. Establishes: Aasanas sorted by the lines they make; tracing missing lines; "is it straight?" with a thread.
+- **Source** bejm1, printed pp. 45–45 (PDF pp. 1–2), read 2026-09-24. Establishes: Aasanas sorted by the lines they make; tracing missing lines; "is it straight?" with a thread.
 - **Objective** Tell apart vertical, horizontal, slanting and curved lines and find them around you.
 - **Student can** I can point to a standing line, a sleeping line, a slanting line and a curve.
 - **Mathematical ideas** line orientation; straight versus curved
@@ -1045,7 +1045,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch06`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
-- **Source** bejm1, printed pp. 50–53 (PDF pp. 1–3), read 2026-09-24. Establishes: Garland flowers: 10 + 2 = 12, 50 + 3 = 53, and totals such as 20 + 43.
+- **Source** bejm1, printed pp. 51–52 (PDF pp. 1–3), read 2026-09-24. Establishes: Garland flowers: 10 + 2 = 12, 50 + 3 = 53, and totals such as 20 + 43.
 - **Objective** Add two two-digit numbers by adding tens to tens and ones to ones.
 - **Student can** I can add 23 and 14 by adding the tens and then the ones.
 - **Mathematical ideas** place-value addition; partial sums; no regrouping
@@ -1061,7 +1061,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch06`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5
-- **Source** bejm1, printed pp. 54–54 (PDF pp. 4–5), read 2026-09-24. Establishes: "Let us do it on Ginladi" and the number-line additions 23 + 14, 24 + 16, 11 + 22.
+- **Source** bejm1, printed pp. 53–54 (PDF pp. 4–5), read 2026-09-24. Establishes: "Let us do it on Ginladi" and the number-line additions 23 + 14, 24 + 16, 11 + 22.
 - **Objective** Add two-digit numbers by counting on in tens and ones.
 - **Student can** I can add 24 and 16 by jumping tens and then ones on a number line.
 - **Mathematical ideas** counting on in tens; number line as an addition tool
@@ -1110,7 +1110,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch07`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
-- **Source** bejm1, printed pp. 71–72 (PDF pp. 1–2), read 2026-09-24. Establishes: The raja's bed story, where each carpenter's handspan gives a different answer; estimate-then-measure table.
+- **Source** bejm1, printed pp. 72–72 (PDF pp. 1–2), read 2026-09-24. Establishes: The raja's bed story, where each carpenter's handspan gives a different answer; estimate-then-measure table.
 - **Objective** See that measurements disagree when different people use their own handspans.
 - **Student can** I can explain why we must all measure with the same unit.
 - **Mathematical ideas** need for a standard unit; repeating a unit end to end
@@ -1158,7 +1158,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch08_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch08`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
-- **Source** bejm1, printed pp. 83–85 (PDF pp. 1–3), read 2026-09-24. Establishes: Wheels on autorickshaws and wings on butterflies written as repeated addition and as groups.
+- **Source** bejm1, printed pp. 84–85 (PDF pp. 1–3), read 2026-09-24. Establishes: Wheels on autorickshaws and wings on butterflies written as repeated addition and as groups.
 - **Objective** Describe equal groups as repeated addition and as "n times m".
 - **Student can** I can say "3 groups of 4" and "3 times 4" for the same picture.
 - **Mathematical ideas** equal groups; repeated addition; times language
@@ -1223,7 +1223,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch09_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch09`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
-- **Source** bejm1, printed pp. 98–100 (PDF pp. 1–3), read 2026-09-24. Establishes: Seasons described, then matched with their names and festivals.
+- **Source** bejm1, printed pp. 99–100 (PDF pp. 1–3), read 2026-09-24. Establishes: Seasons described, then matched with their names and festivals.
 - **Objective** Name the seasons and place festivals and activities in them.
 - **Student can** I can name the seasons and say which one my birthday is in.
 - **Mathematical ideas** cyclic time; classification by season
@@ -1271,7 +1271,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch09_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch09`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8
-- **Source** bejm1, printed pp. 104–105 (PDF pp. 7–8), read 2026-09-24. Establishes: The Vijayawada trip: 11:00 morning, 5:00 evening and other times in the narrative.
+- **Source** bejm1, printed pp. —–— (PDF pp. 7–8), read 2026-09-24. Establishes: The Vijayawada trip: 11:00 morning, 5:00 evening and other times in the narrative. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Read clock times in a story and use morning, afternoon and evening.
 - **Student can** I can read a clock time and say if it is morning or evening.
 - **Mathematical ideas** reading time on a clock; am/pm informally as parts of the day
@@ -1288,7 +1288,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch10_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch10`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
-- **Source** bejm1, printed pp. 113–116 (PDF pp. 1–4), read 2026-09-24. Establishes: Rupal's `50 at the fair; the ride-and-money table; notes of `100, `500, `200.
+- **Source** bejm1, printed pp. 114–116 (PDF pp. 1–4), read 2026-09-24. Establishes: Rupal's `50 at the fair; the ride-and-money table; notes of `100, `500, `200.
 - **Objective** Recognise Indian notes and coins and find the total of a purchase.
 - **Student can** I can add up what I spent at the fair.
 - **Mathematical ideas** currency values; adding money amounts
@@ -1336,7 +1336,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch11_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch11`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
-- **Source** bejm1, printed pp. 123–125 (PDF pp. 1–3), read 2026-09-24. Establishes: Favourite colours, picnic fruits and modes of coming to school, each recorded in a table.
+- **Source** bejm1, printed pp. 124–125 (PDF pp. 1–3), read 2026-09-24. Establishes: Favourite colours, picnic fruits and modes of coming to school, each recorded in a table.
 - **Objective** Count categories in a picture and record the counts in a table.
 - **Student can** I can fill a table with how many children like each colour.
 - **Mathematical ideas** categorical data; tallying into a table
@@ -1608,7 +1608,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch06_u9` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch06`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21
-- **Source** bejm1, printed pp. 27–27 (PDF pp. 21–21), read 2026-09-27. Establishes: Daljeet's five worked answers to verify and correct, and the Hania-and-Mansi gift problem.
+- **Source** bejm1, printed pp. 70–70 (PDF pp. 21–21), read 2026-09-27. Establishes: Daljeet's five worked answers to verify and correct, and the Hania-and-Mansi gift problem.
 - **Objective** Judge whether a written addition or subtraction is right, and correct it.
 - **Student can** I can check Daljeet's answers and fix the wrong ones.
 - **Mathematical ideas** error analysis; verifying by another method; common regrouping errors
@@ -1672,7 +1672,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch09_u8` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch09`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9
-- **Source** bejm1, printed pp. 105–106 (PDF pp. 7–9), read 2026-09-27. Establishes: The Vijayawada trip: 8:25 morning to 1:15 afternoon, the 8-hour fort visit, and the questions on how long each leg took.
+- **Source** bejm1, printed pp. 106–106 (PDF pp. 7–9), read 2026-09-27. Establishes: The Vijayawada trip: 8:25 morning to 1:15 afternoon, the 8-hour fort visit, and the questions on how long each leg took.
 - **Objective** Work out elapsed time across hours and days from dated events.
 - **Student can** I can say how many hours the trip to the fort took.
 - **Mathematical ideas** elapsed time; reading dates and times together; duration across a day
@@ -1704,7 +1704,7 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Id** `pragati_iu_g02_ch11_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_bejm1_ch11`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9, 10, 11
-- **Source** bejm1, printed pp. 130–133 (PDF pp. 8–11), read 2026-09-27. Establishes: Connect-the-shapes without crossing, the 11-20 number-name search, shadow identification and the matchstick squares.
+- **Source** bejm1, printed pp. 131–133 (PDF pp. 8–11), read 2026-09-27. Establishes: Connect-the-shapes without crossing, the 11-20 number-name search, shadow identification and the matchstick squares.
 - **Objective** Solve matching, shape and number-name puzzles that practise taught material.
 - **Student can** I can find the number names and match the shapes.
 - **Mathematical ideas** visual matching; number names to twenty; shape recognition
@@ -1731,6 +1731,38 @@ All 11 official chapters fully inspected: every page read in full text and every
 - **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Separated from the rehearsal puzzles because these need reasoning the Class 2 chapters do not teach.
 
+#### Patterns that grow by a fixed step
+
+- **Id** `pragati_iu_g02_ch04_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_bejm1_ch04`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12
+- **Source** bejm1, printed pp. 42–43 (PDF pp. 11–12), read 2026-09-28. Establishes: Extending shape patterns (AB BC CD, growing triangles), then the tile jumps 1, 4, 7... and 1, 6, 11... and number patterns in fives and sevens.
+- **Objective** Extend a pattern that grows by a constant step, in shapes and in numbers, and say the step.
+- **Student can** I can say what comes next when the pattern goes up by 5 each time.
+- **Mathematical ideas** growing patterns; constant step (common difference informally); linking a shape pattern to its number pattern
+- **Representations** patterned strips of shapes; numbered tile path; number sequence
+- **Prerequisites** pragati_iu_g02_ch03_u2; pragati_iu_g02_ch04_u3
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** These pages were sitting inside a stale source segment. They teach growing patterns, which the stamping-and-printing unit before them does not.
+
+#### Working out money left, and money still needed
+
+- **Id** `pragati_iu_g02_ch10_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_bejm1_ch10`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10
+- **Source** bejm1, printed pp. 121–122 (PDF pp. 9–10), read 2026-09-28. Establishes: The "Let us Buy" table of money needed, money you have and money left or still needed; then column addition of amounts and the Jayant and Meera word problems.
+- **Objective** Decide whether a purchase needs addition or subtraction, and find the money left or the shortfall.
+- **Student can** I can work out how much is left, or how much more I need.
+- **Mathematical ideas** adding and subtracting amounts of money; choosing the operation from the situation; comparison producing a shortfall
+- **Representations** price and purse table; column layout for rupees; play money
+- **Prerequisites** pragati_iu_g02_ch10_u3; pragati_iu_g02_ch06_u7
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Recovered from a stale segment: deciding between adding and subtracting money is a different objective from making an amount in different ways.
+
 ## Records read and found non-instructional
 
-- **ncert_aejm1_ch13** (class1) — REVIEW. Re-inspected page by page. Pages 122-123 and the shadow, matchstick and word-search tasks rehearse counting, number names and spatial matching already taught, so they are recorded rather than made authoring targets. The constraint puzzles and the beyond-Class-1 puzzles on the same spread are NOT covered here: they are pragati_iu_g01_ch13_u3 and _u4. Pages 122–125.
+- **ncert_aejm1_ch13** (class1) — REVIEW. Re-inspected page by page. Pages 122-123 and the shadow, matchstick and word-search tasks rehearse counting, number names and spatial matching already taught, so they are recorded rather than made authoring targets. The constraint puzzles and the beyond-Class-1 puzzles on the same spread are NOT covered here: they are pragati_iu_g01_ch13_u3 and _u4. Pages 123–125.

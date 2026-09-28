@@ -68,8 +68,15 @@ describe('§23 nothing is authoring-ready without page evidence', () => {
       const e = u.sourceEvidence;
       expect(u.intentInspectionStatus, u.instructionalUnitId).toBe('INSPECTED');
       expect(e.bookId, u.instructionalUnitId).toBeTruthy();
-      expect(e.printedPageStart, u.instructionalUnitId).not.toBeNull();
-      expect(e.printedPageEnd, u.instructionalUnitId).not.toBeNull();
+      // v0.84.0 checkpoint 6 — some pages carry no printed folio at all
+      // (the Class 2 trip spread, for instance). Reproducibility rests on
+      // the PDF pages; an absent folio is recorded as null, with the
+      // reason in `establishes`, rather than guessed from its neighbours.
+      if (e.printedPageStart === null) {
+        expect(e.establishes, u.instructionalUnitId).toMatch(/No printed folio/i);
+      } else {
+        expect(e.printedPageEnd, u.instructionalUnitId).not.toBeNull();
+      }
       expect(e.pdfPageEnd, u.instructionalUnitId).toBeGreaterThanOrEqual(e.pdfPageStart);
       expect(e.inspectedOn, u.instructionalUnitId).toMatch(/^\d{4}-\d{2}-\d{2}$/);
       expect(e.establishes.length, u.instructionalUnitId).toBeGreaterThan(20);
@@ -464,5 +471,110 @@ describe('§8/§20 the audit and the dataset agree', () => {
       for (const u of units) expect(a, u.instructionalUnitId).toContain(u.instructionalUnitId);
     }
     expect(a).toContain(`${CLASS_DECOMPOSITION_PROGRESS[0].pagesFullyInspected}/${CLASS_DECOMPOSITION_PROGRESS[0].pagesInScope}`);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 6 — DATA THAT CONTRADICTS ITSELF.
+//
+// Three defects this guards. Six Class 2 segments still said "pages not
+// yet read" while carrying complete page evidence in a class declared
+// source-complete. Class 2 Chapter 6's printed extent read 51–27,
+// because an answer inside a Project Work box ("30 − 17 = 27") was
+// mistaken for the folio. And a generated note said 130 of 121 visual
+// pages had been seen, having counted every inspected page against the
+// required ones.
+// ---------------------------------------------------------------------------
+
+describe('§2 a source segment may only be UNRESOLVED for a real reason', () => {
+  it('never claims pages are unread when their evidence is complete', () => {
+    for (const s of SOURCE_SEGMENTS) {
+      const complete = s.sourceEvidence.evidenceDepth !== 'DIGEST_ONLY';
+      if (complete) {
+        expect(s.justification, s.sourceSegmentId).not.toMatch(/not yet read|pages not read/i);
+      }
+      if (s.role === 'UNRESOLVED') {
+        // An unresolved segment must say what is unresolved, and in a
+        // source-complete class it cannot be unresolved for want of reading.
+        expect(s.justification.length, s.sourceSegmentId).toBeGreaterThan(60);
+        expect(complete, `${s.sourceSegmentId} is unresolved because of unread source`).toBe(false);
+      }
+    }
+  });
+
+  it('leaves no unresolved-by-unread segment in a source-complete class', () => {
+    const complete = CLASS_DECOMPOSITION_PROGRESS.filter(
+      (p) => p.status === 'DECOMPOSITION_SOURCE_COMPLETE'
+    ).map((p) => p.classNumber);
+    for (const s of SOURCE_SEGMENTS) {
+      const n = Number(s.officialRecordId.match(/_(a|b)ejm1_/) ? (s.officialRecordId.includes('aejm1') ? 1 : 2) : 0);
+      if (!complete.includes(n)) continue;
+      expect(s.role, s.sourceSegmentId).not.toBe('UNRESOLVED');
+    }
+  });
+});
+
+describe('§4/§5 printed page ranges must be possible', () => {
+  const ranges: Array<[string, number | null, number | null]> = [
+    ...RECORD_EXTENTS.map((e) => [e.officialRecordId, e.printedPageStart, e.printedPageEnd] as [string, number | null, number | null]),
+    ...PRAGATI_INSTRUCTIONAL_UNITS.map((u) => [u.instructionalUnitId, u.sourceEvidence.printedPageStart, u.sourceEvidence.printedPageEnd] as [string, number | null, number | null]),
+    ...SOURCE_SEGMENTS.map((s) => [s.sourceSegmentId, s.sourceEvidence.printedPageStart, s.sourceEvidence.printedPageEnd] as [string, number | null, number | null]),
+    ...NON_INSTRUCTIONAL_RECORDS.map((r) => [r.officialRecordId, r.sourceEvidence.printedPageStart, r.sourceEvidence.printedPageEnd] as [string, number | null, number | null]),
+  ];
+
+  it('never ends before it starts', () => {
+    for (const [id, start, end] of ranges) {
+      if (start === null || end === null) continue;
+      expect(end, `${id}: ${start}–${end}`).toBeGreaterThanOrEqual(start);
+    }
+  });
+
+  it('keeps a unit inside its chapter, and takes an unknown folio as null', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === u.officialRecordId);
+      const { printedPageStart: s, printedPageEnd: e } = u.sourceEvidence;
+      if (!ext || ext.printedPageStart === null || ext.printedPageEnd === null) continue;
+      if (s !== null) expect(s, u.instructionalUnitId).toBeGreaterThanOrEqual(ext.printedPageStart);
+      if (e !== null) expect(e, u.instructionalUnitId).toBeLessThanOrEqual(ext.printedPageEnd);
+    }
+    // Pages whose folio is genuinely absent carry null rather than a guess.
+    const nulls = PRAGATI_INSTRUCTIONAL_UNITS.flatMap((u) => u.sourceEvidence.pageEvidence).filter(
+      (p) => p.printedPage === null
+    );
+    expect(nulls.length).toBeGreaterThan(0);
+  });
+});
+
+describe('§6/§7 generated prose agrees with the structured values', () => {
+  it('cannot report more visual pages seen than were required', () => {
+    for (const p of CLASS_DECOMPOSITION_PROGRESS) {
+      expect(p.visualPagesInspected ?? 0, `class${p.classNumber}`).toBeLessThanOrEqual(p.visualPagesRequired ?? 0);
+      expect(p.pagesFullyInspected, `class${p.classNumber}`).toBeLessThanOrEqual(p.pagesInScope ?? p.pagesFullyInspected);
+      // The note is derived, so every number it states must be one of them.
+      const numbers = (p.note.match(/\d+/g) ?? []).map(Number);
+      const allowed = new Set([
+        p.pagesInScope, p.pagesFullyInspected, p.visualPagesRequired, p.visualPagesInspected,
+        p.officialRecordsTotal, p.officialRecordsFullyInspected, p.pagesUnresolved, p.chaptersTotal,
+      ]);
+      for (const n of numbers) expect(allowed.has(n), `class${p.classNumber} note has stray ${n}`).toBe(true);
+    }
+  });
+});
+
+describe('§12 overlapping coverage is deliberate and explained', () => {
+  it('explains every overlap between two units of one record', () => {
+    for (const id of officialRecordIdsTouched()) {
+      const units = instructionalUnitsFor(id);
+      for (let i = 0; i < units.length; i += 1) {
+        for (let j = i + 1; j < units.length; j += 1) {
+          const a = units[i].sourceEvidence;
+          const b = units[j].sourceEvidence;
+          const overlap = a.pdfPageStart <= b.pdfPageEnd && b.pdfPageStart <= a.pdfPageEnd;
+          if (!overlap) continue;
+          const reason = units[i].mergeRelationship ?? units[j].mergeRelationship ?? '';
+          expect(reason.length, `${units[i].instructionalUnitId} / ${units[j].instructionalUnitId}`).toBeGreaterThan(40);
+        }
+      }
+    }
   });
 });

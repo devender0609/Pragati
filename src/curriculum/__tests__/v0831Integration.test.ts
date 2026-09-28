@@ -238,7 +238,9 @@ describe('§E official records and Pragati lessons cannot be confused', () => {
   it('creates no speculative instructional units', () => {
     for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
       expect(u.intentInspectionStatus, u.instructionalUnitId).not.toBe('NOT_INSPECTED');
-      expect(u.sourceEvidence.printedPageStart, u.instructionalUnitId).not.toBeNull();
+      // Evidence is the PDF page range; a printed folio the book does
+      // not show is null rather than inferred.
+      expect(u.sourceEvidence.pageEvidence.length, u.instructionalUnitId).toBeGreaterThan(0);
     }
   });
 

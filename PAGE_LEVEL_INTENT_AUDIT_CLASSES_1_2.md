@@ -32,13 +32,13 @@ mathematics usually needs.
 | `ncert_bejm1_ch01` | A Day at the Beach | 2–15 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 6 | 6 | 0 |
 | `ncert_bejm1_ch02` | Shapes Around Us | 17–22 | 1–7 | 7/7 | 7 | 7 | FULLY_INSPECTED | 2 | 2 | 0 |
 | `ncert_bejm1_ch03` | Fun with Numbers | 24–31 | 1–9 | 9/9 | 9 | 9 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_bejm1_ch04` | Shadow Story (Togalu) | 33–43 | 1–12 | 12/12 | 12 | 12 | FULLY_INSPECTED | 3 | 3 | 0 |
+| `ncert_bejm1_ch04` | Shadow Story (Togalu) | 33–43 | 1–12 | 12/12 | 12 | 12 | FULLY_INSPECTED | 4 | 4 | 0 |
 | `ncert_bejm1_ch05` | Playing with Lines | 45–49 | 1–6 | 6/6 | 6 | 6 | FULLY_INSPECTED | 2 | 2 | 0 |
-| `ncert_bejm1_ch06` | Decoration for Festival | 51–27 | 1–21 | 21/21 | 21 | 21 | FULLY_INSPECTED | 9 | 9 | 0 |
+| `ncert_bejm1_ch06` | Decoration for Festival | 51–70 | 1–21 | 21/21 | 21 | 21 | FULLY_INSPECTED | 9 | 9 | 0 |
 | `ncert_bejm1_ch07` | Rani’s Gift | 72–82 | 1–12 | 12/12 | 12 | 12 | FULLY_INSPECTED | 5 | 5 | 0 |
 | `ncert_bejm1_ch08` | Grouping and Sharing | 84–97 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 9 | 9 | 0 |
 | `ncert_bejm1_ch09` | Which Season is it? | 99–112 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 8 | 7 | 1 |
-| `ncert_bejm1_ch10` | Fun at the Fair | 114–122 | 1–10 | 10/10 | 10 | 10 | FULLY_INSPECTED | 4 | 4 | 0 |
+| `ncert_bejm1_ch10` | Fun at the Fair | 114–122 | 1–10 | 10/10 | 10 | 10 | FULLY_INSPECTED | 5 | 5 | 0 |
 | `ncert_bejm1_ch11` | Data Handling | 124–137 | 1–16 | 16/16 | 16 | 16 | FULLY_INSPECTED | 5 | 4 | 1 |
 
 ## Pragati source segments (non-official)
@@ -49,13 +49,9 @@ mathematics usually needs.
 | `pragati_srcseg_g01_04_seg1` | `ncert_aejm1_ch04` | pages 15-15 of the chapter | PRACTICE | 15–15 | Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target. |
 | `pragati_srcseg_g01_05_seg1` | `ncert_aejm1_ch05` | pages 14-14 of the chapter | PRACTICE | 14–14 | Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target. |
 | `pragati_srcseg_g01_13_seg1` | `ncert_aejm1_ch13` | pages 10-11 of the chapter | PRACTICE | 10–11 | Pages read in full but serving practice, project work or review of material already taught by the units in this chapter; no new teaching target. |
-| `pragati_srcseg_g02_01_seg1` | `ncert_bejm1_ch01` | pages 11-15 of the chapter | UNRESOLVED | 11–15 | Pages not yet read. Recorded so they cannot disappear from the accounting. |
 | `pragati_srcseg_g02_02_seg1` | `ncert_bejm1_ch02` | pages 1-1 of the chapter | REFERENCE | 1–1 | Chapter opening spread: the title page and the story or picture that frames the chapter. Context, not a teaching target. |
-| `pragati_srcseg_g02_04_seg1` | `ncert_bejm1_ch04` | pages 11-12 of the chapter | UNRESOLVED | 11–12 | Pages not yet read. Recorded so they cannot disappear from the accounting. |
-| `pragati_srcseg_g02_06_seg1` | `ncert_bejm1_ch06` | pages 21-21 of the chapter | UNRESOLVED | 21–21 | Pages not yet read. Recorded so they cannot disappear from the accounting. |
-| `pragati_srcseg_g02_07_seg1` | `ncert_bejm1_ch07` | pages 9-12 of the chapter | UNRESOLVED | 9–12 | Pages not yet read. Recorded so they cannot disappear from the accounting. |
-| `pragati_srcseg_g02_10_seg1` | `ncert_bejm1_ch10` | pages 9-10 of the chapter | UNRESOLVED | 9–10 | Pages not yet read. Recorded so they cannot disappear from the accounting. |
-| `pragati_srcseg_g02_11_seg1` | `ncert_bejm1_ch11` | pages 9-16 of the chapter | UNRESOLVED | 9–16 | Pages not yet read. Recorded so they cannot disappear from the accounting. |
+| `pragati_srcseg_g02_07_seg1` | `ncert_bejm1_ch07` | pages 9-12 of the chapter | PRACTICE | 9–9 | Read and rendered. Page 79 compares two bags by weight and shows the kinds of balance people use: it practises the weight unit before it rather than teaching anything new. |
+| `pragati_srcseg_g02_11_seg1` | `ncert_bejm1_ch11` | pages 9-16 of the chapter | NON_INSTRUCTIONAL | 16–16 | Read and rendered. The closing page carries only the "Notes" heading and ruled space; no mathematics. |
 
 ## Units by chapter
 
@@ -166,4 +162,6 @@ mathematics usually needs.
 | `pragati_iu_g02_ch11_u4` Puzzles that rehearse what you know | `ncert_bejm1_ch11` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
 | `pragati_iu_g02_ch11_u5` Puzzles that need new reasoning | `ncert_bejm1_ch11` | FULL_PAGE_INSPECTED | NEEDS_HUMAN_CHECK |
 | `pragati_iu_g01_ch08_u6` Reading a picture for information | `ncert_aejm1_ch08` | FULL_PAGE_INSPECTED | NEEDS_HUMAN_CHECK |
+| `pragati_iu_g02_ch04_u4` Patterns that grow by a fixed step | `ncert_bejm1_ch04` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g02_ch10_u5` Working out money left, and money still needed | `ncert_bejm1_ch10` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
 
