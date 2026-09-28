@@ -31,7 +31,7 @@
 import type { Grade } from '../types';
 
 import decompositionJson from './data/instructionalDecomposition.json';
-import { inspectedRecordsRef } from './curriculumMasterMap';
+import { inspectedRecordsRef, authoringUnits } from './curriculumMasterMap';
 
 /**
  * v0.84.0 — THE DECOMPOSITION SCHEMA, NOW POPULATED FROM THE PAGES.
@@ -215,6 +215,10 @@ export type PragatiInstructionalUnit = {
     note: string;
   } | null;
   notes: string | null;
+  /** v0.84.0 checkpoint 5 §13 — the specific curriculum question a
+   *  human must answer. Present only when the source is complete and the
+   *  remaining doubt is a judgement, never a stand-in for unread pages. */
+  humanJudgementQuestion?: string;
   /** v0.84.0 hardening §4 — the verdict of the re-audit against the
    *  stronger evidence standard. */
   hardeningClassification?:
@@ -225,6 +229,28 @@ export type PragatiInstructionalUnit = {
     | 'NOT_SUPPORTED'
     | 'NEEDS_HUMAN_CHECK';
   hardeningNote?: string;
+};
+
+/**
+ * v0.84.0 checkpoint 4 §3/§4 — PRAGATI'S OWN SEGMENTATION, LABELLED AS
+ * SUCH.
+ *
+ * Checkpoint 3 recorded the Class 2 Puzzles pages under the id
+ * `ncert_bejm1_ch11_puzzles`. NCERT defines no such record. Inventing an
+ * `ncert_*` id to hold our own reading is precisely the confusion the
+ * whole project exists to avoid, so internal material NCERT did not
+ * number is now a SourceSegment: a Pragati-created pointer into a real
+ * official record, in its own id space.
+ */
+export type SourceSegment = {
+  sourceSegmentId: `pragati_srcseg_${string}`;
+  /** The real NCERT record these pages belong to. */
+  officialRecordId: string;
+  /** The heading as printed, e.g. "Puzzles". A cue, not a section. */
+  sourceLabel: string;
+  role: InstructionalRole | 'UNRESOLVED';
+  justification: string;
+  sourceEvidence: SourceEvidence;
 };
 
 /** An official record read and found to carry no new teaching. */
@@ -250,6 +276,7 @@ type DecompositionFile = {
   generatedFrom: string;
   units: PragatiInstructionalUnit[];
   nonInstructional: NonInstructionalRecord[];
+  sourceSegments: SourceSegment[];
   recordExtents: RecordExtent[];
   /** Classes whose page-level pass is finished, and what remains. */
   classProgress: Array<{
@@ -301,6 +328,7 @@ export const PRAGATI_INSTRUCTIONAL_UNITS: PragatiInstructionalUnit[] = DATA.unit
 export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstructional;
 export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
 export const RECORD_EXTENTS: RecordExtent[] = DATA.recordExtents ?? [];
+export const SOURCE_SEGMENTS: SourceSegment[] = DATA.sourceSegments ?? [];
 
 export function unitsForClass(n: number): PragatiInstructionalUnit[] {
   return PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.classNumber === n);
@@ -385,6 +413,11 @@ export function recordInspectionState(officialRecordId: string): RecordInspectio
   const all = [
     ...units.map((u) => u.sourceEvidence),
     ...nonInstr.map((r) => r.sourceEvidence),
+    // A segment is not a record; its pages count towards the record it
+    // sits inside.
+    ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === officialRecordId).map(
+      (s) => s.sourceEvidence
+    ),
   ];
   if (all.length === 0) return 'NOT_STARTED';
   if (all.some((e) => e.blockedSource)) return 'BLOCKED_SOURCE';
@@ -428,6 +461,7 @@ export function officialRecordIdsTouched(): string[] {
     for (const extra of u.additionalOfficialRecordIds) ids.add(extra);
   }
   for (const r of NON_INSTRUCTIONAL_RECORDS) ids.add(r.officialRecordId);
+  for (const s of SOURCE_SEGMENTS) ids.add(s.officialRecordId);
   return [...ids];
 }
 
@@ -451,6 +485,9 @@ export function recordInspectionSummary(): Array<{
       for (const r of NON_INSTRUCTIONAL_RECORDS.filter((r) => r.officialRecordId === id)) {
         for (const p of r.sourceEvidence.pageEvidence) if (p.fullTextInspected) seen.add(p.pdfPage);
       }
+      for (const sg of SOURCE_SEGMENTS.filter((s) => s.officialRecordId === id)) {
+        for (const p of sg.sourceEvidence.pageEvidence) if (p.fullTextInspected) seen.add(p.pdfPage);
+      }
       return {
         officialRecordId: id,
         state: recordInspectionState(id),
@@ -458,6 +495,42 @@ export function recordInspectionSummary(): Array<{
         pagesInExtent: extent ? extent.pdfPageEnd - extent.pdfPageStart + 1 : null,
       };
     });
+}
+
+/**
+ * v0.84.0 checkpoint 4 §1/§2 — the denominator comes from the official
+ * curriculum, never from whatever the decomposition happens to have
+ * touched. Class 2 Chapter 5 disappeared from the accounting because the
+ * extents list was built from the pages that had been read; it is now
+ * built from the master map, so a chapter cannot vanish by being
+ * ignored.
+ */
+export function officialRecordAccounting(classNumber: number): {
+  officialRecordsTotal: number;
+  officialRecordsNotStarted: number;
+  officialRecordsIndexedOnly: number;
+  officialRecordsPartiallyInspected: number;
+  officialRecordsFullyInspected: number;
+  officialRecordsBlocked: number;
+  missingExtents: string[];
+} {
+  // The authoring grain the source itself defines: chapter for Classes
+  // 1-5, numbered section where the book numbers them. Same rule for
+  // every grade, so Classes 6+ need no second model later.
+  const records = authoringUnits(classNumber).map((r) => r.recordId);
+  const byState = { NOT_STARTED: 0, INDEXED_ONLY: 0, PARTIALLY_INSPECTED: 0, FULLY_INSPECTED: 0, BLOCKED_SOURCE: 0, NEEDS_HUMAN_CHECK: 0 };
+  for (const id of records) byState[recordInspectionState(id)] += 1;
+  return {
+    officialRecordsTotal: records.length,
+    officialRecordsNotStarted: byState.NOT_STARTED,
+    officialRecordsIndexedOnly: byState.INDEXED_ONLY,
+    officialRecordsPartiallyInspected: byState.PARTIALLY_INSPECTED + byState.NEEDS_HUMAN_CHECK,
+    officialRecordsFullyInspected: byState.FULLY_INSPECTED,
+    officialRecordsBlocked: byState.BLOCKED_SOURCE,
+    missingExtents: records.filter(
+      (id: string) => !RECORD_EXTENTS.some((x) => x.officialRecordId === id)
+    ),
+  };
 }
 
 export function readyForAuthoring(): PragatiInstructionalUnit[] {
@@ -491,7 +564,9 @@ export function decompositionCoverage(records: number): DecompositionCoverage {
     officialAuthoringRecords: records,
     officialRecordsInspected: inspectedOfficialRecordIds().size,
     unitsWithCompleteEvidence: PRAGATI_INSTRUCTIONAL_UNITS.filter(meetsEvidenceBar).length,
-    classesFullyInspected: CLASS_DECOMPOSITION_PROGRESS.filter((p) => p.status === 'COMPLETE').length,
+    classesFullyInspected: CLASS_DECOMPOSITION_PROGRESS.filter(
+      (p) => p.status === 'COMPLETE' || p.status === 'DECOMPOSITION_SOURCE_COMPLETE'
+    ).length,
     instructionalUnits: PRAGATI_INSTRUCTIONAL_UNITS.length,
     // Still null, and still for the same reason: the classes whose pages
     // have not been read yet cannot have their lesson count guessed from

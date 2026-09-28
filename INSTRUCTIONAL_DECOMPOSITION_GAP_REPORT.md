@@ -10,8 +10,8 @@ does not make it so.
 
 | Class | Official chapters | Official sections | Pages (indexed / full text / visual) | Pragati units drafted | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Class 1 | 13 | — | 130 indexed / 123 full text / 50 visual | 47 | 9 | 38 | 0 | 0 | 47 | IN_PROGRESS |
-| Class 2 | 11 | — | 132 indexed / 24 full text / 16 visual | 46 | 2 | 44 | 0 | 0 | 46 | IN_PROGRESS |
+| Class 1 | 13 | — | 130 indexed / 130 full text / 121 visual | 48 | 43 | 5 | 0 | 0 | 48 | DECOMPOSITION_SOURCE_COMPLETE |
+| Class 2 | 11 | — | 138 indexed / 138 full text / 138 visual | 57 | 55 | 2 | 0 | 0 | 57 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 3 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 4 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 5 | 15 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |

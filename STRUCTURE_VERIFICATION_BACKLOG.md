@@ -57,8 +57,8 @@ The in-app curriculum registry agrees with the master map for every class.
 
 | Class | Authoring records | Page-level intent inspected | Not yet inspected |
 |---|---|---|---|
-| Class 1 | 13 | 0 | 13 |
-| Class 2 | 11 | 0 | 11 |
+| Class 1 | 13 | 13 | 0 |
+| Class 2 | 11 | 11 | 0 |
 | Class 3 | 14 | 0 | 14 |
 | Class 4 | 14 | 0 | 14 |
 | Class 5 | 15 | 0 | 15 |

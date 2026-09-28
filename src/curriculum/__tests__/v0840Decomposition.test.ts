@@ -12,7 +12,10 @@ import {
   CLASS_DECOMPOSITION_PROGRESS,
   inspectedOfficialRecordIds,
   meetsEvidenceBar,
+  officialRecordAccounting,
   officialRecordIdsTouched,
+  RECORD_EXTENTS,
+  SOURCE_SEGMENTS,
   recordInspectionState,
   recordInspectionSummary,
   NON_INSTRUCTIONAL_RECORDS,
@@ -82,11 +85,12 @@ describe('§23 nothing is authoring-ready without page evidence', () => {
     }
   });
 
+  // v0.84.0 checkpoint 5 — Classes 1 and 2 are source-complete, so there
+  // are no drafts left. The rule still has to hold for any that appear.
   it('a unit whose pages are only partly read is held back, not shipped', () => {
     const draft = PRAGATI_INSTRUCTIONAL_UNITS.filter(
       (u) => u.decompositionStatus === 'DRAFT_DECOMPOSITION'
     );
-    expect(draft.length).toBeGreaterThan(0);
     for (const u of draft) {
       // v0.84.0 hardening — the reason now lives in hardeningNote, which
       // says which evidence is missing rather than only that pages were
@@ -212,10 +216,29 @@ describe('§3/§15 evidence depth gates authoring readiness', () => {
     }
   });
 
-  it('every ready unit passes the single gate the code defines', () => {
+  // §12 — three different states. Evidence-complete is necessary for
+  // ready, never sufficient: a unit can have every page read and still
+  // wait on a curriculum decision.
+  it('every ready unit passes the evidence gate, and a failing unit is never ready', () => {
     for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
-      const ready = u.decompositionStatus === 'READY_FOR_AUTHORING';
-      expect(meetsEvidenceBar(u), u.instructionalUnitId).toBe(ready);
+      if (u.decompositionStatus === 'READY_FOR_AUTHORING') {
+        expect(meetsEvidenceBar(u), u.instructionalUnitId).toBe(true);
+        expect(u.humanJudgementQuestion, u.instructionalUnitId).toBeUndefined();
+      }
+      if (!meetsEvidenceBar(u)) {
+        expect(u.decompositionStatus, u.instructionalUnitId).not.toBe('READY_FOR_AUTHORING');
+      }
+    }
+  });
+
+  // §13 — a human-check flag must name the actual question.
+  it('says what each human-check unit is actually waiting on', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      if (u.decompositionStatus !== 'NEEDS_HUMAN_CHECK') continue;
+      const q = u.humanJudgementQuestion ?? '';
+      const unread = !meetsEvidenceBar(u);
+      expect(q.length > 20 || unread, u.instructionalUnitId).toBe(true);
+      if (q) expect(q.trim().endsWith('?'), u.instructionalUnitId).toBe(true);
     }
   });
 
@@ -259,7 +282,8 @@ describe('§7/§8 one meaning of page-level intent inspected', () => {
     // Partial progress is visible rather than rounded up or away.
     const summary = recordInspectionSummary();
     expect(summary.length).toBeGreaterThan(20);
-    expect(summary.some((r) => r.state === 'PARTIALLY_INSPECTED')).toBe(true);
+    // Classes 1 and 2 are source-complete, so every record they touch is
+    // FULLY_INSPECTED; the partial branch is still exercised below.
     for (const r of summary) {
       if (r.state === 'PARTIALLY_INSPECTED') {
         // Partial can mean unread pages OR pages read but not yet
@@ -308,8 +332,15 @@ describe('§7/§8 one meaning of page-level intent inspected', () => {
   it('reports inspection as three numbers, not one', () => {
     const c = decompositionCoverage(477);
     expect(c.officialRecordsInspected).toBe(inspectedOfficialRecordIds().size);
-    expect(c.unitsWithCompleteEvidence).toBe(readyForAuthoring().length);
-    expect(c.classesFullyInspected).toBe(0); // neither class is source-complete yet
+    expect(c.unitsWithCompleteEvidence).toBe(
+      PRAGATI_INSTRUCTIONAL_UNITS.filter(meetsEvidenceBar).length
+    );
+    // Evidence-complete is a larger set than ready: the difference is
+    // the units waiting on a curriculum decision.
+    expect(c.unitsWithCompleteEvidence).toBeGreaterThanOrEqual(readyForAuthoring().length);
+    expect(c.classesFullyInspected).toBe(
+      CLASS_DECOMPOSITION_PROGRESS.filter((p) => p.status === 'DECOMPOSITION_SOURCE_COMPLETE').length
+    );
     expect(c.projectedLessonCount).toBeNull();
   });
 });
@@ -326,6 +357,112 @@ describe('§9 active decomposition code does not describe the old world', () => 
     const md = read('INSTRUCTIONAL_MASTER_BLUEPRINT.md');
     expect(md).toContain('indexed / ');
     expect(md).toContain('navigation, not inspection');
-    expect(read('PAGE_LEVEL_INTENT_AUDIT_CLASSES_1_2.md')).toContain('It is not an inspection.');
+    expect(read('PAGE_LEVEL_INTENT_AUDIT_CLASSES_1_2.md')).toContain('navigation and not evidence');
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 4 — CANONICAL IDENTITY AND COVERAGE.
+//
+// Two defects this guards: an invented official id
+// (`ncert_bejm1_ch11_puzzles`, which NCERT does not define), and a
+// chapter that vanished from the accounting because the extents list was
+// built from the pages that happened to have been read rather than from
+// the official curriculum (`ncert_bejm1_ch05`).
+// ---------------------------------------------------------------------------
+
+describe('§5 no decomposition record may invent an official id', () => {
+  const officialIds = new Set(MASTER_RECORDS.map((r) => r.recordId));
+
+  it('every officialRecordId exists in the master map', () => {
+    const used = [
+      ...PRAGATI_INSTRUCTIONAL_UNITS.map((u) => u.officialRecordId),
+      ...PRAGATI_INSTRUCTIONAL_UNITS.flatMap((u) => u.additionalOfficialRecordIds),
+      ...NON_INSTRUCTIONAL_RECORDS.map((r) => r.officialRecordId),
+      ...SOURCE_SEGMENTS.map((s) => s.officialRecordId),
+      ...RECORD_EXTENTS.map((e) => e.officialRecordId),
+    ];
+    for (const id of used) expect(officialIds.has(id), id).toBe(true);
+  });
+
+  it('keeps Pragati segments in their own id space', () => {
+    for (const s of SOURCE_SEGMENTS) {
+      expect(s.sourceSegmentId.startsWith('pragati_srcseg_'), s.sourceSegmentId).toBe(true);
+      expect(s.sourceSegmentId.startsWith('ncert_')).toBe(false);
+      // A segment points at a real chapter; it is not one.
+      expect(officialIds.has(s.officialRecordId), s.sourceSegmentId).toBe(true);
+    }
+  });
+
+  it('has no record whose id ends in a pseudo-section like _puzzles', () => {
+    for (const id of officialRecordIdsTouched()) {
+      expect(id, id).toMatch(/^ncert_[a-z0-9]+_ch\d{2}$/);
+    }
+  });
+});
+
+describe('§1/§7 every official chapter is accounted for', () => {
+  for (const [n, expected] of [[1, 13], [2, 11]] as const) {
+    it(`Class ${n} has ${expected} official chapters, all with an extent`, () => {
+      const acc = officialRecordAccounting(n);
+      expect(acc.officialRecordsTotal, `class${n}`).toBe(expected);
+      expect(acc.missingExtents, `class${n}`).toEqual([]);
+      expect(
+        acc.officialRecordsFullyInspected +
+          acc.officialRecordsPartiallyInspected +
+          acc.officialRecordsIndexedOnly +
+          acc.officialRecordsNotStarted +
+          acc.officialRecordsBlocked
+      ).toBe(expected);
+    });
+  }
+
+  it('derives the class denominator from the curriculum, not the decomposition', () => {
+    for (const p of CLASS_DECOMPOSITION_PROGRESS) {
+      const acc = officialRecordAccounting(p.classNumber);
+      expect(p.chaptersTotal, `class${p.classNumber}`).toBe(acc.officialRecordsTotal);
+      // "Inspected" means fully inspected — never merely touched.
+      expect(p.chaptersInspected, `class${p.classNumber}`).toBe(acc.officialRecordsFullyInspected);
+    }
+  });
+
+  it('gives every page of every official record a home', () => {
+    for (const ext of RECORD_EXTENTS) {
+      const covered = new Set<number>();
+      for (const e of [
+        ...instructionalUnitsFor(ext.officialRecordId).map((u) => u.sourceEvidence),
+        ...NON_INSTRUCTIONAL_RECORDS.filter((r) => r.officialRecordId === ext.officialRecordId).map((r) => r.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === ext.officialRecordId).map((s) => s.sourceEvidence),
+      ]) {
+        for (const p of e.pageEvidence) covered.add(p.pdfPage);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${ext.officialRecordId} p${p}`).toBe(true);
+      }
+    }
+  });
+});
+
+describe('§8/§20 the audit and the dataset agree', () => {
+  const audit = () => read('PAGE_LEVEL_INTENT_AUDIT_CLASSES_1_2.md');
+
+  it('lists all 24 official chapters exactly once, and no invented one', () => {
+    const listed = [...audit().matchAll(/^\| `(ncert_[a-z0-9_]+)` \|/gm)].map((m) => m[1]);
+    expect(listed).toHaveLength(24);
+    expect(new Set(listed).size).toBe(24);
+    const expectedSet = new Set([
+      ...authoringUnits(1).map((r) => r.recordId),
+      ...authoringUnits(2).map((r) => r.recordId),
+    ]);
+    expect(new Set(listed)).toEqual(expectedSet);
+  });
+
+  it('reports the same per-class unit counts as the dataset', () => {
+    const a = audit();
+    for (const n of [1, 2]) {
+      const units = unitsForClass(n);
+      for (const u of units) expect(a, u.instructionalUnitId).toContain(u.instructionalUnitId);
+    }
+    expect(a).toContain(`${CLASS_DECOMPOSITION_PROGRESS[0].pagesFullyInspected}/${CLASS_DECOMPOSITION_PROGRESS[0].pagesInScope}`);
   });
 });
