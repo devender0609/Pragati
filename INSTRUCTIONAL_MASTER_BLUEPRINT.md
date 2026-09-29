@@ -22,7 +22,7 @@ NOT STARTED — its unit count is unknown, not zero.
 |---|---|---|---|---|---|---|---|---|---|---|
 | Class 1 | 13 | — | 130 indexed / 130 full text / 121 visual | 47 | 43 | 4 | 0 | 0 | 47 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 2 | 11 | — | 138 indexed / 138 full text / 138 visual | 59 | 57 | 2 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 3 | 14 | — | 208 indexed / 208 full text / 77 visual | 59 | 26 | 33 | 0 | 0 | 59 | IN_PROGRESS |
+| Class 3 | 14 | — | 208 indexed / 208 full text / 184 visual | 59 | 55 | 4 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 4 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 5 | 15 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 6 | 10 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 12 | UNKNOWN | NOT_STARTED |
@@ -1748,13 +1748,13 @@ All 11 official chapters fully inspected: 138 of 138 pages read in full text and
 
 ## Class 3
 
-All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried pages rendered and looked at, so 3 of 14 chapters are fully inspected and the class remains IN_PROGRESS.
+All 14 official chapters fully inspected: 208 of 208 pages read in full text and 184 of 184 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source.
 
 #### Counting by matching one to one
 
 - **Id** `pragati_iu_g03_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch01`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–2), read 2026-09-29. Establishes: The cowherd story: a mark per cow leaving and a strike per cow returning, then a wall of marks read as a number. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Keep track of a collection by making and striking out one mark per object.
 - **Student can** I can check that nothing is missing by matching marks to things.
@@ -1763,14 +1763,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g01_ch03_u1
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Comparing by length of a name
 
 - **Id** `pragati_iu_g03_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch01`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5, 6
 - **Source** cemm1, printed pp. —–— (PDF pp. 3–6), read 2026-09-29. Establishes: Animal names counted and compared, friends' names tabulated, and number names between 1 and 99 compared by their letter counts. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Count letters and compare counts to find the longest and shortest.
 - **Student can** I can count the letters in names and say which is longest.
@@ -1779,14 +1779,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch01_u5
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 2/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Sorting a collection by a rule you choose
 
 - **Id** `pragati_iu_g03_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch01`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8
 - **Source** cemm1, printed pp. —–— (PDF pp. 7–8), read 2026-09-29. Establishes: Cards grouped as "eat food / do not", household objects grouped by needing electricity, then hair styles counted into a table. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Sort objects by an attribute and state the rule, then re-sort by another.
 - **Student can** I can group things and say the rule I used.
@@ -1795,14 +1795,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g01_ch01_u3
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Naming and building with solid shapes
 
 - **Id** `pragati_iu_g03_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch02`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–3), read 2026-09-29. Establishes: Rockets and houses built from boxes and cans, shapes counted by kind, and the construct-and-describe game. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Name cube, cuboid, cone, cylinder and sphere and describe how they are arranged.
 - **Student can** I can name the shapes in a model and say what is on top of what.
@@ -1811,14 +1811,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch02_u1
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Faces, edges and how solids behave
 
 - **Id** `pragati_iu_g03_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch02`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5
 - **Source** cemm1, printed pp. —–— (PDF pp. 4–5), read 2026-09-29. Establishes: Circle-the-cubes tasks, naming shapes with no edges, only flat faces, only curved faces, and building shapes from clay and sticks. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Sort solids by flat or curved faces and edges, and by what they can do.
 - **Student can** I can say which shapes have only flat faces and which have no edges.
@@ -1827,14 +1827,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch02_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Making new shapes by joining solids
 
 - **Id** `pragati_iu_g03_ch02_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch02`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
 - **Source** cemm1, printed pp. —–— (PDF pp. 6–7), read 2026-09-29. Establishes: The opposite-faces investigation on a die, joining three cubes in different ways, and naming the shapes in built models. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Investigate what shapes appear when solids are joined, and the die's opposite faces.
 - **Student can** I can join three cubes and describe the shapes I get.
@@ -1843,7 +1843,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch02_u2
 - **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Estimating, then counting a large collection
@@ -2026,7 +2026,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 
 - **Id** `pragati_iu_g03_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch05`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–5), read 2026-09-29. Establishes: Making Amma's rangoli on dots, naming its shapes, flattening boxes, and tracing the faces of a matchbox and a wooden box. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Name flat shapes and see them as faces of solids.
 - **Student can** I can name the shapes in a rangoli and on a flattened box.
@@ -2035,14 +2035,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch02_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Rectangles and squares
 
 - **Id** `pragati_iu_g03_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch05`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9, 10
 - **Source** cemm1, printed pp. —–— (PDF pp. 6–10), read 2026-09-29. Establishes: Constructing rectangles from given sides, counting rectangles in a picture, the square-versus-rectangle discussion, and joining squares to make new shapes. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Describe a rectangle and a square by their sides and corners, and construct them.
 - **Student can** I can say what makes a square different from a rectangle.
@@ -2051,14 +2051,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch04_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Square corners
 
 - **Id** `pragati_iu_g03_ch05_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch05`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12, 13
 - **Source** cemm1, printed pp. —–— (PDF pp. 11–13), read 2026-09-29. Establishes: Fitting a tile into a table corner, folding to compare corners, marking square corners in shapes, and making corners with two matchsticks. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Identify square corners and compare other corners with them.
 - **Student can** I can test whether a corner is a square corner.
@@ -2067,14 +2067,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch05_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Triangles and circles
 
 - **Id** `pragati_iu_g03_ch05_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch05`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16, 17
 - **Source** cemm1, printed pp. —–— (PDF pp. 14–17), read 2026-09-29. Establishes: Counting triangles in a rangoli, making triangles from dots on a circle, and folding a paper plate to find its centre. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Describe triangles and circles, and find the centre by folding.
 - **Student can** I can fold a paper plate to find the centre of a circle.
@@ -2083,14 +2083,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch05_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Taking shapes apart and putting them together
 
 - **Id** `pragati_iu_g03_ch05_u5` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch05`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19, 20
 - **Source** cemm1, printed pp. —–— (PDF pp. 18–20), read 2026-09-29. Establishes: Finding the largest rectangle, counting rows of triangles, splitting shapes with lines, tangram figures and line-pattern borders. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Split a shape into triangles or squares and fill shapes with pieces.
 - **Student can** I can draw two lines to split this shape into three triangles.
@@ -2099,7 +2099,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch05_u4
 - **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Counting and reading numbers beyond 200
@@ -2170,7 +2170,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 
 - **Id** `pragati_iu_g03_ch06_u5` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch06`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14, 15
 - **Source** cemm1, printed pp. —–— (PDF pp. 13–15), read 2026-09-29. Establishes: Packing sweets into boxes of 100, packets of 10 and singles for numbers to 800, and the house-number pattern of the spring-leap homes. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Represent three-digit numbers with hundreds, tens and ones blocks.
 - **Student can** I can draw the boxes and packets for 423.
@@ -2179,14 +2179,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch06_u2
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Comparing three-digit numbers
 
 - **Id** `pragati_iu_g03_ch06_u6` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch06`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 18
 - **Source** cemm1, printed pp. —–— (PDF pp. 16–18), read 2026-09-29. Establishes: Laddoo comparisons written with > and <, matching explanations about which digit decides, and making the greatest and smallest numbers from three digits. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Compare numbers using hundreds first, and use the > and < signs.
 - **Student can** I can say why 321 is more than 231 by looking at the hundreds.
@@ -2195,7 +2195,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch06_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Equal groups as multiplication
@@ -2282,7 +2282,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 
 - **Id** `pragati_iu_g03_ch07_u6` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch07`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 22, 23, 24, 25
 - **Source** cemm1, printed pp. —–— (PDF pp. 21–25), read 2026-09-29. Establishes: Spokes and spiders problems, frog jumps of 7 towards 50, wall hangings and rabdi cups with change, necklaces from 100 shells and the envelope puzzle. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Solve word problems that need multiplication or division, including money.
 - **Student can** I can work out how many spokes 30 wheels need.
@@ -2291,7 +2291,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch07_u4
 - **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Halves: sharing one whole equally between two
@@ -2346,7 +2346,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 
 - **Id** `pragati_iu_g03_ch09_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch09`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–3), read 2026-09-29. Establishes: Birbal's crow story, drawing tiles for large numbers, and the table of neighbouring hundreds, fifties and tens for numbers like 468 and 899. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Read, write and place numbers up to 1000, including neighbouring hundreds, fifties and tens.
 - **Student can** I can say which hundreds 468 lies between.
@@ -2355,14 +2355,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch06_u3
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Number puzzles and many ways to make a number
 
 - **Id** `pragati_iu_g03_ch09_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch09`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6, 7
 - **Source** cemm1, printed pp. —–— (PDF pp. 4–7), read 2026-09-29. Establishes: Tambola with clues, writing several sentences for one number, filling +10/+100/+25 pattern chains, and the circle puzzles with conditions. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Write a number as different sums, and satisfy several conditions at once.
 - **Student can** I can write 400 in different ways and fill a puzzle that fits all the clues.
@@ -2378,7 +2378,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 
 - **Id** `pragati_iu_g03_ch09_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch09`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9, 10
 - **Source** cemm1, printed pp. —–— (PDF pp. 8–10), read 2026-09-29. Establishes: Six slips of 100 and 10 combined into numbers, digits 3 and 8 used to make 2- and 3-digit numbers, then ordering them. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Build the largest and smallest numbers possible from slips or digits, and order them.
 - **Student can** I can make the biggest number from these slips and say why.
@@ -2387,14 +2387,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch06_u6
 - **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Word numerals: numbers said with words
 
 - **Id** `pragati_iu_g03_ch09_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch09`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11
 - **Source** cemm1, printed pp. —–— (PDF pp. 11–11), read 2026-09-29. Establishes: Bhutasankhya word numerals: cards such as eyes, seasons and directions read as digits, then new cards made for 15, 27 and 94. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Read a number written with word-symbols and write the number it names.
 - **Student can** I can read the word cards and write the number they show.
@@ -2410,7 +2410,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 
 - **Id** `pragati_iu_g03_ch10_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch10`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–6), read 2026-09-29. Establishes: Hand spans giving different answers, cutting threads to match a line, and checking whether a table passes through a door by comparing thread lengths. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Compare and order lengths using a thread or a chosen unit.
 - **Student can** I can use a thread to check whether the table fits through the door.
@@ -2419,14 +2419,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch07_u2
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### The metre, and half and quarter metre
 
 - **Id** `pragati_iu_g03_ch10_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch10`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11
 - **Source** cemm1, printed pp. —–— (PDF pp. 7–11), read 2026-09-29. Establishes: Making a metre-long rope, sorting objects as more, less or exactly a metre, folding to half and quarter metres, and measuring jumps and heights. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Make a metre rope and use it, and fold it to make half and quarter metres.
 - **Student can** I can tell whether something is more or less than a metre.
@@ -2435,14 +2435,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch08_u3
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Which holds more?
 
 - **Id** `pragati_iu_g03_ch11_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch11`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–4), read 2026-09-29. Establishes: Pouring three glasses into same-sized glasses to compare, then guessing and checking how many bowls fill a glass and how many glasses fill a bottle. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Compare capacities by pouring into a common container.
 - **Student can** I can find out whose glass holds more by pouring.
@@ -2451,14 +2451,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch07_u5
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### The litre
 
 - **Id** `pragati_iu_g03_ch11_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch11`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6
 - **Source** cemm1, printed pp. —–— (PDF pp. 5–6), read 2026-09-29. Establishes: A one-litre bottle poured into a jug, ticking vessels as more or less than a litre, and half-litre and quarter-litre judgements. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Use a one-litre measure to judge more than, less than or exactly a litre.
 - **Student can** I can say whether this mug holds more or less than a litre.
@@ -2467,14 +2467,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch11_u1
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Heavier and lighter, and the kilogram
 
 - **Id** `pragati_iu_g03_ch11_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch11`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10
 - **Source** cemm1, printed pp. —–— (PDF pp. 7–10), read 2026-09-29. Establishes: Comparing objects in both hands, weighing with sand matchboxes, the weight hunt with bags, and relating 1 kg, half kg and quarter kg on a pan balance. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Compare weights by hand and balance, and use a kilogram measure.
 - **Student can** I can balance objects against matchboxes and against a kilogram.
@@ -2483,14 +2483,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch07_u3
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### The tricky-balls weighing puzzle
 
 - **Id** `pragati_iu_g03_ch11_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch11`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11
 - **Source** cemm1, printed pp. —–— (PDF pp. 11–11), read 2026-09-29. Establishes: Three similar balls, one heavier: identifying it with a single use of the pan balance. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Find the odd heavy ball with the fewest weighings.
 - **Student can** I can find the heavy ball with one weighing and explain how.
@@ -2570,7 +2570,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 
 - **Id** `pragati_iu_g03_ch12_u5` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch12`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12, 13, 14, 15
 - **Source** cemm1, printed pp. —–— (PDF pp. 11–15), read 2026-09-29. Establishes: Earnings of `465 to `756, sales of rice and sugar, change from `500, weekly savings, and comparing expressions such as 373 + 23 against 373 + 40 without calculating. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Solve earning, spending and change problems with box diagrams and estimation.
 - **Student can** I can work out how much Peter uncle earned since morning.
@@ -2579,14 +2579,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch12_u2
 - **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Reading a calendar
 
 - **Id** `pragati_iu_g03_ch13_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch13`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–3), read 2026-09-29. Establishes: The July calendar questions, and comparing two years' calendars for what stays the same and what changes. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Use a calendar to find days, dates and durations across a month.
 - **Student can** I can find the date fifteen days after 7 July.
@@ -2595,14 +2595,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch09_u2
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Age and dates
 
 - **Id** `pragati_iu_g03_ch13_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch13`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6
 - **Source** cemm1, printed pp. —–— (PDF pp. 4–6), read 2026-09-29. Establishes: The twice-as-old-and-ten-years-older puzzle, and the birth certificate questions about age in given years. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Work out ages and dates from a birth certificate and from age clues.
 - **Student can** I can say how old Bincy will be in 2030.
@@ -2611,14 +2611,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch13_u1
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Telling time, and how long it takes
 
 - **Id** `pragati_iu_g03_ch13_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch13`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11, 12
 - **Source** cemm1, printed pp. —–— (PDF pp. 7–12), read 2026-09-29. Establishes: Breakfast from 07:00 to 07:15, matching a day's activities to clock times, filling durations for activities, and reading minutes passed from hand positions. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Read clock times including quarter and half past, and find durations in minutes.
 - **Student can** I can say how many minutes passed between the two clocks.
@@ -2627,14 +2627,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch09_u5
 - **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Symmetry in malas and rangolis
 
 - **Id** `pragati_iu_g03_ch14_u1` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch14`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
 - **Source** cemm1, printed pp. —–— (PDF pp. 1–5), read 2026-09-29. Establishes: Colouring bead malas and judging which are symmetrical, then examining rangolis and completing symmetrical kolam designs. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Decide whether a design is symmetrical and complete a symmetrical design.
 - **Student can** I can tell whether my mala is symmetrical and finish half a rangoli.
@@ -2643,14 +2643,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g01_ch09_u3
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Mirror images
 
 - **Id** `pragati_iu_g03_ch14_u2` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch14`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9
 - **Source** cemm1, printed pp. —–— (PDF pp. 6–9), read 2026-09-29. Establishes: The half-picture and half-note joke, the mirror game with counters, and puzzles asking for a mirror-image arrangement. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Place or draw the mirror image of an arrangement and check it with a mirror.
 - **Student can** I can place counters so they mirror my friend's side.
@@ -2659,14 +2659,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch14_u1
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Tiling without gaps
 
 - **Id** `pragati_iu_g03_ch14_u3` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch14`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11
 - **Source** cemm1, printed pp. —–— (PDF pp. 10–11), read 2026-09-29. Establishes: Filling shapes with rangometry pieces with no gaps or overlaps, then making tiles and tracing them into paths. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Fill a shape with tiles leaving no gaps or overlaps, and design your own tile.
 - **Student can** I can fill the path with shapes that leave no gaps.
@@ -2675,14 +2675,14 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g03_ch05_u5
 - **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 #### Position, direction and reading a map
 
 - **Id** `pragati_iu_g03_ch14_u4` — Pragati-created teaching unit, not an NCERT section.
 - **Serves** `ncert_cemm1_ch14`
-- **Evidence depth** FULL_TEXT_INSPECTED · visually dependent · pages looked at: none yet
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15
 - **Source** cemm1, printed pp. —–— (PDF pp. 12–15), read 2026-09-29. Establishes: Guessing a stall from position clues, following directional clues to find Dada and Dadi, reading the fair map, and tracing the exit maze. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)
 - **Objective** Describe where something is and follow directions on a map.
 - **Student can** I can tell my friend how to reach the stall from here.
@@ -2691,7 +2691,7 @@ All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried 
 - **Prerequisites** pragati_iu_g02_ch09_u6
 - **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
 - **Misconception evidence** TO_BE_DEVELOPED
-- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
 
 ## Records read and found non-instructional

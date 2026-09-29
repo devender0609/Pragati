@@ -339,8 +339,21 @@ type DecompositionFile = {
     pagesInScope?: number;
     /** Pages whose mathematics is carried by the picture. */
     visualPagesRequired?: number;
-    /** Pages still unread. Non-zero keeps a class IN_PROGRESS. */
+    /**
+     * v0.84.0 checkpoint 10 §8 — `pagesUnresolved` used to count only
+     * pages whose text was unread, and read 0 for Class 3 while 107
+     * picture-carried pages were still unseen. The gaps are named
+     * separately now; this field is kept as the text figure and says so.
+     */
     pagesUnresolved?: number;
+    /** Pages whose full text has not been read. */
+    pagesFullTextPending?: number;
+    /** Picture-carried pages not yet rendered and looked at. */
+    visualPagesPending?: number;
+    /** Pages missing either kind of required evidence. */
+    pagesEvidenceIncomplete?: number;
+    officialRecordsPartiallyInspected?: number;
+    officialRecordsIndexedOnly?: number;
     /** Official records in the class, from the curriculum not the data. */
     officialRecordsTotal?: number;
     officialRecordsFullyInspected?: number;
@@ -577,6 +590,12 @@ export function recordInspectionState(officialRecordId: string): RecordInspectio
   ];
   if (all.length === 0) return 'NOT_STARTED';
   if (all.some((e) => e.blockedSource)) return 'BLOCKED_SOURCE';
+  // v0.84.0 checkpoint 10 §6 — INDEXED_ONLY means what the audit says it
+  // means: headings and opening text, nothing read in full. A chapter
+  // whose whole text has been read while its pictures wait for rendering
+  // is PARTIALLY_INSPECTED, and calling it indexed-only understated real
+  // work and overstated what was missing.
+  const anyFullText = all.some((e) => e.pageEvidence.some((p) => p.fullTextInspected));
   const extent = RECORD_EXTENTS.find((x) => x.officialRecordId === officialRecordId);
   const seen = new Set<number>();
   for (const e of all) {
@@ -586,7 +605,7 @@ export function recordInspectionState(officialRecordId: string): RecordInspectio
       }
     }
   }
-  if (seen.size === 0) return 'INDEXED_ONLY';
+  if (seen.size === 0) return anyFullText ? 'PARTIALLY_INSPECTED' : 'INDEXED_ONLY';
   if (!extent) return 'PARTIALLY_INSPECTED';
   for (let p = extent.pdfPageStart; p <= extent.pdfPageEnd; p += 1) {
     if (!seen.has(p)) return 'PARTIALLY_INSPECTED';
@@ -687,6 +706,23 @@ export function officialRecordAccounting(classNumber: number): {
       (id: string) => !RECORD_EXTENTS.some((x) => x.officialRecordId === id)
     ),
   };
+}
+
+/**
+ * v0.84.0 checkpoint 10 §1-§3 — THREE DIFFERENT THINGS.
+ *
+ * Checkpoint 9 marked 33 Class 3 units NEEDS_HUMAN_CHECK when only four
+ * had a question; the rest were waiting for pages to be rendered. That
+ * turned missing evidence into a pretend review queue. The status a unit
+ * should carry is derived here so the data cannot drift from the rule:
+ *
+ *   evidence incomplete            → DRAFT_DECOMPOSITION
+ *   evidence complete + question   → NEEDS_HUMAN_CHECK
+ *   evidence complete, no question → READY_FOR_AUTHORING
+ */
+export function derivedStatusFor(u: PragatiInstructionalUnit): DecompositionStatus {
+  if (!meetsEvidenceBar(u)) return 'DRAFT_DECOMPOSITION';
+  return u.humanJudgementQuestion ? 'NEEDS_HUMAN_CHECK' : 'READY_FOR_AUTHORING';
 }
 
 export function readyForAuthoring(): PragatiInstructionalUnit[] {

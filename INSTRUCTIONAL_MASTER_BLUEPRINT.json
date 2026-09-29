@@ -7,13 +7,18 @@
    "status": "DECOMPOSITION_SOURCE_COMPLETE",
    "officialRecordsTotal": 13,
    "officialRecordsFullyInspected": 13,
+   "officialRecordsPartiallyInspected": 0,
+   "officialRecordsIndexedOnly": 0,
    "chaptersInspected": 13,
    "chaptersTotal": 13,
    "pagesInScope": 130,
    "pagesIndexed": 130,
    "pagesFullyInspected": 130,
+   "pagesFullTextPending": 0,
    "visualPagesRequired": 121,
    "visualPagesInspected": 121,
+   "visualPagesPending": 0,
+   "pagesEvidenceIncomplete": 0,
    "pagesInspected": 130,
    "pagesUnresolved": 0,
    "note": "All 13 official chapters fully inspected: 130 of 130 pages read in full text and 121 of 121 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source."
@@ -23,32 +28,42 @@
    "status": "DECOMPOSITION_SOURCE_COMPLETE",
    "officialRecordsTotal": 11,
    "officialRecordsFullyInspected": 11,
+   "officialRecordsPartiallyInspected": 0,
+   "officialRecordsIndexedOnly": 0,
    "chaptersInspected": 11,
    "chaptersTotal": 11,
    "pagesInScope": 138,
    "pagesIndexed": 138,
    "pagesFullyInspected": 138,
+   "pagesFullTextPending": 0,
    "visualPagesRequired": 138,
    "visualPagesInspected": 138,
+   "visualPagesPending": 0,
+   "pagesEvidenceIncomplete": 0,
    "pagesInspected": 138,
    "pagesUnresolved": 0,
    "note": "All 11 official chapters fully inspected: 138 of 138 pages read in full text and 138 of 138 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source."
   },
   {
    "classNumber": 3,
-   "status": "IN_PROGRESS",
+   "status": "DECOMPOSITION_SOURCE_COMPLETE",
    "officialRecordsTotal": 14,
-   "officialRecordsFullyInspected": 3,
-   "chaptersInspected": 3,
+   "officialRecordsFullyInspected": 14,
+   "officialRecordsPartiallyInspected": 0,
+   "officialRecordsIndexedOnly": 0,
+   "chaptersInspected": 14,
    "chaptersTotal": 14,
    "pagesInScope": 208,
    "pagesIndexed": 208,
    "pagesFullyInspected": 208,
+   "pagesFullTextPending": 0,
    "visualPagesRequired": 184,
-   "visualPagesInspected": 77,
+   "visualPagesInspected": 184,
+   "visualPagesPending": 0,
+   "pagesEvidenceIncomplete": 0,
    "pagesInspected": 208,
    "pagesUnresolved": 0,
-   "note": "All 14 chapters read in full text (208 of 208 pages). 77 of 184 picture-carried pages rendered and looked at, so 3 of 14 chapters are fully inspected and the class remains IN_PROGRESS."
+   "note": "All 14 official chapters fully inspected: 208 of 208 pages read in full text and 184 of 184 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source."
   }
  ],
  "units": [
@@ -167,7 +182,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u2",
@@ -247,7 +262,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u3",
@@ -318,7 +333,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u1",
@@ -414,7 +429,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u2",
@@ -514,7 +529,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u1",
@@ -612,7 +627,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u2",
@@ -703,7 +718,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u3",
@@ -820,7 +835,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u1",
@@ -902,7 +917,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u2",
@@ -982,7 +997,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u3",
@@ -1064,7 +1079,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u4",
@@ -1146,7 +1161,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u5",
@@ -1257,7 +1272,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u1",
@@ -1367,7 +1382,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u2",
@@ -1470,7 +1485,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u3",
@@ -1541,7 +1556,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u4",
@@ -1632,7 +1647,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u1",
@@ -1740,7 +1755,7 @@
    "existingArtifact": null,
    "notes": "Pages 69 onward of this chapter were not read in this pass; a later unit may be needed for the rest of the chapter.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u1",
@@ -1839,7 +1854,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u2",
@@ -1939,7 +1954,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u3",
@@ -2018,7 +2033,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u1",
@@ -2136,7 +2151,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u2",
@@ -2208,7 +2223,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u3",
@@ -2288,7 +2303,7 @@
    "existingArtifact": null,
    "notes": "Pages beyond 92 of this chapter were not read in this pass.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u1",
@@ -2395,7 +2410,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u2",
@@ -2466,7 +2481,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u3",
@@ -2537,7 +2552,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u1",
@@ -2626,7 +2641,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u2",
@@ -2696,7 +2711,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u3",
@@ -2776,7 +2791,7 @@
    "existingArtifact": null,
    "notes": "Mathematically light: cyclic sequence and classification only. Kept because the source teaches it here.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. The question is whether this belongs in a mathematics lesson at all.",
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
    "humanJudgementQuestion": "This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?"
   },
   {
@@ -2876,7 +2891,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u1",
@@ -2957,7 +2972,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u2",
@@ -3048,7 +3063,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u1",
@@ -3130,7 +3145,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u1",
@@ -3219,7 +3234,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u2",
@@ -3338,7 +3353,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u3",
@@ -3417,7 +3432,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u4",
@@ -3489,7 +3504,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u1",
@@ -3571,7 +3586,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u2",
@@ -3671,7 +3686,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u1",
@@ -3752,7 +3767,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u2",
@@ -3861,7 +3876,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u3",
@@ -3960,7 +3975,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u1",
@@ -4050,7 +4065,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u2",
@@ -4158,7 +4173,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u3",
@@ -4238,7 +4253,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u1",
@@ -4318,7 +4333,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u2",
@@ -4417,7 +4432,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u1",
@@ -4509,7 +4524,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u2",
@@ -4590,7 +4605,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u3",
@@ -4680,7 +4695,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u4",
@@ -4761,7 +4776,7 @@
    "existingArtifact": null,
    "notes": "Pages beyond 59 of this chapter were not read in this pass; further subtraction units may be needed.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u1",
@@ -4841,7 +4856,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u2",
@@ -4934,7 +4949,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u3",
@@ -5025,7 +5040,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u1",
@@ -5115,7 +5130,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u2",
@@ -5186,7 +5201,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u3",
@@ -5267,7 +5282,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u4",
@@ -5346,7 +5361,7 @@
    "existingArtifact": null,
    "notes": "Pages beyond 90 were not read in this pass.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u1",
@@ -5437,7 +5452,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. The question is whether this belongs in a mathematics lesson at all.",
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
    "humanJudgementQuestion": "This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?"
   },
   {
@@ -5521,7 +5536,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u3",
@@ -5593,7 +5608,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u4",
@@ -5673,7 +5688,7 @@
    "existingArtifact": null,
    "notes": "Pages beyond 105 were not read in this pass; the clock work may extend further.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u1",
@@ -5773,7 +5788,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u2",
@@ -5844,7 +5859,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u3",
@@ -5971,7 +5986,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u1",
@@ -6061,7 +6076,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u2",
@@ -6152,7 +6167,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u3",
@@ -6224,7 +6239,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u4",
@@ -6305,7 +6320,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u6",
@@ -6387,7 +6402,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u5",
@@ -6459,7 +6474,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u6",
@@ -6530,7 +6545,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u2",
@@ -6602,7 +6617,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u3",
@@ -6675,7 +6690,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u4",
@@ -6747,7 +6762,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u4",
@@ -6838,7 +6853,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u5",
@@ -6918,7 +6933,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u5",
@@ -7008,7 +7023,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u6",
@@ -7079,7 +7094,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u7",
@@ -7179,7 +7194,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u8",
@@ -7261,7 +7276,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u5",
@@ -7342,7 +7357,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u6",
@@ -7423,7 +7438,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u7",
@@ -7494,7 +7509,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u8",
@@ -7575,7 +7590,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u5",
@@ -7674,7 +7689,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u6",
@@ -7747,7 +7762,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u7",
@@ -7830,7 +7845,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u4",
@@ -7921,7 +7936,7 @@
    "existingArtifact": null,
    "notes": "Found only when the full chapter was read: the first pass stopped at the weight pages.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: every page of the range read in full and every picture-carried page rendered and looked at. Title, objective, representations and boundary confirmed against the pages."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u3",
@@ -8025,7 +8040,7 @@
    "existingArtifact": null,
    "notes": "Whether Class 1 should carry constraint puzzles at all is a curriculum judgement for a human, not something the source settles. Supersedes pragati_iu_g01_ch13_u2, a checkpoint-3 draft that mixed constraint work with ideas beyond Class 1; that draft was removed in checkpoint 8.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. What remains is a curriculum decision, not unread source.",
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
    "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?"
   },
   {
@@ -8118,7 +8133,7 @@
    "existingArtifact": null,
    "notes": "Flagged for human decision: this is arguably Class 2-3 mathematics appearing in a Class 1 puzzle page.",
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. What remains is a curriculum decision, not unread source.",
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
    "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?"
   },
   {
@@ -8220,7 +8235,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u6",
@@ -8304,7 +8319,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u4",
@@ -8377,7 +8392,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u9",
@@ -8450,7 +8465,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u4",
@@ -8522,7 +8537,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u5",
@@ -8605,7 +8620,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u9",
@@ -8685,7 +8700,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u8",
@@ -8775,7 +8790,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u4",
@@ -8855,7 +8870,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u4",
@@ -8954,7 +8969,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u5",
@@ -9085,7 +9100,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass.",
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
    "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?"
   },
   {
@@ -9165,7 +9180,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Added in checkpoint 5 from the completed full-text and visual pass.",
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
    "humanJudgementQuestion": "These two objectives are each very small for this stage. Should they be one instructional unit or stay separate?"
   },
   {
@@ -9250,7 +9265,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Recovered in checkpoint 6 when the stale segments were re-read."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u5",
@@ -9334,7 +9349,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Recovered in checkpoint 6 when the stale segments were re-read."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch01_u1",
@@ -9353,25 +9368,28 @@
     "pdfPageEnd": 2,
     "inspectedOn": "2026-09-29",
     "establishes": "The cowherd story: a mark per cow leaving and a strike per cow returning, then a wall of marks read as a number. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 301 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 301 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 180 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 180 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -9407,12 +9425,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch01_u2",
@@ -9431,41 +9449,46 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-29",
     "establishes": "Animal names counted and compared, friends' names tabulated, and number names between 1 and 99 compared by their letter counts. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6
+    ],
     "pageEvidence": [
      {
       "pdfPage": 3,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "15 images, 69 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "15 images, 69 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 4,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 124 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 124 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 456 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 456 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 6,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "18 images, 124 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "18 images, 124 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -9501,12 +9524,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch01_u3",
@@ -9525,25 +9548,28 @@
     "pdfPageEnd": 8,
     "inspectedOn": "2026-09-29",
     "establishes": "Cards grouped as \"eat food / do not\", household objects grouped by needing electricity, then hair styles counted into a table. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     7,
+     8
+    ],
     "pageEvidence": [
      {
       "pdfPage": 7,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "21 images, 366 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "21 images, 366 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "14 images, 170 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "14 images, 170 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -9581,12 +9607,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch02_u1",
@@ -9605,33 +9631,37 @@
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-29",
     "establishes": "Rockets and houses built from boxes and cans, shapes counted by kind, and the construct-and-describe game. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2,
+     3
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "13 images, 16 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "13 images, 16 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "10 images, 26 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "10 images, 26 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "10 images, 80 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "10 images, 80 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -9670,12 +9700,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch02_u2",
@@ -9694,25 +9724,28 @@
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-29",
     "establishes": "Circle-the-cubes tasks, naming shapes with no edges, only flat faces, only curved faces, and building shapes from clay and sticks. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     4,
+     5
+    ],
     "pageEvidence": [
      {
       "pdfPage": 4,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "16 images, 32 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "16 images, 32 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "25 images, 20 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "25 images, 20 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -9749,12 +9782,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch02_u3",
@@ -9773,16 +9806,19 @@
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-29",
     "establishes": "The opposite-faces investigation on a die, joining three cubes in different ways, and naming the shapes in built models. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     6,
+     7
+    ],
     "pageEvidence": [
      {
       "pdfPage": 6,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 24 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -9790,8 +9826,8 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "11 images, 24 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "11 images, 24 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -9827,12 +9863,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u1",
@@ -9863,7 +9899,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 13 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 13 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -9904,7 +9940,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u2",
@@ -9938,7 +9974,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "7 images, 119 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "7 images, 119 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
@@ -9946,7 +9982,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "11 images, 63 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "11 images, 63 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 4,
@@ -9954,7 +9990,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 535 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 535 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
@@ -9962,7 +9998,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 32 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 32 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10005,7 +10041,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u3",
@@ -10039,7 +10075,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "8 images, 146 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "8 images, 146 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 7,
@@ -10047,7 +10083,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 541 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 541 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
@@ -10055,7 +10091,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "8 images, 553 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "8 images, 553 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
@@ -10063,7 +10099,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 187 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 187 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10106,7 +10142,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u4",
@@ -10140,7 +10176,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "7 images, 307 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "7 images, 307 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 11,
@@ -10148,7 +10184,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 193 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 193 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 12,
@@ -10156,7 +10192,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 571 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 571 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 13,
@@ -10164,7 +10200,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "2 images, 58 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "2 images, 58 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10206,7 +10242,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u1",
@@ -10239,7 +10275,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "11 images, 101 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "11 images, 101 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
@@ -10247,7 +10283,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "9 images, 476 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "9 images, 476 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
@@ -10255,7 +10291,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 528 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 528 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10297,7 +10333,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u2",
@@ -10330,7 +10366,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "8 images, 1058 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "8 images, 1058 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
@@ -10338,7 +10374,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "17 images, 757 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "17 images, 757 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 6,
@@ -10346,7 +10382,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "14 images, 1814 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "14 images, 1814 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10387,7 +10423,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u3",
@@ -10419,7 +10455,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "4 images, 377 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "4 images, 377 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
@@ -10427,7 +10463,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 500 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 500 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10468,7 +10504,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u4",
@@ -10499,7 +10535,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 173 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 173 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10539,8 +10575,8 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at.",
-   "humanJudgementQuestion": "Is this reasoning-extension material core Pragati Learn at Class 3, or enrichment offered beside it?"
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
+   "humanJudgementQuestion": "The magic-sum grids need constraint reasoning that no Class 3 chapter teaches. Is that core Pragati Learn at Class 3, or enrichment offered beside the addition work?"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u5",
@@ -10573,7 +10609,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "9 images, 362 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "9 images, 362 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 11,
@@ -10581,7 +10617,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 149 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 149 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 12,
@@ -10589,7 +10625,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "12 images, 144 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "12 images, 144 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10631,7 +10667,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u6",
@@ -10663,7 +10699,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 112 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 112 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 14,
@@ -10671,7 +10707,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 106 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 106 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10711,7 +10747,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u7",
@@ -10742,7 +10778,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 107 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 107 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10783,7 +10819,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u1",
@@ -10802,48 +10838,54 @@
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-29",
     "establishes": "Making Amma's rangoli on dots, naming its shapes, flattening boxes, and tracing the faces of a matchbox and a wooden box. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "8 images, 77 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "8 images, 77 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 60 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 60 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 49 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 49 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 4,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 37 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 37 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "3 images, 36 drawn elements: the extracted text states the task in full; no visual check needed."
      }
     ],
@@ -10882,12 +10924,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u2",
@@ -10906,49 +10948,55 @@
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-29",
     "establishes": "Constructing rectangles from given sides, counting rectangles in a picture, the square-versus-rectangle discussion, and joining squares to make new shapes. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
     "pageEvidence": [
      {
       "pdfPage": 6,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "5 images, 323 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "5 images, 323 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 7,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "2 images, 52 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "2 images, 52 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "5 images, 68 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "5 images, 68 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 449 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 449 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 69 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 69 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -10986,12 +11034,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u3",
@@ -11010,16 +11058,20 @@
     "pdfPageEnd": 13,
     "inspectedOn": "2026-09-29",
     "establishes": "Fitting a tile into a table corner, folding to compare corners, marking square corners in shapes, and making corners with two matchsticks. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     11,
+     12,
+     13
+    ],
     "pageEvidence": [
      {
       "pdfPage": 11,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "4 images, 35 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -11027,16 +11079,16 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 57 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 57 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 13,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 41 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 41 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11074,12 +11126,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u4",
@@ -11098,32 +11150,37 @@
     "pdfPageEnd": 17,
     "inspectedOn": "2026-09-29",
     "establishes": "Counting triangles in a rangoli, making triangles from dots on a circle, and folding a paper plate to find its centre. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     14,
+     15,
+     16,
+     17
+    ],
     "pageEvidence": [
      {
       "pdfPage": 14,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 89 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 89 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 15,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 39 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 39 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 16,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 24 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -11131,8 +11188,8 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "5 images, 56 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "5 images, 56 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11170,12 +11227,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u5",
@@ -11194,33 +11251,37 @@
     "pdfPageEnd": 20,
     "inspectedOn": "2026-09-29",
     "establishes": "Finding the largest rectangle, counting rows of triangles, splitting shapes with lines, tangram figures and line-pattern borders. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     18,
+     19,
+     20
+    ],
     "pageEvidence": [
      {
       "pdfPage": 18,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 286 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 286 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 19,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 62 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 62 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 20,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 129 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 129 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11257,12 +11318,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u1",
@@ -11295,7 +11356,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "7 images, 647 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "7 images, 647 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
@@ -11303,7 +11364,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 679 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 679 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
@@ -11311,7 +11372,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 236 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 236 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11352,7 +11413,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u2",
@@ -11385,7 +11446,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "8 images, 101 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "8 images, 101 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
@@ -11393,7 +11454,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 80 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 80 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 6,
@@ -11401,7 +11462,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 129 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 129 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11445,7 +11506,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u3",
@@ -11478,7 +11539,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 125 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 125 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
@@ -11486,7 +11547,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "4 images, 131 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "4 images, 131 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
@@ -11494,7 +11555,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 43 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 43 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11535,7 +11596,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u4",
@@ -11568,7 +11629,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "8 images, 477 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "8 images, 477 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 11,
@@ -11576,7 +11637,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 450 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 450 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 12,
@@ -11584,7 +11645,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "2 images, 122 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "2 images, 122 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11626,7 +11687,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u5",
@@ -11645,33 +11706,37 @@
     "pdfPageEnd": 15,
     "inspectedOn": "2026-09-29",
     "establishes": "Packing sweets into boxes of 100, packets of 10 and singles for numbers to 800, and the house-number pattern of the spring-leap homes. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     13,
+     14,
+     15
+    ],
     "pageEvidence": [
      {
       "pdfPage": 13,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 149 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 149 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 14,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 244 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 244 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 15,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "8 images, 1538 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "8 images, 1538 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11707,12 +11772,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u6",
@@ -11731,33 +11796,37 @@
     "pdfPageEnd": 18,
     "inspectedOn": "2026-09-29",
     "establishes": "Laddoo comparisons written with > and <, matching explanations about which digit decides, and making the greatest and smallest numbers from three digits. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     16,
+     17,
+     18
+    ],
     "pageEvidence": [
      {
       "pdfPage": 16,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 12857 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 12857 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 17,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "2 images, 72 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "2 images, 72 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 18,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 57 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 57 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11794,12 +11863,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u1",
@@ -11842,7 +11911,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "9 images, 33 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "9 images, 33 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
@@ -11850,7 +11919,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 282 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 282 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 4,
@@ -11858,7 +11927,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 576 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 576 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
@@ -11866,7 +11935,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "9 images, 128 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "9 images, 128 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -11907,7 +11976,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u2",
@@ -11942,7 +12011,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "7 images, 267 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "7 images, 267 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 7,
@@ -11950,7 +12019,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 58 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 58 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
@@ -11958,7 +12027,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 62 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 62 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
@@ -11966,7 +12035,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "9 images, 114 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "9 images, 114 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
@@ -11974,7 +12043,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "18 images, 39 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "18 images, 39 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12016,7 +12085,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u3",
@@ -12049,7 +12118,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "8 images, 22 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "8 images, 22 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 12,
@@ -12057,7 +12126,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 166 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 166 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 13,
@@ -12065,7 +12134,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 40 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 40 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12106,7 +12175,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u4",
@@ -12141,7 +12210,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 78 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 78 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 15,
@@ -12149,7 +12218,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "4 images, 109 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "4 images, 109 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 16,
@@ -12157,7 +12226,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 97 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 97 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 17,
@@ -12165,7 +12234,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 245 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 245 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 18,
@@ -12173,7 +12242,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 76 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 76 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12215,7 +12284,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u5",
@@ -12296,7 +12365,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u6",
@@ -12315,32 +12384,38 @@
     "pdfPageEnd": 25,
     "inspectedOn": "2026-09-29",
     "establishes": "Spokes and spiders problems, frog jumps of 7 towards 50, wall hangings and rabdi cups with change, necklaces from 100 shells and the envelope puzzle. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
     "pageEvidence": [
      {
       "pdfPage": 21,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "8 images, 25 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "8 images, 25 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 22,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 180 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 180 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 23,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 17 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -12348,16 +12423,16 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 53 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 53 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 25,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 104 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 104 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12394,12 +12469,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch08_u1",
@@ -12433,7 +12508,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "9 images, 13 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "9 images, 13 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
@@ -12441,7 +12516,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "12 images, 31 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "12 images, 31 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
@@ -12449,7 +12524,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "6 images, 151 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "6 images, 151 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 4,
@@ -12457,7 +12532,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "9 images, 53 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "9 images, 53 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12499,7 +12574,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch08_u2",
@@ -12531,7 +12606,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "13 images, 50 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "13 images, 50 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 6,
@@ -12539,7 +12614,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "15 images, 48 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "15 images, 48 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12580,7 +12655,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch08_u3",
@@ -12614,7 +12689,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 42 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 42 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
@@ -12622,7 +12697,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "11 images, 25 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "11 images, 25 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
@@ -12630,7 +12705,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "12 images, 27 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "12 images, 27 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
@@ -12638,7 +12713,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 40 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 40 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12680,7 +12755,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u1",
@@ -12699,16 +12774,20 @@
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-29",
     "establishes": "Birbal's crow story, drawing tiles for large numbers, and the table of neighbouring hundreds, fifties and tens for numbers like 468 and 899. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2,
+     3
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "3 images, 18 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -12716,16 +12795,16 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 143 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 143 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "8 images, 777 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "8 images, 777 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12762,12 +12841,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u2",
@@ -12786,41 +12865,46 @@
     "pdfPageEnd": 7,
     "inspectedOn": "2026-09-29",
     "establishes": "Tambola with clues, writing several sentences for one number, filling +10/+100/+25 pattern chains, and the circle puzzles with conditions. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     4,
+     5,
+     6,
+     7
+    ],
     "pageEvidence": [
      {
       "pdfPage": 4,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 121 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 121 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 444 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 444 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 6,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 492 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 492 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 7,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 87 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 87 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12862,8 +12946,8 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered.",
-   "humanJudgementQuestion": "Is this reasoning-extension material core Pragati Learn at Class 3, or enrichment offered beside it?"
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
+   "humanJudgementQuestion": "These number-condition puzzles ask for several constraints to hold at once. Should Pragati teach a strategy for them, or offer them as practice after the place-value units?"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u3",
@@ -12882,33 +12966,37 @@
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-29",
     "establishes": "Six slips of 100 and 10 combined into numbers, digits 3 and 8 used to make 2- and 3-digit numbers, then ordering them. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     8,
+     9,
+     10
+    ],
     "pageEvidence": [
      {
       "pdfPage": 8,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 78 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 78 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 317 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 317 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "11 images, 122 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "11 images, 122 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -12944,12 +13032,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u4",
@@ -12968,17 +13056,19 @@
     "pdfPageEnd": 11,
     "inspectedOn": "2026-09-29",
     "establishes": "Bhutasankhya word numerals: cards such as eyes, seasons and directions read as digits, then new cards made for 15, 27 and 94. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     11
+    ],
     "pageEvidence": [
      {
       "pdfPage": 11,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 56 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 56 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13018,8 +13108,8 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered.",
-   "humanJudgementQuestion": "Is this reasoning-extension material core Pragati Learn at Class 3, or enrichment offered beside it?"
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
+   "humanJudgementQuestion": "Bhutasankhya word numerals are a cultural notation, not a new mathematical idea. Is a Pragati lesson warranted, or does this belong as context inside the place-value unit?"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch10_u1",
@@ -13038,24 +13128,31 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-29",
     "establishes": "Hand spans giving different answers, cutting threads to match a line, and checking whether a table passes through a door by comparing thread lengths. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 36 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 36 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 19 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -13063,7 +13160,7 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 19 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -13071,7 +13168,7 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "4 images, 24 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -13079,15 +13176,15 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 49 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 49 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 6,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 36 drawn elements: the extracted text states the task in full; no visual check needed."
      }
     ],
@@ -13124,12 +13221,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch10_u2",
@@ -13148,48 +13245,54 @@
     "pdfPageEnd": 11,
     "inspectedOn": "2026-09-29",
     "establishes": "Making a metre-long rope, sorting objects as more, less or exactly a metre, folding to half and quarter metres, and measuring jumps and heights. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
     "pageEvidence": [
      {
       "pdfPage": 7,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 24 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 24 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 64 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 64 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 236 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 236 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 109 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 109 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 11,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "3 images, 18 drawn elements: the extracted text states the task in full; no visual check needed."
      }
     ],
@@ -13226,12 +13329,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u1",
@@ -13250,41 +13353,46 @@
     "pdfPageEnd": 4,
     "inspectedOn": "2026-09-29",
     "establishes": "Pouring three glasses into same-sized glasses to compare, then guessing and checking how many bowls fill a glass and how many glasses fill a bottle. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "11 images, 40 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "11 images, 40 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "13 images, 24 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "13 images, 24 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 67 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 67 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 4,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 65 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 65 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13320,12 +13428,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u2",
@@ -13344,25 +13452,28 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-29",
     "establishes": "A one-litre bottle poured into a jug, ticking vessels as more or less than a litre, and half-litre and quarter-litre judgements. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     5,
+     6
+    ],
     "pageEvidence": [
      {
       "pdfPage": 5,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 57 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 57 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 6,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 51 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 51 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13398,12 +13509,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u3",
@@ -13422,41 +13533,46 @@
     "pdfPageEnd": 10,
     "inspectedOn": "2026-09-29",
     "establishes": "Comparing objects in both hands, weighing with sand matchboxes, the weight hunt with bags, and relating 1 kg, half kg and quarter kg on a pan balance. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     7,
+     8,
+     9,
+     10
+    ],
     "pageEvidence": [
      {
       "pdfPage": 7,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "5 images, 101 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "5 images, 101 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "10 images, 120 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "10 images, 120 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "12 images, 171 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "12 images, 171 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 46 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 46 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13494,12 +13610,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u4",
@@ -13518,17 +13634,19 @@
     "pdfPageEnd": 11,
     "inspectedOn": "2026-09-29",
     "establishes": "Three similar balls, one heavier: identifying it with a single use of the pan balance. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     11
+    ],
     "pageEvidence": [
      {
       "pdfPage": 11,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 16 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 16 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13569,8 +13687,8 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered.",
-   "humanJudgementQuestion": "Is this reasoning-extension material core Pragati Learn at Class 3, or enrichment offered beside it?"
+   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
+   "humanJudgementQuestion": "The tricky-balls puzzle is deductive reasoning about a balance, not measurement. Does it belong in the measurement sequence, in a reasoning strand, or outside core Learn?"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u1",
@@ -13603,7 +13721,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "8 images, 325 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "8 images, 325 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
@@ -13611,7 +13729,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 1295 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 1295 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
@@ -13619,7 +13737,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 775 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 775 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13662,7 +13780,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u2",
@@ -13694,7 +13812,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "3 images, 673 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "3 images, 673 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
@@ -13702,7 +13820,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "5 images, 98 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "5 images, 98 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13744,7 +13862,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u3",
@@ -13775,7 +13893,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "4 images, 232 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "4 images, 232 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13814,7 +13932,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u4",
@@ -13848,7 +13966,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "4 images, 460 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "4 images, 460 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
@@ -13856,7 +13974,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 113 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 113 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
@@ -13864,7 +13982,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "10 images, 187 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "10 images, 187 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
@@ -13872,7 +13990,7 @@
       "fullTextInspected": true,
       "visualInspectionRequired": true,
       "visualInspected": true,
-      "note": "13 images, 162 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "note": "13 images, 162 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -13914,7 +14032,7 @@
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Whole range read in full text and every picture-carried page rendered and looked at."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u5",
@@ -13933,49 +14051,55 @@
     "pdfPageEnd": 15,
     "inspectedOn": "2026-09-29",
     "establishes": "Earnings of `465 to `756, sales of rice and sugar, change from `500, weekly savings, and comparing expressions such as 373 + 23 against 373 + 40 without calculating. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
     "pageEvidence": [
      {
       "pdfPage": 11,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 105 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 105 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 12,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 85 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 85 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 13,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 185 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 185 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 14,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "5 images, 227 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "5 images, 227 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 15,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 41 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 41 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14012,12 +14136,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch13_u1",
@@ -14036,16 +14160,20 @@
     "pdfPageEnd": 3,
     "inspectedOn": "2026-09-29",
     "establishes": "The July calendar questions, and comparing two years' calendars for what stays the same and what changes. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2,
+     3
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 11 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -14053,16 +14181,16 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "3 images, 377 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "3 images, 377 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 449 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 449 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14099,12 +14227,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch13_u2",
@@ -14123,24 +14251,28 @@
     "pdfPageEnd": 6,
     "inspectedOn": "2026-09-29",
     "establishes": "The twice-as-old-and-ten-years-older puzzle, and the birth certificate questions about age in given years. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     4,
+     5,
+     6
+    ],
     "pageEvidence": [
      {
       "pdfPage": 4,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 60 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 60 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 26 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -14148,8 +14280,8 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "4 images, 106 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "4 images, 106 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14185,12 +14317,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch13_u3",
@@ -14209,57 +14341,64 @@
     "pdfPageEnd": 12,
     "inspectedOn": "2026-09-29",
     "establishes": "Breakfast from 07:00 to 07:15, matching a day's activities to clock times, filling durations for activities, and reading minutes passed from hand positions. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
     "pageEvidence": [
      {
       "pdfPage": 7,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "10 images, 60 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "10 images, 60 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 8,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 98 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 98 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "5 images, 321 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "5 images, 321 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 10,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "2 images, 344 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "2 images, 344 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 11,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "14 images, 270 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "14 images, 270 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 12,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 58 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 58 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14297,12 +14436,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u1",
@@ -14321,49 +14460,55 @@
     "pdfPageEnd": 5,
     "inspectedOn": "2026-09-29",
     "establishes": "Colouring bead malas and judging which are symmetrical, then examining rangolis and completing symmetrical kolam designs. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
     "pageEvidence": [
      {
       "pdfPage": 1,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "11 images, 39 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "11 images, 39 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 2,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "8 images, 145 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "8 images, 145 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 3,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 423 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 423 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 4,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "14 images, 181 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "14 images, 181 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 5,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "10 images, 699 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "10 images, 699 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14400,12 +14545,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u2",
@@ -14424,24 +14569,29 @@
     "pdfPageEnd": 9,
     "inspectedOn": "2026-09-29",
     "establishes": "The half-picture and half-note joke, the mirror game with counters, and puzzles asking for a mirror-image arrangement. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     6,
+     7,
+     8,
+     9
+    ],
     "pageEvidence": [
      {
       "pdfPage": 6,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "16 images, 55 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "16 images, 55 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 7,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "4 images, 27 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -14449,16 +14599,16 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 342 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 342 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 9,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 352 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 352 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14495,12 +14645,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u3",
@@ -14519,25 +14669,28 @@
     "pdfPageEnd": 11,
     "inspectedOn": "2026-09-29",
     "establishes": "Filling shapes with rangometry pieces with no gaps or overlaps, then making tiles and tracing them into paths. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     10,
+     11
+    ],
     "pageEvidence": [
      {
       "pdfPage": 10,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "5 images, 48 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "5 images, 48 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 11,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "6 images, 308 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "6 images, 308 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14574,12 +14727,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u4",
@@ -14598,32 +14751,37 @@
     "pdfPageEnd": 15,
     "inspectedOn": "2026-09-29",
     "establishes": "Guessing a stall from position clues, following directional clues to find Dada and Dadi, reading the fair map, and tracing the exit maze. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
-    "evidenceDepth": "FULL_TEXT_INSPECTED",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
     "visuallyDependent": true,
-    "visualPagesInspected": [],
+    "visualPagesInspected": [
+     12,
+     13,
+     14,
+     15
+    ],
     "pageEvidence": [
      {
       "pdfPage": 12,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "8 images, 26 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "8 images, 26 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 13,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "9 images, 48 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "9 images, 48 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      },
      {
       "pdfPage": 14,
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": false,
-      "visualInspected": false,
+      "visualInspected": true,
       "note": "5 images, 18 drawn elements: the extracted text states the task in full; no visual check needed."
      },
      {
@@ -14631,8 +14789,8 @@
       "printedPage": null,
       "fullTextInspected": true,
       "visualInspectionRequired": true,
-      "visualInspected": false,
-      "note": "7 images, 18 drawn elements: the mathematics is carried by the picture, so the page needs looking at."
+      "visualInspected": true,
+      "note": "7 images, 18 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
      }
     ],
     "firstInspectedOn": "2026-09-29",
@@ -14670,12 +14828,12 @@
    "mergeRelationship": null,
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
-   "decompositionStatus": "NEEDS_HUMAN_CHECK",
-   "humanReviewStatus": "flagged_for_review",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
    "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Whole range read in full text; at least one picture-carried page not yet rendered."
+   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
   }
  ],
  "nonInstructional": []

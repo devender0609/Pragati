@@ -12,6 +12,7 @@ import {
   CLASS_DECOMPOSITION_PROGRESS,
   inspectedOfficialRecordIds,
   meetsEvidenceBar,
+  derivedStatusFor,
   officialRecordAccounting,
   overlapAudit,
   overlapJustificationFor,
@@ -244,13 +245,57 @@ describe('§3/§15 evidence depth gates authoring readiness', () => {
   });
 
   // §13 — a human-check flag must name the actual question.
-  it('says what each human-check unit is actually waiting on', () => {
+  // v0.84.0 checkpoint 10 §3 — the old form of this test accepted
+  // "a question OR unread evidence", which let 29 Class 3 units sit in a
+  // review queue while they were really waiting for pages to be
+  // rendered. Human review now requires complete evidence AND a question.
+  it('requires complete evidence and a real question for human review', () => {
     for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
       if (u.decompositionStatus !== 'NEEDS_HUMAN_CHECK') continue;
+      expect(meetsEvidenceBar(u), `${u.instructionalUnitId} is in review without complete evidence`).toBe(true);
       const q = u.humanJudgementQuestion ?? '';
-      const unread = !meetsEvidenceBar(u);
-      expect(q.length > 20 || unread, u.instructionalUnitId).toBe(true);
-      if (q) expect(q.trim().endsWith('?'), u.instructionalUnitId).toBe(true);
+      expect(q.length, u.instructionalUnitId).toBeGreaterThan(40);
+      expect(q.trim().endsWith('?'), u.instructionalUnitId).toBe(true);
+    }
+  });
+
+  it('never puts an evidence-incomplete unit in the review queue', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      if (meetsEvidenceBar(u)) continue;
+      expect(u.decompositionStatus, u.instructionalUnitId).toBe('DRAFT_DECOMPOSITION');
+      expect(u.humanReviewStatus, u.instructionalUnitId).toBe('not_reviewed');
+    }
+  });
+
+  it('derives every unit status from the one rule', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      expect(u.decompositionStatus, u.instructionalUnitId).toBe(derivedStatusFor(u));
+    }
+  });
+
+  it('never calls a full-text-complete record indexed-only', () => {
+    for (const id of officialRecordIdsTouched()) {
+      const pages = [
+        ...instructionalUnitsFor(id).flatMap((u) => u.sourceEvidence.pageEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === id).flatMap((s) => s.sourceEvidence.pageEvidence),
+      ];
+      if (pages.some((p) => p.fullTextInspected)) {
+        expect(recordInspectionState(id), id).not.toBe('INDEXED_ONLY');
+      }
+    }
+  });
+
+  it('reports each kind of evidence gap separately', () => {
+    for (const p of CLASS_DECOMPOSITION_PROGRESS) {
+      expect(p.pagesFullTextPending, `class${p.classNumber}`).toBeDefined();
+      expect(p.visualPagesPending, `class${p.classNumber}`).toBeDefined();
+      expect(p.pagesEvidenceIncomplete, `class${p.classNumber}`).toBeDefined();
+      // A class is source-complete only when both gaps are zero.
+      if (p.status === 'DECOMPOSITION_SOURCE_COMPLETE') {
+        expect(p.pagesFullTextPending, `class${p.classNumber}`).toBe(0);
+        expect(p.visualPagesPending, `class${p.classNumber}`).toBe(0);
+        expect(p.officialRecordsFullyInspected).toBe(p.officialRecordsTotal);
+      }
     }
   });
 

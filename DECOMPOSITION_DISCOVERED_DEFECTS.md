@@ -32,6 +32,15 @@ None found in Pragati's runtime infrastructure: the master map, registry,
 Student, Teacher, review importer and review packages matched the books on
 every page inspected.
 
+## Status-model defects found in checkpoint 9 — all RESOLVED in checkpoint 10
+
+| Defect | Found | Resolved |
+|---|---|---|
+| Evidence-incomplete Class 3 units were classified `NEEDS_HUMAN_CHECK`, turning missing renders into a pretend review queue (33 flagged, 4 real questions) | checkpoint 9 review | checkpoint 10 — status derived by `derivedStatusFor()`; a test requires complete evidence AND a named question for review |
+| `humanReviewStatus: flagged_for_review` was used for missing visual evidence | checkpoint 9 review | checkpoint 10 — an evidence-incomplete unit must be DRAFT and `not_reviewed` |
+| `recordInspectionState()` could report `INDEXED_ONLY` for a chapter whose whole text had been read, when no page yet met the full bar | checkpoint 9 review | checkpoint 10 — any full-text evidence makes a record at least PARTIALLY_INSPECTED; tested |
+| `pagesUnresolved` read 0 for Class 3 while 107 picture-carried pages were unseen | checkpoint 9 review | checkpoint 10 — `pagesFullTextPending`, `visualPagesPending` and `pagesEvidenceIncomplete` reported separately |
+
 ## Class 3 (checkpoint 9)
 
 **No methodology defect.** The locked Classes 1-2 method carried over to

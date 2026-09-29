@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-126 units are READY_FOR_AUTHORING and 39 are held back
+155 units are READY_FOR_AUTHORING and 10 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -27,10 +27,14 @@ pedagogical QA plus human review — not for convenience of generation.
 | 10 | Class 1 | 8 | Adding and subtracting can land in the same place; Two-step and missing-part problem stories; Numbers 81 to 100, and one hundred; Counting what you see in a picture; Subtracting on the number line; Column subtraction without regrouping; Subtraction with regrouping: opening a garland; Fact families and missing parts |
 | 11 | Class 2 | 8 | Building a table from tables you know; Sharing equally; How many groups?; Sharing and grouping problems; Reading the clock at the hour; Finding the way: left, right and straight; North, south, east and west; How much does it hold? |
 | 12 | Class 2 | 8 | Comparing and ordering two-digit numbers; Numbers that tell position or act as labels; Growing patterns; Checking someone else's working; Balancing: how many of these equal one of those; How much does it hold, and scaling a recipe; Order does not change the product; How long did it take? |
-| 13 | Class 2 | 8 | Choosing to get the most; Puzzles that rehearse what you know; Patterns that grow by a fixed step; Working out money left, and money still needed; Estimating, then counting a large collection; Making 100, and what 100 is; Numbers beyond 100 as hundreds, tens and ones; Numbers on the line, and jumping in steps |
-| 14 | Class 3 | 8 | Adding and subtracting within 20 on a frame; Adding and subtracting by jumping; Adding and subtracting on the number grid; Adding two-digit numbers with regrouping; Comparing by subtraction, with a box diagram; Estimating whether the answer passes 100; Counting and reading numbers beyond 200; Three-digit place value and number sentences |
-| 15 | Class 3 | 8 | Three-digit numbers on a number line; House numbers: pattern in a hundred grid; Equal groups as multiplication; Sharing equally, and what is left; Grouping, and seeing an array two ways; Skip counting and building times tables; Patterns and relations between tables; Halves: sharing one whole equally between two |
-| 16 | Class 3 | 6 | Half and double of a number; Quarters, and three-quarters; Adding three-digit numbers; Subtracting three-digit numbers; Adding and subtracting on the number grid; Money: notes, coins and equal values |
+| 13 | Class 2 | 8 | Choosing to get the most; Puzzles that rehearse what you know; Patterns that grow by a fixed step; Working out money left, and money still needed; Counting by matching one to one; Comparing by length of a name; Sorting a collection by a rule you choose; Naming and building with solid shapes |
+| 14 | Class 3 | 8 | Faces, edges and how solids behave; Making new shapes by joining solids; Estimating, then counting a large collection; Making 100, and what 100 is; Numbers beyond 100 as hundreds, tens and ones; Numbers on the line, and jumping in steps; Adding and subtracting within 20 on a frame; Adding and subtracting by jumping |
+| 15 | Class 3 | 8 | Adding and subtracting on the number grid; Adding two-digit numbers with regrouping; Comparing by subtraction, with a box diagram; Estimating whether the answer passes 100; Shapes in a rangoli, and flat shapes from solids; Rectangles and squares; Square corners; Triangles and circles |
+| 16 | Class 3 | 8 | Taking shapes apart and putting them together; Counting and reading numbers beyond 200; Three-digit place value and number sentences; Three-digit numbers on a number line; House numbers: pattern in a hundred grid; Showing numbers with Dienes blocks; Comparing three-digit numbers; Equal groups as multiplication |
+| 17 | Class 3 | 8 | Sharing equally, and what is left; Grouping, and seeing an array two ways; Skip counting and building times tables; Patterns and relations between tables; Multiplication and division in problems; Halves: sharing one whole equally between two; Half and double of a number; Quarters, and three-quarters |
+| 18 | Class 3 | 8 | Numbers to 1000; Making numbers from given parts; Comparing lengths without a ruler; The metre, and half and quarter metre; Which holds more?; The litre; Heavier and lighter, and the kilogram; Adding three-digit numbers |
+| 19 | Class 3 | 8 | Subtracting three-digit numbers; Adding and subtracting on the number grid; Money: notes, coins and equal values; Money problems with three-digit amounts; Reading a calendar; Age and dates; Telling time, and how long it takes; Symmetry in malas and rangolis |
+| 20 | Class 3 | 3 | Mirror images; Tiling without gaps; Position, direction and reading a map |
 
 ## Held back
 
@@ -40,36 +44,7 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g01_ch13_u4` — Puzzles that reach past Class 1 mathematics (NEEDS_HUMAN_CHECK, flagged for human check). Flagged for human decision: this is arguably Class 2-3 mathematics appearing in a Class 1 puzzle page.
 - `pragati_iu_g02_ch11_u5` — Puzzles that need new reasoning (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g01_ch08_u6` — Reading a picture for information (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch01_u1` — Counting by matching one to one (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch01_u2` — Comparing by length of a name (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch01_u3` — Sorting a collection by a rule you choose (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch02_u1` — Naming and building with solid shapes (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch02_u2` — Faces, edges and how solids behave (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch02_u3` — Making new shapes by joining solids (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g03_ch04_u4` — Magic sums (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch05_u1` — Shapes in a rangoli, and flat shapes from solids (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch05_u2` — Rectangles and squares (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch05_u3` — Square corners (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch05_u4` — Triangles and circles (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch05_u5` — Taking shapes apart and putting them together (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch06_u5` — Showing numbers with Dienes blocks (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch06_u6` — Comparing three-digit numbers (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch07_u6` — Multiplication and division in problems (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch09_u1` — Numbers to 1000 (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g03_ch09_u2` — Number puzzles and many ways to make a number (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch09_u3` — Making numbers from given parts (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g03_ch09_u4` — Word numerals: numbers said with words (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch10_u1` — Comparing lengths without a ruler (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch10_u2` — The metre, and half and quarter metre (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch11_u1` — Which holds more? (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch11_u2` — The litre (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch11_u3` — Heavier and lighter, and the kilogram (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g03_ch11_u4` — The tricky-balls weighing puzzle (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch12_u5` — Money problems with three-digit amounts (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch13_u1` — Reading a calendar (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch13_u2` — Age and dates (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch13_u3` — Telling time, and how long it takes (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch14_u1` — Symmetry in malas and rangolis (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch14_u2` — Mirror images (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch14_u3` — Tiling without gaps (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g03_ch14_u4` — Position, direction and reading a map (NEEDS_HUMAN_CHECK, flagged for human check). 

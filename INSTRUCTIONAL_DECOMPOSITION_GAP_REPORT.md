@@ -12,7 +12,7 @@ does not make it so.
 |---|---|---|---|---|---|---|---|---|---|---|
 | Class 1 | 13 | — | 130 indexed / 130 full text / 121 visual | 47 | 43 | 4 | 0 | 0 | 47 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 2 | 11 | — | 138 indexed / 138 full text / 138 visual | 59 | 57 | 2 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 3 | 14 | — | 208 indexed / 208 full text / 77 visual | 59 | 26 | 33 | 0 | 0 | 59 | IN_PROGRESS |
+| Class 3 | 14 | — | 208 indexed / 208 full text / 184 visual | 59 | 55 | 4 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 4 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 5 | 15 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 6 | 10 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 12 | UNKNOWN | NOT_STARTED |

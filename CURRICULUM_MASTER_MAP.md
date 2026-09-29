@@ -86,20 +86,20 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_cemm1_ch01 | chapter | 1 | What’s in a Name? | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch02 | chapter | 2 | Toy Joy | 9 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch01 | chapter | 1 | What’s in a Name? | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch02 | chapter | 2 | Toy Joy | 9 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch03 | chapter | 3 | Double Century | 16 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch04 | chapter | 4 | Vacation with My Nani Maa | 29 | inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch05 | chapter | 5 | Fun with Shapes | 44 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch06 | chapter | 6 | House of Hundreds – I | 64 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch07 | chapter | 7 | Raksha Bandhan | 82 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch05 | chapter | 5 | Fun with Shapes | 44 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch06 | chapter | 6 | House of Hundreds – I | 64 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch07 | chapter | 7 | Raksha Bandhan | 82 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch08 | chapter | 8 | Fair Share | 107 | inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch09 | chapter | 9 | House of Hundreds – II | 117 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch10 | chapter | 10 | Fun at Class Party! | 128 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch11 | chapter | 11 | Filling and Lifting | 139 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch12 | chapter | 12 | Give and Take | 150 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch13 | chapter | 13 | Time Goes On | 165 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch14 | chapter | 14 | The Surajkund Fair | 177 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch09 | chapter | 9 | House of Hundreds – II | 117 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch10 | chapter | 10 | Fun at Class Party! | 128 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch11 | chapter | 11 | Filling and Lifting | 139 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch12 | chapter | 12 | Give and Take | 150 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch13 | chapter | 13 | Time Goes On | 165 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch14 | chapter | 14 | The Surajkund Fair | 177 | inspected | missing | missing | not_started | unpublished |  |
 
 ## Class 4
 
