@@ -1,45 +1,36 @@
-# Page-level intent audit — Classes 1 and 2
+# Page-level intent audit — Class 3 (Maths Mela)
 
 Generated from `src/curriculum/data/instructionalDecomposition.json`.
-Every official chapter of Class 1 (13) and Class 2 (11) appears exactly
-once. Material NCERT did not number — a "Puzzles" heading, a project
-page, a chapter opener — is a **Pragati source segment** inside its
-chapter, never an official record of its own.
+All 14 official chapters of Maths Mela appear exactly once. The book
+numbers no sections, so the chapter is the official record and every
+internal grouping is a Pragati unit or a `pragati_srcseg_*` segment.
 
 **Depth words.** *Indexed*: headings and opening text only, which is
 navigation and not evidence. *Full text*: every line of every page.
 *Visual*: the page was rendered and looked at, which early-primary
 mathematics usually needs.
 
-**Class 1** — 130/130 pages read in full, 121/121 picture-carried pages seen, 13/13 chapters fully inspected. Status: DECOMPOSITION_SOURCE_COMPLETE.
-**Class 2** — 138/138 pages read in full, 138/138 picture-carried pages seen, 11/11 chapters fully inspected. Status: DECOMPOSITION_SOURCE_COMPLETE.
+**Class 3** — 208/208 pages read in full text, 77/184 picture-carried pages rendered and looked at, 3/14 chapters fully inspected. Status: **IN_PROGRESS**.
+
+The class is NOT source-complete: every page has been read in full text, but
+the visual pass is unfinished, so most units are NEEDS_HUMAN_CHECK.
 
 | Official chapter | Title | Printed pages | PDF pages | Full text | Visual required | Visual seen | Record state | Units | Ready | Needs human check |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `ncert_aejm1_ch01` | Finding the Furry Cat! | 2–9 | 1–9 | 9/9 | 9 | 9 | FULLY_INSPECTED | 3 | 3 | 0 |
-| `ncert_aejm1_ch02` | What is Long? What is Round? | 11–17 | 1–8 | 8/8 | 7 | 8 | FULLY_INSPECTED | 2 | 2 | 0 |
-| `ncert_aejm1_ch03` | Mango Treat | 19–32 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_aejm1_ch04` | Making 10 | 34–47 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 6 | 6 | 0 |
-| `ncert_aejm1_ch05` | How Many? | 49–63 | 1–16 | 16/16 | 15 | 16 | FULLY_INSPECTED | 6 | 6 | 0 |
-| `ncert_aejm1_ch06` | Vegetable Farm | 65–71 | 1–8 | 8/8 | 7 | 8 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_aejm1_ch07` | Lina’s Family | 73–83 | 1–12 | 12/12 | 11 | 12 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_aejm1_ch08` | Fun with Numbers | 85–97 | 1–14 | 14/14 | 14 | 14 | FULLY_INSPECTED | 6 | 5 | 1 |
-| `ncert_aejm1_ch09` | Utsav | 99–104 | 1–7 | 7/7 | 6 | 7 | FULLY_INSPECTED | 3 | 3 | 0 |
-| `ncert_aejm1_ch10` | How do I Spend my Day? | 106–110 | 1–6 | 6/6 | 6 | 6 | FULLY_INSPECTED | 3 | 2 | 1 |
-| `ncert_aejm1_ch11` | How Many Times? | 112–114 | 1–4 | 4/4 | 4 | 4 | FULLY_INSPECTED | 1 | 1 | 0 |
-| `ncert_aejm1_ch12` | How Much Can We Spend? | 116–119 | 1–5 | 5/5 | 5 | 5 | FULLY_INSPECTED | 2 | 2 | 0 |
-| `ncert_aejm1_ch13` | So Many Toys | 121–128 | 1–11 | 11/11 | 7 | 11 | FULLY_INSPECTED | 3 | 1 | 2 |
-| `ncert_bejm1_ch01` | A Day at the Beach | 2–15 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 6 | 6 | 0 |
-| `ncert_bejm1_ch02` | Shapes Around Us | 17–22 | 1–7 | 7/7 | 7 | 7 | FULLY_INSPECTED | 2 | 2 | 0 |
-| `ncert_bejm1_ch03` | Fun with Numbers | 24–31 | 1–9 | 9/9 | 9 | 9 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_bejm1_ch04` | Shadow Story (Togalu) | 33–43 | 1–12 | 12/12 | 12 | 12 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_bejm1_ch05` | Playing with Lines | 45–49 | 1–6 | 6/6 | 6 | 6 | FULLY_INSPECTED | 2 | 2 | 0 |
-| `ncert_bejm1_ch06` | Decoration for Festival | 51–70 | 1–21 | 21/21 | 21 | 21 | FULLY_INSPECTED | 9 | 9 | 0 |
-| `ncert_bejm1_ch07` | Rani’s Gift | 72–82 | 1–12 | 12/12 | 12 | 12 | FULLY_INSPECTED | 5 | 5 | 0 |
-| `ncert_bejm1_ch08` | Grouping and Sharing | 84–97 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 9 | 9 | 0 |
-| `ncert_bejm1_ch09` | Which Season is it? | 99–112 | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 8 | 7 | 1 |
-| `ncert_bejm1_ch10` | Fun at the Fair | 114–122 | 1–10 | 10/10 | 10 | 10 | FULLY_INSPECTED | 5 | 5 | 0 |
-| `ncert_bejm1_ch11` | Data Handling | 124–137 | 1–16 | 16/16 | 16 | 16 | FULLY_INSPECTED | 5 | 4 | 1 |
+| `ncert_cemm1_ch01` | What’s in a Name? | —–— | 1–8 | 8/8 | 8 | 0 | INDEXED_ONLY | 3 | 0 | 3 |
+| `ncert_cemm1_ch02` | Toy Joy | —–— | 1–7 | 7/7 | 6 | 0 | PARTIALLY_INSPECTED | 3 | 0 | 3 |
+| `ncert_cemm1_ch03` | Double Century | —–— | 1–13 | 13/13 | 13 | 13 | FULLY_INSPECTED | 4 | 4 | 0 |
+| `ncert_cemm1_ch04` | Vacation with My Nani Maa | —–— | 1–15 | 15/15 | 15 | 15 | FULLY_INSPECTED | 7 | 6 | 1 |
+| `ncert_cemm1_ch05` | Fun with Shapes | —–— | 1–20 | 20/20 | 17 | 0 | PARTIALLY_INSPECTED | 5 | 0 | 5 |
+| `ncert_cemm1_ch06` | House of Hundreds – I | —–— | 1–18 | 18/18 | 18 | 12 | PARTIALLY_INSPECTED | 6 | 4 | 2 |
+| `ncert_cemm1_ch07` | Raksha Bandhan | —–— | 1–25 | 25/25 | 21 | 20 | PARTIALLY_INSPECTED | 6 | 5 | 1 |
+| `ncert_cemm1_ch08` | Fair Share | —–— | 1–10 | 10/10 | 10 | 10 | FULLY_INSPECTED | 3 | 3 | 0 |
+| `ncert_cemm1_ch09` | House of Hundreds – II | —–— | 1–11 | 11/11 | 10 | 0 | PARTIALLY_INSPECTED | 4 | 0 | 4 |
+| `ncert_cemm1_ch10` | Fun at Class Party! | —–— | 1–11 | 11/11 | 6 | 0 | PARTIALLY_INSPECTED | 2 | 0 | 2 |
+| `ncert_cemm1_ch11` | Filling and Lifting | —–— | 1–11 | 11/11 | 11 | 0 | INDEXED_ONLY | 4 | 0 | 4 |
+| `ncert_cemm1_ch12` | Give and Take | —–— | 1–15 | 15/15 | 15 | 10 | PARTIALLY_INSPECTED | 5 | 4 | 1 |
+| `ncert_cemm1_ch13` | Time Goes On | —–— | 1–12 | 12/12 | 10 | 0 | PARTIALLY_INSPECTED | 3 | 0 | 3 |
+| `ncert_cemm1_ch14` | The Surajkund Fair | —–— | 1–32 | 32/32 | 24 | 0 | PARTIALLY_INSPECTED | 4 | 0 | 4 |
 
 ## Pragati source segments (non-official)
 

@@ -21,7 +21,7 @@ const state = (ch, ext) => {
   const total = ext.pdfPageEnd - ext.pdfPageStart + 1;
   return seen === total ? 'FULLY_INSPECTED' : seen > 0 ? 'PARTIALLY_INSPECTED' : 'INDEXED_ONLY';
 };
-const rows = d.recordExtents.filter((e) => !e.officialRecordId.includes('cemm1')).map((ext) => {
+const rows = d.recordExtents.filter((e) => e.officialRecordId.includes('cemm1')).map((ext) => {
   const ch = ext.officialRecordId;
   const units = d.units.filter((u) => u.officialRecordId === ch);
   const pages = Object.values(led[ch] ?? {});
@@ -33,21 +33,22 @@ const rows = d.recordExtents.filter((e) => !e.officialRecordId.includes('cemm1')
 });
 const P = Object.fromEntries(d.classProgress.map((p) => [p.classNumber, p]));
 const out = [
-  '# Page-level intent audit — Classes 1 and 2',
+  '# Page-level intent audit — Class 3 (Maths Mela)',
   '',
   'Generated from `src/curriculum/data/instructionalDecomposition.json`.',
-  'Every official chapter of Class 1 (13) and Class 2 (11) appears exactly',
-  'once. Material NCERT did not number — a "Puzzles" heading, a project',
-  'page, a chapter opener — is a **Pragati source segment** inside its',
-  'chapter, never an official record of its own.',
+  'All 14 official chapters of Maths Mela appear exactly once. The book',
+  'numbers no sections, so the chapter is the official record and every',
+  'internal grouping is a Pragati unit or a `pragati_srcseg_*` segment.',
   '',
   '**Depth words.** *Indexed*: headings and opening text only, which is',
   'navigation and not evidence. *Full text*: every line of every page.',
   '*Visual*: the page was rendered and looked at, which early-primary',
   'mathematics usually needs.',
   '',
-  `**Class 1** — ${P[1].pagesFullyInspected}/${P[1].pagesInScope} pages read in full, ${P[1].visualPagesInspected}/${P[1].visualPagesRequired} picture-carried pages seen, ${P[1].officialRecordsFullyInspected}/${P[1].officialRecordsTotal} chapters fully inspected. Status: ${P[1].status}.`,
-  `**Class 2** — ${P[2].pagesFullyInspected}/${P[2].pagesInScope} pages read in full, ${P[2].visualPagesInspected}/${P[2].visualPagesRequired} picture-carried pages seen, ${P[2].officialRecordsFullyInspected}/${P[2].officialRecordsTotal} chapters fully inspected. Status: ${P[2].status}.`,
+  `**Class 3** — ${P[3].pagesFullyInspected}/${P[3].pagesInScope} pages read in full text, ${P[3].visualPagesInspected}/${P[3].visualPagesRequired} picture-carried pages rendered and looked at, ${P[3].officialRecordsFullyInspected}/${P[3].officialRecordsTotal} chapters fully inspected. Status: **${P[3].status}**.`,
+  '',
+  'The class is NOT source-complete: every page has been read in full text, but',
+  'the visual pass is unfinished, so most units are NEEDS_HUMAN_CHECK.',
   '',
   '| Official chapter | Title | Printed pages | PDF pages | Full text | Visual required | Visual seen | Record state | Units | Ready | Needs human check |',
   '|---|---|---|---|---|---|---|---|---|---|---|',
@@ -75,5 +76,5 @@ const out = [
   ),
   '',
 ];
-writeFileSync('PAGE_LEVEL_INTENT_AUDIT_CLASSES_1_2.md', out.join('\n') + '\n');
+writeFileSync('PAGE_LEVEL_INTENT_AUDIT_CLASS_3.md', out.join('\n') + '\n');
 console.log('chapters listed', rows.length, 'segments', d.sourceSegments.length);

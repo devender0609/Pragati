@@ -287,11 +287,26 @@ export type RecordExtent = {
   printedPageEnd: number | null;
 };
 
+/**
+ * v0.84.0 checkpoint 8 §2 — A REASON FOR EXACTLY THIS PAIR.
+ *
+ * `overlapAudit()` used to report `A.reason ?? B.reason`, so a merge
+ * note written about a different unit could be attached to any overlap
+ * that happened to involve A. A justification is now keyed by both ids
+ * and has to name the two objects that actually share the pages.
+ */
+export type OverlapJustification = {
+  a: string;
+  b: string;
+  reason: string;
+};
+
 type DecompositionFile = {
   generatedFrom: string;
   units: PragatiInstructionalUnit[];
   nonInstructional: NonInstructionalRecord[];
   sourceSegments: SourceSegment[];
+  overlapJustifications?: OverlapJustification[];
   recordExtents: RecordExtent[];
   /** Classes whose page-level pass is finished, and what remains. */
   classProgress: Array<{
@@ -347,6 +362,15 @@ export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstr
 export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
 export const RECORD_EXTENTS: RecordExtent[] = DATA.recordExtents ?? [];
 export const SOURCE_SEGMENTS: SourceSegment[] = DATA.sourceSegments ?? [];
+export const OVERLAP_JUSTIFICATIONS: OverlapJustification[] = DATA.overlapJustifications ?? [];
+
+/** The justification authored for this exact pair, in either order. */
+export function overlapJustificationFor(a: string, b: string): string | null {
+  const hit = OVERLAP_JUSTIFICATIONS.find(
+    (j) => (j.a === a && j.b === b) || (j.a === b && j.b === a)
+  );
+  return hit ? hit.reason : null;
+}
 
 export function unitsForClass(n: number): PragatiInstructionalUnit[] {
   return PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.classNumber === n);
@@ -367,9 +391,56 @@ export function instructionalUnitsFor(officialRecordId: string): PragatiInstruct
  * when it spans the record's whole extent, so a small review subrange
  * can no longer make a chapter look accounted for.
  */
+/**
+ * v0.84.0 checkpoint 8 §7 — SOURCE ACCOUNTING IS NOT INSTRUCTIONAL
+ * COVERAGE.
+ *
+ * `recordIsCovered()` accepted any source segment as coverage of the
+ * whole record, so a single PRACTICE page could make a chapter with no
+ * teaching units look accounted for. That is harmless while every
+ * Classes 1-2 chapter has units; it would quietly hide missing lessons
+ * across Classes 3-12. The two questions are now asked separately.
+ *
+ * SOURCE ACCOUNTED FOR: every page of the record is represented by a
+ * unit, a segment, or a whole-record non-instructional classification.
+ */
+export function recordSourceIsAccountedFor(officialRecordId: string): boolean {
+  const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === officialRecordId);
+  if (!ext) return false;
+  const covered = new Set<number>();
+  const add = (e: SourceEvidence) => {
+    for (let p = e.pdfPageStart; p <= e.pdfPageEnd; p += 1) covered.add(p);
+  };
+  for (const u of instructionalUnitsFor(officialRecordId)) add(u.sourceEvidence);
+  for (const s of SOURCE_SEGMENTS.filter((s) => s.officialRecordId === officialRecordId)) add(s.sourceEvidence);
+  for (const r of NON_INSTRUCTIONAL_RECORDS.filter((r) => r.officialRecordId === officialRecordId)) add(r.sourceEvidence);
+  for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) if (!covered.has(p)) return false;
+  return true;
+}
+
+/**
+ * INSTRUCTIONALLY ACCOUNTED FOR: the record's teaching content has
+ * units, or the whole record was inspected and judged to produce none.
+ * A segment never satisfies this: it accounts for the role of its own
+ * pages and nothing more.
+ */
+export function recordHasInstructionalDisposition(officialRecordId: string): boolean {
+  if (instructionalUnitsFor(officialRecordId).length > 0) return true;
+  return NON_INSTRUCTIONAL_RECORDS.some((r) => {
+    if (r.officialRecordId !== officialRecordId) return false;
+    const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === officialRecordId);
+    if (!ext) return false;
+    return (
+      r.sourceEvidence.pdfPageStart === ext.pdfPageStart &&
+      r.sourceEvidence.pdfPageEnd === ext.pdfPageEnd
+    );
+  });
+}
+
+/** @deprecated Ambiguous. Use `recordHasInstructionalDisposition` for gap
+ *  reporting, or `recordSourceIsAccountedFor` for page accounting. */
 export function recordIsCovered(officialRecordId: string): boolean {
   if (instructionalUnitsFor(officialRecordId).length > 0) return true;
-  if (SOURCE_SEGMENTS.some((s) => s.officialRecordId === officialRecordId)) return true;
   return NON_INSTRUCTIONAL_RECORDS.some((r) => {
     if (r.officialRecordId !== officialRecordId) return false;
     const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === officialRecordId);
@@ -391,28 +462,25 @@ export function overlapAudit(): Array<{
   pages: number[];
   reason: string | null;
 }> {
-  type Item = { id: string; record: string; start: number; end: number; reason: string | null };
+  type Item = { id: string; record: string; start: number; end: number };
   const items: Item[] = [
     ...PRAGATI_INSTRUCTIONAL_UNITS.map((u) => ({
       id: u.instructionalUnitId,
       record: u.officialRecordId,
       start: u.sourceEvidence.pdfPageStart,
       end: u.sourceEvidence.pdfPageEnd,
-      reason: u.mergeRelationship,
     })),
     ...SOURCE_SEGMENTS.map((s) => ({
       id: s.sourceSegmentId,
       record: s.officialRecordId,
       start: s.sourceEvidence.pdfPageStart,
       end: s.sourceEvidence.pdfPageEnd,
-      reason: s.justification,
     })),
     ...NON_INSTRUCTIONAL_RECORDS.map((r) => ({
       id: r.officialRecordId,
       record: r.officialRecordId,
       start: r.sourceEvidence.pdfPageStart,
       end: r.sourceEvidence.pdfPageEnd,
-      reason: r.justification,
     })),
   ];
   const out: Array<{ officialRecordId: string; a: string; b: string; pages: number[]; reason: string | null }> = [];
@@ -429,7 +497,10 @@ export function overlapAudit(): Array<{
         a: A.id,
         b: B.id,
         pages,
-        reason: A.reason ?? B.reason ?? null,
+        // Only a justification written for this pair counts. An
+        // instructional merge note on one side explains that unit's
+        // relationship, not every overlap it takes part in.
+        reason: overlapJustificationFor(A.id, B.id),
       });
     }
   }

@@ -88,12 +88,12 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 |---|---|---|---|---|---|---|---|---|---|---|
 | ncert_cemm1_ch01 | chapter | 1 | What’s in a Name? | 1 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch02 | chapter | 2 | Toy Joy | 9 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch03 | chapter | 3 | Double Century | 16 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch04 | chapter | 4 | Vacation with My Nani Maa | 29 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch03 | chapter | 3 | Double Century | 16 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch04 | chapter | 4 | Vacation with My Nani Maa | 29 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch05 | chapter | 5 | Fun with Shapes | 44 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch06 | chapter | 6 | House of Hundreds – I | 64 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch07 | chapter | 7 | Raksha Bandhan | 82 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_cemm1_ch08 | chapter | 8 | Fair Share | 107 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_cemm1_ch08 | chapter | 8 | Fair Share | 107 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch09 | chapter | 9 | House of Hundreds – II | 117 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch10 | chapter | 10 | Fun at Class Party! | 128 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_cemm1_ch11 | chapter | 11 | Filling and Lifting | 139 | not inspected | missing | missing | not_started | unpublished |  |

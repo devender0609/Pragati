@@ -24,10 +24,20 @@ decision nobody has made yet.
 | Two retained segments kept `sourceLabel` ranges from the ranges they used to span ("pages 9-12" for a one-page segment) | checkpoint 6 review | checkpoint 7 — generated labels derive from the pdf range, with a flag marking labels that are real book headings |
 | Class 1 Chapter 13's rehearsal pages were a whole-record `NonInstructionalRecord` inside a chapter with four units | checkpoint 6 review | checkpoint 7 — migrated to `pragati_srcseg_g01_ch13_rehearsal`; a gate requires a non-instructional record to span a whole record with no units |
 | The overlap audit checked only unit-to-unit while the report implied it was comprehensive | checkpoint 6 review | checkpoint 7 — `overlapAudit()` covers units, segments and non-instructional records, and every pair must carry a written reason |
+| `overlapAudit()` used `A.reason ?? B.reason`, so a merge note written about a third object could be attached to any pair involving A | checkpoint 7 review | checkpoint 8 — justifications are keyed by both ids; tests require one per detected pair and reject orphans |
+| `recordIsCovered()` treated any source segment as whole-record instructional coverage | checkpoint 7 review | checkpoint 8 — split into `recordSourceIsAccountedFor` (page accounting) and `recordHasInstructionalDisposition` (units, or a whole record judged to produce none); the gap report uses the second |
+| A superseded draft unit, `pragati_iu_g01_ch13_u2`, survived the checkpoint-5 split into `_u3` and `_u4` and duplicated their pages | checkpoint 8 (found by the pair-reason work) | checkpoint 8 — removed, its mirror-symmetry and matchstick ideas folded into `_u3` |
 
 None found in Pragati's runtime infrastructure: the master map, registry,
 Student, Teacher, review importer and review packages matched the books on
 every page inspected.
+
+## Class 3 (checkpoint 9)
+
+**No methodology defect.** The locked Classes 1-2 method carried over to
+Maths Mela without change: canonical chapter ids only, per-page ledger from
+page one, full-text then visual inspection, whole-record completion gate,
+Pragati units and segments kept out of the `ncert_*` namespace.
 
 ## Source discrepancies
 

@@ -8,7 +8,7 @@ import {
   CLASS_DECOMPOSITION_PROGRESS,
   NON_INSTRUCTIONAL_RECORDS,
   PRAGATI_INSTRUCTIONAL_UNITS,
-  recordIsCovered,
+  recordHasInstructionalDisposition,
   unitsForClass,
   type PragatiInstructionalUnit,
 } from './instructionalUnits';
@@ -142,7 +142,7 @@ export function renderBlueprintJson(version: string): string {
 export function renderDecompositionGapReport(version: string): string {
   const started = CLASS_DECOMPOSITION_PROGRESS.map((p) => p.classNumber);
   const uncovered = CLASS_NUMBERS.filter((n) => started.includes(n)).flatMap((n) =>
-    authoringUnits(n).filter((r) => !recordIsCovered(r.recordId))
+    authoringUnits(n).filter((r) => !recordHasInstructionalDisposition(r.recordId))
   );
   return `# Instructional decomposition — gap report
 
@@ -156,7 +156,12 @@ does not make it so.
 
 ${blueprintTable()}
 
-## Official records in a read class with no decomposition record
+## Official records in a read class with no instructional disposition
+
+A record counts here unless it has instructional units, or its whole extent
+was inspected and judged to produce none. A practice or reference segment
+inside a chapter does not answer this question — it accounts for its own
+pages, not for the chapter's teaching.
 
 ${uncovered.length === 0
   ? 'None: every official record in every class read so far is served by at least one unit or is recorded as non-instructional.'

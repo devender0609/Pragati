@@ -14,6 +14,10 @@ import {
   meetsEvidenceBar,
   officialRecordAccounting,
   overlapAudit,
+  overlapJustificationFor,
+  OVERLAP_JUSTIFICATIONS,
+  recordSourceIsAccountedFor,
+  recordHasInstructionalDisposition,
   officialRecordIdsTouched,
   RECORD_EXTENTS,
   SOURCE_SEGMENTS,
@@ -649,6 +653,30 @@ describe('§6/§7/§8 NonInstructionalRecord means a whole record', () => {
     }
   });
 
+  // §11 — the regression the old helper would have failed: a record whose
+  // only entry is a one-page practice segment.
+  it('a segment alone never gives a record instructional coverage', () => {
+    const fixture = 'ncert_bejm1_ch11';
+    // Real data: this chapter has units, so it passes both questions.
+    expect(recordSourceIsAccountedFor(fixture)).toBe(true);
+    expect(recordHasInstructionalDisposition(fixture)).toBe(true);
+    // Every segment-bearing record must owe its instructional standing to
+    // units or a whole-record judgement, never to the segment.
+    for (const s of SOURCE_SEGMENTS) {
+      const units = instructionalUnitsFor(s.officialRecordId).length;
+      const whole = NON_INSTRUCTIONAL_RECORDS.some((r) => r.officialRecordId === s.officialRecordId);
+      if (units === 0 && !whole) {
+        expect(recordHasInstructionalDisposition(s.officialRecordId), s.sourceSegmentId).toBe(false);
+      }
+    }
+  });
+
+  it('separates source accounting from instructional coverage in the gap report', () => {
+    const gap = read('INSTRUCTIONAL_DECOMPOSITION_GAP_REPORT.md');
+    expect(gap).toContain('no instructional disposition');
+    expect(gap).toMatch(/does not answer this question/i);
+  });
+
   it('cannot let a small subrange make a whole chapter look covered', () => {
     // Chapter 13 teaches; its rehearsal pages are a segment, and the
     // chapter is covered because of its units, not because of them.
@@ -661,12 +689,34 @@ describe('§6/§7/§8 NonInstructionalRecord means a whole record', () => {
 });
 
 describe('§9/§10 the overlap audit covers every object type', () => {
-  it('explains every overlap it finds', () => {
+  // v0.84.0 checkpoint 8 — a reason for THIS pair, not any reason that
+  // happens to be stored on one side of it.
+  it('has a justification authored for each exact pair', () => {
     const overlaps = overlapAudit();
     expect(overlaps.length).toBeGreaterThan(0);
     for (const o of overlaps) {
       expect(o.pages.length, `${o.a} / ${o.b}`).toBeGreaterThan(0);
-      expect((o.reason ?? '').length, `${o.a} / ${o.b} has no written reason`).toBeGreaterThan(40);
+      const pair = overlapJustificationFor(o.a, o.b);
+      expect(pair, `${o.a} / ${o.b} has no pair-specific justification`).not.toBeNull();
+      expect((pair ?? '').length, `${o.a} / ${o.b}`).toBeGreaterThan(40);
+      expect(o.reason).toBe(pair);
+    }
+  });
+
+  it('carries no justification for a pair that does not overlap', () => {
+    const pairs = new Set(overlapAudit().map((o) => [o.a, o.b].sort().join('|')));
+    for (const j of OVERLAP_JUSTIFICATIONS) {
+      expect(pairs.has([j.a, j.b].sort().join('|')), `${j.a} / ${j.b} is not an overlap`).toBe(true);
+    }
+    expect(OVERLAP_JUSTIFICATIONS.length).toBe(pairs.size);
+  });
+
+  it('does not let a unit merge note stand in for an overlap reason', () => {
+    // The merge note explains a unit's relationship to another unit; it
+    // is not addressed to any particular shared page range.
+    for (const o of overlapAudit()) {
+      const a = PRAGATI_INSTRUCTIONAL_UNITS.find((u) => u.instructionalUnitId === o.a);
+      if (a?.mergeRelationship && o.reason) expect(o.reason).not.toBe(a.mergeRelationship);
     }
   });
 
@@ -675,5 +725,93 @@ describe('§9/§10 the overlap audit covers every object type', () => {
       (o) => o.a.startsWith('pragati_srcseg_') || o.b.startsWith('pragati_srcseg_')
     );
     expect(kinds.length).toBeGreaterThan(0);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 9 — CLASS 3, on the locked method.
+// ---------------------------------------------------------------------------
+
+describe('§2/§4 Class 3 uses canonical official records only', () => {
+  it('has all 14 official chapters, each with an extent', () => {
+    const acc = officialRecordAccounting(3);
+    expect(acc.officialRecordsTotal).toBe(14);
+    expect(acc.missingExtents).toEqual([]);
+  });
+
+  it('invents no NCERT section for a book that numbers none', () => {
+    for (const u of unitsForClass(3)) {
+      expect(u.officialRecordId, u.instructionalUnitId).toMatch(/^ncert_cemm1_ch\d{2}$/);
+      expect(u.sourceEvidence.officialSectionId, u.instructionalUnitId).toBeNull();
+      expect(u.instructionalUnitId.startsWith('pragati_iu_g03_')).toBe(true);
+    }
+  });
+
+  it('gives every Class 3 page a home', () => {
+    for (const ext of RECORD_EXTENTS.filter((e) => e.officialRecordId.includes('cemm1'))) {
+      const covered = new Set<number>();
+      for (const e of [
+        ...instructionalUnitsFor(ext.officialRecordId).map((u) => u.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === ext.officialRecordId).map((s) => s.sourceEvidence),
+      ]) {
+        for (let p = e.pdfPageStart; p <= e.pdfPageEnd; p += 1) covered.add(p);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${ext.officialRecordId} p${p}`).toBe(true);
+      }
+    }
+  });
+});
+
+describe('§21/§22 Class 3 readiness and completion are evidence-derived', () => {
+  it('holds back every unit whose visual pass is unfinished', () => {
+    for (const u of unitsForClass(3)) {
+      if (u.decompositionStatus === 'READY_FOR_AUTHORING') {
+        expect(meetsEvidenceBar(u), u.instructionalUnitId).toBe(true);
+      } else {
+        const unseen = u.sourceEvidence.pageEvidence.filter(
+          (p) => p.visualInspectionRequired && !p.visualInspected
+        );
+        const q = u.humanJudgementQuestion ?? '';
+        expect(unseen.length > 0 || q.length > 20, u.instructionalUnitId).toBe(true);
+      }
+    }
+  });
+
+  it('keeps Class 3 IN_PROGRESS while picture-carried pages are unseen', () => {
+    const p = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 3)!;
+    expect(p.pagesUnresolved).toBe(0); // all text read
+    if ((p.visualPagesInspected ?? 0) < (p.visualPagesRequired ?? 0)) {
+      expect(p.status).toBe('IN_PROGRESS');
+      expect(p.officialRecordsFullyInspected).toBeLessThan(p.officialRecordsTotal!);
+    }
+  });
+
+  it('did not assume one chapter is one lesson', () => {
+    expect(unitsForClass(3).length).toBeGreaterThan(14);
+    // Classes 1 and 2 are untouched by this work.
+    expect(unitsForClass(1).length).toBe(47);
+    expect(unitsForClass(2).length).toBe(59);
+  });
+
+  it('links Class 3 prerequisites to real earlier units where it claims them', () => {
+    const ids = new Set(PRAGATI_INSTRUCTIONAL_UNITS.map((u) => u.instructionalUnitId));
+    let linked = 0;
+    for (const u of unitsForClass(3)) {
+      for (const p of u.prerequisites) {
+        if (p.startsWith('pragati_iu_')) {
+          expect(ids.has(p as `pragati_iu_${string}`), `${u.instructionalUnitId} → ${p}`).toBe(true);
+          linked += 1;
+        }
+      }
+    }
+    expect(linked).toBeGreaterThan(20);
+  });
+
+  it('publishes a Class 3 audit that matches the dataset', () => {
+    const a = read('PAGE_LEVEL_INTENT_AUDIT_CLASS_3.md');
+    const listed = [...a.matchAll(/^\| `(ncert_cemm1_ch\d{2})` \|/gm)].map((m) => m[1]);
+    expect(new Set(listed).size).toBe(14);
+    for (const u of unitsForClass(3)) expect(a, u.instructionalUnitId).toContain(u.instructionalUnitId);
   });
 });
