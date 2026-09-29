@@ -108,7 +108,12 @@ describe('§23 nothing is authoring-ready without page evidence', () => {
       // v0.84.0 hardening — the reason now lives in hardeningNote, which
       // says which evidence is missing rather than only that pages were
       // unread.
-      expect(u.hardeningNote ?? '', u.instructionalUnitId).toMatch(/not had its full text read|index|not read/i);
+      // v0.84.0 checkpoint 11 — the re-audit verdicts are history now;
+      // what a draft must show is missing evidence, which is a fact about
+      // the ledger rather than a note.
+      const pages = u.sourceEvidence.pageEvidence;
+      const gap = pages.some((p) => !p.fullTextInspected || (p.visualInspectionRequired && !p.visualInspected));
+      expect(gap || pages.length === 0, u.instructionalUnitId).toBe(true);
       expect(u.humanReviewStatus, u.instructionalUnitId).toBe('flagged_for_review');
     }
   });
@@ -191,6 +196,85 @@ describe('§10/§22 uncertainty survives the blueprint', () => {
         if (p.startsWith('pragati_iu_'))
           expect(ids.has(p as `pragati_iu_${string}`), `${u.instructionalUnitId} → ${p}`).toBe(true);
         else expect(p.length).toBeGreaterThan(10); // plain-language dependency
+      }
+    }
+  });
+});
+
+// v0.84.0 checkpoint 11 §4/§15 — one current status, and nothing beside
+// it that could be read as a second one.
+describe('§4 exactly one current unit status', () => {
+  it('carries no second active classification field', () => {
+    for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+      const raw = u as unknown as Record<string, unknown>;
+      expect(raw.hardeningClassification, u.instructionalUnitId).toBeUndefined();
+      expect(raw.hardeningNote, u.instructionalUnitId).toBeUndefined();
+    }
+  });
+
+  it('keeps the re-audit verdicts as dated history', () => {
+    const withHistory = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => (u.auditHistory ?? []).length > 0);
+    expect(withHistory.length).toBeGreaterThan(100);
+    for (const u of withHistory) {
+      for (const h of u.auditHistory!) {
+        expect(h.checkpoint.length, u.instructionalUnitId).toBeGreaterThan(5);
+      }
+    }
+  });
+
+  it('gives every READY unit complete evidence and no open question', () => {
+    for (const u of readyForAuthoring()) {
+      expect(meetsEvidenceBar(u), u.instructionalUnitId).toBe(true);
+      expect(u.humanJudgementQuestion, u.instructionalUnitId).toBeUndefined();
+    }
+    expect(readyForAuthoring().length).toBe(
+      PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => derivedStatusFor(u) === 'READY_FOR_AUTHORING').length
+    );
+  });
+
+  it('does not emit a contradictory classification in the blueprint', () => {
+    const md = read('INSTRUCTIONAL_MASTER_BLUEPRINT.md');
+    expect(md).not.toMatch(/hardeningClassification/);
+    for (const u of readyForAuthoring().slice(0, 5)) {
+      const block = md.slice(md.indexOf(u.instructionalUnitId));
+      expect(block.slice(0, 900)).not.toMatch(/review NEEDS_HUMAN_CHECK/);
+    }
+  });
+});
+
+describe('§5-§12 class-specific audits describe their own class', () => {
+  const c3 = () => read('PAGE_LEVEL_INTENT_AUDIT_CLASS_3.md');
+  const c12 = () => read('PAGE_LEVEL_INTENT_AUDIT_CLASSES_1_2.md');
+
+  it('never contradicts its own source-completion state', () => {
+    const p3 = CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 3)!;
+    if (p3.status === 'DECOMPOSITION_SOURCE_COMPLETE') {
+      expect(c3()).not.toMatch(/NOT source-complete|visual pass is unfinished|pages not yet read/i);
+    }
+  });
+
+  it('lists only Class 3 units and segments in the Class 3 audit', () => {
+    const t = c3();
+    expect(t).not.toMatch(/pragati_iu_g0[12]_/);
+    expect(t).not.toMatch(/pragati_srcseg_g0[12]_/);
+    const listed = [...t.matchAll(/pragati_iu_g03_[a-z0-9_]+/g)].map((m) => m[0]);
+    expect(new Set(listed).size).toBe(unitsForClass(3).length);
+  });
+
+  it('lists only Classes 1-2 records in their own audit', () => {
+    expect(c12()).not.toMatch(/ncert_cemm1_/);
+    expect(c12()).not.toMatch(/pragati_iu_g03_/);
+  });
+
+  it('counts visual pages seen against the pages that needed seeing', () => {
+    for (const t of [c3(), c12()]) {
+      const rows = [...t.matchAll(/^\| `(ncert_[a-z0-9_]+)` \|[^|]*\|[^|]*\|[^|]*\|[^|]*\| (\d+) \| (\d+) \| (\w+) \|/gm)];
+      expect(rows.length).toBeGreaterThan(0);
+      for (const r of rows) {
+        const required = Number(r[2]);
+        const seen = Number(r[3]);
+        expect(seen, `${r[1]}: seen ${seen} > required ${required}`).toBeLessThanOrEqual(required);
+        if (r[5] === 'FULLY_INSPECTED') expect(seen, r[1]).toBe(required);
       }
     }
   });

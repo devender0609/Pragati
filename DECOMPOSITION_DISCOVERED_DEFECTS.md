@@ -41,6 +41,15 @@ every page inspected.
 | `recordInspectionState()` could report `INDEXED_ONLY` for a chapter whose whole text had been read, when no page yet met the full bar | checkpoint 9 review | checkpoint 10 — any full-text evidence makes a record at least PARTIALLY_INSPECTED; tested |
 | `pagesUnresolved` read 0 for Class 3 while 107 picture-carried pages were unseen | checkpoint 9 review | checkpoint 10 — `pagesFullTextPending`, `visualPagesPending` and `pagesEvidenceIncomplete` reported separately |
 
+## Metadata and reporting defects found in checkpoint 10 — all RESOLVED in checkpoint 11
+
+| Defect | Found | Resolved |
+|---|---|---|
+| `hardeningClassification` stayed on as a second current status and contradicted `decompositionStatus` on 33 units | checkpoint 10 review | checkpoint 11 — verdicts moved to dated `auditHistory`; the field is gone and a test forbids its return |
+| The Class 3 audit hard-coded a checkpoint-9 sentence saying the class was not source-complete, directly under its own SOURCE_COMPLETE line | checkpoint 10 review | checkpoint 11 — the completion wording is derived from `classProgress`; a test forbids a complete class being described as incomplete |
+| The Class 3 audit listed source segments and units from Classes 1-2 | checkpoint 10 review | checkpoint 11 — both generators filter by class; tests assert no cross-class ids appear |
+| "Visual seen" counted every rendered page against the visual-required denominator, giving rows like 20 seen of 17 required | checkpoint 10 review | checkpoint 11 — seen counts only required-and-inspected pages, with "Pages rendered" reported separately; a test requires seen ≤ required and equality for FULLY_INSPECTED |
+
 ## Class 3 (checkpoint 9)
 
 **No methodology defect.** The locked Classes 1-2 method carried over to

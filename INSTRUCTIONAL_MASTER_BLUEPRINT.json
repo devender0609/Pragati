@@ -181,8 +181,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u2",
@@ -261,8 +266,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch01_u3",
@@ -332,8 +342,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u1",
@@ -428,8 +443,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch02_u2",
@@ -528,8 +548,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u1",
@@ -626,8 +651,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u2",
@@ -717,8 +747,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u3",
@@ -834,8 +869,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u1",
@@ -916,8 +956,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u2",
@@ -996,8 +1041,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u3",
@@ -1078,8 +1128,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u4",
@@ -1160,8 +1215,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u5",
@@ -1271,8 +1331,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u1",
@@ -1381,8 +1446,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u2",
@@ -1484,8 +1554,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u3",
@@ -1555,8 +1630,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u4",
@@ -1646,8 +1726,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u1",
@@ -1754,8 +1839,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": "Pages 69 onward of this chapter were not read in this pass; a later unit may be needed for the rest of the chapter.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u1",
@@ -1853,8 +1943,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u2",
@@ -1953,8 +2048,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u3",
@@ -2032,8 +2132,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u1",
@@ -2150,8 +2255,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u2",
@@ -2222,8 +2332,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u3",
@@ -2302,8 +2417,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": "Pages beyond 92 of this chapter were not read in this pass.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u1",
@@ -2409,8 +2529,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u2",
@@ -2480,8 +2605,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch09_u3",
@@ -2551,8 +2681,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u1",
@@ -2640,8 +2775,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u2",
@@ -2710,8 +2850,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch10_u3",
@@ -2790,9 +2935,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": "Mathematically light: cyclic sequence and classification only. Kept because the source teaches it here.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?"
+   "humanJudgementQuestion": "This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch11_u1",
@@ -2890,8 +3040,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u1",
@@ -2971,8 +3126,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch12_u2",
@@ -3062,8 +3222,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u1",
@@ -3144,8 +3309,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u1",
@@ -3233,8 +3403,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u2",
@@ -3352,8 +3527,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u3",
@@ -3431,8 +3611,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u4",
@@ -3503,8 +3688,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u1",
@@ -3585,8 +3775,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch02_u2",
@@ -3685,8 +3880,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u1",
@@ -3766,8 +3966,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u2",
@@ -3875,8 +4080,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u3",
@@ -3974,8 +4184,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u1",
@@ -4064,8 +4279,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u2",
@@ -4172,8 +4392,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u3",
@@ -4252,8 +4477,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u1",
@@ -4332,8 +4562,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch05_u2",
@@ -4431,8 +4666,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u1",
@@ -4523,8 +4763,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u2",
@@ -4604,8 +4849,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u3",
@@ -4694,8 +4944,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u4",
@@ -4775,8 +5030,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": "Pages beyond 59 of this chapter were not read in this pass; further subtraction units may be needed.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u1",
@@ -4855,8 +5115,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u2",
@@ -4948,8 +5213,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u3",
@@ -5039,8 +5309,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u1",
@@ -5129,8 +5404,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u2",
@@ -5200,8 +5480,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u3",
@@ -5281,8 +5566,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u4",
@@ -5360,8 +5650,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": "Pages beyond 90 were not read in this pass.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u1",
@@ -5451,9 +5746,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?"
+   "humanJudgementQuestion": "This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u2",
@@ -5535,8 +5835,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u3",
@@ -5607,8 +5912,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u4",
@@ -5687,8 +5997,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": "Pages beyond 105 were not read in this pass; the clock work may extend further.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u1",
@@ -5787,8 +6102,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u2",
@@ -5858,8 +6178,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u3",
@@ -5985,8 +6310,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u1",
@@ -6075,8 +6405,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u2",
@@ -6166,8 +6501,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u3",
@@ -6238,8 +6578,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch03_u4",
@@ -6319,8 +6664,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch04_u6",
@@ -6401,8 +6751,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u5",
@@ -6473,8 +6828,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch05_u6",
@@ -6544,8 +6904,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u2",
@@ -6616,8 +6981,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u3",
@@ -6689,8 +7059,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch06_u4",
@@ -6761,8 +7136,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u4",
@@ -6852,8 +7232,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u5",
@@ -6932,8 +7317,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u5",
@@ -7022,8 +7412,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u6",
@@ -7093,8 +7488,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u7",
@@ -7193,8 +7593,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u8",
@@ -7275,8 +7680,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u5",
@@ -7356,8 +7766,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u6",
@@ -7437,8 +7852,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u7",
@@ -7508,8 +7928,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u8",
@@ -7589,8 +8014,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u5",
@@ -7688,8 +8118,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u6",
@@ -7761,8 +8196,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u7",
@@ -7844,8 +8284,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch07_u4",
@@ -7935,8 +8380,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": "Found only when the full chapter was read: the first pass stopped at the weight pages.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u3",
@@ -8039,9 +8489,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": "Whether Class 1 should carry constraint puzzles at all is a curriculum judgement for a human, not something the source settles. Supersedes pragati_iu_g01_ch13_u2, a checkpoint-3 draft that mixed constraint work with ideas beyond Class 1; that draft was removed in checkpoint 8.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?"
+   "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u4",
@@ -8132,9 +8587,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": "Flagged for human decision: this is arguably Class 2-3 mathematics appearing in a Class 1 puzzle page.",
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?"
+   "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u5",
@@ -8234,8 +8694,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u6",
@@ -8318,8 +8783,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch03_u4",
@@ -8391,8 +8861,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch06_u9",
@@ -8464,8 +8939,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u4",
@@ -8536,8 +9016,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch07_u5",
@@ -8619,8 +9104,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch08_u9",
@@ -8699,8 +9189,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u8",
@@ -8789,8 +9284,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u4",
@@ -8869,8 +9369,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u4",
@@ -8968,8 +9473,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch11_u5",
@@ -9099,9 +9609,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?"
+   "humanJudgementQuestion": "Is a reasoning-extension puzzle of this kind core Pragati Learn content at this stage, or enrichment offered alongside it?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u6",
@@ -9179,9 +9694,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "These two objectives are each very small for this stage. Should they be one instructional unit or stay separate?"
+   "humanJudgementQuestion": "These two objectives are each very small for this stage. Should they be one instructional unit or stay separate?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u4",
@@ -9264,8 +9784,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch10_u5",
@@ -9348,8 +9873,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch01_u1",
@@ -9429,8 +9959,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch01_u2",
@@ -9528,8 +10063,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch01_u3",
@@ -9611,8 +10151,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch02_u1",
@@ -9704,8 +10249,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch02_u2",
@@ -9786,8 +10336,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch02_u3",
@@ -9867,8 +10422,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u1",
@@ -9939,8 +10499,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u2",
@@ -10040,8 +10605,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u3",
@@ -10141,8 +10711,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch03_u4",
@@ -10241,8 +10816,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u1",
@@ -10332,8 +10912,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u2",
@@ -10422,8 +11007,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u3",
@@ -10503,8 +11093,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u4",
@@ -10574,9 +11169,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "The magic-sum grids need constraint reasoning that no Class 3 chapter teaches. Is that core Pragati Learn at Class 3, or enrichment offered beside the addition work?"
+   "humanJudgementQuestion": "The magic-sum grids need constraint reasoning that no Class 3 chapter teaches. Is that core Pragati Learn at Class 3, or enrichment offered beside the addition work?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u5",
@@ -10666,8 +11266,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u6",
@@ -10746,8 +11351,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u7",
@@ -10818,8 +11428,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u1",
@@ -10928,8 +11543,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u2",
@@ -11038,8 +11658,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u3",
@@ -11130,8 +11755,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u4",
@@ -11231,8 +11861,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch05_u5",
@@ -11322,8 +11957,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u1",
@@ -11412,8 +12052,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u2",
@@ -11505,8 +12150,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u3",
@@ -11595,8 +12245,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u4",
@@ -11686,8 +12341,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u5",
@@ -11776,8 +12436,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch06_u6",
@@ -11867,8 +12532,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u1",
@@ -11975,8 +12645,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u2",
@@ -12084,8 +12759,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u3",
@@ -12174,8 +12854,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u4",
@@ -12283,8 +12968,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u5",
@@ -12364,8 +13054,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch07_u6",
@@ -12473,8 +13168,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch08_u1",
@@ -12573,8 +13273,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch08_u2",
@@ -12654,8 +13359,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch08_u3",
@@ -12754,8 +13464,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u1",
@@ -12845,8 +13560,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u2",
@@ -12945,9 +13665,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "These number-condition puzzles ask for several constraints to hold at once. Should Pragati teach a strategy for them, or offer them as practice after the place-value units?"
+   "humanJudgementQuestion": "These number-condition puzzles ask for several constraints to hold at once. Should Pragati teach a strategy for them, or offer them as practice after the place-value units?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u3",
@@ -13036,8 +13761,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u4",
@@ -13107,9 +13837,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "Bhutasankhya word numerals are a cultural notation, not a new mathematical idea. Is a Pragati lesson warranted, or does this belong as context inside the place-value unit?"
+   "humanJudgementQuestion": "Bhutasankhya word numerals are a cultural notation, not a new mathematical idea. Is a Pragati lesson warranted, or does this belong as context inside the place-value unit?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch10_u1",
@@ -13225,8 +13960,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch10_u2",
@@ -13333,8 +14073,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u1",
@@ -13432,8 +14177,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u2",
@@ -13513,8 +14263,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u3",
@@ -13614,8 +14369,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch11_u4",
@@ -13686,9 +14446,14 @@
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete. What remains is the named curriculum decision.",
-   "humanJudgementQuestion": "The tricky-balls puzzle is deductive reasoning about a balance, not measurement. Does it belong in the measurement sequence, in a reasoning strand, or outside core Learn?"
+   "humanJudgementQuestion": "The tricky-balls puzzle is deductive reasoning about a balance, not measurement. Does it belong in the measurement sequence, in a reasoning strand, or outside core Learn?",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete. What remains is the named curriculum decision."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u1",
@@ -13779,8 +14544,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u2",
@@ -13861,8 +14631,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u3",
@@ -13931,8 +14706,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u4",
@@ -14031,8 +14811,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "CONFIRMED",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "CONFIRMED",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u5",
@@ -14140,8 +14925,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch13_u1",
@@ -14231,8 +15021,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch13_u2",
@@ -14321,8 +15116,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch13_u3",
@@ -14440,8 +15240,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u1",
@@ -14549,8 +15354,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u2",
@@ -14649,8 +15459,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u3",
@@ -14731,8 +15546,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch14_u4",
@@ -14832,8 +15652,13 @@
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
    "notes": null,
-   "hardeningClassification": "NEEDS_HUMAN_CHECK",
-   "hardeningNote": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoints 2-10",
+     "verdict": "NEEDS_HUMAN_CHECK",
+     "note": "Source evidence complete: whole range read in full text and every picture-carried page rendered and looked at."
+    }
+   ]
   }
  ],
  "nonInstructional": []

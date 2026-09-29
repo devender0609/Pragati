@@ -219,16 +219,18 @@ export type PragatiInstructionalUnit = {
    *  human must answer. Present only when the source is complete and the
    *  remaining doubt is a judgement, never a stand-in for unread pages. */
   humanJudgementQuestion?: string;
-  /** v0.84.0 hardening §4 — the verdict of the re-audit against the
-   *  stronger evidence standard. */
-  hardeningClassification?:
-    | 'CONFIRMED'
-    | 'NEEDS_SPLIT'
-    | 'NEEDS_MERGE'
-    | 'NEEDS_SCOPE_CHANGE'
-    | 'NOT_SUPPORTED'
-    | 'NEEDS_HUMAN_CHECK';
-  hardeningNote?: string;
+  /**
+   * v0.84.0 checkpoint 11 §1-§3 — HISTORY, NOT STATUS.
+   *
+   * `hardeningClassification` was a re-audit verdict that outlived its
+   * pass: 33 units carried a verdict contradicting their current
+   * `decompositionStatus` — Class 3 units read READY while still
+   * labelled NEEDS_HUMAN_CHECK from the partial visual pass. Two active
+   * status fields means neither is authoritative, so the verdicts moved
+   * here as dated provenance. The one current status is
+   * `decompositionStatus`, and `derivedStatusFor()` decides it.
+   */
+  auditHistory?: Array<{ checkpoint: string; verdict: string | null; note: string }>;
 };
 
 /**
