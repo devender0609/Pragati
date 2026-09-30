@@ -110,20 +110,20 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_demm1_ch01 | chapter | 1 | Shapes Around Us | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch02 | chapter | 2 | Hide and Seek | 24 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch03 | chapter | 3 | Pattern Around Us | 34 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch04 | chapter | 4 | Thousands Around Us | 39 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch05 | chapter | 5 | Sharing and Measuring | 62 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch06 | chapter | 6 | Measuring Length | 80 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch07 | chapter | 7 | The Cleanest Village | 95 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch08 | chapter | 8 | Weigh it, Pour it | 115 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch09 | chapter | 9 | Equal Groups | 128 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch10 | chapter | 10 | Elephants,Tigers, and Leopards | 149 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch11 | chapter | 11 | Fun with Symmetry | 164 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch12 | chapter | 12 | Ticking Clocks and Turning Calendar | 175 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch13 | chapter | 13 | The Transport Museum | 184 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_demm1_ch14 | chapter | 14 | Data Handling | 203 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch01 | chapter | 1 | Shapes Around Us | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch02 | chapter | 2 | Hide and Seek | 24 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch03 | chapter | 3 | Pattern Around Us | 34 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch04 | chapter | 4 | Thousands Around Us | 39 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch05 | chapter | 5 | Sharing and Measuring | 62 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch06 | chapter | 6 | Measuring Length | 80 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch07 | chapter | 7 | The Cleanest Village | 95 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch08 | chapter | 8 | Weigh it, Pour it | 115 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch09 | chapter | 9 | Equal Groups | 128 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch10 | chapter | 10 | Elephants,Tigers, and Leopards | 149 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch11 | chapter | 11 | Fun with Symmetry | 164 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch12 | chapter | 12 | Ticking Clocks and Turning Calendar | 175 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch13 | chapter | 13 | The Transport Museum | 184 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_demm1_ch14 | chapter | 14 | Data Handling | 203 | inspected | missing | missing | not_started | unpublished |  |
 
 ## Class 5
 

@@ -15,7 +15,7 @@ early-primary mathematics usually needs. A unit is authoring-ready only
 when its whole range is full text and, where the mathematics lives in the
 visuals, those pages were seen.
 
-**Read so far:** Class 1, Class 2, Class 3. Every other class is
+**Read so far:** Class 1, Class 2, Class 3, Class 4. Every other class is
 NOT STARTED — its unit count is unknown, not zero.
 
 | Class | Official chapters | Official sections | Pages (indexed / full text / visual) | Pragati units drafted | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
@@ -23,7 +23,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 1 | 13 | — | 130 indexed / 130 full text / 121 visual | 47 | 43 | 4 | 0 | 0 | 47 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 2 | 11 | — | 138 indexed / 138 full text / 138 visual | 59 | 57 | 2 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 3 | 14 | — | 208 indexed / 208 full text / 184 visual | 59 | 55 | 4 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 4 | 14 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
+| Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 6 | 10 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 12 | UNKNOWN | NOT_STARTED |
 | Class 7 | 15 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -2693,6 +2693,954 @@ All 14 official chapters fully inspected: 208 of 208 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Classes 1-5 define no numbered sections, so the split is Pragati's and each part names the pages that support it.
+
+## Class 4
+
+All 14 official chapters fully inspected: 224 of 224 pages read in full text and 177 of 177 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source.
+
+#### Prisms and pyramids: faces, edges and corners
+
+- **Id** `pragati_iu_g04_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch01`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** demm1, printed pp. 2–5 (PDF pp. 1–5), read 2026-09-30. Establishes: Models of monuments from blocks; making prisms and pyramids from the nets at the end of the book; the faces/corners/edges table; opposite faces of a die.
+- **Objective** Build and describe prisms and pyramids by counting faces, edges and corners.
+- **Student can** I can say how a prism differs from a pyramid.
+- **Mathematical ideas** 3-D solids by family; faces, edges, corners; relation F, V, E
+- **Representations** nets and straw-and-clay models; feature table
+- **Prerequisites** pragati_iu_g03_ch02_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Sorting solids by their properties
+
+- **Id** `pragati_iu_g04_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch01`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
+- **Source** demm1, printed pp. 6–7 (PDF pp. 6–7), read 2026-09-30. Establishes: Sorting 3D shapes into overlapping circles by face shape and by flat/curved faces, and discussing which solids fall in the intersection.
+- **Objective** Sort solids by flat or curved faces and by the shapes of their faces.
+- **Student can** I can sort solids into the right circles and say why.
+- **Mathematical ideas** classification by property; Venn-style sorting; shapes of faces
+- **Representations** sorting circles; wooden and paper solids
+- **Prerequisites** pragati_iu_g04_ch01_u1
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Nets and drawings of solids
+
+- **Id** `pragati_iu_g04_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch01`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9
+- **Source** demm1, printed pp. 8–9 (PDF pp. 8–9), read 2026-09-30. Establishes: Drawing cubes on triangular dot paper, matching nets to solids, and identifying which solid a cut-up net came from.
+- **Objective** Match a net to its solid and draw a cube on triangular dot paper.
+- **Student can** I can tell which net folds into this solid.
+- **Mathematical ideas** net of a solid; spatial visualisation; drawing a 3-D shape on dot paper
+- **Representations** printed nets; triangular dot paper
+- **Prerequisites** pragati_iu_g04_ch01_u1
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Angles: right, acute and obtuse
+
+- **Id** `pragati_iu_g04_ch01_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch01`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12, 13
+- **Source** demm1, printed pp. 10–13 (PDF pp. 10–13), read 2026-09-30. Establishes: Angles in house and boat drawings and yoga postures; making a right angle by folding; drawing acute and obtuse angles on the grid and colouring them by type.
+- **Objective** Recognise an angle where two lines meet and compare angles with a right angle.
+- **Student can** I can mark the right angles in this figure and say which are acute.
+- **Mathematical ideas** angle as two lines meeting; right angle by paper folding; acute and obtuse by comparison
+- **Representations** straws; folded paper right angle; dot grid
+- **Prerequisites** pragati_iu_g03_ch05_u3
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Shapes made with straws: rigidity and sides
+
+- **Id** `pragati_iu_g04_ch01_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch01`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15
+- **Source** demm1, printed pp. 14–15 (PDF pp. 14–15), read 2026-09-30. Establishes: Pushing straw triangles and rectangles to test rigidity, then drawing three- and four-sided shapes on dots and circling those with right angles.
+- **Objective** Investigate which shapes keep their form and describe shapes by sides and angles.
+- **Student can** I can say why a triangle keeps its shape and a rectangle does not.
+- **Mathematical ideas** rigidity of a triangle; sides and angles of quadrilaterals; constructing on a dot grid
+- **Representations** straws and clay; dot grid
+- **Prerequisites** pragati_iu_g04_ch01_u4
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Circles: centre, radius and diameter
+
+- **Id** `pragati_iu_g04_ch01_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch01`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 18
+- **Source** demm1, printed pp. 16–18 (PDF pp. 16–18), read 2026-09-30. Establishes: Making a circle with straws of equal length; the equidistant-points construction; folding circular paper to find the centre; naming radius and diameter in a carpet design.
+- **Objective** Draw circles and identify the centre, radius and diameter.
+- **Student can** I can draw a circle with a compass and mark its radius.
+- **Mathematical ideas** circle as points equidistant from a centre; radius and diameter; folding to find the centre
+- **Representations** compass; circular paper; thread
+- **Prerequisites** pragati_iu_g03_ch05_u4
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Shape puzzles: cutting, joining and counting
+
+- **Id** `pragati_iu_g04_ch01_u7` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch01`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 19, 20, 21, 22, 23
+- **Source** demm1, printed pp. 19–23 (PDF pp. 19–23), read 2026-09-30. Establishes: Hidden shapes, cutting shapes into named pieces, the squiggly-spider web path, matchstick triangle puzzles, and the straws-and-clay model challenge relating edges to corners.
+- **Objective** Solve puzzles that need shapes to be split, joined or counted systematically.
+- **Student can** I can draw two lines to cut this triangle into a square and two triangles.
+- **Mathematical ideas** decomposition of figures; systematic counting of shapes; matchstick transformations; solid-model relationships
+- **Representations** dot grid; matchsticks; straw-and-ball models
+- **Prerequisites** pragati_iu_g04_ch01_u5
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Views of an object
+
+- **Id** `pragati_iu_g04_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch02`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
+- **Source** demm1, printed pp. 25–27 (PDF pp. 1–4), read 2026-09-30. Establishes: The hide-and-seek scenes and who can see whom; three children drawing the same brick differently; naming objects and their views; matchbox buildings drawn from different sides.
+- **Objective** Describe and identify the top, front and side views of an object.
+- **Student can** I can say which view of the brick this drawing shows.
+- **Mathematical ideas** different views of a 3-D object; top view; matching views to objects
+- **Representations** real objects viewed from several sides; matchbox buildings
+- **Prerequisites** pragati_iu_g04_ch01_u1
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Position on a grid
+
+- **Id** `pragati_iu_g04_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch02`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7
+- **Source** demm1, printed pp. 28–30 (PDF pp. 5–7), read 2026-09-30. Establishes: Locating Jagat by row and desk; filling a grid from clues; the treasure-hunt grid game where one player guides another to an object.
+- **Objective** Describe and find a position using rows and columns.
+- **Student can** I can say where the eraser is using the row and the column.
+- **Mathematical ideas** grid coordinates informally; row and column; giving and following clues
+- **Representations** 4x4 object grid; classroom seating plan
+- **Prerequisites** pragati_iu_g02_ch09_u7
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Paths, steps and simple maps
+
+- **Id** `pragati_iu_g04_ch02_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch02`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9, 10
+- **Source** demm1, printed pp. 31–33 (PDF pp. 8–10), read 2026-09-30. Establishes: Tracing paths to the flower and counting steps; reading the school sight map and tracing a route; drawing your own map of the way to your classroom.
+- **Objective** Compare routes by counting steps and read a map of a place you know.
+- **Student can** I can trace the shortest path to the flower and count the steps.
+- **Mathematical ideas** comparing path lengths; route description; reading a sight map
+- **Representations** step grid; school map
+- **Prerequisites** pragati_iu_g03_ch14_u4
+- **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Counting large collections by grouping
+
+- **Id** `pragati_iu_g04_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch03`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
+- **Source** demm1, printed pp. 35–35 (PDF pp. 1–2), read 2026-09-30. Establishes: Counting cups, coconut trees and coconuts by grouping; arranging play money into patterns and reading the amounts.
+- **Objective** Count a large collection efficiently by grouping and multiplying.
+- **Student can** I can count the cups by grouping instead of one by one.
+- **Mathematical ideas** grouping to count; multiplicative counting; money amounts arranged in patterns
+- **Representations** pictures of grouped objects; play money
+- **Prerequisites** pragati_iu_g03_ch03_u1
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Odd and even numbers
+
+- **Id** `pragati_iu_g04_ch03_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch03`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5
+- **Source** demm1, printed pp. 36–38 (PDF pp. 3–5), read 2026-09-30. Establishes: Shiv's paired arrangement and Shirley's unpaired one; circling odd and even numbers in the crayon chart; checking whether the neighbours of an odd number are always even.
+- **Objective** Decide whether a number is odd or even, and reason about the numbers around it.
+- **Student can** I can say why 37 is odd and what comes before and after it.
+- **Mathematical ideas** odd and even as pairing; patterns of odd and even in a chart; reasoning about consecutive numbers
+- **Representations** crayon pairings; number chart in rows
+- **Prerequisites** pragati_iu_g03_ch06_u2
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Numbers to 1000 with HTO blocks
+
+- **Id** `pragati_iu_g04_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch04`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
+- **Source** demm1, printed pp. 40–42 (PDF pp. 1–4), read 2026-09-30. Establishes: Donations recorded as numbers; the langar attendance drawn with HTO blocks; making three-digit numbers from given digits and filling number sequences.
+- **Objective** Read, write and build three-digit numbers and compare them.
+- **Student can** I can build 508 with blocks and write it in the table.
+- **Mathematical ideas** three-digit place value; number names; making numbers from given digits
+- **Representations** HTO Dienes blocks; digit cards
+- **Prerequisites** pragati_iu_g03_ch06_u2
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Grouping and regrouping in tens
+
+- **Id** `pragati_iu_g04_ch04_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch04`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9, 10, 11, 12
+- **Source** demm1, printed pp. 46–50 (PDF pp. 8–12), read 2026-09-30. Establishes: Breaking up one thousand on the number line; circling groups of ten ones and ten tens; writing numbers for "15 Tens and 23 Ones" and similar.
+- **Objective** Regroup ones into tens and tens into hundreds, and read the number either way.
+- **Student can** I can say that 15 tens and 23 ones is 173.
+- **Mathematical ideas** regrouping; equivalent representations of a number; place-value table
+- **Representations** Dienes blocks; circling groups of ten
+- **Prerequisites** pragati_iu_g04_ch04_u1
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Numbers beyond 1000
+
+- **Id** `pragati_iu_g04_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch04`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14, 15, 16
+- **Source** demm1, printed pp. 51–54 (PDF pp. 13–16), read 2026-09-30. Establishes: The Th H T O table built from tokens; the expanded-form table to 3019; sequences forwards and backwards; the place-value slider and arrow cards.
+- **Objective** Read, write and expand four-digit numbers using thousands.
+- **Student can** I can write 3009 in expanded form and in words.
+- **Mathematical ideas** four-digit place value; expanded form; tokens for 1000
+- **Representations** number tokens; ThHTO table; arrow cards
+- **Prerequisites** pragati_iu_g04_ch04_u2
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Four-digit numbers on the number line
+
+- **Id** `pragati_iu_g04_ch04_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch04`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19
+- **Source** demm1, printed pp. 55–57 (PDF pp. 17–19), read 2026-09-30. Establishes: Which numbers lie between 2226 and 3226; marking 1043, 1069 and 1084 and then 2025-2245 on their lines; tokens read back into the table.
+- **Objective** Place four-digit numbers on a number line and find numbers between two given numbers.
+- **Student can** I can mark 1069 on this number line.
+- **Mathematical ideas** position on a scaled line; between-ness; ordering four-digit numbers
+- **Representations** number lines 1000-1100 and 2000-2500
+- **Prerequisites** pragati_iu_g04_ch04_u3
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Comparing and ordering four-digit numbers
+
+- **Id** `pragati_iu_g04_ch04_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch04`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 22
+- **Source** demm1, printed pp. 58–60 (PDF pp. 20–22), read 2026-09-30. Establishes: Plate counts compared month by month with < and >; ordering prices and cricketers' runs; ordering mountain ranges by height; comparing expanded expressions.
+- **Objective** Compare four-digit numbers with < and >, and order a set of them.
+- **Student can** I can put these mountain heights in order from highest to lowest.
+- **Mathematical ideas** comparison by place value; < and > signs; increasing and decreasing order
+- **Representations** ThHTO table; price and height tables
+- **Prerequisites** pragati_iu_g04_ch04_u4
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### How many numbers lie between?
+
+- **Id** `pragati_iu_g04_ch04_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch04`
+- **Evidence depth** FULL_PAGE_INSPECTED
+- **Source** demm1, printed pp. 61–61 (PDF pp. 23–23), read 2026-09-30. Establishes: The challenge comparing 99 numbers between 700 and 800 with the count between 7000 and 8000, and making all 24 four-digit numbers from 2, 3, 4 and 7.
+- **Objective** Reason about how many numbers lie strictly between two given numbers.
+- **Student can** I can work out how many numbers are between 7000 and 8000.
+- **Mathematical ideas** counting numbers in an interval; generalising from a smaller case; making numbers from digits without repetition
+- **Representations** number line; digit cards
+- **Prerequisites** pragati_iu_g04_ch04_u5
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Halves and quarters of a whole
+
+- **Id** `pragati_iu_g04_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch05`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
+- **Source** demm1, printed pp. 63–65 (PDF pp. 1–4), read 2026-09-30. Establishes: Ikra and Samina sharing the sheet; colouring correctly halved figures; five ways of folding a rectangle into quarters; matching parts to their wholes.
+- **Objective** Divide a shape into halves and quarters and write the fraction.
+- **Student can** I can fold a rectangle into four equal parts in more than one way.
+- **Mathematical ideas** equal parts of one whole; notation 1/2 and 1/4; several ways to make the same fraction
+- **Representations** folded paper; shape diagrams
+- **Prerequisites** pragati_iu_g03_ch08_u3
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Unit fractions: the more you share, the smaller the share
+
+- **Id** `pragati_iu_g04_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch05`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8, 9
+- **Source** demm1, printed pp. 66–70 (PDF pp. 5–9), read 2026-09-30. Establishes: The dhokla story as guests keep arriving; shading the share for 6, 9 and 11 people; comparing 1/5 with 1/4 and 1/9 with 1/6.
+- **Objective** Write unit fractions for sharing among any number, and compare them.
+- **Student can** I can say why one-ninth is smaller than one-sixth.
+- **Mathematical ideas** unit fraction 1/n; comparing unit fractions; fraction as a share
+- **Representations** circular paper (dhokla) model; fraction kit
+- **Prerequisites** pragati_iu_g04_ch05_u1
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Non-unit fractions
+
+- **Id** `pragati_iu_g04_ch05_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch05`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12, 13
+- **Source** demm1, printed pp. 71–74 (PDF pp. 10–13), read 2026-09-30. Establishes: The flower garden written as 3/5 and 4/5; the dosa toppings; fractions of a set of 12 cookies shared among 2, 3, 4 and 6 children.
+- **Objective** Write and read fractions such as three-fifths for several parts of a whole.
+- **Student can** I can write the fraction for the rose part of the garden.
+- **Mathematical ideas** non-unit fractions; adding unit fractions to make a fraction; fraction of a region
+- **Representations** garden diagram; dosa toppings; fraction strips
+- **Prerequisites** pragati_iu_g04_ch05_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Equivalent fractions by folding
+
+- **Id** `pragati_iu_g04_ch05_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch05`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16, 17, 18
+- **Source** demm1, printed pp. 75–79 (PDF pp. 14–18), read 2026-09-30. Establishes: Folding into thirds then halves to get sixths; the 1/2 = 2/4 = 4/8 chain; the fraction chart questions; identifying and shading fractions in mixed diagrams.
+- **Objective** See that different fractions can name the same part.
+- **Student can** I can show that one-half is the same as two-quarters.
+- **Mathematical ideas** equivalent fractions; halving repeatedly; fraction chart
+- **Representations** folded paper; fraction chart and kit
+- **Prerequisites** pragati_iu_g04_ch05_u3
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Metres: estimating and measuring long lengths
+
+- **Id** `pragati_iu_g04_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch06`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
+- **Source** demm1, printed pp. 81–83 (PDF pp. 1–4), read 2026-09-30. Establishes: Making 1 m, 5 m and 10 m lines; the long-jump measuring table; guessing lengths of a bus, a whale and a cricket bat in metres.
+- **Objective** Estimate and measure lengths in metres using a rope you make.
+- **Student can** I can measure my long jump in metres.
+- **Mathematical ideas** standard unit metre; estimate then measure; comparing measurements
+- **Representations** 1 m, 5 m and 10 m ropes; measuring tape
+- **Prerequisites** pragati_iu_g03_ch10_u2
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Centimetres and the scale
+
+- **Id** `pragati_iu_g04_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch06`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8
+- **Source** demm1, printed pp. 84–87 (PDF pp. 5–8), read 2026-09-30. Establishes: Chutki's plant measured on a tape; measuring objects with a scale and ordering them; estimating what is less than 1 cm; the treasure-hunt route measured in centimetres.
+- **Objective** Measure small lengths in centimetres with a scale and estimate first.
+- **Student can** I can measure this pencil in centimetres.
+- **Mathematical ideas** centimetre; reading a scale; estimation against a known unit
+- **Representations** scale/ruler; measuring tape; hand span
+- **Prerequisites** pragati_iu_g04_ch06_u1
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Metres and centimetres together
+
+- **Id** `pragati_iu_g04_ch06_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch06`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11
+- **Source** demm1, printed pp. 88–90 (PDF pp. 9–11), read 2026-09-30. Establishes: Filling the m/cm number line; the sarpanch's well depths recorded by two people in different units; matching 1 m 40 cm with 140 cm.
+- **Objective** Convert between metres and centimetres and compare mixed measures.
+- **Student can** I can say that 2 m 30 cm is 230 cm.
+- **Mathematical ideas** 1 m = 100 cm; conversion; comparing mixed units
+- **Representations** metre and centimetre number line; well-depth table
+- **Prerequisites** pragati_iu_g04_ch06_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Perimeter
+
+- **Id** `pragati_iu_g04_ch06_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch06`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15
+- **Source** demm1, printed pp. 91–94 (PDF pp. 12–15), read 2026-09-30. Establishes: Bhola's brick boundary; perimeters on the dot grid; shapes with equal perimeters; drawing three different shapes with perimeter 20 cm.
+- **Objective** Find the perimeter of a shape by measuring or counting its boundary.
+- **Student can** I can find the perimeter of this shape on the dot grid.
+- **Mathematical ideas** perimeter as the boundary length; comparing perimeters; drawing shapes with a given perimeter
+- **Representations** dot grid; brick boundary picture; scale
+- **Prerequisites** pragati_iu_g04_ch06_u3
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Money: costs, payment and balance
+
+- **Id** `pragati_iu_g04_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch07`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** demm1, printed pp. 96–99 (PDF pp. 1–5), read 2026-09-30. Establishes: The trip poster and shopping list; the cost/paid/balance table; what `163 might have bought; the note-and-balance puzzle.
+- **Objective** Work out totals, payment and balance in rupees.
+- **Student can** I can find what is left from `200 after buying these.
+- **Mathematical ideas** adding and subtracting money; balance; several ways to make an amount
+- **Representations** price list; play money
+- **Prerequisites** pragati_iu_g03_ch12_u5
+- **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Adding four-digit numbers with regrouping
+
+- **Id** `pragati_iu_g04_ch07_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch07`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11
+- **Source** demm1, printed pp. 101–105 (PDF pp. 7–11), read 2026-09-30. Establishes: Teachers and children counted for the trip; 38 + 16 and 185 + 125 shown with blocks, tokens and the written procedure; the Kalakshitij totals.
+- **Objective** Add numbers with regrouping, estimating first.
+- **Student can** I can estimate 438 + 476 and then add it.
+- **Mathematical ideas** column addition with regrouping; estimation before calculation; tokens to algorithm
+- **Representations** Dienes blocks and tokens; HTO columns
+- **Prerequisites** pragati_iu_g03_ch12_u1
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Subtracting with regrouping
+
+- **Id** `pragati_iu_g04_ch07_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch07`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15, 16
+- **Source** demm1, printed pp. 106–110 (PDF pp. 12–16), read 2026-09-30. Establishes: Pusaw and fruit-plate comparison; mango counts across two years; library book pages compared; aligned column practice.
+- **Objective** Subtract three- and four-digit numbers, exchanging where needed.
+- **Student can** I can work out 83 - 46 and check my estimate.
+- **Mathematical ideas** column subtraction with exchange; difference as comparison; estimation
+- **Representations** tokens; HTO columns; box diagram
+- **Prerequisites** pragati_iu_g04_ch07_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Choosing an easier way to calculate
+
+- **Id** `pragati_iu_g04_ch07_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch07`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19, 20
+- **Source** demm1, printed pp. 111–114 (PDF pp. 17–20), read 2026-09-30. Establishes: Passengers boarding and leaving a train; finding quick ways; making two numbers with a given sum or difference; the missing-digit puzzles.
+- **Objective** Find quick strategies for sums and differences and explain them.
+- **Student can** I can add 4990 + 310 in my head and say how.
+- **Mathematical ideas** compensation and friendly numbers; mental strategies; making your own problems
+- **Representations** number line; worked examples
+- **Prerequisites** pragati_iu_g04_ch07_u3
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Triangle sum puzzle
+
+- **Id** `pragati_iu_g04_ch07_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch07`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6
+- **Source** demm1, printed pp. 100–100 (PDF pp. 6–6), read 2026-09-30. Establishes: Placing 1-6 on a triangle so each side sums to 9, then 10, and exploring which other totals can be made.
+- **Objective** Place numbers so that each side of a triangle has the same total.
+- **Student can** I can place 1 to 6 so every side adds to 9.
+- **Mathematical ideas** constraint reasoning; trialling systematically; which totals are possible
+- **Representations** triangle diagram with circles
+- **Prerequisites** pragati_iu_g04_ch07_u1
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Grams and kilograms
+
+- **Id** `pragati_iu_g04_ch08_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch08`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** demm1, printed pp. 116–119 (PDF pp. 1–5), read 2026-09-30. Establishes: Ordering animals by weight; estimating fruit and vegetable weights; 4 packets of 250 g balancing 1 kg; which way the pan tilts; erasers matched against known weights.
+- **Objective** Estimate and compare weights in grams and kilograms and convert between them.
+- **Student can** I can say how many 250 g packets balance 1 kg.
+- **Mathematical ideas** 1 kg = 1000 g; fractional parts of a kilogram; estimation against a known weight
+- **Representations** pan balance; weights of 100 g, 250 g, 500 g
+- **Prerequisites** pragati_iu_g03_ch11_u3
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Weighing in daily life
+
+- **Id** `pragati_iu_g04_ch08_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch08`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8
+- **Source** demm1, printed pp. 120–122 (PDF pp. 6–8), read 2026-09-30. Establishes: Types of weighing machines; monthly household consumption of atta, rice, pulses and sugar; objects you can lift easily or with effort.
+- **Objective** Read weighing machines and reason about loads people lift.
+- **Student can** I can say which weighing machine suits which job.
+- **Mathematical ideas** choosing a measuring instrument; estimating household quantities; comparing loads
+- **Representations** pictures of weighing machines; household consumption table
+- **Prerequisites** pragati_iu_g04_ch08_u1
+- **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Litres and millilitres
+
+- **Id** `pragati_iu_g04_ch08_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch08`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11
+- **Source** demm1, printed pp. 123–125 (PDF pp. 9–11), read 2026-09-30. Establishes: 500 ml and 250 ml bottles filling a litre; 10 ml dosing cups; Mr Krishna packing 1 l of oil into different bottle sizes.
+- **Objective** Measure capacity in litres and millilitres and convert between them.
+- **Student can** I can say how many 250 ml bottles fill a litre.
+- **Mathematical ideas** 1 l = 1000 ml; fractional parts of a litre; packing a quantity into bottles
+- **Representations** bottles of 100 ml to 1 l; dosing cup
+- **Prerequisites** pragati_iu_g03_ch11_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### How much do we use?
+
+- **Id** `pragati_iu_g04_ch08_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch08`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13
+- **Source** demm1, printed pp. 126–127 (PDF pp. 12–13), read 2026-09-30. Establishes: How much water you, a crow and an elephant drink; measuring the water lost from a dripping tap in an hour.
+- **Objective** Estimate everyday consumption of water and reason about waste.
+- **Student can** I can estimate how much water my family uses in a day.
+- **Mathematical ideas** estimation in context; comparing quantities; data from your own observation
+- **Representations** containers; a dripping-tap measurement
+- **Prerequisites** pragati_iu_g04_ch08_u3
+- **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Multiples and common multiples
+
+- **Id** `pragati_iu_g04_ch09_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch09`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
+- **Source** demm1, printed pp. 128–130 (PDF pp. 1–3), read 2026-09-30. Establishes: Frog, squirrel, rabbit and kangaroo jumps; which numbers each lands on; common multiples of 3 and 4 and of other pairs.
+- **Objective** Find multiples of a number by jumping, and multiples common to two numbers.
+- **Student can** I can say whether 67 is a multiple of 3.
+- **Mathematical ideas** multiples; skip counting on a line; common multiples
+- **Representations** number line with animal jumps; hundred chart
+- **Prerequisites** pragati_iu_g03_ch07_u4
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Multiplication as arrays and equal groups
+
+- **Id** `pragati_iu_g04_ch09_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch09`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6, 7
+- **Source** demm1, printed pp. 131–134 (PDF pp. 4–7), read 2026-09-30. Establishes: Petals of 12 lilies; marigold saplings in rows; strawberry trays; the doubling verses and the doubling practice.
+- **Objective** Write equal-group and array situations as multiplication.
+- **Student can** I can write the marigold tray as rows times columns.
+- **Mathematical ideas** array structure; multiplier and multiplicand; doubling
+- **Representations** flower and sapling arrays; trays of strawberries
+- **Prerequisites** pragati_iu_g03_ch07_u3
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Patterns in the multiplication chart
+
+- **Id** `pragati_iu_g04_ch09_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch09`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9
+- **Source** demm1, printed pp. 135–136 (PDF pp. 8–9), read 2026-09-30. Establishes: Filling the chart; the green diagonal; comparing row 7 with column 7; colouring common multiples; patterns in the ones digits of row 5.
+- **Objective** Find and explain patterns in the times-table chart.
+- **Student can** I can say why the numbers in row 7 and column 7 are the same.
+- **Mathematical ideas** commutativity in the chart; square numbers on the diagonal; patterns in ones digits
+- **Representations** multiplication chart
+- **Prerequisites** pragati_iu_g04_ch09_u2
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Multiplying by tens and by two-digit numbers
+
+- **Id** `pragati_iu_g04_ch09_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch09`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12
+- **Source** demm1, printed pp. 137–139 (PDF pp. 10–12), read 2026-09-30. Establishes: Wheels in 10 and 20 tricycles; 18 boxes of 4 cupcakes split as 10 and 8; 23 carts needing 8 rods each.
+- **Objective** Multiply using tens, splitting a number into tens and ones.
+- **Student can** I can work out 18 x 4 by splitting 18 into 10 and 8.
+- **Mathematical ideas** multiplying by 10 and multiples of 10; partitioning a factor; recording partial products
+- **Representations** tricycle wheels; box/area sketch
+- **Prerequisites** pragati_iu_g04_ch09_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Division by taking out groups
+
+- **Id** `pragati_iu_g04_ch09_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch09`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14
+- **Source** demm1, printed pp. 140–141 (PDF pp. 13–14), read 2026-09-30. Establishes: Fitting 58 wheels onto 3-wheeled tempos; 88 legs into cows; the step-by-step group-removal table.
+- **Objective** Divide by repeatedly taking out groups, and record the steps.
+- **Student can** I can find 88 divided by 4 by taking out groups of 4.
+- **Mathematical ideas** division as repeated subtraction of groups; recording a division; remainder
+- **Representations** step tables; pictures of wheels and legs
+- **Prerequisites** pragati_iu_g03_ch07_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Multiplying and dividing with hundreds
+
+- **Id** `pragati_iu_g04_ch09_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch09`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 16, 17, 18, 19, 20, 21
+- **Source** demm1, printed pp. 142–148 (PDF pp. 15–21), read 2026-09-30. Establishes: 100 autorickshaws with 8 passengers; kulhads in 174 boxes; sharing money among children; the true/sometimes/never statements about products and quotients.
+- **Objective** Use multiples of 100 to multiply and divide larger numbers.
+- **Student can** I can work out 174 x 6 by splitting into hundreds, tens and ones.
+- **Mathematical ideas** multiples of 100; partitioning into H, T and O; patterns in division
+- **Representations** token diagrams; partial-product tables
+- **Prerequisites** pragati_iu_g04_ch09_u4
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Addition chart patterns and a winning strategy
+
+- **Id** `pragati_iu_g04_ch10_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch10`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
+- **Source** demm1, printed pp. 150–151 (PDF pp. 1–3), read 2026-09-30. Establishes: Reaching a target by adding 1 or 2; patterns in the addition chart; sums along rows, columns and diagonals of a window frame.
+- **Objective** Find patterns in an addition chart and reason about a game.
+- **Student can** I can say which number lets me win the adding game.
+- **Mathematical ideas** patterns in an addition table; diagonal sums; backward reasoning in a game
+- **Representations** addition chart; game record
+- **Prerequisites** pragati_iu_g04_ch09_u3
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Adding four-digit numbers in context
+
+- **Id** `pragati_iu_g04_ch10_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch10`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6
+- **Source** demm1, printed pp. 152–154 (PDF pp. 4–6), read 2026-09-30. Establishes: Elephant populations of Karnataka and Kerala; tiger counts compared across states; the ThHTO regrouping worked with tokens.
+- **Objective** Add four-digit numbers with regrouping in real data problems.
+- **Student can** I can add the elephant populations of two states.
+- **Mathematical ideas** four-digit addition; regrouping across places; estimation
+- **Representations** tokens; ThHTO columns; wildlife data
+- **Prerequisites** pragati_iu_g04_ch07_u2
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Subtracting four-digit numbers in context
+
+- **Id** `pragati_iu_g04_ch10_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch10`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10
+- **Source** demm1, printed pp. 155–158 (PDF pp. 7–10), read 2026-09-30. Establishes: Leopard counts; park visitor numbers; juice bottle counts built from one another; vehicle counts on the map.
+- **Objective** Subtract four-digit numbers with exchange, in real data problems.
+- **Student can** I can find how many more visitors came in December.
+- **Mathematical ideas** four-digit subtraction; exchange across places; difference in context
+- **Representations** tokens; ThHTO columns; visitor data
+- **Prerequisites** pragati_iu_g04_ch10_u2
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Money records and deposit slips
+
+- **Id** `pragati_iu_g04_ch10_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch10`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12
+- **Source** demm1, printed pp. 159–160 (PDF pp. 11–12), read 2026-09-30. Establishes: Raju's deposit slip totalled by denomination, then slips completed for Rani and Roja with amounts written in words.
+- **Objective** Read and complete a deposit slip, totalling notes and coins.
+- **Student can** I can fill the slip for `2045 in notes and coins.
+- **Mathematical ideas** totalling money by denomination; writing an amount in words; checking a record
+- **Representations** deposit slips; notes and coins
+- **Prerequisites** pragati_iu_g04_ch07_u1
+- **Role** GUIDED_APPLICATION · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Quicker ways with four-digit numbers
+
+- **Id** `pragati_iu_g04_ch10_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch10`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14, 15
+- **Source** demm1, printed pp. 161–163 (PDF pp. 13–15), read 2026-09-30. Establishes: Easy ways for 8787 - 99, 4990 + 310 and similar; then aligned column practice for addition and subtraction.
+- **Objective** Solve four-digit sums and differences using friendly numbers.
+- **Student can** I can work out 8787 - 99 quickly and explain how.
+- **Mathematical ideas** compensation with near-round numbers; mental strategies; checking by estimation
+- **Representations** worked pairs; number line
+- **Prerequisites** pragati_iu_g04_ch07_u4
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Lines of symmetry
+
+- **Id** `pragati_iu_g04_ch11_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch11`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
+- **Source** demm1, printed pp. 165–167 (PDF pp. 1–4), read 2026-09-30. Establishes: The ink-blot design; the paper aeroplane's lines of symmetry; holes and cuts made by folding; completing symmetrical designs on the grid.
+- **Objective** Find lines of symmetry by folding, cutting and drawing.
+- **Student can** I can fold this shape to show its line of symmetry.
+- **Mathematical ideas** line symmetry; folding to test symmetry; more than one line of symmetry
+- **Representations** ink-blot designs; paper folding and cutting; dot grid
+- **Prerequisites** pragati_iu_g03_ch14_u1
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Mirror images of numbers and letters
+
+- **Id** `pragati_iu_g04_ch11_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch11`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6
+- **Source** demm1, printed pp. 168–169 (PDF pp. 5–6), read 2026-09-30. Establishes: Which digits have the same mirror image; four-digit numbers that read the same in a mirror; mirror writing on an ambulance and your own mirror words.
+- **Objective** Predict and check the mirror image of digits, letters and words.
+- **Student can** I can say which digits look the same in a mirror.
+- **Mathematical ideas** reflection; invariance under reflection; mirror writing
+- **Representations** mirror; digit and letter cards
+- **Prerequisites** pragati_iu_g03_ch14_u2
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Tiles, tiling and symmetry in designs
+
+- **Id** `pragati_iu_g04_ch11_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch11`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11
+- **Source** demm1, printed pp. 170–174 (PDF pp. 7–11), read 2026-09-30. Establishes: Identifying the repeating tile; making tiles by joining shapes; the catty-wall slide-and-trace construction; symmetry hunted on a nature walk.
+- **Objective** Make tiles and tile a surface with no gaps, and test the tiles for symmetry.
+- **Student can** I can find the repeating tile in this pattern and continue it.
+- **Mathematical ideas** repeating unit in a tiling; tessellation without gaps; symmetry of a tile
+- **Representations** shape cut-outs; tile patterns; tracing paper
+- **Prerequisites** pragati_iu_g03_ch14_u3
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Calendars and leap years
+
+- **Id** `pragati_iu_g04_ch12_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch12`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
+- **Source** demm1, printed pp. 176–177 (PDF pp. 1–3), read 2026-09-30. Establishes: February 2024 against February 2025; consecutive leap years; manufacturing and expiry dates on a packet; the day a date falls on.
+- **Objective** Use a calendar to find dates and days, and explain leap years.
+- **Student can** I can say which years are leap years and why February changes.
+- **Mathematical ideas** calendar structure; leap year; counting days between dates
+- **Representations** calendar pages for two years; packet dates
+- **Prerequisites** pragati_iu_g03_ch13_u1
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### AM, PM and the 24-hour clock
+
+- **Id** `pragati_iu_g04_ch12_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch12`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6
+- **Source** demm1, printed pp. 178–180 (PDF pp. 4–6), read 2026-09-30. Establishes: The doctor's day in hours; the AM/PM discussion; the table matching clock time to digital 24-hour time.
+- **Objective** Read and write times in AM/PM and in 24-hour form.
+- **Student can** I can write 5:20 PM as 17:20 hours.
+- **Mathematical ideas** AM and PM; 24-hour notation; matching two ways of writing a time
+- **Representations** analog and digital clocks; conversion table
+- **Prerequisites** pragati_iu_g03_ch13_u3
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Time intervals in hours and minutes
+
+- **Id** `pragati_iu_g04_ch12_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch12`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9
+- **Source** demm1, printed pp. 181–183 (PDF pp. 7–9), read 2026-09-30. Establishes: Raghav's milk trip; drawing times on clocks; the successive 15-minute steps of Akira's morning; reading three friends' clock readings and judging who is right.
+- **Objective** Find how long an activity takes and the time after a given interval.
+- **Student can** I can say what time it is 15 minutes after 8:00.
+- **Mathematical ideas** elapsed time in minutes; adding intervals to a time; half and quarter hours
+- **Representations** clock faces to draw; activity timelines
+- **Prerequisites** pragati_iu_g04_ch12_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Building times tables beyond ten
+
+- **Id** `pragati_iu_g04_ch13_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch13`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** demm1, printed pp. 185–188 (PDF pp. 1–5), read 2026-09-30. Establishes: The 5 x 15 arrangement split into 10 and 5; constructing the times-15 table; tables 11-20; building times-14 by splitting and doubling.
+- **Objective** Construct times tables for 11 to 20 by splitting arrangements.
+- **Student can** I can build the times-15 table by splitting into 10 and 5.
+- **Mathematical ideas** distributive splitting; constructing a table; comparing related tables
+- **Representations** pebble arrays; table grids
+- **Prerequisites** pragati_iu_g03_ch07_u5
+- **Role** NEW_INSTRUCTION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Multiplying by tens and hundreds
+
+- **Id** `pragati_iu_g04_ch13_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch13`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
+- **Source** demm1, printed pp. 189–190 (PDF pp. 6–7), read 2026-09-30. Establishes: 26 tempo travellers of 10; products with multiples of 10; 24 x 40, 50 x 60 and 70 x 80.
+- **Objective** Multiply two-digit and three-digit numbers by tens and hundreds.
+- **Student can** I can work out 26 x 10 and 24 x 40.
+- **Mathematical ideas** multiplying by multiples of 10 and 100; place-value reasoning in products; patterns across related products
+- **Representations** token diagrams; product tables
+- **Prerequisites** pragati_iu_g04_ch09_u6
+- **Role** NEW_INSTRUCTION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Division with a remainder
+
+- **Id** `pragati_iu_g04_ch13_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch13`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9
+- **Source** demm1, printed pp. 191–192 (PDF pp. 8–9), read 2026-09-30. Establishes: 324 children in coaches of 14, with the remaining children named as the remainder; then practice divisions.
+- **Objective** Divide by taking out groups and interpret the remainder in context.
+- **Student can** I can say how many coaches 324 children need.
+- **Mathematical ideas** division with remainder; interpreting the remainder; recording group removal
+- **Representations** step table; coach and boat contexts
+- **Prerequisites** pragati_iu_g04_ch09_u5
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Multiplying larger numbers by splitting
+
+- **Id** `pragati_iu_g04_ch13_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch13`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12, 13, 14, 15, 16
+- **Source** demm1, printed pp. 193–199 (PDF pp. 10–16), read 2026-09-30. Establishes: Multiples of 100 patterns; 11 x 200 three ways; sets A and B of related products; the 64 x 152 grid for the Vande Bharat passengers; 960 / 64 for the boat race.
+- **Objective** Multiply a two-digit by a three-digit number using a split grid.
+- **Student can** I can work out 64 x 152 by splitting both numbers.
+- **Mathematical ideas** area/grid method; partial products; using known products to find new ones
+- **Representations** split grid; token arrays
+- **Prerequisites** pragati_iu_g04_ch13_u2
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Number puzzles with products
+
+- **Id** `pragati_iu_g04_ch13_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch13`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19
+- **Source** demm1, printed pp. 200–202 (PDF pp. 17–19), read 2026-09-30. Establishes: The mystery matrix; the multiplication and division sentence search; Chinnu's coins and the vehicle capacity matching.
+- **Objective** Solve grid and search puzzles that need products and quotients.
+- **Student can** I can fill the mystery matrix so every row and column gives its product.
+- **Mathematical ideas** constraint reasoning with products; searching a grid for number sentences; patterns in special products
+- **Representations** mystery matrix; number search grid
+- **Prerequisites** pragati_iu_g04_ch13_u4
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Asking a good data question and recording answers
+
+- **Id** `pragati_iu_g04_ch14_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch14`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
+- **Source** demm1, printed pp. 204–205 (PDF pp. 1–3), read 2026-09-30. Establishes: Comparing Rohan's and Anjali's questions; recording 45 children's responses as letters; organising them into a table and reading it.
+- **Objective** Choose a question that can be answered by data and record the responses.
+- **Student can** I can tell which question will find the most liked subject.
+- **Mathematical ideas** survey question; recording responses; tally into a table
+- **Representations** response lists; tally table
+- **Prerequisites** pragati_iu_g02_ch11_u3
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
+
+#### Comparing ways of showing data
+
+- **Id** `pragati_iu_g04_ch14_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_demm1_ch14`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6
+- **Source** demm1, printed pp. 206–208 (PDF pp. 4–6), read 2026-09-30. Establishes: The golas recorded two ways by two children; the chess-or-cricket two-way activity; the Bal Mela pictograph of fruit chaats and sandwiches.
+- **Objective** Compare tally, table and pictograph and answer questions from each.
+- **Student can** I can read the pictograph and say which day sold most.
+- **Mathematical ideas** pictograph; choosing a representation; reading and comparing data displays
+- **Representations** pictograph with a key; two-way tables
+- **Prerequisites** pragati_iu_g03_ch14_u4
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Chapter-level official record with several distinct teachable ideas; Maths Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
 
 ## Records read and found non-instructional
 

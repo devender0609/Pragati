@@ -892,6 +892,93 @@ describe('§2/§4 Class 3 uses canonical official records only', () => {
   });
 });
 
+// v0.84.0 checkpoint 12 — Class 4, on the locked method.
+describe('Class 4 follows the locked method', () => {
+  it('has all 14 official chapters with extents and no invented section', () => {
+    const acc = officialRecordAccounting(4);
+    expect(acc.officialRecordsTotal).toBe(14);
+    expect(acc.missingExtents).toEqual([]);
+    for (const u of unitsForClass(4)) {
+      expect(u.officialRecordId, u.instructionalUnitId).toMatch(/^ncert_demm1_ch\d{2}$/);
+      expect(u.sourceEvidence.officialSectionId, u.instructionalUnitId).toBeNull();
+      expect(u.instructionalUnitId.startsWith('pragati_iu_g04_')).toBe(true);
+    }
+    for (const s of SOURCE_SEGMENTS.filter((s) => s.officialRecordId.includes('demm1'))) {
+      expect(s.sourceSegmentId.startsWith('pragati_srcseg_')).toBe(true);
+    }
+  });
+
+  it('gives every Class 4 page a home', () => {
+    for (const ext of RECORD_EXTENTS.filter((e) => e.officialRecordId.includes('demm1'))) {
+      const covered = new Set<number>();
+      for (const e of [
+        ...instructionalUnitsFor(ext.officialRecordId).map((u) => u.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === ext.officialRecordId).map((s) => s.sourceEvidence),
+      ]) {
+        for (let p = e.pdfPageStart; p <= e.pdfPageEnd; p += 1) covered.add(p);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${ext.officialRecordId} p${p}`).toBe(true);
+      }
+    }
+  });
+
+  it('derives Class 4 completion and holds the status semantics', () => {
+    const p = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 4)!;
+    expect(p.officialRecordsTotal).toBe(14);
+    if (p.status === 'DECOMPOSITION_SOURCE_COMPLETE') {
+      expect(p.pagesFullTextPending).toBe(0);
+      expect(p.visualPagesPending).toBe(0);
+      expect(p.officialRecordsFullyInspected).toBe(14);
+    }
+    for (const u of unitsForClass(4)) {
+      expect(u.decompositionStatus, u.instructionalUnitId).toBe(derivedStatusFor(u));
+    }
+    expect(unitsForClass(4).length).toBeGreaterThan(14);
+  });
+
+  it('carries no duplicate or superseded Class 4 unit', () => {
+    const units = unitsForClass(4);
+    const seen = new Map<string, string>();
+    for (const u of units) {
+      for (const key of [u.mathematicalObjective, u.studentCanStatement,
+        `${u.officialRecordId}:${u.sourceEvidence.pdfPageStart}-${u.sourceEvidence.pdfPageEnd}`]) {
+        expect(seen.has(key), `${u.instructionalUnitId} duplicates ${seen.get(key)}`).toBe(false);
+        seen.set(key, u.instructionalUnitId);
+      }
+    }
+  });
+
+  it('links Class 4 prerequisites to real earlier units', () => {
+    const ids = new Set(PRAGATI_INSTRUCTIONAL_UNITS.map((u) => u.instructionalUnitId));
+    let linked = 0;
+    for (const u of unitsForClass(4)) {
+      for (const p of u.prerequisites) {
+        if (p.startsWith('pragati_iu_')) {
+          expect(ids.has(p as `pragati_iu_${string}`), `${u.instructionalUnitId} → ${p}`).toBe(true);
+          linked += 1;
+        }
+      }
+    }
+    expect(linked).toBeGreaterThan(30);
+  });
+
+  it('publishes a Class 4 audit that contains only Class 4', () => {
+    const a = read('PAGE_LEVEL_INTENT_AUDIT_CLASS_4.md');
+    expect(a).not.toMatch(/pragati_iu_g0[1235]_/);
+    expect(a).not.toMatch(/ncert_(aejm1|bejm1|cemm1|eemm1)_/);
+    const listed = [...a.matchAll(/^\| `(ncert_demm1_ch\d{2})` \|/gm)].map((m) => m[1]);
+    expect(new Set(listed).size).toBe(14);
+    for (const u of unitsForClass(4)) expect(a, u.instructionalUnitId).toContain(u.instructionalUnitId);
+  });
+
+  it('leaves Classes 1-3 untouched', () => {
+    expect(unitsForClass(1).length).toBe(47);
+    expect(unitsForClass(2).length).toBe(59);
+    expect(unitsForClass(3).length).toBe(59);
+  });
+});
+
 describe('§21/§22 Class 3 readiness and completion are evidence-derived', () => {
   it('holds back every unit whose visual pass is unfinished', () => {
     for (const u of unitsForClass(3)) {

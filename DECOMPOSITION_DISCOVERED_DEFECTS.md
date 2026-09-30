@@ -50,6 +50,18 @@ every page inspected.
 | The Class 3 audit listed source segments and units from Classes 1-2 | checkpoint 10 review | checkpoint 11 — both generators filter by class; tests assert no cross-class ids appear |
 | "Visual seen" counted every rendered page against the visual-required denominator, giving rows like 20 seen of 17 required | checkpoint 10 review | checkpoint 11 — seen counts only required-and-inspected pages, with "Pages rendered" reported separately; a test requires seen ≤ required and equality for FULLY_INSPECTED |
 
+## Class 4 (checkpoint 12)
+
+**No methodology defect.** The locked method carried over to Math-Mela without
+change. One reporting defect was found and fixed in the same checkpoint: the
+Classes 1-2 audit generator excluded Class 3 by name (`!includes('cemm1')`)
+rather than selecting its own books, so the 14 new Class 4 chapters leaked into
+it the moment they existed. Both audits now select their own books positively,
+and the test that counts 24 chapters caught it.
+
+**No source discrepancy.** All 14 Math-Mela chapter titles, order and extents
+matched the canonical records.
+
 ## Class 3 (checkpoint 9)
 
 **No methodology defect.** The locked Classes 1-2 method carried over to

@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-155 units are READY_FOR_AUTHORING and 10 are held back
+209 units are READY_FOR_AUTHORING and 15 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -34,7 +34,14 @@ pedagogical QA plus human review — not for convenience of generation.
 | 17 | Class 3 | 8 | Sharing equally, and what is left; Grouping, and seeing an array two ways; Skip counting and building times tables; Patterns and relations between tables; Multiplication and division in problems; Halves: sharing one whole equally between two; Half and double of a number; Quarters, and three-quarters |
 | 18 | Class 3 | 8 | Numbers to 1000; Making numbers from given parts; Comparing lengths without a ruler; The metre, and half and quarter metre; Which holds more?; The litre; Heavier and lighter, and the kilogram; Adding three-digit numbers |
 | 19 | Class 3 | 8 | Subtracting three-digit numbers; Adding and subtracting on the number grid; Money: notes, coins and equal values; Money problems with three-digit amounts; Reading a calendar; Age and dates; Telling time, and how long it takes; Symmetry in malas and rangolis |
-| 20 | Class 3 | 3 | Mirror images; Tiling without gaps; Position, direction and reading a map |
+| 20 | Class 3 | 8 | Mirror images; Tiling without gaps; Position, direction and reading a map; Prisms and pyramids: faces, edges and corners; Sorting solids by their properties; Nets and drawings of solids; Angles: right, acute and obtuse; Shapes made with straws: rigidity and sides |
+| 21 | Class 4 | 8 | Circles: centre, radius and diameter; Views of an object; Position on a grid; Paths, steps and simple maps; Counting large collections by grouping; Odd and even numbers; Numbers to 1000 with HTO blocks; Grouping and regrouping in tens |
+| 22 | Class 4 | 8 | Numbers beyond 1000; Four-digit numbers on the number line; Comparing and ordering four-digit numbers; Halves and quarters of a whole; Unit fractions: the more you share, the smaller the share; Non-unit fractions; Equivalent fractions by folding; Metres: estimating and measuring long lengths |
+| 23 | Class 4 | 8 | Centimetres and the scale; Metres and centimetres together; Perimeter; Money: costs, payment and balance; Adding four-digit numbers with regrouping; Subtracting with regrouping; Choosing an easier way to calculate; Grams and kilograms |
+| 24 | Class 4 | 8 | Weighing in daily life; Litres and millilitres; How much do we use?; Multiples and common multiples; Multiplication as arrays and equal groups; Patterns in the multiplication chart; Multiplying by tens and by two-digit numbers; Division by taking out groups |
+| 25 | Class 4 | 8 | Multiplying and dividing with hundreds; Adding four-digit numbers in context; Subtracting four-digit numbers in context; Money records and deposit slips; Quicker ways with four-digit numbers; Lines of symmetry; Mirror images of numbers and letters; Tiles, tiling and symmetry in designs |
+| 26 | Class 4 | 8 | Calendars and leap years; AM, PM and the 24-hour clock; Time intervals in hours and minutes; Building times tables beyond ten; Multiplying by tens and hundreds; Division with a remainder; Multiplying larger numbers by splitting; Asking a good data question and recording answers |
+| 27 | Class 4 | 1 | Comparing ways of showing data |
 
 ## Held back
 
@@ -48,3 +55,8 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g03_ch09_u2` — Number puzzles and many ways to make a number (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g03_ch09_u4` — Word numerals: numbers said with words (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g03_ch11_u4` — The tricky-balls weighing puzzle (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g04_ch01_u7` — Shape puzzles: cutting, joining and counting (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g04_ch04_u6` — How many numbers lie between? (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g04_ch07_u5` — Triangle sum puzzle (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g04_ch10_u1` — Addition chart patterns and a winning strategy (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g04_ch13_u5` — Number puzzles with products (NEEDS_HUMAN_CHECK, flagged for human check). 
