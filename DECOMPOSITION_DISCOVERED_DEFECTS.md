@@ -50,6 +50,24 @@ every page inspected.
 | The Class 3 audit listed source segments and units from Classes 1-2 | checkpoint 10 review | checkpoint 11 — both generators filter by class; tests assert no cross-class ids appear |
 | "Visual seen" counted every rendered page against the visual-required denominator, giving rows like 20 seen of 17 required | checkpoint 10 review | checkpoint 11 — seen counts only required-and-inspected pages, with "Pages rendered" reported separately; a test requires seen ≤ required and equality for FULLY_INSPECTED |
 
+## Checkpoint-12 review findings — all RESOLVED in checkpoint 13
+
+| Defect | Found | Resolved |
+|---|---|---|
+| Legacy `pagesUnresolved` remained in current canonical state beside the precise fields that replaced it | checkpoint 12 review | checkpoint 13 — removed from data, type and tests; no alias replaces it; a test asserts its absence |
+| The Classes 1-2 audit ledger still selected source segments negatively (`!includes('cemm1')`), so Class 4 segments fed its internal ledger | checkpoint 12 review | checkpoint 13 — all four generators consume `scopeFor(d, [n])`; no `includes` filter remains in any generator |
+| The Class 4 audit ledger took every `nonInstructional` record rather than its own class's | checkpoint 12 review | checkpoint 13 — same scope helper covers units, segments, non-instructional records and extents |
+| Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
+| Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
+
+## Class 5 (checkpoint 13)
+
+**No methodology defect.** The locked method carried over to Class 5 without
+change, and text and visuals were inspected in the same chapter pass.
+
+**No source discrepancy.** All 15 Math-Mela chapter titles, order and extents
+matched the canonical records.
+
 ## Class 4 (checkpoint 12)
 
 **No methodology defect.** The locked method carried over to Math-Mela without

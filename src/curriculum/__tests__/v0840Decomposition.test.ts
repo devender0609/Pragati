@@ -15,6 +15,8 @@ import {
   derivedStatusFor,
   officialRecordAccounting,
   overlapAudit,
+  classScope,
+  decompositionFingerprint,
   overlapJustificationFor,
   OVERLAP_JUSTIFICATIONS,
   recordSourceIsAccountedFor,
@@ -688,7 +690,7 @@ describe('§6/§7 generated prose agrees with the structured values', () => {
       const numbers = (p.note.match(/\d+/g) ?? []).map(Number);
       const allowed = new Set([
         p.pagesInScope, p.pagesFullyInspected, p.visualPagesRequired, p.visualPagesInspected,
-        p.officialRecordsTotal, p.officialRecordsFullyInspected, p.pagesUnresolved, p.chaptersTotal,
+        p.officialRecordsTotal, p.officialRecordsFullyInspected, p.pagesFullTextPending, p.chaptersTotal,
       ]);
       for (const n of numbers) expect(allowed.has(n), `class${p.classNumber} note has stray ${n}`).toBe(true);
     }
@@ -893,6 +895,66 @@ describe('§2/§4 Class 3 uses canonical official records only', () => {
 });
 
 // v0.84.0 checkpoint 12 — Class 4, on the locked method.
+describe('Class 5 follows the locked method', () => {
+  it('has all 15 official chapters with extents and no invented section', () => {
+    const acc = officialRecordAccounting(5);
+    expect(acc.officialRecordsTotal).toBe(15);
+    expect(acc.missingExtents).toEqual([]);
+    for (const u of unitsForClass(5)) {
+      expect(u.officialRecordId, u.instructionalUnitId).toMatch(/^ncert_eemm1_ch\d{2}$/);
+      expect(u.sourceEvidence.officialSectionId, u.instructionalUnitId).toBeNull();
+      expect(u.instructionalUnitId.startsWith('pragati_iu_g05_')).toBe(true);
+    }
+  });
+
+  it('gives every Class 5 page a home and derives completion', () => {
+    for (const ext of classScope([5]).recordExtents) {
+      const covered = new Set<number>();
+      for (const e of [
+        ...instructionalUnitsFor(ext.officialRecordId).map((u) => u.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === ext.officialRecordId).map((s) => s.sourceEvidence),
+      ]) {
+        for (let p = e.pdfPageStart; p <= e.pdfPageEnd; p += 1) covered.add(p);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${ext.officialRecordId} p${p}`).toBe(true);
+      }
+    }
+    const p = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 5)!;
+    if (p.status === 'DECOMPOSITION_SOURCE_COMPLETE') {
+      expect(p.pagesFullTextPending).toBe(0);
+      expect(p.visualPagesPending).toBe(0);
+      expect(p.officialRecordsFullyInspected).toBe(15);
+    }
+    for (const u of unitsForClass(5)) expect(u.decompositionStatus, u.instructionalUnitId).toBe(derivedStatusFor(u));
+  });
+
+  it('carries no duplicate or superseded Class 5 unit', () => {
+    const seen = new Map<string, string>();
+    for (const u of unitsForClass(5)) {
+      for (const key of [u.mathematicalObjective, u.studentCanStatement,
+        `${u.officialRecordId}:${u.sourceEvidence.pdfPageStart}-${u.sourceEvidence.pdfPageEnd}`]) {
+        expect(seen.has(key), `${u.instructionalUnitId} duplicates ${seen.get(key)}`).toBe(false);
+        seen.set(key, u.instructionalUnitId);
+      }
+    }
+  });
+
+  it('records a progression note against the earlier classes', () => {
+    const withNote = unitsForClass(5).filter((u) => (u.notes ?? '').includes('Progression'));
+    expect(withNote.length).toBeGreaterThan(50);
+  });
+
+  it('publishes a Class 5 audit that contains only Class 5', () => {
+    const a = read('PAGE_LEVEL_INTENT_AUDIT_CLASS_5.md');
+    expect(a).not.toMatch(/pragati_iu_g0[1234]_/);
+    expect(a).not.toMatch(/ncert_(aejm1|bejm1|cemm1|demm1)_/);
+    const listed = [...a.matchAll(/^\| `(ncert_eemm1_ch\d{2})` \|/gm)].map((m) => m[1]);
+    expect(new Set(listed).size).toBe(15);
+    for (const u of unitsForClass(5)) expect(a, u.instructionalUnitId).toContain(u.instructionalUnitId);
+  });
+});
+
 describe('Class 4 follows the locked method', () => {
   it('has all 14 official chapters with extents and no invented section', () => {
     const acc = officialRecordAccounting(4);
@@ -972,10 +1034,51 @@ describe('Class 4 follows the locked method', () => {
     for (const u of unitsForClass(4)) expect(a, u.instructionalUnitId).toContain(u.instructionalUnitId);
   });
 
-  it('leaves Classes 1-3 untouched', () => {
+  // v0.84.0 checkpoint 13 §5/§6 — counting units caught nothing: an
+  // objective, a page range or a status could change while the count
+  // held. These fingerprints are the checkpoint-12 state of each
+  // finished class, and any content change to them fails here.
+  it('leaves Classes 1-3 byte-identical, not merely the same size', () => {
     expect(unitsForClass(1).length).toBe(47);
     expect(unitsForClass(2).length).toBe(59);
     expect(unitsForClass(3).length).toBe(59);
+    expect(decompositionFingerprint(1)).toBe('c87bbc16a6846be4');
+    expect(decompositionFingerprint(2)).toBe('9350fc3d4ac57b2d');
+    expect(decompositionFingerprint(3)).toBe('98e0fecafa84155e');
+  });
+
+  it('holds the Class 4 fingerprint once Class 5 work begins', () => {
+    expect(unitsForClass(4).length).toBe(59);
+    expect(decompositionFingerprint(4)).toBe('c540653fe1316870');
+  });
+
+  it('has retired the ambiguous pagesUnresolved field', () => {
+    for (const p of CLASS_DECOMPOSITION_PROGRESS) {
+      const raw = p as unknown as Record<string, unknown>;
+      expect(raw.pagesUnresolved, `class${p.classNumber}`).toBeUndefined();
+      expect(raw.pagesFullTextPending).toBeDefined();
+      expect(raw.visualPagesPending).toBeDefined();
+    }
+  });
+
+  it('represents one policy decision as one policy, not five judgements', () => {
+    const policy = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.humanJudgementPolicyKey);
+    expect(policy.length).toBeGreaterThan(1);
+    const keys = new Set(policy.map((u) => u.humanJudgementPolicyKey));
+    expect(keys.size).toBeGreaterThan(0);
+    // Each still names its own material, so no two questions are identical.
+    const qs = policy.map((u) => u.humanJudgementQuestion);
+    expect(new Set(qs).size).toBe(qs.length);
+  });
+
+  it('gives every class-specific generator only its own class', () => {
+    for (const set of [[1, 2], [3], [4]]) {
+      const scope = classScope(set);
+      for (const u of scope.units) expect(set).toContain(u.classNumber);
+      for (const s of scope.sourceSegments) expect(scope.officialRecordIds).toContain(s.officialRecordId);
+      for (const e of scope.recordExtents) expect(scope.officialRecordIds).toContain(e.officialRecordId);
+      for (const r of scope.nonInstructional) expect(scope.officialRecordIds).toContain(r.officialRecordId);
+    }
   });
 });
 
@@ -996,7 +1099,7 @@ describe('§21/§22 Class 3 readiness and completion are evidence-derived', () =
 
   it('keeps Class 3 IN_PROGRESS while picture-carried pages are unseen', () => {
     const p = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 3)!;
-    expect(p.pagesUnresolved).toBe(0); // all text read
+    expect(p.pagesFullTextPending).toBe(0); // all text read
     if ((p.visualPagesInspected ?? 0) < (p.visualPagesRequired ?? 0)) {
       expect(p.status).toBe('IN_PROGRESS');
       expect(p.officialRecordsFullyInspected).toBeLessThan(p.officialRecordsTotal!);

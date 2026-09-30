@@ -134,21 +134,21 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_eemm1_ch01 | chapter | 1 | We the Travellers — I | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch02 | chapter | 2 | Fractions | 17 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch03 | chapter | 3 | Angles as Turns | 32 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch04 | chapter | 4 | We the Travellers — II | 42 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch05 | chapter | 5 | Far and Near | 57 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch06 | chapter | 6 | The Dairy Farm | 70 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch07 | chapter | 7 | Shapes and Patterns | 92 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch08 | chapter | 8 | Weight and Capacity | 104 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch09 | chapter | 9 | Coconut Farm | 119 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch10 | chapter | 10 | Symmetrical Designs | 136 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch11 | chapter | 11 | Grandmother’s Quilt | 142 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch12 | chapter | 12 | Racing Seconds | 155 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch13 | chapter | 13 | Animal Jumps | 164 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch14 | chapter | 14 | Maps and Locations | 171 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_eemm1_ch15 | chapter | 15 | Data Through Pictures | 179 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch01 | chapter | 1 | We the Travellers — I | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch02 | chapter | 2 | Fractions | 17 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch03 | chapter | 3 | Angles as Turns | 32 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch04 | chapter | 4 | We the Travellers — II | 42 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch05 | chapter | 5 | Far and Near | 57 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch06 | chapter | 6 | The Dairy Farm | 70 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch07 | chapter | 7 | Shapes and Patterns | 92 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch08 | chapter | 8 | Weight and Capacity | 104 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch09 | chapter | 9 | Coconut Farm | 119 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch10 | chapter | 10 | Symmetrical Designs | 136 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch11 | chapter | 11 | Grandmother’s Quilt | 142 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch12 | chapter | 12 | Racing Seconds | 155 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch13 | chapter | 13 | Animal Jumps | 164 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch14 | chapter | 14 | Maps and Locations | 171 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_eemm1_ch15 | chapter | 15 | Data Through Pictures | 179 | inspected | missing | missing | not_started | unpublished |  |
 
 ## Class 6
 

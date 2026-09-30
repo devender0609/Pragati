@@ -220,6 +220,13 @@ export type PragatiInstructionalUnit = {
    *  remaining doubt is a judgement, never a stand-in for unread pages. */
   humanJudgementQuestion?: string;
   /**
+   * v0.84.0 checkpoint 13 §7 — when several units wait on ONE policy
+   * decision they share this key. Five Class 4 units carried the same
+   * generic sentence, which read as five independent judgements when it
+   * was one. Each question still names that unit's own material.
+   */
+  humanJudgementPolicyKey?: string;
+  /**
    * v0.84.0 checkpoint 11 §1-§3 — HISTORY, NOT STATUS.
    *
    * `hardeningClassification` was a re-audit verdict that outlived its
@@ -342,12 +349,11 @@ type DecompositionFile = {
     /** Pages whose mathematics is carried by the picture. */
     visualPagesRequired?: number;
     /**
-     * v0.84.0 checkpoint 10 §8 — `pagesUnresolved` used to count only
-     * pages whose text was unread, and read 0 for Class 3 while 107
-     * picture-carried pages were still unseen. The gaps are named
-     * separately now; this field is kept as the text figure and says so.
+     * v0.84.0 checkpoint 13 §1 — `pagesUnresolved` is gone. It counted
+     * only pages whose text was unread and read 0 for Class 3 while 107
+     * picture-carried pages were still unseen, so every gap is now named
+     * on its own. No alias replaces it.
      */
-    pagesUnresolved?: number;
     /** Pages whose full text has not been read. */
     pagesFullTextPending?: number;
     /** Picture-carried pages not yet rendered and looked at. */
@@ -465,6 +471,76 @@ export function recordIsCovered(officialRecordId: string): boolean {
       r.sourceEvidence.pdfPageEnd === ext.pdfPageEnd
     );
   });
+}
+
+/**
+ * v0.84.0 checkpoint 13 §2-§4 — REPORT SCOPING IN ONE PLACE.
+ *
+ * Class-specific generators used ad-hoc `includes('cemm1')` and
+ * `!includes(...)` filters, so the Classes 1-2 ledger silently took in
+ * Class 4 segments the moment they existed. Every generator now asks
+ * for its own class's objects positively.
+ */
+export function classScope(classNumbers: number[]): {
+  officialRecordIds: string[];
+  units: PragatiInstructionalUnit[];
+  sourceSegments: SourceSegment[];
+  nonInstructional: NonInstructionalRecord[];
+  recordExtents: RecordExtent[];
+} {
+  const wanted = new Set(classNumbers);
+  const units = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => wanted.has(u.classNumber));
+  const ids = new Set<string>();
+  for (const n of classNumbers) for (const r of authoringUnits(n)) ids.add(r.recordId);
+  return {
+    officialRecordIds: [...ids],
+    units,
+    sourceSegments: SOURCE_SEGMENTS.filter((s) => ids.has(s.officialRecordId)),
+    nonInstructional: NON_INSTRUCTIONAL_RECORDS.filter((r) => ids.has(r.officialRecordId)),
+    recordExtents: RECORD_EXTENTS.filter((e) => ids.has(e.officialRecordId)),
+  };
+}
+
+/**
+ * v0.84.0 checkpoint 13 §5 — a deterministic fingerprint of one class's
+ * decomposition. Counting units caught nothing: an objective, a page
+ * range or a status could change while the count held. Computed from
+ * the canonical fields, never typed by hand.
+ */
+export function decompositionFingerprint(classNumber: number): string {
+  const rows: string[] = [];
+  for (const u of PRAGATI_INSTRUCTIONAL_UNITS.filter((x) => x.classNumber === classNumber).sort((a, b) =>
+    a.instructionalUnitId.localeCompare(b.instructionalUnitId)
+  )) {
+    const e = u.sourceEvidence;
+    rows.push(
+      [
+        u.instructionalUnitId, u.officialRecordId, u.instructionalTitle, u.mathematicalObjective,
+        u.studentCanStatement, u.mathematicalIdeas.join('~'), u.representationsNeeded.join('~'),
+        u.prerequisites.join('~'), u.vocabulary.join('~'), u.reasoningDemand, u.instructionalRole,
+        u.decompositionStatus, u.humanReviewStatus, u.humanJudgementQuestion ?? '',
+        `${e.pdfPageStart}-${e.pdfPageEnd}`, `${e.printedPageStart}-${e.printedPageEnd}`,
+        e.evidenceDepth, String(e.pageEvidence.length),
+        e.pageEvidence.map((p) => `${p.pdfPage}:${p.printedPage}:${p.fullTextInspected ? 1 : 0}:${p.visualInspectionRequired ? 1 : 0}:${p.visualInspected ? 1 : 0}`).join(','),
+      ].join('|')
+    );
+  }
+  for (const s of SOURCE_SEGMENTS.filter((s) => classScope([classNumber]).officialRecordIds.includes(s.officialRecordId)).sort((a, b) =>
+    a.sourceSegmentId.localeCompare(b.sourceSegmentId)
+  )) {
+    rows.push([s.sourceSegmentId, s.officialRecordId, s.role, s.sourceLabel,
+      `${s.sourceEvidence.pdfPageStart}-${s.sourceEvidence.pdfPageEnd}`].join('|'));
+  }
+  // A small, stable string hash: the value only has to change when the
+  // content does, and be reproducible without a crypto dependency.
+  let h1 = 0x811c9dc5;
+  let h2 = 0x01000193;
+  const text = rows.join('\n');
+  for (let i = 0; i < text.length; i += 1) {
+    h1 = Math.imul(h1 ^ text.charCodeAt(i), 0x01000193) >>> 0;
+    h2 = Math.imul(h2 + text.charCodeAt(i) + i, 0x85ebca6b) >>> 0;
+  }
+  return `${h1.toString(16).padStart(8, '0')}${h2.toString(16).padStart(8, '0')}`;
 }
 
 /** Every overlapping pair of ranges inside one official record, whatever

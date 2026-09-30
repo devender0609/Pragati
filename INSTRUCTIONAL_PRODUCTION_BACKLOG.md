@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-209 units are READY_FOR_AUTHORING and 15 are held back
+274 units are READY_FOR_AUTHORING and 18 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -41,7 +41,15 @@ pedagogical QA plus human review — not for convenience of generation.
 | 24 | Class 4 | 8 | Weighing in daily life; Litres and millilitres; How much do we use?; Multiples and common multiples; Multiplication as arrays and equal groups; Patterns in the multiplication chart; Multiplying by tens and by two-digit numbers; Division by taking out groups |
 | 25 | Class 4 | 8 | Multiplying and dividing with hundreds; Adding four-digit numbers in context; Subtracting four-digit numbers in context; Money records and deposit slips; Quicker ways with four-digit numbers; Lines of symmetry; Mirror images of numbers and letters; Tiles, tiling and symmetry in designs |
 | 26 | Class 4 | 8 | Calendars and leap years; AM, PM and the 24-hour clock; Time intervals in hours and minutes; Building times tables beyond ten; Multiplying by tens and hundreds; Division with a remainder; Multiplying larger numbers by splitting; Asking a good data question and recording answers |
-| 27 | Class 4 | 1 | Comparing ways of showing data |
+| 27 | Class 4 | 8 | Comparing ways of showing data; Numbers to ten thousand and beyond; Comparing and rounding large numbers; Distance, speed and how many vehicles; Digit reversal and ordering large numbers; Counting a border without double counting; The whole matters when comparing fractions; Equivalent fractions |
+| 28 | Class 5 | 8 | Comparing fractions with the same numerator or denominator; Fractions greater than one; Comparing with 1 and with one-half as benchmarks; Turns: full, half and quarter; Angles as amounts of turn; Making and using an angle measuring tool; Direction and turning; Making sums equal, and relating addition to subtraction |
+| 29 | Class 5 | 8 | Sums of consecutive numbers; Adding and subtracting large numbers; Quick mental methods; Palindromes and the structure of odd and even; Reading data tables and solving with them; Choosing units and comparing lengths; The kilometre; The millimetre and small lengths |
+| 30 | Class 5 | 8 | Adding and subtracting lengths; Scaling with a double number line; Other units: feet and inches; Multiplying by 10, 100 and 1000; Doubling and halving, and nearest multiples; Multiplying larger numbers by splitting; Comparing methods and checking work; Weaving patterns |
+| 31 | Class 5 | 8 | Tiling and tessellation with regular shapes; Making and naming quadrilaterals; Circle designs; Cubes, nets and the Platonic solids; Judging and comparing weights; Converting and combining kilograms and grams; The milligram, quintal and tonne; Multiplying and dividing weights |
+| 32 | Class 5 | 8 | Litres and millilitres in practice; Division facts from multiplication; Patterns in division and place value; Dividing by taking away multiples; Division using place value; Division in problems, and what is always true; Reflection symmetry in letters and cut-outs; Rotational symmetry |
+| 33 | Class 5 | 8 | Sorting designs by the symmetry they have; Covering a region with shapes; Area by counting squares; Area and perimeter are not the same thing; Area and perimeter of squares and rectangles; Reading and writing time in two formats; Seconds; Converting and computing with time |
+| 34 | Class 5 | 8 | Factors, multiples and primes; Common multiples; Common factors and divisibility; Directions and describing position; Following a route on a map; Grid coordinates; Organising data into a table; Pictographs with a scale |
+| 35 | Class 5 | 2 | Bar graphs; Reading a picture as data |
 
 ## Held back
 
@@ -60,3 +68,6 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g04_ch07_u5` — Triangle sum puzzle (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g04_ch10_u1` — Addition chart patterns and a winning strategy (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g04_ch13_u5` — Number puzzles with products (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g05_ch01_u4` — Puzzles on the journey (NEEDS_HUMAN_CHECK, flagged for human check). Progression against Classes 1-4: REVISIT of reasoning extension seen in every earlier class.
+- `pragati_iu_g05_ch06_u1` — Number clues and shape puzzles (NEEDS_HUMAN_CHECK, flagged for human check). Progression against Classes 1-4: REVISIT of constraint puzzles, now using multiples and factors.
+- `pragati_iu_g05_ch06_u6` — Products, patterns and puzzles (NEEDS_HUMAN_CHECK, flagged for human check). Progression against Classes 1-4: REVISIT of reasoning extension, now about multiplicative structure.

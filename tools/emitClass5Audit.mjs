@@ -5,7 +5,7 @@
 import { writeFileSync } from 'fs';
 import { scopeFor } from './auditScope.mjs';
 const d = JSON.parse(await import('fs').then((m) => m.readFileSync('src/curriculum/data/instructionalDecomposition.json', 'utf8')));
-const SCOPE = scopeFor(d, [3]);
+const SCOPE = scopeFor(d, [5]);
 const mm = JSON.parse(await import('fs').then((m) => m.readFileSync('CURRICULUM_MASTER_MAP.json', 'utf8')));
 const UNITS = SCOPE.units;
 const SEGS = SCOPE.sourceSegments;
@@ -41,7 +41,7 @@ const rows = SCOPE.recordExtents.map((ext) => {
 });
 const P = Object.fromEntries(d.classProgress.map((p) => [p.classNumber, p]));
 const out = [
-  '# Page-level intent audit — Class 3 (Maths Mela)',
+  '# Page-level intent audit — Class 5 (Maths Mela)',
   '',
   'Generated from `src/curriculum/data/instructionalDecomposition.json`.',
   'All 14 official chapters of Maths Mela appear exactly once. The book',
@@ -53,11 +53,11 @@ const out = [
   '*Visual*: the page was rendered and looked at, which early-primary',
   'mathematics usually needs.',
   '',
-  `**Class 3** — ${P[3].pagesFullyInspected}/${P[3].pagesInScope} pages read in full text, ${P[3].visualPagesInspected}/${P[3].visualPagesRequired} picture-carried pages rendered and looked at, ${P[3].officialRecordsFullyInspected}/${P[3].officialRecordsTotal} chapters fully inspected. Status: **${P[3].status}**.`,
+  `**Class 5** — ${P[5].pagesFullyInspected}/${P[5].pagesInScope} pages read in full text, ${P[5].visualPagesInspected}/${P[5].visualPagesRequired} picture-carried pages rendered and looked at, ${P[5].officialRecordsFullyInspected}/${P[5].officialRecordsTotal} chapters fully inspected. Status: **${P[5].status}**.`,
   '',
-  P[3].status === 'DECOMPOSITION_SOURCE_COMPLETE'
-    ? 'Source-complete: every page of all 14 chapters has been read in full text and every page whose mathematics is carried by the picture has been rendered and looked at. What remains is curriculum judgement.'
-    : `Not source-complete: ${P[3].pagesFullTextPending} pages still to read and ${P[3].visualPagesPending} picture-carried pages still to render.`,
+  P[5].status === 'DECOMPOSITION_SOURCE_COMPLETE'
+    ? 'Source-complete: every page of all 15 chapters has been read in full text and every page whose mathematics is carried by the picture has been rendered and looked at. What remains is curriculum judgement.'
+    : `Not source-complete: ${P[5].pagesFullTextPending} pages still to read and ${P[5].visualPagesPending} picture-carried pages still to render.`,
   '',
   '| Official chapter | Title | Printed pages | PDF pages | Full text | Visual required | Visual required seen | Pages rendered | Record state | Units | Ready | Needs human check |',
   '|---|---|---|---|---|---|---|---|---|---|---|---|',
@@ -85,5 +85,5 @@ const out = [
   ),
   '',
 ];
-writeFileSync('PAGE_LEVEL_INTENT_AUDIT_CLASS_3.md', out.join('\n') + '\n');
+writeFileSync('PAGE_LEVEL_INTENT_AUDIT_CLASS_5.md', out.join('\n') + '\n');
 console.log('chapters listed', rows.length, 'segments', SEGS.length);
