@@ -159,7 +159,7 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_gp_c6_ch01_patterns | chapter | 1 | Patterns in Mathematics | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_ch01_patterns | chapter | 1 | Patterns in Mathematics | 1 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s1_1 | section | 1.1 | What is Mathematics? | 1 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s1_2 | section | 1.2 | Patterns in Numbers | 2 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s1_3 | section | 1.3 | Visualising Number Sequences | 3 | not inspected | missing | missing | not_started | unpublished |  |
@@ -197,18 +197,18 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_gp_c6_s4_3 | section | 4.3 | Bar Graphs | 85 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s4_4 | section | 4.4 | Drawing a Bar Graph | 89 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s4_5 | section | 4.5 | Artistic and Aesthetic Considerations | 101 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_ch05_prime_time | chapter | 5 | Prime Time | 107 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_ch05_prime_time | chapter | 5 | Prime Time | 107 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_1 | section | 5.1 | Common Multiples and Common Factors | 107 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_2 | section | 5.2 | Prime Numbers | 112 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_3 | section | 5.3 | Co-prime numbers for safekeeping treasures | 115 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_4 | section | 5.4 | Prime Factorisation | 117 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_5 | section | 5.5 | Divisibility Tests | 122 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s5_6 | section | 5.6 | Fun with numbers | 126 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_ch06_perimeter_area | chapter | 6 | Perimeter and Area | 129 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_ch06_perimeter_area | chapter | 6 | Perimeter and Area | 129 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s6_1 | section | 6.1 | Perimeter | 129 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s6_2 | section | 6.2 | Area | 137 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s6_3 | section | 6.3 | Area of a Triangle | 142 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_ch07_fractions | chapter | 7 | Fractions | 151 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_ch07_fractions | chapter | 7 | Fractions | 151 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s7_1 | section | 7.1 | Fractional Units and Equal Shares | 152 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s7_2 | section | 7.2 | Fractional Units as Parts of a Whole | 154 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s7_3 | section | 7.3 | Measuring Using Fractional Units | 156 | inspected | authored | authored | review_ready | unpublished |  |

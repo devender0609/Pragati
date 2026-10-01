@@ -570,9 +570,12 @@ describe('§1/§7 every official chapter is accounted for', () => {
   it('derives the class denominator from the curriculum, not the decomposition', () => {
     for (const p of CLASS_DECOMPOSITION_PROGRESS) {
       const acc = officialRecordAccounting(p.classNumber);
-      expect(p.chaptersTotal, `class${p.classNumber}`).toBe(acc.officialRecordsTotal);
+      // From Class 6 the official authoring record is a numbered section, so
+      // the official denominator lives in officialRecordsTotal and
+      // chaptersTotal keeps counting chapters.
+      expect(p.officialRecordsTotal ?? p.chaptersTotal, `class${p.classNumber}`).toBe(acc.officialRecordsTotal);
       // "Inspected" means fully inspected — never merely touched.
-      expect(p.chaptersInspected, `class${p.classNumber}`).toBe(acc.officialRecordsFullyInspected);
+      expect(p.officialRecordsFullyInspected ?? p.chaptersInspected, `class${p.classNumber}`).toBe(acc.officialRecordsFullyInspected);
     }
   });
 
@@ -701,7 +704,9 @@ describe('§6/§7 generated prose agrees with the structured values', () => {
       const allowed = new Set([
         p.pagesInScope, p.pagesFullyInspected, p.visualPagesRequired, p.visualPagesInspected,
         p.officialRecordsTotal, p.officialRecordsFullyInspected, p.pagesFullTextPending, p.chaptersTotal,
-        p.officialChapterCount ?? -1, p.officialSectionCount ?? -1,
+        p.officialChapterCount ?? -1, p.officialSectionsTotal ?? -1,
+        p.chaptersFullyInspected ?? -1, p.chaptersPartiallyInspected ?? -1,
+        p.chaptersIndexedOnly ?? -1, p.sectionsAccountedFor ?? -1,
       ]);
       for (const n of numbers) expect(allowed.has(n), `class${p.classNumber} note has stray ${n}`).toBe(true);
     }
@@ -1213,7 +1218,7 @@ describe('Class 6 structure and artifact mapping', () => {
     // the chapter and section counts are recorded separately.
     const p6 = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 6)!;
     expect(p6.officialChapterCount).toBe(10);
-    expect(p6.officialSectionCount).toBe(65);
+    expect(p6.officialSectionsTotal).toBe(65);
     expect(officialRecordAccounting(6).officialRecordsTotal).toBe(65);
     for (const u of unitsForClass(6)) {
       expect(u.officialRecordId, u.instructionalUnitId).toMatch(/^ncert_gp_c6_ch\d{2}_/);
@@ -1283,7 +1288,7 @@ describe('Class 6 structure and artifact mapping', () => {
     expect(uncovered.length).toBeGreaterThan(0);
     const gap = read('CLASS_6_AUTHORING_GAP_REPORT.md');
     for (const u of uncovered) expect(gap, u.instructionalUnitId).toContain(u.instructionalUnitId);
-    expect(gap).toMatch(/only Chapters 3 and 7 have been decomposed/i);
+    expect(gap).toMatch(/not been decomposed/i);
   });
 
   it('leaves the review state and §7.4 identity untouched', () => {
@@ -1292,5 +1297,70 @@ describe('Class 6 structure and artifact mapping', () => {
     }
     const report = read('V0.84.0_CHECKPOINT_REPORT.md');
     expect(report).toContain('0 sent');
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 15 — TWO OFFICIAL LAYERS, AND A REPORT THAT KNOWS
+// WHICH BOOK IT IS DESCRIBING.
+//
+// Checkpoint 14's Class 6 audit was cloned from the primary-grade one: it
+// called the book Maths Mela, claimed 14 chapters and no numbered
+// sections, and printed "0/65 chapters" because the section denominator
+// had been put in `chaptersTotal`.
+// ---------------------------------------------------------------------------
+
+describe('§3-§10 Class 6 two-layer model and report identity', () => {
+  const p6 = () => CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 6)!;
+
+  it('keeps chapter and section denominators apart', () => {
+    const p = p6();
+    expect(p.officialChapterCount).toBe(10);
+    expect(p.officialSectionsTotal).toBe(65);
+    expect(p.chaptersTotal, 'chaptersTotal must count chapters').toBe(10);
+    expect(p.chaptersTotal).not.toBe(65);
+    expect((p.chaptersFullyInspected ?? 0) + (p.chaptersPartiallyInspected ?? 0) + (p.chaptersIndexedOnly ?? 0)).toBe(10);
+    expect((p.sectionsAccountedFor ?? 0) + (p.sectionsNotYetInspected ?? 0)).toBe(65);
+  });
+
+  it('names the right book and never prints 65 chapters', () => {
+    const a = read('PAGE_LEVEL_INTENT_AUDIT_CLASS_6.md');
+    expect(a).toContain('Ganita Prakash');
+    expect(a).not.toMatch(/Maths Mela/);
+    expect(a).not.toMatch(/14 official chapters/);
+    expect(a).not.toMatch(/numbers no sections/);
+    expect(a).not.toMatch(/\/65 chapters/);
+    expect(a).toMatch(/65 numbered sections/);
+  });
+
+  it('derives the Fractions chapter state from its evidence, not a claim', () => {
+    const fr = 'ncert_gp_c6_ch07_fractions';
+    const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === fr)!;
+    const pages = new Map<number, { fullTextInspected: boolean; visualInspectionRequired: boolean; visualInspected: boolean }>();
+    for (const e of [
+      ...instructionalUnitsFor(fr).map((u) => u.sourceEvidence),
+      ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === fr).map((s) => s.sourceEvidence),
+    ]) {
+      for (const p of e.pageEvidence) pages.set(p.pdfPage, p);
+    }
+    // Every page of the extent, including the summary and the solutions
+    // supplement, must satisfy the gate before the chapter counts.
+    let complete = true;
+    for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+      const row = pages.get(p);
+      if (!row || !row.fullTextInspected || (row.visualInspectionRequired && !row.visualInspected)) complete = false;
+    }
+    expect(recordInspectionState(fr) === 'FULLY_INSPECTED').toBe(complete);
+  });
+
+  it('keeps the solutions supplement as inspected reference, not unread', () => {
+    const sol = SOURCE_SEGMENTS.find((s) => s.sourceSegmentId === 'pragati_srcseg_g06_ch07_solutions')!;
+    expect(sol.role).toBe('REFERENCE');
+    expect(sol.sourceEvidence.evidenceDepth).toBe('FULL_PAGE_INSPECTED');
+  });
+
+  it('still does not claim Class 6 is source-complete', () => {
+    expect(p6().status).toBe('IN_PROGRESS');
+    expect(p6().sectionsNotYetInspected).toBeGreaterThan(0);
   });
 });

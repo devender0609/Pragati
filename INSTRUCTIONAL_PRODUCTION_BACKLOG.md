@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-295 units are READY_FOR_AUTHORING and 22 are held back
+311 units are READY_FOR_AUTHORING and 23 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -51,7 +51,9 @@ pedagogical QA plus human review — not for convenience of generation.
 | 34 | Class 5 | 8 | Factors, multiples and primes; Common multiples; Common factors and divisibility; Directions and describing position; Following a route on a map; Grid coordinates; Organising data into a table; Pictographs with a scale |
 | 35 | Class 5 | 8 | Bar graphs; Reading a picture as data; Numbers that describe a relationship; Supercells; Large numbers on the number line; Playing with digits; Palindromic numbers and reverse-and-add; Clock and calendar number patterns |
 | 36 | Class 6 | 8 | Mental arithmetic with large numbers; Making numbers with given constraints; Number patterns that sum to a target; Estimation at scale; Fractional units and equal shares; Fractional units as parts of a whole; Measuring with fractional units; Marking fractions on the number line |
-| 37 | Class 6 | 7 | Mixed fractions; Equivalent fractions and the fraction wall; Equivalence from equal sharing; Simplest form; Comparing fractions; Adding and subtracting like fractions; Adding and subtracting unlike fractions |
+| 37 | Class 6 | 8 | Mixed fractions; Equivalent fractions and the fraction wall; Equivalence from equal sharing; Simplest form; Comparing fractions; Adding and subtracting like fractions; Adding and subtracting unlike fractions; Mathematics as the search for patterns |
+| 38 | Class 6 | 8 | Number sequences; Visualising a sequence; Relations among sequences, explained by a picture; Shape sequences; Shape sequences give number sequences; Common multiples and common factors; Prime and composite numbers; Co-prime numbers |
+| 39 | Class 6 | 7 | Prime factorisation; Divisibility tests; Perimeter, and formulas for rectangle, square and triangle; Perimeter in context, and regular polygons; Area by counting and by formula; Area of a triangle; Area and perimeter together, and area mazes |
 
 ## Held back
 
@@ -77,3 +79,4 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g06_ch03_u11` — The Collatz conjecture (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g06_ch03_u13` — Games and winning strategies (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g06_ch07_u12` — A pinch of history, and unit-fraction puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g06_ch05_u6` — Fun with numbers (NEEDS_HUMAN_CHECK, flagged for human check). 

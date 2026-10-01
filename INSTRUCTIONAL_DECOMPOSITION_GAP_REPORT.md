@@ -15,7 +15,7 @@ does not make it so.
 | Class 3 | 14 | — | 208 indexed / 208 full text / 184 visual | 59 | 55 | 4 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 6 | 10 | 65 | 392 indexed / 67 full text / 59 visual | 25 | 21 | 4 | 0 | 12 | 13 | IN_PROGRESS |
+| Class 6 | 10 | 65 | 392 indexed / 161 full text / 120 visual | 42 | 37 | 5 | 0 | 12 | 30 | IN_PROGRESS |
 | Class 7 | 15 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |

@@ -1,6 +1,10 @@
-// v0.84.0 checkpoint 4 §8 — the human-readable evidence table, generated
+// v0.84.0 checkpoint 15 — Class 6 page-level audit.
+//
+// Invariants this generator must hold: it reads ONLY Class 6 objects
+// (via scopeFor), it names the book Ganita Prakash, it reports chapters
+// and numbered sections as separate denominators, and it never prints a
+// section count as a chapter count.
 // from the canonical dataset so it cannot drift from it. It lists every
-// official chapter of Classes 1 and 2 exactly once; Pragati's own
 // segments appear inside their chapter, never as records.
 import { writeFileSync } from 'fs';
 import { scopeFor } from './auditScope.mjs';
@@ -41,19 +45,21 @@ const rows = SCOPE.recordExtents.map((ext) => {
 });
 const P = Object.fromEntries(d.classProgress.map((p) => [p.classNumber, p]));
 const out = [
-  '# Page-level intent audit — Class 6 (Maths Mela)',
+  '# Page-level intent audit — Class 6 (Ganita Prakash)',
   '',
   'Generated from `src/curriculum/data/instructionalDecomposition.json`.',
-  'All 14 official chapters of Maths Mela appear exactly once. The book',
-  'numbers no sections, so the chapter is the official record and every',
-  'internal grouping is a Pragati unit or a `pragati_srcseg_*` segment.',
+  'Ganita Prakash has **10 official chapters holding 65 numbered sections**.',
+  'Class 6 is the first class with two official layers: the numbered section',
+  'is the authoring record and the chapter owns the page extent. Material the',
+  'book does not number — an opener, a summary, the solutions supplement — is',
+  'a `pragati_srcseg_*` segment, never an invented section id.',
   '',
   '**Depth words.** *Indexed*: headings and opening text only, which is',
   'navigation and not evidence. *Full text*: every line of every page.',
   '*Visual*: the page was rendered and looked at, which early-primary',
   'mathematics usually needs.',
   '',
-  `**Class 6** — ${P[6].pagesFullyInspected}/${P[6].pagesInScope} pages read in full text, ${P[6].visualPagesInspected}/${P[6].visualPagesRequired} picture-carried pages rendered and looked at, ${P[6].officialRecordsFullyInspected}/${P[6].officialRecordsTotal} chapters fully inspected. Status: **${P[6].status}**.`,
+  `**Class 6** — ${P[6].pagesFullyInspected}/${P[6].pagesInScope} pages read in full text, ${P[6].visualPagesInspected}/${P[6].visualPagesRequired} picture-carried pages rendered and looked at, ${P[6].chaptersFullyInspected}/${P[6].officialChapterCount} chapters fully inspected, ${P[6].sectionsAccountedFor}/${P[6].officialSectionsTotal} numbered sections accounted for. Status: **${P[6].status}**.`,
   '',
   P[6].status === 'DECOMPOSITION_SOURCE_COMPLETE'
     ? 'Source-complete: every page of all 15 chapters has been read in full text and every page whose mathematics is carried by the picture has been rendered and looked at. What remains is curriculum judgement.'

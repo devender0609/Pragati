@@ -60,6 +60,17 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-14 review findings — all RESOLVED in checkpoint 15
+
+| Defect | Found | Resolved |
+|---|---|---|
+| The Class 6 audit generator still identified the book as Maths Mela | checkpoint 14 review | checkpoint 15 — it names Ganita Prakash; a test forbids the old name |
+| It claimed Class 6 had 14 chapters and numbered no sections | checkpoint 14 review | checkpoint 15 — it states 10 chapters holding 65 numbered sections; tests forbid both false claims |
+| `chaptersTotal` carried the section denominator (65) while `officialChapterCount` was 10 | checkpoint 14 review | checkpoint 15 — `chaptersTotal` counts chapters again; `officialSectionsTotal`, `chaptersFullyInspected/PartiallyInspected/IndexedOnly` and `sectionsAccountedFor/NotYetInspected` are separate fields |
+| The audit consequently printed "0/65 chapters" | checkpoint 14 review | checkpoint 15 — it prints chapters and sections as two denominators; a test forbids "/65 chapters" |
+| Fractions was described as a decomposed, fully inspected chapter while its evidence showed 35/50 text and PARTIALLY_INSPECTED | checkpoint 14 review | checkpoint 15 — pages 36-50 read and rendered; the chapter now derives FULLY_INSPECTED from evidence, and a test derives that state rather than asserting it |
+| The Fractions solutions pages 36-50 were DIGEST_ONLY inside the record extent | checkpoint 14 review | checkpoint 15 — inspected in full. Reading them showed page 36 is the chapter **Summary**, not solutions, so the segment was split: p36 SUMMARY, pp37-50 REFERENCE |
+
 ## Checkpoint-13 review findings — all RESOLVED in checkpoint 14
 
 | Defect | Found | Resolved |

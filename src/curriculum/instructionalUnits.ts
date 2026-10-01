@@ -411,9 +411,22 @@ type DecompositionFile = {
     /** Pages missing either kind of required evidence. */
     pagesEvidenceIncomplete?: number;
     officialRecordsPartiallyInspected?: number;
-    /** Class 6 onwards: chapters and numbered sections are different layers. */
+    /**
+     * v0.84.0 checkpoint 15 §5-§6 — CHAPTERS AND SECTIONS ARE TWO LAYERS.
+     *
+     * Class 6 is the first class whose official authoring record is a
+     * numbered section while page extents belong to the chapter.
+     * Checkpoint 14 put the section denominator (65) into `chaptersTotal`
+     * and the audit then printed "0/65 chapters". Each layer has its own
+     * fields now, and `chaptersTotal` means chapters again.
+     */
     officialChapterCount?: number;
-    officialSectionCount?: number;
+    officialSectionsTotal?: number;
+    chaptersFullyInspected?: number;
+    chaptersPartiallyInspected?: number;
+    chaptersIndexedOnly?: number;
+    sectionsAccountedFor?: number;
+    sectionsNotYetInspected?: number;
     officialRecordsIndexedOnly?: number;
     /** Official records in the class, from the curriculum not the data. */
     officialRecordsTotal?: number;

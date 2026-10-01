@@ -25,7 +25,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 3 | 14 | — | 208 indexed / 208 full text / 184 visual | 59 | 55 | 4 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 6 | 10 | 65 | 392 indexed / 67 full text / 59 visual | 25 | 21 | 4 | 0 | 12 | 13 | IN_PROGRESS |
+| Class 6 | 10 | 65 | 392 indexed / 161 full text / 120 visual | 42 | 37 | 5 | 0 | 12 | 30 | IN_PROGRESS |
 | Class 7 | 15 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -4738,7 +4738,7 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 
 ## Class 6
 
-10 official chapters hold 65 numbered sections. 67 of 392 pages have been read in full text and 59 of 63 picture-carried pages seen, covering Number Play and Fractions only; the other chapters are indexed, not inspected.
+Chapters: 5 of 10 fully inspected, 0 partially, 5 indexed only. Sections: 36 of 65 accounted for. Pages: 161 of 392 read in full text, 120 of 120 picture-carried pages seen. (A numbered section is "accounted for" when its body has been inspected and its instructional disposition recorded; none yet carries a record extent of its own.)
 
 #### Numbers that describe a relationship
 
@@ -5139,6 +5139,278 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Mathematics as the search for patterns
+
+- **Id** `pragati_iu_g06_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
+- **Source** fegp1, printed pp. 2–2 (PDF pp. 1–2), read 2026-10-01. Establishes: The opening sections on what mathematics is and why patterns matter, with examples from gravitation, genomes and daily life.
+- **Objective** Describe what mathematics studies and where patterns appear in the world.
+- **Student can** I can give examples of patterns mathematics helps explain.
+- **Mathematical ideas** pattern as the object of study; explanation as the goal; mathematics in science and daily life
+- **Representations** examples from nature and technology
+- **Prerequisites** pragati_iu_g05_ch01_u5
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 2/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Number sequences
+
+- **Id** `pragati_iu_g06_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3
+- **Source** fegp1, printed pp. 3–3 (PDF pp. 3–3), read 2026-10-01. Establishes: Table 1 of number sequences: all 1s, counting, odd, even, triangular, squares, cubes, powers of 2 and 3, Virahanka numbers.
+- **Objective** Recognise and continue the standard number sequences and name them.
+- **Student can** I can continue the triangular numbers and say why they are called that.
+- **Mathematical ideas** counting, odd, even, triangular, square, cube numbers; powers of 2 and 3; virahanka (Fibonacci) numbers
+- **Representations** Table 1 of sequences; number strips
+- **Prerequisites** pragati_iu_g05_ch13_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Visualising a sequence
+
+- **Id** `pragati_iu_g06_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5
+- **Source** fegp1, printed pp. 4–5 (PDF pp. 4–5), read 2026-10-01. Establishes: Table 2 of pictorial representations and the Figure it Out asking why triangular, square and cube numbers are so named.
+- **Objective** Draw the pictorial form of a sequence and use it to explain the sequence.
+- **Student can** I can draw the next picture for the triangular numbers.
+- **Mathematical ideas** pictorial representation of a sequence; why a name fits the picture; the picture as an explanation
+- **Representations** dot and cube pictures; Table 2
+- **Prerequisites** pragati_iu_g06_ch01_u2
+- **Role** NEW_REPRESENTATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Relations among sequences, explained by a picture
+
+- **Id** `pragati_iu_g06_ch01_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9
+- **Source** fegp1, printed pp. 6–9 (PDF pp. 6–9), read 2026-10-01. Establishes: Adding odd numbers giving squares, shown by completing a square of dots; adding counting numbers up and down; sums of consecutive triangular numbers; hexagonal numbers summing to cubes.
+- **Objective** Explain why adding odd numbers gives squares, using a picture.
+- **Student can** I can show with a picture why 1 + 3 + 5 + 7 = 16.
+- **Mathematical ideas** sum of the first n odd numbers; pictorial proof; relations between sequences
+- **Representations** square dot arrays; up-and-down counting pictures
+- **Prerequisites** pragati_iu_g06_ch01_u3
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Shape sequences
+
+- **Id** `pragati_iu_g06_ch01_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11
+- **Source** fegp1, printed pp. 10–11 (PDF pp. 10–11), read 2026-10-01. Establishes: Table 3: regular polygons, complete graphs, stacked triangles and squares, and the Koch snowflake, each continued and described.
+- **Objective** Recognise and continue sequences of shapes and describe their rules.
+- **Student can** I can describe the rule for the stacked-squares sequence.
+- **Mathematical ideas** shape sequence; regular polygons; complete graphs and the Koch snowflake
+- **Representations** Table 3 of shape sequences
+- **Prerequisites** pragati_iu_g05_ch07_u2
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Shape sequences give number sequences
+
+- **Id** `pragati_iu_g06_ch01_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12
+- **Source** fegp1, printed pp. 12–12 (PDF pp. 12–12), read 2026-10-01. Establishes: Counting squares in stacked squares and triangles in stacked triangles; sides and corners of regular polygons; lines in complete graphs.
+- **Objective** Count features of a shape sequence and identify the number sequence it gives.
+- **Student can** I can count the little squares in each stacked square and name the sequence.
+- **Mathematical ideas** counting features of shapes; linking a shape sequence to a number sequence; sides and corners of regular polygons
+- **Representations** shape sequences with counts
+- **Prerequisites** pragati_iu_g06_ch01_u5; pragati_iu_g06_ch01_u2
+- **Role** INTEGRATION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Common multiples and common factors
+
+- **Id** `pragati_iu_g06_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** fegp1, printed pp. 108–111 (PDF pp. 1–5), read 2026-10-01. Establishes: The idli-vada game for multiples of 3 and 5; the jump-jackpot game where jump sizes are factors of the treasure number; perfect numbers.
+- **Objective** Find common multiples and common factors and use them in games.
+- **Student can** I can say which jump sizes land on both 14 and 36.
+- **Mathematical ideas** common multiple; common factor; factors as jump sizes
+- **Representations** idli-vada circle game; number line jumps; Venn diagrams
+- **Prerequisites** pragati_iu_g05_ch13_u2; pragati_iu_g05_ch13_u3
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Prime and composite numbers
+
+- **Id** `pragati_iu_g06_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9
+- **Source** fegp1, printed pp. 112–115 (PDF pp. 6–9), read 2026-10-01. Establishes: Packing figs in rectangular arrangements; the definition of prime and composite; 1 being neither; the sieve producing the primes to 100; twin primes; true/false statements about primes.
+- **Objective** Distinguish prime from composite numbers and find the primes to 100.
+- **Student can** I can say why 1 is neither prime nor composite.
+- **Mathematical ideas** prime and composite; rectangular arrangements as factor pairs; the Sieve of Eratosthenes; twin primes
+- **Representations** fig-packing arrays; hundred grid sieve
+- **Prerequisites** pragati_iu_g05_ch13_u1
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Co-prime numbers
+
+- **Id** `pragati_iu_g06_ch05_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11
+- **Source** fegp1, printed pp. 116–117 (PDF pp. 10–11), read 2026-10-01. Establishes: The safe-pairs treasure game; the definition of co-prime; the peg-and-thread pictures for different gaps.
+- **Objective** Decide whether two numbers are co-prime and use the idea in a game.
+- **Student can** I can say whether 15 and 39 are co-prime and why.
+- **Mathematical ideas** co-prime pairs; no common factor other than 1; threads and pegs picture
+- **Representations** safe-pair game; peg-and-thread diagrams
+- **Prerequisites** pragati_iu_g06_ch05_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Prime factorisation
+
+- **Id** `pragati_iu_g06_ch05_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15, 16
+- **Source** fegp1, printed pp. 118–122 (PDF pp. 12–16), read 2026-10-01. Establishes: Factor trees for 56, 30 and 72; the order not mattering; using prime factorisations to decide co-primality and divisibility; the smallest number with given prime factors.
+- **Objective** Write a number as a product of primes and use it to answer questions.
+- **Student can** I can write 72 as a product of primes and explain why the answer is unique.
+- **Mathematical ideas** prime factorisation; uniqueness of the factorisation; using factorisation to test divisibility and co-primality
+- **Representations** factor trees; prime factor lists
+- **Prerequisites** pragati_iu_g06_ch05_u2
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Divisibility tests
+
+- **Id** `pragati_iu_g06_ch05_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19, 20
+- **Source** fegp1, printed pp. 123–126 (PDF pp. 17–20), read 2026-10-01. Establishes: Tests for 10, 5 and 2 from the last digit; for 4 from the last two digits and 8 from the last three, each argued rather than stated; remainders on division by 10, 5 and 2.
+- **Objective** Use and justify divisibility tests for 10, 5, 2, 4 and 8.
+- **Student can** I can tell whether 8560 is divisible by 8 without dividing.
+- **Mathematical ideas** divisibility test; why the last digits decide; justifying a test
+- **Representations** place-value arguments; number lists
+- **Prerequisites** pragati_iu_g06_ch05_u4
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Fun with numbers
+
+- **Id** `pragati_iu_g06_ch05_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 22
+- **Source** fegp1, printed pp. 127–128 (PDF pp. 21–22), read 2026-10-01. Establishes: The Math Talk boxes asking what makes each number special; the prime puzzle where rows and columns must have given products; the summary of the chapter.
+- **Objective** Reason about what makes a number special and solve prime puzzles.
+- **Student can** I can say what is special about each number in the box.
+- **Mathematical ideas** classifying a number by its properties; prime puzzles on a grid; flexible reasoning about number properties
+- **Representations** Math Talk number boxes; prime puzzle grids
+- **Prerequisites** pragati_iu_g06_ch05_u4
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Perimeter, and formulas for rectangle, square and triangle
+
+- **Id** `pragati_iu_g06_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
+- **Source** fegp1, printed pp. 130–132 (PDF pp. 1–4), read 2026-10-01. Establishes: Perimeter defined for a closed figure; 2 x (length + breadth) derived for a rectangle; the square and triangle cases; missing-term problems.
+- **Objective** Find perimeters and use the rectangle and square formulas.
+- **Student can** I can find the missing side when I know the perimeter.
+- **Mathematical ideas** perimeter as boundary length; perimeter formulas; working backwards from a perimeter
+- **Representations** labelled figures; measuring tape
+- **Prerequisites** pragati_iu_g05_ch11_u4
+- **Role** FORMALIZATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Perimeter in context, and regular polygons
+
+- **Id** `pragati_iu_g06_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8
+- **Source** fegp1, printed pp. 133–136 (PDF pp. 5–8), read 2026-10-01. Establishes: Akshi and Toshi on inner and outer tracks; the deep-dive on a common finishing line; perimeters measured in straight and diagonal units; the generalisation for regular polygons.
+- **Objective** Solve running-track and fencing problems and find perimeters of regular polygons.
+- **Student can** I can work out how far Akshi runs in five rounds.
+- **Mathematical ideas** perimeter in a real context; multiple rounds of a track; perimeter of a regular polygon as side x number of sides
+- **Representations** track diagrams; regular polygon figures
+- **Prerequisites** pragati_iu_g06_ch06_u1
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Area by counting and by formula
+
+- **Id** `pragati_iu_g06_ch06_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11, 12, 13
+- **Source** fegp1, printed pp. 137–141 (PDF pp. 9–13), read 2026-10-01. Establishes: Area recalled and formalised; splitting and rejoining a rectangle; floor and carpet problems; the tangram and leaf-area explorations by counting squares.
+- **Objective** Find the area of rectangles and squares, and of irregular shapes by counting squares.
+- **Student can** I can find the area of this floor and of the leaf on the grid.
+- **Mathematical ideas** area as covering; area = length x breadth; approximating an irregular area
+- **Representations** square grids; split-and-rejoin figures
+- **Prerequisites** pragati_iu_g05_ch11_u4
+- **Role** FORMALIZATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Area of a triangle
+
+- **Id** `pragati_iu_g06_ch06_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16
+- **Source** fegp1, printed pp. 142–144 (PDF pp. 14–16), read 2026-10-01. Establishes: Cutting a rectangle along a diagonal; the triangle as half the rectangle; areas of composite figures split into rectangles and triangles.
+- **Objective** Find the area of a triangle by relating it to a rectangle.
+- **Student can** I can say why the triangle is half the rectangle around it.
+- **Mathematical ideas** triangle as half a rectangle; decomposing a figure into rectangles and triangles; area of a composite figure
+- **Representations** grid paper; diagonal-cut rectangles
+- **Prerequisites** pragati_iu_g06_ch06_u3
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Area and perimeter together, and area mazes
+
+- **Id** `pragati_iu_g06_ch06_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19, 20, 21, 22
+- **Source** fegp1, printed pp. 145–150 (PDF pp. 17–22), read 2026-10-01. Establishes: Arrangements of nine unit squares compared for perimeter; Sharan’s house plan with missing dimensions; the area-maze puzzles; the summary.
+- **Objective** Compare area and perimeter and solve problems where one is fixed.
+- **Student can** I can make two shapes with the same area and different perimeters.
+- **Mathematical ideas** independence of area and perimeter; fixed area with varying perimeter; missing dimensions from areas
+- **Representations** unit squares; area maze puzzles; house plans
+- **Prerequisites** pragati_iu_g05_ch11_u3
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
 
 ## Records read and found non-instructional
 
