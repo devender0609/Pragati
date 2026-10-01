@@ -25,7 +25,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 3 | 14 | — | 208 indexed / 208 full text / 184 visual | 59 | 55 | 4 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 6 | 10 | 65 | 392 indexed / 161 full text / 120 visual | 42 | 37 | 5 | 0 | 12 | 30 | IN_PROGRESS |
+| Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 7 | 15 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -4738,7 +4738,7 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 
 ## Class 6
 
-Chapters: 5 of 10 fully inspected, 0 partially, 5 indexed only. Sections: 36 of 65 accounted for. Pages: 161 of 392 read in full text, 120 of 120 picture-carried pages seen. (A numbered section is "accounted for" when its body has been inspected and its instructional disposition recorded; none yet carries a record extent of its own.)
+Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392 of 392 read in full text, 302 of 302 picture-carried pages rendered and looked at.
 
 #### Numbers that describe a relationship
 
@@ -5408,6 +5408,534 @@ Chapters: 5 of 10 fully inspected, 0 partially, 5 indexed only. Sections: 36 of 
 - **Representations** unit squares; area maze puzzles; house plans
 - **Prerequisites** pragati_iu_g05_ch11_u3
 - **Role** EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Point, line segment, line and ray
+
+- **Id** `pragati_iu_g06_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles` (also ncert_gp_c6_s2_2, ncert_gp_c6_s2_3, ncert_gp_c6_s2_4)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** fegp1, printed pp. 14–17 (PDF pp. 1–5), read 2026-10-01. Establishes: Points named Z, P and T; the fold giving a line segment; the line through two points; rays modelled by a beam of light; naming exercises including whether ray OA may be called OB.
+- **Objective** Distinguish point, line segment, line and ray and name them correctly.
+- **Student can** I can name the rays in this figure and say why OA and OB can be the same ray.
+- **Mathematical ideas** point as a position; line segment with two endpoints; line extending endlessly; ray with one endpoint; naming conventions
+- **Representations** folded paper creases; labelled figures
+- **Prerequisites** pragati_iu_g05_ch07_u3
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Angle, arms and vertex
+
+- **Id** `pragati_iu_g06_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8, 9
+- **Source** fegp1, printed pp. 17–21 (PDF pp. 5–9), read 2026-10-01. Establishes: Angles found in spectacles and wallets; arms and vertex marked; why angle APB cannot be called angle P; counting angles made by points on a page.
+- **Objective** Describe an angle by its arms and vertex and name it correctly.
+- **Student can** I can mark the arms and vertex of this angle and name it properly.
+- **Mathematical ideas** angle as two rays from a common point; arms and vertex; three-letter naming and when a single letter fails
+- **Representations** everyday objects with angles; labelled diagrams
+- **Prerequisites** pragati_iu_g06_ch02_u1
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Comparing angles
+
+- **Id** `pragati_iu_g06_ch02_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles` (also ncert_gp_c6_s2_7)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12, 13, 14
+- **Source** fegp1, printed pp. 22–26 (PDF pp. 10–14), read 2026-10-01. Establishes: Comparing by placing one angle on another; why the length of the arms does not change the angle; the transparent-circle method; the cardboard slit activity.
+- **Objective** Compare two angles by superimposition and without it.
+- **Student can** I can decide which of two angles is bigger and explain how I know.
+- **Mathematical ideas** superimposition; comparison independent of arm length; using a transparent circle to compare
+- **Representations** tracing paper; transparent circle; rotating-arm models
+- **Prerequisites** pragati_iu_g06_ch02_u2
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Right, straight and perpendicular
+
+- **Id** `pragati_iu_g06_ch02_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 16, 17, 18, 19, 20
+- **Source** fegp1, printed pp. 27–32 (PDF pp. 15–20), read 2026-10-01. Establishes: Vidya opening the book cover; folding to make two equal angles and naming them right angles; the straight angle containing two right angles; perpendicular creases; acute and obtuse named by comparison.
+- **Objective** Identify right and straight angles and construct perpendiculars by folding.
+- **Student can** I can justify why the two angles made by my fold are exact right angles.
+- **Mathematical ideas** right angle as half a straight angle; straight angle; perpendicular lines; justifying equality by folding
+- **Representations** paper folding; dot grids
+- **Prerequisites** pragati_iu_g06_ch02_u3
+- **Role** FORMALIZATION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### The degree, and the 360-part circle
+
+- **Id** `pragati_iu_g06_ch02_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 22
+- **Source** fegp1, printed pp. 33–34 (PDF pp. 21–22), read 2026-10-01. Establishes: The full turn divided into 360 equal parts; 1 degree defined; the Rigveda wheel of 360 spokes; half and quarter turns in degrees.
+- **Objective** Explain why a full turn is divided into 360 parts and measure in degrees.
+- **Student can** I can say what 1 degree means and why a straight angle is 180 degrees.
+- **Mathematical ideas** degree as one of 360 equal parts of a full turn; fractions of a turn in degrees; history of the 360-part division
+- **Representations** paper protractor made by folding; circle divided into parts
+- **Prerequisites** pragati_iu_g05_ch03_u3
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Reading a protractor
+
+- **Id** `pragati_iu_g06_ch02_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 23, 24, 25
+- **Source** fegp1, printed pp. 35–37 (PDF pp. 23–25), read 2026-10-01. Establishes: The unlabelled protractor read by counting units; the labelled protractor; choosing between the inner and outer markings; finding a measure without counting.
+- **Objective** Measure an angle with an unlabelled and a labelled protractor.
+- **Student can** I can read an angle on a protractor and say which scale I used.
+- **Mathematical ideas** protractor scales; aligning the centre and the zero line; inner and outer markings
+- **Representations** unlabelled and labelled protractors
+- **Prerequisites** pragati_iu_g06_ch02_u5
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Making a protractor by folding, and bisecting
+
+- **Id** `pragati_iu_g06_ch02_u7` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 26, 27, 28
+- **Source** fegp1, printed pp. 38–40 (PDF pp. 26–28), read 2026-10-01. Establishes: Folding the semicircle into halves, quarters and eighths with their degree values; bisecting an angle defined through the folding process.
+- **Objective** Build a paper protractor by halving and name the bisector.
+- **Student can** I can fold my circle to get 45 degrees and explain why.
+- **Mathematical ideas** repeated halving of a turn; angle bisector; degree values from folds
+- **Representations** circular paper; crease diagrams
+- **Prerequisites** pragati_iu_g06_ch02_u5
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Measuring angles accurately, and common mistakes
+
+- **Id** `pragati_iu_g06_ch02_u8` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 29, 30, 31, 32, 33, 34
+- **Source** fegp1, printed pp. 41–46 (PDF pp. 29–34), read 2026-10-01. Establishes: Measuring sets of given angles; the Mind the Mistake, Mend the Mistake spread; angles in a clock and in slopes.
+- **Objective** Measure given angles and identify incorrect protractor use.
+- **Student can** I can spot what went wrong in this protractor reading.
+- **Mathematical ideas** accurate measurement; error analysis with an instrument; angles in real figures
+- **Representations** protractor; Mind the Mistake figures
+- **Prerequisites** pragati_iu_g06_ch02_u6
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Drawing angles of a given measure
+
+- **Id** `pragati_iu_g06_ch02_u9` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 35, 36, 37, 38
+- **Source** fegp1, printed pp. 47–50 (PDF pp. 35–38), read 2026-10-01. Establishes: The step-by-step construction of a 30 degree angle; the angle-guessing game; drawing angles of given measures and copying a given angle.
+- **Objective** Construct an angle of a stated degree measure with a protractor.
+- **Student can** I can draw an angle of 110 degrees with a protractor.
+- **Mathematical ideas** construction with a protractor; estimating before drawing; checking a drawn angle
+- **Representations** protractor and ruler; angle-guessing game
+- **Prerequisites** pragati_iu_g06_ch02_u6
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Types of angles, and angles that make a straight line
+
+- **Id** `pragati_iu_g06_ch02_u10` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 39, 40, 41, 42
+- **Source** fegp1, printed pp. 51–54 (PDF pp. 39–42), read 2026-10-01. Establishes: The full classification including reflex angles; the explore where angle TER is 80 degrees and the rest follow from the straight angle; the Ashoka Chakra spokes.
+- **Objective** Classify angles including reflex, and find an unknown angle on a straight line.
+- **Student can** I can find the missing angle when the two angles make a straight line.
+- **Mathematical ideas** acute, right, obtuse, straight, reflex and complete angles; angles on a straight line summing to 180 degrees; deducing an unknown angle
+- **Representations** labelled figures; Ashoka Chakra
+- **Prerequisites** pragati_iu_g06_ch02_u8
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Collecting and organising data
+
+- **Id** `pragati_iu_g06_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
+- **Source** fegp1, printed pp. 75–79 (PDF pp. 1–6), read 2026-10-01. Establishes: Navya and Naresh finding the most popular game; deciding which questions need data; tables for sweets and trees; recording a news item.
+- **Objective** Decide what data answers a question and organise it into a table.
+- **Student can** I can tell which questions need data collected and which do not.
+- **Mathematical ideas** data as a collection of observations; questions answerable by data; frequency table
+- **Representations** tally sheets; frequency tables
+- **Prerequisites** pragati_iu_g05_ch15_u1
+- **Role** EXTENSION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Pictographs and the choice of scale
+
+- **Id** `pragati_iu_g06_ch04_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11, 12
+- **Source** fegp1, printed pp. 80–85 (PDF pp. 7–12), read 2026-10-01. Establishes: Travel-mode and sleep pictographs read with a key; Lakhanpal drawing one symbol per student; Jarina scaling it; the difficulty when the total is 33 or 27.
+- **Objective** Read and draw pictographs where one symbol stands for many.
+- **Student can** I can choose a sensible symbol value for a pictograph of 33 students.
+- **Mathematical ideas** scaled pictograph; part symbols; why a scale is needed
+- **Representations** pictographs with keys
+- **Prerequisites** pragati_iu_g05_ch15_u2
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Bar graphs
+
+- **Id** `pragati_iu_g06_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14, 15, 16
+- **Source** fegp1, printed pp. 86–89 (PDF pp. 13–16), read 2026-10-01. Establishes: Absent students shown as bars; the traffic bar graph; choosing 1 unit = 10 crore for large frequencies.
+- **Objective** Read a bar graph and answer comparison questions from it.
+- **Student can** I can say how many cars passed between 6 a.m. and noon from this graph.
+- **Mathematical ideas** bar graph with a scale; reading values between gridlines; comparing categories and totals
+- **Representations** bar graphs with scales
+- **Prerequisites** pragati_iu_g05_ch15_u3
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Drawing a bar graph
+
+- **Id** `pragati_iu_g06_ch04_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19, 20, 21, 22, 23
+- **Source** fegp1, printed pp. 90–96 (PDF pp. 17–23), read 2026-10-01. Establishes: The sweet-preference and Smriti’s runs graphs; the stated steps for bar width, gaps and scale; Imran’s family expenditure drawn at 1 unit = 200 rupees.
+- **Objective** Draw a bar graph from a frequency table, choosing scale and layout.
+- **Student can** I can draw a bar graph of my family’s monthly spending.
+- **Mathematical ideas** constructing axes; uniform bar width and gaps; choosing a scale to fit the data
+- **Representations** squared paper; frequency tables
+- **Prerequisites** pragati_iu_g06_ch04_u3
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Choosing and judging a representation
+
+- **Id** `pragati_iu_g06_ch04_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 24, 25, 26, 27, 28, 29, 30, 31
+- **Source** fegp1, printed pp. 97–104 (PDF pp. 24–31), read 2026-10-01. Establishes: The seven-summits data drawn both ways; why heights suit vertical bars and lengths horizontal ones; infographics discussed as representation choices.
+- **Objective** Decide which representation suits the data and judge an existing one.
+- **Student can** I can say why heights are better shown with vertical bars.
+- **Mathematical ideas** horizontal versus vertical bars; aesthetic and intuitive choices; infographics and misleading displays
+- **Representations** mountain-height graphs; infographics
+- **Prerequisites** pragati_iu_g06_ch04_u4
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Freehand artwork and the compass
+
+- **Id** `pragati_iu_g06_ch08_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
+- **Source** fegp1, printed pp. 188–192 (PDF pp. 1–6), read 2026-10-01. Establishes: Freehand artwork; opening the compass against a ruler; A Person, Wavy Wave and Eyes constructed with ruler and compass.
+- **Objective** Use a ruler and compass to reproduce curved figures.
+- **Student can** I can set my compass to 4 cm and draw the curve.
+- **Mathematical ideas** compass as a fixed-distance tool; circle as the set of points at a fixed distance; locating a centre by estimation
+- **Representations** ruler and compass; artwork figures
+- **Prerequisites** pragati_iu_g06_ch06_u1
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Properties of squares and rectangles
+
+- **Id** `pragati_iu_g06_ch08_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8
+- **Source** fegp1, printed pp. 192–194 (PDF pp. 6–8), read 2026-10-01. Establishes: The R1 and R2 properties of a rectangle and the square’s own; rotating a square and arguing it is still a square.
+- **Objective** State the defining properties of a square and a rectangle and test a figure against them.
+- **Student can** I can check whether this rotated figure is still a square.
+- **Mathematical ideas** defining properties; invariance under rotation; testing a figure against a definition
+- **Representations** dot paper; rotated figures
+- **Prerequisites** pragati_iu_g05_ch07_u3
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Constructing squares and rectangles
+
+- **Id** `pragati_iu_g06_ch08_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11, 12, 13
+- **Source** fegp1, printed pp. 195–199 (PDF pp. 9–13), read 2026-10-01. Establishes: The five-step construction of a 6 cm square; rectangles of given sides; checking the properties afterwards; how the distance XY behaves.
+- **Objective** Construct a square or rectangle of given side lengths with ruler, compass and protractor.
+- **Student can** I can construct a 6 cm square and check both properties.
+- **Mathematical ideas** ordered construction steps; perpendicular at a point; verifying the construction
+- **Representations** ruler, compass, protractor
+- **Prerequisites** pragati_iu_g06_ch08_u2
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Constructions inside rectangles
+
+- **Id** `pragati_iu_g06_ch08_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16, 17
+- **Source** fegp1, printed pp. 200–203 (PDF pp. 14–17), read 2026-10-01. Establishes: Squares inside rectangles; the rough diagram that reveals the equal sides; transferring AF with a compass; Falling Squares and Square with a Hole.
+- **Objective** Plan a construction from a rough diagram and carry it out.
+- **Student can** I can draw the rough figure first and work out what to construct.
+- **Mathematical ideas** rough diagram as a plan; transferring lengths with a compass; decomposing a figure into constructible parts
+- **Representations** rough sketches; compass arcs
+- **Prerequisites** pragati_iu_g06_ch08_u3
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Diagonals of rectangles and squares
+
+- **Id** `pragati_iu_g06_ch08_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19, 20, 21, 22, 23, 24, 25
+- **Source** fegp1, printed pp. 204–211 (PDF pp. 18–25), read 2026-10-01. Establishes: Measuring the diagonals; the 60/30 split construction in steps with two methods; constructing from a side and a diagonal length using an arc rather than trial and error.
+- **Objective** Use the diagonal and its angles to construct a rectangle.
+- **Student can** I can construct a rectangle whose diagonal splits a corner into 60 and 30 degrees.
+- **Mathematical ideas** diagonal; opposite angles; constructing from a diagonal constraint
+- **Representations** protractor; compass arcs
+- **Prerequisites** pragati_iu_g06_ch08_u3
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Points equidistant from two given points
+
+- **Id** `pragati_iu_g06_ch08_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 26, 27, 28, 29, 30
+- **Source** fegp1, printed pp. 212–216 (PDF pp. 26–30), read 2026-10-01. Establishes: The house construction; locating A at 5 cm from both B and C with two arcs; recreating the artwork figures using the same idea.
+- **Objective** Locate a point at a given distance from two points using arcs.
+- **Student can** I can find the point 5 cm from both B and C.
+- **Mathematical ideas** intersection of two arcs; equidistance; why the arc method beats trial and error
+- **Representations** compass; house figure
+- **Prerequisites** pragati_iu_g06_ch08_u5
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Lines of symmetry
+
+- **Id** `pragati_iu_g06_ch09_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5, 6
+- **Source** fegp1, printed pp. 219–222 (PDF pp. 3–6), read 2026-10-01. Establishes: Folding a triangle along a dotted line; finding all four lines for a square; describing where points A, B, C and D go under each reflection.
+- **Objective** Find all lines of symmetry of a figure by folding and reasoning.
+- **Student can** I can find all four lines of symmetry of a square.
+- **Mathematical ideas** line of symmetry; more than one line; reflection taking points to points
+- **Representations** paper folding; traced figures; dot grids
+- **Prerequisites** pragati_iu_g05_ch10_u1
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Paper folding, cutting and predicting
+
+- **Id** `pragati_iu_g06_ch09_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11, 12, 13
+- **Source** fegp1, printed pp. 223–229 (PDF pp. 7–13), read 2026-10-01. Establishes: Punched holes identified back to the fold line; predicting the hole shape after each cut; getting a given shape with folds and a single straight cut; completing figures so two lines become lines of symmetry.
+- **Objective** Predict the shape produced by folding, cutting and punching.
+- **Student can** I can say where the holes will be when I unfold this paper.
+- **Mathematical ideas** predicting a reflected result; vertical and horizontal folds; working backwards from a result
+- **Representations** folded and punched paper; squared paper
+- **Prerequisites** pragati_iu_g06_ch09_u1
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Rotational symmetry and angles of symmetry
+
+- **Id** `pragati_iu_g06_ch09_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16, 17, 18, 19, 20
+- **Source** fegp1, printed pp. 230–236 (PDF pp. 14–20), read 2026-10-01. Establishes: The windmill with 90, 180, 270 and 360 degree symmetries; strips with two angles; building figures with exactly 3, 5 and 6 angles of symmetry from radial arms; the order of rotational symmetry.
+- **Objective** Find the angles of symmetry of a figure and its order.
+- **Student can** I can list the angles of symmetry of the windmill.
+- **Mathematical ideas** angle of symmetry; order of rotational symmetry; a full turn always works
+- **Representations** rotating cut-outs; radial-arm figures
+- **Prerequisites** pragati_iu_g05_ch10_u2
+- **Role** FORMALIZATION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### The smallest angle of symmetry divides 360
+
+- **Id** `pragati_iu_g06_ch09_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 22, 23, 24, 25
+- **Source** fegp1, printed pp. 236–241 (PDF pp. 20–25), read 2026-10-01. Establishes: Listing the angles of symmetry for each order; the statement that the smallest angle of symmetry is a factor of 360; colouring a circle to get 3 or 4 angles of symmetry; the Parliament building analysed for both symmetries.
+- **Objective** Reason about which angles of symmetry a figure can have.
+- **Student can** I can explain why the smallest angle of symmetry is a factor of 360.
+- **Mathematical ideas** smallest angle of symmetry; factor of 360; which orders are possible
+- **Representations** sector-coloured circles; polygon figures
+- **Prerequisites** pragati_iu_g06_ch09_u3; pragati_iu_g06_ch05_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Numbers below zero, and the lift model
+
+- **Id** `pragati_iu_g06_ch10_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
+- **Source** fegp1, printed pp. 243–245 (PDF pp. 1–4), read 2026-10-01. Establishes: Bela’s Building of Fun with floors above and below the ground floor; the Welcome Hall as zero; naming floors with + and -.
+- **Objective** Read and write negative numbers as positions below zero.
+- **Student can** I can say which floor I reach from the Food Court by pressing minus 2.
+- **Mathematical ideas** numbers less than zero; position on a scale through zero; notation + and -
+- **Representations** building-of-fun lift; floor diagram
+- **Prerequisites** pragati_iu_g05_ch01_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Movement as addition and subtraction
+
+- **Id** `pragati_iu_g06_ch10_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6, 7, 8, 9
+- **Source** fegp1, printed pp. 245–250 (PDF pp. 4–9), read 2026-10-01. Establishes: Starting Floor + Movement = Target Floor; combining button presses; subtraction as finding the missing movement; larger numbers in the mine picture.
+- **Objective** Use starting position, movement and target position to add and subtract.
+- **Student can** I can work out the target floor from the starting floor and the button pressed.
+- **Mathematical ideas** addition as movement; subtraction as the movement needed; the relation between the three quantities
+- **Representations** lift buttons; movement expressions
+- **Prerequisites** pragati_iu_g06_ch10_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Comparing and ordering negative numbers
+
+- **Id** `pragati_iu_g06_ch10_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
+- **Source** fegp1, printed pp. 247–248 (PDF pp. 6–7), read 2026-10-01. Establishes: Floor +3 lower than +4 written with <; minus 4 lower than minus 3; ordering exercises.
+- **Objective** Compare negative numbers and place them in order.
+- **Student can** I can say why minus 4 is less than minus 3.
+- **Mathematical ideas** order on a scale through zero; comparison of negatives; ordering mixed positive and negative numbers
+- **Representations** floor diagram; number line
+- **Prerequisites** pragati_iu_g06_ch10_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### The number line through zero
+
+- **Id** `pragati_iu_g06_ch10_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15
+- **Source** fegp1, printed pp. 253–256 (PDF pp. 12–15), read 2026-10-01. Establishes: Movement on the marked line; unmarked number lines for larger numbers; converting subtraction to addition and back.
+- **Objective** Add and subtract on a number line that extends both ways.
+- **Student can** I can evaluate minus 125 plus minus 30 on an unmarked number line.
+- **Mathematical ideas** number line extended to the left of zero; jumps as movement; subtracting a negative as adding a positive
+- **Representations** marked and unmarked number lines
+- **Prerequisites** pragati_iu_g06_ch10_u2
+- **Role** EXTENSION · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### The token model
+
+- **Id** `pragati_iu_g06_ch10_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 16, 17, 18
+- **Source** fegp1, printed pp. 256–259 (PDF pp. 15–18), read 2026-10-01. Establishes: The attendant’s box of tokens; removing zero pairs; adding a zero pair so that a subtraction can be carried out.
+- **Objective** Add and subtract integers with positive and negative tokens.
+- **Student can** I can use zero pairs to work out plus 5 plus minus 8.
+- **Mathematical ideas** zero pair; adding an extra zero pair to allow a subtraction; a second model for the same arithmetic
+- **Representations** green and red tokens
+- **Prerequisites** pragati_iu_g06_ch10_u2
+- **Role** NEW_REPRESENTATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Negative numbers in the world
+
+- **Id** `pragati_iu_g06_ch10_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 19, 20, 21, 22
+- **Source** fegp1, printed pp. 260–263 (PDF pp. 19–22), read 2026-10-01. Establishes: Credits and debits totalled as a balance; the geographical cross-section; thermometers and temperature; years before the common era.
+- **Objective** Use negative numbers for balances, altitudes, temperature and years.
+- **Student can** I can read a cross-section and give the heights above and below sea level.
+- **Mathematical ideas** credit and debit; height above and below sea level; temperature below zero; BCE years
+- **Representations** bank statements; cross-sections; thermometers; timelines
+- **Prerequisites** pragati_iu_g06_ch10_u3
+- **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Integer grids and puzzles
+
+- **Id** `pragati_iu_g06_ch10_u7` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 23, 24, 25
+- **Source** fegp1, printed pp. 264–266 (PDF pp. 23–25), read 2026-10-01. Establishes: Border-sum grids for +4, -2 and -4; finding more than one filling; sequences continuing into the negatives.
+- **Objective** Complete grids and sequences with a required sum.
+- **Student can** I can fill the grid so that every border sums to minus 4.
+- **Mathematical ideas** constraint reasoning with integers; sequences with negative steps; more than one solution
+- **Representations** border-sum grids; sequence strips
+- **Prerequisites** pragati_iu_g06_ch10_u5
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+#### Brahmagupta’s rules, and a history of negative numbers
+
+- **Id** `pragati_iu_g06_ch10_u8` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 26, 27, 28, 29, 30
+- **Source** fegp1, printed pp. 267–271 (PDF pp. 26–30), read 2026-10-01. Establishes: Kautilya on credit and debit; Brahmagupta’s rules for subtraction and addition stated in full; European resistance to negative numbers; the integer snakes and ladders.
+- **Objective** State the rules for adding and subtracting signed numbers and place them in history.
+- **Student can** I can state the rule for subtracting a larger positive from a smaller one.
+- **Mathematical ideas** rules for signed addition and subtraction; additive inverse; history of the acceptance of negative numbers
+- **Representations** rule statements; historical sources
+- **Prerequisites** pragati_iu_g06_ch10_u5
+- **Role** FORMALIZATION · **reasoning** generalise · **complexity** 5/5
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.

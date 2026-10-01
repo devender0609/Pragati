@@ -60,6 +60,13 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-15 review findings — RESOLVED in checkpoint 16
+
+| Defect | Found | Resolved |
+|---|---|---|
+| My narrative summary said Class 6 was 38 READY / 4 flagged while the canonical data and the generated report said 37 / 5. The data was right; the hand-typed summary was wrong | checkpoint 15 review | checkpoint 16 — `tools/emitCheckpointSummary.mjs` derives every status count into `CHECKPOINT_STATUS_COUNTS.json`, and tests check both the file against the dataset and the checkpoint report against the file |
+| The interim Class 6 audit said "0 picture-carried pages still to render" while 231 pages were unread and so had no visual classification yet | checkpoint 15 review | checkpoint 16 — the wording now says the figure covers the pages inspected so far and that the unread pages' visual requirement is not yet determined; a test forbids the old phrasing for any class with unread pages |
+
 ## Checkpoint-14 review findings — all RESOLVED in checkpoint 15
 
 | Defect | Found | Resolved |

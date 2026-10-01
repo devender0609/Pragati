@@ -3358,7 +3358,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialChapters.ts); re-read 2026-09-22",
    "product": {
@@ -4083,7 +4083,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialChapters.ts); re-read 2026-09-22",
    "product": {
@@ -4866,7 +4866,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialChapters.ts); re-read 2026-09-22",
    "product": {
@@ -5069,7 +5069,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialChapters.ts); re-read 2026-09-22",
    "product": {
@@ -5156,7 +5156,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialChapters.ts); re-read 2026-09-22",
    "product": {

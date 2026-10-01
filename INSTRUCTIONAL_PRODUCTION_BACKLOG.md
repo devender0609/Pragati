@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-311 units are READY_FOR_AUTHORING and 23 are held back
+343 units are READY_FOR_AUTHORING and 24 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -53,7 +53,11 @@ pedagogical QA plus human review — not for convenience of generation.
 | 36 | Class 6 | 8 | Mental arithmetic with large numbers; Making numbers with given constraints; Number patterns that sum to a target; Estimation at scale; Fractional units and equal shares; Fractional units as parts of a whole; Measuring with fractional units; Marking fractions on the number line |
 | 37 | Class 6 | 8 | Mixed fractions; Equivalent fractions and the fraction wall; Equivalence from equal sharing; Simplest form; Comparing fractions; Adding and subtracting like fractions; Adding and subtracting unlike fractions; Mathematics as the search for patterns |
 | 38 | Class 6 | 8 | Number sequences; Visualising a sequence; Relations among sequences, explained by a picture; Shape sequences; Shape sequences give number sequences; Common multiples and common factors; Prime and composite numbers; Co-prime numbers |
-| 39 | Class 6 | 7 | Prime factorisation; Divisibility tests; Perimeter, and formulas for rectangle, square and triangle; Perimeter in context, and regular polygons; Area by counting and by formula; Area of a triangle; Area and perimeter together, and area mazes |
+| 39 | Class 6 | 8 | Prime factorisation; Divisibility tests; Perimeter, and formulas for rectangle, square and triangle; Perimeter in context, and regular polygons; Area by counting and by formula; Area of a triangle; Area and perimeter together, and area mazes; Point, line segment, line and ray |
+| 40 | Class 6 | 8 | Angle, arms and vertex; Comparing angles; Right, straight and perpendicular; The degree, and the 360-part circle; Reading a protractor; Making a protractor by folding, and bisecting; Measuring angles accurately, and common mistakes; Drawing angles of a given measure |
+| 41 | Class 6 | 8 | Types of angles, and angles that make a straight line; Collecting and organising data; Pictographs and the choice of scale; Bar graphs; Drawing a bar graph; Choosing and judging a representation; Freehand artwork and the compass; Properties of squares and rectangles |
+| 42 | Class 6 | 8 | Constructing squares and rectangles; Constructions inside rectangles; Diagonals of rectangles and squares; Points equidistant from two given points; Lines of symmetry; Paper folding, cutting and predicting; Rotational symmetry and angles of symmetry; The smallest angle of symmetry divides 360 |
+| 43 | Class 6 | 7 | Numbers below zero, and the lift model; Movement as addition and subtraction; Comparing and ordering negative numbers; The number line through zero; The token model; Negative numbers in the world; Brahmagupta’s rules, and a history of negative numbers |
 
 ## Held back
 
@@ -80,3 +84,4 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g06_ch03_u13` — Games and winning strategies (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g06_ch07_u12` — A pinch of history, and unit-fraction puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g06_ch05_u6` — Fun with numbers (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g06_ch10_u7` — Integer grids and puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 

@@ -31951,6 +31951,3818 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u1",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [
+    "ncert_gp_c6_s2_2",
+    "ncert_gp_c6_s2_3",
+    "ncert_gp_c6_s2_4"
+   ],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_1",
+    "printedPageStart": 14,
+    "printedPageEnd": 17,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Points named Z, P and T; the fold giving a line segment; the line through two points; rays modelled by a beam of light; naming exercises including whether ray OA may be called OB.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 75 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 14,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 87 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 15,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 69 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 16,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 97 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 17,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 89 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Point, line segment, line and ray",
+   "mathematicalObjective": "Distinguish point, line segment, line and ray and name them correctly.",
+   "studentCanStatement": "I can name the rays in this figure and say why OA and OB can be the same ray.",
+   "mathematicalIdeas": [
+    "point as a position",
+    "line segment with two endpoints",
+    "line extending endlessly",
+    "ray with one endpoint",
+    "naming conventions"
+   ],
+   "representationsNeeded": [
+    "folded paper creases",
+    "labelled figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch07_u3"
+   ],
+   "vocabulary": [
+    "point",
+    "line segment",
+    "line",
+    "ray",
+    "endpoint"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers several numbered sections deliberately: ncert_gp_c6_s2_2, ncert_gp_c6_s2_3, ncert_gp_c6_s2_4 are two-paragraph sections on the same page range, and splitting them would make units smaller than a lesson. Each contributing official record is cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Classes 1-5 drew lines and corners informally; Class 6 defines each object and fixes the notation.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u2",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_5",
+    "printedPageStart": 17,
+    "printedPageEnd": 21,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Angles found in spectacles and wallets; arms and vertex marked; why angle APB cannot be called angle P; counting angles made by points on a page.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 17,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 89 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 18,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 127 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 19,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 76 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 20,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 102 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 21,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 102 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Angle, arms and vertex",
+   "mathematicalObjective": "Describe an angle by its arms and vertex and name it correctly.",
+   "studentCanStatement": "I can mark the arms and vertex of this angle and name it properly.",
+   "mathematicalIdeas": [
+    "angle as two rays from a common point",
+    "arms and vertex",
+    "three-letter naming and when a single letter fails"
+   ],
+   "representationsNeeded": [
+    "everyday objects with angles",
+    "labelled diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u1"
+   ],
+   "vocabulary": [
+    "angle",
+    "arm",
+    "vertex",
+    "name"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 treated angle as an amount of turn; Class 6 defines it as a figure and names it.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u3",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [
+    "ncert_gp_c6_s2_7"
+   ],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_6",
+    "printedPageStart": 22,
+    "printedPageEnd": 26,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Comparing by placing one angle on another; why the length of the arms does not change the angle; the transparent-circle method; the cardboard slit activity.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 22,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 121 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 23,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 130 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 24,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 63 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 25,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 67 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 26,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 58 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Comparing angles",
+   "mathematicalObjective": "Compare two angles by superimposition and without it.",
+   "studentCanStatement": "I can decide which of two angles is bigger and explain how I know.",
+   "mathematicalIdeas": [
+    "superimposition",
+    "comparison independent of arm length",
+    "using a transparent circle to compare"
+   ],
+   "representationsNeeded": [
+    "tracing paper",
+    "transparent circle",
+    "rotating-arm models"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u2"
+   ],
+   "vocabulary": [
+    "greater",
+    "equal",
+    "superimpose"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers several numbered sections deliberately: ncert_gp_c6_s2_7 are two-paragraph sections on the same page range, and splitting them would make units smaller than a lesson. Each contributing official record is cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "A method for comparing angles, where Class 5 compared only against a quarter turn.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u4",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_8",
+    "printedPageStart": 27,
+    "printedPageEnd": 32,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 20,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Vidya opening the book cover; folding to make two equal angles and naming them right angles; the straight angle containing two right angles; perpendicular creases; acute and obtuse named by comparison.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 27,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 69 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 28,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 83 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 29,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 62 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 30,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 279 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 31,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 60 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 32,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 65 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Right, straight and perpendicular",
+   "mathematicalObjective": "Identify right and straight angles and construct perpendiculars by folding.",
+   "studentCanStatement": "I can justify why the two angles made by my fold are exact right angles.",
+   "mathematicalIdeas": [
+    "right angle as half a straight angle",
+    "straight angle",
+    "perpendicular lines",
+    "justifying equality by folding"
+   ],
+   "representationsNeeded": [
+    "paper folding",
+    "dot grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u3"
+   ],
+   "vocabulary": [
+    "right angle",
+    "straight angle",
+    "perpendicular"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 4 recognised right angles by comparison; Class 6 defines and justifies them.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u5",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_9",
+    "printedPageStart": 33,
+    "printedPageEnd": 34,
+    "pdfPageStart": 21,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The full turn divided into 360 equal parts; 1 degree defined; the Rigveda wheel of 360 spokes; half and quarter turns in degrees.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 21,
+      "printedPage": 33,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 291 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 34,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 142 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "The degree, and the 360-part circle",
+   "mathematicalObjective": "Explain why a full turn is divided into 360 parts and measure in degrees.",
+   "studentCanStatement": "I can say what 1 degree means and why a straight angle is 180 degrees.",
+   "mathematicalIdeas": [
+    "degree as one of 360 equal parts of a full turn",
+    "fractions of a turn in degrees",
+    "history of the 360-part division"
+   ],
+   "representationsNeeded": [
+    "paper protractor made by folding",
+    "circle divided into parts"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch03_u3"
+   ],
+   "vocabulary": [
+    "degree",
+    "full turn",
+    "straight angle"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "The degree is new: Class 5 measured turns with a folded circle, with no unit.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u6",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_9",
+    "printedPageStart": 35,
+    "printedPageEnd": 37,
+    "pdfPageStart": 23,
+    "pdfPageEnd": 25,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The unlabelled protractor read by counting units; the labelled protractor; choosing between the inner and outer markings; finding a measure without counting.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     23,
+     24,
+     25
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 23,
+      "printedPage": 35,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 554 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 36,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 552 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 37,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 302 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Reading a protractor",
+   "mathematicalObjective": "Measure an angle with an unlabelled and a labelled protractor.",
+   "studentCanStatement": "I can read an angle on a protractor and say which scale I used.",
+   "mathematicalIdeas": [
+    "protractor scales",
+    "aligning the centre and the zero line",
+    "inner and outer markings"
+   ],
+   "representationsNeeded": [
+    "unlabelled and labelled protractors"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u5"
+   ],
+   "vocabulary": [
+    "protractor",
+    "inner scale",
+    "outer scale",
+    "measure"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "First use of a measuring instrument for angles.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u7",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_9",
+    "printedPageStart": 38,
+    "printedPageEnd": 40,
+    "pdfPageStart": 26,
+    "pdfPageEnd": 28,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Folding the semicircle into halves, quarters and eighths with their degree values; bisecting an angle defined through the folding process.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     26,
+     27,
+     28
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 26,
+      "printedPage": 38,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 288 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 39,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 95 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 40,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 95 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Making a protractor by folding, and bisecting",
+   "mathematicalObjective": "Build a paper protractor by halving and name the bisector.",
+   "studentCanStatement": "I can fold my circle to get 45 degrees and explain why.",
+   "mathematicalIdeas": [
+    "repeated halving of a turn",
+    "angle bisector",
+    "degree values from folds"
+   ],
+   "representationsNeeded": [
+    "circular paper",
+    "crease diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u5"
+   ],
+   "vocabulary": [
+    "bisect",
+    "half",
+    "45 degrees"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Bisection appears for the first time.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u8",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_9",
+    "printedPageStart": 41,
+    "printedPageEnd": 46,
+    "pdfPageStart": 29,
+    "pdfPageEnd": 34,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Measuring sets of given angles; the Mind the Mistake, Mend the Mistake spread; angles in a clock and in slopes.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 29,
+      "printedPage": 41,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 80 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 42,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 333 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 43,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 176 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": 44,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 1516 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 45,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 264 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 46,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 72 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Measuring angles accurately, and common mistakes",
+   "mathematicalObjective": "Measure given angles and identify incorrect protractor use.",
+   "studentCanStatement": "I can spot what went wrong in this protractor reading.",
+   "mathematicalIdeas": [
+    "accurate measurement",
+    "error analysis with an instrument",
+    "angles in real figures"
+   ],
+   "representationsNeeded": [
+    "protractor",
+    "Mind the Mistake figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u6"
+   ],
+   "vocabulary": [
+    "measure",
+    "mistake",
+    "align"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends measurement into judging whether a measurement was taken correctly.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u9",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_10",
+    "printedPageStart": 47,
+    "printedPageEnd": 50,
+    "pdfPageStart": 35,
+    "pdfPageEnd": 38,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The step-by-step construction of a 30 degree angle; the angle-guessing game; drawing angles of given measures and copying a given angle.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     35,
+     36,
+     37,
+     38
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 35,
+      "printedPage": 47,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 551 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": 48,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 66 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": 49,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 85 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": 50,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 87 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Drawing angles of a given measure",
+   "mathematicalObjective": "Construct an angle of a stated degree measure with a protractor.",
+   "studentCanStatement": "I can draw an angle of 110 degrees with a protractor.",
+   "mathematicalIdeas": [
+    "construction with a protractor",
+    "estimating before drawing",
+    "checking a drawn angle"
+   ],
+   "representationsNeeded": [
+    "protractor and ruler",
+    "angle-guessing game"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u6"
+   ],
+   "vocabulary": [
+    "draw",
+    "construct",
+    "estimate"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 9,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Constructing a stated angle, not only measuring one.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch02_u10",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": "ncert_gp_c6_s2_11",
+    "printedPageStart": 51,
+    "printedPageEnd": 54,
+    "pdfPageStart": 39,
+    "pdfPageEnd": 42,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The full classification including reflex angles; the explore where angle TER is 80 degrees and the rest follow from the straight angle; the Ashoka Chakra spokes.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     39,
+     40,
+     41,
+     42
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 39,
+      "printedPage": 51,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 179 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 40,
+      "printedPage": 52,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 252 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 41,
+      "printedPage": 53,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 106 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 42,
+      "printedPage": 54,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 70 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Types of angles, and angles that make a straight line",
+   "mathematicalObjective": "Classify angles including reflex, and find an unknown angle on a straight line.",
+   "studentCanStatement": "I can find the missing angle when the two angles make a straight line.",
+   "mathematicalIdeas": [
+    "acute, right, obtuse, straight, reflex and complete angles",
+    "angles on a straight line summing to 180 degrees",
+    "deducing an unknown angle"
+   ],
+   "representationsNeeded": [
+    "labelled figures",
+    "Ashoka Chakra"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u8"
+   ],
+   "vocabulary": [
+    "reflex",
+    "classify",
+    "straight line"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 10,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Deducing an angle from a relationship rather than measuring it is new.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch04_u1",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch04_data_handling",
+    "officialSectionId": "ncert_gp_c6_s4_1",
+    "printedPageStart": 75,
+    "printedPageEnd": 79,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Navya and Naresh finding the most popular game; deciding which questions need data; tables for sweets and trees; recording a news item.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 327 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 75,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 98 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 76,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 135 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 77,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 100 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 78,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 139 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 79,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 246 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Collecting and organising data",
+   "mathematicalObjective": "Decide what data answers a question and organise it into a table.",
+   "studentCanStatement": "I can tell which questions need data collected and which do not.",
+   "mathematicalIdeas": [
+    "data as a collection of observations",
+    "questions answerable by data",
+    "frequency table"
+   ],
+   "representationsNeeded": [
+    "tally sheets",
+    "frequency tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch15_u1"
+   ],
+   "vocabulary": [
+    "data",
+    "table",
+    "frequency"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Class 5 recorded a survey; Class 6 asks whether a question needs data at all.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch04_u2",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch04_data_handling",
+    "officialSectionId": "ncert_gp_c6_s4_2",
+    "printedPageStart": 80,
+    "printedPageEnd": 85,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Travel-mode and sleep pictographs read with a key; Lakhanpal drawing one symbol per student; Jarina scaling it; the difficulty when the total is 33 or 27.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 80,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 120 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 81,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 286 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 82,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 375 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 83,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 104 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 84,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 1657 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 85,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 124 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Pictographs and the choice of scale",
+   "mathematicalObjective": "Read and draw pictographs where one symbol stands for many.",
+   "studentCanStatement": "I can choose a sensible symbol value for a pictograph of 33 students.",
+   "mathematicalIdeas": [
+    "scaled pictograph",
+    "part symbols",
+    "why a scale is needed"
+   ],
+   "representationsNeeded": [
+    "pictographs with keys"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch15_u2"
+   ],
+   "vocabulary": [
+    "pictograph",
+    "symbol",
+    "scale",
+    "key"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Class 5 met a scaled pictograph; Class 6 makes choosing the scale the problem.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch04_u3",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch04_data_handling",
+    "officialSectionId": "ncert_gp_c6_s4_3",
+    "printedPageStart": 86,
+    "printedPageEnd": 89,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 16,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Absent students shown as bars; the traffic bar graph; choosing 1 unit = 10 crore for large frequencies.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     13,
+     14,
+     15,
+     16
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 86,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 100 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 87,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 90 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 88,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 91 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 89,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 106 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Bar graphs",
+   "mathematicalObjective": "Read a bar graph and answer comparison questions from it.",
+   "studentCanStatement": "I can say how many cars passed between 6 a.m. and noon from this graph.",
+   "mathematicalIdeas": [
+    "bar graph with a scale",
+    "reading values between gridlines",
+    "comparing categories and totals"
+   ],
+   "representationsNeeded": [
+    "bar graphs with scales"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch15_u3"
+   ],
+   "vocabulary": [
+    "bar graph",
+    "scale",
+    "axis"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Class 5 drew a simple bar graph; Class 6 reads graphs with chosen scales and large numbers.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch04_u4",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch04_data_handling",
+    "officialSectionId": "ncert_gp_c6_s4_4",
+    "printedPageStart": 90,
+    "printedPageEnd": 96,
+    "pdfPageStart": 17,
+    "pdfPageEnd": 23,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The sweet-preference and Smriti’s runs graphs; the stated steps for bar width, gaps and scale; Imran’s family expenditure drawn at 1 unit = 200 rupees.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 17,
+      "printedPage": 90,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 140 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 91,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 109 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 92,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 107 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 93,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 148 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 94,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 273 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 95,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 120 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 96,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 1765 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Drawing a bar graph",
+   "mathematicalObjective": "Draw a bar graph from a frequency table, choosing scale and layout.",
+   "studentCanStatement": "I can draw a bar graph of my family’s monthly spending.",
+   "mathematicalIdeas": [
+    "constructing axes",
+    "uniform bar width and gaps",
+    "choosing a scale to fit the data"
+   ],
+   "representationsNeeded": [
+    "squared paper",
+    "frequency tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch04_u3"
+   ],
+   "vocabulary": [
+    "width",
+    "gap",
+    "scale",
+    "axis"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Construction rules for a graph, where Class 5 drew bars informally.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch04_u5",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch04_data_handling",
+    "officialSectionId": "ncert_gp_c6_s4_5",
+    "printedPageStart": 97,
+    "printedPageEnd": 104,
+    "pdfPageStart": 24,
+    "pdfPageEnd": 31,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The seven-summits data drawn both ways; why heights suit vertical bars and lengths horizontal ones; infographics discussed as representation choices.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 24,
+      "printedPage": 97,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "113 images, 2397 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 98,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 89 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 99,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 87 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 100,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 130 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 101,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 134 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 102,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 114 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 103,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 74 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 104,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 87 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Choosing and judging a representation",
+   "mathematicalObjective": "Decide which representation suits the data and judge an existing one.",
+   "studentCanStatement": "I can say why heights are better shown with vertical bars.",
+   "mathematicalIdeas": [
+    "horizontal versus vertical bars",
+    "aesthetic and intuitive choices",
+    "infographics and misleading displays"
+   ],
+   "representationsNeeded": [
+    "mountain-height graphs",
+    "infographics"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch04_u4"
+   ],
+   "vocabulary": [
+    "horizontal",
+    "vertical",
+    "suitable",
+    "mislead"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Judging a representation, not just making one, is new at Class 6.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch08_u1",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch08_constructions",
+    "officialSectionId": "ncert_gp_c6_s8_1",
+    "printedPageStart": 188,
+    "printedPageEnd": 192,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Freehand artwork; opening the compass against a ruler; A Person, Wavy Wave and Eyes constructed with ruler and compass.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 828 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 188,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 82 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 189,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 72 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 190,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 82 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 191,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 206 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 192,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 85 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Freehand artwork and the compass",
+   "mathematicalObjective": "Use a ruler and compass to reproduce curved figures.",
+   "studentCanStatement": "I can set my compass to 4 cm and draw the curve.",
+   "mathematicalIdeas": [
+    "compass as a fixed-distance tool",
+    "circle as the set of points at a fixed distance",
+    "locating a centre by estimation"
+   ],
+   "representationsNeeded": [
+    "ruler and compass",
+    "artwork figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch06_u1"
+   ],
+   "vocabulary": [
+    "compass",
+    "radius",
+    "curve"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "First systematic tool use; Classes 1-5 drew shapes by hand or on grids.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch08_u2",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch08_constructions",
+    "officialSectionId": "ncert_gp_c6_s8_2",
+    "printedPageStart": 192,
+    "printedPageEnd": 194,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The R1 and R2 properties of a rectangle and the square’s own; rotating a square and arguing it is still a square.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7,
+     8
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 192,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 85 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 193,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 72 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 194,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 74 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Properties of squares and rectangles",
+   "mathematicalObjective": "State the defining properties of a square and a rectangle and test a figure against them.",
+   "studentCanStatement": "I can check whether this rotated figure is still a square.",
+   "mathematicalIdeas": [
+    "defining properties",
+    "invariance under rotation",
+    "testing a figure against a definition"
+   ],
+   "representationsNeeded": [
+    "dot paper",
+    "rotated figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch07_u3"
+   ],
+   "vocabulary": [
+    "property",
+    "opposite sides",
+    "right angle"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 described quadrilaterals; Class 6 treats the properties as a definition to test against.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch08_u3",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch08_constructions",
+    "officialSectionId": "ncert_gp_c6_s8_3",
+    "printedPageStart": 195,
+    "printedPageEnd": 199,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The five-step construction of a 6 cm square; rectangles of given sides; checking the properties afterwards; how the distance XY behaves.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 195,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 76 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 196,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 672 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 197,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 110 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 198,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 127 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 199,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 117 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Constructing squares and rectangles",
+   "mathematicalObjective": "Construct a square or rectangle of given side lengths with ruler, compass and protractor.",
+   "studentCanStatement": "I can construct a 6 cm square and check both properties.",
+   "mathematicalIdeas": [
+    "ordered construction steps",
+    "perpendicular at a point",
+    "verifying the construction"
+   ],
+   "representationsNeeded": [
+    "ruler, compass, protractor"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch08_u2"
+   ],
+   "vocabulary": [
+    "construct",
+    "perpendicular",
+    "verify"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Formal construction with tools, new to the programme.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch08_u4",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch08_constructions",
+    "officialSectionId": "ncert_gp_c6_s8_4",
+    "printedPageStart": 200,
+    "printedPageEnd": 203,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 17,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Squares inside rectangles; the rough diagram that reveals the equal sides; transferring AF with a compass; Falling Squares and Square with a Hole.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     15,
+     16,
+     17
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 200,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 2363 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 201,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 93 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 202,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 186 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 203,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 99 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Constructions inside rectangles",
+   "mathematicalObjective": "Plan a construction from a rough diagram and carry it out.",
+   "studentCanStatement": "I can draw the rough figure first and work out what to construct.",
+   "mathematicalIdeas": [
+    "rough diagram as a plan",
+    "transferring lengths with a compass",
+    "decomposing a figure into constructible parts"
+   ],
+   "representationsNeeded": [
+    "rough sketches",
+    "compass arcs"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch08_u3"
+   ],
+   "vocabulary": [
+    "rough diagram",
+    "transfer",
+    "arc"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Planning a construction before drawing is a distinct new demand.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch08_u5",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch08_constructions",
+    "officialSectionId": "ncert_gp_c6_s8_5",
+    "printedPageStart": 204,
+    "printedPageEnd": 211,
+    "pdfPageStart": 18,
+    "pdfPageEnd": 25,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Measuring the diagonals; the 60/30 split construction in steps with two methods; constructing from a side and a diagonal length using an arc rather than trial and error.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 18,
+      "printedPage": 204,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 162 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 205,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 119 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 206,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 80 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 207,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 89 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 208,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 591 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 209,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 71 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 210,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 76 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 211,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 93 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Diagonals of rectangles and squares",
+   "mathematicalObjective": "Use the diagonal and its angles to construct a rectangle.",
+   "studentCanStatement": "I can construct a rectangle whose diagonal splits a corner into 60 and 30 degrees.",
+   "mathematicalIdeas": [
+    "diagonal",
+    "opposite angles",
+    "constructing from a diagonal constraint"
+   ],
+   "representationsNeeded": [
+    "protractor",
+    "compass arcs"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch08_u3"
+   ],
+   "vocabulary": [
+    "diagonal",
+    "opposite angle",
+    "constraint"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Constructing from a constraint rather than from given sides.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch08_u6",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch08_constructions",
+    "officialSectionId": "ncert_gp_c6_s8_6",
+    "printedPageStart": 212,
+    "printedPageEnd": 216,
+    "pdfPageStart": 26,
+    "pdfPageEnd": 30,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The house construction; locating A at 5 cm from both B and C with two arcs; recreating the artwork figures using the same idea.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 26,
+      "printedPage": 212,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 76 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 213,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 79 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 214,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 87 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 215,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 76 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 216,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 67 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Points equidistant from two given points",
+   "mathematicalObjective": "Locate a point at a given distance from two points using arcs.",
+   "studentCanStatement": "I can find the point 5 cm from both B and C.",
+   "mathematicalIdeas": [
+    "intersection of two arcs",
+    "equidistance",
+    "why the arc method beats trial and error"
+   ],
+   "representationsNeeded": [
+    "compass",
+    "house figure"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch08_u5"
+   ],
+   "vocabulary": [
+    "equidistant",
+    "arc",
+    "intersect"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "The locus idea in embryo, and the chapter’s central method.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch09_u1",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch09_symmetry",
+    "officialSectionId": "ncert_gp_c6_s9_1",
+    "printedPageStart": 219,
+    "printedPageEnd": 222,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Folding a triangle along a dotted line; finding all four lines for a square; describing where points A, B, C and D go under each reflection.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 219,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 57 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 220,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 57 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 221,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 60 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 222,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 57 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Lines of symmetry",
+   "mathematicalObjective": "Find all lines of symmetry of a figure by folding and reasoning.",
+   "studentCanStatement": "I can find all four lines of symmetry of a square.",
+   "mathematicalIdeas": [
+    "line of symmetry",
+    "more than one line",
+    "reflection taking points to points"
+   ],
+   "representationsNeeded": [
+    "paper folding",
+    "traced figures",
+    "dot grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch10_u1"
+   ],
+   "vocabulary": [
+    "line of symmetry",
+    "fold",
+    "reflect"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Class 5 identified symmetry; Class 6 finds every line and describes the reflection.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch09_u2",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch09_symmetry",
+    "officialSectionId": "ncert_gp_c6_s9_1",
+    "printedPageStart": 223,
+    "printedPageEnd": 229,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Punched holes identified back to the fold line; predicting the hole shape after each cut; getting a given shape with folds and a single straight cut; completing figures so two lines become lines of symmetry.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 223,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 118 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 224,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 70 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 225,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 75 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 226,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 67 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 227,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 725 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 228,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 499 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 229,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 1093 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Paper folding, cutting and predicting",
+   "mathematicalObjective": "Predict the shape produced by folding, cutting and punching.",
+   "studentCanStatement": "I can say where the holes will be when I unfold this paper.",
+   "mathematicalIdeas": [
+    "predicting a reflected result",
+    "vertical and horizontal folds",
+    "working backwards from a result"
+   ],
+   "representationsNeeded": [
+    "folded and punched paper",
+    "squared paper"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch09_u1"
+   ],
+   "vocabulary": [
+    "punch",
+    "predict",
+    "unfold"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Prediction and working backwards, beyond the Class 5 completing task.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch09_u3",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch09_symmetry",
+    "officialSectionId": "ncert_gp_c6_s9_2",
+    "printedPageStart": 230,
+    "printedPageEnd": 236,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 20,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The windmill with 90, 180, 270 and 360 degree symmetries; strips with two angles; building figures with exactly 3, 5 and 6 angles of symmetry from radial arms; the order of rotational symmetry.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 230,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 297 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 231,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 74 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 232,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 65 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 233,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 60 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 234,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 54 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 235,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 95 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 236,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 73 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Rotational symmetry and angles of symmetry",
+   "mathematicalObjective": "Find the angles of symmetry of a figure and its order.",
+   "studentCanStatement": "I can list the angles of symmetry of the windmill.",
+   "mathematicalIdeas": [
+    "angle of symmetry",
+    "order of rotational symmetry",
+    "a full turn always works"
+   ],
+   "representationsNeeded": [
+    "rotating cut-outs",
+    "radial-arm figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch10_u2"
+   ],
+   "vocabulary": [
+    "rotate",
+    "angle of symmetry",
+    "order"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 noticed rotational symmetry; Class 6 measures it in degrees and names its order.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch09_u4",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch09_symmetry",
+    "officialSectionId": "ncert_gp_c6_s9_2",
+    "printedPageStart": 236,
+    "printedPageEnd": 241,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 25,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Listing the angles of symmetry for each order; the statement that the smallest angle of symmetry is a factor of 360; colouring a circle to get 3 or 4 angles of symmetry; the Parliament building analysed for both symmetries.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 236,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 73 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 237,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 100 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 238,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 72 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 239,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 56 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 240,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 103 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 241,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 124 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "The smallest angle of symmetry divides 360",
+   "mathematicalObjective": "Reason about which angles of symmetry a figure can have.",
+   "studentCanStatement": "I can explain why the smallest angle of symmetry is a factor of 360.",
+   "mathematicalIdeas": [
+    "smallest angle of symmetry",
+    "factor of 360",
+    "which orders are possible"
+   ],
+   "representationsNeeded": [
+    "sector-coloured circles",
+    "polygon figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch09_u3",
+    "pragati_iu_g06_ch05_u1"
+   ],
+   "vocabulary": [
+    "smallest angle",
+    "factor",
+    "possible"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "A general result about symmetry, connecting it to factors.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u1",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_1",
+    "printedPageStart": 243,
+    "printedPageEnd": 245,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Bela’s Building of Fun with floors above and below the ground floor; the Welcome Hall as zero; naming floors with + and -.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 99 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 243,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 67 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 244,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 66 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 245,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 66 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Numbers below zero, and the lift model",
+   "mathematicalObjective": "Read and write negative numbers as positions below zero.",
+   "studentCanStatement": "I can say which floor I reach from the Food Court by pressing minus 2.",
+   "mathematicalIdeas": [
+    "numbers less than zero",
+    "position on a scale through zero",
+    "notation + and -"
+   ],
+   "representationsNeeded": [
+    "building-of-fun lift",
+    "floor diagram"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u1"
+   ],
+   "vocabulary": [
+    "negative",
+    "below zero",
+    "floor"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Negative numbers appear for the first time in the programme.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u2",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_1",
+    "printedPageStart": 245,
+    "printedPageEnd": 250,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Starting Floor + Movement = Target Floor; combining button presses; subtraction as finding the missing movement; larger numbers in the mine picture.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 245,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 66 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 246,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 81 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 247,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 109 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 248,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 78 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 249,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 66 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 250,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 76 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Movement as addition and subtraction",
+   "mathematicalObjective": "Use starting position, movement and target position to add and subtract.",
+   "studentCanStatement": "I can work out the target floor from the starting floor and the button pressed.",
+   "mathematicalIdeas": [
+    "addition as movement",
+    "subtraction as the movement needed",
+    "the relation between the three quantities"
+   ],
+   "representationsNeeded": [
+    "lift buttons",
+    "movement expressions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u1"
+   ],
+   "vocabulary": [
+    "movement",
+    "target",
+    "starting"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Signed arithmetic through a movement model.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u3",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_1",
+    "printedPageStart": 247,
+    "printedPageEnd": 248,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Floor +3 lower than +4 written with <; minus 4 lower than minus 3; ordering exercises.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 247,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 109 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 248,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 78 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Comparing and ordering negative numbers",
+   "mathematicalObjective": "Compare negative numbers and place them in order.",
+   "studentCanStatement": "I can say why minus 4 is less than minus 3.",
+   "mathematicalIdeas": [
+    "order on a scale through zero",
+    "comparison of negatives",
+    "ordering mixed positive and negative numbers"
+   ],
+   "representationsNeeded": [
+    "floor diagram",
+    "number line"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u1"
+   ],
+   "vocabulary": [
+    "less than",
+    "greater than",
+    "order"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Order reversing below zero is a genuinely new idea.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u4",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_1",
+    "printedPageStart": 253,
+    "printedPageEnd": 256,
+    "pdfPageStart": 12,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Movement on the marked line; unmarked number lines for larger numbers; converting subtraction to addition and back.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     12,
+     13,
+     14,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 12,
+      "printedPage": 253,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 156 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 254,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 85 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 255,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 75 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 256,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 82 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "The number line through zero",
+   "mathematicalObjective": "Add and subtract on a number line that extends both ways.",
+   "studentCanStatement": "I can evaluate minus 125 plus minus 30 on an unmarked number line.",
+   "mathematicalIdeas": [
+    "number line extended to the left of zero",
+    "jumps as movement",
+    "subtracting a negative as adding a positive"
+   ],
+   "representationsNeeded": [
+    "marked and unmarked number lines"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u2"
+   ],
+   "vocabulary": [
+    "number line",
+    "jump",
+    "opposite"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Classes 3-5 number line across zero.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u5",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_2",
+    "printedPageStart": 256,
+    "printedPageEnd": 259,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 18,
+    "inspectedOn": "2026-10-01",
+    "establishes": "The attendant’s box of tokens; removing zero pairs; adding a zero pair so that a subtraction can be carried out.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15,
+     16,
+     17,
+     18
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 256,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 82 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 257,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 77 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 258,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 78 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 259,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 73 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "The token model",
+   "mathematicalObjective": "Add and subtract integers with positive and negative tokens.",
+   "studentCanStatement": "I can use zero pairs to work out plus 5 plus minus 8.",
+   "mathematicalIdeas": [
+    "zero pair",
+    "adding an extra zero pair to allow a subtraction",
+    "a second model for the same arithmetic"
+   ],
+   "representationsNeeded": [
+    "green and red tokens"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u2"
+   ],
+   "vocabulary": [
+    "token",
+    "zero pair",
+    "remove"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "A second model, deliberately set beside the number line.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u6",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_3",
+    "printedPageStart": 260,
+    "printedPageEnd": 263,
+    "pdfPageStart": 19,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Credits and debits totalled as a balance; the geographical cross-section; thermometers and temperature; years before the common era.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     19,
+     20,
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 19,
+      "printedPage": 260,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 68 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 261,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 179 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 262,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 245 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 263,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 129 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Negative numbers in the world",
+   "mathematicalObjective": "Use negative numbers for balances, altitudes, temperature and years.",
+   "studentCanStatement": "I can read a cross-section and give the heights above and below sea level.",
+   "mathematicalIdeas": [
+    "credit and debit",
+    "height above and below sea level",
+    "temperature below zero",
+    "BCE years"
+   ],
+   "representationsNeeded": [
+    "bank statements",
+    "cross-sections",
+    "thermometers",
+    "timelines"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u3"
+   ],
+   "vocabulary": [
+    "balance",
+    "sea level",
+    "temperature",
+    "BCE"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Contexts where negative values are the natural reading.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u7",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_4",
+    "printedPageStart": 264,
+    "printedPageEnd": 266,
+    "pdfPageStart": 23,
+    "pdfPageEnd": 25,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Border-sum grids for +4, -2 and -4; finding more than one filling; sequences continuing into the negatives.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     23,
+     24,
+     25
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 23,
+      "printedPage": 264,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 382 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 265,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 177 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 266,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 66 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Integer grids and puzzles",
+   "mathematicalObjective": "Complete grids and sequences with a required sum.",
+   "studentCanStatement": "I can fill the grid so that every border sums to minus 4.",
+   "mathematicalIdeas": [
+    "constraint reasoning with integers",
+    "sequences with negative steps",
+    "more than one solution"
+   ],
+   "representationsNeeded": [
+    "border-sum grids",
+    "sequence strips"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u5"
+   ],
+   "vocabulary": [
+    "border sum",
+    "grid",
+    "sequence"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "REASONING_EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Constraint puzzles over the integers.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the integer border-sum grids and the snakes-and-ladders integer game: core Pragati Learn at Class 6, or enrichment beside the integer work?",
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch10_u8",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": "ncert_gp_c6_s10_5",
+    "printedPageStart": 267,
+    "printedPageEnd": 271,
+    "pdfPageStart": 26,
+    "pdfPageEnd": 30,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Kautilya on credit and debit; Brahmagupta’s rules for subtraction and addition stated in full; European resistance to negative numbers; the integer snakes and ladders.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 26,
+      "printedPage": 267,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 64 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 268,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 66 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 269,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 64 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 270,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 64 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 271,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 64 drawn elements: read in full text and, where the mathematics is carried by the picture, rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   },
+   "instructionalTitle": "Brahmagupta’s rules, and a history of negative numbers",
+   "mathematicalObjective": "State the rules for adding and subtracting signed numbers and place them in history.",
+   "studentCanStatement": "I can state the rule for subtracting a larger positive from a smaller one.",
+   "mathematicalIdeas": [
+    "rules for signed addition and subtraction",
+    "additive inverse",
+    "history of the acceptance of negative numbers"
+   ],
+   "representationsNeeded": [
+    "rule statements",
+    "historical sources"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u5"
+   ],
+   "vocabulary": [
+    "rule",
+    "inverse",
+    "positive",
+    "negative"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "The model-based arithmetic is turned into stated general rules.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 16",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ]
   }
  ],
  "nonInstructional": [],
@@ -32052,29 +35864,29 @@
   },
   {
    "classNumber": 6,
-   "status": "IN_PROGRESS",
+   "status": "DECOMPOSITION_SOURCE_COMPLETE",
    "officialChapterCount": 10,
    "officialSectionsTotal": 65,
    "chaptersTotal": 10,
-   "chaptersInspected": 5,
-   "chaptersFullyInspected": 5,
+   "chaptersInspected": 10,
+   "chaptersFullyInspected": 10,
    "chaptersPartiallyInspected": 0,
-   "chaptersIndexedOnly": 5,
-   "sectionsAccountedFor": 36,
-   "sectionsNotYetInspected": 29,
+   "chaptersIndexedOnly": 0,
+   "sectionsAccountedFor": 65,
+   "sectionsNotYetInspected": 0,
    "officialRecordsTotal": 65,
-   "officialRecordsFullyInspected": 0,
+   "officialRecordsFullyInspected": 65,
    "officialRecordsPartiallyInspected": 0,
-   "officialRecordsIndexedOnly": 5,
+   "officialRecordsIndexedOnly": 0,
    "pagesInScope": 392,
    "pagesIndexed": 392,
-   "pagesFullyInspected": 161,
-   "pagesFullTextPending": 231,
-   "visualPagesRequired": 120,
-   "visualPagesInspected": 120,
+   "pagesFullyInspected": 392,
+   "pagesFullTextPending": 0,
+   "visualPagesRequired": 302,
+   "visualPagesInspected": 302,
    "visualPagesPending": 0,
-   "pagesEvidenceIncomplete": 231,
-   "note": "Chapters: 5 of 10 fully inspected, 0 partially, 5 indexed only. Sections: 36 of 65 accounted for. Pages: 161 of 392 read in full text, 120 of 120 picture-carried pages seen. (A numbered section is \"accounted for\" when its body has been inspected and its instructional disposition recorded; none yet carries a record extent of its own.)"
+   "pagesEvidenceIncomplete": 0,
+   "note": "Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392 of 392 read in full text, 302 of 302 picture-carried pages rendered and looked at."
   }
  ],
  "recordExtents": [
@@ -34167,6 +37979,844 @@
     "firstInspectedOn": "2026-10-01",
     "lastEvidenceUpdatedOn": "2026-10-01"
    }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch02_seg1",
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "sourceLabel": "pages 43–53 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opener, Summary and the printed solutions supplement, plus the cut-out Learning Material Sheets bound at the end of the book. Read in full and checked against the decomposition: they frame, restate or answer what the sections teach, and the sheets are materials the activities use.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch02_lines_angles",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 43,
+    "pdfPageEnd": 53,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Chapter opener, Summary, printed answer key and cut-out learning material sheets. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 43,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 16 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 44,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 19 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 45,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 5 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 46,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 6 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 47,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 4 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 48,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 49,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 50,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 1 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 51,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 1 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 52,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 53,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch04_seg1",
+   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "sourceLabel": "pages 32–44 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opener, Summary and the printed solutions supplement, plus the cut-out Learning Material Sheets bound at the end of the book. Read in full and checked against the decomposition: they frame, restate or answer what the sections teach, and the sheets are materials the activities use.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch04_data_handling",
+    "officialSectionId": null,
+    "printedPageStart": 105,
+    "printedPageEnd": 106,
+    "pdfPageStart": 32,
+    "pdfPageEnd": 44,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Chapter opener, Summary, printed answer key and cut-out learning material sheets.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     32,
+     33,
+     37,
+     40,
+     42
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 32,
+      "printedPage": 105,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 72 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 106,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 69 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 10 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 1 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 37 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 41 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 39,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 40,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "1 images, 73 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 41,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 42,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 65 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 43,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 4 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 44,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch08_seg1",
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "sourceLabel": "pages 31–38 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opener, Summary and the printed solutions supplement, plus the cut-out Learning Material Sheets bound at the end of the book. Read in full and checked against the decomposition: they frame, restate or answer what the sections teach, and the sheets are materials the activities use.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch08_constructions",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 31,
+    "pdfPageEnd": 38,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Chapter opener, Summary, printed answer key and cut-out learning material sheets. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     33,
+     34
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 31,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 6 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 66 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "1 images, 66 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch09_seg1",
+   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "sourceLabel": "pages 1–2 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opener and bridging pages, read in full: they frame the chapter rather than teaching an objective of their own.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch09_symmetry",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Chapter opening and bridging pages. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 3674 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 55 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch09_seg2",
+   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "sourceLabel": "pages 26–40 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opener, Summary and the printed solutions supplement, plus the cut-out Learning Material Sheets bound at the end of the book. Read in full and checked against the decomposition: they frame, restate or answer what the sections teach, and the sheets are materials the activities use.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch09_symmetry",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 26,
+    "pdfPageEnd": 40,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Chapter opener, Summary, printed answer key and cut-out learning material sheets. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 26,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 39,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 40,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch10_seg1",
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "sourceLabel": "pages 10–11 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opener and bridging pages, read in full: they frame the chapter rather than teaching an objective of their own.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": null,
+    "printedPageStart": 251,
+    "printedPageEnd": 252,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 11,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Chapter opener, Summary, printed answer key or cut-out learning material: pages read in full that frame, restate or answer the chapter rather than teaching an objective of their own.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     10,
+     11
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 251,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 92 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 252,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 134 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch10_seg2",
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "sourceLabel": "pages 31–56 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opener, Summary and the printed solutions supplement, plus the cut-out Learning Material Sheets bound at the end of the book. Read in full and checked against the decomposition: they frame, restate or answer what the sections teach, and the sheets are materials the activities use.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 31,
+    "pdfPageEnd": 56,
+    "inspectedOn": "2026-10-01",
+    "establishes": "Chapter opener, Summary, printed answer key and cut-out learning material sheets. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     47,
+     48,
+     54,
+     55
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 31,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 57 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 466 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 466 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 100 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 100 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 79 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 59 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 310 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 39,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 60 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 40,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 237 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 41,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 59 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 42,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 54 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 43,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 53 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 44,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 1 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 45,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 1 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 46,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 17 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 47,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "19 images, 53 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 48,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "15 images, 55 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 49,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 3 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 50,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 34 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 51,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 52,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 53,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 7 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 54,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "1 images, 181 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 55,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 41 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 56,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-01",
+    "lastEvidenceUpdatedOn": "2026-10-01"
+   }
   }
  ],
  "overlapJustifications": [
@@ -34269,6 +38919,36 @@
    "a": "pragati_iu_g06_ch07_u8",
    "b": "pragati_iu_g06_ch07_u9",
    "reason": "Shared pages in ncert_gp_c6_ch07_fractions: pragati_iu_g06_ch07_u8 and pragati_iu_g06_ch07_u9 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for."
+  },
+  {
+   "a": "pragati_iu_g06_ch02_u1",
+   "b": "pragati_iu_g06_ch02_u2",
+   "reason": "Shared page in ncert_gp_c6_ch02_lines_angles: pragati_iu_g06_ch02_u1 and pragati_iu_g06_ch02_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g06_ch08_u1",
+   "b": "pragati_iu_g06_ch08_u2",
+   "reason": "Shared page in ncert_gp_c6_ch08_constructions: pragati_iu_g06_ch08_u1 and pragati_iu_g06_ch08_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g06_ch09_u3",
+   "b": "pragati_iu_g06_ch09_u4",
+   "reason": "Shared page in ncert_gp_c6_ch09_symmetry: pragati_iu_g06_ch09_u3 and pragati_iu_g06_ch09_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g06_ch10_u1",
+   "b": "pragati_iu_g06_ch10_u2",
+   "reason": "Shared page in ncert_gp_c6_ch10_other_side_of_zero: pragati_iu_g06_ch10_u1 and pragati_iu_g06_ch10_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g06_ch10_u2",
+   "b": "pragati_iu_g06_ch10_u3",
+   "reason": "Shared page in ncert_gp_c6_ch10_other_side_of_zero: pragati_iu_g06_ch10_u2 and pragati_iu_g06_ch10_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g06_ch10_u4",
+   "b": "pragati_iu_g06_ch10_u5",
+   "reason": "Shared page in ncert_gp_c6_ch10_other_side_of_zero: pragati_iu_g06_ch10_u4 and pragati_iu_g06_ch10_u5 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
   }
  ],
  "humanJudgementPolicies": [
@@ -34294,7 +38974,8 @@
     "pragati_iu_g06_ch03_u13",
     "pragati_iu_g06_ch03_u6",
     "pragati_iu_g06_ch05_u6",
-    "pragati_iu_g06_ch07_u12"
+    "pragati_iu_g06_ch07_u12",
+    "pragati_iu_g06_ch10_u7"
    ]
   },
   {

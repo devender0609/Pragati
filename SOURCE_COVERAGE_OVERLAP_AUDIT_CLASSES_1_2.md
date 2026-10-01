@@ -4,7 +4,7 @@ Generated from the canonical decomposition. Coverage tests alone are not
 enough: two records can cover the same pages and one of them be stale, so
 every overlap is listed with the reason it exists.
 
-**20 overlapping pairs**, all INTENTIONAL — each carries a written
+**26 overlapping pairs**, all INTENTIONAL — each carries a written
 reason in the data itself.
 
 | Official record | A | B | Shared PDF pages | Reason | Status |
@@ -29,4 +29,10 @@ reason in the data itself.
 | `ncert_gp_c6_ch03_number_play` | `pragati_iu_g06_ch03_u4` | `pragati_iu_g06_ch03_u5` | 7 | Shared pages in ncert_gp_c6_ch03_number_play: pragati_iu_g06_ch03_u4 and pragati_iu_g06_ch03_u5 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for. | INTENTIONAL |
 | `ncert_gp_c6_ch03_number_play` | `pragati_iu_g06_ch03_u8` | `pragati_iu_g06_ch03_u9` | 12 | Shared pages in ncert_gp_c6_ch03_number_play: pragati_iu_g06_ch03_u8 and pragati_iu_g06_ch03_u9 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for. | INTENTIONAL |
 | `ncert_gp_c6_ch07_fractions` | `pragati_iu_g06_ch07_u8` | `pragati_iu_g06_ch07_u9` | 22, 23 | Shared pages in ncert_gp_c6_ch07_fractions: pragati_iu_g06_ch07_u8 and pragati_iu_g06_ch07_u9 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for. | INTENTIONAL |
+| `ncert_gp_c6_ch02_lines_angles` | `pragati_iu_g06_ch02_u1` | `pragati_iu_g06_ch02_u2` | 5 | Shared page in ncert_gp_c6_ch02_lines_angles: pragati_iu_g06_ch02_u1 and pragati_iu_g06_ch02_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs. | INTENTIONAL |
+| `ncert_gp_c6_ch08_constructions` | `pragati_iu_g06_ch08_u1` | `pragati_iu_g06_ch08_u2` | 6 | Shared page in ncert_gp_c6_ch08_constructions: pragati_iu_g06_ch08_u1 and pragati_iu_g06_ch08_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs. | INTENTIONAL |
+| `ncert_gp_c6_ch09_symmetry` | `pragati_iu_g06_ch09_u3` | `pragati_iu_g06_ch09_u4` | 20 | Shared page in ncert_gp_c6_ch09_symmetry: pragati_iu_g06_ch09_u3 and pragati_iu_g06_ch09_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs. | INTENTIONAL |
+| `ncert_gp_c6_ch10_other_side_of_zero` | `pragati_iu_g06_ch10_u1` | `pragati_iu_g06_ch10_u2` | 4 | Shared page in ncert_gp_c6_ch10_other_side_of_zero: pragati_iu_g06_ch10_u1 and pragati_iu_g06_ch10_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs. | INTENTIONAL |
+| `ncert_gp_c6_ch10_other_side_of_zero` | `pragati_iu_g06_ch10_u2` | `pragati_iu_g06_ch10_u3` | 6, 7 | Shared page in ncert_gp_c6_ch10_other_side_of_zero: pragati_iu_g06_ch10_u2 and pragati_iu_g06_ch10_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs. | INTENTIONAL |
+| `ncert_gp_c6_ch10_other_side_of_zero` | `pragati_iu_g06_ch10_u4` | `pragati_iu_g06_ch10_u5` | 15 | Shared page in ncert_gp_c6_ch10_other_side_of_zero: pragati_iu_g06_ch10_u4 and pragati_iu_g06_ch10_u5 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs. | INTENTIONAL |
 

@@ -56,14 +56,21 @@ const out = [
   '',
   '**Depth words.** *Indexed*: headings and opening text only, which is',
   'navigation and not evidence. *Full text*: every line of every page.',
-  '*Visual*: the page was rendered and looked at, which early-primary',
-  'mathematics usually needs.',
+  '*Visual*: the page was rendered and looked at.',
   '',
   `**Class 6** — ${P[6].pagesFullyInspected}/${P[6].pagesInScope} pages read in full text, ${P[6].visualPagesInspected}/${P[6].visualPagesRequired} picture-carried pages rendered and looked at, ${P[6].chaptersFullyInspected}/${P[6].officialChapterCount} chapters fully inspected, ${P[6].sectionsAccountedFor}/${P[6].officialSectionsTotal} numbered sections accounted for. Status: **${P[6].status}**.`,
   '',
   P[6].status === 'DECOMPOSITION_SOURCE_COMPLETE'
-    ? 'Source-complete: every page of all 15 chapters has been read in full text and every page whose mathematics is carried by the picture has been rendered and looked at. What remains is curriculum judgement.'
-    : `Not source-complete: ${P[6].pagesFullTextPending} pages still to read and ${P[6].visualPagesPending} picture-carried pages still to render.`,
+    ? 'Source-complete: every page of all 10 chapters has been read in full text and every page whose mathematics is carried by the picture has been rendered and looked at. What remains is curriculum judgement.'
+    : [
+        `Not source-complete: ${P[6].pagesFullTextPending} of ${P[6].pagesInScope} pages are still to read.`,
+        '',
+        // v0.84.0 checkpoint 16 §3-§5 — an unread page has no visual
+        // requirement yet, so "0 pending" is a statement about the pages
+        // already inspected and nothing more. Saying "no visuals remain"
+        // while 231 pages are unread would be false.
+        `Among the ${P[6].pagesFullyInspected} pages inspected so far, ${P[6].visualPagesRequired} are picture-carried and ${P[6].visualPagesInspected} of those have been rendered and looked at. The visual requirement of the ${P[6].pagesFullTextPending} unread pages is **not yet determined**, so this is a known-so-far figure, not a total.`,
+      ].join('\n'),
   '',
   '| Official chapter | Title | Printed pages | PDF pages | Full text | Visual required | Visual required seen | Pages rendered | Record state | Units | Ready | Needs human check |',
   '|---|---|---|---|---|---|---|---|---|---|---|---|',
