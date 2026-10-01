@@ -85,10 +85,10 @@ Class 6 mapping.
 
 **[S]** Every class from 1 to 5 carries reasoning-extension material —
 constraint grids, invariant tricks, deduction puzzles, winning strategies —
-consistently outside what its chapters teach. 18 units across the five
-classes are flagged for the single policy decision
-`reasoning_extension_core_vs_enrichment`.
-**[P]** Decide that policy once, as policy, before authoring begins.
+consistently outside what its chapters teach.
+**[S]** The flagged units across Classes 1-6 resolve into **3 distinct policy
+decisions**, not one: `reasoning_extension_core_vs_enrichment` (18 units), `context_page_lesson_vs_embedded_context` (3 units), `instructional_granularity_merge_small_objectives` (1 units).
+**[P]** Decide each of those three once, as policy, before authoring begins.
 
 ## Possible duplicate scope
 

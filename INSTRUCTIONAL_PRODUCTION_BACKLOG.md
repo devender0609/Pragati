@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-274 units are READY_FOR_AUTHORING and 18 are held back
+295 units are READY_FOR_AUTHORING and 22 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -49,7 +49,9 @@ pedagogical QA plus human review — not for convenience of generation.
 | 32 | Class 5 | 8 | Litres and millilitres in practice; Division facts from multiplication; Patterns in division and place value; Dividing by taking away multiples; Division using place value; Division in problems, and what is always true; Reflection symmetry in letters and cut-outs; Rotational symmetry |
 | 33 | Class 5 | 8 | Sorting designs by the symmetry they have; Covering a region with shapes; Area by counting squares; Area and perimeter are not the same thing; Area and perimeter of squares and rectangles; Reading and writing time in two formats; Seconds; Converting and computing with time |
 | 34 | Class 5 | 8 | Factors, multiples and primes; Common multiples; Common factors and divisibility; Directions and describing position; Following a route on a map; Grid coordinates; Organising data into a table; Pictographs with a scale |
-| 35 | Class 5 | 2 | Bar graphs; Reading a picture as data |
+| 35 | Class 5 | 8 | Bar graphs; Reading a picture as data; Numbers that describe a relationship; Supercells; Large numbers on the number line; Playing with digits; Palindromic numbers and reverse-and-add; Clock and calendar number patterns |
+| 36 | Class 6 | 8 | Mental arithmetic with large numbers; Making numbers with given constraints; Number patterns that sum to a target; Estimation at scale; Fractional units and equal shares; Fractional units as parts of a whole; Measuring with fractional units; Marking fractions on the number line |
+| 37 | Class 6 | 7 | Mixed fractions; Equivalent fractions and the fraction wall; Equivalence from equal sharing; Simplest form; Comparing fractions; Adding and subtracting like fractions; Adding and subtracting unlike fractions |
 
 ## Held back
 
@@ -68,6 +70,10 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g04_ch07_u5` — Triangle sum puzzle (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g04_ch10_u1` — Addition chart patterns and a winning strategy (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g04_ch13_u5` — Number puzzles with products (NEEDS_HUMAN_CHECK, flagged for human check). 
-- `pragati_iu_g05_ch01_u4` — Puzzles on the journey (NEEDS_HUMAN_CHECK, flagged for human check). Progression against Classes 1-4: REVISIT of reasoning extension seen in every earlier class.
-- `pragati_iu_g05_ch06_u1` — Number clues and shape puzzles (NEEDS_HUMAN_CHECK, flagged for human check). Progression against Classes 1-4: REVISIT of constraint puzzles, now using multiples and factors.
-- `pragati_iu_g05_ch06_u6` — Products, patterns and puzzles (NEEDS_HUMAN_CHECK, flagged for human check). Progression against Classes 1-4: REVISIT of reasoning extension, now about multiplicative structure.
+- `pragati_iu_g05_ch01_u4` — Puzzles on the journey (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g05_ch06_u1` — Number clues and shape puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g05_ch06_u6` — Products, patterns and puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g06_ch03_u6` — The Kaprekar constant (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g06_ch03_u11` — The Collatz conjecture (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g06_ch03_u13` — Games and winning strategies (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g06_ch07_u12` — A pinch of history, and unit-fraction puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 

@@ -60,6 +60,15 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-13 review findings — all RESOLVED in checkpoint 14
+
+| Defect | Found | Resolved |
+|---|---|---|
+| The checkpoint-13 report and progression audit claimed all 18 flagged units shared one policy; only 8 carried a key and the questions described three different decisions | checkpoint 13 review | checkpoint 14 — policies are canonical (`humanJudgementPolicies`), every flagged unit carries a key, and a test requires the report to state flags and distinct decisions separately |
+| The defect log still headed a section "Human review questions — 7 open", naming superseded unit ids | checkpoint 13 review | checkpoint 14 — that section is marked HISTORICAL with the checkpoint it was true at, and points to the canonical policies for current state |
+| Progression was recorded only as free text inside `notes` | checkpoint 13 review | checkpoint 14 — `progressionRelationship` (a controlled vocabulary of seven values) plus `progressionRationale`, migrated from the 66 Class 5 notes; unknown is left unset rather than invented |
+| Classes 1-4 fingerprints changed in this checkpoint — **deliberately** | checkpoint 14 | The policy key and the progression fields are inside the fingerprint, so adding them changed all five values. The new values were frozen before any Class 6 work began, and the tests carry them. |
+
 ## Class 5 (checkpoint 13)
 
 **No methodology defect.** The locked method carried over to Class 5 without
@@ -123,7 +132,15 @@ Chapter 11 page 16 as NON_INSTRUCTIONAL (a blank Notes page). Two teaching
 objectives were recovered from inside them: **growing patterns** in Chapter 4
 and **money left or still needed** in Chapter 10.
 
-## Human review questions — 7 open, none of them unread source
+## Human review questions (HISTORICAL — true at v0.84.0 checkpoint 5)
+
+The list below is kept as history. It describes the seven questions open when
+Classes 1 and 2 were the whole dataset, and several of the unit ids in it were
+superseded by later splits. **For the current state see the checkpoint report
+and `humanJudgementPolicies` in the canonical data**, which at checkpoint 14
+hold 18 flagged units under 3 distinct policy decisions.
+
+### The original seven — 7 open, none of them unread source
 
 - `pragati_iu_g01_ch10_u3` — Seasons of the year: This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?
 - `pragati_iu_g02_ch09_u1` — Seasons and the year: This page is mostly context or general knowledge with light mathematics. Is it worth a Pragati lesson at all?

@@ -4,7 +4,7 @@ Generated from the canonical decomposition. Coverage tests alone are not
 enough: two records can cover the same pages and one of them be stale, so
 every overlap is listed with the reason it exists.
 
-**17 overlapping pairs**, all INTENTIONAL — each carries a written
+**20 overlapping pairs**, all INTENTIONAL — each carries a written
 reason in the data itself.
 
 | Official record | A | B | Shared PDF pages | Reason | Status |
@@ -26,4 +26,7 @@ reason in the data itself.
 | `ncert_aejm1_ch13` | `pragati_iu_g01_ch13_u3` | `pragati_srcseg_g01_ch13_rehearsal` | 5, 6 | Pages 5-6 hold rehearsal tasks (the number-word search, hidden cards) beside the first constraint grids. The segment marks the rehearsal half as needing no teaching target; the unit takes the constraint half. | INTENTIONAL |
 | `ncert_bejm1_ch11` | `pragati_iu_g02_ch11_u4` | `pragati_iu_g02_ch11_u5` | 9, 10, 11 | Pages 9-11 interleave both kinds of puzzle: the shape and number-name tasks rehearse, while the number trick and the path counting on the same spreads need reasoning the chapter has not taught. | INTENTIONAL |
 | `ncert_bejm1_ch11` | `pragati_iu_g02_ch11_u4` | `pragati_srcseg_g02_ch11_puzzles` | 8 | Page 8 carries the printed "Puzzles" heading and its first two tasks: the segment names the section as the book labels it, and the unit carries the teaching intent of the tasks on that page. | INTENTIONAL |
+| `ncert_gp_c6_ch03_number_play` | `pragati_iu_g06_ch03_u4` | `pragati_iu_g06_ch03_u5` | 7 | Shared pages in ncert_gp_c6_ch03_number_play: pragati_iu_g06_ch03_u4 and pragati_iu_g06_ch03_u5 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for. | INTENTIONAL |
+| `ncert_gp_c6_ch03_number_play` | `pragati_iu_g06_ch03_u8` | `pragati_iu_g06_ch03_u9` | 12 | Shared pages in ncert_gp_c6_ch03_number_play: pragati_iu_g06_ch03_u8 and pragati_iu_g06_ch03_u9 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for. | INTENTIONAL |
+| `ncert_gp_c6_ch07_fractions` | `pragati_iu_g06_ch07_u8` | `pragati_iu_g06_ch07_u9` | 22, 23 | Shared pages in ncert_gp_c6_ch07_fractions: pragati_iu_g06_ch07_u8 and pragati_iu_g06_ch07_u9 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for. | INTENTIONAL |
 

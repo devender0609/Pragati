@@ -178,7 +178,7 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_gp_c6_s2_9 | section | 2.9 | Measuring Angles | 32 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s2_10 | section | 2.10 | Drawing Angles | 46 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s2_11 | section | 2.11 | Types of Angles and their Measures | 50 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gp_c6_ch03_number_play | chapter | 3 | Number Play | 55 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gp_c6_ch03_number_play | chapter | 3 | Number Play | 55 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gp_c6_s3_1 | section | 3.1 | Numbers can Tell us Things | 55 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s3_2 | section | 3.2 | Supercells | 57 | inspected | authored | authored | review_ready | unpublished |  |
 | ncert_gp_c6_s3_3 | section | 3.3 | Patterns of Numbers on the Number Line | 59 | inspected | authored | authored | review_ready | unpublished |  |

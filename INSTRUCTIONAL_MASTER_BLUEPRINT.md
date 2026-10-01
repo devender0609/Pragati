@@ -15,7 +15,7 @@ early-primary mathematics usually needs. A unit is authoring-ready only
 when its whole range is full text and, where the mathematics lives in the
 visuals, those pages were seen.
 
-**Read so far:** Class 1, Class 2, Class 3, Class 4, Class 5. Every other class is
+**Read so far:** Class 1, Class 2, Class 3, Class 4, Class 5, Class 6. Every other class is
 NOT STARTED — its unit count is unknown, not zero.
 
 | Class | Official chapters | Official sections | Pages (indexed / full text / visual) | Pragati units drafted | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
@@ -25,7 +25,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 3 | 14 | — | 208 indexed / 208 full text / 184 visual | 59 | 55 | 4 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 6 | 10 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 12 | UNKNOWN | NOT_STARTED |
+| Class 6 | 10 | 65 | 392 indexed / 67 full text / 59 visual | 25 | 21 | 4 | 0 | 12 | 13 | IN_PROGRESS |
 | Class 7 | 15 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -3661,7 +3661,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 four-digit place value to five digits.
 
 #### Comparing and rounding large numbers
 
@@ -3678,7 +3677,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: rounding is a NEW PROCEDURE at Class 5.
 
 #### Distance, speed and how many vehicles
 
@@ -3695,7 +3693,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: rate as distance per hour.
 
 #### Puzzles on the journey
 
@@ -3712,7 +3709,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: REVISIT of reasoning extension seen in every earlier class.
 
 #### Digit reversal and ordering large numbers
 
@@ -3729,7 +3725,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 pattern work into explicit generalisation.
 
 #### Counting a border without double counting
 
@@ -3746,7 +3741,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: counting without repetition.
 
 #### The whole matters when comparing fractions
 
@@ -3763,7 +3757,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION of the Class 4 idea that the whole must be the same.
 
 #### Equivalent fractions
 
@@ -3780,7 +3773,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION: Class 4 saw 1/2 = 2/4 by folding; Class 5 names equivalence and generates it.
 
 #### Comparing fractions with the same numerator or denominator
 
@@ -3797,7 +3789,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: comparison rules, where Class 4 compared only unit fractions.
 
 #### Fractions greater than one
 
@@ -3814,7 +3805,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: fractions greater than one appear for the first time.
 
 #### Comparing with 1 and with one-half as benchmarks
 
@@ -3831,7 +3821,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: benchmark reasoning, not present in Class 4.
 
 #### Turns: full, half and quarter
 
@@ -3848,7 +3837,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: angle as turn, where Class 4 met angle as two lines meeting.
 
 #### Angles as amounts of turn
 
@@ -3865,7 +3853,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION: Class 4 classified angles by comparison; Class 5 ties them to a measured turn.
 
 #### Making and using an angle measuring tool
 
@@ -3882,7 +3869,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: measuring an angle, a first step towards degrees.
 
 #### Direction and turning
 
@@ -3899,7 +3885,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: composing rotations with direction.
 
 #### Making sums equal, and relating addition to subtraction
 
@@ -3916,7 +3901,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 2 fact families to five-digit numbers.
 
 #### Sums of consecutive numbers
 
@@ -3933,7 +3917,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: a structural shortcut, early algebraic generalisation.
 
 #### Adding and subtracting large numbers
 
@@ -3950,7 +3933,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 four-digit algorithms to five digits.
 
 #### Quick mental methods
 
@@ -3967,7 +3949,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 quick ways, now asked whether the method always works.
 
 #### Palindromes and the structure of odd and even
 
@@ -3984,7 +3965,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 odd and even into explanation using structure.
 
 #### Reading data tables and solving with them
 
@@ -4001,7 +3981,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 data work with larger numbers.
 
 #### Choosing units and comparing lengths
 
@@ -4018,7 +3997,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 metre and centimetre work.
 
 #### The kilometre
 
@@ -4035,7 +4013,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the kilometre, absent from Classes 1-4.
 
 #### The millimetre and small lengths
 
@@ -4052,7 +4029,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the millimetre completes the metric length family.
 
 #### Adding and subtracting lengths
 
@@ -4069,7 +4045,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: arithmetic on compound measures.
 
 #### Scaling with a double number line
 
@@ -4086,7 +4061,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: proportional reasoning on a double number line.
 
 #### Other units: feet and inches
 
@@ -4103,7 +4077,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW REPRESENTATION: a second measurement system alongside the metric one.
 
 #### Number clues and shape puzzles
 
@@ -4120,7 +4093,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: REVISIT of constraint puzzles, now using multiples and factors.
 
 #### Multiplying by 10, 100 and 1000
 
@@ -4137,7 +4109,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 multiplying by tens and hundreds, now to thousands.
 
 #### Doubling and halving, and nearest multiples
 
@@ -4154,7 +4125,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: flexible multiplication strategies beyond partitioning.
 
 #### Multiplying larger numbers by splitting
 
@@ -4171,7 +4141,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION of Class 4 splitting into the standard algorithm.
 
 #### Comparing methods and checking work
 
@@ -4188,7 +4157,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 2 checking-someone-else’s-work into method comparison.
 
 #### Products, patterns and puzzles
 
@@ -4205,7 +4173,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: REVISIT of reasoning extension, now about multiplicative structure.
 
 #### Weaving patterns
 
@@ -4222,7 +4189,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW REPRESENTATION: a two-dimensional repeating rule.
 
 #### Tiling and tessellation with regular shapes
 
@@ -4239,7 +4205,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION of Class 3-4 tiling, with regular polygons named.
 
 #### Making and naming quadrilaterals
 
@@ -4256,7 +4221,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: named quadrilateral families beyond square and rectangle.
 
 #### Circle designs
 
@@ -4273,7 +4237,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 circle work into shapes inside a circle.
 
 #### Cubes, nets and the Platonic solids
 
@@ -4290,7 +4253,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 nets and views to harder solids.
 
 #### Judging and comparing weights
 
@@ -4307,7 +4269,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 weight work into judging reasonableness.
 
 #### Converting and combining kilograms and grams
 
@@ -4324,7 +4285,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: mixed-unit arithmetic for mass, parallel to length in Chapter 5.
 
 #### The milligram, quintal and tonne
 
@@ -4341,7 +4301,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the mass family extended in both directions.
 
 #### Multiplying and dividing weights
 
@@ -4358,7 +4317,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: multiplying and dividing compound measures.
 
 #### Litres and millilitres in practice
 
@@ -4375,7 +4333,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 litre work into conversion and arithmetic.
 
 #### Division facts from multiplication
 
@@ -4392,7 +4349,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION: Class 4 divided by taking out groups; Class 5 names the parts.
 
 #### Patterns in division and place value
 
@@ -4409,7 +4365,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: mental division by decomposition.
 
 #### Dividing by taking away multiples
 
@@ -4426,7 +4381,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION of Class 4 group removal into an organised written method.
 
 #### Division using place value
 
@@ -4443,7 +4397,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION: the division algorithm, the endpoint of Classes 3-5 division work.
 
 #### Division in problems, and what is always true
 
@@ -4460,7 +4413,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION into justification, beyond Class 4 true/sometimes/never.
 
 #### Reflection symmetry in letters and cut-outs
 
@@ -4477,7 +4429,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: REVISIT of Class 4 reflection symmetry as the ground for rotation.
 
 #### Rotational symmetry
 
@@ -4494,7 +4445,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: rotational symmetry, absent from Classes 1-4.
 
 #### Sorting designs by the symmetry they have
 
@@ -4528,7 +4478,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: area as covering, where Class 4 had perimeter only.
 
 #### Area by counting squares
 
@@ -4545,7 +4494,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW PROCEDURE: measuring area by iterating a unit.
 
 #### Area and perimeter are not the same thing
 
@@ -4579,7 +4527,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: FORMALIZATION: the first area formula of the primary stage.
 
 #### Reading and writing time in two formats
 
@@ -4596,7 +4543,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: REVISIT of Class 4 AM/PM and 24-hour clock as the base for seconds.
 
 #### Seconds
 
@@ -4613,7 +4559,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the second as a unit.
 
 #### Converting and computing with time
 
@@ -4630,7 +4575,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 elapsed time into conversion and backward reasoning.
 
 #### Factors, multiples and primes
 
@@ -4647,7 +4591,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: factors and primes, where Class 4 had multiples only.
 
 #### Common multiples
 
@@ -4664,7 +4607,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 common multiples with a reasoning question attached.
 
 #### Common factors and divisibility
 
@@ -4681,7 +4623,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: divisibility and common factors.
 
 #### Directions and describing position
 
@@ -4698,7 +4639,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION of Class 4 position work, now with compass directions.
 
 #### Following a route on a map
 
@@ -4715,7 +4655,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION: routes now combine direction, turn and a scaled map.
 
 #### Grid coordinates
 
@@ -4732,7 +4671,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: coordinates, the step beyond Class 4 row-and-column grids.
 
 #### Organising data into a table
 
@@ -4749,7 +4687,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: REVISIT of Class 4 data collection as the base for scaled graphs.
 
 #### Pictographs with a scale
 
@@ -4766,7 +4703,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW MATHEMATICAL IDEA: scale in a data display.
 
 #### Bar graphs
 
@@ -4783,7 +4719,6 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: NEW REPRESENTATION: the bar graph, first appearing at Class 5.
 
 #### Reading a picture as data
 
@@ -4800,7 +4735,410 @@ All 15 official chapters fully inspected: 200 of 200 pages read in full text and
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Chapter-level official record with several distinct teachable ideas; Math-Mela numbers no sections, so the split is Pragati's and each part names the pages that support it.
-- **Note** Progression against Classes 1-4: EXTENSION: data reasoning applied to an unstructured picture.
+
+## Class 6
+
+10 official chapters hold 65 numbered sections. 67 of 392 pages have been read in full text and 59 of 63 picture-carried pages seen, covering Number Play and Fractions only; the other chapters are indexed, not inspected.
+
+#### Numbers that describe a relationship
+
+- **Id** `pragati_iu_g06_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 2
+- **Source** fegp1, printed pp. 56–56 (PDF pp. 2–2), read 2026-09-30. Establishes: Children saying 0, 1 or 2 according to how many neighbours are taller; which sequences are possible and which are not; rearranging to maximise the count.
+- **Objective** Read and produce a code in which each number reports something about its neighbours.
+- **Student can** I can work out what each child’s number means and rearrange the line to change them.
+- **Mathematical ideas** encoded relational information; reasoning backwards from a code; existence and impossibility of an arrangement
+- **Representations** a line of children by height; number strips
+- **Prerequisites** pragati_iu_g05_ch01_u6
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Supercells
+
+- **Id** `pragati_iu_g06_ch03_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4
+- **Source** fegp1, printed pp. 57–58 (PDF pp. 3–4), read 2026-09-30. Establishes: The coloured table where a cell is larger than its adjacent cells; filling tables so supercells are exactly the coloured ones; whether the largest number is always a supercell.
+- **Objective** Decide whether a cell is larger than its adjacent cells and construct tables to a specification.
+- **Student can** I can colour the supercells and build a table with as many as possible.
+- **Mathematical ideas** strict greater-than against adjacent cells; end cells qualify with one neighbour; constructing an arrangement to a constraint
+- **Representations** number tables; coloured grids
+- **Prerequisites** pragati_iu_g05_ch01_u5
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Large numbers on the number line
+
+- **Id** `pragati_iu_g06_ch03_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5
+- **Source** fegp1, printed pp. 59–59 (PDF pp. 5–5), read 2026-09-30. Establishes: Number lines drawn over different ranges with only some marks labelled; identifying the marked numbers and labelling the rest; circling smallest and largest.
+- **Objective** Read and place five-digit numbers on number lines at different scales and windows.
+- **Student can** I can label the marks on a line running from 10,000 to 20,000.
+- **Mathematical ideas** scale of a number line; estimating position between marks; reading a window of the number system
+- **Representations** number lines at several scales
+- **Prerequisites** pragati_iu_g05_ch01_u1
+- **Role** EXTENSION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Playing with digits
+
+- **Id** `pragati_iu_g06_ch03_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
+- **Source** fegp1, printed pp. 60–61 (PDF pp. 6–7), read 2026-09-30. Establishes: How many numbers have two, three, four and five digits; digit sums including the largest 5-digit number with digit sum 14; how often the digit 7 occurs from 1 to 100 and 1 to 1000.
+- **Objective** Count how many numbers have a given number of digits and reason about digit sums and occurrences.
+- **Student can** I can say how many 4-digit numbers there are and find the largest with digit sum 14.
+- **Mathematical ideas** counting numbers by digit length; digit sum; counting occurrences of a digit
+- **Representations** digit tables; organised lists
+- **Prerequisites** pragati_iu_g05_ch01_u5
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Palindromic numbers and reverse-and-add
+
+- **Id** `pragati_iu_g06_ch03_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8
+- **Source** fegp1, printed pp. 61–62 (PDF pp. 7–8), read 2026-09-30. Establishes: Listing palindromes from given digits; reversing and adding repeatedly; whether every 2-digit start reaches a palindrome.
+- **Objective** Generate palindromes and investigate the reverse-and-add process.
+- **Student can** I can write all 3-digit palindromes from given digits.
+- **Mathematical ideas** palindromic number; systematic listing; an open question about a process
+- **Representations** digit cards; iteration tables
+- **Prerequisites** pragati_iu_g05_ch04_u5
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### The Kaprekar constant
+
+- **Id** `pragati_iu_g06_ch03_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9
+- **Source** fegp1, printed pp. 63–63 (PDF pp. 9–9), read 2026-09-30. Establishes: Making the largest and smallest numbers from four digits, subtracting, and repeating until 6174 appears.
+- **Objective** Carry out the Kaprekar process and notice that it reaches 6174.
+- **Student can** I can run the largest-minus-smallest steps and reach 6174.
+- **Mathematical ideas** iterating an arithmetic process; invariant reached by iteration; ordering digits to make extremes
+- **Representations** 4-digit number cards; step records
+- **Prerequisites** pragati_iu_g05_ch01_u5
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Clock and calendar number patterns
+
+- **Id** `pragati_iu_g06_ch03_u7` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10
+- **Source** fegp1, printed pp. 64–64 (PDF pp. 10–10), read 2026-09-30. Establishes: Times such as 4:44, 10:10 and 12:21; dates whose digits use only 0, 1 and 2; minutes until the next palindromic time.
+- **Objective** Find times and dates whose digits form a pattern.
+- **Student can** I can find all the palindromic times on a 12-hour clock.
+- **Mathematical ideas** digit patterns in time and date notation; systematic search; palindromes in another notation
+- **Representations** clock faces; calendar dates
+- **Prerequisites** pragati_iu_g05_ch12_u1
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Mental arithmetic with large numbers
+
+- **Id** `pragati_iu_g06_ch03_u8` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12
+- **Source** fegp1, printed pp. 65–66 (PDF pp. 11–12), read 2026-09-30. Establishes: The figure where several numbers must be reached mentally from others; adding and subtracting 5-digit numbers by splitting into thousands, hundreds and the rest.
+- **Objective** Add and subtract large numbers mentally by splitting them usefully.
+- **Student can** I can work out 38,800 + 25,000 in my head and say how.
+- **Mathematical ideas** decomposition for mental calculation; compensation at scale; choosing a route through a calculation
+- **Representations** branching diagrams; number lines
+- **Prerequisites** pragati_iu_g05_ch04_u4
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Making numbers with given constraints
+
+- **Id** `pragati_iu_g06_ch03_u9` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13
+- **Source** fegp1, printed pp. 66–67 (PDF pp. 12–13), read 2026-09-30. Establishes: Making 1,000 and other thousands from a set of numbers using addition and subtraction; the always/sometimes/never statements about sums and differences of 5-digit numbers.
+- **Objective** Combine given numbers with addition and subtraction to hit a target.
+- **Student can** I can say which thousands can be made from these boxes and why.
+- **Mathematical ideas** reachability under a constraint; always/sometimes/never statements; justifying impossibility
+- **Representations** number boxes; statement tables
+- **Prerequisites** pragati_iu_g06_ch03_u8
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Number patterns that sum to a target
+
+- **Id** `pragati_iu_g06_ch03_u10` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14
+- **Source** fegp1, printed pp. 68–68 (PDF pp. 14–14), read 2026-09-30. Establishes: The patterned arrangements of 32s, 64s, 125s and 250s summing to a given total, and making one for a number you choose.
+- **Objective** Build an arrangement of numbers that sums to a chosen total.
+- **Student can** I can make a pattern of numbers that adds to 250.
+- **Mathematical ideas** composing a target from repeated parts; structure in an arrangement; working backwards from a total
+- **Representations** patterned number arrangements
+- **Prerequisites** pragati_iu_g06_ch03_u9
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### The Collatz conjecture
+
+- **Id** `pragati_iu_g06_ch03_u11` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15
+- **Source** fegp1, printed pp. 69–69 (PDF pp. 15–15), read 2026-09-30. Establishes: The halve-if-even, triple-and-add-one-if-odd rule; sequences reaching 1; Collatz’s conjecture stated as still unproven.
+- **Objective** Run the Collatz process and understand what an unsolved conjecture is.
+- **Student can** I can run the halve-or-triple-and-add-one rule and reach 1.
+- **Mathematical ideas** iterating a conditional rule; conjecture as an open question; testing a claim on many starts
+- **Representations** sequence records
+- **Prerequisites** pragati_iu_g06_ch03_u6
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Estimation at scale
+
+- **Id** `pragati_iu_g06_ch03_u12` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17
+- **Source** fegp1, printed pp. 70–71 (PDF pp. 16–17), read 2026-09-30. Establishes: Estimating steps walked, time to travel distances on foot, and whether a stated 13,000 hours in school is plausible.
+- **Objective** Estimate large quantities and judge whether a claim is reasonable.
+- **Student can** I can decide whether 13,000 hours in school is believable.
+- **Mathematical ideas** estimation with large numbers; order of magnitude; checking a claim by estimating
+- **Representations** estimation tables
+- **Prerequisites** pragati_iu_g05_ch04_u6
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Games and winning strategies
+
+- **Id** `pragati_iu_g06_ch03_u13` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19
+- **Source** fegp1, printed pp. 72–73 (PDF pp. 18–19), read 2026-09-30. Establishes: Reaching a target by adding 1 or 2 and finding the winning numbers; varying the rules and finding the new pattern; the 0-to-target game with additions between 1 and 3.
+- **Objective** Find and justify a winning strategy in a number game.
+- **Student can** I can say which numbers I must say to be sure of winning.
+- **Mathematical ideas** backward induction; invariant positions in a game; generalising a strategy to variants
+- **Representations** game records
+- **Prerequisites** pragati_iu_g05_ch01_u4
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Fractional units and equal shares
+
+- **Id** `pragati_iu_g06_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
+- **Source** fegp1, printed pp. 152–153 (PDF pp. 1–3), read 2026-09-30. Establishes: Rotis shared between two, three and four children; Arvin’s misconception that 1/9 > 1/5 corrected; fractional unit named; weights of 1/2 kg and 1/4 kg combined.
+- **Objective** Compare unit fractions and name the share when a whole is divided equally.
+- **Student can** I can say why one-fifth is greater than one-ninth.
+- **Mathematical ideas** unit fraction as one of n equal parts; more parts means a smaller share; naming a share
+- **Representations** roti and chikki diagrams; strip models
+- **Prerequisites** pragati_iu_g05_ch02_u1
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Fractional units as parts of a whole
+
+- **Id** `pragati_iu_g06_ch07_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5
+- **Source** fegp1, printed pp. 154–155 (PDF pp. 4–5), read 2026-09-30. Establishes: A whole chikki cut into six equal parts in different ways; deciding what fraction each printed piece is.
+- **Objective** Recognise that equal parts of a whole may differ in shape but not in size.
+- **Student can** I can say which pieces are one-sixth of the chikki even when they look different.
+- **Mathematical ideas** equal area, different shape; identifying the fractional unit from a picture; partitioning in more than one way
+- **Representations** chikki cut several ways; shape diagrams
+- **Prerequisites** pragati_iu_g06_ch07_u1
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Measuring with fractional units
+
+- **Id** `pragati_iu_g06_ch07_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8
+- **Source** fegp1, printed pp. 156–158 (PDF pp. 6–8), read 2026-09-30. Establishes: Folding a unit strip into halves, fourths and eighths; tables of 2 times 1/8 up to 8 times 1/8; writing 5 times 1/4 of a roti as an addition.
+- **Objective** Measure a length by counting fractional units and write it as an addition.
+- **Student can** I can write 5 times one-fourth as an addition and as a fraction.
+- **Mathematical ideas** iterating a fractional unit; fraction as repeated addition of a unit; fraction as a measure
+- **Representations** paper strips folded into halves, fourths and eighths
+- **Prerequisites** pragati_iu_g06_ch07_u1
+- **Role** NEW_REPRESENTATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Marking fractions on the number line
+
+- **Id** `pragati_iu_g06_ch07_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10
+- **Source** fegp1, printed pp. 159–160 (PDF pp. 9–10), read 2026-09-30. Establishes: Drawing lengths of 1/10, 3/10 and 4/5; marking chosen fractions; how many fractions lie between 0 and 1.
+- **Objective** Mark fractional lengths on a number line and read them off.
+- **Student can** I can mark 3/10 and 4/5 on a number line.
+- **Mathematical ideas** fraction as a point and as a length; dividing a unit into equal parts on a line; density of fractions informally
+- **Representations** number lines divided into equal parts
+- **Prerequisites** pragati_iu_g05_ch02_u4
+- **Role** FORMALIZATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Mixed fractions
+
+- **Id** `pragati_iu_g06_ch07_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12, 13
+- **Source** fegp1, printed pp. 161–163 (PDF pp. 11–13), read 2026-09-30. Establishes: Sorting marked fractions into less and more than one; how many whole units are in 7/2 and 7/3; Jaya’s method for writing a mixed number as a regular fraction.
+- **Objective** Write fractions greater than one as mixed numbers and back again.
+- **Student can** I can write 7/2 as a mixed number and 3 and 3/4 as a fraction.
+- **Mathematical ideas** mixed number; converting between forms; whole units inside a fraction
+- **Representations** number line; strip diagrams
+- **Prerequisites** pragati_iu_g05_ch02_u4
+- **Role** FORMALIZATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Equivalent fractions and the fraction wall
+
+- **Id** `pragati_iu_g06_ch07_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15
+- **Source** fegp1, printed pp. 164–165 (PDF pp. 14–15), read 2026-09-30. Establishes: Checking that 1/2, 2/4 and 4/8 are the same length; extending the wall to tenths; finding equal pieces across rows.
+- **Objective** Generate equivalent fractions and read them from a fraction wall.
+- **Student can** I can find three fractions equal to 3/5 on the wall.
+- **Mathematical ideas** equivalence as the same length; fraction wall; families of equivalent fractions
+- **Representations** fraction wall to tenths; strip comparisons
+- **Prerequisites** pragati_iu_g05_ch02_u2
+- **Role** FORMALIZATION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Equivalence from equal sharing
+
+- **Id** `pragati_iu_g06_ch07_u7` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 18, 19
+- **Source** fegp1, printed pp. 166–169 (PDF pp. 16–19), read 2026-09-30. Establishes: Three rotis shared by four children written as division, addition and multiplication facts; 1 among 2 compared with 2 among 4 and 3 among 6; 7/5 rewritten as another sharing.
+- **Objective** Explain equivalence through sharing situations and division facts.
+- **Student can** I can say why 3 rotis among 4 children is the same as 6 among 8.
+- **Mathematical ideas** division fact for a fraction; scaling numerator and denominator together; equivalence argued from sharing
+- **Representations** roti-sharing drawings; division/multiplication fact frames
+- **Prerequisites** pragati_iu_g06_ch07_u6
+- **Role** NEW_INSTRUCTION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Simplest form
+
+- **Id** `pragati_iu_g06_ch07_u8` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 22, 23
+- **Source** fegp1, printed pp. 172–173 (PDF pp. 22–23), read 2026-09-30. Establishes: Reducing fractions by common factors; 36/60 reduced in steps to 3/5; recognising when no common factor is left.
+- **Objective** Express a fraction in its lowest terms.
+- **Student can** I can reduce 36/60 to its simplest form and say how I know it is simplest.
+- **Mathematical ideas** common factor of numerator and denominator; simplest form; stepwise reduction
+- **Representations** factor lists; division steps
+- **Prerequisites** pragati_iu_g05_ch13_u3
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Comparing fractions
+
+- **Id** `pragati_iu_g06_ch07_u9` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 22, 23, 24
+- **Source** fegp1, printed pp. 170–174 (PDF pp. 20–24), read 2026-09-30. Establishes: Shares compared when the number of children or rotis changes; the condition that fractional units must match; 4/5 against 7/9 and 7/9 against 17/21 through common denominators.
+- **Objective** Compare any two fractions by making the fractional units the same.
+- **Student can** I can compare 4/5 and 7/9 by writing both over 45.
+- **Mathematical ideas** common denominator; comparison by equivalent fractions; comparing with unlike units
+- **Representations** strip diagrams; common-multiple tables
+- **Prerequisites** pragati_iu_g06_ch07_u6; pragati_iu_g05_ch13_u2
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Adding and subtracting like fractions
+
+- **Id** `pragati_iu_g06_ch07_u10` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 25, 26, 27
+- **Source** fegp1, printed pp. 175–177 (PDF pp. 25–27), read 2026-09-30. Establishes: Meena and her brother eating 1/2 and 1/4; sums such as 2/5 + 1/5 and 4/7 + 6/7 shown on strips and written as mixed numbers.
+- **Objective** Add and subtract fractions that share a fractional unit.
+- **Student can** I can add 4/7 and 6/7 and write the answer as a mixed number.
+- **Mathematical ideas** adding counts of the same unit; sum greater than one; subtraction of like fractions
+- **Representations** rectangular strip models
+- **Prerequisites** pragati_iu_g06_ch07_u3
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### Adding and subtracting unlike fractions
+
+- **Id** `pragati_iu_g06_ch07_u11` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 28, 29, 30, 31, 32
+- **Source** fegp1, printed pp. 178–182 (PDF pp. 28–32), read 2026-09-30. Establishes: Converting to a common fractional unit before adding; Brahmagupta’s method stated in steps; subtraction of unlike fractions; paint and travel-time word problems.
+- **Objective** Add and subtract fractions with different denominators.
+- **Student can** I can add 1/3 and 1/5 by writing both in fifteenths.
+- **Mathematical ideas** common fractional unit before adding; Brahmagupta’s method; subtraction with unlike units
+- **Representations** strip models; common-denominator working
+- **Prerequisites** pragati_iu_g06_ch07_u9
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
+
+#### A pinch of history, and unit-fraction puzzles
+
+- **Id** `pragati_iu_g06_ch07_u12` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 33, 34, 35
+- **Source** fegp1, printed pp. 183–185 (PDF pp. 33–35), read 2026-09-30. Establishes: The history from the Bakhshali manuscript and Egyptian notation to Brahmagupta and Aryabhata; the puzzle of writing fractions as sums of distinct unit fractions.
+- **Objective** Meet the history of fractions and express a fraction as distinct unit fractions.
+- **Student can** I can write 2/3 as a sum of different unit fractions.
+- **Mathematical ideas** Egyptian unit-fraction notation; decomposing a fraction into distinct unit fractions; history of a notation
+- **Representations** historical notation; puzzle frames
+- **Prerequisites** pragati_iu_g06_ch07_u11
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.
 
 ## Records read and found non-instructional
 

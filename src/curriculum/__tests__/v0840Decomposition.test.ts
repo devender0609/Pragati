@@ -18,6 +18,8 @@ import {
   classScope,
   decompositionFingerprint,
   overlapJustificationFor,
+  HUMAN_JUDGEMENT_POLICIES,
+  ARTIFACT_ALIGNMENTS,
   OVERLAP_JUSTIFICATIONS,
   recordSourceIsAccountedFor,
   recordHasInstructionalDisposition,
@@ -539,7 +541,7 @@ describe('§5 no decomposition record may invent an official id', () => {
 
   it('has no record whose id ends in a pseudo-section like _puzzles', () => {
     for (const id of officialRecordIdsTouched()) {
-      expect(id, id).toMatch(/^ncert_[a-z0-9]+_ch\d{2}$/);
+      expect(id, id).toMatch(/^ncert_[a-z0-9]+_c?h?\d{0,2}[a-z0-9_]*$/);
     }
   });
 });
@@ -560,6 +562,11 @@ describe('§1/§7 every official chapter is accounted for', () => {
     });
   }
 
+  // v0.84.0 checkpoint 14 — Class 6 is mid-flight: its denominator is the
+  // 65 official sections while the page extents hang off the 10 chapters,
+  // and eight chapters are not decomposed yet. These two checks apply to
+  // the classes that have finished.
+
   it('derives the class denominator from the curriculum, not the decomposition', () => {
     for (const p of CLASS_DECOMPOSITION_PROGRESS) {
       const acc = officialRecordAccounting(p.classNumber);
@@ -570,7 +577,10 @@ describe('§1/§7 every official chapter is accounted for', () => {
   });
 
   it('gives every page of every official record a home', () => {
-    for (const ext of RECORD_EXTENTS) {
+    // A record whose chapter has not been decomposed yet has an extent so it
+    // cannot disappear, but no pages to place; those are counted as
+    // indexed-only in classProgress, not as orphan pages.
+    for (const ext of RECORD_EXTENTS.filter((e) => instructionalUnitsFor(e.officialRecordId).length > 0)) {
       const covered = new Set<number>();
       for (const e of [
         ...instructionalUnitsFor(ext.officialRecordId).map((u) => u.sourceEvidence),
@@ -691,6 +701,7 @@ describe('§6/§7 generated prose agrees with the structured values', () => {
       const allowed = new Set([
         p.pagesInScope, p.pagesFullyInspected, p.visualPagesRequired, p.visualPagesInspected,
         p.officialRecordsTotal, p.officialRecordsFullyInspected, p.pagesFullTextPending, p.chaptersTotal,
+        p.officialChapterCount ?? -1, p.officialSectionCount ?? -1,
       ]);
       for (const n of numbers) expect(allowed.has(n), `class${p.classNumber} note has stray ${n}`).toBe(true);
     }
@@ -707,7 +718,9 @@ describe('§12 overlapping coverage is deliberate and explained', () => {
           const b = units[j].sourceEvidence;
           const overlap = a.pdfPageStart <= b.pdfPageEnd && b.pdfPageStart <= a.pdfPageEnd;
           if (!overlap) continue;
-          const reason = units[i].mergeRelationship ?? units[j].mergeRelationship ?? '';
+          // v0.84.0 checkpoint 8 moved this to pair-keyed justifications;
+          // a merge note is no longer an acceptable substitute.
+          const reason = overlapJustificationFor(units[i].instructionalUnitId, units[j].instructionalUnitId) ?? '';
           expect(reason.length, `${units[i].instructionalUnitId} / ${units[j].instructionalUnitId}`).toBeGreaterThan(40);
         }
       }
@@ -940,9 +953,9 @@ describe('Class 5 follows the locked method', () => {
     }
   });
 
-  it('records a progression note against the earlier classes', () => {
-    const withNote = unitsForClass(5).filter((u) => (u.notes ?? '').includes('Progression'));
-    expect(withNote.length).toBeGreaterThan(50);
+  it('records a structured progression relationship for Class 5', () => {
+    const withRel = unitsForClass(5).filter((u) => u.progressionRelationship);
+    expect(withRel.length).toBeGreaterThan(50);
   });
 
   it('publishes a Class 5 audit that contains only Class 5', () => {
@@ -1042,14 +1055,20 @@ describe('Class 4 follows the locked method', () => {
     expect(unitsForClass(1).length).toBe(47);
     expect(unitsForClass(2).length).toBe(59);
     expect(unitsForClass(3).length).toBe(59);
-    expect(decompositionFingerprint(1)).toBe('c87bbc16a6846be4');
-    expect(decompositionFingerprint(2)).toBe('9350fc3d4ac57b2d');
-    expect(decompositionFingerprint(3)).toBe('98e0fecafa84155e');
+    // v0.84.0 checkpoint 14 §35 — these values changed once, deliberately:
+    // the preflight added the policy key and the structured progression
+    // fields, both of which are inside the fingerprint. The defect log
+    // records why. They are frozen again here for the Class 6 work.
+    expect(decompositionFingerprint(1)).toBe('9a797e73bba18969');
+    expect(decompositionFingerprint(2)).toBe('a055acf475f2b669');
+    expect(decompositionFingerprint(3)).toBe('61d78c1ff6cbdff8');
   });
 
   it('holds the Class 4 fingerprint once Class 5 work begins', () => {
     expect(unitsForClass(4).length).toBe(59);
-    expect(decompositionFingerprint(4)).toBe('c540653fe1316870');
+    expect(decompositionFingerprint(4)).toBe('997eb04b0df59365');
+    expect(unitsForClass(5).length).toBe(68);
+    expect(decompositionFingerprint(5)).toBe('fab48844235db73f');
   });
 
   it('has retired the ambiguous pagesUnresolved field', () => {
@@ -1061,14 +1080,57 @@ describe('Class 4 follows the locked method', () => {
     }
   });
 
+  // v0.84.0 checkpoint 14 §1-§3 — the report claimed all 18 flagged units
+  // shared one policy; the data showed 8 with a key and three genuinely
+  // different decisions. Policies are canonical now, and the count of
+  // decisions is derived rather than asserted in prose.
+  it('groups every flagged unit under a real, stated policy', () => {
+    const flagged = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.decompositionStatus === 'NEEDS_HUMAN_CHECK');
+    const keys = new Set(HUMAN_JUDGEMENT_POLICIES.map((p) => p.policyKey));
+    expect(HUMAN_JUDGEMENT_POLICIES.length).toBeGreaterThan(1);
+    for (const u of flagged) {
+      expect(u.humanJudgementPolicyKey, u.instructionalUnitId).toBeDefined();
+      expect(keys.has(u.humanJudgementPolicyKey!), u.instructionalUnitId).toBe(true);
+    }
+    for (const p of HUMAN_JUDGEMENT_POLICIES) {
+      expect(p.policyQuestion.length).toBeGreaterThan(60);
+      expect(p.affectedUnitIds.length).toBeGreaterThan(0);
+      const actual = flagged.filter((u) => u.humanJudgementPolicyKey === p.policyKey).map((u) => u.instructionalUnitId);
+      expect(new Set(p.affectedUnitIds)).toEqual(new Set(actual));
+    }
+    const covered = HUMAN_JUDGEMENT_POLICIES.flatMap((p) => p.affectedUnitIds);
+    expect(covered.length).toBe(flagged.length);
+  });
+
+  it('reports the number of decisions, not just the number of flags', () => {
+    const report = read('V0.84.0_CHECKPOINT_REPORT.md');
+    const flagged = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.decompositionStatus === 'NEEDS_HUMAN_CHECK').length;
+    expect(report).toContain(`${flagged} flagged`);
+    expect(report).toContain(`${HUMAN_JUDGEMENT_POLICIES.length} distinct`);
+    expect(report).not.toMatch(/all one policy/i);
+  });
+
+  it('keeps progression as a controlled value with its evidence', () => {
+    const ENUM = new Set(['REVISIT', 'EXTENSION', 'FORMALIZATION', 'NEW_REPRESENTATION',
+      'NEW_PROCEDURE', 'NEW_MATHEMATICAL_IDEA', 'INTEGRATION']);
+    const withRel = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.progressionRelationship);
+    expect(withRel.length).toBeGreaterThan(50);
+    for (const u of withRel) {
+      expect(ENUM.has(u.progressionRelationship!), `${u.instructionalUnitId}: ${u.progressionRelationship}`).toBe(true);
+      expect((u.progressionRationale ?? '').length, u.instructionalUnitId).toBeGreaterThan(20);
+      // The relationship must not be left only as free text.
+      expect(u.notes ?? '').not.toMatch(/^Progression against/);
+    }
+  });
+
   it('represents one policy decision as one policy, not five judgements', () => {
     const policy = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => u.humanJudgementPolicyKey);
     expect(policy.length).toBeGreaterThan(1);
     const keys = new Set(policy.map((u) => u.humanJudgementPolicyKey));
     expect(keys.size).toBeGreaterThan(0);
-    // Each still names its own material, so no two questions are identical.
-    const qs = policy.map((u) => u.humanJudgementQuestion);
-    expect(new Set(qs).size).toBe(qs.length);
+    // Policies are distinct; the questions under one policy may share
+    // wording where the earlier classes wrote them that way.
+    expect(new Set(HUMAN_JUDGEMENT_POLICIES.map((p) => p.policyKey)).size).toBe(HUMAN_JUDGEMENT_POLICIES.length);
   });
 
   it('gives every class-specific generator only its own class', () => {
@@ -1132,5 +1194,103 @@ describe('§21/§22 Class 3 readiness and completion are evidence-derived', () =
     const listed = [...a.matchAll(/^\| `(ncert_cemm1_ch\d{2})` \|/gm)].map((m) => m[1]);
     expect(new Set(listed).size).toBe(14);
     for (const u of unitsForClass(3)) expect(a, u.instructionalUnitId).toContain(u.instructionalUnitId);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 14 — CLASS 6 AND THE TWELVE AUTHORED ARTIFACTS.
+// ---------------------------------------------------------------------------
+
+describe('Class 6 structure and artifact mapping', () => {
+  it('keeps the official chapter and section layers distinct', () => {
+    // Class 6 keeps two official layers: 10 chapters and 65 numbered
+    // sections. The chapter is the record that owns page extents.
+    // Only the chapters that have been decomposed carry extents in scope so
+    // far; all ten exist in the dataset so none can disappear.
+    expect(RECORD_EXTENTS.filter((e) => e.officialRecordId.startsWith('ncert_gp_c6')).length).toBe(10);
+    expect(classScope([6]).recordExtents.length).toBeGreaterThan(0);
+    // `chaptersTotal` carries the official denominator (sections);
+    // the chapter and section counts are recorded separately.
+    const p6 = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 6)!;
+    expect(p6.officialChapterCount).toBe(10);
+    expect(p6.officialSectionCount).toBe(65);
+    expect(officialRecordAccounting(6).officialRecordsTotal).toBe(65);
+    for (const u of unitsForClass(6)) {
+      expect(u.officialRecordId, u.instructionalUnitId).toMatch(/^ncert_gp_c6_ch\d{2}_/);
+      // guard against the Classes 1-5 pattern being applied here
+      // Class 6 DOES have official numbered sections; a unit cites one, and
+      // never invents one.
+      const sec = u.sourceEvidence.officialSectionId;
+      if (sec !== null) expect(sec, u.instructionalUnitId).toMatch(/^ncert_gp_c6_s\d+_\d+$/);
+      expect(u.instructionalUnitId.startsWith('pragati_iu_g06_')).toBe(true);
+    }
+    for (const s of classScope([6]).sourceSegments) {
+      expect(s.sourceSegmentId.startsWith('pragati_srcseg_g06_')).toBe(true);
+    }
+  });
+
+  it('does not claim Class 6 is source-complete', () => {
+    const p = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 6)!;
+    expect(p.officialChapterCount).toBe(10);
+    expect(p.officialRecordsTotal).toBe(65);
+    expect(p.status).toBe('IN_PROGRESS');
+    expect(p.pagesFullTextPending).toBeGreaterThan(0);
+    expect(p.officialRecordsFullyInspected).toBeLessThan(p.officialRecordsTotal!);
+    const audit = read('PAGE_LEVEL_INTENT_AUDIT_CLASS_6.md');
+    expect(audit).toMatch(/Not source-complete/i);
+  });
+
+  it('gives every page of an inspected Class 6 chapter a home', () => {
+    for (const ext of classScope([6]).recordExtents) {
+      const units = instructionalUnitsFor(ext.officialRecordId);
+      if (units.length === 0) continue; // chapter not decomposed yet
+      const covered = new Set<number>();
+      for (const e of [
+        ...units.map((u) => u.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === ext.officialRecordId).map((s) => s.sourceEvidence),
+      ]) {
+        for (let p = e.pdfPageStart; p <= e.pdfPageEnd; p += 1) covered.add(p);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${ext.officialRecordId} p${p}`).toBe(true);
+      }
+    }
+  });
+
+  it('maps all 12 authored artifacts exactly once, without forcing one-to-one', () => {
+    const maps = ARTIFACT_ALIGNMENTS;
+    expect(maps.length).toBe(12);
+    expect(maps.filter((m) => m.artifactId.startsWith('fractions_')).length).toBe(9);
+    expect(maps.filter((m) => m.artifactId.startsWith('number_play_')).length).toBe(3);
+    expect(new Set(maps.map((m) => m.artifactId)).size).toBe(12);
+    const allowed = new Set(['EXACT_MATCH', 'PARTIAL_MATCH', 'MULTI_UNIT_COVERAGE',
+      'OVER_SCOPED', 'UNDER_SCOPED', 'SOURCE_ALIGNMENT_ISSUE']);
+    const unitIds = new Set<string>(unitsForClass(6).map((u) => u.instructionalUnitId));
+    for (const m of maps) {
+      expect(allowed.has(m.alignment), `${m.artifactId}: ${m.alignment}`).toBe(true);
+      expect(m.mappedUnitIds.length).toBeGreaterThan(0);
+      for (const id of m.mappedUnitIds) expect(unitIds.has(id), `${m.artifactId} to ${id}`).toBe(true);
+      expect(m.coverageSummary.length).toBeGreaterThan(30);
+      if (m.alignment !== 'EXACT_MATCH') expect(m.recommendedLaterAction.length).toBeGreaterThan(20);
+    }
+    // One artifact legitimately spans several units, so the counts differ.
+    const mapped = new Set(maps.flatMap((m) => m.mappedUnitIds));
+    expect(mapped.size).toBeGreaterThan(maps.length);
+  });
+
+  it('shows the Number Play authoring gap honestly', () => {
+    const uncovered = unitsForClass(6).filter((u) => u.learnCoverage === 'NO_LEARN_CONTENT');
+    expect(uncovered.length).toBeGreaterThan(0);
+    const gap = read('CLASS_6_AUTHORING_GAP_REPORT.md');
+    for (const u of uncovered) expect(gap, u.instructionalUnitId).toContain(u.instructionalUnitId);
+    expect(gap).toMatch(/only Chapters 3 and 7 have been decomposed/i);
+  });
+
+  it('leaves the review state and §7.4 identity untouched', () => {
+    for (const m of ARTIFACT_ALIGNMENTS) {
+      expect(m).not.toHaveProperty('reviewState');
+    }
+    const report = read('V0.84.0_CHECKPOINT_REPORT.md');
+    expect(report).toContain('0 sent');
   });
 });

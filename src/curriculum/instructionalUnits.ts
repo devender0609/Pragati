@@ -226,6 +226,24 @@ export type PragatiInstructionalUnit = {
    * was one. Each question still names that unit's own material.
    */
   humanJudgementPolicyKey?: string;
+  /** v0.84.0 checkpoint 14 — Learn coverage of this unit by existing work. */
+  learnCoverage?: 'EXISTING_EXACT' | 'EXISTING_PARTIAL' | 'EXISTING_MULTI_UNIT' | 'NO_LEARN_CONTENT';
+  /**
+   * v0.84.0 checkpoint 14 §5-§7 — the unit's relationship to what earlier
+   * classes established, as a controlled value rather than a sentence
+   * buried in `notes`, with the evidence for it alongside. Only set where
+   * the decomposition actually established it; unknown is left unset
+   * rather than guessed.
+   */
+  progressionRelationship?:
+    | 'REVISIT'
+    | 'EXTENSION'
+    | 'FORMALIZATION'
+    | 'NEW_REPRESENTATION'
+    | 'NEW_PROCEDURE'
+    | 'NEW_MATHEMATICAL_IDEA'
+    | 'INTEGRATION';
+  progressionRationale?: string;
   /**
    * v0.84.0 checkpoint 11 §1-§3 — HISTORY, NOT STATUS.
    *
@@ -310,12 +328,44 @@ export type OverlapJustification = {
   reason: string;
 };
 
+/** v0.84.0 checkpoint 14 §2 — one decision, the units it governs. */
+/**
+ * v0.84.0 checkpoint 14 §21 — how an already-authored artifact sits against
+ * the source-derived units. Mapping only: no artifact is changed, and no
+ * review state moves.
+ */
+export type ArtifactAlignment = {
+  artifactId: string;
+  officialSectionId: string;
+  artifactSourcePages: string;
+  mappedUnitIds: string[];
+  alignment:
+    | 'EXACT_MATCH'
+    | 'PARTIAL_MATCH'
+    | 'MULTI_UNIT_COVERAGE'
+    | 'OVER_SCOPED'
+    | 'UNDER_SCOPED'
+    | 'SOURCE_ALIGNMENT_ISSUE';
+  coverageSummary: string;
+  missingScope: string;
+  excessScope: string;
+  recommendedLaterAction: string;
+};
+
+export type HumanJudgementPolicy = {
+  policyKey: string;
+  policyQuestion: string;
+  affectedUnitIds: string[];
+};
+
 type DecompositionFile = {
   generatedFrom: string;
   units: PragatiInstructionalUnit[];
   nonInstructional: NonInstructionalRecord[];
   sourceSegments: SourceSegment[];
   overlapJustifications?: OverlapJustification[];
+  humanJudgementPolicies?: HumanJudgementPolicy[];
+  artifactAlignments?: ArtifactAlignment[];
   recordExtents: RecordExtent[];
   /** Classes whose page-level pass is finished, and what remains. */
   classProgress: Array<{
@@ -361,6 +411,9 @@ type DecompositionFile = {
     /** Pages missing either kind of required evidence. */
     pagesEvidenceIncomplete?: number;
     officialRecordsPartiallyInspected?: number;
+    /** Class 6 onwards: chapters and numbered sections are different layers. */
+    officialChapterCount?: number;
+    officialSectionCount?: number;
     officialRecordsIndexedOnly?: number;
     /** Official records in the class, from the curriculum not the data. */
     officialRecordsTotal?: number;
@@ -383,6 +436,8 @@ export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstr
 export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
 export const RECORD_EXTENTS: RecordExtent[] = DATA.recordExtents ?? [];
 export const SOURCE_SEGMENTS: SourceSegment[] = DATA.sourceSegments ?? [];
+export const ARTIFACT_ALIGNMENTS: ArtifactAlignment[] = DATA.artifactAlignments ?? [];
+export const HUMAN_JUDGEMENT_POLICIES: HumanJudgementPolicy[] = DATA.humanJudgementPolicies ?? [];
 export const OVERLAP_JUSTIFICATIONS: OverlapJustification[] = DATA.overlapJustifications ?? [];
 
 /** The justification authored for this exact pair, in either order. */
@@ -492,6 +547,13 @@ export function classScope(classNumbers: number[]): {
   const units = PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => wanted.has(u.classNumber));
   const ids = new Set<string>();
   for (const n of classNumbers) for (const r of authoringUnits(n)) ids.add(r.recordId);
+  // From Class 6 the official authoring record is the numbered section while
+  // page extents hang off the chapter, so the chapter ids the class's units
+  // and segments cite belong to the scope too.
+  for (const u of units) ids.add(u.officialRecordId);
+  for (const s of SOURCE_SEGMENTS) {
+    if (units.some((u) => u.officialRecordId === s.officialRecordId)) ids.add(s.officialRecordId);
+  }
   return {
     officialRecordIds: [...ids],
     units,
@@ -519,6 +581,7 @@ export function decompositionFingerprint(classNumber: number): string {
         u.studentCanStatement, u.mathematicalIdeas.join('~'), u.representationsNeeded.join('~'),
         u.prerequisites.join('~'), u.vocabulary.join('~'), u.reasoningDemand, u.instructionalRole,
         u.decompositionStatus, u.humanReviewStatus, u.humanJudgementQuestion ?? '',
+        u.humanJudgementPolicyKey ?? '', u.progressionRelationship ?? '', u.progressionRationale ?? '',
         `${e.pdfPageStart}-${e.pdfPageEnd}`, `${e.printedPageStart}-${e.printedPageEnd}`,
         e.evidenceDepth, String(e.pageEvidence.length),
         e.pageEvidence.map((p) => `${p.pdfPage}:${p.printedPage}:${p.fullTextInspected ? 1 : 0}:${p.visualInspectionRequired ? 1 : 0}:${p.visualInspected ? 1 : 0}`).join(','),

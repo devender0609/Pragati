@@ -2876,7 +2876,8 @@
      "verdict": "CONFIRMED",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "context_page_lesson_vs_embedded_context"
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch11_u1",
@@ -5687,7 +5688,8 @@
      "verdict": "CONFIRMED",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "context_page_lesson_vs_embedded_context"
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch09_u2",
@@ -8430,7 +8432,8 @@
      "verdict": "CONFIRMED",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch13_u4",
@@ -8528,7 +8531,8 @@
      "verdict": "CONFIRMED",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch01_u5",
@@ -9550,7 +9554,8 @@
      "verdict": "NEEDS_HUMAN_CHECK",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
   },
   {
    "instructionalUnitId": "pragati_iu_g01_ch08_u6",
@@ -9635,7 +9640,8 @@
      "verdict": "NEEDS_HUMAN_CHECK",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "instructional_granularity_merge_small_objectives"
   },
   {
    "instructionalUnitId": "pragati_iu_g02_ch04_u4",
@@ -11110,7 +11116,8 @@
      "verdict": "NEEDS_HUMAN_CHECK",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch04_u5",
@@ -13606,7 +13613,8 @@
      "verdict": "NEEDS_HUMAN_CHECK",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch09_u3",
@@ -13778,7 +13786,8 @@
      "verdict": "NEEDS_HUMAN_CHECK",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "context_page_lesson_vs_embedded_context"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch10_u1",
@@ -14387,7 +14396,8 @@
      "verdict": "NEEDS_HUMAN_CHECK",
      "note": "Source evidence complete. What remains is the named curriculum decision."
     }
-   ]
+   ],
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
   },
   {
    "instructionalUnitId": "pragati_iu_g03_ch12_u1",
@@ -21596,14 +21606,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 four-digit place value to five digits.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 four-digit place value to five digits"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch01_u2",
@@ -21682,14 +21694,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: rounding is a NEW PROCEDURE at Class 5.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Rounding is a NEW PROCEDURE at Class 5"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch01_u3",
@@ -21768,14 +21782,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: rate as distance per hour.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: rate as distance per hour"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch01_u4",
@@ -21854,7 +21870,7 @@
    "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: REVISIT of reasoning extension seen in every earlier class.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
@@ -21863,7 +21879,9 @@
     }
    ],
    "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
-   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the river-crossing puzzle and the two-pile pebble game: is reasoning-extension material like this core Pragati Learn at Class 5, or enrichment offered beside the chapter?"
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the river-crossing puzzle and the two-pile pebble game: is reasoning-extension material like this core Pragati Learn at Class 5, or enrichment offered beside the chapter?",
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "REVISIT of reasoning extension seen in every earlier class"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch01_u5",
@@ -21951,14 +21969,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 pattern work into explicit generalisation.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 pattern work into explicit generalisation"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch01_u6",
@@ -22027,14 +22047,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: counting without repetition.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: counting without repetition"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch02_u1",
@@ -22104,14 +22126,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION of the Class 4 idea that the whole must be the same.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION of the Class 4 idea that the whole must be the same"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch02_u2",
@@ -22216,14 +22240,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION: Class 4 saw 1/2 = 2/4 by folding; Class 5 names equivalence and generates it.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION: Class 4 saw 1/2 = 2/4 by folding; Class 5 names equivalence and generates it"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch02_u3",
@@ -22293,14 +22319,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: comparison rules, where Class 4 compared only unit fractions.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: comparison rules, where Class 4 compared only unit fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch02_u4",
@@ -22406,14 +22434,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: fractions greater than one appear for the first time.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: fractions greater than one appear for the first time"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch02_u5",
@@ -22501,14 +22531,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: benchmark reasoning, not present in Class 4.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: benchmark reasoning, not present in Class 4"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch03_u1",
@@ -22587,14 +22619,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: angle as turn, where Class 4 met angle as two lines meeting.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: angle as turn, where Class 4 met angle as two lines meeting"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch03_u2",
@@ -22674,14 +22708,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION: Class 4 classified angles by comparison; Class 5 ties them to a measured turn.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION: Class 4 classified angles by comparison; Class 5 ties them to a measured turn"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch03_u3",
@@ -22778,14 +22814,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: measuring an angle, a first step towards degrees.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: measuring an angle, a first step towards degrees"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch03_u4",
@@ -22865,14 +22903,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: composing rotations with direction.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: composing rotations with direction"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch04_u1",
@@ -22969,14 +23009,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 2 fact families to five-digit numbers.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 2 fact families to five-digit numbers"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch04_u2",
@@ -23045,14 +23087,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: a structural shortcut, early algebraic generalisation.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: a structural shortcut, early algebraic generalisation"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch04_u3",
@@ -23158,14 +23202,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 four-digit algorithms to five digits.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 four-digit algorithms to five digits"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch04_u4",
@@ -23235,14 +23281,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 quick ways, now asked whether the method always works.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 quick ways, now asked whether the method always works"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch04_u5",
@@ -23321,14 +23369,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 odd and even into explanation using structure.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 odd and even into explanation using structure"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch04_u6",
@@ -23407,14 +23457,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 data work with larger numbers.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 data work with larger numbers"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch05_u1",
@@ -23493,14 +23545,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 metre and centimetre work.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 metre and centimetre work"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch05_u2",
@@ -23589,14 +23643,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the kilometre, absent from Classes 1-4.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: the kilometre, absent from Classes 1-4"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch05_u3",
@@ -23674,14 +23730,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the millimetre completes the metric length family.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: the millimetre completes the metric length family"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch05_u4",
@@ -23768,14 +23826,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: arithmetic on compound measures.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: arithmetic on compound measures"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch05_u5",
@@ -23845,14 +23905,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: proportional reasoning on a double number line.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: proportional reasoning on a double number line"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch05_u6",
@@ -23931,14 +23993,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW REPRESENTATION: a second measurement system alongside the metric one.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "NEW REPRESENTATION: a second measurement system alongside the metric one"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch06_u1",
@@ -24017,7 +24081,7 @@
    "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: REVISIT of constraint puzzles, now using multiples and factors.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
@@ -24026,7 +24090,9 @@
     }
    ],
    "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
-   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the shapes-stand-for-numbers puzzle and the seven-clue number hunt: is reasoning-extension material like this core Pragati Learn at Class 5, or enrichment offered beside the chapter?"
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the shapes-stand-for-numbers puzzle and the seven-clue number hunt: is reasoning-extension material like this core Pragati Learn at Class 5, or enrichment offered beside the chapter?",
+   "progressionRelationship": "REVISIT",
+   "progressionRationale": "REVISIT of constraint puzzles, now using multiples and factors"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch06_u2",
@@ -24114,14 +24180,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 multiplying by tens and hundreds, now to thousands.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 multiplying by tens and hundreds, now to thousands"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch06_u3",
@@ -24218,14 +24286,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: flexible multiplication strategies beyond partitioning.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: flexible multiplication strategies beyond partitioning"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch06_u4",
@@ -24340,14 +24410,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION of Class 4 splitting into the standard algorithm.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION of Class 4 splitting into the standard algorithm"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch06_u5",
@@ -24425,14 +24497,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 2 checking-someone-else’s-work into method comparison.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 2 checking-someone-else’s-work into method comparison"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch06_u6",
@@ -24538,7 +24612,7 @@
    "decompositionStatus": "NEEDS_HUMAN_CHECK",
    "humanReviewStatus": "flagged_for_review",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: REVISIT of reasoning extension, now about multiplicative structure.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
@@ -24547,7 +24621,9 @@
     }
    ],
    "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
-   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the missing-digit products and the king’s doubling-versus-tripling reward: is reasoning-extension material like this core Pragati Learn at Class 5, or enrichment offered beside the chapter?"
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the missing-digit products and the king’s doubling-versus-tripling reward: is reasoning-extension material like this core Pragati Learn at Class 5, or enrichment offered beside the chapter?",
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "REVISIT of reasoning extension, now about multiplicative structure"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch07_u1",
@@ -24626,14 +24702,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW REPRESENTATION: a two-dimensional repeating rule.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "NEW REPRESENTATION: a two-dimensional repeating rule"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch07_u2",
@@ -24721,14 +24799,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION of Class 3-4 tiling, with regular polygons named.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION of Class 3-4 tiling, with regular polygons named"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch07_u3",
@@ -24826,14 +24906,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: named quadrilateral families beyond square and rectangle.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: named quadrilateral families beyond square and rectangle"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch07_u4",
@@ -24903,14 +24985,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 circle work into shapes inside a circle.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 circle work into shapes inside a circle"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch07_u5",
@@ -24989,14 +25073,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 nets and views to harder solids.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 nets and views to harder solids"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch08_u1",
@@ -25075,14 +25161,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 weight work into judging reasonableness.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 weight work into judging reasonableness"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch08_u2",
@@ -25161,14 +25249,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: mixed-unit arithmetic for mass, parallel to length in Chapter 5.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: mixed-unit arithmetic for mass, parallel to length in Chapter 5"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch08_u3",
@@ -25247,14 +25337,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the mass family extended in both directions.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: the mass family extended in both directions"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch08_u4",
@@ -25351,14 +25443,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: multiplying and dividing compound measures.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: multiplying and dividing compound measures"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch08_u5",
@@ -25464,14 +25558,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 litre work into conversion and arithmetic.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 litre work into conversion and arithmetic"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch09_u1",
@@ -25550,14 +25646,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION: Class 4 divided by taking out groups; Class 5 names the parts.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION: Class 4 divided by taking out groups; Class 5 names the parts"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch09_u2",
@@ -25645,14 +25743,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: mental division by decomposition.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: mental division by decomposition"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch09_u3",
@@ -25748,14 +25848,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION of Class 4 group removal into an organised written method.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION of Class 4 group removal into an organised written method"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch09_u4",
@@ -25852,14 +25954,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION: the division algorithm, the endpoint of Classes 3-5 division work.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION: the division algorithm, the endpoint of Classes 3-5 division work"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch09_u5",
@@ -25956,14 +26060,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION into justification, beyond Class 4 true/sometimes/never.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION into justification, beyond Class 4 true/sometimes/never"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch10_u1",
@@ -26042,14 +26148,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: REVISIT of Class 4 reflection symmetry as the ground for rotation.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "REVISIT",
+   "progressionRationale": "REVISIT of Class 4 reflection symmetry as the ground for rotation"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch10_u2",
@@ -26128,14 +26236,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: rotational symmetry, absent from Classes 1-4.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: rotational symmetry, absent from Classes 1-4"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch10_u3",
@@ -26309,14 +26419,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: area as covering, where Class 4 had perimeter only.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: area as covering, where Class 4 had perimeter only"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch11_u2",
@@ -26395,14 +26507,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW PROCEDURE: measuring area by iterating a unit.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "NEW PROCEDURE: measuring area by iterating a unit"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch11_u3",
@@ -26605,14 +26719,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: FORMALIZATION: the first area formula of the primary stage.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "FORMALIZATION: the first area formula of the primary stage"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch12_u1",
@@ -26691,14 +26807,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: REVISIT of Class 4 AM/PM and 24-hour clock as the base for seconds.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "REVISIT",
+   "progressionRationale": "REVISIT of Class 4 AM/PM and 24-hour clock as the base for seconds"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch12_u2",
@@ -26795,14 +26913,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: the second as a unit.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: the second as a unit"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch12_u3",
@@ -26891,14 +27011,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 elapsed time into conversion and backward reasoning.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 elapsed time into conversion and backward reasoning"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch13_u1",
@@ -26977,14 +27099,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: factors and primes, where Class 4 had multiples only.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: factors and primes, where Class 4 had multiples only"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch13_u2",
@@ -27062,14 +27186,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 common multiples with a reasoning question attached.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 common multiples with a reasoning question attached"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch13_u3",
@@ -27156,14 +27282,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: divisibility and common factors.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: divisibility and common factors"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch14_u1",
@@ -27252,14 +27380,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION of Class 4 position work, now with compass directions.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION of Class 4 position work, now with compass directions"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch14_u2",
@@ -27348,14 +27478,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION: routes now combine direction, turn and a scaled map.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION: routes now combine direction, turn and a scaled map"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch14_u3",
@@ -27435,14 +27567,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: coordinates, the step beyond Class 4 row-and-column grids.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: coordinates, the step beyond Class 4 row-and-column grids"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch15_u1",
@@ -27512,14 +27646,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: REVISIT of Class 4 data collection as the base for scaled graphs.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "REVISIT",
+   "progressionRationale": "REVISIT of Class 4 data collection as the base for scaled graphs"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch15_u2",
@@ -27606,14 +27742,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW MATHEMATICAL IDEA: scale in a data display.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "NEW MATHEMATICAL IDEA: scale in a data display"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch15_u3",
@@ -27711,14 +27849,16 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: NEW REPRESENTATION: the bar graph, first appearing at Class 5.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "NEW REPRESENTATION: the bar graph, first appearing at Class 5"
   },
   {
    "instructionalUnitId": "pragati_iu_g05_ch15_u4",
@@ -27789,14 +27929,2307 @@
    "decompositionStatus": "READY_FOR_AUTHORING",
    "humanReviewStatus": "not_reviewed",
    "existingArtifact": null,
-   "notes": "Progression against Classes 1-4: EXTENSION: data reasoning applied to an unstructured picture.",
+   "notes": null,
    "auditHistory": [
     {
      "checkpoint": "v0.84.0 checkpoint 13",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "EXTENSION: data reasoning applied to an unstructured picture"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u1",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_1",
+    "printedPageStart": 56,
+    "printedPageEnd": 56,
+    "pdfPageStart": 2,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Children saying 0, 1 or 2 according to how many neighbours are taller; which sequences are possible and which are not; rearranging to maximise the count.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     2
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 2,
+      "printedPage": 56,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 77 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Numbers that describe a relationship",
+   "mathematicalObjective": "Read and produce a code in which each number reports something about its neighbours.",
+   "studentCanStatement": "I can work out what each child’s number means and rearrange the line to change them.",
+   "mathematicalIdeas": [
+    "encoded relational information",
+    "reasoning backwards from a code",
+    "existence and impossibility of an arrangement"
+   ],
+   "representationsNeeded": [
+    "a line of children by height",
+    "number strips"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u6"
+   ],
+   "vocabulary": [
+    "neighbour",
+    "taller",
+    "arrangement"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "number_play_3_1",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Numbers used to encode a relation rather than a quantity; nothing in Classes 1-5 asks a number to describe its neighbours.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u2",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_2",
+    "printedPageStart": 57,
+    "printedPageEnd": 58,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The coloured table where a cell is larger than its adjacent cells; filling tables so supercells are exactly the coloured ones; whether the largest number is always a supercell.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 57,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 216 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 58,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 144 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Supercells",
+   "mathematicalObjective": "Decide whether a cell is larger than its adjacent cells and construct tables to a specification.",
+   "studentCanStatement": "I can colour the supercells and build a table with as many as possible.",
+   "mathematicalIdeas": [
+    "strict greater-than against adjacent cells",
+    "end cells qualify with one neighbour",
+    "constructing an arrangement to a constraint"
+   ],
+   "representationsNeeded": [
+    "number tables",
+    "coloured grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u5"
+   ],
+   "vocabulary": [
+    "supercell",
+    "adjacent",
+    "largest"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "number_play_3_2",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "A comparison structure over a table, new at Class 6.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u3",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_3",
+    "printedPageStart": 59,
+    "printedPageEnd": 59,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Number lines drawn over different ranges with only some marks labelled; identifying the marked numbers and labelling the rest; circling smallest and largest.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 59,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 128 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Large numbers on the number line",
+   "mathematicalObjective": "Read and place five-digit numbers on number lines at different scales and windows.",
+   "studentCanStatement": "I can label the marks on a line running from 10,000 to 20,000.",
+   "mathematicalIdeas": [
+    "scale of a number line",
+    "estimating position between marks",
+    "reading a window of the number system"
+   ],
+   "representationsNeeded": [
+    "number lines at several scales"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u1"
+   ],
+   "vocabulary": [
+    "scale",
+    "between",
+    "estimate"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "number_play_3_3",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 5 number line to five-digit windows and varying scales.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u4",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_4",
+    "printedPageStart": 60,
+    "printedPageEnd": 61,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-09-30",
+    "establishes": "How many numbers have two, three, four and five digits; digit sums including the largest 5-digit number with digit sum 14; how often the digit 7 occurs from 1 to 100 and 1 to 1000.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 60,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 112 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 59 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Playing with digits",
+   "mathematicalObjective": "Count how many numbers have a given number of digits and reason about digit sums and occurrences.",
+   "studentCanStatement": "I can say how many 4-digit numbers there are and find the largest with digit sum 14.",
+   "mathematicalIdeas": [
+    "counting numbers by digit length",
+    "digit sum",
+    "counting occurrences of a digit"
+   ],
+   "representationsNeeded": [
+    "digit tables",
+    "organised lists"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u5"
+   ],
+   "vocabulary": [
+    "digit sum",
+    "how many",
+    "occurs"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Counting numbers themselves rather than objects; combinatorial reasoning is new at Class 6.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u5",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_5",
+    "printedPageStart": 61,
+    "printedPageEnd": 62,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Listing palindromes from given digits; reversing and adding repeatedly; whether every 2-digit start reaches a palindrome.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     7,
+     8
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 59 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 62,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 87 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Palindromic numbers and reverse-and-add",
+   "mathematicalObjective": "Generate palindromes and investigate the reverse-and-add process.",
+   "studentCanStatement": "I can write all 3-digit palindromes from given digits.",
+   "mathematicalIdeas": [
+    "palindromic number",
+    "systematic listing",
+    "an open question about a process"
+   ],
+   "representationsNeeded": [
+    "digit cards",
+    "iteration tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch04_u5"
+   ],
+   "vocabulary": [
+    "palindrome",
+    "reverse",
+    "repeat"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Class 5 listed palindromes in a range; Class 6 turns the process into an investigation with an unsettled question.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u6",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_6",
+    "printedPageStart": 63,
+    "printedPageEnd": 63,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Making the largest and smallest numbers from four digits, subtracting, and repeating until 6174 appears.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 63,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 76 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "The Kaprekar constant",
+   "mathematicalObjective": "Carry out the Kaprekar process and notice that it reaches 6174.",
+   "studentCanStatement": "I can run the largest-minus-smallest steps and reach 6174.",
+   "mathematicalIdeas": [
+    "iterating an arithmetic process",
+    "invariant reached by iteration",
+    "ordering digits to make extremes"
+   ],
+   "representationsNeeded": [
+    "4-digit number cards",
+    "step records"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u5"
+   ],
+   "vocabulary": [
+    "largest",
+    "smallest",
+    "repeat",
+    "constant"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "An invariant reached by iteration, new at Class 6.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the Kaprekar process reaching 6174: is this core Pragati Learn at Class 6, or enrichment beside the number-play work?",
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u7",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_7",
+    "printedPageStart": 64,
+    "printedPageEnd": 64,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Times such as 4:44, 10:10 and 12:21; dates whose digits use only 0, 1 and 2; minutes until the next palindromic time.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     10
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 64,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 69 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Clock and calendar number patterns",
+   "mathematicalObjective": "Find times and dates whose digits form a pattern.",
+   "studentCanStatement": "I can find all the palindromic times on a 12-hour clock.",
+   "mathematicalIdeas": [
+    "digit patterns in time and date notation",
+    "systematic search",
+    "palindromes in another notation"
+   ],
+   "representationsNeeded": [
+    "clock faces",
+    "calendar dates"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch12_u1"
+   ],
+   "vocabulary": [
+    "palindromic time",
+    "date",
+    "pattern"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Applies the palindrome idea to clock and calendar notation.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u8",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_8",
+    "printedPageStart": 65,
+    "printedPageEnd": 66,
+    "pdfPageStart": 11,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The figure where several numbers must be reached mentally from others; adding and subtracting 5-digit numbers by splitting into thousands, hundreds and the rest.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     11,
+     12
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 11,
+      "printedPage": 65,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 82 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 66,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 95 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Mental arithmetic with large numbers",
+   "mathematicalObjective": "Add and subtract large numbers mentally by splitting them usefully.",
+   "studentCanStatement": "I can work out 38,800 + 25,000 in my head and say how.",
+   "mathematicalIdeas": [
+    "decomposition for mental calculation",
+    "compensation at scale",
+    "choosing a route through a calculation"
+   ],
+   "representationsNeeded": [
+    "branching diagrams",
+    "number lines"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch04_u4"
+   ],
+   "vocabulary": [
+    "mentally",
+    "split",
+    "estimate"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends Class 5 mental compensation to five-digit numbers.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u9",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_9",
+    "printedPageStart": 66,
+    "printedPageEnd": 67,
+    "pdfPageStart": 12,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Making 1,000 and other thousands from a set of numbers using addition and subtraction; the always/sometimes/never statements about sums and differences of 5-digit numbers.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 12,
+      "printedPage": 66,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 95 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 67,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 390 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Making numbers with given constraints",
+   "mathematicalObjective": "Combine given numbers with addition and subtraction to hit a target.",
+   "studentCanStatement": "I can say which thousands can be made from these boxes and why.",
+   "mathematicalIdeas": [
+    "reachability under a constraint",
+    "always/sometimes/never statements",
+    "justifying impossibility"
+   ],
+   "representationsNeeded": [
+    "number boxes",
+    "statement tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch03_u8"
+   ],
+   "vocabulary": [
+    "make",
+    "possible",
+    "always",
+    "never"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 9,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Judging a claim as always, sometimes or never true is the first systematic proof-like demand.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u10",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_9",
+    "printedPageStart": 68,
+    "printedPageEnd": 68,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The patterned arrangements of 32s, 64s, 125s and 250s summing to a given total, and making one for a number you choose.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 68,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 513 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Number patterns that sum to a target",
+   "mathematicalObjective": "Build an arrangement of numbers that sums to a chosen total.",
+   "studentCanStatement": "I can make a pattern of numbers that adds to 250.",
+   "mathematicalIdeas": [
+    "composing a target from repeated parts",
+    "structure in an arrangement",
+    "working backwards from a total"
+   ],
+   "representationsNeeded": [
+    "patterned number arrangements"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch03_u9"
+   ],
+   "vocabulary": [
+    "sum",
+    "pattern",
+    "arrange"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 10,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends Class 5 structural sums into constructing an arrangement.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u11",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_10",
+    "printedPageStart": 69,
+    "printedPageEnd": 69,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The halve-if-even, triple-and-add-one-if-odd rule; sequences reaching 1; Collatz’s conjecture stated as still unproven.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 69,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 59 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "The Collatz conjecture",
+   "mathematicalObjective": "Run the Collatz process and understand what an unsolved conjecture is.",
+   "studentCanStatement": "I can run the halve-or-triple-and-add-one rule and reach 1.",
+   "mathematicalIdeas": [
+    "iterating a conditional rule",
+    "conjecture as an open question",
+    "testing a claim on many starts"
+   ],
+   "representationsNeeded": [
+    "sequence records"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch03_u6"
+   ],
+   "vocabulary": [
+    "conjecture",
+    "rule",
+    "sequence"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 11,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "The idea that a simple question can be unsolved is new to the programme.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the Collatz conjecture: is an unsolved conjecture core Pragati Learn at Class 6, or enrichment?",
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u12",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_11",
+    "printedPageStart": 70,
+    "printedPageEnd": 71,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 17,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Estimating steps walked, time to travel distances on foot, and whether a stated 13,000 hours in school is plausible.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     17
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 70,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 56 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 71,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 59 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Estimation at scale",
+   "mathematicalObjective": "Estimate large quantities and judge whether a claim is reasonable.",
+   "studentCanStatement": "I can decide whether 13,000 hours in school is believable.",
+   "mathematicalIdeas": [
+    "estimation with large numbers",
+    "order of magnitude",
+    "checking a claim by estimating"
+   ],
+   "representationsNeeded": [
+    "estimation tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch04_u6"
+   ],
+   "vocabulary": [
+    "estimate",
+    "about",
+    "reasonable"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 12,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends Class 5 estimation to orders of magnitude.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch03_u13",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": "ncert_gp_c6_s3_12",
+    "printedPageStart": 72,
+    "printedPageEnd": 73,
+    "pdfPageStart": 18,
+    "pdfPageEnd": 19,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Reaching a target by adding 1 or 2 and finding the winning numbers; varying the rules and finding the new pattern; the 0-to-target game with additions between 1 and 3.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     18,
+     19
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 18,
+      "printedPage": 72,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 85 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 73,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 54 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Games and winning strategies",
+   "mathematicalObjective": "Find and justify a winning strategy in a number game.",
+   "studentCanStatement": "I can say which numbers I must say to be sure of winning.",
+   "mathematicalIdeas": [
+    "backward induction",
+    "invariant positions in a game",
+    "generalising a strategy to variants"
+   ],
+   "representationsNeeded": [
+    "game records"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u4"
+   ],
+   "vocabulary": [
+    "strategy",
+    "winning number",
+    "turn"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "REASONING_EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 13,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Backward induction on a game, a genuine reasoning method rather than a puzzle.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the winning-strategy games at the end of Number Play: core Learn or enrichment?",
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
+   "learnCoverage": "NO_LEARN_CONTENT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u1",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_1",
+    "printedPageStart": 152,
+    "printedPageEnd": 153,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Rotis shared between two, three and four children; Arvin’s misconception that 1/9 > 1/5 corrected; fractional unit named; weights of 1/2 kg and 1/4 kg combined.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 153 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 152,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 104 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 153,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 89 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Fractional units and equal shares",
+   "mathematicalObjective": "Compare unit fractions and name the share when a whole is divided equally.",
+   "studentCanStatement": "I can say why one-fifth is greater than one-ninth.",
+   "mathematicalIdeas": [
+    "unit fraction as one of n equal parts",
+    "more parts means a smaller share",
+    "naming a share"
+   ],
+   "representationsNeeded": [
+    "roti and chikki diagrams",
+    "strip models"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch02_u1"
+   ],
+   "vocabulary": [
+    "fractional unit",
+    "share",
+    "equal parts"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_1",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 compared unit fractions; Class 6 names the fractional unit and makes the rule explicit.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u2",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_2",
+    "printedPageStart": 154,
+    "printedPageEnd": 155,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-09-30",
+    "establishes": "A whole chikki cut into six equal parts in different ways; deciding what fraction each printed piece is.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 154,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 87 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 155,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 69 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Fractional units as parts of a whole",
+   "mathematicalObjective": "Recognise that equal parts of a whole may differ in shape but not in size.",
+   "studentCanStatement": "I can say which pieces are one-sixth of the chikki even when they look different.",
+   "mathematicalIdeas": [
+    "equal area, different shape",
+    "identifying the fractional unit from a picture",
+    "partitioning in more than one way"
+   ],
+   "representationsNeeded": [
+    "chikki cut several ways",
+    "shape diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u1"
+   ],
+   "vocabulary": [
+    "whole",
+    "part",
+    "same size"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_2",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "That equal parts need not be congruent is not addressed in Classes 1-5.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u3",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_3",
+    "printedPageStart": 156,
+    "printedPageEnd": 158,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Folding a unit strip into halves, fourths and eighths; tables of 2 times 1/8 up to 8 times 1/8; writing 5 times 1/4 of a roti as an addition.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7,
+     8
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 156,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 102 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 157,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 210 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 158,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 261 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Measuring with fractional units",
+   "mathematicalObjective": "Measure a length by counting fractional units and write it as an addition.",
+   "studentCanStatement": "I can write 5 times one-fourth as an addition and as a fraction.",
+   "mathematicalIdeas": [
+    "iterating a fractional unit",
+    "fraction as repeated addition of a unit",
+    "fraction as a measure"
+   ],
+   "representationsNeeded": [
+    "paper strips folded into halves, fourths and eighths"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u1"
+   ],
+   "vocabulary": [
+    "times",
+    "unit",
+    "length"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_3",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "Fraction as a measured length, beyond the Class 5 region and set models.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u4",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_4",
+    "printedPageStart": 159,
+    "printedPageEnd": 160,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Drawing lengths of 1/10, 3/10 and 4/5; marking chosen fractions; how many fractions lie between 0 and 1.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9,
+     10
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 159,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 96 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 160,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 125 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Marking fractions on the number line",
+   "mathematicalObjective": "Mark fractional lengths on a number line and read them off.",
+   "studentCanStatement": "I can mark 3/10 and 4/5 on a number line.",
+   "mathematicalIdeas": [
+    "fraction as a point and as a length",
+    "dividing a unit into equal parts on a line",
+    "density of fractions informally"
+   ],
+   "representationsNeeded": [
+    "number lines divided into equal parts"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch02_u4"
+   ],
+   "vocabulary": [
+    "number line",
+    "length",
+    "between"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_4",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 placed fractions greater than one on a line; Class 6 makes the line the defining representation.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u5",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_5",
+    "printedPageStart": 161,
+    "printedPageEnd": 163,
+    "pdfPageStart": 11,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Sorting marked fractions into less and more than one; how many whole units are in 7/2 and 7/3; Jaya’s method for writing a mixed number as a regular fraction.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 11,
+      "printedPage": 161,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 91 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 162,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 111 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 163,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 113 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Mixed fractions",
+   "mathematicalObjective": "Write fractions greater than one as mixed numbers and back again.",
+   "studentCanStatement": "I can write 7/2 as a mixed number and 3 and 3/4 as a fraction.",
+   "mathematicalIdeas": [
+    "mixed number",
+    "converting between forms",
+    "whole units inside a fraction"
+   ],
+   "representationsNeeded": [
+    "number line",
+    "strip diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch02_u4"
+   ],
+   "vocabulary": [
+    "mixed number",
+    "whole",
+    "improper"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_5",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 met fractions greater than one; Class 6 names mixed numbers and converts both ways.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u6",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_6",
+    "printedPageStart": 164,
+    "printedPageEnd": 165,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Checking that 1/2, 2/4 and 4/8 are the same length; extending the wall to tenths; finding equal pieces across rows.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 164,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 186 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 165,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 187 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Equivalent fractions and the fraction wall",
+   "mathematicalObjective": "Generate equivalent fractions and read them from a fraction wall.",
+   "studentCanStatement": "I can find three fractions equal to 3/5 on the wall.",
+   "mathematicalIdeas": [
+    "equivalence as the same length",
+    "fraction wall",
+    "families of equivalent fractions"
+   ],
+   "representationsNeeded": [
+    "fraction wall to tenths",
+    "strip comparisons"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch02_u2"
+   ],
+   "vocabulary": [
+    "equivalent",
+    "same length",
+    "wall"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_6",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 generated equivalence by folding; Class 6 systematises it on a wall.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_MULTI_UNIT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u7",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_6",
+    "printedPageStart": 166,
+    "printedPageEnd": 169,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 19,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Three rotis shared by four children written as division, addition and multiplication facts; 1 among 2 compared with 2 among 4 and 3 among 6; 7/5 rewritten as another sharing.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     17,
+     18,
+     19
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 166,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 64 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 167,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 193 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 168,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 116 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 169,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 107 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Equivalence from equal sharing",
+   "mathematicalObjective": "Explain equivalence through sharing situations and division facts.",
+   "studentCanStatement": "I can say why 3 rotis among 4 children is the same as 6 among 8.",
+   "mathematicalIdeas": [
+    "division fact for a fraction",
+    "scaling numerator and denominator together",
+    "equivalence argued from sharing"
+   ],
+   "representationsNeeded": [
+    "roti-sharing drawings",
+    "division/multiplication fact frames"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u6"
+   ],
+   "vocabulary": [
+    "divided by",
+    "share",
+    "equivalent"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_INSTRUCTION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_6",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Linking fraction, division and equivalence in one argument is new at Class 6.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_MULTI_UNIT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u8",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_6",
+    "printedPageStart": 172,
+    "printedPageEnd": 173,
+    "pdfPageStart": 22,
+    "pdfPageEnd": 23,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Reducing fractions by common factors; 36/60 reduced in steps to 3/5; recognising when no common factor is left.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     22,
+     23
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 22,
+      "printedPage": 172,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 81 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 173,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 82 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Simplest form",
+   "mathematicalObjective": "Express a fraction in its lowest terms.",
+   "studentCanStatement": "I can reduce 36/60 to its simplest form and say how I know it is simplest.",
+   "mathematicalIdeas": [
+    "common factor of numerator and denominator",
+    "simplest form",
+    "stepwise reduction"
+   ],
+   "representationsNeeded": [
+    "factor lists",
+    "division steps"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch13_u3"
+   ],
+   "vocabulary": [
+    "lowest terms",
+    "common factor",
+    "simplest"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_6",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Needs the factors and common factors introduced in Class 5 Chapter 13.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_MULTI_UNIT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u9",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_7",
+    "printedPageStart": 170,
+    "printedPageEnd": 174,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 24,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Shares compared when the number of children or rotis changes; the condition that fractional units must match; 4/5 against 7/9 and 7/9 against 17/21 through common denominators.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 170,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 100 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 171,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 93 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 172,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 81 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 173,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 82 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 174,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 96 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Comparing fractions",
+   "mathematicalObjective": "Compare any two fractions by making the fractional units the same.",
+   "studentCanStatement": "I can compare 4/5 and 7/9 by writing both over 45.",
+   "mathematicalIdeas": [
+    "common denominator",
+    "comparison by equivalent fractions",
+    "comparing with unlike units"
+   ],
+   "representationsNeeded": [
+    "strip diagrams",
+    "common-multiple tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u6",
+    "pragati_iu_g05_ch13_u2"
+   ],
+   "vocabulary": [
+    "common multiple",
+    "denominator",
+    "greater"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 9,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_7",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 compared with benchmarks; Class 6 gives a general method.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_EXACT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u10",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_8",
+    "printedPageStart": 175,
+    "printedPageEnd": 177,
+    "pdfPageStart": 25,
+    "pdfPageEnd": 27,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Meena and her brother eating 1/2 and 1/4; sums such as 2/5 + 1/5 and 4/7 + 6/7 shown on strips and written as mixed numbers.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     25,
+     26,
+     27
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 25,
+      "printedPage": 175,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 79 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 176,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 165 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 177,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 209 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Adding and subtracting like fractions",
+   "mathematicalObjective": "Add and subtract fractions that share a fractional unit.",
+   "studentCanStatement": "I can add 4/7 and 6/7 and write the answer as a mixed number.",
+   "mathematicalIdeas": [
+    "adding counts of the same unit",
+    "sum greater than one",
+    "subtraction of like fractions"
+   ],
+   "representationsNeeded": [
+    "rectangular strip models"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u3"
+   ],
+   "vocabulary": [
+    "same unit",
+    "sum",
+    "difference"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 10,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_8",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "First formal fraction arithmetic in the programme.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_MULTI_UNIT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u11",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_8",
+    "printedPageStart": 178,
+    "printedPageEnd": 182,
+    "pdfPageStart": 28,
+    "pdfPageEnd": 32,
+    "inspectedOn": "2026-09-30",
+    "establishes": "Converting to a common fractional unit before adding; Brahmagupta’s method stated in steps; subtraction of unlike fractions; paint and travel-time word problems.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 28,
+      "printedPage": 178,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 77 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 179,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 115 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 180,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 131 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 181,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 89 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": 182,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 77 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "Adding and subtracting unlike fractions",
+   "mathematicalObjective": "Add and subtract fractions with different denominators.",
+   "studentCanStatement": "I can add 1/3 and 1/5 by writing both in fifteenths.",
+   "mathematicalIdeas": [
+    "common fractional unit before adding",
+    "Brahmagupta’s method",
+    "subtraction with unlike units"
+   ],
+   "representationsNeeded": [
+    "strip models",
+    "common-denominator working"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u9"
+   ],
+   "vocabulary": [
+    "unlike",
+    "convert",
+    "common denominator"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 11,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": "fractions_7_8",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "The general addition procedure, resting on equivalence and common multiples.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "learnCoverage": "EXISTING_MULTI_UNIT"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g06_ch07_u12",
+   "grade": "class6",
+   "classNumber": 6,
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": "ncert_gp_c6_s7_9",
+    "printedPageStart": 183,
+    "printedPageEnd": 185,
+    "pdfPageStart": 33,
+    "pdfPageEnd": 35,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The history from the Bakhshali manuscript and Egyptian notation to Brahmagupta and Aryabhata; the puzzle of writing fractions as sums of distinct unit fractions.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     33,
+     34,
+     35
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 33,
+      "printedPage": 183,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 58 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 184,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 87 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": 185,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 71 drawn elements: the mathematics is carried by the picture, and the page was rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   },
+   "instructionalTitle": "A pinch of history, and unit-fraction puzzles",
+   "mathematicalObjective": "Meet the history of fractions and express a fraction as distinct unit fractions.",
+   "studentCanStatement": "I can write 2/3 as a sum of different unit fractions.",
+   "mathematicalIdeas": [
+    "Egyptian unit-fraction notation",
+    "decomposing a fraction into distinct unit fractions",
+    "history of a notation"
+   ],
+   "representationsNeeded": [
+    "historical notation",
+    "puzzle frames"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u11"
+   ],
+   "vocabulary": [
+    "unit fraction",
+    "sum",
+    "distinct"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "REASONING_EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 12,
+   "splitReason": "Ganita Prakash numbers its sections, and the official section is kept as the source record; this unit is one lesson-sized objective inside it, named with the pages that support it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": "fractions_7_9",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Unit-fraction decomposition is a genuine new demand and sits outside the chapter’s procedures.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 14",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to writing a fraction as a sum of distinct unit fractions: core Pragati Learn at Class 6, or enrichment beside the Fractions chapter?",
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
+   "learnCoverage": "EXISTING_PARTIAL"
   }
  ],
  "nonInstructional": [],
@@ -27895,6 +30328,27 @@
    "visualPagesPending": 0,
    "pagesEvidenceIncomplete": 0,
    "note": "All 15 official chapters fully inspected: 200 of 200 pages read in full text and 154 of 154 picture-carried pages rendered and looked at. What remains is curriculum judgement, not unread source."
+  },
+  {
+   "classNumber": 6,
+   "status": "IN_PROGRESS",
+   "officialRecordsTotal": 65,
+   "officialRecordsFullyInspected": 0,
+   "officialRecordsPartiallyInspected": 1,
+   "officialRecordsIndexedOnly": 8,
+   "chaptersInspected": 0,
+   "chaptersTotal": 65,
+   "pagesInScope": 392,
+   "pagesIndexed": 392,
+   "pagesFullyInspected": 67,
+   "pagesFullTextPending": 325,
+   "visualPagesRequired": 63,
+   "visualPagesInspected": 59,
+   "visualPagesPending": 4,
+   "pagesEvidenceIncomplete": 325,
+   "note": "10 official chapters hold 65 numbered sections. 67 of 392 pages have been read in full text and 59 of 63 picture-carried pages seen, covering Number Play and Fractions only; the other chapters are indexed, not inspected.",
+   "officialChapterCount": 10,
+   "officialSectionCount": 65
   }
  ],
  "recordExtents": [
@@ -28366,6 +30820,76 @@
    "pdfPageEnd": 22,
    "printedPageStart": 180,
    "printedPageEnd": 187
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch01_patterns",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 17,
+   "printedPageStart": 2,
+   "printedPageEnd": 12
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 53,
+   "printedPageStart": 14,
+   "printedPageEnd": 54
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 32,
+   "printedPageStart": 56,
+   "printedPageEnd": 73
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 44,
+   "printedPageStart": 75,
+   "printedPageEnd": 106
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch05_prime_time",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 33,
+   "printedPageStart": 108,
+   "printedPageEnd": 128
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch06_perimeter_area",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 29,
+   "printedPageStart": 130,
+   "printedPageEnd": 150
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 50,
+   "printedPageStart": 152,
+   "printedPageEnd": 186
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 38,
+   "printedPageStart": 188,
+   "printedPageEnd": 216
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 40,
+   "printedPageStart": 218,
+   "printedPageEnd": 241
+  },
+  {
+   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 56,
+   "printedPageStart": 243,
+   "printedPageEnd": 271
   }
  ],
  "sourceSegments": [
@@ -29253,6 +31777,335 @@
     "firstInspectedOn": "2026-09-30",
     "lastEvidenceUpdatedOn": "2026-09-30"
    }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch03_solutions",
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "sourceLabel": "pages 20–32 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The printed solutions supplement bound after the chapter body. It answers the chapter’s questions and teaches no new objective, so it is accounted for as reference rather than becoming an authoring target.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 32,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The chapter's printed answer key, question by question. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 2 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 110 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "0 images, 295 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "14 images, 183 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "40 images, 190 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 13 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 8 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 0 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 1 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "0 images, 140 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 0 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch07_solutions",
+   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "sourceLabel": "pages 36–50 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The printed solutions supplement bound after the chapter body. It answers the chapter’s questions and teaches no new objective, so it is accounted for as reference rather than becoming an authoring target.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch07_fractions",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 36,
+    "pdfPageEnd": 50,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The chapter's printed answer key, question by question. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "DIGEST_ONLY",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 36,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "3 images, 53 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "2 images, 13 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "2 images, 119 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 39,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "2 images, 53 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 40,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "5 images, 39 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 41,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": true,
+      "visualInspected": false,
+      "note": "0 images, 46 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 42,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "1 images, 25 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 43,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "2 images, 26 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 44,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "1 images, 12 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 45,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "1 images, 36 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 46,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "1 images, 28 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 47,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "3 images, 36 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 48,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "0 images, 21 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 49,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "1 images, 26 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     },
+     {
+      "pdfPage": 50,
+      "printedPage": null,
+      "fullTextInspected": false,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "0 images, 15 drawn elements: the solutions supplement has not been inspected in this checkpoint."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g06_ch03_opener",
+   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "sourceLabel": "page 1 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "The chapter opening page: the title and the paragraph framing what Number Play is about. Context for what follows, not a teaching target.",
+   "sourceEvidence": {
+    "bookId": "fegp1",
+    "bookPart": null,
+    "officialChapterId": "ncert_gp_c6_ch03_number_play",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 1,
+    "inspectedOn": "2026-09-30",
+    "establishes": "The chapter opener and its framing paragraph. (No printed folio appears on these pages, so the printed range is recorded as unknown rather than guessed.)",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [
+     1
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 87 drawn elements: read in full text; the answer key carries no picture-carried mathematics."
+     }
+    ],
+    "firstInspectedOn": "2026-09-30",
+    "lastEvidenceUpdatedOn": "2026-09-30"
+   }
   }
  ],
  "overlapJustifications": [
@@ -29340,6 +32193,224 @@
    "a": "pragati_iu_g02_ch11_u4",
    "b": "pragati_srcseg_g02_ch11_puzzles",
    "reason": "Page 8 carries the printed \"Puzzles\" heading and its first two tasks: the segment names the section as the book labels it, and the unit carries the teaching intent of the tasks on that page."
+  },
+  {
+   "a": "pragati_iu_g06_ch03_u4",
+   "b": "pragati_iu_g06_ch03_u5",
+   "reason": "Shared pages in ncert_gp_c6_ch03_number_play: pragati_iu_g06_ch03_u4 and pragati_iu_g06_ch03_u5 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for."
+  },
+  {
+   "a": "pragati_iu_g06_ch03_u8",
+   "b": "pragati_iu_g06_ch03_u9",
+   "reason": "Shared pages in ncert_gp_c6_ch03_number_play: pragati_iu_g06_ch03_u8 and pragati_iu_g06_ch03_u9 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for."
+  },
+  {
+   "a": "pragati_iu_g06_ch07_u8",
+   "b": "pragati_iu_g06_ch07_u9",
+   "reason": "Shared pages in ncert_gp_c6_ch07_fractions: pragati_iu_g06_ch07_u8 and pragati_iu_g06_ch07_u9 read the same spread — the comparison work and the sharing argument run together across these pages, and each unit takes the objective it is named for."
+  }
+ ],
+ "humanJudgementPolicies": [
+  {
+   "policyKey": "reasoning_extension_core_vs_enrichment",
+   "policyQuestion": "Is reasoning-extension material — constraint grids, invariant tricks, deduction puzzles, winning strategies, missing-digit products — core Pragati Learn, or enrichment offered beside the chapter that carries it?",
+   "affectedUnitIds": [
+    "pragati_iu_g01_ch13_u3",
+    "pragati_iu_g01_ch13_u4",
+    "pragati_iu_g02_ch11_u5",
+    "pragati_iu_g03_ch04_u4",
+    "pragati_iu_g03_ch09_u2",
+    "pragati_iu_g03_ch11_u4",
+    "pragati_iu_g04_ch01_u7",
+    "pragati_iu_g04_ch04_u6",
+    "pragati_iu_g04_ch07_u5",
+    "pragati_iu_g04_ch10_u1",
+    "pragati_iu_g04_ch13_u5",
+    "pragati_iu_g05_ch01_u4",
+    "pragati_iu_g05_ch06_u1",
+    "pragati_iu_g05_ch06_u6",
+    "pragati_iu_g06_ch03_u11",
+    "pragati_iu_g06_ch03_u13",
+    "pragati_iu_g06_ch03_u6",
+    "pragati_iu_g06_ch07_u12"
+   ]
+  },
+  {
+   "policyKey": "context_page_lesson_vs_embedded_context",
+   "policyQuestion": "When a page is mostly context or cultural material with light mathematics, does it warrant a Pragati lesson of its own, or does it belong as context inside a neighbouring unit?",
+   "affectedUnitIds": [
+    "pragati_iu_g01_ch10_u3",
+    "pragati_iu_g02_ch09_u1",
+    "pragati_iu_g03_ch09_u4"
+   ]
+  },
+  {
+   "policyKey": "instructional_granularity_merge_small_objectives",
+   "policyQuestion": "When two objectives drawn from the same pages are each very small for their stage, should they be one instructional unit or stay separate?",
+   "affectedUnitIds": [
+    "pragati_iu_g01_ch08_u6"
+   ]
+  }
+ ],
+ "artifactAlignments": [
+  {
+   "artifactId": "fractions_7_1",
+   "officialSectionId": "ncert_gp_c6_s7_1",
+   "artifactSourcePages": "152-153",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u1"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers unit fractions and equal shares, including the 1/5 versus 1/9 misconception, which is the whole of the unit.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "fractions_7_2",
+   "officialSectionId": "ncert_gp_c6_s7_2",
+   "artifactSourcePages": "154-155",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u2"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers fractional units as parts of a whole, including equal parts of different shapes.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "fractions_7_3",
+   "officialSectionId": "ncert_gp_c6_s7_3",
+   "artifactSourcePages": "156-158",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u3"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers measuring with fractional units and the repeated-addition tables.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "fractions_7_4",
+   "officialSectionId": "ncert_gp_c6_s7_4",
+   "artifactSourcePages": "159-160",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u4"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers marking fraction lengths on the number line.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "fractions_7_5",
+   "officialSectionId": "ncert_gp_c6_s7_5",
+   "artifactSourcePages": "161-163",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u5"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers mixed fractions and conversion in both directions.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "fractions_7_6",
+   "officialSectionId": "ncert_gp_c6_s7_6",
+   "artifactSourcePages": "164-174",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u6",
+    "pragati_iu_g06_ch07_u7",
+    "pragati_iu_g06_ch07_u8"
+   ],
+   "alignment": "MULTI_UNIT_COVERAGE",
+   "coverageSummary": "Section 7.6 as authored spans three source-derived units: the fraction wall, equivalence argued from equal sharing, and simplest form.",
+   "missingScope": "Whether all three objectives are taught to depth inside one lesson needs checking against the artifact; the decomposition treats them as three lesson-sized objectives.",
+   "excessScope": "",
+   "recommendedLaterAction": "Later: consider splitting into three lessons, or confirm the single lesson covers all three objectives."
+  },
+  {
+   "artifactId": "fractions_7_7",
+   "officialSectionId": "ncert_gp_c6_s7_7",
+   "artifactSourcePages": "174-175",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u9"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers comparing fractions through a common fractional unit.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "fractions_7_8",
+   "officialSectionId": "ncert_gp_c6_s7_8",
+   "artifactSourcePages": "175-182",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u10",
+    "pragati_iu_g06_ch07_u11"
+   ],
+   "alignment": "MULTI_UNIT_COVERAGE",
+   "coverageSummary": "Section 7.8 spans like-denominator addition and subtraction and the general unlike-denominator procedure, which the decomposition separates.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": "Later: confirm the lesson gives the unlike-denominator procedure its own treatment."
+  },
+  {
+   "artifactId": "fractions_7_9",
+   "officialSectionId": "ncert_gp_c6_s7_9",
+   "artifactSourcePages": "183-185",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch07_u12"
+   ],
+   "alignment": "PARTIAL_MATCH",
+   "coverageSummary": "Covers the history of fractions in section 7.9.",
+   "missingScope": "The unit-fraction decomposition puzzle on the same pages — writing a fraction as a sum of distinct unit fractions — is a genuine mathematical demand and is not covered by a history lesson.",
+   "excessScope": "",
+   "recommendedLaterAction": "Later: decide the reasoning-extension policy, then either extend this lesson or author a separate unit."
+  },
+  {
+   "artifactId": "number_play_3_1",
+   "officialSectionId": "ncert_gp_c6_s3_1",
+   "artifactSourcePages": "55-56",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch03_u1"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers the neighbour-taller counting code, including which sequences are possible.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "number_play_3_2",
+   "officialSectionId": "ncert_gp_c6_s3_2",
+   "artifactSourcePages": "57-59",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch03_u2"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers supercells with strict greater-than and end cells qualifying.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
+  },
+  {
+   "artifactId": "number_play_3_3",
+   "officialSectionId": "ncert_gp_c6_s3_3",
+   "artifactSourcePages": "59-60",
+   "mappedUnitIds": [
+    "pragati_iu_g06_ch03_u3"
+   ],
+   "alignment": "EXACT_MATCH",
+   "coverageSummary": "Covers reading and placing large numbers on number lines at different scales and windows.",
+   "missingScope": "",
+   "excessScope": "",
+   "recommendedLaterAction": ""
   }
  ]
 }
