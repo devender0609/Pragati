@@ -414,6 +414,22 @@ export type OfficialSectionExtent = {
   boundaryStatus?: 'PROVISIONAL_DETECTED' | 'VERIFIED_FROM_SOURCE';
 };
 
+/**
+ * v0.84.0 checkpoint 20 §5-§6 — A SECTION MAY BE READ AND TEACH NOTHING NEW.
+ *
+ * Checkpoint 19 derived a section's state from the units citing it, so a
+ * review, practice or reference section could never be marked inspected
+ * however carefully it had been read — the only way out was to invent a
+ * lesson for it. Source inspection and instructional disposition are
+ * different questions, and a section that produces no unit records its
+ * role here instead.
+ */
+export type OfficialSectionDisposition = {
+  officialSectionId: string;
+  disposition: 'PRACTICE' | 'REVIEW' | 'REFERENCE' | 'ENRICHMENT' | 'NON_INSTRUCTIONAL' | 'OTHER_EXPLICIT_ROLE';
+  justification: string;
+};
+
 export type HumanJudgementPolicy = {
   policyKey: string;
   policyQuestion: string;
@@ -429,6 +445,7 @@ type DecompositionFile = {
   humanJudgementPolicies?: HumanJudgementPolicy[];
   artifactAlignments?: ArtifactAlignment[];
   officialSectionExtents?: OfficialSectionExtent[];
+  officialSectionDispositions?: OfficialSectionDisposition[];
   recordExtents: RecordExtent[];
   /** Classes whose page-level pass is finished, and what remains. */
   classProgress: Array<{
@@ -490,6 +507,14 @@ type DecompositionFile = {
     chaptersIndexedOnly?: number;
     sectionsAccountedFor?: number;
     sectionsNotYetInspected?: number;
+    /**
+     * v0.84.0 checkpoint 20 §12-§13 — these describe OFFICIAL RECORDS, which
+     * from Class 6 means numbered sections. Checkpoint 19 put the count of
+     * unread chapters into `officialRecordsIndexedOnly`, whose denominator
+     * is 65 sections. The chapter layer has `chapters*` for that.
+     */
+    officialRecordsNotStarted?: number;
+    officialRecordsBlocked?: number;
     officialRecordsIndexedOnly?: number;
     /** Official records in the class, from the curriculum not the data. */
     officialRecordsTotal?: number;
@@ -512,6 +537,14 @@ export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstr
 export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
 export const RECORD_EXTENTS: RecordExtent[] = DATA.recordExtents ?? [];
 export const SOURCE_SEGMENTS: SourceSegment[] = DATA.sourceSegments ?? [];
+export const OFFICIAL_SECTION_DISPOSITIONS: OfficialSectionDisposition[] =
+  DATA.officialSectionDispositions ?? [];
+
+/** The recorded no-unit role of a section, if it has one. */
+export function sectionDispositionFor(sectionId: string): OfficialSectionDisposition | undefined {
+  return OFFICIAL_SECTION_DISPOSITIONS.find((x) => x.officialSectionId === sectionId);
+}
+
 export const OFFICIAL_SECTION_EXTENTS: OfficialSectionExtent[] = DATA.officialSectionExtents ?? [];
 
 /** The recorded body span of one numbered section, if there is one. */
@@ -568,13 +601,12 @@ export function sectionInspectionState(
   const units = PRAGATI_INSTRUCTIONAL_UNITS.filter(
     (u) => u.officialRecordId === sectionId || u.additionalOfficialRecordIds.includes(sectionId)
   );
-  if (units.length === 0) return 'NOT_STARTED';
+  // v0.84.0 checkpoint 20 §8 — a section's disposition is one or more units
+  // OR a recorded no-unit role. Absence of a unit is not absence of reading.
+  const disposition = sectionDispositionFor(sectionId);
+  if (units.length === 0 && !disposition) return 'NOT_STARTED';
   if (units.some((u) => u.sourceEvidence.blockedSource)) return 'BLOCKED_SOURCE';
 
-  // v0.84.0 checkpoint 18 §5 — the question is whether the section's own
-  // printed body was inspected, not whether some unit citing it has tidy
-  // evidence. Without a recorded body span there is nothing to prove
-  // completeness against, so the section cannot be called complete.
   const extent = sectionExtentFor(sectionId);
   if (!extent) return 'PARTIALLY_INSPECTED';
   // An unverified range is a parser guess. It cannot prove a body complete.
@@ -582,18 +614,21 @@ export function sectionInspectionState(
     return 'PARTIALLY_INSPECTED';
   }
 
-  // Every page of the body must be evidenced somewhere in the chapter —
-  // by a unit of this section, a neighbouring unit that shares a boundary
-  // page, or a source segment covering unnumbered material inside it.
+  // Every page of the body must be evidenced somewhere in the chapter — by a
+  // unit of this section, a neighbouring unit sharing a boundary page, or a
+  // source segment covering unnumbered material inside it.
   const chapterEvidence = [
-    ...PRAGATI_INSTRUCTIONAL_UNITS.filter(
-      (u) => chapterOf(u) === extent.officialChapterId
-    ).map((u) => u.sourceEvidence),
+    ...PRAGATI_INSTRUCTIONAL_UNITS.filter((u) => chapterOf(u) === extent.officialChapterId).map(
+      (u) => u.sourceEvidence
+    ),
     ...SOURCE_SEGMENTS.filter(
       (sg) => sg.sourceEvidence.officialChapterId === extent.officialChapterId
     ).map((sg) => sg.sourceEvidence),
   ];
-  const byPage = new Map<number, { fullTextInspected: boolean; visualInspectionRequired: boolean; visualInspected: boolean }>();
+  const byPage = new Map<
+    number,
+    { fullTextInspected: boolean; visualInspectionRequired: boolean; visualInspected: boolean }
+  >();
   for (const e of chapterEvidence) for (const p of e.pageEvidence) byPage.set(p.pdfPage, p);
 
   let complete = true;
@@ -603,12 +638,14 @@ export function sectionInspectionState(
       complete = false;
     }
   }
-  // The section's own units must also be fully evidenced: a disposition
-  // recorded against half-read pages is not a disposition.
-  const ownPages = units.flatMap((u) => u.sourceEvidence.pageEvidence);
-  if (ownPages.length === 0) complete = false;
-  if (!ownPages.every((p) => p.fullTextInspected && (!p.visualInspectionRequired || p.visualInspected))) {
-    complete = false;
+  // Where units exist, their own evidence must also be complete: a
+  // disposition recorded against half-read pages is not a disposition.
+  if (units.length > 0) {
+    const ownPages = units.flatMap((u) => u.sourceEvidence.pageEvidence);
+    if (ownPages.length === 0) complete = false;
+    if (!ownPages.every((p) => p.fullTextInspected && (!p.visualInspectionRequired || p.visualInspected))) {
+      complete = false;
+    }
   }
   return complete ? 'FULLY_INSPECTED' : 'PARTIALLY_INSPECTED';
 }
@@ -625,6 +662,7 @@ export function sectionAccounting(classNumber: number): {
     extent: OfficialSectionExtent | null;
     parentChapterId: string | null;
     unitIds: string[];
+    disposition: string | null;
     state: string;
   }>;
 } {
@@ -639,6 +677,7 @@ export function sectionAccounting(classNumber: number): {
       extent: sectionExtentFor(r.recordId) ?? null,
       parentChapterId: units[0] ? chapterOf(units[0]) : (sectionExtentFor(r.recordId)?.officialChapterId ?? null),
       unitIds: units.map((u) => u.instructionalUnitId),
+      disposition: units.length > 0 ? 'INSTRUCTIONAL_UNIT' : (sectionDispositionFor(r.recordId)?.disposition ?? null),
       state: sectionInspectionState(r.recordId),
     };
   });

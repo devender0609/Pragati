@@ -39489,6 +39489,1109 @@
      "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
     }
    ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch07_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s7_1",
+   "officialChapterId": "ncert_gegp1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch07",
+    "officialSectionId": "ncert_gegp1_s7_1",
+    "printedPageStart": 147,
+    "printedPageEnd": 148,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The triangle introduced as three vertices and sides; constructing an equilateral triangle from two arcs of equal radius; why the intersection is the required vertex.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 19 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 147,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 19 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 148,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Equilateral triangles and compass construction",
+   "mathematicalObjective": "Construct an equilateral triangle with ruler and compass and justify why it works.",
+   "studentCanStatement": "I can construct an equilateral triangle of side 4 cm and say why the arcs meet where they do.",
+   "mathematicalIdeas": [
+    "triangle as three vertices and three sides",
+    "arcs of equal radius",
+    "intersection point as the third vertex"
+   ],
+   "representationsNeeded": [
+    "compass constructions",
+    "circle diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch08_u6"
+   ],
+   "vocabulary": [
+    "equilateral",
+    "arc",
+    "vertex"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 33,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 6 equidistant-points construction to a named figure.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch07_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s7_2",
+   "officialChapterId": "ncert_gegp1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch07",
+    "officialSectionId": "ncert_gegp1_s7_2",
+    "printedPageStart": 149,
+    "printedPageEnd": 160,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The efficient construction from a chosen base; the straight path being shorter than the roundabout one; the triangle inequality derived from whether the circles intersect; the cases analysed and the rule stated.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 149,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 150,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 32 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 151,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 152,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 9 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 153,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 154,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 22 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 155,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 156,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 157,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 158,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 159,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 18 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 160,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Constructing a triangle from three sides, and the triangle inequality",
+   "mathematicalObjective": "Construct a triangle from three given sides and decide when no triangle exists.",
+   "studentCanStatement": "I can say why no triangle has sides 3 cm, 4 cm and 8 cm.",
+   "mathematicalIdeas": [
+    "construction from three lengths",
+    "triangle inequality",
+    "circles intersecting or failing to intersect",
+    "proving impossibility"
+   ],
+   "representationsNeeded": [
+    "compass and circle diagrams",
+    "tent-pole-tree path"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch07_u1"
+   ],
+   "vocabulary": [
+    "inequality",
+    "exists",
+    "shortest path"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 34,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "An existence condition proved geometrically — the first such argument in the programme.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch07_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s7_3",
+   "officialChapterId": "ncert_gegp1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch07",
+    "officialSectionId": "ncert_gegp1_s7_3",
+    "printedPageStart": 161,
+    "printedPageEnd": 163,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 18,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Constructions where the angle is included between the sides; constructions from two angles and the side between them; whether the triangle is always unique.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     17
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 161,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 57 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 162,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 55 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 163,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 25 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Constructing triangles from sides and angles",
+   "mathematicalObjective": "Construct a triangle from two sides and the included angle, or two angles and a side.",
+   "studentCanStatement": "I can construct a triangle with 75 degrees, 5 cm, 75 degrees.",
+   "mathematicalIdeas": [
+    "included angle",
+    "angle-side-angle construction",
+    "when the given measurements determine a triangle"
+   ],
+   "representationsNeeded": [
+    "protractor and compass constructions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch07_u2",
+    "pragati_iu_g07_ch05_u3"
+   ],
+   "vocabulary": [
+    "included angle",
+    "construct",
+    "determine"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 35,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "The standard construction cases, resting on the Class 7 parallel-line work.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch07_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s7_3",
+   "officialChapterId": "ncert_gegp1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch07",
+    "officialSectionId": "ncert_gegp1_s7_3",
+    "printedPageStart": 163,
+    "printedPageEnd": 167,
+    "pdfPageStart": 18,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-02",
+    "establishes": "When two given angles sum to less than 180 a triangle exists; the proof that the three angles form a straight angle using the parallel through a vertex; exterior angles named and related to the interior ones.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     19
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 18,
+      "printedPage": 163,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 25 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 164,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 52 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 165,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 20 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 166,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 15 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 167,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "The angle sum of a triangle, and exterior angles",
+   "mathematicalObjective": "Explain why the angles of a triangle sum to 180 degrees and use exterior angles.",
+   "studentCanStatement": "I can explain why the three angles always add to 180.",
+   "mathematicalIdeas": [
+    "angle sum of a triangle",
+    "proof using a parallel line",
+    "exterior angle equal to the two opposite interior angles",
+    "existence condition on two angles"
+   ],
+   "representationsNeeded": [
+    "parallel-line proof diagram",
+    "exterior angle figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch05_u4"
+   ],
+   "vocabulary": [
+    "angle sum",
+    "exterior angle",
+    "straight angle"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 36,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "The programme’s first real geometric proof, built on the transversal results.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch07_u5",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s7_4",
+   "officialChapterId": "ncert_gegp1_ch07",
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s7_5"
+   ],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch07",
+    "officialSectionId": "ncert_gegp1_s7_4",
+    "printedPageStart": 167,
+    "printedPageEnd": 172,
+    "pdfPageStart": 22,
+    "pdfPageEnd": 27,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Altitudes defined and constructed with a set square; equilateral, isosceles and scalene set against acute, right and obtuse; which combinations exist; the right-angled construction with a given hypotenuse.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     25,
+     26,
+     27
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 22,
+      "printedPage": 167,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 168,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 169,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 13 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 170,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 171,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 114 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 172,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 7 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Altitudes, and types of triangles",
+   "mathematicalObjective": "Construct the altitudes of a triangle and classify triangles by sides and angles.",
+   "studentCanStatement": "I can draw all three altitudes and say what kind of triangle this is.",
+   "mathematicalIdeas": [
+    "altitude as a perpendicular from a vertex",
+    "set-square construction",
+    "classification by sides and by angles",
+    "which combinations are possible"
+   ],
+   "representationsNeeded": [
+    "set square and ruler",
+    "classification tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch07_u4"
+   ],
+   "vocabulary": [
+    "altitude",
+    "perpendicular",
+    "scalene",
+    "obtuse"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 37,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §7.4 and §7.5 together: the altitude constructions and the classification of triangles are taught as one pass — the types are named by the side and angle facts the constructions have just established, and the Figure it Out set mixes both. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Joins the construction and angle work of the chapter into one classification.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch08_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s8_1",
+   "officialChapterId": "ncert_gegp1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch08",
+    "officialSectionId": "ncert_gegp1_s8_1",
+    "printedPageStart": 174,
+    "printedPageEnd": 183,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 11,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Aaron and the tortoise walking in fractions of an hour; the distance covered as a product; the unit square shaded twice to give the product of two fractions; the general rule and its cancellation shortcut.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 26 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 174,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 38 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 175,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 176,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 177,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 41 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 178,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 28 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 179,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 60 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 180,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 32 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 181,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 34 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 182,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 39 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 183,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 37 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Multiplying a fraction by a whole number, and by a fraction",
+   "mathematicalObjective": "Multiply fractions and explain the procedure from the meaning of the operation.",
+   "studentCanStatement": "I can work out three-quarters of two-fifths and say why.",
+   "mathematicalIdeas": [
+    "fraction of a quantity as multiplication",
+    "multiplying numerators and denominators",
+    "area model on a unit square",
+    "Brahmagupta’s formula"
+   ],
+   "representationsNeeded": [
+    "distance diagrams",
+    "unit-square area models"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u11"
+   ],
+   "vocabulary": [
+    "product",
+    "of",
+    "numerator",
+    "denominator"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 38,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Class 6 adds and subtracts fractions; multiplication is new and is derived, not asserted.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch08_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s8_1",
+   "officialChapterId": "ncert_gegp1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch08",
+    "officialSectionId": "ncert_gegp1_s8_1",
+    "printedPageStart": 184,
+    "printedPageEnd": 186,
+    "pdfPageStart": 12,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Expressing both fractions over a common denominator to see the product is smaller; the table of situations relating product to factors; the order of multiplication making no difference.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     13,
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 12,
+      "printedPage": 184,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 185,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 52 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 186,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 22 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "How a product compares with its factors",
+   "mathematicalObjective": "Predict whether a product is larger or smaller than the numbers multiplied.",
+   "studentCanStatement": "I can say why multiplying by three-quarters makes a number smaller.",
+   "mathematicalIdeas": [
+    "multiplying by a fraction less than one",
+    "comparison of product with factors",
+    "order of multiplication"
+   ],
+   "representationsNeeded": [
+    "comparison tables",
+    "area diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch08_u1"
+   ],
+   "vocabulary": [
+    "greater than",
+    "less than",
+    "order"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 39,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "A general claim about an operation rather than a calculation.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch08_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s8_2",
+   "officialChapterId": "ncert_gegp1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch08",
+    "officialSectionId": "ncert_gegp1_s8_2",
+    "printedPageStart": 187,
+    "printedPageEnd": 190,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 18,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Division turned into multiplication; the reciprocal defined as the number whose product with it is 1; the rule summarised; when the quotient is larger or smaller than the dividend.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     18
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 187,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 39 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 188,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 189,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 190,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Dividing fractions",
+   "mathematicalObjective": "Divide by a fraction using the reciprocal, and explain why that works.",
+   "studentCanStatement": "I can work out two-thirds divided by three-fifths and say why I multiply.",
+   "mathematicalIdeas": [
+    "division as how many of these fit",
+    "reciprocal",
+    "division rewritten as multiplication",
+    "Brahmagupta’s rule for division"
+   ],
+   "representationsNeeded": [
+    "share diagrams",
+    "worked chains"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch08_u1"
+   ],
+   "vocabulary": [
+    "divide",
+    "reciprocal",
+    "quotient"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 40,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Fraction division, new at Class 7 and derived from multiplication.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch08_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s8_3",
+   "officialChapterId": "ncert_gegp1_ch08",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch08",
+    "officialSectionId": "ncert_gegp1_s8_3",
+    "printedPageStart": 191,
+    "printedPageEnd": 196,
+    "pdfPageStart": 19,
+    "pdfPageEnd": 24,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Bricks tiling an area; the shaded fractions of the dissected squares; the Bhaskaracharya dramma problem; the chess puzzle and the ant colony.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     20,
+     21,
+     24
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 19,
+      "printedPage": 191,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 23 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 192,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 29 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 193,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 29 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 194,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 12 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 195,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 196,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 74 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Problems involving fractions",
+   "mathematicalObjective": "Solve multi-step problems and area questions using fraction operations.",
+   "studentCanStatement": "I can find what fraction of the square is shaded.",
+   "mathematicalIdeas": [
+    "fraction operations in context",
+    "fractional areas within a figure",
+    "multi-step reasoning with fractions",
+    "historical fraction problems"
+   ],
+   "representationsNeeded": [
+    "square dissections",
+    "word problems",
+    "the Shulbasutra and dramma problems"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch08_u3"
+   ],
+   "vocabulary": [
+    "fraction of",
+    "area",
+    "shaded"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 41,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Applies the chapter’s operations together, with historical sources.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 20",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
   }
  ],
  "nonInstructional": [],
@@ -39612,7 +40715,9 @@
    "visualPagesInspected": 302,
    "visualPagesPending": 0,
    "pagesEvidenceIncomplete": 0,
-   "note": "Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392 of 392 read in full text, 302 of 302 picture-carried pages rendered and looked at."
+   "note": "Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392 of 392 read in full text, 302 of 302 picture-carried pages rendered and looked at.",
+   "officialRecordsNotStarted": 0,
+   "officialRecordsBlocked": 0
   },
   {
    "classNumber": 7,
@@ -39620,25 +40725,27 @@
    "officialChapterCount": 15,
    "officialSectionsTotal": 65,
    "chaptersTotal": 15,
-   "chaptersInspected": 6,
-   "chaptersFullyInspected": 6,
+   "chaptersInspected": 8,
+   "chaptersFullyInspected": 8,
    "chaptersPartiallyInspected": 0,
-   "chaptersIndexedOnly": 9,
-   "sectionsAccountedFor": 35,
-   "sectionsNotYetInspected": 30,
+   "chaptersIndexedOnly": 7,
+   "sectionsAccountedFor": 43,
+   "sectionsNotYetInspected": 22,
    "officialRecordsTotal": 65,
-   "officialRecordsFullyInspected": 35,
+   "officialRecordsFullyInspected": 43,
    "officialRecordsPartiallyInspected": 0,
-   "officialRecordsIndexedOnly": 9,
+   "officialRecordsIndexedOnly": 0,
    "pagesInScope": 511,
    "pagesIndexed": 511,
-   "pagesFullyInspected": 240,
-   "pagesFullTextPending": 271,
-   "visualPagesRequired": 107,
-   "visualPagesInspected": 107,
+   "pagesFullyInspected": 313,
+   "pagesFullTextPending": 198,
+   "visualPagesRequired": 131,
+   "visualPagesInspected": 131,
    "visualPagesPending": 0,
-   "pagesEvidenceIncomplete": 271,
-   "note": "Chapters: 6 of 15 fully inspected. Sections: 35 of 65 accounted for against verified body ranges; all 65 have a recorded extent, 35 of them verified from inspected pages and the rest provisional. Pages: 240 of 511 read in full text; among those, 107 are picture-carried and 107 have been rendered and looked at. The visual requirement of the 271 unread pages is not yet determined."
+   "pagesEvidenceIncomplete": 198,
+   "note": "Chapters: 8 of 15 fully inspected. Sections: 43 of 65 fully inspected and dispositioned, 22 not started. Pages: 313 of 511 read in full text; among those, 131 are picture-carried and 131 have been rendered and looked at. The visual requirement of the 198 unread pages is not yet determined.",
+   "officialRecordsNotStarted": 22,
+   "officialRecordsBlocked": 0
   }
  ],
  "recordExtents": [
@@ -43715,6 +44822,260 @@
     "firstInspectedOn": "2026-10-02",
     "lastEvidenceUpdatedOn": "2026-10-02"
    }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g07_07_seg1",
+   "officialRecordId": "ncert_gegp1_ch07",
+   "sourceLabel": "pages 28–34 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter summary, puzzle page and the printed answer key, read in full: they restate or answer what the sections teach rather than teaching an objective of their own.",
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 28,
+    "pdfPageEnd": 34,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Chapter summary, puzzle page and printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 28,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 1 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "1 images, 66 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 0 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 0 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g07_08_seg1",
+   "officialRecordId": "ncert_gegp1_ch08",
+   "sourceLabel": "pages 25–39 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter summary, puzzle page and the printed answer key, read in full: they restate or answer what the sections teach rather than teaching an objective of their own.",
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch08",
+    "officialSectionId": null,
+    "printedPageStart": 197,
+    "printedPageEnd": 199,
+    "pdfPageStart": 25,
+    "pdfPageEnd": 39,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Chapter summary, puzzle page and printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 25,
+      "printedPage": 197,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 24 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 198,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 136 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 199,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 7 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 3 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 3 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 5 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 11 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 19 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 9 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 21 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 17 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 5 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "1 images, 88 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "1 images, 16 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 39,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "0 images, 29 drawn elements: summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   }
   }
  ],
  "overlapJustifications": [
@@ -43882,6 +45243,16 @@
    "a": "pragati_iu_g07_ch05_u1",
    "b": "pragati_iu_g07_ch05_u2",
    "reason": "Shared page 6 in ncert_gegp1_ch05: §5.3 ends and §5.4 begins partway down that page, so the intersecting-lines unit takes the perpendicular paragraph at the top and the parallel-folding unit takes the activity that starts below it."
+  },
+  {
+   "a": "pragati_iu_g07_ch07_u3",
+   "b": "pragati_iu_g07_ch07_u4",
+   "reason": "Shared page in ncert_gegp1_ch07: pragati_iu_g07_ch07_u3 and pragati_iu_g07_ch07_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g07_ch07_u4",
+   "b": "pragati_iu_g07_ch07_u5",
+   "reason": "Shared page in ncert_gegp1_ch07: pragati_iu_g07_ch07_u4 and pragati_iu_g07_ch07_u5 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
   }
  ],
  "humanJudgementPolicies": [
@@ -45229,8 +46600,8 @@
    "pdfPageEnd": 3,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"7.1\" found on PDF page 1 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 3. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.1\" found on PDF page 1 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 3. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp1_s7_2",
@@ -45239,8 +46610,8 @@
    "pdfPageEnd": 15,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"7.2\" found on PDF page 3 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 15. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.2\" found on PDF page 3 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 15. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp1_s7_3",
@@ -45249,8 +46620,8 @@
    "pdfPageEnd": 22,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"7.3\" found on PDF page 15 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 22. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.3\" found on PDF page 15 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 22. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp1_s7_4",
@@ -45259,18 +46630,18 @@
    "pdfPageEnd": 25,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"7.4\" found on PDF page 22 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 25. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.4\" found on PDF page 22 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the next numbered heading on page 25. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp1_s7_5",
    "officialChapterId": "ncert_gegp1_ch07",
    "pdfPageStart": 25,
-   "pdfPageEnd": 34,
+   "pdfPageEnd": 27,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"7.5\" found on PDF page 25 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the end of the chapter body on page 34. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.5\" found on PDF page 25 of ncert_gegp1_ch07, set in the chapter heading face; the body runs to the end of the chapter body on page 27, where the printed answer key begins. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp1_s8_1",
@@ -45279,8 +46650,8 @@
    "pdfPageEnd": 14,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"8.1\" found on PDF page 1 of ncert_gegp1_ch08, set in the chapter heading face; the body runs to the next numbered heading on page 14. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"8.1\" found on PDF page 1 of ncert_gegp1_ch08, set in the chapter heading face; the body runs to the next numbered heading on page 14. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp1_s8_2",
@@ -45289,18 +46660,18 @@
    "pdfPageEnd": 18,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"8.2\" found on PDF page 14 of ncert_gegp1_ch08, set in the chapter heading face; the body runs to the next numbered heading on page 18. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"8.2\" found on PDF page 14 of ncert_gegp1_ch08, set in the chapter heading face; the body runs to the next numbered heading on page 18. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp1_s8_3",
    "officialChapterId": "ncert_gegp1_ch08",
    "pdfPageStart": 18,
-   "pdfPageEnd": 39,
+   "pdfPageEnd": 24,
    "printedPageStart": null,
    "printedPageEnd": null,
-   "boundaryStatus": "PROVISIONAL_DETECTED",
-   "boundaryEvidence": "Heading \"8.3\" found on PDF page 18 of ncert_gegp1_ch08, set in the chapter heading face; the body runs to the end of the chapter body on page 39. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"8.3\" found on PDF page 18 of ncert_gegp1_ch08, set in the chapter heading face; the body runs to the end of the chapter body on page 24, where the printed answer key begins. Boundary pages are shared with the neighbouring section, which is how the book prints them."
   },
   {
    "officialSectionId": "ncert_gegp2_s1_1",
@@ -45522,5 +46893,6 @@
    "boundaryStatus": "PROVISIONAL_DETECTED",
    "boundaryEvidence": "Heading \"7.4\" found on PDF page 19 of ncert_gegp2_ch07, set in the chapter heading face; the body runs to the end of the chapter body on page 35. Boundary pages are shared with the neighbouring section, which is how the book prints them. Detected but not yet checked against the inspected pages, so it is provisional."
   }
- ]
+ ],
+ "officialSectionDispositions": []
 }

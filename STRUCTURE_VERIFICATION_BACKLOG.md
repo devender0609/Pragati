@@ -63,7 +63,7 @@ The in-app curriculum registry agrees with the master map for every class.
 | Class 4 | 14 | 14 | 0 |
 | Class 5 | 15 | 15 | 0 |
 | Class 6 | 65 | 65 | 0 |
-| Class 7 | 65 | 35 | 30 |
+| Class 7 | 65 | 43 | 22 |
 | Class 8 | 58 | 0 | 58 |
 | Class 9 | 53 | 0 | 53 |
 | Class 10 | 41 | 0 | 41 |

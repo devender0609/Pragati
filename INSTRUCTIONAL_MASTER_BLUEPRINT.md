@@ -26,7 +26,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 7 | 15 | 65 | 511 indexed / 240 full text / 107 visual | 32 | 31 | 1 | 0 | 0 | 32 | IN_PROGRESS |
+| Class 7 | 15 | 65 | 511 indexed / 313 full text / 131 visual | 41 | 40 | 1 | 0 | 0 | 41 | IN_PROGRESS |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -5942,7 +5942,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 
 ## Class 7
 
-Chapters: 6 of 15 fully inspected. Sections: 35 of 65 accounted for against verified body ranges; all 65 have a recorded extent, 35 of them verified from inspected pages and the rest provisional. Pages: 240 of 511 read in full text; among those, 107 are picture-carried and 107 have been rendered and looked at. The visual requirement of the 271 unread pages is not yet determined.
+Chapters: 8 of 15 fully inspected. Sections: 43 of 65 fully inspected and dispositioned, 22 not started. Pages: 313 of 511 read in full text; among those, 131 are picture-carried and 131 have been rendered and looked at. The visual requirement of the 198 unread pages is not yet determined.
 
 #### One lakh, and how big it is
 
@@ -6452,6 +6452,150 @@ Chapters: 6 of 15 fully inspected. Sections: 35 of 65 accounted for against veri
 - **Representations** vertical sums with letters; page-number puzzles
 - **Prerequisites** pragati_iu_g07_ch06_u2
 - **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Equilateral triangles and compass construction
+
+- **Id** `pragati_iu_g07_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s7_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3
+- **Source** gegp1 Part I, printed pp. 147–148 (PDF pp. 1–3), read 2026-10-02. Establishes: The triangle introduced as three vertices and sides; constructing an equilateral triangle from two arcs of equal radius; why the intersection is the required vertex.
+- **Objective** Construct an equilateral triangle with ruler and compass and justify why it works.
+- **Student can** I can construct an equilateral triangle of side 4 cm and say why the arcs meet where they do.
+- **Mathematical ideas** triangle as three vertices and three sides; arcs of equal radius; intersection point as the third vertex
+- **Representations** compass constructions; circle diagrams
+- **Prerequisites** pragati_iu_g06_ch08_u6
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Constructing a triangle from three sides, and the triangle inequality
+
+- **Id** `pragati_iu_g07_ch07_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s7_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 6
+- **Source** gegp1 Part I, printed pp. 149–160 (PDF pp. 4–15), read 2026-10-02. Establishes: The efficient construction from a chosen base; the straight path being shorter than the roundabout one; the triangle inequality derived from whether the circles intersect; the cases analysed and the rule stated.
+- **Objective** Construct a triangle from three given sides and decide when no triangle exists.
+- **Student can** I can say why no triangle has sides 3 cm, 4 cm and 8 cm.
+- **Mathematical ideas** construction from three lengths; triangle inequality; circles intersecting or failing to intersect; proving impossibility
+- **Representations** compass and circle diagrams; tent-pole-tree path
+- **Prerequisites** pragati_iu_g07_ch07_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Constructing triangles from sides and angles
+
+- **Id** `pragati_iu_g07_ch07_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s7_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17
+- **Source** gegp1 Part I, printed pp. 161–163 (PDF pp. 16–18), read 2026-10-02. Establishes: Constructions where the angle is included between the sides; constructions from two angles and the side between them; whether the triangle is always unique.
+- **Objective** Construct a triangle from two sides and the included angle, or two angles and a side.
+- **Student can** I can construct a triangle with 75 degrees, 5 cm, 75 degrees.
+- **Mathematical ideas** included angle; angle-side-angle construction; when the given measurements determine a triangle
+- **Representations** protractor and compass constructions
+- **Prerequisites** pragati_iu_g07_ch07_u2; pragati_iu_g07_ch05_u3
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### The angle sum of a triangle, and exterior angles
+
+- **Id** `pragati_iu_g07_ch07_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s7_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 19
+- **Source** gegp1 Part I, printed pp. 163–167 (PDF pp. 18–22), read 2026-10-02. Establishes: When two given angles sum to less than 180 a triangle exists; the proof that the three angles form a straight angle using the parallel through a vertex; exterior angles named and related to the interior ones.
+- **Objective** Explain why the angles of a triangle sum to 180 degrees and use exterior angles.
+- **Student can** I can explain why the three angles always add to 180.
+- **Mathematical ideas** angle sum of a triangle; proof using a parallel line; exterior angle equal to the two opposite interior angles; existence condition on two angles
+- **Representations** parallel-line proof diagram; exterior angle figures
+- **Prerequisites** pragati_iu_g07_ch05_u4
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Altitudes, and types of triangles
+
+- **Id** `pragati_iu_g07_ch07_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s7_4` (also ncert_gegp1_s7_5)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 25, 26, 27
+- **Source** gegp1 Part I, printed pp. 167–172 (PDF pp. 22–27), read 2026-10-02. Establishes: Altitudes defined and constructed with a set square; equilateral, isosceles and scalene set against acute, right and obtuse; which combinations exist; the right-angled construction with a given hypotenuse.
+- **Objective** Construct the altitudes of a triangle and classify triangles by sides and angles.
+- **Student can** I can draw all three altitudes and say what kind of triangle this is.
+- **Mathematical ideas** altitude as a perpendicular from a vertex; set-square construction; classification by sides and by angles; which combinations are possible
+- **Representations** set square and ruler; classification tables
+- **Prerequisites** pragati_iu_g07_ch07_u4
+- **Role** INTEGRATION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Multiplying a fraction by a whole number, and by a fraction
+
+- **Id** `pragati_iu_g07_ch08_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s8_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5, 7
+- **Source** gegp1 Part I, printed pp. 174–183 (PDF pp. 1–11), read 2026-10-02. Establishes: Aaron and the tortoise walking in fractions of an hour; the distance covered as a product; the unit square shaded twice to give the product of two fractions; the general rule and its cancellation shortcut.
+- **Objective** Multiply fractions and explain the procedure from the meaning of the operation.
+- **Student can** I can work out three-quarters of two-fifths and say why.
+- **Mathematical ideas** fraction of a quantity as multiplication; multiplying numerators and denominators; area model on a unit square; Brahmagupta’s formula
+- **Representations** distance diagrams; unit-square area models
+- **Prerequisites** pragati_iu_g06_ch07_u11
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### How a product compares with its factors
+
+- **Id** `pragati_iu_g07_ch08_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s8_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14
+- **Source** gegp1 Part I, printed pp. 184–186 (PDF pp. 12–14), read 2026-10-02. Establishes: Expressing both fractions over a common denominator to see the product is smaller; the table of situations relating product to factors; the order of multiplication making no difference.
+- **Objective** Predict whether a product is larger or smaller than the numbers multiplied.
+- **Student can** I can say why multiplying by three-quarters makes a number smaller.
+- **Mathematical ideas** multiplying by a fraction less than one; comparison of product with factors; order of multiplication
+- **Representations** comparison tables; area diagrams
+- **Prerequisites** pragati_iu_g07_ch08_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Dividing fractions
+
+- **Id** `pragati_iu_g07_ch08_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s8_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 18
+- **Source** gegp1 Part I, printed pp. 187–190 (PDF pp. 15–18), read 2026-10-02. Establishes: Division turned into multiplication; the reciprocal defined as the number whose product with it is 1; the rule summarised; when the quotient is larger or smaller than the dividend.
+- **Objective** Divide by a fraction using the reciprocal, and explain why that works.
+- **Student can** I can work out two-thirds divided by three-fifths and say why I multiply.
+- **Mathematical ideas** division as how many of these fit; reciprocal; division rewritten as multiplication; Brahmagupta’s rule for division
+- **Representations** share diagrams; worked chains
+- **Prerequisites** pragati_iu_g07_ch08_u1
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Problems involving fractions
+
+- **Id** `pragati_iu_g07_ch08_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s8_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 24
+- **Source** gegp1 Part I, printed pp. 191–196 (PDF pp. 19–24), read 2026-10-02. Establishes: Bricks tiling an area; the shaded fractions of the dissected squares; the Bhaskaracharya dramma problem; the chess puzzle and the ant colony.
+- **Objective** Solve multi-step problems and area questions using fraction operations.
+- **Student can** I can find what fraction of the square is shaded.
+- **Mathematical ideas** fraction operations in context; fractional areas within a figure; multi-step reasoning with fractions; historical fraction problems
+- **Representations** square dissections; word problems; the Shulbasutra and dramma problems
+- **Prerequisites** pragati_iu_g07_ch08_u3
+- **Role** INTEGRATION · **reasoning** generalise · **complexity** 5/5
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.

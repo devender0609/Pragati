@@ -60,6 +60,15 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-19 review findings — all RESOLVED in checkpoint 20
+
+| Defect | Found | Resolved |
+|---|---|---|
+| `CLASS_6_7_TRANSITION_AUDIT.md` was frozen at the four-chapter state, still listing Chapters 5 and 6 as unassessed after they were completed | checkpoint 19 review | checkpoint 20 — regenerated from the chapters actually decomposed, with a test that reads the chapter count from canonical data instead of trusting the prose |
+| `sectionInspectionState()` required a unit to cite a section, so a fully read review or reference section could never be marked inspected without inventing a lesson for it | checkpoint 19 review | checkpoint 20 — `OfficialSectionDisposition` records a no-unit role (practice, review, reference, enrichment, non-instructional), and the state derives from verified body evidence **plus** a disposition of either kind |
+| The checkpoint-19 regression test had the same flaw: every section of a decomposed chapter had to be cited by a unit | checkpoint 19 review | checkpoint 20 — the invariant is now "a unit **or** a justified no-unit role", keeping the guarantee that caught the Chapter 1, 2 and 4 misattributions without forcing fake lessons. A fixture proves a verified, fully read section with a REVIEW role reaches FULLY_INSPECTED, which checkpoint 19 returned NOT_STARTED for |
+| Class 7 `officialRecordsIndexedOnly = 9` put a count of unread **chapters** into a field whose denominator is the 65 **sections** | checkpoint 19 review | checkpoint 20 — all `officialRecords*` values derive from `officialRecordAccounting()`, `officialRecordsNotStarted` is stored, and a test requires the five section states to sum to 65 |
+
 ## Checkpoint-18 review findings — all RESOLVED in checkpoint 19
 
 | Defect | Found | Resolved |

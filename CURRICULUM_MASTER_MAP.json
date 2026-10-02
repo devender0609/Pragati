@@ -5504,7 +5504,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -5533,7 +5533,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -6577,7 +6577,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp107.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -6606,7 +6606,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp107.pdf, PDF page 3 (heading_font)",
    "product": {
@@ -6635,7 +6635,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp107.pdf, PDF page 15 (heading_font)",
    "product": {
@@ -6664,7 +6664,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp107.pdf, PDF page 22 (heading_font)",
    "product": {
@@ -6693,7 +6693,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp107.pdf, PDF page 25 (heading_font)",
    "product": {
@@ -6722,7 +6722,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp108.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -6751,7 +6751,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp108.pdf, PDF page 14 (heading_font)",
    "product": {
@@ -6780,7 +6780,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in gegp108.pdf, PDF page 18 (heading_font)",
    "product": {

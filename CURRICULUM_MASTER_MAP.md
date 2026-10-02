@@ -250,8 +250,8 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_gegp1_ch04 | chapter | 4 | Expressions using Letter-Numbers | 81 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch05 | chapter | 5 | Parallel and Intersecting Lines | 106 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch06 | chapter | 6 | Number Play | 127 | inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_ch07 | chapter | 7 | A Tale of Three Intersecting Lines | 146 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_ch08 | chapter | 8 | Working with Fractions | 173 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch07 | chapter | 7 | A Tale of Three Intersecting Lines | 146 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch08 | chapter | 8 | Working with Fractions | 173 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s1_1 | section | 1.1 | A Lakh Varieties! | 1 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s1_2 | section | 1.2 | Land of Tens | 5 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s1_3 | section | 1.3 | Of Crores and Crores! | 8 | inspected | missing | missing | not_started | unpublished |  |
@@ -287,14 +287,14 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_gegp1_s6_3 | section | 6.3 | Some Explorations in Grids | 133 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s6_4 | section | 6.4 | Nature’s Favourite Sequence: The Virahāṅka–Fibonacci Numbers! | 139 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s6_5 | section | 6.5 | Digits in Disguise | 142 | inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s7_1 | section | 7.1 | Equilateral Triangles | 146 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s7_2 | section | 7.2 | Constructing a Triangle When its Sides are Given | 148 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s7_3 | section | 7.3 | Construction of Triangles When Some Sides and Angles are Given | 160 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s7_4 | section | 7.4 | Constructions Related to Altitudes of Triangles | 167 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s7_5 | section | 7.5 | Types of Triangles | 170 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s8_1 | section | 8.1 | Multiplication of Fractions | 173 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s8_2 | section | 8.2 | Division of Fractions | 186 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s8_3 | section | 8.3 | Some Problems Involving Fractions | 190 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s7_1 | section | 7.1 | Equilateral Triangles | 146 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s7_2 | section | 7.2 | Constructing a Triangle When its Sides are Given | 148 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s7_3 | section | 7.3 | Construction of Triangles When Some Sides and Angles are Given | 160 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s7_4 | section | 7.4 | Constructions Related to Altitudes of Triangles | 167 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s7_5 | section | 7.5 | Types of Triangles | 170 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s8_1 | section | 8.1 | Multiplication of Fractions | 173 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s8_2 | section | 8.2 | Division of Fractions | 186 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s8_3 | section | 8.3 | Some Problems Involving Fractions | 190 | inspected | missing | missing | not_started | unpublished |  |
 
 ### NCERT textbook: Ganita Prakash-II — Part II
 

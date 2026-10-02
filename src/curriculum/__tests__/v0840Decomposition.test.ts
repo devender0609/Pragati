@@ -22,6 +22,8 @@ import {
   sectionInspectionState,
   sectionExtentFor,
   OFFICIAL_SECTION_EXTENTS,
+  sectionDispositionFor,
+  OFFICIAL_SECTION_DISPOSITIONS,
   HUMAN_JUDGEMENT_POLICIES,
   ARTIFACT_ALIGNMENTS,
   OVERLAP_JUSTIFICATIONS,
@@ -718,6 +720,7 @@ describe('§6/§7 generated prose agrees with the structured values', () => {
         p.pagesInScope, p.pagesFullyInspected, p.visualPagesRequired, p.visualPagesInspected,
         p.officialRecordsTotal, p.officialRecordsFullyInspected, p.pagesFullTextPending, p.chaptersTotal,
         p.officialChapterCount ?? -1, p.officialSectionsTotal ?? -1,
+        p.officialRecordsNotStarted ?? -1, p.officialRecordsPartiallyInspected ?? -1,
         p.chaptersFullyInspected ?? -1, p.chaptersPartiallyInspected ?? -1,
         p.chaptersIndexedOnly ?? -1, p.sectionsAccountedFor ?? -1,
       ]);
@@ -1800,7 +1803,11 @@ describe('§6-§7 every official section has exactly one extent', () => {
 });
 
 describe('§3 and §26 every section of a read chapter is dispositioned', () => {
-  it('leaves no official section unaccounted inside a decomposed chapter', () => {
+  // v0.84.0 checkpoint 20 §9 — the guarantee is a DISPOSITION, not a unit.
+  // Requiring a unit for every section would force a fake lesson onto a
+  // review or reference section; requiring nothing would let a section go
+  // missing, which is what caught the Chapter 1, 2 and 4 misattributions.
+  it('leaves no official section without a disposition inside a decomposed chapter', () => {
     const decomposed = new Set(unitsForClass(7).map((u) => u.officialChapterId!));
     const cited = new Set<string>();
     for (const u of unitsForClass(7)) {
@@ -1810,7 +1817,12 @@ describe('§3 and §26 every section of a read chapter is dispositioned', () => 
     for (const chapter of decomposed) {
       const sections = OFFICIAL_SECTION_EXTENTS.filter((e) => e.officialChapterId === chapter);
       for (const s of sections) {
-        expect(cited.has(s.officialSectionId), `${chapter}: ${s.officialSectionId} has no unit`).toBe(true);
+        const id = s.officialSectionId;
+        const disposed = cited.has(id) || sectionDispositionFor(id) !== undefined;
+        expect(disposed, `${chapter}: ${id} has neither a unit nor a recorded role`).toBe(true);
+        if (!cited.has(id)) {
+          expect(sectionDispositionFor(id)!.justification.length, id).toBeGreaterThan(40);
+        }
       }
     }
   });
@@ -1837,5 +1849,102 @@ describe('§3 and §26 every section of a read chapter is dispositioned', () => 
       expect(u.sourceEvidence.pdfPageStart, u.instructionalUnitId).toBeGreaterThanOrEqual(lo);
       expect(u.sourceEvidence.pdfPageStart, u.instructionalUnitId).toBeLessThanOrEqual(hi);
     }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 20 §4-§15 — READING A SECTION AND TEACHING FROM IT ARE
+// DIFFERENT QUESTIONS, AND THE SECTION LAYER HAS ITS OWN DENOMINATOR.
+// ---------------------------------------------------------------------------
+
+describe('§4-§11 section inspection is independent of unit presence', () => {
+  it('lets a fully read section with a no-unit role count as inspected', () => {
+    // Take a real, complete section, strip its units out of view, and give it
+    // a REVIEW role instead. Under checkpoint 19 this returned NOT_STARTED
+    // because no unit cited it.
+    const id = 'ncert_gegp1_s1_3';
+    expect(sectionInspectionState(id)).toBe('FULLY_INSPECTED');
+    const units = PRAGATI_INSTRUCTIONAL_UNITS.filter(
+      (u) => u.officialRecordId === id || u.additionalOfficialRecordIds.includes(id)
+    );
+    expect(units.length).toBeGreaterThan(0);
+    const saved = units.map((u) => ({ u, was: u.officialRecordId, extra: [...u.additionalOfficialRecordIds] }));
+    const disposed = OFFICIAL_SECTION_DISPOSITIONS.length;
+    try {
+      for (const { u } of saved) {
+        if (u.officialRecordId === id) u.officialRecordId = 'ncert_gegp1_s1_2';
+        u.additionalOfficialRecordIds = u.additionalOfficialRecordIds.filter((x) => x !== id);
+      }
+      // No unit, no role: nothing has been said about this section.
+      expect(sectionInspectionState(id)).toBe('NOT_STARTED');
+      OFFICIAL_SECTION_DISPOSITIONS.push({
+        officialSectionId: id,
+        disposition: 'REVIEW',
+        justification:
+          'Fixture only: the body was read in full and every picture-carried page looked at, and it restates what the previous section established rather than teaching an objective of its own.',
+      });
+      // Read in full, role recorded, no lesson invented.
+      expect(sectionInspectionState(id)).toBe('FULLY_INSPECTED');
+    } finally {
+      OFFICIAL_SECTION_DISPOSITIONS.length = disposed;
+      for (const { u, was, extra } of saved) {
+        u.officialRecordId = was;
+        u.additionalOfficialRecordIds = extra;
+      }
+    }
+    expect(sectionInspectionState(id)).toBe('FULLY_INSPECTED');
+  });
+
+  it('keeps source completion separate from Learn coverage', () => {
+    for (const row of sectionAccounting(7).rows) {
+      if (row.state !== 'FULLY_INSPECTED') continue;
+      // A section can be completely read and still have no lesson.
+      const covered = row.unitIds.some(
+        (id) =>
+          PRAGATI_INSTRUCTIONAL_UNITS.find((u) => u.instructionalUnitId === id)?.learnCoverage !==
+          'NO_LEARN_CONTENT'
+      );
+      expect(typeof covered).toBe('boolean');
+      expect(row.disposition, row.sectionId).not.toBeNull();
+    }
+  });
+});
+
+describe('§12-§15 the section denominator is sections, not chapters', () => {
+  const p7 = () => CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 7)!;
+
+  it('derives official-record counts from the accounting helper', () => {
+    for (const p of CLASS_DECOMPOSITION_PROGRESS) {
+      const acc = officialRecordAccounting(p.classNumber);
+      expect(p.officialRecordsTotal, `class${p.classNumber}`).toBe(acc.officialRecordsTotal);
+      expect(p.officialRecordsFullyInspected, `class${p.classNumber}`).toBe(acc.officialRecordsFullyInspected);
+      expect(p.officialRecordsPartiallyInspected ?? 0, `class${p.classNumber}`).toBe(
+        acc.officialRecordsPartiallyInspected
+      );
+      expect(p.officialRecordsNotStarted ?? 0, `class${p.classNumber}`).toBe(acc.officialRecordsNotStarted);
+    }
+  });
+
+  it('sums the Class 7 section states to 65, with no chapter count leaking in', () => {
+    const p = p7();
+    const sum =
+      (p.officialRecordsFullyInspected ?? 0) +
+      (p.officialRecordsPartiallyInspected ?? 0) +
+      (p.officialRecordsIndexedOnly ?? 0) +
+      (p.officialRecordsNotStarted ?? 0) +
+      (p.officialRecordsBlocked ?? 0);
+    expect(p.officialRecordsTotal).toBe(65);
+    expect(sum).toBe(65);
+    // The chapter layer keeps its own fields and never feeds this one.
+    expect(p.officialRecordsIndexedOnly).not.toBe(p.chaptersIndexedOnly);
+  });
+
+  it('states the transition audit against the chapters actually completed', () => {
+    const audit = read('CLASS_6_7_TRANSITION_AUDIT.md');
+    const done = new Set(unitsForClass(7).map((u) => u.officialChapterId!)).size;
+    const remaining = 15 - done;
+    expect(audit).toContain(`${done} Class 7 chapter`);
+    expect(audit).toContain(`${remaining} chapter`);
+    expect(audit).not.toMatch(/eleven chapters are not yet read/i);
   });
 });

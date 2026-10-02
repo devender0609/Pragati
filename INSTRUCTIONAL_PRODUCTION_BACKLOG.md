@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-374 units are READY_FOR_AUTHORING and 25 are held back
+383 units are READY_FOR_AUTHORING and 25 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -61,7 +61,8 @@ pedagogical QA plus human review — not for convenience of generation.
 | 44 | Class 7 | 8 | Land of Tens: building numbers by powers of ten; Crores, and the Indian and American systems; Exact and approximate values, and nearest neighbours; Patterns in products, and multiplication shortcuts; Large numbers in the world; Arithmetic expressions and their value; Terms, swapping and grouping; Brackets, and removing them |
 | 45 | Class 7 | 8 | Distributing a product over a sum; The need for smaller units; A tenth part; A hundredth part; Decimal place value and notation; Units of measurement in decimal form; Locating and comparing decimals; Adding and subtracting decimals |
 | 46 | Class 7 | 8 | More on the decimal system; Letter-numbers and formulas; Algebraic expressions and their terms; Simplifying expressions and removing brackets; Formulas for patterns; Intersecting lines, vertically opposite angles and perpendiculars; Parallel lines, paper folding and the transversal; Corresponding angles and drawing parallel lines |
-| 47 | Class 7 | 6 | Alternate angles and angle chasing; Numbers that describe an arrangement; Parity; Magic squares and grid reasoning; The Virahanka-Fibonacci sequence; Digits in disguise |
+| 47 | Class 7 | 8 | Alternate angles and angle chasing; Numbers that describe an arrangement; Parity; Magic squares and grid reasoning; The Virahanka-Fibonacci sequence; Digits in disguise; Equilateral triangles and compass construction; Constructing a triangle from three sides, and the triangle inequality |
+| 48 | Class 7 | 7 | Constructing triangles from sides and angles; The angle sum of a triangle, and exterior angles; Altitudes, and types of triangles; Multiplying a fraction by a whole number, and by a fraction; How a product compares with its factors; Dividing fractions; Problems involving fractions |
 
 ## Held back
 
