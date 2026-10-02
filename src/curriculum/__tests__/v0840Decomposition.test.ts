@@ -18,6 +18,7 @@ import {
   classScope,
   decompositionFingerprint,
   overlapJustificationFor,
+  sectionAccounting,
   HUMAN_JUDGEMENT_POLICIES,
   ARTIFACT_ALIGNMENTS,
   OVERLAP_JUSTIFICATIONS,
@@ -1229,9 +1230,12 @@ describe('Class 6 structure and artifact mapping', () => {
     expect(p6.officialChapterCount).toBe(10);
     expect(p6.officialSectionsTotal).toBe(65);
     expect(officialRecordAccounting(6).officialRecordsTotal).toBe(65);
+    // v0.84.0 checkpoint 17 — the authoring record is the numbered
+    // section now; the chapter is its own field.
     for (const u of unitsForClass(6)) {
-      expect(u.officialRecordId, u.instructionalUnitId).toMatch(/^ncert_gp_c6_ch\d{2}_/);
-      // guard against the Classes 1-5 pattern being applied here
+      expect(u.officialRecordId, u.instructionalUnitId).toMatch(/^ncert_gp_c6_s\d+_\d+$/);
+      expect(u.officialChapterId, u.instructionalUnitId).toMatch(/^ncert_gp_c6_ch\d{2}_/);
+      expect(u.officialRecordId, u.instructionalUnitId).toBe(u.sourceEvidence.officialSectionId);
       // Class 6 DOES have official numbered sections; a unit cites one, and
       // never invents one.
       const sec = u.sourceEvidence.officialSectionId;
@@ -1469,6 +1473,95 @@ describe('§23 Class 6 completion, and honest interim visual language', () => {
       (u) => u.learnCoverage === 'NO_LEARN_CONTENT' && u.decompositionStatus === 'NEEDS_HUMAN_CHECK'
     );
     expect(blocked.length).toBeGreaterThan(0);
-    expect(gap).toContain(`${blocked.length} are waiting on a human policy`);
+    expect(gap).toContain(`${blocked.length} of the uncovered units are **blocked on a human policy`);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 17 — THE NUMBERED-GRADE RECORD MODEL, LOCKED.
+//
+// Class 6 units stored the chapter id in `officialRecordId` while the type
+// said section, so the official-record helpers and the master map never saw
+// 53 of the 65 sections — and `classProgress` typed 65 anyway. One
+// derivation now serves helpers, master map, reports and tests.
+// ---------------------------------------------------------------------------
+
+describe('§30-§32 official record identity and the two layers', () => {
+  it('uses chapters for Classes 1-5 and numbered sections for Class 6', () => {
+    for (const n of [1, 2, 3, 4, 5]) {
+      for (const u of unitsForClass(n)) {
+        expect(u.officialRecordId, u.instructionalUnitId).toMatch(/_ch\d{2}/);
+        expect(u.officialChapterId, u.instructionalUnitId).toBeUndefined();
+      }
+    }
+    const sections = new Set(authoringUnits(6).map((r) => r.recordId));
+    for (const u of unitsForClass(6)) {
+      expect(sections.has(u.officialRecordId), `${u.instructionalUnitId} → ${u.officialRecordId}`).toBe(true);
+      expect(u.officialRecordId).toBe(u.sourceEvidence.officialSectionId);
+      expect(u.officialChapterId, u.instructionalUnitId).toMatch(/^ncert_gp_c6_ch\d{2}_/);
+      for (const extra of u.additionalOfficialRecordIds) {
+        expect(sections.has(extra), `${u.instructionalUnitId} extra ${extra}`).toBe(true);
+        expect((u.mergeRelationship ?? '').length, u.instructionalUnitId).toBeGreaterThan(40);
+      }
+    }
+  });
+
+  it('derives section completion rather than taking a typed number', () => {
+    const acc = sectionAccounting(6);
+    expect(acc.sectionsTotal).toBe(65);
+    expect(new Set(acc.rows.map((r) => r.sectionId)).size).toBe(65);
+    const p6 = CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 6)!;
+    expect(p6.sectionsAccountedFor).toBe(acc.fullyInspected.length);
+    expect(officialRecordAccounting(6).officialRecordsTotal).toBe(65);
+    expect(officialRecordAccounting(6).officialRecordsFullyInspected).toBe(acc.fullyInspected.length);
+  });
+
+  it('keeps the chapter layer accounted for separately', () => {
+    const extents = RECORD_EXTENTS.filter((e) => e.officialRecordId.startsWith('ncert_gp_c6_ch'));
+    expect(extents.length).toBe(10);
+    const full = extents.filter((e) => recordInspectionState(e.officialRecordId) === 'FULLY_INSPECTED');
+    const p6 = CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 6)!;
+    expect(p6.chaptersFullyInspected).toBe(full.length);
+    if (p6.status === 'DECOMPOSITION_SOURCE_COMPLETE') {
+      expect(full.length).toBe(10);
+      expect(p6.sectionsAccountedFor).toBe(65);
+    }
+  });
+
+  it('shows every inspected section as inspected in the master map', () => {
+    const p6 = CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 6)!;
+    if (p6.status !== 'DECOMPOSITION_SOURCE_COMPLETE') return;
+    const map = JSON.parse(read('CURRICULUM_MASTER_MAP.json')) as {
+      records: Array<{ classNumber: number; level: string; intentStatus: string }>;
+    };
+    const sections = map.records.filter((r) => r.classNumber === 6 && r.level === 'section');
+    expect(sections.length).toBe(65);
+    expect(sections.filter((r) => r.intentStatus === 'not_inspected').length).toBe(0);
+  });
+});
+
+describe('§33 artifact coverage is verified, not inferred from topology', () => {
+  it('records what reading each lesson showed', () => {
+    for (const m of ARTIFACT_ALIGNMENTS) {
+      expect(m.unitCoverageVerification, m.artifactId).toBeDefined();
+      expect((m.verificationNote ?? '').length, m.artifactId).toBeGreaterThan(30);
+      if (m.unitCoverageVerification === 'VERIFIED_COMPLETE') {
+        expect(new Set(m.verifiedCoveredUnitIds), m.artifactId).toEqual(new Set(m.mappedUnitIds));
+      }
+    }
+  });
+
+  it('never calls a unit covered that the lesson does not teach', () => {
+    for (const u of unitsForClass(6)) {
+      if (u.learnCoverage === 'NO_LEARN_CONTENT') continue;
+      const m = ARTIFACT_ALIGNMENTS.find((x) => x.mappedUnitIds.includes(u.instructionalUnitId))!;
+      expect(m, u.instructionalUnitId).toBeDefined();
+      const verified = (m.verifiedCoveredUnitIds ?? []).includes(u.instructionalUnitId);
+      expect(verified, `${u.instructionalUnitId} is marked ${u.learnCoverage} but the lesson was not verified to teach it`).toBe(true);
+    }
+    // And the mapping that is only partly taught says so in both places.
+    const s76 = ARTIFACT_ALIGNMENTS.find((m) => m.artifactId === 'fractions_7_6')!;
+    expect(s76.unitCoverageVerification).toBe('VERIFIED_PARTIAL');
+    expect(s76.missingScope).not.toMatch(/needs checking/i);
   });
 });

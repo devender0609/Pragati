@@ -3184,7 +3184,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3213,7 +3213,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3242,7 +3242,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3271,7 +3271,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3300,7 +3300,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3329,7 +3329,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3387,7 +3387,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3416,7 +3416,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3445,7 +3445,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3474,7 +3474,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3503,7 +3503,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3532,7 +3532,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3561,7 +3561,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3590,7 +3590,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3619,7 +3619,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3648,7 +3648,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3677,7 +3677,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3822,7 +3822,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3851,7 +3851,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3880,7 +3880,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3909,7 +3909,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3938,7 +3938,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3967,7 +3967,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -3996,7 +3996,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4025,7 +4025,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4054,7 +4054,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4112,7 +4112,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4141,7 +4141,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4170,7 +4170,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4199,7 +4199,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4228,7 +4228,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4286,7 +4286,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4315,7 +4315,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4344,7 +4344,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4373,7 +4373,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4402,7 +4402,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4431,7 +4431,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4489,7 +4489,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4518,7 +4518,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4547,7 +4547,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4895,7 +4895,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4924,7 +4924,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4953,7 +4953,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -4982,7 +4982,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5011,7 +5011,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5040,7 +5040,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5098,7 +5098,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5127,7 +5127,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5185,7 +5185,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5214,7 +5214,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5243,7 +5243,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5272,7 +5272,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {
@@ -5301,7 +5301,7 @@
    "pageBasis": "printed page observed 2026-09-22 (chapter start + PDF offset)",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "accepted Class 6 registry (officialSections.ts); title and number re-confirmed 2026-09-22",
    "product": {

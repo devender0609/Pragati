@@ -60,6 +60,17 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-16 review findings — all RESOLVED in checkpoint 17
+
+| Defect | Found | Resolved |
+|---|---|---|
+| `officialRecordId` is documented as section-level for numbered grades, but all 75 Class 6 units stored the chapter id there | checkpoint 16 review | checkpoint 17 — every Class 6 unit's `officialRecordId` is its numbered section; the chapter moved to its own `officialChapterId` field |
+| Section ids lived only in `sourceEvidence.officialSectionId`, so `officialRecordIdsTouched()` and the other official-record helpers never saw them | checkpoint 16 review | checkpoint 17 — helpers resolve both layers; `inspectedOfficialRecordIds()` includes sections |
+| `CURRICULUM_MASTER_MAP.json` showed 12/65 Class 6 sections inspected and 53 `not_inspected` while `classProgress` claimed 65/65 | checkpoint 16 review | checkpoint 17 — the map derives from the same evidence and now shows **65/65 inspected**; a test forbids any `not_inspected` section in a source-complete class |
+| `officialRecordAccounting()` could not derive section completion, and a test waived the inconsistency | checkpoint 16 review | checkpoint 17 — `sectionInspectionState()` and `sectionAccounting()` derive it; the waiver is gone and the helper and `classProgress` are checked against each other |
+| §7.6's MULTI_UNIT_COVERAGE mapping still said its three objectives "needed checking against the artifact", while the gap report counted them as existing content | checkpoint 16 review | checkpoint 17 — the lesson was read: it teaches equivalence by cutting only. u7 and u8 moved to NO_LEARN_CONTENT |
+| §7.8 likewise needed its unlike-denominator depth confirmed | checkpoint 16 review | checkpoint 17 — the lesson was read and **does** teach both mapped units; VERIFIED_COMPLETE |
+
 ## Checkpoint-15 review findings — RESOLVED in checkpoint 16
 
 | Defect | Found | Resolved |

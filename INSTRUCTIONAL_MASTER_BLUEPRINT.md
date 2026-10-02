@@ -4743,7 +4743,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Numbers that describe a relationship
 
 - **Id** `pragati_iu_g06_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 2
 - **Source** fegp1, printed pp. 56–56 (PDF pp. 2–2), read 2026-09-30. Establishes: Children saying 0, 1 or 2 according to how many neighbours are taller; which sequences are possible and which are not; rearranging to maximise the count.
 - **Objective** Read and produce a code in which each number reports something about its neighbours.
@@ -4759,7 +4759,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Supercells
 
 - **Id** `pragati_iu_g06_ch03_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4
 - **Source** fegp1, printed pp. 57–58 (PDF pp. 3–4), read 2026-09-30. Establishes: The coloured table where a cell is larger than its adjacent cells; filling tables so supercells are exactly the coloured ones; whether the largest number is always a supercell.
 - **Objective** Decide whether a cell is larger than its adjacent cells and construct tables to a specification.
@@ -4775,7 +4775,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Large numbers on the number line
 
 - **Id** `pragati_iu_g06_ch03_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5
 - **Source** fegp1, printed pp. 59–59 (PDF pp. 5–5), read 2026-09-30. Establishes: Number lines drawn over different ranges with only some marks labelled; identifying the marked numbers and labelling the rest; circling smallest and largest.
 - **Objective** Read and place five-digit numbers on number lines at different scales and windows.
@@ -4791,7 +4791,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Playing with digits
 
 - **Id** `pragati_iu_g06_ch03_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
 - **Source** fegp1, printed pp. 60–61 (PDF pp. 6–7), read 2026-09-30. Establishes: How many numbers have two, three, four and five digits; digit sums including the largest 5-digit number with digit sum 14; how often the digit 7 occurs from 1 to 100 and 1 to 1000.
 - **Objective** Count how many numbers have a given number of digits and reason about digit sums and occurrences.
@@ -4807,7 +4807,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Palindromic numbers and reverse-and-add
 
 - **Id** `pragati_iu_g06_ch03_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8
 - **Source** fegp1, printed pp. 61–62 (PDF pp. 7–8), read 2026-09-30. Establishes: Listing palindromes from given digits; reversing and adding repeatedly; whether every 2-digit start reaches a palindrome.
 - **Objective** Generate palindromes and investigate the reverse-and-add process.
@@ -4823,7 +4823,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### The Kaprekar constant
 
 - **Id** `pragati_iu_g06_ch03_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_6`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9
 - **Source** fegp1, printed pp. 63–63 (PDF pp. 9–9), read 2026-09-30. Establishes: Making the largest and smallest numbers from four digits, subtracting, and repeating until 6174 appears.
 - **Objective** Carry out the Kaprekar process and notice that it reaches 6174.
@@ -4839,7 +4839,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Clock and calendar number patterns
 
 - **Id** `pragati_iu_g06_ch03_u7` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_7`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10
 - **Source** fegp1, printed pp. 64–64 (PDF pp. 10–10), read 2026-09-30. Establishes: Times such as 4:44, 10:10 and 12:21; dates whose digits use only 0, 1 and 2; minutes until the next palindromic time.
 - **Objective** Find times and dates whose digits form a pattern.
@@ -4855,7 +4855,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Mental arithmetic with large numbers
 
 - **Id** `pragati_iu_g06_ch03_u8` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_8`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12
 - **Source** fegp1, printed pp. 65–66 (PDF pp. 11–12), read 2026-09-30. Establishes: The figure where several numbers must be reached mentally from others; adding and subtracting 5-digit numbers by splitting into thousands, hundreds and the rest.
 - **Objective** Add and subtract large numbers mentally by splitting them usefully.
@@ -4871,7 +4871,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Making numbers with given constraints
 
 - **Id** `pragati_iu_g06_ch03_u9` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_9`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13
 - **Source** fegp1, printed pp. 66–67 (PDF pp. 12–13), read 2026-09-30. Establishes: Making 1,000 and other thousands from a set of numbers using addition and subtraction; the always/sometimes/never statements about sums and differences of 5-digit numbers.
 - **Objective** Combine given numbers with addition and subtraction to hit a target.
@@ -4887,7 +4887,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Number patterns that sum to a target
 
 - **Id** `pragati_iu_g06_ch03_u10` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_9`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14
 - **Source** fegp1, printed pp. 68–68 (PDF pp. 14–14), read 2026-09-30. Establishes: The patterned arrangements of 32s, 64s, 125s and 250s summing to a given total, and making one for a number you choose.
 - **Objective** Build an arrangement of numbers that sums to a chosen total.
@@ -4903,7 +4903,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### The Collatz conjecture
 
 - **Id** `pragati_iu_g06_ch03_u11` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_10`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15
 - **Source** fegp1, printed pp. 69–69 (PDF pp. 15–15), read 2026-09-30. Establishes: The halve-if-even, triple-and-add-one-if-odd rule; sequences reaching 1; Collatz’s conjecture stated as still unproven.
 - **Objective** Run the Collatz process and understand what an unsolved conjecture is.
@@ -4919,7 +4919,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Estimation at scale
 
 - **Id** `pragati_iu_g06_ch03_u12` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_11`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17
 - **Source** fegp1, printed pp. 70–71 (PDF pp. 16–17), read 2026-09-30. Establishes: Estimating steps walked, time to travel distances on foot, and whether a stated 13,000 hours in school is plausible.
 - **Objective** Estimate large quantities and judge whether a claim is reasonable.
@@ -4935,7 +4935,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Games and winning strategies
 
 - **Id** `pragati_iu_g06_ch03_u13` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch03_number_play`
+- **Serves** `ncert_gp_c6_s3_12`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19
 - **Source** fegp1, printed pp. 72–73 (PDF pp. 18–19), read 2026-09-30. Establishes: Reaching a target by adding 1 or 2 and finding the winning numbers; varying the rules and finding the new pattern; the 0-to-target game with additions between 1 and 3.
 - **Objective** Find and justify a winning strategy in a number game.
@@ -4951,7 +4951,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Fractional units and equal shares
 
 - **Id** `pragati_iu_g06_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
 - **Source** fegp1, printed pp. 152–153 (PDF pp. 1–3), read 2026-09-30. Establishes: Rotis shared between two, three and four children; Arvin’s misconception that 1/9 > 1/5 corrected; fractional unit named; weights of 1/2 kg and 1/4 kg combined.
 - **Objective** Compare unit fractions and name the share when a whole is divided equally.
@@ -4967,7 +4967,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Fractional units as parts of a whole
 
 - **Id** `pragati_iu_g06_ch07_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5
 - **Source** fegp1, printed pp. 154–155 (PDF pp. 4–5), read 2026-09-30. Establishes: A whole chikki cut into six equal parts in different ways; deciding what fraction each printed piece is.
 - **Objective** Recognise that equal parts of a whole may differ in shape but not in size.
@@ -4983,7 +4983,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Measuring with fractional units
 
 - **Id** `pragati_iu_g06_ch07_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8
 - **Source** fegp1, printed pp. 156–158 (PDF pp. 6–8), read 2026-09-30. Establishes: Folding a unit strip into halves, fourths and eighths; tables of 2 times 1/8 up to 8 times 1/8; writing 5 times 1/4 of a roti as an addition.
 - **Objective** Measure a length by counting fractional units and write it as an addition.
@@ -4999,7 +4999,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Marking fractions on the number line
 
 - **Id** `pragati_iu_g06_ch07_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10
 - **Source** fegp1, printed pp. 159–160 (PDF pp. 9–10), read 2026-09-30. Establishes: Drawing lengths of 1/10, 3/10 and 4/5; marking chosen fractions; how many fractions lie between 0 and 1.
 - **Objective** Mark fractional lengths on a number line and read them off.
@@ -5015,7 +5015,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Mixed fractions
 
 - **Id** `pragati_iu_g06_ch07_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12, 13
 - **Source** fegp1, printed pp. 161–163 (PDF pp. 11–13), read 2026-09-30. Establishes: Sorting marked fractions into less and more than one; how many whole units are in 7/2 and 7/3; Jaya’s method for writing a mixed number as a regular fraction.
 - **Objective** Write fractions greater than one as mixed numbers and back again.
@@ -5031,7 +5031,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Equivalent fractions and the fraction wall
 
 - **Id** `pragati_iu_g06_ch07_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_6`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15
 - **Source** fegp1, printed pp. 164–165 (PDF pp. 14–15), read 2026-09-30. Establishes: Checking that 1/2, 2/4 and 4/8 are the same length; extending the wall to tenths; finding equal pieces across rows.
 - **Objective** Generate equivalent fractions and read them from a fraction wall.
@@ -5047,7 +5047,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Equivalence from equal sharing
 
 - **Id** `pragati_iu_g06_ch07_u7` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_6`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 18, 19
 - **Source** fegp1, printed pp. 166–169 (PDF pp. 16–19), read 2026-09-30. Establishes: Three rotis shared by four children written as division, addition and multiplication facts; 1 among 2 compared with 2 among 4 and 3 among 6; 7/5 rewritten as another sharing.
 - **Objective** Explain equivalence through sharing situations and division facts.
@@ -5063,7 +5063,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Simplest form
 
 - **Id** `pragati_iu_g06_ch07_u8` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_6`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 22, 23
 - **Source** fegp1, printed pp. 172–173 (PDF pp. 22–23), read 2026-09-30. Establishes: Reducing fractions by common factors; 36/60 reduced in steps to 3/5; recognising when no common factor is left.
 - **Objective** Express a fraction in its lowest terms.
@@ -5079,7 +5079,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Comparing fractions
 
 - **Id** `pragati_iu_g06_ch07_u9` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_7`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 22, 23, 24
 - **Source** fegp1, printed pp. 170–174 (PDF pp. 20–24), read 2026-09-30. Establishes: Shares compared when the number of children or rotis changes; the condition that fractional units must match; 4/5 against 7/9 and 7/9 against 17/21 through common denominators.
 - **Objective** Compare any two fractions by making the fractional units the same.
@@ -5095,7 +5095,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Adding and subtracting like fractions
 
 - **Id** `pragati_iu_g06_ch07_u10` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_8`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 25, 26, 27
 - **Source** fegp1, printed pp. 175–177 (PDF pp. 25–27), read 2026-09-30. Establishes: Meena and her brother eating 1/2 and 1/4; sums such as 2/5 + 1/5 and 4/7 + 6/7 shown on strips and written as mixed numbers.
 - **Objective** Add and subtract fractions that share a fractional unit.
@@ -5111,7 +5111,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Adding and subtracting unlike fractions
 
 - **Id** `pragati_iu_g06_ch07_u11` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_8`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 28, 29, 30, 31, 32
 - **Source** fegp1, printed pp. 178–182 (PDF pp. 28–32), read 2026-09-30. Establishes: Converting to a common fractional unit before adding; Brahmagupta’s method stated in steps; subtraction of unlike fractions; paint and travel-time word problems.
 - **Objective** Add and subtract fractions with different denominators.
@@ -5127,7 +5127,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### A pinch of history, and unit-fraction puzzles
 
 - **Id** `pragati_iu_g06_ch07_u12` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch07_fractions`
+- **Serves** `ncert_gp_c6_s7_9`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 33, 34, 35
 - **Source** fegp1, printed pp. 183–185 (PDF pp. 33–35), read 2026-09-30. Establishes: The history from the Bakhshali manuscript and Egyptian notation to Brahmagupta and Aryabhata; the puzzle of writing fractions as sums of distinct unit fractions.
 - **Objective** Meet the history of fractions and express a fraction as distinct unit fractions.
@@ -5143,7 +5143,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Mathematics as the search for patterns
 
 - **Id** `pragati_iu_g06_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Serves** `ncert_gp_c6_s1_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2
 - **Source** fegp1, printed pp. 2–2 (PDF pp. 1–2), read 2026-10-01. Establishes: The opening sections on what mathematics is and why patterns matter, with examples from gravitation, genomes and daily life.
 - **Objective** Describe what mathematics studies and where patterns appear in the world.
@@ -5159,7 +5159,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Number sequences
 
 - **Id** `pragati_iu_g06_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Serves** `ncert_gp_c6_s1_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3
 - **Source** fegp1, printed pp. 3–3 (PDF pp. 3–3), read 2026-10-01. Establishes: Table 1 of number sequences: all 1s, counting, odd, even, triangular, squares, cubes, powers of 2 and 3, Virahanka numbers.
 - **Objective** Recognise and continue the standard number sequences and name them.
@@ -5175,7 +5175,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Visualising a sequence
 
 - **Id** `pragati_iu_g06_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Serves** `ncert_gp_c6_s1_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5
 - **Source** fegp1, printed pp. 4–5 (PDF pp. 4–5), read 2026-10-01. Establishes: Table 2 of pictorial representations and the Figure it Out asking why triangular, square and cube numbers are so named.
 - **Objective** Draw the pictorial form of a sequence and use it to explain the sequence.
@@ -5191,7 +5191,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Relations among sequences, explained by a picture
 
 - **Id** `pragati_iu_g06_ch01_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Serves** `ncert_gp_c6_s1_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9
 - **Source** fegp1, printed pp. 6–9 (PDF pp. 6–9), read 2026-10-01. Establishes: Adding odd numbers giving squares, shown by completing a square of dots; adding counting numbers up and down; sums of consecutive triangular numbers; hexagonal numbers summing to cubes.
 - **Objective** Explain why adding odd numbers gives squares, using a picture.
@@ -5207,7 +5207,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Shape sequences
 
 - **Id** `pragati_iu_g06_ch01_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Serves** `ncert_gp_c6_s1_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11
 - **Source** fegp1, printed pp. 10–11 (PDF pp. 10–11), read 2026-10-01. Establishes: Table 3: regular polygons, complete graphs, stacked triangles and squares, and the Koch snowflake, each continued and described.
 - **Objective** Recognise and continue sequences of shapes and describe their rules.
@@ -5223,7 +5223,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Shape sequences give number sequences
 
 - **Id** `pragati_iu_g06_ch01_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch01_patterns`
+- **Serves** `ncert_gp_c6_s1_6`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12
 - **Source** fegp1, printed pp. 12–12 (PDF pp. 12–12), read 2026-10-01. Establishes: Counting squares in stacked squares and triangles in stacked triangles; sides and corners of regular polygons; lines in complete graphs.
 - **Objective** Count features of a shape sequence and identify the number sequence it gives.
@@ -5239,7 +5239,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Common multiples and common factors
 
 - **Id** `pragati_iu_g06_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Serves** `ncert_gp_c6_s5_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
 - **Source** fegp1, printed pp. 108–111 (PDF pp. 1–5), read 2026-10-01. Establishes: The idli-vada game for multiples of 3 and 5; the jump-jackpot game where jump sizes are factors of the treasure number; perfect numbers.
 - **Objective** Find common multiples and common factors and use them in games.
@@ -5255,7 +5255,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Prime and composite numbers
 
 - **Id** `pragati_iu_g06_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Serves** `ncert_gp_c6_s5_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9
 - **Source** fegp1, printed pp. 112–115 (PDF pp. 6–9), read 2026-10-01. Establishes: Packing figs in rectangular arrangements; the definition of prime and composite; 1 being neither; the sieve producing the primes to 100; twin primes; true/false statements about primes.
 - **Objective** Distinguish prime from composite numbers and find the primes to 100.
@@ -5271,7 +5271,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Co-prime numbers
 
 - **Id** `pragati_iu_g06_ch05_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Serves** `ncert_gp_c6_s5_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11
 - **Source** fegp1, printed pp. 116–117 (PDF pp. 10–11), read 2026-10-01. Establishes: The safe-pairs treasure game; the definition of co-prime; the peg-and-thread pictures for different gaps.
 - **Objective** Decide whether two numbers are co-prime and use the idea in a game.
@@ -5287,7 +5287,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Prime factorisation
 
 - **Id** `pragati_iu_g06_ch05_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Serves** `ncert_gp_c6_s5_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15, 16
 - **Source** fegp1, printed pp. 118–122 (PDF pp. 12–16), read 2026-10-01. Establishes: Factor trees for 56, 30 and 72; the order not mattering; using prime factorisations to decide co-primality and divisibility; the smallest number with given prime factors.
 - **Objective** Write a number as a product of primes and use it to answer questions.
@@ -5303,7 +5303,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Divisibility tests
 
 - **Id** `pragati_iu_g06_ch05_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Serves** `ncert_gp_c6_s5_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19, 20
 - **Source** fegp1, printed pp. 123–126 (PDF pp. 17–20), read 2026-10-01. Establishes: Tests for 10, 5 and 2 from the last digit; for 4 from the last two digits and 8 from the last three, each argued rather than stated; remainders on division by 10, 5 and 2.
 - **Objective** Use and justify divisibility tests for 10, 5, 2, 4 and 8.
@@ -5319,7 +5319,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Fun with numbers
 
 - **Id** `pragati_iu_g06_ch05_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch05_prime_time`
+- **Serves** `ncert_gp_c6_s5_6`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 22
 - **Source** fegp1, printed pp. 127–128 (PDF pp. 21–22), read 2026-10-01. Establishes: The Math Talk boxes asking what makes each number special; the prime puzzle where rows and columns must have given products; the summary of the chapter.
 - **Objective** Reason about what makes a number special and solve prime puzzles.
@@ -5335,7 +5335,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Perimeter, and formulas for rectangle, square and triangle
 
 - **Id** `pragati_iu_g06_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Serves** `ncert_gp_c6_s6_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
 - **Source** fegp1, printed pp. 130–132 (PDF pp. 1–4), read 2026-10-01. Establishes: Perimeter defined for a closed figure; 2 x (length + breadth) derived for a rectangle; the square and triangle cases; missing-term problems.
 - **Objective** Find perimeters and use the rectangle and square formulas.
@@ -5351,7 +5351,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Perimeter in context, and regular polygons
 
 - **Id** `pragati_iu_g06_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Serves** `ncert_gp_c6_s6_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8
 - **Source** fegp1, printed pp. 133–136 (PDF pp. 5–8), read 2026-10-01. Establishes: Akshi and Toshi on inner and outer tracks; the deep-dive on a common finishing line; perimeters measured in straight and diagonal units; the generalisation for regular polygons.
 - **Objective** Solve running-track and fencing problems and find perimeters of regular polygons.
@@ -5367,7 +5367,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Area by counting and by formula
 
 - **Id** `pragati_iu_g06_ch06_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Serves** `ncert_gp_c6_s6_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11, 12, 13
 - **Source** fegp1, printed pp. 137–141 (PDF pp. 9–13), read 2026-10-01. Establishes: Area recalled and formalised; splitting and rejoining a rectangle; floor and carpet problems; the tangram and leaf-area explorations by counting squares.
 - **Objective** Find the area of rectangles and squares, and of irregular shapes by counting squares.
@@ -5383,7 +5383,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Area of a triangle
 
 - **Id** `pragati_iu_g06_ch06_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Serves** `ncert_gp_c6_s6_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16
 - **Source** fegp1, printed pp. 142–144 (PDF pp. 14–16), read 2026-10-01. Establishes: Cutting a rectangle along a diagonal; the triangle as half the rectangle; areas of composite figures split into rectangles and triangles.
 - **Objective** Find the area of a triangle by relating it to a rectangle.
@@ -5399,7 +5399,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Area and perimeter together, and area mazes
 
 - **Id** `pragati_iu_g06_ch06_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch06_perimeter_area`
+- **Serves** `ncert_gp_c6_s6_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19, 20, 21, 22
 - **Source** fegp1, printed pp. 145–150 (PDF pp. 17–22), read 2026-10-01. Establishes: Arrangements of nine unit squares compared for perimeter; Sharan’s house plan with missing dimensions; the area-maze puzzles; the summary.
 - **Objective** Compare area and perimeter and solve problems where one is fixed.
@@ -5415,7 +5415,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Point, line segment, line and ray
 
 - **Id** `pragati_iu_g06_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles` (also ncert_gp_c6_s2_2, ncert_gp_c6_s2_3, ncert_gp_c6_s2_4)
+- **Serves** `ncert_gp_c6_s2_1` (also ncert_gp_c6_s2_2, ncert_gp_c6_s2_3, ncert_gp_c6_s2_4)
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
 - **Source** fegp1, printed pp. 14–17 (PDF pp. 1–5), read 2026-10-01. Establishes: Points named Z, P and T; the fold giving a line segment; the line through two points; rays modelled by a beam of light; naming exercises including whether ray OA may be called OB.
 - **Objective** Distinguish point, line segment, line and ray and name them correctly.
@@ -5431,7 +5431,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Angle, arms and vertex
 
 - **Id** `pragati_iu_g06_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8, 9
 - **Source** fegp1, printed pp. 17–21 (PDF pp. 5–9), read 2026-10-01. Establishes: Angles found in spectacles and wallets; arms and vertex marked; why angle APB cannot be called angle P; counting angles made by points on a page.
 - **Objective** Describe an angle by its arms and vertex and name it correctly.
@@ -5447,7 +5447,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Comparing angles
 
 - **Id** `pragati_iu_g06_ch02_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles` (also ncert_gp_c6_s2_7)
+- **Serves** `ncert_gp_c6_s2_6` (also ncert_gp_c6_s2_7)
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12, 13, 14
 - **Source** fegp1, printed pp. 22–26 (PDF pp. 10–14), read 2026-10-01. Establishes: Comparing by placing one angle on another; why the length of the arms does not change the angle; the transparent-circle method; the cardboard slit activity.
 - **Objective** Compare two angles by superimposition and without it.
@@ -5463,7 +5463,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Right, straight and perpendicular
 
 - **Id** `pragati_iu_g06_ch02_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_8`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 16, 17, 18, 19, 20
 - **Source** fegp1, printed pp. 27–32 (PDF pp. 15–20), read 2026-10-01. Establishes: Vidya opening the book cover; folding to make two equal angles and naming them right angles; the straight angle containing two right angles; perpendicular creases; acute and obtuse named by comparison.
 - **Objective** Identify right and straight angles and construct perpendiculars by folding.
@@ -5479,7 +5479,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### The degree, and the 360-part circle
 
 - **Id** `pragati_iu_g06_ch02_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_9`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 22
 - **Source** fegp1, printed pp. 33–34 (PDF pp. 21–22), read 2026-10-01. Establishes: The full turn divided into 360 equal parts; 1 degree defined; the Rigveda wheel of 360 spokes; half and quarter turns in degrees.
 - **Objective** Explain why a full turn is divided into 360 parts and measure in degrees.
@@ -5495,7 +5495,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Reading a protractor
 
 - **Id** `pragati_iu_g06_ch02_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_9`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 23, 24, 25
 - **Source** fegp1, printed pp. 35–37 (PDF pp. 23–25), read 2026-10-01. Establishes: The unlabelled protractor read by counting units; the labelled protractor; choosing between the inner and outer markings; finding a measure without counting.
 - **Objective** Measure an angle with an unlabelled and a labelled protractor.
@@ -5511,7 +5511,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Making a protractor by folding, and bisecting
 
 - **Id** `pragati_iu_g06_ch02_u7` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_9`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 26, 27, 28
 - **Source** fegp1, printed pp. 38–40 (PDF pp. 26–28), read 2026-10-01. Establishes: Folding the semicircle into halves, quarters and eighths with their degree values; bisecting an angle defined through the folding process.
 - **Objective** Build a paper protractor by halving and name the bisector.
@@ -5527,7 +5527,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Measuring angles accurately, and common mistakes
 
 - **Id** `pragati_iu_g06_ch02_u8` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_9`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 29, 30, 31, 32, 33, 34
 - **Source** fegp1, printed pp. 41–46 (PDF pp. 29–34), read 2026-10-01. Establishes: Measuring sets of given angles; the Mind the Mistake, Mend the Mistake spread; angles in a clock and in slopes.
 - **Objective** Measure given angles and identify incorrect protractor use.
@@ -5543,7 +5543,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Drawing angles of a given measure
 
 - **Id** `pragati_iu_g06_ch02_u9` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_10`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 35, 36, 37, 38
 - **Source** fegp1, printed pp. 47–50 (PDF pp. 35–38), read 2026-10-01. Establishes: The step-by-step construction of a 30 degree angle; the angle-guessing game; drawing angles of given measures and copying a given angle.
 - **Objective** Construct an angle of a stated degree measure with a protractor.
@@ -5559,7 +5559,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Types of angles, and angles that make a straight line
 
 - **Id** `pragati_iu_g06_ch02_u10` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch02_lines_angles`
+- **Serves** `ncert_gp_c6_s2_11`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 39, 40, 41, 42
 - **Source** fegp1, printed pp. 51–54 (PDF pp. 39–42), read 2026-10-01. Establishes: The full classification including reflex angles; the explore where angle TER is 80 degrees and the rest follow from the straight angle; the Ashoka Chakra spokes.
 - **Objective** Classify angles including reflex, and find an unknown angle on a straight line.
@@ -5575,7 +5575,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Collecting and organising data
 
 - **Id** `pragati_iu_g06_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Serves** `ncert_gp_c6_s4_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
 - **Source** fegp1, printed pp. 75–79 (PDF pp. 1–6), read 2026-10-01. Establishes: Navya and Naresh finding the most popular game; deciding which questions need data; tables for sweets and trees; recording a news item.
 - **Objective** Decide what data answers a question and organise it into a table.
@@ -5591,7 +5591,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Pictographs and the choice of scale
 
 - **Id** `pragati_iu_g06_ch04_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Serves** `ncert_gp_c6_s4_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11, 12
 - **Source** fegp1, printed pp. 80–85 (PDF pp. 7–12), read 2026-10-01. Establishes: Travel-mode and sleep pictographs read with a key; Lakhanpal drawing one symbol per student; Jarina scaling it; the difficulty when the total is 33 or 27.
 - **Objective** Read and draw pictographs where one symbol stands for many.
@@ -5607,7 +5607,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Bar graphs
 
 - **Id** `pragati_iu_g06_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Serves** `ncert_gp_c6_s4_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14, 15, 16
 - **Source** fegp1, printed pp. 86–89 (PDF pp. 13–16), read 2026-10-01. Establishes: Absent students shown as bars; the traffic bar graph; choosing 1 unit = 10 crore for large frequencies.
 - **Objective** Read a bar graph and answer comparison questions from it.
@@ -5623,7 +5623,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Drawing a bar graph
 
 - **Id** `pragati_iu_g06_ch04_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Serves** `ncert_gp_c6_s4_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 17, 18, 19, 20, 21, 22, 23
 - **Source** fegp1, printed pp. 90–96 (PDF pp. 17–23), read 2026-10-01. Establishes: The sweet-preference and Smriti’s runs graphs; the stated steps for bar width, gaps and scale; Imran’s family expenditure drawn at 1 unit = 200 rupees.
 - **Objective** Draw a bar graph from a frequency table, choosing scale and layout.
@@ -5639,7 +5639,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Choosing and judging a representation
 
 - **Id** `pragati_iu_g06_ch04_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch04_data_handling`
+- **Serves** `ncert_gp_c6_s4_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 24, 25, 26, 27, 28, 29, 30, 31
 - **Source** fegp1, printed pp. 97–104 (PDF pp. 24–31), read 2026-10-01. Establishes: The seven-summits data drawn both ways; why heights suit vertical bars and lengths horizontal ones; infographics discussed as representation choices.
 - **Objective** Decide which representation suits the data and judge an existing one.
@@ -5655,7 +5655,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Freehand artwork and the compass
 
 - **Id** `pragati_iu_g06_ch08_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Serves** `ncert_gp_c6_s8_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
 - **Source** fegp1, printed pp. 188–192 (PDF pp. 1–6), read 2026-10-01. Establishes: Freehand artwork; opening the compass against a ruler; A Person, Wavy Wave and Eyes constructed with ruler and compass.
 - **Objective** Use a ruler and compass to reproduce curved figures.
@@ -5671,7 +5671,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Properties of squares and rectangles
 
 - **Id** `pragati_iu_g06_ch08_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Serves** `ncert_gp_c6_s8_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8
 - **Source** fegp1, printed pp. 192–194 (PDF pp. 6–8), read 2026-10-01. Establishes: The R1 and R2 properties of a rectangle and the square’s own; rotating a square and arguing it is still a square.
 - **Objective** State the defining properties of a square and a rectangle and test a figure against them.
@@ -5687,7 +5687,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Constructing squares and rectangles
 
 - **Id** `pragati_iu_g06_ch08_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Serves** `ncert_gp_c6_s8_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11, 12, 13
 - **Source** fegp1, printed pp. 195–199 (PDF pp. 9–13), read 2026-10-01. Establishes: The five-step construction of a 6 cm square; rectangles of given sides; checking the properties afterwards; how the distance XY behaves.
 - **Objective** Construct a square or rectangle of given side lengths with ruler, compass and protractor.
@@ -5703,7 +5703,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Constructions inside rectangles
 
 - **Id** `pragati_iu_g06_ch08_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Serves** `ncert_gp_c6_s8_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16, 17
 - **Source** fegp1, printed pp. 200–203 (PDF pp. 14–17), read 2026-10-01. Establishes: Squares inside rectangles; the rough diagram that reveals the equal sides; transferring AF with a compass; Falling Squares and Square with a Hole.
 - **Objective** Plan a construction from a rough diagram and carry it out.
@@ -5719,7 +5719,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Diagonals of rectangles and squares
 
 - **Id** `pragati_iu_g06_ch08_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Serves** `ncert_gp_c6_s8_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19, 20, 21, 22, 23, 24, 25
 - **Source** fegp1, printed pp. 204–211 (PDF pp. 18–25), read 2026-10-01. Establishes: Measuring the diagonals; the 60/30 split construction in steps with two methods; constructing from a side and a diagonal length using an arc rather than trial and error.
 - **Objective** Use the diagonal and its angles to construct a rectangle.
@@ -5735,7 +5735,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Points equidistant from two given points
 
 - **Id** `pragati_iu_g06_ch08_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch08_constructions`
+- **Serves** `ncert_gp_c6_s8_6`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 26, 27, 28, 29, 30
 - **Source** fegp1, printed pp. 212–216 (PDF pp. 26–30), read 2026-10-01. Establishes: The house construction; locating A at 5 cm from both B and C with two arcs; recreating the artwork figures using the same idea.
 - **Objective** Locate a point at a given distance from two points using arcs.
@@ -5751,7 +5751,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Lines of symmetry
 
 - **Id** `pragati_iu_g06_ch09_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Serves** `ncert_gp_c6_s9_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5, 6
 - **Source** fegp1, printed pp. 219–222 (PDF pp. 3–6), read 2026-10-01. Establishes: Folding a triangle along a dotted line; finding all four lines for a square; describing where points A, B, C and D go under each reflection.
 - **Objective** Find all lines of symmetry of a figure by folding and reasoning.
@@ -5767,7 +5767,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Paper folding, cutting and predicting
 
 - **Id** `pragati_iu_g06_ch09_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Serves** `ncert_gp_c6_s9_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 10, 11, 12, 13
 - **Source** fegp1, printed pp. 223–229 (PDF pp. 7–13), read 2026-10-01. Establishes: Punched holes identified back to the fold line; predicting the hole shape after each cut; getting a given shape with folds and a single straight cut; completing figures so two lines become lines of symmetry.
 - **Objective** Predict the shape produced by folding, cutting and punching.
@@ -5783,7 +5783,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Rotational symmetry and angles of symmetry
 
 - **Id** `pragati_iu_g06_ch09_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Serves** `ncert_gp_c6_s9_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16, 17, 18, 19, 20
 - **Source** fegp1, printed pp. 230–236 (PDF pp. 14–20), read 2026-10-01. Establishes: The windmill with 90, 180, 270 and 360 degree symmetries; strips with two angles; building figures with exactly 3, 5 and 6 angles of symmetry from radial arms; the order of rotational symmetry.
 - **Objective** Find the angles of symmetry of a figure and its order.
@@ -5799,7 +5799,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### The smallest angle of symmetry divides 360
 
 - **Id** `pragati_iu_g06_ch09_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch09_symmetry`
+- **Serves** `ncert_gp_c6_s9_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 22, 23, 24, 25
 - **Source** fegp1, printed pp. 236–241 (PDF pp. 20–25), read 2026-10-01. Establishes: Listing the angles of symmetry for each order; the statement that the smallest angle of symmetry is a factor of 360; colouring a circle to get 3 or 4 angles of symmetry; the Parliament building analysed for both symmetries.
 - **Objective** Reason about which angles of symmetry a figure can have.
@@ -5815,7 +5815,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Numbers below zero, and the lift model
 
 - **Id** `pragati_iu_g06_ch10_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4
 - **Source** fegp1, printed pp. 243–245 (PDF pp. 1–4), read 2026-10-01. Establishes: Bela’s Building of Fun with floors above and below the ground floor; the Welcome Hall as zero; naming floors with + and -.
 - **Objective** Read and write negative numbers as positions below zero.
@@ -5831,7 +5831,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Movement as addition and subtraction
 
 - **Id** `pragati_iu_g06_ch10_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6, 7, 8, 9
 - **Source** fegp1, printed pp. 245–250 (PDF pp. 4–9), read 2026-10-01. Establishes: Starting Floor + Movement = Target Floor; combining button presses; subtraction as finding the missing movement; larger numbers in the mine picture.
 - **Objective** Use starting position, movement and target position to add and subtract.
@@ -5847,7 +5847,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Comparing and ordering negative numbers
 
 - **Id** `pragati_iu_g06_ch10_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
 - **Source** fegp1, printed pp. 247–248 (PDF pp. 6–7), read 2026-10-01. Establishes: Floor +3 lower than +4 written with <; minus 4 lower than minus 3; ordering exercises.
 - **Objective** Compare negative numbers and place them in order.
@@ -5863,7 +5863,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### The number line through zero
 
 - **Id** `pragati_iu_g06_ch10_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_1`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15
 - **Source** fegp1, printed pp. 253–256 (PDF pp. 12–15), read 2026-10-01. Establishes: Movement on the marked line; unmarked number lines for larger numbers; converting subtraction to addition and back.
 - **Objective** Add and subtract on a number line that extends both ways.
@@ -5879,7 +5879,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### The token model
 
 - **Id** `pragati_iu_g06_ch10_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 16, 17, 18
 - **Source** fegp1, printed pp. 256–259 (PDF pp. 15–18), read 2026-10-01. Establishes: The attendant’s box of tokens; removing zero pairs; adding a zero pair so that a subtraction can be carried out.
 - **Objective** Add and subtract integers with positive and negative tokens.
@@ -5895,7 +5895,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Negative numbers in the world
 
 - **Id** `pragati_iu_g06_ch10_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_3`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 19, 20, 21, 22
 - **Source** fegp1, printed pp. 260–263 (PDF pp. 19–22), read 2026-10-01. Establishes: Credits and debits totalled as a balance; the geographical cross-section; thermometers and temperature; years before the common era.
 - **Objective** Use negative numbers for balances, altitudes, temperature and years.
@@ -5911,7 +5911,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Integer grids and puzzles
 
 - **Id** `pragati_iu_g06_ch10_u7` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 23, 24, 25
 - **Source** fegp1, printed pp. 264–266 (PDF pp. 23–25), read 2026-10-01. Establishes: Border-sum grids for +4, -2 and -4; finding more than one filling; sequences continuing into the negatives.
 - **Objective** Complete grids and sequences with a required sum.
@@ -5927,7 +5927,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 #### Brahmagupta’s rules, and a history of negative numbers
 
 - **Id** `pragati_iu_g06_ch10_u8` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gp_c6_ch10_other_side_of_zero`
+- **Serves** `ncert_gp_c6_s10_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 26, 27, 28, 29, 30
 - **Source** fegp1, printed pp. 267–271 (PDF pp. 26–30), read 2026-10-01. Establishes: Kautilya on credit and debit; Brahmagupta’s rules for subtraction and addition stated in full; European resistance to negative numbers; the integer snakes and ladders.
 - **Objective** State the rules for adding and subtracting signed numbers and place them in history.

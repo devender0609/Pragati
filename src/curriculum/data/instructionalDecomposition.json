@@ -27944,7 +27944,7 @@
    "instructionalUnitId": "pragati_iu_g06_ch03_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28018,13 +28018,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28107,13 +28108,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28186,13 +28188,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_4",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28275,13 +28278,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28364,13 +28368,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u6",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_6",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28447,13 +28452,14 @@
    ],
    "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the Kaprekar process reaching 6174: is this core Pragati Learn at Class 6, or enrichment beside the number-play work?",
    "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u7",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_7",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28527,13 +28533,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u8",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_8",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28616,13 +28623,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u9",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_9",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28706,13 +28714,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u10",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_9",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28785,13 +28794,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u11",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_10",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28866,13 +28876,14 @@
    ],
    "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the Collatz conjecture: is an unsolved conjecture core Pragati Learn at Class 6, or enrichment?",
    "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u12",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_11",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -28954,13 +28965,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch03_u13",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch03_number_play",
+   "officialRecordId": "ncert_gp_c6_s3_12",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29044,13 +29056,14 @@
    ],
    "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the winning-strategy games at the end of Number Play: core Learn or enrichment?",
    "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
-   "learnCoverage": "NO_LEARN_CONTENT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29142,13 +29155,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29231,13 +29245,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29328,13 +29343,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_4",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29416,13 +29432,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29514,13 +29531,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u6",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_6",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29603,13 +29621,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT"
+   "learnCoverage": "EXISTING_MULTI_UNIT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u7",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_6",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29710,13 +29729,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u8",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_6",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29799,13 +29819,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u9",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_7",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -29916,13 +29937,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT"
+   "learnCoverage": "EXISTING_EXACT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u10",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_8",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30013,13 +30035,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT"
+   "learnCoverage": "EXISTING_MULTI_UNIT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u11",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_8",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30129,13 +30152,14 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT"
+   "learnCoverage": "EXISTING_MULTI_UNIT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch07_u12",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch07_fractions",
+   "officialRecordId": "ncert_gp_c6_s7_9",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30229,13 +30253,14 @@
    ],
    "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to writing a fraction as a sum of distinct unit fractions: core Pragati Learn at Class 6, or enrichment beside the Fractions chapter?",
    "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
-   "learnCoverage": "EXISTING_PARTIAL"
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch01_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch01_patterns",
+   "officialRecordId": "ncert_gp_c6_s1_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30317,13 +30342,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch01_patterns"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch01_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch01_patterns",
+   "officialRecordId": "ncert_gp_c6_s1_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30399,13 +30425,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch01_patterns"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch01_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch01_patterns",
+   "officialRecordId": "ncert_gp_c6_s1_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30488,13 +30515,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch01_patterns"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch01_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch01_patterns",
+   "officialRecordId": "ncert_gp_c6_s1_4",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30596,13 +30624,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch01_patterns"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch01_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch01_patterns",
+   "officialRecordId": "ncert_gp_c6_s1_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30684,13 +30713,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch01_patterns"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch01_u6",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch01_patterns",
+   "officialRecordId": "ncert_gp_c6_s1_6",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30765,13 +30795,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch01_patterns"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch05_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch05_prime_time",
+   "officialRecordId": "ncert_gp_c6_s5_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30883,13 +30914,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch05_prime_time"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch05_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch05_prime_time",
+   "officialRecordId": "ncert_gp_c6_s5_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -30992,13 +31024,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch05_prime_time"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch05_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch05_prime_time",
+   "officialRecordId": "ncert_gp_c6_s5_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31081,13 +31114,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch05_prime_time"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch05_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch05_prime_time",
+   "officialRecordId": "ncert_gp_c6_s5_4",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31197,13 +31231,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch05_prime_time"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch05_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch05_prime_time",
+   "officialRecordId": "ncert_gp_c6_s5_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31304,13 +31339,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch05_prime_time"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch05_u6",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch05_prime_time",
+   "officialRecordId": "ncert_gp_c6_s5_6",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31395,13 +31431,14 @@
     }
    ],
    "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the Math Talk number boxes and the prime puzzle grid: core Pragati Learn at Class 6, or enrichment?",
-   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
+   "officialChapterId": "ncert_gp_c6_ch05_prime_time"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch06_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch06_perimeter_area",
+   "officialRecordId": "ncert_gp_c6_s6_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31503,13 +31540,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch06_perimeter_area"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch06_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch06_perimeter_area",
+   "officialRecordId": "ncert_gp_c6_s6_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31610,13 +31648,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch06_perimeter_area"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch06_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch06_perimeter_area",
+   "officialRecordId": "ncert_gp_c6_s6_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31726,13 +31765,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch06_perimeter_area"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch06_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch06_perimeter_area",
+   "officialRecordId": "ncert_gp_c6_s6_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31824,13 +31864,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch06_perimeter_area"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch06_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch06_perimeter_area",
+   "officialRecordId": "ncert_gp_c6_s6_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -31950,13 +31991,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch06_perimeter_area"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_1",
    "additionalOfficialRecordIds": [
     "ncert_gp_c6_s2_2",
     "ncert_gp_c6_s2_3",
@@ -32074,13 +32116,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -32191,13 +32234,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_6",
    "additionalOfficialRecordIds": [
     "ncert_gp_c6_s2_7"
    ],
@@ -32310,13 +32354,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_8",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -32436,13 +32481,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_9",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -32525,13 +32571,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u6",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_9",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -32623,13 +32670,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u7",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_9",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -32721,13 +32769,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u8",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_9",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -32846,13 +32895,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u9",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_10",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -32953,13 +33003,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch02_u10",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch02_lines_angles",
+   "officialRecordId": "ncert_gp_c6_s2_11",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33060,13 +33111,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch02_lines_angles"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch04_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "officialRecordId": "ncert_gp_c6_s4_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33185,13 +33237,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch04_data_handling"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch04_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "officialRecordId": "ncert_gp_c6_s4_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33310,13 +33363,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch04_data_handling"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch04_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "officialRecordId": "ncert_gp_c6_s4_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33416,13 +33470,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch04_data_handling"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch04_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "officialRecordId": "ncert_gp_c6_s4_4",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33551,13 +33606,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch04_data_handling"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch04_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch04_data_handling",
+   "officialRecordId": "ncert_gp_c6_s4_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33695,13 +33751,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch04_data_handling"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch08_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "officialRecordId": "ncert_gp_c6_s8_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33820,13 +33877,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch08_constructions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch08_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "officialRecordId": "ncert_gp_c6_s8_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -33918,13 +33976,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch08_constructions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch08_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "officialRecordId": "ncert_gp_c6_s8_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34033,13 +34092,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch08_constructions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch08_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "officialRecordId": "ncert_gp_c6_s8_4",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34140,13 +34200,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch08_constructions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch08_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "officialRecordId": "ncert_gp_c6_s8_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34283,13 +34344,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch08_constructions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch08_u6",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch08_constructions",
+   "officialRecordId": "ncert_gp_c6_s8_6",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34399,13 +34461,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch08_constructions"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch09_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "officialRecordId": "ncert_gp_c6_s9_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34507,13 +34570,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch09_symmetry"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch09_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "officialRecordId": "ncert_gp_c6_s9_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34641,13 +34705,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch09_symmetry"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch09_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "officialRecordId": "ncert_gp_c6_s9_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34775,13 +34840,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch09_symmetry"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch09_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch09_symmetry",
+   "officialRecordId": "ncert_gp_c6_s9_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -34901,13 +34967,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch09_symmetry"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u1",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35008,13 +35075,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u2",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35133,13 +35201,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u3",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35222,13 +35291,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u4",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_1",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35328,13 +35398,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u5",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_2",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35434,13 +35505,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u6",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_3",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35545,13 +35617,14 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u7",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_4",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35645,13 +35718,14 @@
     }
    ],
    "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the integer border-sum grids and the snakes-and-ladders integer game: core Pragati Learn at Class 6, or enrichment beside the integer work?",
-   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment",
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   },
   {
    "instructionalUnitId": "pragati_iu_g06_ch10_u8",
    "grade": "class6",
    "classNumber": 6,
-   "officialRecordId": "ncert_gp_c6_ch10_other_side_of_zero",
+   "officialRecordId": "ncert_gp_c6_s10_5",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "fegp1",
@@ -35762,7 +35836,8 @@
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
-   ]
+   ],
+   "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
   }
  ],
  "nonInstructional": [],
@@ -39007,7 +39082,12 @@
    "coverageSummary": "Covers unit fractions and equal shares, including the 1/5 versus 1/9 misconception, which is the whole of the unit.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u1"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "fractions_7_2",
@@ -39020,7 +39100,12 @@
    "coverageSummary": "Covers fractional units as parts of a whole, including equal parts of different shapes.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u2"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "fractions_7_3",
@@ -39033,7 +39118,12 @@
    "coverageSummary": "Covers measuring with fractional units and the repeated-addition tables.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u3"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "fractions_7_4",
@@ -39046,7 +39136,12 @@
    "coverageSummary": "Covers marking fraction lengths on the number line.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u4"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "fractions_7_5",
@@ -39059,7 +39154,12 @@
    "coverageSummary": "Covers mixed fractions and conversion in both directions.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u5"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "fractions_7_6",
@@ -39072,9 +39172,14 @@
    ],
    "alignment": "MULTI_UNIT_COVERAGE",
    "coverageSummary": "Section 7.6 as authored spans three source-derived units: the fraction wall, equivalence argued from equal sharing, and simplest form.",
-   "missingScope": "Whether all three objectives are taught to depth inside one lesson needs checking against the artifact; the decomposition treats them as three lesson-sized objectives.",
+   "missingScope": "Equivalence argued from equal sharing (u7) and simplest form (u8) are mapped to this lesson by section number but are not taught in it.",
    "excessScope": "",
-   "recommendedLaterAction": "Later: consider splitting into three lessons, or confirm the single lesson covers all three objectives."
+   "recommendedLaterAction": "Later: author the equal-sharing argument and simplest form, or extend this lesson to carry them.",
+   "unitCoverageVerification": "VERIFIED_PARTIAL",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u6"
+   ],
+   "verificationNote": "Read the authored lesson. It teaches equivalence by cutting — strips, area model, the multiply-top-and-bottom rule with its justification — which is u6. It does NOT argue equivalence from equal sharing (u7: three rotis among four children written as division, addition and multiplication facts), and it does NOT teach simplest form (u8): the lesson’s own teacher note says \"do not simplify answers as a requirement\", and lowest terms appears nowhere as instruction."
   },
   {
    "artifactId": "fractions_7_7",
@@ -39087,7 +39192,12 @@
    "coverageSummary": "Covers comparing fractions through a common fractional unit.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u9"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "fractions_7_8",
@@ -39101,7 +39211,13 @@
    "coverageSummary": "Section 7.8 spans like-denominator addition and subtraction and the general unlike-denominator procedure, which the decomposition separates.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": "Later: confirm the lesson gives the unlike-denominator procedure its own treatment."
+   "recommendedLaterAction": "None: both mapped units are materially taught.",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch07_u10",
+    "pragati_iu_g06_ch07_u11"
+   ],
+   "verificationNote": "Read the authored lesson. Like-denominator addition and subtraction are taught with the count-the-units argument and the add-the-denominators misconception (u10), and the unlike-denominator procedure is taught by making the parts match through equivalent fractions, with worked examples and subtraction stated the same way (u11). Both are materially taught."
   },
   {
    "artifactId": "fractions_7_9",
@@ -39114,7 +39230,10 @@
    "coverageSummary": "Covers the history of fractions in section 7.9.",
    "missingScope": "The unit-fraction decomposition puzzle on the same pages — writing a fraction as a sum of distinct unit fractions — is a genuine mathematical demand and is not covered by a history lesson.",
    "excessScope": "",
-   "recommendedLaterAction": "Later: decide the reasoning-extension policy, then either extend this lesson or author a separate unit."
+   "recommendedLaterAction": "Later: decide the reasoning-extension policy, then either extend this lesson or author a separate unit.",
+   "unitCoverageVerification": "VERIFIED_PARTIAL",
+   "verifiedCoveredUnitIds": [],
+   "verificationNote": "Lesson read: it covers the history on those pages; the unit-fraction decomposition demand printed alongside is not taught."
   },
   {
    "artifactId": "number_play_3_1",
@@ -39127,7 +39246,12 @@
    "coverageSummary": "Covers the neighbour-taller counting code, including which sequences are possible.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch03_u1"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "number_play_3_2",
@@ -39140,7 +39264,12 @@
    "coverageSummary": "Covers supercells with strict greater-than and end cells qualifying.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch03_u2"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   },
   {
    "artifactId": "number_play_3_3",
@@ -39153,7 +39282,12 @@
    "coverageSummary": "Covers reading and placing large numbers on number lines at different scales and windows.",
    "missingScope": "",
    "excessScope": "",
-   "recommendedLaterAction": ""
+   "recommendedLaterAction": "",
+   "unitCoverageVerification": "VERIFIED_COMPLETE",
+   "verifiedCoveredUnitIds": [
+    "pragati_iu_g06_ch03_u3"
+   ],
+   "verificationNote": "Lesson read; its objective matches the unit it is mapped to."
   }
  ]
 }

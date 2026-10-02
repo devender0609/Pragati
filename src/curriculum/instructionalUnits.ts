@@ -173,9 +173,22 @@ export type PragatiInstructionalUnit = {
   instructionalUnitId: `pragati_iu_${string}`;
   grade: Grade;
   classNumber: number;
-  /** The official record this serves — chapter for Classes 1-5, section
-   *  where the book numbers them. A unit may not exist without one. */
+  /**
+   * The official authoring record this unit serves: a chapter in Classes
+   * 1-5, whose books number no sections, and the **official numbered
+   * section** from Class 6 on. Checkpoint 16 stored the chapter id here
+   * for Class 6 and kept the section only inside `sourceEvidence`, so the
+   * official-record helpers and the master map never saw 53 of the 65
+   * sections. A unit may not exist without one.
+   */
   officialRecordId: string;
+  /**
+   * v0.84.0 checkpoint 17 §3 — the chapter containing this unit's
+   * section, where the book numbers sections. The chapter owns the page
+   * extent; the section is the authoring record. Two questions, two
+   * fields.
+   */
+  officialChapterId?: string;
   /** Where several official records feed one unit. Each is kept. */
   additionalOfficialRecordIds: string[];
   sourceEvidence: SourceEvidence;
@@ -347,6 +360,16 @@ export type ArtifactAlignment = {
     | 'UNDER_SCOPED'
     | 'SOURCE_ALIGNMENT_ISSUE';
   coverageSummary: string;
+  /**
+   * v0.84.0 checkpoint 17 §20 — alignment topology and instructional
+   * completeness are different questions. A MULTI_UNIT_COVERAGE mapping
+   * says one lesson spans several units; it does not say each of those
+   * units is actually taught. This records what reading the lesson
+   * showed, and which units it genuinely covers.
+   */
+  unitCoverageVerification?: 'VERIFIED_COMPLETE' | 'VERIFIED_PARTIAL' | 'UNVERIFIED';
+  verifiedCoveredUnitIds?: string[];
+  verificationNote?: string;
   missingScope: string;
   excessScope: string;
   recommendedLaterAction: string;
@@ -469,8 +492,78 @@ export function instructionalUnitsFor(officialRecordId: string): PragatiInstruct
   return PRAGATI_INSTRUCTIONAL_UNITS.filter(
     (u) =>
       u.officialRecordId === officialRecordId ||
-      u.additionalOfficialRecordIds.includes(officialRecordId)
+      u.additionalOfficialRecordIds.includes(officialRecordId) ||
+      // From Class 6 the authoring record is a section, so a query for the
+      // chapter — which owns the page extent — must still find its units.
+      u.officialChapterId === officialRecordId
   );
+}
+
+/** The chapter that contains a unit, whichever layer it is recorded at. */
+export function chapterOf(u: PragatiInstructionalUnit): string {
+  return u.officialChapterId ?? u.sourceEvidence.officialChapterId ?? u.officialRecordId;
+}
+
+/**
+ * v0.84.0 checkpoint 17 §6 — SECTIONS HAVE NO EXTENT, SO DERIVE THEM.
+ *
+ * A numbered section owns no page range of its own: the chapter does. The
+ * accounting helper therefore could not count sections, and checkpoint 16
+ * worked around that by typing 65 into `classProgress` while the master
+ * map still called 53 of them uninspected. A section's state is derived
+ * here from the same evidence as everything else: the units that cite it
+ * and the pages behind them.
+ */
+export function sectionInspectionState(
+  sectionId: string
+): 'NOT_STARTED' | 'PARTIALLY_INSPECTED' | 'FULLY_INSPECTED' | 'BLOCKED_SOURCE' {
+  const units = PRAGATI_INSTRUCTIONAL_UNITS.filter(
+    (u) => u.officialRecordId === sectionId || u.additionalOfficialRecordIds.includes(sectionId)
+  );
+  if (units.length === 0) return 'NOT_STARTED';
+  if (units.some((u) => u.sourceEvidence.blockedSource)) return 'BLOCKED_SOURCE';
+  const pages = units.flatMap((u) => u.sourceEvidence.pageEvidence);
+  if (pages.length === 0) return 'NOT_STARTED';
+  const complete = pages.every(
+    (p) => p.fullTextInspected && (!p.visualInspectionRequired || p.visualInspected)
+  );
+  return complete ? 'FULLY_INSPECTED' : 'PARTIALLY_INSPECTED';
+}
+
+/** Every official numbered section of a class, with its derived state. */
+export function sectionAccounting(classNumber: number): {
+  sectionsTotal: number;
+  fullyInspected: string[];
+  partiallyInspected: string[];
+  notStarted: string[];
+  rows: Array<{
+    sectionId: string;
+    title: string;
+    parentChapterId: string | null;
+    unitIds: string[];
+    state: string;
+  }>;
+} {
+  const sections = authoringUnits(classNumber).filter((r) => r.level === 'section');
+  const rows = sections.map((r) => {
+    const units = PRAGATI_INSTRUCTIONAL_UNITS.filter(
+      (u) => u.officialRecordId === r.recordId || u.additionalOfficialRecordIds.includes(r.recordId)
+    );
+    return {
+      sectionId: r.recordId,
+      title: r.title,
+      parentChapterId: units[0] ? chapterOf(units[0]) : null,
+      unitIds: units.map((u) => u.instructionalUnitId),
+      state: sectionInspectionState(r.recordId),
+    };
+  });
+  return {
+    sectionsTotal: sections.length,
+    fullyInspected: rows.filter((r) => r.state === 'FULLY_INSPECTED').map((r) => r.sectionId),
+    partiallyInspected: rows.filter((r) => r.state === 'PARTIALLY_INSPECTED').map((r) => r.sectionId),
+    notStarted: rows.filter((r) => r.state === 'NOT_STARTED').map((r) => r.sectionId),
+    rows,
+  };
 }
 
 /**
@@ -563,7 +656,10 @@ export function classScope(classNumbers: number[]): {
   // From Class 6 the official authoring record is the numbered section while
   // page extents hang off the chapter, so the chapter ids the class's units
   // and segments cite belong to the scope too.
-  for (const u of units) ids.add(u.officialRecordId);
+  for (const u of units) {
+    ids.add(u.officialRecordId);
+    if (u.officialChapterId) ids.add(u.officialChapterId);
+  }
   for (const s of SOURCE_SEGMENTS) {
     if (units.some((u) => u.officialRecordId === s.officialRecordId)) ids.add(s.officialRecordId);
   }
@@ -633,7 +729,9 @@ export function overlapAudit(): Array<{
   const items: Item[] = [
     ...PRAGATI_INSTRUCTIONAL_UNITS.map((u) => ({
       id: u.instructionalUnitId,
-      record: u.officialRecordId,
+      // Page overlap is a chapter-level question: the chapter owns the
+      // pages, and two units in different sections can still share a page.
+      record: chapterOf(u),
       start: u.sourceEvidence.pdfPageStart,
       end: u.sourceEvidence.pdfPageEnd,
     })),
@@ -729,6 +827,9 @@ export type RecordInspectionState =
   | 'NEEDS_HUMAN_CHECK';
 
 export function recordInspectionState(officialRecordId: string): RecordInspectionState {
+  // A numbered section owns no extent, so its state is derived from the
+  // units that cite it rather than from a page range it does not have.
+  if (/_s\d+_\d+$/.test(officialRecordId)) return sectionInspectionState(officialRecordId);
   const units = instructionalUnitsFor(officialRecordId);
   const nonInstr = NON_INSTRUCTIONAL_RECORDS.filter(
     (r) => r.officialRecordId === officialRecordId
@@ -780,11 +881,23 @@ export function inspectedOfficialRecordIds(): Set<string> {
   for (const id of officialRecordIdsTouched()) {
     if (recordInspectionState(id) === 'FULLY_INSPECTED') ids.add(id);
   }
+  // v0.84.0 checkpoint 17 §8 — numbered sections are official records too.
+  // They own no extent, so `recordInspectionState` cannot judge them and
+  // the master map called 53 inspected Class 6 sections uninspected.
+  for (const n of CLASS_DECOMPOSITION_PROGRESS.map((p) => p.classNumber)) {
+    for (const row of sectionAccounting(n).rows) {
+      if (row.state === 'FULLY_INSPECTED') ids.add(row.sectionId);
+    }
+  }
   return ids;
 }
 
 export function officialRecordIdsTouched(): string[] {
   const ids = new Set<string>();
+  // The chapter is tracked alongside the section: page extents hang off it.
+  for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
+    if (u.officialChapterId) ids.add(u.officialChapterId);
+  }
   for (const u of PRAGATI_INSTRUCTIONAL_UNITS) {
     ids.add(u.officialRecordId);
     for (const extra of u.additionalOfficialRecordIds) ids.add(extra);
@@ -846,9 +959,15 @@ export function officialRecordAccounting(classNumber: number): {
   // The authoring grain the source itself defines: chapter for Classes
   // 1-5, numbered section where the book numbers them. Same rule for
   // every grade, so Classes 6+ need no second model later.
-  const records = authoringUnits(classNumber).map((r) => r.recordId);
+  const records = authoringUnits(classNumber);
   const byState = { NOT_STARTED: 0, INDEXED_ONLY: 0, PARTIALLY_INSPECTED: 0, FULLY_INSPECTED: 0, BLOCKED_SOURCE: 0, NEEDS_HUMAN_CHECK: 0 };
-  for (const id of records) byState[recordInspectionState(id)] += 1;
+  for (const r of records) {
+    // A numbered section has no page extent of its own — the chapter owns
+    // it — so its state comes from the units that cite it and their
+    // evidence, by the same rules a chapter's state comes from.
+    const state = r.level === 'section' ? sectionInspectionState(r.recordId) : recordInspectionState(r.recordId);
+    byState[state] += 1;
+  }
   return {
     officialRecordsTotal: records.length,
     officialRecordsNotStarted: byState.NOT_STARTED,
@@ -856,9 +975,12 @@ export function officialRecordAccounting(classNumber: number): {
     officialRecordsPartiallyInspected: byState.PARTIALLY_INSPECTED + byState.NEEDS_HUMAN_CHECK,
     officialRecordsFullyInspected: byState.FULLY_INSPECTED,
     officialRecordsBlocked: byState.BLOCKED_SOURCE,
-    missingExtents: records.filter(
-      (id: string) => !RECORD_EXTENTS.some((x) => x.officialRecordId === id)
-    ),
+    // Only a record that owns pages can be missing an extent: a numbered
+    // section never has one, and that is correct, not a gap.
+    missingExtents: records
+      .filter((r) => r.level !== 'section')
+      .map((r) => r.recordId)
+      .filter((id) => !RECORD_EXTENTS.some((x) => x.officialRecordId === id)),
   };
 }
 

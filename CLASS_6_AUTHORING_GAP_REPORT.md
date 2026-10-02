@@ -1,10 +1,8 @@
 # Class 6 — what still needs authoring
 
-Learn coverage for **every** source-derived Class 6 unit. Class 6 is now
-source-complete, so this is the whole picture, not a floor.
-
-Coverage is not alignment quality: a unit can be covered by a lesson that also
-covers two others.
+Learn coverage for every source-derived Class 6 unit, recomputed after reading
+the actual authored lessons rather than inferring coverage from which section a
+lesson is named for.
 
 | Unit | Official section | Title | Learn coverage | Artifact |
 |---|---|---|---|---|
@@ -56,14 +54,14 @@ covers two others.
 | `pragati_iu_g06_ch07_u1` | `ncert_gp_c6_s7_1` | Fractional units and equal shares | **EXISTING_EXACT** | `fractions_7_1` |
 | `pragati_iu_g06_ch07_u10` | `ncert_gp_c6_s7_8` | Adding and subtracting like fractions | **EXISTING_MULTI_UNIT** | `fractions_7_8` |
 | `pragati_iu_g06_ch07_u11` | `ncert_gp_c6_s7_8` | Adding and subtracting unlike fractions | **EXISTING_MULTI_UNIT** | `fractions_7_8` |
-| `pragati_iu_g06_ch07_u12` | `ncert_gp_c6_s7_9` | A pinch of history, and unit-fraction puzzles | **EXISTING_PARTIAL** | `fractions_7_9` |
+| `pragati_iu_g06_ch07_u12` | `ncert_gp_c6_s7_9` | A pinch of history, and unit-fraction puzzles | **NO_LEARN_CONTENT** | `fractions_7_9` |
 | `pragati_iu_g06_ch07_u2` | `ncert_gp_c6_s7_2` | Fractional units as parts of a whole | **EXISTING_EXACT** | `fractions_7_2` |
 | `pragati_iu_g06_ch07_u3` | `ncert_gp_c6_s7_3` | Measuring with fractional units | **EXISTING_EXACT** | `fractions_7_3` |
 | `pragati_iu_g06_ch07_u4` | `ncert_gp_c6_s7_4` | Marking fractions on the number line | **EXISTING_EXACT** | `fractions_7_4` |
 | `pragati_iu_g06_ch07_u5` | `ncert_gp_c6_s7_5` | Mixed fractions | **EXISTING_EXACT** | `fractions_7_5` |
 | `pragati_iu_g06_ch07_u6` | `ncert_gp_c6_s7_6` | Equivalent fractions and the fraction wall | **EXISTING_MULTI_UNIT** | `fractions_7_6` |
-| `pragati_iu_g06_ch07_u7` | `ncert_gp_c6_s7_6` | Equivalence from equal sharing | **EXISTING_MULTI_UNIT** | `fractions_7_6` |
-| `pragati_iu_g06_ch07_u8` | `ncert_gp_c6_s7_6` | Simplest form | **EXISTING_MULTI_UNIT** | `fractions_7_6` |
+| `pragati_iu_g06_ch07_u7` | `ncert_gp_c6_s7_6` | Equivalence from equal sharing | **NO_LEARN_CONTENT** | `fractions_7_6` |
+| `pragati_iu_g06_ch07_u8` | `ncert_gp_c6_s7_6` | Simplest form | **NO_LEARN_CONTENT** | `fractions_7_6` |
 | `pragati_iu_g06_ch07_u9` | `ncert_gp_c6_s7_7` | Comparing fractions | **EXISTING_EXACT** | `fractions_7_7` |
 | `pragati_iu_g06_ch08_u1` | `ncert_gp_c6_s8_1` | Freehand artwork and the compass | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch08_u2` | `ncert_gp_c6_s8_2` | Properties of squares and rectangles | **NO_LEARN_CONTENT** | — |
@@ -89,20 +87,26 @@ covers two others.
 | Coverage | Units |
 |---|---|
 | EXISTING_EXACT | 9 |
-| EXISTING_MULTI_UNIT | 5 |
-| EXISTING_PARTIAL | 1 |
-| **NO_LEARN_CONTENT** | **60** |
+| EXISTING_MULTI_UNIT (verified taught) | 3 |
+| EXISTING_PARTIAL | 0 |
+| **NO_LEARN_CONTENT** | **63** |
 
-Of the 60 units with no Learn content, **5 are waiting on a human policy
-decision**, not on evidence: they are the reasoning-extension units (Kaprekar,
-Collatz, winning strategies, Prime Time's number boxes, the integer grids).
-Those are not "unnecessary content" — they are authorable as soon as the policy
-is decided.
+**Two units moved into NO_LEARN_CONTENT after the lessons were read.** The
+authored §7.6 lesson teaches equivalence by cutting (u6). It does not argue
+equivalence from equal sharing (u7) and does not teach simplest form (u8) — its
+own teacher note says not to require simplification, and lowest terms appears
+nowhere as instruction. Mapping them to the lesson by section number was
+topology, not coverage.
 
-Everything authored for Class 6 — all 12 artifacts — sits in two chapters,
-Number Play and Fractions. **Eight chapters have no Learn content at all**:
-Patterns in Mathematics, Lines and Angles, Data Handling and Presentation,
-Prime Time, Perimeter and Area, Playing with Constructions, Symmetry, and The
-Other Side of Zero.
+The authored §7.8 lesson was checked the same way and **does** teach both of
+its mapped units: like-denominator addition with the count-the-units argument,
+and the unlike-denominator procedure through equivalent fractions.
 
-**No authoring was done in this checkpoint.**
+6 of the uncovered units are **blocked on a human policy decision**, not on
+evidence — the reasoning-extension units. They are authorable the moment that
+policy is settled.
+
+All 12 existing lessons sit in two chapters; **eight chapters have no Learn
+content at all**.
+
+**No authoring was done in this checkpoint, and no lesson was modified.**
