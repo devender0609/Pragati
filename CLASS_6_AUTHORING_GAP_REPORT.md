@@ -1,8 +1,8 @@
 # Class 6 — what still needs authoring
 
-Learn coverage for every source-derived Class 6 unit, recomputed after reading
-the actual authored lessons rather than inferring coverage from which section a
-lesson is named for.
+Learn coverage per unit, derived from what the authored lessons were read to
+teach. **Coverage is about instruction, not topology**: a unit is covered when
+a lesson actually teaches it, however many units that lesson spans.
 
 | Unit | Official section | Title | Learn coverage | Artifact |
 |---|---|---|---|---|
@@ -22,13 +22,13 @@ lesson is named for.
 | `pragati_iu_g06_ch02_u7` | `ncert_gp_c6_s2_9` | Making a protractor by folding, and bisecting | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch02_u8` | `ncert_gp_c6_s2_9` | Measuring angles accurately, and common mistakes | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch02_u9` | `ncert_gp_c6_s2_10` | Drawing angles of a given measure | **NO_LEARN_CONTENT** | — |
-| `pragati_iu_g06_ch03_u1` | `ncert_gp_c6_s3_1` | Numbers that describe a relationship | **EXISTING_EXACT** | `number_play_3_1` |
+| `pragati_iu_g06_ch03_u1` | `ncert_gp_c6_s3_1` | Numbers that describe a relationship | **EXISTING_COMPLETE** | `number_play_3_1` |
 | `pragati_iu_g06_ch03_u10` | `ncert_gp_c6_s3_9` | Number patterns that sum to a target | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch03_u11` | `ncert_gp_c6_s3_10` | The Collatz conjecture | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch03_u12` | `ncert_gp_c6_s3_11` | Estimation at scale | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch03_u13` | `ncert_gp_c6_s3_12` | Games and winning strategies | **NO_LEARN_CONTENT** | — |
-| `pragati_iu_g06_ch03_u2` | `ncert_gp_c6_s3_2` | Supercells | **EXISTING_EXACT** | `number_play_3_2` |
-| `pragati_iu_g06_ch03_u3` | `ncert_gp_c6_s3_3` | Large numbers on the number line | **EXISTING_EXACT** | `number_play_3_3` |
+| `pragati_iu_g06_ch03_u2` | `ncert_gp_c6_s3_2` | Supercells | **EXISTING_COMPLETE** | `number_play_3_2` |
+| `pragati_iu_g06_ch03_u3` | `ncert_gp_c6_s3_3` | Large numbers on the number line | **EXISTING_COMPLETE** | `number_play_3_3` |
 | `pragati_iu_g06_ch03_u4` | `ncert_gp_c6_s3_4` | Playing with digits | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch03_u5` | `ncert_gp_c6_s3_5` | Palindromic numbers and reverse-and-add | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch03_u6` | `ncert_gp_c6_s3_6` | The Kaprekar constant | **NO_LEARN_CONTENT** | — |
@@ -51,18 +51,18 @@ lesson is named for.
 | `pragati_iu_g06_ch06_u3` | `ncert_gp_c6_s6_2` | Area by counting and by formula | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch06_u4` | `ncert_gp_c6_s6_3` | Area of a triangle | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch06_u5` | `ncert_gp_c6_s6_3` | Area and perimeter together, and area mazes | **NO_LEARN_CONTENT** | — |
-| `pragati_iu_g06_ch07_u1` | `ncert_gp_c6_s7_1` | Fractional units and equal shares | **EXISTING_EXACT** | `fractions_7_1` |
-| `pragati_iu_g06_ch07_u10` | `ncert_gp_c6_s7_8` | Adding and subtracting like fractions | **EXISTING_MULTI_UNIT** | `fractions_7_8` |
-| `pragati_iu_g06_ch07_u11` | `ncert_gp_c6_s7_8` | Adding and subtracting unlike fractions | **EXISTING_MULTI_UNIT** | `fractions_7_8` |
+| `pragati_iu_g06_ch07_u1` | `ncert_gp_c6_s7_1` | Fractional units and equal shares | **EXISTING_COMPLETE** | `fractions_7_1` |
+| `pragati_iu_g06_ch07_u10` | `ncert_gp_c6_s7_8` | Adding and subtracting like fractions | **EXISTING_COMPLETE** | `fractions_7_8` |
+| `pragati_iu_g06_ch07_u11` | `ncert_gp_c6_s7_8` | Adding and subtracting unlike fractions | **EXISTING_COMPLETE** | `fractions_7_8` |
 | `pragati_iu_g06_ch07_u12` | `ncert_gp_c6_s7_9` | A pinch of history, and unit-fraction puzzles | **NO_LEARN_CONTENT** | `fractions_7_9` |
-| `pragati_iu_g06_ch07_u2` | `ncert_gp_c6_s7_2` | Fractional units as parts of a whole | **EXISTING_EXACT** | `fractions_7_2` |
-| `pragati_iu_g06_ch07_u3` | `ncert_gp_c6_s7_3` | Measuring with fractional units | **EXISTING_EXACT** | `fractions_7_3` |
-| `pragati_iu_g06_ch07_u4` | `ncert_gp_c6_s7_4` | Marking fractions on the number line | **EXISTING_EXACT** | `fractions_7_4` |
-| `pragati_iu_g06_ch07_u5` | `ncert_gp_c6_s7_5` | Mixed fractions | **EXISTING_EXACT** | `fractions_7_5` |
-| `pragati_iu_g06_ch07_u6` | `ncert_gp_c6_s7_6` | Equivalent fractions and the fraction wall | **EXISTING_MULTI_UNIT** | `fractions_7_6` |
+| `pragati_iu_g06_ch07_u2` | `ncert_gp_c6_s7_2` | Fractional units as parts of a whole | **EXISTING_COMPLETE** | `fractions_7_2` |
+| `pragati_iu_g06_ch07_u3` | `ncert_gp_c6_s7_3` | Measuring with fractional units | **EXISTING_COMPLETE** | `fractions_7_3` |
+| `pragati_iu_g06_ch07_u4` | `ncert_gp_c6_s7_4` | Marking fractions on the number line | **EXISTING_COMPLETE** | `fractions_7_4` |
+| `pragati_iu_g06_ch07_u5` | `ncert_gp_c6_s7_5` | Mixed fractions | **EXISTING_COMPLETE** | `fractions_7_5` |
+| `pragati_iu_g06_ch07_u6` | `ncert_gp_c6_s7_6` | Equivalent fractions and the fraction wall | **EXISTING_COMPLETE** | `fractions_7_6` |
 | `pragati_iu_g06_ch07_u7` | `ncert_gp_c6_s7_6` | Equivalence from equal sharing | **NO_LEARN_CONTENT** | `fractions_7_6` |
 | `pragati_iu_g06_ch07_u8` | `ncert_gp_c6_s7_6` | Simplest form | **NO_LEARN_CONTENT** | `fractions_7_6` |
-| `pragati_iu_g06_ch07_u9` | `ncert_gp_c6_s7_7` | Comparing fractions | **EXISTING_EXACT** | `fractions_7_7` |
+| `pragati_iu_g06_ch07_u9` | `ncert_gp_c6_s7_7` | Comparing fractions | **EXISTING_COMPLETE** | `fractions_7_7` |
 | `pragati_iu_g06_ch08_u1` | `ncert_gp_c6_s8_1` | Freehand artwork and the compass | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch08_u2` | `ncert_gp_c6_s8_2` | Properties of squares and rectangles | **NO_LEARN_CONTENT** | — |
 | `pragati_iu_g06_ch08_u3` | `ncert_gp_c6_s8_3` | Constructing squares and rectangles | **NO_LEARN_CONTENT** | — |
@@ -86,27 +86,19 @@ lesson is named for.
 
 | Coverage | Units |
 |---|---|
-| EXISTING_EXACT | 9 |
-| EXISTING_MULTI_UNIT (verified taught) | 3 |
+| EXISTING_COMPLETE | 12 |
 | EXISTING_PARTIAL | 0 |
 | **NO_LEARN_CONTENT** | **63** |
 
-**Two units moved into NO_LEARN_CONTENT after the lessons were read.** The
-authored §7.6 lesson teaches equivalence by cutting (u6). It does not argue
-equivalence from equal sharing (u7) and does not teach simplest form (u8) — its
-own teacher note says not to require simplification, and lowest terms appears
-nowhere as instruction. Mapping them to the lesson by section number was
-topology, not coverage.
-
-The authored §7.8 lesson was checked the same way and **does** teach both of
-its mapped units: like-denominator addition with the count-the-units argument,
-and the unlike-denominator procedure through equivalent fractions.
+Twelve units are taught by the twelve authored lessons — nine one-to-one, plus
+u6 from the §7.6 lesson and u10 and u11 from the §7.8 lesson. The §7.6 lesson's
+other two expected units (equivalence from equal sharing, simplest form) are
+**not taught** and the §7.9 unit's mathematical demand is not taught either, so
+all three are NO_LEARN_CONTENT.
 
 6 of the uncovered units are **blocked on a human policy decision**, not on
-evidence — the reasoning-extension units. They are authorable the moment that
-policy is settled.
+evidence.
 
-All 12 existing lessons sit in two chapters; **eight chapters have no Learn
-content at all**.
+Eight of the ten chapters have no Learn content at all.
 
 **No authoring was done in this checkpoint, and no lesson was modified.**

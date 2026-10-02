@@ -19,6 +19,9 @@ import {
   decompositionFingerprint,
   overlapJustificationFor,
   sectionAccounting,
+  sectionInspectionState,
+  sectionExtentFor,
+  OFFICIAL_SECTION_EXTENTS,
   HUMAN_JUDGEMENT_POLICIES,
   ARTIFACT_ALIGNMENTS,
   OVERLAP_JUSTIFICATIONS,
@@ -576,10 +579,10 @@ describe('§1/§7 every official chapter is accounted for', () => {
       // chaptersTotal keeps counting chapters.
       expect(p.officialRecordsTotal ?? p.chaptersTotal, `class${p.classNumber}`).toBe(acc.officialRecordsTotal);
       // "Inspected" means fully inspected — never merely touched.
-      // From Class 6 the official records are numbered sections, which have no
-      // page extent of their own — the chapter owns it — so the accounting
-      // helper cannot count them. `sectionsAccountedFor` is the authority
-      // there, and it is checked against the curriculum's own section list.
+      // From Class 6 the official records are numbered sections. They own
+      // no page extent — the chapter does — so their completion is derived
+      // from their recorded body span by sectionInspectionState(), and
+      // `sectionsAccountedFor` is that same derivation, not a second one.
       if (p.officialSectionsTotal) {
         expect(p.sectionsAccountedFor, `class${p.classNumber}`).toBeLessThanOrEqual(p.officialSectionsTotal);
         expect(p.chaptersInspected, `class${p.classNumber}`).toBeLessThanOrEqual(p.chaptersTotal);
@@ -1224,8 +1227,8 @@ describe('Class 6 structure and artifact mapping', () => {
     // far; all ten exist in the dataset so none can disappear.
     expect(RECORD_EXTENTS.filter((e) => e.officialRecordId.startsWith('ncert_gp_c6')).length).toBe(10);
     expect(classScope([6]).recordExtents.length).toBeGreaterThan(0);
-    // `chaptersTotal` carries the official denominator (sections);
-    // the chapter and section counts are recorded separately.
+    // `chaptersTotal` counts chapters; the section denominator lives in
+    // `officialSectionsTotal`.
     const p6 = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 6)!;
     expect(p6.officialChapterCount).toBe(10);
     expect(p6.officialSectionsTotal).toBe(65);
@@ -1304,7 +1307,7 @@ describe('Class 6 structure and artifact mapping', () => {
     expect(uncovered.length).toBeGreaterThan(0);
     const gap = read('CLASS_6_AUTHORING_GAP_REPORT.md');
     for (const u of uncovered) expect(gap, u.instructionalUnitId).toContain(u.instructionalUnitId);
-    expect(gap).toMatch(/every source-derived Class 6 unit|whole picture/i);
+    expect(gap).toMatch(/Coverage is about instruction, not topology/i);
   });
 
   it('leaves the review state and §7.4 identity untouched', () => {
@@ -1563,5 +1566,164 @@ describe('§33 artifact coverage is verified, not inferred from topology', () =>
     const s76 = ARTIFACT_ALIGNMENTS.find((m) => m.artifactId === 'fractions_7_6')!;
     expect(s76.unitCoverageVerification).toBe('VERIFIED_PARTIAL');
     expect(s76.missingScope).not.toMatch(/needs checking/i);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 18 §1-§8 — A SECTION IS PROVEN AGAINST ITS OWN BODY.
+//
+// Checkpoint 17 derived section state from the units citing it, which proves
+// the units' evidence is tidy, not that the section's printed body was read.
+// ---------------------------------------------------------------------------
+
+describe('§2-§8 numbered section body extents', () => {
+  const sections = () => authoringUnits(6).map((r) => r.recordId);
+
+  it('gives every Class 6 section a non-empty body range inside its chapter', () => {
+    for (const id of sections()) {
+      const e = sectionExtentFor(id);
+      expect(e, id).toBeDefined();
+      expect(e!.pdfPageEnd, id).toBeGreaterThanOrEqual(e!.pdfPageStart);
+      expect(e!.boundaryEvidence.length, id).toBeGreaterThan(40);
+      const chapter = RECORD_EXTENTS.find((x) => x.officialRecordId === e!.officialChapterId);
+      expect(chapter, `${id} chapter ${e!.officialChapterId}`).toBeDefined();
+      expect(e!.pdfPageStart, id).toBeGreaterThanOrEqual(chapter!.pdfPageStart);
+      expect(e!.pdfPageEnd, id).toBeLessThanOrEqual(chapter!.pdfPageEnd);
+    }
+    const c6 = OFFICIAL_SECTION_EXTENTS.filter((e) => e.officialSectionId.startsWith('ncert_gp_c6'));
+    expect(c6.length).toBe(65);
+    expect(new Set(OFFICIAL_SECTION_EXTENTS.map((e) => e.officialSectionId)).size).toBe(
+      OFFICIAL_SECTION_EXTENTS.length
+    );
+  });
+
+  it('will not call a section complete when part of its body is unread', () => {
+    // The real §3.1 is complete. Shrink the evidence to half its body and
+    // the gate must drop it to PARTIALLY_INSPECTED — under checkpoint 17's
+    // logic it stayed FULLY_INSPECTED, because the unit's own pages were
+    // tidy.
+    const id = 'ncert_gp_c6_s3_1';
+    expect(sectionInspectionState(id)).toBe('FULLY_INSPECTED');
+    const extent = sectionExtentFor(id)!;
+    const chapterUnits = PRAGATI_INSTRUCTIONAL_UNITS.filter(
+      (u) => (u.officialChapterId ?? u.officialRecordId) === extent.officialChapterId
+    );
+    const touched: Array<{ row: { fullTextInspected: boolean }; was: boolean }> = [];
+    for (const u of chapterUnits) {
+      for (const p of u.sourceEvidence.pageEvidence) {
+        if (p.pdfPage >= extent.pdfPageStart && p.pdfPage <= extent.pdfPageEnd) {
+          touched.push({ row: p, was: p.fullTextInspected });
+          p.fullTextInspected = false;
+        }
+      }
+    }
+    expect(touched.length).toBeGreaterThan(0);
+    try {
+      expect(sectionInspectionState(id)).toBe('PARTIALLY_INSPECTED');
+    } finally {
+      for (const t of touched) t.row.fullTextInspected = t.was;
+    }
+    expect(sectionInspectionState(id)).toBe('FULLY_INSPECTED');
+  });
+
+  it('proves each short shared section on its own pages', () => {
+    for (const id of ['ncert_gp_c6_s2_2', 'ncert_gp_c6_s2_3', 'ncert_gp_c6_s2_4', 'ncert_gp_c6_s2_7']) {
+      expect(sectionExtentFor(id), id).toBeDefined();
+      expect(sectionInspectionState(id), id).toBe('FULLY_INSPECTED');
+    }
+  });
+});
+
+describe('§12-§17 alignment describes teaching, coverage describes units', () => {
+  it('does not call a lesson multi-unit when it teaches one unit', () => {
+    for (const m of ARTIFACT_ALIGNMENTS) {
+      const actual = m.actualCoveredUnitIds ?? [];
+      if (m.alignment === 'MULTI_UNIT_COVERAGE') {
+        expect(actual.length, `${m.artifactId} is MULTI_UNIT_COVERAGE`).toBeGreaterThan(1);
+      }
+      if (m.alignment === 'EXACT_MATCH') expect(actual.length, m.artifactId).toBe(1);
+    }
+    const s76 = ARTIFACT_ALIGNMENTS.find((m) => m.artifactId === 'fractions_7_6')!;
+    expect(s76.alignment).toBe('PARTIAL_MATCH');
+    expect(s76.actualCoveredUnitIds).toEqual(['pragati_iu_g06_ch07_u6']);
+    expect((s76.expectedSectionUnitIds ?? []).length).toBe(3);
+    const s78 = ARTIFACT_ALIGNMENTS.find((m) => m.artifactId === 'fractions_7_8')!;
+    expect(s78.alignment).toBe('MULTI_UNIT_COVERAGE');
+  });
+
+  it('decides unit coverage from teaching, not from artifact topology', () => {
+    const cov = (id: string) =>
+      PRAGATI_INSTRUCTIONAL_UNITS.find((u) => u.instructionalUnitId === id)!.learnCoverage;
+    expect(cov('pragati_iu_g06_ch07_u6')).toBe('EXISTING_COMPLETE');
+    expect(cov('pragati_iu_g06_ch07_u7')).toBe('NO_LEARN_CONTENT');
+    expect(cov('pragati_iu_g06_ch07_u8')).toBe('NO_LEARN_CONTENT');
+    expect(cov('pragati_iu_g06_ch07_u10')).toBe('EXISTING_COMPLETE');
+    expect(cov('pragati_iu_g06_ch07_u11')).toBe('EXISTING_COMPLETE');
+    for (const u of unitsForClass(6)) {
+      if (u.learnCoverage === 'NO_LEARN_CONTENT') continue;
+      const m = ARTIFACT_ALIGNMENTS.find((x) => (x.actualCoveredUnitIds ?? []).includes(u.instructionalUnitId));
+      expect(m, `${u.instructionalUnitId} marked ${u.learnCoverage}`).toBeDefined();
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 18 §25-§36 — CLASS 7 UNDER THE FINAL MODEL FROM PAGE ONE.
+// ---------------------------------------------------------------------------
+
+describe('Class 7 structure and evidence', () => {
+  const p7 = () => CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 7)!;
+
+  it('has 15 chapters and 65 numbered sections, kept as separate layers', () => {
+    expect(p7().officialChapterCount).toBe(15);
+    expect(p7().officialSectionsTotal).toBe(65);
+    expect(sectionAccounting(7).sectionsTotal).toBe(65);
+    expect(RECORD_EXTENTS.filter((e) => e.officialRecordId.startsWith('ncert_gegp')).length).toBe(15);
+  });
+
+  it('cites a real numbered section as the official record, never a chapter', () => {
+    const sections = new Set(authoringUnits(7).map((r) => r.recordId));
+    for (const u of unitsForClass(7)) {
+      expect(sections.has(u.officialRecordId), `${u.instructionalUnitId} → ${u.officialRecordId}`).toBe(true);
+      expect(u.officialRecordId).toBe(u.sourceEvidence.officialSectionId);
+      expect(u.officialChapterId, u.instructionalUnitId).toMatch(/^ncert_gegp[12]_ch\d{2}$/);
+      expect(u.instructionalUnitId.startsWith('pragati_iu_g07_')).toBe(true);
+      expect(sectionExtentFor(u.officialRecordId), u.officialRecordId).toBeDefined();
+    }
+  });
+
+  it('reads text and visuals in the same pass for every page it claims', () => {
+    for (const u of unitsForClass(7)) {
+      for (const p of u.sourceEvidence.pageEvidence) {
+        expect(p.fullTextInspected, `${u.instructionalUnitId} p${p.pdfPage}`).toBe(true);
+        if (p.visualInspectionRequired) {
+          expect(p.visualInspected, `${u.instructionalUnitId} p${p.pdfPage}`).toBe(true);
+        }
+      }
+    }
+  });
+
+  it('gives every page of a decomposed Class 7 chapter a home', () => {
+    const touched = new Set(unitsForClass(7).map((u) => u.officialChapterId!));
+    for (const chapterId of touched) {
+      const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === chapterId)!;
+      const covered = new Set<number>();
+      for (const e of [
+        ...unitsForClass(7).filter((u) => u.officialChapterId === chapterId).map((u) => u.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === chapterId).map((s) => s.sourceEvidence),
+      ]) {
+        for (const p of e.pageEvidence) covered.add(p.pdfPage);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${chapterId} p${p}`).toBe(true);
+      }
+    }
+  });
+
+  it('does not claim Class 7 is source-complete', () => {
+    expect(p7().status).toBe('IN_PROGRESS');
+    expect(p7().chaptersFullyInspected).toBeLessThan(15);
+    expect(p7().sectionsNotYetInspected).toBeGreaterThan(0);
+    expect(p7().pagesFullTextPending).toBeGreaterThan(0);
   });
 });

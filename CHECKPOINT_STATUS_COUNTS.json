@@ -1,8 +1,8 @@
 {
  "generatedFrom": "src/curriculum/data/instructionalDecomposition.json",
- "totalUnits": 367,
- "ready": 343,
- "needsHumanCheck": 24,
+ "totalUnits": 390,
+ "ready": 365,
+ "needsHumanCheck": 25,
  "draft": 0,
  "perClass": {
   "1": {
@@ -40,12 +40,18 @@
    "ready": 69,
    "needsHumanCheck": 6,
    "draft": 0
+  },
+  "7": {
+   "units": 23,
+   "ready": 22,
+   "needsHumanCheck": 1,
+   "draft": 0
   }
  },
  "policies": [
   {
    "policyKey": "reasoning_extension_core_vs_enrichment",
-   "units": 20
+   "units": 21
   },
   {
    "policyKey": "context_page_lesson_vs_embedded_context",
@@ -58,7 +64,7 @@
  ],
  "artifactAlignments": {
   "EXACT_MATCH": 9,
-  "MULTI_UNIT_COVERAGE": 2,
-  "PARTIAL_MATCH": 1
+  "PARTIAL_MATCH": 2,
+  "MULTI_UNIT_COVERAGE": 1
  }
 }

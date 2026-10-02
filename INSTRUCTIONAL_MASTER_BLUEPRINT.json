@@ -122,6 +122,32 @@
    "visualPagesPending": 0,
    "pagesEvidenceIncomplete": 0,
    "note": "Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392 of 392 read in full text, 302 of 302 picture-carried pages rendered and looked at."
+  },
+  {
+   "classNumber": 7,
+   "status": "IN_PROGRESS",
+   "officialChapterCount": 15,
+   "officialSectionsTotal": 65,
+   "chaptersTotal": 15,
+   "chaptersInspected": 4,
+   "chaptersFullyInspected": 4,
+   "chaptersPartiallyInspected": 0,
+   "chaptersIndexedOnly": 11,
+   "sectionsAccountedFor": 17,
+   "sectionsNotYetInspected": 48,
+   "officialRecordsTotal": 65,
+   "officialRecordsFullyInspected": 17,
+   "officialRecordsPartiallyInspected": 0,
+   "officialRecordsIndexedOnly": 11,
+   "pagesInScope": 511,
+   "pagesIndexed": 511,
+   "pagesFullyInspected": 174,
+   "pagesFullTextPending": 337,
+   "visualPagesRequired": 74,
+   "visualPagesInspected": 74,
+   "visualPagesPending": 0,
+   "pagesEvidenceIncomplete": 337,
+   "note": "Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against their own body ranges. Pages: 174 of 511 read in full text; among those, 74 are picture-carried and 74 have been rendered and looked at. The visual requirement of the 337 unread pages is not yet determined."
   }
  ],
  "units": [
@@ -28142,7 +28168,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
@@ -28232,7 +28258,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
@@ -28312,7 +28338,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch03_number_play"
   },
   {
@@ -29279,7 +29305,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -29369,7 +29395,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -29467,7 +29493,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -29556,7 +29582,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -29655,7 +29681,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -29745,7 +29771,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -30061,7 +30087,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_EXACT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -30159,7 +30185,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -30276,7 +30302,7 @@
      "note": "Read in full text and every picture-carried page rendered and looked at in the same chapter pass."
     }
    ],
-   "learnCoverage": "EXISTING_MULTI_UNIT",
+   "learnCoverage": "EXISTING_COMPLETE",
    "officialChapterId": "ncert_gp_c6_ch07_fractions"
   },
   {
@@ -35962,6 +35988,2617 @@
     }
    ],
    "officialChapterId": "ncert_gp_c6_ch10_other_side_of_zero"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch01_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s1_1",
+   "officialChapterId": "ncert_gegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch01",
+    "officialSectionId": "ncert_gegp1_s1_1",
+    "printedPageStart": 2,
+    "printedPageEnd": 5,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Eshwarappa buying seed; the largest 3-, 4- and 5-digit numbers; how much is one lakh; Roxie and Estu arguing whether a lakh is large or small; writing numbers in the Indian system.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 7 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 80 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 21 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 9 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 7 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "One lakh, and how big it is",
+   "mathematicalObjective": "Read, write and build five- and six-digit numbers and judge the size of a lakh.",
+   "studentCanStatement": "I can say how much less than one lakh 75,000 is.",
+   "mathematicalIdeas": [
+    "a lakh as 100 thousands",
+    "Indian place value to six digits",
+    "judging whether a number is large in context"
+   ],
+   "representationsNeeded": [
+    "place value charts",
+    "market and census contexts"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u1"
+   ],
+   "vocabulary": [
+    "lakh",
+    "place value",
+    "thousand"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 5 ceiling of 100,000 into reading and judging lakhs.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch01_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s1_2",
+   "officialChapterId": "ncert_gegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch01",
+    "officialSectionId": "ncert_gegp1_s1_2",
+    "printedPageStart": 5,
+    "printedPageEnd": 9,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The Thousands, Tens and Hundreds machines; making given numbers in the fewest clicks; pressing the ten-lakh button ten times and naming the result; placing commas to read 9876501234.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 7 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 78 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 83 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 84 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Land of Tens: building numbers by powers of ten",
+   "mathematicalObjective": "Compose numbers by repeated presses of powers of ten and name the result.",
+   "studentCanStatement": "I can make 97,600 with the fewest button presses and say how many.",
+   "mathematicalIdeas": [
+    "powers of ten as building blocks",
+    "minimal decomposition of a number",
+    "naming ten lakh and above"
+   ],
+   "representationsNeeded": [
+    "button-press machine",
+    "place value tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch01_u1"
+   ],
+   "vocabulary": [
+    "ten thousand",
+    "ten lakh",
+    "press",
+    "clicks"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Decomposition into powers of ten as a counting problem, new at Class 7.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch01_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s1_3",
+   "officialChapterId": "ncert_gegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch01",
+    "officialSectionId": "ncert_gegp1_s1_3",
+    "printedPageStart": 9,
+    "printedPageEnd": 10,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The Indian and American naming tables side by side; writing the same number in both; how many thousands make a lakh and lakhs a crore.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [
+     9,
+     10
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 10,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 9 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Crores, and the Indian and American systems",
+   "mathematicalObjective": "Read and write numbers in crores and compare the two naming systems.",
+   "studentCanStatement": "I can write a ten-digit number with commas in both systems.",
+   "mathematicalIdeas": [
+    "crore and arab",
+    "million and billion",
+    "two comma conventions for one number"
+   ],
+   "representationsNeeded": [
+    "comparison table",
+    "large-number headlines"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch01_u2"
+   ],
+   "vocabulary": [
+    "crore",
+    "arab",
+    "million",
+    "billion"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Two naming systems for one number is new.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch01_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s1_4",
+   "officialChapterId": "ncert_gegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch01",
+    "officialSectionId": "ncert_gegp1_s1_4",
+    "printedPageStart": 10,
+    "printedPageEnd": 13,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Headlines using approximate figures; the nearest thousand, ten thousand, lakh, ten lakh and crore of a number; the city population table across two censuses.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     10,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 10,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 9 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 60 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 12,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 147 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 13,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 70 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Exact and approximate values, and nearest neighbours",
+   "mathematicalObjective": "Round a large number to its nearest thousand, lakh or crore and judge when an estimate is enough.",
+   "studentCanStatement": "I can give the five nearest neighbours of 3,87,69,957.",
+   "mathematicalIdeas": [
+    "rounding to a chosen place",
+    "nearest neighbours of a number",
+    "when an approximation is appropriate"
+   ],
+   "representationsNeeded": [
+    "number lines",
+    "population tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch01_u3"
+   ],
+   "vocabulary": [
+    "approximate",
+    "nearest",
+    "round"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 5 rounded to a stated place; Class 7 makes the choice of place the question.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch01_u5",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s1_5",
+   "officialChapterId": "ncert_gegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch01",
+    "officialSectionId": "ncert_gegp1_s1_5",
+    "printedPageStart": 14,
+    "printedPageEnd": 15,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Estu evaluating 824 x 25 as 824 x 100 ÷ 4; the connection between the digit counts of the factors and of the product.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 14,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 53 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 15,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 137 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Patterns in products, and multiplication shortcuts",
+   "mathematicalObjective": "Use the structure of a product to multiply and divide efficiently.",
+   "studentCanStatement": "I can work out 824 x 25 by using 100 ÷ 4.",
+   "mathematicalIdeas": [
+    "rewriting a factor to simplify a product",
+    "digit count of a product",
+    "division as the inverse route"
+   ],
+   "representationsNeeded": [
+    "worked chains",
+    "digit-count tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g05_ch04_u4"
+   ],
+   "vocabulary": [
+    "product",
+    "shortcut",
+    "digits"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends Class 5 mental compensation to multiplicative structure.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch01_u6",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s1_6",
+   "officialChapterId": "ncert_gegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch01",
+    "officialSectionId": "ncert_gegp1_s1_6",
+    "printedPageStart": 16,
+    "printedPageEnd": 20,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 21,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The Earth-Sun distance, litres of blood, blue whale weights and the Mumbai population comparisons; the number-card task reaching given targets.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 16,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 7 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 17,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 8 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 18,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 8 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 19,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 21 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 20,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 26 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 3 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Large numbers in the world",
+   "mathematicalObjective": "Estimate and interpret very large quantities in real contexts.",
+   "studentCanStatement": "I can work out how many blue whales weigh as much as this.",
+   "mathematicalIdeas": [
+    "orders of magnitude in context",
+    "estimation with crores",
+    "interpreting a computed large number"
+   ],
+   "representationsNeeded": [
+    "fact cards",
+    "estimation chains"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch01_u4"
+   ],
+   "vocabulary": [
+    "estimate",
+    "how many times",
+    "scale"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Applies the chapter to quantities far beyond Class 6 contexts.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch02_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s2_1",
+   "officialChapterId": "ncert_gegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch02",
+    "officialSectionId": "ncert_gegp1_s2_1",
+    "printedPageStart": 25,
+    "printedPageEnd": 26,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Phrases such as 13 + 2 and 20 - 4 named arithmetic expressions; every expression having a value; comparing 245 + 289 with 246 + 285 by reasoning.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [
+     1,
+     2,
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 13 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 25,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 38 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 26,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 17 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Arithmetic expressions and their value",
+   "mathematicalObjective": "Read an arithmetic expression, find its value and compare two expressions.",
+   "studentCanStatement": "I can say which of two expressions is greater without calculating both.",
+   "mathematicalIdeas": [
+    "expression as a mathematical phrase",
+    "value of an expression",
+    "comparing by structure rather than computation"
+   ],
+   "representationsNeeded": [
+    "expression strips",
+    "comparison statements"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u8"
+   ],
+   "vocabulary": [
+    "expression",
+    "value",
+    "greater than"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "The expression itself becomes an object of study, which Classes 1-6 never ask.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch02_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s2_1",
+   "officialChapterId": "ncert_gegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch02",
+    "officialSectionId": "ncert_gegp1_s2_1",
+    "printedPageStart": 27,
+    "printedPageEnd": 34,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 11,
+    "inspectedOn": "2026-10-02",
+    "establishes": "30 + 5 x 4 read as terms; expressions written as the sum of their terms; swapping terms and grouping them; the token model used to justify it; the socks-and-shoes counterexample for order.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 27,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 9 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 28,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 27 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 29,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 82 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 30,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 43 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 31,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 30 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 32,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 25 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 33,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 29 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 34,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 17 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Terms, swapping and grouping",
+   "mathematicalObjective": "Write an expression as a sum of its terms and reorder or regroup them.",
+   "studentCanStatement": "I can write 13 - 2 + 6 as a sum of terms and swap them safely.",
+   "mathematicalIdeas": [
+    "term",
+    "subtraction rewritten as adding a negative",
+    "commutativity and associativity over terms"
+   ],
+   "representationsNeeded": [
+    "term boxes",
+    "token model from Class 6"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch10_u5"
+   ],
+   "vocabulary": [
+    "term",
+    "swap",
+    "group"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Makes explicit the arithmetic laws Classes 1-6 used silently.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch02_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s2_2",
+   "officialChapterId": "ncert_gegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch02",
+    "officialSectionId": "ncert_gegp1_s2_2",
+    "printedPageStart": 35,
+    "printedPageEnd": 38,
+    "pdfPageStart": 12,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Purna evaluating 30 + 5 x 4 wrongly; Removing Brackets I; 500 - (250 - 100) rewritten; filling blanks so both sides stay equal.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     12,
+     13,
+     14,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 12,
+      "printedPage": 35,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 36,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 13 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 37,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 89 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 38,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 33 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Brackets, and removing them",
+   "mathematicalObjective": "Read bracketed expressions and remove brackets correctly.",
+   "studentCanStatement": "I can write 500 - (250 - 100) without brackets.",
+   "mathematicalIdeas": [
+    "brackets as grouping",
+    "sign change on removing a bracket after a minus",
+    "equivalent expressions"
+   ],
+   "representationsNeeded": [
+    "bracket diagrams",
+    "worked chains"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch02_u2"
+   ],
+   "vocabulary": [
+    "bracket",
+    "remove",
+    "sign"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 9,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "The first formal rule for rewriting expressions.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch02_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s2_2",
+   "officialChapterId": "ncert_gegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch02",
+    "officialSectionId": "ncert_gegp1_s2_2",
+    "printedPageStart": 39,
+    "printedPageEnd": 44,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 21,
+    "inspectedOn": "2026-10-02",
+    "establishes": "2 x (43 + 24) against 2 x 43 + 24; 5 x (4 + 3); 63 x 18 from 53 x 18; 95 x 8 and 104 x 15 by rewriting a factor.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 39,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 37 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 40,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 16 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 41,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 46 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 42,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 18 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 43,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 14 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 44,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 110 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Distributing a product over a sum",
+   "mathematicalObjective": "Use the distributive property to rewrite and evaluate products.",
+   "studentCanStatement": "I can find 63 x 18 from 53 x 18 without multiplying again.",
+   "mathematicalIdeas": [
+    "distributive property",
+    "rewriting a factor as a sum or difference",
+    "efficient evaluation"
+   ],
+   "representationsNeeded": [
+    "area pictures",
+    "worked chains"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch02_u3"
+   ],
+   "vocabulary": [
+    "distribute",
+    "times",
+    "expand"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 10,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "The distributive law stated and used as a tool.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch02_u5",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s2_2",
+   "officialChapterId": "ncert_gegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch02",
+    "officialSectionId": "ncert_gegp1_s2_2",
+    "printedPageStart": 43,
+    "printedPageEnd": 45,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Binu’s monthly saving and Melvin’s reading; identifying which expression describes a scenario; the Expression Engineer task making values from three 3s.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     20,
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 43,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 14 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 44,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 110 drawn elements: read in full text and rendered and looked at."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 45,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 7 drawn elements: read in full text and rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Expressions for situations, and Expression Engineer",
+   "mathematicalObjective": "Write an expression for a described situation and build expressions to a constraint.",
+   "studentCanStatement": "I can write the expression for Binu’s yearly saving.",
+   "mathematicalIdeas": [
+    "translating a situation into an expression",
+    "choosing between candidate expressions",
+    "constructing expressions to a constraint"
+   ],
+   "representationsNeeded": [
+    "word problems",
+    "three-3s puzzle"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch02_u4"
+   ],
+   "vocabulary": [
+    "situation",
+    "describes",
+    "construct"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "REASONING_EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 11,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Modelling with expressions, and constructing them to a constraint.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried body page rendered and looked at in the same pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision reasoning_extension_core_vs_enrichment, as it applies to the Expression Engineer task (building expressions from three 3s): core Pragati Learn at Class 7, or enrichment beside the expressions chapter?",
+   "humanJudgementPolicyKey": "reasoning_extension_core_vs_enrichment"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_1",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_1",
+    "printedPageStart": 47,
+    "printedPageEnd": 47,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Sonu watching his mother measure screws; which scale measured accurately and why; the meaning of 2 and 7 tenths cm.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 7 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 47,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 30 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "The need for smaller units",
+   "mathematicalObjective": "Explain why a unit must be subdivided to measure accurately.",
+   "studentCanStatement": "I can say why the finer scale measured the screw better.",
+   "mathematicalIdeas": [
+    "limits of whole-unit measurement",
+    "subdividing a unit",
+    "accuracy of a measurement"
+   ],
+   "representationsNeeded": [
+    "rulers at two scales",
+    "screws and pencils"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch07_u3"
+   ],
+   "vocabulary": [
+    "unit",
+    "scale",
+    "accurate"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 12,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Measurement accuracy as the reason for a new kind of number.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_2",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_2",
+    "printedPageStart": 48,
+    "printedPageEnd": 52,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The pencil of 3 and 4 tenths units; 34 one-tenths rewritten; ordering lengths; summing honeybee body parts; subtracting by splitting a unit into ten tenths.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 48,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 49,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 38 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 50,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 38 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 51,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 52,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 35 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "A tenth part",
+   "mathematicalObjective": "Read, write, order, add and subtract lengths in units and tenths.",
+   "studentCanStatement": "I can add 2 and 3 tenths to 5 and 4 tenths.",
+   "mathematicalIdeas": [
+    "one-tenth as a fractional unit",
+    "regrouping ten tenths as a unit",
+    "ordering mixed tenth quantities"
+   ],
+   "representationsNeeded": [
+    "rulers",
+    "body-part and honeybee measurements"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch03_u1"
+   ],
+   "vocabulary": [
+    "one-tenth",
+    "regroup",
+    "increasing order"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 13,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 6 fractional unit into a decimal-style place.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_3",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_3",
+    "printedPageStart": 53,
+    "printedPageEnd": 58,
+    "pdfPageStart": 8,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Measuring between markings; the folded sheet in 100 parts; identifying longest and shortest in mixed groups; sums and differences converted to hundredths.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 8,
+      "printedPage": 53,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 38 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 54,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 23 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 55,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 20 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 56,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 48 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 57,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 76 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 58,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 99 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "A hundredth part",
+   "mathematicalObjective": "Measure and compute with hundredths as well as tenths.",
+   "studentCanStatement": "I can compare 3 tenths with 33 hundredths.",
+   "mathematicalIdeas": [
+    "one-hundredth",
+    "mixed tenths and hundredths",
+    "conversion between the two"
+   ],
+   "representationsNeeded": [
+    "finely marked scales",
+    "grouped quantity lists"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch03_u2"
+   ],
+   "vocabulary": [
+    "hundredth",
+    "convert",
+    "between"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 14,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "The second subdivision, built the same way as the first.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_4",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_4",
+    "printedPageStart": 59,
+    "printedPageEnd": 64,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 19,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Splitting a unit into other numbers of parts; one-thousandth; the word decimal from decem; the point marking where units end; 705 and 7.05 compared; 234 tenths written in decimal form.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     16,
+     17,
+     18,
+     19
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 59,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 13 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 60,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 17 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 62,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 104 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 63,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 64,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 98 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Decimal place value and notation",
+   "mathematicalObjective": "Write a quantity in decimal notation and explain the point.",
+   "studentCanStatement": "I can write 234 hundredths as 2.34 and say why.",
+   "mathematicalIdeas": [
+    "decimal notation as an extension of place value",
+    "the decimal point as the units marker",
+    "thousandths"
+   ],
+   "representationsNeeded": [
+    "place value tables",
+    "expanded forms"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch03_u3"
+   ],
+   "vocabulary": [
+    "decimal point",
+    "tenths",
+    "hundredths",
+    "thousandths"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 15,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Turns the Class 6 fractional unit into the decimal system proper.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u5",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_5",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_5",
+    "printedPageStart": 65,
+    "printedPageEnd": 69,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 24,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Millimetres to centimetres; centimetres to metres; grams to kilograms; paise to rupees; the hummingbird egg and Philippine Goby facts.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     21,
+     24
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 65,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 27 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 66,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 67,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 26 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 68,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 26 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 69,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 35 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Units of measurement in decimal form",
+   "mathematicalObjective": "Convert between metric units using decimals.",
+   "studentCanStatement": "I can write 56 mm as 5.6 cm and 465 g as kilograms.",
+   "mathematicalIdeas": [
+    "metric conversion by powers of ten",
+    "decimals for length, mass and money",
+    "reading a quantity in two units"
+   ],
+   "representationsNeeded": [
+    "measuring tapes",
+    "weights",
+    "coins"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch03_u4"
+   ],
+   "vocabulary": [
+    "mm",
+    "cm",
+    "kg",
+    "paise"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "GUIDED_APPLICATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 16,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Applies decimal notation across the measurement work of Classes 5-6.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u6",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_6",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_6",
+    "printedPageStart": 70,
+    "printedPageEnd": 73,
+    "pdfPageStart": 25,
+    "pdfPageEnd": 28,
+    "inspectedOn": "2026-10-02",
+    "establishes": "1.4 located between 1 and 2; which of 4.5, 4.05, 0.405, 4.050, 4.50 are equal; comparing by the most significant digit.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     25,
+     26,
+     27,
+     28
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 25,
+      "printedPage": 70,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 102 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 71,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 23 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 72,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 72 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 73,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 63 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Locating and comparing decimals",
+   "mathematicalObjective": "Place decimals on a number line and compare them.",
+   "studentCanStatement": "I can say whether 6.456 or 6.465 is larger and why.",
+   "mathematicalIdeas": [
+    "decimal position on a subdivided number line",
+    "equal decimals written differently",
+    "comparison by most significant digit"
+   ],
+   "representationsNeeded": [
+    "number lines subdivided twice",
+    "digit tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch03_u4"
+   ],
+   "vocabulary": [
+    "between",
+    "equal",
+    "greater"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 17,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Makes decimal order a stated procedure.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u7",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_7",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_7",
+    "printedPageStart": 74,
+    "printedPageEnd": 76,
+    "pdfPageStart": 29,
+    "pdfPageEnd": 31,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Priya and Shylaja’s cloth; the detailed and compact computation for 84.691 minus 77.345; continuing decimal sequences mentally.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     30,
+     31
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 29,
+      "printedPage": 74,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 75,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 76,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 48 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Adding and subtracting decimals",
+   "mathematicalObjective": "Add and subtract decimal quantities in context.",
+   "studentCanStatement": "I can find the total cloth needed from 2.7 m and 3.5 m.",
+   "mathematicalIdeas": [
+    "place-aligned addition",
+    "subtraction with borrowing across the point",
+    "decimal sequences"
+   ],
+   "representationsNeeded": [
+    "vertical layouts",
+    "sequence strips"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch03_u4"
+   ],
+   "vocabulary": [
+    "sum",
+    "difference",
+    "align"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 18,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "First decimal arithmetic procedure.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch03_u8",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s3_8",
+   "officialChapterId": "ncert_gegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch03",
+    "officialSectionId": "ncert_gegp1_s3_8",
+    "printedPageStart": 77,
+    "printedPageEnd": 80,
+    "pdfPageStart": 32,
+    "pdfPageEnd": 35,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The Amsterdam housing-benefit error; cricket overs written as 5.5; converting given fractions to decimals; the history of decimal notation.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     33,
+     35
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 32,
+      "printedPage": 77,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 6 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 78,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 41 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 79,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 8 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": 80,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 120 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "More on the decimal system",
+   "mathematicalObjective": "Interpret decimal-looking notation critically and convert fractions to decimals.",
+   "studentCanStatement": "I can say why Overs left 5.5 does not mean 5 and a half overs.",
+   "mathematicalIdeas": [
+    "notation that looks decimal but is not",
+    "converting fractions to decimals",
+    "history of decimal notation"
+   ],
+   "representationsNeeded": [
+    "cricket scores",
+    "historical notes"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch03_u4"
+   ],
+   "vocabulary": [
+    "notation",
+    "convert",
+    "history"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 19,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Reading notation critically is a new demand.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch04_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s4_1",
+   "officialChapterId": "ncert_gegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch04",
+    "officialSectionId": "ncert_gegp1_s4_1",
+    "printedPageStart": 82,
+    "printedPageEnd": 85,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Replacing a by 23 in a + 3; letters called letter-numbers; the coconut and jaggery costs; formulas for perimeters; describing situations for given expressions.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 16 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 82,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 18 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 83,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 51 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 84,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 59 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 85,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 23 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Letter-numbers and formulas",
+   "mathematicalObjective": "Use a letter to stand for a number and write a formula.",
+   "studentCanStatement": "I can write the formula for the perimeter of a triangle.",
+   "mathematicalIdeas": [
+    "letter as a number",
+    "formula as a general relation",
+    "substituting a value"
+   ],
+   "representationsNeeded": [
+    "cost tables",
+    "perimeter figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch02_u5"
+   ],
+   "vocabulary": [
+    "letter-number",
+    "formula",
+    "substitute"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 20,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Algebra proper begins: a letter standing for any number.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch04_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s4_1",
+   "officialChapterId": "ncert_gegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch04",
+    "officialSectionId": "ncert_gegp1_s4_1",
+    "printedPageStart": 86,
+    "printedPageEnd": 90,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The nth term of the multiples of 4 written 4n; the rectangle perimeter from length and breadth; 5c + 3c + 10c collected; the two ways of finding the area of rectangle AEFD.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     8,
+     10
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 86,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 87,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 34 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 88,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 41 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 89,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 33 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 90,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 83 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Algebraic expressions and their terms",
+   "mathematicalObjective": "Write and evaluate algebraic expressions and identify like terms.",
+   "studentCanStatement": "I can simplify 5c + 3c + 10c and say why.",
+   "mathematicalIdeas": [
+    "algebraic expression",
+    "like terms",
+    "the nth term of a sequence"
+   ],
+   "representationsNeeded": [
+    "sequence tables",
+    "rectangle areas"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch04_u1"
+   ],
+   "vocabulary": [
+    "term",
+    "like terms",
+    "nth term"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 21,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Generalising a pattern with a letter, beyond Class 6 patterns.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch04_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s4_1",
+   "officialChapterId": "ncert_gegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch04",
+    "officialSectionId": "ncert_gegp1_s4_1",
+    "printedPageStart": 91,
+    "printedPageEnd": 95,
+    "pdfPageStart": 11,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-02",
+    "establishes": "(40x + 75y) - (6x + 10y); Krishita’s round scores; deciding whether two expressions are equal by testing values; the Mind the Mistake, Mend the Mistake simplifications.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     12,
+     13,
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 11,
+      "printedPage": 91,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 92,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 93,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 94,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 95,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Simplifying expressions and removing brackets",
+   "mathematicalObjective": "Simplify algebraic expressions, including with brackets.",
+   "studentCanStatement": "I can simplify 4(2r + 3s + 5) - 20.",
+   "mathematicalIdeas": [
+    "collecting like terms",
+    "removing brackets in algebra",
+    "deciding whether two expressions are equal"
+   ],
+   "representationsNeeded": [
+    "worked simplifications",
+    "Mind the Mistake spread"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch02_u3",
+    "pragati_iu_g07_ch04_u2"
+   ],
+   "vocabulary": [
+    "simplify",
+    "bracket",
+    "equal"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 22,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Carries the Class 7 bracket rules into algebra.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch04_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s4_1",
+   "officialChapterId": "ncert_gegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch04",
+    "officialSectionId": "ncert_gegp1_s4_1",
+    "printedPageStart": 96,
+    "printedPageEnd": 105,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 25,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Number machines and their formulas; design C recurring every third position; the 2 by 2 calendar square diagonals; the matchstick pattern formula; the folded rope and the four-column grid.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     17,
+     19,
+     20,
+     22,
+     24,
+     25
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 96,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 19 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 97,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 98,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 99,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 100,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 100 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 101,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 15 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 102,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 103,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 6 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 104,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 11 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 105,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 136 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Formulas for patterns",
+   "mathematicalObjective": "Find a formula for a visual or numerical pattern.",
+   "studentCanStatement": "I can write the formula for the matchsticks at any step.",
+   "mathematicalIdeas": [
+    "generalising a pattern to a formula",
+    "position-to-term rule",
+    "patterns in a calendar grid"
+   ],
+   "representationsNeeded": [
+    "matchstick patterns",
+    "calendar and column grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch04_u2"
+   ],
+   "vocabulary": [
+    "pattern",
+    "step",
+    "general rule"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 23,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Joins the chapter’s algebra to the pattern work of Classes 6-7.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 18",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
   }
  ],
  "nonInstructional": []

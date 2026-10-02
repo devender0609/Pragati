@@ -240,7 +240,13 @@ export type PragatiInstructionalUnit = {
    */
   humanJudgementPolicyKey?: string;
   /** v0.84.0 checkpoint 14 — Learn coverage of this unit by existing work. */
-  learnCoverage?: 'EXISTING_EXACT' | 'EXISTING_PARTIAL' | 'EXISTING_MULTI_UNIT' | 'NO_LEARN_CONTENT';
+  /**
+   * v0.84.0 checkpoint 18 §17 — does an authored lesson actually teach
+   * this unit? That is a question about instruction, not about how many
+   * units the lesson happens to span, so the artifact's alignment
+   * topology no longer leaks into it.
+   */
+  learnCoverage?: 'EXISTING_COMPLETE' | 'EXISTING_PARTIAL' | 'NO_LEARN_CONTENT';
   /**
    * v0.84.0 checkpoint 14 §5-§7 — the unit's relationship to what earlier
    * classes established, as a controlled value rather than a sentence
@@ -369,10 +375,35 @@ export type ArtifactAlignment = {
    */
   unitCoverageVerification?: 'VERIFIED_COMPLETE' | 'VERIFIED_PARTIAL' | 'UNVERIFIED';
   verifiedCoveredUnitIds?: string[];
+  /** The units §n of the book yields, before asking what the lesson teaches. */
+  expectedSectionUnitIds?: string[];
+  /** The units the lesson was read and found to actually teach. */
+  actualCoveredUnitIds?: string[];
   verificationNote?: string;
   missingScope: string;
   excessScope: string;
   recommendedLaterAction: string;
+};
+
+/**
+ * v0.84.0 checkpoint 18 §2 — WHAT A SECTION'S BODY ACTUALLY IS.
+ *
+ * Checkpoint 17 derived a section's state from the units that cited it,
+ * which proves the units' evidence is complete — not that the section's
+ * whole printed body was read. A section owns no RecordExtent (the
+ * chapter does), so its body span is recorded here, located from the
+ * printed heading and the next heading, with the evidence for the
+ * boundary written down. Boundary pages are shared between neighbouring
+ * sections because the book prints them that way.
+ */
+export type OfficialSectionExtent = {
+  officialSectionId: string;
+  officialChapterId: string;
+  pdfPageStart: number;
+  pdfPageEnd: number;
+  printedPageStart: number | null;
+  printedPageEnd: number | null;
+  boundaryEvidence: string;
 };
 
 export type HumanJudgementPolicy = {
@@ -389,6 +420,7 @@ type DecompositionFile = {
   overlapJustifications?: OverlapJustification[];
   humanJudgementPolicies?: HumanJudgementPolicy[];
   artifactAlignments?: ArtifactAlignment[];
+  officialSectionExtents?: OfficialSectionExtent[];
   recordExtents: RecordExtent[];
   /** Classes whose page-level pass is finished, and what remains. */
   classProgress: Array<{
@@ -472,6 +504,13 @@ export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstr
 export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
 export const RECORD_EXTENTS: RecordExtent[] = DATA.recordExtents ?? [];
 export const SOURCE_SEGMENTS: SourceSegment[] = DATA.sourceSegments ?? [];
+export const OFFICIAL_SECTION_EXTENTS: OfficialSectionExtent[] = DATA.officialSectionExtents ?? [];
+
+/** The recorded body span of one numbered section, if there is one. */
+export function sectionExtentFor(sectionId: string): OfficialSectionExtent | undefined {
+  return OFFICIAL_SECTION_EXTENTS.find((e) => e.officialSectionId === sectionId);
+}
+
 export const ARTIFACT_ALIGNMENTS: ArtifactAlignment[] = DATA.artifactAlignments ?? [];
 export const HUMAN_JUDGEMENT_POLICIES: HumanJudgementPolicy[] = DATA.humanJudgementPolicies ?? [];
 export const OVERLAP_JUSTIFICATIONS: OverlapJustification[] = DATA.overlapJustifications ?? [];
@@ -522,11 +561,42 @@ export function sectionInspectionState(
   );
   if (units.length === 0) return 'NOT_STARTED';
   if (units.some((u) => u.sourceEvidence.blockedSource)) return 'BLOCKED_SOURCE';
-  const pages = units.flatMap((u) => u.sourceEvidence.pageEvidence);
-  if (pages.length === 0) return 'NOT_STARTED';
-  const complete = pages.every(
-    (p) => p.fullTextInspected && (!p.visualInspectionRequired || p.visualInspected)
-  );
+
+  // v0.84.0 checkpoint 18 §5 — the question is whether the section's own
+  // printed body was inspected, not whether some unit citing it has tidy
+  // evidence. Without a recorded body span there is nothing to prove
+  // completeness against, so the section cannot be called complete.
+  const extent = sectionExtentFor(sectionId);
+  if (!extent) return 'PARTIALLY_INSPECTED';
+
+  // Every page of the body must be evidenced somewhere in the chapter —
+  // by a unit of this section, a neighbouring unit that shares a boundary
+  // page, or a source segment covering unnumbered material inside it.
+  const chapterEvidence = [
+    ...PRAGATI_INSTRUCTIONAL_UNITS.filter(
+      (u) => chapterOf(u) === extent.officialChapterId
+    ).map((u) => u.sourceEvidence),
+    ...SOURCE_SEGMENTS.filter(
+      (sg) => sg.sourceEvidence.officialChapterId === extent.officialChapterId
+    ).map((sg) => sg.sourceEvidence),
+  ];
+  const byPage = new Map<number, { fullTextInspected: boolean; visualInspectionRequired: boolean; visualInspected: boolean }>();
+  for (const e of chapterEvidence) for (const p of e.pageEvidence) byPage.set(p.pdfPage, p);
+
+  let complete = true;
+  for (let p = extent.pdfPageStart; p <= extent.pdfPageEnd; p += 1) {
+    const row = byPage.get(p);
+    if (!row || !row.fullTextInspected || (row.visualInspectionRequired && !row.visualInspected)) {
+      complete = false;
+    }
+  }
+  // The section's own units must also be fully evidenced: a disposition
+  // recorded against half-read pages is not a disposition.
+  const ownPages = units.flatMap((u) => u.sourceEvidence.pageEvidence);
+  if (ownPages.length === 0) complete = false;
+  if (!ownPages.every((p) => p.fullTextInspected && (!p.visualInspectionRequired || p.visualInspected))) {
+    complete = false;
+  }
   return complete ? 'FULLY_INSPECTED' : 'PARTIALLY_INSPECTED';
 }
 
@@ -539,6 +609,7 @@ export function sectionAccounting(classNumber: number): {
   rows: Array<{
     sectionId: string;
     title: string;
+    extent: OfficialSectionExtent | null;
     parentChapterId: string | null;
     unitIds: string[];
     state: string;
@@ -552,6 +623,7 @@ export function sectionAccounting(classNumber: number): {
     return {
       sectionId: r.recordId,
       title: r.title,
+      extent: sectionExtentFor(r.recordId) ?? null,
       parentChapterId: units[0] ? chapterOf(units[0]) : null,
       unitIds: units.map((u) => u.instructionalUnitId),
       state: sectionInspectionState(r.recordId),
@@ -881,9 +953,8 @@ export function inspectedOfficialRecordIds(): Set<string> {
   for (const id of officialRecordIdsTouched()) {
     if (recordInspectionState(id) === 'FULLY_INSPECTED') ids.add(id);
   }
-  // v0.84.0 checkpoint 17 §8 — numbered sections are official records too.
-  // They own no extent, so `recordInspectionState` cannot judge them and
-  // the master map called 53 inspected Class 6 sections uninspected.
+  // v0.84.0 checkpoint 17 §8 — numbered sections are official records too,
+  // judged against their own body span (checkpoint 18 §5).
   for (const n of CLASS_DECOMPOSITION_PROGRESS.map((p) => p.classNumber)) {
     for (const row of sectionAccounting(n).rows) {
       if (row.state === 'FULLY_INSPECTED') ids.add(row.sectionId);
@@ -963,8 +1034,8 @@ export function officialRecordAccounting(classNumber: number): {
   const byState = { NOT_STARTED: 0, INDEXED_ONLY: 0, PARTIALLY_INSPECTED: 0, FULLY_INSPECTED: 0, BLOCKED_SOURCE: 0, NEEDS_HUMAN_CHECK: 0 };
   for (const r of records) {
     // A numbered section has no page extent of its own — the chapter owns
-    // it — so its state comes from the units that cite it and their
-    // evidence, by the same rules a chapter's state comes from.
+    // it — so its state comes from its recorded body span and the evidence
+    // covering that span.
     const state = r.level === 'section' ? sectionInspectionState(r.recordId) : recordInspectionState(r.recordId);
     byState[state] += 1;
   }

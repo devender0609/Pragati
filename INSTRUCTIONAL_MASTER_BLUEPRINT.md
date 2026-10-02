@@ -15,7 +15,7 @@ early-primary mathematics usually needs. A unit is authoring-ready only
 when its whole range is full text and, where the mathematics lives in the
 visuals, those pages were seen.
 
-**Read so far:** Class 1, Class 2, Class 3, Class 4, Class 5, Class 6. Every other class is
+**Read so far:** Class 1, Class 2, Class 3, Class 4, Class 5, Class 6, Class 7. Every other class is
 NOT STARTED — its unit count is unknown, not zero.
 
 | Class | Official chapters | Official sections | Pages (indexed / full text / visual) | Pragati units drafted | Ready for authoring | Needs human check | Blocked | Existing Learn mapped | Missing Learn | Decomposition |
@@ -26,7 +26,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 7 | 15 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
+| Class 7 | 15 | 65 | 511 indexed / 174 full text / 74 visual | 23 | 22 | 1 | 0 | 0 | 23 | IN_PROGRESS |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -5939,6 +5939,378 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Ganita Prakash numbers its sections; the official section is the source record and this unit is one lesson-sized objective inside it.
+
+## Class 7
+
+Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against their own body ranges. Pages: 174 of 511 read in full text; among those, 74 are picture-carried and 74 have been rendered and looked at. The visual requirement of the 337 unread pages is not yet determined.
+
+#### One lakh, and how big it is
+
+- **Id** `pragati_iu_g07_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s1_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** gegp1 Part I, printed pp. 2–5 (PDF pp. 1–5), read 2026-10-02. Establishes: Eshwarappa buying seed; the largest 3-, 4- and 5-digit numbers; how much is one lakh; Roxie and Estu arguing whether a lakh is large or small; writing numbers in the Indian system.
+- **Objective** Read, write and build five- and six-digit numbers and judge the size of a lakh.
+- **Student can** I can say how much less than one lakh 75,000 is.
+- **Mathematical ideas** a lakh as 100 thousands; Indian place value to six digits; judging whether a number is large in context
+- **Representations** place value charts; market and census contexts
+- **Prerequisites** pragati_iu_g05_ch01_u1
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Land of Tens: building numbers by powers of ten
+
+- **Id** `pragati_iu_g07_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s1_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7, 8, 9
+- **Source** gegp1 Part I, printed pp. 5–9 (PDF pp. 5–9), read 2026-10-02. Establishes: The Thousands, Tens and Hundreds machines; making given numbers in the fewest clicks; pressing the ten-lakh button ten times and naming the result; placing commas to read 9876501234.
+- **Objective** Compose numbers by repeated presses of powers of ten and name the result.
+- **Student can** I can make 97,600 with the fewest button presses and say how many.
+- **Mathematical ideas** powers of ten as building blocks; minimal decomposition of a number; naming ten lakh and above
+- **Representations** button-press machine; place value tables
+- **Prerequisites** pragati_iu_g07_ch01_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Crores, and the Indian and American systems
+
+- **Id** `pragati_iu_g07_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s1_3`
+- **Evidence depth** FULL_PAGE_INSPECTED
+- **Source** gegp1 Part I, printed pp. 9–10 (PDF pp. 9–10), read 2026-10-02. Establishes: The Indian and American naming tables side by side; writing the same number in both; how many thousands make a lakh and lakhs a crore.
+- **Objective** Read and write numbers in crores and compare the two naming systems.
+- **Student can** I can write a ten-digit number with commas in both systems.
+- **Mathematical ideas** crore and arab; million and billion; two comma conventions for one number
+- **Representations** comparison table; large-number headlines
+- **Prerequisites** pragati_iu_g07_ch01_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Exact and approximate values, and nearest neighbours
+
+- **Id** `pragati_iu_g07_ch01_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s1_4`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12, 13
+- **Source** gegp1 Part I, printed pp. 10–13 (PDF pp. 10–13), read 2026-10-02. Establishes: Headlines using approximate figures; the nearest thousand, ten thousand, lakh, ten lakh and crore of a number; the city population table across two censuses.
+- **Objective** Round a large number to its nearest thousand, lakh or crore and judge when an estimate is enough.
+- **Student can** I can give the five nearest neighbours of 3,87,69,957.
+- **Mathematical ideas** rounding to a chosen place; nearest neighbours of a number; when an approximation is appropriate
+- **Representations** number lines; population tables
+- **Prerequisites** pragati_iu_g05_ch01_u3
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Patterns in products, and multiplication shortcuts
+
+- **Id** `pragati_iu_g07_ch01_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s1_5`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15
+- **Source** gegp1 Part I, printed pp. 14–15 (PDF pp. 14–15), read 2026-10-02. Establishes: Estu evaluating 824 x 25 as 824 x 100 ÷ 4; the connection between the digit counts of the factors and of the product.
+- **Objective** Use the structure of a product to multiply and divide efficiently.
+- **Student can** I can work out 824 x 25 by using 100 ÷ 4.
+- **Mathematical ideas** rewriting a factor to simplify a product; digit count of a product; division as the inverse route
+- **Representations** worked chains; digit-count tables
+- **Prerequisites** pragati_iu_g05_ch04_u4
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Large numbers in the world
+
+- **Id** `pragati_iu_g07_ch01_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s1_6`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 18, 19, 20, 21
+- **Source** gegp1 Part I, printed pp. 16–20 (PDF pp. 16–21), read 2026-10-02. Establishes: The Earth-Sun distance, litres of blood, blue whale weights and the Mumbai population comparisons; the number-card task reaching given targets.
+- **Objective** Estimate and interpret very large quantities in real contexts.
+- **Student can** I can work out how many blue whales weigh as much as this.
+- **Mathematical ideas** orders of magnitude in context; estimation with crores; interpreting a computed large number
+- **Representations** fact cards; estimation chains
+- **Prerequisites** pragati_iu_g07_ch01_u4
+- **Role** GUIDED_APPLICATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Arithmetic expressions and their value
+
+- **Id** `pragati_iu_g07_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s2_1`
+- **Evidence depth** FULL_PAGE_INSPECTED
+- **Source** gegp1 Part I, printed pp. 25–26 (PDF pp. 1–3), read 2026-10-02. Establishes: Phrases such as 13 + 2 and 20 - 4 named arithmetic expressions; every expression having a value; comparing 245 + 289 with 246 + 285 by reasoning.
+- **Objective** Read an arithmetic expression, find its value and compare two expressions.
+- **Student can** I can say which of two expressions is greater without calculating both.
+- **Mathematical ideas** expression as a mathematical phrase; value of an expression; comparing by structure rather than computation
+- **Representations** expression strips; comparison statements
+- **Prerequisites** pragati_iu_g06_ch10_u8
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Terms, swapping and grouping
+
+- **Id** `pragati_iu_g07_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s2_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6, 7, 8, 9, 10, 11
+- **Source** gegp1 Part I, printed pp. 27–34 (PDF pp. 4–11), read 2026-10-02. Establishes: 30 + 5 x 4 read as terms; expressions written as the sum of their terms; swapping terms and grouping them; the token model used to justify it; the socks-and-shoes counterexample for order.
+- **Objective** Write an expression as a sum of its terms and reorder or regroup them.
+- **Student can** I can write 13 - 2 + 6 as a sum of terms and swap them safely.
+- **Mathematical ideas** term; subtraction rewritten as adding a negative; commutativity and associativity over terms
+- **Representations** term boxes; token model from Class 6
+- **Prerequisites** pragati_iu_g06_ch10_u5
+- **Role** FORMALIZATION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Brackets, and removing them
+
+- **Id** `pragati_iu_g07_ch02_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s2_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14, 15
+- **Source** gegp1 Part I, printed pp. 35–38 (PDF pp. 12–15), read 2026-10-02. Establishes: Purna evaluating 30 + 5 x 4 wrongly; Removing Brackets I; 500 - (250 - 100) rewritten; filling blanks so both sides stay equal.
+- **Objective** Read bracketed expressions and remove brackets correctly.
+- **Student can** I can write 500 - (250 - 100) without brackets.
+- **Mathematical ideas** brackets as grouping; sign change on removing a bracket after a minus; equivalent expressions
+- **Representations** bracket diagrams; worked chains
+- **Prerequisites** pragati_iu_g07_ch02_u2
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Distributing a product over a sum
+
+- **Id** `pragati_iu_g07_ch02_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s2_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 18, 19, 20, 21
+- **Source** gegp1 Part I, printed pp. 39–44 (PDF pp. 16–21), read 2026-10-02. Establishes: 2 x (43 + 24) against 2 x 43 + 24; 5 x (4 + 3); 63 x 18 from 53 x 18; 95 x 8 and 104 x 15 by rewriting a factor.
+- **Objective** Use the distributive property to rewrite and evaluate products.
+- **Student can** I can find 63 x 18 from 53 x 18 without multiplying again.
+- **Mathematical ideas** distributive property; rewriting a factor as a sum or difference; efficient evaluation
+- **Representations** area pictures; worked chains
+- **Prerequisites** pragati_iu_g07_ch02_u3
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Expressions for situations, and Expression Engineer
+
+- **Id** `pragati_iu_g07_ch02_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s2_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 22
+- **Source** gegp1 Part I, printed pp. 43–45 (PDF pp. 20–22), read 2026-10-02. Establishes: Binu’s monthly saving and Melvin’s reading; identifying which expression describes a scenario; the Expression Engineer task making values from three 3s.
+- **Objective** Write an expression for a described situation and build expressions to a constraint.
+- **Student can** I can write the expression for Binu’s yearly saving.
+- **Mathematical ideas** translating a situation into an expression; choosing between candidate expressions; constructing expressions to a constraint
+- **Representations** word problems; three-3s puzzle
+- **Prerequisites** pragati_iu_g07_ch02_u4
+- **Role** REASONING_EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### The need for smaller units
+
+- **Id** `pragati_iu_g07_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_1`
+- **Evidence depth** FULL_PAGE_INSPECTED
+- **Source** gegp1 Part I, printed pp. 47–47 (PDF pp. 1–2), read 2026-10-02. Establishes: Sonu watching his mother measure screws; which scale measured accurately and why; the meaning of 2 and 7 tenths cm.
+- **Objective** Explain why a unit must be subdivided to measure accurately.
+- **Student can** I can say why the finer scale measured the screw better.
+- **Mathematical ideas** limits of whole-unit measurement; subdividing a unit; accuracy of a measurement
+- **Representations** rulers at two scales; screws and pencils
+- **Prerequisites** pragati_iu_g06_ch07_u3
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### A tenth part
+
+- **Id** `pragati_iu_g07_ch03_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7
+- **Source** gegp1 Part I, printed pp. 48–52 (PDF pp. 3–7), read 2026-10-02. Establishes: The pencil of 3 and 4 tenths units; 34 one-tenths rewritten; ordering lengths; summing honeybee body parts; subtracting by splitting a unit into ten tenths.
+- **Objective** Read, write, order, add and subtract lengths in units and tenths.
+- **Student can** I can add 2 and 3 tenths to 5 and 4 tenths.
+- **Mathematical ideas** one-tenth as a fractional unit; regrouping ten tenths as a unit; ordering mixed tenth quantities
+- **Representations** rulers; body-part and honeybee measurements
+- **Prerequisites** pragati_iu_g07_ch03_u1
+- **Role** EXTENSION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### A hundredth part
+
+- **Id** `pragati_iu_g07_ch03_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11, 12, 13
+- **Source** gegp1 Part I, printed pp. 53–58 (PDF pp. 8–13), read 2026-10-02. Establishes: Measuring between markings; the folded sheet in 100 parts; identifying longest and shortest in mixed groups; sums and differences converted to hundredths.
+- **Objective** Measure and compute with hundredths as well as tenths.
+- **Student can** I can compare 3 tenths with 33 hundredths.
+- **Mathematical ideas** one-hundredth; mixed tenths and hundredths; conversion between the two
+- **Representations** finely marked scales; grouped quantity lists
+- **Prerequisites** pragati_iu_g07_ch03_u2
+- **Role** EXTENSION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Decimal place value and notation
+
+- **Id** `pragati_iu_g07_ch03_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_4`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 16, 17, 18, 19
+- **Source** gegp1 Part I, printed pp. 59–64 (PDF pp. 14–19), read 2026-10-02. Establishes: Splitting a unit into other numbers of parts; one-thousandth; the word decimal from decem; the point marking where units end; 705 and 7.05 compared; 234 tenths written in decimal form.
+- **Objective** Write a quantity in decimal notation and explain the point.
+- **Student can** I can write 234 hundredths as 2.34 and say why.
+- **Mathematical ideas** decimal notation as an extension of place value; the decimal point as the units marker; thousandths
+- **Representations** place value tables; expanded forms
+- **Prerequisites** pragati_iu_g07_ch03_u3
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Units of measurement in decimal form
+
+- **Id** `pragati_iu_g07_ch03_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_5`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 24
+- **Source** gegp1 Part I, printed pp. 65–69 (PDF pp. 20–24), read 2026-10-02. Establishes: Millimetres to centimetres; centimetres to metres; grams to kilograms; paise to rupees; the hummingbird egg and Philippine Goby facts.
+- **Objective** Convert between metric units using decimals.
+- **Student can** I can write 56 mm as 5.6 cm and 465 g as kilograms.
+- **Mathematical ideas** metric conversion by powers of ten; decimals for length, mass and money; reading a quantity in two units
+- **Representations** measuring tapes; weights; coins
+- **Prerequisites** pragati_iu_g07_ch03_u4
+- **Role** GUIDED_APPLICATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Locating and comparing decimals
+
+- **Id** `pragati_iu_g07_ch03_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_6`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 25, 26, 27, 28
+- **Source** gegp1 Part I, printed pp. 70–73 (PDF pp. 25–28), read 2026-10-02. Establishes: 1.4 located between 1 and 2; which of 4.5, 4.05, 0.405, 4.050, 4.50 are equal; comparing by the most significant digit.
+- **Objective** Place decimals on a number line and compare them.
+- **Student can** I can say whether 6.456 or 6.465 is larger and why.
+- **Mathematical ideas** decimal position on a subdivided number line; equal decimals written differently; comparison by most significant digit
+- **Representations** number lines subdivided twice; digit tables
+- **Prerequisites** pragati_iu_g07_ch03_u4
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Adding and subtracting decimals
+
+- **Id** `pragati_iu_g07_ch03_u7` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_7`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 30, 31
+- **Source** gegp1 Part I, printed pp. 74–76 (PDF pp. 29–31), read 2026-10-02. Establishes: Priya and Shylaja’s cloth; the detailed and compact computation for 84.691 minus 77.345; continuing decimal sequences mentally.
+- **Objective** Add and subtract decimal quantities in context.
+- **Student can** I can find the total cloth needed from 2.7 m and 3.5 m.
+- **Mathematical ideas** place-aligned addition; subtraction with borrowing across the point; decimal sequences
+- **Representations** vertical layouts; sequence strips
+- **Prerequisites** pragati_iu_g07_ch03_u4
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### More on the decimal system
+
+- **Id** `pragati_iu_g07_ch03_u8` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s3_8`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 33, 35
+- **Source** gegp1 Part I, printed pp. 77–80 (PDF pp. 32–35), read 2026-10-02. Establishes: The Amsterdam housing-benefit error; cricket overs written as 5.5; converting given fractions to decimals; the history of decimal notation.
+- **Objective** Interpret decimal-looking notation critically and convert fractions to decimals.
+- **Student can** I can say why Overs left 5.5 does not mean 5 and a half overs.
+- **Mathematical ideas** notation that looks decimal but is not; converting fractions to decimals; history of decimal notation
+- **Representations** cricket scores; historical notes
+- **Prerequisites** pragati_iu_g07_ch03_u4
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Letter-numbers and formulas
+
+- **Id** `pragati_iu_g07_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s4_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4
+- **Source** gegp1 Part I, printed pp. 82–85 (PDF pp. 1–5), read 2026-10-02. Establishes: Replacing a by 23 in a + 3; letters called letter-numbers; the coconut and jaggery costs; formulas for perimeters; describing situations for given expressions.
+- **Objective** Use a letter to stand for a number and write a formula.
+- **Student can** I can write the formula for the perimeter of a triangle.
+- **Mathematical ideas** letter as a number; formula as a general relation; substituting a value
+- **Representations** cost tables; perimeter figures
+- **Prerequisites** pragati_iu_g07_ch02_u5
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Algebraic expressions and their terms
+
+- **Id** `pragati_iu_g07_ch04_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s4_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 10
+- **Source** gegp1 Part I, printed pp. 86–90 (PDF pp. 6–10), read 2026-10-02. Establishes: The nth term of the multiples of 4 written 4n; the rectangle perimeter from length and breadth; 5c + 3c + 10c collected; the two ways of finding the area of rectangle AEFD.
+- **Objective** Write and evaluate algebraic expressions and identify like terms.
+- **Student can** I can simplify 5c + 3c + 10c and say why.
+- **Mathematical ideas** algebraic expression; like terms; the nth term of a sequence
+- **Representations** sequence tables; rectangle areas
+- **Prerequisites** pragati_iu_g07_ch04_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Simplifying expressions and removing brackets
+
+- **Id** `pragati_iu_g07_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s4_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14
+- **Source** gegp1 Part I, printed pp. 91–95 (PDF pp. 11–15), read 2026-10-02. Establishes: (40x + 75y) - (6x + 10y); Krishita’s round scores; deciding whether two expressions are equal by testing values; the Mind the Mistake, Mend the Mistake simplifications.
+- **Objective** Simplify algebraic expressions, including with brackets.
+- **Student can** I can simplify 4(2r + 3s + 5) - 20.
+- **Mathematical ideas** collecting like terms; removing brackets in algebra; deciding whether two expressions are equal
+- **Representations** worked simplifications; Mind the Mistake spread
+- **Prerequisites** pragati_iu_g07_ch02_u3; pragati_iu_g07_ch04_u2
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Formulas for patterns
+
+- **Id** `pragati_iu_g07_ch04_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s4_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 19, 20, 22, 24, 25
+- **Source** gegp1 Part I, printed pp. 96–105 (PDF pp. 16–25), read 2026-10-02. Establishes: Number machines and their formulas; design C recurring every third position; the 2 by 2 calendar square diagonals; the matchstick pattern formula; the folded rope and the four-column grid.
+- **Objective** Find a formula for a visual or numerical pattern.
+- **Student can** I can write the formula for the matchsticks at any step.
+- **Mathematical ideas** generalising a pattern to a formula; position-to-term rule; patterns in a calendar grid
+- **Representations** matchstick patterns; calendar and column grids
+- **Prerequisites** pragati_iu_g07_ch04_u2
+- **Role** INTEGRATION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
 
 ## Records read and found non-instructional
 

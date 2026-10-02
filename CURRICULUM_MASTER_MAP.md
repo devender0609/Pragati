@@ -244,31 +244,31 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_gegp1_ch01 | chapter | 1 | Large Numbers Around Us | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_ch02 | chapter | 2 | Arithmetic Expressions | 24 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_ch03 | chapter | 3 | A Peek Beyond the Point | 46 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_ch04 | chapter | 4 | Expressions using Letter-Numbers | 81 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch01 | chapter | 1 | Large Numbers Around Us | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch02 | chapter | 2 | Arithmetic Expressions | 24 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch03 | chapter | 3 | A Peek Beyond the Point | 46 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch04 | chapter | 4 | Expressions using Letter-Numbers | 81 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch05 | chapter | 5 | Parallel and Intersecting Lines | 106 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch06 | chapter | 6 | Number Play | 127 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch07 | chapter | 7 | A Tale of Three Intersecting Lines | 146 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch08 | chapter | 8 | Working with Fractions | 173 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s1_1 | section | 1.1 | A Lakh Varieties! | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s1_2 | section | 1.2 | Land of Tens | 5 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s1_3 | section | 1.3 | Of Crores and Crores! | 8 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s1_4 | section | 1.4 | Exact and Approximate Values | 9 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s1_5 | section | 1.5 | Patterns in Products | 13 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s1_6 | section | 1.6 | Did You Ever Wonder…? | 18 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s2_1 | section | 2.1 | Simple Expressions | 24 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s2_2 | section | 2.2 | Reading and Evaluating Complex Expressions | 26 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_1 | section | 3.1 | The Need for Smaller Units | 46 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_2 | section | 3.2 | A Tenth Part | 48 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_3 | section | 3.3 | A Hundredth Part | 52 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_4 | section | 3.4 | Decimal Place Value | 58 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_5 | section | 3.5 | Units of Measurement | 64 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_6 | section | 3.6 | Locating and Comparing Decimals | 69 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_7 | section | 3.7 | Addition and Subtraction of Decimals | 74 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s3_8 | section | 3.8 | More on the Decimal System | 76 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s4_1 | section | 4.1 | The Notion of Letter-Numbers | 81 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s1_1 | section | 1.1 | A Lakh Varieties! | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s1_2 | section | 1.2 | Land of Tens | 5 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s1_3 | section | 1.3 | Of Crores and Crores! | 8 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s1_4 | section | 1.4 | Exact and Approximate Values | 9 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s1_5 | section | 1.5 | Patterns in Products | 13 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s1_6 | section | 1.6 | Did You Ever Wonder…? | 18 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s2_1 | section | 2.1 | Simple Expressions | 24 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s2_2 | section | 2.2 | Reading and Evaluating Complex Expressions | 26 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_1 | section | 3.1 | The Need for Smaller Units | 46 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_2 | section | 3.2 | A Tenth Part | 48 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_3 | section | 3.3 | A Hundredth Part | 52 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_4 | section | 3.4 | Decimal Place Value | 58 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_5 | section | 3.5 | Units of Measurement | 64 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_6 | section | 3.6 | Locating and Comparing Decimals | 69 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_7 | section | 3.7 | Addition and Subtraction of Decimals | 74 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s3_8 | section | 3.8 | More on the Decimal System | 76 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s4_1 | section | 4.1 | The Notion of Letter-Numbers | 81 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s4_2 | section | 4.2 | Revisiting Arithmetic Expressions | 85 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s4_3 | section | 4.3 | Omission of the Multiplication Symbol in Algebraic Expressions | 86 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s4_4 | section | 4.4 | Simplification of Algebraic Expressions | 87 | not inspected | missing | missing | not_started | unpublished |  |
