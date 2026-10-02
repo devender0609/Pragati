@@ -1727,3 +1727,115 @@ describe('Class 7 structure and evidence', () => {
     expect(p7().pagesFullTextPending).toBeGreaterThan(0);
   });
 });
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 19 §1-§11 — SECTION BOUNDARIES ARE FOUND, NOT GUESSED.
+//
+// Checkpoint 18 stored 63 of Class 7's 65 section extents (§4.3 and §7.3 were
+// missed by the heading parser), and all four Chapter 4 units were attributed
+// to §4.1 while §4.2-§4.5 sat NOT_STARTED inside a chapter reported as fully
+// inspected.
+// ---------------------------------------------------------------------------
+
+describe('§6-§7 every official section has exactly one extent', () => {
+  const c7Extents = () => OFFICIAL_SECTION_EXTENTS.filter((e) => e.officialSectionId.startsWith('ncert_gegp'));
+
+  it('matches the master map section ids exactly, with no gaps or extras', () => {
+    const official = new Set(authoringUnits(7).map((r) => r.recordId));
+    const extents = c7Extents();
+    expect(official.size).toBe(65);
+    expect(extents.length).toBe(65);
+    expect(new Set(extents.map((e) => e.officialSectionId))).toEqual(official);
+    // §4.3 and §7.3 are the two the parser missed; name them so a silent
+    // regression cannot pass.
+    for (const id of ['ncert_gegp1_s4_3', 'ncert_gegp1_s7_3']) {
+      expect(sectionExtentFor(id), id).toBeDefined();
+    }
+  });
+
+  it('keeps every section body inside its parent chapter', () => {
+    for (const e of c7Extents()) {
+      const chapter = RECORD_EXTENTS.find((x) => x.officialRecordId === e.officialChapterId);
+      expect(chapter, `${e.officialSectionId} → ${e.officialChapterId}`).toBeDefined();
+      expect(e.pdfPageStart).toBeGreaterThanOrEqual(chapter!.pdfPageStart);
+      expect(e.pdfPageEnd).toBeLessThanOrEqual(chapter!.pdfPageEnd);
+      expect(e.pdfPageEnd).toBeGreaterThanOrEqual(e.pdfPageStart);
+      expect(e.boundaryEvidence.length, e.officialSectionId).toBeGreaterThan(40);
+      // The section number and its chapter must agree.
+      const n = e.officialSectionId.match(/_s(\d+)_/)![1];
+      expect(e.officialChapterId.endsWith(n.padStart(2, '0'))).toBe(true);
+    }
+  });
+
+  it('runs sections in order within a chapter, as the book prints them', () => {
+    const byChapter = new Map<string, Array<{ num: number; start: number }>>();
+    for (const e of c7Extents()) {
+      const num = Number(e.officialSectionId.split('_').pop());
+      const list = byChapter.get(e.officialChapterId) ?? [];
+      list.push({ num, start: e.pdfPageStart });
+      byChapter.set(e.officialChapterId, list);
+    }
+    for (const [chapter, list] of byChapter) {
+      list.sort((a, b) => a.num - b.num);
+      for (let i = 1; i < list.length; i += 1) {
+        // A later section may begin on the same page as the previous one
+        // ends, but never before it.
+        expect(list[i].start, `${chapter} §${list[i].num}`).toBeGreaterThanOrEqual(list[i - 1].start);
+      }
+    }
+  });
+
+  it('will not let an unverified range establish completion', () => {
+    const verified = c7Extents().filter((e) => e.boundaryStatus === 'VERIFIED_FROM_SOURCE');
+    for (const e of c7Extents()) {
+      if (e.boundaryStatus === 'PROVISIONAL_DETECTED') {
+        expect(sectionInspectionState(e.officialSectionId), e.officialSectionId).not.toBe('FULLY_INSPECTED');
+      }
+    }
+    for (const id of sectionAccounting(7).fullyInspected) {
+      expect(sectionExtentFor(id)!.boundaryStatus, id).toBe('VERIFIED_FROM_SOURCE');
+    }
+    expect(verified.length).toBeGreaterThan(0);
+  });
+});
+
+describe('§3 and §26 every section of a read chapter is dispositioned', () => {
+  it('leaves no official section unaccounted inside a decomposed chapter', () => {
+    const decomposed = new Set(unitsForClass(7).map((u) => u.officialChapterId!));
+    const cited = new Set<string>();
+    for (const u of unitsForClass(7)) {
+      cited.add(u.officialRecordId);
+      for (const extra of u.additionalOfficialRecordIds) cited.add(extra);
+    }
+    for (const chapter of decomposed) {
+      const sections = OFFICIAL_SECTION_EXTENTS.filter((e) => e.officialChapterId === chapter);
+      for (const s of sections) {
+        expect(cited.has(s.officialSectionId), `${chapter}: ${s.officialSectionId} has no unit`).toBe(true);
+      }
+    }
+  });
+
+  it('spreads Chapter 4 across its five sections instead of piling them on §4.1', () => {
+    const ch4 = unitsForClass(7).filter((u) => u.officialChapterId === 'ncert_gegp1_ch04');
+    const cited = new Set(ch4.flatMap((u) => [u.officialRecordId, ...u.additionalOfficialRecordIds]));
+    for (const n of [1, 2, 3, 4, 5]) expect(cited.has(`ncert_gegp1_s4_${n}`), `§4.${n}`).toBe(true);
+    // Not every unit may claim the first section.
+    expect(new Set(ch4.map((u) => u.officialRecordId)).size).toBeGreaterThan(1);
+    for (const u of ch4) {
+      if (u.additionalOfficialRecordIds.length > 0) {
+        expect((u.mergeRelationship ?? '').length, u.instructionalUnitId).toBeGreaterThan(60);
+      }
+    }
+  });
+
+  it('places each unit inside the body of the section it claims', () => {
+    for (const u of unitsForClass(7)) {
+      const e = sectionExtentFor(u.officialRecordId)!;
+      const all = [e, ...u.additionalOfficialRecordIds.map((id) => sectionExtentFor(id)!)];
+      const lo = Math.min(...all.map((x) => x.pdfPageStart));
+      const hi = Math.max(...all.map((x) => x.pdfPageEnd));
+      expect(u.sourceEvidence.pdfPageStart, u.instructionalUnitId).toBeGreaterThanOrEqual(lo);
+      expect(u.sourceEvidence.pdfPageStart, u.instructionalUnitId).toBeLessThanOrEqual(hi);
+    }
+  });
+});

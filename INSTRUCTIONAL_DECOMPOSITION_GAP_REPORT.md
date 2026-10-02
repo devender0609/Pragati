@@ -16,7 +16,7 @@ does not make it so.
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 7 | 15 | 65 | 511 indexed / 174 full text / 74 visual | 23 | 22 | 1 | 0 | 0 | 23 | IN_PROGRESS |
+| Class 7 | 15 | 65 | 511 indexed / 240 full text / 107 visual | 32 | 31 | 1 | 0 | 0 | 32 | IN_PROGRESS |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -30,24 +30,6 @@ was inspected and judged to produce none. A practice or reference segment
 inside a chapter does not answer this question — it accounts for its own
 pages, not for the chapter's teaching.
 
-- ncert_gegp1_s4_2 — Revisiting Arithmetic Expressions
-- ncert_gegp1_s4_3 — Omission of the Multiplication Symbol in Algebraic Expressions
-- ncert_gegp1_s4_4 — Simplification of Algebraic Expressions
-- ncert_gegp1_s4_5 — Pick Patterns and Reveal Relationships
-- ncert_gegp1_s5_1 — Across the Line
-- ncert_gegp1_s5_2 — Perpendicular Lines
-- ncert_gegp1_s5_3 — Between Lines
-- ncert_gegp1_s5_4 — Parallel and Perpendicular Lines in Paper Folding
-- ncert_gegp1_s5_5 — Transversals
-- ncert_gegp1_s5_6 — Corresponding Angles
-- ncert_gegp1_s5_7 — Drawing Parallel Lines
-- ncert_gegp1_s5_8 — Alternate Angles
-- ncert_gegp1_s5_9 — Parallel Illusions
-- ncert_gegp1_s6_1 — Numbers Tell us Things
-- ncert_gegp1_s6_2 — Picking Parity
-- ncert_gegp1_s6_3 — Some Explorations in Grids
-- ncert_gegp1_s6_4 — Nature’s Favourite Sequence: The Virahāṅka–Fibonacci Numbers!
-- ncert_gegp1_s6_5 — Digits in Disguise
 - ncert_gegp1_s7_1 — Equilateral Triangles
 - ncert_gegp1_s7_2 — Constructing a Triangle When its Sides are Given
 - ncert_gegp1_s7_3 — Construction of Triangles When Some Sides and Angles are Given

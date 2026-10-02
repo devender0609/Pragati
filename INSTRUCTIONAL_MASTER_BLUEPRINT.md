@@ -26,7 +26,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 7 | 15 | 65 | 511 indexed / 174 full text / 74 visual | 23 | 22 | 1 | 0 | 0 | 23 | IN_PROGRESS |
+| Class 7 | 15 | 65 | 511 indexed / 240 full text / 107 visual | 32 | 31 | 1 | 0 | 0 | 32 | IN_PROGRESS |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -5942,7 +5942,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 
 ## Class 7
 
-Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against their own body ranges. Pages: 174 of 511 read in full text; among those, 74 are picture-carried and 74 have been rendered and looked at. The visual requirement of the 337 unread pages is not yet determined.
+Chapters: 6 of 15 fully inspected. Sections: 35 of 65 accounted for against verified body ranges; all 65 have a recorded extent, 35 of them verified from inspected pages and the rest provisional. Pages: 240 of 511 read in full text; among those, 107 are picture-carried and 107 have been rendered and looked at. The visual requirement of the 271 unread pages is not yet determined.
 
 #### One lakh, and how big it is
 
@@ -6027,7 +6027,7 @@ Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against thei
 #### Large numbers in the world
 
 - **Id** `pragati_iu_g07_ch01_u6` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gegp1_s1_6`
+- **Serves** `ncert_gegp1_s1_6` (also ncert_gegp1_s1_5)
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 18, 19, 20, 21
 - **Source** gegp1 Part I, printed pp. 16–20 (PDF pp. 16–21), read 2026-10-02. Establishes: The Earth-Sun distance, litres of blood, blue whale weights and the Mumbai population comparisons; the number-card task reaching given targets.
 - **Objective** Estimate and interpret very large quantities in real contexts.
@@ -6059,7 +6059,7 @@ Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against thei
 #### Terms, swapping and grouping
 
 - **Id** `pragati_iu_g07_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gegp1_s2_1`
+- **Serves** `ncert_gegp1_s2_2`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5, 6, 7, 8, 9, 10, 11
 - **Source** gegp1 Part I, printed pp. 27–34 (PDF pp. 4–11), read 2026-10-02. Establishes: 30 + 5 x 4 read as terms; expressions written as the sum of their terms; swapping terms and grouping them; the token model used to justify it; the socks-and-shoes counterexample for order.
 - **Objective** Write an expression as a sum of its terms and reorder or regroup them.
@@ -6251,7 +6251,7 @@ Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against thei
 #### Letter-numbers and formulas
 
 - **Id** `pragati_iu_g07_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gegp1_s4_1`
+- **Serves** `ncert_gegp1_s4_1` (also ncert_gegp1_s4_2)
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4
 - **Source** gegp1 Part I, printed pp. 82–85 (PDF pp. 1–5), read 2026-10-02. Establishes: Replacing a by 23 in a + 3; letters called letter-numbers; the coconut and jaggery costs; formulas for perimeters; describing situations for given expressions.
 - **Objective** Use a letter to stand for a number and write a formula.
@@ -6267,7 +6267,7 @@ Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against thei
 #### Algebraic expressions and their terms
 
 - **Id** `pragati_iu_g07_ch04_u2` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gegp1_s4_1`
+- **Serves** `ncert_gegp1_s4_4` (also ncert_gegp1_s4_3)
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 10
 - **Source** gegp1 Part I, printed pp. 86–90 (PDF pp. 6–10), read 2026-10-02. Establishes: The nth term of the multiples of 4 written 4n; the rectangle perimeter from length and breadth; 5c + 3c + 10c collected; the two ways of finding the area of rectangle AEFD.
 - **Objective** Write and evaluate algebraic expressions and identify like terms.
@@ -6283,7 +6283,7 @@ Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against thei
 #### Simplifying expressions and removing brackets
 
 - **Id** `pragati_iu_g07_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gegp1_s4_1`
+- **Serves** `ncert_gegp1_s4_4`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 12, 13, 14
 - **Source** gegp1 Part I, printed pp. 91–95 (PDF pp. 11–15), read 2026-10-02. Establishes: (40x + 75y) - (6x + 10y); Krishita’s round scores; deciding whether two expressions are equal by testing values; the Mind the Mistake, Mend the Mistake simplifications.
 - **Objective** Simplify algebraic expressions, including with brackets.
@@ -6299,7 +6299,7 @@ Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against thei
 #### Formulas for patterns
 
 - **Id** `pragati_iu_g07_ch04_u4` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_gegp1_s4_1`
+- **Serves** `ncert_gegp1_s4_5`
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 17, 19, 20, 22, 24, 25
 - **Source** gegp1 Part I, printed pp. 96–105 (PDF pp. 16–25), read 2026-10-02. Establishes: Number machines and their formulas; design C recurring every third position; the 2 by 2 calendar square diagonals; the matchstick pattern formula; the folded rope and the four-column grid.
 - **Objective** Find a formula for a visual or numerical pattern.
@@ -6308,6 +6308,150 @@ Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against thei
 - **Representations** matchstick patterns; calendar and column grids
 - **Prerequisites** pragati_iu_g07_ch04_u2
 - **Role** INTEGRATION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Intersecting lines, vertically opposite angles and perpendiculars
+
+- **Id** `pragati_iu_g07_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s5_1` (also ncert_gegp1_s5_2, ncert_gegp1_s5_3)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 4, 5
+- **Source** gegp1 Part I, printed pp. 107–111 (PDF pp. 1–6), read 2026-10-02. Establishes: Folding a square sheet and drawing lines on the creases; whether two lines can meet at more than one point; vertically opposite angles named and shown equal; the perpendicular case where all four angles are right angles.
+- **Objective** Identify vertically opposite angles and perpendicular lines and justify their equality.
+- **Student can** I can say why vertically opposite angles must be equal.
+- **Mathematical ideas** intersection point; vertically opposite angles; linear pair summing to 180; perpendicular as four equal angles
+- **Representations** folded paper creases; labelled line diagrams
+- **Prerequisites** pragati_iu_g06_ch02_u10
+- **Role** FORMALIZATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Parallel lines, paper folding and the transversal
+
+- **Id** `pragati_iu_g07_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s5_4` (also ncert_gegp1_s5_5)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9
+- **Source** gegp1 Part I, printed pp. 110–115 (PDF pp. 6–10), read 2026-10-02. Establishes: Parallel lines in photographs and on dot paper; folding to make parallels and perpendiculars; the transversal introduced as one line crossing two others, with its eight angles.
+- **Objective** Make parallel and perpendicular lines by folding and identify a transversal.
+- **Student can** I can fold a sheet to get parallel lines and mark them.
+- **Mathematical ideas** parallel lines; perpendicular by folding; transversal cutting two lines; the eight angles a transversal makes
+- **Representations** square paper folds; dot paper; transversal diagrams
+- **Prerequisites** pragati_iu_g07_ch05_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Corresponding angles and drawing parallel lines
+
+- **Id** `pragati_iu_g07_ch05_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s5_6` (also ncert_gegp1_s5_7)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11
+- **Source** gegp1 Part I, printed pp. 115–119 (PDF pp. 10–14), read 2026-10-02. Establishes: Measuring the angle a transversal makes and copying it; corresponding angles equal exactly when the lines are parallel; the step-by-step construction of a parallel through a point.
+- **Objective** Use equal corresponding angles to test for and construct parallel lines.
+- **Student can** I can draw a line parallel to a given line through a point.
+- **Mathematical ideas** corresponding angles; equality as the condition for parallelism; construction by copying an angle
+- **Representations** protractor constructions; transversal figures
+- **Prerequisites** pragati_iu_g07_ch05_u2
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Alternate angles and angle chasing
+
+- **Id** `pragati_iu_g07_ch05_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s5_8` (also ncert_gegp1_s5_9)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 18, 19, 20, 21
+- **Source** gegp1 Part I, printed pp. 120–126 (PDF pp. 15–21), read 2026-10-02. Establishes: Alternate angles named; worked examples chaining corresponding, alternate and linear-pair relations; the Figure it Out angle sets; the parallel illusions.
+- **Objective** Find unknown angles using corresponding, alternate, vertically opposite and linear-pair relations.
+- **Student can** I can find every marked angle in this figure and say which rule I used.
+- **Mathematical ideas** alternate angles; chaining angle relations; justifying each step of a deduction
+- **Representations** multi-angle figures; worked solutions
+- **Prerequisites** pragati_iu_g07_ch05_u3
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Numbers that describe an arrangement
+
+- **Id** `pragati_iu_g07_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s6_1`
+- **Evidence depth** FULL_PAGE_INSPECTED
+- **Source** gegp1 Part I, printed pp. 128–128 (PDF pp. 1–2), read 2026-10-02. Establishes: The Class 6 children returning; each child calling out how many in front are taller; checking the arrangement against the numbers.
+- **Objective** Read and produce a code in which each number reports something about the line.
+- **Student can** I can work out the number each child should say.
+- **Mathematical ideas** encoded relational information; reasoning backwards from a code; revisiting a Class 6 idea at a larger scale
+- **Representations** lines of children; number strips
+- **Prerequisites** pragati_iu_g06_ch03_u1
+- **Role** REVISIT · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Parity
+
+- **Id** `pragati_iu_g07_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s6_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5, 6, 7, 8
+- **Source** gegp1 Part I, printed pp. 129–134 (PDF pp. 3–8), read 2026-10-02. Establishes: Kishor’s box puzzle; odd numbers as one less than a collection of pairs; why two odds sum to an even; Martin and Maria’s ages; parity of grid squares; the parity of 3n + 4 and similar expressions; the 100th even and odd numbers.
+- **Objective** Decide the parity of a sum, product or expression and use it to rule out possibilities.
+- **Student can** I can say why two consecutive numbers cannot add to 112.
+- **Mathematical ideas** parity of a number; parity of sums and products; parity of an algebraic expression; parity as a proof tool
+- **Representations** pair diagrams; grid dimensions; expression tables
+- **Prerequisites** pragati_iu_g06_ch05_u2; pragati_iu_g07_ch04_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Magic squares and grid reasoning
+
+- **Id** `pragati_iu_g07_ch06_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s6_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11, 12
+- **Source** gegp1 Part I, printed pp. 135–139 (PDF pp. 9–13), read 2026-10-02. Establishes: Row sums totalling 45; why 1 cannot occupy a corner; generalising a magic square around the centre m; the Lo Shu square and the graha yantras.
+- **Objective** Build and reason about magic squares, including with letter-numbers.
+- **Student can** I can explain why 1 cannot sit in a corner of this magic square.
+- **Mathematical ideas** magic sum; constraint reasoning on a grid; generalising a square with a letter-number; cultural history of magic squares
+- **Representations** 3x3 grids; algebraic grids; Lo Shu and Kubera Yantra
+- **Prerequisites** pragati_iu_g07_ch04_u2; pragati_iu_g06_ch03_u9
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### The Virahanka-Fibonacci sequence
+
+- **Id** `pragati_iu_g07_ch06_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s6_4`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 16
+- **Source** gegp1 Part I, printed pp. 139–142 (PDF pp. 13–16), read 2026-10-02. Establishes: Filling 8 beats with short and long syllables; the counts 1, 2, 3, 5, 8 emerging; the recursive rule; the sequence in nature; the parity pattern along it.
+- **Objective** Generate the sequence from a counting problem and find its rule.
+- **Student can** I can say how many rhythms of 8 beats there are and why.
+- **Mathematical ideas** counting arrangements; recursive rule; a sequence arising from a real question; parity pattern within a sequence
+- **Representations** beat patterns; sequence tables; sunflower spirals
+- **Prerequisites** pragati_iu_g07_ch06_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Digits in disguise
+
+- **Id** `pragati_iu_g07_ch06_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp1_s6_5`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 19
+- **Source** gegp1 Part I, printed pp. 143–145 (PDF pp. 17–19), read 2026-10-02. Establishes: Calculations with digits replaced by letters; Liswini’s loose encyclopaedia pages; the UT + TA = TAT cryptarithm.
+- **Objective** Solve cryptarithms and digit puzzles by reasoning about place value.
+- **Student can** I can work out which digit each letter stands for.
+- **Mathematical ideas** letters standing for digits; constraint reasoning with carries; deduction from place value
+- **Representations** vertical sums with letters; page-number puzzles
+- **Prerequisites** pragati_iu_g07_ch06_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.

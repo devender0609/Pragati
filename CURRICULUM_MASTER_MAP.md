@@ -248,8 +248,8 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_gegp1_ch02 | chapter | 2 | Arithmetic Expressions | 24 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch03 | chapter | 3 | A Peek Beyond the Point | 46 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch04 | chapter | 4 | Expressions using Letter-Numbers | 81 | inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_ch05 | chapter | 5 | Parallel and Intersecting Lines | 106 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_ch06 | chapter | 6 | Number Play | 127 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch05 | chapter | 5 | Parallel and Intersecting Lines | 106 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_ch06 | chapter | 6 | Number Play | 127 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch07 | chapter | 7 | A Tale of Three Intersecting Lines | 146 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_ch08 | chapter | 8 | Working with Fractions | 173 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s1_1 | section | 1.1 | A Lakh Varieties! | 1 | inspected | missing | missing | not_started | unpublished |  |
@@ -269,24 +269,24 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_gegp1_s3_7 | section | 3.7 | Addition and Subtraction of Decimals | 74 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s3_8 | section | 3.8 | More on the Decimal System | 76 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s4_1 | section | 4.1 | The Notion of Letter-Numbers | 81 | inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s4_2 | section | 4.2 | Revisiting Arithmetic Expressions | 85 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s4_3 | section | 4.3 | Omission of the Multiplication Symbol in Algebraic Expressions | 86 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s4_4 | section | 4.4 | Simplification of Algebraic Expressions | 87 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s4_5 | section | 4.5 | Pick Patterns and Reveal Relationships | 95 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_1 | section | 5.1 | Across the Line | 106 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_2 | section | 5.2 | Perpendicular Lines | 108 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_3 | section | 5.3 | Between Lines | 109 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_4 | section | 5.4 | Parallel and Perpendicular Lines in Paper Folding | 111 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_5 | section | 5.5 | Transversals | 115 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_6 | section | 5.6 | Corresponding Angles | 115 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_7 | section | 5.7 | Drawing Parallel Lines | 118 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_8 | section | 5.8 | Alternate Angles | 120 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s5_9 | section | 5.9 | Parallel Illusions | 125 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s6_1 | section | 6.1 | Numbers Tell us Things | 127 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s6_2 | section | 6.2 | Picking Parity | 129 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s6_3 | section | 6.3 | Some Explorations in Grids | 133 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s6_4 | section | 6.4 | Nature’s Favourite Sequence: The Virahāṅka–Fibonacci Numbers! | 139 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp1_s6_5 | section | 6.5 | Digits in Disguise | 142 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s4_2 | section | 4.2 | Revisiting Arithmetic Expressions | 85 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s4_3 | section | 4.3 | Omission of the Multiplication Symbol in Algebraic Expressions | 86 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s4_4 | section | 4.4 | Simplification of Algebraic Expressions | 87 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s4_5 | section | 4.5 | Pick Patterns and Reveal Relationships | 95 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_1 | section | 5.1 | Across the Line | 106 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_2 | section | 5.2 | Perpendicular Lines | 108 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_3 | section | 5.3 | Between Lines | 109 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_4 | section | 5.4 | Parallel and Perpendicular Lines in Paper Folding | 111 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_5 | section | 5.5 | Transversals | 115 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_6 | section | 5.6 | Corresponding Angles | 115 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_7 | section | 5.7 | Drawing Parallel Lines | 118 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_8 | section | 5.8 | Alternate Angles | 120 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s5_9 | section | 5.9 | Parallel Illusions | 125 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s6_1 | section | 6.1 | Numbers Tell us Things | 127 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s6_2 | section | 6.2 | Picking Parity | 129 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s6_3 | section | 6.3 | Some Explorations in Grids | 133 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s6_4 | section | 6.4 | Nature’s Favourite Sequence: The Virahāṅka–Fibonacci Numbers! | 139 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp1_s6_5 | section | 6.5 | Digits in Disguise | 142 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s7_1 | section | 7.1 | Equilateral Triangles | 146 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s7_2 | section | 7.2 | Constructing a Triangle When its Sides are Given | 148 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_gegp1_s7_3 | section | 7.3 | Construction of Triangles When Some Sides and Angles are Given | 160 | not inspected | missing | missing | not_started | unpublished |  |

@@ -404,6 +404,14 @@ export type OfficialSectionExtent = {
   printedPageStart: number | null;
   printedPageEnd: number | null;
   boundaryEvidence: string;
+  /**
+   * v0.84.0 checkpoint 19 §9 — how the boundary was established.
+   * PROVISIONAL_DETECTED is a heading the parser found in a chapter nobody
+   * has read yet; VERIFIED_FROM_SOURCE means the pages themselves were
+   * inspected and the boundary held. Only the latter can support
+   * FULLY_INSPECTED.
+   */
+  boundaryStatus?: 'PROVISIONAL_DETECTED' | 'VERIFIED_FROM_SOURCE';
 };
 
 export type HumanJudgementPolicy = {
@@ -544,14 +552,15 @@ export function chapterOf(u: PragatiInstructionalUnit): string {
 }
 
 /**
- * v0.84.0 checkpoint 17 §6 — SECTIONS HAVE NO EXTENT, SO DERIVE THEM.
+ * v0.84.0 checkpoint 19 §9-§10 — A SECTION IS PROVEN AGAINST A VERIFIED BODY.
  *
- * A numbered section owns no page range of its own: the chapter does. The
- * accounting helper therefore could not count sections, and checkpoint 16
- * worked around that by typing 65 into `classProgress` while the master
- * map still called 53 of them uninspected. A section's state is derived
- * here from the same evidence as everything else: the units that cite it
- * and the pages behind them.
+ * A numbered section owns no RecordExtent — the chapter does — so its body
+ * span is recorded as an `OfficialSectionExtent`, located from the printed
+ * heading. Two things can go wrong with that, and both are guarded here.
+ * The extent can be missing (checkpoint 18 stored 63 of Class 7's 65), and
+ * it can be a parser guess that nobody checked against the pages. A guess
+ * may help navigation; it may not establish completion. Only an extent
+ * marked VERIFIED_FROM_SOURCE, with its whole body inspected, counts.
  */
 export function sectionInspectionState(
   sectionId: string
@@ -568,6 +577,10 @@ export function sectionInspectionState(
   // completeness against, so the section cannot be called complete.
   const extent = sectionExtentFor(sectionId);
   if (!extent) return 'PARTIALLY_INSPECTED';
+  // An unverified range is a parser guess. It cannot prove a body complete.
+  if ((extent.boundaryStatus ?? 'VERIFIED_FROM_SOURCE') !== 'VERIFIED_FROM_SOURCE') {
+    return 'PARTIALLY_INSPECTED';
+  }
 
   // Every page of the body must be evidenced somewhere in the chapter —
   // by a unit of this section, a neighbouring unit that shares a boundary
@@ -624,7 +637,7 @@ export function sectionAccounting(classNumber: number): {
       sectionId: r.recordId,
       title: r.title,
       extent: sectionExtentFor(r.recordId) ?? null,
-      parentChapterId: units[0] ? chapterOf(units[0]) : null,
+      parentChapterId: units[0] ? chapterOf(units[0]) : (sectionExtentFor(r.recordId)?.officialChapterId ?? null),
       unitIds: units.map((u) => u.instructionalUnitId),
       state: sectionInspectionState(r.recordId),
     };

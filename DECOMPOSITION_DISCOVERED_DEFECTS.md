@@ -60,6 +60,17 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-18 review findings — all RESOLVED in checkpoint 19
+
+| Defect | Found | Resolved |
+|---|---|---|
+| Class 7 officially has 65 numbered sections but only 63 `officialSectionExtents` were stored | checkpoint 18 review | checkpoint 19 — extents are rebuilt by matching the printed heading in its heading face, giving **65/65**; a test asserts set equality with the master map |
+| Missing extent: `ncert_gegp1_s4_3`, "Omission of the Multiplication Symbol in Algebraic Expressions" | checkpoint 18 review | checkpoint 19 — located on PDF page 6 of chapter 4, body pp. 6-7; named explicitly in a test |
+| Missing extent: `ncert_gegp1_s7_3`, "Construction of Triangles When Some Sides and Angles are Given" | checkpoint 18 review | checkpoint 19 — located on PDF page 15 of chapter 7; named explicitly in a test |
+| Chapter 4 was reported fully decomposed, but all four units cited §4.1 while §4.2-§4.5 sat NOT_STARTED | checkpoint 18 review | checkpoint 19 — units re-attributed to §4.1+§4.2, §4.4+§4.3, §4.4 and §4.5, each multi-section case carrying a written `mergeRelationship`; a test forbids a decomposed chapter leaving any section uncited. The same audit caught two more: ch01 u6 spanned §1.5-§1.6 and ch02 u2 was attributed to §2.1 while sitting in §2.2's body |
+| Precomputed ranges for unread chapters were overlapping and out of order, yet counted as evidence | checkpoint 18 review | checkpoint 19 — `boundaryStatus` separates PROVISIONAL_DETECTED from VERIFIED_FROM_SOURCE, and `sectionInspectionState()` refuses to call a section complete on a provisional range |
+| Active comment above `sectionInspectionState()` still said sections "have no extent" | checkpoint 18 review | checkpoint 19 — rewritten to describe the extent model and the two failure modes it guards |
+
 ## Checkpoint-16 review findings — all RESOLVED in checkpoint 17
 
 | Defect | Found | Resolved |

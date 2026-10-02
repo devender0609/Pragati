@@ -129,25 +129,25 @@
    "officialChapterCount": 15,
    "officialSectionsTotal": 65,
    "chaptersTotal": 15,
-   "chaptersInspected": 4,
-   "chaptersFullyInspected": 4,
+   "chaptersInspected": 6,
+   "chaptersFullyInspected": 6,
    "chaptersPartiallyInspected": 0,
-   "chaptersIndexedOnly": 11,
-   "sectionsAccountedFor": 17,
-   "sectionsNotYetInspected": 48,
+   "chaptersIndexedOnly": 9,
+   "sectionsAccountedFor": 35,
+   "sectionsNotYetInspected": 30,
    "officialRecordsTotal": 65,
-   "officialRecordsFullyInspected": 17,
+   "officialRecordsFullyInspected": 35,
    "officialRecordsPartiallyInspected": 0,
-   "officialRecordsIndexedOnly": 11,
+   "officialRecordsIndexedOnly": 9,
    "pagesInScope": 511,
    "pagesIndexed": 511,
-   "pagesFullyInspected": 174,
-   "pagesFullTextPending": 337,
-   "visualPagesRequired": 74,
-   "visualPagesInspected": 74,
+   "pagesFullyInspected": 240,
+   "pagesFullTextPending": 271,
+   "visualPagesRequired": 107,
+   "visualPagesInspected": 107,
    "visualPagesPending": 0,
-   "pagesEvidenceIncomplete": 337,
-   "note": "Chapters: 4 of 15 fully inspected. Sections: 17 of 65 accounted for against their own body ranges. Pages: 174 of 511 read in full text; among those, 74 are picture-carried and 74 have been rendered and looked at. The visual requirement of the 337 unread pages is not yet determined."
+   "pagesEvidenceIncomplete": 271,
+   "note": "Chapters: 6 of 15 fully inspected. Sections: 35 of 65 accounted for against verified body ranges; all 65 have a recorded extent, 35 of them verified from inspected pages and the rest provisional. Pages: 240 of 511 read in full text; among those, 107 are picture-carried and 107 have been rendered and looked at. The visual requirement of the 271 unread pages is not yet determined."
   }
  ],
  "units": [
@@ -36519,7 +36519,9 @@
    "classNumber": 7,
    "officialRecordId": "ncert_gegp1_s1_6",
    "officialChapterId": "ncert_gegp1_ch01",
-   "additionalOfficialRecordIds": [],
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s1_5"
+   ],
    "sourceEvidence": {
     "bookId": "gegp1",
     "bookPart": "Part I",
@@ -36621,7 +36623,7 @@
    "estimatedInstructionalComplexity": 4,
    "suggestedUnitSequence": 6,
    "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
-   "mergeRelationship": null,
+   "mergeRelationship": "Covers the Fascinating Facts pages that close §1.5 together with §1.6: both ask the same thing — take a very large computed number and say what it means in the world — and the §1.5 pages are worked examples of exactly that. Both official records are cited.",
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
    "decompositionStatus": "READY_FOR_AUTHORING",
@@ -36742,14 +36744,14 @@
    "instructionalUnitId": "pragati_iu_g07_ch02_u2",
    "grade": "class7",
    "classNumber": 7,
-   "officialRecordId": "ncert_gegp1_s2_1",
+   "officialRecordId": "ncert_gegp1_s2_2",
    "officialChapterId": "ncert_gegp1_ch02",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "gegp1",
     "bookPart": "Part I",
     "officialChapterId": "ncert_gegp1_ch02",
-    "officialSectionId": "ncert_gegp1_s2_1",
+    "officialSectionId": "ncert_gegp1_s2_2",
     "printedPageStart": 27,
     "printedPageEnd": 34,
     "pdfPageStart": 4,
@@ -38103,7 +38105,9 @@
    "classNumber": 7,
    "officialRecordId": "ncert_gegp1_s4_1",
    "officialChapterId": "ncert_gegp1_ch04",
-   "additionalOfficialRecordIds": [],
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s4_2"
+   ],
    "sourceEvidence": {
     "bookId": "gegp1",
     "bookPart": "Part I",
@@ -38193,7 +38197,7 @@
    "estimatedInstructionalComplexity": 5,
    "suggestedUnitSequence": 20,
    "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
-   "mergeRelationship": null,
+   "mergeRelationship": "Covers two numbered sections deliberately: §4.1 introduces letter-numbers and §4.2, which begins on the same spread, revisits arithmetic expressions with them. The second is two paragraphs long and teaches no objective of its own, so splitting would produce a unit smaller than a lesson. Both official records are cited.",
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
    "decompositionStatus": "READY_FOR_AUTHORING",
@@ -38215,14 +38219,16 @@
    "instructionalUnitId": "pragati_iu_g07_ch04_u2",
    "grade": "class7",
    "classNumber": 7,
-   "officialRecordId": "ncert_gegp1_s4_1",
+   "officialRecordId": "ncert_gegp1_s4_4",
    "officialChapterId": "ncert_gegp1_ch04",
-   "additionalOfficialRecordIds": [],
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s4_3"
+   ],
    "sourceEvidence": {
     "bookId": "gegp1",
     "bookPart": "Part I",
     "officialChapterId": "ncert_gegp1_ch04",
-    "officialSectionId": "ncert_gegp1_s4_1",
+    "officialSectionId": "ncert_gegp1_s4_4",
     "printedPageStart": 86,
     "printedPageEnd": 90,
     "pdfPageStart": 6,
@@ -38307,7 +38313,7 @@
    "estimatedInstructionalComplexity": 5,
    "suggestedUnitSequence": 21,
    "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
-   "mergeRelationship": null,
+   "mergeRelationship": "Covers §4.3 and the opening of §4.4: dropping the multiplication symbol is a notational convention stated in half a page, and it is used immediately by the terms-and-like-terms work it introduces. Both official records are cited.",
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
    "decompositionStatus": "READY_FOR_AUTHORING",
@@ -38329,14 +38335,14 @@
    "instructionalUnitId": "pragati_iu_g07_ch04_u3",
    "grade": "class7",
    "classNumber": 7,
-   "officialRecordId": "ncert_gegp1_s4_1",
+   "officialRecordId": "ncert_gegp1_s4_4",
    "officialChapterId": "ncert_gegp1_ch04",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "gegp1",
     "bookPart": "Part I",
     "officialChapterId": "ncert_gegp1_ch04",
-    "officialSectionId": "ncert_gegp1_s4_1",
+    "officialSectionId": "ncert_gegp1_s4_4",
     "printedPageStart": 91,
     "printedPageEnd": 95,
     "pdfPageStart": 11,
@@ -38445,14 +38451,14 @@
    "instructionalUnitId": "pragati_iu_g07_ch04_u4",
    "grade": "class7",
    "classNumber": 7,
-   "officialRecordId": "ncert_gegp1_s4_1",
+   "officialRecordId": "ncert_gegp1_s4_5",
    "officialChapterId": "ncert_gegp1_ch04",
    "additionalOfficialRecordIds": [],
    "sourceEvidence": {
     "bookId": "gegp1",
     "bookPart": "Part I",
     "officialChapterId": "ncert_gegp1_ch04",
-    "officialSectionId": "ncert_gegp1_s4_1",
+    "officialSectionId": "ncert_gegp1_s4_5",
     "printedPageStart": 96,
     "printedPageEnd": 105,
     "pdfPageStart": 16,
@@ -38597,6 +38603,1040 @@
      "checkpoint": "v0.84.0 checkpoint 18",
      "verdict": "CONFIRMED",
      "note": "Read in full text and every picture-carried page rendered and looked at in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch05_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s5_1",
+   "officialChapterId": "ncert_gegp1_ch05",
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s5_2",
+    "ncert_gegp1_s5_3"
+   ],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch05",
+    "officialSectionId": "ncert_gegp1_s5_1",
+    "printedPageStart": 107,
+    "printedPageEnd": 111,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Folding a square sheet and drawing lines on the creases; whether two lines can meet at more than one point; vertically opposite angles named and shown equal; the perpendicular case where all four angles are right angles.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     4,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 18 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 107,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 28 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 108,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 34 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 109,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 110,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "fullTextInspected": true,
+      "note": "8 images, 145 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 111,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "fullTextInspected": true,
+      "note": "4 images, 9 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Intersecting lines, vertically opposite angles and perpendiculars",
+   "mathematicalObjective": "Identify vertically opposite angles and perpendicular lines and justify their equality.",
+   "studentCanStatement": "I can say why vertically opposite angles must be equal.",
+   "mathematicalIdeas": [
+    "intersection point",
+    "vertically opposite angles",
+    "linear pair summing to 180",
+    "perpendicular as four equal angles"
+   ],
+   "representationsNeeded": [
+    "folded paper creases",
+    "labelled line diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch02_u10"
+   ],
+   "vocabulary": [
+    "intersect",
+    "vertically opposite",
+    "perpendicular"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 24,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §5.1-§5.3 together: each is a short passage on what happens when two lines meet — intersection, vertically opposite angles, and the perpendicular case where all four angles are equal. They share one figure sequence and form a single lesson-sized objective. All three official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 6 defined angles and the straight-line relation; Class 7 states and justifies the intersection results.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch05_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s5_4",
+   "officialChapterId": "ncert_gegp1_ch05",
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s5_5"
+   ],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch05",
+    "officialSectionId": "ncert_gegp1_s5_4",
+    "printedPageStart": 110,
+    "printedPageEnd": 115,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Parallel lines in photographs and on dot paper; folding to make parallels and perpendiculars; the transversal introduced as one line crossing two others, with its eight angles.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 111,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 9 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 112,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 113,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 9 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 114,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 206 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 115,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Parallel lines, paper folding and the transversal",
+   "mathematicalObjective": "Make parallel and perpendicular lines by folding and identify a transversal.",
+   "studentCanStatement": "I can fold a sheet to get parallel lines and mark them.",
+   "mathematicalIdeas": [
+    "parallel lines",
+    "perpendicular by folding",
+    "transversal cutting two lines",
+    "the eight angles a transversal makes"
+   ],
+   "representationsNeeded": [
+    "square paper folds",
+    "dot paper",
+    "transversal diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch05_u1"
+   ],
+   "vocabulary": [
+    "parallel",
+    "transversal",
+    "fold"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 25,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §5.4 and §5.5: parallel and perpendicular lines made by paper folding, and the transversal that the same folds produce. The folding activity is what introduces the transversal, so the two are one objective. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Parallelism and the transversal are new; Class 6 treats single angles only.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch05_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s5_6",
+   "officialChapterId": "ncert_gegp1_ch05",
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s5_7"
+   ],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch05",
+    "officialSectionId": "ncert_gegp1_s5_6",
+    "printedPageStart": 115,
+    "printedPageEnd": 119,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Measuring the angle a transversal makes and copying it; corresponding angles equal exactly when the lines are parallel; the step-by-step construction of a parallel through a point.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     11
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 115,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 116,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 117,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 118,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 9 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 119,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 30 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Corresponding angles and drawing parallel lines",
+   "mathematicalObjective": "Use equal corresponding angles to test for and construct parallel lines.",
+   "studentCanStatement": "I can draw a line parallel to a given line through a point.",
+   "mathematicalIdeas": [
+    "corresponding angles",
+    "equality as the condition for parallelism",
+    "construction by copying an angle"
+   ],
+   "representationsNeeded": [
+    "protractor constructions",
+    "transversal figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch05_u2"
+   ],
+   "vocabulary": [
+    "corresponding angles",
+    "parallel",
+    "construct"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 26,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §5.6 and §5.7: corresponding angles as the test for parallelism, and the construction that uses that test to draw a parallel line. The construction is the test applied, so they form one objective. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "A criterion rather than an appearance: parallelism becomes testable.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch05_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s5_8",
+   "officialChapterId": "ncert_gegp1_ch05",
+   "additionalOfficialRecordIds": [
+    "ncert_gegp1_s5_9"
+   ],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch05",
+    "officialSectionId": "ncert_gegp1_s5_8",
+    "printedPageStart": 120,
+    "printedPageEnd": 126,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 21,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Alternate angles named; worked examples chaining corresponding, alternate and linear-pair relations; the Figure it Out angle sets; the parallel illusions.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     18,
+     19,
+     20,
+     21
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 120,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 25 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 121,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 122,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 29 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 123,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 121 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 124,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 104 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 125,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 39 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 126,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 110 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Alternate angles and angle chasing",
+   "mathematicalObjective": "Find unknown angles using corresponding, alternate, vertically opposite and linear-pair relations.",
+   "studentCanStatement": "I can find every marked angle in this figure and say which rule I used.",
+   "mathematicalIdeas": [
+    "alternate angles",
+    "chaining angle relations",
+    "justifying each step of a deduction"
+   ],
+   "representationsNeeded": [
+    "multi-angle figures",
+    "worked solutions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch05_u3"
+   ],
+   "vocabulary": [
+    "alternate angles",
+    "linear pair",
+    "deduce"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 27,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §5.8 and the §5.9 illusions page: alternate angles and the worked angle-chasing that follows, closing with figures that show why appearance alone cannot settle parallelism. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Multi-step geometric deduction, the first in the programme.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch06_u1",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s6_1",
+   "officialChapterId": "ncert_gegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch06",
+    "officialSectionId": "ncert_gegp1_s6_1",
+    "printedPageStart": 128,
+    "printedPageEnd": 128,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-10-02",
+    "establishes": "The Class 6 children returning; each child calling out how many in front are taller; checking the arrangement against the numbers.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 16 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 128,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 12 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Numbers that describe an arrangement",
+   "mathematicalObjective": "Read and produce a code in which each number reports something about the line.",
+   "studentCanStatement": "I can work out the number each child should say.",
+   "mathematicalIdeas": [
+    "encoded relational information",
+    "reasoning backwards from a code",
+    "revisiting a Class 6 idea at a larger scale"
+   ],
+   "representationsNeeded": [
+    "lines of children",
+    "number strips"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch03_u1"
+   ],
+   "vocabulary": [
+    "taller",
+    "in front",
+    "rule"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "REVISIT",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 28,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "REVISIT",
+   "progressionRationale": "Deliberately revisits the Class 6 Number Play opening before extending it.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch06_u2",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s6_2",
+   "officialChapterId": "ncert_gegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch06",
+    "officialSectionId": "ncert_gegp1_s6_2",
+    "printedPageStart": 129,
+    "printedPageEnd": 134,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Kishor’s box puzzle; odd numbers as one less than a collection of pairs; why two odds sum to an even; Martin and Maria’s ages; parity of grid squares; the parity of 3n + 4 and similar expressions; the 100th even and odd numbers.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 129,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 98 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 130,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 131,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 44 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 132,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 65 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 133,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 108 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 134,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 103 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Parity",
+   "mathematicalObjective": "Decide the parity of a sum, product or expression and use it to rule out possibilities.",
+   "studentCanStatement": "I can say why two consecutive numbers cannot add to 112.",
+   "mathematicalIdeas": [
+    "parity of a number",
+    "parity of sums and products",
+    "parity of an algebraic expression",
+    "parity as a proof tool"
+   ],
+   "representationsNeeded": [
+    "pair diagrams",
+    "grid dimensions",
+    "expression tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch05_u2",
+    "pragati_iu_g07_ch04_u2"
+   ],
+   "vocabulary": [
+    "parity",
+    "odd",
+    "even",
+    "consecutive"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 29,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Parity used as an argument for impossibility, not as a label.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch06_u3",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s6_3",
+   "officialChapterId": "ncert_gegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch06",
+    "officialSectionId": "ncert_gegp1_s6_3",
+    "printedPageStart": 135,
+    "printedPageEnd": 139,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Row sums totalling 45; why 1 cannot occupy a corner; generalising a magic square around the centre m; the Lo Shu square and the graha yantras.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 135,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 152 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 136,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 150 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 137,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 106 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 138,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 31 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 139,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Magic squares and grid reasoning",
+   "mathematicalObjective": "Build and reason about magic squares, including with letter-numbers.",
+   "studentCanStatement": "I can explain why 1 cannot sit in a corner of this magic square.",
+   "mathematicalIdeas": [
+    "magic sum",
+    "constraint reasoning on a grid",
+    "generalising a square with a letter-number",
+    "cultural history of magic squares"
+   ],
+   "representationsNeeded": [
+    "3x3 grids",
+    "algebraic grids",
+    "Lo Shu and Kubera Yantra"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch04_u2",
+    "pragati_iu_g06_ch03_u9"
+   ],
+   "vocabulary": [
+    "magic square",
+    "magic sum",
+    "centre"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 30,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Constraint proof on a grid, with algebra used to generalise it.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch06_u4",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s6_4",
+   "officialChapterId": "ncert_gegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch06",
+    "officialSectionId": "ncert_gegp1_s6_4",
+    "printedPageStart": 139,
+    "printedPageEnd": 142,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 16,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Filling 8 beats with short and long syllables; the counts 1, 2, 3, 5, 8 emerging; the recursive rule; the sequence in nature; the parity pattern along it.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     16
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 139,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 140,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 141,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 21 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 142,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 12 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "The Virahanka-Fibonacci sequence",
+   "mathematicalObjective": "Generate the sequence from a counting problem and find its rule.",
+   "studentCanStatement": "I can say how many rhythms of 8 beats there are and why.",
+   "mathematicalIdeas": [
+    "counting arrangements",
+    "recursive rule",
+    "a sequence arising from a real question",
+    "parity pattern within a sequence"
+   ],
+   "representationsNeeded": [
+    "beat patterns",
+    "sequence tables",
+    "sunflower spirals"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch06_u2"
+   ],
+   "vocabulary": [
+    "Virahanka",
+    "sequence",
+    "rhythm"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 31,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "A recursive sequence derived from counting, new at Class 7.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g07_ch06_u5",
+   "grade": "class7",
+   "classNumber": 7,
+   "officialRecordId": "ncert_gegp1_s6_5",
+   "officialChapterId": "ncert_gegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "gegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_gegp1_ch06",
+    "officialSectionId": "ncert_gegp1_s6_5",
+    "printedPageStart": 143,
+    "printedPageEnd": 145,
+    "pdfPageStart": 17,
+    "pdfPageEnd": 19,
+    "inspectedOn": "2026-10-02",
+    "establishes": "Calculations with digits replaced by letters; Liswini’s loose encyclopaedia pages; the UT + TA = TAT cryptarithm.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     19
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 17,
+      "printedPage": 143,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 21 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 144,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 30 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 145,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 110 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-02",
+    "lastEvidenceUpdatedOn": "2026-10-02"
+   },
+   "instructionalTitle": "Digits in disguise",
+   "mathematicalObjective": "Solve cryptarithms and digit puzzles by reasoning about place value.",
+   "studentCanStatement": "I can work out which digit each letter stands for.",
+   "mathematicalIdeas": [
+    "letters standing for digits",
+    "constraint reasoning with carries",
+    "deduction from place value"
+   ],
+   "representationsNeeded": [
+    "vertical sums with letters",
+    "page-number puzzles"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch06_u2"
+   ],
+   "vocabulary": [
+    "digit",
+    "letter",
+    "carry"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 32,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Deduction over digits under constraints.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 19",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
     }
    ]
   }
