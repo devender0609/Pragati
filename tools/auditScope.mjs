@@ -13,7 +13,9 @@ export function scopeFor(d, classNumbers) {
       ? 6
       : e.officialRecordId.startsWith('ncert_gegp')
         ? 7
-        : byBook;
+        : e.officialRecordId.startsWith('ncert_hegp')
+          ? 8
+          : byBook;
     if (wanted.has(cls)) ids.add(e.officialRecordId);
   }
   return {

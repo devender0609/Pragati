@@ -342,44 +342,44 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_hegp1_ch01 | chapter | 1 | A Square and A Cube | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_ch02 | chapter | 2 | Power Play | 19 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_ch03 | chapter | 3 | A Story of Numbers | 48 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_ch04 | chapter | 4 | Quadrilaterals | 82 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_ch05 | chapter | 5 | Number Play | 112 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_ch06 | chapter | 6 | We Distribute, Yet Things Multiply | 136 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_ch07 | chapter | 7 | Proportional Reasoning-1 | 159 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s1_1 | section | 1.1 | Square Numbers | 3 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s1_2 | section | 1.2 | Cubic Numbers | 11 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s1_3 | section | 1.3 | A Pinch of History | 15 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s2_1 | section | 2.1 | Experiencing the Power Play ... | 19 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s2_2 | section | 2.2 | Exponential Notation and Operations | 21 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s2_3 | section | 2.3 | The Other Side of Powers | 27 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s2_4 | section | 2.4 | Powers of 10 | 30 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s2_5 | section | 2.5 | Did You Ever Wonder? | 33 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s3_1 | section | 3.1 | Reema’s Curiosity | 48 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s3_2 | section | 3.2 | Some Early Number Systems | 54 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s3_3 | section | 3.3 | The Idea of a Base | 61 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s3_4 | section | 3.4 | Place Value Representation | 70 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s4_1 | section | 4.1 | Rectangles and Squares | 83 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s4_2 | section | 4.2 | Angles in a Quadrilateral | 94 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s4_3 | section | 4.3 | More Quadrilaterals with Parallel Opposite Sides | 95 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s4_4 | section | 4.4 | Quadrilaterals with Equal Sidelengths | 99 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s4_5 | section | 4.5 | Playing with Quadrilaterals | 103 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s4_6 | section | 4.6 | Kite and Trapezium | 105 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s5_1 | section | 5.1 | Is This a Multiple Of? | 112 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s5_2 | section | 5.2 | Checking Divisibility Quickly | 123 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s5_3 | section | 5.3 | Digits in Disguise | 131 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s6_1 | section | 6.1 | Some Properties of Multiplication | 136 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s6_2 | section | 6.2 | Special Cases of the Distributive Property | 145 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s6_3 | section | 6.3 | Mind the Mistake, Mend the Mistake | 150 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s6_4 | section | 6.4 | This Way or That Way, All Ways Lead to the Bay | 150 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s7_1 | section | 7.1 | Observing Similarity in Change | 159 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s7_2 | section | 7.2 | Ratios | 161 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s7_3 | section | 7.3 | Ratios in their Simplest Form | 161 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s7_4 | section | 7.4 | Problem Solving with Proportional Reasoning | 162 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s7_5 | section | 7.5 | Sharing, but Not Equally! | 172 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp1_s7_6 | section | 7.6 | Unit Conversions | 175 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_ch01 | chapter | 1 | A Square and A Cube | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_ch02 | chapter | 2 | Power Play | 19 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_ch03 | chapter | 3 | A Story of Numbers | 48 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_ch04 | chapter | 4 | Quadrilaterals | 82 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_ch05 | chapter | 5 | Number Play | 112 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_ch06 | chapter | 6 | We Distribute, Yet Things Multiply | 136 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_ch07 | chapter | 7 | Proportional Reasoning-1 | 159 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s1_1 | section | 1.1 | Square Numbers | 3 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s1_2 | section | 1.2 | Cubic Numbers | 11 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s1_3 | section | 1.3 | A Pinch of History | 15 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s2_1 | section | 2.1 | Experiencing the Power Play ... | 19 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s2_2 | section | 2.2 | Exponential Notation and Operations | 21 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s2_3 | section | 2.3 | The Other Side of Powers | 27 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s2_4 | section | 2.4 | Powers of 10 | 30 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s2_5 | section | 2.5 | Did You Ever Wonder? | 33 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s3_1 | section | 3.1 | Reema’s Curiosity | 48 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s3_2 | section | 3.2 | Some Early Number Systems | 54 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s3_3 | section | 3.3 | The Idea of a Base | 61 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s3_4 | section | 3.4 | Place Value Representation | 70 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s4_1 | section | 4.1 | Rectangles and Squares | 83 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s4_2 | section | 4.2 | Angles in a Quadrilateral | 94 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s4_3 | section | 4.3 | More Quadrilaterals with Parallel Opposite Sides | 95 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s4_4 | section | 4.4 | Quadrilaterals with Equal Sidelengths | 99 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s4_5 | section | 4.5 | Playing with Quadrilaterals | 103 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s4_6 | section | 4.6 | Kite and Trapezium | 105 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s5_1 | section | 5.1 | Is This a Multiple Of? | 112 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s5_2 | section | 5.2 | Checking Divisibility Quickly | 123 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s5_3 | section | 5.3 | Digits in Disguise | 131 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s6_1 | section | 6.1 | Some Properties of Multiplication | 136 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s6_2 | section | 6.2 | Special Cases of the Distributive Property | 145 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s6_3 | section | 6.3 | Mind the Mistake, Mend the Mistake | 150 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s6_4 | section | 6.4 | This Way or That Way, All Ways Lead to the Bay | 150 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s7_1 | section | 7.1 | Observing Similarity in Change | 159 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s7_2 | section | 7.2 | Ratios | 161 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s7_3 | section | 7.3 | Ratios in their Simplest Form | 161 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s7_4 | section | 7.4 | Problem Solving with Proportional Reasoning | 162 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s7_5 | section | 7.5 | Sharing, but Not Equally! | 172 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s7_6 | section | 7.6 | Unit Conversions | 175 | inspected | missing | missing | not_started | unpublished |  |
 
 ### NCERT textbook: Ganita Prakash Part-II — Part II
 

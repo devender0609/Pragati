@@ -44025,6 +44025,3805 @@
      "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
     }
    ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch01_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s1_1",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch01",
+    "officialSectionId": "ncert_hegp1_s1_1",
+    "printedPageStart": 3,
+    "printedPageEnd": 8,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 8,
+    "inspectedOn": "2026-10-03",
+    "establishes": "The locker puzzle and odd factor counts; last digits of squares; the inverted-L picture for sums of odd numbers; prime factorisation of perfect squares.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 136 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 146 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 81 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 92 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 121 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 52 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Square numbers and their patterns",
+   "mathematicalObjective": "Recognise perfect squares and reason about their digits and factor structure.",
+   "studentCanStatement": "I can say why no perfect square ends in 7.",
+   "mathematicalIdeas": [
+    "perfect square",
+    "possible last digits",
+    "odd number of factors",
+    "sum of consecutive odd numbers",
+    "prime factorisation of a square"
+   ],
+   "representationsNeeded": [
+    "locker puzzle",
+    "dot patterns",
+    "factor tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch05_u4"
+   ],
+   "vocabulary": [
+    "perfect square",
+    "units digit",
+    "factors"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 1,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 6-7 factor and pattern work into the structure of squares.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch01_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s1_1",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch01",
+    "officialSectionId": "ncert_hegp1_s1_1",
+    "printedPageStart": 8,
+    "printedPageEnd": 11,
+    "pdfPageStart": 8,
+    "pdfPageEnd": 11,
+    "inspectedOn": "2026-10-03",
+    "establishes": "The side of a square of area 49; square root defined; Bijou and Aribam’s game; finding roots from prime factorisation.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     8,
+     11
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 8,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 52 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 29 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 10,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 23 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 2089 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Square roots",
+   "mathematicalObjective": "Find the square root of a perfect square and estimate between which squares a number lies.",
+   "studentCanStatement": "I can find the square root of 49 from the side of a square of that area.",
+   "mathematicalIdeas": [
+    "square root as a side length",
+    "square root from prime factorisation",
+    "estimating a non-perfect square"
+   ],
+   "representationsNeeded": [
+    "area squares",
+    "factor trees"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch01_u1"
+   ],
+   "vocabulary": [
+    "square root",
+    "area",
+    "estimate"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 2,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "The inverse of squaring, new at Class 8.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch01_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s1_2",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch01",
+    "officialSectionId": "ncert_hegp1_s1_2",
+    "printedPageStart": 11,
+    "printedPageEnd": 15,
+    "pdfPageStart": 11,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Cubes named from the solid; possible last digits; consecutive odd numbers summing to cubes; prime factorisation of a cube and its root.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     11,
+     12,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 11,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 2089 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 12,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 517 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 13,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 14,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 38 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 15,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 83 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Cube numbers and cube roots",
+   "mathematicalObjective": "Recognise perfect cubes and find cube roots from prime factorisation.",
+   "studentCanStatement": "I can say whether 1331 is a perfect cube without factorising it fully.",
+   "mathematicalIdeas": [
+    "perfect cube",
+    "last digits of cubes",
+    "cubes as sums of consecutive odd numbers",
+    "cube root from prime factorisation"
+   ],
+   "representationsNeeded": [
+    "cube diagrams",
+    "factor tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch01_u2"
+   ],
+   "vocabulary": [
+    "cube",
+    "cube root",
+    "prime factorisation"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 3,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "The cube built the same way as the square, one step further.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch01_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s1_3",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch01",
+    "officialSectionId": "ncert_hegp1_s1_3",
+    "printedPageStart": 1,
+    "printedPageEnd": 17,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 19,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Square and cube roots in land measurement, architectural design and other early geometric calculation.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15,
+     17,
+     18
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 15,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 83 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 16,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 18 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 17,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 121 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 48 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 1,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 22 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "A pinch of history: squares and cubes in use",
+   "mathematicalObjective": "Place square and cube roots in their historical setting.",
+   "studentCanStatement": "I can say where square roots were used in early Indian mathematics.",
+   "mathematicalIdeas": [
+    "historical use of roots",
+    "land measurement and architecture"
+   ],
+   "representationsNeeded": [
+    "historical notes"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch01_u3"
+   ],
+   "vocabulary": [
+    "history",
+    "measurement"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "REFERENCE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 2,
+   "suggestedUnitSequence": 4,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "REVISIT",
+   "progressionRationale": "Context for the chapter rather than a new mathematical demand.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision historical_material_lesson_vs_context, as it applies to §1.3 A Pinch of History: is a numbered history section a Pragati lesson of its own, or context carried inside the units whose mathematics it describes?",
+   "humanJudgementPolicyKey": "historical_material_lesson_vs_context"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch02_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s2_1",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch02",
+    "officialSectionId": "ncert_hegp1_s2_1",
+    "printedPageStart": 21,
+    "printedPageEnd": 21,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Folding a sheet repeatedly; the thickness table; the 46-fold result exceeding 700,000 km.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 131 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 106 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 21,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 88 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Experiencing exponential growth",
+   "mathematicalObjective": "Describe how repeated doubling grows and why it outruns intuition.",
+   "studentCanStatement": "I can say how thick the paper is after 46 folds and why that is surprising.",
+   "mathematicalIdeas": [
+    "repeated doubling",
+    "exponential growth against intuition",
+    "tabulating a doubling process"
+   ],
+   "representationsNeeded": [
+    "folding tables",
+    "growth charts"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch01_u6"
+   ],
+   "vocabulary": [
+    "double",
+    "growth",
+    "fold"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 5,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Exponential growth as a phenomenon, new at Class 8.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch02_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s2_2",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch02",
+    "officialSectionId": "ncert_hegp1_s2_2",
+    "printedPageStart": 21,
+    "printedPageEnd": 27,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-10-03",
+    "establishes": "n cubed and n to the fourth named; prime factorisations in exponential form; 3 to the 7th from 3 to the 4th; combinations of dresses and caps; 5-digit passwords as 10 to the 5th.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6,
+     8,
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 21,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 88 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 22,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 23,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 28 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 24,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 62 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 25,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 26,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 25 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 27,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 61 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Exponential notation and operations",
+   "mathematicalObjective": "Write numbers in exponential form and multiply and divide powers of the same base.",
+   "studentCanStatement": "I can write 648 as a product of powers of its prime factors.",
+   "mathematicalIdeas": [
+    "base and exponent",
+    "exponential form of a prime factorisation",
+    "multiplying and dividing powers",
+    "counting arrangements with powers"
+   ],
+   "representationsNeeded": [
+    "factor trees",
+    "combination diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch01_u3",
+    "pragati_iu_g06_ch05_u4"
+   ],
+   "vocabulary": [
+    "base",
+    "exponent",
+    "power"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 6,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Exponent notation and its operations, resting on Class 6 prime factorisation.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch02_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s2_3",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch02",
+    "officialSectionId": "ncert_hegp1_s2_3",
+    "printedPageStart": 27,
+    "printedPageEnd": 30,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Why n cannot be 0 in some statements; 2 to the 0 defined by continuing the division pattern; 10 to the minus 3 written as a reciprocal.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 27,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 61 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 28,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 49 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 29,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 102 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 30,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 56 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Zero and negative exponents",
+   "mathematicalObjective": "Define a zero exponent and a negative exponent consistently.",
+   "studentCanStatement": "I can say why 2 to the power 0 is 1.",
+   "mathematicalIdeas": [
+    "defining an exponent by extending a pattern",
+    "zero exponent",
+    "negative exponent as a reciprocal"
+   ],
+   "representationsNeeded": [
+    "pattern tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch02_u2"
+   ],
+   "vocabulary": [
+    "zero exponent",
+    "negative exponent",
+    "reciprocal"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 7,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Definition by consistency rather than by counting — a real shift in how a rule is justified.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch02_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s2_4",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch02",
+    "officialSectionId": "ncert_hegp1_s2_4",
+    "printedPageStart": 30,
+    "printedPageEnd": 33,
+    "pdfPageStart": 12,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-03",
+    "establishes": "How many times larger one power is than another; quantities expressed with powers of ten.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     12,
+     14,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 12,
+      "printedPage": 30,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 56 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 31,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 18 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 32,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 27 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 33,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 25 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Powers of ten and large or small quantities",
+   "mathematicalObjective": "Use powers of ten to write and compare very large and very small quantities.",
+   "studentCanStatement": "I can compare two quantities by their powers of ten.",
+   "mathematicalIdeas": [
+    "powers of ten",
+    "comparing magnitudes by exponent",
+    "approximating a quantity to a power of ten"
+   ],
+   "representationsNeeded": [
+    "magnitude tables",
+    "astronomical and microscopic examples"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch02_u3",
+    "pragati_iu_g07_ch01_u3"
+   ],
+   "vocabulary": [
+    "power of ten",
+    "times larger",
+    "magnitude"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 8,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 7 crore-and-arab work into exponent notation.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch02_u5",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s2_5",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch02",
+    "officialSectionId": "ncert_hegp1_s2_5",
+    "printedPageStart": 1,
+    "printedPageEnd": 46,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 30,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Estimating ages in seconds, distances, population and other quantities using powers of ten, with the plausibility of each result discussed.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15,
+     16,
+     17,
+     19,
+     20,
+     21,
+     22,
+     23,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 33,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 25 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 34,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 61 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 35,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 24 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 36,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 25 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 37,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 15 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 38,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 21 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 39,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 23 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 40,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 18 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 41,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 15 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 42,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 23 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 43,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 18 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 44,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 18 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 45,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 46,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 120 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 3 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 1,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 59 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Did you ever wonder? Estimating with powers",
+   "mathematicalObjective": "Estimate real quantities using powers of ten and judge the result.",
+   "studentCanStatement": "I can estimate how many seconds old I am using powers of ten.",
+   "mathematicalIdeas": [
+    "estimation at scale",
+    "order-of-magnitude reasoning",
+    "checking an estimate for plausibility"
+   ],
+   "representationsNeeded": [
+    "estimation chains",
+    "fact panels"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch02_u4"
+   ],
+   "vocabulary": [
+    "estimate",
+    "order",
+    "about"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 9,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Applies exponent notation to the estimation habit built in Classes 6-7.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch03_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s3_1",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp1_s3_2"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch03",
+    "officialSectionId": "ncert_hegp1_s3_1",
+    "printedPageStart": 49,
+    "printedPageEnd": 61,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Reema’s curiosity; cows matched to sticks; tally marks on bones; the Gumulgal counting in twos; the difficulties of a single-group system.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     12,
+     13,
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 134 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 49,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 57 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 50,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 16 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 51,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 52,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 53,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 145 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 54,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 64 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 55,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 15 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 56,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 33 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 57,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 58,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 59,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 25 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 60,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 67 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Early number systems",
+   "mathematicalObjective": "Describe how early systems represented number without place value.",
+   "studentCanStatement": "I can explain one-to-one correspondence and where it breaks down.",
+   "mathematicalIdeas": [
+    "one-to-one correspondence",
+    "tally marks",
+    "counting in twos",
+    "limits of a system without place value"
+   ],
+   "representationsNeeded": [
+    "tally bones",
+    "historical scripts"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch01_u3"
+   ],
+   "vocabulary": [
+    "correspondence",
+    "tally",
+    "system"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 10,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §3.1 and §3.2 together: Reema’s question opens the chapter and §3.2 answers it with the early systems themselves. The opening is two pages of framing that teaches nothing on its own, so splitting would leave a unit smaller than a lesson. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Representation itself becomes the object of study.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch03_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s3_3",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch03",
+    "officialSectionId": "ncert_hegp1_s3_3",
+    "printedPageStart": 61,
+    "printedPageEnd": 70,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 23,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Landmark numbers as powers of ten and of five; addition and multiplication inside Egyptian and Roman systems; base-60 in Mesopotamia; the Chinese rod numerals.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     15,
+     17,
+     18,
+     19,
+     20,
+     21,
+     23
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 62,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 21 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 63,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 64,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 19 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 65,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 33 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 66,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 65 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 67,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 68,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 21 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 69,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 39 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 70,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 36 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "The idea of a base",
+   "mathematicalObjective": "Explain what a base is and compute within non-decimal systems.",
+   "studentCanStatement": "I can add two Egyptian numerals and say what the landmark numbers are.",
+   "mathematicalIdeas": [
+    "landmark numbers as powers of a base",
+    "base-n systems",
+    "arithmetic inside a base system",
+    "advantages of a base"
+   ],
+   "representationsNeeded": [
+    "Egyptian, Roman, Mayan, Mesopotamian and Chinese numerals"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch03_u1"
+   ],
+   "vocabulary": [
+    "base",
+    "landmark number",
+    "grouping"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 11,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Generalising place value to an arbitrary base.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch03_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s3_4",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch03",
+    "officialSectionId": "ncert_hegp1_s3_4",
+    "printedPageStart": 70,
+    "printedPageEnd": 81,
+    "pdfPageStart": 23,
+    "pdfPageEnd": 34,
+    "inspectedOn": "2026-10-03",
+    "establishes": "The Mesopotamian ambiguity without zero; the Chinese system with a zero symbol; the Hindu system and why it is now used everywhere.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     23,
+     24,
+     25,
+     27,
+     28,
+     29,
+     30,
+     31,
+     33,
+     34
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 23,
+      "printedPage": 70,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 36 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 22 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 72,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 21 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 73,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 21 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 74,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 15 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 63 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 76,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 18 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 77,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 78,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 22 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": 79,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 15 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 80,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 60 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 81,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 119 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Place value representation",
+   "mathematicalObjective": "Explain why place value with a zero makes arithmetic efficient.",
+   "studentCanStatement": "I can say why the Hindu system spread and what zero contributes.",
+   "mathematicalIdeas": [
+    "place value with a symbol for zero",
+    "compactness of representation",
+    "why a system wins"
+   ],
+   "representationsNeeded": [
+    "comparison tables",
+    "historical sources"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch03_u2"
+   ],
+   "vocabulary": [
+    "place value",
+    "zero",
+    "representation"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 12,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Makes explicit the system Classes 1-7 have used throughout.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch04_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s4_1",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch04",
+    "officialSectionId": "ncert_hegp1_s4_1",
+    "printedPageStart": 83,
+    "printedPageEnd": 94,
+    "pdfPageStart": 2,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Rectangle defined; the diagonals shown equal and bisecting by AAS; the carpenter’s problem giving an alternative definition; the square’s diagonals meeting at right angles.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 2,
+      "printedPage": 83,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 84 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 84,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 85,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 86 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 86,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 74 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 87,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 82 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 88,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 39 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 89,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 90,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 91,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 21 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 92,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 93,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 94,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 65 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Rectangles, squares and their diagonals",
+   "mathematicalObjective": "Deduce properties of rectangles and squares using congruence.",
+   "studentCanStatement": "I can show that the diagonals of a rectangle are equal and bisect each other.",
+   "mathematicalIdeas": [
+    "definition by property",
+    "deduction using congruence",
+    "diagonals of a rectangle and a square",
+    "the carpenter’s problem"
+   ],
+   "representationsNeeded": [
+    "labelled quadrilaterals",
+    "diagonal diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07p2_ch01_u2"
+   ],
+   "vocabulary": [
+    "rectangle",
+    "diagonal",
+    "bisect"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 13,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Deductive geometry applied to quadrilaterals, resting on Class 7 congruence.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch04_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s4_2",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp1_s4_3"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch04",
+    "officialSectionId": "ncert_hegp1_s4_2",
+    "printedPageStart": 94,
+    "printedPageEnd": 99,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 18,
+    "inspectedOn": "2026-10-03",
+    "establishes": "The diagonal splitting a quadrilateral into two triangles; the 360 degree sum; parallelogram defined; opposite sides, opposite angles and bisecting diagonals proved.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     13,
+     17,
+     18
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 94,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 65 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 95,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 33 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 96,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 39 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 97,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 29 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 98,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 52 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 99,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 63 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Angle sum, and parallelograms",
+   "mathematicalObjective": "Derive the angle sum of a quadrilateral and the properties of a parallelogram.",
+   "studentCanStatement": "I can show why opposite angles of a parallelogram are equal.",
+   "mathematicalIdeas": [
+    "angle sum from two triangles",
+    "parallelogram properties",
+    "opposite sides and angles",
+    "diagonals bisecting"
+   ],
+   "representationsNeeded": [
+    "diagonal-split quadrilaterals",
+    "parallelogram diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch04_u1",
+    "pragati_iu_g07_ch05_u4"
+   ],
+   "vocabulary": [
+    "angle sum",
+    "parallelogram",
+    "opposite"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 14,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §4.2 and §4.3: the angle sum of a quadrilateral is derived on one page and is immediately the tool used for the parallelogram results that follow. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Each property is proved, not observed.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch04_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s4_4",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch04",
+    "officialSectionId": "ncert_hegp1_s4_4",
+    "printedPageStart": 99,
+    "printedPageEnd": 103,
+    "pdfPageStart": 18,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Every rhombus shown to be a parallelogram; its diagonals shown perpendicular; the angles of a constructed rhombus reasoned out.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     18,
+     19,
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 18,
+      "printedPage": 99,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 63 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 100,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 71 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 101,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 102,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 90 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 103,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 21 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Rhombus, and quadrilaterals with equal sides",
+   "mathematicalObjective": "Prove the properties of a rhombus and place it among the parallelograms.",
+   "studentCanStatement": "I can show why the diagonals of a rhombus meet at right angles.",
+   "mathematicalIdeas": [
+    "rhombus as a parallelogram",
+    "diagonals perpendicular",
+    "hierarchy among quadrilaterals"
+   ],
+   "representationsNeeded": [
+    "rhombus constructions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch04_u2"
+   ],
+   "vocabulary": [
+    "rhombus",
+    "perpendicular",
+    "hierarchy"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 15,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the parallelogram results to the equal-sided case.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch04_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s4_5",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch04",
+    "officialSectionId": "ncert_hegp1_s4_5",
+    "printedPageStart": 103,
+    "printedPageEnd": 105,
+    "pdfPageStart": 22,
+    "pdfPageEnd": 24,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Geoboard quadrilaterals; joining two congruent equilateral, isosceles and scalene triangles and naming what results.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     22,
+     23,
+     24
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 22,
+      "printedPage": 103,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 21 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 104,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 56 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 105,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 48 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Playing with quadrilaterals",
+   "mathematicalObjective": "Build and classify quadrilaterals from triangles and on a geoboard.",
+   "studentCanStatement": "I can say which quadrilaterals two congruent triangles can make.",
+   "mathematicalIdeas": [
+    "constructing quadrilaterals from triangles",
+    "classification by construction",
+    "geoboard exploration"
+   ],
+   "representationsNeeded": [
+    "geoboard",
+    "cardboard triangles"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch04_u3"
+   ],
+   "vocabulary": [
+    "geoboard",
+    "join",
+    "classify"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 16,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "Construction used as a route into classification.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch04_u5",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s4_6",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch04",
+    "officialSectionId": "ncert_hegp1_s4_6",
+    "printedPageStart": 1,
+    "printedPageEnd": 111,
+    "pdfPageStart": 24,
+    "pdfPageEnd": 31,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Trapezium defined by one pair of parallel sides; the isosceles case proved by congruence; kites and their diagonals; the true/false statements testing the hierarchy.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     24,
+     25,
+     26,
+     28,
+     30,
+     31
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 24,
+      "printedPage": 105,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 48 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 106,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 64 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 107,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 108,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 28 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 109,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 119 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 110,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 34 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 111,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 15 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 1,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 82 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Kite and trapezium",
+   "mathematicalObjective": "Identify kites and trapeziums and deduce their angle properties.",
+   "studentCanStatement": "I can find the remaining angles of an isosceles trapezium.",
+   "mathematicalIdeas": [
+    "trapezium",
+    "isosceles trapezium",
+    "kite",
+    "the quadrilateral hierarchy completed"
+   ],
+   "representationsNeeded": [
+    "labelled trapeziums and kites",
+    "property tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch04_u3"
+   ],
+   "vocabulary": [
+    "trapezium",
+    "kite",
+    "isosceles"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 17,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Completes the classification the chapter has been building.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch05_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s5_1",
+   "officialChapterId": "ncert_hegp1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch05",
+    "officialSectionId": "ncert_hegp1_s5_1",
+    "printedPageStart": 113,
+    "printedPageEnd": 123,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 12,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Anshu’s sums of consecutive numbers; the eight sign arrangements; the token model explanation; 4m + 2q always even.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 164 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 113,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 82 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 114,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 115,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 55 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 116,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 117,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 159 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 118,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 167 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 119,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 202 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 120,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 178 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 121,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 79 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 122,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 27 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 123,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 22 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Sums of consecutive numbers, and multiples",
+   "mathematicalObjective": "Decide when a number is a multiple of another using algebraic structure.",
+   "studentCanStatement": "I can say why 4m + 2q is always even.",
+   "mathematicalIdeas": [
+    "sums of consecutive numbers",
+    "algebraic form of a multiple",
+    "parity and divisibility argued with letters",
+    "token model recalled"
+   ],
+   "representationsNeeded": [
+    "sum diagrams",
+    "token model",
+    "expression tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch06_u2",
+    "pragati_iu_g07_ch04_u2"
+   ],
+   "vocabulary": [
+    "multiple",
+    "consecutive",
+    "even"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 18,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 6-7 parity reasoning now carried out in algebra.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch05_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s5_2",
+   "officialChapterId": "ncert_hegp1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch05",
+    "officialSectionId": "ncert_hegp1_s5_2",
+    "printedPageStart": 123,
+    "printedPageEnd": 131,
+    "pdfPageStart": 12,
+    "pdfPageEnd": 20,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Tests for 2, 3, 4, 5, 6, 8, 9, 10 and 11 stated with the place-value argument behind each, rather than as rules to memorise.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 12,
+      "printedPage": 123,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 22 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 124,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 93 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 125,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 99 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 126,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 127,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 196 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 128,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 335 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 129,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 310 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 130,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 58 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 131,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Divisibility tests, justified",
+   "mathematicalObjective": "State and justify divisibility tests using place value and algebra.",
+   "studentCanStatement": "I can explain why the test for 11 works.",
+   "mathematicalIdeas": [
+    "divisibility tests for several divisors",
+    "justification from place value",
+    "algebraic proof of a test"
+   ],
+   "representationsNeeded": [
+    "place value expansions",
+    "digit tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g06_ch05_u5",
+    "pragati_iu_g08_ch05_u1"
+   ],
+   "vocabulary": [
+    "divisible",
+    "test",
+    "justify"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 19,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 6 justified tests informally; Class 8 proves them algebraically.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch05_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s5_3",
+   "officialChapterId": "ncert_hegp1_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch05",
+    "officialSectionId": "ncert_hegp1_s5_3",
+    "printedPageStart": 131,
+    "printedPageEnd": 134,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 23,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Missing-digit problems solved by applying the justified tests as constraints.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     20,
+     22,
+     23
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 131,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 132,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 133,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 41 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 134,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 155 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Digits in disguise",
+   "mathematicalObjective": "Solve digit puzzles and cryptarithms using divisibility and place value.",
+   "studentCanStatement": "I can find the missing digits that make this number divisible by 11.",
+   "mathematicalIdeas": [
+    "cryptarithm",
+    "constraint reasoning with digits",
+    "using a divisibility test as a constraint"
+   ],
+   "representationsNeeded": [
+    "digit puzzles",
+    "grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch05_u2",
+    "pragati_iu_g07_ch06_u5"
+   ],
+   "vocabulary": [
+    "digit",
+    "constraint",
+    "puzzle"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 20,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 7 digits-in-disguise work with the new tests.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch06_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s6_1",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch06",
+    "officialSectionId": "ncert_hegp1_s6_1",
+    "printedPageStart": 137,
+    "printedPageEnd": 145,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-10-03",
+    "establishes": "The distributive property restated; (a + 1) treated as a single term; identities defined as statements true for all values; products expanded and simplified.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 146 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 137,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 122 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 138,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 52 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 139,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 128 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 140,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 41 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 141,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 41 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 271 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 143,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 144,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 145,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "The distributive property with expressions",
+   "mathematicalObjective": "Expand a product of two expressions and collect like terms.",
+   "studentCanStatement": "I can expand (a + ab - 3b squared)(4 + b).",
+   "mathematicalIdeas": [
+    "distributive property extended to expressions",
+    "identity as a general statement",
+    "like terms with exponents"
+   ],
+   "representationsNeeded": [
+    "area grids",
+    "worked expansions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07p2_ch07_u2",
+    "pragati_iu_g07_ch04_u3"
+   ],
+   "vocabulary": [
+    "expand",
+    "identity",
+    "like terms"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 21,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 7 distributive work from numbers to expressions.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch06_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s6_2",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch06",
+    "officialSectionId": "ncert_hegp1_s6_2",
+    "printedPageStart": 145,
+    "printedPageEnd": 150,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Identity 1A and its variants derived from the distributive property; 60 minus 5 squared computed with it; Sridharacharya’s quick method.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     10,
+     11,
+     14,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 145,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 146,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 75 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 147,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 29 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 148,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 149,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 77 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 150,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 121 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Special cases: squares of sums and differences",
+   "mathematicalObjective": "Use the square-of-a-sum and difference-of-squares identities.",
+   "studentCanStatement": "I can compute 55 squared quickly using an identity.",
+   "mathematicalIdeas": [
+    "square of a sum",
+    "square of a difference",
+    "difference of two squares",
+    "identity used for mental computation"
+   ],
+   "representationsNeeded": [
+    "area squares",
+    "worked computations"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch06_u1"
+   ],
+   "vocabulary": [
+    "identity",
+    "square of a sum",
+    "difference of squares"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 22,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Algebraic identities proper, new at Class 8.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch06_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s6_3",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch06",
+    "officialSectionId": "ncert_hegp1_s6_3",
+    "printedPageStart": 150,
+    "printedPageEnd": 150,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Expansions and simplifications containing errors, each to be found and corrected.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 150,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 121 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Mind the mistake, mend the mistake",
+   "mathematicalObjective": "Find and correct errors in algebraic expansion and simplification.",
+   "studentCanStatement": "I can find what went wrong in this expansion and fix it.",
+   "mathematicalIdeas": [
+    "error analysis in algebra",
+    "why a step is invalid"
+   ],
+   "representationsNeeded": [
+    "incorrect worked solutions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch06_u2"
+   ],
+   "vocabulary": [
+    "mistake",
+    "correct",
+    "expand"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "REVIEW",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 23,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "REVISIT",
+   "progressionRationale": "Consolidates the identities by testing them against wrong work.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch06_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s6_4",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch06",
+    "officialSectionId": "ncert_hegp1_s6_4",
+    "printedPageStart": 150,
+    "printedPageEnd": 157,
+    "pdfPageStart": 15,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Several methods counting the same tile pattern; Aditya’s area method; the patterns written as algebraic equations and shown equal.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 15,
+      "printedPage": 150,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 121 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 151,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 409 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 152,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 201 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 153,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 154,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 79 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 155,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 147 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 156,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 139 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 157,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 119 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Many routes to the same expression",
+   "mathematicalObjective": "Show that different methods give the same algebraic result.",
+   "studentCanStatement": "I can show two different ways to count the tiles and get equal expressions.",
+   "mathematicalIdeas": [
+    "equivalent expressions from different counts",
+    "generalising a figure pattern",
+    "justifying equality algebraically"
+   ],
+   "representationsNeeded": [
+    "tile patterns",
+    "step diagrams",
+    "area dissections"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch06_u2"
+   ],
+   "vocabulary": [
+    "equivalent",
+    "pattern",
+    "step k"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 24,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Joins the chapter’s identities to the pattern work of Classes 6-7.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch07_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s7_1",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp1_s7_2",
+    "ncert_hegp1_s7_3"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch07",
+    "officialSectionId": "ncert_hegp1_s7_1",
+    "printedPageStart": 160,
+    "printedPageEnd": 162,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 4,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Digital images resized with and without distortion; ratios of width to height compared; ratios changed by a common factor; simplest form.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 142 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 160,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 97 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 161,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 23 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 162,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 32 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Similarity in change, ratio, and simplest form",
+   "mathematicalObjective": "Express a proportional relationship as a ratio and reduce it to simplest form.",
+   "studentCanStatement": "I can say which rectangles are similar by comparing their ratios.",
+   "mathematicalIdeas": [
+    "ratio as a comparison",
+    "similar figures preserving ratio",
+    "equivalent ratios",
+    "simplest form"
+   ],
+   "representationsNeeded": [
+    "resized images",
+    "rectangle sets",
+    "ratio tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch08_u2",
+    "pragati_iu_g06_ch07_u8"
+   ],
+   "vocabulary": [
+    "ratio",
+    "similar",
+    "simplest form"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 25,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §7.1-§7.3: similarity in change motivates the ratio, §7.2 names it and §7.3 reduces it to simplest form, each in a page or less. They are one lesson-sized objective and all three official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Ratio as a named object is new; Classes 1-7 compare quantities without it.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch07_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s7_4",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch07",
+    "officialSectionId": "ncert_hegp1_s7_4",
+    "printedPageStart": 162,
+    "printedPageEnd": 172,
+    "pdfPageStart": 4,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Neelima’s age problem; coffee mixtures compared; the trairashika rule of three with ichchhphala and pramana; cross multiplication.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     5,
+     7,
+     8,
+     9,
+     11,
+     13,
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 4,
+      "printedPage": 162,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 32 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 163,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 63 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 164,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 33 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 165,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 114 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 166,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 167,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 55 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 168,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 30 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 169,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 170,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 33 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 171,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 86 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 172,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Problem solving with proportional reasoning",
+   "mathematicalObjective": "Solve for an unknown fourth quantity in a proportional relationship.",
+   "studentCanStatement": "I can find the fourth quantity when three are known.",
+   "mathematicalIdeas": [
+    "proportion with one unknown",
+    "cross multiplication",
+    "the rule of three and its history"
+   ],
+   "representationsNeeded": [
+    "proportion tables",
+    "worked problems"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch07_u1",
+    "pragati_iu_g07p2_ch07_u2"
+   ],
+   "vocabulary": [
+    "proportion",
+    "cross multiplication",
+    "rule of three"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 26,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "A general method for proportional problems, new at Class 8.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch07_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s7_5",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch07",
+    "officialSectionId": "ncert_hegp1_s7_5",
+    "printedPageStart": 172,
+    "printedPageEnd": 175,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 17,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Sharing quantities unequally according to a stated ratio, with the parts summing back to the whole.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     15,
+     16
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 172,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 173,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 44 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 174,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 48 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 175,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Sharing in a given ratio",
+   "mathematicalObjective": "Divide a quantity between parties in a stated ratio.",
+   "studentCanStatement": "I can share 240 rupees in the ratio 3 : 5.",
+   "mathematicalIdeas": [
+    "unequal sharing",
+    "ratio as parts of a whole",
+    "checking the shares sum to the total"
+   ],
+   "representationsNeeded": [
+    "sharing diagrams",
+    "part tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch07_u2"
+   ],
+   "vocabulary": [
+    "share",
+    "ratio",
+    "parts"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 27,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "A distinct procedure built on the ratio idea.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08_ch07_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp1_s7_6",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch07",
+    "officialSectionId": "ncert_hegp1_s7_6",
+    "printedPageStart": 1,
+    "printedPageEnd": 177,
+    "pdfPageStart": 17,
+    "pdfPageEnd": 23,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Unit conversions carried out as proportional reasoning rather than as remembered factors.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     19,
+     20,
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 17,
+      "printedPage": 175,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 176,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 22 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 177,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 127 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 550 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 311 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 311 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 1,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 11 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   },
+   "instructionalTitle": "Unit conversions as proportional reasoning",
+   "mathematicalObjective": "Convert between units by treating the conversion as a ratio.",
+   "studentCanStatement": "I can convert between units by multiplying by the right ratio.",
+   "mathematicalIdeas": [
+    "conversion factor as a ratio",
+    "chaining conversions",
+    "checking the result by size"
+   ],
+   "representationsNeeded": [
+    "conversion tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch07_u2",
+    "pragati_iu_g07_ch03_u5"
+   ],
+   "vocabulary": [
+    "convert",
+    "factor",
+    "unit"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 28,
+   "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 7 converted metric units by place value; Class 8 explains conversion as a ratio.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 22",
+     "verdict": "CONFIRMED",
+     "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
   }
  ],
  "nonInstructional": [],
@@ -44179,6 +47978,34 @@
    "note": "Chapters: 15 of 15 fully inspected. Sections: 65 of 65 fully inspected and dispositioned, 0 not started. Pages: 511 of 511 read in full text, and 236 of 236 picture-carried pages rendered and looked at.",
    "officialRecordsNotStarted": 0,
    "officialRecordsBlocked": 0
+  },
+  {
+   "classNumber": 8,
+   "status": "IN_PROGRESS",
+   "officialChapterCount": 14,
+   "officialSectionsTotal": 58,
+   "chaptersTotal": 14,
+   "chaptersInspected": 7,
+   "chaptersFullyInspected": 7,
+   "chaptersPartiallyInspected": 0,
+   "chaptersIndexedOnly": 7,
+   "sectionsAccountedFor": 31,
+   "sectionsNotYetInspected": 27,
+   "officialRecordsTotal": 58,
+   "officialRecordsFullyInspected": 31,
+   "officialRecordsPartiallyInspected": 0,
+   "officialRecordsNotStarted": 27,
+   "officialRecordsIndexedOnly": 0,
+   "officialRecordsBlocked": 0,
+   "pagesInScope": 423,
+   "pagesIndexed": 423,
+   "pagesFullyInspected": 247,
+   "pagesFullTextPending": 176,
+   "visualPagesRequired": 160,
+   "visualPagesInspected": 160,
+   "visualPagesPending": 0,
+   "pagesEvidenceIncomplete": 176,
+   "note": "Chapters: 7 of 14 fully inspected — all of Part I. Sections: 31 of 58 fully inspected and dispositioned, 27 not started. Pages: 247 of 423 read in full text; among those, 160 are picture-carried and 160 have been rendered and looked at. The visual requirement of the 176 unread Part II pages is not yet determined."
   }
  ],
  "recordExtents": [
@@ -44825,6 +48652,104 @@
    "pdfPageEnd": 35,
    "printedPageStart": 165,
    "printedPageEnd": 190
+  },
+  {
+   "officialRecordId": "ncert_hegp1_ch01",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 22,
+   "printedPageStart": 1,
+   "printedPageEnd": 17
+  },
+  {
+   "officialRecordId": "ncert_hegp1_ch02",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 38,
+   "printedPageStart": 1,
+   "printedPageEnd": 46
+  },
+  {
+   "officialRecordId": "ncert_hegp1_ch03",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 46,
+   "printedPageStart": 1,
+   "printedPageEnd": 81
+  },
+  {
+   "officialRecordId": "ncert_hegp1_ch04",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 39,
+   "printedPageStart": 1,
+   "printedPageEnd": 111
+  },
+  {
+   "officialRecordId": "ncert_hegp1_ch05",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 37,
+   "printedPageStart": 1,
+   "printedPageEnd": 135
+  },
+  {
+   "officialRecordId": "ncert_hegp1_ch06",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 35,
+   "printedPageStart": 1,
+   "printedPageEnd": 158
+  },
+  {
+   "officialRecordId": "ncert_hegp1_ch07",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 30,
+   "printedPageStart": 1,
+   "printedPageEnd": 177
+  },
+  {
+   "officialRecordId": "ncert_hegp2_ch01",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 32,
+   "printedPageStart": 2,
+   "printedPageEnd": 31
+  },
+  {
+   "officialRecordId": "ncert_hegp2_ch02",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 22,
+   "printedPageStart": 34,
+   "printedPageEnd": 53
+  },
+  {
+   "officialRecordId": "ncert_hegp2_ch03",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 15,
+   "printedPageStart": 56,
+   "printedPageEnd": 69
+  },
+  {
+   "officialRecordId": "ncert_hegp2_ch04",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 33,
+   "printedPageStart": 71,
+   "printedPageEnd": 102
+  },
+  {
+   "officialRecordId": "ncert_hegp2_ch05",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 32,
+   "printedPageStart": 104,
+   "printedPageEnd": 133
+  },
+  {
+   "officialRecordId": "ncert_hegp2_ch06",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 13,
+   "printedPageStart": 136,
+   "printedPageEnd": 147
+  },
+  {
+   "officialRecordId": "ncert_hegp2_ch07",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 29,
+   "printedPageStart": 149,
+   "printedPageEnd": 171
   }
  ],
  "sourceSegments": [
@@ -48609,6 +52534,870 @@
     "firstInspectedOn": "2026-10-02",
     "lastEvidenceUpdatedOn": "2026-10-02"
    }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_01_seg1",
+   "officialRecordId": "ncert_hegp1_ch01",
+   "sourceLabel": "pages 1–2 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 138 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 29 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_01_seg2",
+   "officialRecordId": "ncert_hegp1_ch01",
+   "sourceLabel": "pages 20–22 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch01",
+    "officialSectionId": null,
+    "printedPageStart": 2,
+    "printedPageEnd": 4,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [
+     20,
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 7 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 19 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_02_seg1",
+   "officialRecordId": "ncert_hegp1_ch02",
+   "sourceLabel": "pages 31–38 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch02",
+    "officialSectionId": null,
+    "printedPageStart": 2,
+    "printedPageEnd": 9,
+    "pdfPageStart": 31,
+    "pdfPageEnd": 38,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 31,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 13 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 32 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 42 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 25 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 7 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 4 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_03_seg1",
+   "officialRecordId": "ncert_hegp1_ch03",
+   "sourceLabel": "pages 35–46 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch03",
+    "officialSectionId": null,
+    "printedPageStart": 1,
+    "printedPageEnd": 12,
+    "pdfPageStart": 35,
+    "pdfPageEnd": 46,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 35,
+      "printedPage": 1,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 8 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 8 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 27 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 27 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 39,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "10 images, 8 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 40,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "17 images, 37 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 41,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "13 images, 14 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 42,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 13 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 43,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 106 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 44,
+      "printedPage": 10,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "3 images, 80 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 45,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 47 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 46,
+      "printedPage": 12,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 2 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_04_seg1",
+   "officialRecordId": "ncert_hegp1_ch04",
+   "sourceLabel": "page 1 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 1,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 160 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_04_seg2",
+   "officialRecordId": "ncert_hegp1_ch04",
+   "sourceLabel": "pages 32–39 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch04",
+    "officialSectionId": null,
+    "printedPageStart": 2,
+    "printedPageEnd": 9,
+    "pdfPageStart": 32,
+    "pdfPageEnd": 39,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 32,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 20 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 71 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 31 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 47 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 16 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 33 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 38,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 25 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 39,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 2 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_05_seg1",
+   "officialRecordId": "ncert_hegp1_ch05",
+   "sourceLabel": "pages 24–37 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch05",
+    "officialSectionId": null,
+    "printedPageStart": 1,
+    "printedPageEnd": 13,
+    "pdfPageStart": 24,
+    "pdfPageEnd": 37,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 24,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 15 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 1,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 4 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 13 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 265 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 8 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 8 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 7 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 3 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 10,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 36,
+      "printedPage": 12,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 37,
+      "printedPage": 13,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 36 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_06_seg1",
+   "officialRecordId": "ncert_hegp1_ch06",
+   "sourceLabel": "pages 23–35 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch06",
+    "officialSectionId": null,
+    "printedPageStart": 1,
+    "printedPageEnd": 12,
+    "pdfPageStart": 23,
+    "pdfPageEnd": 35,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 23,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 14 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 1,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "3 images, 10 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 279 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 14 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 15 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 21 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 53 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 6 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 132 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 3 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 10,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 38 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 34,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "2 images, 151 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 35,
+      "printedPage": 12,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g08_07_seg1",
+   "officialRecordId": "ncert_hegp1_ch07",
+   "sourceLabel": "pages 24–30 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "REFERENCE",
+   "justification": "Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own.",
+   "sourceEvidence": {
+    "bookId": "hegp1",
+    "bookPart": "Part I",
+    "officialChapterId": "ncert_hegp1_ch07",
+    "officialSectionId": null,
+    "printedPageStart": 2,
+    "printedPageEnd": 8,
+    "pdfPageStart": 24,
+    "pdfPageEnd": 30,
+    "inspectedOn": "2026-10-03",
+    "establishes": "Chapter opener, Summary, puzzle page or printed answer key, read in full.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 24,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 7 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 1 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 13 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 10 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 8 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 5 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 2 drawn elements: chapter opener, Summary, puzzle or answer-key page read in full text and, where picture-carried, rendered and looked at."
+     }
+    ],
+    "firstInspectedOn": "2026-10-03",
+    "lastEvidenceUpdatedOn": "2026-10-03"
+   }
   }
  ],
  "overlapJustifications": [
@@ -48866,6 +53655,116 @@
    "a": "pragati_iu_g07p2_ch07_u2",
    "b": "pragati_iu_g07p2_ch07_u3",
    "reason": "Shared page in ncert_gegp2_ch07: pragati_iu_g07p2_ch07_u2 and pragati_iu_g07p2_ch07_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch01_u1",
+   "b": "pragati_iu_g08_ch01_u2",
+   "reason": "Shared page in ncert_hegp1_ch01: pragati_iu_g08_ch01_u1 and pragati_iu_g08_ch01_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch01_u2",
+   "b": "pragati_iu_g08_ch01_u3",
+   "reason": "Shared page in ncert_hegp1_ch01: pragati_iu_g08_ch01_u2 and pragati_iu_g08_ch01_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch01_u3",
+   "b": "pragati_iu_g08_ch01_u4",
+   "reason": "Shared page in ncert_hegp1_ch01: pragati_iu_g08_ch01_u3 and pragati_iu_g08_ch01_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch02_u1",
+   "b": "pragati_iu_g08_ch02_u2",
+   "reason": "Shared page in ncert_hegp1_ch02: pragati_iu_g08_ch02_u1 and pragati_iu_g08_ch02_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch02_u2",
+   "b": "pragati_iu_g08_ch02_u3",
+   "reason": "Shared page in ncert_hegp1_ch02: pragati_iu_g08_ch02_u2 and pragati_iu_g08_ch02_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch02_u3",
+   "b": "pragati_iu_g08_ch02_u4",
+   "reason": "Shared page in ncert_hegp1_ch02: pragati_iu_g08_ch02_u3 and pragati_iu_g08_ch02_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch02_u4",
+   "b": "pragati_iu_g08_ch02_u5",
+   "reason": "Shared page in ncert_hegp1_ch02: pragati_iu_g08_ch02_u4 and pragati_iu_g08_ch02_u5 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch03_u1",
+   "b": "pragati_iu_g08_ch03_u2",
+   "reason": "Shared page in ncert_hegp1_ch03: pragati_iu_g08_ch03_u1 and pragati_iu_g08_ch03_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch03_u2",
+   "b": "pragati_iu_g08_ch03_u3",
+   "reason": "Shared page in ncert_hegp1_ch03: pragati_iu_g08_ch03_u2 and pragati_iu_g08_ch03_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch04_u1",
+   "b": "pragati_iu_g08_ch04_u2",
+   "reason": "Shared page in ncert_hegp1_ch04: pragati_iu_g08_ch04_u1 and pragati_iu_g08_ch04_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch04_u2",
+   "b": "pragati_iu_g08_ch04_u3",
+   "reason": "Shared page in ncert_hegp1_ch04: pragati_iu_g08_ch04_u2 and pragati_iu_g08_ch04_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch04_u3",
+   "b": "pragati_iu_g08_ch04_u4",
+   "reason": "Shared page in ncert_hegp1_ch04: pragati_iu_g08_ch04_u3 and pragati_iu_g08_ch04_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch04_u4",
+   "b": "pragati_iu_g08_ch04_u5",
+   "reason": "Shared page in ncert_hegp1_ch04: pragati_iu_g08_ch04_u4 and pragati_iu_g08_ch04_u5 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch05_u1",
+   "b": "pragati_iu_g08_ch05_u2",
+   "reason": "Shared page in ncert_hegp1_ch05: pragati_iu_g08_ch05_u1 and pragati_iu_g08_ch05_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch05_u2",
+   "b": "pragati_iu_g08_ch05_u3",
+   "reason": "Shared page in ncert_hegp1_ch05: pragati_iu_g08_ch05_u2 and pragati_iu_g08_ch05_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch06_u1",
+   "b": "pragati_iu_g08_ch06_u2",
+   "reason": "Shared page in ncert_hegp1_ch06: pragati_iu_g08_ch06_u1 and pragati_iu_g08_ch06_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch06_u2",
+   "b": "pragati_iu_g08_ch06_u3",
+   "reason": "Shared page in ncert_hegp1_ch06: pragati_iu_g08_ch06_u2 and pragati_iu_g08_ch06_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch06_u2",
+   "b": "pragati_iu_g08_ch06_u4",
+   "reason": "Shared page in ncert_hegp1_ch06: pragati_iu_g08_ch06_u2 and pragati_iu_g08_ch06_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch06_u3",
+   "b": "pragati_iu_g08_ch06_u4",
+   "reason": "Shared page in ncert_hegp1_ch06: pragati_iu_g08_ch06_u3 and pragati_iu_g08_ch06_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch07_u1",
+   "b": "pragati_iu_g08_ch07_u2",
+   "reason": "Shared page in ncert_hegp1_ch07: pragati_iu_g08_ch07_u1 and pragati_iu_g08_ch07_u2 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch07_u2",
+   "b": "pragati_iu_g08_ch07_u3",
+   "reason": "Shared page in ncert_hegp1_ch07: pragati_iu_g08_ch07_u2 and pragati_iu_g08_ch07_u3 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
+  },
+  {
+   "a": "pragati_iu_g08_ch07_u3",
+   "b": "pragati_iu_g08_ch07_u4",
+   "reason": "Shared page in ncert_hegp1_ch07: pragati_iu_g08_ch07_u3 and pragati_iu_g08_ch07_u4 meet on one spread where a section ends and the next begins; each takes the part of that page its own objective needs."
   }
  ],
  "humanJudgementPolicies": [
@@ -48910,6 +53809,13 @@
    "policyQuestion": "When two objectives drawn from the same pages are each very small for their stage, should they be one instructional unit or stay separate?",
    "affectedUnitIds": [
     "pragati_iu_g01_ch08_u6"
+   ]
+  },
+  {
+   "policyKey": "historical_material_lesson_vs_context",
+   "policyQuestion": "When a numbered section is historical material about mathematics rather than mathematics to be done, is it a Pragati lesson of its own, or context carried inside the units whose mathematics it describes?",
+   "affectedUnitIds": [
+    "pragati_iu_g08_ch01_u4"
    ]
   }
  ],
@@ -50505,6 +55411,316 @@
    "printedPageEnd": null,
    "boundaryStatus": "VERIFIED_FROM_SOURCE",
    "boundaryEvidence": "Heading \"7.4\" found on PDF page 19 of ncert_gegp2_ch07, set in the chapter heading face, and checked against the page while reading it; the body runs to the chapter Summary on page 27. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s1_1",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "pdfPageStart": 3,
+   "pdfPageEnd": 11,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"1.1\" found on PDF page 3 of ncert_hegp1_ch01, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 11. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s1_2",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "pdfPageStart": 11,
+   "pdfPageEnd": 15,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"1.2\" found on PDF page 11 of ncert_hegp1_ch01, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 15. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s1_3",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "pdfPageStart": 15,
+   "pdfPageEnd": 19,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"1.3\" found on PDF page 15 of ncert_hegp1_ch01, set in the chapter heading face and checked against the page while reading it; the body runs to the end of the chapter body on page 19, where the Summary or answer key begins. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s2_1",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 3,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"2.1\" found on PDF page 1 of ncert_hegp1_ch02, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 3. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s2_2",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "pdfPageStart": 3,
+   "pdfPageEnd": 9,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"2.2\" found on PDF page 3 of ncert_hegp1_ch02, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 9. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s2_3",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "pdfPageStart": 9,
+   "pdfPageEnd": 12,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"2.3\" found on PDF page 9 of ncert_hegp1_ch02, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 12. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s2_4",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "pdfPageStart": 12,
+   "pdfPageEnd": 15,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"2.4\" found on PDF page 12 of ncert_hegp1_ch02, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 15. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s2_5",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "pdfPageStart": 15,
+   "pdfPageEnd": 30,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"2.5\" found on PDF page 15 of ncert_hegp1_ch02, set in the chapter heading face and checked against the page while reading it; the body runs to the end of the chapter body on page 30, where the Summary or answer key begins. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s3_1",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 7,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"3.1\" found on PDF page 1 of ncert_hegp1_ch03, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 7. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s3_2",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "pdfPageStart": 7,
+   "pdfPageEnd": 14,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"3.2\" found on PDF page 7 of ncert_hegp1_ch03, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 14. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s3_3",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "pdfPageStart": 14,
+   "pdfPageEnd": 23,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"3.3\" found on PDF page 14 of ncert_hegp1_ch03, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading, §3.4, on page 23. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s4_1",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "pdfPageStart": 2,
+   "pdfPageEnd": 13,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"4.1\" found on PDF page 2 of ncert_hegp1_ch04, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 13. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s4_2",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "pdfPageStart": 13,
+   "pdfPageEnd": 14,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"4.2\" found on PDF page 13 of ncert_hegp1_ch04, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 14. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s4_3",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "pdfPageStart": 14,
+   "pdfPageEnd": 18,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"4.3\" found on PDF page 14 of ncert_hegp1_ch04, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 18. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s4_4",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "pdfPageStart": 18,
+   "pdfPageEnd": 22,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"4.4\" found on PDF page 18 of ncert_hegp1_ch04, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 22. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s4_5",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "pdfPageStart": 22,
+   "pdfPageEnd": 24,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"4.5\" found on PDF page 22 of ncert_hegp1_ch04, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 24. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s4_6",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "pdfPageStart": 24,
+   "pdfPageEnd": 31,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"4.6\" found on PDF page 24 of ncert_hegp1_ch04, set in the chapter heading face and checked against the page while reading it; the body runs to the end of the chapter body on page 31, where the Summary or answer key begins. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s5_1",
+   "officialChapterId": "ncert_hegp1_ch05",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 12,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"5.1\" found on PDF page 1 of ncert_hegp1_ch05, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 12. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s5_2",
+   "officialChapterId": "ncert_hegp1_ch05",
+   "pdfPageStart": 12,
+   "pdfPageEnd": 20,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"5.2\" found on PDF page 12 of ncert_hegp1_ch05, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 20. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s5_3",
+   "officialChapterId": "ncert_hegp1_ch05",
+   "pdfPageStart": 20,
+   "pdfPageEnd": 23,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"5.3\" found on PDF page 20 of ncert_hegp1_ch05, set in the chapter heading face and checked against the page while reading it; the body runs to the end of the chapter body on page 23, where the Summary or answer key begins. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s6_1",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 10,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"6.1\" found on PDF page 1 of ncert_hegp1_ch06, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 10. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s6_2",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "pdfPageStart": 10,
+   "pdfPageEnd": 15,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"6.2\" found on PDF page 10 of ncert_hegp1_ch06, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 15. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s6_3",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "pdfPageStart": 15,
+   "pdfPageEnd": 15,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"6.3\" found on PDF page 15 of ncert_hegp1_ch06, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 15. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s6_4",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "pdfPageStart": 15,
+   "pdfPageEnd": 22,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"6.4\" found on PDF page 15 of ncert_hegp1_ch06, set in the chapter heading face and checked against the page while reading it; the body runs to the chapter Summary on page 22. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s7_1",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "pdfPageStart": 1,
+   "pdfPageEnd": 3,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.1\" found on PDF page 1 of ncert_hegp1_ch07, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 3. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s7_2",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "pdfPageStart": 3,
+   "pdfPageEnd": 3,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.2\" found on PDF page 3 of ncert_hegp1_ch07, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 3. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s7_3",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "pdfPageStart": 3,
+   "pdfPageEnd": 4,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.3\" found on PDF page 3 of ncert_hegp1_ch07, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 4. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s7_4",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "pdfPageStart": 4,
+   "pdfPageEnd": 14,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.4\" found on PDF page 4 of ncert_hegp1_ch07, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 14. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s7_5",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "pdfPageStart": 14,
+   "pdfPageEnd": 17,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.5\" found on PDF page 14 of ncert_hegp1_ch07, set in the chapter heading face and checked against the page while reading it; the body runs to the next numbered heading on page 17. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s7_6",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "pdfPageStart": 17,
+   "pdfPageEnd": 23,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"7.6\" found on PDF page 17 of ncert_hegp1_ch07, set in the chapter heading face and checked against the page while reading it; the body runs to the end of the chapter body on page 23, where the Summary or answer key begins. Boundary pages are shared with the neighbouring section, which is how the book prints them."
+  },
+  {
+   "officialSectionId": "ncert_hegp1_s3_4",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "pdfPageStart": 23,
+   "pdfPageEnd": 34,
+   "printedPageStart": null,
+   "printedPageEnd": null,
+   "boundaryStatus": "VERIFIED_FROM_SOURCE",
+   "boundaryEvidence": "Heading \"3.4. Place Value Representation\" found on PDF page 23 of ncert_hegp1_ch03 — printed with a full stop after the number, which the heading pattern first missed — and checked against the page while reading it; the body runs to the chapter Summary on page 34."
   }
  ],
  "officialSectionDispositions": []

@@ -60,6 +60,12 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Class 8 structural correction (checkpoint 22)
+
+| Finding | Where | Resolution |
+|---|---|---|
+| §3.4 "Place Value Representation" prints its heading with a full stop after the number — "3.4." — which the heading pattern did not match, so the section had no extent and §3.3 ran to the chapter end | Class 8 Part I chapter 3 | Located on PDF page 23 and recorded with VERIFIED_FROM_SOURCE boundary evidence naming the full stop; §3.3 now ends there. This is the same class of defect that cost Class 7 two sections, caught this time by comparing the extent set against the master map before decomposing |
+
 ## Checkpoint-20 review finding — RESOLVED in checkpoint 21
 
 | Defect | Found | Resolved |

@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-406 units are READY_FOR_AUTHORING and 25 are held back
+433 units are READY_FOR_AUTHORING and 26 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -65,7 +65,11 @@ pedagogical QA plus human review — not for convenience of generation.
 | 48 | Class 7 | 8 | Constructing triangles from sides and angles; The angle sum of a triangle, and exterior angles; Altitudes, and types of triangles; Multiplying a fraction by a whole number, and by a fraction; How a product compares with its factors; Dividing fractions; Problems involving fractions; Congruence of figures |
 | 49 | Class 7 | 8 | Congruence conditions for triangles; Angles of isosceles and equilateral triangles; Recap of integers, and additive inverse; Multiplication of integers; Division of integers, and the properties; HCF from prime factorisation; LCM from prime factorisation; The HCF-LCM relationship, and the division procedure |
 | 50 | Class 7 | 8 | Recap of decimals; Decimal multiplication; Decimal division; Estimating before computing; Statistical statements; Mean and median as representative values; Visualising data; Data detective |
-| 51 | Class 7 | 6 | Perpendicular bisector and angle bisector constructions; Constructing angles, parallels and arches; Tiling, and proving a region untileable; Finding unknowns from balance situations; Solving equations systematically; Diagnosing errors in solving, and a history of algebra |
+| 51 | Class 7 | 8 | Perpendicular bisector and angle bisector constructions; Constructing angles, parallels and arches; Tiling, and proving a region untileable; Finding unknowns from balance situations; Solving equations systematically; Diagnosing errors in solving, and a history of algebra; Square numbers and their patterns; Square roots |
+| 52 | Class 8 | 8 | Cube numbers and cube roots; Experiencing exponential growth; Exponential notation and operations; Zero and negative exponents; Powers of ten and large or small quantities; Did you ever wonder? Estimating with powers; Early number systems; The idea of a base |
+| 53 | Class 8 | 8 | Place value representation; Rectangles, squares and their diagonals; Angle sum, and parallelograms; Rhombus, and quadrilaterals with equal sides; Playing with quadrilaterals; Kite and trapezium; Sums of consecutive numbers, and multiples; Divisibility tests, justified |
+| 54 | Class 8 | 8 | Digits in disguise; The distributive property with expressions; Special cases: squares of sums and differences; Mind the mistake, mend the mistake; Many routes to the same expression; Similarity in change, ratio, and simplest form; Problem solving with proportional reasoning; Sharing in a given ratio |
+| 55 | Class 8 | 1 | Unit conversions as proportional reasoning |
 
 ## Held back
 
@@ -94,3 +98,4 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g06_ch05_u6` — Fun with numbers (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g06_ch10_u7` — Integer grids and puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g07_ch02_u5` — Expressions for situations, and Expression Engineer (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g08_ch01_u4` — A pinch of history: squares and cubes in use (NEEDS_HUMAN_CHECK, flagged for human check). 

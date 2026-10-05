@@ -1,8 +1,8 @@
 {
  "generatedFrom": "src/curriculum/data/instructionalDecomposition.json",
- "totalUnits": 431,
- "ready": 406,
- "needsHumanCheck": 25,
+ "totalUnits": 459,
+ "ready": 433,
+ "needsHumanCheck": 26,
  "draft": 0,
  "perClass": {
   "1": {
@@ -46,6 +46,12 @@
    "ready": 63,
    "needsHumanCheck": 1,
    "draft": 0
+  },
+  "8": {
+   "units": 28,
+   "ready": 27,
+   "needsHumanCheck": 1,
+   "draft": 0
   }
  },
  "policies": [
@@ -59,6 +65,10 @@
   },
   {
    "policyKey": "instructional_granularity_merge_small_objectives",
+   "units": 1
+  },
+  {
+   "policyKey": "historical_material_lesson_vs_context",
    "units": 1
   }
  ],

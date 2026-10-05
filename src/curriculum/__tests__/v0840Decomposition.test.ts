@@ -2041,3 +2041,99 @@ describe('§32 the Class 7 source-complete gate', () => {
     }
   });
 });
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 22 — CLASS 8 UNDER THE LOCKED NUMBERED-GRADE MODEL.
+// ---------------------------------------------------------------------------
+
+describe('Class 8 structure, boundaries and dispositions', () => {
+  const p8 = () => CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 8)!;
+  const c8Extents = () => OFFICIAL_SECTION_EXTENTS.filter((e) => e.officialSectionId.startsWith('ncert_hegp'));
+
+  it('verifies 14 chapters and 58 numbered sections against the source', () => {
+    expect(p8().officialChapterCount).toBe(14);
+    expect(p8().officialSectionsTotal).toBe(58);
+    expect(RECORD_EXTENTS.filter((e) => e.officialRecordId.startsWith('ncert_hegp')).length).toBe(14);
+    expect(authoringUnits(8).length).toBe(58);
+  });
+
+  it('keeps §3.4 — the heading the pattern first missed — as a real section', () => {
+    // "3.4. Place Value Representation" prints a full stop after the number.
+    const e = sectionExtentFor('ncert_hegp1_s3_4');
+    expect(e, 'ncert_hegp1_s3_4').toBeDefined();
+    expect(e!.boundaryStatus).toBe('VERIFIED_FROM_SOURCE');
+    // And §3.3 must stop where it starts, not run to the chapter end.
+    expect(sectionExtentFor('ncert_hegp1_s3_3')!.pdfPageEnd).toBeLessThanOrEqual(e!.pdfPageStart);
+  });
+
+  it('cites a numbered section, never a chapter, and keeps the chapter separate', () => {
+    const sections = new Set(authoringUnits(8).map((r) => r.recordId));
+    for (const u of unitsForClass(8)) {
+      expect(sections.has(u.officialRecordId), `${u.instructionalUnitId} → ${u.officialRecordId}`).toBe(true);
+      expect(u.officialRecordId).toBe(u.sourceEvidence.officialSectionId);
+      expect(u.officialChapterId, u.instructionalUnitId).toMatch(/^ncert_hegp[12]_ch\d{2}$/);
+      for (const extra of u.additionalOfficialRecordIds) {
+        expect(sections.has(extra), `${u.instructionalUnitId} extra ${extra}`).toBe(true);
+        expect((u.mergeRelationship ?? '').length, u.instructionalUnitId).toBeGreaterThan(60);
+      }
+      const e = sectionExtentFor(u.officialRecordId)!;
+      expect(e.officialChapterId).toBe(u.officialChapterId);
+    }
+  });
+
+  it('leaves no section of a decomposed chapter without a disposition', () => {
+    const decomposed = new Set(unitsForClass(8).map((u) => u.officialChapterId!));
+    const cited = new Set(unitsForClass(8).flatMap((u) => [u.officialRecordId, ...u.additionalOfficialRecordIds]));
+    for (const chapter of decomposed) {
+      for (const e of c8Extents().filter((x) => x.officialChapterId === chapter)) {
+        const id = e.officialSectionId;
+        expect(cited.has(id) || sectionDispositionFor(id) !== undefined, `${chapter}: ${id}`).toBe(true);
+      }
+    }
+  });
+
+  it('reads text and visuals in the same pass, and gives every page a home', () => {
+    for (const u of unitsForClass(8)) {
+      for (const p of u.sourceEvidence.pageEvidence) {
+        expect(p.fullTextInspected, `${u.instructionalUnitId} p${p.pdfPage}`).toBe(true);
+        if (p.visualInspectionRequired) expect(p.visualInspected, `${u.instructionalUnitId} p${p.pdfPage}`).toBe(true);
+      }
+    }
+    for (const chapter of new Set(unitsForClass(8).map((u) => u.officialChapterId!))) {
+      const ext = RECORD_EXTENTS.find((e) => e.officialRecordId === chapter)!;
+      const covered = new Set<number>();
+      for (const e of [
+        ...unitsForClass(8).filter((u) => u.officialChapterId === chapter).map((u) => u.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === chapter).map((s) => s.sourceEvidence),
+      ]) {
+        for (const p of e.pageEvidence) covered.add(p.pdfPage);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${chapter} p${p}`).toBe(true);
+      }
+    }
+  });
+
+  it('does not claim Class 8 is source-complete, and has no Learn content', () => {
+    expect(p8().status).toBe('IN_PROGRESS');
+    expect(p8().officialRecordsNotStarted).toBeGreaterThan(0);
+    for (const u of unitsForClass(8)) {
+      expect(u.learnCoverage, u.instructionalUnitId).toBe('NO_LEARN_CONTENT');
+      expect(u.existingArtifact ?? null).toBeNull();
+    }
+    const audit = read('PAGE_LEVEL_INTENT_AUDIT_CLASS_8.md');
+    expect(audit).toMatch(/Not source-complete/i);
+    expect(audit).not.toMatch(/ncert_gegp|ncert_gp_c6/);
+  });
+
+  it('names a new policy when the decision is genuinely different', () => {
+    const hist = HUMAN_JUDGEMENT_POLICIES.find((p) => p.policyKey === 'historical_material_lesson_vs_context');
+    expect(hist, 'historical_material_lesson_vs_context').toBeDefined();
+    expect(hist!.affectedUnitIds.length).toBeGreaterThan(0);
+    for (const id of hist!.affectedUnitIds) {
+      const u = PRAGATI_INSTRUCTIONAL_UNITS.find((x) => x.instructionalUnitId === id)!;
+      expect(u.decompositionStatus).toBe('NEEDS_HUMAN_CHECK');
+      expect(u.humanJudgementQuestion!.length).toBeGreaterThan(60);
+    }
+  });
+});
