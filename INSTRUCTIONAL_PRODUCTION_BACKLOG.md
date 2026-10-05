@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-383 units are READY_FOR_AUTHORING and 25 are held back
+406 units are READY_FOR_AUTHORING and 25 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -62,7 +62,10 @@ pedagogical QA plus human review — not for convenience of generation.
 | 45 | Class 7 | 8 | Distributing a product over a sum; The need for smaller units; A tenth part; A hundredth part; Decimal place value and notation; Units of measurement in decimal form; Locating and comparing decimals; Adding and subtracting decimals |
 | 46 | Class 7 | 8 | More on the decimal system; Letter-numbers and formulas; Algebraic expressions and their terms; Simplifying expressions and removing brackets; Formulas for patterns; Intersecting lines, vertically opposite angles and perpendiculars; Parallel lines, paper folding and the transversal; Corresponding angles and drawing parallel lines |
 | 47 | Class 7 | 8 | Alternate angles and angle chasing; Numbers that describe an arrangement; Parity; Magic squares and grid reasoning; The Virahanka-Fibonacci sequence; Digits in disguise; Equilateral triangles and compass construction; Constructing a triangle from three sides, and the triangle inequality |
-| 48 | Class 7 | 7 | Constructing triangles from sides and angles; The angle sum of a triangle, and exterior angles; Altitudes, and types of triangles; Multiplying a fraction by a whole number, and by a fraction; How a product compares with its factors; Dividing fractions; Problems involving fractions |
+| 48 | Class 7 | 8 | Constructing triangles from sides and angles; The angle sum of a triangle, and exterior angles; Altitudes, and types of triangles; Multiplying a fraction by a whole number, and by a fraction; How a product compares with its factors; Dividing fractions; Problems involving fractions; Congruence of figures |
+| 49 | Class 7 | 8 | Congruence conditions for triangles; Angles of isosceles and equilateral triangles; Recap of integers, and additive inverse; Multiplication of integers; Division of integers, and the properties; HCF from prime factorisation; LCM from prime factorisation; The HCF-LCM relationship, and the division procedure |
+| 50 | Class 7 | 8 | Recap of decimals; Decimal multiplication; Decimal division; Estimating before computing; Statistical statements; Mean and median as representative values; Visualising data; Data detective |
+| 51 | Class 7 | 6 | Perpendicular bisector and angle bisector constructions; Constructing angles, parallels and arches; Tiling, and proving a region untileable; Finding unknowns from balance situations; Solving equations systematically; Diagnosing errors in solving, and a history of algebra |
 
 ## Held back
 

@@ -1,7 +1,7 @@
 {
  "generatedFrom": "src/curriculum/data/instructionalDecomposition.json",
- "totalUnits": 408,
- "ready": 383,
+ "totalUnits": 431,
+ "ready": 406,
  "needsHumanCheck": 25,
  "draft": 0,
  "perClass": {
@@ -42,8 +42,8 @@
    "draft": 0
   },
   "7": {
-   "units": 41,
-   "ready": 40,
+   "units": 64,
+   "ready": 63,
    "needsHumanCheck": 1,
    "draft": 0
   }

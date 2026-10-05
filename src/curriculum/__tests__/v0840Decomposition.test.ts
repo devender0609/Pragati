@@ -1690,7 +1690,8 @@ describe('Class 7 structure and evidence', () => {
       expect(sections.has(u.officialRecordId), `${u.instructionalUnitId} → ${u.officialRecordId}`).toBe(true);
       expect(u.officialRecordId).toBe(u.sourceEvidence.officialSectionId);
       expect(u.officialChapterId, u.instructionalUnitId).toMatch(/^ncert_gegp[12]_ch\d{2}$/);
-      expect(u.instructionalUnitId.startsWith('pragati_iu_g07_')).toBe(true);
+      // Part II units carry a `g07p2` prefix so the two parts stay legible.
+      expect(u.instructionalUnitId).toMatch(/^pragati_iu_g07(p2)?_/);
       expect(sectionExtentFor(u.officialRecordId), u.officialRecordId).toBeDefined();
     }
   });
@@ -1723,11 +1724,16 @@ describe('Class 7 structure and evidence', () => {
     }
   });
 
-  it('does not claim Class 7 is source-complete', () => {
-    expect(p7().status).toBe('IN_PROGRESS');
-    expect(p7().chaptersFullyInspected).toBeLessThan(15);
-    expect(p7().sectionsNotYetInspected).toBeGreaterThan(0);
-    expect(p7().pagesFullTextPending).toBeGreaterThan(0);
+  it('states Class 7 completion from its evidence, either way', () => {
+    const p = p7();
+    if (p.status === 'DECOMPOSITION_SOURCE_COMPLETE') {
+      expect(p.chaptersFullyInspected).toBe(15);
+      expect(p.sectionsNotYetInspected).toBe(0);
+      expect(p.pagesFullTextPending).toBe(0);
+    } else {
+      expect(p.chaptersFullyInspected).toBeLessThan(15);
+      expect(p.pagesFullTextPending).toBeGreaterThan(0);
+    }
   });
 });
 
@@ -1935,8 +1941,10 @@ describe('§12-§15 the section denominator is sections, not chapters', () => {
       (p.officialRecordsBlocked ?? 0);
     expect(p.officialRecordsTotal).toBe(65);
     expect(sum).toBe(65);
-    // The chapter layer keeps its own fields and never feeds this one.
-    expect(p.officialRecordsIndexedOnly).not.toBe(p.chaptersIndexedOnly);
+    // The chapter layer keeps its own fields and never feeds this one. Once
+    // both are zero they coincide honestly, so the check is that the section
+    // field tracks the section accounting rather than the chapter count.
+    expect(p.officialRecordsIndexedOnly).toBe(officialRecordAccounting(7).officialRecordsIndexedOnly);
   });
 
   it('states the transition audit against the chapters actually completed', () => {
@@ -1944,7 +1952,92 @@ describe('§12-§15 the section denominator is sections, not chapters', () => {
     const done = new Set(unitsForClass(7).map((u) => u.officialChapterId!)).size;
     const remaining = 15 - done;
     expect(audit).toContain(`${done} Class 7 chapter`);
-    expect(audit).toContain(`${remaining} chapter`);
+    expect(audit).toContain(`${remaining} chapters remain unread`);
     expect(audit).not.toMatch(/eleven chapters are not yet read/i);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 21 — THE CLASS 7 PAGE AUDIT, AND SOURCE COMPLETION.
+//
+// Checkpoint 20 shipped section accounting but never generated the chapter /
+// page evidence report the spec asked for.
+// ---------------------------------------------------------------------------
+
+describe('§1-§3 the Class 7 page-level audit exists and derives its numbers', () => {
+  const audit = () => read('PAGE_LEVEL_INTENT_AUDIT_CLASS_7.md');
+  const p7 = () => CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 7)!;
+
+  it('lists all 15 chapters exactly once, Class 7 only', () => {
+    const text = audit();
+    for (const e of RECORD_EXTENTS.filter((x) => x.officialRecordId.startsWith('ncert_gegp'))) {
+      // The chapter appears once in the summary table and may appear again in
+      // its own detail block; it must appear at least once and the table row
+      // must be unique.
+      const rows = text.split('\n').filter((l) => l.startsWith(`| \`${e.officialRecordId}\` |`));
+      expect(rows.length, e.officialRecordId).toBe(1);
+    }
+    expect(text).not.toMatch(/ncert_gp_c6|aejm1|eemm1/);
+  });
+
+  it('matches classProgress rather than typed figures', () => {
+    const p = p7();
+    const text = audit();
+    expect(text).toContain(`${p.pagesFullyInspected}/${p.pagesInScope} pages read in full text`);
+    expect(text).toContain(`${p.visualPagesInspected}/${p.visualPagesRequired} picture-carried`);
+    expect(text).toContain(`${p.chaptersFullyInspected}/${p.chaptersTotal} chapters fully inspected`);
+    expect(text).toContain(`${p.officialRecordsFullyInspected}/${p.officialRecordsTotal} numbered sections`);
+  });
+
+  it('counts the units of each chapter through officialChapterId', () => {
+    for (const e of RECORD_EXTENTS.filter((x) => x.officialRecordId.startsWith('ncert_gegp'))) {
+      const units = unitsForClass(7).filter((u) => u.officialChapterId === e.officialRecordId);
+      expect(units.length, e.officialRecordId).toBeGreaterThan(0);
+    }
+    expect(unitsForClass(7).every((u) => u.officialChapterId !== undefined)).toBe(true);
+  });
+});
+
+describe('§32 the Class 7 source-complete gate', () => {
+  const p7 = () => CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 7)!;
+
+  it('requires both layers, every page and every verified boundary', () => {
+    const p = p7();
+    if (p.status !== 'DECOMPOSITION_SOURCE_COMPLETE') return;
+    expect(p.chaptersFullyInspected).toBe(15);
+    expect(p.officialRecordsFullyInspected).toBe(65);
+    expect(p.officialRecordsNotStarted).toBe(0);
+    expect(p.pagesFullTextPending).toBe(0);
+    expect(p.visualPagesPending).toBe(0);
+    const c7 = OFFICIAL_SECTION_EXTENTS.filter((e) => e.officialSectionId.startsWith('ncert_geg'));
+    expect(c7.length).toBe(65);
+    expect(c7.every((e) => e.boundaryStatus === 'VERIFIED_FROM_SOURCE')).toBe(true);
+    for (const row of sectionAccounting(7).rows) {
+      expect(row.state, row.sectionId).toBe('FULLY_INSPECTED');
+      expect(row.disposition, row.sectionId).not.toBeNull();
+    }
+  });
+
+  it('gives every page of every Class 7 chapter a home', () => {
+    for (const ext of RECORD_EXTENTS.filter((e) => e.officialRecordId.startsWith('ncert_gegp'))) {
+      const covered = new Set<number>();
+      for (const e of [
+        ...unitsForClass(7).filter((u) => u.officialChapterId === ext.officialRecordId).map((u) => u.sourceEvidence),
+        ...SOURCE_SEGMENTS.filter((s) => s.officialRecordId === ext.officialRecordId).map((s) => s.sourceEvidence),
+      ]) {
+        for (const p of e.pageEvidence) covered.add(p.pdfPage);
+      }
+      for (let p = ext.pdfPageStart; p <= ext.pdfPageEnd; p += 1) {
+        expect(covered.has(p), `${ext.officialRecordId} p${p}`).toBe(true);
+      }
+    }
+  });
+
+  it('keeps Part II identity independent of the odd archive path', () => {
+    for (const u of unitsForClass(7).filter((x) => x.officialChapterId!.startsWith('ncert_gegp2'))) {
+      expect(u.sourceEvidence.bookPart).toBe('Part II');
+      expect(u.sourceEvidence.bookId).toBe('gegp2');
+      expect(u.officialRecordId).toMatch(/^ncert_gegp2_s\d+_\d+$/);
+    }
   });
 });

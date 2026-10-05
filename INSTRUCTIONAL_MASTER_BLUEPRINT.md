@@ -26,7 +26,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 4 | 14 | — | 224 indexed / 224 full text / 177 visual | 59 | 54 | 5 | 0 | 0 | 59 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 7 | 15 | 65 | 511 indexed / 313 full text / 131 visual | 41 | 40 | 1 | 0 | 0 | 41 | IN_PROGRESS |
+| Class 7 | 15 | 65 | 511 indexed / 511 full text / 236 visual | 64 | 63 | 1 | 0 | 0 | 64 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 8 | 14 | 58 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -5942,7 +5942,7 @@ Chapters: 10 of 10 fully inspected. Sections: 65 of 65 accounted for. Pages: 392
 
 ## Class 7
 
-Chapters: 8 of 15 fully inspected. Sections: 43 of 65 fully inspected and dispositioned, 22 not started. Pages: 313 of 511 read in full text; among those, 131 are picture-carried and 131 have been rendered and looked at. The visual requirement of the 198 unread pages is not yet determined.
+Chapters: 15 of 15 fully inspected. Sections: 65 of 65 fully inspected and dispositioned, 0 not started. Pages: 511 of 511 read in full text, and 236 of 236 picture-carried pages rendered and looked at.
 
 #### One lakh, and how big it is
 
@@ -6599,6 +6599,374 @@ Chapters: 8 of 15 fully inspected. Sections: 43 of 65 fully inspected and dispos
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Congruence of figures
+
+- **Id** `pragati_iu_g07p2_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s1_1`
+- **Evidence depth** FULL_PAGE_INSPECTED
+- **Source** gegp2 Part II, printed pp. 2–4 (PDF pp. 1–4), read 2026-10-02. Establishes: Recreating a signboard symbol; congruence defined by superimposition; what must be checked for circles and rectangles.
+- **Objective** Decide whether two figures are congruent and say what must match.
+- **Student can** I can say how to check whether two circles are congruent.
+- **Mathematical ideas** congruence as same shape and size; superimposition; corresponding parts
+- **Representations** tracing; signboard symbols
+- **Prerequisites** pragati_iu_g06_ch09_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Congruence conditions for triangles
+
+- **Id** `pragati_iu_g07p2_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s1_2`
+- **Evidence depth** FULL_PAGE_INSPECTED
+- **Source** gegp2 Part II, printed pp. 4–17 (PDF pp. 4–17), read 2026-10-02. Establishes: Measuring sides and angles to test congruence; the conditions stated with the correspondence notation; two non-congruent triangles from the same SSA data; proofs using a common side.
+- **Objective** Use SSS, SAS, ASA and RHS to decide whether two triangles are congruent.
+- **Student can** I can say which condition proves these two triangles congruent.
+- **Mathematical ideas** SSS, SAS, ASA and RHS; correspondence written in order; why SSA fails
+- **Representations** labelled triangle pairs; rough diagrams
+- **Prerequisites** pragati_iu_g07_ch07_u3
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Angles of isosceles and equilateral triangles
+
+- **Id** `pragati_iu_g07p2_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s1_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 19, 21, 22, 23
+- **Source** gegp2 Part II, printed pp. 17–22 (PDF pp. 17–23), read 2026-10-02. Establishes: Dropping a perpendicular and applying RHS to show the base angles equal; the equilateral case following; congruent triangles identified in bridges and buildings.
+- **Objective** Prove the base angles of an isosceles triangle equal, using congruence.
+- **Student can** I can show why the two base angles of this isosceles triangle are equal.
+- **Mathematical ideas** isosceles base angles; equilateral angles all equal; proof by constructing an altitude
+- **Representations** triangle diagrams; bridge photographs
+- **Prerequisites** pragati_iu_g07p2_ch01_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Recap of integers, and additive inverse
+
+- **Id** `pragati_iu_g07p2_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s2_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** gegp2 Part II, printed pp. 25–29 (PDF pp. 1–6), read 2026-10-02. Establishes: Rakesh’s puzzle; the coin struck left or right; the token model recalled; the additive inverse written as -a.
+- **Objective** Add and subtract integers on the number line and with tokens, and use the additive inverse.
+- **Student can** I can find the final position after a sequence of moves left and right.
+- **Mathematical ideas** integer as position and movement; token model; additive inverse; subtraction as adding the inverse
+- **Representations** number line; coloured tokens
+- **Prerequisites** pragati_iu_g06_ch10_u5
+- **Role** REVISIT · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Multiplication of integers
+
+- **Id** `pragati_iu_g07p2_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s2_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 9, 11, 14, 15
+- **Source** gegp2 Part II, printed pp. 29–38 (PDF pp. 6–15), read 2026-10-02. Establishes: Removing tokens as negative multiplication; the pattern extended to a negative multiplier; the sign rules derived and checked by swapping the factors; the elevator and marks examples.
+- **Objective** Multiply integers and justify the sign rules.
+- **Student can** I can say why a negative times a negative is positive.
+- **Mathematical ideas** repeated addition with negatives; pattern continuation to fix the sign rule; token justification; order not mattering
+- **Representations** token arrays; pattern tables
+- **Prerequisites** pragati_iu_g07p2_ch02_u1
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Division of integers, and the properties
+
+- **Id** `pragati_iu_g07p2_ch02_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s2_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 17, 18, 19, 22
+- **Source** gegp2 Part II, printed pp. 38–45 (PDF pp. 15–23), read 2026-10-02. Establishes: The division sign rules read off the multiplication pattern; products of three integers; the distributive property extended from positive integers to all integers.
+- **Objective** Divide integers and use commutativity, associativity and distributivity over the integers.
+- **Student can** I can state the rule for the sign of a quotient and use the distributive property.
+- **Mathematical ideas** integer division sign rules; commutative, associative and distributive properties; properties shown with rectangular arrangements
+- **Representations** pattern tables; area diagrams
+- **Prerequisites** pragati_iu_g07p2_ch02_u2; pragati_iu_g07_ch02_u4
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### HCF from prime factorisation
+
+- **Id** `pragati_iu_g07p2_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s3_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9
+- **Source** gegp2 Part II, printed pp. 48–55 (PDF pp. 1–9), read 2026-10-02. Establishes: Sameeksha tiling a 12 ft by 16 ft room; listing factors replaced by prime factorisation; the largest common subpart; conjecture defined.
+- **Objective** Find the HCF of two numbers from their prime factorisations.
+- **Student can** I can find the HCF of 84 and 112 without listing every factor.
+- **Mathematical ideas** common factor; HCF as the product of shared prime factors; why listing factors is inefficient; conjecture named
+- **Representations** factor trees; tiling a room
+- **Prerequisites** pragati_iu_g06_ch05_u4
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### LCM from prime factorisation
+
+- **Id** `pragati_iu_g07p2_ch03_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s3_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9
+- **Source** gegp2 Part II, printed pp. 55–58 (PDF pp. 9–12), read 2026-10-02. Establishes: Anshu and Guna’s torans; Kabamai returning to the sweet shop; the LCM read off the prime factorisations.
+- **Objective** Find the LCM of two numbers and use it in context.
+- **Student can** I can find the LCM of 36 and 648 from their prime factors.
+- **Mathematical ideas** common multiple; LCM as the smallest covering product; occurrences of each prime
+- **Representations** toran strips; factor lists
+- **Prerequisites** pragati_iu_g07p2_ch03_u1
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### The HCF-LCM relationship, and the division procedure
+
+- **Id** `pragati_iu_g07p2_ch03_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s3_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19
+- **Source** gegp2 Part II, printed pp. 58–65 (PDF pp. 12–20), read 2026-10-02. Establishes: Doubling both numbers and watching the factors; the stacked-division procedure for the LCM; the number by which the LCM multiplies to give the product turning out to be the HCF.
+- **Objective** Use the relation between HCF, LCM and the product, and the repeated-division procedure.
+- **Student can** I can find the LCM from the HCF and the product of the two numbers.
+- **Mathematical ideas** HCF x LCM = product; repeated division by common factors; why the procedure works
+- **Representations** division ladders; worked chains
+- **Prerequisites** pragati_iu_g07p2_ch03_u2
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Recap of decimals
+
+- **Id** `pragati_iu_g07p2_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s4_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 2, 3
+- **Source** gegp2 Part II, printed pp. 68–69 (PDF pp. 1–3), read 2026-10-02. Establishes: Decimals recalled as the natural extension of the Indian place value system; fractions written as sums and as decimals.
+- **Objective** Read decimals as an extension of place value and convert fractions with denominators that are powers of ten.
+- **Student can** I can write 123 thousandths as a decimal.
+- **Mathematical ideas** decimal as extended place value; fraction over a power of ten; expanded form
+- **Representations** place value tables
+- **Prerequisites** pragati_iu_g07_ch03_u4
+- **Role** REVISIT · **reasoning** procedure · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Decimal multiplication
+
+- **Id** `pragati_iu_g07p2_ch04_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s4_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5, 6, 8
+- **Source** gegp2 Part II, printed pp. 69–74 (PDF pp. 3–8), read 2026-10-02. Establishes: Products rewritten as fractions over powers of ten; the rule for the number of decimal places derived; multiplication by 10, 100 and 1000.
+- **Objective** Multiply decimals and explain where the point goes.
+- **Student can** I can multiply 5.8 by 1.24 and say why there are three decimal places.
+- **Mathematical ideas** multiplying by converting to fractions over powers of ten; counting decimal places; products that are whole numbers
+- **Representations** worked conversions; place value tables
+- **Prerequisites** pragati_iu_g07p2_ch04_u1; pragati_iu_g07_ch08_u1
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Decimal division
+
+- **Id** `pragati_iu_g07p2_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s4_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 8, 9, 11, 12, 13, 14, 15, 19, 20, 21
+- **Source** gegp2 Part II, printed pp. 74–88 (PDF pp. 8–22), read 2026-10-02. Establishes: Anuja’s 3.9 m length; 1324 divided by 4 shown place by place; tenths regrouped as hundredths; division with a decimal divisor via Ravi’s journey.
+- **Objective** Divide decimals, including by a decimal, using place value regrouping.
+- **Student can** I can divide 3.9 m into equal lengths and say what each is.
+- **Mathematical ideas** division by regrouping each place; extending long division past the point; dividing by a decimal divisor
+- **Representations** place value columns; long division layouts
+- **Prerequisites** pragati_iu_g07p2_ch04_u2
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Estimating before computing
+
+- **Id** `pragati_iu_g07p2_ch04_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s4_4`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 23, 24, 27, 28, 29, 30
+- **Source** gegp2 Part II, printed pp. 88–95 (PDF pp. 22–30), read 2026-10-02. Establishes: Look Before You Leap: estimating products and quotients, then checking the computed answer against the estimate.
+- **Objective** Judge whether a decimal answer is reasonable before and after computing it.
+- **Student can** I can say roughly what this product should be before I work it out.
+- **Mathematical ideas** estimation as a check; order of magnitude with decimals; spotting a misplaced point
+- **Representations** estimation tables
+- **Prerequisites** pragati_iu_g07p2_ch04_u3
+- **Role** EXTENSION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Statistical statements
+
+- **Id** `pragati_iu_g07p2_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s5_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 2
+- **Source** gegp2 Part II, printed pp. 98–98 (PDF pp. 1–2), read 2026-10-02. Establishes: The teacher’s two friends; statistical statements defined as claims or summaries resting on data.
+- **Objective** Tell a statistical statement from an ordinary one and say what data would support it.
+- **Student can** I can say which of these claims needs data to back it up.
+- **Mathematical ideas** statistical statement; claim versus summary; what data would settle a question
+- **Representations** everyday claims; short datasets
+- **Prerequisites** pragati_iu_g06_ch04_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Mean and median as representative values
+
+- **Id** `pragati_iu_g07p2_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s5_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 17, 18
+- **Source** gegp2 Part II, printed pp. 98–114 (PDF pp. 2–18), read 2026-10-02. Establishes: The cricket scores argument; the mean defined; the onion price tables; Poovizhi’s and Yaangba’s families; outliers identified and the mean and median recomputed without them.
+- **Objective** Compute the mean and the median and say which represents the data better.
+- **Student can** I can find the median and say why the mean is misleading here.
+- **Mathematical ideas** arithmetic mean; median; outliers; what a representative value hides
+- **Representations** dot plots; family height tables
+- **Prerequisites** pragati_iu_g07p2_ch05_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Visualising data
+
+- **Id** `pragati_iu_g07p2_ch05_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s5_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19, 22, 25, 28, 29
+- **Source** gegp2 Part II, printed pp. 114–125 (PDF pp. 18–29), read 2026-10-02. Establishes: Clothing data for two villages drawn side by side; rocket launches by organisation and year; daylight hours; which statements the data justifies.
+- **Objective** Read and construct double bar graphs and dot plots, and judge which suits the data.
+- **Student can** I can read this double bar graph and say what it shows.
+- **Mathematical ideas** double bar graph; dot plot; choosing a representation; reading a graph for a claim
+- **Representations** double bar graphs; dot plots; line graphs
+- **Prerequisites** pragati_iu_g06_ch04_u5
+- **Role** EXTENSION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Data detective
+
+- **Id** `pragati_iu_g07p2_ch05_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s5_4`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 29, 30, 31, 32, 33, 34, 36, 38
+- **Source** gegp2 Part II, printed pp. 125–134 (PDF pp. 29–39), read 2026-10-02. Establishes: Measurement estimates against actual measures; height data across years; the starting-letter survey; describing variability and central tendency together.
+- **Objective** Collect data, choose a representation, and draw a defensible inference.
+- **Student can** I can collect data and say what it does and does not show.
+- **Mathematical ideas** framing a question; collecting and organising data; inference from a display; variability
+- **Representations** student-collected datasets; dot plots
+- **Prerequisites** pragati_iu_g07p2_ch05_u3
+- **Role** INTEGRATION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Perpendicular bisector and angle bisector constructions
+
+- **Id** `pragati_iu_g07p2_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s6_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 2, 3, 4, 8, 9, 10, 12, 13
+- **Source** gegp2 Part II, printed pp. 137–148 (PDF pp. 1–13), read 2026-10-02. Establishes: Arcs of equal radius from X and Y; the congruent triangles that justify the bisector; the Sulba-Sutra compass; angle bisection for a design.
+- **Objective** Construct a perpendicular bisector and an angle bisector and justify them by congruence.
+- **Student can** I can construct the perpendicular bisector of XY and say why it works.
+- **Mathematical ideas** perpendicular bisector; angle bisector; justifying a construction with SSS; equidistance
+- **Representations** compass constructions; design figures
+- **Prerequisites** pragati_iu_g07p2_ch01_u2; pragati_iu_g07_ch07_u1
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Constructing angles, parallels and arches
+
+- **Id** `pragati_iu_g07p2_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s6_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 16, 17, 18, 19, 20
+- **Source** gegp2 Part II, printed pp. 148–155 (PDF pp. 13–20), read 2026-10-02. Establishes: Copying an angle to draw a parallel; the 60 degree angle from an equilateral triangle; 30 and 15 by bisection; trefoil and pointed arches built on support lines.
+- **Objective** Construct 60, 30 and 15 degree angles and parallel lines, and use them in designs.
+- **Student can** I can construct a 60 degree angle and halve it twice.
+- **Mathematical ideas** 60 degrees from an equilateral triangle; repeated bisection; parallel through a point; construction-based design
+- **Representations** compass and ruler; arch figures
+- **Prerequisites** pragati_iu_g07p2_ch06_u1
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Tiling, and proving a region untileable
+
+- **Id** `pragati_iu_g07p2_ch06_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s6_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 20, 21, 22, 23, 24, 25, 26, 27, 28
+- **Source** gegp2 Part II, printed pp. 155–162 (PDF pp. 20–28), read 2026-10-02. Establishes: Tangram rearrangements; m by n grids tiled with 2 by 1 tiles; the black-and-white colouring argument showing a region is untileable; which regular polygons tile the plane.
+- **Objective** Tile regions with given shapes and argue when tiling is impossible.
+- **Student can** I can explain why this region cannot be tiled with 2 by 1 tiles.
+- **Mathematical ideas** tiling without gaps or overlaps; colouring argument for impossibility; which regular polygons tile the plane
+- **Representations** grids; tangrams; tiling patterns
+- **Prerequisites** pragati_iu_g06_ch09_u4
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Finding unknowns from balance situations
+
+- **Id** `pragati_iu_g07p2_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s7_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 5
+- **Source** gegp2 Part II, printed pp. 165–168 (PDF pp. 1–5), read 2026-10-02. Establishes: The weighing scale figures; framing equations for each; the matchstick arrangement and its position number.
+- **Objective** Find an unknown from a balance picture or a pattern and write it as an equation.
+- **Student can** I can work out the weight of each sack from this balance.
+- **Mathematical ideas** balance as equality; unknown quantity; translating a situation into an equation
+- **Representations** weighing scales; matchstick sequences
+- **Prerequisites** pragati_iu_g07_ch04_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Solving equations systematically
+
+- **Id** `pragati_iu_g07p2_ch07_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s7_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 11, 15, 16, 17
+- **Source** gegp2 Part II, printed pp. 168–181 (PDF pp. 5–18), read 2026-10-02. Establishes: Subtracting 7 from both sides; dividing both sides by the coefficient; checking by substitution; forming and solving equations for problems.
+- **Objective** Solve a linear equation by doing the same thing to both sides, and check the solution.
+- **Student can** I can solve 2y + 7 = 21 and check my answer.
+- **Mathematical ideas** same operation on both sides; inverse operations; checking by substitution; solving word problems with equations
+- **Representations** balance diagrams; worked solutions
+- **Prerequisites** pragati_iu_g07p2_ch07_u1; pragati_iu_g07_ch04_u3
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Diagnosing errors in solving, and a history of algebra
+
+- **Id** `pragati_iu_g07p2_ch07_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_gegp2_s7_3` (also ncert_gegp2_s7_4)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 22, 23, 26, 27
+- **Source** gegp2 Part II, printed pp. 181–190 (PDF pp. 18–27), read 2026-10-02. Establishes: The Mind the Mistake, Mend the Mistake solutions; the history of algebra and its recognition in Indian mathematics.
+- **Objective** Find and correct errors in worked solutions, and place the method historically.
+- **Student can** I can find what went wrong in this solution and fix it.
+- **Mathematical ideas** error analysis in algebra; why a step is invalid; history of algebra in India
+- **Representations** incorrect worked solutions; historical notes
+- **Prerequisites** pragati_iu_g07p2_ch07_u2
+- **Role** INTEGRATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
 
 ## Records read and found non-instructional
 

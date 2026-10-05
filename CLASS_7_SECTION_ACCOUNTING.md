@@ -2,19 +2,13 @@
 
 All **65** numbered sections of Ganita Prakash Part I and Part II, each with the
 body range located from its printed heading, how that boundary was established,
-the units carrying its mathematics, its state, and its instructional
-disposition.
+the units carrying its mathematics, its state, and its disposition.
 
 **Inspection and disposition are different questions.** A section is
-FULLY_INSPECTED when its verified body has been read and every picture-carried
-page in it looked at, and it has an explicit disposition — which may be one or
-more Pragati units **or** a recorded no-unit role (practice, review, reference,
-enrichment). A section is never required to produce a lesson in order to count
-as read.
-
-A boundary marked **VERIFIED_FROM_SOURCE** was located in a chapter whose pages
-were read; **PROVISIONAL_DETECTED** is a heading the parser found in a chapter
-nobody has opened yet, and it cannot establish completion.
+FULLY_INSPECTED when its verified body has been read, every picture-carried page
+in it looked at, and it has an explicit disposition — one or more Pragati units
+**or** a recorded no-unit role. A section is never required to produce a lesson
+in order to count as read.
 
 | Section | Part | Chapter | Title | Body range | Boundary | Units | State | Disposition |
 |---|---|---|---|---|---|---|---|---|
@@ -61,30 +55,30 @@ nobody has opened yet, and it cannot establish completion.
 | `ncert_gegp1_s8_1` | Part I | `ncert_gegp1_ch08` | Multiplication of Fractions | pp. 1–14 | VERIFIED_FROM_SOURCE | `pragati_iu_g07_ch08_u1`, `pragati_iu_g07_ch08_u2` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
 | `ncert_gegp1_s8_2` | Part I | `ncert_gegp1_ch08` | Division of Fractions | pp. 14–18 | VERIFIED_FROM_SOURCE | `pragati_iu_g07_ch08_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
 | `ncert_gegp1_s8_3` | Part I | `ncert_gegp1_ch08` | Some Problems Involving Fractions | pp. 18–24 | VERIFIED_FROM_SOURCE | `pragati_iu_g07_ch08_u4` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
-| `ncert_gegp2_s1_1` | Part II | `ncert_gegp2_ch01` | Geometric Twins | pp. 1–4 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s1_2` | Part II | `ncert_gegp2_ch01` | Congruence of Triangles | pp. 4–17 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s1_3` | Part II | `ncert_gegp2_ch01` | Angles of Isosceles and Equilateral Triangles | pp. 17–23 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s2_1` | Part II | `ncert_gegp2_ch02` | A Quick Recap of Integers | pp. 1–6 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s2_2` | Part II | `ncert_gegp2_ch02` | Multiplication of Integers | pp. 6–23 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s3_1` | Part II | `ncert_gegp2_ch03` | The Greatest of All | pp. 1–9 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s3_2` | Part II | `ncert_gegp2_ch03` | Least, but not Last! | pp. 9–12 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s3_3` | Part II | `ncert_gegp2_ch03` | Patterns, Properties, and a Pretty Procedure! | pp. 12–20 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s4_1` | Part II | `ncert_gegp2_ch04` | A Quick Recap of Decimals | pp. 1–3 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s4_2` | Part II | `ncert_gegp2_ch04` | Decimal Multiplication | pp. 3–8 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s4_3` | Part II | `ncert_gegp2_ch04` | Decimal Division | pp. 8–22 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s4_4` | Part II | `ncert_gegp2_ch04` | Look Before You Leap! | pp. 22–30 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s5_1` | Part II | `ncert_gegp2_ch05` | Of Questions and Statements | pp. 1–2 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s5_2` | Part II | `ncert_gegp2_ch05` | Representative Values | pp. 2–18 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s5_3` | Part II | `ncert_gegp2_ch05` | Visualising Data | pp. 18–29 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s5_4` | Part II | `ncert_gegp2_ch05` | Data Detective | pp. 29–39 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s6_1` | Part II | `ncert_gegp2_ch06` | Geometric Constructions | pp. 1–20 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s6_2` | Part II | `ncert_gegp2_ch06` | Tiling | pp. 20–28 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s7_1` | Part II | `ncert_gegp2_ch07` | Find the Unknowns | pp. 1–5 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s7_2` | Part II | `ncert_gegp2_ch07` | Solving Equations Systematically | pp. 5–18 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s7_3` | Part II | `ncert_gegp2_ch07` | Mind the Mistake, Mend the Mistake | pp. 18–19 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
-| `ncert_gegp2_s7_4` | Part II | `ncert_gegp2_ch07` | A Pinch of History | pp. 19–35 | PROVISIONAL_DETECTED | — | NOT_STARTED | not yet dispositioned |
+| `ncert_gegp2_s1_1` | Part II | `ncert_gegp2_ch01` | Geometric Twins | pp. 1–4 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch01_u1` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s1_2` | Part II | `ncert_gegp2_ch01` | Congruence of Triangles | pp. 4–17 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch01_u2` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s1_3` | Part II | `ncert_gegp2_ch01` | Angles of Isosceles and Equilateral Triangles | pp. 17–23 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch01_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s2_1` | Part II | `ncert_gegp2_ch02` | A Quick Recap of Integers | pp. 1–6 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch02_u1` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s2_2` | Part II | `ncert_gegp2_ch02` | Multiplication of Integers | pp. 6–23 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch02_u2`, `pragati_iu_g07p2_ch02_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s3_1` | Part II | `ncert_gegp2_ch03` | The Greatest of All | pp. 1–9 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch03_u1` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s3_2` | Part II | `ncert_gegp2_ch03` | Least, but not Last! | pp. 9–12 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch03_u2` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s3_3` | Part II | `ncert_gegp2_ch03` | Patterns, Properties, and a Pretty Procedure! | pp. 12–20 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch03_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s4_1` | Part II | `ncert_gegp2_ch04` | A Quick Recap of Decimals | pp. 1–3 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch04_u1` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s4_2` | Part II | `ncert_gegp2_ch04` | Decimal Multiplication | pp. 3–8 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch04_u2` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s4_3` | Part II | `ncert_gegp2_ch04` | Decimal Division | pp. 8–22 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch04_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s4_4` | Part II | `ncert_gegp2_ch04` | Look Before You Leap! | pp. 22–30 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch04_u4` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s5_1` | Part II | `ncert_gegp2_ch05` | Of Questions and Statements | pp. 1–2 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch05_u1` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s5_2` | Part II | `ncert_gegp2_ch05` | Representative Values | pp. 2–18 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch05_u2` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s5_3` | Part II | `ncert_gegp2_ch05` | Visualising Data | pp. 18–29 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch05_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s5_4` | Part II | `ncert_gegp2_ch05` | Data Detective | pp. 29–39 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch05_u4` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s6_1` | Part II | `ncert_gegp2_ch06` | Geometric Constructions | pp. 1–20 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch06_u1`, `pragati_iu_g07p2_ch06_u2` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s6_2` | Part II | `ncert_gegp2_ch06` | Tiling | pp. 20–28 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch06_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s7_1` | Part II | `ncert_gegp2_ch07` | Find the Unknowns | pp. 1–5 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch07_u1` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s7_2` | Part II | `ncert_gegp2_ch07` | Solving Equations Systematically | pp. 5–18 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch07_u2` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s7_3` | Part II | `ncert_gegp2_ch07` | Mind the Mistake, Mend the Mistake | pp. 18–19 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch07_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
+| `ncert_gegp2_s7_4` | Part II | `ncert_gegp2_ch07` | A Pinch of History | pp. 19–27 | VERIFIED_FROM_SOURCE | `pragati_iu_g07p2_ch07_u3` | FULLY_INSPECTED | INSTRUCTIONAL_UNIT |
 
-**43 of 65 sections fully inspected and dispositioned; 22 not started.**
-All 65 have a recorded extent. No section in this class has yet needed a
-no-unit disposition — every section read so far produces at least one Pragati
-unit — but the model now supports one without inventing a lesson.
+**65 of 65 sections fully inspected and dispositioned**, every boundary
+VERIFIED_FROM_SOURCE. No Class 7 section required a no-unit disposition: each
+one produces at least one Pragati unit. The model supports one without inventing
+a lesson, and that remains available for later classes.

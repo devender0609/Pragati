@@ -303,35 +303,35 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_gegp2_ch01 | chapter | 1 | Geometric Twins | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_ch02 | chapter | 2 | Operations with Integers | 24 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_ch03 | chapter | 3 | Finding Common Ground | 47 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_ch04 | chapter | 4 | Another Peek Beyond the Point | 67 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_ch05 | chapter | 5 | Connecting the Dots... | 97 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_ch06 | chapter | 6 | Constructions and Tilings | 136 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_ch07 | chapter | 7 | Finding the Unknown | 164 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s1_1 | section | 1.1 | Geometric Twins | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s1_2 | section | 1.2 | Congruence of Triangles | 4 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s1_3 | section | 1.3 | Angles of Isosceles and Equilateral Triangles | 17 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s2_1 | section | 2.1 | A Quick Recap of Integers | 24 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s2_2 | section | 2.2 | Multiplication of Integers | 29 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s3_1 | section | 3.1 | The Greatest of All | 47 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s3_2 | section | 3.2 | Least, but not Last! | 55 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s3_3 | section | 3.3 | Patterns, Properties, and a Pretty Procedure! | 58 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s4_1 | section | 4.1 | A Quick Recap of Decimals | 67 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s4_2 | section | 4.2 | Decimal Multiplication | 69 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s4_3 | section | 4.3 | Decimal Division | 74 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s4_4 | section | 4.4 | Look Before You Leap! | 88 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s5_1 | section | 5.1 | Of Questions and Statements | 97 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s5_2 | section | 5.2 | Representative Values | 98 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s5_3 | section | 5.3 | Visualising Data | 114 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s5_4 | section | 5.4 | Data Detective | 125 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s6_1 | section | 6.1 | Geometric Constructions | 136 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s6_2 | section | 6.2 | Tiling | 155 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s7_1 | section | 7.1 | Find the Unknowns | 164 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s7_2 | section | 7.2 | Solving Equations Systematically | 168 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s7_3 | section | 7.3 | Mind the Mistake, Mend the Mistake | 181 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_gegp2_s7_4 | section | 7.4 | A Pinch of History | 182 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_ch01 | chapter | 1 | Geometric Twins | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_ch02 | chapter | 2 | Operations with Integers | 24 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_ch03 | chapter | 3 | Finding Common Ground | 47 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_ch04 | chapter | 4 | Another Peek Beyond the Point | 67 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_ch05 | chapter | 5 | Connecting the Dots... | 97 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_ch06 | chapter | 6 | Constructions and Tilings | 136 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_ch07 | chapter | 7 | Finding the Unknown | 164 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s1_1 | section | 1.1 | Geometric Twins | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s1_2 | section | 1.2 | Congruence of Triangles | 4 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s1_3 | section | 1.3 | Angles of Isosceles and Equilateral Triangles | 17 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s2_1 | section | 2.1 | A Quick Recap of Integers | 24 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s2_2 | section | 2.2 | Multiplication of Integers | 29 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s3_1 | section | 3.1 | The Greatest of All | 47 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s3_2 | section | 3.2 | Least, but not Last! | 55 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s3_3 | section | 3.3 | Patterns, Properties, and a Pretty Procedure! | 58 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s4_1 | section | 4.1 | A Quick Recap of Decimals | 67 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s4_2 | section | 4.2 | Decimal Multiplication | 69 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s4_3 | section | 4.3 | Decimal Division | 74 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s4_4 | section | 4.4 | Look Before You Leap! | 88 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s5_1 | section | 5.1 | Of Questions and Statements | 97 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s5_2 | section | 5.2 | Representative Values | 98 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s5_3 | section | 5.3 | Visualising Data | 114 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s5_4 | section | 5.4 | Data Detective | 125 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s6_1 | section | 6.1 | Geometric Constructions | 136 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s6_2 | section | 6.2 | Tiling | 155 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s7_1 | section | 7.1 | Find the Unknowns | 164 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s7_2 | section | 7.2 | Solving Equations Systematically | 168 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s7_3 | section | 7.3 | Mind the Mistake, Mend the Mistake | 181 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_gegp2_s7_4 | section | 7.4 | A Pinch of History | 182 | inspected | missing | missing | not_started | unpublished |  |
 
 ## Class 8
 

@@ -1,11 +1,9 @@
-# Class 6 to Class 7 — interim transition audit
+# Class 6 to Class 7 — transition audit
 
-Written from the complete Class 6 decomposition and the **8 Class 7 chapters**
-completed so far: Large Numbers Around Us, Arithmetic Expressions, A Peek
-Beyond the Point, Expressions Using Letter-Numbers, Parallel and Intersecting
-Lines, Number Play, A Tale of Three Intersecting Lines, and Working with Fractions. **7 chapters remain unread**, so this audit is
-deliberately partial. **[S]** source observation, **[P]** Pragati
-recommendation.
+Written from the complete Class 6 decomposition and all **15 Class 7 chapters**
+of Ganita Prakash Part I and Part II, every page read and every picture-carried
+page looked at — **0 chapters remain unread**. **[S]** source observation,
+**[P]** Pragati recommendation.
 
 ## Number
 
@@ -84,8 +82,42 @@ never does — whether a product is larger or smaller than the numbers multiplie
 **[P]** Treat Working with Fractions as new procedure plus new reasoning, not
 as revision.
 
-## Still unassessed
+## Part II findings
 
-[S] All seven Part II chapters — **7 chapters**. No claim about continuity in
-those strands is made here, and no blanket "no prerequisite gap" statement is
-made for Class 7 as a whole.
+**[S] Congruence turns geometry deductive.** Part II chapter 1 states SSS, SAS,
+ASA and RHS and then *proves* things with them — the base angles of an
+isosceles triangle, for instance. Part I chapter 7 proved the angle sum; this
+chapter makes proof the method rather than the highlight.
+
+**[S] The integer jump does not repeat itself.** Class 6's Other Side of Zero
+had no Class 1-5 precursor at all. Class 7 Part II chapter 2 **extends it
+smoothly**: it recaps the number line and token models first, then derives the
+multiplication sign rules from them by continuing a pattern, and reads the
+division rules off the same pattern. This is a procedural extension, not a
+second conceptual jump.
+
+**[P] The algebra sequence is real and runs across both parts**: arithmetic
+expressions (I.2) → letter-numbers (I.4) → equations solved systematically
+(II.7). The equations chapter checks solutions by substitution, which only
+makes sense once letter-numbers are fluent. Author them in that order.
+
+**[S] HCF and LCM are built on Class 6 prime factorisation**, and the chapter
+goes further than procedure: it proves the HCF × LCM = product relationship from
+the factorisations before turning it into a division procedure.
+
+**[S] Data handling gains central tendency.** Class 6 reads and draws bar graphs
+and pictographs; Class 7 introduces mean and median — and introduces them *with
+their limits*, through outliers and the question of which value represents the
+data honestly.
+
+**[S] Tiling brings a colouring impossibility proof** — a parity argument in
+geometry, echoing the parity reasoning of Part I chapter 6.
+
+## Prerequisite gaps across the whole of Class 7
+
+**[S] The one genuine discontinuity is geometric, not arithmetic**: parallelism
+and the transversal (I.5) have no Class 6 precursor beyond angle measure, and
+everything deductive in Class 7 geometry — the angle sum, congruence, the
+bisector constructions — rests on them.
+**[S]** Every other Class 7 strand rests on a Class 6 unit that exists.
+**[P]** Sequence I.5 early and do not abbreviate it.
