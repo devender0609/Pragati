@@ -3,8 +3,9 @@
 Generated from `src/curriculum/data/instructionalDecomposition.json`.
 Ganita Prakash Part I (7 chapters) and Part II (7) hold **14 official**
 **chapters and 58 numbered sections**.
-Class 8 is the first class with two official layers: the numbered section
-is the authoring record and the chapter owns the page extent. Material the
+Class 8 uses the numbered-grade two-layer model established at Class 6:
+the numbered section is the official authoring record while the chapter
+owns the page extent. Material the
 book does not number — an opener, a summary, the solutions supplement — is
 a `pragati_srcseg_*` segment, never an invented section id.
 
@@ -49,36 +50,36 @@ Among the 247 pages inspected so far, 160 are picture-carried and 160 of those h
 | `pragati_srcseg_g08_06_seg1` | `ncert_hegp1_ch06` | pages 23–35 of the chapter | REFERENCE | 23–35 | Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own. |
 | `pragati_srcseg_g08_07_seg1` | `ncert_hegp1_ch07` | pages 24–30 of the chapter | REFERENCE | 24–30 | Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own. |
 
-## Units by chapter
+## Units by official section
 
-| Unit | Chapter | Evidence depth | Status |
-|---|---|---|---|
-| `pragati_iu_g08_ch01_u1` Square numbers and their patterns | `ncert_hegp1_s1_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch01_u2` Square roots | `ncert_hegp1_s1_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch01_u3` Cube numbers and cube roots | `ncert_hegp1_s1_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch01_u4` A pinch of history: squares and cubes in use | `ncert_hegp1_s1_3` | FULL_PAGE_INSPECTED | NEEDS_HUMAN_CHECK |
-| `pragati_iu_g08_ch02_u1` Experiencing exponential growth | `ncert_hegp1_s2_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch02_u2` Exponential notation and operations | `ncert_hegp1_s2_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch02_u3` Zero and negative exponents | `ncert_hegp1_s2_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch02_u4` Powers of ten and large or small quantities | `ncert_hegp1_s2_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch02_u5` Did you ever wonder? Estimating with powers | `ncert_hegp1_s2_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch03_u1` Early number systems | `ncert_hegp1_s3_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch03_u2` The idea of a base | `ncert_hegp1_s3_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch03_u3` Place value representation | `ncert_hegp1_s3_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch04_u1` Rectangles, squares and their diagonals | `ncert_hegp1_s4_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch04_u2` Angle sum, and parallelograms | `ncert_hegp1_s4_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch04_u3` Rhombus, and quadrilaterals with equal sides | `ncert_hegp1_s4_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch04_u4` Playing with quadrilaterals | `ncert_hegp1_s4_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch04_u5` Kite and trapezium | `ncert_hegp1_s4_6` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch05_u1` Sums of consecutive numbers, and multiples | `ncert_hegp1_s5_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch05_u2` Divisibility tests, justified | `ncert_hegp1_s5_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch05_u3` Digits in disguise | `ncert_hegp1_s5_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch06_u1` The distributive property with expressions | `ncert_hegp1_s6_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch06_u2` Special cases: squares of sums and differences | `ncert_hegp1_s6_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch06_u3` Mind the mistake, mend the mistake | `ncert_hegp1_s6_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch06_u4` Many routes to the same expression | `ncert_hegp1_s6_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch07_u1` Similarity in change, ratio, and simplest form | `ncert_hegp1_s7_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch07_u2` Problem solving with proportional reasoning | `ncert_hegp1_s7_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch07_u3` Sharing in a given ratio | `ncert_hegp1_s7_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
-| `pragati_iu_g08_ch07_u4` Unit conversions as proportional reasoning | `ncert_hegp1_s7_6` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| Unit | Parent chapter | Official section | Evidence depth | Status |
+|---|---|---|---|---|
+| `pragati_iu_g08_ch01_u1` Square numbers and their patterns | `ncert_hegp1_ch01` | `ncert_hegp1_s1_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch01_u2` Square roots | `ncert_hegp1_ch01` | `ncert_hegp1_s1_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch01_u3` Cube numbers and cube roots | `ncert_hegp1_ch01` | `ncert_hegp1_s1_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch01_u4` A pinch of history: squares and cubes in use | `ncert_hegp1_ch01` | `ncert_hegp1_s1_3` | FULL_PAGE_INSPECTED | NEEDS_HUMAN_CHECK |
+| `pragati_iu_g08_ch02_u1` Experiencing exponential growth | `ncert_hegp1_ch02` | `ncert_hegp1_s2_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch02_u2` Exponential notation and operations | `ncert_hegp1_ch02` | `ncert_hegp1_s2_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch02_u3` Zero and negative exponents | `ncert_hegp1_ch02` | `ncert_hegp1_s2_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch02_u4` Powers of ten and large or small quantities | `ncert_hegp1_ch02` | `ncert_hegp1_s2_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch02_u5` Did you ever wonder? Estimating with powers | `ncert_hegp1_ch02` | `ncert_hegp1_s2_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch03_u1` Early number systems | `ncert_hegp1_ch03` | `ncert_hegp1_s3_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch03_u2` The idea of a base | `ncert_hegp1_ch03` | `ncert_hegp1_s3_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch03_u3` Place value representation | `ncert_hegp1_ch03` | `ncert_hegp1_s3_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch04_u1` Rectangles, squares and their diagonals | `ncert_hegp1_ch04` | `ncert_hegp1_s4_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch04_u2` Angle sum, and parallelograms | `ncert_hegp1_ch04` | `ncert_hegp1_s4_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch04_u3` Rhombus, and quadrilaterals with equal sides | `ncert_hegp1_ch04` | `ncert_hegp1_s4_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch04_u4` Playing with quadrilaterals | `ncert_hegp1_ch04` | `ncert_hegp1_s4_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch04_u5` Kite and trapezium | `ncert_hegp1_ch04` | `ncert_hegp1_s4_6` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch05_u1` Sums of consecutive numbers, and multiples | `ncert_hegp1_ch05` | `ncert_hegp1_s5_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch05_u2` Divisibility tests, justified | `ncert_hegp1_ch05` | `ncert_hegp1_s5_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch05_u3` Digits in disguise | `ncert_hegp1_ch05` | `ncert_hegp1_s5_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch06_u1` The distributive property with expressions | `ncert_hegp1_ch06` | `ncert_hegp1_s6_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch06_u2` Special cases: squares of sums and differences | `ncert_hegp1_ch06` | `ncert_hegp1_s6_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch06_u3` Mind the mistake, mend the mistake | `ncert_hegp1_ch06` | `ncert_hegp1_s6_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch06_u4` Many routes to the same expression | `ncert_hegp1_ch06` | `ncert_hegp1_s6_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch07_u1` Similarity in change, ratio, and simplest form | `ncert_hegp1_ch07` | `ncert_hegp1_s7_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch07_u2` Problem solving with proportional reasoning | `ncert_hegp1_ch07` | `ncert_hegp1_s7_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch07_u3` Sharing in a given ratio | `ncert_hegp1_ch07` | `ncert_hegp1_s7_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08_ch07_u4` Unit conversions as proportional reasoning | `ncert_hegp1_ch07` | `ncert_hegp1_s7_6` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
 

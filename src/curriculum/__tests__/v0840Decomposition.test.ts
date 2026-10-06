@@ -2137,3 +2137,64 @@ describe('Class 8 structure, boundaries and dispositions', () => {
     }
   });
 });
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 23 (pre-source fixes) — GENERATED REPORTS MUST NOT SAY
+// THINGS THE EVIDENCE DOES NOT SUPPORT.
+//
+// Three checkpoint-22 defects, all in generated prose rather than in the
+// mathematics: the Class 7 and Class 8 audits were cloned from the Class 6
+// generator and inherited its "first class with two official layers" claim;
+// the units table headed a column of official SECTION ids "Chapter"; and the
+// transition audit generalised one section's reasoning to the whole of
+// Classes 1-7.
+// ---------------------------------------------------------------------------
+
+describe('generated reports describe the decomposition truthfully', () => {
+  const audits = () => ({
+    six: read('PAGE_LEVEL_INTENT_AUDIT_CLASS_6.md'),
+    seven: read('PAGE_LEVEL_INTENT_AUDIT_CLASS_7.md'),
+    eight: read('PAGE_LEVEL_INTENT_AUDIT_CLASS_8.md'),
+  });
+
+  it('lets only Class 6 claim to be the first two-layer class', () => {
+    const a = audits();
+    expect(a.six).toMatch(/Class 6 is the first class with two official layers/);
+    for (const [name, text] of [['seven', a.seven], ['eight', a.eight]] as const) {
+      expect(text, name).not.toMatch(/is the first class with two official layers/);
+      expect(text, name).toMatch(/two-layer model established at Class 6/);
+    }
+  });
+
+  it('labels official section ids as sections, not chapters', () => {
+    for (const [name, text] of [['seven', audits().seven], ['eight', audits().eight]] as const) {
+      expect(text, name).toContain('| Unit | Parent chapter | Official section | Evidence depth | Status |');
+      expect(text, name).not.toContain('| Unit | Chapter | Evidence depth | Status |');
+      // And the ids in that column must really be section ids.
+      for (const line of text.split('\n')) {
+        if (!line.startsWith('| `pragati_iu_')) continue;
+        const cells = line.split('|').map((c) => c.trim());
+        expect(cells[2], line).toMatch(/^`ncert_\w+_ch\d{2}`$/);
+        expect(cells[3], line).toMatch(/^`ncert_\w+_s\d+_\d+`$/);
+      }
+    }
+  });
+
+  it('keeps the transition audit bounded to what the source shows', () => {
+    const t = read('CLASS_7_8_TRANSITION_AUDIT.md');
+    expect(t).not.toMatch(/Every rule before this point/i);
+    expect(t).not.toMatch(/every rule in Classes 1-7/i);
+    // The defensible observation is kept.
+    expect(t).toMatch(/preserving the exponent\s+pattern/);
+  });
+
+  it('still reports Class 8 as incomplete while Part II is unread', () => {
+    // These three fixes touch prose only. No evidence changed, so Class 8
+    // must not have moved toward source-complete.
+    const p = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === 8)!;
+    expect(p.status).toBe('IN_PROGRESS');
+    expect(p.officialRecordsNotStarted).toBeGreaterThan(0);
+    expect(p.pagesFullTextPending).toBeGreaterThan(0);
+    expect(unitsForClass(8).every((u) => u.officialChapterId!.startsWith('ncert_hegp1'))).toBe(true);
+  });
+});

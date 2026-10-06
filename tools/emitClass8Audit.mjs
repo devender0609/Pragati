@@ -54,8 +54,11 @@ const out = [
   'Generated from `src/curriculum/data/instructionalDecomposition.json`.',
   'Ganita Prakash Part I (7 chapters) and Part II (7) hold **14 official**',
   '**chapters and 58 numbered sections**.',
-  'Class 8 is the first class with two official layers: the numbered section',
-  'is the authoring record and the chapter owns the page extent. Material the',
+  // v0.84.0 checkpoint 23 — only Class 6 is the first two-layer class; this
+  // generator was cloned from the Class 6 one and inherited its claim.
+  'Class 8 uses the numbered-grade two-layer model established at Class 6:',
+  'the numbered section is the official authoring record while the chapter',
+  'owns the page extent. Material the',
   'book does not number — an opener, a summary, the solutions supplement — is',
   'a `pragati_srcseg_*` segment, never an invented section id.',
   '',
@@ -94,12 +97,14 @@ const out = [
     (s) => `| \`${s.sourceSegmentId}\` | \`${s.officialRecordId}\` | ${s.sourceLabel} | ${s.role} | ${s.sourceEvidence.pdfPageStart}–${s.sourceEvidence.pdfPageEnd} | ${s.justification} |`
   ),
   '',
-  '## Units by chapter',
+  '## Units by official section',
   '',
-  '| Unit | Chapter | Evidence depth | Status |',
-  '|---|---|---|---|',
+  // v0.84.0 checkpoint 23 — the authoring record is the numbered SECTION.
+  // Checkpoint 22 printed section ids under a column headed "Chapter".
+  '| Unit | Parent chapter | Official section | Evidence depth | Status |',
+  '|---|---|---|---|---|',
   ...UNITS.map(
-    (u) => `| \`${u.instructionalUnitId}\` ${u.instructionalTitle} | \`${u.officialRecordId}\` | ${u.sourceEvidence.evidenceDepth} | ${u.decompositionStatus} |`
+    (u) => `| \`${u.instructionalUnitId}\` ${u.instructionalTitle} | \`${u.officialChapterId ?? u.officialRecordId}\` | \`${u.officialRecordId}\` | ${u.sourceEvidence.evidenceDepth} | ${u.decompositionStatus} |`
   ),
   '',
 ];

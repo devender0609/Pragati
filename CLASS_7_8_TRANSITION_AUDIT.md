@@ -10,11 +10,15 @@ Class 8**; Part II's 7 chapters are not yet read, so this audit is partial.
 **squares, cubes and their roots** — the first inverse operations in the
 programme after division — and then formalises repeated multiplication as
 **exponent notation**.
-**[S] A real shift in how a rule is justified**: zero and negative exponents are
-**defined by consistency**, by continuing a division pattern, not derived from
-counting. Every rule before this point in Classes 1-7 is justified by something
-countable or measurable. **[P]** Author §2.3 with that shift made explicit; it is
-the first time the programme says "we define it this way so the pattern holds".
+**[S]** §2.3 **motivates zero and negative exponents by preserving the exponent
+pattern** — the value is defined so that the division rule already established
+keeps working, rather than being read off a count or a measurement. That is what
+this section does; no claim is made here about how every earlier rule in the
+programme was justified. The decomposed Classes 1-7 evidence already contains
+deductive geometry, parity impossibility arguments and algebraic reasoning, so a
+universal "first non-counting justification" claim would not be supportable.
+**[P]** Author §2.3 with the consistency argument kept visible — the definition
+is the point, not the result.
 
 ## Number systems
 
