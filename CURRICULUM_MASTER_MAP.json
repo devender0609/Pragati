@@ -8069,6 +8069,35 @@
    }
   },
   {
+   "recordId": "ncert_hegp1_s2_5b",
+   "grade": "class8",
+   "classNumber": 8,
+   "sourceId": "ncert_hegp1",
+   "authority": "NCERT",
+   "sourceKind": "textbook",
+   "bookPart": "Part I",
+   "level": "section",
+   "number": "2.5 (second occurrence)",
+   "title": "A Pinch of History",
+   "descriptor": null,
+   "parentId": "ncert_hegp1_ch02",
+   "startPage": 42,
+   "pageBasis": "printed folio read from PDF page 24 of hegp102.pdf",
+   "registryStartPage": null,
+   "structureStatus": "primary_source_verified",
+   "intentStatus": "page_level_inspected",
+   "nonInstructional": false,
+   "evidence": "SOURCE DISCREPANCY: hegp102.pdf prints TWO numbered headings as \"2.5\" in the chapter heading face — \"2.5 Did You Ever Wonder?\" on PDF page 15 and \"2.5 A Pinch of History\" on PDF page 24. They are distinct sections with distinct content; the book repeats the number. Recorded as a separate official record with the suffixed id s2_5b so no number the book does not print is invented.",
+   "product": {
+    "learn": "missing",
+    "practice": "missing",
+    "instructional": "absent",
+    "review": "not_started",
+    "reviewed": false,
+    "publication": "unpublished"
+   }
+  },
+  {
    "recordId": "ncert_hegp1_s3_1",
    "grade": "class8",
    "classNumber": 8,
@@ -8752,7 +8781,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -8781,7 +8810,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -8810,7 +8839,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -8839,7 +8868,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -8868,7 +8897,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -8897,7 +8926,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -8926,7 +8955,7 @@
    "pageBasis": "printed page, from contents page",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "contents page; chapter PDF present in full-book archive",
    "product": {
@@ -8955,7 +8984,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp201.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -8984,7 +9013,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp201.pdf, PDF page 6 (heading_font)",
    "product": {
@@ -9013,7 +9042,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp201.pdf, PDF page 14 (heading_font)",
    "product": {
@@ -9042,7 +9071,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp202.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -9071,7 +9100,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp202.pdf, PDF page 4 (heading_font)",
    "product": {
@@ -9100,7 +9129,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp202.pdf, PDF page 5 (heading_font)",
    "product": {
@@ -9129,7 +9158,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp202.pdf, PDF page 9 (heading_font)",
    "product": {
@@ -9158,7 +9187,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp202.pdf, PDF page 16 (heading_font)",
    "product": {
@@ -9187,7 +9216,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp202.pdf, PDF page 18 (heading_font)",
    "product": {
@@ -9216,7 +9245,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp202.pdf, PDF page 20 (heading_font)",
    "product": {
@@ -9245,7 +9274,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp203.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -9274,7 +9303,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp203.pdf, PDF page 2 (heading_font)",
    "product": {
@@ -9303,7 +9332,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp203.pdf, PDF page 3 (heading_font)",
    "product": {
@@ -9332,7 +9361,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp203.pdf, PDF page 4 (heading_font)",
    "product": {
@@ -9361,7 +9390,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp203.pdf, PDF page 6 (heading_font)",
    "product": {
@@ -9390,7 +9419,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp203.pdf, PDF page 9 (heading_font)",
    "product": {
@@ -9419,7 +9448,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp204.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -9448,7 +9477,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp204.pdf, PDF page 6 (heading_font)",
    "product": {
@@ -9477,7 +9506,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp205.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -9506,7 +9535,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp205.pdf, PDF page 14 (heading_font)",
    "product": {
@@ -9535,7 +9564,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp206.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -9564,7 +9593,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp206.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -9593,7 +9622,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp206.pdf, PDF page 3 (heading_font)",
    "product": {
@@ -9622,7 +9651,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp206.pdf, PDF page 7 (heading_font)",
    "product": {
@@ -9651,7 +9680,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp206.pdf, PDF page 8 (heading_font)",
    "product": {
@@ -9680,7 +9709,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp206.pdf, PDF page 10 (heading_font)",
    "product": {
@@ -9709,7 +9738,7 @@
    "pageBasis": "printed page = chapter start page (contents) + PDF page offset",
    "registryStartPage": null,
    "structureStatus": "primary_source_verified",
-   "intentStatus": "not_inspected",
+   "intentStatus": "page_level_inspected",
    "nonInstructional": false,
    "evidence": "numbered heading in hegp207.pdf, PDF page 1 (heading_font)",
    "product": {
@@ -21031,7 +21060,7 @@
    "textbook": {
     "unit": "not_defined_by_source",
     "chapter": 14,
-    "section": 58,
+    "section": 59,
     "subsection": "not_defined_by_source",
     "topic": "not_defined_by_source"
    },
@@ -21041,12 +21070,12 @@
    "gaps": {
     "classNumber": 8,
     "structureStatus": "complete_at_structure_level",
-    "verifiedUnits": 58,
+    "verifiedUnits": 59,
     "unverifiedUnits": 0,
     "learnAuthored": 0,
-    "learnMissing": 58,
+    "learnMissing": 59,
     "practiceAuthored": 0,
-    "practiceMissing": 58,
+    "practiceMissing": 59,
     "instructionallyComplete": 0,
     "reviewReady": 0,
     "reviewSent": 0,

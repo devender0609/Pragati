@@ -6,15 +6,15 @@
 
 ## Headline
 
-477 verified authoring records across Classes 1–12 (Class 9 total UNKNOWN). Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
+478 verified authoring records across Classes 1–12 (Class 9 total UNKNOWN). Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
 
 | | |
 |---|---|
-| Authoring records in the backlog | 477 |
+| Authoring records in the backlog | 478 |
 | Classes whose total is UNKNOWN | Class 9 |
-| Learn missing | 465 |
-| Practice missing | 465 |
-| Not yet reviewed | 477 |
+| Learn missing | 466 |
+| Practice missing | 466 |
+| Not yet reviewed | 478 |
 
 The backlog is generated from the master map. Every verified authoring
 record of every class is in it; none is dropped for being inconvenient.
@@ -32,7 +32,7 @@ wave's gate is met and its primary pages are read.
 | Class 5 | COMPLETE AT STRUCTURE LEVEL | chapter | 15 | 0 | 0 | 15 | 0 | 15 | 0 | 0 | 0 | 0 | 0 |
 | Class 6 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 12 | 53 | 12 | 53 | 12 | 12 | 0 | 0 | 0 |
 | Class 7 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
-| Class 8 | COMPLETE AT STRUCTURE LEVEL | section | 58 | 0 | 0 | 58 | 0 | 58 | 0 | 0 | 0 | 0 | 0 |
+| Class 8 | COMPLETE AT STRUCTURE LEVEL | section | 59 | 0 | 0 | 59 | 0 | 59 | 0 | 0 | 0 | 0 | 0 |
 | Class 9 | PARTIAL — see finding F1 | section | 53 | UNKNOWN | 0 | 53 | 0 | 53 | 0 | 0 | 0 | 0 | 0 |
 | Class 10 | COMPLETE AT STRUCTURE LEVEL | section | 41 | 0 | 0 | 41 | 0 | 41 | 0 | 0 | 0 | 0 | 0 |
 | Class 11 | COMPLETE AT STRUCTURE LEVEL | section | 63 | 0 | 0 | 63 | 0 | 63 | 0 | 0 | 0 | 0 | 0 |
@@ -44,7 +44,7 @@ wave's gate is met and its primary pages are read.
 |---|---|---|---|---|
 | 1 | Class 6 | 65 | Twelve sections are complete and review-ready. Educator feedback on §7.4 calibrates the Middle Stage authoring standard before it is applied at scale; finishing Class 6 establishes the standard every later class reuses. | Educator and curriculum-specialist feedback on §7.4 received and adjudicated. |
 | 2 | Class 3, Class 4, Class 5 | 43 | Preparatory Stage number sense, place value, measurement and fractions are prerequisites for the Middle Stage. Chapter-level authoring units keep the record count low; representation needs are concrete and visual. | A Preparatory Stage authoring standard derived from primary pages, and a primary-grade reviewer identified. |
-| 3 | Class 7, Class 8 | 123 | Continues the Ganita Prakash series directly from Class 6, so the Middle Stage standard and reviewer pool carry over. Two-part books: chapters are identified by part. | Wave 1 adjudicated; page-level intent inspected per section before authoring. |
+| 3 | Class 7, Class 8 | 124 | Continues the Ganita Prakash series directly from Class 6, so the Middle Stage standard and reviewer pool carry over. Two-part books: chapters are identified by part. | Wave 1 adjudicated; page-level intent inspected per section before authoring. |
 | 4 | Class 1, Class 2 | 24 | Foundational Stage content is play- and manipulative-based and read aloud; it needs its own design standard and an early-grades reviewer rather than a reuse of Middle Stage patterns. | A Foundational Stage standard and an early-grades reviewer. |
 | 5 | Class 10, Class 11, Class 12 | 169 | Stable rationalised textbooks with numbered sections and CBSE syllabi alignment. Large record counts and board-exam stakes; best authored after the standards from waves 1–3 are proven. | Secondary Stage standard; CBSE unit-to-chapter alignment decided by a curriculum specialist, not inferred. |
 | 6 | Class 9 | 53 | Only Ganita Manjari Part I is published, and the CBSE syllabus prescribes a book with 15 chapters. Part I sections are verified and listed, but the class cannot be planned to completion. | Part II published, or NCERT confirms Part I is the full Class 9 book (finding F1). |
@@ -234,6 +234,7 @@ wave's gate is met and its primary pages are read.
 | 3 | Class 8 | Ganita Prakash Part-I (Part I) | 2.3 | The Other Side of Powers | missing | missing | not_started |
 | 3 | Class 8 | Ganita Prakash Part-I (Part I) | 2.4 | Powers of 10 | missing | missing | not_started |
 | 3 | Class 8 | Ganita Prakash Part-I (Part I) | 2.5 | Did You Ever Wonder? | missing | missing | not_started |
+| 3 | Class 8 | Ganita Prakash Part-I (Part I) | 2.5 (second occurrence) | A Pinch of History | missing | missing | not_started |
 | 3 | Class 8 | Ganita Prakash Part-I (Part I) | 3.1 | Reema’s Curiosity | missing | missing | not_started |
 | 3 | Class 8 | Ganita Prakash Part-I (Part I) | 3.2 | Some Early Number Systems | missing | missing | not_started |
 | 3 | Class 8 | Ganita Prakash Part-I (Part I) | 3.3 | The Idea of a Base | missing | missing | not_started |

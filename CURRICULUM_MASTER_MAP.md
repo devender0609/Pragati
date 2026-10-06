@@ -6,7 +6,7 @@ This map answers **what should exist**. It does not mean Pragati already
 teaches it. Every official record is listed whether or not Pragati has
 any content for it.
 
-477 verified authoring records across Classes 1–12 (Class 9 total UNKNOWN). Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
+478 verified authoring records across Classes 1–12 (Class 9 total UNKNOWN). Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
 
 | Class | Source | Units | Chapters | Sections | Sub-sections | Topics | Structure status |
 |---|---|---|---|---|---|---|---|
@@ -17,7 +17,7 @@ any content for it.
 | Class 5 | NCERT textbook: Math-Mela | — | 15 | — | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 6 | NCERT textbook: Ganita Prakash | — | 10 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 7 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 15 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
-| Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 58 | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 59 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 9 | CBSE syllabus: Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | — | 15 | primary source verified |
 | Class 9 | NCERT textbook: Ganita Manjari (Part I) | — | 8 (Part I only; class total UNKNOWN) | 53 (Part I only; class total UNKNOWN) | UNKNOWN | — | PARTIAL — see finding F1 |
 | Class 10 | CBSE syllabus: Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | — | 15 | primary source verified |
@@ -357,6 +357,7 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_hegp1_s2_3 | section | 2.3 | The Other Side of Powers | 27 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_hegp1_s2_4 | section | 2.4 | Powers of 10 | 30 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_hegp1_s2_5 | section | 2.5 | Did You Ever Wonder? | 33 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp1_s2_5b | section | 2.5 (second occurrence) | A Pinch of History | 42 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_hegp1_s3_1 | section | 3.1 | Reema’s Curiosity | 48 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_hegp1_s3_2 | section | 3.2 | Some Early Number Systems | 54 | inspected | missing | missing | not_started | unpublished |  |
 | ncert_hegp1_s3_3 | section | 3.3 | The Idea of a Base | 61 | inspected | missing | missing | not_started | unpublished |  |
@@ -388,40 +389,40 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ncert_hegp2_ch01 | chapter | 1 | Fractions in Disguise | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_ch02 | chapter | 2 | The Baudhayana-Pythagoras Theorem | 33 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_ch03 | chapter | 3 | Proportional Reasoning-2 | 55 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_ch04 | chapter | 4 | Exploring Some Geometric Themes | 70 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_ch05 | chapter | 5 | Tales by Dots and Lines | 103 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_ch06 | chapter | 6 | Algebra Play | 135 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_ch07 | chapter | 7 | Area | 148 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s1_1 | section | 1.1 | Fractions as Percentages | 1 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s1_2 | section | 1.2 | Percentage of Some Quantity | 6 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s1_3 | section | 1.3 | Using Percentages | 14 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s2_1 | section | 2.1 | Doubling a Square | 33 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s2_2 | section | 2.2 | Halving a Square | 36 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s2_3 | section | 2.3 | Hypotenuse of an Isosceles Right Triangle | 37 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s2_4 | section | 2.4 | Combining Two Different Squares | 41 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s2_5 | section | 2.5 | Right–Triangles Having Integer Sidelengths | 48 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s2_6 | section | 2.6 | A Long-Standing Open Problem | 50 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s2_7 | section | 2.7 | Further Applications of the Baudhāyana -Pythagoras Theorem | 52 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s3_1 | section | 3.1 | Proportionality — A Quick Recap | 55 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s3_2 | section | 3.2 | Ratios in Maps | 56 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s3_3 | section | 3.3 | Ratios with More than 2 Terms | 57 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s3_4 | section | 3.4 | Dividing a Whole in a Given Ratio | 58 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s3_5 | section | 3.5 | A Slice of the Pie | 60 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s3_6 | section | 3.6 | Inverse Proportions | 63 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s4_1 | section | 4.1 | Fractals | 70 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s4_2 | section | 4.2 | Visualising Solids | 75 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s5_1 | section | 5.1 | The Balancing Act | 103 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s5_2 | section | 5.2 | Visualising and Interpreting Data | 116 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s6_1 | section | 6.1 | Algebra Play | 135 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s6_2 | section | 6.2 | Thinking about ‘Think of a Number’ Tricks | 135 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s6_3 | section | 6.3 | Number Pyramids | 137 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s6_4 | section | 6.4 | Fun with Grids | 141 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s6_5 | section | 6.5 | The Largest Product | 142 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s6_6 | section | 6.6 | Decoding Divisibility Tricks | 144 | not inspected | missing | missing | not_started | unpublished |  |
-| ncert_hegp2_s7_1 | section | 7.1 | Rectangle and Squares | 148 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_ch01 | chapter | 1 | Fractions in Disguise | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_ch02 | chapter | 2 | The Baudhayana-Pythagoras Theorem | 33 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_ch03 | chapter | 3 | Proportional Reasoning-2 | 55 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_ch04 | chapter | 4 | Exploring Some Geometric Themes | 70 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_ch05 | chapter | 5 | Tales by Dots and Lines | 103 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_ch06 | chapter | 6 | Algebra Play | 135 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_ch07 | chapter | 7 | Area | 148 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s1_1 | section | 1.1 | Fractions as Percentages | 1 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s1_2 | section | 1.2 | Percentage of Some Quantity | 6 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s1_3 | section | 1.3 | Using Percentages | 14 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s2_1 | section | 2.1 | Doubling a Square | 33 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s2_2 | section | 2.2 | Halving a Square | 36 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s2_3 | section | 2.3 | Hypotenuse of an Isosceles Right Triangle | 37 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s2_4 | section | 2.4 | Combining Two Different Squares | 41 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s2_5 | section | 2.5 | Right–Triangles Having Integer Sidelengths | 48 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s2_6 | section | 2.6 | A Long-Standing Open Problem | 50 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s2_7 | section | 2.7 | Further Applications of the Baudhāyana -Pythagoras Theorem | 52 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s3_1 | section | 3.1 | Proportionality — A Quick Recap | 55 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s3_2 | section | 3.2 | Ratios in Maps | 56 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s3_3 | section | 3.3 | Ratios with More than 2 Terms | 57 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s3_4 | section | 3.4 | Dividing a Whole in a Given Ratio | 58 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s3_5 | section | 3.5 | A Slice of the Pie | 60 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s3_6 | section | 3.6 | Inverse Proportions | 63 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s4_1 | section | 4.1 | Fractals | 70 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s4_2 | section | 4.2 | Visualising Solids | 75 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s5_1 | section | 5.1 | The Balancing Act | 103 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s5_2 | section | 5.2 | Visualising and Interpreting Data | 116 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s6_1 | section | 6.1 | Algebra Play | 135 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s6_2 | section | 6.2 | Thinking about ‘Think of a Number’ Tricks | 135 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s6_3 | section | 6.3 | Number Pyramids | 137 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s6_4 | section | 6.4 | Fun with Grids | 141 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s6_5 | section | 6.5 | The Largest Product | 142 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s6_6 | section | 6.6 | Decoding Divisibility Tricks | 144 | inspected | missing | missing | not_started | unpublished |  |
+| ncert_hegp2_s7_1 | section | 7.1 | Rectangle and Squares | 148 | inspected | missing | missing | not_started | unpublished |  |
 
 ## Class 9
 

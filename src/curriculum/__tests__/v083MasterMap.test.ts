@@ -40,7 +40,10 @@ describe('textbook hierarchy, by level', () => {
     5: { unit: ND, chapter: 15, section: ND, subsection: ND, topic: ND },
     6: { unit: ND, chapter: 10, section: 65, subsection: ND, topic: ND },
     7: { unit: ND, chapter: 15, section: 65, subsection: ND, topic: ND },
-    8: { unit: ND, chapter: 14, section: 58, subsection: ND, topic: ND },
+    // v0.84.0 checkpoint 23 — 59, not 58: Ganita Prakash Grade 8 Part I
+    // chapter 2 prints two different sections both numbered 2.5 ("Did You
+    // Ever Wonder?" and "A Pinch of History"), and both are official records.
+    8: { unit: ND, chapter: 14, section: 59, subsection: ND, topic: ND },
     9: { unit: ND, chapter: 8, section: 53, subsection: 'unknown', topic: ND },
     10: { unit: ND, chapter: 14, section: 55, subsection: 2, topic: ND },
     11: { unit: ND, chapter: 14, section: 63, subsection: ND, topic: ND },
@@ -57,7 +60,8 @@ describe('textbook hierarchy, by level', () => {
       MASTER_RECORDS.filter((r) => r.sourceId === id && r.level === level).length;
     expect([per('ncert_gegp1', 'chapter'), per('ncert_gegp1', 'section')]).toEqual([8, 43]);
     expect([per('ncert_gegp2', 'chapter'), per('ncert_gegp2', 'section')]).toEqual([7, 22]);
-    expect([per('ncert_hegp1', 'chapter'), per('ncert_hegp1', 'section')]).toEqual([7, 31]);
+    // 32: Part I chapter 2 prints two sections both numbered 2.5.
+    expect([per('ncert_hegp1', 'chapter'), per('ncert_hegp1', 'section')]).toEqual([7, 32]);
     expect([per('ncert_hegp2', 'chapter'), per('ncert_hegp2', 'section')]).toEqual([7, 27]);
     expect([per('ncert_lemh1', 'chapter'), per('ncert_lemh1', 'section')]).toEqual([6, 31]);
     expect([per('ncert_lemh2', 'chapter'), per('ncert_lemh2', 'section')]).toEqual([7, 34]);
@@ -277,7 +281,7 @@ describe('generated documents agree with the map, column by column', () => {
     ['Class 5', 'NCERT textbook', { Units: '—', Chapters: '15', Sections: '—', Topics: '—' }],
     ['Class 6', 'NCERT textbook', { Units: '—', Chapters: '10', Sections: '65', Topics: '—' }],
     ['Class 7', 'NCERT textbook', { Units: '—', Chapters: '15', Sections: '65', Topics: '—' }],
-    ['Class 8', 'NCERT textbook', { Units: '—', Chapters: '14', Sections: '58', Topics: '—' }],
+    ['Class 8', 'NCERT textbook', { Units: '—', Chapters: '14', Sections: '59', Topics: '—' }],
     ['Class 9', 'CBSE syllabus', { Units: '6', Chapters: '15', Sections: '—', Topics: '15' }],
     ['Class 10', 'CBSE syllabus', { Units: '7', Chapters: '—', Sections: '—', Topics: '15' }],
     ['Class 10', 'NCERT textbook', { Units: '—', Chapters: '14', Sections: '55', 'Sub-sections': '2', Topics: '—' }],

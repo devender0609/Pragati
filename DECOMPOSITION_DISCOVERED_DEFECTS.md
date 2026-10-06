@@ -60,6 +60,17 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-23 findings (rebuilt from primary source after a container reset)
+
+| Finding | Where | Resolution |
+|---|---|---|
+| **Ganita Prakash Grade 8 Part I chapter 2 prints two different sections both numbered "2.5"** — "Did You Ever Wonder?" (PDF p15) and "A Pinch of History" (PDF p24), both in the chapter heading face | hegp102.pdf | The Class 8 numbered-section denominator is **59, not 58**. The second is recorded as `ncert_hegp1_s2_5b` so no number the book does not print is invented; §2.5's extent now ends where it begins. Checkpoint 22 ran §2.5 to the chapter end and absorbed it silently. Corrected in the master evidence, the official-structure table, the section extents, the hierarchy tests and every report |
+| Checkpoint 22 collapsed discontinuous printed-folio sequences into false continuous ranges (1–46, 1–81, 1–111, 1–177) | Class 8 page audit | Re-derived from the actual PDFs: every Part I chapter carries a body folio run then an answer-key run restarting at 1 (ch4 is 83–111 then 1–9). The generator reads folio runs from the deduplicated ledger and prints "body 83–111; appended 1–9"; one-page runs inside another run are misread corner numbers and are dropped |
+| Class 7 and Class 8 audits both claimed to be "the first class with two official layers" | generated reports | Only Class 6 may claim it; both now name Class 6 as the first |
+| The Class 8 units table headed a column of official **section** ids "Chapter" | generated reports | Separate Parent chapter and Official section columns, with a test that checks the id shape in each |
+| The Class 7→8 audit claimed every rule in Classes 1-7 was justified by something countable or measurable | transition audit | Narrowed to what §2.3 does — defines zero and negative exponents so the established pattern keeps working — with no claim about the rest of the programme |
+| The whole checkpoint-23 tree was lost to a container reset, and the primary sources with it | process | `CLASS_8_SOURCE_MANIFEST.json` records identity, edition evidence, size and SHA-256 for all 14 PDFs, and the checksums are reverified before packaging |
+
 ## Class 8 structural correction (checkpoint 22)
 
 | Finding | Where | Resolution |

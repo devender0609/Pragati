@@ -239,11 +239,16 @@ export const EXPECTED_STRUCTURES: ExpectedOfficialStructure[] = [
   {
     grade: 'class8',
     source: 'Ganita Prakash Part-I Part I (hegp1ps.pdf); Ganita Prakash Part-II Part II (hegp2ps.pdf)',
-    inspectionDate: '2026-09-22',
+    inspectionDate: '2026-10-06',
     units: 14,
     chapters: 14,
-    topics: 58,
-    sectionsPerUnit: [3, 5, 4, 6, 3, 4, 6, 3, 7, 6, 2, 2, 6, 1],
+    // v0.84.0 checkpoint 23 — 59, re-derived from the chapter PDFs rather
+    // than from the contents page. Power Play prints TWO numbered headings
+    // as "2.5" in the chapter heading face: "Did You Ever Wonder?" on PDF
+    // page 15 and "A Pinch of History" on PDF page 24. Both are official
+    // sections; the book repeats the number.
+    topics: 59,
+    sectionsPerUnit: [3, 6, 4, 6, 3, 4, 6, 3, 7, 6, 2, 2, 6, 1],
     unitTitles: [
       'A Square and A Cube',
       'Power Play',

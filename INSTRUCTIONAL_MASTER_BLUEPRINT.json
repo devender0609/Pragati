@@ -155,31 +155,31 @@
   },
   {
    "classNumber": 8,
-   "status": "IN_PROGRESS",
+   "status": "DECOMPOSITION_SOURCE_COMPLETE",
    "officialChapterCount": 14,
-   "officialSectionsTotal": 58,
+   "officialSectionsTotal": 59,
    "chaptersTotal": 14,
-   "chaptersInspected": 7,
-   "chaptersFullyInspected": 7,
+   "chaptersInspected": 14,
+   "chaptersFullyInspected": 14,
    "chaptersPartiallyInspected": 0,
-   "chaptersIndexedOnly": 7,
-   "sectionsAccountedFor": 31,
-   "sectionsNotYetInspected": 27,
-   "officialRecordsTotal": 58,
-   "officialRecordsFullyInspected": 31,
+   "chaptersIndexedOnly": 0,
+   "sectionsAccountedFor": 59,
+   "sectionsNotYetInspected": 0,
+   "officialRecordsTotal": 59,
+   "officialRecordsFullyInspected": 59,
    "officialRecordsPartiallyInspected": 0,
-   "officialRecordsNotStarted": 27,
+   "officialRecordsNotStarted": 0,
    "officialRecordsIndexedOnly": 0,
    "officialRecordsBlocked": 0,
    "pagesInScope": 423,
    "pagesIndexed": 423,
-   "pagesFullyInspected": 247,
-   "pagesFullTextPending": 176,
-   "visualPagesRequired": 160,
-   "visualPagesInspected": 160,
+   "pagesFullyInspected": 423,
+   "pagesFullTextPending": 0,
+   "visualPagesRequired": 305,
+   "visualPagesInspected": 305,
    "visualPagesPending": 0,
-   "pagesEvidenceIncomplete": 176,
-   "note": "Chapters: 7 of 14 fully inspected — all of Part I. Sections: 31 of 58 fully inspected and dispositioned, 27 not started. Pages: 247 of 423 read in full text; among those, 160 are picture-carried and 160 have been rendered and looked at. The visual requirement of the 176 unread Part II pages is not yet determined."
+   "pagesEvidenceIncomplete": 0,
+   "note": "Chapters: 14 of 14 fully inspected. Sections: 59 of 59 fully inspected and dispositioned, 0 not started. Pages: 423 of 423 read in full text, and 305 of 305 picture-carried pages rendered and looked at."
   }
  ],
  "units": [
@@ -45129,7 +45129,9 @@
    "classNumber": 8,
    "officialRecordId": "ncert_hegp1_s2_5",
    "officialChapterId": "ncert_hegp1_ch02",
-   "additionalOfficialRecordIds": [],
+   "additionalOfficialRecordIds": [
+    "ncert_hegp1_s2_5b"
+   ],
    "sourceEvidence": {
     "bookId": "hegp1",
     "bookPart": "Part I",
@@ -45318,7 +45320,7 @@
    "estimatedInstructionalComplexity": 4,
    "suggestedUnitSequence": 9,
    "splitReason": "Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
-   "mergeRelationship": null,
+   "mergeRelationship": "Covers both sections the book numbers 2.5: \"Did You Ever Wonder?\" and the \"A Pinch of History\" pages that follow it under the same printed number. The history pages discuss the same estimation-at-scale material the section has just built, and the book gives no separate number to distinguish them. Both official records are cited.",
    "sourceVsPragatiLabel": "pragati_created",
    "intentInspectionStatus": "INSPECTED",
    "decompositionStatus": "READY_FOR_AUTHORING",
@@ -48004,6 +48006,3620 @@
      "checkpoint": "v0.84.0 checkpoint 22",
      "verdict": "CONFIRMED",
      "note": "Read in full text with every picture-carried page rendered and looked at, and each section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch01_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s1_1",
+   "officialChapterId": "ncert_hegp2_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch01",
+    "officialSectionId": "ncert_hegp2_s1_1",
+    "printedPageStart": 2,
+    "printedPageEnd": 6,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Sale and exam-score statements; three methods of expressing a fraction as a percentage; the bar model; the historical note on computing by tenths and twentieths before decimal fractions.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 194 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 2,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 63 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 3,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 60 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 4,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 5,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 17 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Fractions as percentages",
+   "mathematicalObjective": "Convert a fraction to a percentage and read a percentage as a fraction of 100.",
+   "studentCanStatement": "I can write three quarters as a percentage and show it on a bar model.",
+   "mathematicalIdeas": [
+    "percentage as a fraction with denominator 100",
+    "equivalent fractions out of 100",
+    "bar model from 0% to 100%",
+    "historical motivation for computing in hundredths"
+   ],
+   "representationsNeeded": [
+    "bar models",
+    "prize-money diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch08_u1",
+    "pragati_iu_g08_ch07_u1"
+   ],
+   "vocabulary": [
+    "percent",
+    "per hundred",
+    "equivalent"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 29,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "A new notation for a fraction, resting on Class 6-7 equivalence and Part I ratio.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch01_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s1_2",
+   "officialChapterId": "ncert_hegp2_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch01",
+    "officialSectionId": "ncert_hegp2_s1_2",
+    "printedPageStart": 6,
+    "printedPageEnd": 14,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Madhu and Madhav’s biscuits; y% of 80 written generally; the same computation by fraction multiplication, decimal multiplication and proportional reasoning; 150% and 210% of a target; the cyclist completing 40% of a journey.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 6,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 7,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 154 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 8,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 132 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 9,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 85 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 10,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 52 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 11,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 77 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 12,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 185 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 13,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 67 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 14,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 20 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Percentage of a quantity",
+   "mathematicalObjective": "Find a percentage of a quantity by fraction, decimal or proportional reasoning.",
+   "studentCanStatement": "I can find 15% of a value mentally and say which method I used.",
+   "mathematicalIdeas": [
+    "y% of a value as y/100 times it",
+    "fraction, decimal and proportional methods",
+    "percentages above 100",
+    "mental strategies"
+   ],
+   "representationsNeeded": [
+    "bar models",
+    "method comparison tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch01_u1",
+    "pragati_iu_g08_ch07_u2"
+   ],
+   "vocabulary": [
+    "of",
+    "percentage",
+    "target"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 30,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Rests on Part I ratio and Class 7 fraction multiplication.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch01_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s1_3",
+   "officialChapterId": "ncert_hegp2_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch01",
+    "officialSectionId": "ncert_hegp2_s1_3",
+    "printedPageStart": 14,
+    "printedPageEnd": 20,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 20,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Theatre footfall falling from 160 to 100; Kishanlal’s sweaters bought at 300 and marked up; profit percentage computed on buying price and on revenue; Samson’s car after a 15% discount.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     15,
+     17,
+     18
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 14,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 20 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 15,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 73 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 16,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 22 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 17,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 66 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 18,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 19,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 20,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 16 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Percentage change, profit, loss and discount",
+   "mathematicalObjective": "Compute percentage increase and decrease, and apply them to profit, loss and discount.",
+   "studentCanStatement": "I can find the selling price after a 15% discount and say what the base was.",
+   "mathematicalIdeas": [
+    "percentage increase and decrease",
+    "which quantity is the base",
+    "profit on cost versus on revenue",
+    "marked price and discount"
+   ],
+   "representationsNeeded": [
+    "before-and-after bars",
+    "price tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch01_u2"
+   ],
+   "vocabulary": [
+    "increase",
+    "profit",
+    "discount",
+    "marked price"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 31,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Percentage applied to a changing quantity, with the base made explicit.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch01_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s1_3",
+   "officialChapterId": "ncert_hegp2_ch01",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch01",
+    "officialSectionId": "ncert_hegp2_s1_3",
+    "printedPageStart": 20,
+    "printedPageEnd": 31,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 32,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Fixed deposits at 10% and 5% p.a.; Option 2 adding the interest back each time; deriving the expression for the total; a TV depreciating 5%; why percentages on different bases cannot be compared directly; the 99% left-handed puzzle.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     21,
+     22,
+     24,
+     25,
+     26,
+     27,
+     29,
+     30,
+     31,
+     32
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 20,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 16 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 21,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 113 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 22,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 118 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 23,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 35 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 24,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 65 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 25,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 47 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 26,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 22 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 27,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 28,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 32 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 29,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 145 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 30,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 31,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 159 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 103 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Interest, compounding and comparing percentages",
+   "mathematicalObjective": "Compare simple and added-back interest, and judge when percentages may be compared.",
+   "studentCanStatement": "I can say how much more a deposit earns when the interest is added back each year.",
+   "mathematicalIdeas": [
+    "interest rate per annum",
+    "interest added back to the principal",
+    "a formula for the total",
+    "depreciation",
+    "percentages with different bases"
+   ],
+   "representationsNeeded": [
+    "growth tables",
+    "deposit comparisons"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch01_u3",
+    "pragati_iu_g08_ch02_u1"
+   ],
+   "vocabulary": [
+    "interest",
+    "per annum",
+    "depreciate"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 32,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Repeated proportional change, meeting the exponential growth of Part I chapter 2.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch02_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s2_1",
+   "officialChapterId": "ncert_hegp2_ch02",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp2_s2_2"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch02",
+    "officialSectionId": "ncert_hegp2_s2_1",
+    "printedPageStart": 34,
+    "printedPageEnd": 37,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Baudhayana’s construction question (c. 800 BCE); why the dotted square has double the area; the sequence of squares each double the last; PQRS shown to be a square of half the area.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 142 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 34,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 88 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 35,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 68 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 36,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 37,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 51 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Doubling and halving a square",
+   "mathematicalObjective": "Construct a square of double or half a given area and justify the construction.",
+   "studentCanStatement": "I can construct a square with twice the area of this one and say why it works.",
+   "mathematicalIdeas": [
+    "the square on the diagonal has double the area",
+    "a sequence of doubling squares",
+    "halving by folding",
+    "Baudhayana’s Sulba-Sutra question"
+   ],
+   "representationsNeeded": [
+    "dotted square constructions",
+    "paper folding"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch01_u1",
+    "pragati_iu_g07p2_ch06_u1"
+   ],
+   "vocabulary": [
+    "double",
+    "diagonal",
+    "area"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 33,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §2.1 and §2.2: doubling a square and halving one are the same diagonal argument read in two directions, and §2.2 occupies barely a page and depends entirely on §2.1. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Area reasoning used to construct rather than to measure.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch02_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s2_3",
+   "officialChapterId": "ncert_hegp2_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch02",
+    "officialSectionId": "ncert_hegp2_s2_3",
+    "printedPageStart": 37,
+    "printedPageEnd": 41,
+    "pdfPageStart": 5,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-10-06",
+    "establishes": "The diagonal found from the doubled area; the argument that a terminating decimal cannot have 2 as its square; the hypotenuse-10 problem; a-squared = 36 worked through.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     5,
+     6,
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 5,
+      "printedPage": 37,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 51 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 38,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 81 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 39,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 68 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 40,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 37 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 41,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "The hypotenuse of an isosceles right triangle, and root 2",
+   "mathematicalObjective": "Find the hypotenuse of an isosceles right triangle and show its length is not a terminating decimal.",
+   "studentCanStatement": "I can say how long the diagonal of a unit square is and why it is not a decimal that stops.",
+   "mathematicalIdeas": [
+    "hypotenuse",
+    "square root of 2",
+    "a terminating decimal cannot square to 2",
+    "approximating an irrational length"
+   ],
+   "representationsNeeded": [
+    "square diagrams",
+    "decimal approximations"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch02_u1",
+    "pragati_iu_g08_ch01_u2"
+   ],
+   "vocabulary": [
+    "hypotenuse",
+    "root",
+    "terminating decimal"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 34,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "A length that is not a fraction, argued rather than asserted.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch02_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s2_4",
+   "officialChapterId": "ncert_hegp2_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch02",
+    "officialSectionId": "ncert_hegp2_s2_4",
+    "printedPageStart": 41,
+    "printedPageEnd": 48,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 16,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Making a right triangle from two different squares; the marked rectangular portion and the four-sided figure obtained; covering the square on the hypotenuse with the cut pieces; the general statement.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     11,
+     12,
+     13,
+     16
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 41,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 31 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 42,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 39 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 43,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 44,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 55 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 45,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 43 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 46,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 47,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 19 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 48,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Combining two squares: the Baudhayana-Pythagoras theorem",
+   "mathematicalObjective": "State and justify the theorem by combining the squares on two sides.",
+   "studentCanStatement": "I can show why the squares on the two sides add to the square on the hypotenuse.",
+   "mathematicalIdeas": [
+    "combining two squares into one",
+    "the general statement",
+    "dissection proof with paper",
+    "Baudhayana as first to state it generally"
+   ],
+   "representationsNeeded": [
+    "square dissections",
+    "cut-and-join paper pieces"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch02_u2"
+   ],
+   "vocabulary": [
+    "theorem",
+    "hypotenuse",
+    "dissection"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 35,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "The central theorem, proved by area dissection.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch02_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s2_5",
+   "officialChapterId": "ncert_hegp2_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch02",
+    "officialSectionId": "ncert_hegp2_s2_5",
+    "printedPageStart": 48,
+    "printedPageEnd": 50,
+    "pdfPageStart": 16,
+    "pdfPageEnd": 18,
+    "inspectedOn": "2026-10-06",
+    "establishes": "The Sulba-Sutra verse listing triples; (ka, kb, kc) shown to be a triple whenever (a, b, c) is; the sum of the first n-1 odd numbers used to generate more.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     16,
+     18
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 16,
+      "printedPage": 48,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 49,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 38 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 50,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Right triangles with integer sides",
+   "mathematicalObjective": "Recognise and generate Baudhayana (Pythagorean) triples.",
+   "studentCanStatement": "I can show that scaling a triple gives another triple.",
+   "mathematicalIdeas": [
+    "Baudhayana triples",
+    "scaling a triple",
+    "generating triples from odd-number sums",
+    "infinitely many such squares"
+   ],
+   "representationsNeeded": [
+    "triple tables",
+    "odd-number sum diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch02_u3",
+    "pragati_iu_g08_ch01_u1"
+   ],
+   "vocabulary": [
+    "triple",
+    "integer sides",
+    "scale"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 36,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Number theory meeting the chapter’s geometry.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch02_u5",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s2_6",
+   "officialChapterId": "ncert_hegp2_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch02",
+    "officialSectionId": "ncert_hegp2_s2_6",
+    "printedPageStart": 50,
+    "printedPageEnd": 52,
+    "pdfPageStart": 18,
+    "pdfPageEnd": 20,
+    "inspectedOn": "2026-10-06",
+    "establishes": "A question related to triples that remains unanswered, presented as something nobody has settled rather than as an exercise to complete.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     18,
+     19
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 18,
+      "printedPage": 50,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 51,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 15 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 52,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 21 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "A long-standing open problem",
+   "mathematicalObjective": "Describe an unsolved problem connected to the theorem.",
+   "studentCanStatement": "I can say what makes this question still open.",
+   "mathematicalIdeas": [
+    "an unsolved question in mathematics",
+    "what being open means"
+   ],
+   "representationsNeeded": [
+    "historical notes"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch02_u4"
+   ],
+   "vocabulary": [
+    "open problem",
+    "unsolved"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "ENRICHMENT",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 3,
+   "suggestedUnitSequence": 37,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "NEEDS_HUMAN_CHECK",
+   "humanReviewStatus": "flagged_for_review",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "Presented as enrichment; the source sets no objective the student is asked to reach.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ],
+   "humanJudgementQuestion": "Policy decision open_problem_enrichment_vs_core_instruction, as it applies to §2.6 A Long-Standing Open Problem: the section is numbered like any other but presents an unsolved question, so there is no objective a student can be assessed against. Should it become a Pragati lesson, enrichment carried alongside the theorem units, or an explicit no-unit ENRICHMENT disposition?",
+   "humanJudgementPolicyKey": "open_problem_enrichment_vs_core_instruction"
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch02_u6",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s2_7",
+   "officialChapterId": "ncert_hegp2_ch02",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch02",
+    "officialSectionId": "ncert_hegp2_s2_7",
+    "printedPageStart": 52,
+    "printedPageEnd": 53,
+    "pdfPageStart": 20,
+    "pdfPageEnd": 22,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Further applications: the rhombus with diagonals 24 and the equilateral triangle of side 6 whose altitude bisects the opposite side.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     21,
+     22
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 20,
+      "printedPage": 52,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 21 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 53,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 100 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 115 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Applying the theorem",
+   "mathematicalObjective": "Use the theorem to find unknown lengths, including in composite figures.",
+   "studentCanStatement": "I can find the side of a rhombus from its diagonals.",
+   "mathematicalIdeas": [
+    "applying the theorem",
+    "identifying the right angle",
+    "multi-step length problems",
+    "altitude of an equilateral triangle"
+   ],
+   "representationsNeeded": [
+    "labelled figures",
+    "worked problems"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch02_u3"
+   ],
+   "vocabulary": [
+    "apply",
+    "unknown length",
+    "altitude"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 38,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Consolidates the theorem through use.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch03_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s3_1",
+   "officialChapterId": "ncert_hegp2_ch03",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp2_s3_2"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch03",
+    "officialSectionId": "ncert_hegp2_s3_1",
+    "printedPageStart": 56,
+    "printedPageEnd": 57,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Proportionality recalled from Part I; the ratio printed on a map; the same two cities measured on maps of different scales.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 183 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 56,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "35 images, 232 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 57,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 27 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Proportionality recalled, and ratios in maps",
+   "mathematicalObjective": "Use a map scale as a ratio to find real distances.",
+   "studentCanStatement": "I can find the distance between two cities from the map scale.",
+   "mathematicalIdeas": [
+    "scale printed as a ratio",
+    "proportional relationship recalled",
+    "maps of different scales giving the same real distance"
+   ],
+   "representationsNeeded": [
+    "maps with scale ratios"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08_ch07_u2"
+   ],
+   "vocabulary": [
+    "scale",
+    "proportional",
+    "distance"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 39,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §3.1 and §3.2: the recap occupies one page and the map-scale work is the first thing it is used for. Splitting would leave a unit shorter than a lesson. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Applies the Part I ratio to a new representation rather than reteaching it.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch03_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s3_3",
+   "officialChapterId": "ncert_hegp2_ch03",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp2_s3_4"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch03",
+    "officialSectionId": "ncert_hegp2_s3_3",
+    "printedPageStart": 57,
+    "printedPageEnd": 60,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-06",
+    "establishes": "8 : 4 : 2 :: 4 : 2 : 1 written as a proportion; ratios extended to several terms; the triangle with angles in the ratio 1 : 3 : 5 constructed from the 180 degree sum.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 57,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 27 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 58,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 28 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 59,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 30 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 60,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Ratios with more than two terms, and dividing a whole",
+   "mathematicalObjective": "Work with a : b : c ratios and divide a quantity in a given ratio.",
+   "studentCanStatement": "I can construct a triangle whose angles are in the ratio 1 : 3 : 5.",
+   "mathematicalIdeas": [
+    "ratio with several terms",
+    "the :: proportion notation",
+    "dividing a whole in a multi-term ratio"
+   ],
+   "representationsNeeded": [
+    "ratio tables",
+    "triangle constructions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch03_u1",
+    "pragati_iu_g08_ch07_u3"
+   ],
+   "vocabulary": [
+    "terms",
+    "proportion",
+    "divide"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 40,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §3.3 and §3.4: ratios of more than two terms, and dividing a whole in such a ratio. Each runs about a page and the division is the immediate use of the extended notation. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Part I two-term ratio.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch03_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s3_5",
+   "officialChapterId": "ncert_hegp2_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch03",
+    "officialSectionId": "ncert_hegp2_s3_5",
+    "printedPageStart": 60,
+    "printedPageEnd": 63,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 9,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Marking slices by measuring 90 degrees from AC and 72 degrees from AD; the subject-choice survey drawn as a pie chart.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7,
+     8,
+     9
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 60,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 95 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 61,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 62,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 82 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 63,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 131 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "A slice of the pie: pie charts",
+   "mathematicalObjective": "Construct and read a pie chart by turning each share into an angle.",
+   "studentCanStatement": "I can draw the pie chart for this survey.",
+   "mathematicalIdeas": [
+    "share converted to an angle at the centre",
+    "constructing sectors with a protractor",
+    "reading proportion from a sector"
+   ],
+   "representationsNeeded": [
+    "pie charts",
+    "protractor constructions"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch03_u2",
+    "pragati_iu_g07p2_ch05_u3"
+   ],
+   "vocabulary": [
+    "pie chart",
+    "sector",
+    "angle"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 41,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "A data representation built on ratio rather than on counting.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch03_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s3_6",
+   "officialChapterId": "ncert_hegp2_ch03",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch03",
+    "officialSectionId": "ncert_hegp2_s3_6",
+    "printedPageStart": 63,
+    "printedPageEnd": 69,
+    "pdfPageStart": 9,
+    "pdfPageEnd": 15,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Going by bicycle three times faster and the time decreasing; which tables are in inverse proportion; 2 pumps filling a tank in 18 hours; a direct-proportion case worked alongside for contrast.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 9,
+      "printedPage": 63,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 131 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 64,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 69 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 65,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 142 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 66,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 53 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 67,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 68,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 24 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 69,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 125 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Inverse proportion",
+   "mathematicalObjective": "Recognise an inverse proportion and solve problems with it.",
+   "studentCanStatement": "I can say how long 3 pumps take when 2 pumps take 18 hours.",
+   "mathematicalIdeas": [
+    "inverse proportion",
+    "the product stays constant",
+    "telling direct from inverse"
+   ],
+   "representationsNeeded": [
+    "proportion tables",
+    "worked problems"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch03_u2"
+   ],
+   "vocabulary": [
+    "inverse",
+    "direct",
+    "constant product"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 42,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "A second kind of proportional relationship, new at Class 8.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch04_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s4_1",
+   "officialChapterId": "ncert_hegp2_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch04",
+    "officialSectionId": "ncert_hegp2_s4_1",
+    "printedPageStart": 71,
+    "printedPageEnd": 75,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-06",
+    "establishes": "The Sierpinski carpet drawn to step 2; the Sierpinski gasket; the Koch snowflake; fractals in human-made art; cutting the corners of an imaginary square between midpoints.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 160 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 71,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 70 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 72,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 22 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 73,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 20 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 74,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 18 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 75,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 22 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Fractals and self-similarity",
+   "mathematicalObjective": "Build the first steps of a fractal and describe its self-similarity.",
+   "studentCanStatement": "I can draw the next step of the Sierpinski carpet.",
+   "mathematicalIdeas": [
+    "self-similarity",
+    "iterating a rule on a shape",
+    "counting parts at each step",
+    "fractals in art and architecture"
+   ],
+   "representationsNeeded": [
+    "Sierpinski carpet and gasket",
+    "Koch snowflake",
+    "blanket and temple patterns"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07p2_ch06_u3"
+   ],
+   "vocabulary": [
+    "fractal",
+    "self-similar",
+    "step"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 43,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "A shape defined by repeating a rule, and not procedural.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch04_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s4_2",
+   "officialChapterId": "ncert_hegp2_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch04",
+    "officialSectionId": "ncert_hegp2_s4_2",
+    "printedPageStart": 75,
+    "printedPageEnd": 88,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 19,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Cuboid, parallelopiped, cylinder, cone, prisms and pyramids; the 11 nets of a cube; nets of a cylinder and cone; the octahedron from two square pyramids; shortest paths found by drawing the net.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 75,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 22 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 76,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 16 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 77,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 25 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 78,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 139 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 79,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 122 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 80,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 49 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 81,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 105 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 82,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 79 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 83,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 74 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 84,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 58 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 85,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 21 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 86,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 27 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 87,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 65 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 88,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Solids, nets and the shortest path on a surface",
+   "mathematicalObjective": "Identify solids, match them to nets, and use a net to find a shortest path.",
+   "studentCanStatement": "I can say which of these nets folds into a cube, and find the ant’s shortest path.",
+   "mathematicalIdeas": [
+    "prisms and pyramids named by their faces",
+    "net of a solid",
+    "the 11 nets of a cube",
+    "unfolding to find a shortest path"
+   ],
+   "representationsNeeded": [
+    "solid diagrams",
+    "nets",
+    "ant-and-laddu figures"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch04_u1",
+    "pragati_iu_g06_ch09_u3"
+   ],
+   "vocabulary": [
+    "net",
+    "prism",
+    "pyramid",
+    "octahedron"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 44,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "Two-way visualisation between a solid and its net, used to solve a problem.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch04_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s4_2",
+   "officialChapterId": "ncert_hegp2_ch04",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch04",
+    "officialSectionId": "ncert_hegp2_s4_2",
+    "printedPageStart": 88,
+    "printedPageEnd": 102,
+    "pdfPageStart": 19,
+    "pdfPageEnd": 33,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Projections of cuboids; what happens to the length of a line in projection; objects matched to their front, top and side views; shadows cast on a plane; counting cubes in a stack; drawing on the isometric grid and the illusion figure.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 19,
+      "printedPage": 88,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 89,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 124 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 90,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 48 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 91,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 101 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 92,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 76 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 4 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 94,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 30 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 95,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 140 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 96,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 122 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 97,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 72 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 98,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 726 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 99,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 42 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 100,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 59 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": 101,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 104 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 33,
+      "printedPage": 102,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 141 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Projections, shadows and isometric drawing",
+   "mathematicalObjective": "Draw and interpret front, top and side views, and work on an isometric grid.",
+   "studentCanStatement": "I can say which solid has these three views.",
+   "mathematicalIdeas": [
+    "orthographic projection",
+    "what happens to a length in projection",
+    "shadows as projections",
+    "isometric grid drawing"
+   ],
+   "representationsNeeded": [
+    "projection triples",
+    "shadow diagrams",
+    "isometric grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch04_u2"
+   ],
+   "vocabulary": [
+    "projection",
+    "front view",
+    "isometric"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 45,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "Representing three dimensions on paper, distinct from the net work.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch05_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s5_1",
+   "officialChapterId": "ncert_hegp2_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch05",
+    "officialSectionId": "ncert_hegp2_s5_1",
+    "printedPageStart": 104,
+    "printedPageEnd": 116,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 14,
+    "inspectedOn": "2026-10-06",
+    "establishes": "The mean marked as the centre of each collection; including or removing two values and keeping the mean; every value rising by 10 and the mean rising with it; the doubling proved with algebra; average family size from a frequency table; spreadsheet formulas for class averages.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     14
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "9 images, 184 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 104,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "12 images, 75 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 105,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 45 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 106,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 36 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 107,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 33 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 108,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "8 images, 24 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 109,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 29 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 110,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 131 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 111,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 370 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 112,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 24 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 113,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 56 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 114,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 122 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 115,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 15 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 116,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 77 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "The mean as a balance point",
+   "mathematicalObjective": "Explain the mean as a balance point and reason about what changes it.",
+   "studentCanStatement": "I can say what happens to the mean if every value increases by 10.",
+   "mathematicalIdeas": [
+    "mean as the centre where distances balance",
+    "effect of including or removing values",
+    "effect of shifting or doubling every value, proved with algebra",
+    "mean and median from frequencies",
+    "spreadsheet formulas"
+   ],
+   "representationsNeeded": [
+    "dot plots",
+    "balance diagrams",
+    "frequency tables",
+    "spreadsheets"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07p2_ch05_u2",
+    "pragati_iu_g08_ch06_u1"
+   ],
+   "vocabulary": [
+    "mean",
+    "median",
+    "balance",
+    "frequency"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "FORMALIZATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 46,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "FORMALIZATION",
+   "progressionRationale": "Class 7 computed the mean; Class 8 proves how it behaves.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch05_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s5_2",
+   "officialChapterId": "ncert_hegp2_ch05",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch05",
+    "officialSectionId": "ncert_hegp2_s5_2",
+    "printedPageStart": 116,
+    "printedPageEnd": 133,
+    "pdfPageStart": 14,
+    "pdfPageEnd": 32,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Monthly temperatures plotted; the USA increases compared year on year; the rice-and-wheat infographic; Manoj’s time-use strip; statements judged always, sometimes or never true; the mean weight question after admissions.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     14,
+     15,
+     16,
+     17,
+     19,
+     20,
+     23,
+     24,
+     26,
+     27,
+     28,
+     30,
+     31,
+     32
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 14,
+      "printedPage": 116,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 77 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 117,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 23 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 118,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 18 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 119,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 69 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 120,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 23 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 121,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 122,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 229 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 123,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 15 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 124,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 21 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 125,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 18 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 126,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 55 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": 127,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 33 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 26,
+      "printedPage": 128,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 68 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 27,
+      "printedPage": 129,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 192 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 28,
+      "printedPage": 130,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 15 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 29,
+      "printedPage": 131,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 19 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 30,
+      "printedPage": 132,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "7 images, 19 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 31,
+      "printedPage": 133,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 119 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 32,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 579 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Line graphs and interpreting data",
+   "mathematicalObjective": "Read and construct line graphs and judge which claims the data supports.",
+   "studentCanStatement": "I can say which of these statements the graph actually supports.",
+   "mathematicalIdeas": [
+    "line graph for change over time",
+    "comparing two series",
+    "infographics and time-use strips",
+    "testing a statement as always, sometimes or never true"
+   ],
+   "representationsNeeded": [
+    "line graphs",
+    "infographics",
+    "time strips"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch05_u1",
+    "pragati_iu_g07p2_ch05_u3"
+   ],
+   "vocabulary": [
+    "line graph",
+    "trend",
+    "valid"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_REPRESENTATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 47,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_REPRESENTATION",
+   "progressionRationale": "A representation for change over time, with inference attached.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch06_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s6_1",
+   "officialChapterId": "ncert_hegp2_ch06",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp2_s6_2"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch06",
+    "officialSectionId": "ncert_hegp2_s6_1",
+    "printedPageStart": 136,
+    "printedPageEnd": 137,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 3,
+    "inspectedOn": "2026-10-06",
+    "establishes": "The game tracked as 5M + 6, 20M + 24, 20M + 33, 100M + 165; changing the rule to make the answer 3 or 5.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     3
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 137 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 136,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 25 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 137,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 77 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Why think-of-a-number tricks work",
+   "mathematicalObjective": "Model a sequence of operations as an expression and explain why the trick always works.",
+   "studentCanStatement": "I can show with algebra why this trick always gives the same answer.",
+   "mathematicalIdeas": [
+    "modelling steps as an expression",
+    "the unknown cancelling",
+    "designing a trick to give a chosen answer"
+   ],
+   "representationsNeeded": [
+    "step chains",
+    "expression tables"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07p2_ch07_u2",
+    "pragati_iu_g08_ch06_u1"
+   ],
+   "vocabulary": [
+    "trick",
+    "expression",
+    "cancel"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 48,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §6.1 and §6.2: both headings sit on the opening page, and the think-of-a-number trick is where the general expression first appears. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Algebra used to explain rather than to solve.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch06_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s6_3",
+   "officialChapterId": "ncert_hegp2_ch06",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp2_s6_4"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch06",
+    "officialSectionId": "ncert_hegp2_s6_3",
+    "printedPageStart": 137,
+    "printedPageEnd": 141,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Pyramids filled from the bottom row; a, b, c placed in the empty boxes and the top read off; the three-row pyramid; the calendar trick and making your own.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": 137,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 77 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 138,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 107 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 139,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 73 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 140,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 141,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 173 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Number pyramids and calendar grids",
+   "mathematicalObjective": "Generalise a pyramid or grid pattern with letter-numbers.",
+   "studentCanStatement": "I can write the expression at the top of this pyramid.",
+   "mathematicalIdeas": [
+    "filling a pyramid by adding adjacent cells",
+    "generalising with letter-numbers",
+    "a calendar grid trick explained algebraically"
+   ],
+   "representationsNeeded": [
+    "number pyramids",
+    "calendar grids"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch06_u1"
+   ],
+   "vocabulary": [
+    "pyramid",
+    "grid",
+    "general form"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 49,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §6.3 and §6.4: number pyramids and calendar grids are the same generalising move on two layouts — fill with letter-numbers and read off the expression. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "The Class 7-8 generalising work on new layouts.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch06_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s6_5",
+   "officialChapterId": "ncert_hegp2_ch06",
+   "additionalOfficialRecordIds": [
+    "ncert_hegp2_s6_6"
+   ],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch06",
+    "officialSectionId": "ncert_hegp2_s6_5",
+    "printedPageStart": 141,
+    "printedPageEnd": 147,
+    "pdfPageStart": 7,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-06",
+    "establishes": "The six ways to place three digits and why rp x q beats rq x p when q > p; whether the steps always leave no remainder for other 2-digit numbers; the flowers-at-shrines problem; Karim and the Genie.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     7,
+     8,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 7,
+      "printedPage": 141,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 173 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 142,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 407 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 143,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 22 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 144,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "5 images, 26 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 145,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 46 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 146,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "5 images, 40 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 147,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 141 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Settling numerical claims with algebra",
+   "mathematicalObjective": "Use algebra to decide the largest product and to explain a divisibility trick.",
+   "studentCanStatement": "I can show algebraically which arrangement gives the largest product.",
+   "mathematicalIdeas": [
+    "comparing arrangements with an algebraic expression",
+    "proving a shortcut always works",
+    "divisibility argued from place value"
+   ],
+   "representationsNeeded": [
+    "digit arrangements",
+    "worked divisibility chains"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch06_u2",
+    "pragati_iu_g08_ch05_u2"
+   ],
+   "vocabulary": [
+    "largest",
+    "product",
+    "divisibility"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "INTEGRATION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 50,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": "Covers §6.5 and §6.6: both ask for a numerical claim to be settled by algebra — which arrangement of digits gives the largest product, and why a divisibility trick always works. One objective on two examples. Both official records are cited.",
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "INTEGRATION",
+   "progressionRationale": "Joins the Part I identities and divisibility proofs to this chapter.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch07_u1",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s7_1",
+   "officialChapterId": "ncert_hegp2_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch07",
+    "officialSectionId": "ncert_hegp2_s7_1",
+    "printedPageStart": 149,
+    "printedPageEnd": 153,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 6,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Dividing a square into four equal parts in several ways; rangoli regions; the path around rectangular park EFGH; the spiral tube of constant width; why perimeter is not a measure of area.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 175 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": 149,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "6 images, 151 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 3,
+      "printedPage": 150,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 109 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": 151,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 49 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": 152,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 109 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 6,
+      "printedPage": 153,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 64 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Area of rectangles, squares and composite regions",
+   "mathematicalObjective": "Find areas of rectangles, squares and regions made from them.",
+   "studentCanStatement": "I can find the area of the path laid around this park.",
+   "mathematicalIdeas": [
+    "area as length times breadth",
+    "dividing a square into equal parts",
+    "composite and shaded regions",
+    "why perimeter does not measure area"
+   ],
+   "representationsNeeded": [
+    "rangoli figures",
+    "path and spiral diagrams"
+   ],
+   "prerequisites": [
+    "pragati_iu_g07_ch08_u4",
+    "pragati_iu_g06_ch06_u2"
+   ],
+   "vocabulary": [
+    "area",
+    "composite",
+    "shaded"
+   ],
+   "reasoningDemand": "procedure",
+   "applicationContext": null,
+   "instructionalRole": "EXTENSION",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 4,
+   "suggestedUnitSequence": 51,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "EXTENSION",
+   "progressionRationale": "Extends the Class 6-7 area work to composite figures.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch07_u2",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s7_1",
+   "officialChapterId": "ncert_hegp2_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch07",
+    "officialSectionId": "ncert_hegp2_s7_1",
+    "printedPageStart": 153,
+    "printedPageEnd": 157,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 10,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Which of two triangles in identical rectangles has the greater area; BCDE taken as height and base; the half-base-times-height formula shown to hold for all triangles; BY found by rearranging it.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     6,
+     7,
+     8,
+     10
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": 153,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 64 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": 154,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 50 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 8,
+      "printedPage": 155,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 67 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 9,
+      "printedPage": 156,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "4 images, 36 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     },
+     {
+      "pdfPage": 10,
+      "printedPage": 157,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 111 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Area of a triangle, derived and used in reverse",
+   "mathematicalObjective": "Derive the area of a triangle and use the formula to find a length.",
+   "studentCanStatement": "I can find the altitude BY using the area formula.",
+   "mathematicalIdeas": [
+    "triangle as half a rectangle",
+    "base and height",
+    "the formula derived for all triangle types",
+    "using area to find an unknown length"
+   ],
+   "representationsNeeded": [
+    "rectangle dissections",
+    "labelled triangles"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch07_u1",
+    "pragati_iu_g08_ch04_u1"
+   ],
+   "vocabulary": [
+    "base",
+    "height",
+    "altitude"
+   ],
+   "reasoningDemand": "explain",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 52,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Derived from the rectangle, then used in reverse.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch07_u3",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s7_1",
+   "officialChapterId": "ncert_hegp2_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch07",
+    "officialSectionId": "ncert_hegp2_s7_1",
+    "printedPageStart": 157,
+    "printedPageEnd": 160,
+    "pdfPageStart": 10,
+    "pdfPageEnd": 13,
+    "inspectedOn": "2026-10-06",
+    "establishes": "Line l parallel to BC with triangles on the common base; AB equal to its reflection AB-dash by congruence; the midpoint question about the fraction of the area of triangle XYZ.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     10,
+     11,
+     12,
+     13
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 10,
+      "printedPage": 157,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 111 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 11,
+      "printedPage": 158,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 74 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 12,
+      "printedPage": 159,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 63 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 13,
+      "printedPage": 160,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 130 drawn elements: read in full text and rendered and looked at in the same pass."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Triangles between parallel lines",
+   "mathematicalObjective": "Show that triangles on a common base between parallel lines have equal area.",
+   "studentCanStatement": "I can say why these two triangles have the same area.",
+   "mathematicalIdeas": [
+    "equal areas on a common base",
+    "height constant between parallels",
+    "congruence and reflection in an area argument"
+   ],
+   "representationsNeeded": [
+    "parallel-line figures",
+    "reflected triangles"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch07_u2",
+    "pragati_iu_g07_ch05_u3"
+   ],
+   "vocabulary": [
+    "parallel",
+    "common base",
+    "equal area"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_MATHEMATICAL_IDEA",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 53,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_MATHEMATICAL_IDEA",
+   "progressionRationale": "An area result proved from the Class 7 parallel-line work.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
+    }
+   ]
+  },
+  {
+   "instructionalUnitId": "pragati_iu_g08p2_ch07_u4",
+   "grade": "class8",
+   "classNumber": 8,
+   "officialRecordId": "ncert_hegp2_s7_1",
+   "officialChapterId": "ncert_hegp2_ch07",
+   "additionalOfficialRecordIds": [],
+   "sourceEvidence": {
+    "bookId": "hegp2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_hegp2_ch07",
+    "officialSectionId": "ncert_hegp2_s7_1",
+    "printedPageStart": 160,
+    "printedPageEnd": 171,
+    "pdfPageStart": 13,
+    "pdfPageEnd": 25,
+    "inspectedOn": "2026-10-06",
+    "establishes": "The parallelogram converted into a rectangle of equal area; the Sulba-Sutra method; the rhombus from half the product of its diagonals; two copies of a trapezium making a parallelogram, giving half h(a+b); square inches converted to square centimetres; areas of real surfaces.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": true,
+    "visualPagesInspected": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "pageEvidence": [
+     {
+      "pdfPage": 13,
+      "printedPage": 160,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 130 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 14,
+      "printedPage": 161,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 57 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 15,
+      "printedPage": 162,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 107 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 16,
+      "printedPage": 163,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 62 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 17,
+      "printedPage": 164,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 60 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 18,
+      "printedPage": 165,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 68 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 19,
+      "printedPage": 166,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 101 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 20,
+      "printedPage": 167,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 77 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 21,
+      "printedPage": 168,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 54 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 22,
+      "printedPage": 169,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 92 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 23,
+      "printedPage": 170,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 61 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 24,
+      "printedPage": 171,
+      "fullTextInspected": true,
+      "visualInspectionRequired": true,
+      "visualInspected": true,
+      "note": "4 images, 159 drawn elements: read in full text and rendered and looked at in the same pass."
+     },
+     {
+      "pdfPage": 25,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": true,
+      "note": "2 images, 3 drawn elements: the extracted text states the mathematics in full; no visual check needed."
+     }
+    ],
+    "firstInspectedOn": "2026-10-06",
+    "lastEvidenceUpdatedOn": "2026-10-06"
+   },
+   "instructionalTitle": "Parallelogram, rhombus and trapezium areas by dissection",
+   "mathematicalObjective": "Derive the areas of a parallelogram, rhombus and trapezium.",
+   "studentCanStatement": "I can derive the trapezium formula using two copies of it.",
+   "mathematicalIdeas": [
+    "dissecting a parallelogram into a rectangle",
+    "rhombus from its diagonals",
+    "trapezium from two copies",
+    "area unit conversion",
+    "areas in real life"
+   ],
+   "representationsNeeded": [
+    "dissection diagrams",
+    "trapezium pairs"
+   ],
+   "prerequisites": [
+    "pragati_iu_g08p2_ch07_u3"
+   ],
+   "vocabulary": [
+    "parallelogram",
+    "rhombus",
+    "trapezium",
+    "dissection"
+   ],
+   "reasoningDemand": "generalise",
+   "applicationContext": null,
+   "instructionalRole": "NEW_PROCEDURE",
+   "likelyMisconceptionsStatus": "TO_BE_DEVELOPED",
+   "estimatedInstructionalComplexity": 5,
+   "suggestedUnitSequence": 54,
+   "splitReason": "Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.",
+   "mergeRelationship": null,
+   "sourceVsPragatiLabel": "pragati_created",
+   "intentInspectionStatus": "INSPECTED",
+   "decompositionStatus": "READY_FOR_AUTHORING",
+   "humanReviewStatus": "not_reviewed",
+   "existingArtifact": null,
+   "learnCoverage": "NO_LEARN_CONTENT",
+   "notes": null,
+   "progressionRelationship": "NEW_PROCEDURE",
+   "progressionRationale": "Each formula derived by dissection rather than given.",
+   "auditHistory": [
+    {
+     "checkpoint": "v0.84.0 checkpoint 23",
+     "verdict": "CONFIRMED",
+     "note": "Rebuilt from the primary source after the checkpoint-23 tree was lost: every page read in full text, every picture-carried page rendered and looked at, and every section boundary located from its printed heading in the same pass."
     }
    ]
   }

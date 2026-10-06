@@ -27,7 +27,7 @@ NOT STARTED — its unit count is unknown, not zero.
 | Class 5 | 15 | — | 200 indexed / 200 full text / 154 visual | 68 | 65 | 3 | 0 | 0 | 68 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 7 | 15 | 65 | 511 indexed / 511 full text / 236 visual | 64 | 63 | 1 | 0 | 0 | 64 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 8 | 14 | 58 | 423 indexed / 247 full text / 160 visual | 28 | 27 | 1 | 0 | 0 | 28 | IN_PROGRESS |
+| Class 8 | 14 | 59 | 423 indexed / 423 full text / 305 visual | 54 | 52 | 2 | 0 | 0 | 54 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 11 | 14 | 63 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -6970,7 +6970,7 @@ Chapters: 15 of 15 fully inspected. Sections: 65 of 65 fully inspected and dispo
 
 ## Class 8
 
-Chapters: 7 of 14 fully inspected — all of Part I. Sections: 31 of 58 fully inspected and dispositioned, 27 not started. Pages: 247 of 423 read in full text; among those, 160 are picture-carried and 160 have been rendered and looked at. The visual requirement of the 176 unread Part II pages is not yet determined.
+Chapters: 14 of 14 fully inspected. Sections: 59 of 59 fully inspected and dispositioned, 0 not started. Pages: 423 of 423 read in full text, and 305 of 305 picture-carried pages rendered and looked at.
 
 #### Square numbers and their patterns
 
@@ -7103,7 +7103,7 @@ Chapters: 7 of 14 fully inspected — all of Part I. Sections: 31 of 58 fully in
 #### Did you ever wonder? Estimating with powers
 
 - **Id** `pragati_iu_g08_ch02_u5` — Pragati-created teaching unit, not an NCERT section.
-- **Serves** `ncert_hegp1_s2_5`
+- **Serves** `ncert_hegp1_s2_5` (also ncert_hegp1_s2_5b)
 - **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 16, 17, 19, 20, 21, 22, 23, 26, 27, 28, 29, 30
 - **Source** hegp1 Part I, printed pp. 1–46 (PDF pp. 15–30), read 2026-10-03. Establishes: Estimating ages in seconds, distances, population and other quantities using powers of ten, with the plausibility of each result discussed.
 - **Objective** Estimate real quantities using powers of ten and judge the result.
@@ -7419,6 +7419,422 @@ Chapters: 7 of 14 fully inspected — all of Part I. Sections: 31 of 58 fully in
 - **Misconception evidence** TO_BE_DEVELOPED
 - **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
 - **Why this split** Ganita Prakash Part I numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Fractions as percentages
+
+- **Id** `pragati_iu_g08p2_ch01_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s1_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
+- **Source** hegp2 Part II, printed pp. 2–6 (PDF pp. 1–6), read 2026-10-06. Establishes: Sale and exam-score statements; three methods of expressing a fraction as a percentage; the bar model; the historical note on computing by tenths and twentieths before decimal fractions.
+- **Objective** Convert a fraction to a percentage and read a percentage as a fraction of 100.
+- **Student can** I can write three quarters as a percentage and show it on a bar model.
+- **Mathematical ideas** percentage as a fraction with denominator 100; equivalent fractions out of 100; bar model from 0% to 100%; historical motivation for computing in hundredths
+- **Representations** bar models; prize-money diagrams
+- **Prerequisites** pragati_iu_g07_ch08_u1; pragati_iu_g08_ch07_u1
+- **Role** NEW_REPRESENTATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Percentage of a quantity
+
+- **Id** `pragati_iu_g08p2_ch01_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s1_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9, 10, 11, 12, 13
+- **Source** hegp2 Part II, printed pp. 6–14 (PDF pp. 6–14), read 2026-10-06. Establishes: Madhu and Madhav’s biscuits; y% of 80 written generally; the same computation by fraction multiplication, decimal multiplication and proportional reasoning; 150% and 210% of a target; the cyclist completing 40% of a journey.
+- **Objective** Find a percentage of a quantity by fraction, decimal or proportional reasoning.
+- **Student can** I can find 15% of a value mentally and say which method I used.
+- **Mathematical ideas** y% of a value as y/100 times it; fraction, decimal and proportional methods; percentages above 100; mental strategies
+- **Representations** bar models; method comparison tables
+- **Prerequisites** pragati_iu_g08p2_ch01_u1; pragati_iu_g08_ch07_u2
+- **Role** NEW_PROCEDURE · **reasoning** procedure · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Percentage change, profit, loss and discount
+
+- **Id** `pragati_iu_g08p2_ch01_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s1_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 15, 17, 18
+- **Source** hegp2 Part II, printed pp. 14–20 (PDF pp. 14–20), read 2026-10-06. Establishes: Theatre footfall falling from 160 to 100; Kishanlal’s sweaters bought at 300 and marked up; profit percentage computed on buying price and on revenue; Samson’s car after a 15% discount.
+- **Objective** Compute percentage increase and decrease, and apply them to profit, loss and discount.
+- **Student can** I can find the selling price after a 15% discount and say what the base was.
+- **Mathematical ideas** percentage increase and decrease; which quantity is the base; profit on cost versus on revenue; marked price and discount
+- **Representations** before-and-after bars; price tables
+- **Prerequisites** pragati_iu_g08p2_ch01_u2
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Interest, compounding and comparing percentages
+
+- **Id** `pragati_iu_g08p2_ch01_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s1_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 22, 24, 25, 26, 27, 29, 30, 31, 32
+- **Source** hegp2 Part II, printed pp. 20–31 (PDF pp. 20–32), read 2026-10-06. Establishes: Fixed deposits at 10% and 5% p.a.; Option 2 adding the interest back each time; deriving the expression for the total; a TV depreciating 5%; why percentages on different bases cannot be compared directly; the 99% left-handed puzzle.
+- **Objective** Compare simple and added-back interest, and judge when percentages may be compared.
+- **Student can** I can say how much more a deposit earns when the interest is added back each year.
+- **Mathematical ideas** interest rate per annum; interest added back to the principal; a formula for the total; depreciation; percentages with different bases
+- **Representations** growth tables; deposit comparisons
+- **Prerequisites** pragati_iu_g08p2_ch01_u3; pragati_iu_g08_ch02_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Doubling and halving a square
+
+- **Id** `pragati_iu_g08p2_ch02_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s2_1` (also ncert_hegp2_s2_2)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5
+- **Source** hegp2 Part II, printed pp. 34–37 (PDF pp. 1–5), read 2026-10-06. Establishes: Baudhayana’s construction question (c. 800 BCE); why the dotted square has double the area; the sequence of squares each double the last; PQRS shown to be a square of half the area.
+- **Objective** Construct a square of double or half a given area and justify the construction.
+- **Student can** I can construct a square with twice the area of this one and say why it works.
+- **Mathematical ideas** the square on the diagonal has double the area; a sequence of doubling squares; halving by folding; Baudhayana’s Sulba-Sutra question
+- **Representations** dotted square constructions; paper folding
+- **Prerequisites** pragati_iu_g08_ch01_u1; pragati_iu_g07p2_ch06_u1
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### The hypotenuse of an isosceles right triangle, and root 2
+
+- **Id** `pragati_iu_g08p2_ch02_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s2_3`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 5, 6, 7
+- **Source** hegp2 Part II, printed pp. 37–41 (PDF pp. 5–9), read 2026-10-06. Establishes: The diagonal found from the doubled area; the argument that a terminating decimal cannot have 2 as its square; the hypotenuse-10 problem; a-squared = 36 worked through.
+- **Objective** Find the hypotenuse of an isosceles right triangle and show its length is not a terminating decimal.
+- **Student can** I can say how long the diagonal of a unit square is and why it is not a decimal that stops.
+- **Mathematical ideas** hypotenuse; square root of 2; a terminating decimal cannot square to 2; approximating an irrational length
+- **Representations** square diagrams; decimal approximations
+- **Prerequisites** pragati_iu_g08p2_ch02_u1; pragati_iu_g08_ch01_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Combining two squares: the Baudhayana-Pythagoras theorem
+
+- **Id** `pragati_iu_g08p2_ch02_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s2_4`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 11, 12, 13, 16
+- **Source** hegp2 Part II, printed pp. 41–48 (PDF pp. 9–16), read 2026-10-06. Establishes: Making a right triangle from two different squares; the marked rectangular portion and the four-sided figure obtained; covering the square on the hypotenuse with the cut pieces; the general statement.
+- **Objective** State and justify the theorem by combining the squares on two sides.
+- **Student can** I can show why the squares on the two sides add to the square on the hypotenuse.
+- **Mathematical ideas** combining two squares into one; the general statement; dissection proof with paper; Baudhayana as first to state it generally
+- **Representations** square dissections; cut-and-join paper pieces
+- **Prerequisites** pragati_iu_g08p2_ch02_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Right triangles with integer sides
+
+- **Id** `pragati_iu_g08p2_ch02_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s2_5`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 16, 18
+- **Source** hegp2 Part II, printed pp. 48–50 (PDF pp. 16–18), read 2026-10-06. Establishes: The Sulba-Sutra verse listing triples; (ka, kb, kc) shown to be a triple whenever (a, b, c) is; the sum of the first n-1 odd numbers used to generate more.
+- **Objective** Recognise and generate Baudhayana (Pythagorean) triples.
+- **Student can** I can show that scaling a triple gives another triple.
+- **Mathematical ideas** Baudhayana triples; scaling a triple; generating triples from odd-number sums; infinitely many such squares
+- **Representations** triple tables; odd-number sum diagrams
+- **Prerequisites** pragati_iu_g08p2_ch02_u3; pragati_iu_g08_ch01_u1
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### A long-standing open problem
+
+- **Id** `pragati_iu_g08p2_ch02_u5` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s2_6`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 18, 19
+- **Source** hegp2 Part II, printed pp. 50–52 (PDF pp. 18–20), read 2026-10-06. Establishes: A question related to triples that remains unanswered, presented as something nobody has settled rather than as an exercise to complete.
+- **Objective** Describe an unsolved problem connected to the theorem.
+- **Student can** I can say what makes this question still open.
+- **Mathematical ideas** an unsolved question in mathematics; what being open means
+- **Representations** historical notes
+- **Prerequisites** pragati_iu_g08p2_ch02_u4
+- **Role** ENRICHMENT · **reasoning** explain · **complexity** 3/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition NEEDS_HUMAN_CHECK · review flagged_for_review
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Applying the theorem
+
+- **Id** `pragati_iu_g08p2_ch02_u6` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s2_7`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 21, 22
+- **Source** hegp2 Part II, printed pp. 52–53 (PDF pp. 20–22), read 2026-10-06. Establishes: Further applications: the rhombus with diagonals 24 and the equilateral triangle of side 6 whose altitude bisects the opposite side.
+- **Objective** Use the theorem to find unknown lengths, including in composite figures.
+- **Student can** I can find the side of a rhombus from its diagonals.
+- **Mathematical ideas** applying the theorem; identifying the right angle; multi-step length problems; altitude of an equilateral triangle
+- **Representations** labelled figures; worked problems
+- **Prerequisites** pragati_iu_g08p2_ch02_u3
+- **Role** INTEGRATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Proportionality recalled, and ratios in maps
+
+- **Id** `pragati_iu_g08p2_ch03_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s3_1` (also ncert_hegp2_s3_2)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3
+- **Source** hegp2 Part II, printed pp. 56–57 (PDF pp. 1–3), read 2026-10-06. Establishes: Proportionality recalled from Part I; the ratio printed on a map; the same two cities measured on maps of different scales.
+- **Objective** Use a map scale as a ratio to find real distances.
+- **Student can** I can find the distance between two cities from the map scale.
+- **Mathematical ideas** scale printed as a ratio; proportional relationship recalled; maps of different scales giving the same real distance
+- **Representations** maps with scale ratios
+- **Prerequisites** pragati_iu_g08_ch07_u2
+- **Role** EXTENSION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Ratios with more than two terms, and dividing a whole
+
+- **Id** `pragati_iu_g08p2_ch03_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s3_3` (also ncert_hegp2_s3_4)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 5, 6
+- **Source** hegp2 Part II, printed pp. 57–60 (PDF pp. 3–6), read 2026-10-06. Establishes: 8 : 4 : 2 :: 4 : 2 : 1 written as a proportion; ratios extended to several terms; the triangle with angles in the ratio 1 : 3 : 5 constructed from the 180 degree sum.
+- **Objective** Work with a : b : c ratios and divide a quantity in a given ratio.
+- **Student can** I can construct a triangle whose angles are in the ratio 1 : 3 : 5.
+- **Mathematical ideas** ratio with several terms; the :: proportion notation; dividing a whole in a multi-term ratio
+- **Representations** ratio tables; triangle constructions
+- **Prerequisites** pragati_iu_g08p2_ch03_u1; pragati_iu_g08_ch07_u3
+- **Role** EXTENSION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### A slice of the pie: pie charts
+
+- **Id** `pragati_iu_g08p2_ch03_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s3_5`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 9
+- **Source** hegp2 Part II, printed pp. 60–63 (PDF pp. 6–9), read 2026-10-06. Establishes: Marking slices by measuring 90 degrees from AC and 72 degrees from AD; the subject-choice survey drawn as a pie chart.
+- **Objective** Construct and read a pie chart by turning each share into an angle.
+- **Student can** I can draw the pie chart for this survey.
+- **Mathematical ideas** share converted to an angle at the centre; constructing sectors with a protractor; reading proportion from a sector
+- **Representations** pie charts; protractor constructions
+- **Prerequisites** pragati_iu_g08p2_ch03_u2; pragati_iu_g07p2_ch05_u3
+- **Role** NEW_REPRESENTATION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Inverse proportion
+
+- **Id** `pragati_iu_g08p2_ch03_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s3_6`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 9, 10, 11, 12, 13, 14, 15
+- **Source** hegp2 Part II, printed pp. 63–69 (PDF pp. 9–15), read 2026-10-06. Establishes: Going by bicycle three times faster and the time decreasing; which tables are in inverse proportion; 2 pumps filling a tank in 18 hours; a direct-proportion case worked alongside for contrast.
+- **Objective** Recognise an inverse proportion and solve problems with it.
+- **Student can** I can say how long 3 pumps take when 2 pumps take 18 hours.
+- **Mathematical ideas** inverse proportion; the product stays constant; telling direct from inverse
+- **Representations** proportion tables; worked problems
+- **Prerequisites** pragati_iu_g08p2_ch03_u2
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Fractals and self-similarity
+
+- **Id** `pragati_iu_g08p2_ch04_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s4_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
+- **Source** hegp2 Part II, printed pp. 71–75 (PDF pp. 1–6), read 2026-10-06. Establishes: The Sierpinski carpet drawn to step 2; the Sierpinski gasket; the Koch snowflake; fractals in human-made art; cutting the corners of an imaginary square between midpoints.
+- **Objective** Build the first steps of a fractal and describe its self-similarity.
+- **Student can** I can draw the next step of the Sierpinski carpet.
+- **Mathematical ideas** self-similarity; iterating a rule on a shape; counting parts at each step; fractals in art and architecture
+- **Representations** Sierpinski carpet and gasket; Koch snowflake; blanket and temple patterns
+- **Prerequisites** pragati_iu_g07p2_ch06_u3
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Solids, nets and the shortest path on a surface
+
+- **Id** `pragati_iu_g08p2_ch04_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s4_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+- **Source** hegp2 Part II, printed pp. 75–88 (PDF pp. 6–19), read 2026-10-06. Establishes: Cuboid, parallelopiped, cylinder, cone, prisms and pyramids; the 11 nets of a cube; nets of a cylinder and cone; the octahedron from two square pyramids; shortest paths found by drawing the net.
+- **Objective** Identify solids, match them to nets, and use a net to find a shortest path.
+- **Student can** I can say which of these nets folds into a cube, and find the ant’s shortest path.
+- **Mathematical ideas** prisms and pyramids named by their faces; net of a solid; the 11 nets of a cube; unfolding to find a shortest path
+- **Representations** solid diagrams; nets; ant-and-laddu figures
+- **Prerequisites** pragati_iu_g08p2_ch04_u1; pragati_iu_g06_ch09_u3
+- **Role** NEW_REPRESENTATION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Projections, shadows and isometric drawing
+
+- **Id** `pragati_iu_g08p2_ch04_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s4_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 19, 20, 21, 22, 23, 26, 27, 28, 29, 30, 31, 32, 33
+- **Source** hegp2 Part II, printed pp. 88–102 (PDF pp. 19–33), read 2026-10-06. Establishes: Projections of cuboids; what happens to the length of a line in projection; objects matched to their front, top and side views; shadows cast on a plane; counting cubes in a stack; drawing on the isometric grid and the illusion figure.
+- **Objective** Draw and interpret front, top and side views, and work on an isometric grid.
+- **Student can** I can say which solid has these three views.
+- **Mathematical ideas** orthographic projection; what happens to a length in projection; shadows as projections; isometric grid drawing
+- **Representations** projection triples; shadow diagrams; isometric grids
+- **Prerequisites** pragati_iu_g08p2_ch04_u2
+- **Role** NEW_REPRESENTATION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### The mean as a balance point
+
+- **Id** `pragati_iu_g08p2_ch05_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s5_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 14
+- **Source** hegp2 Part II, printed pp. 104–116 (PDF pp. 1–14), read 2026-10-06. Establishes: The mean marked as the centre of each collection; including or removing two values and keeping the mean; every value rising by 10 and the mean rising with it; the doubling proved with algebra; average family size from a frequency table; spreadsheet formulas for class averages.
+- **Objective** Explain the mean as a balance point and reason about what changes it.
+- **Student can** I can say what happens to the mean if every value increases by 10.
+- **Mathematical ideas** mean as the centre where distances balance; effect of including or removing values; effect of shifting or doubling every value, proved with algebra; mean and median from frequencies; spreadsheet formulas
+- **Representations** dot plots; balance diagrams; frequency tables; spreadsheets
+- **Prerequisites** pragati_iu_g07p2_ch05_u2; pragati_iu_g08_ch06_u1
+- **Role** FORMALIZATION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Line graphs and interpreting data
+
+- **Id** `pragati_iu_g08p2_ch05_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s5_2`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 14, 15, 16, 17, 19, 20, 23, 24, 26, 27, 28, 30, 31, 32
+- **Source** hegp2 Part II, printed pp. 116–133 (PDF pp. 14–32), read 2026-10-06. Establishes: Monthly temperatures plotted; the USA increases compared year on year; the rice-and-wheat infographic; Manoj’s time-use strip; statements judged always, sometimes or never true; the mean weight question after admissions.
+- **Objective** Read and construct line graphs and judge which claims the data supports.
+- **Student can** I can say which of these statements the graph actually supports.
+- **Mathematical ideas** line graph for change over time; comparing two series; infographics and time-use strips; testing a statement as always, sometimes or never true
+- **Representations** line graphs; infographics; time strips
+- **Prerequisites** pragati_iu_g08p2_ch05_u1; pragati_iu_g07p2_ch05_u3
+- **Role** NEW_REPRESENTATION · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Why think-of-a-number tricks work
+
+- **Id** `pragati_iu_g08p2_ch06_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s6_1` (also ncert_hegp2_s6_2)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 3
+- **Source** hegp2 Part II, printed pp. 136–137 (PDF pp. 1–3), read 2026-10-06. Establishes: The game tracked as 5M + 6, 20M + 24, 20M + 33, 100M + 165; changing the rule to make the answer 3 or 5.
+- **Objective** Model a sequence of operations as an expression and explain why the trick always works.
+- **Student can** I can show with algebra why this trick always gives the same answer.
+- **Mathematical ideas** modelling steps as an expression; the unknown cancelling; designing a trick to give a chosen answer
+- **Representations** step chains; expression tables
+- **Prerequisites** pragati_iu_g07p2_ch07_u2; pragati_iu_g08_ch06_u1
+- **Role** INTEGRATION · **reasoning** explain · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Number pyramids and calendar grids
+
+- **Id** `pragati_iu_g08p2_ch06_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s6_3` (also ncert_hegp2_s6_4)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 3, 4, 5, 6, 7
+- **Source** hegp2 Part II, printed pp. 137–141 (PDF pp. 3–7), read 2026-10-06. Establishes: Pyramids filled from the bottom row; a, b, c placed in the empty boxes and the top read off; the three-row pyramid; the calendar trick and making your own.
+- **Objective** Generalise a pyramid or grid pattern with letter-numbers.
+- **Student can** I can write the expression at the top of this pyramid.
+- **Mathematical ideas** filling a pyramid by adding adjacent cells; generalising with letter-numbers; a calendar grid trick explained algebraically
+- **Representations** number pyramids; calendar grids
+- **Prerequisites** pragati_iu_g08p2_ch06_u1
+- **Role** EXTENSION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Settling numerical claims with algebra
+
+- **Id** `pragati_iu_g08p2_ch06_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s6_5` (also ncert_hegp2_s6_6)
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 7, 8, 11, 12, 13
+- **Source** hegp2 Part II, printed pp. 141–147 (PDF pp. 7–13), read 2026-10-06. Establishes: The six ways to place three digits and why rp x q beats rq x p when q > p; whether the steps always leave no remainder for other 2-digit numbers; the flowers-at-shrines problem; Karim and the Genie.
+- **Objective** Use algebra to decide the largest product and to explain a divisibility trick.
+- **Student can** I can show algebraically which arrangement gives the largest product.
+- **Mathematical ideas** comparing arrangements with an algebraic expression; proving a shortcut always works; divisibility argued from place value
+- **Representations** digit arrangements; worked divisibility chains
+- **Prerequisites** pragati_iu_g08p2_ch06_u2; pragati_iu_g08_ch05_u2
+- **Role** INTEGRATION · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Area of rectangles, squares and composite regions
+
+- **Id** `pragati_iu_g08p2_ch07_u1` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s7_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 1, 2, 3, 4, 5, 6
+- **Source** hegp2 Part II, printed pp. 149–153 (PDF pp. 1–6), read 2026-10-06. Establishes: Dividing a square into four equal parts in several ways; rangoli regions; the path around rectangular park EFGH; the spiral tube of constant width; why perimeter is not a measure of area.
+- **Objective** Find areas of rectangles, squares and regions made from them.
+- **Student can** I can find the area of the path laid around this park.
+- **Mathematical ideas** area as length times breadth; dividing a square into equal parts; composite and shaded regions; why perimeter does not measure area
+- **Representations** rangoli figures; path and spiral diagrams
+- **Prerequisites** pragati_iu_g07_ch08_u4; pragati_iu_g06_ch06_u2
+- **Role** EXTENSION · **reasoning** procedure · **complexity** 4/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Area of a triangle, derived and used in reverse
+
+- **Id** `pragati_iu_g08p2_ch07_u2` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s7_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 6, 7, 8, 10
+- **Source** hegp2 Part II, printed pp. 153–157 (PDF pp. 6–10), read 2026-10-06. Establishes: Which of two triangles in identical rectangles has the greater area; BCDE taken as height and base; the half-base-times-height formula shown to hold for all triangles; BY found by rearranging it.
+- **Objective** Derive the area of a triangle and use the formula to find a length.
+- **Student can** I can find the altitude BY using the area formula.
+- **Mathematical ideas** triangle as half a rectangle; base and height; the formula derived for all triangle types; using area to find an unknown length
+- **Representations** rectangle dissections; labelled triangles
+- **Prerequisites** pragati_iu_g08p2_ch07_u1; pragati_iu_g08_ch04_u1
+- **Role** NEW_PROCEDURE · **reasoning** explain · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Triangles between parallel lines
+
+- **Id** `pragati_iu_g08p2_ch07_u3` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s7_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 10, 11, 12, 13
+- **Source** hegp2 Part II, printed pp. 157–160 (PDF pp. 10–13), read 2026-10-06. Establishes: Line l parallel to BC with triangles on the common base; AB equal to its reflection AB-dash by congruence; the midpoint question about the fraction of the area of triangle XYZ.
+- **Objective** Show that triangles on a common base between parallel lines have equal area.
+- **Student can** I can say why these two triangles have the same area.
+- **Mathematical ideas** equal areas on a common base; height constant between parallels; congruence and reflection in an area argument
+- **Representations** parallel-line figures; reflected triangles
+- **Prerequisites** pragati_iu_g08p2_ch07_u2; pragati_iu_g07_ch05_u3
+- **Role** NEW_MATHEMATICAL_IDEA · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
+
+#### Parallelogram, rhombus and trapezium areas by dissection
+
+- **Id** `pragati_iu_g08p2_ch07_u4` — Pragati-created teaching unit, not an NCERT section.
+- **Serves** `ncert_hegp2_s7_1`
+- **Evidence depth** FULL_PAGE_INSPECTED · visually dependent · pages looked at: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+- **Source** hegp2 Part II, printed pp. 160–171 (PDF pp. 13–25), read 2026-10-06. Establishes: The parallelogram converted into a rectangle of equal area; the Sulba-Sutra method; the rhombus from half the product of its diagonals; two copies of a trapezium making a parallelogram, giving half h(a+b); square inches converted to square centimetres; areas of real surfaces.
+- **Objective** Derive the areas of a parallelogram, rhombus and trapezium.
+- **Student can** I can derive the trapezium formula using two copies of it.
+- **Mathematical ideas** dissecting a parallelogram into a rectangle; rhombus from its diagonals; trapezium from two copies; area unit conversion; areas in real life
+- **Representations** dissection diagrams; trapezium pairs
+- **Prerequisites** pragati_iu_g08p2_ch07_u3
+- **Role** NEW_PROCEDURE · **reasoning** generalise · **complexity** 5/5
+- **Misconception evidence** TO_BE_DEVELOPED
+- **Status** intent INSPECTED · decomposition READY_FOR_AUTHORING · review not_reviewed
+- **Why this split** Ganita Prakash Part II numbers its sections; the numbered section is the official authoring record and this unit is one lesson-sized objective inside it.
 
 ## Records read and found non-instructional
 

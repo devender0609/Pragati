@@ -31,6 +31,42 @@ const state = (ch, ext) => {
   const total = ext.pdfPageEnd - ext.pdfPageStart + 1;
   return seen === total ? 'FULLY_INSPECTED' : seen > 0 ? 'PARTIALLY_INSPECTED' : 'INDEXED_ONLY';
 };
+/**
+ * v0.84.0 checkpoint 23 — PRINTED FOLIOS ARE NOT ONE RANGE.
+ *
+ * Verified against the Part I PDFs: every Class 8 chapter file carries the
+ * chapter body's folios and then an answer-key supplement whose numbering
+ * restarts at 1 (ch4, for instance, runs 83-111 then 1-9). Taking
+ * min..max across both produced "1-111", which exists nowhere in the book.
+ * Runs of consecutive folios are read from the deduplicated page ledger and
+ * reported separately. A one-page run that sits inside another run is a
+ * misread corner number, not a folio sequence, and is dropped.
+ */
+function printedProvenance(ch) {
+  const byPage = new Map();
+  for (const e of [...UNITS.map((u) => u.sourceEvidence), ...SEGS.map((s) => s.sourceEvidence)]) {
+    if (e.officialChapterId !== ch) continue;
+    for (const p of e.pageEvidence) if (!byPage.has(p.pdfPage)) byPage.set(p.pdfPage, p);
+  }
+  const pages = [...byPage.values()].sort((a, b) => a.pdfPage - b.pdfPage);
+  let runs = [];
+  for (const p of pages) {
+    if (p.printedPage === null || p.printedPage === undefined) continue;
+    const last = runs[runs.length - 1];
+    if (last && p.printedPage === last.end + 1) last.end = p.printedPage;
+    else runs.push({ start: p.printedPage, end: p.printedPage });
+  }
+  runs = runs.filter(
+    (r, i) =>
+      r.start !== r.end ||
+      !runs.some((o, j) => j !== i && o.start !== o.end && r.start >= o.start && r.start <= o.end)
+  );
+  if (runs.length === 0) return 'folios unknown';
+  const label = (r) => (r.start === r.end ? `${r.start}` : `${r.start}\u2013${r.end}`);
+  if (runs.length === 1) return label(runs[0]);
+  return `body ${label(runs[0])}; appended ${runs.slice(1).map(label).join(', ')}`;
+}
+
 const rows = SCOPE.recordExtents.map((ext) => {
   const ch = ext.officialRecordId;
   // Class 8 units cite a numbered section; the chapter they belong to is
@@ -86,7 +122,7 @@ const out = [
     const ready = r.units.filter((u) => u.decompositionStatus === 'READY_FOR_AUTHORING').length;
     const check = r.units.filter((u) => u.decompositionStatus !== 'READY_FOR_AUTHORING').length;
     const total = r.ext.pdfPageEnd - r.ext.pdfPageStart + 1;
-    return `| \`${r.ch}\` | ${title[r.ch] ?? '—'} | ${r.ext.printedPageStart ?? '—'}–${r.ext.printedPageEnd ?? '—'} | 1–${r.ext.pdfPageEnd} | ${r.ft}/${total} | ${r.vr} | ${r.vi} | ${r.rendered} | ${r.state} | ${r.units.length} | ${ready} | ${check} |`;
+    return `| \`${r.ch}\` | ${title[r.ch] ?? '—'} | ${printedProvenance(r.ch)} | 1–${r.ext.pdfPageEnd} | ${r.ft}/${total} | ${r.vr} | ${r.vi} | ${r.rendered} | ${r.state} | ${r.units.length} | ${ready} | ${check} |`;
   }),
   '',
   '## Pragati source segments (non-official)',

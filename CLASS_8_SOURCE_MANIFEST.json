@@ -1,0 +1,233 @@
+{
+ "generatedBy": "v0.84.0 checkpoint 23",
+ "classNumber": 8,
+ "purpose": "Makes the Class 8 evidence set reproducible after a container reset: a future session can confirm it holds the same bytes this decomposition was built from.",
+ "sourceCount": 14,
+ "totalPdfPages": 423,
+ "sources": [
+  {
+   "filename": "hegp101.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part I",
+   "chapterRepresented": "chapter 1 of Part I",
+   "officialChapterId": "ncert_hegp1_ch01",
+   "editionEvidence": [
+    "Reprint 2026-27"
+   ],
+   "pdfPageCount": 22,
+   "fileSizeBytes": 2253242,
+   "sha256": "5bff054e99d47c7ef525a5a038f8d7304c7342e7b396752839d832fe431c8b7d",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 3,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp102.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part I",
+   "chapterRepresented": "chapter 2 of Part I",
+   "officialChapterId": "ncert_hegp1_ch02",
+   "editionEvidence": [
+    "Reprint 2026-27"
+   ],
+   "pdfPageCount": 38,
+   "fileSizeBytes": 5533884,
+   "sha256": "400d905fd0cc06dfa66c13947b243a2f102086f91cef8dbb8cf2ac4352647fdc",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 6,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp103.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part I",
+   "chapterRepresented": "chapter 3 of Part I",
+   "officialChapterId": "ncert_hegp1_ch03",
+   "editionEvidence": [
+    "Reprint 2026-27"
+   ],
+   "pdfPageCount": 46,
+   "fileSizeBytes": 7088188,
+   "sha256": "a7ff2708e1a325cd2883b551bfa080116b76a6828be2d0748f436d8c6b2f7e31",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 4,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp104.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part I",
+   "chapterRepresented": "chapter 4 of Part I",
+   "officialChapterId": "ncert_hegp1_ch04",
+   "editionEvidence": [
+    "Reprint 2026-27"
+   ],
+   "pdfPageCount": 39,
+   "fileSizeBytes": 2260046,
+   "sha256": "6e5cc17aad981c1cfd2d494cdbe646a232c66d7e33e3fc9c41795b3eecd9773b",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 6,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp105.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part I",
+   "chapterRepresented": "chapter 5 of Part I",
+   "officialChapterId": "ncert_hegp1_ch05",
+   "editionEvidence": [
+    "Reprint 2026-27"
+   ],
+   "pdfPageCount": 37,
+   "fileSizeBytes": 3266092,
+   "sha256": "be42c7861c9dd363df01c5173635cf4a44de1b7ef98942c0f439a3e45e4a9714",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 3,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp106.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part I",
+   "chapterRepresented": "chapter 6 of Part I",
+   "officialChapterId": "ncert_hegp1_ch06",
+   "editionEvidence": [
+    "Reprint 2026-27"
+   ],
+   "pdfPageCount": 35,
+   "fileSizeBytes": 2132751,
+   "sha256": "e61e89b86b4a13a15b05ef419e140394b0604f243ae9d75e8dc1ff42cd0164a2",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 4,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp107.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part I",
+   "chapterRepresented": "chapter 7 of Part I",
+   "officialChapterId": "ncert_hegp1_ch07",
+   "editionEvidence": [
+    "Reprint 2026-27"
+   ],
+   "pdfPageCount": 30,
+   "fileSizeBytes": 2537413,
+   "sha256": "fa57f58fe2e00e2fda965ff731677b6c98ec2f7d15f7c493761d7e64c78e9655",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 6,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp201.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part II",
+   "chapterRepresented": "chapter 1 of Part II",
+   "officialChapterId": "ncert_hegp2_ch01",
+   "editionEvidence": [
+    "no edition line printed in this chapter file"
+   ],
+   "pdfPageCount": 32,
+   "fileSizeBytes": 9551589,
+   "sha256": "86cfb50d292280dd30b5d8a70f62b060fd8496fdb7975e32d4eecbbe8050af37",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 3,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp202.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part II",
+   "chapterRepresented": "chapter 2 of Part II",
+   "officialChapterId": "ncert_hegp2_ch02",
+   "editionEvidence": [
+    "no edition line printed in this chapter file"
+   ],
+   "pdfPageCount": 22,
+   "fileSizeBytes": 8217864,
+   "sha256": "c4620bea2d56af50a6b759b34b6754863473c60a453548d0f791db7e1e9bfab6",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 7,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp203.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part II",
+   "chapterRepresented": "chapter 3 of Part II",
+   "officialChapterId": "ncert_hegp2_ch03",
+   "editionEvidence": [
+    "no edition line printed in this chapter file"
+   ],
+   "pdfPageCount": 15,
+   "fileSizeBytes": 3752993,
+   "sha256": "e863bec516556be8cfaa2c77d5f2ff5f6d0de03bae6f67908310d2563e2ebddc",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 6,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp204.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part II",
+   "chapterRepresented": "chapter 4 of Part II",
+   "officialChapterId": "ncert_hegp2_ch04",
+   "editionEvidence": [
+    "no edition line printed in this chapter file"
+   ],
+   "pdfPageCount": 33,
+   "fileSizeBytes": 12320504,
+   "sha256": "7ce5eee54576d367c51d59aea1985a55d8e0eba74434265a76d064b3b54214ef",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 2,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp205.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part II",
+   "chapterRepresented": "chapter 5 of Part II",
+   "officialChapterId": "ncert_hegp2_ch05",
+   "editionEvidence": [
+    "no edition line printed in this chapter file"
+   ],
+   "pdfPageCount": 32,
+   "fileSizeBytes": 11519953,
+   "sha256": "73a3818f47e42d5415cc4df82c21b4ade71ebaaea58238f329ce7d94ae451653",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 2,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp206.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part II",
+   "chapterRepresented": "chapter 6 of Part II",
+   "officialChapterId": "ncert_hegp2_ch06",
+   "editionEvidence": [
+    "no edition line printed in this chapter file"
+   ],
+   "pdfPageCount": 13,
+   "fileSizeBytes": 5378116,
+   "sha256": "24d0580fb1b50295626bdb9130654b9f8a7ae6e879eeccaa7f7fd8b8b6e80a5b",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 6,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  },
+  {
+   "filename": "hegp207.pdf",
+   "bookIdentity": "Ganita Prakash, Textbook of Mathematics for Grade 8",
+   "bookPart": "Part II",
+   "chapterRepresented": "chapter 7 of Part II",
+   "officialChapterId": "ncert_hegp2_ch07",
+   "editionEvidence": [
+    "no edition line printed in this chapter file"
+   ],
+   "pdfPageCount": 29,
+   "fileSizeBytes": 3912355,
+   "sha256": "a525f2c348fc53cf899189210da1b2a3a0c93e21310ad853bddf3df528e33a24",
+   "sourceRole": "PRIMARY_SOURCE_CHAPTER_BODY",
+   "numberedHeadingsDetected": 1,
+   "verifiedAtCheckpoint": "v0.84.0 checkpoint 23"
+  }
+ ]
+}

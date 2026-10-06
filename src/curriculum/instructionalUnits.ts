@@ -951,9 +951,11 @@ export type RecordInspectionState =
   | 'NEEDS_HUMAN_CHECK';
 
 export function recordInspectionState(officialRecordId: string): RecordInspectionState {
-  // A numbered section owns no extent, so its state is derived from the
-  // units that cite it rather than from a page range it does not have.
-  if (/_s\d+_\d+$/.test(officialRecordId)) return sectionInspectionState(officialRecordId);
+  // A numbered section carries an OfficialSectionExtent rather than a
+  // RecordExtent, so its state comes from the section helper. The trailing
+  // letter allows ids like `..._s2_5b`, which exists because Ganita Prakash
+  // Grade 8 Part I prints two different sections both numbered 2.5.
+  if (/_s\d+_\d+[a-z]?$/.test(officialRecordId)) return sectionInspectionState(officialRecordId);
   const units = instructionalUnitsFor(officialRecordId);
   const nonInstr = NON_INSTRUCTIONAL_RECORDS.filter(
     (r) => r.officialRecordId === officialRecordId

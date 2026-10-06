@@ -19,7 +19,7 @@ Source-complete: every page of all 15 chapters has been read in full text and ev
 
 | Official chapter | Title | Printed pages | PDF pages | Full text | Visual required | Visual required seen | Pages rendered | Record state | Units | Ready | Needs human check |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| `ncert_gegp1_ch01` | Large Numbers Around Us | 2–22 | 1–38 | 38/38 | 18 | 18 | 38 | FULLY_INSPECTED | 6 | 6 | 0 |
+| `ncert_gegp1_ch01` | Large Numbers Around Us | 2–20 | 1–38 | 38/38 | 18 | 18 | 38 | FULLY_INSPECTED | 6 | 6 | 0 |
 | `ncert_gegp1_ch02` | Arithmetic Expressions | 25–45 | 1–40 | 40/40 | 9 | 9 | 40 | FULLY_INSPECTED | 5 | 4 | 1 |
 | `ncert_gegp1_ch03` | A Peek Beyond the Point | 47–80 | 1–55 | 55/55 | 27 | 27 | 55 | FULLY_INSPECTED | 8 | 8 | 0 |
 | `ncert_gegp1_ch04` | Expressions using Letter-Numbers | 82–105 | 1–41 | 41/41 | 20 | 20 | 41 | FULLY_INSPECTED | 4 | 4 | 0 |
@@ -31,7 +31,7 @@ Source-complete: every page of all 15 chapters has been read in full text and ev
 | `ncert_gegp2_ch02` | Operations with Integers | 25–45 | 1–23 | 23/23 | 15 | 15 | 23 | FULLY_INSPECTED | 3 | 3 | 0 |
 | `ncert_gegp2_ch03` | Finding Common Ground | 48–65 | 1–20 | 20/20 | 3 | 3 | 20 | FULLY_INSPECTED | 3 | 3 | 0 |
 | `ncert_gegp2_ch04` | Another Peek Beyond the Point | 68–95 | 1–30 | 30/30 | 21 | 21 | 30 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_gegp2_ch05` | Connecting the Dots... | 98–134 | 1–39 | 39/39 | 25 | 25 | 39 | FULLY_INSPECTED | 4 | 4 | 0 |
+| `ncert_gegp2_ch05` | Connecting the Dots... | body 98–103; appended 105–122, 124–134 | 1–39 | 39/39 | 25 | 25 | 39 | FULLY_INSPECTED | 4 | 4 | 0 |
 | `ncert_gegp2_ch06` | Constructions and Tilings | 137–162 | 1–28 | 28/28 | 21 | 21 | 28 | FULLY_INSPECTED | 3 | 3 | 0 |
 | `ncert_gegp2_ch07` | Finding the Unknown | 165–190 | 1–35 | 35/35 | 16 | 16 | 35 | FULLY_INSPECTED | 3 | 3 | 0 |
 

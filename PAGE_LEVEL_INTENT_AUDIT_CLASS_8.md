@@ -13,28 +13,26 @@ a `pragati_srcseg_*` segment, never an invented section id.
 navigation and not evidence. *Full text*: every line of every page.
 *Visual*: the page was rendered and looked at.
 
-**Class 8** — 247/423 pages read in full text, 160/160 picture-carried pages rendered and looked at, 7/14 chapters fully inspected, 31/58 numbered sections accounted for. Status: **IN_PROGRESS**.
+**Class 8** — 423/423 pages read in full text, 305/305 picture-carried pages rendered and looked at, 14/14 chapters fully inspected, 59/59 numbered sections accounted for. Status: **DECOMPOSITION_SOURCE_COMPLETE**.
 
-Not source-complete: 176 of 423 pages are still to read.
-
-Among the 247 pages inspected so far, 160 are picture-carried and 160 of those have been rendered and looked at. The visual requirement of the 176 unread pages is **not yet determined**, so this is a known-so-far figure, not a total.
+Source-complete: every page of all 14 chapters has been read in full text and every page whose mathematics is carried by the picture has been rendered and looked at. What remains is curriculum judgement.
 
 | Official chapter | Title | Printed pages | PDF pages | Full text | Visual required | Visual required seen | Pages rendered | Record state | Units | Ready | Needs human check |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| `ncert_hegp1_ch01` | A Square and A Cube | 1–17 | 1–22 | 22/22 | 12 | 12 | 22 | FULLY_INSPECTED | 4 | 3 | 1 |
-| `ncert_hegp1_ch02` | Power Play | 1–46 | 1–38 | 38/38 | 26 | 26 | 38 | FULLY_INSPECTED | 5 | 5 | 0 |
-| `ncert_hegp1_ch03` | A Story of Numbers | 1–81 | 1–46 | 46/46 | 35 | 35 | 46 | FULLY_INSPECTED | 3 | 3 | 0 |
-| `ncert_hegp1_ch04` | Quadrilaterals | 1–111 | 1–39 | 39/39 | 24 | 24 | 39 | FULLY_INSPECTED | 5 | 5 | 0 |
-| `ncert_hegp1_ch05` | Number Play | 1–135 | 1–37 | 37/37 | 22 | 22 | 37 | FULLY_INSPECTED | 3 | 3 | 0 |
-| `ncert_hegp1_ch06` | We Distribute, Yet Things Multiply | 1–158 | 1–35 | 35/35 | 25 | 25 | 35 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_hegp1_ch07` | Proportional Reasoning-1 | 1–177 | 1–30 | 30/30 | 16 | 16 | 30 | FULLY_INSPECTED | 4 | 4 | 0 |
-| `ncert_hegp2_ch01` | Fractions in Disguise | 2–31 | 1–32 | 0/32 | 0 | 0 | 0 | INDEXED_ONLY | 0 | 0 | 0 |
-| `ncert_hegp2_ch02` | The Baudhayana-Pythagoras Theorem | 34–53 | 1–22 | 0/22 | 0 | 0 | 0 | INDEXED_ONLY | 0 | 0 | 0 |
-| `ncert_hegp2_ch03` | Proportional Reasoning-2 | 56–69 | 1–15 | 0/15 | 0 | 0 | 0 | INDEXED_ONLY | 0 | 0 | 0 |
-| `ncert_hegp2_ch04` | Exploring Some Geometric Themes | 71–102 | 1–33 | 0/33 | 0 | 0 | 0 | INDEXED_ONLY | 0 | 0 | 0 |
-| `ncert_hegp2_ch05` | Tales by Dots and Lines | 104–133 | 1–32 | 0/32 | 0 | 0 | 0 | INDEXED_ONLY | 0 | 0 | 0 |
-| `ncert_hegp2_ch06` | Algebra Play | 136–147 | 1–13 | 0/13 | 0 | 0 | 0 | INDEXED_ONLY | 0 | 0 | 0 |
-| `ncert_hegp2_ch07` | Area | 149–171 | 1–29 | 0/29 | 0 | 0 | 0 | INDEXED_ONLY | 0 | 0 | 0 |
+| `ncert_hegp1_ch01` | A Square and A Cube | body 3–17; appended 1–4 | 1–22 | 22/22 | 12 | 12 | 22 | FULLY_INSPECTED | 4 | 3 | 1 |
+| `ncert_hegp1_ch02` | Power Play | body 21–46; appended 1–9 | 1–38 | 38/38 | 26 | 26 | 38 | FULLY_INSPECTED | 5 | 5 | 0 |
+| `ncert_hegp1_ch03` | A Story of Numbers | body 49–70; appended 72–74, 76–81, 1–12 | 1–46 | 46/46 | 35 | 35 | 46 | FULLY_INSPECTED | 3 | 3 | 0 |
+| `ncert_hegp1_ch04` | Quadrilaterals | body 83–111; appended 1–9 | 1–39 | 39/39 | 24 | 24 | 39 | FULLY_INSPECTED | 5 | 5 | 0 |
+| `ncert_hegp1_ch05` | Number Play | body 113–134; appended 1–13 | 1–37 | 37/37 | 22 | 22 | 37 | FULLY_INSPECTED | 3 | 3 | 0 |
+| `ncert_hegp1_ch06` | We Distribute, Yet Things Multiply | body 137–141; appended 143–157, 1–12 | 1–35 | 35/35 | 25 | 25 | 35 | FULLY_INSPECTED | 4 | 4 | 0 |
+| `ncert_hegp1_ch07` | Proportional Reasoning-1 | body 160–177; appended 1–8 | 1–30 | 30/30 | 16 | 16 | 30 | FULLY_INSPECTED | 4 | 4 | 0 |
+| `ncert_hegp2_ch01` | Fractions in Disguise | 2–31 | 1–32 | 32/32 | 26 | 26 | 32 | FULLY_INSPECTED | 4 | 4 | 0 |
+| `ncert_hegp2_ch02` | The Baudhayana-Pythagoras Theorem | 34–53 | 1–22 | 22/22 | 15 | 15 | 22 | FULLY_INSPECTED | 6 | 5 | 1 |
+| `ncert_hegp2_ch03` | Proportional Reasoning-2 | 56–69 | 1–15 | 15/15 | 14 | 14 | 15 | FULLY_INSPECTED | 4 | 4 | 0 |
+| `ncert_hegp2_ch04` | Exploring Some Geometric Themes | body 71–92; appended 94–102 | 1–33 | 33/33 | 30 | 30 | 33 | FULLY_INSPECTED | 3 | 3 | 0 |
+| `ncert_hegp2_ch05` | Tales by Dots and Lines | 104–133 | 1–32 | 32/32 | 25 | 25 | 32 | FULLY_INSPECTED | 2 | 2 | 0 |
+| `ncert_hegp2_ch06` | Algebra Play | 136–147 | 1–13 | 13/13 | 10 | 10 | 13 | FULLY_INSPECTED | 3 | 3 | 0 |
+| `ncert_hegp2_ch07` | Area | 149–171 | 1–29 | 29/29 | 25 | 25 | 29 | FULLY_INSPECTED | 4 | 4 | 0 |
 
 ## Pragati source segments (non-official)
 
@@ -49,6 +47,7 @@ Among the 247 pages inspected so far, 160 are picture-carried and 160 of those h
 | `pragati_srcseg_g08_05_seg1` | `ncert_hegp1_ch05` | pages 24–37 of the chapter | REFERENCE | 24–37 | Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own. |
 | `pragati_srcseg_g08_06_seg1` | `ncert_hegp1_ch06` | pages 23–35 of the chapter | REFERENCE | 23–35 | Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own. |
 | `pragati_srcseg_g08_07_seg1` | `ncert_hegp1_ch07` | pages 24–30 of the chapter | REFERENCE | 24–30 | Chapter opener, Summary, puzzle page or printed answer key, read in full: it frames, restates or answers what the sections teach rather than teaching an objective of its own. |
+| `pragati_srcseg_g08p2_07_seg1` | `ncert_hegp2_ch07` | pages 26–29 of the chapter | REFERENCE | 26–29 | Chapter Summary, puzzle page or cut-out learning-material sheet, read in full: it restates or supports what the sections teach rather than teaching an objective of its own. |
 
 ## Units by official section
 
@@ -82,4 +81,30 @@ Among the 247 pages inspected so far, 160 are picture-carried and 160 of those h
 | `pragati_iu_g08_ch07_u2` Problem solving with proportional reasoning | `ncert_hegp1_ch07` | `ncert_hegp1_s7_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
 | `pragati_iu_g08_ch07_u3` Sharing in a given ratio | `ncert_hegp1_ch07` | `ncert_hegp1_s7_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
 | `pragati_iu_g08_ch07_u4` Unit conversions as proportional reasoning | `ncert_hegp1_ch07` | `ncert_hegp1_s7_6` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch01_u1` Fractions as percentages | `ncert_hegp2_ch01` | `ncert_hegp2_s1_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch01_u2` Percentage of a quantity | `ncert_hegp2_ch01` | `ncert_hegp2_s1_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch01_u3` Percentage change, profit, loss and discount | `ncert_hegp2_ch01` | `ncert_hegp2_s1_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch01_u4` Interest, compounding and comparing percentages | `ncert_hegp2_ch01` | `ncert_hegp2_s1_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch02_u1` Doubling and halving a square | `ncert_hegp2_ch02` | `ncert_hegp2_s2_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch02_u2` The hypotenuse of an isosceles right triangle, and root 2 | `ncert_hegp2_ch02` | `ncert_hegp2_s2_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch02_u3` Combining two squares: the Baudhayana-Pythagoras theorem | `ncert_hegp2_ch02` | `ncert_hegp2_s2_4` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch02_u4` Right triangles with integer sides | `ncert_hegp2_ch02` | `ncert_hegp2_s2_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch02_u5` A long-standing open problem | `ncert_hegp2_ch02` | `ncert_hegp2_s2_6` | FULL_PAGE_INSPECTED | NEEDS_HUMAN_CHECK |
+| `pragati_iu_g08p2_ch02_u6` Applying the theorem | `ncert_hegp2_ch02` | `ncert_hegp2_s2_7` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch03_u1` Proportionality recalled, and ratios in maps | `ncert_hegp2_ch03` | `ncert_hegp2_s3_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch03_u2` Ratios with more than two terms, and dividing a whole | `ncert_hegp2_ch03` | `ncert_hegp2_s3_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch03_u3` A slice of the pie: pie charts | `ncert_hegp2_ch03` | `ncert_hegp2_s3_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch03_u4` Inverse proportion | `ncert_hegp2_ch03` | `ncert_hegp2_s3_6` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch04_u1` Fractals and self-similarity | `ncert_hegp2_ch04` | `ncert_hegp2_s4_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch04_u2` Solids, nets and the shortest path on a surface | `ncert_hegp2_ch04` | `ncert_hegp2_s4_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch04_u3` Projections, shadows and isometric drawing | `ncert_hegp2_ch04` | `ncert_hegp2_s4_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch05_u1` The mean as a balance point | `ncert_hegp2_ch05` | `ncert_hegp2_s5_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch05_u2` Line graphs and interpreting data | `ncert_hegp2_ch05` | `ncert_hegp2_s5_2` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch06_u1` Why think-of-a-number tricks work | `ncert_hegp2_ch06` | `ncert_hegp2_s6_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch06_u2` Number pyramids and calendar grids | `ncert_hegp2_ch06` | `ncert_hegp2_s6_3` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch06_u3` Settling numerical claims with algebra | `ncert_hegp2_ch06` | `ncert_hegp2_s6_5` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch07_u1` Area of rectangles, squares and composite regions | `ncert_hegp2_ch07` | `ncert_hegp2_s7_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch07_u2` Area of a triangle, derived and used in reverse | `ncert_hegp2_ch07` | `ncert_hegp2_s7_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch07_u3` Triangles between parallel lines | `ncert_hegp2_ch07` | `ncert_hegp2_s7_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
+| `pragati_iu_g08p2_ch07_u4` Parallelogram, rhombus and trapezium areas by dissection | `ncert_hegp2_ch07` | `ncert_hegp2_s7_1` | FULL_PAGE_INSPECTED | READY_FOR_AUTHORING |
 

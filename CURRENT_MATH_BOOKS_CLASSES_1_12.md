@@ -24,7 +24,7 @@ A, B and C are primary-source verified for every book below. D is not.
 | Class 5 | NCERT textbook: Math-Mela | — | 15 | — | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 6 | NCERT textbook: Ganita Prakash | — | 10 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 7 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 15 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
-| Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 58 | — | — | COMPLETE AT STRUCTURE LEVEL |
+| Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 59 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 9 | CBSE syllabus: Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | — | 15 | primary source verified |
 | Class 9 | NCERT textbook: Ganita Manjari (Part I) | — | 8 (Part I only; class total UNKNOWN) | 53 (Part I only; class total UNKNOWN) | UNKNOWN | — | PARTIAL — see finding F1 |
 | Class 10 | CBSE syllabus: Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | — | 15 | primary source verified |
@@ -48,7 +48,7 @@ The in-app curriculum registry agrees with the master map for every class.
 | Class 6 | Ganita Prakash | — | Textbook of Mathematics for Grade 6 | 978-93-5292-717-3 | August 2024 | January 2026 | Reprint 2026-27 | 10 | 65 | https://ncert.nic.in/textbook/pdf/fegp1dd.zip | be4c15eeb4637b19… |
 | Class 7 | Ganita Prakash | Part I | Textbook of Mathematics for Grade 7 (Part I) | 978-93-5729-983-1 | April 2025 | January 2026 | Reprint 2026-27 | 8 | 43 | https://ncert.nic.in/textbook/pdf/gegp1dd.zip | 4a222d71145b5c4a… |
 | Class 7 | Ganita Prakash-II | Part II | Textbook of Mathematics for Grade 7 (Part II) | 978-93-5729-156-9 | October 2025 | October 2025 | First Edition October 2025 | 7 | 22 | https://ncert.nic.in/textbook/pdf/gegp2dd.zip | 6ece1f096941494b… |
-| Class 8 | Ganita Prakash Part-I | Part I | Textbook of Mathematics for Grade 8 (Part-I) | 978-93-5729-642-7 | July 2025 | January 2026 | Reprint 2026-27 | 7 | 31 | https://ncert.nic.in/textbook/pdf/hegp1dd.zip | 5f63da510a0ad548… |
+| Class 8 | Ganita Prakash Part-I | Part I | Textbook of Mathematics for Grade 8 (Part-I) | 978-93-5729-642-7 | July 2025 | January 2026 | Reprint 2026-27 | 7 | 32 | https://ncert.nic.in/textbook/pdf/hegp1dd.zip | 5f63da510a0ad548… |
 | Class 8 | Ganita Prakash Part-II | Part II | Textbook of Mathematics for Grade 8 (Part-II) | 978-93-5729-106-4 | December 2025 | December 2025 | First Edition December 2025 | 7 | 27 | https://ncert.nic.in/textbook/pdf/hegp2dd.zip | 76ee69c039faefc5… |
 | Class 9 | Ganita Manjari | Part I | Textbook of Mathematics for Grade 9 (Part I) | 978-93-5729-603-8 | April 2026 | April 2026 | First Edition April 2026 | 8 | 53 | https://ncert.nic.in/textbook/pdf/iemh1dd.zip | 4f9e9d4b0921b6f7… |
 | Class 10 | Mathematics | — | Textbook for Class X | 81-7450-634-9 | December 2006 | December 2025 | Reprint 2026-27 | 14 | 55 | https://ncert.nic.in/textbook/pdf/jemh1ps.pdf | 62867d1b27b42e11… |

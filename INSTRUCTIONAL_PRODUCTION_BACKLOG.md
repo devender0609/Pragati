@@ -3,7 +3,7 @@
 **Generated** at 0.83.5. Generated, **not started**: authoring begins
 only on your approval.
 
-433 units are READY_FOR_AUTHORING and 26 are held back
+458 units are READY_FOR_AUTHORING and 27 are held back
 (draft decomposition or flagged for human judgement). The classes not yet
 read contribute an **UNKNOWN** number of further units — that total is not
 guessed from chapter counts.
@@ -69,7 +69,10 @@ pedagogical QA plus human review — not for convenience of generation.
 | 52 | Class 8 | 8 | Cube numbers and cube roots; Experiencing exponential growth; Exponential notation and operations; Zero and negative exponents; Powers of ten and large or small quantities; Did you ever wonder? Estimating with powers; Early number systems; The idea of a base |
 | 53 | Class 8 | 8 | Place value representation; Rectangles, squares and their diagonals; Angle sum, and parallelograms; Rhombus, and quadrilaterals with equal sides; Playing with quadrilaterals; Kite and trapezium; Sums of consecutive numbers, and multiples; Divisibility tests, justified |
 | 54 | Class 8 | 8 | Digits in disguise; The distributive property with expressions; Special cases: squares of sums and differences; Mind the mistake, mend the mistake; Many routes to the same expression; Similarity in change, ratio, and simplest form; Problem solving with proportional reasoning; Sharing in a given ratio |
-| 55 | Class 8 | 1 | Unit conversions as proportional reasoning |
+| 55 | Class 8 | 8 | Unit conversions as proportional reasoning; Fractions as percentages; Percentage of a quantity; Percentage change, profit, loss and discount; Interest, compounding and comparing percentages; Doubling and halving a square; The hypotenuse of an isosceles right triangle, and root 2; Combining two squares: the Baudhayana-Pythagoras theorem |
+| 56 | Class 8 | 8 | Right triangles with integer sides; Applying the theorem; Proportionality recalled, and ratios in maps; Ratios with more than two terms, and dividing a whole; A slice of the pie: pie charts; Inverse proportion; Fractals and self-similarity; Solids, nets and the shortest path on a surface |
+| 57 | Class 8 | 8 | Projections, shadows and isometric drawing; The mean as a balance point; Line graphs and interpreting data; Why think-of-a-number tricks work; Number pyramids and calendar grids; Settling numerical claims with algebra; Area of rectangles, squares and composite regions; Area of a triangle, derived and used in reverse |
+| 58 | Class 8 | 2 | Triangles between parallel lines; Parallelogram, rhombus and trapezium areas by dissection |
 
 ## Held back
 
@@ -99,3 +102,4 @@ pedagogical QA plus human review — not for convenience of generation.
 - `pragati_iu_g06_ch10_u7` — Integer grids and puzzles (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g07_ch02_u5` — Expressions for situations, and Expression Engineer (NEEDS_HUMAN_CHECK, flagged for human check). 
 - `pragati_iu_g08_ch01_u4` — A pinch of history: squares and cubes in use (NEEDS_HUMAN_CHECK, flagged for human check). 
+- `pragati_iu_g08p2_ch02_u5` — A long-standing open problem (NEEDS_HUMAN_CHECK, flagged for human check). 

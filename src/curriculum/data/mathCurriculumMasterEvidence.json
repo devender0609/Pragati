@@ -4063,6 +4063,18 @@
    "evidence": "numbered heading in hegp102.pdf, PDF page 15 (heading_font)"
   },
   {
+   "recordId": "ncert_hegp1_s2_5b",
+   "sourceId": "ncert_hegp1",
+   "grade": 8,
+   "level": "section",
+   "number": "2.5 (second occurrence)",
+   "title": "A Pinch of History",
+   "parentId": "ncert_hegp1_ch02",
+   "startPage": 42,
+   "pageBasis": "printed folio read from PDF page 24 of hegp102.pdf",
+   "evidence": "SOURCE DISCREPANCY: hegp102.pdf prints TWO numbered headings as \"2.5\" in the chapter heading face — \"2.5 Did You Ever Wonder?\" on PDF page 15 and \"2.5 A Pinch of History\" on PDF page 24. They are distinct sections with distinct content; the book repeats the number. Recorded as a separate official record with the suffixed id s2_5b so no number the book does not print is invented."
+  },
+  {
    "recordId": "ncert_hegp1_s3_1",
    "sourceId": "ncert_hegp1",
    "grade": 8,
