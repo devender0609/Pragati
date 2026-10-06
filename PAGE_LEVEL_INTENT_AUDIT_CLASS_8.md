@@ -2,7 +2,7 @@
 
 Generated from `src/curriculum/data/instructionalDecomposition.json`.
 Ganita Prakash Part I (7 chapters) and Part II (7) hold **14 official**
-**chapters and 58 numbered sections**.
+**chapters and 59 numbered sections**.
 Class 8 uses the numbered-grade two-layer model established at Class 6:
 the numbered section is the official authoring record while the chapter
 owns the page extent. Material the

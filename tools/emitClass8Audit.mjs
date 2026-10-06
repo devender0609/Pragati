@@ -84,12 +84,26 @@ const rows = SCOPE.recordExtents.map((ext) => {
   return { ch, ext, units, ft, vr, vi, rendered, segs, state: state(ch, ext) };
 });
 const P = Object.fromEntries(d.classProgress.map((p) => [p.classNumber, p]));
+// v0.84.0 checkpoint 24 — both denominators are DERIVED. The prose said 58
+// while the accounting below said 59/59 in the same document, because the
+// headline was typed and the body was computed. The section total comes from
+// the master map's own Class 8 section records, cross-checked against
+// classProgress; the chapter total from the record extents in scope.
+const officialSections = mm.records.filter((r) => r.classNumber === 8 && r.level === 'section');
+const sectionTotal = officialSections.length;
+const chapterTotal = SCOPE.recordExtents.length;
+const partI = SCOPE.recordExtents.filter((e) => e.officialRecordId.startsWith('ncert_hegp1')).length;
+if (sectionTotal !== (P[8]?.officialSectionsTotal ?? sectionTotal)) {
+  throw new Error(
+    `Class 8 section denominator disagrees: master map has ${sectionTotal}, classProgress has ${P[8].officialSectionsTotal}`
+  );
+}
 const out = [
   '# Page-level intent audit — Class 8 (Ganita Prakash)',
   '',
   'Generated from `src/curriculum/data/instructionalDecomposition.json`.',
-  'Ganita Prakash Part I (7 chapters) and Part II (7) hold **14 official**',
-  '**chapters and 58 numbered sections**.',
+  `Ganita Prakash Part I (${partI} chapters) and Part II (${chapterTotal - partI}) hold **${chapterTotal} official**`,
+  `**chapters and ${sectionTotal} numbered sections**.`,
   // v0.84.0 checkpoint 23 — only Class 6 is the first two-layer class; this
   // generator was cloned from the Class 6 one and inherited its claim.
   'Class 8 uses the numbered-grade two-layer model established at Class 6:',

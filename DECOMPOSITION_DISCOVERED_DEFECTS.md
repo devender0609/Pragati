@@ -60,6 +60,12 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-23 review finding — RESOLVED in checkpoint 24
+
+| Defect | Where | Resolution |
+|---|---|---|
+| The Class 8 page audit contradicted itself in one document: the headline said "14 official chapters and **58** numbered sections" while the accounting below said "**59/59** numbered sections accounted for". The generator hard-coded the headline while the body computed it | `tools/emitClass8Audit.mjs` | Both denominators are now derived — sections from the master map's Class 8 section records, chapters from the record extents — and the generator throws if the section count disagrees with `classProgress`. A test requires every "N numbered sections" claim in the document to equal the derived total, so the two halves can never diverge again. The strengthened section test asserts set equality of the same 59 ids across authoring records, extents, accounting and `classProgress` rather than the old `>= 58`, which would have passed even if the duplicated §2.5 vanished |
+
 ## Checkpoint-23 findings (rebuilt from primary source after a container reset)
 
 | Finding | Where | Resolution |

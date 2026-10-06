@@ -2050,13 +2050,58 @@ describe('Class 8 structure, boundaries and dispositions', () => {
   const p8 = () => CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 8)!;
   const c8Extents = () => OFFICIAL_SECTION_EXTENTS.filter((e) => e.officialSectionId.startsWith('ncert_hegp'));
 
-  it('verifies 14 chapters and 58 numbered sections against the source', () => {
+  it('agrees on one Class 8 section denominator across every surface', () => {
+    // v0.84.0 checkpoint 24 — the denominator is 59 and must be the SAME 59
+    // everywhere. `>= 58` would have passed even if the duplicated second
+    // §2.5 vanished, which is exactly the regression worth catching.
+    const authoring = authoringUnits(8).map((r) => r.recordId);
+    const extents = OFFICIAL_SECTION_EXTENTS.filter((e) =>
+      e.officialSectionId.startsWith('ncert_hegp')
+    ).map((e) => e.officialSectionId);
+    const accounted = sectionAccounting(8).rows.map((r) => r.sectionId);
+    expect(new Set(authoring).size).toBe(59);
+    expect(new Set(extents)).toEqual(new Set(authoring));
+    expect(new Set(accounted)).toEqual(new Set(authoring));
+    expect(p8().officialSectionsTotal).toBe(59);
+    expect(p8().officialRecordsTotal).toBe(59);
+    expect(p8().officialRecordsFullyInspected).toBe(59);
+    // Chapters are their own layer and keep their own denominator.
     expect(p8().officialChapterCount).toBe(14);
-    // The denominator is re-derived from the source, not pinned: the book
-    // prints two sections numbered 2.5 in Part I chapter 2.
-    expect(p8().officialSectionsTotal).toBe(authoringUnits(8).length);
     expect(RECORD_EXTENTS.filter((e) => e.officialRecordId.startsWith('ncert_hegp')).length).toBe(14);
-    expect(authoringUnits(8).length).toBeGreaterThanOrEqual(58);
+  });
+
+  it('keeps both sections the book prints as "2.5", as distinct records', () => {
+    // Ganita Prakash Grade 8 Part I chapter 2 prints the number 2.5 twice,
+    // on "Did You Ever Wonder?" and on "A Pinch of History". Two records,
+    // two body ranges, one printed number — and no invented "2.6".
+    const a = sectionExtentFor('ncert_hegp1_s2_5');
+    const b = sectionExtentFor('ncert_hegp1_s2_5b');
+    for (const [id, e] of [['ncert_hegp1_s2_5', a], ['ncert_hegp1_s2_5b', b]] as const) {
+      expect(e, id).toBeDefined();
+      expect(e!.officialChapterId).toBe('ncert_hegp1_ch02');
+      expect(e!.boundaryStatus).toBe('VERIFIED_FROM_SOURCE');
+    }
+    // Distinct, non-overlapping bodies: one ends where the other begins.
+    expect(a!.pdfPageEnd).toBe(b!.pdfPageStart);
+    expect(b!.pdfPageEnd).toBeGreaterThan(b!.pdfPageStart);
+    // Both are inside the 59, and both are inspected.
+    const ids = new Set(authoringUnits(8).map((r) => r.recordId));
+    expect(ids.has('ncert_hegp1_s2_5')).toBe(true);
+    expect(ids.has('ncert_hegp1_s2_5b')).toBe(true);
+    expect(sectionInspectionState('ncert_hegp1_s2_5b')).toBe('FULLY_INSPECTED');
+    // The book prints no 2.6 in that chapter, so neither do we.
+    expect(ids.has('ncert_hegp1_s2_6')).toBe(false);
+  });
+
+  it('never lets the page audit state two different section totals', () => {
+    const audit = read('PAGE_LEVEL_INTENT_AUDIT_CLASS_8.md');
+    const total = p8().officialSectionsTotal!;
+    expect(audit).toContain(`**chapters and ${total} numbered sections**`);
+    expect(audit).toContain(`${total}/${total} numbered sections accounted for`);
+    // Any other section-total claim in the headline is a contradiction.
+    for (const m of audit.matchAll(/(\d+) numbered sections/g)) {
+      expect(Number(m[1]), m[0]).toBe(total);
+    }
   });
 
   it('keeps §3.4 — the heading the pattern first missed — as a real section', () => {
