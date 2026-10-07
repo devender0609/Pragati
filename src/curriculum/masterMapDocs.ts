@@ -84,7 +84,7 @@ export function hierarchyTable(): string {
     const t = textbookCounts(n);
     const tRow = row(n, bookLabel(n), t, STATUS_LABEL[classStructureStatus(n)]);
     if (!textbookDenominatorKnown(n)) {
-      // The Part I count is real; the class total is not known.
+      // A part count is real; the class total is not known.
       tRow[3] = `${cell(t.chapter)} (Part I only; class total UNKNOWN)`;
       tRow[4] = `${cell(t.section)} (Part I only; class total UNKNOWN)`;
     }

@@ -44,7 +44,12 @@ describe('textbook hierarchy, by level', () => {
     // chapter 2 prints two different sections both numbered 2.5 ("Did You
     // Ever Wonder?" and "A Pinch of History"), and both are official records.
     8: { unit: ND, chapter: 14, section: 59, subsection: ND, topic: ND },
-    9: { unit: ND, chapter: 8, section: 53, subsection: 'unknown', topic: ND },
+    // v0.84.0 checkpoint 25 — Ganita Manjari Part II (Chapters 9-14) was
+    // retrieved from ncert.nic.in and verified, so the textbook chapter
+    // denominator is 14. The section denominator stays at Part I's verified
+    // 53: Part II's numbered sections have not been counted from the body yet.
+    // v0.84.0 checkpoint 26 — all three levels verified against the pages.
+    9: { unit: ND, chapter: 14, section: 74, subsection: 51, topic: ND },
     10: { unit: ND, chapter: 14, section: 55, subsection: 2, topic: ND },
     11: { unit: ND, chapter: 14, section: 63, subsection: ND, topic: ND },
     12: { unit: ND, chapter: 13, section: 65, subsection: ND, topic: ND },
@@ -165,10 +170,13 @@ describe('official records never disappear', () => {
 
 // ---------------------------------------------------------------------------
 describe('UNKNOWN is never zero', () => {
-  it('Class 9 textbook total is unknown (finding F1)', () => {
-    expect(textbookDenominatorKnown(9)).toBe(false);
-    expect(gapReport(9).unverifiedUnits).toBe('unknown');
-    for (const n of CLASS_NUMBERS.filter((x) => x !== 9)) expect(textbookDenominatorKnown(n)).toBe(true);
+  it('knows every textbook chapter denominator now that Class 9 Part II exists', () => {
+    // Finding F1 is resolved: NCERT published Ganita Manjari Part II
+    // (Chapters 9-14), retrieved and verified at checkpoint 25.
+    for (const n of CLASS_NUMBERS) expect(textbookDenominatorKnown(n), `class${n}`).toBe(true);
+    // Section-level uncertainty for Part II survives separately.
+    const two = MASTER_SOURCES.find((s) => s.sourceId === 'ncert_iemh2')!;
+    expect(two.levels.section).toBe('primary_source_verified');
   });
 
   it('no level status is empty and no unknown level is counted', () => {
@@ -177,7 +185,7 @@ describe('UNKNOWN is never zero', () => {
         expect(['primary_source_verified', ND, 'partially_enumerated', 'unknown']).toContain(v);
       }
     }
-    expect(textbookCounts(9).subsection).toBe('unknown');
+    expect(textbookCounts(9).subsection).toBe(51);
   });
 });
 
@@ -207,7 +215,8 @@ describe('review and product state are an overlay, and unchanged', () => {
 describe('source evidence is reproducible', () => {
   it('every textbook carries URL, checksum, ISBN, edition history and inspection date', () => {
     const books = MASTER_SOURCES.filter((s) => s.kind === 'textbook');
-    expect(books).toHaveLength(15);
+    // 16 since v0.84.0 checkpoint 25: Ganita Manjari Part II joined the set.
+    expect(books).toHaveLength(16);
     for (const b of books) {
       expect(b.url, b.sourceId).toMatch(/^https:\/\/ncert\.nic\.in\/textbook\/pdf\//);
       expect(b.sha256, b.sourceId).toMatch(/^[0-9a-f]{64}$/);
@@ -297,11 +306,14 @@ describe('generated documents agree with the map, column by column', () => {
     });
   }
 
-  it('Class 9 textbook row says UNKNOWN, never a bare total', () => {
+  it('Class 9 shows every level as a verified total', () => {
+    // v0.84.0 checkpoint 26 — chapters, sections and subsections were all
+    // verified against the printed pages, so no level reports UNKNOWN.
     for (const d of DOCS) {
       const row = rowByClassAndSource(read(d), 'Class 9', 'NCERT textbook');
-      expect(row.Chapters, d).toBe('8 (Part I only; class total UNKNOWN)');
-      expect(row['Sub-sections'], d).toBe('UNKNOWN');
+      expect(row.Chapters, d).toBe('14');
+      expect(row.Sections, d).toBe('74');
+      expect(row['Sub-sections'], d).toBe('51');
     }
   });
 
@@ -317,7 +329,11 @@ describe('generated documents agree with the map, column by column', () => {
     expect(row('Class 6')('Verified records')).toBe('65');
     expect(row('Class 6')('Review-ready')).toBe('12');
     expect(row('Class 6')('Reviewed')).toBe('0');
-    expect(row('Class 9')('Unverified records')).toBe('UNKNOWN');
+    // Chapters are verified for both parts; Part II's sections are not
+    // counted yet, so the unverified-record count stays unknown.
+    // Every Class 9 level is enumerated now, so nothing is left unverified
+    // at the structure layer; the instructional layer is a separate state.
+    expect(row('Class 9')('Unverified records')).toBe('0');
     expect(row('Class 1')('Authoring unit')).toBe('chapter');
     expect(row('Class 10')('Verified records')).toBe('41'); // 55 sections less 14 "Summary"
   });

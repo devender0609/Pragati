@@ -1,77 +1,69 @@
 # Class 9 — source readiness
 
-Written before any Class 9 page-level work, to answer one question: **is the
-official Class 9 source set complete enough to decompose?**
+Rewritten at checkpoint 25 after retrieving the official sources directly from
+`ncert.nic.in` in this session. The checkpoint-24 finding that no Part II
+existed is **superseded**.
 
 ## Verdict
 
-**B. CLASS 9 SOURCE SET INCOMPLETE.** Do not begin page-level decomposition.
+**SOURCE_SET_COMPLETE.** Both published parts of the Class 9 textbook are
+acquired and verified. Page-level decomposition is not blocked on acquisition —
+but one structural level is still uncounted; see below.
 
-## What is VERIFIED
+## What the primary sources establish
 
 | | |
 |---|---|
-| NCERT textbook | **Ganita Manjari**, Textbook of Mathematics for Grade 9, **Part I** |
-| ISBN | 978-93-5729-603-8 |
-| Edition | First Edition April 2026 |
-| Archive | `https://ncert.nic.in/textbook/pdf/iemh1dd.zip` |
-| Chapters in Part I | **8** |
-| Numbered sections in Part I | **53**, read from the numbered headings inside every chapter PDF |
-| Structure records in the master map | 8 chapters, 53 sections, all `not_inspected` |
+| Textbook | **Ganita Manjari**, Textbook of Mathematics, Grade 9 |
+| Part I | Chapters **1-8**, ISBN 978-93-5729-603-8, First Edition |
+| Part II | Chapters **9-14**, ISBN 978-93-5729-236-8, First Edition |
+| Chapter denominator | **14 — VERIFIED_FROM_SOURCE** |
+| Archives retrieved | `iemh1dd.zip` (19,403,599 bytes), `iemh2dd.zip` (16,881,160 bytes) |
+| Files | 16 PDFs, 404 PDF pages, SHA-256 recorded for each |
 
-### Part I chapters
+Evidence: the Part I prelims print "GANITA MANJARI / Textbook of Mathematics for
+GRADE 9 / Part I" with a Contents page listing Chapters 1-8; the Part II prelims
+print the same title with "GRADE 9 / Part II" and a Contents page listing
+Chapters 9-14 plus a Learning Material section. Fourteen chapter PDFs are
+present, and each one's first page carries its chapter title.
 
-| # | Title | Sections | Record | Intent |
-|---|---|---|---|---|
-| 1 | Orienting Yourself: The Use of Coordinates | 4 | `ncert_iemh1_ch01` | not_inspected |
-| 2 | Introduction to Linear Polynomials | 6 | `ncert_iemh1_ch02` | not_inspected |
-| 3 | The World of Numbers | 7 | `ncert_iemh1_ch03` | not_inspected |
-| 4 | Exploring Algebraic Identities | 8 | `ncert_iemh1_ch04` | not_inspected |
-| 5 | I’m Up and Down, and Round and Round | 8 | `ncert_iemh1_ch05` | not_inspected |
-| 6 | Measuring Space: Perimeter and Area | 10 | `ncert_iemh1_ch06` | not_inspected |
-| 7 | The Mathematics of Maybe: Introduction to Probability | 4 | `ncert_iemh1_ch07` | not_inspected |
-| 8 | Predicting What Comes Next: Exploring Sequences and Progressions | 6 | `ncert_iemh1_ch08` | not_inspected |
+### Part II chapters, from the Contents page
 
-## What is UNKNOWN
+| # | Title | Printed start page |
+|---|---|---|
+| 9 | Propositions and their Converses | 1 |
+| 10 | How Quantities Combine: Understanding Data | 8 |
+| 11 | The World of Algorithms | 37 |
+| 12 | Quadrilaterals | 51 |
+| 13 | Two Variables, One Line | 85 |
+| 14 | Math of Space: Surface Area and Volume | 123 |
 
-- **Whether an official Part II exists.** The NCERT portal lists only Part I. It
-  is not established whether Part II is unpublished, published but not yet
-  acquired, or not planned. **Nothing is inferred from Classes 7 and 8 having
-  two parts.** No filename, chapter count or section count is guessed.
-- **The Class 9 textbook chapter denominator.** 8 is the Part I count, not the
-  class total.
-- **The sub-section count.** Ganita Manjari prints numbered sub-sections (N.M.K)
-  in chapters 3, 6, 7 and 8. Text extraction found 22 with visible gaps in the
-  numbering (3.2.1, 3.4.1 and 7.2.1 among the missing), so the count is UNKNOWN
-  rather than 22. This is recorded as finding F6_class9_subsections.
+## What is still UNKNOWN
 
-## The CBSE syllabus is a separate hierarchy
+**The numbered-section denominator.** Part I has 53 verified sections from
+earlier work. Part II's sections have **not** been counted, and a quick
+heading-detection pass over all fourteen chapters disagreed with itself across
+font-size thresholds — it produced 50 then 70 sections depending on the
+threshold, against Part I's known 53, and showed numbering gaps that turned out
+to be an extraction artifact (headings carry a `\x07` separator after the
+number). That is exactly the per-chapter heading verification pass Classes 6-8
+received, and it belongs to the decomposition checkpoint, not to this one.
 
-The CBSE Class IX Mathematics syllabus 2026-27 is verified separately: **6 units,
-15 named chapters**, prescribing "Mathematics - Textbook for class IX - NCERT
-Publication".
+So: `levels.section` for `ncert_iemh2` is recorded as **unknown**, and the count
+of Class 9 records left to verify stays **UNKNOWN** rather than 0.
 
-**The 15 syllabus chapters are not used to manufacture missing textbook
-chapters.** Syllabus structure and textbook structure are different official
-hierarchies, and no correspondence between them is asserted without an official
-source saying so. This is recorded as finding F1_class9_book_vs_syllabus, and it
-is the reason the textbook denominator stays UNKNOWN rather than being set to 15.
+**Sub-sections** remain UNKNOWN for both parts (finding F6): the books print
+numbered sub-sections (N.M.K) and extraction finds them incompletely.
 
-Comparing the two lists shows why the caution is warranted: the syllabus names
-chapters such as Circles, Surface Area and Volume, and Euclid's Geometry that
-have no counterpart among Part I's eight, while Part I's "I'm Up and Down, and
-Round and Round" and "Predicting What Comes Next" do not map cleanly onto any
-single syllabus chapter. Either Part II covers the remainder, or the
-correspondence is not one-to-one. **The source has to settle it, not us.**
+## CBSE and NCERT remain separate hierarchies
 
-## What must be obtained before decomposition
+The CBSE Class IX syllabus (6 units, 15 named chapters) is still a separate
+official structure. **No correspondence is asserted**, and none was used to
+establish the textbook's 14 chapters — those come from the two Contents pages
+and fourteen chapter files. The counts differing (15 against 14) is itself a
+reason not to equate them.
 
-1. **An official NCERT statement on Part II** — either the Part II textbook
-   archive, or a portal statement that Part I is the complete Grade 9 book.
-2. If Part II exists: its chapter PDFs, so chapter and section denominators can
-   be derived from the body the way Classes 6-8 were.
-3. A source manifest for whatever arrives, on the Class 8 pattern: filename,
-   part, edition evidence, size, SHA-256.
+## Next
 
-Until item 1 is settled, decomposing Part I alone would mean treating 8 chapters
-as the Class 9 curriculum without knowing whether that is half a book.
+Class 9 is ready for page-level decomposition, beginning with the per-chapter
+heading verification that establishes the section denominator from the bodies.

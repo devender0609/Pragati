@@ -18,7 +18,7 @@ does not make it so.
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 7 | 15 | 65 | 511 indexed / 511 full text / 236 visual | 64 | 63 | 1 | 0 | 0 | 64 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 8 | 14 | 59 | 423 indexed / 423 full text / 305 visual | 54 | 52 | 2 | 0 | 0 | 54 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 9 | 8 (Part I only; total UNKNOWN) | 53 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
+| Class 9 | 14 | 74 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 11 | 14 | 63 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 | Class 12 | 13 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
@@ -34,7 +34,7 @@ None: every official record in every class read so far is served by at least one
 
 ## Classes not yet read
 
-- **Class 9** — 8 official chapters. Units required: **UNKNOWN**. One chapter is not assumed to be one lesson, so no count is implied by the chapter total.
+- **Class 9** — 14 official chapters. Units required: **UNKNOWN**. One chapter is not assumed to be one lesson, so no count is implied by the chapter total.
 - **Class 10** — 14 official chapters. Units required: **UNKNOWN**. One chapter is not assumed to be one lesson, so no count is implied by the chapter total.
 - **Class 11** — 14 official chapters. Units required: **UNKNOWN**. One chapter is not assumed to be one lesson, so no count is implied by the chapter total.
 - **Class 12** — 13 official chapters. Units required: **UNKNOWN**. One chapter is not assumed to be one lesson, so no count is implied by the chapter total.

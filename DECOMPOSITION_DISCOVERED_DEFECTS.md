@@ -60,6 +60,22 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-26 source findings (Class 9)
+
+| Finding | Evidence |
+|---|---|
+| **Ganita Manjari prints section headings with a trailing full stop** — "4.4. More Identities" — as well as in small caps. A heading pattern requiring whitespace after the number silently dropped **§2.4, §3.1, §4.4 and §13.4**. All four were located on the rendered pages | This is the same defect class that cost Class 8 its §3.4. Three threshold settings gave 50, 52 and 70 sections before the corrected pattern plus visual checks settled it at **74** |
+| **Part I's earlier count of 53 is CONFIRMED**, not revised | Re-checked chapter by chapter against the current files. §4.4 "More Identities" exists on PDF page 8 of `iemh104.pdf` (printed folio 75) and was briefly suspected missing until that page was rendered |
+| **Chapter 9 carries no numbered sections at all** | "Propositions and their Converses" runs seven pages on Statement / Proposition / Discussion / Chapter Summary headings. Every page was rendered and looked at; zero is a verified finding, not a detector returning nothing |
+| Class 9 numbered subsections | **51**, all printed N.M.K in the body and recorded as subsection records under their parent sections |
+
+## Checkpoint-24 finding superseded by primary source (checkpoint 25)
+
+| Finding | Status |
+|---|---|
+| **F1_class9_book_vs_syllabus** — "the NCERT portal currently lists only Ganita Manjari Part I with 8 chapters; no Part II is listed; the Class 9 textbook denominator remains UNKNOWN" | **RESOLVED.** Ganita Manjari Part II (Chapters 9-14, ISBN 978-93-5729-236-8, First Edition) was retrieved from `https://ncert.nic.in/textbook/pdf/iemh2dd.zip` on 2026-10-06 and verified from its own prelims and chapter bodies. The Class 9 textbook chapter denominator is **14**. The checkpoint-24 statement was true when written and is now stale — it was not wrong to hold the denominator UNKNOWN on the evidence then available |
+| Section denominator for Class 9 | **Still UNKNOWN.** Part I's 53 are verified; Part II's are not counted. A heading-detection pass over all 14 chapters disagreed with itself across font-size thresholds (50 vs 70 sections against Part I's known 53), with apparent numbering gaps caused by a `\x07` separator inside the heading text. Recorded as `levels.section = unknown` for `ncert_iemh2`, and `unverifiedUnits` stays `unknown` |
+
 ## Checkpoint-23 review finding — RESOLVED in checkpoint 24
 
 | Defect | Where | Resolution |

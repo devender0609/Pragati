@@ -22,6 +22,7 @@ import {
   registryLagClasses,
   textbookCounts,
   textbookDenominatorKnown,
+  hasUnenumeratedLevel,
 } from '../curriculumMasterMap';
 import { gradeCurriculumView } from '../officialCurriculumStudentModel';
 import { EXPECTED_STRUCTURES } from '../officialCompleteness';
@@ -120,11 +121,19 @@ describe('§3/§4 source terminology survives integration', () => {
 
 // ---------------------------------------------------------------------------
 describe('§5/§B Class 9 stays partial, and the reason is explicit', () => {
-  it('reports the textbook denominator as unknown from evidence, not from findings', () => {
-    expect(textbookDenominatorKnown(9)).toBe(false);
-    const book = MASTER_SOURCES.find((s) => s.sourceId === 'ncert_iemh1')!;
-    expect(book.volumeCompleteness).toBe('partial_series_published');
-    expect(book.volumeCompletenessNote).toMatch(/Part II/);
+  it('reports the Class 9 series as complete from evidence, not from findings', () => {
+    // v0.84.0 checkpoint 25 — Ganita Manjari Part II (Chapters 9-14) was
+    // retrieved from ncert.nic.in and verified, so the series is complete
+    // and the chapter denominator is settled. What remains unknown is one
+    // level down: Part II's numbered sections are not counted yet.
+    expect(textbookDenominatorKnown(9)).toBe(true);
+    for (const id of ['ncert_iemh1', 'ncert_iemh2']) {
+      const book = MASTER_SOURCES.find((s) => s.sourceId === id)!;
+      expect(book.volumeCompleteness, id).toBe('complete_series_published');
+    }
+    // v0.84.0 checkpoint 26 — the section and subsection levels are now
+    // verified against the pages, so nothing is left unenumerated.
+    expect(hasUnenumeratedLevel(9)).toBe(false);
   });
 
   it('is not disturbed by an unrelated finding on another class', () => {
@@ -133,8 +142,13 @@ describe('§5/§B Class 9 stays partial, and the reason is explicit', () => {
     }
   });
 
-  it('never presents Part I as the whole Class 9 textbook', () => {
-    expect(read('CURRICULUM_MASTER_MAP.md')).toContain('Part I only; class total UNKNOWN');
+  it('never presents one part as the whole Class 9 textbook', () => {
+    const md = read('CURRICULUM_MASTER_MAP.md');
+    // Both parts are now listed as their own sources, and the class total is
+    // the sum of their verified chapters rather than one part's count.
+    expect(md).toContain('Ganita Manjari');
+    expect(md).toMatch(/Part II/);
+    expect(md).not.toMatch(/Part I only/);
   });
 
   it('asserts no CBSE-to-NCERT chapter crosswalk', () => {

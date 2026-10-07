@@ -4,7 +4,7 @@
 
 ---
 
-**11 of 12 classes are complete at structure level. 1 is not: Class 9.**
+**12 of 12 classes are complete at structure level. 0 are not: Class .**
 
 Complete at structure level means: the current book was identified from
 the NCERT portal, its current printing was read from the imprint, and
@@ -26,7 +26,7 @@ authoring.
 | Class 7 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 15 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 59 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 9 | CBSE syllabus: Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | — | 15 | primary source verified |
-| Class 9 | NCERT textbook: Ganita Manjari (Part I) | — | 8 (Part I only; class total UNKNOWN) | 53 (Part I only; class total UNKNOWN) | UNKNOWN | — | PARTIAL — see finding F1 |
+| Class 9 | NCERT textbook: Ganita Manjari (Part I + Part II) | — | 14 | 74 | 51 | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 10 | CBSE syllabus: Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | — | 15 | primary source verified |
 | Class 10 | NCERT textbook: Mathematics | — | 14 | 55 | 2 | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 11 | CBSE syllabus: Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | — | — | 14 | primary source verified |
@@ -38,9 +38,7 @@ The in-app curriculum registry agrees with the master map for every class.
 
 ## Open structure evidence
 
-| Class | Source | Level | State |
-|---|---|---|---|
-| Class 9 | Ganita Manjari (Part I) | subsection | partially enumerated — count UNKNOWN |
+None.
 
 ## Findings to resolve or accept
 
@@ -65,7 +63,7 @@ The in-app curriculum registry agrees with the master map for every class.
 | Class 6 | 65 | 65 | 0 |
 | Class 7 | 65 | 65 | 0 |
 | Class 8 | 59 | 59 | 0 |
-| Class 9 | 53 | 0 | 53 |
+| Class 9 | 74 | 0 | 74 |
 | Class 10 | 41 | 0 | 41 |
 | Class 11 | 63 | 0 | 63 |
 | Class 12 | 65 | 0 | 65 |

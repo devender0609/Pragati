@@ -8,7 +8,7 @@
 
 | Truth | Question it answers | Current answer |
 |---|---|---|
-| Curriculum completeness | Does Pragati represent every official record? | 11 of 12 classes complete at structure level in the master map; 678 official records represented; none omitted |
+| Curriculum completeness | Does Pragati represent every official record? | 12 of 12 classes complete at structure level in the master map; 756 official records represented; none omitted |
 | Instructional completeness | Has Pragati written the teaching for those records? | 12 complete instructional drafts — 3 in Number Play, 9 in Fractions |
 | Review / publication | Has an educator approved it, and is it published? | 0 reviewed, 0 published |
 
@@ -37,7 +37,7 @@ define that level; UNKNOWN means it has not been fully read.
 | Class 7 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 15 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 59 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 9 | CBSE syllabus: Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | — | 15 | primary source verified |
-| Class 9 | NCERT textbook: Ganita Manjari (Part I) | — | 8 (Part I only; class total UNKNOWN) | 53 (Part I only; class total UNKNOWN) | UNKNOWN | — | PARTIAL — see finding F1 |
+| Class 9 | NCERT textbook: Ganita Manjari (Part I + Part II) | — | 14 | 74 | 51 | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 10 | CBSE syllabus: Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | — | 15 | primary source verified |
 | Class 10 | NCERT textbook: Mathematics | — | 14 | 55 | 2 | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 11 | CBSE syllabus: Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | — | — | 14 | primary source verified |
@@ -57,7 +57,7 @@ define that level; UNKNOWN means it has not been fully read.
 | Class 6 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 12 | 53 | 12 | 53 | 12 | 12 | 0 | 0 | 0 |
 | Class 7 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
 | Class 8 | COMPLETE AT STRUCTURE LEVEL | section | 59 | 0 | 0 | 59 | 0 | 59 | 0 | 0 | 0 | 0 | 0 |
-| Class 9 | PARTIAL — see finding F1 | section | 53 | UNKNOWN | 0 | 53 | 0 | 53 | 0 | 0 | 0 | 0 | 0 |
+| Class 9 | COMPLETE AT STRUCTURE LEVEL | section | 74 | 0 | 0 | 74 | 0 | 74 | 0 | 0 | 0 | 0 | 0 |
 | Class 10 | COMPLETE AT STRUCTURE LEVEL | section | 41 | 0 | 0 | 41 | 0 | 41 | 0 | 0 | 0 | 0 | 0 |
 | Class 11 | COMPLETE AT STRUCTURE LEVEL | section | 63 | 0 | 0 | 63 | 0 | 63 | 0 | 0 | 0 | 0 | 0 |
 | Class 12 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |

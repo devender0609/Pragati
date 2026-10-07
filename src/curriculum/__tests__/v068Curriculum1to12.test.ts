@@ -242,15 +242,17 @@ describe('§E the student sees the official structure, or an honest gap', () => 
     // the student view now shows the 15 chapters rather than the 6 unit
     // headings. Both are true; the chapter list is the more useful one
     // and the source establishes it.
-    // v0.83.3 §4 — the registry a student view reads is now the NCERT
-    // textbook: Ganita Manjari Part I, eight verified chapters. The CBSE
-    // syllabus's fifteen chapter names remain a separate hierarchy and
-    // are not mapped onto these eight.
+    // v0.83.3 §4 — the registry a student view reads is the NCERT textbook,
+    // not the CBSE syllabus; the syllabus's fifteen chapter names remain a
+    // separate hierarchy and are not mapped onto the textbook's.
+    // v0.84.0 checkpoint 25 — Ganita Manjari Part II (Chapters 9-14) was
+    // retrieved from ncert.nic.in and verified, so the student view now
+    // shows all fourteen chapters of the two-part textbook.
     const v = gradeCurriculumView('class9');
     if (v.kind !== 'verified') throw new Error('expected a verified view');
     const official = officialChapterList('class9')!.map((c) => c.title);
     expect(v.chapters.map((c) => c.title)).toEqual(official);
-    expect(v.chapters).toHaveLength(8);
+    expect(v.chapters).toHaveLength(14);
   });
 });
 

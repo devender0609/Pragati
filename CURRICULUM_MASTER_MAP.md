@@ -6,7 +6,7 @@ This map answers **what should exist**. It does not mean Pragati already
 teaches it. Every official record is listed whether or not Pragati has
 any content for it.
 
-478 verified authoring records across Classes 1–12 (Class 9 total UNKNOWN). Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
+499 verified authoring records across Classes 1–12. Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
 
 | Class | Source | Units | Chapters | Sections | Sub-sections | Topics | Structure status |
 |---|---|---|---|---|---|---|---|
@@ -19,7 +19,7 @@ any content for it.
 | Class 7 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 15 | 65 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 8 | NCERT textbook: Ganita Prakash (Part I + Part II) | — | 14 | 59 | — | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 9 | CBSE syllabus: Mathematics, Class IX — CBSE Curriculum 2026-27 | 6 | 15 | — | — | 15 | primary source verified |
-| Class 9 | NCERT textbook: Ganita Manjari (Part I) | — | 8 (Part I only; class total UNKNOWN) | 53 (Part I only; class total UNKNOWN) | UNKNOWN | — | PARTIAL — see finding F1 |
+| Class 9 | NCERT textbook: Ganita Manjari (Part I + Part II) | — | 14 | 74 | 51 | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 10 | CBSE syllabus: Mathematics, Class X — CBSE Curriculum 2026-27 | 7 | — | — | — | 15 | primary source verified |
 | Class 10 | NCERT textbook: Mathematics | — | 14 | 55 | 2 | — | COMPLETE AT STRUCTURE LEVEL |
 | Class 11 | CBSE syllabus: Mathematics, Class XI — CBSE Curriculum 2026-27 | 5 | — | — | — | 14 | primary source verified |
@@ -429,7 +429,7 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 ### NCERT textbook: Ganita Manjari — Part I
 
 Printed as: Textbook of Mathematics for Grade 9 (Part I). Applicability: First Edition April 2026. Source: https://ncert.nic.in/textbook/pdf/iemh1dd.zip. Inspected 2026-09-22.
-Levels — unit: not_defined_by_source; chapter: primary_source_verified; section: primary_source_verified; subsection: partially_enumerated; topic: not_defined_by_source.
+Levels — unit: not_defined_by_source; chapter: primary_source_verified; section: primary_source_verified; subsection: primary_source_verified; topic: not_defined_by_source.
 
 | Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -441,6 +441,33 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_iemh1_ch06 | chapter | 6 | Measuring Space: Perimeter and Area | 118 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_iemh1_ch07 | chapter | 7 | The Mathematics of Maybe: Introduction to Probability | 155 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_iemh1_ch08 | chapter | 8 | Predicting What Comes Next: Exploring Sequences and Progressions | 174 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_1_1 | subsection | 3.1.1 | A History Written in Bone | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_1_2 | subsection | 3.1.2 | The Indian Context: Trade and Astronomy | 2 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_2_1 | subsection | 3.2.1 | From Philosophy to Mathematics: The Concept of | 3 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_2_2 | subsection | 3.2.2 | The Bakhśhālī Manuscript and Brahmagupta’s Rules | 4 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_3_1 | subsection | 3.3.1 | The Arithmetic of Integers | 5 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_4_1 | subsection | 3.4.1 | Representation of Rational Numbers on the | 10 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_4_2 | subsection | 3.4.2 | The Density of Rational Numbers | 12 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_5_1 | subsection | 3.5.1 | The Proof of Irrationality of | 13 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_5_2 | subsection | 3.5.2 | Construction of Length | 15 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_5_3 | subsection | 3.5.3 | The Story of Pi (π) and Madhava’s Infinite Series | 16 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_6_1 | subsection | 3.6.1 | Rational Decimals: Terminating and Repeating | 17 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_6_2 | subsection | 3.6.2 | The Magic of Cyclic Numbers | 21 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss3_6_3 | subsection | 3.6.3 | Irrational Decimals: Chaos and Infinity | 21 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss5_6_1 | subsection | 5.6.1 | Which of the two unequal chords is farther from the | 13 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss5_7_1 | subsection | 5.7.1 | Angle subtended by an arc at a point on the circle | 16 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss6_8_1 | subsection | 6.8.1 | Heron’s formula | 17 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss6_10_1 | subsection | 6.10.1 | Area of Sector of a Circle | 29 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss7_1_1 | subsection | 7.1.1 | What is Randomness? | 2 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss7_1_2 | subsection | 7.1.2 | The Probability Scale | 3 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss7_2_1 | subsection | 7.2.1 | Experimental Probability: Performing Observations or | 6 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss7_2_2 | subsection | 7.2.2 | Theoretical Probability | 7 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss7_2_3 | subsection | 7.2.3 | Analysing Statistical Data Using Probability | 8 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss7_3_1 | subsection | 7.3.1 | Sample Space | 12 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss7_3_2 | subsection | 7.3.2 | Events | 13 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss8_4_1 | subsection | 8.4.1 | Visualising an AP | 8 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss8_6_1 | subsection | 8.6.1 | Fun with Fractals | 15 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh1_ss8_6_2 | subsection | 8.6.2 | Visualising a GP | 17 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_iemh1_s1_1 | section | 1.1 | Introduction | 1 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_iemh1_s1_2 | section | 1.2 | Settling In | 2 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_iemh1_s1_3 | section | 1.3 | The 2-d Cartesian Coordinate System | 3 | not inspected | missing | missing | not_started | unpublished |  |
@@ -494,6 +521,65 @@ Levels — unit: not_defined_by_source; chapter: primary_source_verified; sectio
 | ncert_iemh1_s8_4 | section | 8.4 | Arithmetic Progressions | 180 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_iemh1_s8_5 | section | 8.5 | Sum of the First n Natural Numbers | 183 | not inspected | missing | missing | not_started | unpublished |  |
 | ncert_iemh1_s8_6 | section | 8.6 | Geometric Progressions | 186 | not inspected | missing | missing | not_started | unpublished |  |
+
+### NCERT textbook: Ganita Manjari — Part II
+
+Printed as: Textbook of Mathematics for Grade 9 (Part I). Applicability: First Edition April 2026. Source: https://ncert.nic.in/textbook/pdf/iemh2dd.zip. Inspected 2026-09-22.
+Levels — unit: not_defined_by_source; chapter: primary_source_verified; section: primary_source_verified; subsection: primary_source_verified; topic: not_defined_by_source.
+
+| Record | Level | No. | Title | Start page | Intent | Learn | Practice | Review | Publication | Note |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ncert_iemh2_ch09 | chapter | 9 | Propositions and their Converses | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ch10 | chapter | 10 | How Quantities Combine: Understanding Data | 8 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ch11 | chapter | 11 | The World of Algorithms | 37 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ch12 | chapter | 12 | Quadrilaterals | 51 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ch13 | chapter | 13 | Two Variables, One Line | 85 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ch14 | chapter | 14 | Math of Space: Surface Area and Volume | 123 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s10_1 | section | 10.1 | Combining Things | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s10_2 | section | 10.2 | Visualising and Interpreting Data | 11 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s11_1 | section | 11.1 | Adding Numbers | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s11_2 | section | 11.2 | Greatest Common Divisor | 3 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s11_3 | section | 11.3 | Data Structures | 7 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s12_1 | section | 12.1 | What Exactly is a Quadrilateral? | 2 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s12_2 | section | 12.2 | Parallelograms | 6 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s12_3 | section | 12.3 | Applications of Parallelograms | 10 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s12_4 | section | 12.4 | Tiling the Plane Using Any 4-gon | 19 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s13_1 | section | 13.1 | Linear Equations in Two Variables | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s13_2 | section | 13.2 | Solution of Linear Equation in Two Variables | 4 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s13_3 | section | 13.3 | Slope-intercept form of a Linear Equation | 10 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s13_4 | section | 13.4 | Pair of Linear Equations in Two Variables | 19 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s13_5 | section | 13.5 | Finding Solutions to a Pair of Linear Equations | 21 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s13_6 | section | 13.6 | Graphical Method for Solving A Pair of Linear | 28 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s14_1 | section | 14.1 | Cuboids and Cubes | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s14_2 | section | 14.2 | Right Circular Cylinder | 5 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s14_3 | section | 14.3 | Cones | 8 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s14_4 | section | 14.4 | Pyramidal Shapes | 12 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s14_5 | section | 14.5 | Spheres and Hemispheres | 13 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_s14_6 | section | 14.6 | Areas and Volumes Around Us | 19 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss10_1_1 | subsection | 10.1.1 | Average of Averages | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss10_1_2 | subsection | 10.1.2 | Mixtures | 4 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss10_1_3 | subsection | 10.1.3 | Custom Weights | 6 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss10_2_1 | subsection | 10.2.1 | Stacking Columns | 11 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss10_2_2 | subsection | 10.2.2 | An Alternative to Pie Chart | 15 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss11_1_1 | subsection | 11.1.1 | Adding Numbers Digit by Digit | 1 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss11_2_1 | subsection | 11.2.1 | Computing the Divisors of a Number | 4 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss11_2_2 | subsection | 11.2.2 | Finding the Greatest Common Divisor | 5 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss11_2_3 | subsection | 11.2.3 | First Algorithm for gcd | 6 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss11_3_1 | subsection | 11.3.1 | Improving the Algorithm | 8 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss11_3_2 | subsection | 11.3.2 | Analysing these Algorithms | 9 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss11_3_3 | subsection | 11.3.3 | Euclid’s Subtraction Algorithm | 10 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss12_3_1 | subsection | 12.3.1 | An Important Property of Triangles | 11 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss12_3_2 | subsection | 12.3.2 | A Surprising Property of Medians | 15 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss13_1_1 | subsection | 13.1.1 | Standard Form of Linear Equations in Two Variables | 2 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss13_2_1 | subsection | 13.2.1 | Algebraic Meaning of Solution | 4 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss13_2_2 | subsection | 13.2.2 | Geometric Visualisation of Solutions | 4 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss13_3_1 | subsection | 13.3.1 | Understanding Slope | 10 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss13_3_2 | subsection | 13.3.2 | Slope-Intercept Form | 14 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss13_5_1 | subsection | 13.5.1 | Algebraic Methods for Solving a Pair of Linear Equations | 22 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss14_2_1 | subsection | 14.2.1 | Another Way of Understanding Why the | 6 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss14_5_1 | subsection | 14.5.1 | Hands-on Activity to Verify the Formula for Surface | 16 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss14_5_2 | subsection | 14.5.2 | Hemisphere | 17 | not inspected | missing | missing | not_started | unpublished |  |
+| ncert_iemh2_ss14_6_1 | subsection | 14.6.1 | Guesstimates: Did You Ever Wonder? | 19 | not inspected | missing | missing | not_started | unpublished |  |
 
 ### CBSE syllabus: Mathematics, Class IX — CBSE Curriculum 2026-27
 

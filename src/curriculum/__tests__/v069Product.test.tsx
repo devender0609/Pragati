@@ -102,10 +102,13 @@ describe('§20 Class 10 must not call its 7 units chapters', () => {
   // chapters, not the CBSE syllabus's fifteen chapter names. Mapping the
   // fifteen onto the eight would be an invented crosswalk, and claiming
   // fifteen would claim a book that is not published.
-  it('shows Class 9 as its eight verified Part I chapters', () => {
+  it('shows Class 9 as its fourteen verified textbook chapters', () => {
+    // v0.84.0 checkpoint 25 — Ganita Manjari is a two-part textbook and both
+    // parts are now verified from ncert.nic.in: Part I chapters 1-8, Part II
+    // chapters 9-14.
     const v = gradeCurriculumView('class9');
     if (v.kind !== 'verified') throw new Error('expected verified');
-    expect(v.chapters).toHaveLength(8);
+    expect(v.chapters).toHaveLength(14);
     expect(v.entryNoun.plural).toBe('chapters');
     // The CBSE syllabus still names fifteen, separately.
     expect(officialCurriculumForGrade('class9')!.units.flatMap((u) => u.chapters)).toHaveLength(15);

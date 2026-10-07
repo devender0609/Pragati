@@ -187,8 +187,15 @@ describe('§7/§8 one official chapter is not one lesson', () => {
 });
 
 describe('§10/§22 uncertainty survives the blueprint', () => {
-  it('keeps Class 9 partial', () => {
-    expect(textbookDenominatorKnown(9)).toBe(false);
+  it('knows the Class 9 chapter, section and subsection denominators', () => {
+    // v0.84.0 checkpoint 25 — Ganita Manjari Part II was retrieved from
+    // ncert.nic.in and verified, so the series is complete and the chapter
+    // denominator is settled. Part II's numbered sections have not been
+    // counted from the body, so that level is still not enumerated.
+    // v0.84.0 checkpoint 26 — every level is now verified against the pages,
+    // so no Class 9 level may still report 'unknown'.
+    expect(textbookDenominatorKnown(9)).toBe(true);
+    for (const v of Object.values(textbookCounts(9))) expect(v).not.toBe('unknown');
   });
 
   it('reports an unread class as NOT STARTED, never as zero units needed', () => {
@@ -2249,5 +2256,145 @@ describe('generated reports describe the decomposition truthfully', () => {
     expect(audit).toContain(`${p.pagesFullyInspected}/${p.pagesInScope} pages read in full text`);
     expect(audit).toContain(`${p.visualPagesInspected}/${p.visualPagesRequired} picture-carried`);
     expect(audit).toContain(`${p.chaptersFullyInspected}/${p.chaptersTotal} chapters fully inspected`);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 25 — CLASS 9 SOURCE RESOLUTION, NOT DECOMPOSITION.
+//
+// Ganita Manjari Part II was retrieved from ncert.nic.in and verified, so the
+// Class 9 textbook chapter denominator is settled at 14. Its numbered sections
+// have NOT been counted from the body, and no Class 9 teaching exists yet.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 source resolution', () => {
+  const c9 = () => MASTER_RECORDS.filter((r) => r.classNumber === 9);
+
+  it('records both published parts as separate official sources', () => {
+    const chapters = c9().filter((r) => r.level === 'chapter' && r.recordId.startsWith('ncert_'));
+    expect(chapters.length).toBe(14);
+    const parts = new Set(chapters.map((r) => r.recordId.split('_')[1]));
+    expect(parts).toEqual(new Set(['iemh1', 'iemh2']));
+    // Part II is chapters 9-14 and nothing else.
+    const two = chapters.filter((r) => r.recordId.startsWith('ncert_iemh2')).map((r) => Number(r.number));
+    expect(two.sort((a, b) => a - b)).toEqual([9, 10, 11, 12, 13, 14]);
+  });
+
+  it('keeps the CBSE syllabus a separate hierarchy from the textbook', () => {
+    const cbse = c9().filter((r) => r.recordId.startsWith('cbse_'));
+    const book = c9().filter((r) => r.recordId.startsWith('ncert_'));
+    expect(cbse.length).toBeGreaterThan(0);
+    // No record may belong to both, and no syllabus record may claim a
+    // textbook source id.
+    for (const r of cbse) expect(r.recordId.startsWith('ncert_')).toBe(false);
+    for (const r of book) expect(r.recordId.startsWith('cbse_')).toBe(false);
+    // The syllabus names chapters the textbook does not; neither count may be
+    // used as the other's denominator.
+    const cbseChapters = cbse.filter((r) => r.level === 'chapter').length;
+    const bookChapters = book.filter((r) => r.level === 'chapter').length;
+    expect(cbseChapters).not.toBe(bookChapters);
+  });
+
+  it('gives Class 9 no instructional units and no source-complete claim', () => {
+    expect(unitsForClass(9).length).toBe(0);
+    const p9 = CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 9);
+    if (p9) expect(p9.status).not.toBe('DECOMPOSITION_SOURCE_COMPLETE');
+    // Every Class 9 record is still uninspected: acquiring a source is not
+    // reading it.
+    for (const r of c9()) expect(r.intentStatus, r.recordId).not.toBe('page_level_inspected');
+  });
+
+  it('publishes a source manifest that reconciles with the files it names', () => {
+    const man = JSON.parse(read('CLASS_9_SOURCE_MANIFEST.json'));
+    expect(man.classNumber).toBe(9);
+    expect(man.chapterDenominator).toBe(14);
+    expect(man.chapterDenominatorStatus).toBe('VERIFIED_FROM_SOURCE');
+    // The section denominator must stay unknown until headings are verified.
+    expect(String(man.sectionDenominatorStatus)).toMatch(/^UNKNOWN/);
+    expect(man.sources.length).toBe(man.sourceCount);
+    expect(man.sources.reduce((n: number, s: any) => n + s.pdfPageCount, 0)).toBe(man.totalPdfPages);
+    // One file per chapter, plus one prelims file per part.
+    const chapterFiles = man.sources.filter((s: any) => s.officialChapterNumber !== null);
+    expect(new Set(chapterFiles.map((s: any) => s.officialChapterNumber)).size).toBe(14);
+    for (const s of man.sources) {
+      expect(s.sha256, s.filename).toMatch(/^[0-9a-f]{64}$/);
+      expect(s.officialArchiveUrl, s.filename).toMatch(/^https:\/\/ncert\.nic\.in\/textbook\/pdf\//);
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 26 — CLASS 9 SOURCE STRUCTURE, VERIFIED AGAINST PAGES.
+//
+// Checkpoint 25's detector was unreliable: headings print both in small caps
+// and with a trailing full stop ("4.4. More Identities"), so a naive pattern
+// silently dropped §2.4, §3.1, §4.4 and §13.4. Each was found on the rendered
+// page. Every count below derives from canonical records, never from a
+// detector total and never hand-typed.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 official structure', () => {
+  const c9 = () => MASTER_RECORDS.filter((r) => r.classNumber === 9 && r.recordId.startsWith('ncert_'));
+  const lvl = (l: string) => c9().filter((r) => r.level === l);
+
+  it('derives 14 chapters across two separate source identities', () => {
+    const chapters = lvl('chapter');
+    expect(chapters.length).toBe(14);
+    const one = chapters.filter((r) => r.recordId.startsWith('ncert_iemh1_'));
+    const two = chapters.filter((r) => r.recordId.startsWith('ncert_iemh2_'));
+    expect(one.length).toBe(8);
+    expect(two.length).toBe(6);
+    // The parts never merge into one source id.
+    expect(new Set(chapters.map((r) => r.recordId.split('_')[1]))).toEqual(new Set(['iemh1', 'iemh2']));
+  });
+
+  it('derives the section denominator from the records, per part and overall', () => {
+    const sections = lvl('section');
+    const one = sections.filter((r) => r.recordId.startsWith('ncert_iemh1_'));
+    const two = sections.filter((r) => r.recordId.startsWith('ncert_iemh2_'));
+    // Part I's earlier count of 53 was re-checked against the current files
+    // and confirmed, including §4.4, which prints with a trailing full stop.
+    expect(one.length).toBe(53);
+    expect(two.length).toBe(21);
+    expect(sections.length).toBe(one.length + two.length);
+    expect(one.some((r) => r.number === '4.4')).toBe(true);
+  });
+
+  it('keeps every section inside exactly one real Class 9 chapter', () => {
+    const chapterIds = new Set(lvl('chapter').map((r) => r.recordId));
+    for (const s of lvl('section')) {
+      expect(chapterIds.has(s.parentId!), s.recordId).toBe(true);
+      // A section id must name the same part as its chapter.
+      expect(s.recordId.split('_')[1]).toBe(s.parentId!.split('_')[1]);
+    }
+    // No section invents a chapter the book does not have.
+    expect(new Set(lvl('section').map((s) => s.parentId)).size).toBeLessThanOrEqual(14);
+  });
+
+  it('records Chapter 9 as genuinely carrying no numbered sections', () => {
+    // Propositions and their Converses runs on Statement / Proposition /
+    // Discussion headings with no numbers at all — confirmed by rendering
+    // all seven of its pages, not by a detector returning nothing.
+    const ch9 = lvl('section').filter((s) => s.parentId === 'ncert_iemh2_ch09');
+    expect(ch9.length).toBe(0);
+    expect(lvl('chapter').some((c) => c.recordId === 'ncert_iemh2_ch09')).toBe(true);
+  });
+
+  it('derives the subsection denominator rather than leaving it unknown', () => {
+    const subs = lvl('subsection');
+    expect(subs.length).toBeGreaterThan(0);
+    const sectionIds = new Set(lvl('section').map((r) => r.recordId));
+    for (const s of subs) {
+      expect(sectionIds.has(s.parentId!), s.recordId).toBe(true);
+      // A printed N.M.K number, never one invented from typography.
+      expect(s.number, s.recordId).toMatch(/^\d+\.\d+\.\d+$/);
+    }
+    // The class-level count is now a number, not 'unknown'.
+    expect(typeof textbookCounts(9).subsection).toBe('number');
+  });
+
+  it('still has no Class 9 instructional units', () => {
+    expect(unitsForClass(9).length).toBe(0);
+    for (const r of c9()) expect(r.intentStatus, r.recordId).not.toBe('page_level_inspected');
   });
 });

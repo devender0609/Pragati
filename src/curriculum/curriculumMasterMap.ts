@@ -549,6 +549,13 @@ export function syllabusCounts(n: number): HierarchyCounts | null {
  * published, and the CBSE syllabus prescribes a book with 15 chapters.
  * The Part I count is real; the class total is not known (finding F1).
  */
+/** True when a textbook of this class has a level the source has not enumerated. */
+export function hasUnenumeratedLevel(n: number): boolean {
+  return sourcesForClass(n)
+    .filter((s) => s.kind === 'textbook')
+    .some((b) => b.levels.chapter === 'unknown' || b.levels.section === 'unknown');
+}
+
 export function textbookDenominatorKnown(n: number): boolean {
   const books = sourcesForClass(n).filter((s) => s.kind === 'textbook');
   if (books.length === 0) return false;
@@ -644,7 +651,11 @@ export function gapReport(n: number): ClassGapReport {
     classNumber: n,
     structureStatus: classStructureStatus(n),
     verifiedUnits: units.length,
-    unverifiedUnits: textbookDenominatorKnown(n) ? 0 : 'unknown',
+    // v0.84.0 checkpoint 25 — a known chapter denominator is not enough: if
+    // any level below it is still unenumerated (Class 9 Part II's sections),
+    // the count of records left to verify is genuinely unknown.
+    unverifiedUnits:
+      textbookDenominatorKnown(n) && !hasUnenumeratedLevel(n) ? 0 : 'unknown',
     learnAuthored: c((s) => s.learn === 'authored'),
     learnMissing: c((s) => s.learn === 'missing'),
     practiceAuthored: c((s) => s.practice === 'authored'),

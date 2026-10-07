@@ -6,15 +6,15 @@
 
 ## Headline
 
-478 verified authoring records across Classes 1–12 (Class 9 total UNKNOWN). Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
+499 verified authoring records across Classes 1–12. Learn authored for 12; 12 instructionally complete; 12 review-ready; 0 sent; 0 reviewed; 0 published. Pragati is not complete.
 
 | | |
 |---|---|
-| Authoring records in the backlog | 478 |
-| Classes whose total is UNKNOWN | Class 9 |
-| Learn missing | 466 |
-| Practice missing | 466 |
-| Not yet reviewed | 478 |
+| Authoring records in the backlog | 499 |
+| Classes whose total is UNKNOWN | none |
+| Learn missing | 487 |
+| Practice missing | 487 |
+| Not yet reviewed | 499 |
 
 The backlog is generated from the master map. Every verified authoring
 record of every class is in it; none is dropped for being inconvenient.
@@ -33,7 +33,7 @@ wave's gate is met and its primary pages are read.
 | Class 6 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 12 | 53 | 12 | 53 | 12 | 12 | 0 | 0 | 0 |
 | Class 7 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
 | Class 8 | COMPLETE AT STRUCTURE LEVEL | section | 59 | 0 | 0 | 59 | 0 | 59 | 0 | 0 | 0 | 0 | 0 |
-| Class 9 | PARTIAL — see finding F1 | section | 53 | UNKNOWN | 0 | 53 | 0 | 53 | 0 | 0 | 0 | 0 | 0 |
+| Class 9 | COMPLETE AT STRUCTURE LEVEL | section | 74 | 0 | 0 | 74 | 0 | 74 | 0 | 0 | 0 | 0 | 0 |
 | Class 10 | COMPLETE AT STRUCTURE LEVEL | section | 41 | 0 | 0 | 41 | 0 | 41 | 0 | 0 | 0 | 0 | 0 |
 | Class 11 | COMPLETE AT STRUCTURE LEVEL | section | 63 | 0 | 0 | 63 | 0 | 63 | 0 | 0 | 0 | 0 | 0 |
 | Class 12 | COMPLETE AT STRUCTURE LEVEL | section | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
@@ -47,7 +47,7 @@ wave's gate is met and its primary pages are read.
 | 3 | Class 7, Class 8 | 124 | Continues the Ganita Prakash series directly from Class 6, so the Middle Stage standard and reviewer pool carry over. Two-part books: chapters are identified by part. | Wave 1 adjudicated; page-level intent inspected per section before authoring. |
 | 4 | Class 1, Class 2 | 24 | Foundational Stage content is play- and manipulative-based and read aloud; it needs its own design standard and an early-grades reviewer rather than a reuse of Middle Stage patterns. | A Foundational Stage standard and an early-grades reviewer. |
 | 5 | Class 10, Class 11, Class 12 | 169 | Stable rationalised textbooks with numbered sections and CBSE syllabi alignment. Large record counts and board-exam stakes; best authored after the standards from waves 1–3 are proven. | Secondary Stage standard; CBSE unit-to-chapter alignment decided by a curriculum specialist, not inferred. |
-| 6 | Class 9 | 53 | Only Ganita Manjari Part I is published, and the CBSE syllabus prescribes a book with 15 chapters. Part I sections are verified and listed, but the class cannot be planned to completion. | Part II published, or NCERT confirms Part I is the full Class 9 book (finding F1). |
+| 6 | Class 9 | 74 | Only Ganita Manjari Part I is published, and the CBSE syllabus prescribes a book with 15 chapters. Part I sections are verified and listed, but the class cannot be planned to completion. | Part II published, or NCERT confirms Part I is the full Class 9 book (finding F1). |
 
 ## The backlog, record by record
 
@@ -531,6 +531,27 @@ wave's gate is met and its primary pages are read.
 | 6 | Class 9 | Ganita Manjari (Part I) | 8.4 | Arithmetic Progressions | missing | missing | not_started |
 | 6 | Class 9 | Ganita Manjari (Part I) | 8.5 | Sum of the First n Natural Numbers | missing | missing | not_started |
 | 6 | Class 9 | Ganita Manjari (Part I) | 8.6 | Geometric Progressions | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 10.1 | Combining Things | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 10.2 | Visualising and Interpreting Data | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 11.1 | Adding Numbers | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 11.2 | Greatest Common Divisor | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 11.3 | Data Structures | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 12.1 | What Exactly is a Quadrilateral? | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 12.2 | Parallelograms | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 12.3 | Applications of Parallelograms | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 12.4 | Tiling the Plane Using Any 4-gon | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 13.1 | Linear Equations in Two Variables | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 13.2 | Solution of Linear Equation in Two Variables | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 13.3 | Slope-intercept form of a Linear Equation | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 13.4 | Pair of Linear Equations in Two Variables | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 13.5 | Finding Solutions to a Pair of Linear Equations | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 13.6 | Graphical Method for Solving A Pair of Linear | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 14.1 | Cuboids and Cubes | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 14.2 | Right Circular Cylinder | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 14.3 | Cones | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 14.4 | Pyramidal Shapes | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 14.5 | Spheres and Hemispheres | missing | missing | not_started |
+| 6 | Class 9 | Ganita Manjari (Part II) | 14.6 | Areas and Volumes Around Us | missing | missing | not_started |
 
 ## Review state — Class 6, Number Play
 
