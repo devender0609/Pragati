@@ -10,6 +10,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   CLASS_DECOMPOSITION_PROGRESS,
+  sourceInspectionFor,
   inspectedOfficialRecordIds,
   meetsEvidenceBar,
   derivedStatusFor,
@@ -49,6 +50,7 @@ import {
   textbookCounts,
   textbookDenominatorKnown,
   PRODUCTION_WAVES,
+  MASTER_SOURCES,
 } from '../curriculumMasterMap';
 
 const read = (f: string) => readFileSync(join(process.cwd(), f), 'utf8');
@@ -199,12 +201,37 @@ describe('§10/§22 uncertainty survives the blueprint', () => {
     for (const v of Object.values(textbookCounts(9))) expect(v).not.toBe('unknown');
   });
 
-  it('reports an unread class as NOT STARTED, never as zero units needed', () => {
+  it('separates an unread class from one that is read but not decomposed', () => {
+    // v0.84.0 checkpoint 29 — these were one state until Class 9 was read in
+    // full with zero units. An unread class must still say NOT STARTED; a
+    // read one must not, because saying so about 404 read pages is false.
     const md = read('INSTRUCTIONAL_MASTER_BLUEPRINT.md');
     for (const n of CLASS_NUMBERS.filter((x) => !STARTED.includes(x))) {
       const row = md.split('\n').find((l) => l.startsWith(`| Class ${n} |`))!;
-      expect(row, `class${n}`).toContain('NOT STARTED');
+      const si = sourceInspectionFor(n);
+      if (si?.fullyRead) {
+        expect(row, `class${n}`).toContain('source read');
+        expect(row, `class${n}`).toContain(`${si.pagesFullTextInspected} full text`);
+        expect(row, `class${n}`).not.toContain('| 0 |' + ' NOT STARTED');
+        // Reading does not invent units.
+        expect(unitsForClass(n).length, `class${n}`).toBe(0);
+      } else {
+        expect(row, `class${n}`).toContain('NOT STARTED');
+      }
     }
+  });
+
+  it('derives source reading independently of unit decomposition', () => {
+    // The permanent requirement: Classes 10-12 will hit this too.
+    const si = sourceInspectionFor(9)!;
+    expect(si.pagesAccounted).toBe(404);
+    expect(si.pagesFullTextInspected).toBe(404);
+    expect(si.visualPagesRequired).toBe(si.visualPagesInspected);
+    expect(si.fullyRead).toBe(true);
+    expect(CLASS_DECOMPOSITION_PROGRESS.find((p) => p.classNumber === 9)).toBeUndefined();
+    expect(unitsForClass(9).length).toBe(0);
+    // And a class with neither is still honestly unread.
+    expect(sourceInspectionFor(11)).toBeNull();
   });
 
   it('does not fabricate a prerequisite unit id', () => {
@@ -2599,6 +2626,230 @@ describe('Chapter 9 survives having no numbered sections', () => {
     for (const s of SOURCE_SEGMENTS) {
       expect(s.sourceSegmentId.startsWith('pragati_srcseg_'), s.sourceSegmentId).toBe(true);
       expect(s.sourceSegmentId.startsWith('ncert_')).toBe(false);
+    }
+  });
+
+  it('still has no Class 9 instructional units', () => {
+    expect(unitsForClass(9).length).toBe(0);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 29 — PART II IS ITS OWN BOOK.
+//
+// The Part II source record was created by copying Part I's and editing a few
+// fields, so it inherited Part I's printed subtitle, portal code, prelims URL,
+// prelims hash and archive hash. The archive URL and ISBN were right, which is
+// exactly why nothing noticed.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 Part II source identity', () => {
+  const src = (id: string) => MASTER_SOURCES.find((s) => s.sourceId === id)!;
+
+  it('prints its own part in its own subtitle', () => {
+    for (const s of MASTER_SOURCES.filter((x) => x.part)) {
+      const other = s.part === 'Part I' ? 'Part II' : 'Part I';
+      expect(s.printedSubtitle ?? '', s.sourceId).not.toContain(`(${other})`);
+    }
+    expect(src('ncert_iemh2').printedSubtitle).toContain('(Part II)');
+  });
+
+  it("never inherits the other part's source identity", () => {
+    const one = src('ncert_iemh1');
+    const two = src('ncert_iemh2');
+    for (const f of ['url', 'sha256', 'isbn', 'printedSubtitle'] as const) {
+      expect(two[f], f).toBeTruthy();
+      expect(two[f], f).not.toBe(one[f]);
+    }
+    // The raw evidence carries the portal and prelims identity too.
+    const ev = JSON.parse(read('src/curriculum/data/mathCurriculumMasterEvidence.json'));
+    const raw = (id: string) => ev.sources.find((x: any) => x.sourceId === id);
+    for (const f of ['portalCode', 'portalUrl', 'prelimsUrl', 'prelimsSha256', 'archiveSha256']) {
+      expect(raw('ncert_iemh2')[f], f).toBeTruthy();
+      expect(raw('ncert_iemh2')[f], f).not.toBe(raw('ncert_iemh1')[f]);
+    }
+  });
+
+  it('matches the durable manifest hash for each archive', () => {
+    const man = JSON.parse(read('CLASS_9_SOURCE_MANIFEST.json'));
+    const byPart = Object.fromEntries(man.archives.map((a: any) => [a.bookPart, a]));
+    expect(src('ncert_iemh1').sha256).toBe(byPart['Part I'].sha256);
+    expect(src('ncert_iemh2').sha256).toBe(byPart['Part II'].sha256);
+    expect(byPart['Part I'].sha256).not.toBe(byPart['Part II'].sha256);
+  });
+
+  it('renders both Class 9 rows with their own identity', () => {
+    const md = read('CURRENT_MATH_BOOKS_CLASSES_1_12.md');
+    const rows = md.split('\n').filter((l) => l.startsWith('| Class 9 | Ganita Manjari |'));
+    expect(rows.length).toBe(2);
+    const one = rows.find((r) => r.includes('| Part I |'))!;
+    const two = rows.find((r) => r.includes('| Part II |'))!;
+    expect(one).toContain('(Part I)');
+    expect(two).toContain('(Part II)');
+    expect(two).not.toContain('(Part I)');
+    expect(one).toContain(src('ncert_iemh1').sha256!.slice(0, 16));
+    expect(two).toContain(src('ncert_iemh2').sha256!.slice(0, 16));
+  });
+
+  it('no longer says Part II sections are uncounted', () => {
+    const ev = JSON.parse(read('src/curriculum/data/mathCurriculumMasterEvidence.json'));
+    const chapters = ev.records.filter(
+      (r: any) => r.grade === 9 && r.level === 'chapter' && r.recordId.startsWith('ncert_iemh2')
+    );
+    expect(chapters.length).toBe(6);
+    for (const c of chapters) {
+      expect(String(c.evidence), c.recordId).not.toMatch(/NOT yet counted/i);
+      // Chapter 9's zero stays a verified result, not a rewritten "found".
+      if (c.recordId === 'ncert_iemh2_ch09') expect(String(c.evidence)).toMatch(/NO numbered section/);
+      else expect(String(c.evidence)).toMatch(/numbered sections were located/);
+    }
+  });
+
+  it('states what each manifest version field means', () => {
+    const man = JSON.parse(read('CLASS_9_SOURCE_MANIFEST.json'));
+    expect(man.generatedBy).toBeUndefined();
+    expect(man.sourceSetCreatedAt).toBeTruthy();
+    expect(man.lastStructurallyVerifiedAt).toBeTruthy();
+    expect(man.lastRegeneratedAt).toBeTruthy();
+    expect(String(man.versionFieldSemantics)).toMatch(/creation stamp/);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 29 — PDF PAGE AND PRINTED FOLIO ARE NOT THE SAME NUMBER.
+//
+// Found while trying to resolve section bodies for the intent pass: Part I's
+// 53 section records store a PRINTED FOLIO in startPage, while Part II's 21
+// store a PDF page. Nothing caught it because each set is internally
+// consistent and the counts were never in doubt. Until it is repaired, no
+// Part I section may claim a resolved body extent.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 section page basis', () => {
+  const secs = () =>
+    JSON.parse(read('src/curriculum/data/mathCurriculumMasterEvidence.json')).records.filter(
+      (r: any) => r.grade === 9 && r.level === 'section'
+    );
+
+  // v0.84.0 checkpoint 30 — the flag is gone because the defect is repaired;
+  // the test now asserts the repair rather than the flag.
+  it('has no record left on an unresolved page basis', () => {
+    const one = secs().filter((r: any) => r.recordId.startsWith('ncert_iemh1'));
+    const two = secs().filter((r: any) => r.recordId.startsWith('ncert_iemh2'));
+    expect(one.length).toBe(53);
+    expect(two.length).toBe(21);
+    for (const r of [...one, ...two]) {
+      expect(r.startPageBasisWarning, r.recordId).toBeUndefined();
+      expect(r.pageCoordinateBasis, r.recordId).toBe('PDF_PAGE');
+    }
+  });
+
+  it('blocks any source-complete claim while the basis is unresolved', () => {
+    const unresolved = secs().filter((r: any) => r.startPageBasisWarning).length;
+    if (unresolved > 0) {
+      const report = read('V0.84.0_CHECKPOINT_REPORT.md');
+      expect(report).toContain('CLASS_9_DECOMPOSITION_INCOMPLETE');
+      expect(report).not.toContain('CLASS_9_DECOMPOSITION_SOURCE_COMPLETE`\n');
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 30 — ONE PAGE COORDINATE SYSTEM.
+//
+// Part I's section records held a PRINTED FOLIO in startPage while Part II's
+// held a PDF page. Both sets were internally consistent, so counts never
+// looked wrong. Every Class 9 record now carries pdfStartPage/pdfEndPage
+// (programmatic) and printedFolio* (what the book shows) as separate fields,
+// and every heading was re-located and checked on its rendered page.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 page coordinates', () => {
+  const EV = () => JSON.parse(read('src/curriculum/data/mathCurriculumMasterEvidence.json'));
+  const c9 = (level: string) =>
+    EV().records.filter((r: any) => r.grade === 9 && r.level === level && r.recordId.startsWith('ncert_'));
+  const PAGES: Record<string, number> = {
+    ncert_iemh1_ch01: 15, ncert_iemh1_ch02: 25, ncert_iemh1_ch03: 27, ncert_iemh1_ch04: 24,
+    ncert_iemh1_ch05: 26, ncert_iemh1_ch06: 37, ncert_iemh1_ch07: 19, ncert_iemh1_ch08: 27,
+    ncert_iemh2_ch09: 7, ncert_iemh2_ch10: 29, ncert_iemh2_ch11: 14, ncert_iemh2_ch12: 34,
+    ncert_iemh2_ch13: 38, ncert_iemh2_ch14: 42,
+  };
+
+  it('gives every section and subsection an explicit PDF basis', () => {
+    const all = [...c9('section'), ...c9('subsection')];
+    expect(all.length).toBe(74 + 51);
+    for (const r of all) {
+      expect(r.pageCoordinateBasis, r.recordId).toBe('PDF_PAGE');
+      expect(typeof r.pdfStartPage, r.recordId).toBe('number');
+      expect(typeof r.pdfEndPage, r.recordId).toBe('number');
+      expect(r.startPageBasisWarning, r.recordId).toBeUndefined();
+    }
+  });
+
+  it('keeps every PDF coordinate inside its own file', () => {
+    const parentChapter = (r: any) =>
+      r.level === 'section' ? r.parentId : EV().records.find((x: any) => x.recordId === r.parentId).parentId;
+    for (const r of [...c9('section'), ...c9('subsection')]) {
+      const n = PAGES[parentChapter(r)];
+      expect(n, r.recordId).toBeGreaterThan(0);
+      expect(r.pdfStartPage, r.recordId).toBeGreaterThanOrEqual(1);
+      expect(r.pdfEndPage, r.recordId).toBeLessThanOrEqual(n);
+      expect(r.pdfStartPage, r.recordId).toBeLessThanOrEqual(r.pdfEndPage);
+    }
+  });
+
+  it('stores printed folio separately and never as a coordinate', () => {
+    const secs = c9('section');
+    // Folio fields exist as their own keys and are allowed to be absent
+    // (many Class 9 pages carry no printed number at all) or to exceed the
+    // file's page count, because they are a different coordinate system.
+    for (const r of secs) {
+      expect('printedFolioStart' in r, r.recordId).toBe(true);
+      if (r.printedFolioStart !== null) expect(typeof r.printedFolioStart).toBe('number');
+    }
+    const withFolio = secs.filter((r: any) => typeof r.printedFolioStart === 'number');
+    expect(withFolio.some((r: any) => r.printedFolioStart !== r.pdfStartPage)).toBe(true);
+  });
+
+  it('contains every subsection inside its parent section', () => {
+    const byId = Object.fromEntries(EV().records.map((r: any) => [r.recordId, r]));
+    for (const s of c9('subsection')) {
+      const p = byId[s.parentId];
+      expect(p, s.recordId).toBeTruthy();
+      expect(s.pdfStartPage, s.recordId).toBeGreaterThanOrEqual(p.pdfStartPage);
+      expect(s.pdfEndPage, s.recordId).toBeLessThanOrEqual(p.pdfEndPage);
+    }
+  });
+});
+
+describe('Class 9 mathematical intent', () => {
+  const EV = () => JSON.parse(read('src/curriculum/data/mathCurriculumMasterEvidence.json'));
+  const lvl = (l: string) =>
+    EV().records.filter((r: any) => r.grade === 9 && r.level === l && r.recordId.startsWith('ncert_'));
+
+  it('records body-grounded intent for all 74 sections', () => {
+    const secs = lvl('section');
+    expect(secs.length).toBe(74);
+    for (const r of secs) {
+      expect(r.intentBasis, r.recordId).toBe('BODY_GROUNDED');
+      expect(String(r.mathematicalIntent), r.recordId).toMatch(/\[S\]/);
+      // Not a restated title: the intent must say more than the heading does.
+      expect(String(r.mathematicalIntent).length, r.recordId).toBeGreaterThan(90);
+      expect(String(r.mathematicalIntent).trim(), r.recordId).not.toBe(String(r.title).trim());
+    }
+  });
+
+  it('characterises all 51 subsections with a role and intent', () => {
+    const subs = lvl('subsection');
+    expect(subs.length).toBe(51);
+    const ROLES = new Set([
+      'DEFINITION', 'CONCEPTUAL_DEVELOPMENT', 'PROCEDURE', 'DERIVATION', 'PROOF',
+      'SPECIAL_CASE', 'APPLICATION', 'INVESTIGATION', 'EXAMPLE_SET', 'EXTENSION',
+    ]);
+    for (const r of subs) {
+      expect(ROLES.has(r.subsectionRole), `${r.recordId} ${r.subsectionRole}`).toBe(true);
+      expect(String(r.mathematicalIntent), r.recordId).toMatch(/\[S\]/);
+      expect(typeof r.materiallyChangesDemand, r.recordId).toBe('boolean');
     }
   });
 

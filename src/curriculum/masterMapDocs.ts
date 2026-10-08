@@ -364,7 +364,14 @@ function recordRow(r: MasterRecord): string[] {
     r.level,
     r.number ?? '—',
     r.title + (r.descriptor ? ` (${r.descriptor})` : ''),
-    r.startPage === null ? '—' : String(r.startPage) + (r.registryStartPage !== null ? ` (registry: ${r.registryStartPage})` : ''),
+    // v0.84.0 checkpoint 30 — a page number is meaningless without its basis.
+    // Class 9 records carry a PDF page and, separately, the folio printed in
+    // the book; never render one as if it were the other.
+    r.startPage === null
+      ? '—'
+      : (/PDF_PAGE|pdfStartPage/.test(r.pageBasis ?? '') ? `PDF p. ${r.startPage}` : String(r.startPage)) +
+        (r.printedFolioStart != null ? ` · printed p. ${r.printedFolioStart}` : '') +
+        (r.registryStartPage !== null ? ` (registry: ${r.registryStartPage})` : ''),
     r.intentStatus === 'page_level_inspected' ? 'inspected' : 'not inspected',
     s.learn,
     s.practice,

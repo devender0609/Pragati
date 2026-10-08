@@ -1,5 +1,7 @@
 # Class 9 — primary source manifest
 
+*Source set created at v0.84.0 checkpoint 25 · structure verified at checkpoint 26 · this file last regenerated at checkpoint 29.*
+
 **16 source PDFs, 404 PDF pages**, retrieved from `ncert.nic.in` on 2026-10-06 and verified
 from the files themselves. Identity, edition and ISBN are quoted only where printed in the source.
 

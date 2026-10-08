@@ -1,5 +1,8 @@
 {
- "generatedBy": "v0.84.0 checkpoint 25",
+ "sourceSetCreatedAt": "v0.84.0 checkpoint 25",
+ "lastStructurallyVerifiedAt": "v0.84.0 checkpoint 26",
+ "lastRegeneratedAt": "v0.84.0 checkpoint 29",
+ "versionFieldSemantics": "sourceSetCreatedAt is the checkpoint that first acquired and manifested this source set. lastStructurallyVerifiedAt is the checkpoint whose primary-source reading established the structural denominators below. lastRegeneratedAt is the checkpoint that last wrote this file. They are deliberately separate so a reviewer cannot mistake an old creation stamp for an un-updated manifest.",
  "classNumber": 9,
  "purpose": "Durable record of the Class 9 source set, retrieved from ncert.nic.in in this session and verified from the files themselves.",
  "bookTitle": "Ganita Manjari, Textbook of Mathematics for Grade 9",

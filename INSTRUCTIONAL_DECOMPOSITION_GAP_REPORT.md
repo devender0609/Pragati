@@ -18,10 +18,10 @@ does not make it so.
 | Class 6 | 10 | 65 | 392 indexed / 392 full text / 302 visual | 75 | 69 | 6 | 0 | 12 | 63 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 7 | 15 | 65 | 511 indexed / 511 full text / 236 visual | 64 | 63 | 1 | 0 | 0 | 64 | DECOMPOSITION_SOURCE_COMPLETE |
 | Class 8 | 14 | 59 | 423 indexed / 423 full text / 305 visual | 54 | 52 | 2 | 0 | 0 | 54 | DECOMPOSITION_SOURCE_COMPLETE |
-| Class 9 | 14 | 74 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
-| Class 10 | 14 | 55 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
-| Class 11 | 14 | 63 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
-| Class 12 | 13 | 65 | 0 | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
+| Class 9 | 14 | 74 | 404 indexed / 404 full text / 130 visual | 0 — source read, not yet decomposed | 0 | 0 | 0 | 0 | UNKNOWN | UNITS_NOT_STARTED (source read) |
+| Class 10 | 14 | 55 | not started | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
+| Class 11 | 14 | 63 | not started | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
+| Class 12 | 13 | 65 | not started | NOT STARTED | 0 | 0 | 0 | 0 | UNKNOWN | NOT_STARTED |
 
 ## Official records in a read class with no instructional disposition
 

@@ -60,6 +60,17 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-28 truth defects — repaired at checkpoint 29
+
+| Defect | Where | Resolution |
+|---|---|---|
+| **The Part II source record was built by copying Part I's.** It inherited Part I's printed subtitle ("…(Part I)"), portal code `iemh1`, portal URL, prelims URL, prelims SHA-256 **and archive SHA-256**. Only the archive URL and ISBN had been edited — which is exactly why nothing noticed | `ncert_iemh2` in `mathCurriculumMasterEvidence.json` | Every field re-read from the actual Part II prelims and archive in this session: subtitle "Textbook of Mathematics for Grade 9 (Part II)", portal code `iemh2`, prelims `iemh2ps.pdf` (sha `fe0eaaef…`, shipped inside the archive and also served standalone, byte-identical), archive sha `0535828d…`, **First Edition August 2026** (not April, which was Part I's). Tests now forbid either part from carrying the other's subtitle, hash, portal code or prelims identity |
+| The generated books report inherited all of it | `CURRENT_MATH_BOOKS_CLASSES_1_12.md` | Fixed at the canonical cause and regenerated; a test checks both Class 9 rows carry their own part, subtitle and hash prefix |
+| Chapters 9-14 evidence still read "Numbered sections inside this chapter are NOT yet counted" | the six Part II chapter records | Rewritten to the verified structure. **Chapter 9's zero is stated as a verified result**, not rewritten as sections found |
+| **Blueprint and gap report showed Class 9 as `Pages = 0`, `NOT STARTED`** although 404/404 pages were read | `instructionalBlueprintDocs.ts`, which took page counts from `CLASS_DECOMPOSITION_PROGRESS` | New `sourceInspectionFor()` derives reading from the page ledger alone, so source reading and unit decomposition are separate states. Class 9 now reads "404 indexed / 404 full text / 130 visual · 0 — source read, not yet decomposed". The prose no longer calls every unit-less class unread. A regression fixture pins this for Classes 10-12 |
+| `generatedBy: "v0.84.0 checkpoint 25"` was ambiguous | `CLASS_9_SOURCE_MANIFEST.json` | Replaced by three explicit fields — `sourceSetCreatedAt`, `lastStructurallyVerifiedAt`, `lastRegeneratedAt` — plus a stated meaning for each |
+| **Found at checkpoint 29, not in the brief: Part I's 53 section records store a PRINTED FOLIO in `startPage` while Part II's 21 store a PDF page.** 49 of 53 Part I headings are not on the PDF page their record names, and 45 point past the end of their file | Class 9 section records | Each Part I record now carries an explicit `startPageBasisWarning`. Section identity, the count of 53 and chapter membership are unaffected; **per-section body extents cannot be resolved until this is repaired**, which is what blocks the intent pass |
+
 ## Checkpoint-26 truth defects — all REPAIRED in checkpoint 27
 
 | Stale active claim | Where it lived | Resolution |

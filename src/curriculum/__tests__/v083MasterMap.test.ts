@@ -222,7 +222,11 @@ describe('source evidence is reproducible', () => {
       expect(b.sha256, b.sourceId).toMatch(/^[0-9a-f]{64}$/);
       expect(b.isbn, b.sourceId).toBeTruthy();
       expect(b.editionHistory.length, b.sourceId).toBeGreaterThan(0);
-      expect(b.inspectedOn).toBe('2026-09-22');
+      // Most books were re-read on 2026-09-22. Ganita Manjari Part II was
+      // retrieved later and its identity re-verified at checkpoint 29, so it
+      // carries its own date rather than inheriting Part I's.
+      expect(b.inspectedOn, b.sourceId).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      if (b.sourceId !== 'ncert_iemh2') expect(b.inspectedOn, b.sourceId).toBe('2026-09-22');
       expect(b.levelEvidence.length).toBeGreaterThan(40);
     }
   });

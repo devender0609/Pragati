@@ -137,6 +137,9 @@ export type MasterRecord = {
   descriptor: string | null;
   parentId: string | null;
   startPage: number | null;
+  /** The number printed in the book, when the page carries one. A different
+   *  coordinate system from startPage; never substitute one for the other. */
+  printedFolioStart?: number | null;
   pageBasis: string;
   /**
    * Class 6 only: the start page held by the accepted registry, where it
@@ -425,6 +428,7 @@ function textbookRecords(): MasterRecord[] {
       descriptor: r.descriptor ?? null,
       parentId: r.parentId,
       startPage: r.startPage,
+      printedFolioStart: (r as { printedFolioStart?: number | null }).printedFolioStart ?? null,
       pageBasis: r.pageBasis,
       registryStartPage: null,
       structureStatus: 'primary_source_verified' as const,

@@ -535,6 +535,68 @@ const DATA = decompositionJson as unknown as DecompositionFile;
 export const PRAGATI_INSTRUCTIONAL_UNITS: PragatiInstructionalUnit[] = DATA.units;
 export const NON_INSTRUCTIONAL_RECORDS: NonInstructionalRecord[] = DATA.nonInstructional;
 export const CLASS_DECOMPOSITION_PROGRESS = DATA.classProgress;
+
+/**
+ * v0.84.0 checkpoint 29 — SOURCE READING IS NOT LESSON DECOMPOSITION.
+ *
+ * These were one state for Classes 1-8 because every class we had read was
+ * also decomposed into units. Class 9 broke that: its 404 pages are read in
+ * full and its 130 picture-carried pages inspected, while its Pragati unit
+ * count is deliberately zero. Reporting that drew page counts from
+ * CLASS_DECOMPOSITION_PROGRESS therefore showed Class 9 as 0 pages and
+ * NOT STARTED, which is false about the source and true only about the units.
+ *
+ * sourceInspectionFor() derives reading progress from the page ledger alone,
+ * so a class can be fully read with no units at all. Classes 10-12 will need
+ * the same separation.
+ */
+export type SourceInspectionProgress = {
+  classNumber: number;
+  pagesAccounted: number;
+  pagesFullTextInspected: number;
+  visualPagesRequired: number;
+  visualPagesInspected: number;
+  /** True once every accounted page has been read in full. */
+  fullyRead: boolean;
+};
+
+const PAGE_LEDGERS: Record<number, { pages: Array<Record<string, unknown>> }> = (() => {
+  const out: Record<number, { pages: Array<Record<string, unknown>> }> = {};
+  const d = DATA as unknown as Record<string, { totalPdfPages?: number; pages?: Array<Record<string, unknown>> }>;
+  for (const [key, value] of Object.entries(d)) {
+    const m = /^class(\d+)PageAccounting$/.exec(key);
+    if (m && value && Array.isArray(value.pages)) out[Number(m[1])] = { pages: value.pages };
+  }
+  return out;
+})();
+
+export function sourceInspectionFor(n: number): SourceInspectionProgress | null {
+  const ledger = PAGE_LEDGERS[n];
+  if (ledger) {
+    const pages = ledger.pages;
+    const req = pages.filter((p) => p.visualInspectionRequired === true);
+    return {
+      classNumber: n,
+      pagesAccounted: pages.length,
+      pagesFullTextInspected: pages.filter((p) => p.fullTextInspected === true).length,
+      visualPagesRequired: req.length,
+      visualPagesInspected: req.filter((p) => p.visualInspected === true).length,
+      fullyRead: pages.length > 0 && pages.every((p) => p.fullTextInspected === true),
+    };
+  }
+  // Classes decomposed into units carry their reading counts on the
+  // decomposition progress record.
+  const p = CLASS_DECOMPOSITION_PROGRESS.find((x) => x.classNumber === n);
+  if (!p) return null;
+  return {
+    classNumber: n,
+    pagesAccounted: p.pagesIndexed ?? p.pagesInScope ?? 0,
+    pagesFullTextInspected: p.pagesFullyInspected ?? 0,
+    visualPagesRequired: p.visualPagesRequired ?? 0,
+    visualPagesInspected: p.visualPagesInspected ?? 0,
+    fullyRead: (p.pagesFullyInspected ?? 0) > 0 && p.pagesFullyInspected === (p.pagesInScope ?? -1),
+  };
+}
 export const RECORD_EXTENTS: RecordExtent[] = DATA.recordExtents ?? [];
 export const SOURCE_SEGMENTS: SourceSegment[] = DATA.sourceSegments ?? [];
 export const OFFICIAL_SECTION_DISPOSITIONS: OfficialSectionDisposition[] =

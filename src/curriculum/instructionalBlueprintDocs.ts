@@ -6,6 +6,7 @@
 
 import {
   CLASS_DECOMPOSITION_PROGRESS,
+  sourceInspectionFor,
   NON_INSTRUCTIONAL_RECORDS,
   PRAGATI_INSTRUCTIONAL_UNITS,
   recordHasInstructionalDisposition,
@@ -28,6 +29,7 @@ const progressFor = (n: number) =>
 export function blueprintClassRows(): string[][] {
   return CLASS_NUMBERS.map((n) => {
     const p = progressFor(n);
+    const si = sourceInspectionFor(n);
     const units = unitsForClass(n);
     const records = authoringUnits(n);
     const learn = records.filter((r) => productStatus(r).learn === 'authored').length;
@@ -36,14 +38,18 @@ export function blueprintClassRows(): string[][] {
       `Class ${n}`,
       cell(c.chapter) + (textbookDenominatorKnown(n) ? '' : ' (Part I only; total UNKNOWN)'),
       cell(c.section),
-      p ? `${p.pagesIndexed ?? p.pagesInspected} indexed / ${p.pagesFullyInspected} full text / ${p.visualPagesInspected ?? 0} visual` : '0',
-      p ? String(units.length) : 'NOT STARTED',
+      // Reading comes from the source ledger, never from unit progress: a
+      // class can be fully read and have no units at all.
+      si
+        ? `${si.pagesAccounted} indexed / ${si.pagesFullTextInspected} full text / ${si.visualPagesInspected} visual`
+        : 'not started',
+      p ? String(units.length) : si?.fullyRead ? '0 — source read, not yet decomposed' : 'NOT STARTED',
       String(units.filter((u) => u.decompositionStatus === 'READY_FOR_AUTHORING').length),
       String(units.filter((u) => u.humanReviewStatus === 'flagged_for_review').length),
       String(units.filter((u) => u.intentInspectionStatus === 'BLOCKED_SOURCE').length),
       String(learn),
       p ? String(units.length - learn) : 'UNKNOWN',
-      p ? p.status : 'NOT_STARTED',
+      p ? p.status : si?.fullyRead ? 'UNITS_NOT_STARTED (source read)' : 'NOT_STARTED',
     ];
   });
 }
@@ -75,6 +81,11 @@ function unitBlock(u: PragatiInstructionalUnit): string {
 
 export function renderBlueprintMarkdown(version: string): string {
   const done = CLASS_DECOMPOSITION_PROGRESS.filter((p) => p.status !== 'NOT_STARTED');
+  // A class whose source is fully read but which has no units yet is read,
+  // not unread — Class 9 is the first.
+  const readNotDecomposed = CLASS_NUMBERS.filter(
+    (n) => !progressFor(n) && sourceInspectionFor(n)?.fullyRead
+  );
   return `# Instructional master blueprint — Classes 1–12
 
 **Generated** from \`src/curriculum/instructionalUnits.ts\` at ${version}. Do not
@@ -92,8 +103,15 @@ early-primary mathematics usually needs. A unit is authoring-ready only
 when its whole range is full text and, where the mathematics lives in the
 visuals, those pages were seen.
 
-**Read so far:** ${done.map((p) => `Class ${p.classNumber}`).join(', ') || 'none'}. Every other class is
-NOT STARTED — its unit count is unknown, not zero.
+**Read and decomposed:** ${done.map((p) => `Class ${p.classNumber}`).join(', ') || 'none'}.${
+    readNotDecomposed.length
+      ? `\n\n**Source read, no units yet:** ${readNotDecomposed.map((n) => `Class ${n}`).join(', ')} — every page read
+and every required visual inspected, but lesson-sized decomposition has not
+started, so the unit count is zero by intent rather than unknown.`
+      : ''
+  }
+
+Every remaining class is NOT STARTED — its unit count is unknown, not zero.
 
 ${blueprintTable()}
 
