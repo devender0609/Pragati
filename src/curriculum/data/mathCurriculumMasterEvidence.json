@@ -513,9 +513,9 @@
     "subsection": "primary_source_verified",
     "topic": "not_defined_by_source"
    },
-   "levelEvidence": "The contents page lists chapters only. Sections were read from the numbered headings (N.M) inside every chapter PDF of the full-book archive, using heading typography, with gaps re-checked in the page text. Unnumbered sub-headings are not counted as sections. This book also prints numbered sub-sections (N.M.K) in Chapters 3, 6, 7 and 8. They were detected but not fully enumerated (some numbers, e.g. 3.2.1, 3.4.1, 7.2.1, were not found by text extraction), so the sub-section count is UNKNOWN.",
+   "levelEvidence": "The contents page lists chapters only. Sections were read from the numbered headings (N.M) inside every chapter PDF and verified against the rendered pages at v0.84.0 checkpoint 26: the book prints some headings in small caps and some with a trailing full stop (\"4.4. More Identities\"), which a whitespace-only pattern drops. Numbered sub-sections (N.M.K) are printed in the body and are now fully enumerated.",
    "volumeCompleteness": "complete_series_published",
-   "volumeCompletenessNote": "Published as \"Part I\". No Part II is listed on the NCERT portal as of 2026-09-22, and the CBSE Class IX syllabus prescribes a book with 15 chapters. Part I's own chapters and sections are fully read; the CLASS denominator is not established."
+   "volumeCompletenessNote": "Published as \"Part I\" and carries that label on its own prelims. Part II (Chapters 9-14, ISBN 978-93-5729-236-8) was retrieved from https://ncert.nic.in/textbook/pdf/iemh2dd.zip on 2026-10-06, so the two-part series is complete and the class chapter denominator is 14. The CBSE Class IX syllabus names 15 chapters and remains a separate hierarchy; no correspondence is asserted."
   },
   {
    "sourceId": "ncert_iemh2",
@@ -551,9 +551,9 @@
     "subsection": "primary_source_verified",
     "topic": "not_defined_by_source"
    },
-   "levelEvidence": "The contents page lists chapters only. Sections were read from the numbered headings (N.M) inside every chapter PDF of the full-book archive, using heading typography, with gaps re-checked in the page text. Unnumbered sub-headings are not counted as sections. This book also prints numbered sub-sections (N.M.K) in Chapters 3, 6, 7 and 8. They were detected but not fully enumerated (some numbers, e.g. 3.2.1, 3.4.1, 7.2.1, were not found by text extraction), so the sub-section count is UNKNOWN.",
+   "levelEvidence": "The contents page lists chapters only. Sections were read from the numbered headings (N.M) inside every chapter PDF and verified against the rendered pages at v0.84.0 checkpoint 26: the book prints some headings in small caps and some with a trailing full stop (\"4.4. More Identities\"), which a whitespace-only pattern drops. Numbered sub-sections (N.M.K) are printed in the body and are now fully enumerated.",
    "volumeCompleteness": "complete_series_published",
-   "volumeCompletenessNote": "Published as \"Part I\". No Part II is listed on the NCERT portal as of 2026-09-22, and the CBSE Class IX syllabus prescribes a book with 15 chapters. Part I's own chapters and sections are fully read; the CLASS denominator is not established."
+   "volumeCompletenessNote": "Published as \"Part II\", Chapters 9-14, ISBN 978-93-5729-236-8, retrieved from the official NCERT archive on 2026-10-06. Together with Part I the series is complete at 14 chapters. Chapter 9 prints no numbered sections at all; that is a property of the book, verified from all seven of its pages."
   },
   {
    "sourceId": "ncert_jemh1",
@@ -9463,7 +9463,11 @@
    "id": "F1_class9_book_vs_syllabus",
    "grade": 9,
    "severity": "unresolved",
-   "text": "The CBSE Class IX syllabus 2026-27 prescribes \"Mathematics - Textbook for class IX - NCERT Publication\" and names 15 chapters. The NCERT portal currently lists only \"Ganita Manjari\" (Textbook of Mathematics for Grade 9, Part I; First Edition April 2026) with 8 chapters. No Part II is listed. The syllabus chapter names are NOT asserted to correspond to Ganita Manjari chapters, and the textbook denominator for Class 9 remains UNKNOWN until Part II is published or NCERT states Part I is complete."
+   "status": "RESOLVED_SUPERSEDED",
+   "resolvedAt": "v0.84.0 checkpoint 25",
+   "resolution": "Superseded by primary source. Ganita Manjari Part II (Chapters 9-14, First Edition, ISBN 978-93-5729-236-8) was retrieved from https://ncert.nic.in/textbook/pdf/iemh2dd.zip on 2026-10-06 and verified from its own prelims and chapter bodies. The Class 9 textbook chapter denominator is 14. The CBSE syllabus's 15 named chapters remain a separate official hierarchy and no one-to-one correspondence is inferred. The original text below records what the portal showed on 2026-09-22 and is kept as history, not as current state.",
+   "historicalText": "The CBSE Class IX syllabus 2026-27 prescribes \"Mathematics - Textbook for class IX - NCERT Publication\" and names 15 chapters. The NCERT portal currently lists only \"Ganita Manjari\" (Textbook of Mathematics for Grade 9, Part I; First Edition April 2026) with 8 chapters. No Part II is listed. The syllabus chapter names are NOT asserted to correspond to Ganita Manjari chapters, and the textbook denominator for Class 9 remains UNKNOWN until Part II is published or NCERT states Part I is complete.",
+   "text": "HISTORICAL (resolved). On 2026-09-22 the NCERT portal listed only Ganita Manjari Part I and the Class 9 textbook denominator was UNKNOWN. Part II was published and retrieved on 2026-10-06; the denominator is now 14."
   },
   {
    "id": "F2_class6_registry_pages",
@@ -9493,7 +9497,11 @@
    "id": "F6_class9_subsections",
    "grade": 9,
    "severity": "unknown",
-   "text": "Ganita Manjari prints numbered sub-sections (N.M.K) in Chapters 3, 6, 7 and 8. Text extraction found 22 of them with visible gaps in numbering, so the sub-section count is UNKNOWN rather than 22."
+   "status": "RESOLVED_SUPERSEDED",
+   "resolvedAt": "v0.84.0 checkpoint 26",
+   "resolution": "Superseded. The numbered sub-sections were enumerated from the chapter bodies at checkpoint 26 and recorded as canonical subsection records. The original extraction missed headings whose number is followed by a full stop and those set in small caps — the same defect class that dropped sections 2.4, 3.1, 4.4 and 13.4 — which is why the earlier count was reported as UNKNOWN rather than as the 22 extraction found.",
+   "historicalText": "Ganita Manjari prints numbered sub-sections (N.M.K) in Chapters 3, 6, 7 and 8. Text extraction found 22 of them with visible gaps in numbering, so the sub-section count is UNKNOWN rather than 22.",
+   "text": "HISTORICAL (resolved). Text extraction originally found 22 numbered sub-sections with visible gaps, so the count was recorded as UNKNOWN. They are now fully enumerated from the bodies."
   },
   {
    "id": "F7_summary_sections",

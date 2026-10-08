@@ -47,7 +47,7 @@ wave's gate is met and its primary pages are read.
 | 3 | Class 7, Class 8 | 124 | Continues the Ganita Prakash series directly from Class 6, so the Middle Stage standard and reviewer pool carry over. Two-part books: chapters are identified by part. | Wave 1 adjudicated; page-level intent inspected per section before authoring. |
 | 4 | Class 1, Class 2 | 24 | Foundational Stage content is play- and manipulative-based and read aloud; it needs its own design standard and an early-grades reviewer rather than a reuse of Middle Stage patterns. | A Foundational Stage standard and an early-grades reviewer. |
 | 5 | Class 10, Class 11, Class 12 | 169 | Stable rationalised textbooks with numbered sections and CBSE syllabi alignment. Large record counts and board-exam stakes; best authored after the standards from waves 1–3 are proven. | Secondary Stage standard; CBSE unit-to-chapter alignment decided by a curriculum specialist, not inferred. |
-| 6 | Class 9 | 74 | Only Ganita Manjari Part I is published, and the CBSE syllabus prescribes a book with 15 chapters. Part I sections are verified and listed, but the class cannot be planned to completion. | Part II published, or NCERT confirms Part I is the full Class 9 book (finding F1). |
+| 6 | Class 9 | 74 | Both parts of Ganita Manjari are published and verified: 14 chapters, 74 numbered sections, 51 numbered subsections. What is not yet done is the page-level pass — page accounting, visual inspection and per-section mathematical intent — so lesson-sized decomposition cannot begin. | Class 9 source decomposition complete (page accounting, visual inspection, per-section intent), and the Secondary Stage authoring standard agreed. |
 
 ## The backlog, record by record
 

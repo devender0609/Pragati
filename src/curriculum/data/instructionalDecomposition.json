@@ -57078,6 +57078,152 @@
     "firstInspectedOn": "2026-10-06",
     "lastEvidenceUpdatedOn": "2026-10-06"
    }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g09_ch09_seg1",
+   "officialRecordId": "ncert_iemh2_ch09",
+   "sourceLabel": "pages 1–2 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "CORE_MATHEMATICS",
+   "printedHeading": "Statement 1 / Statement 2 / counterexample discussion",
+   "printedHeadingIsBookAuthentic": true,
+   "justification": "Chapter 9 prints no numbered section headings at all, so its mathematics would disappear entirely from section-level accounting. This segment carries the chapter’s opening move: a statement about isosceles triangles, its converse, and the role of a counterexample in deciding whether a converse holds.",
+   "mathematicalIntent": "[S] A proposition and its converse are distinguished as separate claims, each needing its own justification. [S] A single counterexample is enough to refute a universal claim. [P] This is the chapter’s foundational objective and the one every later example rests on.",
+   "sourceEvidence": {
+    "bookId": "iemh2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_iemh2_ch09",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 1,
+    "pdfPageEnd": 2,
+    "inspectedOn": "2026-10-07",
+    "establishes": "Statement 1 and its converse; why a counterexample settles a universal claim.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 1,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "read in full text at checkpoint 28; no visual check required"
+     },
+     {
+      "pdfPage": 2,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "read in full text at checkpoint 28; no visual check required"
+     }
+    ],
+    "firstInspectedOn": "2026-10-07",
+    "lastEvidenceUpdatedOn": "2026-10-07"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g09_ch09_seg2",
+   "officialRecordId": "ncert_iemh2_ch09",
+   "sourceLabel": "pages 3–5 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "CORE_MATHEMATICS",
+   "printedHeading": "Examples 1-5, including the Baudhayana-Pythagoras statement, and \"A Note\"",
+   "printedHeadingIsBookAuthentic": true,
+   "justification": "The worked propositions where the converse idea is applied to real theorems, including the Baudhayana-Pythagoras theorem and its converse, plus the \"A Note\" passage introducing implication notation.",
+   "mathematicalIntent": "[S] \"If X then Y\" is rewritten as \"X implies Y\"; the converse swaps hypothesis and conclusion. [S] The Baudhayana-Pythagoras theorem and its converse are shown to be different statements, both true. [S] Odd/even divisibility arguments are used as further examples. [P] This is where converse reasoning becomes a tool rather than a definition.",
+   "sourceEvidence": {
+    "bookId": "iemh2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_iemh2_ch09",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 3,
+    "pdfPageEnd": 5,
+    "inspectedOn": "2026-10-07",
+    "establishes": "Worked propositions and converses, implication notation, the Pythagoras converse.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 3,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "read in full text at checkpoint 28; no visual check required"
+     },
+     {
+      "pdfPage": 4,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "read in full text at checkpoint 28; no visual check required"
+     },
+     {
+      "pdfPage": 5,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "read in full text at checkpoint 28; no visual check required"
+     }
+    ],
+    "firstInspectedOn": "2026-10-07",
+    "lastEvidenceUpdatedOn": "2026-10-07"
+   }
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_g09_ch09_seg3",
+   "officialRecordId": "ncert_iemh2_ch09",
+   "sourceLabel": "pages 6–7 of the chapter",
+   "sourceLabelIsFromBook": false,
+   "role": "PRACTICE",
+   "printedHeading": "Exercise Set 9.1 and Chapter Summary",
+   "printedHeadingIsBookAuthentic": true,
+   "justification": "The chapter’s exercises and summary. Exercise items extend converse reasoning to quadrilateral classification, which connects this chapter to Chapter 12.",
+   "mathematicalIntent": "[S] Exercises ask the student to state converses and decide their truth, including for quadrilateral properties. [S] The summary names proposition, converse and counterexample as the chapter’s objects.",
+   "sourceEvidence": {
+    "bookId": "iemh2",
+    "bookPart": "Part II",
+    "officialChapterId": "ncert_iemh2_ch09",
+    "officialSectionId": null,
+    "printedPageStart": null,
+    "printedPageEnd": null,
+    "pdfPageStart": 6,
+    "pdfPageEnd": 7,
+    "inspectedOn": "2026-10-07",
+    "establishes": "Exercise Set 9.1 and the chapter summary.",
+    "evidenceDepth": "FULL_PAGE_INSPECTED",
+    "visuallyDependent": false,
+    "visualPagesInspected": [],
+    "pageEvidence": [
+     {
+      "pdfPage": 6,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "read in full text at checkpoint 28; no visual check required"
+     },
+     {
+      "pdfPage": 7,
+      "printedPage": null,
+      "fullTextInspected": true,
+      "visualInspectionRequired": false,
+      "visualInspected": false,
+      "note": "read in full text at checkpoint 28; no visual check required"
+     }
+    ],
+    "firstInspectedOn": "2026-10-07",
+    "lastEvidenceUpdatedOn": "2026-10-07"
+   }
   }
  ],
  "overlapJustifications": [
@@ -59785,5 +59931,4052 @@
    "boundaryEvidence": "Heading \"2.5 A Pinch of History\" located on PDF page 24 of ncert_hegp1_ch02 in the chapter heading face — the book numbers it 2.5, the same number it gave the preceding section. Recorded as a distinct official record under the suffixed id s2_5b so no number the book does not print is invented. The body runs to the end of the chapter body."
   }
  ],
- "officialSectionDispositions": []
+ "officialSectionDispositions": [],
+ "class9PageAccounting": {
+  "generatedBy": "v0.84.0 checkpoint 28",
+  "totalPdfPages": 404,
+  "note": "Every Class 9 source page read in full text and categorised by its actual role; picture-carried pages rendered and looked at.",
+  "pages": [
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch01",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch02",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch03",
+    "pdfPage": 27,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch04",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch05",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 27,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 28,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 29,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 30,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 31,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 32,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 33,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 34,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 35,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 36,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch06",
+    "pdfPage": 37,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch07",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_ch08",
+    "pdfPage": 27,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch09",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch09",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch09",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch09",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch09",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch09",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "CHAPTER_OPENING",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch09",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 16,
+    "printedPage": 0,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 18,
+    "printedPage": 240,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 27,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 28,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch10",
+    "pdfPage": 29,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch11",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 27,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 28,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 29,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 30,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 31,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 32,
+    "printedPage": null,
+    "category": "PROOF_OR_THEOREM",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 33,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch12",
+    "pdfPage": 34,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 27,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 28,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 29,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 30,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 31,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 32,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 33,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 34,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 35,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 36,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 37,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch13",
+    "pdfPage": 38,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "THINK_AND_REFLECT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "HISTORICAL_CONTEXT",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "WORKED_EXAMPLE",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 21,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 22,
+    "printedPage": null,
+    "category": "EXERCISE_SET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 23,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 24,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 25,
+    "printedPage": null,
+    "category": "CHAPTER_SUMMARY",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 26,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 27,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 28,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 29,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 30,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 31,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 32,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 33,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 34,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 35,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 36,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 37,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 38,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 39,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 40,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 41,
+    "printedPage": null,
+    "category": "LEARNING_MATERIAL_SHEET",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_ch14",
+    "pdfPage": 42,
+    "printedPage": null,
+    "category": "NUMBERED_SECTION_BODY",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh1_prelims",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 1,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 2,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 3,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 4,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 5,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 6,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 7,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 8,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 9,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 10,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 11,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 12,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 13,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 14,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 15,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 16,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 17,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 18,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 19,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": false,
+    "visualInspected": false,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; no visual check required"
+   },
+   {
+    "officialRecordId": "ncert_iemh2_prelims",
+    "pdfPage": 20,
+    "printedPage": null,
+    "category": "PRELIMS",
+    "visualInspectionRequired": true,
+    "visualInspected": true,
+    "fullTextInspected": true,
+    "note": "read in full text at checkpoint 28; picture-carried, rendered and looked at"
+   }
+  ]
+ }
 }

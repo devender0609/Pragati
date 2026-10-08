@@ -9,7 +9,7 @@
  ],
  "chapterDenominator": 14,
  "chapterDenominatorStatus": "VERIFIED_FROM_SOURCE",
- "sectionDenominatorStatus": "UNKNOWN — numbered-heading detection does not yet agree with itself across thresholds; a per-chapter heading verification pass is required, as was done for Classes 6-8",
+ "sectionDenominatorStatus": "VERIFIED_FROM_SOURCE at v0.84.0 checkpoint 26 — Part I 53, Part II 21, each heading located in the body and checked against the rendered page",
  "archives": [
   {
    "archive": "iemh1dd.zip",
@@ -289,5 +289,9 @@
    "acquiredOn": "2026-10-06",
    "verifiedAtCheckpoint": "v0.84.0 checkpoint 25"
   }
- ]
+ ],
+ "sectionDenominator": 74,
+ "subsectionDenominator": 51,
+ "subsectionDenominatorStatus": "VERIFIED_FROM_SOURCE at v0.84.0 checkpoint 26",
+ "packagingNote": "The NCERT PDFs are not redistributed in the checkpoint package. A reviewer can verify filenames, retrieval URLs, byte counts, PDF page counts, SHA-256 values and the whole canonical decomposition from this manifest, but cannot re-hash the sources from the package alone — the files must be re-downloaded from ncert.nic.in."
 }

@@ -48,6 +48,7 @@ import {
   authoringUnits,
   textbookCounts,
   textbookDenominatorKnown,
+  PRODUCTION_WAVES,
 } from '../curriculumMasterMap';
 
 const read = (f: string) => readFileSync(join(process.cwd(), f), 'utf8');
@@ -2309,8 +2310,14 @@ describe('Class 9 source resolution', () => {
     expect(man.classNumber).toBe(9);
     expect(man.chapterDenominator).toBe(14);
     expect(man.chapterDenominatorStatus).toBe('VERIFIED_FROM_SOURCE');
-    // The section denominator must stay unknown until headings are verified.
-    expect(String(man.sectionDenominatorStatus)).toMatch(/^UNKNOWN/);
+    // v0.84.0 checkpoint 27 — the manifest must agree with canonical data,
+    // never contradict it. Both denominators are verified now.
+    expect(man.sectionDenominator).toBe(74);
+    expect(man.subsectionDenominator).toBe(51);
+    expect(String(man.sectionDenominatorStatus)).toMatch(/^VERIFIED_FROM_SOURCE/);
+    expect(String(man.subsectionDenominatorStatus)).toMatch(/^VERIFIED_FROM_SOURCE/);
+    // And it must not overstate what the package itself allows.
+    expect(String(man.packagingNote)).toMatch(/cannot re-hash/);
     expect(man.sources.length).toBe(man.sourceCount);
     expect(man.sources.reduce((n: number, s: any) => n + s.pdfPageCount, 0)).toBe(man.totalPdfPages);
     // One file per chapter, plus one prelims file per part.
@@ -2396,5 +2403,206 @@ describe('Class 9 official structure', () => {
   it('still has no Class 9 instructional units', () => {
     expect(unitsForClass(9).length).toBe(0);
     for (const r of c9()) expect(r.intentStatus, r.recordId).not.toBe('page_level_inspected');
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 27 — ONE CURRENT CLASS 9 STORY.
+//
+// Checkpoint 26 left current canonical surfaces still saying Part II did not
+// exist and both denominators were unknown, while the records next to them
+// held 14 chapters, 74 sections and 51 subsections. A grep for two exact
+// phrases found nothing because the stale claims were worded differently.
+// This checks meaning, and it distinguishes current state from history.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 current-state claims agree with the records', () => {
+  const STALE = [
+    /only ganita manjari part i is published/i,
+    /no part ii is listed/i,
+    /part ii published, or ncert confirms/i,
+    /denominator for class 9 remains unknown/i,
+    /sub-?section count is unknown/i,
+    /rest of the\s+class 9 textbook does not exist/i,
+    /class total unknown/i,
+  ];
+
+  it('leaves no stale claim in active canonical data or code', () => {
+    // Historical findings may keep their original wording, but only behind
+    // an explicit resolved status and a historicalText field.
+    const ev = JSON.parse(read('src/curriculum/data/mathCurriculumMasterEvidence.json'));
+    for (const s of ev.sources.filter((x: any) => x.grade === 9)) {
+      const text = `${s.levelEvidence ?? ''} ${s.volumeCompletenessNote ?? ''}`;
+      for (const re of STALE) expect(text, `${s.sourceId} :: ${re}`).not.toMatch(re);
+    }
+    for (const f of ev.findings ?? []) {
+      if (!String(f.id ?? '').includes('class9')) continue;
+      if (STALE.some((re) => re.test(String(f.text ?? '')))) {
+        // Allowed only when plainly marked as history.
+        expect(String(f.status), f.id).toMatch(/RESOLVED|SUPERSEDED/);
+        expect(String(f.text), f.id).toMatch(/^HISTORICAL/);
+        expect(f.resolution, f.id).toBeTruthy();
+      }
+    }
+  });
+
+  it('no longer gates Class 9 planning on Part II being published', () => {
+    const wave = PRODUCTION_WAVES.find((w) => w.classes.includes(9))!;
+    for (const re of STALE) {
+      expect(wave.reason, `reason :: ${re}`).not.toMatch(re);
+      expect(wave.gate, `gate :: ${re}`).not.toMatch(re);
+    }
+    // The gate must name the work that actually remains.
+    expect(wave.gate).toMatch(/source decomposition|intent|visual/i);
+  });
+
+  it('reports one consistent set of Class 9 numbers everywhere', () => {
+    const sections = MASTER_RECORDS.filter(
+      (r) => r.classNumber === 9 && r.level === 'section' && r.recordId.startsWith('ncert_')
+    ).length;
+    const subs = MASTER_RECORDS.filter(
+      (r) => r.classNumber === 9 && r.level === 'subsection' && r.recordId.startsWith('ncert_')
+    ).length;
+    const man = JSON.parse(read('CLASS_9_SOURCE_MANIFEST.json'));
+    expect(man.sectionDenominator).toBe(sections);
+    expect(man.subsectionDenominator).toBe(subs);
+    expect(man.chapterDenominator).toBe(14);
+    expect(textbookCounts(9).section).toBe(sections);
+    expect(textbookCounts(9).subsection).toBe(subs);
+    // Both Class 9 findings are resolved, so no current surface may claim
+    // either denominator is open.
+    const ev = JSON.parse(read('src/curriculum/data/mathCurriculumMasterEvidence.json'));
+    for (const id of ['F1_class9_book_vs_syllabus', 'F6_class9_subsections']) {
+      const f = (ev.findings ?? []).find((x: any) => x.id === id);
+      expect(f, id).toBeTruthy();
+      expect(String(f.status), id).toMatch(/RESOLVED|SUPERSEDED/);
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 27 — CLASS 9 PAGE AND VISUAL ACCOUNTING.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 page accounting', () => {
+  const acc = () => JSON.parse(read('src/curriculum/data/instructionalDecomposition.json')).class9PageAccounting;
+
+  it('covers every source page exactly once, with no orphans', () => {
+    const a = acc();
+    expect(a).toBeDefined();
+    const man = JSON.parse(read('CLASS_9_SOURCE_MANIFEST.json'));
+    expect(a.totalPdfPages).toBe(man.totalPdfPages);
+    expect(a.pages.length).toBe(a.totalPdfPages);
+    const seen = new Set(a.pages.map((p: any) => `${p.officialRecordId}#${p.pdfPage}`));
+    expect(seen.size).toBe(a.pages.length);
+    for (const p of a.pages) {
+      expect(p.category, `${p.officialRecordId} p${p.pdfPage}`).toBeTruthy();
+      expect(typeof p.visualInspectionRequired).toBe('boolean');
+    }
+  });
+
+  it('inspected every page it marked visual-required', () => {
+    const req = acc().pages.filter((p: any) => p.visualInspectionRequired);
+    expect(req.length).toBeGreaterThan(0);
+    expect(req.every((p: any) => p.visualInspected)).toBe(true);
+    // And nothing claims inspection it did not do.
+    for (const p of acc().pages) {
+      if (!p.visualInspectionRequired) expect(p.visualInspected).toBe(false);
+    }
+  });
+
+  it('does not promote records to inspected on page reading alone', () => {
+    // v0.84.0 checkpoint 28 — the pages are now read, but a record is only
+    // inspected once its intent is recorded too. Per-section intent is not
+    // written yet, so no Class 9 record may claim page_level_inspected.
+    expect(acc().pages.every((p: any) => p.fullTextInspected === true)).toBe(true);
+    for (const r of MASTER_RECORDS.filter((x) => x.classNumber === 9)) {
+      expect(r.intentStatus, r.recordId).not.toBe('page_level_inspected');
+    }
+    expect(unitsForClass(9).length).toBe(0);
+  });
+
+  it('accounts for Chapter 9 even though it has no numbered sections', () => {
+    const ch9 = acc().pages.filter((p: any) => p.officialRecordId === 'ncert_iemh2_ch09');
+    expect(ch9.length).toBeGreaterThan(0);
+    expect(MASTER_RECORDS.filter((r) => r.parentId === 'ncert_iemh2_ch09' && r.level === 'section').length).toBe(0);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// v0.84.0 checkpoint 28 — THE CLASS 9 BODY HAS BEEN READ.
+//
+// Checkpoint 27 classified every page and inspected every picture-carried one,
+// but deliberately left fullTextInspected false. This checkpoint reads the
+// bodies, refines the page roles from what is actually on the page, and gives
+// Chapter 9 — which prints no numbered section at all — source segments built
+// from its mathematics rather than from headings.
+// ---------------------------------------------------------------------------
+
+describe('Class 9 full-text reading', () => {
+  const acc = () => JSON.parse(read('src/curriculum/data/instructionalDecomposition.json')).class9PageAccounting;
+
+  it('reads every source page and keeps the ledger exact', () => {
+    const a = acc();
+    const man = JSON.parse(read('CLASS_9_SOURCE_MANIFEST.json'));
+    expect(a.pages.length).toBe(man.totalPdfPages);
+    expect(new Set(a.pages.map((p: any) => `${p.officialRecordId}#${p.pdfPage}`)).size).toBe(a.pages.length);
+    expect(a.pages.every((p: any) => p.fullTextInspected === true)).toBe(true);
+  });
+
+  it('refines page roles beyond one broad unnumbered bucket', () => {
+    const roles = new Set(acc().pages.map((p: any) => p.category));
+    // The 183-page bucket is gone; the roles that replaced it are the ones
+    // a future author actually needs to tell apart.
+    for (const r of ['EXERCISE_SET', 'WORKED_EXAMPLE', 'CHAPTER_SUMMARY', 'PROOF_OR_THEOREM']) {
+      expect(roles.has(r), r).toBe(true);
+    }
+    expect(roles.has('UNNUMBERED_CHAPTER_OPENING')).toBe(false);
+    expect(roles.size).toBeLessThan(15);
+  });
+
+  it('keeps visual-required and visual-inspected in exact agreement', () => {
+    const req = acc().pages.filter((p: any) => p.visualInspectionRequired);
+    expect(req.length).toBeGreaterThan(0);
+    expect(req.every((p: any) => p.visualInspected)).toBe(true);
+    for (const p of acc().pages) if (!p.visualInspectionRequired) expect(p.visualInspected).toBe(false);
+  });
+});
+
+describe('Chapter 9 survives having no numbered sections', () => {
+  const segs = () => SOURCE_SEGMENTS.filter((s) => s.officialRecordId === 'ncert_iemh2_ch09');
+
+  it('represents its mathematics through source segments', () => {
+    expect(MASTER_RECORDS.filter((r) => r.parentId === 'ncert_iemh2_ch09' && r.level === 'section').length).toBe(0);
+    const s = segs();
+    expect(s.length).toBeGreaterThan(0);
+    // Every page of the chapter belongs to a segment: nothing is lost.
+    const covered = new Set<number>();
+    for (const x of s) {
+      for (let p = x.sourceEvidence.pdfPageStart; p <= x.sourceEvidence.pdfPageEnd; p += 1) covered.add(p);
+    }
+    const ledger = JSON.parse(read('src/curriculum/data/instructionalDecomposition.json')).class9PageAccounting.pages
+      .filter((p: any) => p.officialRecordId === 'ncert_iemh2_ch09');
+    for (const p of ledger) expect(covered.has(p.pdfPage), `p${p.pdfPage}`).toBe(true);
+  });
+
+  it('carries real intent and real evidence, not a heading restated', () => {
+    for (const s of segs()) {
+      expect((s as any).mathematicalIntent, s.sourceSegmentId).toMatch(/\[S\]/);
+      expect(String((s as any).mathematicalIntent).length, s.sourceSegmentId).toBeGreaterThan(120);
+      expect(s.sourceEvidence.evidenceDepth).toBe('FULL_PAGE_INSPECTED');
+      expect(s.sourceEvidence.pageEvidence.every((p: any) => p.fullTextInspected)).toBe(true);
+    }
+  });
+
+  it('never dresses a Pragati segment as an official NCERT record', () => {
+    for (const s of SOURCE_SEGMENTS) {
+      expect(s.sourceSegmentId.startsWith('pragati_srcseg_'), s.sourceSegmentId).toBe(true);
+      expect(s.sourceSegmentId.startsWith('ncert_')).toBe(false);
+    }
+  });
+
+  it('still has no Class 9 instructional units', () => {
+    expect(unitsForClass(9).length).toBe(0);
   });
 });

@@ -84,9 +84,17 @@ export function hierarchyTable(): string {
     const t = textbookCounts(n);
     const tRow = row(n, bookLabel(n), t, STATUS_LABEL[classStructureStatus(n)]);
     if (!textbookDenominatorKnown(n)) {
-      // A part count is real; the class total is not known.
-      tRow[3] = `${cell(t.chapter)} (Part I only; class total UNKNOWN)`;
-      tRow[4] = `${cell(t.section)} (Part I only; class total UNKNOWN)`;
+      // One or more volumes of this class are not published or not verified,
+      // so the counts below are a part count and the class total is unknown.
+      // No class is in this state today; the branch remains for the next one
+      // that is.
+      const published = sourcesForClass(n)
+        .filter((s) => s.kind === 'textbook' && s.part)
+        .map((s) => s.part)
+        .join(', ');
+      const note = `${published || 'published volumes'} only; class total UNKNOWN`;
+      tRow[3] = `${cell(t.chapter)} (${note})`;
+      tRow[4] = `${cell(t.section)} (${note})`;
     }
     rows.push(tRow);
   }
@@ -165,8 +173,17 @@ export function headlineSentence(): string {
 }
 
 function findingsList(): string {
+  // v0.84.0 checkpoint 27 — a finding that has been resolved must not still
+  // render its original severity. Two Class 9 findings were superseded by
+  // primary source; showing them as "unresolved" next to their own
+  // "HISTORICAL (resolved)" text was a contradiction inside one line.
   return MASTER_EVIDENCE.findings
-    .map((f) => `- **${f.id}** (${f.grade === null ? 'all classes' : `Class ${f.grade}`}, ${f.severity}) — ${f.text}`)
+    .map((f) => {
+      const status = (f as { status?: string }).status;
+      const label = status && /RESOLVED|SUPERSEDED/.test(status) ? status.toLowerCase().replace(/_/g, ' ') : f.severity;
+      const where = f.grade === null ? 'all classes' : `Class ${f.grade}`;
+      return `- **${f.id}** (${where}, ${label}) — ${f.text}`;
+    })
     .join('\n');
 }
 

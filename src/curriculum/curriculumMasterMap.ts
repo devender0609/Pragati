@@ -545,9 +545,14 @@ export function syllabusCounts(n: number): HierarchyCounts | null {
 /**
  * Whether the TEXTBOOK denominator for a class is known.
  *
- * Class 9 is the one exception today: only Ganita Manjari Part I is
- * published, and the CBSE syllabus prescribes a book with 15 chapters.
- * The Part I count is real; the class total is not known (finding F1).
+ * True only when every volume of the class is marked
+ * complete_series_published and its chapter level is verified from the
+ * primary source. A class with one volume still unpublished reports a real
+ * part count and an unknown class total rather than rounding up.
+ *
+ * v0.84.0 checkpoint 27 — Class 9 was that case until Ganita Manjari Part II
+ * was published and retrieved (2026-10-06). Every class now satisfies this;
+ * the partial branch stays because the next grade may not.
  */
 /** True when a textbook of this class has a level the source has not enumerated. */
 export function hasUnenumeratedLevel(n: number): boolean {
@@ -725,9 +730,13 @@ export const PRODUCTION_WAVES: ProductionWave[] = [
   {
     wave: 6,
     classes: [9],
+    // v0.84.0 checkpoint 27 — the old gate waited for Part II to be
+    // published. It was published and retrieved on 2026-10-06, so that
+    // dependency is gone. What actually blocks planning now is the rest of
+    // the source pass, not the existence of the book.
     reason:
-      'Only Ganita Manjari Part I is published, and the CBSE syllabus prescribes a book with 15 chapters. Part I sections are verified and listed, but the class cannot be planned to completion.',
-    gate: 'Part II published, or NCERT confirms Part I is the full Class 9 book (finding F1).',
+      'Both parts of Ganita Manjari are published and verified: 14 chapters, 74 numbered sections, 51 numbered subsections. What is not yet done is the page-level pass — page accounting, visual inspection and per-section mathematical intent — so lesson-sized decomposition cannot begin.',
+    gate: 'Class 9 source decomposition complete (page accounting, visual inspection, per-section intent), and the Secondary Stage authoring standard agreed.',
   },
 ];
 

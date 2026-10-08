@@ -60,6 +60,21 @@ every page inspected.
 | Completed-class regression protection compared unit counts only, so an objective, page range or status could change unnoticed | checkpoint 12 review | checkpoint 13 — `decompositionFingerprint(n)` hashes the canonical fields and page ledger; Classes 1-4 are locked to their checkpoint-12 values |
 | Five Class 4 units carried one identical generic question, presented as five independent judgements | checkpoint 12 review | checkpoint 13 — a shared `humanJudgementPolicyKey` names the one decision, and each question names that unit's own material |
 
+## Checkpoint-26 truth defects — all REPAIRED in checkpoint 27
+
+| Stale active claim | Where it lived | Resolution |
+|---|---|---|
+| "No Part II is listed on the NCERT portal… the CLASS denominator is not established" | `volumeCompletenessNote` on **both** Class 9 sources in `mathCurriculumMasterEvidence.json` | Rewritten to the two-part complete series; Part I keeps its own "Part I" label and identity |
+| "…so the sub-section count is UNKNOWN" | `levelEvidence` on both Class 9 sources | Rewritten to record that subsections are now fully enumerated, and why extraction originally missed them |
+| `F1_class9_book_vs_syllabus` still active, asserting no Part II and an unknown denominator | canonical findings | `status: RESOLVED_SUPERSEDED` with a resolution; original wording preserved in `historicalText`, current `text` prefixed **HISTORICAL (resolved)** |
+| `F6_class9_subsections` still active, asserting subsections UNKNOWN | canonical findings | Same treatment; 51 subsections now canonical |
+| Production wave gate: "Part II published, or NCERT confirms Part I is the full Class 9 book" | `PRODUCTION_WAVES` in `curriculumMasterMap.ts` | The false dependency is gone. The gate now names the work that actually remains — page accounting, visual inspection, per-section intent — and the Secondary Stage authoring standard |
+| "the rest of the Class 9 textbook does not exist to be read" | `runtimeCurriculumFromEvidence.ts` comment | Rewritten; the rule is unchanged, the Class 9 example is no longer true |
+| "Class 9 is the one exception today: only Ganita Manjari Part I is published" | `textbookDenominatorKnown` doc comment | Rewritten to describe the rule rather than a class |
+| `sectionDenominatorStatus: UNKNOWN` | `CLASS_9_SOURCE_MANIFEST.json` | Now 74 / 51, both VERIFIED_FROM_SOURCE, plus an explicit packaging note about what cannot be re-hashed from the package |
+| **Found by the new audit, not in the brief:** `(Part I only; class total UNKNOWN)` hard-coded as the partial-volume label | `masterMapDocs.ts` | Derived from the published parts instead; the branch survives for a future partial class |
+| **Found by the new audit:** resolved findings still rendered with their original severity, so one line read "(Class 9, unresolved) — HISTORICAL (resolved)" | `findingsList()` in `masterMapDocs.ts` | Renders the resolved status when a finding carries one |
+
 ## Checkpoint-26 source findings (Class 9)
 
 | Finding | Evidence |

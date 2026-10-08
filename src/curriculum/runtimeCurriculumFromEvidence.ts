@@ -216,10 +216,17 @@ export function textbookCurricula(): OfficialCurriculum[] {
 /**
  * v0.83.3 §4 — what a screen must say about a book that is not complete.
  *
- * Class 9's Ganita Manjari Part I is real and verified; the rest of the
- * Class 9 textbook does not exist to be read. The eight chapters are
- * shown and the limitation is stated. It is never rounded to "complete"
- * and never filled in from the CBSE syllabus's fifteen chapter names.
+ * A grade whose every volume is marked complete_series_published returns
+ * null here: there is no limitation to state. A grade with a volume still
+ * missing returns a note naming what is verified, and the screen shows
+ * exactly those chapters.
+ *
+ * v0.84.0 checkpoint 27 — Class 9 used to be the example: only Ganita
+ * Manjari Part I existed. Part II was published and retrieved on
+ * 2026-10-06, so Class 9 now returns null from this function and its
+ * fourteen chapters are shown in full. The rule is unchanged — a partial
+ * book is never rounded up to complete, and never filled in from the CBSE
+ * syllabus's fifteen chapter names, which remain a separate hierarchy.
  */
 export function partialStructureNoteForGrade(grade: Grade): string | null {
   const books = EV.sources.filter((s) => s.grade === Number(grade.replace('class', '')));
