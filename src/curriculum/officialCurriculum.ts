@@ -1,0 +1,895 @@
+// v0.68 (Classes 1–12 spec, §A–§G) — THE CANONICAL OFFICIAL CURRICULUM
+// REGISTRY.
+//
+// THE PRODUCT DEFECT THIS FIXES
+//
+// Pragati showed six "chapters" for Class 3 and ten for Class 6, and a
+// user could only read that as a statement about the two curricula. It
+// was not. Class 6 had been verified against the current NCERT book;
+// Class 3's six rows were an inventory of Pragati's own legacy modules.
+// A missing Pragati lesson was silently deleting an official chapter.
+//
+// THE PERMANENT SEPARATION
+//
+//   OFFICIAL CURRICULUM — what the current authoritative source says
+//                         exists. This file.
+//   PRAGATI COVERAGE    — what Pragati has mapped, authored, reviewed
+//                         or published. Everywhere else.
+//
+// A grade's official structure is stated here or it is UNKNOWN. It is
+// never inferred from how many modules Pragati happens to have, and
+// UNKNOWN is never rendered as zero.
+//
+// ---------------------------------------------------------------------
+// SOURCES, AND THE LIMITS OF WHAT WAS OBTAINABLE
+// ---------------------------------------------------------------------
+//
+// Classes IX–XII: the CBSE Academic Unit publishes the 2026-27
+// Mathematics curriculum as PDFs on cbseacademic.nic.in, and that
+// domain serves automated clients. All four were retrieved and read on
+// 2026-08-27. Their unit and topic structure below is transcribed from
+// those documents.
+//
+// Class VI: unchanged from v0.61, which read Ganita Prakash from the
+// full-book archive. Ten chapters, primary-source verified.
+//
+// Classes I–V, VII, VIII: NOT VERIFIED, and deliberately so.
+// [HISTORICAL — see v0.83.2 §16. Superseded on 2026-09-22.]
+// ncert.nic.in disallows automated access, and every attempt in this
+// iteration was refused. Secondary sources agree on the TEXTBOOK
+// TITLES (Joyful Mathematics, Maths Mela, Ganita Prakash) and those are
+// recorded as secondary corroboration — but v0.51 already demonstrated
+// why agreeing secondary sources are not evidence: for Class 7 they
+// disagreed about whether the book has 15 or 16 chapters, and for
+// Class 6 they happened to agree, which felt like confirmation and was
+// not.
+//
+// So those seven grades carry `official_structure_pending_verification`
+// with a null unit count. Not zero. Not an estimate carried over from
+// the pre-NCF books. Null, with the reason attached and the manual step
+// written down for a person to perform.
+
+import type { Grade } from '../types';
+import { evidenceDerivedCurricula } from './runtimeCurriculumFromEvidence';
+import { OFFICIAL_CHAPTERS as NCERT_CHAPTER_RECORDS } from './officialChapters';
+
+const classOrder = (g: Grade) => Number(g.replace('class', ''));
+
+export type CurriculumAuthority = 'NCERT' | 'CBSE';
+
+/**
+ * v0.78 §1 — BOOK IDENTITY IS NOT BOOK STRUCTURE.
+ *
+ * The table listed "Joyful Mathematics" and "Maths Mela" beside a
+ * structure marked unverified, which is defensible only if the TITLE
+ * itself came from somewhere. It did not: the header note above says
+ * plainly that secondary sources agree on the titles and that agreeing
+ * secondary sources are not evidence — v0.51 proved it, when they agreed
+ * about Class 6 and disagreed about Class 7.
+ *
+ * That distinction was written in a comment and nowhere in the data, so
+ * a generated document could not express it and a reader saw a title
+ * that looked established. It is now a field, with three values and no
+ * default: a record must say where its title came from.
+ */
+export type BookIdentityStatus =
+  /** The title was read from the book, or named by a primary syllabus. */
+  | 'primary_source_verified'
+  /** Secondary sources agree on the title. Corroboration, not evidence. */
+  | 'secondary_discovery_only'
+  /** No title established. */
+  | 'unverified';
+
+/** Whether the STRUCTURE — units, chapters, topics — was read from the source. */
+export type StructureVerificationStatus =
+  | 'primary_source_verified'
+  | 'pending_verification';
+
+export type OfficialStructureStatus =
+  /** No current source has been located for this grade. */
+  | 'no_source_located'
+  /** The current textbook or syllabus is identified, but its unit list
+   *  has not been read from the primary document. */
+  | 'official_structure_pending_verification'
+  /** The unit list was read from the authoritative document itself. */
+  | 'primary_source_verified';
+
+export type OfficialTopic = {
+  officialTopicId: string;
+  title: string;
+  /** Present when the source numbers its topics. */
+  number?: number;
+};
+
+/**
+ * v0.69 §19 — UNIT, CHAPTER AND TOPIC ARE THREE DIFFERENT THINGS.
+ *
+ * v0.68 collapsed them, and the result was a lie the UI told with a
+ * straight face: Class 10's student view said "7 chapters" when the 7
+ * are CBSE syllabus UNITS. Unit II ("Algebra") is not a chapter; it
+ * contains four topics that each look like a chapter title but whose
+ * correspondence to NCERT chapters has not been read from the textbook.
+ *
+ * So each curriculum declares which levels its source actually
+ * establishes, and the UI labels what it shows accordingly.
+ */
+export type StructureLevel = 'unit' | 'chapter' | 'topic';
+
+export type OfficialChapterRecord = {
+  officialChapterId: string;
+  /** Null when the source names chapters without numbering them
+   *  independently of their unit. */
+  number: number | null;
+  title: string;
+};
+
+export type OfficialUnit = {
+  officialUnitId: string;
+  /** Unit or chapter number as the source gives it. */
+  number: number;
+  title: string;
+  /** What this entry IS, according to its source. A Class 6 entry is a
+   *  chapter; a Class 10 entry is a syllabus unit. */
+  level: StructureLevel;
+  /**
+   * Chapters inside this unit, where the source names them.
+   *
+   * Class IX is the case that makes this necessary: its syllabus prints
+   * an explicit Chapter Name column, so its 15 chapters are real. Class
+   * X's syllabus does not, so `chaptersEstablished` is false there and
+   * the topic list must NOT be relabelled as chapters.
+   */
+  chapters: OfficialChapterRecord[];
+  chaptersEstablished: boolean;
+  /** Named sub-topics where the source enumerates them. An EMPTY array
+   *  means the source lists none; `topicsKnown: false` means the source
+   *  was not read at that depth. The two are different and the UI must
+   *  not merge them. */
+  topics: OfficialTopic[];
+  topicsKnown: boolean;
+  /** Marks weighting, where the source assigns it. */
+  marks?: number;
+  /**
+   * v0.83.1 §4 — which volume of a two-part book this chapter is in.
+   *
+   * Ganita Prakash Grade 7 and Grade 8 Part II both restart at Chapter 1.
+   * The printed number is kept exactly as printed; this field is what
+   * makes "Part I · Chapter 1" and "Part II · Chapter 1" different
+   * chapters without renumbering the source.
+   */
+  bookPart?: string | null;
+  /** The volume's own title, where a grade has more than one. */
+  bookTitle?: string | null;
+  /** Printed start page, where the source gives one. */
+  startPage?: number | null;
+  /**
+   * v0.83.1 §3 — whether the SOURCE defines a level below this entry.
+   *
+   * Classes 1-5 print chapters and no numbered sections. `topics: []`
+   * with this false means the book has no sub-level, which is a
+   * different claim from "not read yet" (`topicsKnown: false`) and from
+   * "zero sections" (which would be a lie). Defaults to true.
+   */
+  subLevelDefinedBySource?: boolean;
+};
+
+export type OfficialCurriculum = {
+  officialCurriculumId: string;
+  grade: Grade;
+  subject: 'mathematics';
+  stage: 'foundational' | 'preparatory' | 'middle' | 'secondary' | 'senior_secondary';
+  authority: CurriculumAuthority;
+  /** Title of the prescribed book or syllabus document. Null when even
+   *  the title is unestablished. */
+  documentTitle: string | null;
+  academicYear: string | null;
+  edition: string | null;
+  sourceUrl: string | null;
+  inspectionDate: string | null;
+  status: OfficialStructureStatus;
+  /** §1 — where the TITLE came from. Never inferred from `status`. */
+  bookIdentityStatus: BookIdentityStatus;
+  /** §1 — where the STRUCTURE came from. */
+  structureVerificationStatus: StructureVerificationStatus;
+  /**
+   * The level of the entries in `units`. 'chapter' for a textbook whose
+   * contents page was read; 'unit' for a syllabus organised into units.
+   * Drives the noun the UI uses, so a unit is never called a chapter.
+   */
+  topLevel: StructureLevel;
+  /** What was actually checked, and what was not. Rendered verbatim in
+   *  Admin so the claim can be judged rather than trusted. */
+  evidenceNote: string;
+  units: OfficialUnit[];
+  /** The exact manual step required to advance the status. Null when
+   *  already verified. */
+  manualVerificationStep: string | null;
+};
+
+// v0.83.2 §16 — HISTORICAL, and no longer used by any grade.
+//
+// Every NCERT-textbook grade is derived from the primary documents now.
+// `robots.txt` returned HTTP 404 with no directives on 2026-09-22, so
+// the blocker this text describes was not reproducible. Kept only so
+// the reason the old records said UNKNOWN can still be read.
+const HISTORICAL_NCERT_BLOCKED_NOTE_v0_68 =
+  'ncert.nic.in disallows automated access (robots.txt), so the chapter list could not be read from the primary document. ' +
+  'The textbook title is corroborated by independent secondary sources only. Secondary agreement is not evidence: for Class 7 ' +
+  'independent sources disagree on whether the book has 15 or 16 chapters, and for Class 6 they agreed while still not having ' +
+  'been checked. The unit count is therefore UNKNOWN, not estimated.';
+
+/** v0.83.2 §16 — HISTORICAL. No grade requires this step today. */
+const HISTORICAL_NCERT_MANUAL_STEP_v0_68 =
+  'Open the current NCERT textbook PDF for this grade in a browser, read the Contents page, and record each chapter number and ' +
+  'exact title. Then set status to primary_source_verified with the inspection date and the verifier name.';
+
+/** v0.83.1 — retained for historical reference; no grade uses it now. */
+export function pending(
+  grade: Grade,
+  stage: OfficialCurriculum['stage'],
+  documentTitle: string | null,
+  note: string
+): OfficialCurriculum {
+  return {
+    officialCurriculumId: `ncert_math_${grade}`,
+    grade,
+    subject: 'mathematics',
+    stage,
+    authority: 'NCERT',
+    documentTitle,
+    academicYear: '2026-27',
+    edition: null,
+    sourceUrl: 'https://ncert.nic.in/textbook.php',
+    inspectionDate: null,
+    status: documentTitle
+      ? 'official_structure_pending_verification'
+      : 'no_source_located',
+    // The title, where there is one, comes from agreeing secondary
+    // sources and nothing more. Recording it as discovery keeps it
+    // usable as a lead without it reading as established.
+    bookIdentityStatus: documentTitle ? 'secondary_discovery_only' : 'unverified',
+    structureVerificationStatus: 'pending_verification',
+    // A textbook's contents page yields chapters. Until it is read we
+    // do not know how many, but we do know what they will be called.
+    topLevel: 'chapter',
+    evidenceNote: `${note} ${HISTORICAL_NCERT_BLOCKED_NOTE_v0_68}`,
+    units: [],
+    manualVerificationStep: HISTORICAL_NCERT_MANUAL_STEP_v0_68,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Classes IX–XII — CBSE Academic Unit, Curriculum 2026-27.
+// Retrieved and read 2026-08-27 from cbseacademic.nic.in.
+// ---------------------------------------------------------------------------
+
+const CBSE_2026_27_NOTE_IX =
+  'Read directly from the CBSE Academic Unit Mathematics syllabus for Class IX, Curriculum 2026-27. ' +
+  'The document gives a COURSE STRUCTURE table naming six units and, unusually for CBSE, an explicit chapter name per unit. ' +
+  'Both levels are transcribed. The syllabus is redesigned against NEP 2020 and NCF-SE 2023 and reproduces the NCF curricular goals CG-1..CG-11. ' +
+  'Prescribed book: Mathematics Textbook for Class IX, NCERT.';
+
+const CBSE_2026_27_NOTE_X =
+  'Read directly from the CBSE Academic Unit Mathematics syllabus for Class X, Curriculum 2026-27 (subject codes 041 and 241). ' +
+  'The document gives seven units with marks weighting and enumerates the content topics within each. Unlike Class IX it does not ' +
+  'print a separate chapter-name column, so the topic titles are transcribed from the content column. ' +
+  'Prescribed book: Mathematics Textbook for Class X, NCERT.';
+
+const CBSE_2026_27_NOTE_XI =
+  'Read directly from the CBSE Academic Unit Mathematics syllabus for Classes XI-XII, Curriculum 2026-27 (subject code 041). ' +
+  'Five units for Class XI with marks weighting and numbered topics within each. The document additionally lists topics assessed ' +
+  'FORMATIVELY ONLY; those are not counted as summative units here and are noted rather than dropped.';
+
+const CBSE_2026_27_NOTE_XII =
+  'Read directly from the CBSE Academic Unit Mathematics syllabus for Classes XI-XII, Curriculum 2026-27 (subject code 041). ' +
+  'Six units for Class XII with marks weighting and numbered topics within each. ' +
+  'Prescribed books: Mathematics Part I and Part II for Class XII, NCERT.';
+
+const CBSE_IX_URL =
+  'https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1IX_2026-27.pdf';
+const CBSE_X_URL =
+  'https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1X_2026-27.pdf';
+const CBSE_XI_XII_URL =
+  'https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Maths_SecP2_2026-27.pdf';
+
+function unit(
+  prefix: string,
+  number: number,
+  title: string,
+  topics: string[],
+  marks?: number,
+  /** Chapter names, ONLY where the source prints them. Class IX does;
+   *  Classes X-XII do not, and inventing them there is exactly the
+   *  conflation §19 forbids. */
+  chapterNames?: string[]
+): OfficialUnit {
+  const uid = `${prefix}_u${String(number).padStart(2, '0')}`;
+  return {
+    officialUnitId: uid,
+    number,
+    title,
+    level: 'unit',
+    chapters: (chapterNames ?? []).map((t, i) => ({
+      officialChapterId: `${uid}_c${i + 1}`,
+      number: null,
+      title: t,
+    })),
+    chaptersEstablished: chapterNames !== undefined,
+    topics: topics.map((t, i) => ({
+      officialTopicId: `${uid}_t${i + 1}`,
+      title: t,
+      number: i + 1,
+    })),
+    topicsKnown: true,
+    ...(marks === undefined ? {} : { marks }),
+  };
+}
+
+const CLASS_9: OfficialCurriculum = {
+  officialCurriculumId: 'cbse_math_class9_2026_27',
+  grade: 'class9',
+  subject: 'mathematics',
+  stage: 'secondary',
+  authority: 'CBSE',
+  documentTitle: 'Mathematics, Class IX — CBSE Curriculum 2026-27',
+  academicYear: '2026-27',
+  edition: 'Curriculum 2026-27',
+  sourceUrl: CBSE_IX_URL,
+  inspectionDate: '2026-08-27',
+  status: 'primary_source_verified',
+  // The primary document either IS the book (Class 6) or names the
+  // prescribed book by title (the CBSE syllabi), so identity is verified
+  // by the same reading that verified the structure.
+  bookIdentityStatus: 'primary_source_verified',
+  structureVerificationStatus: 'primary_source_verified',
+  // The syllabus is organised into units, and uniquely among IX-XII it
+  // also prints a Chapter Name column — so both levels are real here.
+  topLevel: 'unit',
+  evidenceNote: CBSE_2026_27_NOTE_IX,
+  manualVerificationStep: null,
+  units: [
+    unit('cbse_ix', 1, 'Number System', ['Number System'], 7, ['Number System']),
+    unit(
+      'cbse_ix',
+      2,
+      'Algebra',
+      [
+        'Introduction to Polynomials',
+        'Sequences and Progressions',
+        'Exploring Algebraic Identities',
+        'Linear Equations in Two Variables',
+      ],
+      20,
+      [
+        'Introduction to Polynomials',
+        'Sequences and Progressions',
+        'Exploring Algebraic Identities',
+        'Linear Equations in Two Variables',
+      ]
+    ),
+    unit('cbse_ix', 3, 'Coordinate Geometry', ['Coordinate Geometry'], 4, [
+      'Coordinate Geometry',
+    ]),
+    unit(
+      'cbse_ix',
+      4,
+      'Geometry',
+      [
+        "Introduction to Euclid's Geometry: Axioms and Postulates",
+        'Lines and Angles',
+        'Triangles – Congruence Theorems',
+        '4-gons (Quadrilaterals)',
+        'Circles',
+      ],
+      25,
+      [
+        "Introduction to Euclid's Geometry: Axioms and Postulates",
+        'Lines and Angles',
+        'Triangles – Congruence Theorems',
+        '4-gons (Quadrilaterals)',
+        'Circles',
+      ]
+    ),
+    unit(
+      'cbse_ix',
+      5,
+      'Mensuration',
+      ['Area and Perimeter', 'Surface Area and Volume'],
+      14,
+      ['Area and Perimeter', 'Surface Area and Volume']
+    ),
+    unit(
+      'cbse_ix',
+      6,
+      'Statistics and Probability',
+      ['Statistics', 'Introduction to Probability'],
+      10,
+      ['Statistics', 'Introduction to Probability']
+    ),
+  ],
+};
+
+const CLASS_10: OfficialCurriculum = {
+  officialCurriculumId: 'cbse_math_class10_2026_27',
+  grade: 'class10',
+  subject: 'mathematics',
+  stage: 'secondary',
+  authority: 'CBSE',
+  documentTitle: 'Mathematics, Class X — CBSE Curriculum 2026-27',
+  academicYear: '2026-27',
+  edition: 'Curriculum 2026-27',
+  sourceUrl: CBSE_X_URL,
+  inspectionDate: '2026-08-27',
+  status: 'primary_source_verified',
+  // The primary document either IS the book (Class 6) or names the
+  // prescribed book by title (the CBSE syllabi), so identity is verified
+  // by the same reading that verified the structure.
+  bookIdentityStatus: 'primary_source_verified',
+  structureVerificationStatus: 'primary_source_verified',
+  // Units only. The syllabus enumerates content topics but prints no
+  // chapter-name column, so no unit here claims chapters. Several
+  // topic titles resemble NCERT chapter names; resembling is not
+  // evidence, and §19 forbids asserting the equivalence without the
+  // textbook.
+  topLevel: 'unit',
+  evidenceNote: CBSE_2026_27_NOTE_X,
+  manualVerificationStep: null,
+  units: [
+    unit('cbse_x', 1, 'Number Systems', ['Real Numbers'], 6),
+    unit(
+      'cbse_x',
+      2,
+      'Algebra',
+      [
+        'Polynomials',
+        'Pair of Linear Equations in Two Variables',
+        'Quadratic Equations',
+        'Arithmetic Progressions',
+      ],
+      20
+    ),
+    unit('cbse_x', 3, 'Coordinate Geometry', ['Coordinate Geometry'], 6),
+    unit('cbse_x', 4, 'Geometry', ['Triangles', 'Circles'], 15),
+    unit(
+      'cbse_x',
+      5,
+      'Trigonometry',
+      ['Introduction to Trigonometry', 'Trigonometric Identities', 'Heights and Distances'],
+      12
+    ),
+    unit(
+      'cbse_x',
+      6,
+      'Mensuration',
+      ['Areas Related to Circles', 'Surface Areas and Volumes'],
+      10
+    ),
+    unit('cbse_x', 7, 'Statistics and Probability', ['Statistics', 'Probability'], 11),
+  ],
+};
+
+const CLASS_11: OfficialCurriculum = {
+  officialCurriculumId: 'cbse_math_class11_2026_27',
+  grade: 'class11',
+  subject: 'mathematics',
+  stage: 'senior_secondary',
+  authority: 'CBSE',
+  documentTitle: 'Mathematics, Class XI — CBSE Curriculum 2026-27',
+  academicYear: '2026-27',
+  edition: 'Curriculum 2026-27',
+  sourceUrl: CBSE_XI_XII_URL,
+  inspectionDate: '2026-08-27',
+  status: 'primary_source_verified',
+  // The primary document either IS the book (Class 6) or names the
+  // prescribed book by title (the CBSE syllabi), so identity is verified
+  // by the same reading that verified the structure.
+  bookIdentityStatus: 'primary_source_verified',
+  structureVerificationStatus: 'primary_source_verified',
+  // Units only. The syllabus enumerates content topics but prints no
+  // chapter-name column, so no unit here claims chapters. Several
+  // topic titles resemble NCERT chapter names; resembling is not
+  // evidence, and §19 forbids asserting the equivalence without the
+  // textbook.
+  topLevel: 'unit',
+  evidenceNote: CBSE_2026_27_NOTE_XI,
+  manualVerificationStep: null,
+  units: [
+    unit(
+      'cbse_xi',
+      1,
+      'Sets and Functions',
+      ['Sets', 'Relations and Functions', 'Trigonometric Functions'],
+      23
+    ),
+    unit(
+      'cbse_xi',
+      2,
+      'Algebra',
+      [
+        'Complex Numbers and Quadratic Equations',
+        'Linear Inequalities',
+        'Permutations and Combinations',
+        'Binomial Theorem',
+        'Sequence and Series',
+      ],
+      25
+    ),
+    unit(
+      'cbse_xi',
+      3,
+      'Coordinate Geometry',
+      ['Straight Lines', 'Conic Sections', 'Introduction to Three-dimensional Geometry'],
+      12
+    ),
+    unit('cbse_xi', 4, 'Calculus', ['Limits and Derivatives'], 8),
+    unit('cbse_xi', 5, 'Statistics and Probability', ['Statistics', 'Probability'], 12),
+  ],
+};
+
+const CLASS_12: OfficialCurriculum = {
+  officialCurriculumId: 'cbse_math_class12_2026_27',
+  grade: 'class12',
+  subject: 'mathematics',
+  stage: 'senior_secondary',
+  authority: 'CBSE',
+  documentTitle: 'Mathematics, Class XII — CBSE Curriculum 2026-27',
+  academicYear: '2026-27',
+  edition: 'Curriculum 2026-27',
+  sourceUrl: CBSE_XI_XII_URL,
+  inspectionDate: '2026-08-27',
+  status: 'primary_source_verified',
+  // The primary document either IS the book (Class 6) or names the
+  // prescribed book by title (the CBSE syllabi), so identity is verified
+  // by the same reading that verified the structure.
+  bookIdentityStatus: 'primary_source_verified',
+  structureVerificationStatus: 'primary_source_verified',
+  // Units only. The syllabus enumerates content topics but prints no
+  // chapter-name column, so no unit here claims chapters. Several
+  // topic titles resemble NCERT chapter names; resembling is not
+  // evidence, and §19 forbids asserting the equivalence without the
+  // textbook.
+  topLevel: 'unit',
+  evidenceNote: CBSE_2026_27_NOTE_XII,
+  manualVerificationStep: null,
+  units: [
+    unit(
+      'cbse_xii',
+      1,
+      'Relations and Functions',
+      ['Relations and Functions', 'Inverse Trigonometric Functions'],
+      8
+    ),
+    unit('cbse_xii', 2, 'Algebra', ['Matrices', 'Determinants'], 10),
+    unit(
+      'cbse_xii',
+      3,
+      'Calculus',
+      [
+        'Continuity and Differentiability',
+        'Applications of Derivatives',
+        'Integrals',
+        'Application of the Integrals',
+        'Differential Equations',
+      ],
+      35
+    ),
+    unit(
+      'cbse_xii',
+      4,
+      'Vectors and Three-dimensional Geometry',
+      ['Vectors', 'Three-dimensional Geometry'],
+      14
+    ),
+    unit('cbse_xii', 5, 'Linear Programming', ['Linear Programming'], 5),
+    unit('cbse_xii', 6, 'Probability', ['Probability'], 8),
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Class 6 — bridged from the existing verified record.
+// ---------------------------------------------------------------------------
+
+import { OFFICIAL_CHAPTERS, GANITA_PRAKASH_C6_SOURCE } from './officialChapters';
+import { sectionsForChapter } from './officialSections';
+
+const CLASS_6: OfficialCurriculum = {
+  officialCurriculumId: 'ncert_ganita_prakash_class6',
+  grade: 'class6',
+  subject: 'mathematics',
+  stage: 'middle',
+  authority: 'NCERT',
+  documentTitle: 'Ganita Prakash — Textbook of Mathematics for Grade 6',
+  academicYear: '2026-27',
+  edition: GANITA_PRAKASH_C6_SOURCE.edition,
+  sourceUrl: GANITA_PRAKASH_C6_SOURCE.archiveUrl,
+  inspectionDate: GANITA_PRAKASH_C6_SOURCE.inspectionDate,
+  status: 'primary_source_verified',
+  // The primary document either IS the book (Class 6) or names the
+  // prescribed book by title (the CBSE syllabi), so identity is verified
+  // by the same reading that verified the structure.
+  bookIdentityStatus: 'primary_source_verified',
+  structureVerificationStatus: 'primary_source_verified',
+  // A textbook contents page. These are chapters, not syllabus units.
+  topLevel: 'chapter',
+  evidenceNote:
+    'v0.61 §9 — read from the primary source. The per-chapter PDF endpoint refuses automated access, but the full-book archive ' +
+    'serves normally and contains the prelims plus all ten chapter PDFs. Chapter number and exact title were taken from the ' +
+    'Contents page and cross-checked against each chapter\'s own opening page. Section depth is recorded for all ten chapters ' +
+    '(65 sections, every one primary_source_verified), which makes Class 6 the only grade with a trustworthy chapter- and ' +
+    'section-level denominator. The book defines chapters and sections; it has no unit layer and no topics.',
+  manualVerificationStep: null,
+  units: OFFICIAL_CHAPTERS.filter(
+    (c) => c.grade === 'class6' && c.officialChapterNumber !== null
+  )
+    .slice()
+    .sort((a, b) => (a.officialChapterNumber ?? 0) - (b.officialChapterNumber ?? 0))
+    .map((c) => {
+      const sections = sectionsForChapter(c.officialChapterId);
+      return {
+        officialUnitId: c.officialChapterId,
+        number: c.officialChapterNumber as number,
+        title: c.officialTitle as string,
+        level: 'chapter' as const,
+        // The entry IS the chapter, so there is no separate list.
+        chapters: [],
+        chaptersEstablished: true,
+        topics: sections.map((s) => ({
+          officialTopicId: s.officialSectionId,
+          title: s.exactTitle,
+        })),
+        // v0.82.5 §4 — this used to say "Only Chapter 7 has been read at
+        // section depth", which stopped being true when all 65 sections
+        // across all ten chapters were verified from the contents pages.
+        //
+        // There IS a real distinction, and it is this one, not that one:
+        // every section's number, title and start page is verified from
+        // the source; the page-level MATHEMATICAL INTENT has been read
+        // only for the sections Pragati has authored (Chapter 3 §3.1-3.3
+        // in v0.82.1, Chapter 7 in the Fractions work). Structure verified
+        // is not the same claim as intent inspected.
+        //
+        // The field is named `topics` for storage reasons; for a chapter
+        // it holds SECTIONS. An empty list would mean not read, not "has
+        // no sections".
+        topicsKnown: sections.length > 0,
+      };
+    }),
+};
+
+// ---------------------------------------------------------------------------
+// The registry
+// ---------------------------------------------------------------------------
+
+// v0.83.1 §A — Classes 1-5, 7 and 8 are no longer hand-written `pending`
+// entries. They are derived, at module load, from the same canonical
+// evidence the master map reads, so the two cannot drift apart. Class 6
+// keeps the accepted registry its authored sections depend on, and
+// Classes 9-12 keep their CBSE syllabus entries.
+export const OFFICIAL_CURRICULA: OfficialCurriculum[] = [
+  ...evidenceDerivedCurricula().filter((c) => classOrder(c.grade) < 6),
+  CLASS_6,
+  ...evidenceDerivedCurricula().filter((c) => classOrder(c.grade) > 6),
+  CLASS_9,
+  CLASS_10,
+  CLASS_11,
+  CLASS_12,
+];
+
+export function officialCurriculumForGrade(
+  grade: Grade
+): OfficialCurriculum | null {
+  return OFFICIAL_CURRICULA.find((c) => c.grade === grade) ?? null;
+}
+
+export function isGradeStructureVerified(grade: Grade): boolean {
+  return officialCurriculumForGrade(grade)?.status === 'primary_source_verified';
+}
+
+/**
+ * The official unit count, or null.
+ *
+ * NULL IS NOT ZERO. A UI that renders this as 0 is asserting that the
+ * grade has no curriculum, which is the exact defect this file exists
+ * to remove.
+ */
+/**
+ * v0.82.4 §2 — UNITS, ONLY WHERE THE SOURCE HAS UNITS.
+ *
+ * This returned `c.units.length` unconditionally, and `units` is the
+ * name of the storage array, not a claim about the book. For Classes
+ * 9-12 the array does hold units. For Class 6 it holds top-level
+ * CHAPTER records, so the function reported 10 units for a textbook
+ * that defines none — and the coverage matrix printed "Units 10 /
+ * Chapters 10", inventing a layer of hierarchy Ganita Prakash does not
+ * have.
+ *
+ * A storage-array name must not define curriculum terminology. Where
+ * the source's top level is the chapter, there is no unit count, and
+ * null says that rather than guessing.
+ */
+export function officialUnitCount(grade: Grade): number | null {
+  const c = officialCurriculumForGrade(grade);
+  if (!c || c.status !== 'primary_source_verified') return null;
+  if (c.topLevel !== 'unit') return null;
+  return c.units.length;
+}
+
+/**
+ * v0.82.4 — how many TOP-LEVEL records the source defines, whatever it
+ * calls them: units for a syllabus, chapters for a textbook.
+ *
+ * The completeness audit asks "does the registry hold the structure",
+ * which is a question about presence rather than about terminology. It
+ * used `officialUnitCount` for this, which was fine while that function
+ * answered the same question by accident — and broke the moment it was
+ * corrected to mean units specifically. This is the question the audit
+ * actually asks, under its own name.
+ */
+export function officialTopLevelCount(grade: Grade): number | null {
+  const c = officialCurriculumForGrade(grade);
+  if (!c || c.status !== 'primary_source_verified') return null;
+  return c.units.length;
+}
+
+/**
+ * Sections, in the source's own sense: the level BELOW a chapter.
+ *
+ * Class 6's 65 are sections of chapters, which is not the same thing as
+ * Class 9-12's topics listed under a syllabus unit. Reporting both in
+ * one "Topics" column flattened two different levels into one word.
+ */
+export function officialSectionCount(grade: Grade): number | null {
+  const c = officialCurriculumForGrade(grade);
+  if (!c || c.status !== 'primary_source_verified') return null;
+  if (c.topLevel !== 'chapter') return null;
+  // v0.83.1 §3 — a book that defines no section level has no section
+  // count. Returning 0 would say Class 3 has zero sections, which is the
+  // unknown-as-zero error in a different costume.
+  if (c.units.some((u) => u.subLevelDefinedBySource === false)) return null;
+  if (c.units.some((u) => !u.topicsKnown)) return null;
+  return c.units.reduce((n, u) => n + u.topics.length, 0);
+}
+
+/**
+ * The official topic count, or null when the source was not read at
+ * that depth.
+ *
+ * Class 6 is the case that makes this necessary: ten verified chapters,
+ * but only Chapter 7 read at section level. Summing the known topics
+ * would report 9 topics for a whole grade.
+ */
+export function officialTopicCount(grade: Grade): number | null {
+  const c = officialCurriculumForGrade(grade);
+  if (!c || c.status !== 'primary_source_verified') return null;
+  // v0.82.4 §3 — topics are what a SYLLABUS lists under a unit. Where
+  // the top level is the chapter, the sub-level is sections, and
+  // `officialSectionCount` reports it under its own name.
+  if (c.topLevel !== 'unit') return null;
+  if (c.units.some((u) => !u.topicsKnown)) return null;
+  return c.units.reduce((n, u) => n + u.topics.length, 0);
+}
+
+/** Units whose sub-topics have not been read. Surfaced so partial depth
+ *  is visible instead of being silently averaged away. */
+export function unitsWithUnknownTopics(grade: Grade): OfficialUnit[] {
+  const c = officialCurriculumForGrade(grade);
+  if (!c) return [];
+  return c.units.filter((u) => !u.topicsKnown);
+}
+
+export function gradesPendingVerification(): OfficialCurriculum[] {
+  return OFFICIAL_CURRICULA.filter(
+    (c) => c.status !== 'primary_source_verified'
+  );
+}
+
+// ---------------------------------------------------------------------------
+// v0.69 §19/§20 — truthful labels
+// ---------------------------------------------------------------------------
+
+/**
+ * The noun for this grade's top-level entries.
+ *
+ * The v0.68 build said "7 chapters" for Class 10. The 7 are CBSE
+ * syllabus UNITS: Unit II is "Algebra", which is not a chapter and
+ * contains four topics. Calling it a chapter told a student something
+ * the source does not say.
+ *
+ * Returns singular and plural so callers never build the plural by
+ * appending "s" to a word they did not check.
+ */
+export function structureNoun(grade: Grade): {
+  singular: string;
+  plural: string;
+  level: StructureLevel;
+} {
+  const c = officialCurriculumForGrade(grade);
+  const level: StructureLevel = c?.topLevel ?? 'chapter';
+  return level === 'unit'
+    ? { singular: 'unit', plural: 'units', level }
+    : { singular: 'chapter', plural: 'chapters', level };
+}
+
+/**
+ * Chapters, where the source establishes them — otherwise null.
+ *
+ * Class 6 has 10 (the entries ARE chapters). Class 9 has 15 (its
+ * syllabus names them inside the units). Classes 10-12 return NULL,
+ * because nobody has read those textbooks.
+ */
+export function officialChapterCount(grade: Grade): number | null {
+  const c = officialCurriculumForGrade(grade);
+  if (!c || c.status !== 'primary_source_verified') return null;
+  if (c.topLevel === 'chapter') return c.units.length;
+  if (c.units.every((u) => u.chaptersEstablished)) {
+    return c.units.reduce((n, u) => n + u.chapters.length, 0);
+  }
+  return null;
+}
+
+/** True when the source names chapters at all. */
+export function chaptersEstablished(grade: Grade): boolean {
+  return officialChapterCount(grade) !== null;
+}
+
+/**
+ * The list a chapter-oriented student view should render.
+ *
+ * Class 6 → its ten chapters. Class 9 → its fifteen. Classes 10-12 →
+ * null, because a chapter list does not exist to render; those grades
+ * fall back to units and say so.
+ */
+export function officialChapterList(
+  grade: Grade
+): Array<{
+  id: string;
+  number: number;
+  title: string;
+  unitTitle: string | null;
+  /** v0.83.1 §4 — carried through so a two-part book's duplicate chapter
+   *  numbers stay distinguishable wherever this list is rendered. */
+  bookPart?: string | null;
+}> | null {
+  // v0.83.3 §2 — THE TEXTBOOK IS THE BROWSING HIERARCHY.
+  //
+  // Where a grade's NCERT textbook chapters are verified they are what a
+  // student and a teacher see, including Classes 9-12 whose
+  // OFFICIAL_CURRICULA entry is a CBSE syllabus. The syllabus stays
+  // available for alignment and reporting; it is not a chapter list and
+  // must never be rendered as one.
+  const textbook = NCERT_CHAPTER_RECORDS.filter(
+    (r) =>
+      r.grade === grade &&
+      r.sourceOrganization === 'NCERT' &&
+      r.verificationStatus === 'primary_source_verified' &&
+      r.officialChapterNumber !== null
+  );
+  if (textbook.length > 0) {
+    return textbook.map((r) => ({
+      id: r.officialChapterId,
+      number: r.officialChapterNumber as number,
+      title: r.officialTitle as string,
+      unitTitle: null,
+      bookPart: r.bookPart ?? null,
+    }));
+  }
+
+  const c = officialCurriculumForGrade(grade);
+  if (!c || !chaptersEstablished(grade)) return null;
+  if (c.topLevel === 'chapter') {
+    return c.units.map((u) => ({
+      id: u.officialUnitId,
+      number: u.number,
+      title: u.title,
+      unitTitle: null,
+      bookPart: u.bookPart ?? null,
+    }));
+  }
+  let n = 0;
+  return c.units.flatMap((u) =>
+    u.chapters.map((ch) => {
+      n += 1;
+      return { id: ch.officialChapterId, number: n, title: ch.title, unitTitle: u.title };
+    })
+  );
+}
