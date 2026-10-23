@@ -1,0 +1,136 @@
+{
+  "checkpoint": 60,
+  "canonicalVersion": "0.84.0-c10.6",
+  "packageCreatedUtc": "2026-10-20T21:06:39Z",
+  "checkpoint59Corrections": {
+    "meansReconcile": "report attributed the test suite's assumed-mean list to the function; two layers now described separately",
+    "glossaryCount": "checkpoint 59 found TWO defects (central tendency, outlier); 'transversal' belongs to checkpoint 57",
+    "statisticsCodeChanged": false
+  },
+  "pilotScope": {
+    "units": [
+      "c10:3.2a",
+      "c10:3.2b",
+      "c10:3.3a",
+      "c10:3.3b",
+      "c10:3.3c"
+    ],
+    "authored": 5,
+    "note": "the wave runs 3.2a through 3.3c, not 3.3b as proposed",
+    "verifiedAgainst": "CLASS10_DECOMPOSITION.json"
+  },
+  "methodScope": {
+    "inScope": [
+      "graphical",
+      "substitution (3.3.1)",
+      "elimination (3.3.2)"
+    ],
+    "excluded": [
+      "cross-multiplication \u2014 absent from the verified source model"
+    ],
+    "terminologyInScope": [
+      "consistent",
+      "inconsistent",
+      "dependent"
+    ]
+  },
+  "architecture": {
+    "verdict": "general linear-system extension required and implemented",
+    "reason": "Class 9 drew coordinates as hand-authored geometry_figure points with no equation behind them; authoring coordinates separately from equations is the drift this checkpoint targets",
+    "added": [
+      "LinearSystem",
+      "classify (cross products)",
+      "lineRelationship",
+      "uniqueSolution (exact rationals)",
+      "solveBySubstitution",
+      "solveByElimination",
+      "LinearSystemGraphSpec",
+      "LinearSystemGraph"
+    ],
+    "notAdded": "Chapter3PairOfEquationsSpec",
+    "keyChoices": [
+      "cross products not ratios \u2014 survives a zero coefficient",
+      "exact rationals not floats \u2014 23/13 verifies, 1.77 does not"
+    ]
+  },
+  "centralInvariant": {
+    "statement": "graph relationship and algebraic classification agree for every system; the validator refuses a pair where they do not",
+    "systemsTested": 5,
+    "disagreements": 0
+  },
+  "methodAgreement": {
+    "substitutionVsElimination": "same outcome and same solution on all five systems",
+    "verifiedInBothEquations": true
+  },
+  "degenerateReadings": {
+    "0 = 0": "infinitely many \u2014 the second equation said nothing new",
+    "0 = k": "no solution \u2014 the lines never meet",
+    "framing": "information, not an accident (asserted by test)",
+    "reportedAsSolution": false
+  },
+  "defectsFoundByOwnHarness": [
+    "the alt-text validator accepted 'never meet' as describing intersecting lines, because 'meet' is inside it; it now checks contradicting words too",
+    "a test forbade 'many solutions' outright, wrongly flagging the legitimate 'infinitely many solutions'",
+    "a test expected one match for 'SAME line' where the renderer deliberately states it twice"
+  ],
+  "coincidentRendering": {
+    "strokes": "one line carrying both labels",
+    "statedInWords": true,
+    "colourDependent": false,
+    "svgLineCount": {
+      "coincident": 3,
+      "intersecting": 4
+    }
+  },
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch3Rows": 5,
+      "stages": "5 of 5 reached",
+      "finishAction": "fired",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 30,
+    "remaining": 35,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2225,
+    "testFiles": 113,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_LINEAR_SYSTEMS_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_LINEAR_SYSTEM_EXTENSION",
+  "nextRecommendation": "Chapter 9 Heights and Distances (3 units) \u2014 reuses rightTriangleRoles from checkpoint 55, so it tests application fidelity rather than new representation architecture"
+}

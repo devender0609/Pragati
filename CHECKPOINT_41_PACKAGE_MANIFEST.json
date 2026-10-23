@@ -1,0 +1,60 @@
+{
+  "checkpoint": 41,
+  "applicationVersion": "0.83.5",
+  "sourceCommit": null,
+  "sourceCommitNote": "no git repository in the working container; the tree is the source of truth",
+  "packageCreatedUtc": "2026-10-13T20:22:43Z",
+  "testCount": 2024,
+  "testFiles": 102,
+  "class9UnitCount": 93,
+  "class9AuthoredLessons": 84,
+  "repositoryAuthoredLessons": 96,
+  "segmentBackedLessons": 2,
+  "class9UnitsWithoutLesson": 9,
+  "class9ReadyRemaining": 8,
+  "blockedUnits": 1,
+  "blockedUnitPolicy": "historical_material_lesson_vs_context (\u00a73.1)",
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "nodeVersionUsed": "v22.22.2",
+  "packageManager": "npm (no packageManager field pinned); package-lock.json present",
+  "commands": {
+    "install": "npm ci",
+    "typecheck": "npm run typecheck",
+    "test": "npm test",
+    "validateCurriculum": "npm run validate:curriculum",
+    "build": "npm run build",
+    "buildOutput": "dist/"
+  },
+  "environmentVariableNames": [
+    "VITE_FIREBASE_API_KEY",
+    "VITE_FIREBASE_AUTH_DOMAIN",
+    "VITE_FIREBASE_PROJECT_ID",
+    "VITE_FIREBASE_STORAGE_BUCKET",
+    "VITE_FIREBASE_MESSAGING_SENDER_ID",
+    "VITE_FIREBASE_APP_ID"
+  ],
+  "environmentVariableNote": "names only; no values are packaged, and the app runs without them with teacher login disabled",
+  "hostingConfigDetected": null,
+  "hostingNote": "no vercel.json, netlify.toml or other hosting config in the repository; it is a plain Vite static build",
+  "cleanInstallPerformed": false,
+  "cleanInstallNote": "npm ci was NOT run in this container; node_modules was shared from the checkpoint-40 tree by symlink and is excluded from the package. Clean-install reproducibility is unverified and is a Deployment RC requirement.",
+  "artifactHashes": {
+    "package.json": "4c3fddbe78d035bf8eb9a81e2c639ac5c7651293caae9f5c3a10317ea1395e1f",
+    "package-lock.json": "b7c9b29f77db92554e4f14979309b0699b9968182a173520e411e9eff89f8326",
+    "CURRICULUM_MASTER_MAP.json": "0745a8bc52863b76c687ed1ddd71fc27567dcd57d99af7ce92e8e2e4b069f52a",
+    "CURRICULUM_COVERAGE_MATRIX.md": "d7c2e7b26b982f20e9b47dc513eb7c8bed81028c584d0d41231ddb11f1152fb5",
+    "CONTENT_BACKLOG.md": "d158c7fc6ff339a6577eb378b68002fcd1c129caaa7c0846cdeb962e3f741a23",
+    "CHECKPOINT_STATUS_COUNTS.json": "320b24ad2aac43a996138b584ab0ca7b1f50c9d11219ac5e7f044ea20e777f4e",
+    "INSTRUCTIONAL_MASTER_BLUEPRINT.md": "7c8d7b212caadbab86c686075349a058777932042514518a698edbf0c7e1185b",
+    "src/curriculum/data/instructionalDecomposition.json": "fb1f68c379e0521967c63244aeb26df81ec5671cd50c94ced32d2d8b2e6c1dfa",
+    "src/curriculum/data/mathCurriculumMasterEvidence.json": "07f788e0ad29cb9ef15f46e412547e87b2f8eae8de0fc5438373fd964cae48f5",
+    "src/curriculum/conversesSections.ts": "9bad6160e81665641b45914e66ba1fe850b7113858a3661f69a8e818c0679fd1",
+    "src/curriculum/authoredSection.ts": "e511f0b62cf740c702f8cd3db20239f675069441a8f04488032b850d64b59ae6",
+    "src/curriculum/sectionValidators.ts": "a2cd79989e603e92d0bf5783fdca93f423fe92c983fc1f034e8c6918ad97de2d"
+  }
+}

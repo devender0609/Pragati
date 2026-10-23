@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  /* v0.76 §4 — the page ground is warm paper, not dashboard slate. */
+  background-color: #FAF6EF;
+  color: #0D1426;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Slightly looser body line-height for readability across long lesson text. */
+@layer base {
+  /*
+    v0.69 §12/§38 — 44px MINIMUM ON EVERY CONTROL.
+    Visual QA measured the rendered DOM rather than eyeballing
+    screenshots and found controls at 28px, 35px, 36px and 40px across
+    screens that had shipped since v0.55 — a select at 35px is below
+    every published touch-target guideline and was never going to be
+    caught by reading the markup.
+    Set as a floor in the base layer so it applies to controls nobody
+    thought to audit, including ones added later. Components that need
+    to be taller still can be; nothing here caps a height.
+  */
+  button,
+  select,
+  input:not([type='checkbox']):not([type='radio']),
+  textarea,
+  [role='radio'],
+  [role='button'] {
+    min-height: 44px;
+  }
+  /* Multi-line inputs size to their rows attribute, which is already
+     far above the floor; the rule above is harmless there but the
+     intent is single-line controls. */
+  textarea {
+    min-height: 66px;
+  }
+
+  p,
+  li {
+    line-height: 1.55;
+  }
+  h1 {
+    letter-spacing: -0.015em;
+  }
+  h2,
+  h3 {
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sm:px-5;
+  }
+  .btn-secondary {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-slate-200 transition hover:bg-slate-50 active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 sm:px-5;
+  }
+  .card {
+    /* v0.41 — tighter mobile padding (3.5) so 320-360 px screens fit cards
+       without horizontal scroll; scales back up on sm+. */
+    @apply rounded-2xl bg-white p-3.5 shadow-card ring-1 ring-slate-100 sm:p-5 md:p-6;
+  }
+  .form-input {
+    @apply block w-full rounded-lg border-0 bg-white px-3 py-2 text-sm text-slate-900 ring-1 ring-inset ring-slate-300 transition placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500;
+  }
+  /* Section headings — used by Results, Learn, Teacher dashboard */
+  .h-section {
+    @apply text-base font-semibold text-slate-900 sm:text-lg;
+  }
+}
+
+/* ------------------------------------------------------------------
+   v0.69 §11/§38 — MOTION, AND THE RIGHT TO TURN IT OFF.
+   Every animation in the app is short and small. A user who has asked
+   their OS for less motion gets none of it, and the app must still work
+   perfectly — motion is polish, never information.
+   ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  /* §9 — a fraction should look like a fraction, not like "3/8". */
+  .frac {
+    @apply inline-flex flex-col items-center align-middle leading-none;
+  }
+  .frac > .frac-n {
+    @apply px-1 pb-0.5 text-[0.95em];
+  }
+  .frac > .frac-d {
+    @apply border-t border-current px-1 pt-0.5 text-[0.95em];
+  }
+
+  /* §7/§10 — semantic lesson surfaces. Each pairs a hue with a label or
+     icon in the component that uses it, so colour is never the only cue. */
+  .surface-learn {
+    @apply rounded-xl2 border border-learn-200 bg-learn-50/70 p-4;
+  }
+  .surface-practice {
+    @apply rounded-xl2 border border-practice-200 bg-practice-50/70 p-4;
+  }
+  .surface-attend {
+    @apply rounded-xl2 border border-attend-300 bg-attend-50 p-4;
+  }
+  .surface-correct {
+    @apply rounded-xl2 border border-correct-300 bg-correct-50 p-4;
+  }
+  .surface-teacher {
+    @apply rounded-xl2 border border-teacher-200 bg-teacher-50 p-4;
+  }
+
+  /* §12/§38 — every interactive target clears 44px. */
+  .tap {
+    @apply min-h-[44px] min-w-[44px];
+  }
+}
+
+/* ===========================================================================
+   v0.76 §11 — MATHEMATICAL TYPOGRAPHY
+   ===========================================================================
+
+   Two rules that a general-purpose type scale cannot express.
+
+   1. Figures in mathematics must not jitter. Inter's default figures are
+      proportional, so "1/4" and "3/8" set at different widths and a
+      column of answers wobbles. Anything tagged .num gets tabular,
+      lining figures.
+
+   2. A fraction written "3/5" in running text is a division sign the
+      student has not met yet. .frac stacks the numerator over the
+      denominator with a real rule, at the size the surrounding text is
+      set, so it reads the way the textbook prints it.
+   =========================================================================== */
+
+.num,
+.frac {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: 'tnum' 1, 'lnum' 1;
+}
+
+.frac {
+  display: inline-grid;
+  vertical-align: -0.42em;
+  text-align: center;
+  line-height: 1.05;
+}
+.frac > .frac-n {
+  padding: 0 0.18em;
+}
+.frac > .frac-d {
+  padding: 0 0.18em;
+  border-top: 0.075em solid currentColor;
+}
+
+/* Display headings are set tight; Anek Latin's default tracking is
+   generous and a chapter title at 40px needs pulling in. */
+.font-display {
+  letter-spacing: -0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

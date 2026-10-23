@@ -1,0 +1,157 @@
+{
+  "checkpoint": 62,
+  "canonicalVersion": "0.84.0-c10.8",
+  "packageCreatedUtc": "2026-10-21T19:28:10Z",
+  "pilotScope": {
+    "units": [
+      "c10:1.2a",
+      "c10:1.2b",
+      "c10:1.3a",
+      "c10:1.3b"
+    ],
+    "authored": 4,
+    "section11": {
+      "role": "REVIEW",
+      "warrantsUnit": false,
+      "note": "confirmed from the decomposition, not assumed"
+    },
+    "proofExpectations": {
+      "1.2a": "STATE_WITHOUT_PROOF",
+      "1.2b": "APPLY",
+      "1.3a": "PROVE",
+      "1.3b": "PROVE"
+    }
+  },
+  "rationalisationDiscrepancy": {
+    "sourceRecord": "unchanged \u2014 the stale sentence stays in the source model as evidence",
+    "disposition": "SECTION_1_1_DISPOSITION records REVIEW, warrantsUnit false, with the reason written out",
+    "guard": "auditRationalisationLeak distinguishes teaching the removed topic from naming it to exclude it",
+    "whyNotAWordBan": "a word ban would make the discrepancy undocumentable",
+    "fixtures": {
+      "mustFire": 3,
+      "mustNotFire": 3,
+      "allCorrect": true
+    },
+    "leaksFound": 0,
+    "previewCheck": "the word Euclid appears nowhere student-visible at any viewport"
+  },
+  "ftaTreatment": {
+    "proved": false,
+    "statedExplicitly": true,
+    "negativeFixtureCaught": true
+  },
+  "hcfLcm": {
+    "method": "prime exponents, minimum and maximum, derived from divisibility",
+    "pairsRecomputed": [
+      [
+        96,
+        404,
+        4,
+        9696
+      ],
+      [
+        336,
+        54,
+        6,
+        3024
+      ],
+      [
+        6,
+        20,
+        2,
+        60
+      ],
+      [
+        510,
+        92,
+        2,
+        23460
+      ],
+      [
+        12,
+        18,
+        6,
+        36
+      ]
+    ],
+    "productRelation": "taught for TWO numbers only; 4, 6, 15 witness the failure (1 x 60 vs 360)"
+  },
+  "proofs": {
+    "root2": "full contradiction proof with lowest terms identified as the contradicted assumption",
+    "root3Root5": "same structure, with 9k^2 and 25k^2 substitution flagged as arithmetic to check",
+    "composite": "3 + 2root5 by reduction and closure, not by squaring",
+    "generalRootP": "background only; no practice item asks for a proof for arbitrary p"
+  },
+  "progression": {
+    "irrationalityNew": false,
+    "contradictionNew": false,
+    "deepening": "FTA becomes the tool, which is what lets the argument extend"
+  },
+  "defectsFoundByOwnHarness": [
+    "the audit flagged a worked example explaining why computing decimals is NOT a proof, as a proof missing lowest terms",
+    "the audit then flagged the 3 + 2root5 reduction proof, which legitimately forms no fraction to square; the check now applies only to direct proofs",
+    "one worked step at exactly 40 characters of reasoning",
+    "a progression sentence that did not state the deepening explicitly"
+  ],
+  "architecture": {
+    "verdict": "stable \u2014 no new representation schema",
+    "added": [
+      "numberTheory.ts: exact primality, factorisation, HCF, LCM, and two audits"
+    ],
+    "floatingPointInDivisibility": false
+  },
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch1Rows": 4,
+      "stages": "5 of 5 reached",
+      "finishAction": "fired",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "euclidVisibleToStudents": false,
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 37,
+    "remaining": 28,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "heightsDistances": 3,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2267,
+    "testFiles": 115,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_REAL_NUMBERS_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_ARCHITECTURE_STABLE",
+  "nextRecommendation": "Chapter 2 Polynomials \u2014 zeroes, x-intercepts and the coefficient relations must describe the same numbers, the same cross-representation shape LinearSystem already proved; then Chapter 5 Arithmetic Progressions, recorded as FORMALISATION rather than first encounter"
+}

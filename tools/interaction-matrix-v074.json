@@ -1,0 +1,458 @@
+[
+  {
+    "width": 390,
+    "surface": "Student nav",
+    "control": "Learn",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student nav",
+    "control": "Practice",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student nav",
+    "control": "Progress",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student nav",
+    "control": "Home",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student Learn",
+    "control": "Chapter 7",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student Fractions",
+    "control": "Fractions as parts of a whole",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student Practice",
+    "control": "Practise a concept",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student Practice",
+    "control": "Open chapter",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student Practice",
+    "control": "Mixed practice",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student Practice",
+    "control": "Chapter check",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Student Progress",
+    "control": "Start: Fractions as parts of a whole",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "English"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher nav",
+    "control": "Classes",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher nav",
+    "control": "Assign",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher nav",
+    "control": "Assess",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher nav",
+    "control": "Insights",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher nav",
+    "control": "Resources",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher Overview",
+    "control": "Open Classes",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher Overview",
+    "control": "Create assignment",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 390,
+    "surface": "Teacher Overview",
+    "control": "View curriculum",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Teacher"
+  },
+  {
+    "width": 768,
+    "surface": "Student nav",
+    "control": "Learn",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student nav",
+    "control": "Practice",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student nav",
+    "control": "Progress",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student nav",
+    "control": "Home",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student Learn",
+    "control": "Chapter 7",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student Fractions",
+    "control": "Fractions as parts of a whole",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student Practice",
+    "control": "Practise a concept",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student Practice",
+    "control": "Open chapter",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student Practice",
+    "control": "Mixed practice",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student Practice",
+    "control": "Chapter check",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Student Progress",
+    "control": "Start: Fractions as parts of a whole",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher nav",
+    "control": "Classes",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher nav",
+    "control": "Assign",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher nav",
+    "control": "Assess",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher nav",
+    "control": "Insights",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher nav",
+    "control": "Resources",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher Overview",
+    "control": "Open Classes",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher Overview",
+    "control": "Create assignment",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 768,
+    "surface": "Teacher Overview",
+    "control": "View curriculum",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Student nav",
+    "control": "Learn",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student nav",
+    "control": "Practice",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student nav",
+    "control": "Progress",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student nav",
+    "control": "Home",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student Learn",
+    "control": "Chapter 7",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student Fractions",
+    "control": "Fractions as parts of a whole",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student Practice",
+    "control": "Practise a concept",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student Practice",
+    "control": "Open chapter",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student Practice",
+    "control": "Mixed practice",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student Practice",
+    "control": "Chapter check",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Student Progress",
+    "control": "Start: Fractions as parts of a whole",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "STUDENT MODE"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher nav",
+    "control": "Classes",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher nav",
+    "control": "Assign",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher nav",
+    "control": "Assess",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher nav",
+    "control": "Insights",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher nav",
+    "control": "Resources",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher Overview",
+    "control": "Open Classes",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher Overview",
+    "control": "Create assignment",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  },
+  {
+    "width": 1440,
+    "surface": "Teacher Overview",
+    "control": "View curriculum",
+    "status": "CLICKED",
+    "changed": true,
+    "dest": "Local demo mode"
+  }
+]

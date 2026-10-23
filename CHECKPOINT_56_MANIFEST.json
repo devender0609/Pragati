@@ -1,0 +1,112 @@
+{
+  "checkpoint": 56,
+  "canonicalVersion": "0.84.0-c10.2",
+  "packageCreatedUtc": "2026-10-19T14:16:49Z",
+  "pilotScope": {
+    "units": [
+      "c10:12.2a",
+      "c10:12.2b",
+      "c10:12.3a"
+    ],
+    "verifiedAgainst": "CLASS10_DECOMPOSITION.json",
+    "risk": "C",
+    "authored": 3
+  },
+  "architecture": {
+    "verdict": "B \u2014 general solid-composition extension required and successfully implemented",
+    "added": [
+      "CompositeSolidSpec",
+      "surfacesOf (derived per kind)",
+      "exposedSurfaces (derived, never authored)",
+      "exposedSurfaceArea",
+      "compositeVolume",
+      "naiveTotalSurfaceArea",
+      "validateCompositeSolid",
+      "surfaceAccount",
+      "CompositeSolidFigure (labelled cross-section + surface table)"
+    ],
+    "notBuilt": [
+      "boolean geometry",
+      "meshes",
+      "cavities",
+      "3-D engine",
+      "chapter-specific spec"
+    ],
+    "representationChoice": "labelled vertical cross-section, following the Class 9 net principle"
+  },
+  "lessons": [
+    {
+      "unit": "12.2a",
+      "artifact": "ncert_jemh1_s12_2_exposed_lesson",
+      "note": "deliberately contains no numbers"
+    },
+    {
+      "unit": "12.2b",
+      "artifact": "ncert_jemh1_s12_2_area_lesson"
+    },
+    {
+      "unit": "12.3a",
+      "artifact": "ncert_jemh1_s12_3_volume_lesson"
+    }
+  ],
+  "centralInvariant": {
+    "statement": "exposed surface area = sum of exposed component surfaces; the deficit against naive totals equals twice the joined face",
+    "testedForEveryFigure": true
+  },
+  "negativeFixtures": [
+    "mismatched join radii",
+    "curved surface used as a join face",
+    "one surface hidden twice",
+    "three components exceeding CBSE two-solid scope",
+    "cone slant height contradicting radius and height"
+  ],
+  "defectsFoundByOwnTests": [
+    "two wrong volume answers in 12.3a with self-correction text left in the rationale",
+    "four worked steps under the reasoning-depth bar"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch12Rows": 3,
+      "stages": "4/4",
+      "consoleErrors": 0,
+      "overflow": {
+        "1280": "0px",
+        "834": "0px",
+        "360": "0px"
+      }
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 7,
+    "remaining": 58,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "class9State": {
+    "lessons": 92,
+    "untouched": true
+  },
+  "trigRegression": "4 lessons unchanged at version 1",
+  "baselinesUpdated": 4,
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2140,
+    "testFiles": 109,
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_COMPOSITE_SOLIDS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_SOLID_COMPOSITION_EXTENSION",
+  "nextRecommendation": "Chapter 6 similarity (6.2a-6.4c): both C-risk frontiers are resolved, so choose by mathematical risk \u2014 the PROVE/STATE_WITHOUT_PROOF boundary at 6.4 is the one an author following the textbook most easily violates"
+}
