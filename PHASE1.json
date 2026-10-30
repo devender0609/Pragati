@@ -1,0 +1,1069 @@
+{
+  "records": [
+    {
+      "artifactId": "ncert_jemh1_s8_2_ratios_lesson",
+      "chapter": 8,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s8_2_welldefined_lesson",
+      "chapter": 8,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s8_2_from_ratio_lesson",
+      "chapter": 8,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s8_3_special_angles_lesson",
+      "chapter": 8,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s8_3_boundary_angles_lesson",
+      "chapter": 8,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s8_4_pythagorean_identity_lesson",
+      "chapter": 8,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s8_4_proving_identities_lesson",
+      "chapter": 8,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s12_2_exposed_lesson",
+      "chapter": 12,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s12_2_area_lesson",
+      "chapter": 12,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s12_3_volume_lesson",
+      "chapter": 12,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s6_2_similar_figures_lesson",
+      "chapter": 6,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s6_3_bpt_proof_lesson",
+      "chapter": 6,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s6_3_bpt_apply_lesson",
+      "chapter": 6,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s6_4_aaa_lesson",
+      "chapter": 6,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s6_4_sss_sas_lesson",
+      "chapter": 6,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s6_4_apply_lesson",
+      "chapter": 6,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s4_2_standard_form_lesson",
+      "chapter": 4,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s4_3_factorisation_lesson",
+      "chapter": 4,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s4_4_discriminant_lesson",
+      "chapter": 4,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s4_4_formula_apply_lesson",
+      "chapter": 4,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_2_direct_mean_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_2_assumed_mean_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_2_step_deviation_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_3_mode_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_3_mean_vs_mode_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_4_cumulative_frequency_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_4_median_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s13_4_comparing_averages_lesson",
+      "chapter": 13,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s3_2_graphical_lesson",
+      "chapter": 3,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s3_2_consistency_lesson",
+      "chapter": 3,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s3_3_substitution_lesson",
+      "chapter": 3,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s3_3_elimination_lesson",
+      "chapter": 3,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s3_3_modelling_lesson",
+      "chapter": 3,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s9_1_setup_lesson",
+      "chapter": 9,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s9_1_one_triangle_lesson",
+      "chapter": 9,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s9_1_two_triangles_lesson",
+      "chapter": 9,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s1_2_fta_lesson",
+      "chapter": 1,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s1_2_hcf_lcm_lesson",
+      "chapter": 1,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s1_3_root2_proof_lesson",
+      "chapter": 1,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s1_3_more_irrationals_lesson",
+      "chapter": 1,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s2_2_zeroes_meaning_lesson",
+      "chapter": 2,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s2_2_counting_zeroes_lesson",
+      "chapter": 2,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s2_3_zeroes_coefficients_lesson",
+      "chapter": 2,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s2_3_construct_lesson",
+      "chapter": 2,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s5_2_identify_ap_lesson",
+      "chapter": 5,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s5_3_nth_term_lesson",
+      "chapter": 5,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s5_3_missing_parts_lesson",
+      "chapter": 5,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s5_4_sum_derivation_lesson",
+      "chapter": 5,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s5_4_applications_lesson",
+      "chapter": 5,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s14_1_classical_definition_lesson",
+      "chapter": 14,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s14_1_range_lesson",
+      "chapter": 14,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s14_1_complement_lesson",
+      "chapter": 14,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s14_1_applications_lesson",
+      "chapter": 14,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s11_1_sector_lesson",
+      "chapter": 11,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s11_1_segment_lesson",
+      "chapter": 11,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s11_1_combined_lesson",
+      "chapter": 11,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s10_2_tangent_definition_lesson",
+      "chapter": 10,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s10_2_radius_perpendicular_lesson",
+      "chapter": 10,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s10_3_tangent_count_lesson",
+      "chapter": 10,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s10_3_equal_tangents_lesson",
+      "chapter": 10,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s10_3_applications_lesson",
+      "chapter": 10,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s7_2_distance_lesson",
+      "chapter": 7,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s7_2_applications_lesson",
+      "chapter": 7,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s7_3_section_formula_lesson",
+      "chapter": 7,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    },
+    {
+      "artifactId": "ncert_jemh1_s7_3_midpoint_ratio_lesson",
+      "chapter": 7,
+      "checksRun": [
+        "scope_leak",
+        "proof_presence",
+        "glossary_use",
+        "reasoning_depth",
+        "placeholder",
+        "provenance",
+        "stage_completeness",
+        "corpus_duplication"
+      ],
+      "findings": [],
+      "clean": true
+    }
+  ],
+  "findings": [],
+  "proofConventions": {
+    "labelled": [
+      "s8_4_pythagorean_identity_lesson",
+      "s10_2_radius_perpendicular_lesson",
+      "s10_3_equal_tangents_lesson"
+    ],
+    "prose": [
+      "s8_2_welldefined_lesson",
+      "s8_3_special_angles_lesson",
+      "s8_4_proving_identities_lesson",
+      "s6_3_bpt_proof_lesson",
+      "s6_4_aaa_lesson",
+      "s4_4_discriminant_lesson",
+      "s1_3_root2_proof_lesson",
+      "s1_3_more_irrationals_lesson",
+      "s2_3_zeroes_coefficients_lesson",
+      "s5_3_nth_term_lesson",
+      "s14_1_range_lesson",
+      "s11_1_sector_lesson",
+      "s10_3_tangent_count_lesson",
+      "s7_2_distance_lesson",
+      "s7_3_section_formula_lesson"
+    ]
+  }
+}

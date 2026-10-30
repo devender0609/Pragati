@@ -1,0 +1,142 @@
+{
+  "checkpoint": 59,
+  "canonicalVersion": "0.84.0-c10.5",
+  "packageCreatedUtc": "2026-10-20T15:36:26Z",
+  "pilotScope": {
+    "units": [
+      "c10:13.2a",
+      "c10:13.2b",
+      "c10:13.2c",
+      "c10:13.3a",
+      "c10:13.3b",
+      "c10:13.4a",
+      "c10:13.4b",
+      "c10:13.4c"
+    ],
+    "authored": 8,
+    "verifiedAgainst": "CLASS10_DECOMPOSITION.json",
+    "ogive": "excluded \u2014 crosswalk records it as a passing mention, not prescribed and not taught"
+  },
+  "architecture": {
+    "verdict": "B \u2014 general grouped-data extension required and implemented",
+    "reason": "Class 9 DataSet holds categories as strings, which is mathematically wrong for intervals needing numeric bounds",
+    "added": [
+      "GroupedDistribution",
+      "classMark",
+      "boundaries (inclusive-convention aware)",
+      "classWidth",
+      "cumulativeFrequencies",
+      "directMean",
+      "assumedMean",
+      "stepDeviationMean",
+      "mode",
+      "median",
+      "meansReconcile",
+      "GroupedTableSpec",
+      "GroupedTableFigure"
+    ],
+    "notAdded": "Chapter13DataSpec"
+  },
+  "canonicalDatasets": {
+    "count": 3,
+    "ids": [
+      "water_litres",
+      "seedling_heights",
+      "reading_minutes"
+    ],
+    "derivedTables": 7
+  },
+  "centralInvariant": {
+    "statement": "direct, assumed-mean and step-deviation means agree on the same distribution",
+    "assumedMeansTried": [
+      "every class mark",
+      -1000,
+      -7.25,
+      0,
+      3.5,
+      10000
+    ],
+    "disagreements": 0,
+    "note": "omitting h is tested NOT to give the mean, so the characteristic step-deviation error cannot pass"
+  },
+  "modeFidelity": {
+    "modalClassByFrequency": true,
+    "modeAssertedInsideModalClass": true,
+    "equalNeighboursGiveMidpoint": true,
+    "tieReturnsNull": "no silent choice between two tied classes"
+  },
+  "medianFidelity": {
+    "cumulativeDerived": true,
+    "monotonic": true,
+    "endsAtTotal": true,
+    "firstToReachNOver2": true,
+    "exactLandingCounts": true,
+    "medianAssertedInsideMedianClass": true
+  },
+  "roundingPolicy": "full precision internally; rounded to 4 dp for display only; prose figures interpolated from the model",
+  "defectsFoundByOwnHarness": [
+    "alt text stated sum fx = 820 when it is 865",
+    "alt text stated sum fx = 1920 when it is 2100",
+    "guided answer '15 units' where its own rationale computed 16.43",
+    "independent answer '11.56' where its rationale computed 11.25",
+    "glossary terms 'central tendency' and 'outlier' defined and never used"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch13Rows": 8,
+      "stages": "5 of 5 reached",
+      "finishAction": "fired",
+      "consoleErrors": 0,
+      "tables": {
+        "rowScopeHeaders": 12,
+        "colScopeHeaders": 9,
+        "captions": 2,
+        "scrollsInsideOwnContainer": true
+      },
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 25,
+    "remaining": 40,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "baselinesUpdated": 3,
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2202,
+    "testFiles": 112,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "incident": "a container reset destroyed an earlier attempt at this checkpoint; the work was rebuilt from the checkpoint-58 package and the five defects above were caught on the rebuild",
+  "verdict": "CLASS_10_STATISTICS_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_GROUPED_DATA_EXTENSION",
+  "nextRecommendation": "Chapter 3 pair of linear equations (3.2a-3.3b, 5 units) \u2014 substitution and elimination have different failure modes, and the consistent/inconsistent/dependent trichotomy must agree between algebraic and graphical readings; then Chapter 9 heights and distances, which reuses rightTriangleRoles"
+}

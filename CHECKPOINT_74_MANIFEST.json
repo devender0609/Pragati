@@ -1,0 +1,110 @@
+{
+  "checkpoint": 74,
+  "canonicalVersion": "0.84.0-c11.3",
+  "verdict": "CLASS_11_SOURCE_COMPLETION_INCOMPLETE",
+  "packageCreatedUtc": "2026-10-26T19:47:44Z",
+  "gatesPassed": 19,
+  "gatesTotal": 21,
+  "gatesFailed": [
+    "all visualRequired pages inspected",
+    "all notation-critical pages inspected"
+  ],
+  "sourceIntegrity": {
+    "ncertFiles": 18,
+    "hashMismatchesVsCheckpoint72": 0,
+    "cbseFrozen": true
+  },
+  "structure": {
+    "chapters": 14,
+    "sections": 63,
+    "subsections": 67,
+    "contiguous": "14/14",
+    "headingsRecoveredFromBody": "62/63",
+    "gapResolved": "10.5 Ellipse via its own subsections",
+    "note": "chapter 14 opens at 14.1 Event and has no Introduction section"
+  },
+  "visual": {
+    "totalPdfPages": 368,
+    "chapterInstructionalPages": 313,
+    "pagesDirectlyInspected": 75,
+    "visualRequiredRuleClassified": 105,
+    "visualRequiredDirectlyInspected": 49,
+    "ruleAccuracy": "32/36 true positive, 13/13 true negative against the inspected sample",
+    "falsePositiveClassesFound": [
+      "chapter opener pages with portrait and QR",
+      "tinted text boxes around summary and historical notes"
+    ],
+    "finding": "no threshold achieves both full recall and full precision; tinted boxes and small figures overlap in every measurable feature, so 105 is a validated lower bound and the classification cannot be automated to completion"
+  },
+  "intents": {
+    "sections": "63/63",
+    "grounded": true
+  },
+  "mixedScope": {
+    "sectionsCarryingFormativeOnly": 9,
+    "scopeFragments": 3,
+    "fragments": [
+      {
+        "id": "SF-1",
+        "section": "4.5"
+      },
+      {
+        "id": "SF-2",
+        "section": "9.3"
+      },
+      {
+        "id": "SF-3",
+        "section": "14.1"
+      }
+    ]
+  },
+  "formativeOnly": {
+    "mapped": "12/12",
+    "FO4": {
+      "ncertChapterOwner": null,
+      "treatment": "CBSE-supplied formative source record; no kemh1 section invented",
+      "consequence": "section 7.2 proves the binomial theorem by induction in a summative section while no current chapter teaches induction"
+    },
+    "FO12": {
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "rule": "instructionalStatus and assessmentStatus are independent; neither inferred from the other"
+    }
+  },
+  "proofExpectations": {
+    "PROVE": 1,
+    "note": "CBSE prescribes proof depth explicitly only for the binomial theorem; elsewhere classification follows the textbook body and no precision was invented"
+  },
+  "appendices": [
+    {
+      "title": "Infinite Series",
+      "pages": 9,
+      "disposition": "ENRICHMENT"
+    },
+    {
+      "title": "Mathematical Modelling",
+      "pages": 12,
+      "disposition": "ENRICHMENT"
+    }
+  ],
+  "miscellaneousExercises": "14/14 located, question-level scope not audited",
+  "progression": {
+    "probability": "FORMALISATION, not new",
+    "trigonometry": "REPRESENTATION_EXTENSION plus NEW_NAMED_OBJECT, not first trigonometry"
+  },
+  "discrepancyLedger": 5,
+  "riskMap": {
+    "A": 4,
+    "B": 4,
+    "C": 7,
+    "highest": "trigonometric functions beyond acute angles \u2014 specialAngles assumes degrees and acute arguments"
+  },
+  "priorGrades": {
+    "class9": "92 lessons 0/0/0/0",
+    "class10": "65 lessons 0/0/0/0",
+    "class6": "S74-v1-DFC56A frozen",
+    "regression": "48 tests passing, typecheck 0"
+  },
+  "growth": "FROZEN",
+  "next": "checkpoint 75 \u2014 finish visual inspection of roughly 240 remaining chapter pages; this closes visualRequired and the notation audit together. Not decomposition."
+}

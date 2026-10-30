@@ -1,0 +1,25 @@
+{
+  // Production build typecheck.
+  //
+  // The full `tsconfig.json` includes `src` and `tools` so unit tests can
+  // assert against the same route contracts the screenshot harness uses.
+  // That is right for CI and wrong for deployment: it makes a dev-only
+  // fixture able to fail a production build, which is exactly what happened
+  // twice when `tools/routeContracts.mjs` did not reach the repository.
+  //
+  // Nothing under `__tests__` or `tools` is bundled by Vite. This config
+  // typechecks only what actually ships. `npm run typecheck` still uses the
+  // strict full config, so no checking is lost.
+  "extends": "./tsconfig.json",
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tools",
+    "src/**/__tests__/**",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.dom.test.tsx",
+    "src/setupTests.ts"
+  ]
+}

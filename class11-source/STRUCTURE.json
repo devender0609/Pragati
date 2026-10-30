@@ -1,0 +1,637 @@
+{
+  "1": {
+    "title": "SETS",
+    "pdfPages": 23,
+    "headingSections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "bodySections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "headingSubsections": [
+      "1.6.1",
+      "1.6.2",
+      "1.9.1",
+      "1.9.2",
+      "1.9.3"
+    ],
+    "bodySubsections": [
+      "1.6.1",
+      "1.6.2",
+      "1.9.1",
+      "1.9.2",
+      "1.9.3"
+    ],
+    "exercises": [
+      "EXERCISE 1.1",
+      "EXERCISE 1.2",
+      "EXERCISE 1.3",
+      "EXERCISE 1.4",
+      "EXERCISE 1.5"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 24
+  },
+  "2": {
+    "title": "RELATIONS AND FUNCTIONS",
+    "pdfPages": 19,
+    "headingSections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4"
+    ],
+    "bodySections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "2.12",
+      "2.13",
+      "2.14",
+      "2.15",
+      "2.16",
+      "2.17"
+    ],
+    "headingSubsections": [
+      "2.4.1",
+      "2.4.2"
+    ],
+    "bodySubsections": [
+      "2.4.1",
+      "2.4.2"
+    ],
+    "exercises": [
+      "EXERCISE 2.1",
+      "EXERCISE 2.2",
+      "EXERCISE 2.3"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 22
+  },
+  "3": {
+    "title": "TRIGONOMETRIC FUNCTIONS",
+    "pdfPages": 33,
+    "headingSections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "bodySections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14"
+    ],
+    "headingSubsections": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.3.1",
+      "3.3.2"
+    ],
+    "bodySubsections": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.3.1",
+      "3.3.2"
+    ],
+    "exercises": [
+      "EXERCISE 3.1",
+      "EXERCISE 3.2",
+      "EXERCISE 3.3"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 22
+  },
+  "4": {
+    "title": null,
+    "pdfPages": 13,
+    "headingSections": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5"
+    ],
+    "bodySections": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5"
+    ],
+    "headingSubsections": [
+      "4.3.1",
+      "4.3.2",
+      "4.3.3",
+      "4.3.4",
+      "4.3.5",
+      "4.3.6",
+      "4.3.7"
+    ],
+    "bodySubsections": [
+      "4.3.1",
+      "4.3.2",
+      "4.3.3",
+      "4.3.4",
+      "4.3.5",
+      "4.3.6",
+      "4.3.7"
+    ],
+    "exercises": [
+      "EXERCISE 4.1"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 8
+  },
+  "5": {
+    "title": null,
+    "pdfPages": 11,
+    "headingSections": [
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "bodySections": [
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "headingSubsections": [],
+    "bodySubsections": [],
+    "exercises": [
+      "EXERCISE 5.1"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": false,
+    "theoremBlocks": 0,
+    "examples": 13
+  },
+  "6": {
+    "title": null,
+    "pdfPages": 26,
+    "headingSections": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "bodySections": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "headingSubsections": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.3.4"
+    ],
+    "bodySubsections": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.3.4"
+    ],
+    "exercises": [
+      "EXERCISE 6.1",
+      "EXERCISE 6.2",
+      "EXERCISE 6.3",
+      "EXERCISE 6.4"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 6,
+    "examples": 24
+  },
+  "7": {
+    "title": null,
+    "pdfPages": 9,
+    "headingSections": [
+      "7.1",
+      "7.2"
+    ],
+    "bodySections": [
+      "7.1",
+      "7.2",
+      "7.3"
+    ],
+    "headingSubsections": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "bodySubsections": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "exercises": [
+      "EXERCISE 7.1"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 4
+  },
+  "8": {
+    "title": null,
+    "pdfPages": 16,
+    "headingSections": [
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "bodySections": [
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "headingSubsections": [
+      "8.4.1",
+      "8.4.3"
+    ],
+    "bodySubsections": [
+      "8.4.1",
+      "8.4.3"
+    ],
+    "exercises": [
+      "EXERCISE 8.1",
+      "EXERCISE 8.2"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 12
+  },
+  "9": {
+    "title": null,
+    "pdfPages": 25,
+    "headingSections": [
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4"
+    ],
+    "bodySections": [
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4",
+      "9.5",
+      "9.6",
+      "9.7",
+      "9.8",
+      "9.9",
+      "9.10",
+      "9.11",
+      "9.12",
+      "9.13",
+      "9.14",
+      "9.15",
+      "9.16",
+      "9.17",
+      "9.18",
+      "9.19"
+    ],
+    "headingSubsections": [
+      "9.2.1",
+      "9.2.2",
+      "9.2.3",
+      "9.3.1",
+      "9.3.2",
+      "9.3.3",
+      "9.3.4",
+      "9.3.5",
+      "9.4.1"
+    ],
+    "bodySubsections": [
+      "9.2.1",
+      "9.2.2",
+      "9.2.3",
+      "9.3.1",
+      "9.3.2",
+      "9.3.3",
+      "9.3.4",
+      "9.3.5",
+      "9.4.1"
+    ],
+    "exercises": [
+      "EXERCISE 9.1",
+      "EXERCISE 9.2",
+      "EXERCISE 9.3"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": false,
+    "theoremBlocks": 0,
+    "examples": 15
+  },
+  "10": {
+    "title": null,
+    "pdfPages": 32,
+    "headingSections": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.6"
+    ],
+    "bodySections": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.5",
+      "10.6",
+      "10.7",
+      "10.8",
+      "10.9",
+      "10.10",
+      "10.11",
+      "10.12",
+      "10.13",
+      "10.14",
+      "10.15",
+      "10.16",
+      "10.17",
+      "10.18",
+      "10.19",
+      "10.20",
+      "10.21",
+      "10.22",
+      "10.23",
+      "10.24",
+      "10.25",
+      "10.26",
+      "10.27",
+      "10.28",
+      "10.29",
+      "10.30",
+      "10.31",
+      "10.32",
+      "10.33"
+    ],
+    "headingSubsections": [
+      "10.2.1",
+      "10.2.2",
+      "10.4.1",
+      "10.4.2",
+      "10.5.1",
+      "10.5.2",
+      "10.5.3",
+      "10.5.4",
+      "10.6.1",
+      "10.6.2",
+      "10.6.3"
+    ],
+    "bodySubsections": [
+      "10.2.1",
+      "10.2.2",
+      "10.4.1",
+      "10.4.2",
+      "10.5.1",
+      "10.5.2",
+      "10.5.3",
+      "10.5.4",
+      "10.6.1",
+      "10.6.2",
+      "10.6.3"
+    ],
+    "exercises": [
+      "EXERCISE 10.1",
+      "EXERCISE 10.2",
+      "EXERCISE 10.3",
+      "EXERCISE 10.4"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 19
+  },
+  "11": {
+    "title": null,
+    "pdfPages": 9,
+    "headingSections": [
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4"
+    ],
+    "bodySections": [
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4"
+    ],
+    "headingSubsections": [],
+    "bodySubsections": [],
+    "exercises": [
+      "EXERCISE 11.1",
+      "EXERCISE 11.2"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 9
+  },
+  "12": {
+    "title": null,
+    "pdfPages": 40,
+    "headingSections": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5"
+    ],
+    "bodySections": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5",
+      "12.6",
+      "12.7",
+      "12.8",
+      "12.9",
+      "12.10",
+      "12.11",
+      "12.12"
+    ],
+    "headingSubsections": [
+      "12.3.1",
+      "12.3.2",
+      "12.5.1",
+      "12.5.2"
+    ],
+    "bodySubsections": [
+      "12.3.1",
+      "12.3.2",
+      "12.5.1",
+      "12.5.2"
+    ],
+    "exercises": [
+      "EXERCISE 12.1",
+      "EXERCISE 12.2"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 8,
+    "examples": 22
+  },
+  "13": {
+    "title": null,
+    "pdfPages": 32,
+    "headingSections": [
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4",
+      "13.5"
+    ],
+    "bodySections": [
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4",
+      "13.5",
+      "13.6",
+      "13.7",
+      "13.8",
+      "13.9",
+      "13.10",
+      "13.11"
+    ],
+    "headingSubsections": [
+      "13.4.1",
+      "13.4.2",
+      "13.4.3",
+      "13.5.1",
+      "13.5.2",
+      "13.5.3"
+    ],
+    "bodySubsections": [
+      "13.4.1",
+      "13.4.2",
+      "13.4.3",
+      "13.5.1",
+      "13.5.2",
+      "13.5.3"
+    ],
+    "exercises": [
+      "EXERCISE 13.1",
+      "EXERCISE 13.2"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 14
+  },
+  "14": {
+    "title": null,
+    "pdfPages": 25,
+    "headingSections": [
+      "14.1",
+      "14.2"
+    ],
+    "bodySections": [
+      "14.1",
+      "14.2"
+    ],
+    "headingSubsections": [
+      "14.1.1",
+      "14.1.2",
+      "14.1.3",
+      "14.1.4",
+      "14.1.5",
+      "14.2.1",
+      "14.2.2",
+      "14.2.3",
+      "14.2.4"
+    ],
+    "bodySubsections": [
+      "14.1.1",
+      "14.1.2",
+      "14.1.3",
+      "14.1.4",
+      "14.1.5",
+      "14.2.1",
+      "14.2.2",
+      "14.2.3",
+      "14.2.4"
+    ],
+    "exercises": [
+      "EXERCISE 14.1",
+      "EXERCISE 14.2"
+    ],
+    "hasMiscellaneous": true,
+    "hasSummary": true,
+    "hasHistorical": true,
+    "theoremBlocks": 0,
+    "examples": 12
+  }
+}

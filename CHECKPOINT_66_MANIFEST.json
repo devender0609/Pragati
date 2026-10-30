@@ -1,0 +1,216 @@
+{
+  "checkpoint": 66,
+  "canonicalVersion": "0.84.0-c10.12",
+  "packageCreatedUtc": "2026-10-22T18:52:06Z",
+  "waveScope": {
+    "units": [
+      "c10:11.1a",
+      "c10:11.1b",
+      "c10:11.1c"
+    ],
+    "authored": 3,
+    "section": "11.1 (folio 154); 11.2 is REVIEW and earns no unit",
+    "angleConstraint": "segment problems restricted to central angles 60, 90, 120",
+    "trigPrerequisite": "c10:8.3a licenses the 30/45/60 ratios for the 120 construction; the general half-ab-sin-C area formula is NOT in scope and is forbidden by test",
+    "excluded": [
+      "general trigonometric area formula",
+      "solid surface areas",
+      "angles outside 60/90/120 for segment work"
+    ]
+  },
+  "progression": {
+    "category": "PROCEDURAL_EXTENSION",
+    "class9AlreadyDerived": [
+      "arc length as the angle's share of the circumference (s6_4)",
+      "the area of a disc (s6_10_disc)",
+      "sector area as the angle's share of the disc (s6_10_sector)",
+      "circumference and the meaning of pi (s6_2, s6_3)"
+    ],
+    "genuinelyNewInClass10": [
+      "the circular segment",
+      "segment area as sector minus triangle",
+      "the major segment as the rest of the disc",
+      "combined plane figures"
+    ],
+    "auditor": "auditCircleNovelty",
+    "overclaimsCaught": 4,
+    "honestFramingsPassed": 4,
+    "checkedBeforeFramingTheWave": true
+  },
+  "architecture": {
+    "verdict": "GENERAL_REGION_COMPOSITION_EXTENSION",
+    "existingCapability": "checkpoint 32 gave GeometryCircle and GeometryArc, so the layer can DRAW a circle, arc, chord and angle mark",
+    "gap": "no region concept; a fill colour carries no mathematics, so nothing could tell a shaded sector from a shaded segment",
+    "added": [
+      "CircleRegion with kind, theta and composedOf",
+      "ExactArea as rat + pi*pi + root3*sqrt3 times r squared",
+      "sectorArea",
+      "centreTriangleArea",
+      "minorSegmentArea",
+      "majorSegmentArea",
+      "regionArea",
+      "validateRegion",
+      "proportionsAgree",
+      "segmentsCompleteTheDisc",
+      "anglesReconcile",
+      "auditCircleNovelty"
+    ],
+    "principleReused": "checkpoint 56 CompositeSolidSpec \u2014 derive the quantity from the object that says what is included and excluded",
+    "notAdded": [
+      "Chapter11CircleAreaSpec",
+      "arbitrary computational geometry",
+      "region union or intersection beyond the subtraction"
+    ]
+  },
+  "sectorDerivation": {
+    "sharedFraction": "theta/360 governs both arc and area",
+    "proportionsAgreeTestedAtAngles": [
+      30,
+      45,
+      60,
+      90,
+      120,
+      180,
+      270,
+      360
+    ],
+    "arcBounded": "0 <= arc <= circumference",
+    "unitsAreDegreesOnly": true
+  },
+  "segmentStructure": {
+    "derivedNeverAuthored": true,
+    "compositionDeclared": {
+      "minor_segment": [
+        "sector",
+        "triangle"
+      ],
+      "major_segment": [
+        "disc",
+        "minor_segment"
+      ]
+    },
+    "negativeFixtures": [
+      "a segment declaring no composition",
+      "a segment declaring the wrong composition",
+      "a segment given the sector's area",
+      "triangle minus sector, which comes out negative at every allowed angle"
+    ],
+    "majorDerivedFromMinor": true,
+    "minorPlusMajorRebuildsDisc": true
+  },
+  "triangleAreas": {
+    "method": "derived from construction, never from a trigonometric area formula",
+    "60": "equilateral of side r, (sqrt3/4) r^2",
+    "90": "right-angled with legs r, 1/2 r^2",
+    "120": "perpendicular from the centre splits it into two 30-60-90 triangles, (sqrt3/4) r^2",
+    "note": "the 60 and 120 triangles have the SAME area despite different shapes; a practice item uses this",
+    "anglesOutsideScopeThrow": true
+  },
+  "exactness": {
+    "form": "(rat + pi*pi + root3*sqrt3) x r^2",
+    "examples": {
+      "sector90": "1/4pi",
+      "triangle90": "1/2",
+      "minorSegment90": "1/4pi - 1/2",
+      "minorSegment60": "1/6pi - 1/4sqrt3",
+      "majorSegment120": "2/3pi + 1/4sqrt3"
+    }
+  },
+  "recomputation": {
+    "segments": [
+      55.94,
+      559.81,
+      3.26,
+      30.1,
+      123.84,
+      10.27,
+      17.75
+    ],
+    "combinedFigures": {
+      "square14LessCornerQuarter14": 42.06,
+      "square14LessFourQuartersR7": 42.06,
+      "whyEqual": "a quarter of the radius-14 disc equals a whole radius-7 disc; asserted in a test so it reads as fact, not a copy-paste slip",
+      "square6LessQuarter6": 7.73,
+      "square14PlusSemicircleR7": 272.97
+    },
+    "perimeterTraced": {
+      "cutSquare": 49.99,
+      "squareOwnPerimeter": 56,
+      "tracedIsShorter": true
+    }
+  },
+  "defectsFound": [
+    "formatArea put the rational term first, printing the 90-degree segment as '-1/2 + 1/4pi' \u2014 a positive area opening with a minus sign; the pi term now leads",
+    "one unused import"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch11Rows": 3,
+      "stages": "5 of 5 at all three viewports",
+      "finishAction": "fired at all three",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "confirmedOnScreenAllThreeWidthsBeforeFinish": [
+        "segment 55.94",
+        "sector 153.94",
+        "triangle 98",
+        "the word chord",
+        "the subtraction itself"
+      ],
+      "placeholdersVisible": false,
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 53,
+    "remaining": 12,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "heightsDistances": 3,
+    "realNumbers": 4,
+    "polynomials": 4,
+    "arithmeticProgressions": 5,
+    "probability": 4,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2385,
+    "testFiles": 119,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_AREAS_CIRCLES_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_REGION_COMPOSITION_EXTENSION",
+  "nextRecommendation": {
+    "method": "check each chapter's recorded progression category before framing its wave",
+    "1": "Chapter 10 Circles \u2014 a PROOF-FIDELITY wave, not a representation frontier; checkpoint 57's auditProofScope already exists and the geometry layer can draw tangents and radii",
+    "2": "Chapter 7 Coordinate Geometry \u2014 figure and computed coordinates must agree; closest to the checkpoint 60 and 63 graph work",
+    "3": "remaining units of chapters already opened"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "crosswalk": [
+    {
+      "chapter": 1,
+      "title": "Sets",
+      "cbseUnit": "I",
+      "sections": 10,
+      "formativeOnlyEntries": [
+        "FO-1"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 2,
+      "title": "Relations and Functions",
+      "cbseUnit": "I",
+      "sections": 4,
+      "formativeOnlyEntries": [
+        "FO-2"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 3,
+      "title": "Trigonometric Functions",
+      "cbseUnit": "I",
+      "sections": 4,
+      "formativeOnlyEntries": [
+        "FO-3"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 4,
+      "title": "Complex Numbers and Quadratic Equations",
+      "cbseUnit": "II",
+      "sections": 5,
+      "formativeOnlyEntries": [
+        "FO-5"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 5,
+      "title": "Linear Inequalities",
+      "cbseUnit": "II",
+      "sections": 3,
+      "formativeOnlyEntries": [
+        "FO-6"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 6,
+      "title": "Permutations and Combinations",
+      "cbseUnit": "II",
+      "sections": 4,
+      "formativeOnlyEntries": [],
+      "mixedScope": false
+    },
+    {
+      "chapter": 7,
+      "title": "Binomial Theorem",
+      "cbseUnit": "II",
+      "sections": 2,
+      "formativeOnlyEntries": [
+        "FO-7"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 8,
+      "title": "Sequences and Series",
+      "cbseUnit": "II",
+      "sections": 5,
+      "formativeOnlyEntries": [
+        "FO-8"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 9,
+      "title": "Straight Lines",
+      "cbseUnit": "III",
+      "sections": 4,
+      "formativeOnlyEntries": [
+        "FO-9"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 10,
+      "title": "Conic Sections",
+      "cbseUnit": "III",
+      "sections": 6,
+      "formativeOnlyEntries": [],
+      "mixedScope": false
+    },
+    {
+      "chapter": 11,
+      "title": "Introduction to Three Dimensional Geometry",
+      "cbseUnit": "III",
+      "sections": 4,
+      "formativeOnlyEntries": [
+        "FO-10"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 12,
+      "title": "Limits and Derivatives",
+      "cbseUnit": "IV",
+      "sections": 5,
+      "formativeOnlyEntries": [
+        "FO-11"
+      ],
+      "mixedScope": true
+    },
+    {
+      "chapter": 13,
+      "title": "Statistics",
+      "cbseUnit": "V",
+      "sections": 5,
+      "formativeOnlyEntries": [],
+      "mixedScope": false
+    },
+    {
+      "chapter": 14,
+      "title": "Probability",
+      "cbseUnit": "V",
+      "sections": 2,
+      "formativeOnlyEntries": [
+        "FO-12"
+      ],
+      "mixedScope": true
+    }
+  ],
+  "orphanFormativeOnly": [
+    "FO-4 Principle of Mathematical Induction"
+  ]
+}

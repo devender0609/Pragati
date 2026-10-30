@@ -1,0 +1,131 @@
+{
+  "checkpoint": 75,
+  "canonicalVersion": "0.84.0-c11.4",
+  "verdict": "CLASS_11_SOURCE_COMPLETION_INCOMPLETE",
+  "packageCreatedUtc": "2026-10-27T13:48:09Z",
+  "openGate": "16 of 40 notation-critical pages not inspected at symbol-resolving resolution",
+  "checkpoint74Correction": {
+    "claimed": "19/21 gates, two visual failures",
+    "actual": "three further gates were open: 0/67 subsection records, miscellaneous exercises located but not scope-audited, mixed-scope discovery not rerun",
+    "historicalFilesAltered": false
+  },
+  "structure": {
+    "chapters": 14,
+    "sections": 63,
+    "subsections": 67,
+    "contiguous": "14/14",
+    "confirmedByFullVisualInspection": true,
+    "correctionsFound": 0
+  },
+  "subsectionRecords": {
+    "total": 67,
+    "substantive": 63,
+    "structuralOnly": 4,
+    "structuralOnlyIds": [
+      "10.4.2",
+      "10.5.4",
+      "10.6.3",
+      "13.4.3"
+    ]
+  },
+  "pageInspection": {
+    "viewed": "368/368",
+    "chapterInstructional": 313,
+    "appendix": 21,
+    "frontMatter": 12,
+    "answers": 22
+  },
+  "visualRequired": {
+    "final": 127,
+    "checkpoint74LowerBound": 105,
+    "missedByAutomation": 22,
+    "inspected": "127/127",
+    "byChapter": {
+      "1": 9,
+      "2": 11,
+      "3": 10,
+      "4": 3,
+      "5": 5,
+      "6": 5,
+      "7": 2,
+      "8": 2,
+      "9": 19,
+      "10": 21,
+      "11": 5,
+      "12": 15,
+      "13": 18,
+      "14": 2
+    }
+  },
+  "notation": {
+    "identified": 40,
+    "inspectedAtReadableResolution": 24,
+    "remaining": 16,
+    "remainingChapters": [
+      10,
+      12,
+      13,
+      14
+    ],
+    "keyVerification": "section 7.2.1 reads 'The proof is obtained by applying principle of mathematical induction', confirming D-2 from the page"
+  },
+  "formativeOnly": {
+    "mapped": "12/12",
+    "orphansWithNoNcertOwner": [
+      "FO-4 Principle of Mathematical Induction",
+      "FO-6 graphical solution of linear inequalities in two variables"
+    ],
+    "FO6Evidence": "chapter 5 has 3 sections, 11 pages, one exercise; section 5.3 is titled 'in One Variable and their Graphical Representation' and its graphical representation is a number line; two variables appear only in the chapter introduction"
+  },
+  "scopeFragments": {
+    "count": 3,
+    "ids": [
+      "SF-1 (4.5)",
+      "SF-2 (9.3)",
+      "SF-3 (14.1)"
+    ],
+    "newFoundThisCheckpoint": 0
+  },
+  "miscellaneousExercises": {
+    "audited": "14/14",
+    "scopeRisk": [
+      "ch7 ~17 items against a section with formative-only general and middle term",
+      "ch5 ~12 items where one exercise serves three sections"
+    ]
+  },
+  "appendices": [
+    {
+      "title": "Infinite Series",
+      "pages": 9,
+      "disposition": "ENRICHMENT"
+    },
+    {
+      "title": "Mathematical Modelling",
+      "pages": 12,
+      "disposition": "ENRICHMENT"
+    }
+  ],
+  "discrepancyLedger": {
+    "count": 8,
+    "new": [
+      "D-6 FO-6 has no NCERT owner",
+      "D-7 chapter 5 has one exercise for three sections",
+      "D-8 two downloads returned a 98-byte upstream-failure page saved as .pdf; the frozen SHA-256 caught both"
+    ]
+  },
+  "sourceIntegrity": {
+    "hashesMatchingFrozenBaseline": "18/18",
+    "repairedThisCheckpoint": [
+      "kemh102.pdf",
+      "kemh105.pdf"
+    ]
+  },
+  "priorGrades": {
+    "class9": "92 lessons 0/0/0/0",
+    "class10": "65 lessons 0/0/0/0",
+    "class6": "S74-v1-DFC56A frozen",
+    "regression": "48 tests passing, typecheck 0"
+  },
+  "growth": "FROZEN",
+  "next": "checkpoint 76 \u2014 inspect the remaining 16 notation pages in chapters 10, 12, 13 and 14. Not decomposition."
+}

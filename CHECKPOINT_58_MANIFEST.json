@@ -1,0 +1,98 @@
+{
+  "checkpoint": 58,
+  "canonicalVersion": "0.84.0-c10.4",
+  "packageCreatedUtc": "2026-10-19T19:38:31Z",
+  "pilotScope": {
+    "units": [
+      "c10:4.2a",
+      "c10:4.3a",
+      "c10:4.4a",
+      "c10:4.4b"
+    ],
+    "authored": 4,
+    "verifiedAgainst": "CLASS10_DECOMPOSITION.json",
+    "proofExpectations": {
+      "4.2a": "UNDERSTAND",
+      "4.3a": "APPLY",
+      "4.4a": "DERIVE",
+      "4.4b": "APPLY"
+    }
+  },
+  "architecture": {
+    "verdict": "stable \u2014 no new representation schema",
+    "rationale": "existing geometry, KaTeX and table infrastructure sufficed"
+  },
+  "realRootBoundary": {
+    "module": "src/curriculum/quadraticAudit.ts",
+    "approach": "sentence-level, not a word ban",
+    "fixtures": {
+      "mustFire": 4,
+      "mustNotFire": 3,
+      "allCorrect": true
+    },
+    "findingsInWave": 0,
+    "complexLeakage": 0
+  },
+  "fidelity": {
+    "statedEquations": 20,
+    "rootsSubstitutedBack": "all",
+    "completeRootSetChecked": "all solve-type items",
+    "factorisationsExpandedBack": 6,
+    "discriminantClaimsRecomputed": 13,
+    "methodAgreementTested": true
+  },
+  "defectsFoundByOwnHarness": [
+    "auditor flagged 'an expression has no roots', which is true \u2014 narrowed to claims about equations",
+    "auditor flagged the sentence warning against saying 'no solution' \u2014 quoted and rejected claims now exempt",
+    "a lesson passed for the wrong reason: a symbolically written equation escaped the audit; '= 0' now recognised and the prompt reworded",
+    "test over-reach: a verification item stating one root was held to the complete-root-set assertion"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch4Rows": 4,
+      "stages": "5 of 5 reached",
+      "finishAction": "fired",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      }
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 17,
+    "remaining": 48,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "baselinesUpdated": 3,
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2176,
+    "testFiles": 111,
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_QUADRATIC_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_ARCHITECTURE_STABLE",
+  "nextRecommendation": "Chapter 13 Statistics (13.2a-13.4c) \u2014 eight units where direct, assumed-mean and step-deviation must reconcile to the same number"
+}

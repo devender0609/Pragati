@@ -1,0 +1,679 @@
+{
+  "1": {
+    "title": "SETS",
+    "pdfPages": 23,
+    "headingSections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "bodyQualifiedSections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "sectionTitles": {
+      "1.1": "Introduction",
+      "1.2": "Sets and their Representations",
+      "1.4": "Finite and Infinite Sets",
+      "1.5": "Equal Sets",
+      "1.6": "Subsets",
+      "1.7": "Universal Set",
+      "1.8": "Venn Diagrams",
+      "1.9": "Operations on Sets",
+      "1.3": "Reprint",
+      "1.10": "Complement of a Set"
+    },
+    "subsections": [
+      "1.6.1",
+      "1.6.2",
+      "1.9.1",
+      "1.9.2",
+      "1.9.3"
+    ],
+    "subsectionTitles": {
+      "1.6.1": "Subsets of set of real numbers",
+      "1.6.2": "Intervals as subsets of R  Let a, b",
+      "1.9.1": "Union of sets  Let A and B be any two sets",
+      "1.9.2": "Intersection of sets  The intersection of sets",
+      "1.9.3": "Difference of set s  The difference of the set"
+    },
+    "exercises": [
+      "EXERCISE 1.1",
+      "EXERCISE 1.2",
+      "EXERCISE 1.3",
+      "EXERCISE 1.4",
+      "EXERCISE 1.5"
+    ],
+    "theorems": 0,
+    "examples": 24
+  },
+  "2": {
+    "title": null,
+    "pdfPages": 19,
+    "headingSections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4"
+    ],
+    "bodyQualifiedSections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.6",
+      "2.7",
+      "2.10",
+      "2.12",
+      "2.15",
+      "2.16",
+      "2.17"
+    ],
+    "sectionTitles": {
+      "2.1": "Introduction",
+      "2.2": "Cartesian Products of Sets",
+      "2.3": "Reprint",
+      "2.4": "Reprint",
+      "2.6": "Reprint",
+      "2.7": "Reprint",
+      "2.10": "Reprint",
+      "2.12": "Reprint",
+      "2.15": "Reprint",
+      "2.16": "Reprint",
+      "2.17": "Reprint"
+    },
+    "subsections": [
+      "2.4.1",
+      "2.4.2"
+    ],
+    "subsectionTitles": {
+      "2.4.1": "Some functions and their graphs",
+      "2.4.2": "Algebra of real functions  In this Section, we"
+    },
+    "exercises": [
+      "EXERCISE 2.1",
+      "EXERCISE 2.2",
+      "EXERCISE 2.3"
+    ],
+    "theorems": 0,
+    "examples": 22
+  },
+  "3": {
+    "title": null,
+    "pdfPages": 33,
+    "headingSections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "bodyQualifiedSections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.13",
+      "3.14"
+    ],
+    "sectionTitles": {
+      "3.1": "Introduction",
+      "3.2": "Angles",
+      "3.3": "Reprint",
+      "3.5": "Degree",
+      "3.6": "Reprint",
+      "3.7": "Reprint",
+      "3.13": "Reprint",
+      "3.4": "Trigonometric Functions of Sum and Difference ",
+      "3.14": "Reprint"
+    },
+    "subsections": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.3.1",
+      "3.3.2"
+    ],
+    "subsectionTitles": {
+      "3.2.1": "Degree measure  If a rotation from the initial",
+      "3.2.2": "Radian measure  There is another unit for meas",
+      "3.2.3": "Relation between radian and real numbers",
+      "3.2.4": "Relation between degree and radian   Since a c",
+      "3.3.1": "Sign of trigonometric functions",
+      "3.3.2": "Domain and range of trigonometric functions  F"
+    },
+    "exercises": [
+      "EXERCISE 3.1",
+      "EXERCISE 3.2",
+      "EXERCISE 3.3"
+    ],
+    "theorems": 0,
+    "examples": 22
+  },
+  "4": {
+    "title": "COMPLEX NUMBERS AND",
+    "pdfPages": 13,
+    "headingSections": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5"
+    ],
+    "bodyQualifiedSections": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.5"
+    ],
+    "sectionTitles": {
+      "4.1": "Introduction",
+      "4.2": "Complex Numbers",
+      "4.3": "Algebra of Complex Numbers",
+      "4.5": "Argand Plane and Polar Representation"
+    },
+    "subsections": [
+      "4.3.1",
+      "4.3.2",
+      "4.3.3",
+      "4.3.4",
+      "4.3.5",
+      "4.3.6",
+      "4.3.7"
+    ],
+    "subsectionTitles": {
+      "4.3.1": "Addition of two complex numbers Let z",
+      "4.3.2": "Difference of two complex numbers  Given any t",
+      "4.3.3": "Multiplication of two complex numbers Let z",
+      "4.3.4": "Division of two complex numbers Given any two ",
+      "4.3.5": "Power of i  we know that",
+      "4.3.6": "The square roots of a negative real number",
+      "4.3.7": "Identities We prove the following identity"
+    },
+    "exercises": [
+      "EXERCISE 4.1"
+    ],
+    "theorems": 0,
+    "examples": 8
+  },
+  "5": {
+    "title": null,
+    "pdfPages": 11,
+    "headingSections": [
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "bodyQualifiedSections": [
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "sectionTitles": {
+      "5.1": "Introduction",
+      "5.2": "Inequalities",
+      "5.3": "Algebraic Solutions of Linear Inequalities in "
+    },
+    "subsections": [],
+    "subsectionTitles": {},
+    "exercises": [
+      "EXERCISE 5.1"
+    ],
+    "theorems": 0,
+    "examples": 13
+  },
+  "6": {
+    "title": null,
+    "pdfPages": 26,
+    "headingSections": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "bodyQualifiedSections": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "sectionTitles": {
+      "6.1": "Introduction",
+      "6.2": "Fundamental Principle of Counting",
+      "6.3": "Permutations",
+      "6.4": "Combinations"
+    },
+    "subsections": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.3.4"
+    ],
+    "subsectionTitles": {
+      "6.3.1": "Permutations when all the objects are distinct",
+      "6.3.2": "Factorial notation  The notation n",
+      "6.3.3": "Derivation of the formula for nPr",
+      "6.3.4": "Permutations when all the objects are not dist"
+    },
+    "exercises": [
+      "EXERCISE 6.1",
+      "EXERCISE 6.2",
+      "EXERCISE 6.3",
+      "EXERCISE 6.4"
+    ],
+    "theorems": 6,
+    "examples": 24
+  },
+  "7": {
+    "title": null,
+    "pdfPages": 9,
+    "headingSections": [
+      "7.1",
+      "7.2"
+    ],
+    "bodyQualifiedSections": [
+      "7.1",
+      "7.2",
+      "7.3"
+    ],
+    "sectionTitles": {
+      "7.1": "Introduction",
+      "7.2": "Binomial Theorem for Positive Integral Indices",
+      "7.3": "Pascal\u2019s triangle"
+    },
+    "subsections": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "subsectionTitles": {
+      "7.2.1": "Binomial theorem  for any positive integer n ,",
+      "7.2.2": "Some special cases In the expansion of"
+    },
+    "exercises": [
+      "EXERCISE 7.1"
+    ],
+    "theorems": 0,
+    "examples": 4
+  },
+  "8": {
+    "title": null,
+    "pdfPages": 16,
+    "headingSections": [
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "bodyQualifiedSections": [
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "sectionTitles": {
+      "8.1": "Introduction",
+      "8.2": "Sequences",
+      "8.3": "Series",
+      "8.4": "Geometric Progression",
+      "8.5": "Relationship Between A"
+    },
+    "subsections": [
+      "8.4.1",
+      "8.4.3"
+    ],
+    "subsectionTitles": {
+      "8.4.1": "General term of a G",
+      "8.4.3": "Geometric Mean"
+    },
+    "exercises": [
+      "EXERCISE 8.1",
+      "EXERCISE 8.2"
+    ],
+    "theorems": 0,
+    "examples": 12
+  },
+  "9": {
+    "title": null,
+    "pdfPages": 25,
+    "headingSections": [
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4"
+    ],
+    "bodyQualifiedSections": [
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4",
+      "9.9",
+      "9.10",
+      "9.11",
+      "9.12",
+      "9.13",
+      "9.14",
+      "9.15",
+      "9.17",
+      "9.18",
+      "9.19"
+    ],
+    "sectionTitles": {
+      "9.1": "Introduction",
+      "9.2": "Slope of a Line",
+      "9.3": "Various Forms of the Equation of a Line",
+      "9.10": "Fig",
+      "9.9": "Reprint",
+      "9.11": "Reprint",
+      "9.12": "Case I Suppose a line L with slope m cuts",
+      "9.13": "Reprint",
+      "9.4": "Distance of a Point From a Line",
+      "9.14": "Reprint",
+      "9.15": "Reprint",
+      "9.17": "Reprint",
+      "9.18": "Reprint",
+      "9.19": "Reprint"
+    },
+    "subsections": [
+      "9.2.1",
+      "9.2.2",
+      "9.2.3",
+      "9.3.1",
+      "9.3.2",
+      "9.3.3",
+      "9.3.4",
+      "9.3.5",
+      "9.4.1"
+    ],
+    "subsectionTitles": {
+      "9.2.1": "Slope of a line when coordinates of any two po",
+      "9.2.2": "Conditions for parallelism and perpendicularit",
+      "9.2.3": "Angle between two lines  When we think about m",
+      "9.3.1": "Horizontal and vertical lines If a horizontal ",
+      "9.3.2": "Point-slope form   Suppose that",
+      "9.3.3": "Two-point form  Let the",
+      "9.3.4": "Slope-intercept form  Sometimes a line is know",
+      "9.3.5": "Intercept - form Suppose a line L makes x-inte",
+      "9.4.1": "Distance between two"
+    },
+    "exercises": [
+      "EXERCISE 9.1",
+      "EXERCISE 9.2",
+      "EXERCISE 9.3"
+    ],
+    "theorems": 0,
+    "examples": 15
+  },
+  "10": {
+    "title": null,
+    "pdfPages": 32,
+    "headingSections": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.6"
+    ],
+    "bodyQualifiedSections": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.6",
+      "10.16",
+      "10.18",
+      "10.19",
+      "10.23",
+      "10.28",
+      "10.30",
+      "10.31",
+      "10.33"
+    ],
+    "sectionTitles": {
+      "10.1": "Introduction",
+      "10.2": "Sections of a Cone",
+      "10.3": "Circle",
+      "10.4": "Parabola",
+      "10.16": "Reprint",
+      "10.18": "Example",
+      "10.19": "Reprint",
+      "10.23": "Reprint",
+      "10.6": "Hyperbola",
+      "10.28": "Reprint",
+      "10.30": "Reprint",
+      "10.31": "EXERCISE",
+      "10.33": "Reprint"
+    },
+    "subsections": [
+      "10.2.1",
+      "10.2.2",
+      "10.4.1",
+      "10.4.2",
+      "10.5.1",
+      "10.5.2",
+      "10.5.3",
+      "10.5.4",
+      "10.6.1",
+      "10.6.2",
+      "10.6.3"
+    ],
+    "subsectionTitles": {
+      "10.2.1": "Circle, ellipse, parabola and hyperbola When t",
+      "10.2.2": "Degenerated conic sections",
+      "10.4.1": "Standard equations of parabola",
+      "10.4.2": "Latus rectum",
+      "10.5.1": "Relationship between semi-major",
+      "10.5.2": "Eccentricity",
+      "10.5.3": "Standard equations of an ellipse The  equation",
+      "10.5.4": "Latus rectum",
+      "10.6.1": "Eccentricity",
+      "10.6.2": "Standard equation of  Hyperbola  The equation ",
+      "10.6.3": "Latus rectum"
+    },
+    "exercises": [
+      "EXERCISE 10.1",
+      "EXERCISE 10.2",
+      "EXERCISE 10.3",
+      "EXERCISE 10.4"
+    ],
+    "theorems": 0,
+    "examples": 19
+  },
+  "11": {
+    "title": null,
+    "pdfPages": 9,
+    "headingSections": [
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4"
+    ],
+    "bodyQualifiedSections": [
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4"
+    ],
+    "sectionTitles": {
+      "11.1": "Introduction",
+      "11.2": "Coordinate Axes and Coordinate Planes in Three",
+      "11.3": "Coordinates of a Point in Space",
+      "11.4": "Distance between Two Points"
+    },
+    "subsections": [],
+    "subsectionTitles": {},
+    "exercises": [
+      "EXERCISE 11.1",
+      "EXERCISE 11.2"
+    ],
+    "theorems": 0,
+    "examples": 9
+  },
+  "12": {
+    "title": null,
+    "pdfPages": 40,
+    "headingSections": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5"
+    ],
+    "bodyQualifiedSections": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5",
+      "12.7",
+      "12.9",
+      "12.10",
+      "12.11"
+    ],
+    "sectionTitles": {
+      "12.1": "Introduction",
+      "12.2": "Intuitive Idea of Derivatives",
+      "12.3": "Limits",
+      "12.4": "From the Table",
+      "12.5": "From this table, we deduce that value of f",
+      "12.9": "From the Table",
+      "12.11": "From the first three entries of the Table",
+      "12.7": "Reprint",
+      "12.10": "Reprint"
+    },
+    "subsections": [
+      "12.3.1",
+      "12.3.2",
+      "12.5.1",
+      "12.5.2"
+    ],
+    "subsectionTitles": {
+      "12.3.1": "Algebra of limits In the above illustrations, ",
+      "12.3.2": "Limits of polynomials and rational functions  ",
+      "12.5.1": "Algebra of derivative of functions   Since the",
+      "12.5.2": "Derivative of polynomials and trigonometric fu"
+    },
+    "exercises": [
+      "EXERCISE 12.1",
+      "EXERCISE 12.2"
+    ],
+    "theorems": 8,
+    "examples": 22
+  },
+  "13": {
+    "title": null,
+    "pdfPages": 32,
+    "headingSections": [
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4",
+      "13.5"
+    ],
+    "bodyQualifiedSections": [
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4",
+      "13.5",
+      "13.6",
+      "13.9",
+      "13.11"
+    ],
+    "sectionTitles": {
+      "13.1": "Introduction",
+      "13.2": "Reprint",
+      "13.3": "Range",
+      "13.4": "Mean Deviation",
+      "13.5": "Mid-points",
+      "13.6": "Class Frequency Cumulative Mid-points Med",
+      "13.9": "Class Frequency Mid-point fixi",
+      "13.11": "Class Frequency Mid-point yi"
+    },
+    "subsections": [
+      "13.4.1",
+      "13.4.2",
+      "13.4.3",
+      "13.5.1",
+      "13.5.2",
+      "13.5.3"
+    ],
+    "subsectionTitles": {
+      "13.4.1": "Mean deviation for ungrouped data  Let  n obse",
+      "13.4.2": "Mean deviation  for grouped dat a We know that",
+      "13.4.3": "Limitations of mean deviation  In a series, wh",
+      "13.5.1": "Standard Deviation In the calculation of varia",
+      "13.5.2": "Standard deviation of a discrete frequency dis",
+      "13.5.3": "Standard deviation of a continuous frequency d"
+    },
+    "exercises": [
+      "EXERCISE 13.1",
+      "EXERCISE 13.2"
+    ],
+    "theorems": 0,
+    "examples": 14
+  },
+  "14": {
+    "title": null,
+    "pdfPages": 25,
+    "headingSections": [
+      "14.1",
+      "14.2"
+    ],
+    "bodyQualifiedSections": [
+      "14.1",
+      "14.2"
+    ],
+    "sectionTitles": {
+      "14.1": "Event",
+      "14.2": "Axiomatic Approach to Probability"
+    },
+    "subsections": [
+      "14.1.1",
+      "14.1.2",
+      "14.1.3",
+      "14.1.4",
+      "14.1.5",
+      "14.2.1",
+      "14.2.2",
+      "14.2.3",
+      "14.2.4"
+    ],
+    "subsectionTitles": {
+      "14.1.1": "Occurrence of an event   Consider the experime",
+      "14.1.2": "Types of events  Events can be classified into",
+      "14.1.3": "Algebra of event s  In the Chapter on Sets, we",
+      "14.1.4": "Mutually exclusive events In the experiment of",
+      "14.1.5": "Exhaustive event s Consider the experiment of ",
+      "14.2.1": "Probability of an event Let S be a sample spac",
+      "14.2.2": "Probabilities of equally likely outcomes  Let ",
+      "14.2.3": "Probability of the event",
+      "14.2.4": "Probability of event"
+    },
+    "exercises": [
+      "EXERCISE 14.1",
+      "EXERCISE 14.2"
+    ],
+    "theorems": 0,
+    "examples": 12
+  }
+}

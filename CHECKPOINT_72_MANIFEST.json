@@ -1,0 +1,252 @@
+{
+  "checkpoint": 72,
+  "canonicalVersion": "0.84.0-c11.1",
+  "packageCreatedUtc": "2026-10-26T19:01:14Z",
+  "purpose": "Class 11 official-source discovery and structural audit \u2014 source work only, no authoring",
+  "verdict": "CLASS_11_SOURCE_AUDIT_INCOMPLETE",
+  "checkpoint71Correction": {
+    "was": "Eight corpus-wide checks",
+    "now": "Nine",
+    "reason": "proof presence and proof scope were collapsed into one item; the manifest listed nine throughout",
+    "scope": "documentation only \u2014 no lesson, model or audit behaviour changed; the 0-findings result stands"
+  },
+  "ncertSource": {
+    "found": true,
+    "bookCode": "kemh1",
+    "title": "Mathematics, Textbook for Class XI",
+    "publisher": "NCERT",
+    "parts": 1,
+    "partTwoExists": false,
+    "partTwoEvidence": "kemh2ps and kemh201 both return HTTP 404",
+    "portalString": "kemh1=0-14",
+    "chapters": 14,
+    "appendices": 2,
+    "files": 18,
+    "totalPdfPages": 368,
+    "editionEvidence": "every one of the 368 pages carries the printed footer 'Reprint 2026-27' \u2014 evidence from the source itself, not a third-party claim",
+    "printedFolioSpan": "1-356",
+    "hashes": {
+      "kemh101.pdf": {
+        "sha256": "5e0c0b629e68222bc31fd35d952c5e6b19db23d835cff3cf1c1b7b780e55f798",
+        "bytes": 2223290,
+        "pdfPages": 23
+      },
+      "kemh102.pdf": {
+        "sha256": "78814c5329d1d3581440ed31ea57a00530441e00e775908ec01504b7b676829d",
+        "bytes": 2048256,
+        "pdfPages": 19
+      },
+      "kemh103.pdf": {
+        "sha256": "f56f55f3bce8c81fdc5aff851e7f3b518c2a926f6165bab071b256ab3096a37e",
+        "bytes": 3036342,
+        "pdfPages": 33
+      },
+      "kemh104.pdf": {
+        "sha256": "a1c0708f4588b85d75254bd1825c4248598c1dc0da482056225d411d40a638e2",
+        "bytes": 1559701,
+        "pdfPages": 13
+      },
+      "kemh105.pdf": {
+        "sha256": "fb49d11c1f59ca25c9b0a9489cf808fe25ecd871aabf07a3c7142c9e896bd3d1",
+        "bytes": 1361673,
+        "pdfPages": 11
+      },
+      "kemh106.pdf": {
+        "sha256": "14d21d90a15339a19a4a32b773b3f23618c061d0d55cd444cca3a1295400bd42",
+        "bytes": 2407476,
+        "pdfPages": 26
+      },
+      "kemh107.pdf": {
+        "sha256": "421f2fb76773dc87f109f7a5eb9c27b997d540759a070084e15190e107c52d0a",
+        "bytes": 1286287,
+        "pdfPages": 9
+      },
+      "kemh108.pdf": {
+        "sha256": "981289b5700e34750d420c072e0e24b7c63147a9fe0c9e13d25b3f03e3478aba",
+        "bytes": 1721128,
+        "pdfPages": 16
+      },
+      "kemh109.pdf": {
+        "sha256": "a162e0c15553689ad82f91b3595c87dcbc4b9f03a0a31660f61da1871167d385",
+        "bytes": 2468017,
+        "pdfPages": 25
+      },
+      "kemh110.pdf": {
+        "sha256": "f4c1153fc0b2d647b2e67e46b83fb790d630936a6c2c5a402d2a4b44ff5bde4b",
+        "bytes": 3045392,
+        "pdfPages": 32
+      },
+      "kemh111.pdf": {
+        "sha256": "a122b628970880c7a9738ba64a440e55d16a931800ae0e0e162cf7d5f9cef561",
+        "bytes": 1256066,
+        "pdfPages": 9
+      },
+      "kemh112.pdf": {
+        "sha256": "958f84db2b6254741392033e67e2467c55742af4f21b54065334982f703b1ce0",
+        "bytes": 3426516,
+        "pdfPages": 40
+      },
+      "kemh113.pdf": {
+        "sha256": "a49176920c5960318e0912b79de0190e55f3d4f6d9d2a0af3d7623bad5244a6a",
+        "bytes": 2851701,
+        "pdfPages": 32
+      },
+      "kemh114.pdf": {
+        "sha256": "5fa16487face00ddff9fe2b4668fb3bdac0e0694a4ca515616ffea89506ac4ee",
+        "bytes": 2329163,
+        "pdfPages": 25
+      },
+      "kemh1a1.pdf": {
+        "sha256": "7c900ad40d3c33c7efd592110555dd643e9d4cb170dcacdd00ad74e0ad45ff4b",
+        "bytes": 1213857,
+        "pdfPages": 9
+      },
+      "kemh1a2.pdf": {
+        "sha256": "44815596e91e5db458101c92cb143253dff6413a17b9776986415b5ad3e3ba2a",
+        "bytes": 1489582,
+        "pdfPages": 12
+      },
+      "kemh1an.pdf": {
+        "sha256": "fe04d7d4517211c81f0033a58d703d75b09d87bac75479e8592ffe530a17913b",
+        "bytes": 2129910,
+        "pdfPages": 22
+      },
+      "kemh1ps.pdf": {
+        "sha256": "cd9c1697533ef25daed84bff0c93d305978485edb88564168357ad62d983c45e",
+        "bytes": 1933522,
+        "pdfPages": 12
+      }
+    }
+  },
+  "cbseCurriculum": {
+    "found": false,
+    "frozen": false,
+    "officialUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Maths_SecP2_2026-27.pdf",
+    "blocker": "cbseacademic.nic.in returned HTTP 503 to the container on every attempt and ROBOTS_DISALLOWED to the fetch tool",
+    "knownFromSearchSnippetsOnly": {
+      "subjectCode": "041",
+      "session": "2026-27",
+      "theoryMarks": 80,
+      "internalAssessment": 20,
+      "units": [
+        "Sets and Functions 23",
+        "Algebra 25",
+        "Coordinate Geometry 12",
+        "Calculus 8",
+        "Statistics and Probability 12"
+      ],
+      "prescribedBook": "Mathematics Textbook for Class XI, NCERT Publications",
+      "noticedPhrase": "'included in the syllabus but will be assessed only formatively' \u2014 a restriction category that must be read verbatim before use"
+    },
+    "notDone": [
+      "sha256",
+      "byte size",
+      "page count",
+      "verbatim topic statements",
+      "proof/application restrictions",
+      "explicit rationalisation list"
+    ],
+    "consequence": "no NCERT-CBSE crosswalk and no proof-expectation extraction was attempted; doing either from snippets would fabricate the authority this project treats as controlling"
+  },
+  "structuralAudit": {
+    "chaptersFound": 14,
+    "chapterTitlesExtracted": 3,
+    "chapterTitlesTotal": 14,
+    "headingScanSections": 62,
+    "bodyDescentSections": "not trustworthy as implemented",
+    "subsectionsDetected": 67,
+    "exercisesDetected": 35,
+    "theoremBlocks": 14,
+    "examplesDetected": 220,
+    "chaptersWhereScansAgree": 6,
+    "chaptersTotal": 14,
+    "extractionDefects": [
+      {
+        "what": "first body-descent regex matched any decimal numeral",
+        "effect": "reported 142 sections including \u00a710.33 in a chapter that has nothing like that many",
+        "status": "replaced"
+      },
+      {
+        "what": "second body-descent regex still matched numerals followed by the 'Reprint 2026-27' footer, figure captions and table data",
+        "effect": "99 sections, still inflated",
+        "status": "unresolved \u2014 needs page-image inspection"
+      },
+      {
+        "what": "chapter-title regex assumed 'Chapter N' on its own line",
+        "effect": "11 of 14 titles missing",
+        "status": "unresolved"
+      }
+    ],
+    "genuineFinding": {
+      "section": "7.3",
+      "title": "Pascal's triangle",
+      "detectedBy": "body descent only",
+      "significance": "a wrapped heading the line-start scan missed \u2014 the exact Class 10 failure mode the brief warned about, confirmed to occur in Class 11 too"
+    }
+  },
+  "notDoneThisCheckpoint": [
+    "page accounting by role",
+    "visual inspection of rendered pages",
+    "visualRequired identification",
+    "notation-risk page identification",
+    "body-grounded mathematical intents",
+    "proof expectations",
+    "NCERT-CBSE crosswalk",
+    "progression audit against Classes 9 and 10"
+  ],
+  "denominators": {
+    "officialBooksFound": "1/1",
+    "cbseCurriculumDocsFrozen": "0/1",
+    "chaptersVerified": "0/14",
+    "chapterTitlesVerified": "3/14",
+    "sectionsVerified": "0/62 (62 is a lower-bound estimate, not a verified count)",
+    "subsectionsVerified": "0/67",
+    "pagesAccountedByRole": "0/368",
+    "visualRequiredIdentified": "0/unknown",
+    "visualRequiredInspected": "0/unknown",
+    "sectionIntentsWritten": "0/unknown",
+    "sourceSegments": 0,
+    "unexplainedInstructionalPages": 368,
+    "unresolvedSourceDiscrepancies": 3
+  },
+  "futureSemanticModelRisks": [
+    "set operations and membership",
+    "function domain/range/composition",
+    "radian versus degree angle semantics",
+    "complex-number arithmetic",
+    "combinatorics counting",
+    "binomial coefficients",
+    "sequence and series models",
+    "conic parameter models",
+    "3-D coordinates",
+    "limit and derivative semantics"
+  ],
+  "priorGradeFreeze": {
+    "class9": {
+      "lessons": 92,
+      "contextualUnit": 1,
+      "reviewCandidates": 92,
+      "acceptedMinorFindings": 16,
+      "lifecycle": "0/0/0/0"
+    },
+    "class10": {
+      "lessons": 65,
+      "reviewCandidates": 65,
+      "blocker": 0,
+      "major": 0,
+      "minor": 1,
+      "observation": 1,
+      "lifecycle": "0/0/0/0"
+    },
+    "class6": "S74-v1-DFC56A frozen",
+    "bothGrades": "HUMAN_REVIEW_DEFERRED_NO_REVIEWERS_AVAILABLE",
+    "regression": "48 tests passing, typecheck 0, no mutation"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "next": "Class 11 source completion \u2014 obtain the CBSE curriculum by a route that is not blocked, then render page images and redo structure visually"
+}

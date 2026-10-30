@@ -1,0 +1,110 @@
+{
+  "checkpoint": 78,
+  "canonicalVersion": "0.84.0-c11.7-sets-pilot",
+  "verdict": "CLASS_11_SETS_AUTHORING_PILOT_INCOMPLETE",
+  "packageCreatedUtc": "2026-10-27T20:34:09Z",
+  "checkpoint77Correction": {
+    "reportSaid": "82 REQUIRED_CORE",
+    "verifiedFromDecomposition": "81 REQUIRED_CORE, 10 OPTIONAL_ENRICHMENT, 2 REQUIRED_PREREQUISITE",
+    "unitMetadataChanged": false
+  },
+  "authored": {
+    "count": 6,
+    "of": 12,
+    "artifacts": [
+      "ncert_kemh1_s1_2_representations_lesson",
+      "ncert_kemh1_s1_3_empty_set_lesson",
+      "ncert_kemh1_s1_4_finite_infinite_lesson",
+      "ncert_kemh1_s1_5_equal_sets_lesson",
+      "ncert_kemh1_s1_6_subsets_lesson",
+      "ncert_kemh1_s1_6_intervals_lesson"
+    ],
+    "notAuthored": [
+      "C11-SET-07 universal set",
+      "C11-SET-08 Venn diagrams",
+      "C11-SET-09 union and intersection",
+      "C11-SET-10 difference",
+      "C11-SET-11 complement and De Morgan",
+      "C11-SET-FO1 two-set counting"
+    ]
+  },
+  "architectureVerdict": "B \u2014 a general set/Venn semantic extension was required and successfully introduced",
+  "semanticModel": {
+    "module": "src/curriculum/setTheory.ts",
+    "representation": "tagged union: explicit members, interval with structured endpoint inclusion, described rule",
+    "refusals": [
+      "isMember throws on a described set rather than guessing",
+      "complement throws without a universe \u2014 verified",
+      "cardinality throws for non-explicit sets"
+    ],
+    "vennRegionsNamedByExpression": true,
+    "verified": {
+      "union": "{1,2,3,4,5,6,7,8}",
+      "intersection": "{4,5,6}",
+      "differenceNotCommutative": "A-B={1,2,3} vs B-A={7,8}",
+      "deMorganUnion": true,
+      "deMorganIntersection": true,
+      "countingRelation": "18+12-6 = 24 = n(A u B), 2 outside"
+    },
+    "joinedSharedVisualSpecUnion": true,
+    "chapterSpecific": false
+  },
+  "FO1statusTest": {
+    "performed": false,
+    "reason": "C11-SET-FO1 is one of the six unauthored lessons; the decomposition metadata is in place and untouched"
+  },
+  "routing": {
+    "class11PreviewLessons": 6,
+    "publicSafe": {
+      "class11": 0,
+      "class10": 0,
+      "class9": 0
+    },
+    "preview": {
+      "class10": 65,
+      "class9": 92
+    }
+  },
+  "class11Lifecycle": {
+    "authored": 6,
+    "remaining": 87,
+    "allAuthoredDraft": true,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "humanCheckUnits": {
+    "C11-IND-01": "untouched",
+    "C11-INQ-FO6": "untouched"
+  },
+  "qa": {
+    "typecheck": 0,
+    "testsRun": 74,
+    "suites": [
+      "Class 10 integration",
+      "Class 10 pre-review",
+      "v067 chapter"
+    ],
+    "productionBuild": "clean",
+    "notRun": [
+      "full 2530-test suite",
+      "browser walk of the six new lessons",
+      "360/834/1280 viewport and accessibility checks"
+    ]
+  },
+  "priorGrades": {
+    "class9": "92 untouched 0/0/0/0",
+    "class10": "65 untouched 0/0/0/0",
+    "class6": "S74-v1-DFC56A frozen",
+    "note": "the shared VisualSpec union changed, so Class 10 rendering suites were run specifically and pass"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "gitPreflight": "unchanged from checkpoint 77; package carries no .git, checks still needed on the clone",
+  "next": "finish the six remaining Chapter 1 lessons against the completed model, then the full QA gates"
+}

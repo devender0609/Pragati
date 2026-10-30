@@ -1,0 +1,150 @@
+[
+  {
+    "page": "kemh108.pdf:10",
+    "chapter": 8,
+    "section": "8.5",
+    "family": "A.M./G.M.",
+    "verified": "A = (a+b)/2, G = sqrt(ab), A - G = (sqrt a - sqrt b)^2 / 2 >= 0",
+    "corruptionObserved": "radical and squared binomial flatten",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh109.pdf:7",
+    "chapter": 9,
+    "section": "9.2",
+    "family": "angle between lines",
+    "verified": "tan theta = |(m2-m1)/(1+m1m2)|, with 1+m1m2 != 0; obtuse phi = 180 deg - theta",
+    "corruptionObserved": "subscripts flatten to m2m1",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh109.pdf:12",
+    "chapter": 9,
+    "section": "9.3",
+    "family": "line forms",
+    "verified": "y - c = m(x - 0), y = mx + c, y = m(x - d)",
+    "corruptionObserved": "none material",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh110.pdf:10",
+    "chapter": 10,
+    "section": "10.4.2",
+    "family": "parabola",
+    "verified": "Definition 3 latus rectum; standard form y^2 = 4ax; AC = FM = 2a; AB = length of latus rectum = 4a",
+    "corruptionObserved": "superscript 2 flattens",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh110.pdf:14",
+    "chapter": 10,
+    "section": "10.5",
+    "family": "ellipse",
+    "verified": "BOTH orientations: x^2/a^2 + y^2/b^2 = 1 and x^2/b^2 + y^2/a^2 = 1; foci F1(-c,0), F2(c,0); vertices (0,a),(0,-a),(-b,0),(b,0)",
+    "corruptionObserved": "denominators and squares flatten",
+    "sourceRecordChanged": false,
+    "note": "the apparent swapped denominator is a genuine second orientation, not an error; recorded as two distinct standard forms"
+  },
+  {
+    "page": "kemh110.pdf:20",
+    "chapter": 10,
+    "section": "10.5",
+    "family": "ellipse exercises",
+    "verified": "x^2/36+y^2/16=1 ... 4x^2+9y^2=36; x^2/(247/7) + y^2/(247/15) = 1 i.e. 7x^2+15y^2=247",
+    "corruptionObserved": "nested fractions flatten badly",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh111.pdf:7",
+    "chapter": 11,
+    "section": "11.4",
+    "family": "3-D distance",
+    "verified": "AB = sqrt((-1-1)^2+(-2-2)^2+(-1-3)^2) = sqrt(4+16+16) = 6; BD = sqrt(25+81+49) = sqrt(155)",
+    "corruptionObserved": "nested radicals and signs flatten",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh111.pdf:9",
+    "chapter": 11,
+    "section": null,
+    "family": "none",
+    "verified": "page is a Historical Note on Descartes, Fermat, La Hire, Bernoulli, Leibniz, Parent and Euler; carries no mathematical notation",
+    "corruptionObserved": "n/a",
+    "sourceRecordChanged": true,
+    "note": "mis-identified as notation-critical at checkpoint 75; reclassified as historical, non-notational"
+  },
+  {
+    "page": "kemh112.pdf:14",
+    "chapter": 12,
+    "section": "12.3",
+    "family": "limits",
+    "verified": "lim_{x->a} (x-a)^{k-1} g1(x) / lim_{x->a} h1(x) = 0; 'If k < l, the limit is not defined'; lim_{x->1}[x^3-x^2+1]",
+    "corruptionObserved": "x -> a subscript and exponents flatten",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh112.pdf:22",
+    "chapter": 12,
+    "section": "12.4",
+    "family": "trig/piecewise limits",
+    "verified": "lim_{x->pi} sin(pi-x)/pi(pi-x); lim_{x->0}(cosec x - cot x); lim_{x->pi/2} tan 2x/(x - pi/2); piecewise f(x) = {2x+3, x<=0; 3(x+1), x>0}",
+    "corruptionObserved": "piecewise braces and inequality signs flatten",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh112.pdf:30",
+    "chapter": 12,
+    "section": "12.5",
+    "family": "derivative",
+    "verified": "df(x)/dx = lim_{h->0} ((x+h)^n - x^n)/h = n x^{n-1}; product rule d/dx(x^n) = d/dx(x . x^{n-1}); binomial expansion nC0 x^n + nC1 x^{n-1} h + ...",
+    "corruptionObserved": "d/dx, prime and exponents flatten",
+    "sourceRecordChanged": false,
+    "note": "the page reads 'by induction hypothesis' \u2014 chapter 12 also reasons by induction, extending D-2 beyond section 7.2"
+  },
+  {
+    "page": "kemh113.pdf:6",
+    "chapter": 13,
+    "section": "13.4",
+    "family": "mean deviation",
+    "verified": "xbar = sum(xi fi)/sum(fi) = (1/N) sum xi fi; N = sum fi; M.D.(xbar) = sum fi|xi - xbar| / sum fi = (1/N) sum fi |xi - xbar|",
+    "corruptionObserved": "subscript i, overbar and absolute-value bars all flatten",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh113.pdf:7",
+    "chapter": 13,
+    "section": "13.4",
+    "family": "median / mean deviation",
+    "verified": "Median = l + ((N/2 - C)/f) x h with l=20, C=13, f=15, h=10, N=50 giving 28; M.D.(M) = (1/N) sum fi|xi - M| = 508/50 = 10.16",
+    "corruptionObserved": "fraction within fraction flattens",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh113.pdf:14",
+    "chapter": 13,
+    "section": "13.4",
+    "family": "deviations",
+    "verified": "sum |xi - xbar| = 124, M.D.(xbar) = 124/20 = 6.2; Median = ((11+1)/2) = 6th observation = 9; sum |xi - M| = 58",
+    "corruptionObserved": "subscripts flatten",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh114.pdf:6",
+    "chapter": 14,
+    "section": "14.2.2",
+    "family": "equally likely outcomes",
+    "verified": "S = {w1, w2, ..., wn}; P(wi) = p for all wi in S where 0 <= p <= 1; sum P(wi) = 1; np = 1 so p = 1/n; P(E) = m/n",
+    "corruptionObserved": "omega glyphs and set membership flatten",
+    "sourceRecordChanged": false
+  },
+  {
+    "page": "kemh114.pdf:11",
+    "chapter": 14,
+    "section": "14.2",
+    "family": "event set algebra",
+    "verified": "S = {(x,y): x,y = 1,2,3,4,5,6} with 36 elements; A intersect B != empty; A intersect C = empty; B intersect D != empty; C intersect D = empty",
+    "corruptionObserved": "intersection and empty-set glyphs flatten",
+    "sourceRecordChanged": false,
+    "note": "the summative event work is carried out directly on the sample space, which is FO-12 formative-only; this is page-level evidence for SF-3"
+  }
+]
