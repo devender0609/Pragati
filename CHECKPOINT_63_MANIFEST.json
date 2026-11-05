@@ -1,0 +1,140 @@
+{
+  "checkpoint": 63,
+  "canonicalVersion": "0.84.0-c10.9",
+  "packageCreatedUtc": "2026-10-21T20:45:06Z",
+  "pilotScope": {
+    "units": [
+      "c10:2.2a",
+      "c10:2.2b",
+      "c10:2.3a",
+      "c10:2.3b"
+    ],
+    "authored": 4,
+    "sections": {
+      "2.2": "folio 11",
+      "2.3": "folio 18"
+    },
+    "coefficientRelations": "quadratics only; cubics appear in 2.2 solely for counting zeroes",
+    "excluded": [
+      "remainder theorem",
+      "factor theorem",
+      "cubic coefficient relations",
+      "complex zeroes"
+    ]
+  },
+  "architecture": {
+    "verdict": "general function-graph extension required",
+    "reason": "LinearSystemGraphSpec draws a straight line from two endpoints and cannot describe a curve; nothing else samples a function",
+    "added": [
+      "Polynomial",
+      "evaluate / evaluateRational (exact)",
+      "rationalZeroes",
+      "sumOfZeroes",
+      "productOfZeroes",
+      "expandFactors",
+      "quadraticFromSumProduct",
+      "PolynomialGraphSpec",
+      "samplePoints",
+      "PolynomialGraph"
+    ],
+    "notAdded": [
+      "Chapter2PolynomialSpec",
+      "a general-purpose graphing engine"
+    ]
+  },
+  "centralInvariant": {
+    "statement": "only coefficients are authored; zeroes, factors, sampled points, x-intercepts and coefficient relations are all derived",
+    "sampledPointsChecked": true,
+    "xInterceptsEqualAlgebraicZeroes": true,
+    "negativeFixtures": [
+      "a window clipping a zero out of view",
+      "alt text claiming two intercepts for a repeated zero"
+    ]
+  },
+  "exactness": {
+    "coefficients": "integers",
+    "zeroes": "exact rationals",
+    "proof": "-1/2 is a zero of 2x^2-5x-3; -49/100 is not"
+  },
+  "signFidelity": {
+    "fixtures": 5,
+    "coversPositiveAndNegativeBandC": true,
+    "guard": "b/a is asserted to differ from the sum wherever b is non-zero",
+    "minusSignDerived": "from the brackets subtracting the zeroes in (x-alpha)(x-beta)"
+  },
+  "repeatedAndNoRealZero": {
+    "repeatedReturnedOnce": true,
+    "relationsStillUseItTwice": true,
+    "wording": "meets the x-axis, not crosses, with the reason stated",
+    "noRealZeroDiscipline": "reuses checkpoint 58"
+  },
+  "scaleFreedom": {
+    "witness": "3x^2-15x+18 shares zeroes with x^2-5x+6; y-intercept 18 vs 6",
+    "generalAnswer": "k(x^2 - Sx + P)",
+    "kEqualsOneNamedAsAChoice": true
+  },
+  "defectsFoundByOwnHarness": [
+    "the real-zero audit fired on a sentence quoting the overstated claim in order to reject it \u2014 the fourth checkpoint where an audit flagged its own lesson's correction",
+    "'coefficient' defined and never used in 2.2a",
+    "three test assertions expecting a single match where the renderer deliberately states a reading twice"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch2Rows": 4,
+      "stages": "5 of 5 reached",
+      "finishAction": "fired",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "readingsStatedInText": [
+        "touches the x-axis",
+        "no real zeroes",
+        "not a zero"
+      ],
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 41,
+    "remaining": 24,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "heightsDistances": 3,
+    "realNumbers": 4,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2292,
+    "testFiles": 116,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_POLYNOMIALS_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_FUNCTION_GRAPH_EXTENSION",
+  "nextRecommendation": "Chapter 5 Arithmetic Progressions \u2014 progression audit records FORMALISATION, not first encounter, since Class IX already gave a + (n-1)d; the risk is claiming novelty students do not have, and checkpoint 62's audit shape transfers directly"
+}

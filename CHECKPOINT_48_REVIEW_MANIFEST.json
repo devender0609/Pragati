@@ -1,0 +1,70 @@
+{
+  "checkpoint": 48,
+  "canonicalVersion": "0.84.0-review.1",
+  "packageCreatedUtc": "2026-10-15T18:43:22Z",
+  "purpose": "freeze all 92 Class 9 lessons into a human-review system",
+  "reviewBuildId": "C9RB-FEF1EF46",
+  "instrumentVersion": 1,
+  "candidates": {
+    "count": 92,
+    "uniqueCodes": 92,
+    "identity": "contentArtifactId + version + semantic/provenance fingerprints",
+    "codeFormat": "C9-<artifact hash>-v<version>i<instrument>-<semantic prefix>"
+  },
+  "instrument": {
+    "coreQuestions": 10,
+    "perLessonMin": 12,
+    "perLessonMax": 15,
+    "totalAcross92": 1195,
+    "note": "a 37-question form on 92 lessons would be 3404 answers per reviewer"
+  },
+  "readiness": {
+    "reviewReady": 92,
+    "total": 92,
+    "chapterPackages": 14
+  },
+  "specialCases": {
+    "splits": "distinct codes and fingerprints per sibling",
+    "merges": "one candidate, provenance naming both sections, plus question S4",
+    "chapter9": "segment-backed, 'unnumbered instructional segment', no fabricated section numbers",
+    "section32": "one candidate at version 2; no standalone \u00a73.1 candidate"
+  },
+  "class6Frozen": {
+    "reviewCode": "S74-v1-DFC56A",
+    "contentFingerprint": "dfc56ab5",
+    "artifactVersion": 1,
+    "provenanceFingerprint": "efeccb48",
+    "provenanceVersion": 2,
+    "status": "untouched"
+  },
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "allArtifacts": "authored_draft"
+  },
+  "governance": {
+    "requiredPerspectives": [
+      "practising_educator",
+      "curriculum_specialist"
+    ],
+    "basis": "Pragati internal policy, not an external regulatory requirement",
+    "reviewCatalogue": "separate from student delivery eligibility; student gate unchanged"
+  },
+  "testCount": 2088,
+  "testFileCount": 105,
+  "pilotBatch": {
+    "size": 8,
+    "sent": false,
+    "basis": "risk-diverse, exercising every kind of artifact once"
+  },
+  "unverified": [
+    "no human review has occurred",
+    "remote review deployment not executed",
+    "colour contrast not measured",
+    "no screen-reader testing"
+  ],
+  "verdict": "CLASS_9_HUMAN_REVIEW_READY_92_ARTIFACTS_FROZEN",
+  "doesNotMean": "reviewed, sent, adjudicated or published"
+}

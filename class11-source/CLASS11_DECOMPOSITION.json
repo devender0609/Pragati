@@ -1,0 +1,2293 @@
+[
+ {
+  "unitId": "C11-SET-01",
+  "title": "Sets and their representations",
+  "objective": "Write a given collection in roster form and in set-builder form, and convert between the two.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.2"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation; no figure required",
+  "riskClass": "C",
+  "riskRationale": "no semantic model owns a set as an object with membership",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-02",
+  "title": "The empty set",
+  "objective": "Decide whether a described collection has any element and name it as the empty set.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.3"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "empty-set symbol",
+  "riskClass": "C",
+  "riskRationale": "membership semantics",
+  "prerequisites": [
+   "C11-SET-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-03",
+  "title": "Finite and infinite sets",
+  "objective": "Classify a set as finite or infinite by whether the counting of its elements terminates.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.4"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "cardinality notation",
+  "riskClass": "C",
+  "riskRationale": "cardinality semantics",
+  "prerequisites": [
+   "C11-SET-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-04",
+  "title": "Equality of sets",
+  "objective": "Decide whether two sets are equal by comparing membership rather than order or repetition.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.5"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set equality",
+  "riskClass": "C",
+  "riskRationale": "membership semantics",
+  "prerequisites": [
+   "C11-SET-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-05",
+  "title": "Subsets and proper subsets",
+  "objective": "Decide containment between sets and distinguish a subset from a proper subset.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.6"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "subset symbols",
+  "riskClass": "C",
+  "riskRationale": "containment semantics",
+  "prerequisites": [
+   "C11-SET-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-06",
+  "title": "Intervals as subsets of the real numbers",
+  "objective": "Read and write open, closed and half-open intervals as subsets of the reals.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "1.6.2"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "interval notation and the real line",
+  "riskClass": "C",
+  "riskRationale": "interval semantics over a continuum",
+  "prerequisites": [
+   "C11-SET-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-07",
+  "title": "The universal set",
+  "objective": "Fix an ambient universal set for a context and explain why complements depend on it.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.7"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "universal set notation",
+  "riskClass": "C",
+  "riskRationale": "ambient-set semantics",
+  "prerequisites": [
+   "C11-SET-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-08",
+  "title": "Venn diagrams",
+  "objective": "Represent membership and containment regionally and read a Venn diagram back as set statements.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.8"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "Venn diagram figure",
+  "riskClass": "C",
+  "riskRationale": "no model renders or validates Venn regions",
+  "prerequisites": [
+   "C11-SET-07"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-09",
+  "title": "Union and intersection of sets",
+  "objective": "Compute the union and intersection of sets and read each off a Venn diagram.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.9"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation and Venn diagram",
+  "riskClass": "C",
+  "riskRationale": "set operation semantics",
+  "prerequisites": [
+   "C11-SET-08"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-10",
+  "title": "Difference of sets",
+  "objective": "Compute the difference of two sets and distinguish it from the complement.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.9"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation and Venn diagram",
+  "riskClass": "C",
+  "riskRationale": "set operation semantics",
+  "prerequisites": [
+   "C11-SET-09"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-11",
+  "title": "Complement of a set and its properties",
+  "objective": "Take a complement against a fixed universal set and derive De Morgan\u2019s laws.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "1.10"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "complement notation and Venn diagram",
+  "riskClass": "C",
+  "riskRationale": "set operation semantics",
+  "prerequisites": [
+   "C11-SET-07",
+   "C11-SET-09"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SET-FO1",
+  "title": "Practical problems on union and intersection of two sets",
+  "objective": "Use the two-set counting relation to solve practical problems about overlapping collections.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "FO-1-APPLICATION",
+   "parentSection": "1.9"
+  },
+  "chapter": 1,
+  "cbseUnit": "I",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "APPLICATION_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "Venn diagram",
+  "riskClass": "C",
+  "riskRationale": "set cardinality semantics",
+  "prerequisites": [
+   "C11-SET-09",
+   "C11-SET-10"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-1",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-RF-01",
+  "title": "Ordered pairs and the Cartesian product",
+  "objective": "Form the Cartesian product of two sets, count its elements, and extend to R x R x R.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "2.2"
+  },
+  "chapter": 2,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "ordered-pair notation, grid or arrow diagram",
+  "riskClass": "C",
+  "riskRationale": "product semantics over sets",
+  "prerequisites": [
+   "C11-SET-09"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-RF-02",
+  "title": "Relations",
+  "objective": "Define a relation as a subset of a Cartesian product and identify its domain, codomain and range.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "2.3"
+  },
+  "chapter": 2,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "arrow diagram",
+  "riskClass": "C",
+  "riskRationale": "relation semantics",
+  "prerequisites": [
+   "C11-RF-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-RF-03",
+  "title": "Functions as a special kind of relation",
+  "objective": "Test whether a relation is a function and state its domain, codomain and range.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "2.4"
+  },
+  "chapter": 2,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "arrow diagram",
+  "riskClass": "C",
+  "riskRationale": "the polynomial graph model describes one curve, not a function as an object",
+  "prerequisites": [
+   "C11-RF-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-RF-04",
+  "title": "The standard real functions and their graphs",
+  "objective": "Identify and sketch constant, identity, polynomial, rational, modulus, signum, exponential, logarithmic and greatest-integer functions, stating domain and range.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "2.4.1"
+  },
+  "chapter": 2,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "function graphs for nine families",
+  "riskClass": "C",
+  "riskRationale": "no general function-family graphing model exists",
+  "prerequisites": [
+   "C11-RF-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-RF-05",
+  "title": "Algebra of real functions",
+  "objective": "Form the sum, difference, product and quotient of real functions and determine the domain of the result.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "2.4.2"
+  },
+  "chapter": 2,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "function notation",
+  "riskClass": "C",
+  "riskRationale": "function-domain semantics",
+  "prerequisites": [
+   "C11-RF-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-RF-FO2",
+  "title": "Composition of functions",
+  "objective": "Form the composition of two functions and determine when it is defined.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-2",
+   "ncertChapterOwner": null
+  },
+  "chapter": 2,
+  "cbseUnit": "I",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "mapping diagram",
+  "riskClass": "C",
+  "riskRationale": "composition semantics",
+  "prerequisites": [
+   "C11-RF-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-2",
+  "note": "CBSE lists composition as formative-only. Section 2.4 of the textbook does not develop it as a numbered subsection, so provenance is CBSE-only.",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-TRG-01",
+  "title": "Positive and negative angles",
+  "objective": "Describe an angle as a rotation and distinguish positive from negative measure.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "3.2"
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "rotation diagram with initial and terminal sides",
+  "riskClass": "C",
+  "riskRationale": "Class 10 angle semantics are acute and triangle-bound",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-TRG-02",
+  "title": "Degree and radian measure",
+  "objective": "Convert between degree and radian measure in both directions, using the relation pi radians = 180 degrees.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "3.2.1"
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "arc-and-radius diagram",
+  "riskClass": "C",
+  "riskRationale": "specialAngles is degree-based; radians are a new angle representation, not a conversion on top of it",
+  "prerequisites": [
+   "C11-TRG-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "note": "Source states the word radian is usually omitted, so pi = 180 degrees is written with radian measure understood.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-TRG-03",
+  "title": "Trigonometric functions on the unit circle",
+  "objective": "Define the six trigonometric functions for any real argument using the unit circle and establish that sin squared x plus cos squared x equals one for all x.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "3.3"
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "unit circle figure",
+  "riskClass": "C",
+  "riskRationale": "specialAngles assumes acute arguments; functions over the reals break it",
+  "prerequisites": [
+   "C11-TRG-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-TRG-04",
+  "title": "Signs of the trigonometric functions by quadrant",
+  "objective": "Determine the sign of each trigonometric function in each quadrant and justify it from the unit circle.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "3.3.1"
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "quadrant sign table and unit circle",
+  "riskClass": "C",
+  "riskRationale": "quadrant semantics absent from the acute model",
+  "prerequisites": [
+   "C11-TRG-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-TRG-05",
+  "title": "Domain, range and graphs of the trigonometric functions",
+  "objective": "State the domain and range of each trigonometric function and sketch its graph over the reals.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "3.3.2"
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "periodic function graphs",
+  "riskClass": "C",
+  "riskRationale": "no periodic-function graphing model exists",
+  "prerequisites": [
+   "C11-TRG-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-TRG-06",
+  "title": "Sum and difference identities",
+  "objective": "Express sin and cos of a sum or difference in terms of the component angles and apply the results.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "3.4"
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROOF_DEEPENING",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "identity statements; no figure required",
+  "riskClass": "C",
+  "riskRationale": "identity manipulation over real arguments",
+  "prerequisites": [
+   "C11-TRG-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-TRG-07",
+  "title": "Identities for multiple and half angles",
+  "objective": "Deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "3.4"
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROOF_DEEPENING",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "identity statements",
+  "riskClass": "C",
+  "riskRationale": "identity manipulation",
+  "prerequisites": [
+   "C11-TRG-06"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true,
+  "sourceCorrection": "decomposition first referenced subsection 3.4.1, which is not among the frozen 67; repointed to section 3.4, which the frozen model does record"
+ },
+ {
+  "unitId": "C11-TRG-FO3",
+  "title": "General solution of simple trigonometric equations",
+  "objective": "Write the general solution of sin x = sin y, cos x = cos y and tan x = tan y.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-3",
+   "ncertChapterOwner": null
+  },
+  "chapter": 3,
+  "cbseUnit": "I",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "periodicity diagram",
+  "riskClass": "C",
+  "riskRationale": "periodic solution-set semantics",
+  "prerequisites": [
+   "C11-TRG-05",
+   "C11-TRG-06"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-3",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-CPX-01",
+  "title": "The complex number and the square root of minus one",
+  "objective": "Write a complex number in the form a + ib and identify its real and imaginary parts.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "4.2"
+  },
+  "chapter": 4,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "a + ib notation",
+  "riskClass": "C",
+  "riskRationale": "no model represents a number outside the reals",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "note": "Motivated by Class 10 quadratics declared to have no real roots.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CPX-02",
+  "title": "Algebra of complex numbers",
+  "objective": "Add, subtract and multiply complex numbers and state the field properties used.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "4.3"
+  },
+  "chapter": 4,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "exact complex arithmetic",
+  "riskClass": "C",
+  "riskRationale": "exact complex arithmetic has no analogue in the repository",
+  "prerequisites": [
+   "C11-CPX-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CPX-03",
+  "title": "Powers of i and division of complex numbers",
+  "objective": "Compute powers of i and divide complex numbers using the multiplicative inverse.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "4.3.5"
+  },
+  "chapter": 4,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "exact complex arithmetic",
+  "riskClass": "C",
+  "riskRationale": "exact complex arithmetic",
+  "prerequisites": [
+   "C11-CPX-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CPX-04",
+  "title": "Modulus and conjugate",
+  "objective": "Compute the modulus and conjugate of a complex number and use their properties to simplify quotients.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "4.4"
+  },
+  "chapter": 4,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "modulus and conjugate notation",
+  "riskClass": "C",
+  "riskRationale": "exact complex arithmetic",
+  "prerequisites": [
+   "C11-CPX-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CPX-05",
+  "title": "The Argand plane",
+  "objective": "Represent a complex number as a point in the Argand plane and interpret its real and imaginary components geometrically.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "SF-1-SUMMATIVE",
+   "parentSection": "4.5"
+  },
+  "chapter": 4,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "Argand plane figure",
+  "riskClass": "C",
+  "riskRationale": "no model represents the complex plane",
+  "prerequisites": [
+   "C11-CPX-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "fragmentNote": "Section 4.5 changes assessment status inside its body; this unit carries only the summative half.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CPX-FO5a",
+  "title": "Polar representation of a complex number",
+  "objective": "Express a complex number in modulus-argument form and convert between that and a + ib.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "SF-1-FORMATIVE",
+   "parentSection": "4.5"
+  },
+  "chapter": 4,
+  "cbseUnit": "II",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "Argand plane with argument",
+  "riskClass": "C",
+  "riskRationale": "polar semantics on the complex plane",
+  "prerequisites": [
+   "C11-CPX-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-5",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-CPX-FO5b",
+  "title": "Quadratic equations over the complex numbers",
+  "objective": "Solve a quadratic with real coefficients over the complex numbers and state the Fundamental Theorem of Algebra.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-5",
+   "ncertChapterOwner": null
+  },
+  "chapter": 4,
+  "cbseUnit": "II",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROOF_DEEPENING",
+  "textbookBodyDemand": "STATE_WITHOUT_PROOF",
+  "cbseProofExpectation": null,
+  "representationRequirement": "exact complex arithmetic",
+  "riskClass": "C",
+  "riskRationale": "exact complex arithmetic",
+  "prerequisites": [
+   "C11-CPX-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-5",
+  "note": "CBSE states the Fundamental Theorem of Algebra without proof.",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-INQ-01",
+  "title": "Linear inequalities and their solution sets",
+  "objective": "Distinguish strict from weak inequalities and describe what a solution set is.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "5.2"
+  },
+  "chapter": 5,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "inequality symbols",
+  "riskClass": "A",
+  "riskRationale": "prior architecture covers this",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-INQ-02",
+  "title": "Algebraic solution of a linear inequality in one variable",
+  "objective": "Solve a linear inequality in one variable, handling the sign change on multiplying by a negative, and represent the solution on a number line.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "5.3"
+  },
+  "chapter": 5,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "number line with open and closed endpoints",
+  "riskClass": "B",
+  "riskRationale": "number-line region rendering extends existing figure work",
+  "prerequisites": [
+   "C11-INQ-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-INQ-FO6",
+  "title": "Graphical solution of linear inequalities in two variables",
+  "objective": "Shade the half-plane satisfying a linear inequality in two variables and find the region satisfying a system of them.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-6",
+   "ncertChapterOwner": null
+  },
+  "chapter": null,
+  "cbseUnit": "II",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": null,
+  "cbseProofExpectation": null,
+  "representationRequirement": "half-plane region on a coordinate plane",
+  "riskClass": "C",
+  "riskRationale": "half-plane region semantics have no model",
+  "prerequisites": [
+   "C11-INQ-02",
+   "C11-STL-01"
+  ],
+  "status": "NEEDS_HUMAN_CHECK",
+  "cbseEntry": "FO-6",
+  "note": "No NCERT owner. Chapter 5 teaches one variable only; section 5.3 is titled in One Variable and its graphical representation is a number line. textbookBodyDemand is null because no textbook body exists.",
+  "placementRationale": "Instructionally placed after C11-INQ-02 and after coordinate axes are available; it has no chapter owner, so chapterOwner is null while instructional placement is real.",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-PNC-01",
+  "title": "The fundamental principle of counting",
+  "objective": "Count the outcomes of a multi-stage choice by multiplying the choices at each stage.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "6.2"
+  },
+  "chapter": 6,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "tree or stage diagram",
+  "riskClass": "C",
+  "riskRationale": "no counting model exists",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PNC-02",
+  "title": "Factorial notation",
+  "objective": "Read and compute factorial n and simplify quotients of factorials.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "6.3.1"
+  },
+  "chapter": 6,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "factorial notation",
+  "riskClass": "C",
+  "riskRationale": "counting model",
+  "prerequisites": [
+   "C11-PNC-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PNC-03",
+  "title": "Permutations and the formula for nPr",
+  "objective": "Derive nPr = n!/(n-r)! and use it to count arrangements of distinct objects.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "6.3"
+  },
+  "chapter": 6,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "nPr notation",
+  "riskClass": "C",
+  "riskRationale": "counting model",
+  "prerequisites": [
+   "C11-PNC-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PNC-04",
+  "title": "Permutations when objects are not all distinct",
+  "objective": "Count arrangements when some objects repeat, and when a restriction fixes positions.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "6.3.3"
+  },
+  "chapter": 6,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "arrangement diagram",
+  "riskClass": "C",
+  "riskRationale": "counting model",
+  "prerequisites": [
+   "C11-PNC-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PNC-05",
+  "title": "Combinations",
+  "objective": "Derive nCr, relate it to nPr, and use it to count selections.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "6.4"
+  },
+  "chapter": 6,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "nCr notation",
+  "riskClass": "C",
+  "riskRationale": "counting model",
+  "prerequisites": [
+   "C11-PNC-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-BIN-01",
+  "title": "The binomial theorem for a positive integral index",
+  "objective": "State the binomial theorem for a positive integral index and follow its proof by induction on the index.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "7.2"
+  },
+  "chapter": 7,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROOF_DEEPENING",
+  "textbookBodyDemand": "PROVE",
+  "cbseProofExpectation": "PROVE",
+  "representationRequirement": "binomial coefficient and sigma notation",
+  "riskClass": "B",
+  "riskRationale": "binomial coefficients extend the counting model",
+  "prerequisites": [
+   "C11-PNC-05",
+   "C11-IND-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "inductionDependency": true,
+  "note": "CBSE wording is statement and proof, the only explicit proof prescription in the Class XI curriculum. The textbook proof applies mathematical induction, which has no NCERT chapter owner.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-BIN-02",
+  "title": "Pascal's triangle and the binomial coefficients",
+  "objective": "Generate the binomial coefficients from Pascal\u2019s triangle and relate each entry to nCr.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "7.2"
+  },
+  "chapter": 7,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "Pascal's triangle figure",
+  "riskClass": "B",
+  "riskRationale": "a triangular coefficient array extends tabular rendering",
+  "prerequisites": [
+   "C11-PNC-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true,
+  "sourceCorrection": "decomposition first referenced subsection 7.2.1, which is not among the frozen 67; repointed to section 7.2, which the frozen model does record"
+ },
+ {
+  "unitId": "C11-BIN-03",
+  "title": "Simple applications of the binomial theorem",
+  "objective": "Expand a binomial power and use the expansion in simple numerical and algebraic applications.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "7.2"
+  },
+  "chapter": 7,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "APPLICATION_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "expansion notation",
+  "riskClass": "B",
+  "riskRationale": "coefficient semantics",
+  "prerequisites": [
+   "C11-BIN-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true,
+  "sourceCorrection": "decomposition first referenced subsection 7.2.2, which is not among the frozen 67; repointed to section 7.2, which the frozen model does record"
+ },
+ {
+  "unitId": "C11-BIN-FO7",
+  "title": "General and middle term of a binomial expansion",
+  "objective": "Write the general term of a binomial expansion and identify the middle term.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "FO-7-TERMS",
+   "parentSection": "7.2"
+  },
+  "chapter": 7,
+  "cbseUnit": "II",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "general term notation",
+  "riskClass": "B",
+  "riskRationale": "coefficient indexing",
+  "prerequisites": [
+   "C11-BIN-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-7",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-SEQ-01",
+  "title": "Sequences and their terms",
+  "objective": "Read a term of a sequence from its rule and write the rule from a pattern.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "8.2"
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "subscript notation",
+  "riskClass": "B",
+  "riskRationale": "a general sequence extends the arithmeticProgression model",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "note": "Class 10 chapter 5 formalised the arithmetic progression; a general sequence extends that frame rather than introducing sequencing.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SEQ-02",
+  "title": "Series and sigma notation",
+  "objective": "Write the sum of a sequence as a series using sigma notation.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "8.3"
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "sigma notation",
+  "riskClass": "B",
+  "riskRationale": "summation notation extends existing sum handling",
+  "prerequisites": [
+   "C11-SEQ-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SEQ-03",
+  "title": "Arithmetic mean",
+  "objective": "Insert the arithmetic mean between two numbers and insert n arithmetic means.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "8.3"
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "A.M. notation",
+  "riskClass": "A",
+  "riskRationale": "prior architecture covers this",
+  "prerequisites": [
+   "C11-SEQ-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true,
+  "sourceCorrection": "decomposition first referenced subsection 8.3.1, which is not among the frozen 67; repointed to section 8.3, which the frozen model does record"
+ },
+ {
+  "unitId": "C11-SEQ-04",
+  "title": "Geometric progression and its general term",
+  "objective": "Identify a geometric progression and derive its nth term.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "8.4"
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "G.P. notation",
+  "riskClass": "B",
+  "riskRationale": "a sibling model to arithmeticProgression with a multiplicative step",
+  "prerequisites": [
+   "C11-SEQ-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SEQ-05",
+  "title": "Sum of n terms of a geometric progression",
+  "objective": "Derive and apply the sum of the first n terms of a G.P.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "8.4.1"
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "G.P. sum notation",
+  "riskClass": "B",
+  "riskRationale": "G.P. sum semantics",
+  "prerequisites": [
+   "C11-SEQ-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SEQ-06",
+  "title": "Infinite geometric series and the geometric mean",
+  "objective": "Decide when an infinite G.P. has a sum, compute it, and insert the geometric mean between two numbers.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "8.4.2"
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "limit of a sum; G.M. notation",
+  "riskClass": "C",
+  "riskRationale": "convergence of an infinite sum has no model and is not a finite-sum extension",
+  "prerequisites": [
+   "C11-SEQ-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SEQ-07",
+  "title": "Relationship between the arithmetic and geometric means",
+  "objective": "Derive the inequality between the arithmetic and geometric means of two positive numbers.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "8.5"
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROOF_DEEPENING",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "exact radical arithmetic",
+  "riskClass": "B",
+  "riskRationale": "exact radicals already exist in coordinateGeometry",
+  "prerequisites": [
+   "C11-SEQ-03",
+   "C11-SEQ-06"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-SEQ-FO8",
+  "title": "Formulae for the special sums",
+  "objective": "Use the closed forms for the sum of the first n natural numbers, their squares and their cubes.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-8",
+   "ncertChapterOwner": null
+  },
+  "chapter": 8,
+  "cbseUnit": "II",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "sigma notation",
+  "riskClass": "B",
+  "riskRationale": "summation semantics",
+  "prerequisites": [
+   "C11-SEQ-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-8",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-STL-01",
+  "title": "Slope of a line",
+  "objective": "Compute the slope of a line from two points or from its angle of inclination.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "9.2"
+  },
+  "chapter": 9,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "coordinate graph",
+  "riskClass": "B",
+  "riskRationale": "extends coordinateGeometry with a direction quantity",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "note": "Class 10 chapter 7 established distance, midpoint and internal section on the coordinate plane; slope extends that frame.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STL-02",
+  "title": "Angle between two lines",
+  "objective": "Compute the angle between two lines from their slopes and state the conditions for parallel and perpendicular lines.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "9.2.1"
+  },
+  "chapter": 9,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "coordinate graph",
+  "riskClass": "B",
+  "riskRationale": "slope semantics",
+  "prerequisites": [
+   "C11-STL-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STL-03",
+  "title": "Equations of lines parallel to the axes, and the point-slope form",
+  "objective": "Write the equation of a line parallel to an axis, and of a line through a given point with a given slope.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "SF-2-SUMMATIVE",
+   "parentSection": "9.3"
+  },
+  "chapter": 9,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "coordinate graph",
+  "riskClass": "B",
+  "riskRationale": "equation-driven line rendering extends LinearSystemGraph",
+  "prerequisites": [
+   "C11-STL-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "fragmentNote": "Section 9.3 enumerates forms with different assessment statuses; this unit carries summative forms only.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STL-04",
+  "title": "Slope-intercept, two-point and intercept forms",
+  "objective": "Write the equation of a line in slope-intercept, two-point and intercept form and convert between them.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "SF-2-SUMMATIVE",
+   "parentSection": "9.3"
+  },
+  "chapter": 9,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "coordinate graph",
+  "riskClass": "B",
+  "riskRationale": "line-form semantics",
+  "prerequisites": [
+   "C11-STL-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STL-05",
+  "title": "Distance of a point from a line",
+  "objective": "Derive and apply the distance of a point from a line.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "9.4"
+  },
+  "chapter": 9,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "coordinate graph",
+  "riskClass": "B",
+  "riskRationale": "extends exact-distance work",
+  "prerequisites": [
+   "C11-STL-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STL-FO9",
+  "title": "Normal form and the general equation of a line",
+  "objective": "Write a line in normal form and convert the general equation of a line into the other forms.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "SF-2-FORMATIVE",
+   "parentSection": "9.3"
+  },
+  "chapter": 9,
+  "cbseUnit": "III",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "coordinate graph with perpendicular from origin",
+  "riskClass": "B",
+  "riskRationale": "line-form semantics",
+  "prerequisites": [
+   "C11-STL-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-9",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-CON-01",
+  "title": "Sections of a cone",
+  "objective": "Describe how a plane cutting a cone produces a circle, ellipse, parabola or hyperbola according to the angle of the cut.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "10.2"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "cone section diagram",
+  "riskClass": "C",
+  "riskRationale": "no model represents a conic",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CON-02",
+  "title": "Degenerate conic sections",
+  "objective": "Identify the point, the straight line and the pair of intersecting lines as degenerate cases of a conic.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "10.2.2"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "cone section diagram",
+  "riskClass": "C",
+  "riskRationale": "conic semantics",
+  "prerequisites": [
+   "C11-CON-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CON-03",
+  "title": "The circle",
+  "objective": "Derive the standard equation of a circle from the distance definition and find its centre and radius.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "10.3"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "coordinate diagram with centre and radius",
+  "riskClass": "C",
+  "riskRationale": "equation-driven curve with parameters",
+  "prerequisites": [
+   "C11-CON-01",
+   "C11-STL-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CON-04",
+  "title": "The parabola and its standard equations",
+  "objective": "Derive the standard equation of a parabola, identify its focus, directrix, axis and vertex, and find the length of its latus rectum.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "10.4"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "parabola diagram with focus and directrix",
+  "riskClass": "C",
+  "riskRationale": "focus and directrix have no representation",
+  "prerequisites": [
+   "C11-CON-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "sourceNote": "Standard form verified on the page as y squared = 4ax.",
+  "summativeEligible": true,
+  "retainedSubsections": [
+   "10.4.2"
+  ],
+  "mergeNote": "Latus rectum of a parabola (10.4.2) is recorded STRUCTURAL_ONLY in the frozen source model, so it is taught inside this unit rather than given one of its own."
+ },
+ {
+  "unitId": "C11-CON-05",
+  "title": "The ellipse and its standard equations",
+  "objective": "Derive both standard equations of an ellipse and identify the foci, vertices and the major and minor axes.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "10.5"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "ellipse diagram in both orientations",
+  "riskClass": "C",
+  "riskRationale": "orientation-dependent standard forms have no model",
+  "prerequisites": [
+   "C11-CON-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "sourceNote": "Both orientations verified on the page: x2/a2 + y2/b2 = 1 and x2/b2 + y2/a2 = 1. The differing denominator is a second orientation, not an error.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CON-06",
+  "title": "Eccentricity and latus rectum of an ellipse",
+  "objective": "Compute the eccentricity of an ellipse and the length of its latus rectum.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "10.5.2"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "ellipse diagram",
+  "riskClass": "C",
+  "riskRationale": "conic parameter semantics",
+  "prerequisites": [
+   "C11-CON-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CON-07",
+  "title": "The hyperbola and its standard equation",
+  "objective": "Derive the standard equation of a hyperbola and identify its foci, vertices and axes.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "10.6"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "hyperbola diagram",
+  "riskClass": "C",
+  "riskRationale": "conic semantics",
+  "prerequisites": [
+   "C11-CON-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-CON-08",
+  "title": "Eccentricity and latus rectum of a hyperbola",
+  "objective": "Compute the eccentricity of a hyperbola and the length of its latus rectum.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "10.6.1"
+  },
+  "chapter": 10,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "hyperbola diagram",
+  "riskClass": "C",
+  "riskRationale": "conic parameter semantics",
+  "prerequisites": [
+   "C11-CON-07"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-3DG-01",
+  "title": "Coordinate axes and planes in three dimensions",
+  "objective": "Name the three coordinate planes and the eight octants and locate a region in space.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "11.2"
+  },
+  "chapter": 11,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "3-D axis diagram",
+  "riskClass": "B",
+  "riskRationale": "extends the coordinate plane with a third ordinate",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-3DG-02",
+  "title": "Coordinates of a point in space",
+  "objective": "Read and plot an ordered triple and state the sign pattern of its octant.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "11.3"
+  },
+  "chapter": 11,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "REPRESENTATION_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "3-D coordinate diagram",
+  "riskClass": "B",
+  "riskRationale": "coordinateGeometry extension",
+  "prerequisites": [
+   "C11-3DG-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-3DG-03",
+  "title": "Distance between two points in space",
+  "objective": "Derive the three-dimensional distance formula and use it to test geometric claims.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "11.4"
+  },
+  "chapter": 11,
+  "cbseUnit": "III",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "3-D diagram; exact radicals",
+  "riskClass": "B",
+  "riskRationale": "the exact-radical distance already exists in two dimensions",
+  "prerequisites": [
+   "C11-3DG-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-3DG-FO10",
+  "title": "Section formula in three dimensions",
+  "objective": "Find the point dividing a segment in space in a given ratio.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-10",
+   "ncertChapterOwner": null
+  },
+  "chapter": 11,
+  "cbseUnit": "III",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "3-D diagram",
+  "riskClass": "B",
+  "riskRationale": "the section formula exists in two dimensions in coordinateGeometry",
+  "prerequisites": [
+   "C11-3DG-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-10",
+  "note": "Class 10 chapter 7 established internal division in the plane; this extends it to space and is formative-only.",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-LIM-01",
+  "title": "The derivative as a rate of change",
+  "objective": "Describe the derivative informally as a rate of change, both for a distance function and geometrically as the slope of a tangent.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "12.2"
+  },
+  "chapter": 12,
+  "cbseUnit": "IV",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "secant and tangent graph",
+  "riskClass": "C",
+  "riskRationale": "no symbolic limit or derivative semantics exist",
+  "prerequisites": [
+   "C11-STL-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-LIM-02",
+  "title": "The intuitive idea of a limit",
+  "objective": "Evaluate a limit informally from values approaching a point and recognise when a limit fails to exist.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "12.3"
+  },
+  "chapter": 12,
+  "cbseUnit": "IV",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "limit value table and graph",
+  "riskClass": "C",
+  "riskRationale": "limit semantics",
+  "prerequisites": [
+   "C11-LIM-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-LIM-03",
+  "title": "Limits of polynomials and rational functions",
+  "objective": "Evaluate limits of polynomial and rational functions, including the cancelling case.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "12.3.1"
+  },
+  "chapter": 12,
+  "cbseUnit": "IV",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "limit notation",
+  "riskClass": "C",
+  "riskRationale": "limit semantics",
+  "prerequisites": [
+   "C11-LIM-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-LIM-04",
+  "title": "Limits of trigonometric, exponential and logarithmic functions",
+  "objective": "Evaluate limits involving trigonometric, exponential and logarithmic functions using the standard limits.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "12.4"
+  },
+  "chapter": 12,
+  "cbseUnit": "IV",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "limit notation",
+  "riskClass": "C",
+  "riskRationale": "limit semantics over transcendental functions",
+  "prerequisites": [
+   "C11-LIM-03",
+   "C11-TRG-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-LIM-05",
+  "title": "The derivative from first principles",
+  "objective": "Define the derivative as a limit of the difference quotient and compute it from first principles.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "12.5"
+  },
+  "chapter": 12,
+  "cbseUnit": "IV",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "difference quotient and tangent graph",
+  "riskClass": "C",
+  "riskRationale": "symbolic derivative semantics",
+  "prerequisites": [
+   "C11-LIM-03",
+   "C11-IND-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "inductionDependency": true,
+  "note": "The textbook derivation of the derivative of x to the n reads by induction hypothesis, so this unit depends on induction, which has no NCERT chapter owner.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-LIM-06",
+  "title": "Algebra of derivatives",
+  "objective": "Differentiate sums, differences, products and quotients of polynomial and trigonometric functions.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "12.5.1"
+  },
+  "chapter": 12,
+  "cbseUnit": "IV",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "derivative notation as used in the source",
+  "riskClass": "C",
+  "riskRationale": "symbolic derivative semantics",
+  "prerequisites": [
+   "C11-LIM-05",
+   "C11-IND-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "inductionDependency": true,
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-LIM-FO11",
+  "title": "Derivatives of composite functions",
+  "objective": "Differentiate a composite function using the chain rule.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-11",
+   "ncertChapterOwner": null
+  },
+  "chapter": 12,
+  "cbseUnit": "IV",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "OPTIONAL_ENRICHMENT",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "derivative notation",
+  "riskClass": "C",
+  "riskRationale": "symbolic derivative semantics",
+  "prerequisites": [
+   "C11-LIM-06",
+   "C11-RF-FO2"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-11",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-STA-01",
+  "title": "Measures of dispersion",
+  "objective": "Explain why a measure of central tendency alone is insufficient and name the measures of dispersion.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "13.2"
+  },
+  "chapter": 13,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "frequency table",
+  "riskClass": "A",
+  "riskRationale": "prior architecture covers this",
+  "prerequisites": [],
+  "status": "READY_FOR_AUTHORING",
+  "note": "Class 10 chapter 13 established grouped mean, mode and median; dispersion is a new measure family on the same data structures.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STA-02",
+  "title": "Range",
+  "objective": "Compute the range of a data set and state its limitation as a measure of spread.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "13.3"
+  },
+  "chapter": 13,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "APPLY",
+  "cbseProofExpectation": null,
+  "representationRequirement": "frequency table",
+  "riskClass": "A",
+  "riskRationale": "prior architecture covers this",
+  "prerequisites": [
+   "C11-STA-01"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STA-03",
+  "title": "Mean deviation about the mean",
+  "objective": "Compute the mean deviation about the mean for ungrouped and grouped data.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "13.4"
+  },
+  "chapter": 13,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "deviation table with subscripted observations",
+  "riskClass": "A",
+  "riskRationale": "groupedDistribution already owns class marks and frequency sums",
+  "prerequisites": [
+   "C11-STA-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STA-04",
+  "title": "Mean deviation about the median",
+  "objective": "Compute the mean deviation about the median for ungrouped and grouped data.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "13.4.2"
+  },
+  "chapter": 13,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "deviation table",
+  "riskClass": "A",
+  "riskRationale": "groupedDistribution owns the median",
+  "prerequisites": [
+   "C11-STA-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STA-05",
+  "title": "Variance and standard deviation",
+  "objective": "Compute the variance and standard deviation of ungrouped data and explain why deviations are squared.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "13.5"
+  },
+  "chapter": 13,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "squared deviation table",
+  "riskClass": "B",
+  "riskRationale": "squared-deviation aggregation extends groupedDistribution",
+  "prerequisites": [
+   "C11-STA-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STA-06",
+  "title": "Variance and standard deviation of grouped data",
+  "objective": "Compute the variance and standard deviation for a grouped frequency distribution.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "13.5.2"
+  },
+  "chapter": 13,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "grouped frequency table",
+  "riskClass": "B",
+  "riskRationale": "extends groupedDistribution",
+  "prerequisites": [
+   "C11-STA-05"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-STA-07",
+  "title": "The shortcut method for standard deviation",
+  "objective": "Use the step-deviation form to compute the standard deviation and show it agrees with the direct method.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "13.5.3"
+  },
+  "chapter": 13,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "PROCEDURAL_EXTENSION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "step-deviation table",
+  "riskClass": "A",
+  "riskRationale": "groupedDistribution already reconciles direct, assumed-mean and step-deviation methods",
+  "prerequisites": [
+   "C11-STA-06"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PRB-FO12",
+  "title": "Random experiments, outcomes and the sample space",
+  "objective": "Describe a random experiment, list its outcomes and write the sample space in set notation.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "SF-3-FORMATIVE",
+   "parentSection": "14.1"
+  },
+  "chapter": 14,
+  "cbseUnit": "V",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "REQUIRED_PREREQUISITE",
+  "progression": "FORMALISATION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "sample space in set notation",
+  "riskClass": "B",
+  "riskRationale": "sampleSpace exists but without set-algebra representation",
+  "prerequisites": [
+   "C11-SET-09"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "cbseEntry": "FO-12",
+  "fragmentNote": "Section 14.1 changes assessment status inside its body; this unit is the formative-only foundation.",
+  "dependencyNote": "Assessment status is FORMATIVE_ONLY while instructional status is REQUIRED_PREREQUISITE. The two are independent and neither is inferred from the other.",
+  "summativeEligible": false
+ },
+ {
+  "unitId": "C11-PRB-01",
+  "title": "Events as subsets of the sample space",
+  "objective": "Define an event as a subset of the sample space and describe when an event occurs.",
+  "source": {
+   "kind": "SCOPE_FRAGMENT",
+   "fragmentId": "SF-3-SUMMATIVE",
+   "parentSection": "14.1"
+  },
+  "chapter": 14,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "FORMALISATION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation and Venn diagram",
+  "riskClass": "B",
+  "riskRationale": "event-as-subset extends sampleSpace",
+  "prerequisites": [
+   "C11-PRB-FO12"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "fragmentNote": "Summative half of section 14.1; it uses the formative-only sample-space representation directly.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PRB-02",
+  "title": "Not, and, or events",
+  "objective": "Form the complement, intersection and union of events and read each as a statement about occurrence.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "14.1.2"
+  },
+  "chapter": 14,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "FORMALISATION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation and Venn diagram",
+  "riskClass": "B",
+  "riskRationale": "set algebra over the existing event model",
+  "prerequisites": [
+   "C11-PRB-01",
+   "C11-SET-11"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PRB-03",
+  "title": "Exhaustive and mutually exclusive events",
+  "objective": "Decide whether a set of events is exhaustive, mutually exclusive, or both.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "14.1.4"
+  },
+  "chapter": 14,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "FORMALISATION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation and Venn diagram",
+  "riskClass": "B",
+  "riskRationale": "partition semantics extend sampleSpace",
+  "prerequisites": [
+   "C11-PRB-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PRB-04",
+  "title": "Axiomatic probability",
+  "objective": "State the axioms of probability and compute the probability of an event from them.",
+  "source": {
+   "kind": "NCERT_SECTION",
+   "section": "14.2"
+  },
+  "chapter": 14,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "FORMALISATION",
+  "textbookBodyDemand": "UNDERSTAND",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation",
+  "riskClass": "B",
+  "riskRationale": "axiomatic assignment extends sampleSpace",
+  "prerequisites": [
+   "C11-PRB-03"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "note": "Class 9 chapter 7 and Class 10 chapter 14 established classical probability; this formalises it rather than introducing probability.",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PRB-05",
+  "title": "Probabilities of equally likely outcomes",
+  "objective": "Derive that each of n equally likely outcomes has probability one over n and compute the probability of an event as favourable over total.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "14.2.2"
+  },
+  "chapter": 14,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "FORMALISATION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation",
+  "riskClass": "B",
+  "riskRationale": "extends sampleSpace equal-likelihood handling",
+  "prerequisites": [
+   "C11-PRB-04"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-PRB-06",
+  "title": "Probability of not, and, or events",
+  "objective": "Compute the probability of the complement, intersection and union of events, including the addition rule.",
+  "source": {
+   "kind": "NCERT_SUBSECTION",
+   "subsection": "14.2.3"
+  },
+  "chapter": 14,
+  "cbseUnit": "V",
+  "assessmentStatus": "SUMMATIVE_CORE",
+  "instructionalStatus": "REQUIRED_CORE",
+  "progression": "FORMALISATION",
+  "textbookBodyDemand": "DERIVE",
+  "cbseProofExpectation": null,
+  "representationRequirement": "set notation and Venn diagram",
+  "riskClass": "B",
+  "riskRationale": "event algebra over sampleSpace",
+  "prerequisites": [
+   "C11-PRB-05",
+   "C11-PRB-02"
+  ],
+  "status": "READY_FOR_AUTHORING",
+  "summativeEligible": true
+ },
+ {
+  "unitId": "C11-IND-01",
+  "title": "The principle of mathematical induction",
+  "objective": "Prove a statement about the natural numbers by establishing a base case and an inductive step.",
+  "source": {
+   "kind": "CBSE_ONLY",
+   "cbseEntry": "FO-4",
+   "ncertChapterOwner": null
+  },
+  "chapter": null,
+  "cbseUnit": "II",
+  "assessmentStatus": "FORMATIVE_ONLY",
+  "instructionalStatus": "REQUIRED_PREREQUISITE",
+  "progression": "NEW_NAMED_OBJECT",
+  "textbookBodyDemand": null,
+  "cbseProofExpectation": null,
+  "representationRequirement": "proof layout; no figure required",
+  "riskClass": "C",
+  "riskRationale": "no model represents an inductive argument over the naturals",
+  "prerequisites": [],
+  "status": "NEEDS_HUMAN_CHECK",
+  "cbseEntry": "FO-4",
+  "note": "No NCERT chapter owner; the rationalised kemh1 has no induction chapter. textbookBodyDemand is null because no textbook body exists.",
+  "downstreamDependencies": [
+   "C11-BIN-01 (binomial theorem proof)",
+   "C11-LIM-05 and C11-LIM-06 (derivative of x to the n)"
+  ],
+  "placementRationale": "Must precede C11-BIN-01, the first summative unit whose proof uses induction. Chapter ownership is null; instructional placement is before chapter 7.",
+  "policyQuestion": "Induction is formative-only for assessment yet is a required prerequisite for two summative units. A human must decide whether Pragati teaches it as a standalone unit before chapter 7 or embeds the method inside the two dependent units.",
+  "summativeEligible": false
+ }
+]

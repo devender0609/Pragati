@@ -1,0 +1,143 @@
+{
+  "checkpoint": "87C-first-green",
+  "canonicalVersion": "0.84.0-c11.20-induction-reachable",
+  "packageKind": "FIRST_GREEN \u2014 created on primary-gate success, before hardening",
+  "verdict": "CLASS_11_INDUCTION_REQUIRED_PREREQUISITE_READY_FOR_HUMAN_REVIEW",
+  "packageCreatedUtc": "2026-11-05T20:25:32Z",
+  "defectFixed": {
+    "what": "catalogue.prerequisiteLessons existed in data but AuthoredLearn.tsx rendered chapters only",
+    "classification": "product",
+    "symptom": "browser walk 0/5 stages, no row to open",
+    "fix": "a 'Before you continue' group rendered above the chapters, reusing the existing lesson-row contract",
+    "newRoutingMechanism": false,
+    "becameAChapter": false
+  },
+  "renderedRowRegression": {
+    "throughComponent": "AuthoredChapterList",
+    "tests": 5,
+    "asserts": [
+      "group renders",
+      "row exists by data-artifact-id",
+      "click opens cbse_fo4_induction_lesson",
+      "group precedes Chapter 1",
+      "absent for class10/class9/class6",
+      "header still says 7 chapters"
+    ],
+    "failsIfDataExistsButJsxIgnoresIt": true
+  },
+  "productPresencePrinciple": {
+    "priorOccurrences": [
+      "VennSpec",
+      "function graphs",
+      "ProofLayoutSpec",
+      "prerequisite catalogue rows"
+    ],
+    "rule": "any new first-class collection on a product surface needs a data test, a renderer-presence test and a browser path test"
+  },
+  "catalogue": {
+    "officialTextbookChapters": 7,
+    "chapterOwnedLessons": 51,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 52,
+    "header": "7 chapters from your textbook \u00b7 51 lessons \u00b7 1 prerequisite lesson outside the textbook",
+    "eighthChapterFabricated": false
+  },
+  "gradeIsolation": {
+    "class11": 1,
+    "class10": 0,
+    "class9": 0,
+    "class6": 0,
+    "inDataAndProduct": true
+  },
+  "provenance": {
+    "sourceKind": "cbse_only",
+    "cbseEntryId": "FO-4",
+    "cbseEntryShadowProperty": false,
+    "officialSectionId": "",
+    "startPage": 0,
+    "inOfficialChapters": false,
+    "ncertOnStudentSurface": false
+  },
+  "browser": {
+    "openedFromCatalogueRow": true,
+    "stages": "5/5 plus Finish",
+    "overflow": "0px",
+    "proofHeadings": [
+      "Claim",
+      "Base case",
+      "Induction hypothesis",
+      "Inductive step",
+      "Conclusion"
+    ],
+    "headingsFromFigureNotChrome": true,
+    "proseLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "harnessCorrection": {
+    "what": "headings were read after the stage loop, when the figure's stage was no longer shown",
+    "fix": "captured at the See it stage",
+    "classification": "harness"
+  },
+  "publicSafe": {
+    "prerequisiteRows": 0,
+    "groupShown": false,
+    "catalogueRows": 0,
+    "directRouteContent": false,
+    "directRouteFigures": 0,
+    "gateAtLookup": true
+  },
+  "guards": {
+    "rawValueDynamicDiscovery": true,
+    "leaks": 0,
+    "negativeProofFixturesRejecting": 8
+  },
+  "dependencyGraph": {
+    "edges": [
+      "C11-BIN-01 -> C11-IND-01",
+      "C11-LIM-05 -> C11-IND-01",
+      "C11-LIM-06 -> C11-IND-01"
+    ],
+    "present": true,
+    "satisfied": true,
+    "dependentUnitsAuthored": false
+  },
+  "humanCheck": {
+    "resolved": "C11-IND-01",
+    "remaining": "C11-INQ-FO6",
+    "remainingUntouched": true
+  },
+  "qa": {
+    "tests": 2852,
+    "testFiles": 134,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "previewBuild": "pass",
+    "publicSafeBuild": "pass"
+  },
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "accessibility structural",
+    "focus visibility",
+    "persistence"
+  ],
+  "priorWork": {
+    "class11ChapterOwned": 51,
+    "priorVersionsChanged": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN",
+    "inductionSummativeEligible": false
+  },
+  "next": {
+    "recommendation": "C11-BIN-01, then C11-LIM-05 and C11-LIM-06",
+    "executed": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_comment": "v0.66 §8 — the exact curriculum evidence B1/C1/C2 are about. A reviewer approving C1 approves THIS mapping, not a mutable future one.",
+  "questionSetVersion": 1,
+  "packageASnapshotVersion": 1,
+  "officialSectionId": "ncert_gp_c6_s7_4",
+  "sectionNumber": "7.4",
+  "exactTitle": "Marking Fraction Lengths on the Number Line",
+  "startPage": 160,
+  "verificationStatus": "primary_source_verified",
+  "sourceReference": "https://ncert.nic.in/textbook/pdf/fegp1dd.zip",
+  "curriculumSource": {
+    "textbook": "Ganita Prakash, Grade 6 (NCERT, Reprint 2026-27)",
+    "framework": "NCF-SE 2023, Middle Stage (§3.4.1.2, printed pp. 255-256)",
+    "inspectionDate": "2026-08-24"
+  },
+  "proposedCompetencyMapping": [
+    {
+      "id": "MIDDLE:C-1.4",
+      "text": "Explores and understands sets of numbers — whole numbers, fractions, integers, rational numbers, real numbers — and their properties, and visualises them on the number line",
+      "justification": "Direct: the competency names the number line explicitly, and this section is its Grade 6 realisation for fractions. Among the least interpretive mappings available."
+    },
+    {
+      "id": "MIDDLE:C-1.6",
+      "text": "Explores and applies fractions (both as ratios and in decimal form) in daily-life situations",
+      "justification": "Supporting: the section treats a fraction as a LENGTH, which is the measurement sense underpinning ratio use. Weaker than C-1.4 and offered for educator confirmation, not asserted."
+    }
+  ],
+  "competencyMappingStatus": "competency_proposed",
+  "mappingReviewStatus": "maintainer_proposed",
+  "pragatiSkillIds": [],
+  "mappingType": "unmapped",
+  "decisionsUnderReview": {
+    "B1": "Fractions covers 5 of 9 official sections; §7.4 is uncovered.",
+    "C1": "MIDDLE:C-1.4 is the primary competency for §7.4.",
+    "C2": "MIDDLE:C-1.6 is a supporting competency for §7.4."
+  }
+}

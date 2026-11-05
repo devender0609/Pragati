@@ -1,0 +1,578 @@
+{
+  "1.1": {
+    "object": "the notion of a collection treated as one object",
+    "procedure": "recognising when a collection is well defined",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivating examples",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "1.2": {
+    "object": "a set and its two representations",
+    "procedure": "writing a set in roster and in set-builder form",
+    "representation": "roster and set-builder notation",
+    "proofDemand": "APPLY",
+    "application": "converting between the two",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Sets and their Representations"
+  },
+  "1.3": {
+    "object": "the empty set",
+    "procedure": "deciding whether a described collection has any element",
+    "representation": "the symbol for the empty set",
+    "proofDemand": "UNDERSTAND",
+    "application": "recognising empty descriptions",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "The Empty Set"
+  },
+  "1.4": {
+    "object": "finite and infinite sets",
+    "procedure": "deciding whether the counting of elements terminates",
+    "representation": "cardinality notation",
+    "proofDemand": "UNDERSTAND",
+    "application": "classifying given sets",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Finite and Infinite Sets"
+  },
+  "1.5": {
+    "object": "equality of sets",
+    "procedure": "comparing membership rather than listing order or repetition",
+    "representation": "set equality",
+    "proofDemand": "UNDERSTAND",
+    "application": "deciding equality from representations",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Equal Sets"
+  },
+  "1.6": {
+    "object": "subset, proper subset, and intervals as subsets of the reals",
+    "procedure": "deciding containment; reading interval notation",
+    "representation": "subset symbols and interval notation",
+    "proofDemand": "UNDERSTAND",
+    "application": "intervals on the real line",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Subsets"
+  },
+  "1.7": {
+    "object": "the universal set",
+    "procedure": "fixing the ambient set before taking complements",
+    "representation": "universal set notation",
+    "proofDemand": "UNDERSTAND",
+    "application": "choosing a universal set for a context",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Universal Set"
+  },
+  "1.8": {
+    "object": "the Venn diagram",
+    "procedure": "representing membership and containment regionally",
+    "representation": "Venn diagram",
+    "proofDemand": "UNDERSTAND",
+    "application": "reading and drawing diagrams",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Venn Diagrams"
+  },
+  "1.9": {
+    "object": "union, intersection and difference of sets",
+    "procedure": "computing the operations and reading them off diagrams",
+    "representation": "set notation and Venn diagrams",
+    "proofDemand": "APPLY",
+    "application": "combining sets",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "formativeOnlyPart": "practical problems on union and intersection of two sets (FO-1) sit in the application material of this section, not in the operations themselves",
+    "heading": "Operations on Sets"
+  },
+  "1.10": {
+    "object": "complement of a set and its properties",
+    "procedure": "taking complements against a fixed universal set; De Morgan",
+    "representation": "complement notation and Venn diagrams",
+    "proofDemand": "DERIVE",
+    "application": "verifying the properties",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Complement of a Set"
+  },
+  "2.1": {
+    "object": "the idea of a relationship between varying quantities",
+    "procedure": "motivating ordered pairing",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivating examples",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "2.2": {
+    "object": "ordered pairs and the Cartesian product",
+    "procedure": "forming A x B and counting its elements; up to R x R x R",
+    "representation": "ordered-pair and product notation, arrow and grid diagrams",
+    "proofDemand": "APPLY",
+    "application": "counting products of finite sets",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Cartesian Products of Sets"
+  },
+  "2.3": {
+    "object": "a relation as a subset of a Cartesian product",
+    "procedure": "identifying domain, codomain and range of a relation",
+    "representation": "arrow diagrams and set notation",
+    "proofDemand": "UNDERSTAND",
+    "application": "reading relations from diagrams",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Relations"
+  },
+  "2.4": {
+    "object": "a function as a special relation",
+    "procedure": "testing the function condition; the standard real functions and their graphs; algebra of functions",
+    "representation": "graphs of constant, identity, polynomial, rational, modulus, signum, exponential, logarithmic and greatest-integer functions",
+    "proofDemand": "APPLY",
+    "application": "domain and range of real functions; sums, differences, products, quotients",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "formativeOnlyPart": "composition of functions (FO-2) is formative-only and must be held apart from the algebra of functions, which is summative",
+    "heading": "Functions"
+  },
+  "3.1": {
+    "object": "angle beyond the acute range",
+    "procedure": "motivating rotation as the generator of angle",
+    "representation": "prose and diagrams",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "3.2": {
+    "object": "positive and negative angles; degree and radian measure",
+    "procedure": "converting between degree and radian",
+    "representation": "radian notation and quadrant diagrams",
+    "proofDemand": "APPLY",
+    "application": "conversion both ways",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Angles"
+  },
+  "3.3": {
+    "object": "trigonometric functions defined on the unit circle",
+    "procedure": "extending the ratios to all real arguments; signs by quadrant; domain, range and graphs; sin squared plus cos squared equals one for all x",
+    "representation": "unit circle, sign table, function graphs",
+    "proofDemand": "DERIVE",
+    "application": "evaluating and sketching",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Trigonometric Functions"
+  },
+  "3.4": {
+    "object": "sum and difference identities",
+    "procedure": "deducing the compound-angle results and the identities that follow",
+    "representation": "identity statements",
+    "proofDemand": "DERIVE",
+    "application": "simple applications",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "formativeOnlyPart": "general solution of sin x = sin y, cos x = cos y, tan x = tan y (FO-3) is formative-only; the identities themselves are summative",
+    "heading": "Trigonometric Functions of Sum and Difference of Two Angles"
+  },
+  "4.1": {
+    "object": "the inadequacy of the reals for some quadratics",
+    "procedure": "motivating a new number",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "4.2": {
+    "object": "the complex number and the square root of minus one",
+    "procedure": "naming real and imaginary parts",
+    "representation": "a + ib notation",
+    "proofDemand": "UNDERSTAND",
+    "application": "identifying parts",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Complex Numbers"
+  },
+  "4.3": {
+    "object": "algebraic properties of complex numbers",
+    "procedure": "adding, subtracting, multiplying and dividing",
+    "representation": "exact complex arithmetic",
+    "proofDemand": "APPLY",
+    "application": "computation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Algebra of Complex Numbers"
+  },
+  "4.4": {
+    "object": "modulus and conjugate",
+    "procedure": "computing both and using their properties",
+    "representation": "modulus and conjugate notation",
+    "proofDemand": "DERIVE",
+    "application": "simplifying quotients",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "The Modulus and the Conjugate of a Complex Number"
+  },
+  "4.5": {
+    "object": "the Argand plane and polar representation",
+    "procedure": "plotting a complex number; expressing it in polar form",
+    "representation": "Argand diagram, modulus-argument form",
+    "proofDemand": "UNDERSTAND",
+    "application": "representation",
+    "assessmentStatus": "MIXED",
+    "formativeOnlyPart": "the Argand plane is summative core; polar representation (part of FO-5) is formative-only. This section is split by scope and needs a fragment boundary.",
+    "heading": "Argand Plane and Polar Representation"
+  },
+  "5.1": {
+    "object": "inequality as a relation between expressions",
+    "procedure": "motivating from equations already known",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "5.2": {
+    "object": "linear inequalities and their solution sets",
+    "procedure": "distinguishing strict from weak; the effect of multiplying by a negative",
+    "representation": "inequality symbols",
+    "proofDemand": "UNDERSTAND",
+    "application": "classifying inequalities",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Inequalities"
+  },
+  "5.3": {
+    "object": "algebraic solution of a linear inequality in one variable",
+    "procedure": "solving and representing the solution on a number line",
+    "representation": "number line",
+    "proofDemand": "APPLY",
+    "application": "one-variable solution sets",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Algebraic Solutions of Linear Inequalities in One Variable and their"
+  },
+  "6.1": {
+    "object": "systematic counting",
+    "procedure": "motivating counting without enumeration",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "6.2": {
+    "object": "the fundamental principle of counting",
+    "procedure": "multiplying choices across independent stages",
+    "representation": "tree and stage diagrams",
+    "proofDemand": "UNDERSTAND",
+    "application": "counting arrangements",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Fundamental Principle of Counting"
+  },
+  "6.3": {
+    "object": "permutations and factorial notation",
+    "procedure": "deriving nPr; arrangements with and without repetition",
+    "representation": "nPr and factorial notation",
+    "proofDemand": "DERIVE",
+    "application": "arrangement problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Permutations"
+  },
+  "6.4": {
+    "object": "combinations",
+    "procedure": "deriving nCr and its connection to nPr",
+    "representation": "nCr notation",
+    "proofDemand": "DERIVE",
+    "application": "selection problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Combinations"
+  },
+  "7.1": {
+    "object": "expansion of a binomial power",
+    "procedure": "motivating from squares and cubes already known",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "7.2": {
+    "object": "the binomial theorem for positive integral indices",
+    "procedure": "proving the theorem by induction on the index; Pascal triangle as the coefficient pattern",
+    "representation": "binomial coefficient notation, Pascal triangle",
+    "proofDemand": "PROVE",
+    "application": "simple applications",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "formativeOnlyPart": "general and middle term (FO-7) is formative-only and lives in the later part of this section; the statement and proof are summative",
+    "heading": "Binomial Theorem for Positive Integral Indices"
+  },
+  "8.1": {
+    "object": "sequence as an ordered list",
+    "procedure": "motivating from patterns",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "8.2": {
+    "object": "sequences and their terms",
+    "procedure": "reading a term from a rule",
+    "representation": "subscript notation",
+    "proofDemand": "UNDERSTAND",
+    "application": "generating terms",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Sequences"
+  },
+  "8.3": {
+    "object": "series and the arithmetic mean",
+    "procedure": "summing a sequence; A.M. between two numbers",
+    "representation": "sigma notation",
+    "proofDemand": "APPLY",
+    "application": "computing sums and means",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "formativeOnlyPart": "the special sums for sum of n, n squared and n cubed (FO-8) are formative-only",
+    "heading": "Series"
+  },
+  "8.4": {
+    "object": "geometric progression",
+    "procedure": "general term, sum of n terms, infinite G.P. and its sum, geometric mean",
+    "representation": "G.P. notation",
+    "proofDemand": "DERIVE",
+    "application": "G.P. computation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Geometric Progression (G . P.)"
+  },
+  "8.5": {
+    "object": "the relationship between A.M. and G.M.",
+    "procedure": "deriving the inequality between the two means",
+    "representation": "mean notation",
+    "proofDemand": "DERIVE",
+    "application": "comparison problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Relationship Between A.M. and G.M."
+  },
+  "9.1": {
+    "object": "the line as an equation",
+    "procedure": "recalling two-dimensional geometry from earlier classes",
+    "representation": "prose",
+    "proofDemand": "REVIEW",
+    "application": "recall",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "9.2": {
+    "object": "slope of a line and angle between two lines",
+    "procedure": "computing slope from two points; the condition for parallel and perpendicular",
+    "representation": "slope notation, coordinate graphs",
+    "proofDemand": "DERIVE",
+    "application": "slope and angle problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Slope of a Line"
+  },
+  "9.3": {
+    "object": "the forms of the equation of a line",
+    "procedure": "parallel to axis, point-slope, slope-intercept, two-point, intercept",
+    "representation": "equation forms, coordinate graphs",
+    "proofDemand": "DERIVE",
+    "application": "choosing the form that suits the data",
+    "assessmentStatus": "MIXED",
+    "formativeOnlyPart": "normal form and the general equation of a line (FO-9) are formative-only; the five listed forms are summative. Fragment boundary required.",
+    "heading": "Various Forms of the Equation of a Line"
+  },
+  "9.4": {
+    "object": "distance of a point from a line",
+    "procedure": "deriving and applying the distance formula",
+    "representation": "coordinate graphs",
+    "proofDemand": "DERIVE",
+    "application": "distance problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Distance of a Point From a Line"
+  },
+  "10.1": {
+    "object": "the conic as a plane section of a cone",
+    "procedure": "motivating the family",
+    "representation": "section diagrams",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "10.2": {
+    "object": "sections of a cone and the degenerate cases",
+    "procedure": "classifying by the angle of the cutting plane; point, line and pair of lines as degenerate conics",
+    "representation": "cone section diagrams",
+    "proofDemand": "UNDERSTAND",
+    "application": "classification",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Sections of a Cone"
+  },
+  "10.3": {
+    "object": "the circle",
+    "procedure": "standard equation from the distance definition",
+    "representation": "coordinate diagrams",
+    "proofDemand": "DERIVE",
+    "application": "circle problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Circle"
+  },
+  "10.4": {
+    "object": "the parabola",
+    "procedure": "standard equations, focus, directrix, latus rectum",
+    "representation": "parabola diagrams",
+    "proofDemand": "DERIVE",
+    "application": "parabola problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Parabola"
+  },
+  "10.5": {
+    "object": "the ellipse",
+    "procedure": "standard equations, semi-major and semi-minor axes, eccentricity, latus rectum",
+    "representation": "ellipse diagrams",
+    "proofDemand": "DERIVE",
+    "application": "ellipse problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Ellipse"
+  },
+  "10.6": {
+    "object": "the hyperbola",
+    "procedure": "standard equation, eccentricity, latus rectum",
+    "representation": "hyperbola diagrams",
+    "proofDemand": "DERIVE",
+    "application": "hyperbola problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Hyperbola"
+  },
+  "11.1": {
+    "object": "extending coordinates to space",
+    "procedure": "motivating a third axis",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "11.2": {
+    "object": "coordinate axes and coordinate planes in three dimensions",
+    "procedure": "naming the planes and octants",
+    "representation": "3-D axis diagrams",
+    "proofDemand": "UNDERSTAND",
+    "application": "locating regions",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Coordinate Axes and Coordinate Planes in Three Dimensional Space"
+  },
+  "11.3": {
+    "object": "coordinates of a point in space",
+    "procedure": "reading and plotting an ordered triple",
+    "representation": "3-D coordinate diagrams",
+    "proofDemand": "APPLY",
+    "application": "plotting points",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Coordinates of a Point in Space"
+  },
+  "11.4": {
+    "object": "distance between two points in space",
+    "procedure": "deriving the three-dimensional distance formula",
+    "representation": "3-D diagrams",
+    "proofDemand": "DERIVE",
+    "application": "distance problems",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Distance between Two Points"
+  },
+  "12.1": {
+    "object": "rate of change",
+    "procedure": "motivating the derivative",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "12.2": {
+    "object": "the derivative as a rate of change, geometrically and as distance",
+    "procedure": "introducing the idea before the formalism",
+    "representation": "tangent and secant graphs",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Intuitive Idea of Derivatives"
+  },
+  "12.3": {
+    "object": "the intuitive idea of a limit",
+    "procedure": "limits of polynomials and rational functions",
+    "representation": "limit notation, graphs",
+    "proofDemand": "APPLY",
+    "application": "evaluating limits",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Limits"
+  },
+  "12.4": {
+    "object": "limits of trigonometric, exponential and logarithmic functions",
+    "procedure": "standard limits and their use",
+    "representation": "limit notation",
+    "proofDemand": "APPLY",
+    "application": "evaluating limits",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Limits of Trigonometric Functions"
+  },
+  "12.5": {
+    "object": "the derivative",
+    "procedure": "definition from first principles; derivative of sums, differences, products and quotients of polynomial and trigonometric functions",
+    "representation": "derivative notation",
+    "proofDemand": "DERIVE",
+    "application": "differentiation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "formativeOnlyPart": "derivatives of composite functions, the chain rule (FO-11), are formative-only",
+    "heading": "Derivatives"
+  },
+  "13.1": {
+    "object": "why a single average is not enough",
+    "procedure": "motivating dispersion",
+    "representation": "prose",
+    "proofDemand": "UNDERSTAND",
+    "application": "motivation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Introduction"
+  },
+  "13.2": {
+    "object": "measures of dispersion",
+    "procedure": "naming range, mean deviation, variance and standard deviation",
+    "representation": "prose and tables",
+    "proofDemand": "UNDERSTAND",
+    "application": "choosing a measure",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Measures of Dispersion"
+  },
+  "13.3": {
+    "object": "range",
+    "procedure": "computing the simplest measure of spread",
+    "representation": "tables",
+    "proofDemand": "APPLY",
+    "application": "computation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Range"
+  },
+  "13.4": {
+    "object": "mean deviation",
+    "procedure": "mean deviation about the mean and about the median, ungrouped and grouped",
+    "representation": "frequency tables",
+    "proofDemand": "APPLY",
+    "application": "computation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Mean Deviation"
+  },
+  "13.5": {
+    "object": "variance and standard deviation",
+    "procedure": "computing both for ungrouped and grouped data",
+    "representation": "frequency tables",
+    "proofDemand": "DERIVE",
+    "application": "computation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Variance and Standard Deviation"
+  },
+  "14.1": {
+    "object": "the event as a subset of the sample space",
+    "procedure": "occurrence of events; not, and, or events; exhaustive and mutually exclusive events",
+    "representation": "set notation and diagrams",
+    "proofDemand": "UNDERSTAND",
+    "application": "classifying events",
+    "assessmentStatus": "MIXED",
+    "formativeOnlyPart": "random experiments, outcomes and sample space in set representation (FO-12) are formative-only, while event language built on them is summative. Fragment boundary required.",
+    "heading": "Event"
+  },
+  "14.2": {
+    "object": "axiomatic set-theoretic probability",
+    "procedure": "probability of an event and of not, and, or events; connection with earlier classes",
+    "representation": "set notation",
+    "proofDemand": "APPLY",
+    "application": "probability computation",
+    "assessmentStatus": "SUMMATIVE_CORE",
+    "heading": "Axiomatic Approach to Probability"
+  }
+}

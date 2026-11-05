@@ -1,0 +1,61 @@
+{
+  "checkpoint": 42,
+  "applicationVersion": "0.83.5",
+  "sourceCommit": null,
+  "sourceCommitNote": "no git repository in the working container; the tree is the source of truth",
+  "packageCreatedUtc": "2026-10-14T14:12:52Z",
+  "testCount": 2033,
+  "testFiles": 102,
+  "class9UnitCount": 93,
+  "class9AuthoredLessons": 92,
+  "class9BlockedUnits": 1,
+  "class9BlockedUnitPolicy": "historical_material_lesson_vs_context (\u00a73.1)",
+  "repositoryAuthoredLessons": 104,
+  "segmentBackedLessons": 2,
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "nodeVersionUsed": "v22.22.2",
+  "npmVersionUsed": "10.9.7",
+  "packageManager": "npm; package-lock.json present, no packageManager field pinned",
+  "cleanInstallPerformed": true,
+  "cleanInstallResult": "CLEAN_INSTALL_REPRODUCIBILITY_VERIFIED",
+  "cleanInstallDetail": "staged source extracted to an empty directory with no node_modules and no symlinks; npm ci succeeded; typecheck 0; 2033 tests / 102 files passed; curriculum validation passed; production build succeeded to dist/ (5.1 MB)",
+  "commands": {
+    "install": "npm ci",
+    "typecheck": "npm run typecheck",
+    "test": "npm test",
+    "validateCurriculum": "npm run validate:curriculum",
+    "build": "npm run build",
+    "preview": "npm run preview",
+    "buildOutput": "dist/"
+  },
+  "environmentVariableNames": [
+    "VITE_FIREBASE_API_KEY",
+    "VITE_FIREBASE_AUTH_DOMAIN",
+    "VITE_FIREBASE_PROJECT_ID",
+    "VITE_FIREBASE_STORAGE_BUCKET",
+    "VITE_FIREBASE_MESSAGING_SENDER_ID",
+    "VITE_FIREBASE_APP_ID"
+  ],
+  "environmentVariableNote": "names only, no values packaged; the app builds and runs without them with teacher login disabled",
+  "hostingConfigDetected": null,
+  "hostingNote": "no vercel.json, netlify.toml or other hosting config present; plain Vite static build",
+  "artifactHashes": {
+    "package.json": "4c3fddbe78d035bf8eb9a81e2c639ac5c7651293caae9f5c3a10317ea1395e1f",
+    "package-lock.json": "b7c9b29f77db92554e4f14979309b0699b9968182a173520e411e9eff89f8326",
+    "CURRICULUM_MASTER_MAP.json": "ad86728cd95e36700fb561490173fb35d5a0c8965325282c124f5e7cda0c0fbf",
+    "CURRICULUM_COVERAGE_MATRIX.md": "d983b3852834ee9f0a72b3fcdca1720785792418f72a2f31a534f9289c11f15a",
+    "CONTENT_BACKLOG.md": "5000f8f574996de53bd9b9d4df3ada44d19cfedb26d892494363a65a00e5b963",
+    "CHECKPOINT_STATUS_COUNTS.json": "320b24ad2aac43a996138b584ab0ca7b1f50c9d11219ac5e7f044ea20e777f4e",
+    "INSTRUCTIONAL_MASTER_BLUEPRINT.md": "151af75d7177ce25e2d4b447fac339a81fc2851829cda2bc108b4b0428f5e2ff",
+    "src/curriculum/data/instructionalDecomposition.json": "fb1f68c379e0521967c63244aeb26df81ec5671cd50c94ced32d2d8b2e6c1dfa",
+    "src/curriculum/data/mathCurriculumMasterEvidence.json": "07f788e0ad29cb9ef15f46e412547e87b2f8eae8de0fc5438373fd964cae48f5",
+    "src/curriculum/numbersSections.ts": "c33ca944f9a0a5a7d37b43507e7fbc39d8ac1a86d88fce690fd25e62a31d543e",
+    "SECTION_3_1_HUMAN_DECISION_PACKAGE.md": "2a58c23f37957be4c7ca8e442bd6ac06d11bfbe452f08d3f5db8c1aaf2d317ca",
+    "CLASS_9_CHAPTER3_ALIGNMENT_AUDIT.md": "1d3f52f076fe6782e3d5984d382ae3831c86b3f895dd4928b87459f49f366028"
+  }
+}

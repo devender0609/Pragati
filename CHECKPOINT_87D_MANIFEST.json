@@ -1,0 +1,213 @@
+{
+  "checkpoint": "87D",
+  "canonicalVersion": "0.84.0-c11.21-induction-hardened",
+  "packageKind": "HARDENED FINAL \u2014 87C was first-green and is preserved",
+  "verdict": "CLASS_11_INDUCTION_REQUIRED_PREREQUISITE_READY_FOR_HUMAN_REVIEW",
+  "packageCreatedUtc": "2026-11-05T21:09:45Z",
+  "durableBaseline": {
+    "archive": "pragati-0.84.0-c11.20-induction-reachable.zip",
+    "sha256": "41ee7ed3d4f6092de34ff640459f8825a6e7cf6206f491e236f1bff061117738",
+    "verified": "OK",
+    "lessonContentChanges": 0,
+    "versionIncrements": 0
+  },
+  "catalogueViewports": [
+    {
+      "width": 1280,
+      "row": true,
+      "heading": "h3",
+      "labelled": true,
+      "beforeChapters": true,
+      "withinViewport": true,
+      "tapHeightPx": 70,
+      "overflow": "0px",
+      "clipped": 0,
+      "controlOverlaps": 0
+    },
+    {
+      "width": 834,
+      "row": true,
+      "heading": "h3",
+      "labelled": true,
+      "beforeChapters": true,
+      "withinViewport": true,
+      "tapHeightPx": 70,
+      "overflow": "0px",
+      "clipped": 0,
+      "controlOverlaps": 0
+    },
+    {
+      "width": 360,
+      "row": true,
+      "heading": "h3",
+      "labelled": true,
+      "beforeChapters": true,
+      "withinViewport": true,
+      "tapHeightPx": 110,
+      "overflow": "0px",
+      "clipped": 0,
+      "controlOverlaps": 0
+    }
+  ],
+  "headerAtEveryWidth": "7 chapters from your textbook \u00b7 51 lessons \u00b7 1 prerequisite lesson outside the textbook",
+  "eighthChapterStyling": false,
+  "lessonViewports": {
+    "stages": "5/5 at 1280, 834 and 360",
+    "overflow": "0px",
+    "clipped": 0,
+    "controlOverlaps": 0,
+    "proofHeadingsAtEachWidth": 5
+  },
+  "bottomClearance": {
+    "worstGapPx": 125,
+    "minGapPx": 8,
+    "measuredAt": "scroll end, lowest visible control",
+    "navHiddenAt": [
+      1280,
+      834
+    ]
+  },
+  "accessibility": {
+    "groupHeading": "h3",
+    "ariaLabelledby": true,
+    "rowIsButton": true,
+    "rowTabIndex": 0,
+    "proofHeadingElements": 5,
+    "proofHeadings": [
+      "Claim",
+      "Base case (n = 1)",
+      "Induction hypothesis",
+      "Inductive step",
+      "Conclusion"
+    ],
+    "accessibleNameChars": 495,
+    "sequencePreservedInAccessibleName": true,
+    "colourDependent": false,
+    "notClaimed": "no screen reader used, no contrast measured, no WCAG conformance"
+  },
+  "keyboard": {
+    "rowFocusable": true,
+    "enterOpensLesson": true,
+    "bottomControlFullyVisible": true,
+    "gapToNavPx": 125,
+    "allControlsFocusable": true
+  },
+  "persistence": {
+    "progressAfterReload": "1 of 52 done",
+    "rowStillVisible": true,
+    "rowState": "Completed",
+    "separateProgressStoreInvented": false,
+    "completionHidesPrerequisite": false
+  },
+  "countsAfterCompletion": {
+    "officialChapters": 7,
+    "chapterOwned": 51,
+    "prerequisite": 1,
+    "total": 52
+  },
+  "gradeIsolation": {
+    "class11": 1,
+    "class10": 0,
+    "class9": 0,
+    "class6": 0,
+    "inRenderedUI": true
+  },
+  "proofVisualPresence": {
+    "figurePresent": true,
+    "headings": 5,
+    "accessibleLabels": true,
+    "inferredFromSemanticsOnly": false
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "manualInductionEntry": false,
+    "leaks": 0,
+    "negativeProofFixturesRejecting": 8
+  },
+  "dependencyGraph": {
+    "edges": [
+      "C11-BIN-01 -> C11-IND-01",
+      "C11-LIM-05 -> C11-IND-01",
+      "C11-LIM-06 -> C11-IND-01"
+    ],
+    "present": true,
+    "satisfied": true,
+    "dependentUnitsAuthored": false
+  },
+  "humanCheck": {
+    "resolved": "C11-IND-01",
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "builds": {
+    "preview": {
+      "chapters": 7,
+      "chapterOwned": 51,
+      "prerequisite": 1,
+      "total": 52,
+      "groupAboveChapters": true
+    },
+    "publicSafe": {
+      "group": false,
+      "prerequisiteRow": 0,
+      "anyRows": 0,
+      "directRouteContent": false,
+      "directRouteFigures": 0,
+      "gateAtLookup": true
+    }
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0,
+    "uncaught": 0
+  },
+  "defects": [
+    {
+      "what": "ordering check used /Chapter 1\\b/, which never matches because the button text runs together as 'Chapter 1Sets'",
+      "classification": "harness",
+      "effect": "reported the group as not preceding the chapters",
+      "fix": "match the label instead; ordering reads true at all three widths",
+      "productChanged": false
+    }
+  ],
+  "defectCounts": {
+    "semantic": 0,
+    "content": 0,
+    "product": 0,
+    "harness": 1,
+    "environment": 0
+  },
+  "observationNotChanged": "the prerequisite row title uses the shared lessonTitle derivation, ellipsised at 72 chars, exactly as every chapter lesson does",
+  "qa": {
+    "tests": 2852,
+    "testFiles": 134,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "curriculumValidation": "pass"
+  },
+  "priorWork": {
+    "class11ChapterOwned": 51,
+    "priorVersionsChanged": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "environmentHygiene": {
+    "envLocalBeforePublicSafe": "absent",
+    "envLocalInPackage": false,
+    "previewFlag": "set only for preview runs, removed afterwards"
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN",
+    "inductionSummativeEligible": false
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "recommendation": "C11-BIN-01, then C11-LIM-05 and C11-LIM-06",
+    "executed": false
+  }
+}

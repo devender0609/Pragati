@@ -1,0 +1,229 @@
+{
+  "checkpoint": "84B",
+  "canonicalVersion": "0.84.0-c11.13b-lines-closure",
+  "verdict": "CLASS_11_STRAIGHT_LINES_AUTHORING_PILOT_INCOMPLETE",
+  "incompleteBecause": "a 3px stage-control overlap at 360px on the FO9 worked-examples stage; the viewport gate specified no stage-control overlap",
+  "packageCreatedUtc": "2026-10-30T19:53:55Z",
+  "booleanDefect": {
+    "knownChapter9LeakFixed": true,
+    "scopeWasWider": true,
+    "found": [
+      {
+        "what": "25 bare boolean interpolations",
+        "where": "Sets, Relations and Functions, Trigonometry",
+        "since": "ck79"
+      },
+      {
+        "what": "a negated predicate",
+        "where": "Relations and Functions",
+        "since": "ck81"
+      },
+      {
+        "what": "serialised JSON in prose",
+        "where": "Trigonometry quadrant signs",
+        "since": "ck80"
+      },
+      {
+        "what": "an inlined arrow returning a boolean",
+        "where": "Complex Numbers",
+        "since": "ck83"
+      }
+    ],
+    "allRepaired": true,
+    "renderedProseLeaks": 0
+  },
+  "guard": {
+    "kind": "source-level",
+    "coversNegation": true,
+    "narrowedPattern": "' true\\\\.' -> ':\\\\s*(?:true|false|null|undefined|NaN|Infinity)\\\\b'",
+    "rationale": "a prose scan cannot distinguish a leaked boolean from ordinary English such as 'and that remains true'; the structural check is strictly stronger"
+  },
+  "inclination": {
+    "inclinationIsExactRetained": true,
+    "broadToleranceRestored": false,
+    "falseExactClaimsFound": 0,
+    "anglesInProse": [
+      "45",
+      "90"
+    ]
+  },
+  "counts": {
+    "class11": 39,
+    "perChapter": [
+      12,
+      6,
+      8,
+      7,
+      6
+    ],
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      9
+    ],
+    "emptyChaptersInvented": 0,
+    "masterMapSections": 22,
+    "note": "22 sections against 39 lessons; both correct, counting different things"
+  },
+  "qa": {
+    "tests": 2760,
+    "testFiles": 131,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass"
+  },
+  "furtherDefects": [
+    {
+      "what": "a hint my wrapping made identical to a Class 9 hint",
+      "fix": "rewritten lesson-specific"
+    },
+    {
+      "what": "FO9 placed last by instructional sequence",
+      "fix": "natural page order; page 161 already follows its prerequisite at 159 and precedes distance at 164",
+      "note": "unlike FO-2 and FO-5b, this formative unit HAS a page"
+    }
+  ],
+  "browser": {
+    "lessonsWalked": "6/6",
+    "stages": "5/5 plus Finish",
+    "pageOverflow": "0px",
+    "renderedCatalogue": "5 chapters from your textbook, 39 lessons",
+    "rows": 6,
+    "uniqueIds": 6,
+    "renderedProseLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "uncaught": 0
+  },
+  "visualPresence": {
+    "slope": {
+      "figures": 2,
+      "strokes": [
+        3,
+        4
+      ],
+      "markedPoints": [
+        2,
+        0
+      ]
+    },
+    "angleBetween": {
+      "figures": 1,
+      "strokes": [
+        4
+      ],
+      "markedPoints": [
+        0
+      ]
+    },
+    "distance": {
+      "figures": 1,
+      "strokes": [
+        3
+      ],
+      "markedPoints": [
+        1
+      ]
+    },
+    "altTextChars": [
+      236,
+      297,
+      324,
+      198
+    ],
+    "colourDependent": false
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "overflow": "0px",
+      "overWide": 0,
+      "clipped": 0,
+      "controlOverlaps": 0
+    },
+    {
+      "width": 834,
+      "overflow": "0px",
+      "overWide": 0,
+      "clipped": 0,
+      "controlOverlaps": 0
+    },
+    {
+      "width": 360,
+      "overflow": "0px",
+      "overWide": 0,
+      "clipped": 0,
+      "controlOverlaps": 3
+    }
+  ],
+  "openDefect": {
+    "category": "product, shared renderer",
+    "where": "FO9 worked-examples stage at 360px",
+    "geometry": "Next step control spans y641-685; bottom tab bar begins y682",
+    "overlapPx": 3,
+    "measurementNote": "took three passes to characterise; the first detector counted collapsed 0x0 nav buttons and mislabelled the pair",
+    "fixBelongsIn": "the lesson container's bottom padding, which touches all 39 Class 11 lessons plus Classes 9 and 10 and needs its own regression pass"
+  },
+  "accessibility": {
+    "stageControls": 11,
+    "allRealButtons": true,
+    "allFocusable": true,
+    "imagesMissingAlt": 0,
+    "notClaimed": "no screen reader used, no contrast measured, no WCAG conformance claim"
+  },
+  "persistence": {
+    "afterFinishAndReload": [
+      "1 of 39 done",
+      "1 of 6 done on Chapter 9"
+    ]
+  },
+  "governance": {
+    "FO9": {
+      "assessment": "FORMATIVE_ONLY",
+      "instruction": "OPTIONAL_ENRICHMENT",
+      "summativeEligible": false,
+      "fragment": "SF-2-FORMATIVE",
+      "parentSection": "9.3"
+    },
+    "formativeOnlyUnits": 6,
+    "distinctInstructionalStatuses": 2
+  },
+  "priorWork": {
+    "class11Chapters1to4": [
+      12,
+      6,
+      8,
+      7
+    ],
+    "allVersion1": true,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74-v1-DFC56A frozen"
+  },
+  "conicPrerequisite": {
+    "C11-CON-03 requires": "C11-STL-01",
+    "authored": true,
+    "conicsAuthored": false
+  },
+  "environmentHygiene": {
+    "envLocalAbsentBeforePublicSafeQa": true,
+    "envLocalInPackage": false
+  },
+  "gitPreflight": ".git is not present in this source; the routeContracts and browser-qa tracking questions cannot be answered here. Stated, not inferred.",
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "next": {
+    "first": "close the 360px overlap as a shared-renderer change with a full viewport regression across all grades, then re-run the 360px gate",
+    "then": "Conic Sections",
+    "executed": false
+  }
+}

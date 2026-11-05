@@ -1,0 +1,167 @@
+{
+  "checkpoint": "86A-first-green",
+  "canonicalVersion": "0.84.0-c11.17-limits-foundation",
+  "packageKind": "FIRST_GREEN \u2014 created on full-suite and browser-walk success, before hardening",
+  "verdict": "CLASS_11_LIMITS_FOUNDATION_AUTHORING_PILOT_INCOMPLETE",
+  "chapter12Complete": false,
+  "foundationPilotOnly": true,
+  "packageCreatedUtc": "2026-11-04T15:02:35Z",
+  "baseline": {
+    "archive": "pragati-0.84.0-c11.16-conics-hardened.zip",
+    "lessons": 47
+  },
+  "authored": [
+    "C11-LIM-01",
+    "C11-LIM-02",
+    "C11-LIM-03",
+    "C11-LIM-04"
+  ],
+  "blocked": {
+    "C11-LIM-05": "requires C11-IND-01, still NEEDS_HUMAN_CHECK",
+    "C11-LIM-06": "requires C11-LIM-05 and C11-IND-01",
+    "C11-LIM-FO11": "depends transitively on C11-LIM-06"
+  },
+  "inductionGate": {
+    "unit": "C11-IND-01",
+    "status": "NEEDS_HUMAN_CHECK",
+    "source": "CBSE_ONLY FO-4",
+    "ncertChapterOwner": null,
+    "markedAuthored": false,
+    "removedFromPrerequisites": false,
+    "silentlyEmbedded": false,
+    "assertedByTest": true
+  },
+  "architecture": {
+    "builtOn": "RealFunctionContract (checkpoint 81)",
+    "secondFunctionImplementation": false,
+    "approachNeverIncludesTarget": true,
+    "limitComputedByEvaluatingAtTarget": false,
+    "nonexistenceAsNamedState": true,
+    "nanInfinityNullOnStudentSurface": false,
+    "twoSidedRequiresAgreement": true,
+    "holeSurvivesCancelling": true,
+    "modelOffsets": "down to 1e-8",
+    "displayOffsets": [
+      0.1,
+      0.01,
+      0.001
+    ]
+  },
+  "fixtures": {
+    "positive": {
+      "x^2 at 2": "value 4, limit 4",
+      "(x^2-1)/(x-1) at 1": "no value, limit 2",
+      "sin x / x at 0": "no value, limit 1",
+      "(e^x-1)/x at 0": "limit 1",
+      "log(1+x)/x at 0": "limit 1"
+    },
+    "negative": {
+      "signum at 0": "both one-sided limits exist, two-sided refused",
+      "1/(x-1) at 1": "grows without bound, no limit",
+      "degree reading of sin x / x": "does not approach 1",
+      "tampered table": "rejected by tableMatchesFunction",
+      "table including target": "rejected by validateLimitTable",
+      "wrong cancelling case": "rejected for not agreeing away from the hole",
+      "zero-width interval": "refused rather than divided by"
+    }
+  },
+  "rateOfChange": {
+    "secantSlopes": [
+      4,
+      3,
+      2.5
+    ],
+    "tangentSlopeAt1": 2,
+    "tangentSlopeAt3": 6,
+    "derived": true
+  },
+  "visuals": {
+    "new": [
+      "limit_table",
+      "secant_graph"
+    ],
+    "wiredThroughAllFourLayers": true
+  },
+  "rawValueGuard": {
+    "moduleDiscovery": true,
+    "chapter12DiscoveredAutomatically": true,
+    "moduleCount": 7
+  },
+  "defects": [
+    {
+      "what": "blocked-units test searched whole artifact JSON, flagging mustNotIntroduce",
+      "classification": "test",
+      "fix": "scoped to student-facing prose"
+    },
+    {
+      "what": "blanket sed changed two frozen Class 1 unit counts from 47 to 51",
+      "classification": "test",
+      "fix": "restored; decomposition fingerprints intact"
+    }
+  ],
+  "browser": {
+    "lessonsWalked": "4/4",
+    "stages": "5/5 plus Finish",
+    "overflow": "0px",
+    "renderedProseLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "catalogue": "7 chapters, 51 lessons"
+  },
+  "class11": {
+    "total": 51,
+    "remaining": 42,
+    "perChapter": [
+      12,
+      6,
+      8,
+      7,
+      6,
+      8,
+      4
+    ],
+    "order": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      12
+    ],
+    "emptyChapter11Invented": false,
+    "lifecycle": "0/0/0/0"
+  },
+  "qa": {
+    "tests": 2822,
+    "testFiles": 133,
+    "failures": 0,
+    "typecheck": 0,
+    "targetedLimitsSuite": 32
+  },
+  "priorWork": {
+    "class11Before": 47,
+    "priorVersionsChanged": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "all-family visual presence",
+    "persistence",
+    "accessibility structural",
+    "public-safe build",
+    "git preflight"
+  ],
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "next": {
+    "recommendation": "resolve the C11-IND-01 policy gate before LIM-05",
+    "executed": false
+  }
+}

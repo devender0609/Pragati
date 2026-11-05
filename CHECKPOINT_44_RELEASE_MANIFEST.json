@@ -1,0 +1,93 @@
+{
+  "checkpoint": 44,
+  "canonicalVersion": "0.84.0-rc.1",
+  "versionDecision": "package.json read 0.83.5 while checkpoint ZIPs read v0.84.0. Resolved to 0.84.0-rc.1 in package.json, both ZIP names, the generated documents and this manifest. Not called 0.84.0: no human curriculum review has occurred.",
+  "packageCreatedUtc": "2026-10-14T19:32:59Z",
+  "sourceZip": {
+    "name": "pragati-0.84.0-rc.1-deployment.zip",
+    "sha256": "676ad619dc7826a27d6225a9277605316682800f2a4e160b1e80ee3c97cb622b",
+    "files": 896,
+    "note": "hash is of the final package, which includes the checkpoint-44 report, manifest and runbook"
+  },
+  "distZip": {
+    "name": "pragati-0.84.0-rc.1-dist.zip",
+    "sha256": "8cd9a5aa4f4d7b394fd8f22639e5ddb9a7619132e0feafd8f8f2d960876d0cea",
+    "files": 74,
+    "bytes": 5121921
+  },
+  "sourceFileCount": 399,
+  "testFileCount": 102,
+  "testCount": 2042,
+  "toolchain": {
+    "os": "Linux 6.18.44 (container)",
+    "node": "v22.22.2",
+    "npm": "10.9.7",
+    "typescript": "5.9.3",
+    "vite": "5.4.21",
+    "vitest": "2.1.9",
+    "react": "18.3.1",
+    "puppeteer": "23.11.1"
+  },
+  "runtimeDeclarationsAdded": {
+    "engines": "node >=20.19 <23",
+    ".nvmrc": "22.22.2"
+  },
+  "gates": {
+    "cleanExtractFromCheckpoint43Zip": "PASS \u2014 0 symlinks, 0 node_modules, 0 dist, 0 .env",
+    "npmCi": "PASS",
+    "typecheck": "PASS",
+    "tests": "PASS 2042/102",
+    "curriculumValidation": "PASS",
+    "build": "PASS \u2014 dist/ 5.1 MB, 70 asset files, index.html and concepts.html",
+    "documentDeterminism": "PASS \u2014 byte-identical after regeneration",
+    "productionPreview": "PASS \u2014 vite preview on http://localhost:4173/",
+    "consoleErrors": "PASS \u2014 0 after favicon fix (was 1: favicon.ico 404)",
+    "failedRequests": "PASS \u2014 0",
+    "viewports": "PASS \u2014 0px horizontal overflow at 1280, 834 and 360 px",
+    "staticAccessibilityProbe": "PASS on reachable pages \u2014 0 unlabelled SVGs, 0 unnamed buttons, 1 h1 per page",
+    "secretsAudit": "PASS \u2014 no private keys, no service-account material, no .env, no embedded API keys in dist",
+    "studentRouteToClass9Learn": "FAIL \u2014 no student route renders LearnSectionView",
+    "all92ArtifactsRoutableInStudentUI": "FAIL \u2014 blocked by the above",
+    "progressDenominator92InStudentUI": "NOT_APPLICABLE \u2014 blocked by the above"
+  },
+  "class9": {
+    "instructionalUnits": 93,
+    "standaloneLearnArtifacts": 92,
+    "contextuallyCovered": 1,
+    "unresolved": 0,
+    "readyRemaining": 0,
+    "humanPolicyBlocked": 0
+  },
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "hosting": {
+    "target": "Vercel",
+    "configFile": null,
+    "rationale": "static Vite build, no server runtime, client-state navigation so no SPA rewrite rules required; zero-config auto-detection applies and no vercel.json was added"
+  },
+  "routingModel": "client state only \u2014 no react-router, URL stays at site root, hard refresh safe on any static host",
+  "environmentVariableNames": [
+    "VITE_FIREBASE_API_KEY",
+    "VITE_FIREBASE_AUTH_DOMAIN",
+    "VITE_FIREBASE_PROJECT_ID",
+    "VITE_FIREBASE_STORAGE_BUCKET",
+    "VITE_FIREBASE_MESSAGING_SENDER_ID",
+    "VITE_FIREBASE_APP_ID"
+  ],
+  "releaseDefectsFixed": [
+    "favicon.ico 404 on every production page load \u2014 inline SVG data-URI icon added to index.html and concepts.html"
+  ],
+  "unverifiedGates": [
+    "FIREBASE_CONFIGURED_MODE_NOT_LIVE_VERIFIED",
+    "REMOTE_PREVIEW_DEPLOYMENT_NOT_EXECUTED",
+    "colour contrast not measured",
+    "no real screen-reader testing",
+    "lesson-level viewport checks not possible through a student route"
+  ],
+  "verdict": "CLASS_9_DEPLOYMENT_RC_INCOMPLETE",
+  "verdictReason": "Release-blocking gates 7, 8 and 9 fail: the 92 authored Class 9 Learn artifacts are rendered only by admin review-preview surfaces. No student route reaches them."
+}

@@ -1,0 +1,99 @@
+{
+  "checkpoint": 76,
+  "canonicalVersion": "0.84.0-c11.5-source-frozen-b",
+  "verdict": "CLASS_11_SOURCE_COMPLETE_CURRENT_2026_27_MODEL",
+  "kind": "source freeze, not an authored release",
+  "packageCreatedUtc": "2026-10-27T15:02:51Z",
+  "checkpoint75ManifestCorrection": {
+    "claimed": "remaining notation chapters 10, 12, 13, 14",
+    "actual": "the remaining 16 spanned chapters 8, 9, 10, 11, 12, 13 and 14"
+  },
+  "notation": {
+    "identified": 40,
+    "inspected": 40,
+    "thisCheckpoint": 16,
+    "renderDpi": 170,
+    "correction": "kemh111 page 9 reclassified from notation-critical to historical, non-notational",
+    "conicFormsVerified": {
+      "parabola": "y^2 = 4ax",
+      "ellipse": [
+        "x^2/a^2 + y^2/b^2 = 1",
+        "x^2/b^2 + y^2/a^2 = 1"
+      ],
+      "finding": "the apparently swapped denominator is a genuine second orientation, not a defect"
+    },
+    "sourceRecordsChanged": 1
+  },
+  "newDiscrepancy": {
+    "id": "D-9",
+    "issue": "section 12.5 derives d/dx(x^n) 'by induction hypothesis', so chapter 12 also reasons by induction",
+    "effect": "D-2 widened: two summative chapters depend on a method the textbook never teaches"
+  },
+  "finalMatrix": {
+    "ncertHashes": "18/18",
+    "cbseFrozen": true,
+    "chapters": "14/14",
+    "sections": 63,
+    "subsections": {
+      "total": 67,
+      "substantive": 63,
+      "structuralOnly": 4
+    },
+    "pagesAccounted": "368/368",
+    "visualRequired": "127/127",
+    "notation": "40/40",
+    "sectionIntents": "63/63",
+    "subsectionRecords": "67/67",
+    "formativeOnly": "12/12",
+    "scopeFragments": 3,
+    "miscExercises": "14/14",
+    "appendices": "2/2",
+    "discrepancies": 9
+  },
+  "invariants": {
+    "total": 12,
+    "passed": 12
+  },
+  "orphans": {
+    "FO-4": "ncertChapterOwner null",
+    "FO-6": "ncertChapterOwner null",
+    "rule": "source completeness never requires a CBSE topic to map to an NCERT section"
+  },
+  "FO12": {
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "instructionalStatus": "REQUIRED_PREREQUISITE",
+    "independent": true,
+    "pageEvidence": "kemh114 page 11 carries summative event algebra directly on the set-notation sample space"
+  },
+  "priorGrades": {
+    "class9": "92 lessons 0/0/0/0",
+    "class10": "65 lessons 0/0/0/0",
+    "class6": "S74-v1-DFC56A frozen",
+    "regression": "48 tests passing, typecheck 0"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "next": {
+    "checkpoint": 77,
+    "name": "Class 11 instructional-unit decomposition",
+    "executed": false,
+    "carryIn": [
+      "FO-4 and FO-6 have no textbook home; a section-walking decomposition would produce 61 units and lose both",
+      "sections 4.5, 9.3 and 14.1 change assessment status mid-body and cannot each become one unit",
+      "induction is an unowned prerequisite for chapters 7 and 12",
+      "specialAngles assumes degrees and acute arguments; Class 11 radians are a frontier, not an extension"
+    ]
+  },
+  "buildRepair": {
+    "symptom": "production build failed on a missing dev-only fixture tools/routeContracts.mjs",
+    "rootCauseInPackage": "tsconfig.json includes src and tools, so test files and dev tooling were typechecked during the production build",
+    "fix": "added tsconfig.build.json excluding tests and tools; npm run build uses it; npm run typecheck keeps the full strict config",
+    "verification": "with the fixture deleted the production build succeeds; with it restored the full typecheck passes; 2530 tests / 124 files pass",
+    "remainingUserAction": "the files should still be in the repository \u2014 check git ls-files tools, git check-ignore -v, and core.excludesfile",
+    "curriculumImpact": "none"
+  }
+}

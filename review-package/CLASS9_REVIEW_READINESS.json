@@ -1,0 +1,650 @@
+{
+  "ready": 92,
+  "total": 92,
+  "artifacts": [
+    {
+      "contentArtifactId": "ncert_iemh2_s12_1_lesson",
+      "reviewCode": "C9-EDF15-v1i1-81B202",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s12_2_properties_lesson",
+      "reviewCode": "C9-AD7E3-v1i1-A00CEB",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s12_2_converses_lesson",
+      "reviewCode": "C9-6D189-v1i1-A683DA",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s12_3_midpoint_lesson",
+      "reviewCode": "C9-031FF-v1i1-B6CB43",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s12_3_medians_lesson",
+      "reviewCode": "C9-C3D22-v1i1-9B5151",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s12_4_lesson",
+      "reviewCode": "C9-44007-v1i1-6D2766",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_1_2_lesson",
+      "reviewCode": "C9-A7112-v1i1-E55B0F",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_3_lesson",
+      "reviewCode": "C9-474ED-v1i1-BC1B12",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_4_lesson",
+      "reviewCode": "C9-C85A6-v1i1-3DC5FC",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_5_lesson",
+      "reviewCode": "C9-FF9AD-v1i1-BD36BA",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_6_lesson",
+      "reviewCode": "C9-FEED8-v1i1-9304AD",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_7_centre_lesson",
+      "reviewCode": "C9-ACA2C-v1i1-928605",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_7_segment_lesson",
+      "reviewCode": "C9-70A4F-v1i1-9FE410",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s5_8_lesson",
+      "reviewCode": "C9-14C13-v1i1-6AAE96",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s1_1_2_lesson",
+      "reviewCode": "C9-207A8-v1i1-8CB297",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s1_3_plot_lesson",
+      "reviewCode": "C9-A628C-v1i1-D2340A",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s1_3_signs_lesson",
+      "reviewCode": "C9-6F5BB-v1i1-D0E211",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s1_4_distance_lesson",
+      "reviewCode": "C9-E995F-v1i1-BA5A0A",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s1_4_apply_lesson",
+      "reviewCode": "C9-F16F0-v1i1-94751E",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s2_1_2_lesson",
+      "reviewCode": "C9-9F23D-v1i1-C58D63",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s2_3_lesson",
+      "reviewCode": "C9-0E13F-v1i1-838697",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s2_4_lesson",
+      "reviewCode": "C9-FC7CE-v1i1-A4FE11",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s2_5_lesson",
+      "reviewCode": "C9-402DF-v1i1-E76D1B",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s2_6_graph_lesson",
+      "reviewCode": "C9-66BEE-v1i1-8CDBA0",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s2_6_params_lesson",
+      "reviewCode": "C9-A4D4B-v1i1-D71CB0",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_1_lesson",
+      "reviewCode": "C9-B5FF7-v1i1-F34CD4",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_2_lesson",
+      "reviewCode": "C9-DB328-v1i1-E48832",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_3_lesson",
+      "reviewCode": "C9-C1D4B-v1i1-C868DC",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_4_lesson",
+      "reviewCode": "C9-E59AA-v1i1-8A644B",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_5_lesson",
+      "reviewCode": "C9-C3E08-v1i1-1FBE6C",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_6_lesson",
+      "reviewCode": "C9-6F43F-v1i1-29962C",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_7_cube_lesson",
+      "reviewCode": "C9-17D93-v1i1-6749F6",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_7_factor_lesson",
+      "reviewCode": "C9-81AEB-v1i1-811853",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s4_8_lesson",
+      "reviewCode": "C9-1211E-v1i1-5B5B5F",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_1_lesson",
+      "reviewCode": "C9-EFD7D-v1i1-F1D890",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_2_pairs_lesson",
+      "reviewCode": "C9-7728F-v1i1-861084",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_2_line_lesson",
+      "reviewCode": "C9-A5B7B-v1i1-359A8B",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_3_slope_lesson",
+      "reviewCode": "C9-A3E8A-v1i1-D8A058",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_3_form_lesson",
+      "reviewCode": "C9-A956B-v1i1-38ECB1",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_4_lesson",
+      "reviewCode": "C9-8D876-v1i1-F05CAC",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_5_substitution_lesson",
+      "reviewCode": "C9-A542A-v1i1-388DB0",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_5_elimination_lesson",
+      "reviewCode": "C9-CF0E9-v1i1-20B712",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s13_6_lesson",
+      "reviewCode": "C9-016EE-v1i1-9664D7",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_1_lesson",
+      "reviewCode": "C9-C59E7-v1i1-3F0F67",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_2_lesson",
+      "reviewCode": "C9-805F1-v1i1-7F428B",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_3_lesson",
+      "reviewCode": "C9-5466E-v1i1-85A88D",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_4_lesson",
+      "reviewCode": "C9-0FE99-v1i1-7B4657",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_5_lesson",
+      "reviewCode": "C9-87BB5-v1i1-1980D2",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_6_7_lesson",
+      "reviewCode": "C9-F5CAE-v1i1-23443D",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_8_base_lesson",
+      "reviewCode": "C9-809E1-v1i1-A14BC0",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_8_heron_lesson",
+      "reviewCode": "C9-45205-v1i1-F4A244",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_9_lesson",
+      "reviewCode": "C9-9B68B-v1i1-091309",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_10_disc_lesson",
+      "reviewCode": "C9-72C32-v1i1-E4B5B3",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s6_10_sector_lesson",
+      "reviewCode": "C9-75595-v1i1-76228B",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_2_lesson",
+      "reviewCode": "C9-BC88B-v2i1-318A32",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_3_lesson",
+      "reviewCode": "C9-EC92E-v1i1-0BDD49",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_4_arith_lesson",
+      "reviewCode": "C9-0880E-v1i1-5D8309",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_4_density_lesson",
+      "reviewCode": "C9-E3F16-v1i1-9B30B4",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_5_proof_lesson",
+      "reviewCode": "C9-887B0-v1i1-B493D4",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_5_construct_lesson",
+      "reviewCode": "C9-ABD65-v1i1-B49F3A",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_6_decimals_lesson",
+      "reviewCode": "C9-B2B2C-v1i1-D1A031",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s3_6_cyclic_lesson",
+      "reviewCode": "C9-BE9B7-v1i1-A4539B",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_ch09_seg1_lesson",
+      "reviewCode": "C9-CA868-v1i1-C06773",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_ch09_seg2_lesson",
+      "reviewCode": "C9-E2084-v1i1-F968C4",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s11_1_lesson",
+      "reviewCode": "C9-54FB4-v1i1-5D7454",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s11_2_lesson",
+      "reviewCode": "C9-F37D1-v1i1-1C2FD3",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s11_3_improve_lesson",
+      "reviewCode": "C9-7D75A-v1i1-AD9386",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s11_3_euclid_lesson",
+      "reviewCode": "C9-55D28-v1i1-E40832",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s7_1_random_lesson",
+      "reviewCode": "C9-8F331-v1i1-3B86AD",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s7_1_scale_lesson",
+      "reviewCode": "C9-2BDC9-v1i1-81608C",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s7_2_experimental_lesson",
+      "reviewCode": "C9-C9EC0-v1i1-5E949F",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s7_2_theoretical_lesson",
+      "reviewCode": "C9-CC574-v1i1-1F1932",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s7_3_lesson",
+      "reviewCode": "C9-AF017-v1i1-A62274",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s7_4_lesson",
+      "reviewCode": "C9-B7F8E-v1i1-9513E1",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s8_1_lesson",
+      "reviewCode": "C9-D2A12-v1i1-C5C407",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s8_2_lesson",
+      "reviewCode": "C9-A851A-v1i1-516358",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s8_3_lesson",
+      "reviewCode": "C9-39479-v1i1-A89B20",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s8_4_lesson",
+      "reviewCode": "C9-A1313-v1i1-A90A02",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s8_5_lesson",
+      "reviewCode": "C9-7A7D3-v1i1-FAA99A",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s8_6_algebra_lesson",
+      "reviewCode": "C9-1F549-v1i1-A59A43",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh1_s8_6_visual_lesson",
+      "reviewCode": "C9-896BC-v1i1-931109",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s10_1_mean_lesson",
+      "reviewCode": "C9-D902B-v1i1-04A352",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s10_1_mixtures_lesson",
+      "reviewCode": "C9-3D968-v1i1-7038BA",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s10_2_build_lesson",
+      "reviewCode": "C9-10DC5-v1i1-2CC70E",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s10_2_choose_lesson",
+      "reviewCode": "C9-34BF4-v1i1-34A689",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s14_1_lesson",
+      "reviewCode": "C9-2C1B0-v1i1-827476",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s14_2_lesson",
+      "reviewCode": "C9-04929-v1i1-03E183",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s14_3_lesson",
+      "reviewCode": "C9-573F0-v1i1-1CF157",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s14_4_lesson",
+      "reviewCode": "C9-61723-v1i1-941BA3",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s14_5_sphere_lesson",
+      "reviewCode": "C9-E6691-v1i1-3CEC7D",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s14_5_hemisphere_lesson",
+      "reviewCode": "C9-5FAAB-v1i1-83B663",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    },
+    {
+      "contentArtifactId": "ncert_iemh2_s14_6_lesson",
+      "reviewCode": "C9-6FE7B-v1i1-7A4427",
+      "ready": true,
+      "failed": [],
+      "lifecycleStatus": "authored_draft"
+    }
+  ]
+}

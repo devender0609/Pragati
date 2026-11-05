@@ -1,0 +1,206 @@
+{
+  "checkpoint": "84C",
+  "canonicalVersion": "0.84.0-c11.14-layout-closure",
+  "verdict": "CLASS_11_STRAIGHT_LINES_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_LINE_SEMANTICS_EXTENSION",
+  "packageCreatedUtc": "2026-11-02T16:59:50Z",
+  "overlapFinding": {
+    "wasRealDefect": false,
+    "navHeightPx": 60,
+    "navSpacerPx": 64,
+    "lessonPaddingClass": "pb-20",
+    "clearanceAtScrollEndPx": 125,
+    "minimumRequiredPx": 8,
+    "cause": "84B measured a mid-document control at scroll position 0, beneath a floating bar the reader scrolls past",
+    "whyMissed": "window.scrollTo inside an evaluate is silently ignored by this layout; a real wheel event scrolls to 866 and the control clears",
+    "layoutChangesMade": 0,
+    "paddingChanged": false,
+    "magicNumberBumped": false
+  },
+  "fo9BeforeAfter": {
+    "before": {
+      "control": "y641-685",
+      "navTop": 681,
+      "gap": -4,
+      "measuredAt": "scroll 0"
+    },
+    "after": {
+      "lowestControl": "y512-556",
+      "navTop": 681,
+      "gap": 125,
+      "measuredAt": "scroll end"
+    }
+  },
+  "detectorRepair": {
+    "file": "tools/browser-qa/bottomClearance.mjs",
+    "excludes": [
+      "offsetParent null",
+      "zero-size rects",
+      "display none",
+      "visibility hidden",
+      "opacity 0"
+    ],
+    "scrollsToEndWithRealWheel": true,
+    "reports": [
+      "control label",
+      "control rect",
+      "nav rect",
+      "gap"
+    ],
+    "minimumGapPx": 8,
+    "reportsNavHiddenRatherThanSilentPass": true
+  },
+  "realDefectFound": {
+    "what": "VennSpec had no branch in the renderer dispatch",
+    "scope": "8 figures across 6 Sets lessons",
+    "since": "checkpoint 79",
+    "renderedNothingFor": "5 checkpoints",
+    "sameClassAs": "the checkpoint 82 graph-spec defect",
+    "whyMissed": "the four-layer rule caught every new spec and never looked back at the oldest",
+    "fix": "VennDiagram.tsx plus one dispatch line; shading driven by the region expression the spec names"
+  },
+  "viewportRegression": {
+    "class11LessonsTested": 12,
+    "chaptersCovered": [
+      1,
+      2,
+      3,
+      4,
+      9
+    ],
+    "widths": [
+      {
+        "width": 1280,
+        "overflow": "0px",
+        "clipped": 0,
+        "gap": "nav hidden",
+        "failures": 0
+      },
+      {
+        "width": 834,
+        "overflow": "0px",
+        "clipped": 0,
+        "gap": "nav hidden",
+        "failures": 0
+      },
+      {
+        "width": 360,
+        "overflow": "0px",
+        "clipped": 0,
+        "worstGapPx": 124,
+        "failures": 0
+      }
+    ],
+    "priorGrades": {
+      "class10": {
+        "worstGapPx": 124,
+        "failures": 0
+      },
+      "class9": {
+        "worstGapPx": 125,
+        "failures": 0
+      },
+      "class6": "no authored Learn chapters, nothing measurable; stated rather than counted as a pass"
+    }
+  },
+  "visualPresence": {
+    "venn": {
+      "figures": 2,
+      "drawn": [
+        12,
+        12
+      ]
+    },
+    "real_function_graph": {
+      "figures": 4,
+      "drawn": [
+        3,
+        5,
+        9,
+        5
+      ]
+    },
+    "circular_graph": {
+      "figures": 3,
+      "drawn": [
+        3,
+        3,
+        7
+      ]
+    },
+    "argand_plane": {
+      "figures": 2,
+      "drawn": [
+        6,
+        4
+      ]
+    },
+    "coordinate_line_graph": {
+      "figures": 2,
+      "drawn": [
+        5,
+        4
+      ]
+    },
+    "colourDependent": false
+  },
+  "walkthrough": {
+    "lessons": "6/6",
+    "stages": "5/5 plus Finish",
+    "overflow": "0px",
+    "proseLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "catalogue": "5 chapters, 39 lessons"
+  },
+  "accessibility": {
+    "bottomControlFocusable": true,
+    "fullyVisibleAboveNav": true,
+    "gapToNavPx": 125,
+    "tabIndexSane": true,
+    "notClaimed": "no screen reader used, no contrast measured"
+  },
+  "persistence": {
+    "afterRendererChange": [
+      "1 of 39 done"
+    ]
+  },
+  "artifactStability": {
+    "lessonContentChanged": false,
+    "versionsIncremented": 0,
+    "sourceChanges": [
+      "src/features/learn/VennDiagram.tsx",
+      "one dispatch line in LearnSectionView",
+      "QA detector and regression tools"
+    ]
+  },
+  "qa": {
+    "tests": 2760,
+    "testFiles": 131,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "curriculumValidation": "pass",
+    "previewBuild": "pass",
+    "publicSafeBuild": "pass"
+  },
+  "delivery": {
+    "previewClass11": 39,
+    "publicSafeClass11": 0,
+    "envLocalAbsent": true,
+    "envLocalInPackage": false
+  },
+  "rawValueGuard": "retained unchanged from 84B, still passing",
+  "gitPreflight": ".git is not present in this source; stated, not inferred. Now also covers bottomClearance.mjs and viewportRegression.mjs",
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "next": {
+    "recommendation": "Conic Sections",
+    "prerequisiteSatisfied": "C11-CON-03 -> C11-STL-01",
+    "executed": false,
+    "carryForward": "the four-layer visual rule only ran forward; assert every visual family present in the product on any checkpoint touching the shared renderer, oldest included"
+  }
+}

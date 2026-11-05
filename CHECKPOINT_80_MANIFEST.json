@@ -1,0 +1,149 @@
+{
+  "checkpoint": 80,
+  "canonicalVersion": "0.84.0-c11.9-trig-pilot",
+  "verdict": "CLASS_11_TRIGONOMETRIC_FUNCTIONS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_RADIAN_FUNCTION_EXTENSION",
+  "packageCreatedUtc": "2026-10-28T19:55:56Z",
+  "authored": {
+    "chapter3": "8/8",
+    "class11Total": 20,
+    "chapter1": 12,
+    "remaining": 73,
+    "allAuthoredDraft": true
+  },
+  "architectureVerdict": "B",
+  "class10Freeze": {
+    "specialAnglesModified": false,
+    "rightTriangleRolesModified": false,
+    "compatibility": {
+      "acuteStandardValues": "18/18 exact value agreement",
+      "mismatches": 0,
+      "writtenConventionDifferences": 6,
+      "note": "Class 10 leaves 1/root3, Class 11 rationalises to root3/3; compared by value so neither model adopts the other's typography"
+    },
+    "class10NeverAskedOutsideDomain": true
+  },
+  "newModules": {
+    "angleMeasure": {
+      "unitTyped": true,
+      "exactRationals": true,
+      "signPreserved": true,
+      "note": "60 degrees and 60 radians are different angles and both expressible"
+    },
+    "circularFunctions": {
+      "cosAndSinFromCoordinates": true,
+      "otherFourDerivedByDivision": true,
+      "undefinedIsAKind": true,
+      "neverInfinityOrNaN": true,
+      "graphsAsSeparateBranches": true,
+      "tanBranches": 3,
+      "tanBreaks": 2,
+      "sinBranches": 1,
+      "joinedGraphRejected": true
+    }
+  },
+  "FO3": {
+    "sourceKind": "cbse_only",
+    "cbseEntryId": "FO-3",
+    "officialSectionId": "",
+    "ncertOwner": null,
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "instructionalStatus": "OPTIONAL_ENRICHMENT",
+    "summativeEligible": false
+  },
+  "statusIndependence": {
+    "FO1": "FORMATIVE_ONLY + REQUIRED_CORE",
+    "FO3": "FORMATIVE_ONLY + OPTIONAL_ENRICHMENT",
+    "sameAssessmentDifferentInstruction": true,
+    "assertedByTest": true
+  },
+  "generalSolutions": {
+    "parameterDomain": "Z",
+    "verifiedAtNegativeN": true,
+    "tangentUsesNPi": true,
+    "cosineUses2NPi": true
+  },
+  "defectsFound": [
+    {
+      "what": "divide kept a cancelling factor, making tan 45 = 2",
+      "caughtBy": "the Class 10 compatibility check"
+    },
+    {
+      "what": "checkpoint 79 added cbse_only but left officialSectionId required",
+      "fix": "followed the source_segment precedent of an empty, validator-enforced id rather than widening the type across 13 call sites"
+    },
+    {
+      "what": "three lessons name subsections 3.2.1, 3.3.1, 3.3.2 but the registry holds sections only",
+      "fix": "added officialSubsectionNumber; the parent section is named and the subsection recorded beside it"
+    },
+    {
+      "what": "FO3 sorted first because it has no textbook page",
+      "fix": "placed last by instructional sequence and excluded from the page-order check"
+    }
+  ],
+  "baselinesMoved": 5,
+  "masterMapNote": "reports 12 Class 11 sections against 20 lessons; both right, counting different things",
+  "routing": {
+    "class11Preview": 20,
+    "chapter1": 12,
+    "chapter3": 8,
+    "chapter2": "absent, not listed empty",
+    "publicSafe": {
+      "class11": 0,
+      "class10": 0,
+      "class9": 0
+    },
+    "preview": {
+      "class10": 65,
+      "class9": 92
+    }
+  },
+  "browser": {
+    "lessonsWalked": 6,
+    "stages": "5/5 plus Finish",
+    "maxOverflow": "0px",
+    "consoleErrors": 0,
+    "viewports": [
+      "1280",
+      "834",
+      "360"
+    ],
+    "svgNamedOrHidden": "13/13",
+    "symbolsRender": [
+      "pi",
+      "minus",
+      "Z"
+    ],
+    "notClaimed": "no screen-reader session, no contrast measurement, no WCAG claim"
+  },
+  "qa": {
+    "tests": 2606,
+    "testFiles": 126,
+    "typecheck": 0,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass"
+  },
+  "priorGrades": {
+    "class9": 92,
+    "class10": 65,
+    "class6": "S74-v1-DFC56A frozen",
+    "class11Sets": 12
+  },
+  "humanCheckUnits": {
+    "C11-IND-01": "untouched",
+    "C11-INQ-FO6": "untouched"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "gitPreflight": "still open; package carries no .git",
+  "next": {
+    "recommendation": "Chapter 2 Relations and Functions",
+    "executed": false,
+    "rationale": "sits directly on setTheory and needs the function-as-object semantics circularFunctions has prototyped for six functions; generalising is smaller than inventing, and it closes the FO-2 composition gap",
+    "deferred": "Chapter 4 Complex Numbers reuses almost nothing, which argues for later"
+  }
+}

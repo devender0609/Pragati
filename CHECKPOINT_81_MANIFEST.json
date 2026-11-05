@@ -1,0 +1,117 @@
+{
+  "checkpoint": 81,
+  "canonicalVersion": "0.84.0-c11.10-rf-pilot",
+  "verdict": "CLASS_11_RELATIONS_FUNCTIONS_AUTHORING_PILOT_INCOMPLETE",
+  "incompleteBecause": "browser walkthrough, viewport and accessibility gates did not run; the harness could not select a Class 11 student",
+  "packageCreatedUtc": "2026-10-29T16:28:26Z",
+  "authored": {
+    "chapter2": "6/6",
+    "class11Total": 26,
+    "chapter1": 12,
+    "chapter3": 8,
+    "remaining": 67
+  },
+  "architectureVerdict": "B",
+  "reuse": {
+    "setTheory": "domains, codomains and ranges are ExplicitSet objects, not strings; no second set implementation",
+    "circularFunctions": "NOT absorbed; a RealFunctionContract is satisfied by tan without changing its exact semantics"
+  },
+  "distinctionsEnforced": [
+    "(1,2) != (2,1)",
+    "A x B != B x A despite equal cardinality",
+    "range derived, codomain declared, range strictly inside codomain",
+    "unmapped input rejected",
+    "two images rejected",
+    "many-to-one accepted",
+    "quotient zero-divisor exclusion lives in inDomain",
+    "composition ordered and doubly conditioned"
+  ],
+  "graphs": {
+    "signumBranches": 3,
+    "greatestIntegerBranches": 7,
+    "reciprocalBranches": 2,
+    "jumpVersusGapDistinguished": true,
+    "joinedGraphRejected": true,
+    "neverInfinityOrNaN": true
+  },
+  "statusIndependence": {
+    "FO1": "FORMATIVE_ONLY + REQUIRED_CORE",
+    "FO2": "FORMATIVE_ONLY + OPTIONAL_ENRICHMENT",
+    "FO3": "FORMATIVE_ONLY + OPTIONAL_ENRICHMENT",
+    "distinctInstructionalStatuses": 2,
+    "assertedByTest": true
+  },
+  "defectsFound": [
+    {
+      "what": "a null leaked into student-facing prose in the algebra lesson",
+      "fix": "a helper renders absence in words; test guards for null, NaN and Infinity only, since the English word undefined is legitimate"
+    },
+    {
+      "what": "the FO3 curriculum note was copied verbatim into FO2",
+      "caughtBy": "the template-drift guard, at 489 unique notes against 490",
+      "fix": "rewritten for its own topic"
+    }
+  ],
+  "baselinesMoved": 4,
+  "cbseOnlyArtifacts": 2,
+  "routing": {
+    "class11Preview": 26,
+    "chapterOrder": [
+      1,
+      2,
+      3
+    ],
+    "lessonsPerChapter": [
+      12,
+      6,
+      8
+    ],
+    "publicSafe": {
+      "class11": 0,
+      "class10": 0,
+      "class9": 0
+    }
+  },
+  "browser": {
+    "status": "NOT RUN",
+    "reason": "harness could not select a Class 11 student; localStorage seeding before navigation threw SecurityError, and the grade select does not drive the Learn catalogue",
+    "unverified": [
+      "rendering at 1280/834/360",
+      "graph descriptions without colour",
+      "5/5 stage walk"
+    ]
+  },
+  "qa": {
+    "tests": 2654,
+    "testFiles": 127,
+    "typecheck": 0,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass"
+  },
+  "priorWork": {
+    "class9": 92,
+    "class10": 65,
+    "class6": "S74-v1-DFC56A frozen",
+    "class11Sets": 12,
+    "class11Trig": 8,
+    "allStillVersion1": true
+  },
+  "humanCheckUnits": {
+    "C11-IND-01": "untouched",
+    "C11-INQ-FO6": "untouched"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "gitPreflight": "still open; package carries no .git",
+  "next": {
+    "first": "fix the browser harness Class 11 selection \u2014 test infrastructure, now blocking the last gate of three consecutive checkpoints",
+    "then": "Chapter 4 Complex Numbers",
+    "executed": false,
+    "rationale": "a genuine frontier: a new number system with its own arithmetic and an Argand-plane representation no existing model covers"
+  }
+}
