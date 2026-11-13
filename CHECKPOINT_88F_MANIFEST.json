@@ -1,0 +1,272 @@
+{
+  "checkpoint": "88F-hardened-final",
+  "canonicalVersion": "0.84.0-c11.23-counting-hardened",
+  "packageKind": "HARDENED FINAL \u2014 first-green 0.84.0-c11.22 preserved as recovery point",
+  "verdict": "CLASS_11_PERMUTATIONS_COMBINATIONS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_COUNTING_SEMANTICS_EXTENSION",
+  "packageCreatedUtc": "2026-11-09T20:09:54Z",
+  "firstGreen": {
+    "archive": "pragati-0.84.0-c11.22-counting-pilot.zip",
+    "sha256": "39dc0fe5e678270ae91a302fe143f89913cce034b9db186f3a1ddeded5c54576",
+    "overwritten": false
+  },
+  "contentChanges": 0,
+  "artifactVersionIncrements": 0,
+  "harnessDefect": {
+    "what": "all-family matcher defined a figure as svg[role=img] with primitives",
+    "whyInvalid": "a mathematical visual is not synonymous with SVG; proof_layout is headings and arrangement is a list, both deliberately",
+    "symptom": "proof_layout 0 and arrangement 0 while both rendered",
+    "classification": "harness",
+    "productChanged": false
+  },
+  "generalFix": {
+    "hook": "[data-visual-kind={spec.type}] wrapper at the Visual dispatcher",
+    "display": "contents \u2014 identity without layout",
+    "perFamilySpecialCases": false,
+    "matcherFindsBy": "visual kind",
+    "contentCheckedPerFamily": [
+      "primitives",
+      "cells",
+      "entries",
+      "headings"
+    ],
+    "emptyContainerCounts": false,
+    "decorativeIconsExcludedStructurally": true,
+    "semanticHtmlForcedToImpersonateImage": false
+  },
+  "allFamily": {
+    "missing": 0,
+    "families": [
+      {
+        "kind": "venn",
+        "roots": 2,
+        "present": 2,
+        "primitives": [
+          12,
+          12
+        ]
+      },
+      {
+        "kind": "real_function_graph",
+        "roots": 4,
+        "present": 4,
+        "primitives": [
+          3,
+          5,
+          9,
+          5
+        ]
+      },
+      {
+        "kind": "circular_graph",
+        "roots": 3,
+        "present": 3,
+        "primitives": [
+          3,
+          3,
+          7
+        ]
+      },
+      {
+        "kind": "argand_plane",
+        "roots": 2,
+        "present": 2,
+        "primitives": [
+          6,
+          4
+        ]
+      },
+      {
+        "kind": "coordinate_line_graph",
+        "roots": 2,
+        "present": 2,
+        "primitives": [
+          5,
+          4
+        ]
+      },
+      {
+        "kind": "cone_section",
+        "roots": 4,
+        "present": 4,
+        "primitives": [
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "kind": "conic_graph",
+        "roots": 1,
+        "present": 1,
+        "primitives": [
+          6
+        ]
+      },
+      {
+        "kind": "secant_graph",
+        "roots": 1,
+        "present": 1,
+        "primitives": [
+          11
+        ]
+      },
+      {
+        "kind": "limit_table",
+        "roots": 2,
+        "present": 2,
+        "cells": [
+          6,
+          6
+        ]
+      },
+      {
+        "kind": "limit_table (hole)",
+        "roots": 1,
+        "present": 1,
+        "cells": [
+          6
+        ]
+      },
+      {
+        "kind": "proof_layout",
+        "roots": 1,
+        "present": 1,
+        "headings": [
+          5
+        ],
+        "entries": [
+          6
+        ]
+      },
+      {
+        "kind": "stage_tree",
+        "roots": 2,
+        "present": 2,
+        "primitives": [
+          31,
+          41
+        ]
+      },
+      {
+        "kind": "arrangement",
+        "roots": 1,
+        "present": 1,
+        "entries": [
+          12
+        ]
+      }
+    ],
+    "allDescribed": true,
+    "anyColourDependent": false
+  },
+  "chapter6Smoke": {
+    "rows": 5,
+    "pnc02BeforePnc03": true,
+    "stageTrees": 2,
+    "branchLines": 35,
+    "arrangements": 12,
+    "pageOverflow360": "0px",
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "exactNumbers": {
+    "modelAndTests": "25! = 15511210043330985984000000",
+    "largestRenderedInLesson": "20! = 2432902008176640000",
+    "digits": 19,
+    "scientificNotation": false,
+    "bigintSuffix": false,
+    "jsonQuotes": false,
+    "rounding": false,
+    "productDisplays25Factorial": false
+  },
+  "scientificNotationEvidence": {
+    "source": "25-stage walkthrough capturing real lesson text",
+    "result": "none found"
+  },
+  "brokenNotationProbe": {
+    "status": "excluded as non-evidence",
+    "reason": "returned empty text for every lesson; a check that reads nothing verifies nothing"
+  },
+  "unchanged": {
+    "bigintSerialisation": true,
+    "pageOrderOverride": true,
+    "provenance": {
+      "PNC-02": 119,
+      "PNC-03": 118
+    }
+  },
+  "binomialGate": {
+    "prerequisites": [
+      "C11-IND-01",
+      "C11-PNC-05"
+    ],
+    "bothSatisfied": true,
+    "edgesRetained": true,
+    "binAuthored": false
+  },
+  "qa": {
+    "tests": 2888,
+    "testFiles": 135,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0
+  },
+  "catalogue": {
+    "officialTextbookChapters": 8,
+    "chapterOwnedLessons": 56,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 57,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      9,
+      10,
+      12
+    ],
+    "perChapterCounts": [
+      12,
+      6,
+      8,
+      7,
+      5,
+      6,
+      8,
+      4
+    ]
+  },
+  "publicSafe": {
+    "chapter6Rows": 0,
+    "visualRoots": 0,
+    "directRouteContent": false,
+    "directRouteVisualRoots": 0
+  },
+  "priorWork": {
+    "class11PriorLessons": 52,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "environmentHygiene": {
+    "envLocalInPackage": false
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "recommendation": "C11-BIN-01",
+    "executed": false
+  }
+}

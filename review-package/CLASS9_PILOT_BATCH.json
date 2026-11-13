@@ -1,0 +1,54 @@
+{
+  "purpose": "test the instrument and the import path before asking anyone to review 92",
+  "notSent": true,
+  "batch": [
+    {
+      "reviewCode": "C9-CC574-v1i1-1F1932",
+      "chapter": 7,
+      "lesson": "Compute a theoretical probability from equally likely outcomes",
+      "questions": 14
+    },
+    {
+      "reviewCode": "C9-55D28-v1i1-E40832",
+      "chapter": 11,
+      "lesson": "Follow Euclid’s subtraction algorithm and its division refinement",
+      "questions": 12
+    },
+    {
+      "reviewCode": "C9-CA868-v1i1-C06773",
+      "chapter": 9,
+      "lesson": "Distinguish a proposition from its converse and establish that a sing…",
+      "questions": 13
+    },
+    {
+      "reviewCode": "C9-BC88B-v2i1-318A32",
+      "chapter": 3,
+      "lesson": "Distinguish zero as a placeholder from zero as a number",
+      "questions": 13
+    },
+    {
+      "reviewCode": "C9-FEED8-v1i1-9304AD",
+      "chapter": 5,
+      "lesson": "Establish that the longer of two chords lies closer to the centre",
+      "questions": 14
+    },
+    {
+      "reviewCode": "C9-34BF4-v1i1-34A689",
+      "chapter": 10,
+      "lesson": "Compare a 100% stacked display with an absolute one",
+      "questions": 13
+    },
+    {
+      "reviewCode": "C9-2C1B0-v1i1-827476",
+      "chapter": 14,
+      "lesson": "Find the surface area of a cuboid from its net and its volume from it…",
+      "questions": 14
+    },
+    {
+      "reviewCode": "C9-887B0-v1i1-B493D4",
+      "chapter": 3,
+      "lesson": "Follow and reconstruct the proof by contradiction that root 2 cannot…",
+      "questions": 12
+    }
+  ]
+}

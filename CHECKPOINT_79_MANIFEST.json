@@ -1,0 +1,144 @@
+{
+  "checkpoint": 79,
+  "canonicalVersion": "0.84.0-c11.8-sets-complete",
+  "verdict": "CLASS_11_SETS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_SET_SEMANTICS_EXTENSION",
+  "packageCreatedUtc": "2026-10-28T14:21:13Z",
+  "authored": {
+    "chapter1": "12/12",
+    "class11Total": 12,
+    "remaining": 81,
+    "allAuthoredDraft": true,
+    "allVersion1": true,
+    "firstSixRewritten": false
+  },
+  "architecture": {
+    "verdict": "B",
+    "newModelBuilt": false,
+    "refusalsPreserved": [
+      "isMember throws on a described set",
+      "cardinality refuses non-explicit sets",
+      "complement throws without a universe"
+    ],
+    "provenanceExtension": {
+      "newKinds": [
+        "scope_fragment",
+        "cbse_only"
+      ],
+      "reason": "FO1 records section 1.9 as parent AND FO-1-APPLICATION as fragment; no fake subsection invented",
+      "futureUsers": [
+        "4.5",
+        "9.3",
+        "14.1",
+        "FO-4",
+        "FO-6"
+      ]
+    }
+  },
+  "FO1governance": {
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "instructionalStatus": "REQUIRED_CORE",
+    "appearsInLearn": true,
+    "walksAllStages": true,
+    "summativeEligible": false,
+    "otherElevenEligible": 11,
+    "notOptionalAssertedByTest": true
+  },
+  "modelCoverage": {
+    "allCapabilitiesHaveConsumer": true,
+    "unused": [
+      "described set kind \u2014 Chapter 1 examples are explicit or intervals; kept for Chapter 2 set-builder sets"
+    ]
+  },
+  "defectsFound": [
+    {
+      "id": 1,
+      "what": "superset defined and never used \u2014 the recurring glossary defect"
+    },
+    {
+      "id": 2,
+      "what": "five worked-example justifications restated their step instead of justifying it"
+    },
+    {
+      "id": 3,
+      "what": "two De Morgan identities stated without naming the universe"
+    },
+    {
+      "id": 4,
+      "what": "one step carried the conclusion in the reasoning slot"
+    },
+    {
+      "id": 5,
+      "what": "an over-strict negative assertion in my own test, replaced"
+    },
+    {
+      "id": 6,
+      "what": "checkpoint 78 wiring spread Class 11 sections into the Class 10 trigonometry chapter; the full suite caught a kemh1 lesson under ncert_jemh1_ch08",
+      "fix": "Class 11 Chapter 1 registered as its own chapter"
+    }
+  ],
+  "baselinesMoved": {
+    "count": 4,
+    "authoredTotal": 181,
+    "masterMapNote": "reports 9 Class 11 sections, not 12 lessons, because it is keyed by official section; 1.6 carries two lessons and 1.9 carries three",
+    "provenanceTestNote": "bySection now excludes segments and the scope fragment"
+  },
+  "routing": {
+    "class11Preview": 12,
+    "publicSafe": {
+      "class11": 0,
+      "class10": 0,
+      "class9": 0
+    },
+    "preview": {
+      "class10": 65,
+      "class9": 92
+    }
+  },
+  "browser": {
+    "lessonsWalked": 5,
+    "stages": "5/5 plus Finish",
+    "maxOverflow": "0px",
+    "consoleErrors": 0,
+    "viewports": [
+      "1280",
+      "834",
+      "360"
+    ],
+    "svgNamedOrHidden": "12/12",
+    "idLeakage": false,
+    "notClaimed": "no screen-reader session, no contrast measurement, no WCAG claim"
+  },
+  "qa": {
+    "tests": 2566,
+    "testFiles": 125,
+    "typecheck": 0,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass"
+  },
+  "priorGrades": {
+    "class9": 92,
+    "class10": 65,
+    "class6": "S74-v1-DFC56A frozen",
+    "note": "the shared VisualSpec union changed, so prior-grade regressions ran inside the full suite"
+  },
+  "humanCheckUnits": {
+    "C11-IND-01": "untouched",
+    "C11-INQ-FO6": "untouched"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "gitPreflight": "still open; package carries no .git",
+  "next": {
+    "recommendation": "Chapter 3 Trigonometric Functions",
+    "units": 8,
+    "allRiskC": true,
+    "executed": false,
+    "rationale": "Class 10 specialAngles is degree-based and acute-bound and must stay frozen; 65 Class 10 lessons depend on it. Radians, the unit circle, quadrant signs and functions over the reals each break that assumption.",
+    "decision": "build a radian-based function model beside specialAngles, not as an extension of it"
+  }
+}

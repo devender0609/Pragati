@@ -1,0 +1,3671 @@
+{
+ "book": {
+  "exactTitle": "Mathematics \u2014 Textbook for Class X",
+  "issuingBody": "NCERT",
+  "grade": 10,
+  "edition": "Reprint 2026-27",
+  "bookStructure": "single volume (no Part II)",
+  "canonicalUrl": "https://ncert.nic.in/textbook/pdf/jemh1dd.zip",
+  "archiveSha256": "1a34c43291ff83cc61eb776cd6be0f35a46f71508940ba509a0550233dd4a54d",
+  "archiveBytes": 32591292,
+  "pdfFiles": 18,
+  "totalPdfPages": 276,
+  "currentStatus": "TRANSITIONAL_RATIONALISED_SOURCE",
+  "statusEvidence": "Class 9 in this project uses Ganita Manjari (NCF-SE 2023 series, codes iemh1/iemh2, two parts). Class 10 has only jemh1 \u2014 the pre-NCF rationalised Mathematics book, carrying the NCERT rationalisation note. The NCF-aligned Class 10 replacement is not published on ncert.nic.in as of this download.",
+  "uncertainty": "Whether a NCF-aligned Class 10 book arrives before authoring completes is unknown. Evidence missing: an official NCERT announcement of the Class 10 replacement date. Third-party sites claim 2027-28 but are not primary sources and were not relied on.",
+  "watermark": "Pages carry a diagonal \"Not to be republished\" watermark \u2014 reinforces that Pragati authors original instruction and reproduces no textbook text."
+ },
+ "chapters": [
+  {
+   "officialChapterId": "ncert_jemh1_ch01",
+   "chapterNumber": 1,
+   "exactTitle": "Real Numbers",
+   "sourceFile": "jemh101.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 9,
+   "printedFolioStart": 1,
+   "printedFolioEnd": 9,
+   "numberedSections": 4,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s1_1",
+     "sectionNumber": "1.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 1,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Frame the chapter against Class IX real numbers; announce divisibility of positive integers as the route. NOTE: the body still advertises 'Euclid's division algorithm' in \u00a71.2, which rationalisation removed \u2014 residual text.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 1,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s1_2",
+     "sectionNumber": "1.2",
+     "exactTitle": "The Fundamental Theorem of Arithmetic",
+     "pdfStartPage": 2,
+     "printedFolioStart": 2,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "State the Fundamental Theorem of Arithmetic from building numbers as products of primes; establish uniqueness of prime factorisation and apply it to HCF/LCM problems. 2 theorems, 4 examples, Exercise 1.1.",
+     "pdfEndPage": 5,
+     "printedFolioEnd": 5,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "STATE_WITHOUT_PROOF"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s1_3",
+     "sectionNumber": "1.3",
+     "exactTitle": "Revisiting Irrational Numbers",
+     "pdfStartPage": 6,
+     "printedFolioStart": 6,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Prove irrationality of root 2, root 3, root 5 and of root p for prime p, using FTA via the lemma 'p divides a squared implies p divides a'. Proof by contradiction is the reasoning demand. 6 theorem blocks, 3 examples.",
+     "pdfEndPage": 8,
+     "printedFolioEnd": 8,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "PROVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s1_4",
+     "sectionNumber": "1.4",
+     "exactTitle": "Summary",
+     "pdfStartPage": 9,
+     "printedFolioStart": 9,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate FTA, the divisibility lemma and the irrationality proofs. Carries Exercise 1.2 and a NOTE TO THE READER. REVIEW role.",
+     "pdfEndPage": 9,
+     "printedFolioEnd": 9,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "PROOF_DEEPENING",
+   "progressionEvidence": "Class 9 proved root 2 irrational by contradiction; Class 10 generalises the method and adds the Fundamental Theorem of Arithmetic as the justifying tool."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch02",
+   "chapterNumber": 2,
+   "exactTitle": "Polynomials",
+   "sourceFile": "jemh102.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 14,
+   "printedFolioStart": 10,
+   "printedFolioEnd": 23,
+   "numberedSections": 4,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s2_1",
+     "sectionNumber": "2.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 10,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Recall polynomial, degree, and the linear/quadratic/cubic naming from Class IX; distinguish polynomials from non-polynomial expressions such as 1/(x-1).",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 10,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s2_2",
+     "sectionNumber": "2.2",
+     "exactTitle": "Geometrical Meaning of the Zeroes of a Polynomial",
+     "pdfStartPage": 2,
+     "printedFolioStart": 11,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Read zeroes of a polynomial off its graph: value p(k), the parabola shapes for a>0 and a<0, and the x-coordinates where the graph meets the x-axis. Graph interpretation is the representation demand; exact grid coordinates matter.",
+     "pdfEndPage": 8,
+     "printedFolioEnd": 17,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s2_3",
+     "sectionNumber": "2.3",
+     "exactTitle": "Relationship between Zeroes and Coefficients of a Polynomial",
+     "pdfStartPage": 9,
+     "printedFolioStart": 18,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Establish the relationship between zeroes and coefficients of a quadratic polynomial (sum = -b/a, product = c/a) by factorisation; verify on examples and construct a quadratic from given sum and product. 4 examples, Exercise 2.1.",
+     "pdfEndPage": 13,
+     "printedFolioEnd": 22,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s2_4",
+     "sectionNumber": "2.4",
+     "exactTitle": "Summary",
+     "pdfStartPage": 14,
+     "printedFolioStart": 23,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate degree naming, the graphical meaning of zeroes and the zero-coefficient relations. Carries Exercise 2.2. REVIEW role.",
+     "pdfEndPage": 14,
+     "printedFolioEnd": 23,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "REPRESENTATION_EXTENSION",
+   "progressionEvidence": "Class 9 treated linear polynomials and their graphs; Class 10 extends to zeroes of higher-degree polynomials read geometrically."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch03",
+   "chapterNumber": 3,
+   "exactTitle": "Pair of Linear Equations in Two Variables",
+   "sourceFile": "jemh103.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 14,
+   "printedFolioStart": 24,
+   "printedFolioEnd": 37,
+   "numberedSections": 4,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s3_1",
+     "sectionNumber": "3.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 24,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Motivate a pair of linear equations from a contextual situation (rides and Hoopla) where one equation leaves the answer undetermined.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 24,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s3_2",
+     "sectionNumber": "3.2",
+     "exactTitle": "Graphical Method of Solution of a Pair of Linear Equations",
+     "pdfStartPage": 2,
+     "printedFolioStart": 25,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Solve a pair graphically; define consistent, inconsistent and dependent pairs and relate the three outcomes to intersecting, parallel and coincident lines, with the coefficient-ratio conditions. 3 examples, Exercise 3.1.",
+     "pdfEndPage": 6,
+     "printedFolioEnd": 29,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "APPLY"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s3_3",
+     "sectionNumber": "3.3",
+     "exactTitle": "Algebraic Methods of Solving a Pair of Linear Equations",
+     "pdfStartPage": 7,
+     "printedFolioStart": 30,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Solve a pair algebraically. Numbered subsections 3.3.1 Substitution Method and 3.3.2 Elimination Method; motivated by non-integral intersection coordinates where graphing is unreliable. 7 examples, Exercises 3.2 and 3.3.",
+     "pdfEndPage": 13,
+     "printedFolioEnd": 36,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "APPLY",
+     "subsections": [
+      {
+       "id": "3.3.1",
+       "title": "Substitution Method",
+       "pdfPage": 7
+      },
+      {
+       "id": "3.3.2",
+       "title": "Elimination Method",
+       "pdfPage": 11
+      }
+     ]
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s3_4",
+     "sectionNumber": "3.4",
+     "exactTitle": "Summary",
+     "pdfStartPage": 14,
+     "printedFolioStart": 37,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate graphical and algebraic methods and the consistency classification. REVIEW role.",
+     "pdfEndPage": 14,
+     "printedFolioEnd": 37,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "PROCEDURAL_EXTENSION",
+   "progressionEvidence": "Class 9 solved and graphed pairs of linear equations and classified the three outcomes; Class 10 adds substitution/elimination at Class 10 scale."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch04",
+   "chapterNumber": 4,
+   "exactTitle": "Quadratic Equations",
+   "sourceFile": "jemh104.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 11,
+   "printedFolioStart": 38,
+   "printedFolioEnd": 48,
+   "numberedSections": 5,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s4_1",
+     "sectionNumber": "4.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 38,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Motivate the quadratic equation from a contextual area problem, connecting back to the quadratic polynomial of Chapter 2.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 38,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s4_2",
+     "sectionNumber": "4.2",
+     "exactTitle": "Quadratic Equations",
+     "pdfStartPage": 2,
+     "printedFolioStart": 39,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define the standard form ax squared + bx + c = 0 with a not zero; identify quadratic equations and form them from situations. Carries the historical note on Sridharacharya, Al-Khwarizmi and Brahmagupta. 2 examples, Exercise 4.1.",
+     "pdfEndPage": 4,
+     "printedFolioEnd": 41,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s4_3",
+     "sectionNumber": "4.3",
+     "exactTitle": "Solution of a Quadratic Equation by Factorisation",
+     "pdfStartPage": 5,
+     "printedFolioStart": 42,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Solve a quadratic by splitting the middle term and factorising; interpret roots against the original situation (rejecting inadmissible values). 3 examples.",
+     "pdfEndPage": 6,
+     "printedFolioEnd": 43,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s4_4",
+     "sectionNumber": "4.4",
+     "exactTitle": "Nature of Roots",
+     "pdfStartPage": 7,
+     "printedFolioStart": 44,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Determine the nature of roots from the discriminant b squared minus 4ac, and solve using the quadratic formula where real roots exist. 5 examples, Exercise 4.2. The quadratic formula is taught here although no section is named for it.",
+     "pdfEndPage": 9,
+     "printedFolioEnd": 46,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s4_5",
+     "sectionNumber": "4.5",
+     "exactTitle": "Summary",
+     "pdfStartPage": 10,
+     "printedFolioStart": 47,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate standard form, factorisation, the quadratic formula and the discriminant conditions. Carries Exercise 4.3. REVIEW role.",
+     "pdfEndPage": 11,
+     "printedFolioEnd": 48,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "NEW_NAMED_OBJECT",
+   "progressionEvidence": "No quadratic-equation solving in the verified Class 9 record; the object is named and solved here for the first time."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch05",
+   "chapterNumber": 5,
+   "exactTitle": "Arithmetic Progressions",
+   "sourceFile": "jemh105.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 24,
+   "printedFolioStart": 49,
+   "printedFolioEnd": 72,
+   "numberedSections": 5,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s5_1",
+     "sectionNumber": "5.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 49,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Motivate arithmetic progressions from patterns in nature and in daily life (salary increments, savings).",
+     "pdfEndPage": 2,
+     "printedFolioEnd": 50,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s5_2",
+     "sectionNumber": "5.2",
+     "exactTitle": "Arithmetic Progressions",
+     "pdfStartPage": 3,
+     "printedFolioStart": 51,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define AP by constant common difference d; identify a and d, test whether a list is an AP, and write terms from a and d. 2 examples, Exercise 5.1.",
+     "pdfEndPage": 7,
+     "printedFolioEnd": 55,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s5_3",
+     "sectionNumber": "5.3",
+     "exactTitle": "nth Term of an AP",
+     "pdfStartPage": 8,
+     "printedFolioStart": 56,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Derive the nth term a + (n-1)d and apply it to find a term, a position, or an unknown among a, d, n. 8 examples, Exercise 5.2.",
+     "pdfEndPage": 14,
+     "printedFolioEnd": 62,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s5_4",
+     "sectionNumber": "5.4",
+     "exactTitle": "Sum of First n Terms of an AP",
+     "pdfStartPage": 15,
+     "printedFolioStart": 63,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Derive the sum of the first n terms by pairing/reversal, as n/2 times (2a + (n-1)d) and n/2 times (a + l); apply to daily-life totals. 6 examples, Exercises 5.3 and 5.4.",
+     "pdfEndPage": 23,
+     "printedFolioEnd": 71,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s5_5",
+     "sectionNumber": "5.5",
+     "exactTitle": "Summary",
+     "pdfStartPage": 24,
+     "printedFolioStart": 72,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate AP, nth term and sum formulae. REVIEW role.",
+     "pdfEndPage": 24,
+     "printedFolioEnd": 72,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "FORMALISATION",
+   "progressionEvidence": "Class 9 Chapter 8 established AP, nth term a+(n-1)d and the pairing sum; Class 10 formalises and extends the same objects \u2014 NOT a first introduction."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch06",
+   "chapterNumber": 6,
+   "exactTitle": "Triangles",
+   "sourceFile": "jemh106.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 26,
+   "printedFolioStart": 73,
+   "printedFolioEnd": 98,
+   "numberedSections": 5,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s6_1",
+     "sectionNumber": "6.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 73,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Contrast congruence (Class IX) with similarity: same shape, not necessarily same size; motivate indirect measurement of heights and distances.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 73,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s6_2",
+     "sectionNumber": "6.2",
+     "exactTitle": "Similar Figures",
+     "pdfStartPage": 2,
+     "printedFolioStart": 74,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define similar figures; establish that similarity of polygons requires BOTH equal corresponding angles AND proportional corresponding sides, with counterexamples where only one holds. 1 activity, Exercise 6.1.",
+     "pdfEndPage": 6,
+     "printedFolioEnd": 78,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s6_3",
+     "sectionNumber": "6.3",
+     "exactTitle": "Similarity of Triangles",
+     "pdfStartPage": 7,
+     "printedFolioStart": 79,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Prove the Basic Proportionality Theorem (Theorem 6.1) and its converse (6.2), using the equal-area argument on triangles with the same height. 6 theorem blocks, 3 examples, 2 activities, Exercise 6.2.",
+     "pdfEndPage": 12,
+     "printedFolioEnd": 84,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "PROVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s6_4",
+     "sectionNumber": "6.4",
+     "exactTitle": "Criteria for Similarity of Triangles",
+     "pdfStartPage": 13,
+     "printedFolioStart": 85,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Establish the AAA/AA, SSS and SAS similarity criteria and apply them to prove triangles similar and compute unknown lengths. 5 theorem blocks, 5 examples, 3 activities, Exercise 6.3.",
+     "pdfEndPage": 24,
+     "printedFolioEnd": 96,
+     "cbseScopeRelation": "PARTIALLY_CURRENT",
+     "proofExpectation": "STATE_WITHOUT_PROOF"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s6_5",
+     "sectionNumber": "6.5",
+     "exactTitle": "Summary",
+     "pdfStartPage": 25,
+     "printedFolioStart": 97,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate similarity definitions, BPT and the similarity criteria. REVIEW role.",
+     "pdfEndPage": 26,
+     "printedFolioEnd": 98,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "NEW_NAMED_OBJECT",
+   "progressionEvidence": "Class 9 treated congruence; similarity and the Basic Proportionality Theorem are new named content."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch07",
+   "chapterNumber": 7,
+   "exactTitle": "Coordinate Geometry",
+   "sourceFile": "jemh107.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 14,
+   "printedFolioStart": 99,
+   "printedFolioEnd": 112,
+   "numberedSections": 4,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s7_1",
+     "sectionNumber": "7.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 99,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Recall abscissa, ordinate and the forms (x,0) and (0,y) from Class IX as the basis for measuring in the plane.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 99,
+     "cbseScopeRelation": "REVIEW_ONLY",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s7_2",
+     "sectionNumber": "7.2",
+     "exactTitle": "Distance Formula",
+     "pdfStartPage": 2,
+     "printedFolioStart": 100,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Derive the distance formula from the Pythagoras relation by completing a right triangle; apply to collinearity, to types of quadrilateral, and to equidistant-point problems. 5 examples, Exercise 7.1.",
+     "pdfEndPage": 7,
+     "printedFolioEnd": 105,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s7_3",
+     "sectionNumber": "7.3",
+     "exactTitle": "Section Formula",
+     "pdfStartPage": 8,
+     "printedFolioStart": 106,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Derive the section formula for internal division in ratio m1:m2, and obtain the midpoint as its special case; apply to dividing a segment and to finding a ratio. 5 examples, Exercise 7.2. Area of a triangle is absent from this edition.",
+     "pdfEndPage": 13,
+     "printedFolioEnd": 111,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s7_4",
+     "sectionNumber": "7.4",
+     "exactTitle": "Summary",
+     "pdfStartPage": 14,
+     "printedFolioStart": 112,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate distance from origin, distance between two points and the internal section formula. REVIEW role.",
+     "pdfEndPage": 14,
+     "printedFolioEnd": 112,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "PROCEDURAL_EXTENSION",
+   "progressionEvidence": "Class 9 Chapter 1 derived the distance formula and the midpoint; Class 10 adds the section formula \u2014 distance is REVISION, not introduction."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch08",
+   "chapterNumber": 8,
+   "exactTitle": "Introduction to Trigonometry",
+   "sourceFile": "jemh108.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 20,
+   "printedFolioStart": 113,
+   "printedFolioEnd": 132,
+   "numberedSections": 5,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s8_1",
+     "sectionNumber": "8.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 113,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Motivate right triangles from contextual situations (tower, balloon) where an unmeasurable length must be found.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 113,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s8_2",
+     "sectionNumber": "8.2",
+     "exactTitle": "Trigonometric Ratios",
+     "pdfStartPage": 2,
+     "printedFolioStart": 114,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define sine, cosine, tangent, cosecant, secant and cotangent as ratios of sides with respect to an acute angle; establish that the ratios depend on the angle and not on the triangle's size, and derive relations among them. 1 theorem block, 5 examples.",
+     "pdfEndPage": 8,
+     "printedFolioEnd": 120,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s8_3",
+     "sectionNumber": "8.3",
+     "exactTitle": "Trigonometric Ratios of Some Specific Angles",
+     "pdfStartPage": 9,
+     "printedFolioStart": 121,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Derive the ratios for 30, 45 and 60 degrees from the equilateral and isosceles right triangles, and motivate the values at 0 and 90 degrees by a limiting argument. 3 examples, Exercises 8.1 and 8.2.",
+     "pdfEndPage": 15,
+     "printedFolioEnd": 127,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s8_4",
+     "sectionNumber": "8.4",
+     "exactTitle": "Trigonometric Identities",
+     "pdfStartPage": 16,
+     "printedFolioStart": 128,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Prove the identity sin squared A + cos squared A = 1 and derive the secant and cosecant identities from it; apply to proving simple identities. 4 examples, Exercise 8.3.",
+     "pdfEndPage": 19,
+     "printedFolioEnd": 131,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "PROVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s8_5",
+     "sectionNumber": "8.5",
+     "exactTitle": "Summary",
+     "pdfStartPage": 20,
+     "printedFolioStart": 132,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate ratio definitions, specific-angle values and the identities. REVIEW role.",
+     "pdfEndPage": 20,
+     "printedFolioEnd": 132,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "NEW_NAMED_OBJECT",
+   "progressionEvidence": "Trigonometric ratios are not in the verified Class 9 record."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch09",
+   "chapterNumber": 9,
+   "exactTitle": "Some Applications of Trigonometry",
+   "sourceFile": "jemh109.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 11,
+   "printedFolioStart": 133,
+   "printedFolioEnd": 143,
+   "numberedSections": 2,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s9_1",
+     "sectionNumber": "9.1",
+     "exactTitle": "Heights and Distances",
+     "pdfStartPage": 1,
+     "printedFolioStart": 133,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Apply trigonometric ratios to heights and distances: define line of sight, angle of elevation and angle of depression, and solve contextual problems. 7 examples, Exercise 9.1. Spans ten of the chapter's eleven pages \u2014 the chapter has no Introduction section.",
+     "pdfEndPage": 10,
+     "printedFolioEnd": 142,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "APPLY"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s9_2",
+     "sectionNumber": "9.2",
+     "exactTitle": "Summary",
+     "pdfStartPage": 11,
+     "printedFolioStart": 143,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate line of sight, elevation and depression. REVIEW role.",
+     "pdfEndPage": 11,
+     "printedFolioEnd": 143,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "APPLICATION_EXTENSION",
+   "progressionEvidence": "Applies Chapter 8 to heights and distances; no new mathematical object."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch10",
+   "chapterNumber": 10,
+   "exactTitle": "Circles",
+   "sourceFile": "jemh110.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 10,
+   "printedFolioStart": 144,
+   "printedFolioEnd": 153,
+   "numberedSections": 4,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s10_1",
+     "sectionNumber": "10.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 144,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Recall the circle and its chord, segment, sector and arc from Class IX; set up the question of a line's possible positions relative to a circle.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 144,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s10_2",
+     "sectionNumber": "10.2",
+     "exactTitle": "Tangent to a Circle",
+     "pdfStartPage": 2,
+     "printedFolioStart": 145,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define the tangent as the line meeting a circle at exactly one point, reached as the limiting position of a secant; prove that the tangent is perpendicular to the radius at the point of contact. 1 theorem block, 3 activities.",
+     "pdfEndPage": 3,
+     "printedFolioEnd": 146,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "PROVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s10_3",
+     "sectionNumber": "10.3",
+     "exactTitle": "Number of Tangents from a Point on a Circle",
+     "pdfStartPage": 4,
+     "printedFolioStart": 147,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Establish that no tangent exists from an interior point, exactly one from a point on the circle and exactly two from an exterior point, and prove the lengths of the two tangents from an external point are equal. 5 theorem blocks, 3 examples, 1 activity, Exercises 10.1 and 10.2.",
+     "pdfEndPage": 9,
+     "printedFolioEnd": 152,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "PROVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s10_4",
+     "sectionNumber": "10.4",
+     "exactTitle": "Summary",
+     "pdfStartPage": 10,
+     "printedFolioStart": 153,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate the tangent definition and the two proved theorems. REVIEW role.",
+     "pdfEndPage": 10,
+     "printedFolioEnd": 153,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "PROOF_DEEPENING",
+   "progressionEvidence": "Class 9 Chapter 5 proved chord and angle properties; tangents are new, on an established circle foundation."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch11",
+   "chapterNumber": 11,
+   "exactTitle": "Areas Related to Circles",
+   "sourceFile": "jemh111.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 7,
+   "printedFolioStart": 154,
+   "printedFolioEnd": 160,
+   "numberedSections": 2,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s11_1",
+     "sectionNumber": "11.1",
+     "exactTitle": "Areas of Sector and Segment of a Circle",
+     "pdfStartPage": 1,
+     "printedFolioStart": 154,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define sector and segment; derive arc length and sector area as the theta/360 share of circumference and disc area, and obtain segment area by subtracting the triangle. 2 examples, Exercise 11.1. The chapter has no Introduction section.",
+     "pdfEndPage": 6,
+     "printedFolioEnd": 159,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s11_2",
+     "sectionNumber": "11.2",
+     "exactTitle": "Summary",
+     "pdfStartPage": 7,
+     "printedFolioStart": 160,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate arc length, sector area and segment area formulae. REVIEW role.",
+     "pdfEndPage": 7,
+     "printedFolioEnd": 160,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "PROCEDURAL_EXTENSION",
+   "progressionEvidence": "Class 9 Chapter 6 derived sector area and arc length; Class 10 extends to segments and combinations."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch12",
+   "chapterNumber": 12,
+   "exactTitle": "Surface Areas and Volumes",
+   "sourceFile": "jemh112.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 10,
+   "printedFolioStart": 161,
+   "printedFolioEnd": 170,
+   "numberedSections": 4,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s12_1",
+     "sectionNumber": "12.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 161,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Recall cuboid, cone, cylinder and sphere from Class IX and motivate solids formed by combining them.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 161,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s12_2",
+     "sectionNumber": "12.2",
+     "exactTitle": "Surface Area of a Combination of Solids",
+     "pdfStartPage": 2,
+     "printedFolioStart": 162,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Compute the surface area of a combination of two solids by adding the exposed curved/flat surfaces, recognising which faces are lost at the join. 4 examples, Exercise 12.1. Figures carry the dimensions required for the computation.",
+     "pdfEndPage": 6,
+     "printedFolioEnd": 166,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "APPLY"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s12_3",
+     "sectionNumber": "12.3",
+     "exactTitle": "Volume of a Combination of Solids",
+     "pdfStartPage": 7,
+     "printedFolioStart": 167,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Compute the volume of a combination of solids by adding component volumes, noting that volumes add where surfaces do not. 3 examples, Exercise 12.2.",
+     "pdfEndPage": 9,
+     "printedFolioEnd": 169,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "APPLY"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s12_4",
+     "sectionNumber": "12.4",
+     "exactTitle": "Summary",
+     "pdfStartPage": 10,
+     "printedFolioStart": 170,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate the combination method for surfaces and volumes. REVIEW role. Frustum and conversion-of-solids are absent from this edition.",
+     "pdfEndPage": 10,
+     "printedFolioEnd": 170,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "APPLICATION_EXTENSION",
+   "progressionEvidence": "Class 9 Chapter 14 established cuboid, cylinder, cone, sphere and hemisphere; Class 10 combines them \u2014 surfaces and volumes are NOT first met here."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch13",
+   "chapterNumber": 13,
+   "exactTitle": "Statistics",
+   "sourceFile": "jemh113.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 31,
+   "printedFolioStart": 171,
+   "printedFolioEnd": 201,
+   "numberedSections": 5,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s13_1",
+     "sectionNumber": "13.1",
+     "exactTitle": "Introduction",
+     "pdfStartPage": 1,
+     "printedFolioStart": 171,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Recall grouped and ungrouped frequency distributions and their graphs from Class IX; set up the problem of a measure of central tendency for grouped data.",
+     "pdfEndPage": 1,
+     "printedFolioEnd": 171,
+     "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+     "proofExpectation": "REVIEW"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s13_2",
+     "sectionNumber": "13.2",
+     "exactTitle": "Mean of Grouped Data",
+     "pdfStartPage": 1,
+     "printedFolioStart": 171,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Compute the mean of grouped data by the direct, assumed-mean and step-deviation methods, using class marks, and justify when each is convenient. 5 examples, 2 activities, Exercise 13.1.",
+     "pdfEndPage": 12,
+     "printedFolioEnd": 182,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s13_3",
+     "sectionNumber": "13.3",
+     "exactTitle": "Mode of Grouped Data",
+     "pdfStartPage": 13,
+     "printedFolioStart": 183,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define the modal class and derive the mode of grouped data from the modal-class formula; contrast mean and mode as answers to different questions. 7 examples, 2 activities, Exercise 13.2.",
+     "pdfEndPage": 17,
+     "printedFolioEnd": 187,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s13_4",
+     "sectionNumber": "13.4",
+     "exactTitle": "Median of Grouped Data",
+     "pdfStartPage": 18,
+     "printedFolioStart": 188,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Derive the median of grouped data from cumulative frequency and the median-class formula; compare mean, median and mode. 2 examples, Exercise 13.3. The ogive appears only as a passing mention, not as taught content in this edition.",
+     "pdfEndPage": 29,
+     "printedFolioEnd": 199,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "DERIVE"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s13_5",
+     "sectionNumber": "13.5",
+     "exactTitle": "Summary",
+     "pdfStartPage": 30,
+     "printedFolioStart": 200,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate the three measures and their grouped-data formulae. REVIEW role.",
+     "pdfEndPage": 31,
+     "printedFolioEnd": 201,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "PROCEDURAL_EXTENSION",
+   "progressionEvidence": "Class 9 Chapter 10 established mean and weighted mean; Class 10 extends to grouped data, mode and median."
+  },
+  {
+   "officialChapterId": "ncert_jemh1_ch14",
+   "chapterNumber": 14,
+   "exactTitle": "Probability",
+   "sourceFile": "jemh114.pdf",
+   "pdfStartPage": 1,
+   "pdfEndPage": 16,
+   "printedFolioStart": 202,
+   "printedFolioEnd": 217,
+   "numberedSections": 2,
+   "sections": [
+    {
+     "officialSectionId": "ncert_jemh1_s14_1",
+     "sectionNumber": "14.1",
+     "exactTitle": "Probability \u2014 A Theoretical Approach",
+     "pdfStartPage": 1,
+     "printedFolioStart": 202,
+     "role": "CORE_MATHEMATICS",
+     "mathematicalIntent": "Define theoretical (classical) probability as favourable outcomes over equally likely outcomes; treat impossible and sure events, complementary events, and the 0-to-1 range; apply to coins, dice, cards and marbles. 21 examples, Exercise 14.1 \u2014 the whole instructional chapter is this one section.",
+     "pdfEndPage": 15,
+     "printedFolioEnd": 216,
+     "cbseScopeRelation": "CURRENT_CORE",
+     "proofExpectation": "APPLY"
+    },
+    {
+     "officialSectionId": "ncert_jemh1_s14_2",
+     "sectionNumber": "14.2",
+     "exactTitle": "Summary",
+     "pdfStartPage": 16,
+     "printedFolioStart": 217,
+     "role": "REVIEW",
+     "mathematicalIntent": "Recapitulate the classical definition, the range and complementary events. Carries the NOTE contrasting experimental and theoretical probability. REVIEW role.",
+     "pdfEndPage": 16,
+     "printedFolioEnd": 217,
+     "cbseScopeRelation": "SUMMARY",
+     "proofExpectation": "REVIEW"
+    }
+   ],
+   "progressionCategory": "FORMALISATION",
+   "progressionEvidence": "Class 9 Chapter 7 established the theoretical approach, sample space and equally likely outcomes; Class 10 continues the same treatment."
+  }
+ ],
+ "sourceSegments": [
+  {
+   "sourceSegmentId": "pragati_srcseg_jemh1_a1",
+   "sourceFile": "jemh1a1.pdf",
+   "chapter": null,
+   "printedFolioStart": 218,
+   "printedFolioEnd": 238,
+   "pdfPages": 21,
+   "role": "ENRICHMENT",
+   "reason": "Appendix A1 \"Proofs in Mathematics\" carries instructional mathematics but no chapter number, so official numbering cannot account for it.",
+   "warrants": "ENRICHMENT",
+   "warrantsInstructionalUnit": false,
+   "dispositionRationale": "Appendix A1 Proofs in Mathematics is instructional but lies outside current CBSE Class X scope; no core unit. Available later as enrichment.",
+   "outsideCurrentCbseCore": true
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_jemh1_a2",
+   "sourceFile": "jemh1a2.pdf",
+   "chapter": null,
+   "printedFolioStart": 239,
+   "printedFolioEnd": 249,
+   "pdfPages": 11,
+   "role": "ENRICHMENT",
+   "reason": "Appendix A2 \"Mathematical Modelling\", instructional but unnumbered.",
+   "warrants": "ENRICHMENT",
+   "warrantsInstructionalUnit": false,
+   "dispositionRationale": "Appendix A2 Mathematical Modelling is instructional but outside current prescribed scope; no core unit.",
+   "outsideCurrentCbseCore": true
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_jemh1_answers",
+   "sourceFile": "jemh1an.pdf",
+   "chapter": null,
+   "printedFolioStart": 250,
+   "printedFolioEnd": 262,
+   "pdfPages": 13,
+   "role": "REFERENCE",
+   "reason": "Answers/Hints: not instruction, but must be accounted for so no page disappears.",
+   "warrants": "REFERENCE",
+   "warrantsInstructionalUnit": false,
+   "dispositionRationale": "Answers and hints; not instruction. Accounted so no page disappears."
+  },
+  {
+   "sourceSegmentId": "pragati_srcseg_jemh1_prelims",
+   "sourceFile": "jemh1ps.pdf",
+   "chapter": null,
+   "printedFolioStart": null,
+   "printedFolioEnd": null,
+   "pdfPages": 14,
+   "role": "NON_INSTRUCTIONAL",
+   "reason": "Front matter: title, foreword, contents, rationalisation note. Roman/unnumbered folios.",
+   "warrants": "NON_INSTRUCTIONAL",
+   "warrantsInstructionalUnit": false,
+   "dispositionRationale": "Front matter."
+  }
+ ],
+ "denominators": {
+  "officialBooksFound": 1,
+  "officialBooksExpected": 1,
+  "chaptersVerified": 14,
+  "chaptersTotal": 14,
+  "numberedSectionsVerified": 55,
+  "numberedSectionsTotal": 55,
+  "numberedSubsectionsVerified": 2,
+  "numberedSubsectionsTotal": 2,
+  "pdfPagesAccounted": 276,
+  "pdfPagesTotal": 276,
+  "unexplainedPages": 0,
+  "sourceSegmentsCreated": 4,
+  "pagesVisuallyInspected": 4,
+  "visualRequiredPagesIdentified": "identified at section level, not page by page",
+  "sectionIntentsWritten": 55,
+  "sectionIntentsTotal": 55,
+  "chapterPagesRead": 217,
+  "chapterPagesTotal": 217
+ },
+ "pending": {
+  "competency_mapping": "competency_mapping_pending \u2014 the official CBSE competency prose is captured per unit; no NCF/PARAKH competency IDs exist in project evidence and none were invented. This does not block source completeness."
+ },
+ "cbseCurriculum": {
+  "exactTitle": "Mathematics, Subject Code 041 & 241, Class X (2026-27)",
+  "issuingBody": "CBSE",
+  "canonicalUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1X_2026-27.pdf",
+  "sha256": "d773e7c12b99e0bd498067e2b8268c76d0496bf9cad1c9e41c8652ab68b412a5",
+  "bytes": 270782,
+  "pages": 10,
+  "retrievedUtc": "2026-10-16",
+  "prescribedTextbook": "Mathematics - Textbook for class X - NCERT Publication",
+  "redesignStatement": "redesigned in alignment with NEP 2020 and NCF-SE 2023",
+  "units": [
+   {
+    "roman": "I",
+    "name": "NUMBER SYSTEMS",
+    "marks": 6
+   },
+   {
+    "roman": "II",
+    "name": "ALGEBRA",
+    "marks": 20
+   },
+   {
+    "roman": "III",
+    "name": "COORDINATE GEOMETRY",
+    "marks": 6
+   },
+   {
+    "roman": "IV",
+    "name": "GEOMETRY",
+    "marks": 15
+   },
+   {
+    "roman": "V",
+    "name": "TRIGONOMETRY",
+    "marks": 12
+   },
+   {
+    "roman": "VI",
+    "name": "MENSURATION",
+    "marks": 10
+   },
+   {
+    "roman": "VII",
+    "name": "STATISTICS AND PROBABILITY",
+    "marks": 11
+   }
+  ],
+  "totalMarks": 80,
+  "scopeConstraints": [
+   "Real Numbers: FTA stated after review/illustration; proofs of irrationality of root2, root3, root5 required",
+   "Triangles: BPT is (Prove); its converse and the AAA, SSS, SAS similarity criteria are State (without proof)",
+   "Circles: both tangent theorems are (Prove)",
+   "Trigonometry: proof of existence (well-definedness) of ratios; values at 30, 45, 60; ratios at 0 and 90 motivated",
+   "Trigonometric identities: prove sin2A+cos2A=1; only simple identities",
+   "Heights and distances: at most two right triangles; angles only 30, 45, 60",
+   "Areas related to circles: segment problems restricted to central angles 60, 90, 120",
+   "Surface areas and volumes: combinations of any TWO of cube, cuboid, sphere, hemisphere, right circular cylinder/cone",
+   "Statistics: mean, median, mode of grouped data; bimodal situations avoided",
+   "Probability: classical definition; simple problems only",
+   "Quadratic equations: only real roots; factorisation and quadratic formula",
+   "Coordinate geometry: distance formula and section formula (internal division) only"
+  ]
+ },
+ "reconciliation": {
+  "textbookVsCbse": "The textbook remains source truth; CBSE scope is recorded alongside, never by deleting sections.",
+  "findings": [
+   "CBSE prescribes solving by the quadratic formula; the textbook teaches it inside 4.2/4.4 with no section named for it.",
+   "CBSE does NOT list decimal expansions of rationals or Euclid division; \u00a71.1 still advertises \"Euclid's division algorithm in Section 1.2\", which rationalisation removed \u2014 residual framing text.",
+   "The ogive / cumulative frequency curve survives only as a passing mention in \u00a713.1 and the \u00a713.5 summary; it is not prescribed and is not taught as content.",
+   "Area of a triangle by coordinates is absent from the textbook, consistent with CBSE scope.",
+   "Frustum and conversion of solids are absent from the textbook, consistent with CBSE \"combinations of any two\".",
+   "\u00a76.4 is PARTIALLY_CURRENT: the textbook proves similarity criteria that CBSE prescribes as State (without proof)."
+  ]
+ },
+ "visualInspection": {
+  "method": "every chapter page rendered and visually inspected on labelled contact sheets; embedded-image counts were NOT used",
+  "totalChapterPages": 217,
+  "pagesInspected": 217,
+  "visualRequiredPages": 137,
+  "visualRequiredPagesInspected": 137,
+  "detailInspectedAtReadableResolution": [
+   "ch2 p13 parabola with Table 2.1",
+   "ch6 p86 similarity activity",
+   "ch8 p114 ratio-defining triangle",
+   "ch12 p163 composite solid",
+   "ch13 p9 Table 13.7 fi di / fi ui",
+   "ch8 p13 Table 8.1 standard-angle ratios",
+   "ch1 p7 root-2 and root-3 irrationality proofs",
+   "ch13 p20 median from cumulative frequency"
+  ],
+  "decorativeExcluded": [
+   "chapter-opening QR codes",
+   "mathematician portraits (ch1 p6, ch6 p7, ch14 p3)",
+   "chapter-opening illustrations carrying no labelled quantity"
+  ],
+  "pageClassification": [
+   {
+    "chapter": 1,
+    "pdfPage": 1,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "diagram_factor_tree",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 3,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 4,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 5,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 6,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 7,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 8,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 1,
+    "pdfPage": 9,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 1,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "graph_polynomial",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "graph_polynomial",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "graph_polynomial",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "graph_polynomial",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "graph_polynomial",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "graph_polynomial",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "graph_polynomial",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 9,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 10,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 11,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 12,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 13,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 2,
+    "pdfPage": 14,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 1,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "graph_and_table",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "graph_and_table",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "graph_and_table",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "graph",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "graph",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 7,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 8,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 9,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 10,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 11,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 12,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 13,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 3,
+    "pdfPage": 14,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 1,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "diagram_area_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 3,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 4,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 5,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 6,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 7,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 8,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "diagram_circle_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 10,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 4,
+    "pdfPage": 11,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "diagram_ladder_pattern",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "diagram_branching_pattern",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 3,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 4,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 5,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 6,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 7,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 8,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 9,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 10,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 11,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 12,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 13,
+    "visualRequired": true,
+    "visualKind": "table_pattern",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 14,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 15,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 16,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 17,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 18,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 19,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 20,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 21,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 22,
+    "visualRequired": true,
+    "visualKind": "diagram_spiral_and_stack",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 23,
+    "visualRequired": true,
+    "visualKind": "diagram_steps",
+    "inspected": true
+   },
+   {
+    "chapter": 5,
+    "pdfPage": 24,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 10,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 11,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 12,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 13,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 14,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 15,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 16,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 17,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 18,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 19,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 20,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 21,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 22,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 23,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 24,
+    "visualRequired": true,
+    "visualKind": "geometry_figure",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 25,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 6,
+    "pdfPage": 26,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 1,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 10,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 11,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 12,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 13,
+    "visualRequired": true,
+    "visualKind": "coordinate_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 7,
+    "pdfPage": 14,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 10,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 11,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 12,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 13,
+    "visualRequired": true,
+    "visualKind": "table_trig_values",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 14,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 15,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 16,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 17,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 18,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 19,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 8,
+    "pdfPage": 20,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 10,
+    "visualRequired": true,
+    "visualKind": "trigonometric_diagram_elevation_depression",
+    "inspected": true
+   },
+   {
+    "chapter": 9,
+    "pdfPage": 11,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_circle",
+    "inspected": true
+   },
+   {
+    "chapter": 10,
+    "pdfPage": 10,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 11,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_sector_segment",
+    "inspected": true
+   },
+   {
+    "chapter": 11,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_sector_segment",
+    "inspected": true
+   },
+   {
+    "chapter": 11,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_sector_segment",
+    "inspected": true
+   },
+   {
+    "chapter": 11,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_sector_segment",
+    "inspected": true
+   },
+   {
+    "chapter": 11,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_sector_segment",
+    "inspected": true
+   },
+   {
+    "chapter": 11,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "geometry_figure_sector_segment",
+    "inspected": true
+   },
+   {
+    "chapter": 11,
+    "pdfPage": 7,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "composite_solid_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 12,
+    "pdfPage": 10,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 1,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 2,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 3,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 4,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 5,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 6,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 7,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 8,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 10,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 11,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 12,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 13,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 14,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 15,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 16,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 17,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 18,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 19,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 20,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 21,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 22,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 23,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 24,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 25,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 26,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 27,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 28,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 29,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 30,
+    "visualRequired": true,
+    "visualKind": "statistics_table",
+    "inspected": true
+   },
+   {
+    "chapter": 13,
+    "pdfPage": 31,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 1,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 2,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 3,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 4,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 5,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 6,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 7,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 8,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 9,
+    "visualRequired": true,
+    "visualKind": "probability_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 10,
+    "visualRequired": true,
+    "visualKind": "probability_region_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 11,
+    "visualRequired": true,
+    "visualKind": "dice_outcome_table",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 12,
+    "visualRequired": true,
+    "visualKind": "dice_outcome_table",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 13,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 14,
+    "visualRequired": true,
+    "visualKind": "probability_region_diagram",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 15,
+    "visualRequired": true,
+    "visualKind": "probability_diagram_and_table",
+    "inspected": true
+   },
+   {
+    "chapter": 14,
+    "pdfPage": 16,
+    "visualRequired": false,
+    "visualKind": "no_mathematical_visual",
+    "inspected": true
+   }
+  ]
+ },
+ "notationAudit": {
+  "extractionDefectConfirmed": true,
+  "verifiedVisually": [
+   {
+    "where": "ch13 Table 13.7",
+    "extractedAs": "fi di / fi ui / fi xi",
+    "actual": "f_i d_i, f_i u_i, f_i x_i \u2014 frequency times deviation, with subscript i; NOT a product of two variables f and d",
+    "checked": "Sigma f_i = 35, Sigma f_i x_i = 1390, Sigma f_i d_i = -360, Sigma f_i u_i = -36; direct 1390/35 = 39.71, assumed-mean 50 + (-360/35) = 39.71, step-deviation 50 + (-36/35) x 10 = 39.71 \u2014 all three agree"
+   },
+   {
+    "where": "ch8 Table 8.1",
+    "extractedAs": "flattened fractions and radicals",
+    "actual": "sin 0, 1/2, 1/root2, root3/2, 1; cos 1, root3/2, 1/root2, 1/2, 0; tan 0, 1/root3, 1, root3, not defined; cosec, sec, cot as reciprocals",
+    "checked": "every entry read from the rendered table and verified against the standard values"
+   },
+   {
+    "where": "ch1 p7",
+    "extractedAs": "\"2\" where root 2 is printed",
+    "actual": "root 2 = r/s then a/b coprime; b root2 = a; 2b squared = a squared; a = 2c; b squared = 2c squared. Example 5 repeats it for root 3 with 3b squared = a squared",
+    "checked": "proof structure read visually; contradiction step intact"
+   },
+   {
+    "where": "ch13 p20",
+    "extractedAs": "median arithmetic flattened",
+    "actual": "50th observation 28, 51st 29, median (28+29)/2 = 28.5; Table 13.11 named as the Cumulative Frequency Table",
+    "checked": "recomputed"
+   }
+  ],
+  "correctionsToSourceRecords": "none \u2014 no text-derived record was found to be substantively wrong; the risk was misreading f_i d_i as a two-variable product, and that reading is now excluded"
+ },
+ "crosswalk": {
+  "entries": [
+   {
+    "chapter": 1,
+    "chapterTitle": "Real Numbers",
+    "sectionNumber": "1.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Frame the chapter against Class IX real numbers; announce divisibility of positive integers as the route. NOTE: the body still advertises 'Euclid's division algorithm' in \u00a71.2, which rationalisation removed \u2014 residual text.",
+    "cbseUnit": "I NUMBER SYSTEMS",
+    "cbseTopic": "REAL NUMBERS",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "proofs of irrationality of root2, root3, root5",
+    "mismatch": "section framing still advertises Euclid division algorithm, removed by rationalisation"
+   },
+   {
+    "chapter": 1,
+    "chapterTitle": "Real Numbers",
+    "sectionNumber": "1.2",
+    "sectionTitle": "The Fundamental Theorem of Arithmetic",
+    "mathematicalIntent": "State the Fundamental Theorem of Arithmetic from building numbers as products of primes; establish uniqueness of prime factorisation and apply it to HCF/LCM problems. 2 theorems, 4 examples, Exercise 1.1.",
+    "cbseUnit": "I NUMBER SYSTEMS",
+    "cbseTopic": "REAL NUMBERS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "STATE_WITHOUT_PROOF",
+    "applicationConstraint": "proofs of irrationality of root2, root3, root5",
+    "mismatch": null
+   },
+   {
+    "chapter": 1,
+    "chapterTitle": "Real Numbers",
+    "sectionNumber": "1.3",
+    "sectionTitle": "Revisiting Irrational Numbers",
+    "mathematicalIntent": "Prove irrationality of root 2, root 3, root 5 and of root p for prime p, using FTA via the lemma 'p divides a squared implies p divides a'. Proof by contradiction is the reasoning demand. 6 theorem blocks, 3 examples.",
+    "cbseUnit": "I NUMBER SYSTEMS",
+    "cbseTopic": "REAL NUMBERS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "PROVE",
+    "applicationConstraint": "proofs of irrationality of root2, root3, root5",
+    "mismatch": null
+   },
+   {
+    "chapter": 1,
+    "chapterTitle": "Real Numbers",
+    "sectionNumber": "1.4",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate FTA, the divisibility lemma and the irrationality proofs. Carries Exercise 1.2 and a NOTE TO THE READER. REVIEW role.",
+    "cbseUnit": "I NUMBER SYSTEMS",
+    "cbseTopic": "REAL NUMBERS",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "proofs of irrationality of root2, root3, root5",
+    "mismatch": null
+   },
+   {
+    "chapter": 2,
+    "chapterTitle": "Polynomials",
+    "sectionNumber": "2.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Recall polynomial, degree, and the linear/quadratic/cubic naming from Class IX; distinguish polynomials from non-polynomial expressions such as 1/(x-1).",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "POLYNOMIALS",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 2,
+    "chapterTitle": "Polynomials",
+    "sectionNumber": "2.2",
+    "sectionTitle": "Geometrical Meaning of the Zeroes of a Polynomial",
+    "mathematicalIntent": "Read zeroes of a polynomial off its graph: value p(k), the parabola shapes for a>0 and a<0, and the x-coordinates where the graph meets the x-axis. Graph interpretation is the representation demand; exact grid coordinates matter.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "POLYNOMIALS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 2,
+    "chapterTitle": "Polynomials",
+    "sectionNumber": "2.3",
+    "sectionTitle": "Relationship between Zeroes and Coefficients of a Polynomial",
+    "mathematicalIntent": "Establish the relationship between zeroes and coefficients of a quadratic polynomial (sum = -b/a, product = c/a) by factorisation; verify on examples and construct a quadratic from given sum and product. 4 examples, Exercise 2.1.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "POLYNOMIALS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 2,
+    "chapterTitle": "Polynomials",
+    "sectionNumber": "2.4",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate degree naming, the graphical meaning of zeroes and the zero-coefficient relations. Carries Exercise 2.2. REVIEW role.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "POLYNOMIALS",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 3,
+    "chapterTitle": "Pair of Linear Equations in Two Variables",
+    "sectionNumber": "3.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Motivate a pair of linear equations from a contextual situation (rides and Hoopla) where one equation leaves the answer undetermined.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "PAIR OF LINEAR EQUATIONS IN TWO VARIABLES",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 3,
+    "chapterTitle": "Pair of Linear Equations in Two Variables",
+    "sectionNumber": "3.2",
+    "sectionTitle": "Graphical Method of Solution of a Pair of Linear Equations",
+    "mathematicalIntent": "Solve a pair graphically; define consistent, inconsistent and dependent pairs and relate the three outcomes to intersecting, parallel and coincident lines, with the coefficient-ratio conditions. 3 examples, Exercise 3.1.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "PAIR OF LINEAR EQUATIONS IN TWO VARIABLES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "APPLY",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 3,
+    "chapterTitle": "Pair of Linear Equations in Two Variables",
+    "sectionNumber": "3.3",
+    "sectionTitle": "Algebraic Methods of Solving a Pair of Linear Equations",
+    "mathematicalIntent": "Solve a pair algebraically. Numbered subsections 3.3.1 Substitution Method and 3.3.2 Elimination Method; motivated by non-integral intersection coordinates where graphing is unreliable. 7 examples, Exercises 3.2 and 3.3.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "PAIR OF LINEAR EQUATIONS IN TWO VARIABLES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "APPLY",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 3,
+    "chapterTitle": "Pair of Linear Equations in Two Variables",
+    "sectionNumber": "3.4",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate graphical and algebraic methods and the consistency classification. REVIEW role.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "PAIR OF LINEAR EQUATIONS IN TWO VARIABLES",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 4,
+    "chapterTitle": "Quadratic Equations",
+    "sectionNumber": "4.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Motivate the quadratic equation from a contextual area problem, connecting back to the quadratic polynomial of Chapter 2.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "QUADRATIC EQUATIONS",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "only real roots; factorisation and quadratic formula",
+    "mismatch": null
+   },
+   {
+    "chapter": 4,
+    "chapterTitle": "Quadratic Equations",
+    "sectionNumber": "4.2",
+    "sectionTitle": "Quadratic Equations",
+    "mathematicalIntent": "Define the standard form ax squared + bx + c = 0 with a not zero; identify quadratic equations and form them from situations. Carries the historical note on Sridharacharya, Al-Khwarizmi and Brahmagupta. 2 examples, Exercise 4.1.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "QUADRATIC EQUATIONS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "only real roots; factorisation and quadratic formula",
+    "mismatch": null
+   },
+   {
+    "chapter": 4,
+    "chapterTitle": "Quadratic Equations",
+    "sectionNumber": "4.3",
+    "sectionTitle": "Solution of a Quadratic Equation by Factorisation",
+    "mathematicalIntent": "Solve a quadratic by splitting the middle term and factorising; interpret roots against the original situation (rejecting inadmissible values). 3 examples.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "QUADRATIC EQUATIONS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "only real roots; factorisation and quadratic formula",
+    "mismatch": null
+   },
+   {
+    "chapter": 4,
+    "chapterTitle": "Quadratic Equations",
+    "sectionNumber": "4.4",
+    "sectionTitle": "Nature of Roots",
+    "mathematicalIntent": "Determine the nature of roots from the discriminant b squared minus 4ac, and solve using the quadratic formula where real roots exist. 5 examples, Exercise 4.2. The quadratic formula is taught here although no section is named for it.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "QUADRATIC EQUATIONS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "only real roots; factorisation and quadratic formula",
+    "mismatch": "CBSE prescribes the quadratic formula; no textbook section is named for it"
+   },
+   {
+    "chapter": 4,
+    "chapterTitle": "Quadratic Equations",
+    "sectionNumber": "4.5",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate standard form, factorisation, the quadratic formula and the discriminant conditions. Carries Exercise 4.3. REVIEW role.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "QUADRATIC EQUATIONS",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "only real roots; factorisation and quadratic formula",
+    "mismatch": null
+   },
+   {
+    "chapter": 5,
+    "chapterTitle": "Arithmetic Progressions",
+    "sectionNumber": "5.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Motivate arithmetic progressions from patterns in nature and in daily life (salary increments, savings).",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "ARITHMETIC PROGRESSIONS",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 5,
+    "chapterTitle": "Arithmetic Progressions",
+    "sectionNumber": "5.2",
+    "sectionTitle": "Arithmetic Progressions",
+    "mathematicalIntent": "Define AP by constant common difference d; identify a and d, test whether a list is an AP, and write terms from a and d. 2 examples, Exercise 5.1.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "ARITHMETIC PROGRESSIONS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 5,
+    "chapterTitle": "Arithmetic Progressions",
+    "sectionNumber": "5.3",
+    "sectionTitle": "nth Term of an AP",
+    "mathematicalIntent": "Derive the nth term a + (n-1)d and apply it to find a term, a position, or an unknown among a, d, n. 8 examples, Exercise 5.2.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "ARITHMETIC PROGRESSIONS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 5,
+    "chapterTitle": "Arithmetic Progressions",
+    "sectionNumber": "5.4",
+    "sectionTitle": "Sum of First n Terms of an AP",
+    "mathematicalIntent": "Derive the sum of the first n terms by pairing/reversal, as n/2 times (2a + (n-1)d) and n/2 times (a + l); apply to daily-life totals. 6 examples, Exercises 5.3 and 5.4.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "ARITHMETIC PROGRESSIONS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 5,
+    "chapterTitle": "Arithmetic Progressions",
+    "sectionNumber": "5.5",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate AP, nth term and sum formulae. REVIEW role.",
+    "cbseUnit": "II ALGEBRA",
+    "cbseTopic": "ARITHMETIC PROGRESSIONS",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 6,
+    "chapterTitle": "Triangles",
+    "sectionNumber": "6.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Contrast congruence (Class IX) with similarity: same shape, not necessarily same size; motivate indirect measurement of heights and distances.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "TRIANGLES",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "BPT proved; converse and AAA/SSS/SAS stated without proof",
+    "mismatch": null
+   },
+   {
+    "chapter": 6,
+    "chapterTitle": "Triangles",
+    "sectionNumber": "6.2",
+    "sectionTitle": "Similar Figures",
+    "mathematicalIntent": "Define similar figures; establish that similarity of polygons requires BOTH equal corresponding angles AND proportional corresponding sides, with counterexamples where only one holds. 1 activity, Exercise 6.1.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "TRIANGLES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "BPT proved; converse and AAA/SSS/SAS stated without proof",
+    "mismatch": null
+   },
+   {
+    "chapter": 6,
+    "chapterTitle": "Triangles",
+    "sectionNumber": "6.3",
+    "sectionTitle": "Similarity of Triangles",
+    "mathematicalIntent": "Prove the Basic Proportionality Theorem (Theorem 6.1) and its converse (6.2), using the equal-area argument on triangles with the same height. 6 theorem blocks, 3 examples, 2 activities, Exercise 6.2.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "TRIANGLES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "PROVE",
+    "applicationConstraint": "BPT proved; converse and AAA/SSS/SAS stated without proof",
+    "mismatch": null
+   },
+   {
+    "chapter": 6,
+    "chapterTitle": "Triangles",
+    "sectionNumber": "6.4",
+    "sectionTitle": "Criteria for Similarity of Triangles",
+    "mathematicalIntent": "Establish the AAA/AA, SSS and SAS similarity criteria and apply them to prove triangles similar and compute unknown lengths. 5 theorem blocks, 5 examples, 3 activities, Exercise 6.3.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "TRIANGLES",
+    "cbseScopeRelation": "PARTIALLY_CURRENT",
+    "proofExpectation": "STATE_WITHOUT_PROOF",
+    "applicationConstraint": "BPT proved; converse and AAA/SSS/SAS stated without proof",
+    "mismatch": "textbook proves what CBSE asks only to be stated"
+   },
+   {
+    "chapter": 6,
+    "chapterTitle": "Triangles",
+    "sectionNumber": "6.5",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate similarity definitions, BPT and the similarity criteria. REVIEW role.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "TRIANGLES",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "BPT proved; converse and AAA/SSS/SAS stated without proof",
+    "mismatch": null
+   },
+   {
+    "chapter": 7,
+    "chapterTitle": "Coordinate Geometry",
+    "sectionNumber": "7.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Recall abscissa, ordinate and the forms (x,0) and (0,y) from Class IX as the basis for measuring in the plane.",
+    "cbseUnit": "III COORDINATE GEOMETRY",
+    "cbseTopic": "Coordinate Geometry",
+    "cbseScopeRelation": "REVIEW_ONLY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "distance formula and section formula (internal division) only",
+    "mismatch": null
+   },
+   {
+    "chapter": 7,
+    "chapterTitle": "Coordinate Geometry",
+    "sectionNumber": "7.2",
+    "sectionTitle": "Distance Formula",
+    "mathematicalIntent": "Derive the distance formula from the Pythagoras relation by completing a right triangle; apply to collinearity, to types of quadrilateral, and to equidistant-point problems. 5 examples, Exercise 7.1.",
+    "cbseUnit": "III COORDINATE GEOMETRY",
+    "cbseTopic": "Coordinate Geometry",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "distance formula and section formula (internal division) only",
+    "mismatch": null
+   },
+   {
+    "chapter": 7,
+    "chapterTitle": "Coordinate Geometry",
+    "sectionNumber": "7.3",
+    "sectionTitle": "Section Formula",
+    "mathematicalIntent": "Derive the section formula for internal division in ratio m1:m2, and obtain the midpoint as its special case; apply to dividing a segment and to finding a ratio. 5 examples, Exercise 7.2. Area of a triangle is absent from this edition.",
+    "cbseUnit": "III COORDINATE GEOMETRY",
+    "cbseTopic": "Coordinate Geometry",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "distance formula and section formula (internal division) only",
+    "mismatch": null
+   },
+   {
+    "chapter": 7,
+    "chapterTitle": "Coordinate Geometry",
+    "sectionNumber": "7.4",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate distance from origin, distance between two points and the internal section formula. REVIEW role.",
+    "cbseUnit": "III COORDINATE GEOMETRY",
+    "cbseTopic": "Coordinate Geometry",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "distance formula and section formula (internal division) only",
+    "mismatch": null
+   },
+   {
+    "chapter": 8,
+    "chapterTitle": "Introduction to Trigonometry",
+    "sectionNumber": "8.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Motivate right triangles from contextual situations (tower, balloon) where an unmeasurable length must be found.",
+    "cbseUnit": "V TRIGONOMETRY",
+    "cbseTopic": "INTRODUCTION TO TRIGONOMETRY / TRIGONOMETRIC IDENTITIES",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "only simple identities; ratios at 0 and 90 motivated, not derived",
+    "mismatch": null
+   },
+   {
+    "chapter": 8,
+    "chapterTitle": "Introduction to Trigonometry",
+    "sectionNumber": "8.2",
+    "sectionTitle": "Trigonometric Ratios",
+    "mathematicalIntent": "Define sine, cosine, tangent, cosecant, secant and cotangent as ratios of sides with respect to an acute angle; establish that the ratios depend on the angle and not on the triangle's size, and derive relations among them. 1 theorem block, 5 examples.",
+    "cbseUnit": "V TRIGONOMETRY",
+    "cbseTopic": "INTRODUCTION TO TRIGONOMETRY / TRIGONOMETRIC IDENTITIES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "only simple identities; ratios at 0 and 90 motivated, not derived",
+    "mismatch": null
+   },
+   {
+    "chapter": 8,
+    "chapterTitle": "Introduction to Trigonometry",
+    "sectionNumber": "8.3",
+    "sectionTitle": "Trigonometric Ratios of Some Specific Angles",
+    "mathematicalIntent": "Derive the ratios for 30, 45 and 60 degrees from the equilateral and isosceles right triangles, and motivate the values at 0 and 90 degrees by a limiting argument. 3 examples, Exercises 8.1 and 8.2.",
+    "cbseUnit": "V TRIGONOMETRY",
+    "cbseTopic": "INTRODUCTION TO TRIGONOMETRY / TRIGONOMETRIC IDENTITIES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "only simple identities; ratios at 0 and 90 motivated, not derived",
+    "mismatch": null
+   },
+   {
+    "chapter": 8,
+    "chapterTitle": "Introduction to Trigonometry",
+    "sectionNumber": "8.4",
+    "sectionTitle": "Trigonometric Identities",
+    "mathematicalIntent": "Prove the identity sin squared A + cos squared A = 1 and derive the secant and cosecant identities from it; apply to proving simple identities. 4 examples, Exercise 8.3.",
+    "cbseUnit": "V TRIGONOMETRY",
+    "cbseTopic": "INTRODUCTION TO TRIGONOMETRY / TRIGONOMETRIC IDENTITIES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "PROVE",
+    "applicationConstraint": "only simple identities; ratios at 0 and 90 motivated, not derived",
+    "mismatch": null
+   },
+   {
+    "chapter": 8,
+    "chapterTitle": "Introduction to Trigonometry",
+    "sectionNumber": "8.5",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate ratio definitions, specific-angle values and the identities. REVIEW role.",
+    "cbseUnit": "V TRIGONOMETRY",
+    "cbseTopic": "INTRODUCTION TO TRIGONOMETRY / TRIGONOMETRIC IDENTITIES",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "only simple identities; ratios at 0 and 90 motivated, not derived",
+    "mismatch": null
+   },
+   {
+    "chapter": 9,
+    "chapterTitle": "Some Applications of Trigonometry",
+    "sectionNumber": "9.1",
+    "sectionTitle": "Heights and Distances",
+    "mathematicalIntent": "Apply trigonometric ratios to heights and distances: define line of sight, angle of elevation and angle of depression, and solve contextual problems. 7 examples, Exercise 9.1. Spans ten of the chapter's eleven pages \u2014 the chapter has no Introduction section.",
+    "cbseUnit": "V TRIGONOMETRY",
+    "cbseTopic": "HEIGHTS AND DISTANCES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "APPLY",
+    "applicationConstraint": "at most two right triangles; angles of elevation/depression only 30, 45, 60",
+    "mismatch": null
+   },
+   {
+    "chapter": 9,
+    "chapterTitle": "Some Applications of Trigonometry",
+    "sectionNumber": "9.2",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate line of sight, elevation and depression. REVIEW role.",
+    "cbseUnit": "V TRIGONOMETRY",
+    "cbseTopic": "HEIGHTS AND DISTANCES",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "at most two right triangles; angles of elevation/depression only 30, 45, 60",
+    "mismatch": null
+   },
+   {
+    "chapter": 10,
+    "chapterTitle": "Circles",
+    "sectionNumber": "10.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Recall the circle and its chord, segment, sector and arc from Class IX; set up the question of a line's possible positions relative to a circle.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "CIRCLES",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 10,
+    "chapterTitle": "Circles",
+    "sectionNumber": "10.2",
+    "sectionTitle": "Tangent to a Circle",
+    "mathematicalIntent": "Define the tangent as the line meeting a circle at exactly one point, reached as the limiting position of a secant; prove that the tangent is perpendicular to the radius at the point of contact. 1 theorem block, 3 activities.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "CIRCLES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "PROVE",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 10,
+    "chapterTitle": "Circles",
+    "sectionNumber": "10.3",
+    "sectionTitle": "Number of Tangents from a Point on a Circle",
+    "mathematicalIntent": "Establish that no tangent exists from an interior point, exactly one from a point on the circle and exactly two from an exterior point, and prove the lengths of the two tangents from an external point are equal. 5 theorem blocks, 3 examples, 1 activity, Exercises 10.1 and 10.2.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "CIRCLES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "PROVE",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 10,
+    "chapterTitle": "Circles",
+    "sectionNumber": "10.4",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate the tangent definition and the two proved theorems. REVIEW role.",
+    "cbseUnit": "IV GEOMETRY",
+    "cbseTopic": "CIRCLES",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "none stated",
+    "mismatch": null
+   },
+   {
+    "chapter": 11,
+    "chapterTitle": "Areas Related to Circles",
+    "sectionNumber": "11.1",
+    "sectionTitle": "Areas of Sector and Segment of a Circle",
+    "mathematicalIntent": "Define sector and segment; derive arc length and sector area as the theta/360 share of circumference and disc area, and obtain segment area by subtracting the triangle. 2 examples, Exercise 11.1. The chapter has no Introduction section.",
+    "cbseUnit": "VI MENSURATION",
+    "cbseTopic": "AREAS RELATED TO CIRCLES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "segment problems restricted to central angles 60, 90, 120",
+    "mismatch": null
+   },
+   {
+    "chapter": 11,
+    "chapterTitle": "Areas Related to Circles",
+    "sectionNumber": "11.2",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate arc length, sector area and segment area formulae. REVIEW role.",
+    "cbseUnit": "VI MENSURATION",
+    "cbseTopic": "AREAS RELATED TO CIRCLES",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "segment problems restricted to central angles 60, 90, 120",
+    "mismatch": null
+   },
+   {
+    "chapter": 12,
+    "chapterTitle": "Surface Areas and Volumes",
+    "sectionNumber": "12.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Recall cuboid, cone, cylinder and sphere from Class IX and motivate solids formed by combining them.",
+    "cbseUnit": "VI MENSURATION",
+    "cbseTopic": "SURFACE AREAS AND VOLUMES",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "combinations of any TWO of cube, cuboid, sphere, hemisphere, right circular cylinder/cone",
+    "mismatch": null
+   },
+   {
+    "chapter": 12,
+    "chapterTitle": "Surface Areas and Volumes",
+    "sectionNumber": "12.2",
+    "sectionTitle": "Surface Area of a Combination of Solids",
+    "mathematicalIntent": "Compute the surface area of a combination of two solids by adding the exposed curved/flat surfaces, recognising which faces are lost at the join. 4 examples, Exercise 12.1. Figures carry the dimensions required for the computation.",
+    "cbseUnit": "VI MENSURATION",
+    "cbseTopic": "SURFACE AREAS AND VOLUMES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "APPLY",
+    "applicationConstraint": "combinations of any TWO of cube, cuboid, sphere, hemisphere, right circular cylinder/cone",
+    "mismatch": null
+   },
+   {
+    "chapter": 12,
+    "chapterTitle": "Surface Areas and Volumes",
+    "sectionNumber": "12.3",
+    "sectionTitle": "Volume of a Combination of Solids",
+    "mathematicalIntent": "Compute the volume of a combination of solids by adding component volumes, noting that volumes add where surfaces do not. 3 examples, Exercise 12.2.",
+    "cbseUnit": "VI MENSURATION",
+    "cbseTopic": "SURFACE AREAS AND VOLUMES",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "APPLY",
+    "applicationConstraint": "combinations of any TWO of cube, cuboid, sphere, hemisphere, right circular cylinder/cone",
+    "mismatch": null
+   },
+   {
+    "chapter": 12,
+    "chapterTitle": "Surface Areas and Volumes",
+    "sectionNumber": "12.4",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate the combination method for surfaces and volumes. REVIEW role. Frustum and conversion-of-solids are absent from this edition.",
+    "cbseUnit": "VI MENSURATION",
+    "cbseTopic": "SURFACE AREAS AND VOLUMES",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "combinations of any TWO of cube, cuboid, sphere, hemisphere, right circular cylinder/cone",
+    "mismatch": null
+   },
+   {
+    "chapter": 13,
+    "chapterTitle": "Statistics",
+    "sectionNumber": "13.1",
+    "sectionTitle": "Introduction",
+    "mathematicalIntent": "Recall grouped and ungrouped frequency distributions and their graphs from Class IX; set up the problem of a measure of central tendency for grouped data.",
+    "cbseUnit": "VII STATISTICS AND PROBABILITY",
+    "cbseTopic": "STATISTICS",
+    "cbseScopeRelation": "SUMMARY_OR_FRAMING",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "grouped data; bimodal situations avoided",
+    "mismatch": "ogive survives only as a passing mention; not prescribed, not taught"
+   },
+   {
+    "chapter": 13,
+    "chapterTitle": "Statistics",
+    "sectionNumber": "13.2",
+    "sectionTitle": "Mean of Grouped Data",
+    "mathematicalIntent": "Compute the mean of grouped data by the direct, assumed-mean and step-deviation methods, using class marks, and justify when each is convenient. 5 examples, 2 activities, Exercise 13.1.",
+    "cbseUnit": "VII STATISTICS AND PROBABILITY",
+    "cbseTopic": "STATISTICS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "grouped data; bimodal situations avoided",
+    "mismatch": null
+   },
+   {
+    "chapter": 13,
+    "chapterTitle": "Statistics",
+    "sectionNumber": "13.3",
+    "sectionTitle": "Mode of Grouped Data",
+    "mathematicalIntent": "Define the modal class and derive the mode of grouped data from the modal-class formula; contrast mean and mode as answers to different questions. 7 examples, 2 activities, Exercise 13.2.",
+    "cbseUnit": "VII STATISTICS AND PROBABILITY",
+    "cbseTopic": "STATISTICS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "grouped data; bimodal situations avoided",
+    "mismatch": null
+   },
+   {
+    "chapter": 13,
+    "chapterTitle": "Statistics",
+    "sectionNumber": "13.4",
+    "sectionTitle": "Median of Grouped Data",
+    "mathematicalIntent": "Derive the median of grouped data from cumulative frequency and the median-class formula; compare mean, median and mode. 2 examples, Exercise 13.3. The ogive appears only as a passing mention, not as taught content in this edition.",
+    "cbseUnit": "VII STATISTICS AND PROBABILITY",
+    "cbseTopic": "STATISTICS",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "DERIVE",
+    "applicationConstraint": "grouped data; bimodal situations avoided",
+    "mismatch": null
+   },
+   {
+    "chapter": 13,
+    "chapterTitle": "Statistics",
+    "sectionNumber": "13.5",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate the three measures and their grouped-data formulae. REVIEW role.",
+    "cbseUnit": "VII STATISTICS AND PROBABILITY",
+    "cbseTopic": "STATISTICS",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "grouped data; bimodal situations avoided",
+    "mismatch": "ogive survives only as a passing mention; not prescribed, not taught"
+   },
+   {
+    "chapter": 14,
+    "chapterTitle": "Probability",
+    "sectionNumber": "14.1",
+    "sectionTitle": "Probability \u2014 A Theoretical Approach",
+    "mathematicalIntent": "Define theoretical (classical) probability as favourable outcomes over equally likely outcomes; treat impossible and sure events, complementary events, and the 0-to-1 range; apply to coins, dice, cards and marbles. 21 examples, Exercise 14.1 \u2014 the whole instructional chapter is this one section.",
+    "cbseUnit": "VII STATISTICS AND PROBABILITY",
+    "cbseTopic": "PROBABILITY",
+    "cbseScopeRelation": "CURRENT_CORE",
+    "proofExpectation": "APPLY",
+    "applicationConstraint": "classical definition; simple problems only",
+    "mismatch": null
+   },
+   {
+    "chapter": 14,
+    "chapterTitle": "Probability",
+    "sectionNumber": "14.2",
+    "sectionTitle": "Summary",
+    "mathematicalIntent": "Recapitulate the classical definition, the range and complementary events. Carries the NOTE contrasting experimental and theoretical probability. REVIEW role.",
+    "cbseUnit": "VII STATISTICS AND PROBABILITY",
+    "cbseTopic": "PROBABILITY",
+    "cbseScopeRelation": "SUMMARY",
+    "proofExpectation": "REVIEW",
+    "applicationConstraint": "classical definition; simple problems only",
+    "mismatch": null
+   }
+  ],
+  "count": 55,
+  "relationship": "many-to-many permitted; no textbook section is equated with a syllabus topic"
+ },
+ "futureSchemas": {
+  "instructionalUnit": {
+   "purpose": "fields every future Class 10 Pragati instructional unit must carry; NOT a decomposition",
+   "fields": [
+    "grade",
+    "officialChapterId",
+    "officialSectionIds[]",
+    "sourceSegmentIds[]",
+    "cbseUnit",
+    "cbseTopic",
+    "mathematicalDomain",
+    "mathematicalObjective",
+    "prerequisiteUnitIds[]",
+    "progressionCategory",
+    "proofExpectation",
+    "representationTypes[]",
+    "applicationConstraints[]",
+    "cbseScopeRelation",
+    "competencyEvidence (prose from the CBSE document; NO invented IDs)",
+    "sourceProvenance"
+   ]
+  },
+  "assessmentItem": {
+   "purpose": "fields a future item must be able to record; NO items authored",
+   "fields": [
+    "grade",
+    "officialChapterId",
+    "instructionalUnitId",
+    "domain",
+    "skill",
+    "subskill",
+    "prerequisiteSkillIds[]",
+    "cognitiveDemand",
+    "representationType",
+    "misconceptionTargeted",
+    "proofReasoningDemand",
+    "calculatorPolicy",
+    "itemUse",
+    "sourceScopeConstraint",
+    "difficultyIntention",
+    "calibrationStatus"
+   ],
+   "calibrationStatus": {
+    "values": [
+     "UNCALIBRATED",
+     "FIELD_TEST",
+     "CALIBRATION_PENDING",
+     "CALIBRATED"
+    ],
+    "currentPermitted": [
+     "UNCALIBRATED"
+    ],
+    "note": "CALIBRATED must not be used; no response data exists"
+   },
+   "difficultyIntention": {
+    "values": [
+     "author_estimated",
+     "provisional"
+    ],
+    "forbidden": "any empirical difficulty claim, b-parameter or discrimination value"
+   },
+   "itemUse": {
+    "values": [
+     "lesson_practice",
+     "chapter_adaptive_practice",
+     "chapter_check",
+     "class_diagnostic_field_test",
+     "CAT_field_test",
+     "operational_CAT"
+    ],
+    "currentPermitted": [
+     "lesson_practice",
+     "chapter_adaptive_practice",
+     "chapter_check"
+    ],
+    "note": "operational_CAT must not be created now"
+   }
+  }
+ },
+ "assessmentArchitecture": {
+  "decision": "chapter level = adaptive practice and diagnostic checks; class/domain level = the future formal CAT; Growth stays locked",
+  "chapterAdaptivePractice": {
+   "name": "adaptive practice / adaptive chapter check",
+   "mayAdaptBeforeCalibration": true,
+   "sessionLogic": [
+    "start at provisional/moderate difficulty",
+    "observe correctness and misconception signal",
+    "select within the same chapter/skill neighbourhood",
+    "raise or lower challenge",
+    "revisit prerequisites when evidence warrants",
+    "stop when enough evidence exists for a practice recommendation"
+   ],
+   "permittedOutput": [
+    "skills demonstrated in this session",
+    "skills needing more practice",
+    "recommended lesson or unit",
+    "practice progress"
+   ],
+   "forbiddenOutput": [
+    "theta",
+    "RIT",
+    "scaled score",
+    "percentile",
+    "mastery probability",
+    "calibrated difficulty claim"
+   ],
+   "mustNotBeCalled": "CAT"
+  },
+  "whyChapterCatIsNotDefault": [
+   "fourteen separate CATs would give fourteen small item pools",
+   "ability estimates would be unstable at that pool size",
+   "calibration burden multiplies by chapter",
+   "the measurement scale fragments",
+   "chapter scores would be mistaken for comparable ability scales",
+   "future vertical linking would be undermined"
+  ],
+  "classLevelCatBlueprint": {
+   "status": "architecture only; no operational CAT",
+   "contentConstrained": true,
+   "principle": "the engine must not select purely by information or difficulty; content constraints bind first",
+   "domains": [
+    "Number Systems",
+    "Algebra",
+    "Coordinate Geometry",
+    "Geometry",
+    "Trigonometry",
+    "Mensuration",
+    "Statistics and Probability"
+   ],
+   "blueprintFields": [
+    "minItemsPerDomain",
+    "maxItemsPerDomain",
+    "requiredCompetencyCoverage",
+    "proofReasoningQuota",
+    "applicationQuota",
+    "representationDiversity",
+    "calculatorConstraints",
+    "exposureControls",
+    "contentBalancing"
+   ],
+   "numericQuotas": "NOT SET \u2014 quotas require the official curriculum weighting plus psychometric design that does not yet exist"
+  },
+  "scorePolicyBeforeCalibration": {
+   "forbidden": [
+    "ability score",
+    "growth score",
+    "percentile",
+    "norm band",
+    "mastery percentage presented as latent mastery",
+    "cross-chapter scaled score"
+   ],
+   "permitted": [
+    "raw correct out of attempted",
+    "skills answered correctly",
+    "content areas needing work",
+    "response patterns"
+   ],
+   "mustBeMarked": "pilot / field-test status shown explicitly"
+  },
+  "fieldTestGating": [
+   "author sufficiently large item pools",
+   "expert content review",
+   "pilot test",
+   "collect response data",
+   "inspect item quality",
+   "estimate item parameters",
+   "remove or revise poor items",
+   "test model fit",
+   "evaluate DIF and fairness where sample permits",
+   "content-constrained adaptive simulation",
+   "compare CAT scores against full-bank reference forms",
+   "quantify standard errors",
+   "validate stopping rules",
+   "validate score interpretations",
+   "only then enable operational CAT"
+  ],
+  "growth": {
+   "status": "LOCKED",
+   "unchanged": true,
+   "additionalRequirementsBeyondTwoCats": [
+    "common-item linking or another valid linking design",
+    "vertical scale evidence",
+    "calibration across grades",
+    "longitudinal validation",
+    "score precision",
+    "construct continuity"
+   ]
+  },
+  "surfaceSeparation": {
+   "Learn": "source-grounded instruction",
+   "Practice": "skill and chapter adaptive practice with descriptive feedback",
+   "Assess": "chapter checks and a future class-level diagnostic/CAT",
+   "Growth": "locked until validated",
+   "rule": "no surface may borrow another surface's status claim: completing Learn is not mastery; doing well in adaptive practice is not calibrated ability; a chapter check is not a CAT"
+  }
+ },
+ "resolvedPending": {
+  "page_by_page_visual_inspection": {
+   "wasStale": true,
+   "staleText": "4 of 217 pages rendered and inspected; the remaining figure-bearing pages are not individually inspected",
+   "writtenAt": "checkpoint 52",
+   "supersededAt": "checkpoint 53",
+   "resolution": "217/217 pages rendered and inspected; 137 visual-required pages identified and all inspected",
+   "evidence": [
+    "217 rendered page images",
+    "8 labelled contact sheets, all viewed",
+    "217 pageClassification rows, each marked inspected",
+    "25 distinct visualKind classifications",
+    "8 pages re-rendered at readable resolution"
+   ]
+  },
+  "notation_inspection": {
+   "wasStale": true,
+   "staleText": "notation verified visually on the 4 inspected pages only",
+   "writtenAt": "checkpoint 52",
+   "supersededAt": "checkpoint 53",
+   "resolution": "notation audit completed on the notation-critical passages; 4 verified-visually entries recorded, including the fi di resolution",
+   "evidence": [
+    "zoom renders of ch13 p9, ch8 p13, ch1 p7, ch13 p20",
+    "notationAudit.verifiedVisually with recomputation of all three mean methods to 39.71"
+   ]
+  },
+  "source_segment_disposition": {
+   "wasStale": true,
+   "entries": [
+    {
+     "sourceSegmentId": "pragati_srcseg_jemh1_a1",
+     "staleText": "instruction_or_enrichment_pending_decision",
+     "writtenAt": "checkpoint 51",
+     "supersededAt": "checkpoint 54",
+     "resolution": "ENRICHMENT, warrantsUnit=False",
+     "rationale": "Appendix A1 Proofs in Mathematics is instructional but lies outside current CBSE Class X scope; no core unit. Available later as enrichment."
+    },
+    {
+     "sourceSegmentId": "pragati_srcseg_jemh1_a2",
+     "staleText": "instruction_or_enrichment_pending_decision",
+     "writtenAt": "checkpoint 51",
+     "supersededAt": "checkpoint 54",
+     "resolution": "ENRICHMENT, warrantsUnit=False",
+     "rationale": "Appendix A2 Mathematical Modelling is instructional but outside current prescribed scope; no core unit."
+    },
+    {
+     "sourceSegmentId": "pragati_srcseg_jemh1_answers",
+     "staleText": "reference_only",
+     "writtenAt": "checkpoint 51",
+     "supersededAt": "checkpoint 54",
+     "resolution": "REFERENCE, warrantsUnit=False",
+     "rationale": "Answers and hints; not instruction. Accounted so no page disappears."
+    },
+    {
+     "sourceSegmentId": "pragati_srcseg_jemh1_prelims",
+     "staleText": "reference_only",
+     "writtenAt": "checkpoint 51",
+     "supersededAt": "checkpoint 54",
+     "resolution": "NON_INSTRUCTIONAL, warrantsUnit=False",
+     "rationale": "Front matter."
+    }
+   ]
+  }
+ },
+ "canonicalInvariants": [
+  "if pagesInspected == totalChapterPages then no pending field may claim page inspection is incomplete",
+  "if the notation audit is recorded complete then no pending field may claim notation is partially inspected",
+  "pageClassification row count must equal totalChapterPages",
+  "rows marked visualRequired must equal visualRequiredPages",
+  "every sourceSegment.warrants must equal its disposition in the coverage reconciliation; no segment may carry a pending instructional decision once dispositioned"
+ ]
+}

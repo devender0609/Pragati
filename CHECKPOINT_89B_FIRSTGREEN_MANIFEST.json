@@ -1,0 +1,208 @@
+{
+  "checkpoint": "89B-first-green",
+  "canonicalVersion": "0.84.0-c11.24-binomial-pilot",
+  "packageKind": "FIRST_GREEN \u2014 created on primary-gate success, before hardening",
+  "verdict": "CLASS_11_BINOMIAL_THEOREM_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_REUSED_INDUCTION_AND_COUNTING_SEMANTICS",
+  "packageCreatedUtc": "2026-11-10T15:57:00Z",
+  "typecheckRepairs": [
+    {
+      "what": "a test read .explanation from a proof step",
+      "fix": "test updated to the canonical {text, reasoning} contract",
+      "aliasAdded": false
+    },
+    {
+      "what": "validateInductionProof imported and unused",
+      "fix": "removed; the proof is validated through validateVisual",
+      "deadImportKept": false
+    }
+  ],
+  "fourFailures": [
+    {
+      "assertion": "does not author the dependent units",
+      "kind": "meaning, not count",
+      "resolution": "rewritten: \u00a77.2 authored, limits dependents untouched"
+    },
+    {
+      "assertion": "binomial prerequisite gate",
+      "kind": "meaning, not count",
+      "resolution": "rewritten: \u00a77.2 authored, \u00a77.3 still nonexistent"
+    },
+    {
+      "assertion": "Limits chapter-owned total",
+      "kind": "count",
+      "denominator": "chapter-owned Class 11 lessons",
+      "from": 56,
+      "to": 57
+    },
+    {
+      "assertion": "Conics chapter-owned total",
+      "kind": "count",
+      "denominator": "chapter-owned Class 11 lessons",
+      "from": 56,
+      "to": 57
+    }
+  ],
+  "leftAlone": "four toBe(56) assertions in Class 10 arithmetic-progression tests are seat counts",
+  "blanketSubstitutionUsed": false,
+  "catalogue": {
+    "officialTextbookChapters": 9,
+    "chapterOwnedLessons": 57,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 58,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      12
+    ],
+    "perChapterCounts": [
+      12,
+      6,
+      8,
+      7,
+      5,
+      1,
+      6,
+      8,
+      4
+    ],
+    "chapter7Lessons": 1,
+    "invented": [],
+    "header": "9 chapters from your textbook \u00b7 57 lessons \u00b7 1 prerequisite lesson outside the textbook"
+  },
+  "dependencyGraph": {
+    "unit": "C11-BIN-01",
+    "prerequisites": [
+      "C11-IND-01",
+      "C11-PNC-05"
+    ],
+    "bothAuthored": true,
+    "edgesRetained": true,
+    "firstOfItsKind": "first authored unit depending on two separately authored prerequisites from different source structures (NCERT \u00a76.4 and a CBSE-only entry with no chapter owner)"
+  },
+  "composition": {
+    "binomialProofSpec": false,
+    "secondFactorial": false,
+    "secondCombinations": false,
+    "assertedByTestReadingSource": true,
+    "coefficientsFrom": "counting.ts combinations (checkpoint 88)",
+    "proofModelFrom": "induction.ts InductionProof (checkpoint 87)"
+  },
+  "independentOracle": {
+    "function": "expandByMultiplication",
+    "usesNCr": false,
+    "matchesModelForIndices": "1 through 8"
+  },
+  "identity": {
+    "statement": "kCr + kC(r\u22121) = (k+1)Cr",
+    "checkedAgainstModel": true,
+    "range": "k up to 15",
+    "assertedInProseOnly": false
+  },
+  "negativeFixtures": [
+    "exponent sum not n",
+    "plausible but wrong coefficient",
+    "coefficients in wrong order",
+    "non-integer index",
+    "negative index",
+    "hypothesis written for k+1",
+    "empty inductive step",
+    "conclusion resting on base case alone"
+  ],
+  "exactness": {
+    "40C20": "137846528820",
+    "floatingPoint": false,
+    "scientificNotation": false
+  },
+  "pascal": {
+    "section73Created": false,
+    "pascalLesson": false,
+    "coefficientRows": "a representation inside \u00a77.2, every entry re-derived from nCr"
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "binomialFilenameHardcoded": false,
+    "leaks": 0
+  },
+  "qa": {
+    "tests": 2916,
+    "testFiles": 136,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "targetedBinomial": 28
+  },
+  "browser": {
+    "chapter7Rows": 1,
+    "stages": "5/5",
+    "finish": true,
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "proofParts": [
+      "Claim",
+      "Base case",
+      "Induction hypothesis",
+      "Inductive step",
+      "Conclusion"
+    ],
+    "coefficientRows": 6,
+    "row4": [
+      "1",
+      "4",
+      "6",
+      "4",
+      "1"
+    ],
+    "row5": [
+      "1",
+      "5",
+      "10",
+      "10",
+      "5",
+      "1"
+    ],
+    "expansionInProse": "a^3 + 3a^2b + 3ab^2 + b^3"
+  },
+  "publicSafe": {
+    "chapter7Shown": false,
+    "rows": 0,
+    "visualRoots": 0,
+    "directRouteContent": false,
+    "directRouteVisualRoots": 0,
+    "gateAtLookup": true
+  },
+  "priorWork": {
+    "class11PriorLessons": 57,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "accessibility",
+    "persistence",
+    "focus visibility"
+  ],
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "recommendation": "C11-LIM-05 and C11-LIM-06",
+    "executed": false
+  }
+}

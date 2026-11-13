@@ -1,0 +1,153 @@
+{
+  "checkpoint": "85-first-green",
+  "canonicalVersion": "0.84.0-c11.15-conics-pilot",
+  "packageKind": "FIRST_GREEN \u2014 created immediately on full-suite and browser-walk success, before hardening",
+  "whyThisExists": "the previous attempt reached this exact state unpackaged and the working tree was lost",
+  "verdict": "CLASS_11_CONIC_SECTIONS_AUTHORING_PILOT_INCOMPLETE",
+  "packageCreatedUtc": "2026-11-03T16:29:11Z",
+  "class11": {
+    "total": 47,
+    "perChapter": [
+      12,
+      6,
+      8,
+      7,
+      6,
+      8
+    ],
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10
+    ],
+    "registrationLeaks": 0,
+    "uniqueIds": 47,
+    "lifecycle": "0/0/0/0",
+    "emptyChaptersInvented": 0
+  },
+  "qa": {
+    "tests": 2790,
+    "testFiles": 132,
+    "failures": 0,
+    "typecheck": 0,
+    "conicSuite": 33
+  },
+  "browser": {
+    "lessonsWalked": "8/8",
+    "stages": "5/5 plus Finish",
+    "overflow": "0px",
+    "renderedProseLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "catalogue": "6 chapters, 47 lessons",
+    "figuresPerLesson": {
+      "cone_sections": 4,
+      "degenerate": 3,
+      "circle": 1,
+      "parabola": 1,
+      "ellipse": 2,
+      "ellipse_parameters": 1,
+      "hyperbola": 1,
+      "hyperbola_parameters": 1
+    }
+  },
+  "architecture": {
+    "oneObjectPerConic": true,
+    "negativeFixtures": {
+      "focusDirectrix": [
+        "(2,5)",
+        "(1,4)"
+      ],
+      "focalSum": [
+        "(1,1)"
+      ],
+      "focalDifference": [
+        "(1,1)"
+      ]
+    },
+    "exactValues": {
+      "ellipseEccentricity": "4/5",
+      "hyperbolaEccentricity": "5/3",
+      "ellipseLatusRectum": "18/5",
+      "hyperbolaLatusRectum": "32/3"
+    },
+    "ellipseOrientations": [
+      "x\u00b2/25 + y\u00b2/9 = 1",
+      "x\u00b2/9 + y\u00b2/25 = 1"
+    ],
+    "hyperbolaBranches": 2,
+    "branchesJoined": false,
+    "refusals": [
+      "zero radius",
+      "b greater than a",
+      "equal semi-axes",
+      "non-positive parabola parameter"
+    ]
+  },
+  "visualFamilies": {
+    "new": [
+      "conic_graph",
+      "cone_section"
+    ],
+    "wiredThroughAllFourLayers": true,
+    "degenerateFiguresPresentFromStart": true,
+    "coneSectionValidatesCutAgainstResult": true,
+    "throughVertexFlag": true
+  },
+  "provenance": {
+    "subsections": {
+      "10.2.2": "parent 10.2",
+      "10.5.2": "parent 10.5",
+      "10.6.1": "parent 10.6"
+    },
+    "fabricatedSectionIds": 0,
+    "structuralOnly": {
+      "10.4.2": "absorbed into the parabola lesson, no separate unit"
+    }
+  },
+  "rawValueGuard": {
+    "moduleDiscovery": true,
+    "hardcodedList": false,
+    "countAsserted": 6
+  },
+  "baselinesMoved": {
+    "lessons": "39 -> 47",
+    "perChapter": "[12,6,8,7,6] -> [12,6,8,7,6,8]",
+    "chapterOrder": "[1,2,3,4,9] -> [1,2,3,4,9,10]",
+    "masterMapSections": "22 -> 27"
+  },
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "all-family visual presence regression",
+    "persistence",
+    "accessibility structural",
+    "public-safe build",
+    "git preflight"
+  ],
+  "priorWork": {
+    "class11Chapters1to4and9": [
+      12,
+      6,
+      8,
+      7,
+      6
+    ],
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen",
+    "priorVersionsChanged": 0
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "environmentHygiene": {
+    "envLocalAbsent": true,
+    "envLocalInPackage": false
+  }
+}

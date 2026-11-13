@@ -1,0 +1,1126 @@
+[
+  {
+    "officialChapterId": "ncert_iemh1_ch01",
+    "chapterNumber": 1,
+    "chapterTitle": "Orienting Yourself: The Use of Coordinates",
+    "lessonCount": 5,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Explain why describing a location needs an agreed framework",
+        "reviewCode": "C9-207A8-v1i1-8CB297",
+        "contentArtifactId": "ncert_iemh1_s1_1_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §1.1 Introduction, from page 1. This lesson deliberately integrates material from 1 further section.",
+        "questionCount": 13,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Locate a point in the plane by an ordered pair measured against two p…",
+        "reviewCode": "C9-A628C-v1i1-D2340A",
+        "contentArtifactId": "ncert_iemh1_s1_3_plot_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §1.3 The 2-d Cartesian Coordinate System, from page 3",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Classify a point by the signs of its coordinates",
+        "reviewCode": "C9-6F5BB-v1i1-D0E211",
+        "contentArtifactId": "ncert_iemh1_s1_3_signs_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §1.3 The 2-d Cartesian Coordinate System, from page 3",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Derive the distance between two points by completing a right triangle",
+        "reviewCode": "C9-E995F-v1i1-BA5A0A",
+        "contentArtifactId": "ncert_iemh1_s1_4_distance_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §1.4 Distance Between Two Points in the 2-D Plane, from page 8",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Use the distance result to test whether three points are collinear an…",
+        "reviewCode": "C9-F16F0-v1i1-94751E",
+        "contentArtifactId": "ncert_iemh1_s1_4_apply_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §1.4 Distance Between Two Points in the 2-D Plane, from page 8",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh1_ch02",
+    "chapterNumber": 2,
+    "chapterTitle": "Introduction to Linear Polynomials",
+    "lessonCount": 6,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Decide whether an expression is a linear polynomial",
+        "reviewCode": "C9-9F23D-v1i1-C58D63",
+        "contentArtifactId": "ncert_iemh1_s2_1_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §2.1 Introduction, from page 1. This lesson deliberately integrates material from 1 further section.",
+        "questionCount": 13,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Recognise a pattern whose consecutive terms differ by a constant",
+        "reviewCode": "C9-0E13F-v1i1-838697",
+        "contentArtifactId": "ncert_iemh1_s2_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §2.3 Exploring linear patterns, from page 6",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Model a quantity that rises or falls by a fixed amount each step as a…",
+        "reviewCode": "C9-FC7CE-v1i1-A4FE11",
+        "contentArtifactId": "ncert_iemh1_s2_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §2.4 Linear growth and linear decay, from page 9",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Find the rule y = ax + b connecting two quantities from a table of th…",
+        "reviewCode": "C9-402DF-v1i1-E76D1B",
+        "contentArtifactId": "ncert_iemh1_s2_5_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §2.5 Linear Relationships, from page 11",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Draw the graph of a linear relationship from its rule",
+        "reviewCode": "C9-66BEE-v1i1-8CDBA0",
+        "contentArtifactId": "ncert_iemh1_s2_6_graph_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §2.6 Visualising linear relationships, from page 12",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Determine what a and b each do to the graph of y = ax + b",
+        "reviewCode": "C9-A4D4B-v1i1-D71CB0",
+        "contentArtifactId": "ncert_iemh1_s2_6_params_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §2.6 Visualising linear relationships, from page 12",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh1_ch03",
+    "chapterNumber": 3,
+    "chapterTitle": "The World of Numbers",
+    "lessonCount": 8,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Distinguish zero as a placeholder from zero as a number",
+        "reviewCode": "C9-BC88B-v2i1-318A32",
+        "contentArtifactId": "ncert_iemh1_s3_2_lesson",
+        "contentArtifactVersion": 2,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.2 The Revolution of Śhūnya: When Nothing Became Something, from page 3. This lesson deliberately integrates material from 1 further section.",
+        "questionCount": 13,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Extend the number system to the integers and justify the rules for ad…",
+        "reviewCode": "C9-EC92E-v1i1-0BDD49",
+        "contentArtifactId": "ncert_iemh1_s3_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.3 Integers: Expanding the Horizon, from page 5",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Define a rational number as p/q with q not zero",
+        "reviewCode": "C9-0880E-v1i1-5D8309",
+        "contentArtifactId": "ncert_iemh1_s3_4_arith_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.4 Filling the Spaces: Fractions and Rational Numbers, from page 6",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Place rationals on the number line",
+        "reviewCode": "C9-E3F16-v1i1-9B30B4",
+        "contentArtifactId": "ncert_iemh1_s3_4_density_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.4 Filling the Spaces: Fractions and Rational Numbers, from page 6",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Follow and reconstruct the proof by contradiction that root 2 cannot…",
+        "reviewCode": "C9-887B0-v1i1-B493D4",
+        "contentArtifactId": "ncert_iemh1_s3_5_proof_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.5 Irrational Numbers, from page 13",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Construct an irrational length exactly on the number line",
+        "reviewCode": "C9-ABD65-v1i1-B49F3A",
+        "contentArtifactId": "ncert_iemh1_s3_5_construct_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.5 Irrational Numbers, from page 13",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 7,
+        "lessonTitle": "Connect rational numbers to terminating or repeating decimals",
+        "reviewCode": "C9-B2B2C-v1i1-D1A031",
+        "contentArtifactId": "ncert_iemh1_s3_6_decimals_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.6 Real Numbers: Decimals and Cyclic Patterns, from page 17",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 8,
+        "lessonTitle": "Explore the cyclic behaviour of a repeating block and contrast it wit…",
+        "reviewCode": "C9-BE9B7-v1i1-A4539B",
+        "contentArtifactId": "ncert_iemh1_s3_6_cyclic_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §3.6 Real Numbers: Decimals and Cyclic Patterns, from page 17",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh1_ch04",
+    "chapterNumber": 4,
+    "chapterTitle": "Exploring Algebraic Identities",
+    "lessonCount": 9,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Distinguish an identity",
+        "reviewCode": "C9-B5FF7-v1i1-F34CD4",
+        "contentArtifactId": "ncert_iemh1_s4_1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.1 Introduction, from page 1",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Justify the square identities from an area picture",
+        "reviewCode": "C9-DB328-v1i1-E48832",
+        "contentArtifactId": "ncert_iemh1_s4_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.2 Visualising Identities, from page 2",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Recognise an expression as a square or a difference of squares",
+        "reviewCode": "C9-C1D4B-v1i1-C868DC",
+        "contentArtifactId": "ncert_iemh1_s4_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.3 Factorisation of Algebraic Expressions Using Identities, from page 5",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Derive the square of a three-term sum by reusing the two-term identity",
+        "reviewCode": "C9-E59AA-v1i1-8A644B",
+        "contentArtifactId": "ncert_iemh1_s4_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.4 More Identities, from page 8",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Build a quadratic expression as a rectangle of tiles and read its fac…",
+        "reviewCode": "C9-C3E08-v1i1-1FBE6C",
+        "contentArtifactId": "ncert_iemh1_s4_5_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.5 Factorisation Using Algebra Tiles, from page 11",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Factorise a quadratic by comparing coefficients",
+        "reviewCode": "C9-6F43F-v1i1-29962C",
+        "contentArtifactId": "ncert_iemh1_s4_6_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.6 Factorisation Without Using Algebra Tiles, from page 13",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 7,
+        "lessonTitle": "Derive the cube of a sum",
+        "reviewCode": "C9-17D93-v1i1-6749F6",
+        "contentArtifactId": "ncert_iemh1_s4_7_cube_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.7 Finding New Identities, from page 15",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 8,
+        "lessonTitle": "Factorise a sum or difference of cubes",
+        "reviewCode": "C9-81AEB-v1i1-811853",
+        "contentArtifactId": "ncert_iemh1_s4_7_factor_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.7 Finding New Identities, from page 15",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 9,
+        "lessonTitle": "Simplify an algebraic fraction by factorising numerator and denominat…",
+        "reviewCode": "C9-1211E-v1i1-5B5B5F",
+        "contentArtifactId": "ncert_iemh1_s4_8_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §4.8 Simplifying Rational Expressions, from page 19",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh1_ch05",
+    "chapterNumber": 5,
+    "chapterTitle": "I’m Up and Down, and Round and Round",
+    "lessonCount": 8,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Define a circle by one property — equal distance from a centre — and…",
+        "reviewCode": "C9-A7112-v1i1-E55B0F",
+        "contentArtifactId": "ncert_iemh1_s5_1_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.1 Definitions, from page 2. This lesson deliberately integrates material from 1 further section.",
+        "questionCount": 15,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Determine how much information fixes a circle",
+        "reviewCode": "C9-474ED-v1i1-BC1B12",
+        "contentArtifactId": "ncert_iemh1_s5_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.3 How Many Circles?, from page 3",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Prove that equal chords subtend equal angles at the centre",
+        "reviewCode": "C9-C85A6-v1i1-3DC5FC",
+        "contentArtifactId": "ncert_iemh1_s5_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.4 Chords and the Angles They Subtend, from page 7",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Prove that the line from the centre to the midpoint of a chord is per…",
+        "reviewCode": "C9-FF9AD-v1i1-BD36BA",
+        "contentArtifactId": "ncert_iemh1_s5_5_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.5 Midpoints and Perpendicular Bisectors of Chords, from page 9",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Establish that the longer of two chords lies closer to the centre",
+        "reviewCode": "C9-FEED8-v1i1-9304AD",
+        "contentArtifactId": "ncert_iemh1_s5_6_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.6 Distance of Chords from the Centre, from page 11",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Prove that an arc subtends twice the angle at the centre that it subt…",
+        "reviewCode": "C9-ACA2C-v1i1-928605",
+        "contentArtifactId": "ncert_iemh1_s5_7_centre_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.7 Angles Subtended by an Arc, from page 15",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 7,
+        "lessonTitle": "Deduce that angles subtended by one arc at different points of the re…",
+        "reviewCode": "C9-70A4F-v1i1-9FE410",
+        "contentArtifactId": "ncert_iemh1_s5_7_segment_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.7 Angles Subtended by an Arc, from page 15",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 8,
+        "lessonTitle": "Decide when four points lie on one circle",
+        "reviewCode": "C9-14C13-v1i1-6AAE96",
+        "contentArtifactId": "ncert_iemh1_s5_8_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §5.8 Concyclicity of Points, from page 20",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh1_ch06",
+    "chapterNumber": 6,
+    "chapterTitle": "Measuring Space: Perimeter and Area",
+    "lessonCount": 11,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Define perimeter as the distance round a border and compute it for po…",
+        "reviewCode": "C9-C59E7-v1i1-3F0F67",
+        "contentArtifactId": "ncert_iemh1_s6_1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.1 Perimeter of a Shape, from page 2",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Establish that circumference divided by diameter is the same constant…",
+        "reviewCode": "C9-805F1-v1i1-7F428B",
+        "contentArtifactId": "ncert_iemh1_s6_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.2 Perimeter of a Circle — The C/D Ratio, from page 3",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "State what the irrationality of pi means for its fractional approxima…",
+        "reviewCode": "C9-5466E-v1i1-85A88D",
+        "contentArtifactId": "ncert_iemh1_s6_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.3 π Is Irrational, from page 6",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Find the length of an arc as the fraction of the circumference determ…",
+        "reviewCode": "C9-0FE99-v1i1-7B4657",
+        "contentArtifactId": "ncert_iemh1_s6_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.4 Length of an Arc of a Circle, from page 8",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Compute perimeters of composite figures made of straight and curved p…",
+        "reviewCode": "C9-87BB5-v1i1-1980D2",
+        "contentArtifactId": "ncert_iemh1_s6_5_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.5 Problems, Puzzles, and Paradoxes on Perimeter, from page 10",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Take the rectangle area as the chapter’s starting point and derive th…",
+        "reviewCode": "C9-F5CAE-v1i1-23443D",
+        "contentArtifactId": "ncert_iemh1_s6_6_7_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.6 Area of a Rectangle, from page 13. This lesson deliberately integrates material from 1 further section.",
+        "questionCount": 15,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 7,
+        "lessonTitle": "Derive the area of a triangle as half a parallelogram built from two…",
+        "reviewCode": "C9-809E1-v1i1-A14BC0",
+        "contentArtifactId": "ncert_iemh1_s6_8_base_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.8 Area of a Triangle, from page 15",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 8,
+        "lessonTitle": "Find a triangle’s area from its three sides using the semi-perimeter…",
+        "reviewCode": "C9-45205-v1i1-F4A244",
+        "contentArtifactId": "ncert_iemh1_s6_8_heron_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.8 Area of a Triangle, from page 15",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 9,
+        "lessonTitle": "Construct a square equal in area to a given rectangle",
+        "reviewCode": "C9-9B68B-v1i1-091309",
+        "contentArtifactId": "ncert_iemh1_s6_9_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.9 Squaring a Rectangle, from page 23",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 10,
+        "lessonTitle": "Derive the area of a circle by cutting it into thin sectors rearrange…",
+        "reviewCode": "C9-72C32-v1i1-E4B5B3",
+        "contentArtifactId": "ncert_iemh1_s6_10_disc_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.10 Area of a Circle, from page 26",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 11,
+        "lessonTitle": "Find the area of a sector as the fraction of the disc determined by i…",
+        "reviewCode": "C9-75595-v1i1-76228B",
+        "contentArtifactId": "ncert_iemh1_s6_10_sector_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §6.10 Area of a Circle, from page 26",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh1_ch07",
+    "chapterNumber": 7,
+    "chapterTitle": "The Mathematics of Maybe: Introduction to Probability",
+    "lessonCount": 6,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Characterise a random situation as one where the possible results are…",
+        "reviewCode": "C9-8F331-v1i1-3B86AD",
+        "contentArtifactId": "ncert_iemh1_s7_1_random_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §7.1 What is Probability?, from page 1",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Place events on the 0-to-1 probability scale and read what a value on…",
+        "reviewCode": "C9-2BDC9-v1i1-81608C",
+        "contentArtifactId": "ncert_iemh1_s7_1_scale_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §7.1 What is Probability?, from page 1",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Estimate a probability by performing trials and counting results",
+        "reviewCode": "C9-C9EC0-v1i1-5E949F",
+        "contentArtifactId": "ncert_iemh1_s7_2_experimental_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §7.2 Measuring Probability Objectively, from page 5",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Compute a theoretical probability from equally likely outcomes",
+        "reviewCode": "C9-CC574-v1i1-1F1932",
+        "contentArtifactId": "ncert_iemh1_s7_2_theoretical_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §7.2 Measuring Probability Objectively, from page 5",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Write the sample space of a random experiment",
+        "reviewCode": "C9-AF017-v1i1-A62274",
+        "contentArtifactId": "ncert_iemh1_s7_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §7.3 Elements of Probability: Sample Spaces and Events, from page 12",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Enumerate the sample space of a two-stage experiment with a tree diag…",
+        "reviewCode": "C9-B7F8E-v1i1-9513E1",
+        "contentArtifactId": "ncert_iemh1_s7_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §7.4 Tree diagrams, from page 14",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh1_ch08",
+    "chapterNumber": 8,
+    "chapterTitle": "Predicting What Comes Next: Exploring Sequences and Progressions",
+    "lessonCount": 7,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Define a sequence as an ordered list and refer to a term by its position",
+        "reviewCode": "C9-D2A12-v1i1-C5C407",
+        "contentArtifactId": "ncert_iemh1_s8_1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §8.1 Introduction to Sequences, from page 1",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Give a sequence by an explicit rule in n",
+        "reviewCode": "C9-A851A-v1i1-516358",
+        "contentArtifactId": "ncert_iemh1_s8_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §8.2 Explicit Rule for a Sequence, from page 3",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Give a sequence by a recursive rule built from earlier terms",
+        "reviewCode": "C9-39479-v1i1-A89B20",
+        "contentArtifactId": "ncert_iemh1_s8_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §8.3 Recursive Rule for a Sequence, from page 5",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Name an arithmetic progression by its constant difference and derive…",
+        "reviewCode": "C9-A1313-v1i1-A90A02",
+        "contentArtifactId": "ncert_iemh1_s8_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §8.4 Arithmetic Progressions, from page 7",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Derive the sum of the first n natural numbers by pairing from the two…",
+        "reviewCode": "C9-7A7D3-v1i1-FAA99A",
+        "contentArtifactId": "ncert_iemh1_s8_5_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §8.5 Sum of the First n Natural Numbers, from page 10",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Name a geometric progression by its constant ratio and derive its nth…",
+        "reviewCode": "C9-1F549-v1i1-A59A43",
+        "contentArtifactId": "ncert_iemh1_s8_6_algebra_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §8.6 Geometric Progressions, from page 13",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 7,
+        "lessonTitle": "Read a geometric progression out of a repeated geometric construction",
+        "reviewCode": "C9-896BC-v1i1-931109",
+        "contentArtifactId": "ncert_iemh1_s8_6_visual_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part I) — §8.6 Geometric Progressions, from page 13",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh2_ch09",
+    "chapterNumber": 9,
+    "chapterTitle": "Propositions and their Converses",
+    "lessonCount": 2,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Distinguish a proposition from its converse and establish that a sing…",
+        "reviewCode": "C9-CA868-v1i1-C06773",
+        "contentArtifactId": "ncert_iemh2_ch09_seg1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — Chapter 9, unnumbered instructional segment, pages 1–2",
+        "questionCount": 13,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Write \"if X then Y\" as \"X implies Y\"",
+        "reviewCode": "C9-E2084-v1i1-F968C4",
+        "contentArtifactId": "ncert_iemh2_ch09_seg2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — Chapter 9, unnumbered instructional segment, pages 3–5",
+        "questionCount": 13,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh2_ch10",
+    "chapterNumber": 10,
+    "chapterTitle": "How Quantities Combine: Understanding Data",
+    "lessonCount": 4,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Explain why averaging two group averages is wrong when the groups dif…",
+        "reviewCode": "C9-D902B-v1i1-04A352",
+        "contentArtifactId": "ncert_iemh2_s10_1_mean_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §10.1 Combining Things, from page 1",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Apply the weighted mean to mixtures and to marks where components car…",
+        "reviewCode": "C9-3D968-v1i1-7038BA",
+        "contentArtifactId": "ncert_iemh2_s10_1_mixtures_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §10.1 Combining Things, from page 1",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Build and read clustered and stacked column displays from a table",
+        "reviewCode": "C9-10DC5-v1i1-2CC70E",
+        "contentArtifactId": "ncert_iemh2_s10_2_build_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §10.2 Visualising and Interpreting Data, from page 11",
+        "questionCount": 13,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Compare a 100% stacked display with an absolute one",
+        "reviewCode": "C9-34BF4-v1i1-34A689",
+        "contentArtifactId": "ncert_iemh2_s10_2_choose_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §10.2 Visualising and Interpreting Data, from page 11",
+        "questionCount": 13,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh2_ch11",
+    "chapterNumber": 11,
+    "chapterTitle": "The World of Algorithms",
+    "lessonCount": 4,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Write column addition as a precise procedure",
+        "reviewCode": "C9-54FB4-v1i1-5D7454",
+        "contentArtifactId": "ncert_iemh2_s11_1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §11.1 Adding Numbers, from page 1",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Compute the gcd of two numbers by listing all divisors of each and ta…",
+        "reviewCode": "C9-F37D1-v1i1-1C2FD3",
+        "contentArtifactId": "ncert_iemh2_s11_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §11.2 Greatest Common Divisor, from page 3",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Improve the divisor-list method",
+        "reviewCode": "C9-7D75A-v1i1-AD9386",
+        "contentArtifactId": "ncert_iemh2_s11_3_improve_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §11.3 Data Structures, from page 7",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Follow Euclid’s subtraction algorithm and its division refinement",
+        "reviewCode": "C9-55D28-v1i1-E40832",
+        "contentArtifactId": "ncert_iemh2_s11_3_euclid_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §11.3 Data Structures, from page 7",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh2_ch12",
+    "chapterNumber": 12,
+    "chapterTitle": "Quadrilaterals",
+    "lessonCount": 6,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Be able to say exactly which figures count as quadrilaterals",
+        "reviewCode": "C9-EDF15-v1i1-81B202",
+        "contentArtifactId": "ncert_iemh2_s12_1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §12.1 What Exactly is a Quadrilateral?, from page 2",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Prove that a parallelogram has equal opposite sides",
+        "reviewCode": "C9-AD7E3-v1i1-A00CEB",
+        "contentArtifactId": "ncert_iemh2_s12_2_properties_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §12.2 Parallelograms, from page 6",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Turn each parallelogram property around into a test",
+        "reviewCode": "C9-6D189-v1i1-A683DA",
+        "contentArtifactId": "ncert_iemh2_s12_2_converses_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §12.2 Parallelograms, from page 6",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Prove that the segment joining the midpoints of two sides of a triang…",
+        "reviewCode": "C9-031FF-v1i1-B6CB43",
+        "contentArtifactId": "ncert_iemh2_s12_3_midpoint_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §12.3 Applications of Parallelograms, from page 10",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Use the Midpoint Theorem to derive new results",
+        "reviewCode": "C9-C3D22-v1i1-9B5151",
+        "contentArtifactId": "ncert_iemh2_s12_3_medians_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §12.3 Applications of Parallelograms, from page 10",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Show that copies of any quadrilateral can cover the plane with no gap…",
+        "reviewCode": "C9-44007-v1i1-6D2766",
+        "contentArtifactId": "ncert_iemh2_s12_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §12.4 Tiling the Plane Using Any 4-gon, from page 19",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh2_ch13",
+    "chapterNumber": 13,
+    "chapterTitle": "Two Variables, One Line",
+    "lessonCount": 9,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Write a linear equation in two variables in the standard form ax + by…",
+        "reviewCode": "C9-EFD7D-v1i1-F1D890",
+        "contentArtifactId": "ncert_iemh2_s13_1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.1 Linear Equations in Two Variables, from page 1",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Define a solution as an ordered pair",
+        "reviewCode": "C9-7728F-v1i1-861084",
+        "contentArtifactId": "ncert_iemh2_s13_2_pairs_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.2 Solution of Linear Equation in Two Variables, from page 4",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Plot the solutions of a linear equation and establish that they all l…",
+        "reviewCode": "C9-A5B7B-v1i1-359A8B",
+        "contentArtifactId": "ncert_iemh2_s13_2_line_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.2 Solution of Linear Equation in Two Variables, from page 4",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Define slope as rise over run and establish that it is the same which…",
+        "reviewCode": "C9-A3E8A-v1i1-D8A058",
+        "contentArtifactId": "ncert_iemh2_s13_3_slope_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.3 Slope-intercept form of a Linear Equation, from page 10",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Derive the form y = mx + c",
+        "reviewCode": "C9-A956B-v1i1-38ECB1",
+        "contentArtifactId": "ncert_iemh2_s13_3_form_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.3 Slope-intercept form of a Linear Equation, from page 10",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Set up a pair of linear equations from a situation with two conditions",
+        "reviewCode": "C9-8D876-v1i1-F05CAC",
+        "contentArtifactId": "ncert_iemh2_s13_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.4 Pair of Linear Equations in Two Variables, from page 19",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 7,
+        "lessonTitle": "Solve a pair of linear equations by substitution",
+        "reviewCode": "C9-A542A-v1i1-388DB0",
+        "contentArtifactId": "ncert_iemh2_s13_5_substitution_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.5 Finding Solutions to a Pair of Linear Equations, from page 21",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 8,
+        "lessonTitle": "Solve a pair by eliminating a variable",
+        "reviewCode": "C9-CF0E9-v1i1-20B712",
+        "contentArtifactId": "ncert_iemh2_s13_5_elimination_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.5 Finding Solutions to a Pair of Linear Equations, from page 21",
+        "questionCount": 12,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 9,
+        "lessonTitle": "Solve a pair graphically",
+        "reviewCode": "C9-016EE-v1i1-9664D7",
+        "contentArtifactId": "ncert_iemh2_s13_6_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §13.6 Graphical Method for Solving A Pair of Linear, from page 28",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  },
+  {
+    "officialChapterId": "ncert_iemh2_ch14",
+    "chapterNumber": 14,
+    "chapterTitle": "Math of Space: Surface Area and Volume",
+    "lessonCount": 7,
+    "lessons": [
+      {
+        "position": 1,
+        "lessonTitle": "Find the surface area of a cuboid from its net and its volume from it…",
+        "reviewCode": "C9-2C1B0-v1i1-827476",
+        "contentArtifactId": "ncert_iemh2_s14_1_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §14.1 Cuboids and Cubes, from page 1",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 2,
+        "lessonTitle": "Derive the curved and total surface area of a right circular cylinder…",
+        "reviewCode": "C9-04929-v1i1-03E183",
+        "contentArtifactId": "ncert_iemh2_s14_2_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §14.2 Right Circular Cylinder, from page 5",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 3,
+        "lessonTitle": "Generate a cone by rotating a right triangle",
+        "reviewCode": "C9-573F0-v1i1-1CF157",
+        "contentArtifactId": "ncert_iemh2_s14_3_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §14.3 Cones, from page 8",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 4,
+        "lessonTitle": "Find the surface area of a pyramid from its net of flat faces",
+        "reviewCode": "C9-61723-v1i1-941BA3",
+        "contentArtifactId": "ncert_iemh2_s14_4_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §14.4 Pyramidal Shapes, from page 12",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 5,
+        "lessonTitle": "Give the surface area and volume of a sphere",
+        "reviewCode": "C9-E6691-v1i1-3CEC7D",
+        "contentArtifactId": "ncert_iemh2_s14_5_sphere_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §14.5 Spheres and Hemispheres, from page 13",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 6,
+        "lessonTitle": "Distinguish the curved surface area of a hemisphere from its total su…",
+        "reviewCode": "C9-5FAAB-v1i1-83B663",
+        "contentArtifactId": "ncert_iemh2_s14_5_hemisphere_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §14.5 Spheres and Hemispheres, from page 13",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      },
+      {
+        "position": 7,
+        "lessonTitle": "Estimate areas and volumes of real objects where exact measurements a…",
+        "reviewCode": "C9-6FE7B-v1i1-7A4427",
+        "contentArtifactId": "ncert_iemh2_s14_6_lesson",
+        "contentArtifactVersion": 1,
+        "sourceDescription": "Ganita Manjari, Textbook of Mathematics for Grade 9 (Part II) — §14.6 Areas and Volumes Around Us, from page 19",
+        "questionCount": 14,
+        "ready": true,
+        "status": "authored_draft"
+      }
+    ]
+  }
+]

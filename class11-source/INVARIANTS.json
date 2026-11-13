@@ -1,0 +1,14 @@
+{
+  "sections_have_intents": true,
+  "subsection_records_complete": true,
+  "visual_inspected_equals_required": true,
+  "notation_inspected_equals_identified": true,
+  "pages_accounted": true,
+  "formative_only_mapped": true,
+  "orphan_null_owner_allowed": true,
+  "fo12_statuses_independent": true,
+  "fragments_have_parents": true,
+  "misc_exercises_accounted": true,
+  "appendices_classified": true,
+  "no_figure_number_as_section": true
+}

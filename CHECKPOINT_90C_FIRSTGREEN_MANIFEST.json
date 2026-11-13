@@ -1,0 +1,209 @@
+{
+  "checkpoint": "90C-first-green",
+  "canonicalVersion": "0.84.0-c11.26-derivatives-pilot",
+  "packageKind": "FIRST_GREEN \u2014 created on primary-gate success, before hardening",
+  "verdict": "CLASS_11_DERIVATIVES_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_REUSED_LIMIT_INDUCTION_FUNCTION_SEMANTICS",
+  "packageCreatedUtc": "2026-11-10T21:51:33Z",
+  "correctedClaims": [
+    {
+      "what": "an earlier report listed the binomial theorem as a composing system",
+      "truth": "not used; the power-rule proof takes the product-rule route x^(k+1) = x^k * x",
+      "action": "unused import removed, header corrected, test asserts no duplicate engine"
+    },
+    {
+      "what": "the first domain-leak fixture expected the quotient rule to leak with an empty exclusion list",
+      "truth": "the rule guards a zero denominator independently of that list; the model was stronger than the test",
+      "action": "rebuilt on a restricted function 1/(x-1); validateRule rejects as 'widened the domain'"
+    }
+  ],
+  "composition": {
+    "limits": "ck86",
+    "functions": "ck81",
+    "induction": "ck87",
+    "trigonometry": "ck80",
+    "binomial": false,
+    "secondLimitModel": false,
+    "secondInductionModel": false
+  },
+  "sixteenBaselines": [
+    {
+      "denominator": "chapter-owned Class 11 lessons",
+      "assertions": 6,
+      "from": 57,
+      "to": 59
+    },
+    {
+      "denominator": "all Class 11 lessons a student can open",
+      "assertions": 5,
+      "from": 58,
+      "to": 60
+    },
+    {
+      "denominator": "official SECTIONS with authored content",
+      "assertions": 1,
+      "from": 34,
+      "to": 35,
+      "why": "LIM-05 is \u00a712.5, a section not previously carrying content; LIM-06 is \u00a712.5.1, a subsection of it"
+    },
+    {
+      "denominator": "discoverable lesson MODULES",
+      "assertions": 1,
+      "from": 10,
+      "to": 11,
+      "why": "one file holding two lessons; read from discovery, not derived from lesson count"
+    },
+    {
+      "denominator": "meaning change, not count",
+      "assertions": 2,
+      "why": "assertions that the limits dependents were unauthored; they are authored now"
+    }
+  ],
+  "blanketSubstitutionUsed": false,
+  "protectedConstants": [
+    "frozen Class 1 counts",
+    "Class 10 deck-of-cards 52",
+    "arithmetic-progression 56"
+  ],
+  "catalogue": {
+    "officialTextbookChapters": 9,
+    "chapterOwnedLessons": 59,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 60,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      12
+    ],
+    "chapter12Lessons": 6
+  },
+  "chapter12Status": {
+    "summativeCoreAuthoredComplete": true,
+    "fullyAuthored": false,
+    "pending": "C11-LIM-FO11 (CBSE-only, FORMATIVE_ONLY, OPTIONAL_ENRICHMENT)"
+  },
+  "provenance": {
+    "LIM-05": {
+      "section": "12.5"
+    },
+    "LIM-06": {
+      "subsection": "12.5.1",
+      "additionalSubsectionNumbers": [
+        "12.5.2"
+      ],
+      "verifiedOnArtifact": true
+    }
+  },
+  "mathematics": {
+    "hZeroExcludedByConstruction": true,
+    "firstPrinciplesAt": [
+      3,
+      5,
+      -2,
+      0
+    ],
+    "firstPrinciplesIndependentOfPowerRule": true,
+    "powerRuleProofUsesSharedInductionValidator": true,
+    "rulesAgreeWithFirstPrinciples": [
+      "sum",
+      "difference",
+      "product",
+      "quotient"
+    ],
+    "domainPreserved": true,
+    "trigDegreesRefused": "wrong_measure",
+    "compositeRefused": "out_of_scope"
+  },
+  "negativeFixtures": {
+    "count": 11,
+    "allReject": true
+  },
+  "qa": {
+    "targetedDerivative": 32,
+    "tests": 2948,
+    "testFiles": 137,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0
+  },
+  "browser": {
+    "lessons": "2/2",
+    "stages": "10/10",
+    "finish": "2/2",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "lim05": {
+      "proofParts": [
+        "Claim",
+        "Base case",
+        "Induction hypothesis",
+        "Inductive step",
+        "Conclusion"
+      ],
+      "quotientTable": true,
+      "rowAtHZero": false,
+      "differenceQuotient": true,
+      "hApproachesZero": true,
+      "pointVsFunction": true
+    },
+    "lim06": {
+      "sumRule": true,
+      "productRule": true,
+      "quotientRule": true,
+      "polynomial": true,
+      "trigonometric": true,
+      "radians": true,
+      "domainRestriction": true,
+      "chainRuleTaught": false
+    }
+  },
+  "environmentHygiene": {
+    "envLocalRemoved": true,
+    "distDeletedBeforeRebuild": true,
+    "stalePreviewBundleUsedAsEvidence": false
+  },
+  "publicSafe": {
+    "chapter12Shown": false,
+    "rows": 0,
+    "visualRoots": 0,
+    "directRouteContent": false,
+    "directRouteVisualRoots": 0
+  },
+  "priorWork": {
+    "class11PriorLessons": 58,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "accessibility",
+    "focus",
+    "persistence"
+  ],
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "options": [
+      "author C11-LIM-FO11",
+      "move to the next summative-core frontier"
+    ],
+    "executed": false
+  }
+}

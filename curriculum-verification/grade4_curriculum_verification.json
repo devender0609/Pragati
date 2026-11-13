@@ -1,0 +1,30 @@
+{
+  "_instructions": [
+    "Fill this in from the PRINTED or official PDF textbook. Do not copy a chapter list from a website.",
+    "Copy each chapter title EXACTLY as the Contents page prints it. Do not tidy, translate or shorten.",
+    "Sections are optional. If you record them for a chapter, record ALL of them for that chapter.",
+    "Then: Pragati > Teacher mode > Admin & Research > Verify a curriculum from its textbook > paste this file.",
+    "The validator will refuse gaps in numbering, blank titles, a missing edition line and a verifier who is not a person."
+  ],
+  "_whatToOpen": "Maths Mela — confirm a 2025 or later edition.",
+  "grade": "class4",
+  "officialBookTitle": "",
+  "academicYear": "2026-27",
+  "edition": "",
+  "source": "",
+  "verifier": "",
+  "inspectionDate": "",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "",
+      "page": null
+    },
+    {
+      "number": 2,
+      "title": "",
+      "page": null
+    }
+  ],
+  "notes": ""
+}

@@ -1,0 +1,267 @@
+{
+  "checkpoint": 68,
+  "canonicalVersion": "0.84.0-c10.14",
+  "packageCreatedUtc": "2026-10-23T13:34:23Z",
+  "waveScope": {
+    "units": [
+      "c10:7.2a",
+      "c10:7.2b",
+      "c10:7.3a",
+      "c10:7.3b"
+    ],
+    "authored": 4,
+    "sections": {
+      "7.2": "folio 100",
+      "7.3": "folio 106"
+    },
+    "reviewSections": [
+      "7.1",
+      "7.4"
+    ],
+    "constraint": "distance formula and section formula (internal division) only",
+    "newNamedObject": "c10:7.3a \u2014 the section formula"
+  },
+  "progression": {
+    "category": "PROCEDURAL_EXTENSION",
+    "sourceNote": "distance is REVISION, not introduction",
+    "class9Lessons": 5,
+    "alreadyCovered": [
+      "the plane by ordered pairs",
+      "quadrants and the forms (x,0) and (0,y)",
+      "the distance formula, DERIVED",
+      "collinearity by distance",
+      "the midpoint"
+    ],
+    "genuinelyNewInClass10": [
+      "the section formula for any positive ratio",
+      "recovering a ratio from a dividing point",
+      "classifying a quadrilateral from distances",
+      "locating a point from equidistance"
+    ]
+  },
+  "exclusions": {
+    "absentFromThisEdition": "area of a triangle",
+    "alsoExcluded": [
+      "external division",
+      "slope",
+      "centroid",
+      "determinants",
+      "equation of a line",
+      "locus"
+    ],
+    "auditIsMethodSpecificNotAWordBan": true,
+    "proof": "'the area of the square is 16 square units' passes; 'the area of a triangle from the coordinates of its vertices' does not",
+    "negativeFixtures": 6,
+    "declaredExclusionsPass": 4,
+    "findingsInAuthoredLessons": 0
+  },
+  "architecture": {
+    "verdict": "GENERAL_COORDINATE_SEGMENT_EXTENSION",
+    "existingInfrastructure": "LinearSystemGraphSpec is equation-driven and PolynomialGraphSpec samples a function; neither represents a point as a first-class object",
+    "gap": "no point, segment, distance or dividing point anywhere in the codebase",
+    "added": [
+      "Point with exact rational coordinates",
+      "distanceSquared",
+      "distance as an exact radical",
+      "sectionPoint",
+      "midpoint",
+      "ratioOf",
+      "isInternalPoint",
+      "collinearByDistance",
+      "classifyQuadrilateral",
+      "isEquidistant",
+      "validateSection",
+      "auditExcludedCoordinate",
+      "auditCoordinateNovelty"
+    ],
+    "notAdded": [
+      "Chapter7CoordinateSpec"
+    ]
+  },
+  "distance": {
+    "derivedFromTheAxes": "the right angle follows from the axes being perpendicular, not from the drawing",
+    "signHandledBySquaring": true,
+    "nonNegativeRootOnly": true,
+    "exactRadicals": {
+      "(2,4)-(5,7)": "3 root 2",
+      "origin-(5,12)": "13",
+      "(0,0)-(8,15)": "17",
+      "(-2,1)-(1,5)": "5"
+    },
+    "decimalLabelledApproximate": true,
+    "symmetryAssertedOverEveryOrderedPair": true
+  },
+  "applications": {
+    "collinearityReturnsThePointBetween": true,
+    "quadrilateralEvidence": "all four sides AND both diagonals",
+    "rhombusBesideSquare": "a rhombus with four equal sides and unequal diagonals sits in the same lesson, so equal sides are visibly insufficient",
+    "allFourKindsClassify": [
+      "square",
+      "rectangle",
+      "rhombus",
+      "parallelogram"
+    ],
+    "equidistantPointVerified": {
+      "point": [
+        -7,
+        0
+      ],
+      "squaredDistances": [
+        106,
+        106
+      ]
+    }
+  },
+  "sectionFormula": {
+    "derivedFrom": "similar triangles from projecting onto the axes, similarity established from parallel horizontals",
+    "convention": "AP : PB = m1 : m2, and m1 multiplies the FAR endpoint because a long AP puts P near B",
+    "taughtAsConsequenceNotRule": true,
+    "positionCheckTaught": "ask which endpoint the answer should be near",
+    "ratioRecoveredIndependently": true,
+    "reversalTestedAtRatios": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "endpointSwapWithRatioReversalGivesSamePoint": true,
+    "exactCoordinates": {
+      "A(1,2)B(4,6) 2:1": "(3, 14/3)",
+      "A(1,3)B(5,7) 2:3": "(13/5, 23/5)"
+    }
+  },
+  "midpointRegression": {
+    "isTheSectionFormulaAt1to1": true,
+    "comparedAgainstClass9AverageFormForEveryOrderedPair": true,
+    "derivedNotRestated": true,
+    "reversalHarmlessOnlyHere": true
+  },
+  "internalDivision": {
+    "nonPositiveRatioThrows": true,
+    "strictlyBetweenRequired": true,
+    "endpointFails": true,
+    "pointBeyondEndpointFails": true,
+    "ratiosCheckedInternal": 7
+  },
+  "crossDimension": {
+    "ratioOfReturnsNullOnDisagreement": true,
+    "degenerateCasesHandled": [
+      "vertical segment: x is uninformative, y decides",
+      "horizontal segment: y is uninformative, x decides"
+    ],
+    "pointOffSegmentGetsNoRatio": true
+  },
+  "defectsFound": [
+    "two unused imports"
+  ],
+  "defectNote": "the model was built and exercised against every ratio, quadrilateral kind and degenerate case before any lesson prose was written \u2014 the second checkpoint running where that ordering cut the defect count",
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch7Rows": 4,
+      "stages": "5 of 5 at all three viewports",
+      "finishAction": "fired at all three",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "confirmedOnScreenAllThreeWidthsBeforeFinish": [
+        "the exact fraction 14/3",
+        "the point (3, ...)",
+        "the ratio 2 : 1",
+        "the similar-triangles derivation"
+      ],
+      "placeholdersVisible": false,
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 62,
+    "remaining": 3,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "residualMap": {
+    "computedByDifferencingNotAssumed": true,
+    "totalRemaining": 3,
+    "allInChapter": 8,
+    "units": [
+      {
+        "handle": "c10:8.3b",
+        "section": "8.3",
+        "proofExpectation": "UNDERSTAND",
+        "risk": "C",
+        "objective": "motivate the ratios at 0 and 90 degrees and say which are not defined"
+      },
+      {
+        "handle": "c10:8.4a",
+        "section": "8.4",
+        "proofExpectation": "PROVE",
+        "risk": "C",
+        "objective": "prove sin squared A + cos squared A = 1 and derive the secant and cosecant identities"
+      },
+      {
+        "handle": "c10:8.4b",
+        "section": "8.4",
+        "proofExpectation": "APPLY",
+        "risk": "A",
+        "objective": "use the identities to prove simple trigonometric identities"
+      }
+    ],
+    "everyOtherChapterComplete": true
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "heightsDistances": 3,
+    "realNumbers": 4,
+    "polynomials": 4,
+    "arithmeticProgressions": 5,
+    "probability": 4,
+    "areasRelatedToCircles": 3,
+    "circles": 5,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2448,
+    "testFiles": 121,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_COORDINATE_GEOMETRY_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_COORDINATE_SEGMENT_EXTENSION",
+  "nextRecommendation": {
+    "wave": "one wave finishes Class 10: Chapter 8 units 8.3b, 8.4a, 8.4b",
+    "risk": "two of the three are risk C, the highest in the map and the same rating the checkpoint-55 pilot carried",
+    "frontier8_3b": "at 0 and 90 degrees the ratios stop being ratios of sides of an actual triangle, so rightTriangleRoles cannot express what the unit is about; expect to extend it or to state the model's limits honestly",
+    "frontier8_4a": "PROVE, so checkpoint 67's discipline applies \u2014 the Pythagorean identity proved from the triangle, with secant and cosecant derived from it rather than listed alongside",
+    "progressionNote": "Class 9 has no trigonometry, so this is genuinely new, unlike the last four waves"
+  }
+}

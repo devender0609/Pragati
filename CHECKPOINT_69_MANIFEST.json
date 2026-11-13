@@ -1,0 +1,204 @@
+{
+  "checkpoint": 69,
+  "canonicalVersion": "0.84.0-c10.15",
+  "packageCreatedUtc": "2026-10-23T19:41:37Z",
+  "waveScope": {
+    "units": [
+      "c10:8.3b",
+      "c10:8.4a",
+      "c10:8.4b"
+    ],
+    "authored": 3,
+    "sections": {
+      "8.3": "folio 121",
+      "8.4": "folio 128"
+    },
+    "sourceConstraint": "ratios at 0 and 90 motivated, not derived; simple identities only"
+  },
+  "boundaryAngles": {
+    "method": "limiting argument, per the crosswalk \u2014 no figure drawn at 0 or 90",
+    "noUnitCircle": true,
+    "noDegenerateTriangle": true,
+    "rightTriangleRolesUnchanged": true,
+    "basis": {
+      "0": "motivated_by_limiting_argument",
+      "30": "derived_from_triangle",
+      "45": "derived_from_triangle",
+      "60": "derived_from_triangle",
+      "90": "motivated_by_limiting_argument"
+    },
+    "visualsInAllThreeLessons": 0
+  },
+  "architecture": {
+    "verdict": "GENERAL_BOUNDARY_TRIG_EXTENSION (B)",
+    "reasonsBeyondTwoTableRows": [
+      "undefined is a KIND, not a number: valueOf throws rather than returning anything, and no Infinity, NaN or sentinel is stored",
+      "only sin and cos are authored; tan, cot, sec and cosec are derived by exact division, so a zero denominator PRODUCES undefined",
+      "values are exact as (p/q) root k, and a source-conventional written form is checked numerically against the computed value so the display cannot drift"
+    ],
+    "singleSourceOfTruth": "STANDARD_ANGLE_RATIOS is now derived from specialAngles.ts; shape, type and all nine values unchanged",
+    "notDone": [
+      "weakening the acute guard",
+      "a second special-angle table",
+      "a CAS"
+    ]
+  },
+  "table": {
+    "angles": [
+      0,
+      30,
+      45,
+      60,
+      90
+    ],
+    "ratios": 6,
+    "invariantsChecked": [
+      "sin squared plus cos squared equals 1 at every angle",
+      "reciprocals multiply to 1 where both defined, and are undefined where the base is zero",
+      "tan equals sin over cos where cos is non-zero",
+      "every written form matches its computed value"
+    ]
+  },
+  "undefinedValues": {
+    "count": 4,
+    "entries": [
+      "cosec 0",
+      "cot 0",
+      "tan 90",
+      "sec 90"
+    ],
+    "eachCarriesAReason": true,
+    "neverANumber": true,
+    "zeroVersusUndefinedTaught": "cot 90 = 0 beside tan 90 undefined, same angle",
+    "auditInvalidDivision": {
+      "negativeFixtures": 4,
+      "correctionsPass": 3,
+      "findingsInAuthoredLessons": 0
+    }
+  },
+  "pythagoreanProof": {
+    "steps": 6,
+    "hasGivenAndToProve": true,
+    "dividesByHypotenuseSquaredWithNonZeroStated": true,
+    "whatIsNewStated": "dividing by h squared removes the scale, turning a statement about lengths into one about the angle",
+    "acuteProofSeparatedFromBoundaryVerification": true,
+    "statedOnlyFixtureFailsProofScope": true
+  },
+  "derivedIdentities": {
+    "bothDerivedNeitherListed": true,
+    "secant": {
+      "identity": "1 + tan squared A = sec squared A",
+      "condition": "cos A not equal 0"
+    },
+    "cosecant": {
+      "identity": "1 + cot squared A = cosec squared A",
+      "condition": "sin A not equal 0"
+    },
+    "conditionStatedInsideTheDerivation": true
+  },
+  "applications": {
+    "style": "one-directional LHS to RHS chains with reasons",
+    "cancellingAcrossAdditionTaught": true,
+    "numericSanityIsNotProof": {
+      "identitiesEvaluated": 6,
+      "statedInLessonTestsAndReport": true,
+      "lessonAddsThatOneDisagreeingAngleDISPROVES": true
+    },
+    "auditProofByExample": {
+      "catchesProvedByChecking": true,
+      "passesTheCorrection": true,
+      "findingsInAuthoredLessons": 0
+    },
+    "outOfScopeAbsent": [
+      "compound angle",
+      "double angle",
+      "unit circle",
+      "radians"
+    ]
+  },
+  "defectsFound": [
+    "two of my own audits flagged sentences quoting the error to refute it \u2014 the student's 'tan 90 = infinity' and the question 'Could you divide by cos squared A at 90?'; the SEVENTH checkpoint to hit this pattern, so the exemption now covers the interrogative form",
+    "four unused imports"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch8Rows": 7,
+      "stages": "5 of 5 for both new proof lessons at all three viewports",
+      "finishAction": "fired at all three",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "confirmedOnScreen": [
+        "not defined in the boundary table",
+        "GIVEN",
+        "TO PROVE",
+        "sin squared A + cos squared A = 1",
+        "cos A not equal 0"
+      ],
+      "infinityAppearsOnlyInsideARefutation": true,
+      "placeholdersVisible": false,
+      "internalIdsVisible": false
+    }
+  },
+  "finalClass10State": {
+    "instructionalUnits": 65,
+    "authoredStandaloneLessons": 65,
+    "unauthored": 0,
+    "unresolvedUnits": 0,
+    "contextualDispositionedRecords": [
+      "section 1.1 Euclid's algorithm, SECTION_1_1_DISPOSITION from checkpoint 62 \u2014 recorded, not taught, not a unit"
+    ]
+  },
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "note": "authoring complete is not review complete; no Class 10 lesson has been seen by a human reviewer"
+  },
+  "regressions": {
+    "priorClass10Lessons": 62,
+    "allAtVersion1": true,
+    "chapter8PilotVerifiedAgainstRederivedTable": true,
+    "chapter9UsesSameStandardAngleValues": true,
+    "noBoundaryValueLeaksIntoHeightsAndDistances": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2482,
+    "testFiles": 122,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_INSTRUCTIONAL_AUTHORING_COMPLETE_PENDING_REVIEW",
+  "nextRecommendation": {
+    "checkpoint": "Class 10 Integration and Review Readiness \u2014 deliberately not started here",
+    "shouldDo": [
+      "reconcile all 65 artifacts against the decomposition",
+      "verify every lesson route end to end",
+      "generate artifact-level review identities",
+      "freeze the review candidate set",
+      "run deterministic full-Class-10 QA",
+      "prepare human-review packages",
+      "preserve the public-safe gate"
+    ],
+    "carryForward": [
+      "the Class 9 review produced 16 accepted MINOR findings; that shape is worth reusing",
+      "Class 10 has fourteen semantic models across the waves \u2014 check each is still the single source of truth for what it owns, as STANDARD_ANGLE_RATIOS turned out not to be until this checkpoint"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "chapterNumber": 3,
+    "title": "The World of Numbers",
+    "score": 3,
+    "why": [
+      "unusual provenance a reviewer must check",
+      "contains a revised artifact"
+    ]
+  },
+  {
+    "chapterNumber": 7,
+    "title": "The Mathematics of Maybe: Introduction to Probability",
+    "score": 3,
+    "why": [
+      "new mathematics with no prior-class counterpart"
+    ]
+  },
+  {
+    "chapterNumber": 11,
+    "title": "The World of Algorithms",
+    "score": 3,
+    "why": [
+      "new mathematics with no prior-class counterpart"
+    ]
+  },
+  {
+    "chapterNumber": 9,
+    "title": "Propositions and their Converses",
+    "score": 2,
+    "why": [
+      "unusual provenance a reviewer must check"
+    ]
+  },
+  {
+    "chapterNumber": 1,
+    "title": "Orienting Yourself: The Use of Coordinates",
+    "score": 1,
+    "why": [
+      "representation the reviewer judges visually"
+    ]
+  },
+  {
+    "chapterNumber": 5,
+    "title": "I’m Up and Down, and Round and Round",
+    "score": 1,
+    "why": [
+      "representation the reviewer judges visually"
+    ]
+  },
+  {
+    "chapterNumber": 6,
+    "title": "Measuring Space: Perimeter and Area",
+    "score": 1,
+    "why": [
+      "representation the reviewer judges visually"
+    ]
+  },
+  {
+    "chapterNumber": 10,
+    "title": "How Quantities Combine: Understanding Data",
+    "score": 1,
+    "why": [
+      "representation the reviewer judges visually"
+    ]
+  },
+  {
+    "chapterNumber": 12,
+    "title": "Quadrilaterals",
+    "score": 1,
+    "why": [
+      "representation the reviewer judges visually"
+    ]
+  },
+  {
+    "chapterNumber": 14,
+    "title": "Math of Space: Surface Area and Volume",
+    "score": 1,
+    "why": [
+      "representation the reviewer judges visually"
+    ]
+  },
+  {
+    "chapterNumber": 2,
+    "title": "Introduction to Linear Polynomials",
+    "score": 0,
+    "why": [
+      "ordinary production chapter"
+    ]
+  },
+  {
+    "chapterNumber": 4,
+    "title": "Exploring Algebraic Identities",
+    "score": 0,
+    "why": [
+      "ordinary production chapter"
+    ]
+  },
+  {
+    "chapterNumber": 8,
+    "title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+    "score": 0,
+    "why": [
+      "ordinary production chapter"
+    ]
+  },
+  {
+    "chapterNumber": 13,
+    "title": "Two Variables, One Line",
+    "score": 0,
+    "why": [
+      "ordinary production chapter"
+    ]
+  }
+]

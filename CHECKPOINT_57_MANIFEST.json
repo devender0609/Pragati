@@ -1,0 +1,106 @@
+{
+  "checkpoint": 57,
+  "canonicalVersion": "0.84.0-c10.3",
+  "packageCreatedUtc": "2026-10-19T18:53:07Z",
+  "checkpoint56Reconciliation": {
+    "issue": "report said five stages, manifest said 4/4",
+    "finding": "no route defect; the two counted different things",
+    "resolution": "manifest updated to '5 of 5 reached' with a separate finishAction; 4/4 had counted stage transitions from the default stage"
+  },
+  "pilotScope": {
+    "units": [
+      "c10:6.2a",
+      "c10:6.3a",
+      "c10:6.3b",
+      "c10:6.4a",
+      "c10:6.4b",
+      "c10:6.4c"
+    ],
+    "authored": 6,
+    "verifiedAgainst": "CLASS10_DECOMPOSITION.json"
+  },
+  "proofScopeMap": {
+    "PROVE": [
+      "6.3a"
+    ],
+    "STATE_WITHOUT_PROOF": [
+      "6.4a",
+      "6.4b"
+    ],
+    "APPLY": [
+      "6.3b",
+      "6.4c"
+    ],
+    "UNDERSTAND": [
+      "6.2a"
+    ]
+  },
+  "architecture": {
+    "verdict": "general geometry extension",
+    "added": [
+      "parallelGroups",
+      "validateParallelGroups"
+    ],
+    "rationale": "an arrow mark is ink; BPT's hypothesis is a parallel line, so the figure must assert parallelism and the validator must recompute it from coordinates",
+    "notAdded": "SimilarityFigureSpec"
+  },
+  "proofScopeAudit": {
+    "module": "src/curriculum/proofScopeAudit.ts",
+    "approach": "distinguishes proving THE CRITERION from applying it to an instance, by the object of the proof verb; not a word ban",
+    "fixtures": {
+      "mustFire": 3,
+      "mustNotFire": 3,
+      "allCorrect": true
+    },
+    "leakageFound": 0
+  },
+  "defectsFoundByOwnTests": [
+    "6.3b defined 'transversal' and never used it \u2014 the recurring glossary failure"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch6Rows": 6,
+      "stages": "5 of 5 reached",
+      "finishAction": "fired",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow, 0 unlabelled svg",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      }
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 13,
+    "remaining": 52,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": "4 lessons unchanged at version 1",
+    "compositeSolids": "3 lessons unchanged at version 1",
+    "class9": "92 lessons untouched"
+  },
+  "baselinesUpdated": 3,
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2157,
+    "testFiles": 110,
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_SIMILARITY_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_GEOMETRY_EXTENSION",
+  "nextRecommendation": "Chapter 4 quadratic equations (4.2a-4.4b) \u2014 residual risk is mathematical fidelity and scope boundaries, and the real-roots restriction is the same family of constraint this checkpoint tested; then Chapter 13 statistics as the largest block"
+}

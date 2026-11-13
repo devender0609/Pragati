@@ -1,0 +1,263 @@
+{
+  "checkpoint": 67,
+  "canonicalVersion": "0.84.0-c10.13",
+  "packageCreatedUtc": "2026-10-22T19:31:00Z",
+  "waveScope": {
+    "units": [
+      "c10:10.2a",
+      "c10:10.2b",
+      "c10:10.3a",
+      "c10:10.3b",
+      "c10:10.3c"
+    ],
+    "authored": 5,
+    "sections": {
+      "10.2": "folio 145",
+      "10.3": "folio 147"
+    },
+    "reviewSections": [
+      "10.1",
+      "10.4"
+    ],
+    "proveUnits": [
+      "c10:10.2b",
+      "c10:10.3b"
+    ],
+    "proofDependencyInCanonicalData": "10.3b prerequisites include 10.2b"
+  },
+  "progression": {
+    "category": "PROOF_DEEPENING",
+    "class9Lessons": 8,
+    "class9TangentMentions": 0,
+    "alreadyCovered": [
+      "chords and the angles they subtend, proved",
+      "perpendicular from the centre to a chord, proved",
+      "central versus inscribed angles, proved",
+      "cyclic quadrilaterals, proved",
+      "RHS and other congruence criteria as tools"
+    ],
+    "genuinelyNewInClass10": [
+      "the tangent and its point of contact",
+      "tangent perpendicular to the radius",
+      "tangent count by point position",
+      "equal tangent segments from an external point"
+    ],
+    "note": "10.2a is NEW_NAMED_OBJECT while the proof units are PROOF_DEEPENING \u2014 the tangent is new, circle proof is not"
+  },
+  "architecture": {
+    "verdict": "GENERAL_TANGENCY_EXTENSION",
+    "existingCapability": "checkpoint 32 draws circles, arcs and chords; checkpoint 66 added CircleRegion for areas",
+    "gap": "no concept of a line's relation to a circle, nor a point's position relative to one",
+    "added": [
+      "positionOf (interior/on/exterior from squared distances)",
+      "relationOf (secant/tangent/misses)",
+      "isTangentAt",
+      "tangentCount and tangentCountFor",
+      "tangentSegmentLengthSq",
+      "tangentSegmentsEqual",
+      "validateTangentFigure",
+      "validateTwoTangents",
+      "corresponds",
+      "auditProofByDiagram",
+      "auditCircularProof"
+    ],
+    "exactness": "integer arithmetic throughout; squared distances only, no square roots",
+    "notAdded": [
+      "Chapter10TangentSpec",
+      "a general analytic-geometry engine"
+    ]
+  },
+  "proofScope": {
+    "auditedAtEachUnitsOwnExpectation": true,
+    "allFivePass": true,
+    "negativeFixtures": [
+      "a PROVE unit that only asserts its theorem fails",
+      "a PROVE unit saying 'it can be shown' fails as deferral",
+      "the APPLY unit, which uses both theorems and reproves neither, passes cleanly"
+    ],
+    "proofChains": {
+      "10.2b": 6,
+      "10.3b": 7
+    },
+    "bothCarryGivenAndToProve": true
+  },
+  "theorem1": {
+    "statement": "the tangent at any point of a circle is perpendicular to the radius through the point of contact",
+    "proof": "every other point of the tangent lies outside the circle, else two shared points; so OQ > OP for all other Q; so OP is the shortest distance; and the shortest distance from a point to a line is along the perpendicular",
+    "shortestDistanceNamedAsPriorResult": true,
+    "secantComparisonShowsHypothesisDoingWork": true,
+    "noRightAngleMarkInsideTheProofLesson": true,
+    "lessonStatesTheMarkWouldAssumeTheConclusion": true
+  },
+  "tangentCount": {
+    "derivedFromPosition": true,
+    "interior": 0,
+    "on": 1,
+    "exterior": 2,
+    "centreReturnsZero": true,
+    "interiorCaseGivenAReason": "every line through an interior point meets the circle twice and so is a secant"
+  },
+  "theorem2": {
+    "statement": "the lengths of the two tangents from an external point are equal",
+    "criterion": "RHS",
+    "conditionsEstablishedSeparately": [
+      "OA = OB as radii",
+      "right angles at A and B BY THEOREM 1",
+      "OP common, being the same segment"
+    ],
+    "correspondence": "O<->O, A<->B, P<->P, so PA corresponds to PB",
+    "dependenceOnTheorem1Explained": "without it the triangles are not known to be right-angled and RHS is unavailable",
+    "converseExplicitlyNotClaimed": true,
+    "tangentLineVsSegmentDistinguished": true
+  },
+  "proofHygiene": {
+    "auditProofByDiagram": {
+      "findingsInAuthoredLessons": 0,
+      "negativeFixtures": 5,
+      "correctionsPass": true
+    },
+    "auditCircularProof": {
+      "findingsInAuthoredLessons": 0,
+      "negativeFixtures": 2,
+      "correctionsPass": true
+    },
+    "quotedMisconceptionExemption": "handled from the start rather than discovered, as in checkpoints 58, 60, 62, 63, 64 and 65"
+  },
+  "congruenceCorrespondence": {
+    "passes": [
+      "PA<->PB",
+      "OA<->OB"
+    ],
+    "fails": [
+      "PA<->OB",
+      "OA<->PB"
+    ]
+  },
+  "canonicalFigure": {
+    "construction": "3-4-5 triangle scaled by five",
+    "radius": 15,
+    "externalPoint": [
+      25,
+      0
+    ],
+    "contactPoints": [
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        -12
+      ]
+    ],
+    "OA": 15,
+    "PA": 20,
+    "OP": 25,
+    "perpendicularityExact": "dot product of radius and tangent segment is exactly 0",
+    "negativeFixtures": [
+      "interior point claiming two tangents",
+      "contact point off the circle",
+      "coincident contact points",
+      "tangent-looking line with the wrong stated contact point"
+    ]
+  },
+  "applications": {
+    "recomputed": [
+      [
+        15,
+        25,
+        20
+      ],
+      [
+        8,
+        17,
+        15
+      ],
+      [
+        5,
+        13,
+        12
+      ]
+    ],
+    "angles": [
+      110,
+      120,
+      "6 root 2 = 8.49"
+    ],
+    "tangentLengthKeptTiedToItsRightTriangle": true,
+    "thinJustificationAppearsOnlyAsTheThingBeingImproved": true
+  },
+  "defectsFound": [
+    "RHS was named as prior knowledge only in the teacher notes, never in student-facing prose; the progression test caught it and the explanation now says so",
+    "one unused import"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch10Rows": 5,
+      "stages": "5 of 5 at all three viewports",
+      "finishAction": "fired at all three",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "confirmedOnScreenAllThreeWidthsBeforeFinish": [
+        "GIVEN",
+        "TO PROVE",
+        "RHS",
+        "the O<->O, A<->B, P<->P correspondence"
+      ],
+      "placeholdersVisible": false,
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 58,
+    "remaining": 7,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "heightsDistances": 3,
+    "realNumbers": 4,
+    "polynomials": 4,
+    "arithmeticProgressions": 5,
+    "probability": 4,
+    "areasRelatedToCircles": 3,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2416,
+    "testFiles": 120,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_CIRCLES_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_TANGENCY_EXTENSION",
+  "nextRecommendation": {
+    "method": "check each chapter's recorded progression category before framing its wave",
+    "1": "Chapter 7 Coordinate Geometry \u2014 cross-representation fidelity; coordinates, distance, section formula, derived points and the figure must agree; the exact-integer discipline transfers via Pythagorean triples",
+    "2": "the remaining seven units \u2014 inspect the residual map and finish the ordinary waves"
+  }
+}

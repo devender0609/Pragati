@@ -1,0 +1,204 @@
+{
+  "checkpoint": 83,
+  "canonicalVersion": "0.84.0-c11.12-complex-pilot",
+  "verdict": "CLASS_11_COMPLEX_NUMBERS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_COMPLEX_NUMBER_ARGAND_EXTENSION",
+  "packageCreatedUtc": "2026-10-30T13:36:33Z",
+  "authored": {
+    "chapter4": "7/7",
+    "class11Total": 33,
+    "perChapter": [
+      12,
+      6,
+      8,
+      7
+    ],
+    "remaining": 60
+  },
+  "architectureVerdict": "B",
+  "exactness": {
+    "partsAreRationals": true,
+    "modulusReusesClass10Exact": true,
+    "examples": {
+      "|3+4i|": "5",
+      "|1+i|": "root2",
+      "|0|": "0"
+    },
+    "argumentIsTypedAngle": true,
+    "noFloatingComplexExponentiation": true
+  },
+  "refusals": [
+    "division by zero throws",
+    "zero has no argument and says so",
+    "powers of i reduce by remainder mod 4",
+    "no operation can multiply radicals of negatives",
+    "irrational root parts are withheld rather than approximated"
+  ],
+  "identityVsDisplay": {
+    "3+(-2)i": "3 - 2i",
+    "5+0i": "5",
+    "0+1i": "i",
+    "0+0i": "0",
+    "equalityComparesParts": true
+  },
+  "argandVisual": {
+    "wiredLayers": [
+      "spec",
+      "validateVisual",
+      "VisualSpec union",
+      "renderer dispatch",
+      "test through real LearnSectionView",
+      "browser"
+    ],
+    "allInThisCheckpoint": true,
+    "namedFiguresInBrowser": 2,
+    "plottedPointsPerFigure": [
+      4,
+      1
+    ],
+    "altTextChars": [
+      475,
+      253
+    ],
+    "namesAxes": true,
+    "colourDependent": false,
+    "note": "the gate failed on first run because the test did not reach the See it stage; a test defect, not a product one"
+  },
+  "scopeFragments": {
+    "SF-1-SUMMATIVE": "C11-CPX-05 Argand plane, SUMMATIVE_CORE",
+    "SF-1-FORMATIVE": "C11-CPX-FO5a polar form, FORMATIVE_ONLY",
+    "sharedParentSection": "4.5",
+    "keptSeparate": true
+  },
+  "fo5b": {
+    "sourceKind": "cbse_only",
+    "cbseEntryId": "FO-5",
+    "officialSectionId": "",
+    "ncertOwner": null,
+    "textbookBodyDemand": "STATE_WITHOUT_PROOF",
+    "ftaProved": false
+  },
+  "statusIndependence": {
+    "FORMATIVE_ONLY_units": [
+      "C11-SET-FO1",
+      "C11-RF-FO2",
+      "C11-TRG-FO3",
+      "C11-CPX-FO5a",
+      "C11-CPX-FO5b"
+    ],
+    "requiredCore": [
+      "C11-SET-FO1"
+    ],
+    "optionalEnrichment": 4,
+    "distinctInstructionalStatuses": 2,
+    "assertedByTest": true
+  },
+  "defectsFound": [
+    {
+      "category": "model",
+      "what": "irrational root imaginary parts were stored as 1198957881/1000000000, a float wearing a fraction's clothes",
+      "fix": "roots returns null for that case; the exact written form is carried instead"
+    },
+    {
+      "category": "content",
+      "what": "imaginary unit defined and never used"
+    },
+    {
+      "category": "content",
+      "what": "two worked-example justifications restated their step"
+    },
+    {
+      "category": "test",
+      "what": "the renderer gate did not reach the See it stage where the figure lives"
+    }
+  ],
+  "baselinesMoved": 5,
+  "scopeFragmentArtifacts": 3,
+  "cbseOnlyArtifacts": 3,
+  "browser": {
+    "lessonsWalked": "7/7",
+    "stages": "5/5 plus Finish",
+    "rows": 7,
+    "uniqueIds": 7,
+    "foreignRows": 0,
+    "maxOverflow": "0px",
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "uncaught": 0,
+    "viewports": [
+      {
+        "width": 1280,
+        "overflow": "0px",
+        "overWide": 0
+      },
+      {
+        "width": 834,
+        "overflow": "0px",
+        "overWide": 0
+      },
+      {
+        "width": 360,
+        "overflow": "0px",
+        "overWide": 0
+      }
+    ],
+    "notClaimed": "no screen reader used, no contrast measured, no WCAG conformance claim"
+  },
+  "visualRegression": {
+    "circular_graph": "validates",
+    "real_function_graph": "validates",
+    "venn": "validates"
+  },
+  "qa": {
+    "tests": 2712,
+    "testFiles": 129,
+    "typecheck": 0,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass",
+    "previousTotal": 2662
+  },
+  "delivery": {
+    "class11Preview": 33,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "publicSafeClass11": 0
+  },
+  "priorWork": {
+    "class11Chapters1to3": [
+      12,
+      6,
+      8
+    ],
+    "allVersion1": true,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74-v1-DFC56A frozen"
+  },
+  "environmentHygiene": {
+    "envLocalRemovedBeforeQa": true,
+    "envLocalInPackage": false,
+    "note": "checkpoint 82 found .env.local contamination; explicitly guarded here"
+  },
+  "humanCheckUnits": {
+    "C11-IND-01": "untouched",
+    "C11-INQ-FO6": "untouched"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "gitPreflight": ".git is not present in the packaged source; stated rather than guessed. Now also covers tools/browser-qa/studentFixture.mjs since browser QA is a release gate",
+  "next": {
+    "recommendation": "Conic Sections",
+    "alternative": "Permutations and Combinations",
+    "executed": false,
+    "rationale": "Conic Sections reuses coordinate and exact-radical machinery and its eight units share one semantic frame, a locus condition becoming an equation. Permutations and Combinations needs counting semantics nothing existing provides, so it is a new frontier rather than a reuse win.",
+    "carryForward": "the four-layer visual rule held; it should hold again for any conic locus figure"
+  }
+}
