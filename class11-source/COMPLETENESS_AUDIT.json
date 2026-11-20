@@ -1,0 +1,115 @@
+{
+  "id": "CLASS11_COMPLETENESS_AUDIT",
+  "ranAt": "checkpoint 98 (v0.84.0-c11.45)",
+  "baseline": {
+    "archive": "pragati-0.84.0-c11.44-space-hardened.zip",
+    "sha256": "cbc463fcf6aed33dc81501c8f716490fafb49a7d53eed993a20b0ffd4b9c134c"
+  },
+  "readOnly": true,
+  "unitsChanged": 0,
+  "lessonsAuthored": 0,
+  "census": {
+    "units": 93,
+    "assessment": {
+      "SUMMATIVE_CORE": 80,
+      "FORMATIVE_ONLY": 13
+    },
+    "instructional": {
+      "REQUIRED_CORE": 82,
+      "OPTIONAL_ENRICHMENT": 9,
+      "REQUIRED_PREREQUISITE": 2
+    },
+    "lifecycle": {
+      "READY_FOR_AUTHORING": 93
+    },
+    "humanCheck": 0,
+    "authoredArtifacts": 87
+  },
+  "coverage": {
+    "unitsCovered": 90,
+    "unitsNotCovered": 3,
+    "notCovered": [
+      "C11-SEQ-FO8",
+      "C11-3DG-FO10",
+      "C11-LIM-FO11"
+    ],
+    "allThree": "CBSE_ONLY, FORMATIVE_ONLY, OPTIONAL_ENRICHMENT",
+    "summativeCoreUncovered": 0,
+    "method": "units matched across all four source kinds (NCERT_SECTION, NCERT_SUBSECTION, SCOPE_FRAGMENT, CBSE_ONLY) against every identifier an authored artifact carries"
+  },
+  "methodCorrection": {
+    "firstAttempt": "reported 34 uncovered units",
+    "cause": "the matcher read only source.section and source.cbseEntry; 22 units are NCERT_SUBSECTION and 9 are SCOPE_FRAGMENT, whose keys live under different fields, so their keys came out blank",
+    "classification": "HARNESS",
+    "correctedResult": 3,
+    "note": "the 34 figure was never reported as a finding"
+  },
+  "finding1": {
+    "id": "GD-1-FORMATIVE-INSTRUCTIONAL-STATUS",
+    "status": "REFRAMED, not resolved",
+    "originalFraming": "nine units at OPTIONAL_ENRICHMENT contradict the checkpoint-94 policy",
+    "newFact": "six of the nine are ALREADY AUTHORED and shipped",
+    "authored": [
+      "C11-RF-FO2",
+      "C11-TRG-FO3",
+      "C11-CPX-FO5a",
+      "C11-CPX-FO5b",
+      "C11-BIN-FO7",
+      "C11-STL-FO9"
+    ],
+    "notAuthored": [
+      "C11-SEQ-FO8",
+      "C11-3DG-FO10",
+      "C11-LIM-FO11"
+    ],
+    "consequence": "the debt is mostly a STATUS-LABEL question, not an authoring gap: reclassifying the six would change metadata and counting only, with no new content. Only three would require authoring.",
+    "changedHere": false
+  },
+  "finding2": {
+    "id": "GD-2-CBSE-ONLY-CHAPTER-OWNERSHIP",
+    "status": "NEW, recorded not repaired",
+    "issue": "three units are CBSE_ONLY with ncertChapterOwner null in the decomposition, but their authored artifacts declare an NCERT chapter owner",
+    "units": {
+      "C11-RF-FO2": {
+        "artifact": "ncert_kemh1_fo2_composition_lesson",
+        "artifactOwner": "ncert_kemh1_ch02"
+      },
+      "C11-TRG-FO3": {
+        "artifact": "ncert_kemh1_fo3_general_solutions_lesson",
+        "artifactOwner": "ncert_kemh1_ch03"
+      },
+      "C11-CPX-FO5b": {
+        "artifact": "ncert_kemh1_fo5b_complex_quadratics_lesson",
+        "artifactOwner": "ncert_kemh1_ch04"
+      }
+    },
+    "whyItMatters": "this is the exact error C11-INQ-FO6 was protected from at checkpoints 94 and 96C \u2014 a CBSE-only topic given a bibliographic chapter it does not belong to. These three predate that policy.",
+    "notAnIssue": [
+      "SF-1-FORMATIVE",
+      "SF-2-FORMATIVE",
+      "SF-3-FORMATIVE",
+      "FO-1-APPLICATION"
+    ],
+    "whyNot": "scope fragments are parts of real NCERT sections, so chapter ownership is correct for them",
+    "changedHere": false,
+    "impactIfRepaired": "would move up to three lessons out of chapter-owned into chapter-less, changing 85/1/1/87 and three chapter row counts"
+  },
+  "finding3": {
+    "id": "EXACT_RADICAL_ZERO_FORMATTING_DEBT",
+    "status": "unchanged, still open"
+  },
+  "milestone": {
+    "supported": "all 14 current NCERT Class 11 textbook chapters have authored summative-core coverage",
+    "evidence": "0 SUMMATIVE_CORE units without authored coverage",
+    "notSupported": "Class 11 fully authored"
+  },
+  "recommendation": {
+    "order": [
+      "1. Decide GD-2 first: ownership is bibliographic truth, and it changes the denominators every later count depends on",
+      "2. Then decide GD-1's status question for the six already-authored units \u2014 metadata only, no content",
+      "3. Only then author FO8, FO10, FO11, if the policy decision makes them required",
+      "4. EXACT_RADICAL_ZERO_FORMATTING_DEBT separately, with Class 9/10 regressions"
+    ],
+    "rationale": "authoring three lessons before settling the status policy would repeat the FO-6 sequence backwards: content first, governance after"
+  }
+}

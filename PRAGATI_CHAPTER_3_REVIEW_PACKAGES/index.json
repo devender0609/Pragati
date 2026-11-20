@@ -1,0 +1,27 @@
+{
+  "chapter": "ncert_gp_c6_ch03_number_play",
+  "generated": "v0.82.2",
+  "packages": [
+    {
+      "section": "ncert_gp_c6_s3_1",
+      "file": "SECTION_3_1_FOR_REVIEWER.md",
+      "code": "S31-v1-20BA61",
+      "artifactVersion": 2,
+      "fingerprint": "20ba61e4"
+    },
+    {
+      "section": "ncert_gp_c6_s3_2",
+      "file": "SECTION_3_2_FOR_REVIEWER.md",
+      "code": "S32-v1-4F4A92",
+      "artifactVersion": 1,
+      "fingerprint": "4f4a922f"
+    },
+    {
+      "section": "ncert_gp_c6_s3_3",
+      "file": "SECTION_3_3_FOR_REVIEWER.md",
+      "code": "S33-v1-F85783",
+      "artifactVersion": 2,
+      "fingerprint": "f85783be"
+    }
+  ]
+}

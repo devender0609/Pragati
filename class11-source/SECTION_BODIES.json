@@ -1,0 +1,254 @@
+{
+  "1.1": {
+    "heading": "Introduction",
+    "bodyOpening": " The concept of set serves as a fundamental part of the present day mathematics. Today this concept is being used in almost every branch of mathematics. Sets are used to define the concepts of relations and functions. The study of geometry, sequences, probability, etc. requires the knowledge of sets"
+  },
+  "1.2": {
+    "heading": "Sets and their Representations",
+    "bodyOpening": " In everyday life, we often speak of collections of objects of a particular kind, such as, a pack of cards, a crowd of people, a cricket team, etc. In mathematics also, we come across collections, for example, of natural numbers, points, prime numbers, etc. More specially, we examine the following c"
+  },
+  "1.3": {
+    "heading": "The Empty Set",
+    "bodyOpening": " Consider the set A = { x : x is a student of Class XI presently studying in a school } We can go to the school and count the number of students presently studying in Class XI in the school. Thus, the set A contains a finite number of elements. We now write another set B as follows: Reprint 2026-27 "
+  },
+  "1.4": {
+    "heading": "Finite and Infinite Sets",
+    "bodyOpening": " Let A = {1, 2, 3, 4, 5}, B = {a, b, c, d, e, g} and C = { men living presently in different parts of the world} We observe that A contains 5 elements and B contains 6 elements. How many elements does C contain? As it is, we do not know the number of elements in C, but it is some natural number whic"
+  },
+  "1.5": {
+    "heading": "Equal Sets",
+    "bodyOpening": " Given two sets A and B, if every element of A is also an element of B and if every element of B is also an element of A, then the sets A and B are said to be equal. Clearly, the two sets have exactly the same elements. Definition 3 Two sets A and B are said to be equal if they have exactly the same"
+  },
+  "1.6": {
+    "heading": "Subsets",
+    "bodyOpening": " Consider the sets : X = set of all students in your school, Y = set of all students in your class. We note that every element of Y is also an element of X; we say that Y is a subset of X. The fact that Y is subset of X is expressed in symbols as Y \u2282 X. The symbol \u2282 stands for \u2018is a subset of\u2019 or \u2018i"
+  },
+  "1.7": {
+    "heading": "Universal Set",
+    "bodyOpening": " Usually, in a particular context, we have to deal with the elements and subsets of a basic set which is relevant to that particular context. For example, while studying the system of numbers, we are interested in the set of natural numbers and its subsets such as the set of all prime numbers, the s"
+  },
+  "1.8": {
+    "heading": "Venn Diagrams",
+    "bodyOpening": " Most of the relationships between sets can be represented by means of diagrams which are known as Venn diagrams. Venn diagrams are named after the English logician, John Venn (1834-1883). These diagrams consist of rectangles and closed curves usually circles. The universal set is represented usuall"
+  },
+  "1.9": {
+    "heading": "Operations on Sets",
+    "bodyOpening": " In earlier classes, we have learnt how to perform the operations of addition, subtraction, multiplication and division on numbers. Each one of these operations was performed on a pair of numbers to get another number. For example, when we perform the operation of addition on the pair of numbers 5 a"
+  },
+  "1.10": {
+    "heading": "Complement of a Set",
+    "bodyOpening": " Let U be the universal set which consists of all prime numbers and A be the subset of U which consists of all those prime numbers that are not divisors of 42. Thus, A = {x : x \u2208 U and x is not a divisor of 42 }. We see that 2 \u2208 U but 2 \u2209 A, because 2 is divisor of 42. Similarly, 3 \u2208 U but 3 \u2209 A, an"
+  },
+  "2.1": {
+    "heading": "Introduction",
+    "bodyOpening": " Much of mathematics is about finding a pattern \u2013 a recognisable link between quantities that change. In our daily life, we come across many patterns that characterise relations such as brother and sister, father and son, teacher and student. In mathematics also, we come across many relations such a"
+  },
+  "2.2": {
+    "heading": "Cartesian Products of Sets",
+    "bodyOpening": " Suppose A is a set of 2 colours and B is a set of 3 objects, i.e., A = {red, blue}and B = {b, c, s}, where b, c and s represent a particular bag, coat and shirt, respectively. How many pairs of coloured objects can be made from these two sets? Proceeding in a very orderly manner, we can see that th"
+  },
+  "2.3": {
+    "heading": "Relations",
+    "bodyOpening": " Consider the two sets P = {a, b, c} and Q = {Ali, Bhanu, Binoy, Chandra, Divya}. The cartesian product of P and Q has 15 ordered pairs which can be listed as P \u00d7 Q = {(a, Ali), (a,Bhanu), (a, Binoy), ..., (c, Divya)}. We can now obtain a subset of P \u00d7 Q by introducing a relation R between the first"
+  },
+  "2.4": {
+    "heading": "Functions",
+    "bodyOpening": " In this Section, we study a special type of relation called function. It is one of the most important concepts in mathematics. We can, visualise a function as a rule, which produces new elements out of some given elements. There are many terms such as \u2018map\u2019 or \u2018mapping\u2019 used to denote a function. D"
+  },
+  "3.1": {
+    "heading": "Introduction",
+    "bodyOpening": " The word \u2018trigonometry\u2019 is derived from the Greek words \u2018trigon\u2019 and \u2018metron\u2019 and it means \u2018measuring the sides of a triangle\u2019. The subject was originally developed to solve geometric problems involving triangles. It was studied by sea captains for navigation, surveyor to map out the new lands, by "
+  },
+  "3.2": {
+    "heading": "Angles",
+    "bodyOpening": " Angle is a measure of rotation of a given ray about its initial point. The original ray is Chapter 3 TRIGONOMETRIC FUNCTIONS Arya Bhatt (476-550) Fig 3.1 Vertex Reprint 2026-27 44 MATHEMATICS called the initial side and the final position of the ray after rotation is called the terminal side of the"
+  },
+  "3.3": {
+    "heading": "Trigonometric Functions",
+    "bodyOpening": " In earlier classes, we have studied trigonometric ratios for acute angles as the ratio of sides of a right angled triangle. We will now extend the definition of trigonometric ratios to any angle in terms of radian measure and study them as trigonometric functions. Consider a unit circle with centre"
+  },
+  "3.4": {
+    "heading": "Trigonometric Functions of Sum and Difference of Two Angles",
+    "bodyOpening": " In this Section, we shall derive expressions for trigonometric functions of the sum and difference of two numbers (angles) and related expressions. The basic results in this connection are called trigonometric identities. We have seen that 1. sin (\u2013 x) = \u2013 sin x 2. cos (\u2013 x) = cos x We shall now pr"
+  },
+  "4.1": {
+    "heading": "Introduction",
+    "bodyOpening": " In earlier classes, we have studied linear equations in one and two variables and quadratic equations in one variable. We have seen that the equation x2 + 1 = 0 has no real solution as x2 + 1 = 0 gives x2 = \u2013 1 and square of every real number is non-negative. So, we need to extend the real number s"
+  },
+  "4.2": {
+    "heading": "Complex Numbers",
+    "bodyOpening": " Let us denote 1 \u2212 by the symbol i. Then, we have 2 1 i = \u2212. This means that i is a solution of the equation x2 + 1 = 0. A number of the form a + ib, where a and b are real numbers, is defined to be a complex number. For example, 2 + i3, (\u2013 1) + 3 i , 1 4 11 i \u2212 \uf8eb \uf8f6 + \uf8ec \uf8f7 \uf8ed \uf8f8 are complex numbers. Fo"
+  },
+  "4.3": {
+    "heading": "Algebra of Complex Numbers",
+    "bodyOpening": " In this Section, we shall develop the algebra of complex numbers. 4.3.1 Addition of two complex numbers Let z1 = a + ib and z2 = c + id be any two complex numbers. Then, the sum z1 + z2 is defined as follows: z1 + z2 = (a + c) + i (b + d), which is again a complex number. For example, (2 + i3) + (\u2013"
+  },
+  "4.4": {
+    "heading": "The Modulus and the Conjugate of a Complex Number",
+    "bodyOpening": " Let z = a + ib be a complex number. Then, the modulus of z, denoted by | z |, is defined to be the non-negative real number 2 2 a b + , i.e., | z | = 2 2 a b + and the conjugate of z, denoted as z , is the complex number a \u2013 ib, i.e., z = a \u2013 ib. For example, 2 2 3 3 1 10 i + = + = , 2 2 2 5 2 ( 5)"
+  },
+  "4.5": {
+    "heading": "Argand Plane and Polar Representation",
+    "bodyOpening": " We already know that corresponding to each ordered pair of real numbers (x, y), we get a unique point in the XY- plane and vice-versa with reference to a set of mutually perpendicular lines known as the x-axis and the y-axis. The complex number x + iy which corresponds to the ordered pair (x, y) ca"
+  },
+  "5.1": {
+    "heading": "Introduction",
+    "bodyOpening": " In earlier classes, we have studied equations in one variable and two variables and also solved some statement problems by translating them in the form of equations. Now a natural question arises: \u2018Is it always possible to translate a statement problem in the form of an equation? For example, the h"
+  },
+  "5.2": {
+    "heading": "Inequalities",
+    "bodyOpening": " Let us consider the following situations: (i) Ravi goes to market with ` 200 to buy rice, which is available in packets of 1kg. The price of one packet of rice is ` 30. If x denotes the number of packets of rice, which he buys, then the total amount spent by him is ` 30x. Since, he has to buy rice "
+  },
+  "5.3": {
+    "heading": "Algebraic Solutions of Linear Inequalities in One Variable and their",
+    "bodyOpening": " Graphical Representation Let us consider the inequality (1) of Section 6.2, viz, 30x < 200 Note that here x denotes the number of packets of rice. Obviously, x cannot be a negative integer or a fraction. Left hand side (L.H.S.) of this inequality is 30x and right hand side (RHS) is 200. Therefore, "
+  },
+  "6.1": {
+    "heading": "Introduction",
+    "bodyOpening": " Suppose you have a suitcase with a number lock. The number lock has 4 wheels each labelled with 10 digits from 0 to 9. The lock can be opened if 4 specific digits are arranged in a particular sequence with no repetition. Some how, you have forgotten this specific sequence of digits. You remember on"
+  },
+  "6.2": {
+    "heading": "Fundamental Principle of Counting",
+    "bodyOpening": " Let us consider the following problem. Mohan has 3 pants and 2 shirts. How many different pairs of a pant and a shirt, can he dress up with? There are 3 ways in which a pant can be chosen, because there are 3 pants available. Similarly, a shirt can be chosen in 2 ways. For every choice of a pant, t"
+  },
+  "6.3": {
+    "heading": "Permutations",
+    "bodyOpening": " In Example 1 of the previous Section, we are actually counting the different possible arrangements of the letters such as ROSE, REOS, ..., etc. Here, in this list, each arrangement is different from other. In other words, the order of writing the letters is important. Each arrangement is called a p"
+  },
+  "6.4": {
+    "heading": "Combinations",
+    "bodyOpening": " Let us now assume that there is a group of 3 lawn tennis players X, Y, Z. A team consisting of 2 players is to be formed. In how many ways can we do so? Is the team of X and Y different from the team of Y and X ? Here, order is not important. In fact, there are only 3 possible ways in which the tea"
+  },
+  "7.1": {
+    "heading": "Introduction",
+    "bodyOpening": " In earlier classes, we have learnt how to find the squares and cubes of binomials like a + b and a \u2013 b. Using them, we could evaluate the numerical values of numbers like (98)2 = (100 \u2013 2)2, (999)3 = (1000 \u2013 1)3, etc. However, for higher powers like (98)5, (101)6, etc., the calculations become diff"
+  },
+  "7.2": {
+    "heading": "Binomial Theorem for Positive Integral Indices",
+    "bodyOpening": " Let us have a look at the following identities done earlier: (a+ b)0 = 1 a + b \u2260 0 (a+ b)1 = a + b (a+ b)2 = a2 + 2ab + b2 (a+ b)3 = a3 + 3a2b + 3ab2 + b3 (a+ b)4 = (a + b)3 (a + b) = a4 + 4a3b + 6a2b2 + 4ab3 + b4 In these expansions, we observe that (i) The total number of terms in the expansion i"
+  },
+  "8.1": {
+    "heading": "Introduction",
+    "bodyOpening": " In mathematics, the word, \u201csequence\u201d is used in much the same way as it is in ordinary English. When we say that a collection of objects is listed in a sequence, we usually mean that the collection is ordered in such a way that it has an identified first member, second member, third member and so o"
+  },
+  "8.2": {
+    "heading": "Sequences",
+    "bodyOpening": " Let us consider the following examples: Assume that there is a generation gap of 30 years, we are asked to find the number of ancestors, i.e., parents, grandparents, great grandparents, etc. that a person might have over 300 years. Here, the total number of generations = 300 10 30 = Fibonacci (1175"
+  },
+  "8.3": {
+    "heading": "Series",
+    "bodyOpening": " Let a1, a2, a3,\u2026,an, be a given sequence. Then, the expression a1 + a2 + a3 +,\u2026+ an + ... is called the series associated with the given sequence .The series is finite or infinite according as the given sequence is finite or infinite. Series are often represented in compact form, called sigma notat"
+  },
+  "8.4": {
+    "heading": "Geometric Progression (G . P.)",
+    "bodyOpening": " Let us consider the following sequences: (i) 2,4,8,16,..., (ii) 1 1 1 1 9 27 81 243 \u2013 \u2013 , , , ... (iii) . ,. ,. ,... 01 0001 000001 In each of these sequences, how their terms progress? We note that each term, except the first progresses in a definite order. In (i), we have a a a a a a a 1 2 1 3 2 "
+  },
+  "8.5": {
+    "heading": "Relationship Between A.M. and G.M.",
+    "bodyOpening": " Let A and G be A.M. and G.M. of two given positive real numbers a and b, respectively. Then A andG 2 a b ab + = = Thus, we have A \u2013 G = 2 a b ab + \u2212 = 2 2 a b ab + \u2212 = ( ) 2 0 2 a b \u2212 \u2265 ... (1) From (1), we obtain the relationship A \u2265 G. Example 13 If A.M. and G.M. of two positive numbers a and b a"
+  },
+  "9.1": {
+    "heading": "Introduction",
+    "bodyOpening": " We are familiar with two-dimensional coordinate geometry from earlier classes. Mainly, it is a combination of algebra and geometry. A systematic study of geometry by the use of algebra was first carried out by celebrated French philosopher and mathematician Ren\u00e9 Descartes, in his book \u2018La G\u00e9om\u00e9try,"
+  },
+  "9.2": {
+    "heading": "Slope of a Line",
+    "bodyOpening": " A line in a coordinate plane forms two angles with the x-axis, which are supplementary. Reprint 2026-27 STRAIGHT LINES 153 The angle (say) \u03b8 made by the line l with positive direction of x-axis and measured anti clockwise is called the inclination of the line. Obviously 0\u00b0 \u2264 \u03b8 \u2264 180\u00b0 (Fig 9.2). We "
+  },
+  "9.3": {
+    "heading": "Various Forms of the Equation of a Line",
+    "bodyOpening": " We know that every line in a plane contains infinitely many points on it. This relationship between line and points leads us to find the solution of the following problem: How can we say that a given point lies on the given line? Its answer may be that for a given line we should have a definite con"
+  },
+  "9.4": {
+    "heading": "Distance of a Point From a Line",
+    "bodyOpening": " The distance of a point from a line is the length of the perpendicular drawn from the point to the line. Let L : Ax + By + C = 0 be a line, whose distance from the point P (x1, y1) is d. Draw a perpendicular PM from the point P to the line L (Fig 9.14). If the Reprint 2026-27 STRAIGHT LINES 165 lin"
+  },
+  "10.1": {
+    "heading": "Introduction",
+    "bodyOpening": " In the preceding Chapter 10, we have studied various forms of the equations of a line. In this Chapter, we shall study about some other curves, viz., circles, ellipses, parabolas and hyperbolas. The names parabola and hyperbola are given by Apollonius. These curves are in fact, known as conic secti"
+  },
+  "10.2": {
+    "heading": "Sections of a Cone",
+    "bodyOpening": " Let l be a fixed vertical line and m be another line intersecting it at a fixed point V and inclined to it at an angle \u03b1 (Fig10.1). Suppose we rotate the line m around the line l in such a way that the angle \u03b1 remains constant. Then the surface generated is a double-napped right circular hollow con"
+  },
+  "10.3": {
+    "heading": "Circle",
+    "bodyOpening": " Definition 1 A circle is the set of all points in a plane that are equidistant from a fixed point in the plane. The fixed point is called the centre of the circle and the distance from the centre to a point on the circle is called the radius of the circle (Fig 10.11). Reprint 2026-27 180 MATHEMATIC"
+  },
+  "10.4": {
+    "heading": "Parabola",
+    "bodyOpening": " Definition 2 A parabola is the set of all points in a plane that are equidistant from a fixed line and a fixed point (not on the line) in the plane. The fixed line is called the directrix of the parabola and the fixed point F is called the focus (Fig 10.13). (\u2018Para\u2019 means \u2018for\u2019 and \u2018bola\u2019 means \u2018th"
+  },
+  "10.5": {
+    "heading": null,
+    "bodyOpening": ""
+  },
+  "10.6": {
+    "heading": "Hyperbola",
+    "bodyOpening": " Definition 7 A hyperbola is the set of all points in a plane, the difference of whose distances from two fixed points in the plane is a constant. Reprint 2026-27 196 MATHEMATICS The term \u201cdifference\u201d that is used in the definition means the distance to the farther point minus the distance to the cl"
+  },
+  "11.1": {
+    "heading": "Introduction",
+    "bodyOpening": " You may recall that to locate the position of a point in a plane, we need two intersecting mutually perpendicular lines in the plane. These lines are called the coordinate axes and the two numbers are called the coordinates of the point with respect to the axes. In actual life, we do not have to de"
+  },
+  "11.2": {
+    "heading": "Coordinate Axes and Coordinate Planes in Three Dimensional Space",
+    "bodyOpening": " Consider three planes intersecting at a point O such that these three planes are mutually perpendicular to each other (Fig 11.1). These three planes intersect along the lines X\u2032OX, Y\u2032OY and Z\u2032OZ, called the x, y and z-axes, respectively. We may note that these lines are mutually perpendicular to ea"
+  },
+  "11.3": {
+    "heading": "Coordinates of a Point in Space",
+    "bodyOpening": " Having chosen a fixed coordinate system in the space, consisting of coordinate axes, coordinate planes and the origin, we now explain, as to how, given a point in the space, we associate with it three coordinates (x,y,z) and conversely, given a triplet of three numbers (x, y, z), how, we locate a p"
+  },
+  "11.4": {
+    "heading": "Distance between Two Points",
+    "bodyOpening": " We have studied about the distance between two points in two-dimensional coordinate system. Let us now extend this study to three-dimensional system. Let P(x1, y1, z1) and Q ( x2, y2, z2) be two points referred to a system of rectangular axes OX, OY and OZ. Through the points P and Q draw planes pa"
+  },
+  "12.1": {
+    "heading": "Introduction",
+    "bodyOpening": " This chapter is an introduction to Calculus. Calculus is that branch of mathematics which mainly deals with the study of change in the value of a function as the points in the domain change. First, we give an intuitive idea of derivative (without actually defining it). Then we give a naive definiti"
+  },
+  "12.2": {
+    "heading": "Intuitive Idea of Derivatives",
+    "bodyOpening": " Physical experiments have confirmed that the body dropped from a tall cliff covers a distance of 4.9t2 metres in t seconds, i.e., distance s in metres covered by the body as a function of time t in seconds is given by s = 4.9t2. The adjoining Table 13.1 gives the distance travelled in metres at var"
+  },
+  "12.3": {
+    "heading": "Limits",
+    "bodyOpening": " The above discussion clearly points towards the fact that we need to understand limit- ing process in greater clarity. We study a few illustrative examples to gain some famil- iarity with the concept of limits. Consider the function f(x) = x2. Observe that as x takes values very close to 0, the val"
+  },
+  "12.4": {
+    "heading": "Limits of Trigonometric Functions",
+    "bodyOpening": " The following facts (stated as theorems) about functions in general come in handy in calculating limits of some trigonometric functions. Theorem 3 Let f and g be two real valued functions with the same domain such that f (x) \u2264 g( x) for all x in the domain of definition, For some a, if both lim x a"
+  },
+  "12.5": {
+    "heading": "Derivatives",
+    "bodyOpening": " We have seen in the Section 13.2, that by knowing the position of a body at various time intervals it is possible to find the rate at which the position of the body is changing. It is of very general interest to know a certain parameter at various instants of time and try to finding the rate at whi"
+  },
+  "13.1": {
+    "heading": "Introduction",
+    "bodyOpening": " We know that statistics deals with data collected for specific purposes. We can make decisions about the data by analysing and interpreting it. In earlier classes, we have studied methods of representing data graphically and in tabular form. This representation reveals certain salient features or c"
+  },
+  "13.2": {
+    "heading": "Measures of Dispersion",
+    "bodyOpening": " The dispersion or scatter in a data is measured on the basis of the observations and the types of the measure of central tendency, used there. There are following measures of dispersion: (i) Range, (ii) Quartile deviation, (iii) Mean deviation, (iv) Standard deviation. In this Chapter, we shall stu"
+  },
+  "13.3": {
+    "heading": "Range",
+    "bodyOpening": " Recall that, in the example of runs scored by two batsmen A and B, we had some idea of variability in the scores on the basis of minimum and maximum runs in each series. To obtain a single number for this, we find the difference of maximum and minimum values of each series. This difference is calle"
+  },
+  "13.4": {
+    "heading": "Mean Deviation",
+    "bodyOpening": " Recall that the deviation of an observation x from a fixed value \u2018a\u2019 is the difference x \u2013 a. In order to find the dispersion of values of x from a central value \u2018a\u2019 , we find the deviations about a. An absolute measure of dispersion is the mean of these deviations. To find the mean, we must obtain"
+  },
+  "13.5": {
+    "heading": "Variance and Standard Deviation",
+    "bodyOpening": " Recall that while calculating mean deviation about mean or median, the absolute values of the deviations were taken. The absolute values were taken to give meaning to the mean deviation, otherwise the deviations may cancel among themselves. Another way to overcome this difficulty which arose due to"
+  },
+  "14.1": {
+    "heading": "Event",
+    "bodyOpening": " We have studied about random experiment and sample space associated with an experiment. The sample space serves as an universal set for all questions concerned with the experiment. Consider the experiment of tossing a coin two times. An associated sample space is S = {HH, HT, TH, TT}. Now suppose t"
+  },
+  "14.2": {
+    "heading": "Axiomatic Approach to Probability",
+    "bodyOpening": " In earlier sections, we have considered random experiments, sample space and events associated with these experiments. In our day to day life we use many words about the chances of occurrence of events. Probability theory attempts to quantify these chances of occurrence or non occurrence of events."
+  }
+}

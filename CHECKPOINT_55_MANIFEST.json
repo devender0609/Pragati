@@ -1,0 +1,136 @@
+{
+  "checkpoint": 55,
+  "canonicalVersion": "0.84.0-c10.1",
+  "packageCreatedUtc": "2026-10-19T13:43:23Z",
+  "sourceSegmentReconciliation": {
+    "flagged": [
+      "a1",
+      "a2"
+    ],
+    "alsoFound": [
+      "answers",
+      "prelims"
+    ],
+    "resolution": "all four now equal their coverage-reconciliation disposition; stale text kept in resolvedPending",
+    "invariantAdded": "sourceSegment.warrants must equal its disposition; no pending decision once dispositioned",
+    "violations": 0
+  },
+  "pilot": {
+    "units": [
+      "c10:8.2a",
+      "c10:8.2b",
+      "c10:8.2c",
+      "c10:8.3a"
+    ],
+    "authored": 4,
+    "excluded": "8.3b (0 and 90 degrees)"
+  },
+  "architecture": {
+    "verdict": "B \u2014 general geometry extension required and successfully introduced",
+    "added": [
+      "rightTriangleRoles (reference-vertex relative)",
+      "exactGeometry"
+    ],
+    "notAdded": "TrigonometryFigureSpec \u2014 the semantics are right-triangle, not trigonometric",
+    "validators": [
+      "validateRightTriangleRoles",
+      "validateAngleMarkGeometry"
+    ],
+    "figuresValidated": 5,
+    "negativeTests": 2
+  },
+  "lessons": [
+    {
+      "unit": "8.2a",
+      "artifact": "ncert_jemh1_s8_2_ratios_lesson"
+    },
+    {
+      "unit": "8.2b",
+      "artifact": "ncert_jemh1_s8_2_welldefined_lesson"
+    },
+    {
+      "unit": "8.2c",
+      "artifact": "ncert_jemh1_s8_2_from_ratio_lesson"
+    },
+    {
+      "unit": "8.3a",
+      "artifact": "ncert_jemh1_s8_3_special_angles_lesson"
+    }
+  ],
+  "standardAngles": {
+    "source": "STANDARD_ANGLE_RATIOS, single structured source of truth",
+    "recomputedByTest": true,
+    "checks": [
+      "values from derivation triangles",
+      "tan = sin/cos",
+      "sine and cosine strictly in (0,1)",
+      "exact forms only",
+      "prose agrees"
+    ]
+  },
+  "defectsFoundByOwnTests": [
+    "four ratio names defined but never used in prose (Class 9 glossary problem recurring)",
+    "one worked step with 25-character reasoning"
+  ],
+  "existingTestsUpdated": [
+    {
+      "test": "authored counts by class",
+      "cause": "latent bug: Class 6 filter was 'not Class 9', which counted any later grade as Class 6",
+      "fix": "each grade named by its book code"
+    },
+    {
+      "test": "four separate lifecycle counts",
+      "cause": "asserted every class but 6 and 9 had zero authored",
+      "fix": "records Class 10's 2 authored sections; reviewed and published still 0"
+    }
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": "0 lessons deliverable",
+      "class10": "0 lessons deliverable"
+    },
+    "internalPreview": {
+      "noticeShown": true,
+      "lessonRows": 4,
+      "stagesWalked": "4/4",
+      "consoleErrors": 0,
+      "overflow": {
+        "1280": "0px",
+        "834": "0px",
+        "360": "0px"
+      }
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 4,
+    "remaining": 61,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "class9State": {
+    "lessons": 92,
+    "untouched": true,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2122,
+    "testFiles": 108,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_TRIGONOMETRY_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_GEOMETRY_EXTENSION",
+  "nextRecommendation": "Chapter 12 units 12.2a-12.3a \u2014 composite solids; the unproven capability is showing which surface is lost at a join"
+}

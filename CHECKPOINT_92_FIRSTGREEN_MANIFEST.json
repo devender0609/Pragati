@@ -1,0 +1,194 @@
+{
+  "checkpoint": "92-first-green",
+  "canonicalVersion": "0.84.0-c11.31-probability-pilot",
+  "packageKind": "FIRST_GREEN \u2014 created on primary-gate success, before hardening",
+  "verdict": "CLASS_11_PROBABILITY_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_REUSED_SET_EVENT_PROBABILITY_SEMANTICS",
+  "packageCreatedUtc": "2026-11-12T21:06:47Z",
+  "governance": {
+    "unit": "C11-PRB-FO12",
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "instructionalStatus": "REQUIRED_PREREQUISITE",
+    "summativeEligible": false,
+    "fieldsReadIndependently": true,
+    "orderedFirstInChapter": true,
+    "prb01DeclaresItAsPrerequisite": true,
+    "formativeMeansOptional": false,
+    "secondProofOfPrincipleAfterInduction": true,
+    "insideOfficialChapter": true
+  },
+  "mixedScope": {
+    "section": "14.1",
+    "fragments": [
+      "SF-3-FORMATIVE",
+      "SF-3-SUMMATIVE"
+    ],
+    "separateLessons": true,
+    "sectionClassifiedOneWay": false
+  },
+  "reuse": {
+    "sampleSpaceRebuilt": false,
+    "setTheoryRebuilt": false,
+    "noOwnExperimentEventOrRationalType": true
+  },
+  "eventSemantics": {
+    "eventIsSubset": true,
+    "outsideSampleSpaceRefused": true,
+    "orIsInclusive": true,
+    "exclusiveOrWouldDiffer": true,
+    "exhaustiveDerived": true,
+    "mutuallyExclusiveDerived": true,
+    "allFourCombinationsFixtured": true
+  },
+  "axioms": {
+    "nonNegative": true,
+    "totalsExactlyOne": true,
+    "invalidRescaled": false,
+    "negativeClamped": false,
+    "refusesComputationOnInvalidAssignment": true,
+    "eventProbabilityDerivedFromOutcomes": true,
+    "exactRational": true,
+    "floatingPointCanonical": false
+  },
+  "equallyLikely": {
+    "derivedNotAssumed": true,
+    "forcedByAxioms": "n*p = 1 gives p = 1/n",
+    "classicalAgreesWithAssignment": true,
+    "refusedWhenNotEstablished": true,
+    "checkpoint10GuardIntact": true
+  },
+  "rules": {
+    "complementDerivedFromPartition": true,
+    "additionSubtractsOverlap": true,
+    "derivedMatchesDirectUnion": true,
+    "naiveSumCaught": "gives 1 instead of 5/6",
+    "mutuallyExclusiveIsSpecialCase": true
+  },
+  "qa": {
+    "targetedProbability": 30,
+    "tests": 3018,
+    "testFiles": 139,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0
+  },
+  "browser": {
+    "lessons": "7/7",
+    "stages": "35/35",
+    "finish": "7/7",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "internalLabelsExposed": false,
+    "decimalProbabilitiesShown": false
+  },
+  "harnessNote": {
+    "what": "walk exactFraction probe did not fire",
+    "reality": "formatRational emits 1/6; suite asserts exact strings directly",
+    "classification": "harness",
+    "productDefect": false,
+    "recheckDuringHardening": true
+  },
+  "provenance": {
+    "SF-3-FORMATIVE": {
+      "parent": "14.1"
+    },
+    "SF-3-SUMMATIVE": {
+      "parent": "14.1"
+    },
+    "PRB-02": "14.1.2",
+    "PRB-03": "14.1.4",
+    "PRB-04": "14.2",
+    "PRB-05": "14.2.2",
+    "PRB-06": "14.2.3",
+    "fabricatedSectionIds": false
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "leaks": 0,
+    "corpus": 74
+  },
+  "catalogue": {
+    "officialTextbookChapters": 11,
+    "chapterOwnedLessons": 73,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 74,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      14
+    ],
+    "chapter14Rows": 7,
+    "chapter11Invented": false,
+    "chapter13Invented": false
+  },
+  "baselinesResolved": {
+    "chapterOwned": "66 -> 73",
+    "totalLessons": "67 -> 74",
+    "officialSections": "39 -> 41 (Chapter 14 adds 14.1 and 14.2; its four subsections add none)",
+    "modules": "12 -> 13",
+    "chapterOrder": "gains 14",
+    "chapters": "10 -> 11",
+    "duplicateHintFixed": true,
+    "globalSubstitution": false
+  },
+  "chapter14Status": {
+    "fullyAuthoredCurrentScope": true,
+    "reason": "its formative-only prerequisite is authored too",
+    "fullyReviewed": false,
+    "allArtifactsDrafts": true
+  },
+  "environmentHygiene": {
+    "envLocalRemoved": true,
+    "distDeletedBeforeRebuild": true
+  },
+  "publicSafe": {
+    "chapter14Shown": false,
+    "rows": 0,
+    "visualRoots": 0,
+    "directFo12Content": false
+  },
+  "priorWork": {
+    "class11PriorLessons": 67,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "formativeExtensions": {
+    "C11-SEQ-FO8": "unauthored",
+    "C11-LIM-FO11": "unauthored"
+  },
+  "assessmentGrowth": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "accessibility",
+    "keyboard/focus",
+    "persistence"
+  ],
+  "next": {
+    "options": [
+      "Linear Inequalities",
+      "3-D Geometry",
+      "Statistics"
+    ],
+    "fo8OrFo11Automatic": false
+  }
+}

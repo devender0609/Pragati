@@ -1,0 +1,159 @@
+{
+  "checkpoint": 71,
+  "canonicalVersion": "0.84.0-c10.17",
+  "packageCreatedUtc": "2026-10-26T18:45:35Z",
+  "purpose": "AI adversarial pre-review \u2014 additional QA, not human review",
+  "verdict": "CLASS_10_AI_PRE_REVIEW_COMPLETE_65_ARTIFACTS",
+  "humanReview": "HUMAN_REVIEW_DEFERRED_NO_REVIEWERS_AVAILABLE",
+  "separateClaims": {
+    "deterministicAudited": "65/65",
+    "qualitativeRead": "65/65",
+    "note": "these answer different questions and are never merged; neither means reviewed"
+  },
+  "frozenInput": {
+    "reviewBuild": "C10RB-88B56AE6",
+    "instrumentVersion": 1,
+    "artifacts": 65,
+    "allVersion1": true,
+    "allAuthoredDraft": true
+  },
+  "semanticModels": {
+    "reVerified": 13,
+    "allHaveLessonConsumer": true
+  },
+  "expectationMap": {
+    "mappedOneToOne": 65,
+    "sectionMismatches": 0,
+    "distribution": {
+      "APPLY": 25,
+      "DERIVE": 19,
+      "UNDERSTAND": 11,
+      "PROVE": 7,
+      "STATE_WITHOUT_PROOF": 3
+    }
+  },
+  "phase1": {
+    "artifactsAudited": 65,
+    "clean": 65,
+    "findings": 0,
+    "checks": [
+      "scope_leak",
+      "proof_presence",
+      "proof_scope",
+      "glossary_use",
+      "reasoning_depth",
+      "placeholder",
+      "provenance",
+      "stage_completeness",
+      "corpus_duplication"
+    ],
+    "modelOwnedTruth": {
+      "checksPassed": 30,
+      "failed": 0,
+      "visualsValidated": 58
+    },
+    "proveUnitsCarryingProof": "7/7",
+    "stateWithoutProofUnitsStayingStated": "3/3"
+  },
+  "auditorFalsePositives": [
+    {
+      "what": "proof detector keyed to GIVEN/TO PROVE labels",
+      "flagged": 11,
+      "realDefects": 0,
+      "why": "only checkpoint 67 adopted those labels; earlier waves state hypotheses in prose",
+      "fix": "semantic detection"
+    },
+    {
+      "what": "section-level expectation map",
+      "flagged": "multiple",
+      "realDefects": 0,
+      "why": "a section containing one PROVE unit marked all its artifacts PROVE",
+      "fix": "per-artifact map"
+    },
+    {
+      "what": "replacement scope check",
+      "flagged": 1,
+      "realDefects": 0,
+      "why": "fired on s6_4_aaa_lesson, which applies a criterion it explicitly takes as given; checkpoint 57's auditProofScope already made this distinction correctly",
+      "fix": "delegate to the existing auditor"
+    }
+  ],
+  "phase2Findings": [
+    {
+      "id": 1,
+      "severity": "MINOR",
+      "area": "presentation",
+      "artifacts": 18,
+      "finding": "two proof conventions coexist \u2014 3 labelled GIVEN/TO PROVE, 15 prose-stated givens",
+      "repaired": false,
+      "why": "house-style decision for a human; repairing would version fifteen artifacts on my judgement",
+      "guard": "pinned by test"
+    },
+    {
+      "id": 2,
+      "severity": "OBSERVATION",
+      "area": "pedagogy",
+      "artifacts": 1,
+      "artifact": "ncert_jemh1_s1_2_fta_lesson",
+      "finding": "instructs students to ignore a sentence in the printed NCERT introduction (rationalisation residue)",
+      "repaired": false,
+      "why": "policy judgement above an authoring decision; the alternative, silence, is arguably worse"
+    }
+  ],
+  "repairs": {
+    "lessonsChanged": 0,
+    "versionsBumped": 0,
+    "identitiesRegenerated": 0,
+    "note": "all 65 checkpoint-70 identities remain valid as frozen"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2530,
+    "testFiles": 124,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass",
+    "deterministicDocsRegenerated": true
+  },
+  "browser": {
+    "publicSafe": {
+      "notice": false,
+      "lessonRows": 0
+    },
+    "preview": {
+      "notice": true,
+      "lessons": 65,
+      "chaptersWalked": 6,
+      "stages": "5/5 plus Finish",
+      "maxOverflow": "0px",
+      "consoleErrors": 0
+    },
+    "carriedForward": "the 13-chapter walk and 360/834/1280 structural checks were run at checkpoint 70 on this same rendering surface; no lesson and no renderer changed here",
+    "notClaimed": "no screen-reader session, no contrast measurement, no WCAG conformance claim"
+  },
+  "deliveryGate": "public-safe build is a delivery gate, not a confidentiality measure",
+  "priorGrades": {
+    "class6Section74": "untouched",
+    "class9Identities": "92 untouched"
+  },
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "next": {
+    "recommendation": "human review when reviewers exist",
+    "firstItems": [
+      "house-style decision on proof presentation",
+      "policy decision on instructing students about their textbook"
+    ],
+    "note": "a third pass over the same corpus by the same reader has sharply diminishing returns; the blocker is the absence of a person, not of another check"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "priority": 7,
+  "contentArtifactId": "ncert_kemh1_s3_4_multiple_angles_lesson",
+  "title": "You will deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities, rather than collecting them as separate formulas.",
+  "placement": "chapter-3",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-TRG-06, C11-TRG-07",
+    "risk class C"
+  ],
+  "artifactFingerprint": "eb87aa91324f5ba564e17c00500785ac",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-TRG-06",
+      "title": "Sum and difference identities",
+      "objective": "Express sin and cos of a sum or difference in terms of the component angles and apply the results.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROOF_DEEPENING",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "identity statements; no figure required",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s3_4_sum_difference_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-07",
+      "title": "Identities for multiple and half angles",
+      "objective": "Deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROOF_DEEPENING",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "identity statements",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s3_4_sum_difference_lesson"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch03",
+    "officialSectionId": "ncert_kemh1_s3_4",
+    "sectionNumber": "3.4",
+    "cbseEntryId": null,
+    "startPage": 54,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities, rather than collecting them as separate formulas.",
+    "vocabulary": [
+      {
+        "term": "double angle",
+        "meaning": "An identity expressing a function of 2x in terms of functions of x."
+      },
+      {
+        "term": "sum-to-product",
+        "meaning": "An identity rewriting a sum or difference of two sines or cosines as a product."
+      }
+    ],
+    "explanation": [
+      "Every identity in this lesson comes from the previous one. None is new information; each is the sum or difference identity used in a particular way.",
+      "Setting y = x in sin(x + y) = sin x cos y + cos x sin y gives sin 2x = 2 sin x cos x immediately, because both products become the same.",
+      "The same substitution in cos(x + y) = cos x cos y − sin x sin y gives cos 2x = cos²x − sin²x. Using sin²x + cos²x = 1 to remove one term at a time gives the other two forms, 2cos²x − 1 and 1 − 2sin²x, which are the same identity wearing different clothes.",
+      "The triple-angle results come from writing 3x as 2x + x and applying the sum identity, then substituting the double-angle results just obtained. That dependency is worth noticing: the triple-angle identity rests on the double-angle one, which rests on the sum identity.",
+      "The sum-to-product forms are the sum and difference identities read backwards. Adding sin(A + B) and sin(A − B) cancels the second term of each and leaves 2 sin A cos B; writing the two angles as the half-sum and half-difference of the original pair turns that into a rule for sin C + sin D.",
+      "So the chain is: the chord argument gives cos(x − y); substitution gives the other three sum and difference identities; setting the angles equal gives the double-angle forms; combining those gives the triple-angle forms; and adding or subtracting pairs gives the sum-to-product forms."
+    ],
+    "workedExamples": [
+      {
+        "id": "s34m.we1",
+        "prompt": "Derive sin 2x.",
+        "answer": "sin 2x = 2 sin x cos x.",
+        "steps": [
+          {
+            "text": "Start from sin(x + y) = sin x cos y + cos x sin y.",
+            "reasoning": "Every result in this lesson begins at a sum or difference identity."
+          },
+          {
+            "text": "Set y = x. The left side becomes sin 2x.",
+            "reasoning": "Setting the two angles equal is a legitimate substitution, since the identity holds for all x and y."
+          },
+          {
+            "text": "The right side becomes sin x cos x + cos x sin x, which is 2 sin x cos x.",
+            "reasoning": "The two products are identical once y is replaced by x, so they add."
+          }
+        ]
+      },
+      {
+        "id": "s34m.we2",
+        "prompt": "Obtain the three forms of cos 2x.",
+        "answer": "cos 2x = cos²x − sin²x = 2cos²x − 1 = 1 − 2sin²x.",
+        "steps": [
+          {
+            "text": "Set y = x in cos(x + y) = cos x cos y − sin x sin y to get cos 2x = cos²x − sin²x.",
+            "reasoning": "This is the direct substitution, before any rearrangement."
+          },
+          {
+            "text": "Replace sin²x by 1 − cos²x: cos 2x = 2cos²x − 1.",
+            "reasoning": "The Pythagorean identity lets one function be eliminated in favour of the other."
+          },
+          {
+            "text": "Instead replace cos²x by 1 − sin²x: cos 2x = 1 − 2sin²x.",
+            "reasoning": "Eliminating the other way gives the third form; all three are the same identity."
+          }
+        ]
+      },
+      {
+        "id": "s34m.we3",
+        "prompt": "A student treats sin 2x = 2 sin x as obvious. What has gone wrong?",
+        "answer": "sin 2x = 2 sin x cos x; the factor cos x cannot be dropped.",
+        "steps": [
+          {
+            "text": "They have taken the 2 outside the function, as if sin were multiplication.",
+            "reasoning": "sin is a function, and f(2x) is not generally 2f(x)."
+          },
+          {
+            "text": "Test at x = 90°: sin 180° is 0, while 2 sin 90° is 2.",
+            "reasoning": "A single disagreeing argument is enough to show the claim is not an identity."
+          },
+          {
+            "text": "The correct result is 2 sin x cos x, which at that argument gives 2 × 1 × 0 = 0.",
+            "reasoning": "The cos factor is exactly what the incorrect version omits."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s34m.g1",
+        "prompt": "Which identity does sin 2x come from?",
+        "hint": "What substitution was made?",
+        "answer": "sin(x + y) with y = x.",
+        "rationale": "Setting the two angles equal makes the two products identical, so they combine into 2 sin x cos x."
+      },
+      {
+        "id": "s34m.g2",
+        "prompt": "Why does cos 2x have three forms?",
+        "hint": "What can replace sin²x?",
+        "answer": "Because the Pythagorean identity can eliminate either squared term.",
+        "rationale": "All three are the same identity; which form is convenient depends on what the rest of a problem contains."
+      },
+      {
+        "id": "s34m.g3",
+        "prompt": "What does the triple-angle identity depend on?",
+        "hint": "How is 3x split?",
+        "answer": "The sum identity and the double-angle identities.",
+        "rationale": "Writing 3x as 2x + x applies the sum identity, and the resulting functions of 2x are then replaced using the double-angle results."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s34m.i1",
+        "prompt": "Derive cos 2x in the form 1 − 2sin²x and say which earlier results you used.",
+        "answer": "From cos(x + y) with y = x, then the Pythagorean identity.",
+        "rationale": "Two prior results are used in sequence, and recording which ones makes the derivation checkable."
+      },
+      {
+        "id": "s34m.i2",
+        "prompt": "Is tan 2x = 2 tan x?",
+        "answer": "No.",
+        "rationale": "The same error as taking the 2 outside sine. The correct form comes from tan(x + y) with y = x, giving 2 tan x over 1 − tan²x."
+      },
+      {
+        "id": "s34m.i3",
+        "prompt": "Why does adding sin(A + B) and sin(A − B) simplify?",
+        "answer": "Because the cos A sin B terms cancel.",
+        "rationale": "One identity carries that term with a plus and the other with a minus, so adding removes it and leaves twice the remaining product."
+      },
+      {
+        "id": "s34m.i4",
+        "prompt": "If the sum identity were wrong, which results in this lesson would be affected?",
+        "answer": "All of them.",
+        "rationale": "Every identity here is derived from the sum or difference identities, so an error there propagates through the whole chain."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s34m.td1",
+        "prompt": "This lesson could be presented as a list of eight formulas to memorise. What is lost by doing so?",
+        "expectedReasoning": "The dependency structure, which is what makes the formulas recoverable. Someone who knows that sin 2x comes from setting y = x can rebuild it in one line after forgetting it, and can also tell that an error in the sum identity would corrupt everything downstream. A list gives eight independent things to remember and no way to check any of them, and it hides that several entries are the same identity rearranged."
+      }
+    ],
+    "summary": "Setting y = x in the sum identities gives the double-angle forms, the Pythagorean identity gives the three versions of cos 2x, writing 3x as 2x + x gives the triple-angle forms, and adding or subtracting pairs gives the sum-to-product forms. Every result traces back to the chord argument for cos(x − y).",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-TRG-06",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-TRG-07",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

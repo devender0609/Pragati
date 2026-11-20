@@ -1,0 +1,97 @@
+{
+  "checkpoint": "95",
+  "canonicalVersion": "0.84.0-c11.38-humancheck-closed",
+  "verdict": "CLASS_11_HUMAN_CHECK_INVENTORY_CLOSED_GOVERNANCE_DEBT_RECORDED",
+  "packageCreatedUtc": "2026-11-16T15:54:41Z",
+  "authoredAnything": false,
+  "humanReviewed": false,
+  "baseline": {
+    "archive": "pragati-0.84.0-c11.37-fo6-governance.zip",
+    "sha256": "229e4408a61ea9f2b21dfa1c3276ef30dcba2e4bcb34f7c68c39de96e67816d3"
+  },
+  "ind01": {
+    "before": "NEEDS_HUMAN_CHECK",
+    "after": "READY_FOR_AUTHORING",
+    "originalConcern": "standalone unit before chapter 7, or method embedded in the two dependent units",
+    "decisionTaken": "standalone, at checkpoint 87",
+    "durableEvidence": {
+      "reports": [
+        "V0.84.0_C11_20_FIRSTGREEN_REPORT.md",
+        "V0.84.0_C11_21_CHECKPOINT_REPORT.md"
+      ],
+      "archive": "pragati-0.84.0-c11.20-induction-reachable.zip",
+      "sha256Prefix": "41ee7ed3",
+      "productGroup": "Before you continue, above the textbook chapters",
+      "artifact": "cbse_fo4_induction_lesson"
+    },
+    "dependents": [
+      "C11-BIN-01",
+      "C11-LIM-05",
+      "C11-LIM-06"
+    ],
+    "dependencySubstance": "binomialClass11Sections.ts and derivativeClass11Sections.ts import InductionProof and construct P_BINOMIAL and P_POWER_RULE, validated by the shared validator",
+    "policyReDecided": false,
+    "unchanged": {
+      "ncertChapterOwner": null,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "summativeEligible": false
+    },
+    "lifecycleNote": "READY_FOR_AUTHORING closes the pre-authoring governance question; it is not human review"
+  },
+  "humanCheckInventory": {
+    "before": 1,
+    "after": 0,
+    "remaining": [],
+    "countedDynamically": true
+  },
+  "fo6Frozen": {
+    "instructionalStatus": "REQUIRED_CORE",
+    "prerequisites": [
+      "C11-INQ-02"
+    ],
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "summativeEligible": false,
+    "ncertChapterOwner": null,
+    "status": "READY_FOR_AUTHORING",
+    "altered": false
+  },
+  "governanceDebt": {
+    "recordFile": "class11-source/GOVERNANCE_DEBT.json",
+    "id": "GD-1-FORMATIVE-INSTRUCTIONAL-STATUS",
+    "affectedUnits": 9,
+    "changedHere": false,
+    "blocksLinearInequalities": false
+  },
+  "validation": {
+    "unitCount": 93,
+    "acyclic": true,
+    "danglingEdges": 0,
+    "cbseFormativeTopicsAccounted": 12,
+    "formativeUnits": 13,
+    "suites": "367/367 across 3 files",
+    "typecheck": 0,
+    "scope": "canonical data plus one new record file; no production registry or runtime code changed, so the full suite was not re-run"
+  },
+  "authoredCounts": {
+    "officialTextbookChapters": 12,
+    "chapterOwnedLessons": 80,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 81,
+    "officialSections": 45,
+    "changed": false
+  },
+  "statistics": {
+    "frozenAt": "c2786c1366245e83b576f36c8208eaee03b181b7d6a9bc9c28811b4335029090",
+    "altered": false
+  },
+  "historicalPackagesRewritten": false,
+  "next": {
+    "checkpoint": "Linear Inequalities authoring",
+    "units": [
+      "C11-INQ-01",
+      "C11-INQ-02",
+      "C11-INQ-FO6"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "checkpoint": "105",
+  "canonicalVersion": "0.84.0-c11.61-review-wave1-prep",
+  "verdict": "CLASS_11_HUMAN_REVIEW_WAVE_1_READY_TO_SEND",
+  "milestone": "CLASS_11_REQUIRED_INSTRUCTIONAL_AUTHORING_COMPLETE",
+  "milestoneQualifier": "current canonical 93-unit scope; nothing human-reviewed, adjudicated, or published",
+  "packageCreatedUtc": "2026-11-19T20:46:29Z",
+  "lifecycle": {
+    "prepared": 25,
+    "sent": 0,
+    "humanReviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "granularityFinding": {
+    "multiUnitArtifacts": 35,
+    "unitsTaughtByMultipleArtifacts": 26,
+    "trackedSharedKeys": 8,
+    "examples": [
+      "C11-TRG-06 and C11-TRG-07 each taught by 2 lessons",
+      "C11-STA-05 taught by 3 lessons",
+      "7.2 carries 4 units on 1 lesson"
+    ],
+    "status": "not a defect; an unchecked architectural choice Class 12 would inherit"
+  },
+  "selection": {
+    "packets": 25,
+    "basis": "architectural information value, not mathematical difficulty",
+    "correction": "pure score ranking crowded out 7 of 8 CBSE-only artifacts and whole chapters; rebuilt on quotas",
+    "quotas": [
+      "worst granularity cases",
+      "all 8 CBSE-only artifacts",
+      "one per unrepresented chapter"
+    ],
+    "cbseOnlyIncluded": 8,
+    "multiUnitIncluded": 17
+  },
+  "versionLock": {
+    "scope": "instructional content only",
+    "fields": [
+      "learningGoal",
+      "explanation",
+      "vocabulary",
+      "workedExamples",
+      "guidedPractice",
+      "independentPractice",
+      "reasoningApplication",
+      "summary",
+      "visuals"
+    ],
+    "rule": "metadata churn preserves the fingerprint; any instructional edit breaks it and invalidates the review"
+  },
+  "noPrefill": {
+    "allReviewerFieldsNull": true,
+    "unitResultsRequiredPerUnit": true,
+    "wording": "Automated structural checks passed. They say nothing about whether it teaches the objectives.",
+    "testedByRegression": true
+  },
+  "deliverables": [
+    "class11-review/WAVE1_LEDGER.json",
+    "class11-review/WAVE1_REVIEWER_DOCUMENT.md",
+    "class11-review/packets/ (25)",
+    "class11-review/RESPONSE_SCHEMA.json",
+    "tools/class11/generateReviewWave1.ts",
+    "v0840C1161Class11ReviewWave1.test.ts"
+  ],
+  "qa": {
+    "waveSuite": 11,
+    "files": 148,
+    "tests": 3184,
+    "failures": 0,
+    "typecheckExit": 0,
+    "runtimeSourceChanged": false,
+    "lessonsAltered": 0
+  },
+  "next": [
+    "send Wave 1 for human review",
+    "begin Class 12 decomposition in parallel",
+    "defer review and move to Class 12"
+  ],
+  "recommendationNote": "the granularity finding argues for review before Class 12 inherits the mapping; the choice is the user's"
+}

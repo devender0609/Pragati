@@ -1,0 +1,136 @@
+{
+  "checkpoint": "104",
+  "canonicalVersion": "0.84.0-c11.60-class11-review-audit",
+  "verdict": "CLASS_11_FINAL_REVIEW_READINESS_AUDIT_COMPLETE",
+  "verdictCaveat": "does not mean human review complete; human-reviewed is 0",
+  "milestone": "CLASS_11_REQUIRED_INSTRUCTIONAL_AUTHORING_COMPLETE",
+  "milestoneQualifier": "current canonical 93-unit scope; nothing human-reviewed, adjudicated, or published",
+  "packageCreatedUtc": "2026-11-19T19:15:07Z",
+  "base": "952b00aa757f0d24aa5a8033674bf438844807168eb1ec69226091bd02ad0ffa",
+  "completeness": {
+    "canonicalUnits": 93,
+    "required": 93,
+    "authoredArtifacts": 90,
+    "coverage": "93 / 93",
+    "uncovered": [],
+    "orphans": [],
+    "duplicates": 0
+  },
+  "alignment": {
+    "structural": "93 / 93",
+    "materialSettled": 0,
+    "materialNeedingHumanCheck": 93,
+    "rationale": "a script can prove structure; whether a lesson materially teaches its objective is a human judgement"
+  },
+  "sharedCoverageKeys": {
+    "count": 8,
+    "keys": [
+      "1.6",
+      "1.9",
+      "3.4",
+      "7.2",
+      "8.3",
+      "SF-2-SUMMATIVE",
+      "13.4",
+      "13.5"
+    ],
+    "highestValue": "7.2 carries four units (BIN-01/02/03/FO7)",
+    "status": "structurally resolved; material sufficiency flagged for review"
+  },
+  "provenance": {
+    "PROVENANCE_COMPLETE": 90,
+    "PROVENANCE_PARTIAL": 0,
+    "PROVENANCE_INCONSISTENT": 0,
+    "cbseOnlySentinels": "page 0 and empty section are truthful absence markers paired with a real cbseEntryId"
+  },
+  "placement": {
+    "numberedChapter": 82,
+    "chapterLessRequired": 7,
+    "chapterLessPrerequisite": 1,
+    "ownershipViolations": 0
+  },
+  "representation": {
+    "satisfied": 90,
+    "unmet": 0
+  },
+  "rawValues": {
+    "clean": 90,
+    "leaks": 0
+  },
+  "auditSelfDefects": [
+    {
+      "what": "eight correctly placed CBSE-only lessons flagged",
+      "cause": "startsWith(\"chapter-\") also matches \"chapter-less required\"",
+      "fixed": true
+    },
+    {
+      "what": "five lessons flagged for raw-value leaks",
+      "cause": "\"undefined\" is legitimate mathematical prose; my regex was broader than the repository guard",
+      "fixed": true
+    }
+  ],
+  "reviewReadiness": {
+    "READY_FOR_HUMAN_REVIEW": 90,
+    "NEEDS_TECHNICAL_FIX": 0,
+    "NEEDS_SOURCE_ALIGNMENT_FIX": 0,
+    "BLOCKED": 0,
+    "meaning": "structurally safe to send to a reviewer; not material alignment, not reviewed, not publishable"
+  },
+  "riskDistribution": {
+    "A": 8,
+    "B": 30,
+    "C": 56,
+    "note": "risk C is review priority, not defect"
+  },
+  "humanLifecycle": {
+    "sent": 0,
+    "humanReviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "reviewBatches": {
+    "count": 11,
+    "high": [
+      "Sets and relations (19)",
+      "Coordinate geometry (18)"
+    ],
+    "medium": [
+      "Trigonometry (7)",
+      "Calculus (7)",
+      "Complex numbers (6)",
+      "Combinatorics (6)"
+    ],
+    "derivedFrom": "actual catalogue placement and canonical risk class"
+  },
+  "debts": {
+    "GD-1": "RESOLVED",
+    "GD-2": "RESOLVED",
+    "EXACT_RADICAL_ZERO_FORMATTING_DEBT": {
+      "state": "OPEN",
+      "blocksHumanReview": false,
+      "blocksPublication": "should be settled before publication",
+      "closed": false
+    }
+  },
+  "newLedgers": [
+    "CLASS11_REVIEW_READINESS_LEDGER.json",
+    "CLASS11_SOURCE_ALIGNMENT_LEDGER.json",
+    "CLASS11_FINAL_STATUS_MATRIX.json",
+    "CLASS11_REVIEW_BATCHES.json"
+  ],
+  "generator": "tools/class11/generateReviewReadiness.ts",
+  "auditRegressions": {
+    "file": "v0840C1160Class11ReviewReadiness.test.ts",
+    "tests": 13
+  },
+  "qa": {
+    "files": 147,
+    "tests": 3173,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheckExit": 0,
+    "typecheckDiagnostics": 0,
+    "runtimeSourceChanged": false
+  },
+  "next": "begin Class 11 human review using the derived batches, or defer; Class 12 is the user choice"
+}

@@ -1,0 +1,247 @@
+{
+  "priority": 5,
+  "contentArtifactId": "ncert_kemh1_s9_3_forms_lesson",
+  "title": "You will write a line in three further forms and recognise that different equations can describe the same line.",
+  "placement": "chapter-9",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-STL-03, C11-STL-04",
+    "scope-fragment source"
+  ],
+  "artifactFingerprint": "500dfd1dc3ae8e29ca68401b14f38fcb",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-STL-03",
+      "title": "Equations of lines parallel to the axes, and the point-slope form",
+      "objective": "Write the equation of a line parallel to an axis, and of a line through a given point with a given slope.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "coordinate graph",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STL-04",
+      "title": "Slope-intercept, two-point and intercept forms",
+      "objective": "Write the equation of a line in slope-intercept, two-point and intercept form and convert between them.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "coordinate graph",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "scope_fragment",
+    "officialChapterId": "ncert_kemh1_ch09",
+    "officialSectionId": "ncert_kemh1_s9_3",
+    "sectionNumber": "9.3",
+    "cbseEntryId": null,
+    "startPage": 159,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "coordinate_line_graph"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will write a line in three further forms and recognise that different equations can describe the same line.",
+    "vocabulary": [
+      {
+        "term": "y-intercept",
+        "meaning": "The y-coordinate where a line crosses the y-axis."
+      },
+      {
+        "term": "x-intercept",
+        "meaning": "The x-coordinate where a line crosses the x-axis."
+      }
+    ],
+    "explanation": [
+      "Each form below is the point-slope form with a particular point substituted, so none is a new fact.",
+      "Take the point where the line crosses the y-axis, which is (0, c). Substituting gives y − c = m(x − 0), that is y = mx + c, the slope-intercept form. Here c is the y-intercept. For 2x − y = 0 this is y = 2x.",
+      "If two points are known instead of a slope, compute the slope from them and substitute either point. That gives the two-point form. The same caution applies as before: if the two points share an x-coordinate there is no slope, and the line is written as x equals a constant.",
+      "If both intercepts are known, the line can be written as x/a + y/b = 1, where a is the x-intercept and b the y-intercept. For 2x + 3y − 6 = 0 the intercepts are 3 and 2, giving x/3 + y/2 = 1.",
+      "This form has its own limitation. A line through the origin has both intercepts zero, and the expression would divide by zero, so x − y = 0 has no intercept form: the form does not exist for it.",
+      "A line is not its equation. 2x + 3y − 6 = 0 and 4x + 6y − 12 = 0 look different and describe the same points, because one is a multiple of the other: the two equations describe one line. Multiplying an equation through by a non-zero number changes which points satisfy it not at all."
+    ],
+    "workedExamples": [
+      {
+        "id": "s93f.we1",
+        "prompt": "Write 2x − y = 0 in slope-intercept form.",
+        "answer": "y = 2x",
+        "steps": [
+          {
+            "text": "The slope is 2.",
+            "reasoning": "The slope can be read from the coefficients or computed from two points."
+          },
+          {
+            "text": "The line passes through the origin, so the y-intercept is 0.",
+            "reasoning": "Substituting the crossing point into point-slope form is what produces this form."
+          },
+          {
+            "text": "So the equation is y = 2x.",
+            "reasoning": "The absent constant term is the y-intercept being zero, not an omission."
+          }
+        ]
+      },
+      {
+        "id": "s93f.we2",
+        "prompt": "Write 2x + 3y − 6 = 0 in intercept form.",
+        "answer": "x/3 + y/2 = 1",
+        "steps": [
+          {
+            "text": "Find where it crosses each axis: the intercepts are 3 and 2.",
+            "reasoning": "Setting one variable to zero finds the crossing on the other axis."
+          },
+          {
+            "text": "Substituting into x/a + y/b = 1 gives x/3 + y/2 = 1.",
+            "reasoning": "The form displays both crossings at once, which is its advantage."
+          },
+          {
+            "text": "Both intercepts are non-zero here, which the form requires.",
+            "reasoning": "A zero intercept would put a zero in a denominator."
+          }
+        ]
+      },
+      {
+        "id": "s93f.we3",
+        "prompt": "A student says 2x + 3y − 6 = 0 and 4x + 6y − 12 = 0 are different lines. What has gone wrong?",
+        "answer": "They are the same line written two ways.",
+        "steps": [
+          {
+            "text": "They have compared the equations rather than the points satisfying them.",
+            "reasoning": "Two equations are different objects even when they describe the same set."
+          },
+          {
+            "text": "The second is the first multiplied by 2, and multiplying an equation by a non-zero number leaves its solutions unchanged.",
+            "reasoning": "So the lines are the same: comparing the two as lines rather than as equations confirms it."
+          },
+          {
+            "text": "A line is a set of points; an equation is a way of describing it.",
+            "reasoning": "Many descriptions, one object, which is why two different-looking answers can both be right."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s93f.g1",
+        "prompt": "What is the y-intercept of y = x + 3?",
+        "hint": "The constant term.",
+        "answer": "3.",
+        "rationale": "In slope-intercept form the constant is the y-coordinate where the line crosses the y-axis."
+      },
+      {
+        "id": "s93f.g2",
+        "prompt": "Which lines have no intercept form?",
+        "hint": "When would a denominator vanish?",
+        "answer": "Lines through the origin, and lines parallel to an axis.",
+        "rationale": "Each of these has at least one zero intercept, which the form would place in a denominator."
+      },
+      {
+        "id": "s93f.g3",
+        "prompt": "Do 2x + 3y = 6 and 4x + 6y = 12 describe the same line?",
+        "hint": "Is one a multiple of the other?",
+        "answer": "Yes.",
+        "rationale": "The second is twice the first, and scaling an equation does not change which points satisfy it."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s93f.i1",
+        "prompt": "Write the line through (0, 0) and (2, 6) in slope-intercept form.",
+        "answer": "y = 3x.",
+        "rationale": "The slope is 3 and the line passes through the origin, so the y-intercept is zero."
+      },
+      {
+        "id": "s93f.i2",
+        "prompt": "Why can a vertical line not be written as y = mx + c?",
+        "answer": "Because it has no slope to put in m.",
+        "rationale": "The form is the point-slope form specialised, so it inherits that limitation exactly."
+      },
+      {
+        "id": "s93f.i3",
+        "prompt": "If two equations are not multiples of each other, can they describe the same line?",
+        "answer": "No.",
+        "rationale": "Equations of the same line must impose the same condition, and for linear equations that means one is a non-zero multiple of the other."
+      },
+      {
+        "id": "s93f.i4",
+        "prompt": "Are 2x + 3y − 6 = 0 and 2x + 3y + 6 = 0 the same line?",
+        "answer": "No: they are different lines.",
+        "rationale": "The coefficients of x and y match but the constants are not in the same ratio, so the lines are parallel rather than identical."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s93f.td1",
+        "prompt": "Why are there several forms for the equation of a line at all, rather than one?",
+        "expectedReasoning": "Because each form is built around the information you happen to have. Knowing a point and a direction makes point-slope natural; knowing where a line meets the axes makes intercept form natural. None adds any mathematics: they are all the same condition rearranged, and each can be converted into any other. The reason to know several is convenience in reading a situation, and the reason to know they are equivalent is so that two different-looking answers can be recognised as one."
+      }
+    ],
+    "summary": "Slope-intercept, two-point and intercept forms are all the point-slope form with particular information substituted. A line through the origin has no intercept form and a vertical line has no slope-intercept form. Different equations describe the same line exactly when one is a non-zero multiple of the other.",
+    "visuals": [
+      {
+        "type": "coordinate_line_graph",
+        "caption": "A coordinate grid with the line through (1, 2) and (4, 8) drawn across it. Both points are marked. Going from the first to the second, x increases by 3 and y increases by 6, so the line rises twice as fast as it runs and its slope is 2.",
+        "altText": "A coordinate grid with the line through (1, 2) and (4, 8) drawn across it. Both points are marked. Going from the first to the second, x increases by 3 and y increases by 6, so the line rises twice as fast as it runs and its slope is 2."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-STL-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-STL-04",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

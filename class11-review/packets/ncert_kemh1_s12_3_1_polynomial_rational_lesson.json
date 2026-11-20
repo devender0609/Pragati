@@ -1,0 +1,241 @@
+{
+  "priority": 15,
+  "contentArtifactId": "ncert_kemh1_s12_3_1_polynomial_rational_lesson",
+  "title": "You will compute limits of polynomials and rational functions, including the case where a factor cancels and the original function still has a hole.",
+  "placement": "chapter-12",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "shares unit(s) with another lesson: C11-LIM-02",
+    "risk class C"
+  ],
+  "artifactFingerprint": "34f7ed09504cfe4ab05ed0298fbee377",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-LIM-02",
+      "title": "The intuitive idea of a limit",
+      "objective": "Evaluate a limit informally from values approaching a point and recognise when a limit fails to exist.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "limit value table and graph",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s12_3_intuitive_limit_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-03",
+      "title": "Limits of polynomials and rational functions",
+      "objective": "Evaluate limits of polynomial and rational functions, including the cancelling case.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "limit notation",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch12",
+    "officialSectionId": "ncert_kemh1_s12_3",
+    "sectionNumber": "12.3",
+    "cbseEntryId": null,
+    "startPage": 228,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "limit_table"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will compute limits of polynomials and rational functions, including the case where a factor cancels and the original function still has a hole.",
+    "vocabulary": [
+      {
+        "term": "direct substitution",
+        "meaning": "Finding a limit by evaluating the function at the point, which is valid only when the point is in the domain and the function behaves smoothly there."
+      }
+    ],
+    "explanation": [
+      "A polynomial has every real number in its domain and no jumps, so its values near a point close in on its value at that point. For x³ + 2x at x = 2, the limit is 12, and the function value and the limit are both 12.",
+      "So for polynomials, substituting the point gives the limit. That is a property of polynomials, not the meaning of a limit, and the distinction matters as soon as the function is a quotient.",
+      "For a rational function, first ask whether the point is in the domain. For (x + 3)/(x + 1) at x = 1 the denominator is not zero, so substitution is available and the limit is 2.",
+      "When the denominator is zero the point is outside the domain and substitution is unavailable. (x² − 1)/(x − 1) at x = 1 is the case from the previous lesson: the function has no value there.",
+      "But the numerator is zero there too, and it factors. Away from x = 1 the expression agrees exactly with x + 1, so the nearby behaviour is that of the simpler expression, and the limit is 2.",
+      "This is where care is needed. Cancelling tells you about behaviour near the point; it does not change the function. (x² − 1)/(x − 1) is still undefined at 1 — the function has no value there, yet the limit is 2 — while x + 1 is perfectly well defined there. The two agree everywhere except at the hole, and the hole stays.",
+      "Cancelling is not always available. For 1/(x − 1) at x = 1 the numerator is not zero, so nothing cancels: the limit does not exist, because the values grow without bound as x approaches 1 from the left"
+    ],
+    "workedExamples": [
+      {
+        "id": "s1231.we1",
+        "prompt": "Find the limit of x³ + 2x as x approaches 2.",
+        "answer": "12.",
+        "steps": [
+          {
+            "text": "This is a polynomial, so every real number is in its domain.",
+            "reasoning": "Nothing is excluded and there are no jumps."
+          },
+          {
+            "text": "Its values near 2 therefore close in on its value at 2, which is 12.",
+            "reasoning": "For polynomials, substitution is available because of how they behave, not by definition."
+          },
+          {
+            "text": "So the limit is 12.",
+            "reasoning": "Here the function value and the limit are both 12."
+          }
+        ]
+      },
+      {
+        "id": "s1231.we2",
+        "prompt": "Find the limit of (x² − 1)/(x − 1) as x approaches 1.",
+        "answer": "2, with the function undefined at 1.",
+        "steps": [
+          {
+            "text": "Check the domain first: at x = 1 the denominator is zero, so the function has no value there and substitution is unavailable.",
+            "reasoning": "Direct substitution is only an option when the point is in the domain."
+          },
+          {
+            "text": "The numerator factors, and away from x = 1 the expression agrees with x + 1.",
+            "reasoning": "The two expressions are equal for every x except the excluded one."
+          },
+          {
+            "text": "So the nearby behaviour is that of the simpler expression, and the limit is 2.",
+            "reasoning": "The original function is still undefined at 1: the function has no value there, yet the limit is 2."
+          }
+        ]
+      },
+      {
+        "id": "s1231.we3",
+        "prompt": "Why does cancelling not work for 1/(x − 1) at x = 1?",
+        "answer": "Because the numerator is not zero there, so no factor cancels.",
+        "steps": [
+          {
+            "text": "Cancelling needs a common factor in numerator and denominator.",
+            "reasoning": "That is what allows the expression to agree with a simpler one away from the point."
+          },
+          {
+            "text": "Here the numerator is 1, which shares no factor with the denominator.",
+            "reasoning": "There is nothing to cancel, so no simpler expression is available."
+          },
+          {
+            "text": "The values grow without bound instead of settling, so the limit does not exist, because the values grow without bound as x approaches 1 from the left",
+            "reasoning": "A zero denominator does not by itself guarantee that a limit exists."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s1231.g1",
+        "prompt": "When is direct substitution valid for a rational function?",
+        "hint": "Check the denominator first.",
+        "answer": "When the point is in the domain, so the denominator is not zero there.",
+        "rationale": "Outside the domain the function has no value to substitute, and the limit must be found another way."
+      },
+      {
+        "id": "s1231.g2",
+        "prompt": "After cancelling, is (x² − 1)/(x − 1) defined at x = 1?",
+        "hint": "Did the function change?",
+        "answer": "No.",
+        "rationale": "Cancelling describes nearby behaviour; the original function is still excluded at that point."
+      },
+      {
+        "id": "s1231.g3",
+        "prompt": "Does a zero denominator always mean the limit does not exist?",
+        "hint": "Compare the two examples.",
+        "answer": "No.",
+        "rationale": "If the numerator is also zero a factor may cancel and the limit may exist; if not, the values grow without bound."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s1231.i1",
+        "prompt": "Find the limit of (x + 3)/(x + 1) as x approaches 1.",
+        "answer": "2.",
+        "rationale": "The denominator is not zero at 1, so the point is in the domain and substitution is available."
+      },
+      {
+        "id": "s1231.i2",
+        "prompt": "Why is substitution valid for every polynomial?",
+        "answer": "Because every real number is in the domain and the values nearby close in on the value at the point.",
+        "rationale": "It is a property of how polynomials behave, not the definition of a limit."
+      },
+      {
+        "id": "s1231.i3",
+        "prompt": "Two expressions agree everywhere except at one point. Must they have the same limit there?",
+        "answer": "Yes.",
+        "rationale": "A limit depends only on nearby behaviour, and the two agree at every nearby point."
+      },
+      {
+        "id": "s1231.i4",
+        "prompt": "Must they have the same value at that point?",
+        "answer": "No.",
+        "rationale": "One may be defined there and the other not, which is exactly the hole case."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s1231.td1",
+        "prompt": "Cancelling a factor gives the right limit but the wrong function. Why is that not a contradiction?",
+        "expectedReasoning": "Because the two expressions are being used to answer two different questions. The limit asks only about x values near the point, and on every one of those the original and the simplified expression give identical answers, so either may be used. The domain asks about the point itself, where only the simplified expression has a value. Treating cancelling as a rewrite of the function would lose the hole; treating it as a statement about nearby agreement keeps both facts intact. That is why the domain is checked before anything is cancelled, not after."
+      }
+    ],
+    "summary": "For a polynomial, substitution gives the limit because every point is in the domain. For a rational function, check the domain first: where the denominator is non-zero, substitute; where both numerator and denominator vanish, a factor may cancel and the limit exists even though the original function keeps its hole, as with (x² − 1)/(x − 1) at 1. Where nothing cancels, the limit does not exist, because the values grow without bound as x approaches 1 from the left",
+    "visuals": [
+      {
+        "type": "limit_table",
+        "caption": "A table of values of the expression (x squared minus 1) divided by (x minus 1) at x values closing in on 1 from below and from above. The outputs rise towards 2 from the left and fall towards 2 from the right, while at x equal to 1 itself the expression has no value at all.",
+        "altText": "A table of values of the expression (x squared minus 1) divided by (x minus 1) at x values closing in on 1 from below and from above. The outputs rise towards 2 from the left and fall towards 2 from the right, while at x equal to 1 itself the expression has no value at all."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-LIM-02",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-LIM-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

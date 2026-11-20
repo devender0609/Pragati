@@ -1,0 +1,146 @@
+{
+  "checkpoint": "96C",
+  "canonicalVersion": "0.84.0-c11.40-inequalities-pilot",
+  "packageKind": "FIRST GREEN \u2014 do not overwrite",
+  "verdict": "CLASS_11_LINEAR_INEQUALITIES_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_HALF_PLANE_SOLUTION_SET_EXTENSION",
+  "packageCreatedUtc": "2026-11-16T17:21:09Z",
+  "humanReviewed": false,
+  "finalBaseline": {
+    "test": "reports authored counts with their class named",
+    "denominator": "NCERT chapter-owned Class 11 lessons (ncert_kemh prefix)",
+    "from": 80,
+    "to": 82,
+    "sixthBucket": "class11RequiredCore, because the test reconciles buckets against every artifact and widening the prerequisite filter would have misstated the curriculum",
+    "globalReplacement": false
+  },
+  "accounting": {
+    "chapterOwned": 82,
+    "chapterlessPrerequisite": 1,
+    "chapterlessRequiredCore": 1,
+    "total": 84,
+    "invariantEnforced": "82 + 1 + 1 = 84",
+    "chapter5OwnedRows": 2,
+    "mechanism": "general chapterlessRole declared on the lesson",
+    "catalogueSourceMentionsFo6": false
+  },
+  "productGapFound": {
+    "symptom": "all-family half_plane_region 0 roots",
+    "cause": "catalogue model had the category but the UI never rendered it; FO-6 was counted in the total and unreachable on screen",
+    "fix": "an 'Also required' group rendered after the chapters, plus a header that no longer derives chapter-owned by subtracting prerequisites alone",
+    "classification": "PRODUCT"
+  },
+  "mathematics": {
+    "signReversalByTruthSet": true,
+    "faultyFormRejected": "x < -3",
+    "verticalAndHorizontalBoundaries": "general form, no slope-intercept",
+    "degenerateRefused": "0x + 0y",
+    "originFallback": true,
+    "systemGrid": {
+      "points": 169,
+      "disagreements": 0
+    },
+    "unionDiffersAt": "(0,0)",
+    "endpointMismatch": "unrepresentable \u2014 no included field exists"
+  },
+  "qa": {
+    "targetedSuite": 30,
+    "tests": 3090,
+    "testFiles": 142,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0
+  },
+  "representationContract": {
+    "INQ-01": "declares none, valid",
+    "INQ-02": "region:number_line",
+    "FO-6": "region:half_plane",
+    "unmet": 0
+  },
+  "allFamily": {
+    "discovered": 17,
+    "present": 17,
+    "missing": 0,
+    "number_line_region": {
+      "roots": 8
+    },
+    "half_plane_region": {
+      "roots": 6
+    },
+    "allDescribed": true
+  },
+  "browser": {
+    "distinctIdentities": "3/3",
+    "stages": "15/15",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "identityProvenBeforeEvidence": true,
+    "figures": {
+      "INQ-01": "none (symbolic, by design)",
+      "INQ-02": "number_line_region",
+      "FO-6": "half_plane_region"
+    }
+  },
+  "counts": {
+    "officialTextbookChapters": 13,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14
+    ],
+    "officialSections": 47,
+    "sectionsReason": "\u00a75.2 and \u00a75.3; \u00a75.1 Introduction has no decomposed lesson",
+    "authoredModules": 15,
+    "modulesCount": "lesson modules, not lessons",
+    "rawValueCorpus": 84,
+    "leaks": 0
+  },
+  "publicSafe": {
+    "freshBuild": true,
+    "envLocalAbsent": true,
+    "staleDistDeleted": true,
+    "chapter5Visible": false,
+    "requiredCoreRowVisible": false,
+    "routesBlocked": 3,
+    "numberLineRoots": 0,
+    "halfPlaneRoots": 0
+  },
+  "governance": {
+    "fo6": {
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "summativeEligible": false,
+      "ncertChapterOwner": null,
+      "prerequisites": [
+        "C11-INQ-02"
+      ],
+      "stl01Edge": false,
+      "officialSectionId": "",
+      "startPage": 0,
+      "cbseEntryId": "FO-6"
+    },
+    "governanceDebtUnchanged": true,
+    "humanCheckInventory": 0,
+    "decompositionUnits": 93,
+    "chapter11": false
+  },
+  "frozen": {
+    "statistics": "c2786c1366245e83b576f36c8208eaee03b181b7d6a9bc9c28811b4335029090",
+    "class10": 65,
+    "class9": 92,
+    "priorClass11Lessons": 81
+  },
+  "next": {
+    "immediate": "hardening at 1280 / 834 / 360, accessibility, focus, persistence",
+    "then": "3-D Geometry, not begun here"
+  }
+}

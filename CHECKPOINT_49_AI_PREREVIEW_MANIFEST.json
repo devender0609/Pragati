@@ -1,0 +1,56 @@
+{
+  "checkpoint": 49,
+  "canonicalVersion": "0.84.0-review.2",
+  "packageCreatedUtc": "2026-10-15T19:18:50Z",
+  "auditClassification": "AI_PRE_REVIEW",
+  "notHumanReview": "Claude reviewing Claude-authored material; additional QA, not independent validation",
+  "artifactsReviewed": 92,
+  "sampled": false,
+  "harnessHistory": {
+    "pass1": {
+      "flagged": 31,
+      "confirmed": 0,
+      "cause": "fragment matching inside longer expressions"
+    },
+    "pass2": {
+      "flagged": 2,
+      "confirmed": 0,
+      "cause": "chained equalities and fraction right-hand sides"
+    },
+    "pass3": {
+      "flagged": 0,
+      "confirmed": 0
+    }
+  },
+  "findings": {
+    "BLOCKER": 0,
+    "MAJOR": 0,
+    "MINOR": 15,
+    "OPTIONAL": 0,
+    "artifactsWithZeroFindings": 77
+  },
+  "repairs": {
+    "count": 0,
+    "rationale": "no blocker or major confirmed; the 15 minor findings each admit two defensible corrections, so the choice belongs to a human reviewer"
+  },
+  "refreeze": {
+    "unchangedCandidates": 92,
+    "changedCandidates": 0,
+    "versionChanges": 0
+  },
+  "humanLifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "state": "HUMAN_REVIEW_DEFERRED_NO_REVIEWERS_AVAILABLE"
+  },
+  "gates": {
+    "publicSafeDelivery": "closed, unchanged",
+    "previewFlag": "defaults off, unchanged"
+  },
+  "testCount": 2097,
+  "testFileCount": 106,
+  "verdict": "CLASS_9_AI_PRE_REVIEW_COMPLETE_HUMAN_REVIEW_DEFERRED",
+  "doesNotMean": "human reviewed, expert approved, or ready to publish"
+}

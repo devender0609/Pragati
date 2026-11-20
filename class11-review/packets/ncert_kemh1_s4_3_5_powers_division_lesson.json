@@ -1,0 +1,232 @@
+{
+  "priority": 12,
+  "contentArtifactId": "ncert_kemh1_s4_3_5_powers_division_lesson",
+  "title": "You will reduce any integer power of i using a cycle of four, and divide one complex number by another using the conjugate.",
+  "placement": "chapter-4",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "shares unit(s) with another lesson: C11-CPX-02",
+    "risk class C"
+  ],
+  "artifactFingerprint": "2c28e5f36f31ad52cf956abe60f6f5e7",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-CPX-02",
+      "title": "Algebra of complex numbers",
+      "objective": "Add, subtract and multiply complex numbers and state the field properties used.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "exact complex arithmetic",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s4_3_algebra_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-03",
+      "title": "Powers of i and division of complex numbers",
+      "objective": "Compute powers of i and divide complex numbers using the multiplicative inverse.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "exact complex arithmetic",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch04",
+    "officialSectionId": "ncert_kemh1_s4_3",
+    "sectionNumber": "4.3",
+    "cbseEntryId": null,
+    "startPage": 82,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will reduce any integer power of i using a cycle of four, and divide one complex number by another using the conjugate.",
+    "vocabulary": [
+      {
+        "term": "conjugate",
+        "meaning": "The conjugate of a + ib is a − ib, the same number with the sign of the imaginary part reversed."
+      }
+    ],
+    "explanation": [
+      "Powers of i repeat. i⁰ is 1, i¹ is i, i² is -1 and i³ is −i. Then i⁴ is 1 and the cycle begins again.",
+      "So a power of i depends only on the remainder when the exponent is divided by 4. For i²⁰²⁶ the remainder is 2, so the value is -1. No one multiplies i by itself two thousand times.",
+      "Division needs a different idea, because a + ib sitting underneath a fraction line is awkward. The trick is to make the denominator real, and the conjugate does exactly that.",
+      "Multiplying c + id by its conjugate c − id gives c² + d², since the cross terms cancel and the i² term changes sign. That is a real number, and it is positive whenever the denominator is not zero. For 1 − 2i it is 5.",
+      "So to divide, multiply above and below by the conjugate of the denominator. Dividing 3 + 4i by 1 − 2i gives -1 + 2i, and the result is again in standard form.",
+      "Division by zero remains impossible. The conjugate of 0 is 0 and the denominator c² + d² becomes 0, so there is nothing to divide by. The quotient has no value, which is a statement about absence rather than about size."
+    ],
+    "workedExamples": [
+      {
+        "id": "s435.we1",
+        "prompt": "Find i²⁰²⁶.",
+        "answer": "-1",
+        "steps": [
+          {
+            "text": "Divide the exponent by 4 and keep the remainder.",
+            "reasoning": "The powers repeat every four steps, so only the remainder matters."
+          },
+          {
+            "text": "2026 leaves remainder 2.",
+            "reasoning": "Everything before the remainder is a whole number of complete cycles, each returning to 1."
+          },
+          {
+            "text": "So the value is i to that remainder, which is -1.",
+            "reasoning": "The work is one division, not two thousand multiplications."
+          }
+        ]
+      },
+      {
+        "id": "s435.we2",
+        "prompt": "Divide 3 + 4i by 1 − 2i.",
+        "answer": "-1 + 2i",
+        "steps": [
+          {
+            "text": "Multiply numerator and denominator by the conjugate of the denominator, 1 + 2i.",
+            "reasoning": "Multiplying above and below by the same non-zero number leaves the value unchanged."
+          },
+          {
+            "text": "The denominator becomes 5, a real number, because the cross terms cancel.",
+            "reasoning": "This is the whole purpose of the conjugate here."
+          },
+          {
+            "text": "Dividing both parts of the numerator by that real number gives -1 + 2i.",
+            "reasoning": "Once the denominator is real, division is ordinary arithmetic on the two parts."
+          }
+        ]
+      },
+      {
+        "id": "s435.we3",
+        "prompt": "Why does multiplying by the conjugate make the denominator real?",
+        "answer": "Because the cross terms cancel and i² turns the subtraction into addition.",
+        "steps": [
+          {
+            "text": "Expand (c + id)(c − id): the two cross terms are icd and −icd.",
+            "reasoning": "They are equal in size and opposite in sign, so they cancel."
+          },
+          {
+            "text": "What remains is c² − i²d², and i² is −1.",
+            "reasoning": "The subtraction of a negative turns into addition."
+          },
+          {
+            "text": "So the product is c² + d², which is real and positive unless c and d are both zero.",
+            "reasoning": "The sign reversal in the conjugate is chosen precisely to make the cross terms cancel."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s435.g1",
+        "prompt": "Find i¹⁰⁰.",
+        "hint": "What is the remainder on division by 4?",
+        "answer": "1",
+        "rationale": "100 is a whole number of complete cycles, so the power returns to the start of the cycle."
+      },
+      {
+        "id": "s435.g2",
+        "prompt": "What is the conjugate of 3 + 4i?",
+        "hint": "Reverse one sign only.",
+        "answer": "3 − 4i",
+        "rationale": "The conjugate changes the sign of the imaginary part and leaves the real part exactly as it was."
+      },
+      {
+        "id": "s435.g3",
+        "prompt": "What is the denominator after multiplying 1 + i by its conjugate?",
+        "hint": "c squared plus d squared.",
+        "answer": "2",
+        "rationale": "Both parts are 1, so the product is 1 + 1, and the result is real as the method requires."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s435.i1",
+        "prompt": "Find i⁷ + i⁵.",
+        "answer": "0",
+        "rationale": "The remainders are 3 and 1, giving −i and i, which cancel."
+      },
+      {
+        "id": "s435.i2",
+        "prompt": "Divide 2 by i.",
+        "answer": "−2i",
+        "rationale": "Multiplying above and below by the conjugate of i gives a real denominator, and the result turns out purely imaginary."
+      },
+      {
+        "id": "s435.i3",
+        "prompt": "Why can you not divide by 0 + 0i?",
+        "answer": "Because the real denominator c² + d² would be zero.",
+        "rationale": "The conjugate method produces nothing to divide by, and the quotient has no value at all rather than a very large one."
+      },
+      {
+        "id": "s435.i4",
+        "prompt": "What is the conjugate of a real number?",
+        "answer": "The number itself.",
+        "rationale": "Its imaginary part is zero, and reversing the sign of zero changes nothing."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s435.td1",
+        "prompt": "The cycle of powers of i has length four. Why four, and not some other number?",
+        "expectedReasoning": "Because two multiplications by i take you to −1, and two more take you back to 1. Multiplying by i once is not enough to return anywhere, and the square lands on −1 rather than 1, so a further square is needed. Four is the smallest number of steps that composes back to the identity, which is why every exponent reduces to one of exactly four cases."
+      }
+    ],
+    "summary": "Powers of i repeat with period four, so i to any integer power is settled by the remainder modulo 4. Division is done by multiplying above and below by the conjugate of the denominator, which makes it the real number c² + d²; division by zero remains impossible.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-CPX-02",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-CPX-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

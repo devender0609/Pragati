@@ -1,0 +1,156 @@
+{
+  "document": {
+    "title": "Mathematics, Subject Code 041, Classes XI-XII",
+    "academicYear": "2026-27",
+    "subjectCode": "041",
+    "issuingBody": "CBSE",
+    "sourceUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Maths_SecP2_2026-27.pdf",
+    "retrievalDate": "2026-10-26",
+    "retrievalRoute": "supplied by user; host blocked both automated routes at checkpoint 72",
+    "sha256": "5121a0fb9456269fad833abf173090b99232220bd4acfc8f5907f9edc9b405c0",
+    "bytes": 996427,
+    "pdfPages": 12
+  },
+  "classXI": {
+    "maxMarks": 80,
+    "internalAssessment": 20,
+    "noChapterWiseWeightage": true,
+    "units": [
+      {
+        "roman": "I",
+        "name": "Sets and Functions",
+        "marks": 23,
+        "topics": [
+          "Sets",
+          "Relations & Functions",
+          "Trigonometric Functions"
+        ]
+      },
+      {
+        "roman": "II",
+        "name": "Algebra",
+        "marks": 25,
+        "topics": [
+          "Complex Numbers and Quadratic Equations",
+          "Linear Inequalities",
+          "Permutations and Combinations",
+          "Binomial Theorem",
+          "Sequence and Series"
+        ]
+      },
+      {
+        "roman": "III",
+        "name": "Coordinate Geometry",
+        "marks": 12,
+        "topics": [
+          "Straight Lines",
+          "Conic Sections",
+          "Introduction to Three-dimensional Geometry"
+        ]
+      },
+      {
+        "roman": "IV",
+        "name": "Calculus",
+        "marks": 8,
+        "topics": [
+          "Limits and Derivatives"
+        ]
+      },
+      {
+        "roman": "V",
+        "name": "Statistics and Probability",
+        "marks": 12,
+        "topics": [
+          "Statistics",
+          "Probability"
+        ]
+      }
+    ]
+  },
+  "formativeOnly": {
+    "sourcePdfPage": 6,
+    "verbatimPreamble": "The following topics are included in the syllabus but will be assessed only formatively to reinforce understanding without adding to summative assessments. This reduces academic stress while ensuring meaningful learning. Schools can integrate these with existing chapters as they align well. Relevant NCERT textual material is enclosed for reference.",
+    "entries": [
+      {
+        "id": "FO-1",
+        "unit": "I",
+        "topic": "Sets",
+        "content": "Practical problems on Union and Intersection of two sets."
+      },
+      {
+        "id": "FO-2",
+        "unit": "I",
+        "topic": "Relations and Functions",
+        "content": "Composition of Functions"
+      },
+      {
+        "id": "FO-3",
+        "unit": "I",
+        "topic": "Trigonometric Functions",
+        "content": "General solution of trigonometric equations of the type sin x = sin y, cos x = cos y and tan x = tan y.",
+        "notationNote": "text layer flattens this to 'si= si, s = s and ='; authoritative reading taken from the rendered document, not reconstructed from the flattened extraction"
+      },
+      {
+        "id": "FO-4",
+        "unit": "II",
+        "topic": "Principle of Mathematical Induction",
+        "content": "Process of the proof by induction, motivating the application of the method by looking at natural numbers as the least inductive subset of real numbers. The principle of mathematical induction and simple applications."
+      },
+      {
+        "id": "FO-5",
+        "unit": "II",
+        "topic": "(Complex Numbers and) Quadratic Equations",
+        "content": "Polar representation of complex numbers. Statement of Fundamental Theorem of Algebra, solution of quadratic equations (with real coefficients) in the complex number system."
+      },
+      {
+        "id": "FO-6",
+        "unit": "II",
+        "topic": "Linear Inequalities",
+        "content": "Graphical solution of linear inequalities in two variables. Graphical method of finding a solution of system of linear inequalities in two variables."
+      },
+      {
+        "id": "FO-7",
+        "unit": "II",
+        "topic": "Binomial Theorem",
+        "content": "General and middle term in binomial expansion."
+      },
+      {
+        "id": "FO-8",
+        "unit": "II",
+        "topic": "Sequence and Series",
+        "content": "Formulae for the following special sums: sum of n, sum of n squared, sum of n cubed."
+      },
+      {
+        "id": "FO-9",
+        "unit": "III",
+        "topic": "Straight Lines",
+        "content": "Normal form. General equation of a line."
+      },
+      {
+        "id": "FO-10",
+        "unit": "III",
+        "topic": "Introduction to Three-dimensional Geometry",
+        "content": "Section formula."
+      },
+      {
+        "id": "FO-11",
+        "unit": "IV",
+        "topic": "Limits and Derivatives",
+        "content": "Derivatives of composite functions (Chain rule)."
+      },
+      {
+        "id": "FO-12",
+        "unit": "V",
+        "topic": "Probability",
+        "content": "Random experiments; outcomes, sample space (set representation)."
+      }
+    ]
+  },
+  "scopeCategories": [
+    "SUMMATIVE_CORE",
+    "FORMATIVE_ONLY",
+    "REVIEW",
+    "OUTSIDE_CURRENT_SCOPE",
+    "ENRICHMENT"
+  ]
+}

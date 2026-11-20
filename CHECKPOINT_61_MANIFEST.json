@@ -1,0 +1,131 @@
+{
+  "checkpoint": 61,
+  "canonicalVersion": "0.84.0-c10.7",
+  "packageCreatedUtc": "2026-10-21T14:06:52Z",
+  "pilotScope": {
+    "units": [
+      "c10:9.1a",
+      "c10:9.1b",
+      "c10:9.1c"
+    ],
+    "authored": 3,
+    "section": "9.1 folio 133",
+    "representationRisk": "C for all three \u2014 not the A predicted at checkpoint 60",
+    "constraint": "at most two right triangles; angles of elevation/depression only 30, 45, 60"
+  },
+  "architecture": {
+    "verdict": "B \u2014 general observation-modelling extension required",
+    "gapFound": "nothing could express observer eye height, the horizontal reference through the eye, or how the triangle's vertical leg relates to the object's height; the words elevation, depression and observer appeared nowhere in the geometry module",
+    "added": [
+      "Observation",
+      "verticalRise",
+      "totalHeight",
+      "lineOfSight",
+      "answerFor",
+      "eyeHeightEntersAnswer",
+      "triangleOf",
+      "recomputedAngle",
+      "validateObservationGeometry"
+    ],
+    "reused": [
+      "rightTriangleRoles",
+      "exact-angle validation",
+      "parallelGroups"
+    ],
+    "notAdded": "HeightsAndDistancesFigureSpec",
+    "keyChoices": [
+      "targetQuantity is explicit, so whether eye height enters is derived not assumed",
+      "the triangle is derived from direction, so a depression angle at the lower object is unrepresentable"
+    ]
+  },
+  "observerHeight": {
+    "groundLevel": {
+      "eyeHeight": 0,
+      "entersAnswer": false
+    },
+    "eyeLevelTotalHeight": {
+      "rise": 24,
+      "eyeHeight": 1.5,
+      "total": 25.5,
+      "entersAnswer": true
+    },
+    "sameObservationRiseOnly": {
+      "answer": 24,
+      "entersAnswer": false
+    },
+    "namedFixture": {
+      "rise": 28,
+      "eyeHeight": 1.6,
+      "correctTotal": 29.6,
+      "assertedNotEqualToRise": true
+    }
+  },
+  "chapter8Agreement": {
+    "method": "ratios read from STANDARD_ANGLE_RATIOS by identity, not copied",
+    "testedByIdentity": true
+  },
+  "parallelReasoning": {
+    "elevationDepressionEquality": "derived from alternate angles between parallel horizontals",
+    "bareRuleForbidden": true,
+    "slopingGroundCaseIncluded": true
+  },
+  "defectsFoundByOwnHarness": [
+    "far distance computed as h / tan 30 gave 59.999999999999986 because sqrt3 * sqrt3 is not exactly 3 in binary; the figure's coordinates would have carried it",
+    "the two-triangle figure asserted a right-triangle role at B for a leg it never drew \u2014 caught by the checkpoint-55 validator",
+    "validateObservation threw on an out-of-scope angle instead of rejecting it, because every other check calls tanOf first",
+    "two test over-reaches: a fixture the model makes unrepresentable, and a ban on 'always use tangent' that flagged the sentence refuting it"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch9Rows": 3,
+      "stages": "5 of 5 reached",
+      "finishAction": "fired",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "unlabelledSvg": 0,
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 33,
+    "remaining": 32,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2248,
+    "testFiles": 114,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_HEIGHTS_DISTANCES_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_MEASUREMENT_EXTENSION",
+  "nextRecommendation": "Chapter 1 Real Numbers with Chapter 2 Polynomials \u2014 section 1.1 still advertises Euclid's division algorithm which rationalisation removed (flagged at checkpoint 52), so an author following the book would teach excluded material; then Chapter 5 Arithmetic Progressions, recorded as FORMALISATION rather than first encounter"
+}

@@ -1,0 +1,115 @@
+{
+  "checkpoint": 73,
+  "canonicalVersion": "0.84.0-c11.2",
+  "verdict": "CLASS_11_SOURCE_COMPLETION_INCOMPLETE",
+  "packageCreatedUtc": "2026-10-26T19:30:24Z",
+  "cbseSource": {
+    "frozen": true,
+    "sha256": "5121a0fb9456269fad833abf173090b99232220bd4acfc8f5907f9edc9b405c0",
+    "bytes": 996427,
+    "pages": 12,
+    "title": "Mathematics, Subject Code 041, Classes XI-XII, 2026-27",
+    "verifiedFromContent": true,
+    "note": "pypdf extracted zero characters; PyMuPDF read it fully"
+  },
+  "cbseUnits": [
+    {
+      "I": "Sets and Functions",
+      "marks": 23
+    },
+    {
+      "II": "Algebra",
+      "marks": 25
+    },
+    {
+      "III": "Coordinate Geometry",
+      "marks": 12
+    },
+    {
+      "IV": "Calculus",
+      "marks": 8
+    },
+    {
+      "V": "Statistics and Probability",
+      "marks": 12
+    }
+  ],
+  "formativeOnly": {
+    "count": 12,
+    "sourcePdfPage": 6,
+    "modelledAsOwnScopeCategory": true,
+    "orphan": "FO-4 Principle of Mathematical Induction has no home chapter in kemh1",
+    "foundationalCase": "FO-12 sample space is formative-only while probability of events is summative core",
+    "mixedScopeChapters": 11,
+    "whollySummativeChapters": [
+      6,
+      10,
+      13
+    ]
+  },
+  "ncertSource": {
+    "preserved": true,
+    "hashesUnchanged": true,
+    "files": 18,
+    "pdfPages": 368,
+    "folios": "1-356"
+  },
+  "structure": {
+    "chapterTitlesVerifiedVisually": "14/14",
+    "sections": 63,
+    "subsections": 67,
+    "contiguous": "14/14",
+    "passes": [
+      {
+        "method": "regex any decimal",
+        "result": 142
+      },
+      {
+        "method": "regex + capitalised",
+        "result": 99
+      },
+      {
+        "method": "font size and weight",
+        "result": 54
+      },
+      {
+        "method": "text colour",
+        "result": 54
+      },
+      {
+        "method": "triangulation plus visual",
+        "result": 63
+      }
+    ],
+    "checkpoint72Retraction": "section 7.3 Pascal's triangle was Fig 7.3, a figure number; chapter 7 has 2 sections",
+    "realGapFound": "section 13.3 Range, invisible to every text pass, confirmed visually"
+  },
+  "pageAccounting": {
+    "core_instruction": 140,
+    "worked_example": 103,
+    "exercise": 46,
+    "summary_or_historical": 24,
+    "answers_reference": 22,
+    "appendix": 21,
+    "front_matter": 12,
+    "total": 368,
+    "unexplained": 0
+  },
+  "openGates": [
+    "visual inspection of all pages (about 25 of 368 inspected)",
+    "visualRequired denominator not established",
+    "notation-critical pages identified as necessary but not inspected",
+    "0 of 63 section intents written",
+    "appendices accounted but not read",
+    "miscellaneous exercises not separated per chapter"
+  ],
+  "notationEvidence": "curriculum text layer flattens sin x = sin y to 'si= si' and sin squared plus cos squared to '2 + 2 ='; authoritative reading taken from the rendered document, never reconstructed from flattened text",
+  "priorGrades": {
+    "class9": "92 lessons, 92 candidates, 16 MINOR, 0/0/0/0",
+    "class10": "65 lessons, 65 candidates, 0/0/0/0",
+    "class6": "S74-v1-DFC56A frozen",
+    "regression": "48 tests passing, typecheck 0"
+  },
+  "growth": "FROZEN",
+  "next": "checkpoint 74 \u2014 Class 11 source completion part 2; not decomposition"
+}

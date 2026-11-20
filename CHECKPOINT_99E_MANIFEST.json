@@ -1,0 +1,143 @@
+{
+  "checkpoint": "99E",
+  "canonicalVersion": "0.84.0-c11.47-governance-reconciled",
+  "packageKind": "OFFICIAL FIRST GREEN \u2014 not a WIP archive",
+  "verdict": "CLASS_11_GOVERNANCE_RECONCILIATION_COMPLETE_REQUIRED_AUTHORING_QUEUE_FINAL",
+  "packageCreatedUtc": "2026-11-17T17:26:22Z",
+  "authoredAnything": false,
+  "humanReviewed": false,
+  "recovery": {
+    "base": "pragati-0.84.0-c11.46r-tests-WIP-NOT-FIRST-GREEN.zip",
+    "baseSha": "2205faf5",
+    "originalAuditBase": "187e42fe",
+    "wipArchivesPreserved": 3,
+    "lostTrees": [
+      "checkpoint 99",
+      "99B",
+      "99C",
+      "99D"
+    ]
+  },
+  "staleRegressions": {
+    "initialFailures": 41,
+    "generatedDocs": 11,
+    "handWritten": 30,
+    "testsDeleted": 0,
+    "classes": [
+      "denominators",
+      "policy claims",
+      "false ownership",
+      "defect guards",
+      "invalid witness",
+      "test isolation"
+    ]
+  },
+  "notableRepairs": {
+    "routeIdsNotOwnership": "historic ncert_kemh1_fo ids retained as routes/progress keys; stray guard allows exactly three BY NAME, not by pattern",
+    "independenceWitness": "FO1 and FO3 now share both statuses; the claim is carried by a summative unit with the same instructional status, found from data",
+    "previewFlagLeak": "try/finally so a throwing test cannot leave the flag set",
+    "generatedDocs": "regenerated via PRAGATI_EMIT_DOCS, never hand-edited"
+  },
+  "headerBug": {
+    "symptom": "'4 more required lesson outside the textbook' \u2014 singular",
+    "cause": "both header clauses were written when each count was always 1; GD-2 made one of them 4",
+    "fix": "both clauses pluralised, with a regression test",
+    "studentVisible": true
+  },
+  "qa": {
+    "tests": 3133,
+    "testFiles": 144,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "focusedGovernanceSuite": 16,
+    "focusedSuiteNote": "rebuilt this checkpoint \u2014 it was lost with the working trees and had not been recreated during the recovery"
+  },
+  "governance": {
+    "units": 93,
+    "assessment": {
+      "SUMMATIVE_CORE": 80,
+      "FORMATIVE_ONLY": 13
+    },
+    "requiredDenominator": 93,
+    "optionalEnrichment": 0,
+    "humanCheck": 0,
+    "authoredArtifacts": 87,
+    "coverage": "90 / 93",
+    "uncovered": [
+      "C11-SEQ-FO8",
+      "C11-3DG-FO10",
+      "C11-LIM-FO11"
+    ],
+    "summative": "80 / 80",
+    "formative": "10 / 13",
+    "orphans": 0,
+    "blankKeys": 0,
+    "ownershipBuckets": "82 / 1 / 4 / 87",
+    "chapterRows": {
+      "2": 5,
+      "3": 7,
+      "4": 6
+    },
+    "falseNcertOwners": 0,
+    "catalogueDuplicates": 0,
+    "sharedCoverageKeys": [
+      "1.6",
+      "1.9",
+      "3.4",
+      "7.2",
+      "8.3",
+      "SF-2-SUMMATIVE",
+      "13.4",
+      "13.5"
+    ],
+    "unknownSourceKindThrows": true,
+    "gd1": "RESOLVED",
+    "gd2": "RESOLVED",
+    "formattingDebt": "OPEN, untouched"
+  },
+  "ledgers": [
+    "CLASS11_COMPLETENESS_LEDGER",
+    "GD1_MIGRATION_LEDGER",
+    "GD2_CORRECTION_LEDGER",
+    "CLASS11_REQUIRED_AUTHORING_QUEUE",
+    "CLASS11_CHAPTER_MATRIX"
+  ],
+  "chapterMatrix": {
+    "allSummativeComplete": true,
+    "requiredIncomplete": [
+      8,
+      11,
+      12
+    ]
+  },
+  "product": {
+    "previewCorrectedArtifactsEachOnce": true,
+    "duplicates": 0,
+    "governanceLabelLeak": false,
+    "publicSafe": {
+      "freshBuild": true,
+      "class11Visible": false,
+      "routesBlocked": 3
+    }
+  },
+  "queue": [
+    {
+      "unitId": "C11-3DG-FO10",
+      "risk": "B",
+      "order": 1
+    },
+    {
+      "unitId": "C11-SEQ-FO8",
+      "risk": "B",
+      "order": 2
+    },
+    {
+      "unitId": "C11-LIM-FO11",
+      "risk": "C",
+      "order": 3
+    }
+  ],
+  "queueNote": "no dependency ordering between them; the order is by architectural risk",
+  "next": "C11-3DG-FO10 in its own checkpoint"
+}

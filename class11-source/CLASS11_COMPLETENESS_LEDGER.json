@@ -1,0 +1,2210 @@
+{
+  "generatedBy": "tools/class11/generateCompletenessLedger.ts",
+  "units": 93,
+  "covered": 93,
+  "uncovered": [],
+  "artifacts": 90,
+  "orphans": [],
+  "mechanism": "canonical units decompose finer than the sections lessons are authored against; 8 source keys each carry more than one unit, which is why 90 artifacts cover 93 units",
+  "sharedKeys": [
+    {
+      "key": "1.6",
+      "unitIds": [
+        "C11-SET-05",
+        "C11-SET-06"
+      ]
+    },
+    {
+      "key": "1.9",
+      "unitIds": [
+        "C11-SET-09",
+        "C11-SET-10"
+      ]
+    },
+    {
+      "key": "3.4",
+      "unitIds": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ]
+    },
+    {
+      "key": "7.2",
+      "unitIds": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ]
+    },
+    {
+      "key": "8.3",
+      "unitIds": [
+        "C11-SEQ-02",
+        "C11-SEQ-03"
+      ]
+    },
+    {
+      "key": "SF-2-SUMMATIVE",
+      "unitIds": [
+        "C11-STL-03",
+        "C11-STL-04"
+      ]
+    },
+    {
+      "key": "13.4",
+      "unitIds": [
+        "C11-STA-03",
+        "C11-STA-04"
+      ]
+    },
+    {
+      "key": "13.5",
+      "unitIds": [
+        "C11-STA-05",
+        "C11-STA-06"
+      ]
+    }
+  ],
+  "ledger": [
+    {
+      "unitId": "C11-SET-01",
+      "title": "Sets and their representations",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_2_representations_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-02",
+      "title": "The empty set",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_3_empty_set_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-01"
+      ],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-03",
+      "title": "Finite and infinite sets",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_4_finite_infinite_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-01"
+      ],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-04",
+      "title": "Equality of sets",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_5_equal_sets_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-01"
+      ],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-05",
+      "title": "Subsets and proper subsets",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.6"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_6_subsets_lesson",
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-04"
+      ],
+      "placement": [
+        "chapter-1",
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-06",
+      "title": "Intervals as subsets of the real numbers",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "1.6.2",
+        "1.6"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_6_subsets_lesson",
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-05"
+      ],
+      "placement": [
+        "chapter-1",
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-07",
+      "title": "The universal set",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.7"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_7_universal_set_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-05"
+      ],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-08",
+      "title": "Venn diagrams",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.8"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_8_venn_diagrams_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-07"
+      ],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-09",
+      "title": "Union and intersection of sets",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.9"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson",
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-08"
+      ],
+      "placement": [
+        "chapter-1",
+        "chapter-1",
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-10",
+      "title": "Difference of sets",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.9"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson",
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-09"
+      ],
+      "placement": [
+        "chapter-1",
+        "chapter-1",
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-11",
+      "title": "Complement of a set and its properties",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "1.10"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_10_complement_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-07",
+        "C11-SET-09"
+      ],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-SET-FO1",
+      "title": "Practical problems on union and intersection of two sets",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "FO-1-APPLICATION",
+        "1.9"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-09",
+        "C11-SET-10"
+      ],
+      "placement": [
+        "chapter-1"
+      ]
+    },
+    {
+      "unitId": "C11-RF-01",
+      "title": "Ordered pairs and the Cartesian product",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "2.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s2_2_cartesian_product_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-09"
+      ],
+      "placement": [
+        "chapter-2"
+      ]
+    },
+    {
+      "unitId": "C11-RF-02",
+      "title": "Relations",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "2.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s2_3_relations_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-RF-01"
+      ],
+      "placement": [
+        "chapter-2"
+      ]
+    },
+    {
+      "unitId": "C11-RF-03",
+      "title": "Functions as a special kind of relation",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "2.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s2_4_functions_lesson",
+        "ncert_kemh1_s2_4_1_real_functions_lesson",
+        "ncert_kemh1_s2_4_2_algebra_of_functions_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-RF-02"
+      ],
+      "placement": [
+        "chapter-2",
+        "chapter-2",
+        "chapter-2"
+      ]
+    },
+    {
+      "unitId": "C11-RF-04",
+      "title": "The standard real functions and their graphs",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "2.4.1",
+        "2.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s2_4_1_real_functions_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-RF-03"
+      ],
+      "placement": [
+        "chapter-2"
+      ]
+    },
+    {
+      "unitId": "C11-RF-05",
+      "title": "Algebra of real functions",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "2.4.2",
+        "2.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s2_4_2_algebra_of_functions_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-RF-04"
+      ],
+      "placement": [
+        "chapter-2"
+      ]
+    },
+    {
+      "unitId": "C11-RF-FO2",
+      "title": "Composition of functions",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_fo2_composition_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-RF-05"
+      ],
+      "placement": [
+        "chapter-less required group"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-01",
+      "title": "Positive and negative angles",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "3.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s3_2_angles_lesson",
+        "ncert_kemh1_s3_2_1_radian_measure_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-3",
+        "chapter-3"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-02",
+      "title": "Degree and radian measure",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "3.2.1",
+        "3.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s3_2_1_radian_measure_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-TRG-01"
+      ],
+      "placement": [
+        "chapter-3"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-03",
+      "title": "Trigonometric functions on the unit circle",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "3.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s3_3_unit_circle_lesson",
+        "ncert_kemh1_s3_3_1_quadrant_signs_lesson",
+        "ncert_kemh1_s3_3_2_domain_range_graphs_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-TRG-02"
+      ],
+      "placement": [
+        "chapter-3",
+        "chapter-3",
+        "chapter-3"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-04",
+      "title": "Signs of the trigonometric functions by quadrant",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "3.3.1",
+        "3.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s3_3_1_quadrant_signs_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-TRG-03"
+      ],
+      "placement": [
+        "chapter-3"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-05",
+      "title": "Domain, range and graphs of the trigonometric functions",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "3.3.2",
+        "3.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s3_3_2_domain_range_graphs_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-TRG-04"
+      ],
+      "placement": [
+        "chapter-3"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-06",
+      "title": "Sum and difference identities",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "3.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s3_4_sum_difference_lesson",
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-TRG-03"
+      ],
+      "placement": [
+        "chapter-3",
+        "chapter-3"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-07",
+      "title": "Identities for multiple and half angles",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "3.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s3_4_sum_difference_lesson",
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-TRG-06"
+      ],
+      "placement": [
+        "chapter-3",
+        "chapter-3"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-FO3",
+      "title": "General solution of simple trigonometric equations",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_fo3_general_solutions_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-TRG-05",
+        "C11-TRG-06"
+      ],
+      "placement": [
+        "chapter-less required group"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-01",
+      "title": "The complex number and the square root of minus one",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "4.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s4_2_complex_numbers_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-4"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-02",
+      "title": "Algebra of complex numbers",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "4.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s4_3_algebra_lesson",
+        "ncert_kemh1_s4_3_5_powers_division_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CPX-01"
+      ],
+      "placement": [
+        "chapter-4",
+        "chapter-4"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-03",
+      "title": "Powers of i and division of complex numbers",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "4.3.5",
+        "4.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s4_3_5_powers_division_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CPX-02"
+      ],
+      "placement": [
+        "chapter-4"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-04",
+      "title": "Modulus and conjugate",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "4.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s4_4_modulus_conjugate_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CPX-03"
+      ],
+      "placement": [
+        "chapter-4"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-05",
+      "title": "The Argand plane",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "SF-1-SUMMATIVE",
+        "4.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s4_5_argand_plane_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CPX-04"
+      ],
+      "placement": [
+        "chapter-4"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-FO5a",
+      "title": "Polar representation of a complex number",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "SF-1-FORMATIVE",
+        "4.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s4_5_polar_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CPX-05"
+      ],
+      "placement": [
+        "chapter-4"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-FO5b",
+      "title": "Quadratic equations over the complex numbers",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_fo5b_complex_quadratics_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CPX-04"
+      ],
+      "placement": [
+        "chapter-less required group"
+      ]
+    },
+    {
+      "unitId": "C11-INQ-01",
+      "title": "Linear inequalities and their solution sets",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "5.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s5_2_inequalities_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-5"
+      ]
+    },
+    {
+      "unitId": "C11-INQ-02",
+      "title": "Algebraic solution of a linear inequality in one variable",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "5.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s5_3_one_variable_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-INQ-01"
+      ],
+      "placement": [
+        "chapter-5"
+      ]
+    },
+    {
+      "unitId": "C11-INQ-FO6",
+      "title": "Graphical solution of linear inequalities in two variables",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-6"
+      ],
+      "authored": true,
+      "artifacts": [
+        "cbse_fo6_half_plane_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-INQ-02"
+      ],
+      "placement": [
+        "chapter-less required group"
+      ]
+    },
+    {
+      "unitId": "C11-PNC-01",
+      "title": "The fundamental principle of counting",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "6.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s6_2_counting_principle_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-6"
+      ]
+    },
+    {
+      "unitId": "C11-PNC-02",
+      "title": "Factorial notation",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "6.3.1",
+        "6.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s6_3_1_factorial_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PNC-01"
+      ],
+      "placement": [
+        "chapter-6"
+      ]
+    },
+    {
+      "unitId": "C11-PNC-03",
+      "title": "Permutations and the formula for nPr",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "6.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s6_3_1_factorial_lesson",
+        "ncert_kemh1_s6_3_permutations_lesson",
+        "ncert_kemh1_s6_3_3_repeated_objects_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PNC-02"
+      ],
+      "placement": [
+        "chapter-6",
+        "chapter-6",
+        "chapter-6"
+      ]
+    },
+    {
+      "unitId": "C11-PNC-04",
+      "title": "Permutations when objects are not all distinct",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "6.3.3",
+        "6.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s6_3_3_repeated_objects_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PNC-03"
+      ],
+      "placement": [
+        "chapter-6"
+      ]
+    },
+    {
+      "unitId": "C11-PNC-05",
+      "title": "Combinations",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "6.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s6_4_combinations_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PNC-03"
+      ],
+      "placement": [
+        "chapter-6"
+      ]
+    },
+    {
+      "unitId": "C11-BIN-01",
+      "title": "The binomial theorem for a positive integral index",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "7.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PNC-05",
+        "C11-IND-01"
+      ],
+      "placement": [
+        "chapter-7"
+      ]
+    },
+    {
+      "unitId": "C11-BIN-02",
+      "title": "Pascal's triangle and the binomial coefficients",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "7.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PNC-05"
+      ],
+      "placement": [
+        "chapter-7"
+      ]
+    },
+    {
+      "unitId": "C11-BIN-03",
+      "title": "Simple applications of the binomial theorem",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "7.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-BIN-01"
+      ],
+      "placement": [
+        "chapter-7"
+      ]
+    },
+    {
+      "unitId": "C11-BIN-FO7",
+      "title": "General and middle term of a binomial expansion",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "FO-7-TERMS",
+        "7.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-BIN-03"
+      ],
+      "placement": [
+        "chapter-7"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-01",
+      "title": "Sequences and their terms",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "8.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s8_2_sequences_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-8"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-02",
+      "title": "Series and sigma notation",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "8.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s8_3_series_sigma_lesson",
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SEQ-01"
+      ],
+      "placement": [
+        "chapter-8",
+        "chapter-8"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-03",
+      "title": "Arithmetic mean",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "8.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s8_3_series_sigma_lesson",
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SEQ-02"
+      ],
+      "placement": [
+        "chapter-8",
+        "chapter-8"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-04",
+      "title": "Geometric progression and its general term",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "8.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s8_4_geometric_progression_lesson",
+        "ncert_kemh1_s8_4_1_gp_sum_lesson",
+        "ncert_kemh1_s8_4_2_infinite_gp_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SEQ-01"
+      ],
+      "placement": [
+        "chapter-8",
+        "chapter-8",
+        "chapter-8"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-05",
+      "title": "Sum of n terms of a geometric progression",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "8.4.1",
+        "8.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s8_4_1_gp_sum_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SEQ-04"
+      ],
+      "placement": [
+        "chapter-8"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-06",
+      "title": "Infinite geometric series and the geometric mean",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "8.4.2",
+        "8.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s8_4_2_infinite_gp_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SEQ-05"
+      ],
+      "placement": [
+        "chapter-8"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-07",
+      "title": "Relationship between the arithmetic and geometric means",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "8.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s8_5_am_gm_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SEQ-03",
+        "C11-SEQ-06"
+      ],
+      "placement": [
+        "chapter-8"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-FO8",
+      "title": "Formulae for the special sums",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-8"
+      ],
+      "authored": true,
+      "artifacts": [
+        "cbse_fo8_special_sums_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SEQ-02"
+      ],
+      "placement": [
+        "chapter-less required group"
+      ]
+    },
+    {
+      "unitId": "C11-STL-01",
+      "title": "Slope of a line",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "9.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s9_2_slope_lesson",
+        "ncert_kemh1_s9_2_1_angle_between_lines_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-9",
+        "chapter-9"
+      ]
+    },
+    {
+      "unitId": "C11-STL-02",
+      "title": "Angle between two lines",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "9.2.1",
+        "9.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s9_2_1_angle_between_lines_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STL-01"
+      ],
+      "placement": [
+        "chapter-9"
+      ]
+    },
+    {
+      "unitId": "C11-STL-03",
+      "title": "Equations of lines parallel to the axes, and the point-slope form",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "SF-2-SUMMATIVE",
+        "9.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson",
+        "ncert_kemh1_s9_3_forms_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STL-01"
+      ],
+      "placement": [
+        "chapter-9",
+        "chapter-9"
+      ]
+    },
+    {
+      "unitId": "C11-STL-04",
+      "title": "Slope-intercept, two-point and intercept forms",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "SF-2-SUMMATIVE",
+        "9.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson",
+        "ncert_kemh1_s9_3_forms_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STL-03"
+      ],
+      "placement": [
+        "chapter-9",
+        "chapter-9"
+      ]
+    },
+    {
+      "unitId": "C11-STL-05",
+      "title": "Distance of a point from a line",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "9.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s9_4_distance_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STL-04"
+      ],
+      "placement": [
+        "chapter-9"
+      ]
+    },
+    {
+      "unitId": "C11-STL-FO9",
+      "title": "Normal form and the general equation of a line",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "SF-2-FORMATIVE",
+        "9.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s9_3_fo9_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STL-04"
+      ],
+      "placement": [
+        "chapter-9"
+      ]
+    },
+    {
+      "unitId": "C11-CON-01",
+      "title": "Sections of a cone",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "10.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_2_cone_sections_lesson",
+        "ncert_kemh1_s10_2_2_degenerate_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-10",
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-CON-02",
+      "title": "Degenerate conic sections",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "10.2.2",
+        "10.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_2_2_degenerate_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CON-01"
+      ],
+      "placement": [
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-CON-03",
+      "title": "The circle",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "10.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_3_circle_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CON-01",
+        "C11-STL-01"
+      ],
+      "placement": [
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-CON-04",
+      "title": "The parabola and its standard equations",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "10.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_4_parabola_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CON-03"
+      ],
+      "placement": [
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-CON-05",
+      "title": "The ellipse and its standard equations",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "10.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_5_ellipse_lesson",
+        "ncert_kemh1_s10_5_2_ellipse_eccentricity_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CON-04"
+      ],
+      "placement": [
+        "chapter-10",
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-CON-06",
+      "title": "Eccentricity and latus rectum of an ellipse",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "10.5.2",
+        "10.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_5_2_ellipse_eccentricity_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CON-05"
+      ],
+      "placement": [
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-CON-07",
+      "title": "The hyperbola and its standard equation",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "10.6"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_6_hyperbola_lesson",
+        "ncert_kemh1_s10_6_1_hyperbola_eccentricity_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CON-05"
+      ],
+      "placement": [
+        "chapter-10",
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-CON-08",
+      "title": "Eccentricity and latus rectum of a hyperbola",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "10.6.1",
+        "10.6"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s10_6_1_hyperbola_eccentricity_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-CON-07"
+      ],
+      "placement": [
+        "chapter-10"
+      ]
+    },
+    {
+      "unitId": "C11-3DG-01",
+      "title": "Coordinate axes and planes in three dimensions",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "11.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s11_2_axes_planes_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-11"
+      ]
+    },
+    {
+      "unitId": "C11-3DG-02",
+      "title": "Coordinates of a point in space",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "11.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s11_3_coordinates_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-3DG-01"
+      ],
+      "placement": [
+        "chapter-11"
+      ]
+    },
+    {
+      "unitId": "C11-3DG-03",
+      "title": "Distance between two points in space",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "11.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s11_4_distance_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-3DG-02"
+      ],
+      "placement": [
+        "chapter-11"
+      ]
+    },
+    {
+      "unitId": "C11-3DG-FO10",
+      "title": "Section formula in three dimensions",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-10"
+      ],
+      "authored": true,
+      "artifacts": [
+        "cbse_fo10_section_formula_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-3DG-03"
+      ],
+      "placement": [
+        "chapter-less required group"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-01",
+      "title": "The derivative as a rate of change",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "12.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s12_2_rate_of_change_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STL-01"
+      ],
+      "placement": [
+        "chapter-12"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-02",
+      "title": "The intuitive idea of a limit",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "12.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s12_3_intuitive_limit_lesson",
+        "ncert_kemh1_s12_3_1_polynomial_rational_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-LIM-01"
+      ],
+      "placement": [
+        "chapter-12",
+        "chapter-12"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-03",
+      "title": "Limits of polynomials and rational functions",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "12.3.1",
+        "12.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s12_3_1_polynomial_rational_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-LIM-02"
+      ],
+      "placement": [
+        "chapter-12"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-04",
+      "title": "Limits of trigonometric, exponential and logarithmic functions",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "12.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s12_4_trig_exp_log_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-LIM-03",
+        "C11-TRG-05"
+      ],
+      "placement": [
+        "chapter-12"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-05",
+      "title": "The derivative from first principles",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "12.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s12_5_first_principles_lesson",
+        "ncert_kemh1_s12_5_1_algebra_of_derivatives_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-LIM-03",
+        "C11-IND-01"
+      ],
+      "placement": [
+        "chapter-12",
+        "chapter-12"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-06",
+      "title": "Algebra of derivatives",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "12.5.1",
+        "12.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s12_5_1_algebra_of_derivatives_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-LIM-05",
+        "C11-IND-01"
+      ],
+      "placement": [
+        "chapter-12"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-FO11",
+      "title": "Derivatives of composite functions",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-11"
+      ],
+      "authored": true,
+      "artifacts": [
+        "cbse_fo11_chain_rule_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-LIM-06",
+        "C11-RF-FO2"
+      ],
+      "placement": [
+        "chapter-less required group"
+      ]
+    },
+    {
+      "unitId": "C11-STA-01",
+      "title": "Measures of dispersion",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "13.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s13_2_dispersion_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-13"
+      ]
+    },
+    {
+      "unitId": "C11-STA-02",
+      "title": "Range",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "13.3"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s13_3_range_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STA-01"
+      ],
+      "placement": [
+        "chapter-13"
+      ]
+    },
+    {
+      "unitId": "C11-STA-03",
+      "title": "Mean deviation about the mean",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "13.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s13_4_md_mean_lesson",
+        "ncert_kemh1_s13_4_md_median_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STA-02"
+      ],
+      "placement": [
+        "chapter-13",
+        "chapter-13"
+      ]
+    },
+    {
+      "unitId": "C11-STA-04",
+      "title": "Mean deviation about the median",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "13.4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s13_4_md_mean_lesson",
+        "ncert_kemh1_s13_4_md_median_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STA-03"
+      ],
+      "placement": [
+        "chapter-13",
+        "chapter-13"
+      ]
+    },
+    {
+      "unitId": "C11-STA-05",
+      "title": "Variance and standard deviation",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "13.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson",
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STA-03"
+      ],
+      "placement": [
+        "chapter-13",
+        "chapter-13",
+        "chapter-13"
+      ]
+    },
+    {
+      "unitId": "C11-STA-06",
+      "title": "Variance and standard deviation of grouped data",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "13.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson",
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STA-05"
+      ],
+      "placement": [
+        "chapter-13",
+        "chapter-13",
+        "chapter-13"
+      ]
+    },
+    {
+      "unitId": "C11-STA-07",
+      "title": "The shortcut method for standard deviation",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "13.5.4",
+        "13.5"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-STA-06"
+      ],
+      "placement": [
+        "chapter-13"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-FO12",
+      "title": "Random experiments, outcomes and the sample space",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "SF-3-FORMATIVE",
+        "14.1"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_sf3_formative_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-SET-09"
+      ],
+      "placement": [
+        "chapter-14"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-01",
+      "title": "Events as subsets of the sample space",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "SCOPE_FRAGMENT",
+      "coverageKeys": [
+        "SF-3-SUMMATIVE",
+        "14.1"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_sf3_summative_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PRB-FO12"
+      ],
+      "placement": [
+        "chapter-14"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-02",
+      "title": "Not, and, or events",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "14.1.2",
+        "14.1"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s14_1_2_not_and_or_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PRB-01",
+        "C11-SET-11"
+      ],
+      "placement": [
+        "chapter-14"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-03",
+      "title": "Exhaustive and mutually exclusive events",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "14.1.4",
+        "14.1"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s14_1_4_exhaustive_exclusive_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PRB-02"
+      ],
+      "placement": [
+        "chapter-14"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-04",
+      "title": "Axiomatic probability",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SECTION",
+      "coverageKeys": [
+        "14.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s14_2_axiomatic_probability_lesson",
+        "ncert_kemh1_s14_2_2_equally_likely_lesson",
+        "ncert_kemh1_s14_2_3_probability_rules_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PRB-03"
+      ],
+      "placement": [
+        "chapter-14",
+        "chapter-14",
+        "chapter-14"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-05",
+      "title": "Probabilities of equally likely outcomes",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "14.2.2",
+        "14.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s14_2_2_equally_likely_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PRB-04"
+      ],
+      "placement": [
+        "chapter-14"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-06",
+      "title": "Probability of not, and, or events",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "required": true,
+      "sourceKind": "NCERT_SUBSECTION",
+      "coverageKeys": [
+        "14.2.3",
+        "14.2"
+      ],
+      "authored": true,
+      "artifacts": [
+        "ncert_kemh1_s14_2_3_probability_rules_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [
+        "C11-PRB-05",
+        "C11-PRB-02"
+      ],
+      "placement": [
+        "chapter-14"
+      ]
+    },
+    {
+      "unitId": "C11-IND-01",
+      "title": "The principle of mathematical induction",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "required": true,
+      "sourceKind": "CBSE_ONLY",
+      "coverageKeys": [
+        "FO-4"
+      ],
+      "authored": true,
+      "artifacts": [
+        "cbse_fo4_induction_lesson"
+      ],
+      "missing": false,
+      "prerequisites": [],
+      "placement": [
+        "chapter-less prerequisite group"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "checkpoint": 47,
+  "canonicalVersion": "0.84.0-rc.4",
+  "packageCreatedUtc": "2026-10-15T14:23:04Z",
+  "blockerConfirmed": {
+    "runtimeGuardMissing": "CONFIRMED \u2014 App.tsx entered the authored Learn route on hasAuthoredLearn() alone, with no preview condition",
+    "deadGovernanceFunction": "CONFIRMED \u2014 isAuthoredLearnPreviewable() was defined and never called",
+    "consequence": "a public Class 9 build would have served all 92 authored_draft lessons to students"
+  },
+  "fix": {
+    "module": "src/curriculum/authoredLearnAccess.ts",
+    "flag": "VITE_ENABLE_AUTHORED_LEARN_PREVIEW",
+    "default": "OFF when absent",
+    "opensOnlyFor": "the exact string 'true'",
+    "enforcementPoint": "authoredLearnCatalogueForGrade() filters on mayDeliverAuthoredLesson(), so catalogue, chapter route and direct lesson route are all closed together",
+    "deadFunctionRemoved": true
+  },
+  "testCount": 2068,
+  "testFileCount": 104,
+  "modes": {
+    "publicSafeDefault": {
+      "build": "PASS",
+      "catalogueShown": false,
+      "previewNotice": false,
+      "all92Denied": true,
+      "consoleErrors": 0,
+      "failedRequests": 0
+    },
+    "internalPreview": {
+      "build": "PASS",
+      "chapters": 14,
+      "lessons": 92,
+      "chapter3": 8,
+      "chapter9": 2,
+      "representativeLessons": "7/7 walked all five stages and finished",
+      "persistence": "7 before reload, 7 after",
+      "consoleErrors": 0,
+      "failedRequests": 0
+    }
+  },
+  "viewports": {
+    "1280": "0px overflow",
+    "834": "0px overflow, 0 over-wide",
+    "360": "0px overflow, 0 over-wide"
+  },
+  "class9": {
+    "instructionalUnits": 93,
+    "studentLessons": 92,
+    "contextuallyCovered": 1,
+    "unresolved": 0
+  },
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "allArtifacts": "authored_draft"
+  },
+  "environmentVariables": {
+    "firebase": [
+      "VITE_FIREBASE_API_KEY",
+      "VITE_FIREBASE_AUTH_DOMAIN",
+      "VITE_FIREBASE_PROJECT_ID",
+      "VITE_FIREBASE_STORAGE_BUCKET",
+      "VITE_FIREBASE_MESSAGING_SENDER_ID",
+      "VITE_FIREBASE_APP_ID"
+    ],
+    "authoredPreview": {
+      "name": "VITE_ENABLE_AUTHORED_LEARN_PREVIEW",
+      "default": "absent = off",
+      "risk": "enable ONLY for internal/RC preview deployments while Class 9 remains unreviewed; setting it in a production environment would put unreviewed curriculum in front of students"
+    }
+  },
+  "hosting": {
+    "target": "Vercel",
+    "configFile": null,
+    "vercelPreviewEnv": "set VITE_ENABLE_AUTHORED_LEARN_PREVIEW=true in Preview only",
+    "vercelProductionEnv": "do not set it while Class 9 is unreviewed"
+  },
+  "unverified": [
+    "FIREBASE_CONFIGURED_MODE_NOT_LIVE_VERIFIED",
+    "REMOTE_PREVIEW_DEPLOYMENT_NOT_EXECUTED",
+    "colour contrast not measured",
+    "no real screen-reader testing"
+  ],
+  "verdict": "CLASS_9_DEPLOYMENT_RC_LOCAL_VERIFIED_REMOTE_PREVIEW_PENDING",
+  "doesNotMean": "Class 9 published, or ready for public student use. The content is unreviewed.",
+  "versionRule": "any change to packaged bytes gets a new version; documentation is part of the package",
+  "corrections": {
+    "verdict": "checkpoint 46 claimed PREVIEW_VERIFIED while recording REMOTE_PREVIEW_DEPLOYMENT_NOT_EXECUTED; corrected to LOCAL_VERIFIED_REMOTE_PREVIEW_PENDING",
+    "bundleClaim": "the claim that a public bundle does not contain the route was false; verified against the shipped artifact, which contains the flag name, the preview notice string AND the lesson prose. The guarantee is inaccessibility, not absence, and is a delivery gate rather than a confidentiality measure.",
+    "artifactNames": "pragati-0.84.0-rc.3-dist.zip was referenced and never existed; the runbook now names public-safe and internal-preview artifacts distinctly",
+    "productionCommand": "npx vercel --prod moved under its own approval-required heading"
+  },
+  "remotePreview": {
+    "state": "REMOTE_PREVIEW_DEPLOYMENT_NOT_EXECUTED",
+    "blocker": "no authorised Vercel account or linked project available to this environment; creating one to clear the gate is explicitly disallowed",
+    "note": "a Vercel preview builds from source and is therefore not byte-identical to the internal-preview dist artifact"
+  },
+  "governanceGuarantee": "inaccessibility, not absence \u2014 catalogue and direct lesson lookup both deny authored drafts when the flag is off"
+}

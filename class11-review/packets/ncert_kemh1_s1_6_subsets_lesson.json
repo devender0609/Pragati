@@ -1,0 +1,246 @@
+{
+  "priority": 8,
+  "contentArtifactId": "ncert_kemh1_s1_6_subsets_lesson",
+  "title": "You will decide whether one set is contained in another, and separate a subset from a proper subset.",
+  "placement": "chapter-1",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-SET-05, C11-SET-06",
+    "risk class C"
+  ],
+  "artifactFingerprint": "152192c638d6b5c386db661dd123c1c5",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-SET-05",
+      "title": "Subsets and proper subsets",
+      "objective": "Decide containment between sets and distinguish a subset from a proper subset.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "subset symbols",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SET-06",
+      "title": "Intervals as subsets of the real numbers",
+      "objective": "Read and write open, closed and half-open intervals as subsets of the reals.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "REPRESENTATION_EXTENSION",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "interval notation and the real line",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch01",
+    "officialSectionId": "ncert_kemh1_s1_6",
+    "sectionNumber": "1.6",
+    "cbseEntryId": null,
+    "startPage": 6,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "venn"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will decide whether one set is contained in another, and separate a subset from a proper subset.",
+    "vocabulary": [
+      {
+        "term": "subset",
+        "meaning": "A is a subset of B when every element of A is also an element of B, written A \\u2286 B."
+      },
+      {
+        "term": "proper subset",
+        "meaning": "A is a proper subset of B when A \\u2286 B and A is not equal to B."
+      },
+      {
+        "term": "subset test",
+        "meaning": "Checking, one element at a time, that every element of the first set belongs to the second."
+      }
+    ],
+    "explanation": [
+      "The previous lesson needed two directions to establish equality. A single direction is worth a name of its own: when every element of A belongs to B, we say A is a subset of B, written A \\u2286 B.",
+      "So {1, 3, 5} \\u2286 {1, 2, 3, 4, 5}, because 1, 3 and 5 all appear in the second set. The test is elementwise and nothing else.",
+      "Every set is a subset of itself, since every element of A is certainly in A. And the empty set is a subset of every set, because it has no element that could fail the test.",
+      "When A \\u2286 B and the two are not equal, A is a proper subset of B. {1, 3, 5} is a proper subset of {1, 2, 3, 4, 5} because 2 and 4 are in the larger set only.",
+      "A caution about the reading of pictures: containment is decided by elements, not by a drawing. A circle drawn inside another circle asserts a subset relation; it does not establish one. The elements settle it."
+    ],
+    "workedExamples": [
+      {
+        "id": "s16.we1",
+        "prompt": "Is {1, 3, 5} a subset of {1, 2, 3, 4, 5}?",
+        "answer": "Yes.",
+        "steps": [
+          {
+            "text": "Test 1: it is in the larger set.",
+            "reasoning": "The subset test is one element at a time, in one direction only."
+          },
+          {
+            "text": "Test 3, then 5: both are in the larger set.",
+            "reasoning": "Every element has been checked, which is what the definition requires."
+          },
+          {
+            "text": "So {1, 3, 5} \\u2286 {1, 2, 3, 4, 5}.",
+            "reasoning": "No element of the smaller set failed, so containment holds."
+          }
+        ]
+      },
+      {
+        "id": "s16.we2",
+        "prompt": "Is {1, 3, 5} a proper subset of {1, 2, 3, 4, 5}?",
+        "answer": "Yes, a proper subset.",
+        "steps": [
+          {
+            "text": "Containment was established above.",
+            "reasoning": "Proper subset requires containment first, so the work already done is not repeated, only added to."
+          },
+          {
+            "text": "The sets are not equal: 2 is in {1, 2, 3, 4, 5} and not in {1, 3, 5}.",
+            "reasoning": "The extra element is what makes the containment strict."
+          },
+          {
+            "text": "So it is a proper subset: it is contained and smaller.",
+            "reasoning": "Both conditions hold: the containment was shown and the extra element rules out equality."
+          }
+        ]
+      },
+      {
+        "id": "s16.we3",
+        "prompt": "A student concludes A \\u2286 B because A has fewer elements than B. What has gone wrong?",
+        "answer": "Fewer elements does not imply containment; each element must be checked.",
+        "steps": [
+          {
+            "text": "Take A = {7} and B = {1, 2, 3}. A has fewer elements.",
+            "reasoning": "A counterexample settles whether the reasoning is sound."
+          },
+          {
+            "text": "But 7 is not in B, so A is not a subset of B.",
+            "reasoning": "Size is a consequence of containment, never a substitute for the test."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s16.g1",
+        "prompt": "Is {2, 4} \\u2286 {1, 2, 3, 4, 5}?",
+        "hint": "Check each element.",
+        "answer": "Yes.",
+        "rationale": "Both 2 and 4 appear in the larger set, so every element passes the test."
+      },
+      {
+        "id": "s16.g2",
+        "prompt": "Is ∅ \\u2286 {1, 2}?",
+        "hint": "Is there an element that fails?",
+        "answer": "Yes.",
+        "rationale": "The empty set has no element, so no element can fail the test. The containment holds vacuously."
+      },
+      {
+        "id": "s16.g3",
+        "prompt": "Is {1, 2} a proper subset of {1, 2}?",
+        "hint": "Are they equal?",
+        "answer": "No.",
+        "rationale": "It is a subset, but the sets are equal, so the containment is not proper."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s16.i1",
+        "prompt": "Is {1, 5} \\u2286 {1, 2, 3}?",
+        "answer": "No.",
+        "rationale": "5 is not in the second set, and a single failing element is enough to defeat containment."
+      },
+      {
+        "id": "s16.i2",
+        "prompt": "List all subsets of {a, b}.",
+        "answer": "∅, {a}, {b}, {a, b}.",
+        "rationale": "Each element is either in or out, giving four combinations. The empty set and the whole set are both included."
+      },
+      {
+        "id": "s16.i3",
+        "prompt": "If A \\u2286 B and B \\u2286 A, what follows?",
+        "answer": "A = B.",
+        "rationale": "The two containments are exactly the two directions of the equality test from the previous lesson."
+      },
+      {
+        "id": "s16.i4",
+        "prompt": "A diagram shows circle A inside circle B. Does that prove A \\u2286 B?",
+        "answer": "No.",
+        "rationale": "The picture represents a claim about elements. It is only correct if every element of A really is in B, which the elements decide."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s16.td1",
+        "prompt": "Why is ∅ a subset of every set, when it has nothing in common with them?",
+        "expectedReasoning": "The test asks whether any element of ∅ fails to belong to the other set. ∅ has no elements, so nothing can fail, and the test passes. It passes not because the sets share something but because there is no opportunity for the condition to break. The same reasoning shows there is nothing special about which set is on the right."
+      }
+    ],
+    "summary": "A \\u2286 B when every element of A is in B, tested one element at a time. If in addition A is not equal to B, the containment is proper. ∅ is a subset of every set and every set is a subset of itself.",
+    "visuals": [
+      {
+        "type": "venn",
+        "caption": "Two overlapping circles inside a rectangle marked U. The overlap, the region inside both A and B, is shaded.",
+        "altText": "Two overlapping circles inside a rectangle marked U. The overlap, the region inside both A and B, is shaded."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-SET-05",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-SET-06",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

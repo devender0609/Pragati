@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pragati — Mathematics Learning</title>
+    <!--
+      v0.83.5 §2 — the description still read "prototype adaptive growth
+      assessment for CBSE Class 6 Math (FR.06)". It is the sentence search
+      engines and link previews quote, Growth is frozen, and Pragati is no
+      longer a Class 6 product.
+    -->
+    <meta
+      name="description"
+      content="Pragati is a mathematics learning and practice platform aligned to current CBSE/NCERT Mathematics courses."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      v0.76 §11 — TYPOGRAPHY, ACTUALLY LOADED.
+
+      tailwind.config declared `font-display: Bricolage Grotesque` from
+      v0.69 onward and index.html never loaded it, so every `font-display`
+      class in the product silently rendered as Inter. Nine months of
+      "expressive headings" were one typeface wearing a different class
+      name. Caught by reading the font stack against the <link> tags.
+
+      The replacement is a deliberate choice, not a fix-in-place:
+
+        Anek Latin      headings and display. Drawn by Ek Type (Mumbai)
+                        as one superfamily across nine Indian scripts, so
+                        the Latin and the Devanagari were designed by the
+                        same hand for the same page. A grotesque with a
+                        width axis — it can be set tight and tall for a
+                        chapter title without becoming a poster face.
+        Anek Devanagari प्रगति, and any Hindi UI. Same superfamily, so the
+                        wordmark's two scripts share a skeleton.
+        Inter           body, UI, and data. Kept: it is the best-tested
+                        screen text face there is, and a product a child
+                        reads for ten minutes should not experiment here.
+
+      Both are SIL OFL and served from Google Fonts, so there is no
+      licensing question for production.
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Anek+Latin:wght@500;600;700;800&family=Anek+Devanagari:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+      <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%93%90%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

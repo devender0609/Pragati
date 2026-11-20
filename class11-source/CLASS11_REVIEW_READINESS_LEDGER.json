@@ -1,0 +1,4370 @@
+{
+  "generatedBy": "tools/class11/generateReviewReadiness.ts",
+  "scope": "current canonical 93-unit Class 11 scope",
+  "caveat": "READY_FOR_HUMAN_REVIEW means structurally safe to send to a reviewer. It is not material alignment, not human review, and not publishable.",
+  "statusMatrix": {
+    "sourceDecompositionUnits": 93,
+    "requiredUnits": 93,
+    "authoredArtifacts": 90,
+    "requiredCoverage": "93 / 93",
+    "uncovered": [],
+    "orphans": [],
+    "structurallyReadyForHumanReview": 90,
+    "needingFix": 0,
+    "materialAlignmentSettled": 0,
+    "materialAlignmentNeedingHumanCheck": 93,
+    "sentForHumanReview": 0,
+    "humanReviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "sharedCoverageKeys": [
+    {
+      "key": "1.6",
+      "unitIds": [
+        "C11-SET-05",
+        "C11-SET-06"
+      ]
+    },
+    {
+      "key": "1.9",
+      "unitIds": [
+        "C11-SET-09",
+        "C11-SET-10"
+      ]
+    },
+    {
+      "key": "3.4",
+      "unitIds": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ]
+    },
+    {
+      "key": "7.2",
+      "unitIds": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ]
+    },
+    {
+      "key": "8.3",
+      "unitIds": [
+        "C11-SEQ-02",
+        "C11-SEQ-03"
+      ]
+    },
+    {
+      "key": "SF-2-SUMMATIVE",
+      "unitIds": [
+        "C11-STL-03",
+        "C11-STL-04"
+      ]
+    },
+    {
+      "key": "13.4",
+      "unitIds": [
+        "C11-STA-03",
+        "C11-STA-04"
+      ]
+    },
+    {
+      "key": "13.5",
+      "unitIds": [
+        "C11-STA-05",
+        "C11-STA-06"
+      ]
+    }
+  ],
+  "reviewLedger": [
+    {
+      "contentArtifactId": "ncert_kemh1_s2_2_cartesian_product_lesson",
+      "learningGoal": "You will form the Cartesian product of two sets, count its elements, and see why the order of the two sets matters.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch02",
+      "officialSectionId": "ncert_kemh1_s2_2",
+      "sectionNumber": "2.2",
+      "cbseEntryId": null,
+      "startPage": 19,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-2",
+      "canonicalUnits": [
+        "C11-RF-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-09"
+      ],
+      "representationRequirements": [
+        "ordered-pair notation, grid or arrow diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s2_3_relations_lesson",
+      "learningGoal": "You will define a relation as a subset of a Cartesian product, and separate its domain, its codomain and its range.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch02",
+      "officialSectionId": "ncert_kemh1_s2_3",
+      "sectionNumber": "2.3",
+      "cbseEntryId": null,
+      "startPage": 23,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-2",
+      "canonicalUnits": [
+        "C11-RF-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-RF-01"
+      ],
+      "representationRequirements": [
+        "arrow diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s2_4_functions_lesson",
+      "learningGoal": "You will decide whether a relation is a function by testing one condition: every element of the domain has exactly one image.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch02",
+      "officialSectionId": "ncert_kemh1_s2_4",
+      "sectionNumber": "2.4",
+      "cbseEntryId": null,
+      "startPage": 28,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-2",
+      "canonicalUnits": [
+        "C11-RF-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-RF-02"
+      ],
+      "representationRequirements": [
+        "arrow diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s2_4_1_real_functions_lesson",
+      "learningGoal": "You will recognise the standard real functions by rule, domain, range and graph, and see why some of their graphs must be drawn in pieces.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch02",
+      "officialSectionId": "ncert_kemh1_s2_4",
+      "sectionNumber": "2.4",
+      "cbseEntryId": null,
+      "startPage": 32,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-2",
+      "canonicalUnits": [
+        "C11-RF-03",
+        "C11-RF-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-RF-02",
+        "C11-RF-03"
+      ],
+      "representationRequirements": [
+        "arrow diagram",
+        "function graphs for nine families"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "real_function_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s2_4_2_algebra_of_functions_lesson",
+      "learningGoal": "You will add, subtract, multiply and divide real functions, and work out the domain of the result rather than assuming it.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch02",
+      "officialSectionId": "ncert_kemh1_s2_4",
+      "sectionNumber": "2.4",
+      "cbseEntryId": null,
+      "startPage": 35,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-2",
+      "canonicalUnits": [
+        "C11-RF-03",
+        "C11-RF-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-RF-02",
+        "C11-RF-04"
+      ],
+      "representationRequirements": [
+        "arrow diagram",
+        "function notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_fo2_composition_lesson",
+      "learningGoal": "You will feed the output of one function into another, and see why the order and the domain both need care.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_fo2_c11_composition",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-2",
+      "startPage": 0,
+      "sourceReference": "Maths_SecP2_2026-27",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less required",
+      "canonicalUnits": [
+        "C11-RF-FO2"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_PREREQUISITE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-RF-05"
+      ],
+      "representationRequirements": [
+        "mapping diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s5_2_inequalities_lesson",
+      "learningGoal": "You will tell a strict inequality from a weak one and say what its solution set is.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch05",
+      "officialSectionId": "ncert_kemh1_s5_2",
+      "sectionNumber": "5.2",
+      "cbseEntryId": null,
+      "startPage": 98,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-5",
+      "canonicalUnits": [
+        "C11-INQ-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "A"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "inequality symbols"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s5_3_one_variable_lesson",
+      "learningGoal": "You will solve a linear inequality in one variable and draw its solution on a number line.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch05",
+      "officialSectionId": "ncert_kemh1_s5_3",
+      "sectionNumber": "5.3",
+      "cbseEntryId": null,
+      "startPage": 100,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-5",
+      "canonicalUnits": [
+        "C11-INQ-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-INQ-01"
+      ],
+      "representationRequirements": [
+        "number line with open and closed endpoints"
+      ],
+      "declaredFamilies": [
+        "region:number_line"
+      ],
+      "consumedVisualKinds": [
+        "number_line_region"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s11_2_axes_planes_lesson",
+      "learningGoal": "You will name the three coordinate planes and the eight octants, and say where a region of space lies.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch11",
+      "officialSectionId": "ncert_kemh1_s11_2",
+      "sectionNumber": "11.2",
+      "cbseEntryId": null,
+      "startPage": 192,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-11",
+      "canonicalUnits": [
+        "C11-3DG-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "3-D axis diagram"
+      ],
+      "declaredFamilies": [
+        "coordinate:3d"
+      ],
+      "consumedVisualKinds": [
+        "coordinate_3d"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s11_3_coordinates_lesson",
+      "learningGoal": "You will read and plot an ordered triple and state the sign pattern of its octant.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch11",
+      "officialSectionId": "ncert_kemh1_s11_3",
+      "sectionNumber": "11.3",
+      "cbseEntryId": null,
+      "startPage": 194,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-11",
+      "canonicalUnits": [
+        "C11-3DG-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-3DG-01"
+      ],
+      "representationRequirements": [
+        "3-D coordinate diagram"
+      ],
+      "declaredFamilies": [
+        "coordinate:3d"
+      ],
+      "consumedVisualKinds": [
+        "coordinate_3d"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s11_4_distance_lesson",
+      "learningGoal": "You will derive the distance formula in space and use it to test geometric claims.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch11",
+      "officialSectionId": "ncert_kemh1_s11_4",
+      "sectionNumber": "11.4",
+      "cbseEntryId": null,
+      "startPage": 197,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-11",
+      "canonicalUnits": [
+        "C11-3DG-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-3DG-02"
+      ],
+      "representationRequirements": [
+        "3-D diagram; exact radicals"
+      ],
+      "declaredFamilies": [
+        "coordinate:3d"
+      ],
+      "consumedVisualKinds": [
+        "coordinate_3d"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "cbse_fo10_section_formula_lesson",
+      "learningGoal": "You will find the point that divides a segment in space in a given ratio.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_fo10_c11_section_formula",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-10",
+      "startPage": 0,
+      "sourceReference": "cbse_fo10",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less required",
+      "canonicalUnits": [
+        "C11-3DG-FO10"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-3DG-03"
+      ],
+      "representationRequirements": [
+        "3-D diagram"
+      ],
+      "declaredFamilies": [
+        "coordinate:3d"
+      ],
+      "consumedVisualKinds": [
+        "coordinate_3d"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "cbse_fo6_half_plane_lesson",
+      "learningGoal": "You will shade the half-plane satisfying a two-variable inequality and find the region satisfying a system.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_fo6_c11_two_variable_inequalities",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-6",
+      "startPage": 0,
+      "sourceReference": "cbse_fo6",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less required",
+      "canonicalUnits": [
+        "C11-INQ-FO6"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-INQ-02"
+      ],
+      "representationRequirements": [
+        "half-plane region on a coordinate plane"
+      ],
+      "declaredFamilies": [
+        "region:half_plane"
+      ],
+      "consumedVisualKinds": [
+        "half_plane_region"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s3_2_angles_lesson",
+      "learningGoal": "You will describe an angle as a rotation, read its sign as a direction, and recognise that many different angles can share one terminal side.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch03",
+      "officialSectionId": "ncert_kemh1_s3_2",
+      "sectionNumber": "3.2",
+      "cbseEntryId": null,
+      "startPage": 34,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-3",
+      "canonicalUnits": [
+        "C11-TRG-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "rotation diagram with initial and terminal sides"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s3_2_1_radian_measure_lesson",
+      "learningGoal": "You will measure an angle by the arc it cuts on a circle, and convert exactly between degrees and radians in both directions.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch03",
+      "officialSectionId": "ncert_kemh1_s3_2",
+      "sectionNumber": "3.2",
+      "cbseEntryId": null,
+      "startPage": 35,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-3",
+      "canonicalUnits": [
+        "C11-TRG-01",
+        "C11-TRG-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-TRG-01"
+      ],
+      "representationRequirements": [
+        "rotation diagram with initial and terminal sides",
+        "arc-and-radius diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s3_3_unit_circle_lesson",
+      "learningGoal": "You will define the six trigonometric functions from a point on the unit circle, so that they accept any real argument rather than only an acute angle.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch03",
+      "officialSectionId": "ncert_kemh1_s3_3",
+      "sectionNumber": "3.3",
+      "cbseEntryId": null,
+      "startPage": 38,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-3",
+      "canonicalUnits": [
+        "C11-TRG-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-TRG-02"
+      ],
+      "representationRequirements": [
+        "unit circle figure"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s3_3_1_quadrant_signs_lesson",
+      "learningGoal": "You will work out the sign of each trigonometric function in each quadrant from the signs of the coordinates, rather than recalling a mnemonic.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch03",
+      "officialSectionId": "ncert_kemh1_s3_3",
+      "sectionNumber": "3.3",
+      "cbseEntryId": null,
+      "startPage": 42,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-3",
+      "canonicalUnits": [
+        "C11-TRG-03",
+        "C11-TRG-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-TRG-02",
+        "C11-TRG-03"
+      ],
+      "representationRequirements": [
+        "unit circle figure",
+        "quadrant sign table and unit circle"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s3_3_2_domain_range_graphs_lesson",
+      "learningGoal": "You will state the domain, range and period of each trigonometric function and read its graph, including where the curve must break.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch03",
+      "officialSectionId": "ncert_kemh1_s3_3",
+      "sectionNumber": "3.3",
+      "cbseEntryId": null,
+      "startPage": 44,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-3",
+      "canonicalUnits": [
+        "C11-TRG-03",
+        "C11-TRG-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-TRG-02",
+        "C11-TRG-04"
+      ],
+      "representationRequirements": [
+        "unit circle figure",
+        "periodic function graphs"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "circular_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s3_4_sum_difference_lesson",
+      "learningGoal": "You will derive the sine and cosine of a sum and a difference of two angles, and use them to find values the standard angles alone could not give.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch03",
+      "officialSectionId": "ncert_kemh1_s3_4",
+      "sectionNumber": "3.4",
+      "cbseEntryId": null,
+      "startPage": 49,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-3",
+      "canonicalUnits": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-TRG-03",
+        "C11-TRG-06"
+      ],
+      "representationRequirements": [
+        "identity statements; no figure required",
+        "identity statements"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s3_4_multiple_angles_lesson",
+      "learningGoal": "You will deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities, rather than collecting them as separate formulas.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch03",
+      "officialSectionId": "ncert_kemh1_s3_4",
+      "sectionNumber": "3.4",
+      "cbseEntryId": null,
+      "startPage": 54,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-3",
+      "canonicalUnits": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-TRG-03",
+        "C11-TRG-06"
+      ],
+      "representationRequirements": [
+        "identity statements; no figure required",
+        "identity statements"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_fo3_general_solutions_lesson",
+      "learningGoal": "You will write the complete solution of a simple trigonometric equation as an infinite family parameterised by an integer, rather than as a single value.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_fo3_c11_general_solutions",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-3",
+      "startPage": 0,
+      "sourceReference": "Maths_SecP2_2026-27",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less required",
+      "canonicalUnits": [
+        "C11-TRG-FO3"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-TRG-05",
+        "C11-TRG-06"
+      ],
+      "representationRequirements": [
+        "periodicity diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s4_2_complex_numbers_lesson",
+      "learningGoal": "You will write a complex number as a + ib, name its real and imaginary parts, and see why the real number line alone could not supply a square root of minus one.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch04",
+      "officialSectionId": "ncert_kemh1_s4_2",
+      "sectionNumber": "4.2",
+      "cbseEntryId": null,
+      "startPage": 76,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-4",
+      "canonicalUnits": [
+        "C11-CPX-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "a + ib notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s4_3_algebra_lesson",
+      "learningGoal": "You will add, subtract and multiply complex numbers by working on their parts, and see where the minus sign in multiplication comes from.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch04",
+      "officialSectionId": "ncert_kemh1_s4_3",
+      "sectionNumber": "4.3",
+      "cbseEntryId": null,
+      "startPage": 78,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-4",
+      "canonicalUnits": [
+        "C11-CPX-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CPX-01"
+      ],
+      "representationRequirements": [
+        "exact complex arithmetic"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s4_3_5_powers_division_lesson",
+      "learningGoal": "You will reduce any integer power of i using a cycle of four, and divide one complex number by another using the conjugate.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch04",
+      "officialSectionId": "ncert_kemh1_s4_3",
+      "sectionNumber": "4.3",
+      "cbseEntryId": null,
+      "startPage": 82,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-4",
+      "canonicalUnits": [
+        "C11-CPX-02",
+        "C11-CPX-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CPX-01",
+        "C11-CPX-02"
+      ],
+      "representationRequirements": [
+        "exact complex arithmetic"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s4_4_modulus_conjugate_lesson",
+      "learningGoal": "You will compute the modulus of a complex number exactly and connect it to the conjugate through the identity z times its conjugate equals the modulus squared.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch04",
+      "officialSectionId": "ncert_kemh1_s4_4",
+      "sectionNumber": "4.4",
+      "cbseEntryId": null,
+      "startPage": 84,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-4",
+      "canonicalUnits": [
+        "C11-CPX-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CPX-03"
+      ],
+      "representationRequirements": [
+        "modulus and conjugate notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "argand_plane"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s4_5_argand_plane_lesson",
+      "learningGoal": "You will place a complex number as a point on the plane and read the modulus as its distance from the origin.",
+      "sourceKind": "scope_fragment",
+      "officialChapterId": "ncert_kemh1_ch04",
+      "officialSectionId": "ncert_kemh1_s4_5",
+      "sectionNumber": "4.5",
+      "cbseEntryId": null,
+      "startPage": 86,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-4",
+      "canonicalUnits": [
+        "C11-CPX-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CPX-04"
+      ],
+      "representationRequirements": [
+        "Argand plane figure"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "argand_plane"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s4_5_polar_lesson",
+      "learningGoal": "You will fix a complex number by its distance from the origin and its direction, and convert between that description and the usual one.",
+      "sourceKind": "scope_fragment",
+      "officialChapterId": "ncert_kemh1_ch04",
+      "officialSectionId": "ncert_kemh1_s4_5",
+      "sectionNumber": "4.5",
+      "cbseEntryId": null,
+      "startPage": 88,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-4",
+      "canonicalUnits": [
+        "C11-CPX-FO5a"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CPX-05"
+      ],
+      "representationRequirements": [
+        "Argand plane with argument"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "argand_plane"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_fo5b_complex_quadratics_lesson",
+      "learningGoal": "You will find the roots of a real-coefficient quadratic whose discriminant is negative, and see that they form a conjugate pair.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_fo5b_c11_complex_quadratics",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-5",
+      "startPage": 0,
+      "sourceReference": "Maths_SecP2_2026-27",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less required",
+      "canonicalUnits": [
+        "C11-CPX-FO5b"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CPX-04"
+      ],
+      "representationRequirements": [
+        "exact complex arithmetic"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s9_2_slope_lesson",
+      "learningGoal": "You will measure the steepness of a line as a ratio of two changes, and see why a vertical line has no slope at all.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch09",
+      "officialSectionId": "ncert_kemh1_s9_2",
+      "sectionNumber": "9.2",
+      "cbseEntryId": null,
+      "startPage": 150,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-9",
+      "canonicalUnits": [
+        "C11-STL-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "coordinate graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "coordinate_line_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s9_2_1_angle_between_lines_lesson",
+      "learningGoal": "You will decide when two lines are parallel or perpendicular, and find the angle between them when they are neither.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch09",
+      "officialSectionId": "ncert_kemh1_s9_2",
+      "sectionNumber": "9.2",
+      "cbseEntryId": null,
+      "startPage": 153,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-9",
+      "canonicalUnits": [
+        "C11-STL-01",
+        "C11-STL-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-STL-01"
+      ],
+      "representationRequirements": [
+        "coordinate graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "coordinate_line_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s9_3_axis_point_slope_lesson",
+      "learningGoal": "You will write the equation of a line parallel to an axis, and build the point-slope form from the definition of slope rather than from memory.",
+      "sourceKind": "scope_fragment",
+      "officialChapterId": "ncert_kemh1_ch09",
+      "officialSectionId": "ncert_kemh1_s9_3",
+      "sectionNumber": "9.3",
+      "cbseEntryId": null,
+      "startPage": 156,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-9",
+      "canonicalUnits": [
+        "C11-STL-03",
+        "C11-STL-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-STL-01",
+        "C11-STL-03"
+      ],
+      "representationRequirements": [
+        "coordinate graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "coordinate_line_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s9_3_forms_lesson",
+      "learningGoal": "You will write a line in three further forms and recognise that different equations can describe the same line.",
+      "sourceKind": "scope_fragment",
+      "officialChapterId": "ncert_kemh1_ch09",
+      "officialSectionId": "ncert_kemh1_s9_3",
+      "sectionNumber": "9.3",
+      "cbseEntryId": null,
+      "startPage": 159,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-9",
+      "canonicalUnits": [
+        "C11-STL-03",
+        "C11-STL-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-STL-01",
+        "C11-STL-03"
+      ],
+      "representationRequirements": [
+        "coordinate graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "coordinate_line_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s9_3_fo9_lesson",
+      "learningGoal": "You will describe a line by the perpendicular from the origin, and see how every form of a line reduces to one general equation.",
+      "sourceKind": "scope_fragment",
+      "officialChapterId": "ncert_kemh1_ch09",
+      "officialSectionId": "ncert_kemh1_s9_3",
+      "sectionNumber": "9.3",
+      "cbseEntryId": null,
+      "startPage": 161,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-9",
+      "canonicalUnits": [
+        "C11-STL-FO9"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-STL-04"
+      ],
+      "representationRequirements": [
+        "coordinate graph with perpendicular from origin"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "coordinate_line_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s9_4_distance_lesson",
+      "learningGoal": "You will find the shortest distance from a point to a line, and see why that distance does not depend on how the equation was written.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch09",
+      "officialSectionId": "ncert_kemh1_s9_4",
+      "sectionNumber": "9.4",
+      "cbseEntryId": null,
+      "startPage": 164,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-9",
+      "canonicalUnits": [
+        "C11-STL-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-STL-04"
+      ],
+      "representationRequirements": [
+        "coordinate graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "coordinate_line_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s6_2_counting_principle_lesson",
+      "learningGoal": "You will count the outcomes of a choice made in stages, without listing them all.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch06",
+      "officialSectionId": "ncert_kemh1_s6_2",
+      "sectionNumber": "6.2",
+      "cbseEntryId": null,
+      "startPage": 114,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-6",
+      "canonicalUnits": [
+        "C11-PNC-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "tree or stage diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "stage_tree"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s6_3_1_factorial_lesson",
+      "learningGoal": "You will write and use factorial notation for the products that counting keeps producing.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch06",
+      "officialSectionId": "ncert_kemh1_s6_3",
+      "sectionNumber": "6.3",
+      "cbseEntryId": null,
+      "startPage": 119,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-6",
+      "canonicalUnits": [
+        "C11-PNC-02",
+        "C11-PNC-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-PNC-01",
+        "C11-PNC-02"
+      ],
+      "representationRequirements": [
+        "factorial notation",
+        "nPr notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s6_3_permutations_lesson",
+      "learningGoal": "You will derive the formula for the number of ordered arrangements of r objects chosen from n.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch06",
+      "officialSectionId": "ncert_kemh1_s6_3",
+      "sectionNumber": "6.3",
+      "cbseEntryId": null,
+      "startPage": 118,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-6",
+      "canonicalUnits": [
+        "C11-PNC-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-PNC-02"
+      ],
+      "representationRequirements": [
+        "nPr notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s6_3_3_repeated_objects_lesson",
+      "learningGoal": "You will count arrangements when some objects are identical, and when some positions are fixed.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch06",
+      "officialSectionId": "ncert_kemh1_s6_3",
+      "sectionNumber": "6.3",
+      "cbseEntryId": null,
+      "startPage": 124,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-6",
+      "canonicalUnits": [
+        "C11-PNC-03",
+        "C11-PNC-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-PNC-02",
+        "C11-PNC-03"
+      ],
+      "representationRequirements": [
+        "nPr notation",
+        "arrangement diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "arrangement"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s6_4_combinations_lesson",
+      "learningGoal": "You will count selections where order does not matter, and derive nCr from nPr.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch06",
+      "officialSectionId": "ncert_kemh1_s6_4",
+      "sectionNumber": "6.4",
+      "cbseEntryId": null,
+      "startPage": 130,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-6",
+      "canonicalUnits": [
+        "C11-PNC-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-PNC-03"
+      ],
+      "representationRequirements": [
+        "nCr notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+      "learningGoal": "You will state the binomial theorem for a positive integral index and follow its proof by induction.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch07",
+      "officialSectionId": "ncert_kemh1_s7_2",
+      "sectionNumber": "7.2",
+      "cbseEntryId": null,
+      "startPage": 160,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-7",
+      "canonicalUnits": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE",
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-PNC-05",
+        "C11-IND-01",
+        "C11-BIN-01",
+        "C11-BIN-03"
+      ],
+      "representationRequirements": [
+        "binomial coefficient and sigma notation",
+        "Pascal's triangle figure",
+        "expansion notation",
+        "general term notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "coefficient_rows",
+        "proof_layout"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s8_2_sequences_lesson",
+      "learningGoal": "You will read a sequence from its rule and name the term at any position.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch08",
+      "officialSectionId": "ncert_kemh1_s8_2",
+      "sectionNumber": "8.2",
+      "cbseEntryId": null,
+      "startPage": 177,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-8",
+      "canonicalUnits": [
+        "C11-SEQ-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "subscript notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s8_3_series_sigma_lesson",
+      "learningGoal": "You will write the sum of a sequence’s terms in sigma notation and expand it again.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch08",
+      "officialSectionId": "ncert_kemh1_s8_3",
+      "sectionNumber": "8.3",
+      "cbseEntryId": null,
+      "startPage": 181,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-8",
+      "canonicalUnits": [
+        "C11-SEQ-02",
+        "C11-SEQ-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B",
+        "A"
+      ],
+      "prerequisiteUnits": [
+        "C11-SEQ-01",
+        "C11-SEQ-02"
+      ],
+      "representationRequirements": [
+        "sigma notation",
+        "A.M. notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s8_3_arithmetic_mean_lesson",
+      "learningGoal": "You will find the arithmetic mean of two numbers and insert arithmetic means between them.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch08",
+      "officialSectionId": "ncert_kemh1_s8_3",
+      "sectionNumber": "8.3",
+      "cbseEntryId": null,
+      "startPage": 184,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-8",
+      "canonicalUnits": [
+        "C11-SEQ-02",
+        "C11-SEQ-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B",
+        "A"
+      ],
+      "prerequisiteUnits": [
+        "C11-SEQ-01",
+        "C11-SEQ-02"
+      ],
+      "representationRequirements": [
+        "sigma notation",
+        "A.M. notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s8_4_geometric_progression_lesson",
+      "learningGoal": "You will recognise a geometric progression and find its term at any position.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch08",
+      "officialSectionId": "ncert_kemh1_s8_4",
+      "sectionNumber": "8.4",
+      "cbseEntryId": null,
+      "startPage": 186,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-8",
+      "canonicalUnits": [
+        "C11-SEQ-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-SEQ-01"
+      ],
+      "representationRequirements": [
+        "G.P. notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s8_4_1_gp_sum_lesson",
+      "learningGoal": "You will derive and use the sum of the first n terms of a geometric progression.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch08",
+      "officialSectionId": "ncert_kemh1_s8_4",
+      "sectionNumber": "8.4",
+      "cbseEntryId": null,
+      "startPage": 190,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-8",
+      "canonicalUnits": [
+        "C11-SEQ-04",
+        "C11-SEQ-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-SEQ-01",
+        "C11-SEQ-04"
+      ],
+      "representationRequirements": [
+        "G.P. notation",
+        "G.P. sum notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s8_4_2_infinite_gp_lesson",
+      "learningGoal": "You will decide when an infinite geometric series has a sum, and find it from the partial sums.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch08",
+      "officialSectionId": "ncert_kemh1_s8_4",
+      "sectionNumber": "8.4",
+      "cbseEntryId": null,
+      "startPage": 193,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-8",
+      "canonicalUnits": [
+        "C11-SEQ-04",
+        "C11-SEQ-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B",
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SEQ-01",
+        "C11-SEQ-05"
+      ],
+      "representationRequirements": [
+        "G.P. notation",
+        "limit of a sum; G.M. notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "indexed_sequence"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s8_5_am_gm_lesson",
+      "learningGoal": "You will show that the arithmetic mean of two positive numbers is never less than their geometric mean.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch08",
+      "officialSectionId": "ncert_kemh1_s8_5",
+      "sectionNumber": "8.5",
+      "cbseEntryId": null,
+      "startPage": 196,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-8",
+      "canonicalUnits": [
+        "C11-SEQ-07"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-SEQ-03",
+        "C11-SEQ-06"
+      ],
+      "representationRequirements": [
+        "exact radical arithmetic"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "cbse_fo8_special_sums_lesson",
+      "learningGoal": "You will use the closed forms for the sums of the first n natural numbers, their squares and their cubes.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_fo8_c11_special_sums",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-8",
+      "startPage": 0,
+      "sourceReference": "cbse_fo8",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less required",
+      "canonicalUnits": [
+        "C11-SEQ-FO8"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-SEQ-02"
+      ],
+      "representationRequirements": [
+        "sigma notation"
+      ],
+      "declaredFamilies": [
+        "series:sigma"
+      ],
+      "consumedVisualKinds": [
+        "special_sum"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_2_cone_sections_lesson",
+      "learningGoal": "You will see how one double cone produces four different curves, according to how a plane cuts it.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_2",
+      "sectionNumber": "10.2",
+      "cbseEntryId": null,
+      "startPage": 168,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "cone section diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "cone_section"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_2_2_degenerate_lesson",
+      "learningGoal": "You will see what the four conics collapse to when the cutting plane passes through the vertex of the cone.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_2",
+      "sectionNumber": "10.2",
+      "cbseEntryId": null,
+      "startPage": 170,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-01",
+        "C11-CON-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CON-01"
+      ],
+      "representationRequirements": [
+        "cone section diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "cone_section"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_3_circle_lesson",
+      "learningGoal": "You will derive the equation of a circle from its distance definition, and read a centre and radius back out of one.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_3",
+      "sectionNumber": "10.3",
+      "cbseEntryId": null,
+      "startPage": 172,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CON-01",
+        "C11-STL-01"
+      ],
+      "representationRequirements": [
+        "coordinate diagram with centre and radius"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "conic_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_4_parabola_lesson",
+      "learningGoal": "You will derive the standard equation of a parabola from its focus and directrix, and identify its vertex, axis and latus rectum.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_4",
+      "sectionNumber": "10.4",
+      "cbseEntryId": null,
+      "startPage": 175,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CON-03"
+      ],
+      "representationRequirements": [
+        "parabola diagram with focus and directrix"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "conic_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_5_ellipse_lesson",
+      "learningGoal": "You will derive both standard equations of an ellipse and see that the two are different orientations rather than rival formulas.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_5",
+      "sectionNumber": "10.5",
+      "cbseEntryId": null,
+      "startPage": 180,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CON-04"
+      ],
+      "representationRequirements": [
+        "ellipse diagram in both orientations"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "conic_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_5_2_ellipse_eccentricity_lesson",
+      "learningGoal": "You will compute the eccentricity and latus rectum of an ellipse from its own parameters, exactly.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_5",
+      "sectionNumber": "10.5",
+      "cbseEntryId": null,
+      "startPage": 185,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-05",
+        "C11-CON-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CON-04",
+        "C11-CON-05"
+      ],
+      "representationRequirements": [
+        "ellipse diagram in both orientations",
+        "ellipse diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "conic_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_6_hyperbola_lesson",
+      "learningGoal": "You will derive the standard equation of a hyperbola from a difference of distances, and see why it has two separate branches.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_6",
+      "sectionNumber": "10.6",
+      "cbseEntryId": null,
+      "startPage": 188,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-07"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CON-05"
+      ],
+      "representationRequirements": [
+        "hyperbola diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "conic_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s10_6_1_hyperbola_eccentricity_lesson",
+      "learningGoal": "You will compute the eccentricity and latus rectum of a hyperbola exactly, and see why its eccentricity exceeds 1.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch10",
+      "officialSectionId": "ncert_kemh1_s10_6",
+      "sectionNumber": "10.6",
+      "cbseEntryId": null,
+      "startPage": 192,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-10",
+      "canonicalUnits": [
+        "C11-CON-07",
+        "C11-CON-08"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-CON-05",
+        "C11-CON-07"
+      ],
+      "representationRequirements": [
+        "hyperbola diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "conic_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s12_2_rate_of_change_lesson",
+      "learningGoal": "You will see how the slope between two points on a curve becomes a rate of change, and what happens as those points close together.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch12",
+      "officialSectionId": "ncert_kemh1_s12_2",
+      "sectionNumber": "12.2",
+      "cbseEntryId": null,
+      "startPage": 220,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-12",
+      "canonicalUnits": [
+        "C11-LIM-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-STL-01"
+      ],
+      "representationRequirements": [
+        "secant and tangent graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "secant_graph"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s12_3_intuitive_limit_lesson",
+      "learningGoal": "You will say what it means for a function to approach a value near a point, and see that this is a different question from its value at the point.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch12",
+      "officialSectionId": "ncert_kemh1_s12_3",
+      "sectionNumber": "12.3",
+      "cbseEntryId": null,
+      "startPage": 223,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-12",
+      "canonicalUnits": [
+        "C11-LIM-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-LIM-01"
+      ],
+      "representationRequirements": [
+        "limit value table and graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "limit_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s12_3_1_polynomial_rational_lesson",
+      "learningGoal": "You will compute limits of polynomials and rational functions, including the case where a factor cancels and the original function still has a hole.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch12",
+      "officialSectionId": "ncert_kemh1_s12_3",
+      "sectionNumber": "12.3",
+      "cbseEntryId": null,
+      "startPage": 228,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-12",
+      "canonicalUnits": [
+        "C11-LIM-02",
+        "C11-LIM-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-LIM-01",
+        "C11-LIM-02"
+      ],
+      "representationRequirements": [
+        "limit value table and graph",
+        "limit notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "limit_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s12_4_trig_exp_log_lesson",
+      "learningGoal": "You will use the standard limits for trigonometric, exponential and logarithmic functions, and see why radian measure is essential to them.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch12",
+      "officialSectionId": "ncert_kemh1_s12_4",
+      "sectionNumber": "12.4",
+      "cbseEntryId": null,
+      "startPage": 233,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-12",
+      "canonicalUnits": [
+        "C11-LIM-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-LIM-03",
+        "C11-TRG-05"
+      ],
+      "representationRequirements": [
+        "limit notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "limit_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s12_5_first_principles_lesson",
+      "learningGoal": "You will define the derivative as the limit of a difference quotient and derive it from first principles.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch12",
+      "officialSectionId": "ncert_kemh1_s12_5",
+      "sectionNumber": "12.5",
+      "cbseEntryId": null,
+      "startPage": 306,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-12",
+      "canonicalUnits": [
+        "C11-LIM-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-LIM-03",
+        "C11-IND-01"
+      ],
+      "representationRequirements": [
+        "difference quotient and tangent graph"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "limit_table",
+        "secant_graph",
+        "proof_layout"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s12_5_1_algebra_of_derivatives_lesson",
+      "learningGoal": "You will derive and use the rules for differentiating sums, differences, products and quotients.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch12",
+      "officialSectionId": "ncert_kemh1_s12_5",
+      "sectionNumber": "12.5",
+      "cbseEntryId": null,
+      "startPage": 310,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-12",
+      "canonicalUnits": [
+        "C11-LIM-05",
+        "C11-LIM-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-LIM-03",
+        "C11-IND-01",
+        "C11-LIM-05"
+      ],
+      "representationRequirements": [
+        "difference quotient and tangent graph",
+        "derivative notation as used in the source"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "cbse_fo11_chain_rule_lesson",
+      "learningGoal": "You will differentiate a composite function using the chain rule.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_fo11_c11_chain_rule",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-11",
+      "startPage": 0,
+      "sourceReference": "cbse_fo11",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less required",
+      "canonicalUnits": [
+        "C11-LIM-FO11"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-LIM-06",
+        "C11-RF-FO2"
+      ],
+      "representationRequirements": [
+        "derivative notation"
+      ],
+      "declaredFamilies": [
+        "derivative:notation"
+      ],
+      "consumedVisualKinds": [
+        "chain_rule"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s13_2_dispersion_lesson",
+      "learningGoal": "You will explain why a measure of centre alone does not describe data, and name the measures of spread.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch13",
+      "officialSectionId": "ncert_kemh1_s13_2",
+      "sectionNumber": "13.2",
+      "cbseEntryId": null,
+      "startPage": 359,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-13",
+      "canonicalUnits": [
+        "C11-STA-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "A"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "frequency table"
+      ],
+      "declaredFamilies": [
+        "table:data"
+      ],
+      "consumedVisualKinds": [
+        "deviation_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s13_3_range_lesson",
+      "learningGoal": "You will compute the range of a data set and state its limitation.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch13",
+      "officialSectionId": "ncert_kemh1_s13_3",
+      "sectionNumber": "13.3",
+      "cbseEntryId": null,
+      "startPage": 360,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-13",
+      "canonicalUnits": [
+        "C11-STA-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "A"
+      ],
+      "prerequisiteUnits": [
+        "C11-STA-01"
+      ],
+      "representationRequirements": [
+        "frequency table"
+      ],
+      "declaredFamilies": [
+        "table:data"
+      ],
+      "consumedVisualKinds": [
+        "deviation_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s13_4_md_mean_lesson",
+      "learningGoal": "You will compute the mean deviation about the mean for ungrouped and grouped data.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch13",
+      "officialSectionId": "ncert_kemh1_s13_4",
+      "sectionNumber": "13.4",
+      "cbseEntryId": null,
+      "startPage": 361,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-13",
+      "canonicalUnits": [
+        "C11-STA-03",
+        "C11-STA-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "A"
+      ],
+      "prerequisiteUnits": [
+        "C11-STA-02",
+        "C11-STA-03"
+      ],
+      "representationRequirements": [
+        "deviation table with subscripted observations",
+        "deviation table"
+      ],
+      "declaredFamilies": [
+        "table:deviation",
+        "table:grouped"
+      ],
+      "consumedVisualKinds": [
+        "deviation_table",
+        "grouped_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s13_4_md_median_lesson",
+      "learningGoal": "You will compute the mean deviation about the median for ungrouped and grouped data.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch13",
+      "officialSectionId": "ncert_kemh1_s13_4",
+      "sectionNumber": "13.4",
+      "cbseEntryId": null,
+      "startPage": 364,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-13",
+      "canonicalUnits": [
+        "C11-STA-03",
+        "C11-STA-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "A"
+      ],
+      "prerequisiteUnits": [
+        "C11-STA-02",
+        "C11-STA-03"
+      ],
+      "representationRequirements": [
+        "deviation table with subscripted observations",
+        "deviation table"
+      ],
+      "declaredFamilies": [
+        "table:deviation"
+      ],
+      "consumedVisualKinds": [
+        "deviation_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s13_5_variance_sd_lesson",
+      "learningGoal": "You will compute the variance and standard deviation of ungrouped data and explain why deviations are squared.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch13",
+      "officialSectionId": "ncert_kemh1_s13_5",
+      "sectionNumber": "13.5",
+      "cbseEntryId": null,
+      "startPage": 367,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-13",
+      "canonicalUnits": [
+        "C11-STA-05",
+        "C11-STA-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-STA-03",
+        "C11-STA-05"
+      ],
+      "representationRequirements": [
+        "squared deviation table",
+        "grouped frequency table"
+      ],
+      "declaredFamilies": [
+        "table:deviation"
+      ],
+      "consumedVisualKinds": [
+        "deviation_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s13_5_grouped_variance_lesson",
+      "learningGoal": "You will compute the variance and standard deviation of a frequency distribution.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch13",
+      "officialSectionId": "ncert_kemh1_s13_5",
+      "sectionNumber": "13.5",
+      "cbseEntryId": null,
+      "startPage": 370,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-13",
+      "canonicalUnits": [
+        "C11-STA-05",
+        "C11-STA-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-STA-03",
+        "C11-STA-05"
+      ],
+      "representationRequirements": [
+        "squared deviation table",
+        "grouped frequency table"
+      ],
+      "declaredFamilies": [
+        "table:grouped",
+        "table:deviation"
+      ],
+      "consumedVisualKinds": [
+        "grouped_table",
+        "deviation_table"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s13_5_4_shortcut_lesson",
+      "learningGoal": "You will use the step-deviation method and show it agrees with the direct method.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch13",
+      "officialSectionId": "ncert_kemh1_s13_5",
+      "sectionNumber": "13.5",
+      "cbseEntryId": null,
+      "startPage": 373,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-13",
+      "canonicalUnits": [
+        "C11-STA-05",
+        "C11-STA-06",
+        "C11-STA-07"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B",
+        "A"
+      ],
+      "prerequisiteUnits": [
+        "C11-STA-03",
+        "C11-STA-05",
+        "C11-STA-06"
+      ],
+      "representationRequirements": [
+        "squared deviation table",
+        "grouped frequency table",
+        "step-deviation table"
+      ],
+      "declaredFamilies": [
+        "table:grouped",
+        "table:method_comparison"
+      ],
+      "consumedVisualKinds": [
+        "grouped_table",
+        "method_comparison"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_sf3_formative_lesson",
+      "learningGoal": "You will describe a random experiment by listing its outcomes as a sample space in set notation.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch14",
+      "officialSectionId": "ncert_kemh1_s14_1",
+      "sectionNumber": "14.1",
+      "cbseEntryId": null,
+      "startPage": 383,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-14",
+      "canonicalUnits": [
+        "C11-PRB-FO12"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_PREREQUISITE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-09"
+      ],
+      "representationRequirements": [
+        "sample space in set notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_sf3_summative_lesson",
+      "learningGoal": "You will describe an event as a subset of the sample space and say when it occurs.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch14",
+      "officialSectionId": "ncert_kemh1_s14_1",
+      "sectionNumber": "14.1",
+      "cbseEntryId": null,
+      "startPage": 386,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-14",
+      "canonicalUnits": [
+        "C11-PRB-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-PRB-FO12"
+      ],
+      "representationRequirements": [
+        "set notation and Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s14_1_2_not_and_or_lesson",
+      "learningGoal": "You will build new events from old ones using not, and, or.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch14",
+      "officialSectionId": "ncert_kemh1_s14_1",
+      "sectionNumber": "14.1",
+      "cbseEntryId": null,
+      "startPage": 388,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-14",
+      "canonicalUnits": [
+        "C11-PRB-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-PRB-01",
+        "C11-SET-11"
+      ],
+      "representationRequirements": [
+        "set notation and Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s14_1_4_exhaustive_exclusive_lesson",
+      "learningGoal": "You will decide whether a collection of events is exhaustive, mutually exclusive, both or neither.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch14",
+      "officialSectionId": "ncert_kemh1_s14_1",
+      "sectionNumber": "14.1",
+      "cbseEntryId": null,
+      "startPage": 390,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-14",
+      "canonicalUnits": [
+        "C11-PRB-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-PRB-02"
+      ],
+      "representationRequirements": [
+        "set notation and Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s14_2_axiomatic_probability_lesson",
+      "learningGoal": "You will say what makes an assignment of numbers to outcomes a probability.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch14",
+      "officialSectionId": "ncert_kemh1_s14_2",
+      "sectionNumber": "14.2",
+      "cbseEntryId": null,
+      "startPage": 394,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-14",
+      "canonicalUnits": [
+        "C11-PRB-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-PRB-03"
+      ],
+      "representationRequirements": [
+        "set notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s14_2_2_equally_likely_lesson",
+      "learningGoal": "You will derive the favourable-over-total rule as the equally likely case of the axioms.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch14",
+      "officialSectionId": "ncert_kemh1_s14_2",
+      "sectionNumber": "14.2",
+      "cbseEntryId": null,
+      "startPage": 397,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-14",
+      "canonicalUnits": [
+        "C11-PRB-04",
+        "C11-PRB-05"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-PRB-03",
+        "C11-PRB-04"
+      ],
+      "representationRequirements": [
+        "set notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s14_2_3_probability_rules_lesson",
+      "learningGoal": "You will find the probability of not, and, or events from the event sets.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch14",
+      "officialSectionId": "ncert_kemh1_s14_2",
+      "sectionNumber": "14.2",
+      "cbseEntryId": null,
+      "startPage": 400,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-14",
+      "canonicalUnits": [
+        "C11-PRB-04",
+        "C11-PRB-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "prerequisiteUnits": [
+        "C11-PRB-03",
+        "C11-PRB-05",
+        "C11-PRB-02"
+      ],
+      "representationRequirements": [
+        "set notation",
+        "set notation and Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "cbse_fo4_induction_lesson",
+      "learningGoal": "You will prove a statement about every natural number by checking one case and showing each case carries the next.",
+      "sourceKind": "cbse_only",
+      "officialChapterId": "cbse_c11_prerequisite",
+      "officialSectionId": "",
+      "sectionNumber": "",
+      "cbseEntryId": "FO-4",
+      "startPage": 0,
+      "sourceReference": "cbse_fo4",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-less prerequisite",
+      "canonicalUnits": [
+        "C11-IND-01"
+      ],
+      "assessmentStatuses": [
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_PREREQUISITE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "proof layout; no figure required"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "proof_layout"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_2_representations_lesson",
+      "learningGoal": "You will write a collection in roster form and in set-builder form, and see that the two can describe the very same set.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_2",
+      "sectionNumber": "1.2",
+      "cbseEntryId": null,
+      "startPage": 2,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-01"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [],
+      "representationRequirements": [
+        "set notation; no figure required"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_3_empty_set_lesson",
+      "learningGoal": "You will recognise when a description has no elements at all, and see why ∅ and {∅} are different sets.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_3",
+      "sectionNumber": "1.3",
+      "cbseEntryId": null,
+      "startPage": 3,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-02"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-01"
+      ],
+      "representationRequirements": [
+        "empty-set symbol"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_4_finite_infinite_lesson",
+      "learningGoal": "You will decide whether a set is finite or infinite from the rule that defines it, not from how its roster is written.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_4",
+      "sectionNumber": "1.4",
+      "cbseEntryId": null,
+      "startPage": 4,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-03"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-01"
+      ],
+      "representationRequirements": [
+        "cardinality notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_5_equal_sets_lesson",
+      "learningGoal": "You will decide whether two sets are equal by comparing membership, and see why order and repetition do not change a set.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_5",
+      "sectionNumber": "1.5",
+      "cbseEntryId": null,
+      "startPage": 5,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-04"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-01"
+      ],
+      "representationRequirements": [
+        "set equality"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_6_subsets_lesson",
+      "learningGoal": "You will decide whether one set is contained in another, and separate a subset from a proper subset.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_6",
+      "sectionNumber": "1.6",
+      "cbseEntryId": null,
+      "startPage": 6,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-05",
+        "C11-SET-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-04",
+        "C11-SET-05"
+      ],
+      "representationRequirements": [
+        "subset symbols",
+        "interval notation and the real line"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "venn"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_6_intervals_lesson",
+      "learningGoal": "You will read and write open, closed and half-open intervals as subsets of the real numbers, and say exactly which endpoints belong.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_6",
+      "sectionNumber": "1.6",
+      "cbseEntryId": null,
+      "startPage": 7,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-05",
+        "C11-SET-06"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-04",
+        "C11-SET-05"
+      ],
+      "representationRequirements": [
+        "subset symbols",
+        "interval notation and the real line"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_7_universal_set_lesson",
+      "learningGoal": "You will fix a universal set for a discussion and see that the same set sits inside different valid universes.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_7",
+      "sectionNumber": "1.7",
+      "cbseEntryId": null,
+      "startPage": 9,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-07"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-05"
+      ],
+      "representationRequirements": [
+        "universal set notation"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_8_venn_diagrams_lesson",
+      "learningGoal": "You will read a Venn diagram as a statement about membership, and say what each region of it means.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_8",
+      "sectionNumber": "1.8",
+      "cbseEntryId": null,
+      "startPage": 10,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-08"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-07"
+      ],
+      "representationRequirements": [
+        "Venn diagram figure"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "venn"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_9_union_intersection_lesson",
+      "learningGoal": "You will build the union and the intersection of two sets from membership conditions, and see why the or in union includes both.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_9",
+      "sectionNumber": "1.9",
+      "cbseEntryId": null,
+      "startPage": 11,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-09",
+        "C11-SET-10"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-08",
+        "C11-SET-09"
+      ],
+      "representationRequirements": [
+        "set notation and Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "venn"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_9_difference_lesson",
+      "learningGoal": "You will form A \\u2212 B from membership conditions and see why reversing the order gives a different set.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_9",
+      "sectionNumber": "1.9",
+      "cbseEntryId": null,
+      "startPage": 13,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-09",
+        "C11-SET-10"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-08",
+        "C11-SET-09"
+      ],
+      "representationRequirements": [
+        "set notation and Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "venn"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_10_complement_lesson",
+      "learningGoal": "You will form the complement of a set relative to a declared universe, and derive De Morgan\\u2019s laws rather than memorise them.",
+      "sourceKind": "ncert",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_10",
+      "sectionNumber": "1.10",
+      "cbseEntryId": null,
+      "startPage": 15,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-11"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-07",
+        "C11-SET-09"
+      ],
+      "representationRequirements": [
+        "complement notation and Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "venn"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    },
+    {
+      "contentArtifactId": "ncert_kemh1_s1_9_practical_counting_lesson",
+      "learningGoal": "You will count the members of two overlapping sets by accounting for each region once, and see why the overlap must be subtracted.",
+      "sourceKind": "scope_fragment",
+      "officialChapterId": "ncert_kemh1_ch01",
+      "officialSectionId": "ncert_kemh1_s1_9",
+      "sectionNumber": "1.9",
+      "cbseEntryId": null,
+      "startPage": 17,
+      "sourceReference": "kemh1",
+      "inspectionDate": "2026-10-26",
+      "placement": "chapter-1",
+      "canonicalUnits": [
+        "C11-SET-09",
+        "C11-SET-10",
+        "C11-SET-FO1"
+      ],
+      "assessmentStatuses": [
+        "SUMMATIVE_CORE",
+        "FORMATIVE_ONLY"
+      ],
+      "instructionalStatuses": [
+        "REQUIRED_CORE"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "prerequisiteUnits": [
+        "C11-SET-08",
+        "C11-SET-09",
+        "C11-SET-10"
+      ],
+      "representationRequirements": [
+        "set notation and Venn diagram",
+        "Venn diagram"
+      ],
+      "declaredFamilies": [],
+      "consumedVisualKinds": [
+        "venn"
+      ],
+      "representationContract": "SATISFIED",
+      "provenanceStatus": "PROVENANCE_COMPLETE",
+      "rawValueStatus": "CLEAN",
+      "sourceAlignmentStatus": "STRUCTURALLY_ALIGNED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "technicalStatus": "TECHNICALLY_VERIFIED",
+      "reviewReadiness": "READY_FOR_HUMAN_REVIEW",
+      "blockingIssues": [],
+      "sentForHumanReview": false,
+      "humanReviewed": false,
+      "adjudicated": false,
+      "published": false
+    }
+  ]
+}

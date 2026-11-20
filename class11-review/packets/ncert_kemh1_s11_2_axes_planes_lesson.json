@@ -1,0 +1,228 @@
+{
+  "priority": 25,
+  "contentArtifactId": "ncert_kemh1_s11_2_axes_planes_lesson",
+  "title": "You will name the three coordinate planes and the eight octants, and say where a region of space lies.",
+  "placement": "chapter-11",
+  "selectionReasons": [],
+  "artifactFingerprint": "480f40b4ce0f2155f91b20250063480f",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-3DG-01",
+      "title": "Coordinate axes and planes in three dimensions",
+      "objective": "Name the three coordinate planes and the eight octants and locate a region in space.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "REPRESENTATION_EXTENSION",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "3-D axis diagram",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch11",
+    "officialSectionId": "ncert_kemh1_s11_2",
+    "sectionNumber": "11.2",
+    "cbseEntryId": null,
+    "startPage": 192,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "coordinate_3d"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will name the three coordinate planes and the eight octants, and say where a region of space lies.",
+    "vocabulary": [
+      {
+        "term": "coordinate planes",
+        "meaning": "The three flat surfaces each pair of axes spans."
+      },
+      {
+        "term": "octant",
+        "meaning": "One of the eight regions the three planes cut space into."
+      },
+      {
+        "term": "origin",
+        "meaning": "The point where all three axes meet."
+      }
+    ],
+    "explanation": [
+      "A flat page needs two numbers to fix a point. Space needs three, so a third axis is added at right angles to the other two: the z-axis, usually drawn going up.",
+      "Each PAIR of axes spans a flat surface. The x and y axes span the xy-plane, the y and z axes the yz-plane, and the z and x axes the zx-plane.",
+      "Each plane has an equation, and it is the simplest kind: the xy-plane is every point where z = 0, because leaving the plane is exactly what a non-zero z means.",
+      "So membership is a matter of a vanishing coordinate, not of where a point looks on a drawing: a point is on the zx-plane precisely when y = 0.",
+      "The three planes cut space into 8 regions, called octants — eight, because each of the three coordinates can be positive or negative independently, and 2 x 2 x 2 is 8.",
+      "An octant is identified by that pattern of signs. The one containing (2, 3, 4) is the octant where all three are positive, (+, +, +).",
+      "A point with a zero coordinate is in NO octant. It sits on a plane, which is the boundary between octants rather than inside one: R at (4, 0, 5) is on the zx-plane, so in no octant.",
+      "If two coordinates vanish the point lies on an axis, which is the boundary of boundaries: S at (0, 0, 6) is on the z-axis."
+    ],
+    "workedExamples": [
+      {
+        "id": "s112.we1",
+        "prompt": "Which coordinate plane contains R at (4, 0, 5)?",
+        "answer": "The zx-plane.",
+        "steps": [
+          {
+            "text": "Look for a coordinate that is zero.",
+            "reasoning": "That is what puts a point on a plane."
+          },
+          {
+            "text": "Here y = 0.",
+            "reasoning": "The plane where y = 0 is the zx-plane."
+          },
+          {
+            "text": "So R is on the zx-plane, so in no octant.",
+            "reasoning": "Its other two coordinates may be anything at all."
+          }
+        ]
+      },
+      {
+        "id": "s112.we2",
+        "prompt": "Which octant contains (2, 3, 4)?",
+        "answer": "(+, +, +)",
+        "steps": [
+          {
+            "text": "Check that no coordinate is zero.",
+            "reasoning": "A zero would put the point on a plane instead."
+          },
+          {
+            "text": "Read the three signs: all positive.",
+            "reasoning": "The signs are the whole answer."
+          },
+          {
+            "text": "So the octant is (+, +, +).",
+            "reasoning": "Naming it by signs needs no numbering convention."
+          }
+        ]
+      },
+      {
+        "id": "s112.we3",
+        "prompt": "Why are there exactly eight octants?",
+        "answer": "Because three coordinates each take one of two signs, giving 2 x 2 x 2 = 8.",
+        "steps": [
+          {
+            "text": "Each coordinate is either positive or negative.",
+            "reasoning": "Two choices, for each of three coordinates."
+          },
+          {
+            "text": "2 x 2 x 2 = 8.",
+            "reasoning": "Every combination of signs is a real region of space."
+          },
+          {
+            "text": "The eight patterns are (+, +, +), (+, +, -), (+, -, +), (+, -, -), (-, +, +), (-, +, -), (-, -, +), (-, -, -).",
+            "reasoning": "None is missing and none is repeated."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s112.g1",
+        "prompt": "What is the equation of the xy-plane?",
+        "hint": "Which coordinate must vanish?",
+        "answer": "z = 0",
+        "rationale": "Leaving that plane is exactly what a non-zero z means."
+      },
+      {
+        "id": "s112.g2",
+        "prompt": "How many octants are there?",
+        "hint": "Two signs, three coordinates.",
+        "answer": "Eight.",
+        "rationale": "2 x 2 x 2 = 8."
+      },
+      {
+        "id": "s112.g3",
+        "prompt": "Is a point with z = 0 in an octant?",
+        "hint": "Where does it sit?",
+        "answer": "No.",
+        "rationale": "It lies on the xy-plane, which is a boundary, not a region."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s112.i1",
+        "prompt": "Which plane contains (0, 5, 7)?",
+        "answer": "The yz-plane.",
+        "rationale": "Its x coordinate is zero, and x = 0 is that plane."
+      },
+      {
+        "id": "s112.i2",
+        "prompt": "Which octant contains (-1, -2, -3)?",
+        "answer": "The octant (-, -, -).",
+        "rationale": "All three coordinates are negative."
+      },
+      {
+        "id": "s112.i3",
+        "prompt": "Where does (0, 0, -4) lie?",
+        "answer": "On the z-axis.",
+        "rationale": "Both x and y vanish."
+      },
+      {
+        "id": "s112.i4",
+        "prompt": "A student says (3, 0, 2) is in the first octant. What is wrong?",
+        "answer": "It is in no octant.",
+        "rationale": "A zero coordinate puts it on a plane."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s112.td1",
+        "prompt": "Why does one zero coordinate put a point on a plane, while two put it on an axis?",
+        "expectedReasoning": "Each zero removes a direction of freedom. With all three coordinates free a point can be anywhere in space. Fixing z = 0 confines it to a flat surface: it can still move in two directions, which is what a plane is. Fixing both x = 0 and y = 0 leaves one direction, which is a line. So the count of zeros is a count of lost dimensions, and the names plane and axis are descriptions of what is left rather than labels applied from outside. The origin, where all three vanish, has nothing left to move in — a single point."
+      }
+    ],
+    "summary": "Space needs three coordinates. Each pair of axes spans a coordinate plane whose equation is simply that the third coordinate vanishes: the xy-plane is z = 0. The three planes cut space into eight octants, one for each pattern of signs, and a point with any zero coordinate lies on a plane rather than inside an octant.",
+    "visuals": [
+      {
+        "type": "coordinate_3d",
+        "caption": "The three axes, the three coordinate planes, and one point away from all of them",
+        "altText": "A three-dimensional axis diagram. The x-axis runs right, the z-axis runs up, and the y-axis is drawn going back at an angle because the page is flat. The origin O sits at (0, 0, 0) where all three meet. The point P at (2, 3, 4) lies off every coordinate plane, in the octant where x, y and z have signs (+, +, +)."
+      },
+      {
+        "type": "coordinate_3d",
+        "caption": "A point on a coordinate plane and a point on an axis",
+        "altText": "A three-dimensional axis diagram showing R at (4, 0, 5), which has y = 0 and so lies on the zx-plane, and S at (0, 0, 6), which has x = 0 and y = 0 and so lies on the z-axis. Neither is in any octant."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-3DG-01",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

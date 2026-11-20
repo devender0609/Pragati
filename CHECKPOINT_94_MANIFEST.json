@@ -1,0 +1,140 @@
+{
+  "checkpoint": "94",
+  "canonicalVersion": "0.84.0-c11.37-fo6-governance",
+  "verdict": "CLASS_11_LINEAR_INEQUALITIES_FO6_GOVERNANCE_RESOLVED_READY_FOR_AUTHORING",
+  "packageCreatedUtc": "2026-11-16T15:35:33Z",
+  "authoredAnything": false,
+  "humanReviewed": false,
+  "baseline": {
+    "archive": "pragati-0.84.0-c11.36-statistics-hardened.zip",
+    "sha256": "c2786c1366245e83b576f36c8208eaee03b181b7d6a9bc9c28811b4335029090",
+    "statisticsAltered": false
+  },
+  "fo6": {
+    "before": {
+      "instructionalStatus": "OPTIONAL_ENRICHMENT",
+      "prerequisites": [
+        "C11-INQ-02",
+        "C11-STL-01"
+      ],
+      "status": "NEEDS_HUMAN_CHECK"
+    },
+    "after": {
+      "instructionalStatus": "REQUIRED_CORE",
+      "prerequisites": [
+        "C11-INQ-02"
+      ],
+      "status": "READY_FOR_AUTHORING",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "summativeEligible": false,
+      "ncertChapterOwner": null
+    }
+  },
+  "policy": {
+    "REQUIRED_CORE": "inside the official instructional scope, assessed summatively or not",
+    "REQUIRED_PREREQUISITE": "required because downstream required content depends on it",
+    "OPTIONAL_ENRICHMENT": "available but OUTSIDE official scope and not needed downstream",
+    "keyTest": "official syllabus content may not be classified instructionally optional",
+    "reason": "'included in the syllabus' places a topic in instructional scope; formative-only is recorded separately by assessmentStatus"
+  },
+  "cohortAudit": {
+    "formativeUnits": 13,
+    "cbseTopicsAccounted": 12,
+    "structuralHypothesis": "SCOPE_FRAGMENT means required, CBSE_ONLY means optional",
+    "hypothesisResult": "FAILS on 4 units",
+    "contradictions": [
+      "C11-BIN-FO7",
+      "C11-CPX-FO5a",
+      "C11-STL-FO9",
+      "C11-IND-01"
+    ],
+    "conclusion": "no stated principle governs the existing assignments; precedent could not decide FO-6"
+  },
+  "dependencyAudit": {
+    "unitsDeclaringFo6AsPrerequisite": [],
+    "requiredPrerequisiteRejected": true,
+    "barMetBy": {
+      "C11-IND-01": [
+        "C11-BIN-01",
+        "C11-LIM-05",
+        "C11-LIM-06"
+      ],
+      "C11-PRB-FO12": [
+        "C11-PRB-01"
+      ]
+    }
+  },
+  "prerequisiteAudit": {
+    "removed": "C11-STL-01",
+    "retained": [
+      "C11-INQ-02"
+    ],
+    "stl01Objective": "Compute the slope of a line from two points or from its angle of inclination",
+    "reason": "shading a half-plane needs the coordinate plane, a boundary line and a test point; none uses slope"
+  },
+  "precedent": {
+    "closest": "C11-SET-FO1",
+    "why": "FORMATIVE_ONLY + REQUIRED_CORE with zero dependents"
+  },
+  "placement": {
+    "chapterOwner": null,
+    "instructionalPosition": "immediately after C11-INQ-02",
+    "uiPrecedent": "C11-IND-01 renders chapter-less above the textbook chapters",
+    "internalLabelsExposedToStudents": false
+  },
+  "validation": {
+    "unitCount": 93,
+    "acyclic": true,
+    "danglingEdges": 0,
+    "decompositionSuite": "292/292",
+    "typecheck": 0
+  },
+  "humanCheckInventory": {
+    "expected": 0,
+    "actual": 1,
+    "remaining": [
+      "C11-IND-01"
+    ],
+    "assessment": "stale metadata, not an open question: authored at checkpoint 87 with real dependents",
+    "action": "left untouched \u2014 flipping a human-check flag unasked, on an out-of-scope unit, is what the flag prevents"
+  },
+  "authoredCounts": {
+    "officialTextbookChapters": 12,
+    "chapterOwnedLessons": 80,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 81,
+    "officialSections": 45,
+    "changed": false
+  },
+  "governanceDebt": {
+    "issue": "under the stated policy, nine OPTIONAL_ENRICHMENT units are CBSE syllabus content and would be REQUIRED_CORE",
+    "units": [
+      "C11-RF-FO2",
+      "C11-TRG-FO3",
+      "C11-CPX-FO5a",
+      "C11-CPX-FO5b",
+      "C11-BIN-FO7",
+      "C11-SEQ-FO8",
+      "C11-STL-FO9",
+      "C11-3DG-FO10",
+      "C11-LIM-FO11"
+    ],
+    "repairedHere": false,
+    "reason": "scoped to FO-6; a nine-unit reclassification deserves its own checkpoint"
+  },
+  "next": {
+    "checkpoint": "Linear Inequalities authoring",
+    "units": [
+      "C11-INQ-01",
+      "C11-INQ-02",
+      "C11-INQ-FO6"
+    ],
+    "toDesign": [
+      "inequality semantics",
+      "sign-reversal rule",
+      "number-line solution regions",
+      "half-plane semantics",
+      "systems as intersecting half-planes"
+    ]
+  }
+}

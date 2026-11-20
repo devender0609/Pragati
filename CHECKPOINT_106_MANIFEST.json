@@ -1,0 +1,90 @@
+{
+  "checkpoint": "106",
+  "canonicalVersion": "0.84.0-c11.62-review-intake",
+  "verdict": "CLASS_11_HUMAN_REVIEW_WAVE_1_INTAKE_READY",
+  "packageCreatedUtc": "2026-11-19T21:10:45Z",
+  "lifecycle": {
+    "prepared": 25,
+    "sent": 0,
+    "humanReviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "reportCorrection": {
+    "what": "checkpoint 105 report prose said 17 multi-unit packets",
+    "actual": 15,
+    "cause": "transcription error in the report; extracted verification printed 15 at the time",
+    "nowAssertedBy": "gate verifiedWaveFacts checked against packets on disk by regression"
+  },
+  "verifiedWaveFacts": {
+    "packets": 25,
+    "multiUnitPackets": 15,
+    "cbseOnlyPackets": 8,
+    "hardestCase": "s7_2 carries C11-BIN-01/02/03/FO7",
+    "corpusWideMultiUnitArtifacts": 35,
+    "corpusWideUnitsTaughtByMultipleArtifacts": 26
+  },
+  "built": [
+    "class11-review/WAVE1_REVIEW_INTAKE.json",
+    "tools/class11/reviewIntake.ts",
+    "class11-review/REVIEWER_GUIDE.md",
+    "class11-review/CLASS12_GATE.json",
+    "src/curriculum/__tests__/v0840C1162Class11ReviewIntake.test.ts"
+  ],
+  "validator": {
+    "checks": "structure only",
+    "rejects": [
+      "unknown artifact",
+      "missing reviewer",
+      "missing fingerprint",
+      "fingerprint mismatch",
+      "missing unit result",
+      "duplicate unit result",
+      "unmapped unit",
+      "invalid enum",
+      "malformed issue"
+    ],
+    "neverRejects": "a human judgement for disagreeing with the automated audit",
+    "assertedBy": [
+      "MISALIGNED + MAJOR_REWORK + SHOULD_SPLIT accepted on an artifact the audit called ready",
+      "mixed verdict across four units accepted without flattening"
+    ]
+  },
+  "staleRule": {
+    "status": "STALE_REVIEW_RESPONSE",
+    "applied": false,
+    "fingerprintScope": "instructional content only",
+    "effect": "metadata churn preserves currency; any wording change requires re-review"
+  },
+  "fixturesAreNotReviews": {
+    "mockResponsesInTests": true,
+    "lifecycleMoved": false,
+    "assertedBy": "ledger rebuilt from packets still reports humanReviewed 0"
+  },
+  "class12Gate": {
+    "state": "AWAITING_HUMAN_REVIEW",
+    "outcomes": [
+      "CLEAR",
+      "MANAGEABLE",
+      "BLOCKING"
+    ],
+    "systemicMetricsComputed": false,
+    "reason": "computing them now would produce numbers from an empty set"
+  },
+  "qa": {
+    "intakeSuite": 17,
+    "files": 149,
+    "tests": 3201,
+    "failures": 0,
+    "typecheckExit": 0,
+    "runtimeSourceChanged": false,
+    "lessonsAltered": 0
+  },
+  "suggestedPilot": [
+    "ncert_kemh1_s7_2_binomial_theorem_lesson",
+    "ncert_kemh1_s3_4_sum_difference_lesson",
+    "cbse_fo11_chain_rule_lesson",
+    "cbse_fo8_special_sums_lesson"
+  ],
+  "next": "user assigns reviewers or supplies completed responses; Class 12 does not start on agent initiative"
+}

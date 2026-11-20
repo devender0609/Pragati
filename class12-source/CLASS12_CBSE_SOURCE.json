@@ -1,0 +1,64 @@
+{
+  "generatedBy": "checkpoint 111",
+  "sourceId": "CBSE-041-2026-27",
+  "filename": "Maths_SecP2_2026-27.pdf",
+  "bytes": 996427,
+  "sha256": "5121a0fb9456269fad833abf173090b99232220bd4acfc8f5907f9edc9b405c0",
+  "pdfPages": 12,
+  "acquisitionRoute": "session upload",
+  "identityVerifiedFromDocument": {
+    "subject": "Mathematics",
+    "subjectCode": "041",
+    "classes": "XI-XII",
+    "academicYear": "2026 - 27",
+    "evidence": "page 1 header reads: Mathematics / Subject Code - 041 / Classes XI-XII (2026 - 27)",
+    "classXIIStructureFound": "pages 7-10 carry COURSE STRUCTURE CLASS - XII (2026-27), One Paper, Max. Marks 80",
+    "prescribedBooks": [
+      "Mathematics Part I - Textbook for Class XII, NCERT",
+      "Mathematics Part II - Textbook for Class XII, NCERT"
+    ]
+  },
+  "status": "AVAILABLE",
+  "correctionToPriorCheckpoints": "Checkpoints 108-110 dismissed this file as a Secondary-stage (Class IX-X) syllabus on the strength of its SecP2 filename and 12-page length. That was wrong. SecP2 denotes Senior Secondary Part 2, and the document is the current official CBSE Mathematics 041 syllabus covering Classes XI-XII. The error came from judging a source by its filename, which is the exact failure mode this project forbids for editions.",
+  "classXIIUnits": [
+    {
+      "unit": "I",
+      "title": "Relations and Functions",
+      "marks": 8
+    },
+    {
+      "unit": "II",
+      "title": "Algebra",
+      "marks": 10
+    },
+    {
+      "unit": "III",
+      "title": "Calculus",
+      "marks": 35
+    },
+    {
+      "unit": "IV",
+      "title": "Vectors and Three - Dimensional Geometry",
+      "marks": 14
+    },
+    {
+      "unit": "V",
+      "title": "Linear Programming",
+      "marks": 5
+    },
+    {
+      "unit": "VI",
+      "title": "Probability",
+      "marks": 8
+    }
+  ],
+  "internalAssessment": 20,
+  "paperMarks": 80,
+  "classXIITopicPagesInspected": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "notYetExtracted": "full topic-level scope per unit; requires a careful pass, not done in this checkpoint"
+}

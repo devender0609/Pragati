@@ -1,0 +1,263 @@
+{
+  "priority": 1,
+  "contentArtifactId": "ncert_kemh1_s1_9_practical_counting_lesson",
+  "title": "You will count the members of two overlapping sets by accounting for each region once, and see why the overlap must be subtracted.",
+  "placement": "chapter-1",
+  "selectionReasons": [
+    "carries 3 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-SET-09, C11-SET-10",
+    "risk class C",
+    "scope-fragment source"
+  ],
+  "artifactFingerprint": "3d3a0e329e9a914e83590388502d1998",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-SET-09",
+      "title": "Union and intersection of sets",
+      "objective": "Compute the union and intersection of sets and read each off a Venn diagram.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "set notation and Venn diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SET-10",
+      "title": "Difference of sets",
+      "objective": "Compute the difference of two sets and distinguish it from the complement.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "set notation and Venn diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SET-FO1",
+      "title": "Practical problems on union and intersection of two sets",
+      "objective": "Use the two-set counting relation to solve practical problems about overlapping collections.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "APPLICATION_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "Venn diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "scope_fragment",
+    "officialChapterId": "ncert_kemh1_ch01",
+    "officialSectionId": "ncert_kemh1_s1_9",
+    "sectionNumber": "1.9",
+    "cbseEntryId": null,
+    "startPage": 17,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "venn"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will count the members of two overlapping sets by accounting for each region once, and see why the overlap must be subtracted.",
+    "vocabulary": [
+      {
+        "term": "inclusion-exclusion",
+        "meaning": "The relation n(A \\u222a B) = n(A) + n(B) \\u2212 n(A \\u2229 B), which corrects the double counting of the overlap."
+      }
+    ],
+    "explanation": [
+      "Two overlapping sets cut the people or objects being counted into three regions inside the union: in A only, in both, and in B only. Counting each region once gives the size of the union.",
+      "Take a group where 18 take up one activity and 12 take up another, with 6 doing both. The region counts are: 12 in the first only, 6 in both, and 6 in the second only. The union is 12 + 6 + 6 = 24.",
+      "This way of counting is called inclusion-exclusion, and it begins with the regions. Now compare the region count with simply adding the totals: 18 + 12 = 30, which is 6 more than the 24 the regions give. The reason is that the 6 people doing both were counted once inside the first total and again inside the second.",
+      "So subtract the overlap once: n(A \\u222a B) = n(A) + n(B) \\u2212 n(A \\u2229 B). Here 18 + 12 \\u2212 6 = 24, matching the region count exactly. The relation holds: the counts reconcile.",
+      "If a universal set is known, the rest follows. With a group of 26 altogether, the number outside both activities is 26 \\u2212 24 = 2.",
+      "When the sets are disjoint the overlap is 0 and the subtraction changes nothing, so the relation still holds and simply reduces to adding the totals."
+    ],
+    "workedExamples": [
+      {
+        "id": "s19c.we1",
+        "prompt": "Of a group, 18 do the first activity, 12 the second, and 6 do both. How many do at least one?",
+        "answer": "24.",
+        "steps": [
+          {
+            "text": "Find the region in the first only: 18 \\u2212 6 = 12.",
+            "reasoning": "Removing the overlap from the first total leaves those in that activity alone."
+          },
+          {
+            "text": "Find the region in the second only: 12 \\u2212 6 = 6.",
+            "reasoning": "The same correction on the other side, which is what the definition actually asks for."
+          },
+          {
+            "text": "Add the three regions once each: 12 + 6 + 6 = 24.",
+            "reasoning": "Each person is now counted exactly once, which is what the union asks for."
+          }
+        ]
+      },
+      {
+        "id": "s19c.we2",
+        "prompt": "Derive the counting relation from that region accounting.",
+        "answer": "n(A \\u222a B) = n(A) + n(B) \\u2212 n(A \\u2229 B).",
+        "steps": [
+          {
+            "text": "n(A) counts the first-only region and the overlap; n(B) counts the second-only region and the overlap.",
+            "reasoning": "Each total already contains the overlap."
+          },
+          {
+            "text": "So n(A) + n(B) counts the overlap twice and everything else once.",
+            "reasoning": "The double counting is the only error in the sum."
+          },
+          {
+            "text": "Subtracting n(A \\u2229 B) once removes the surplus: n(A \\u222a B) = n(A) + n(B) \\u2212 n(A \\u2229 B) gives 24.",
+            "reasoning": "The formula is bookkeeping, not a rule to remember."
+          }
+        ]
+      },
+      {
+        "id": "s19c.we3",
+        "prompt": "A student answers 30 for the number doing at least one. What has gone wrong?",
+        "answer": "24; the overlap was counted twice.",
+        "steps": [
+          {
+            "text": "They added the two totals without adjusting.",
+            "reasoning": "Each total already includes the people doing both."
+          },
+          {
+            "text": "The 6 in both have been counted twice, so the answer is 6 too many.",
+            "reasoning": "Subtracting the overlap once gives 24, since each person doing both was counted in each total."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s19c.g1",
+        "prompt": "If 20 do one activity, 15 another and 5 do both, how many do at least one?",
+        "hint": "Subtract the overlap once.",
+        "answer": "30.",
+        "rationale": "20 + 15 = 35 counts the 5 doing both twice. Removing that surplus once gives 30."
+      },
+      {
+        "id": "s19c.g2",
+        "prompt": "If the two activities share nobody, what does the relation become?",
+        "hint": "What is the overlap?",
+        "answer": "n(A \\u222a B) = n(A) + n(B).",
+        "rationale": "With an empty intersection there is nothing counted twice, so the correction term is zero."
+      },
+      {
+        "id": "s19c.g3",
+        "prompt": "With a group of 26 and 24 doing at least one, how many do neither?",
+        "hint": "What is left of the universe?",
+        "answer": "2.",
+        "rationale": "Those doing neither are outside the union, so the count is 26 \\u2212 24."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s19c.i1",
+        "prompt": "In a group of 40, 25 like one subject, 20 like another and 10 like both. How many like neither?",
+        "answer": "5.",
+        "rationale": "At least one is 25 + 20 \\u2212 10 = 35, so 40 \\u2212 35 = 5 lie outside the union."
+      },
+      {
+        "id": "s19c.i2",
+        "prompt": "Can n(A \\u222a B) ever be larger than n(A) + n(B)?",
+        "answer": "No.",
+        "rationale": "The relation subtracts a count that is zero or more, so the union can never exceed the sum of the totals."
+      },
+      {
+        "id": "s19c.i3",
+        "prompt": "If n(A) = 12, n(B) = 9 and n(A \\u222a B) = 15, how many are in both?",
+        "answer": "6.",
+        "rationale": "Rearranging the relation gives n(A \\u2229 B) = 12 + 9 \\u2212 15 = 6. The same bookkeeping run backwards."
+      },
+      {
+        "id": "s19c.i4",
+        "prompt": "Why does the relation subtract the overlap once rather than twice?",
+        "answer": "Because it was counted twice in total, and should be counted once.",
+        "rationale": "Removing it twice would leave the people doing both out of the union altogether, which the inclusive reading of union forbids."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s19c.td1",
+        "prompt": "If A and B are disjoint, what happens to the counting relation, and why is that the expected answer rather than a special case?",
+        "expectedReasoning": "The overlap is empty, so the subtracted term is zero and the relation reduces to adding the totals. That is not a separate rule: the correction exists only to undo double counting, and with no shared elements there is none to undo. The disjoint case is the general relation with nothing to correct, which is a sign the relation was derived rather than invented for the overlapping case."
+      }
+    ],
+    "summary": "Counting two overlapping sets means counting each region once: 12 + 6 + 6 = 24. Adding the totals instead counts the overlap twice, so n(A \\u222a B) = n(A) + n(B) \\u2212 n(A \\u2229 B). With the universe known, the rest lie outside the union.",
+    "visuals": [
+      {
+        "type": "venn",
+        "caption": "Two overlapping circles marked C and T inside a rectangle marked U. All three regions inside the circles are shaded and each carries its own count.",
+        "altText": "Two overlapping circles marked C and T inside a rectangle marked U. All three regions inside the circles are shaded and each carries its own count."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-SET-09",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-SET-10",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-SET-FO1",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

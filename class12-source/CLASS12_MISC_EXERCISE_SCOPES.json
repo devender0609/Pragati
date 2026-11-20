@@ -1,0 +1,281 @@
+{
+ "generatedBy": "tools/class12/buildHierarchy.py (checkpoint 116, c12.08)",
+ "status": "WHOLE_BOOK_RECONCILED_13_OF_13",
+ "chaptersMissing": [],
+ "finding": "12 of 13 chapters carry a Miscellaneous Exercise. Chapter(s) [12] do NOT. Chapter 7 was determined from its own source at checkpoint 116, not assumed.",
+ "withMiscellaneous": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  13
+ ],
+ "withoutMiscellaneous": [
+  12
+ ],
+ "dispositionPolicy": "no canonical unit is created from a miscellaneous exercise; each is accounted for separately and classified only after its content is inspected",
+ "chapters": [
+  {
+   "chapter": 1,
+   "file": "lemh101.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 1"
+   ],
+   "numberedExercises": [
+    "1.1",
+    "1.2"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 15,
+    "endPdfPage": 17
+   }
+  },
+  {
+   "chapter": 2,
+   "file": "lemh102.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 2"
+   ],
+   "numberedExercises": [
+    "2.1",
+    "2.2"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 14,
+    "endPdfPage": 16
+   }
+  },
+  {
+   "chapter": 3,
+   "file": "lemh103.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 3"
+   ],
+   "numberedExercises": [
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 39,
+    "endPdfPage": 42
+   }
+  },
+  {
+   "chapter": 4,
+   "file": "lemh104.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercises on Chapter 4"
+   ],
+   "numberedExercises": [
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 24,
+    "endPdfPage": 28
+   }
+  },
+  {
+   "chapter": 5,
+   "file": "lemh105.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 5"
+   ],
+   "numberedExercises": [
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.6",
+    "5.7"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 41,
+    "endPdfPage": 43
+   }
+  },
+  {
+   "chapter": 6,
+   "file": "lemh106.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 6"
+   ],
+   "numberedExercises": [
+    "6.1",
+    "6.2",
+    "6.3"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 37,
+    "endPdfPage": 40
+   }
+  },
+  {
+   "chapter": 7,
+   "file": "lemh201.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 7"
+   ],
+   "numberedExercises": [
+    "7.1",
+    "7.2",
+    "7.3",
+    "7.4",
+    "7.5",
+    "7.6",
+    "7.7",
+    "7.8",
+    "7.9",
+    "7.10"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 61,
+    "endPdfPage": 67
+   }
+  },
+  {
+   "chapter": 8,
+   "file": "lemh202.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 8"
+   ],
+   "numberedExercises": [
+    "8.1"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 7,
+    "endPdfPage": 8
+   }
+  },
+  {
+   "chapter": 9,
+   "file": "lemh203.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 9"
+   ],
+   "numberedExercises": [
+    "9.1",
+    "9.2",
+    "9.3",
+    "9.4",
+    "9.5"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 34,
+    "endPdfPage": 38
+   }
+  },
+  {
+   "chapter": 10,
+   "file": "lemh204.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 10"
+   ],
+   "numberedExercises": [
+    "10.1",
+    "10.2",
+    "10.3",
+    "10.4"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 35,
+    "endPdfPage": 39
+   }
+  },
+  {
+   "chapter": 11,
+   "file": "lemh205.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 11"
+   ],
+   "numberedExercises": [
+    "11.1",
+    "11.2"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 14,
+    "endPdfPage": 17
+   }
+  },
+  {
+   "chapter": 12,
+   "file": "lemh206.pdf",
+   "miscellaneousExercise": false,
+   "miscHeadings": [],
+   "numberedExercises": [
+    "12.1"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "SUMMARY",
+    "startPdfPage": 11,
+    "endPdfPage": 12
+   }
+  },
+  {
+   "chapter": 13,
+   "file": "lemh207.pdf",
+   "miscellaneousExercise": true,
+   "miscHeadings": [
+    "Miscellaneous Exercise on Chapter 13"
+   ],
+   "numberedExercises": [
+    "13.1",
+    "13.2",
+    "13.3"
+   ],
+   "hasSummary": true,
+   "chapterEndMatter": {
+    "kind": "MISCELLANEOUS_EXERCISE",
+    "startPdfPage": 30,
+    "endPdfPage": 33
+   }
+  }
+ ]
+}

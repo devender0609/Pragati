@@ -1,0 +1,912 @@
+{
+  "generatedBy": "tools/class11/generateReviewWave1.ts",
+  "wave": 1,
+  "caveat": "Preparation only. Nothing has been sent, reviewed, adjudicated or published. Every reviewer judgement field is null by design.",
+  "selectionBasis": "architectural information value — unit-to-lesson granularity, shared source keys, CBSE-only ownership, scope fragments and new visual families — not mathematical difficulty",
+  "sharedCoverageKeys": [
+    {
+      "key": "1.6",
+      "unitIds": [
+        "C11-SET-05",
+        "C11-SET-06"
+      ]
+    },
+    {
+      "key": "1.9",
+      "unitIds": [
+        "C11-SET-09",
+        "C11-SET-10"
+      ]
+    },
+    {
+      "key": "3.4",
+      "unitIds": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ]
+    },
+    {
+      "key": "7.2",
+      "unitIds": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ]
+    },
+    {
+      "key": "8.3",
+      "unitIds": [
+        "C11-SEQ-02",
+        "C11-SEQ-03"
+      ]
+    },
+    {
+      "key": "SF-2-SUMMATIVE",
+      "unitIds": [
+        "C11-STL-03",
+        "C11-STL-04"
+      ]
+    },
+    {
+      "key": "13.4",
+      "unitIds": [
+        "C11-STA-03",
+        "C11-STA-04"
+      ]
+    },
+    {
+      "key": "13.5",
+      "unitIds": [
+        "C11-STA-05",
+        "C11-STA-06"
+      ]
+    }
+  ],
+  "multiUnitArtifactCount": 35,
+  "unitsTaughtByMoreThanOneArtifact": [
+    {
+      "unitId": "C11-RF-03",
+      "artifacts": [
+        "ncert_kemh1_s2_4_functions_lesson",
+        "ncert_kemh1_s2_4_1_real_functions_lesson",
+        "ncert_kemh1_s2_4_2_algebra_of_functions_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-01",
+      "artifacts": [
+        "ncert_kemh1_s3_2_angles_lesson",
+        "ncert_kemh1_s3_2_1_radian_measure_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-03",
+      "artifacts": [
+        "ncert_kemh1_s3_3_unit_circle_lesson",
+        "ncert_kemh1_s3_3_1_quadrant_signs_lesson",
+        "ncert_kemh1_s3_3_2_domain_range_graphs_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-06",
+      "artifacts": [
+        "ncert_kemh1_s3_4_sum_difference_lesson",
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-07",
+      "artifacts": [
+        "ncert_kemh1_s3_4_sum_difference_lesson",
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-CPX-02",
+      "artifacts": [
+        "ncert_kemh1_s4_3_algebra_lesson",
+        "ncert_kemh1_s4_3_5_powers_division_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STL-01",
+      "artifacts": [
+        "ncert_kemh1_s9_2_slope_lesson",
+        "ncert_kemh1_s9_2_1_angle_between_lines_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STL-03",
+      "artifacts": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson",
+        "ncert_kemh1_s9_3_forms_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STL-04",
+      "artifacts": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson",
+        "ncert_kemh1_s9_3_forms_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-PNC-03",
+      "artifacts": [
+        "ncert_kemh1_s6_3_1_factorial_lesson",
+        "ncert_kemh1_s6_3_permutations_lesson",
+        "ncert_kemh1_s6_3_3_repeated_objects_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-02",
+      "artifacts": [
+        "ncert_kemh1_s8_3_series_sigma_lesson",
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-03",
+      "artifacts": [
+        "ncert_kemh1_s8_3_series_sigma_lesson",
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-04",
+      "artifacts": [
+        "ncert_kemh1_s8_4_geometric_progression_lesson",
+        "ncert_kemh1_s8_4_1_gp_sum_lesson",
+        "ncert_kemh1_s8_4_2_infinite_gp_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-CON-01",
+      "artifacts": [
+        "ncert_kemh1_s10_2_cone_sections_lesson",
+        "ncert_kemh1_s10_2_2_degenerate_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-CON-05",
+      "artifacts": [
+        "ncert_kemh1_s10_5_ellipse_lesson",
+        "ncert_kemh1_s10_5_2_ellipse_eccentricity_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-CON-07",
+      "artifacts": [
+        "ncert_kemh1_s10_6_hyperbola_lesson",
+        "ncert_kemh1_s10_6_1_hyperbola_eccentricity_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-02",
+      "artifacts": [
+        "ncert_kemh1_s12_3_intuitive_limit_lesson",
+        "ncert_kemh1_s12_3_1_polynomial_rational_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-LIM-05",
+      "artifacts": [
+        "ncert_kemh1_s12_5_first_principles_lesson",
+        "ncert_kemh1_s12_5_1_algebra_of_derivatives_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STA-03",
+      "artifacts": [
+        "ncert_kemh1_s13_4_md_mean_lesson",
+        "ncert_kemh1_s13_4_md_median_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STA-04",
+      "artifacts": [
+        "ncert_kemh1_s13_4_md_mean_lesson",
+        "ncert_kemh1_s13_4_md_median_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STA-05",
+      "artifacts": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson",
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STA-06",
+      "artifacts": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson",
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-04",
+      "artifacts": [
+        "ncert_kemh1_s14_2_axiomatic_probability_lesson",
+        "ncert_kemh1_s14_2_2_equally_likely_lesson",
+        "ncert_kemh1_s14_2_3_probability_rules_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SET-05",
+      "artifacts": [
+        "ncert_kemh1_s1_6_subsets_lesson",
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SET-06",
+      "artifacts": [
+        "ncert_kemh1_s1_6_subsets_lesson",
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SET-09",
+      "artifacts": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson",
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SET-10",
+      "artifacts": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson",
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ]
+    }
+  ],
+  "selected": 25,
+  "entries": [
+    {
+      "priority": 1,
+      "contentArtifactId": "ncert_kemh1_s1_9_practical_counting_lesson",
+      "canonicalUnits": [
+        "C11-SET-09",
+        "C11-SET-10",
+        "C11-SET-FO1"
+      ],
+      "selectionReasons": [
+        "carries 3 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-SET-09, C11-SET-10",
+        "risk class C",
+        "scope-fragment source"
+      ],
+      "artifactFingerprint": "3d3a0e329e9a914e83590388502d1998",
+      "packetPath": "class11-review/packets/ncert_kemh1_s1_9_practical_counting_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 2,
+      "contentArtifactId": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+      "canonicalUnits": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ],
+      "selectionReasons": [
+        "carries 4 canonical units — the hardest granularity case",
+        "covers a tracked shared source key",
+        "scope-fragment source"
+      ],
+      "artifactFingerprint": "d721cc79c8850f1bf2d981529aa51f92",
+      "packetPath": "class11-review/packets/ncert_kemh1_s7_2_binomial_theorem_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 3,
+      "contentArtifactId": "ncert_kemh1_s13_5_4_shortcut_lesson",
+      "canonicalUnits": [
+        "C11-STA-05",
+        "C11-STA-06",
+        "C11-STA-07"
+      ],
+      "selectionReasons": [
+        "carries 3 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-STA-05, C11-STA-06"
+      ],
+      "artifactFingerprint": "324ec7c06418a76cbb7dd80e112b26e5",
+      "packetPath": "class11-review/packets/ncert_kemh1_s13_5_4_shortcut_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 4,
+      "contentArtifactId": "ncert_kemh1_s9_3_axis_point_slope_lesson",
+      "canonicalUnits": [
+        "C11-STL-03",
+        "C11-STL-04"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-STL-03, C11-STL-04",
+        "scope-fragment source"
+      ],
+      "artifactFingerprint": "b669a62bbdb4bd0a129ec5f6fb668999",
+      "packetPath": "class11-review/packets/ncert_kemh1_s9_3_axis_point_slope_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 5,
+      "contentArtifactId": "ncert_kemh1_s9_3_forms_lesson",
+      "canonicalUnits": [
+        "C11-STL-03",
+        "C11-STL-04"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-STL-03, C11-STL-04",
+        "scope-fragment source"
+      ],
+      "artifactFingerprint": "500dfd1dc3ae8e29ca68401b14f38fcb",
+      "packetPath": "class11-review/packets/ncert_kemh1_s9_3_forms_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 6,
+      "contentArtifactId": "ncert_kemh1_s3_4_sum_difference_lesson",
+      "canonicalUnits": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-TRG-06, C11-TRG-07",
+        "risk class C"
+      ],
+      "artifactFingerprint": "e8aba9128c52ea2cbc7d2995ccd12c9e",
+      "packetPath": "class11-review/packets/ncert_kemh1_s3_4_sum_difference_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 7,
+      "contentArtifactId": "ncert_kemh1_s3_4_multiple_angles_lesson",
+      "canonicalUnits": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-TRG-06, C11-TRG-07",
+        "risk class C"
+      ],
+      "artifactFingerprint": "eb87aa91324f5ba564e17c00500785ac",
+      "packetPath": "class11-review/packets/ncert_kemh1_s3_4_multiple_angles_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 8,
+      "contentArtifactId": "ncert_kemh1_s1_6_subsets_lesson",
+      "canonicalUnits": [
+        "C11-SET-05",
+        "C11-SET-06"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-SET-05, C11-SET-06",
+        "risk class C"
+      ],
+      "artifactFingerprint": "152192c638d6b5c386db661dd123c1c5",
+      "packetPath": "class11-review/packets/ncert_kemh1_s1_6_subsets_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 9,
+      "contentArtifactId": "ncert_kemh1_s8_3_series_sigma_lesson",
+      "canonicalUnits": [
+        "C11-SEQ-02",
+        "C11-SEQ-03"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "covers a tracked shared source key",
+        "shares unit(s) with another lesson: C11-SEQ-02, C11-SEQ-03"
+      ],
+      "artifactFingerprint": "e94ab5fefee0b6bf06ab259247ad5f2d",
+      "packetPath": "class11-review/packets/ncert_kemh1_s8_3_series_sigma_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 10,
+      "contentArtifactId": "cbse_fo11_chain_rule_lesson",
+      "canonicalUnits": [
+        "C11-LIM-FO11"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-11)",
+        "chapter-less placement",
+        "risk class C",
+        "new visual family: chain_rule"
+      ],
+      "artifactFingerprint": "9b1c590b87fd25aca82bf1fa935befb0",
+      "packetPath": "class11-review/packets/cbse_fo11_chain_rule_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 11,
+      "contentArtifactId": "ncert_kemh1_s2_4_1_real_functions_lesson",
+      "canonicalUnits": [
+        "C11-RF-03",
+        "C11-RF-04"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "shares unit(s) with another lesson: C11-RF-03",
+        "risk class C"
+      ],
+      "artifactFingerprint": "0f564b73e3aff072e5e571dac76313bd",
+      "packetPath": "class11-review/packets/ncert_kemh1_s2_4_1_real_functions_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 12,
+      "contentArtifactId": "ncert_kemh1_s4_3_5_powers_division_lesson",
+      "canonicalUnits": [
+        "C11-CPX-02",
+        "C11-CPX-03"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "shares unit(s) with another lesson: C11-CPX-02",
+        "risk class C"
+      ],
+      "artifactFingerprint": "2c28e5f36f31ad52cf956abe60f6f5e7",
+      "packetPath": "class11-review/packets/ncert_kemh1_s4_3_5_powers_division_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 13,
+      "contentArtifactId": "ncert_kemh1_s6_3_1_factorial_lesson",
+      "canonicalUnits": [
+        "C11-PNC-02",
+        "C11-PNC-03"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "shares unit(s) with another lesson: C11-PNC-03",
+        "risk class C"
+      ],
+      "artifactFingerprint": "e2df9815581248a6cdff6016968e4c7d",
+      "packetPath": "class11-review/packets/ncert_kemh1_s6_3_1_factorial_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 14,
+      "contentArtifactId": "ncert_kemh1_s10_2_2_degenerate_lesson",
+      "canonicalUnits": [
+        "C11-CON-01",
+        "C11-CON-02"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "shares unit(s) with another lesson: C11-CON-01",
+        "risk class C"
+      ],
+      "artifactFingerprint": "207345634a30817dbe516049f5dd4e5a",
+      "packetPath": "class11-review/packets/ncert_kemh1_s10_2_2_degenerate_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 15,
+      "contentArtifactId": "ncert_kemh1_s12_3_1_polynomial_rational_lesson",
+      "canonicalUnits": [
+        "C11-LIM-02",
+        "C11-LIM-03"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "shares unit(s) with another lesson: C11-LIM-02",
+        "risk class C"
+      ],
+      "artifactFingerprint": "34f7ed09504cfe4ab05ed0298fbee377",
+      "packetPath": "class11-review/packets/ncert_kemh1_s12_3_1_polynomial_rational_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 16,
+      "contentArtifactId": "cbse_fo8_special_sums_lesson",
+      "canonicalUnits": [
+        "C11-SEQ-FO8"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-8)",
+        "chapter-less placement",
+        "new visual family: special_sum"
+      ],
+      "artifactFingerprint": "d2297c06c7424d875b9e8bf336dbe97f",
+      "packetPath": "class11-review/packets/cbse_fo8_special_sums_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 17,
+      "contentArtifactId": "ncert_kemh1_s14_2_2_equally_likely_lesson",
+      "canonicalUnits": [
+        "C11-PRB-04",
+        "C11-PRB-05"
+      ],
+      "selectionReasons": [
+        "carries 2 canonical units",
+        "shares unit(s) with another lesson: C11-PRB-04"
+      ],
+      "artifactFingerprint": "b85b58ca67ce1aebdf29537baf0778cc",
+      "packetPath": "class11-review/packets/ncert_kemh1_s14_2_2_equally_likely_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 18,
+      "contentArtifactId": "ncert_kemh1_fo2_composition_lesson",
+      "canonicalUnits": [
+        "C11-RF-FO2"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-2)",
+        "chapter-less placement",
+        "risk class C"
+      ],
+      "artifactFingerprint": "95c2e24603b76e2587f094433acff3ec",
+      "packetPath": "class11-review/packets/ncert_kemh1_fo2_composition_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 19,
+      "contentArtifactId": "cbse_fo6_half_plane_lesson",
+      "canonicalUnits": [
+        "C11-INQ-FO6"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-6)",
+        "chapter-less placement",
+        "risk class C"
+      ],
+      "artifactFingerprint": "4f82848aee259ad36f569d706ea9766f",
+      "packetPath": "class11-review/packets/cbse_fo6_half_plane_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 20,
+      "contentArtifactId": "ncert_kemh1_fo3_general_solutions_lesson",
+      "canonicalUnits": [
+        "C11-TRG-FO3"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-3)",
+        "chapter-less placement",
+        "risk class C"
+      ],
+      "artifactFingerprint": "d042968746f87c087988c0d778d1f228",
+      "packetPath": "class11-review/packets/ncert_kemh1_fo3_general_solutions_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 21,
+      "contentArtifactId": "ncert_kemh1_fo5b_complex_quadratics_lesson",
+      "canonicalUnits": [
+        "C11-CPX-FO5b"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-5)",
+        "chapter-less placement",
+        "risk class C"
+      ],
+      "artifactFingerprint": "5beb62bc3b019e8fb74f2adea0c49b8b",
+      "packetPath": "class11-review/packets/ncert_kemh1_fo5b_complex_quadratics_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 22,
+      "contentArtifactId": "cbse_fo4_induction_lesson",
+      "canonicalUnits": [
+        "C11-IND-01"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-4)",
+        "chapter-less placement",
+        "risk class C"
+      ],
+      "artifactFingerprint": "6b6bcac7d4a2df170b6fea93db8ef5c1",
+      "packetPath": "class11-review/packets/cbse_fo4_induction_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 23,
+      "contentArtifactId": "cbse_fo10_section_formula_lesson",
+      "canonicalUnits": [
+        "C11-3DG-FO10"
+      ],
+      "selectionReasons": [
+        "CBSE-only required content (FO-10)",
+        "chapter-less placement"
+      ],
+      "artifactFingerprint": "3c0c9fe88ee394ff2b2a66933490d7ac",
+      "packetPath": "class11-review/packets/cbse_fo10_section_formula_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 24,
+      "contentArtifactId": "ncert_kemh1_s5_2_inequalities_lesson",
+      "canonicalUnits": [
+        "C11-INQ-01"
+      ],
+      "selectionReasons": [],
+      "artifactFingerprint": "b8f078eac77689994126c9abf87e748c",
+      "packetPath": "class11-review/packets/ncert_kemh1_s5_2_inequalities_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    },
+    {
+      "priority": 25,
+      "contentArtifactId": "ncert_kemh1_s11_2_axes_planes_lesson",
+      "canonicalUnits": [
+        "C11-3DG-01"
+      ],
+      "selectionReasons": [],
+      "artifactFingerprint": "480f40b4ce0f2155f91b20250063480f",
+      "packetPath": "class11-review/packets/ncert_kemh1_s11_2_axes_planes_lesson.json",
+      "reviewerAssignment": null,
+      "sentDate": null,
+      "reviewResult": null,
+      "lifecycle": {
+        "state": "PREPARED",
+        "sentForHumanReview": false,
+        "sentDate": null,
+        "humanReviewed": false,
+        "adjudicated": false,
+        "published": false
+      }
+    }
+  ]
+}

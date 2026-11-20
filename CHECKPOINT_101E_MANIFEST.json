@@ -1,0 +1,127 @@
+{
+  "checkpoint": "101E",
+  "canonicalVersion": "0.84.0-c11.52-fo8-pilot",
+  "packageKind": "FIRST GREEN \u2014 not a WIP archive",
+  "verdict": "CLASS_11_SPECIAL_SUMS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_EXACT_FINITE_SUM_EXTENSION",
+  "packageCreatedUtc": "2026-11-18T16:59:51Z",
+  "humanReviewed": false,
+  "bases": {
+    "fo10Hardened": "da7b503f2ac6b9e3343553efba5f1d7c6db48464f893cc2ebb67a2d1ab36e56d",
+    "lastWip": "85a76ad399300c037b4a20fa4266a2c9b350fa131cf6e78650efcc5b19a95b45"
+  },
+  "verificationGapClosed": {
+    "reason": "batches 1 and 2 had run before the final representationContract.ts edit",
+    "batch1Rerun": {
+      "files": 41,
+      "tests": 789
+    },
+    "batch2Rerun": {
+      "files": 37,
+      "tests": 833
+    },
+    "wholeSuiteSingleProcess": {
+      "files": 145,
+      "tests": 3153,
+      "failures": 0,
+      "timeouts": 0
+    },
+    "coverageProof": {
+      "discovered": 145,
+      "union": 145,
+      "overlap": 0,
+      "omitted": 0
+    }
+  },
+  "typecheck": {
+    "exitCode": 0,
+    "diagnostics": 0,
+    "method": "real process exit code, not a self-written marker"
+  },
+  "suites": {
+    "focusedPlusSequencePlusContract": 71,
+    "representationContractUnmet": 0
+  },
+  "representation": {
+    "family": "series:sigma",
+    "declaredIn": [
+      "lesson type",
+      "RepresentationFamily"
+    ],
+    "mapsTo": "special_sum",
+    "aliases": 0,
+    "renderedFamilies": 7
+  },
+  "mathematics": {
+    "natural": "n(n+1)/2",
+    "squares": "n(n+1)(2n+1)/6",
+    "cubes": "[n(n+1)/2]\u00b2",
+    "exactness": "BigInt via the CountResult idiom",
+    "oracleIndependent": true
+  },
+  "product": {
+    "walk": "5/5",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "governanceLabelLeak": false,
+    "figures": [
+      {
+        "sigma": "k",
+        "expanded": "1 + 2 + 3 + 4 + 5 + 6",
+        "closed": "6(6 + 1)/2",
+        "total": "21"
+      },
+      {
+        "sigma": "k\u00b2",
+        "expanded": "1 + 4 + 9 + 16 + 25 + 36",
+        "closed": "6(6 + 1)(2 \u00d7 6 + 1)/6",
+        "total": "91"
+      },
+      {
+        "sigma": "k\u00b3",
+        "expanded": "1 + 8 + 27 + 64 + 125 + 216",
+        "closed": "[6(6 + 1)/2]\u00b2",
+        "total": "441"
+      }
+    ],
+    "cubeIdentityVisible": "441 = 21\u00b2",
+    "accessibility": {
+      "figureRoot": "figure[data-visual-kind]",
+      "cubeStatesSquareOfNaturalSum": true
+    },
+    "finish": true,
+    "persistsAcrossReload": true,
+    "fo8SpecificStores": []
+  },
+  "publicSafe": {
+    "freshBuild": true,
+    "fo8Visible": false,
+    "directRouteBlocked": true,
+    "specialSumRoots": 0
+  },
+  "counts": {
+    "authoredArtifacts": 89,
+    "coverage": "92 / 93",
+    "formative": "12 / 13",
+    "summative": "80 / 80",
+    "ownershipBuckets": "82 / 1 / 6 / 89",
+    "chapter8NcertRows": 7,
+    "duplicates": 0,
+    "orphans": 0,
+    "canonicalUnits": 93,
+    "requiredDenominator": 93,
+    "optionalEnrichment": 0,
+    "humanCheck": 0
+  },
+  "queue": [
+    "C11-LIM-FO11"
+  ],
+  "requiredIncompleteChapters": [
+    12
+  ],
+  "debts": {
+    "GD-1": "RESOLVED",
+    "GD-2": "RESOLVED",
+    "formatting": "OPEN, untouched"
+  },
+  "next": "FO-8 hardening in a fresh copy, then C11-LIM-FO11 alone"
+}

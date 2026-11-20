@@ -1,0 +1,25 @@
+{
+  "_instructions": "Fill every field. Copy artifactId and reviewedFingerprint exactly as given. A response without a named reviewer cannot be accepted as a human review.",
+  "reviewer": null,
+  "reviewDate": null,
+  "artifactId": "cbse_fo8_special_sums_lesson",
+  "reviewedFingerprint": "d2297c06c7424d875b9e8bf336dbe97f",
+  "unitResults": [
+    {
+      "unitId": "C11-SEQ-FO8",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    }
+  ],
+  "workedExamples": null,
+  "practiceFeedback": null,
+  "representationQuality": null,
+  "accessibilityEquivalence": null,
+  "lessonGranularity": null,
+  "overallRecommendation": null,
+  "issues": []
+}

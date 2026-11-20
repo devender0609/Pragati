@@ -1,0 +1,25 @@
+{
+  "_instructions": "Fill every field. Copy artifactId and reviewedFingerprint exactly as given. A response without a named reviewer cannot be accepted as a human review.",
+  "reviewer": null,
+  "reviewDate": null,
+  "artifactId": "cbse_fo11_chain_rule_lesson",
+  "reviewedFingerprint": "9b1c590b87fd25aca82bf1fa935befb0",
+  "unitResults": [
+    {
+      "unitId": "C11-LIM-FO11",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    }
+  ],
+  "workedExamples": null,
+  "practiceFeedback": null,
+  "representationQuality": null,
+  "accessibilityEquivalence": null,
+  "lessonGranularity": null,
+  "overallRecommendation": null,
+  "issues": []
+}

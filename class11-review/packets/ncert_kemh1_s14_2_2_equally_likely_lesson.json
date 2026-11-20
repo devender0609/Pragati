@@ -1,0 +1,233 @@
+{
+  "priority": 17,
+  "contentArtifactId": "ncert_kemh1_s14_2_2_equally_likely_lesson",
+  "title": "You will derive the favourable-over-total rule as the equally likely case of the axioms.",
+  "placement": "chapter-14",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "shares unit(s) with another lesson: C11-PRB-04"
+  ],
+  "artifactFingerprint": "b85b58ca67ce1aebdf29537baf0778cc",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-PRB-04",
+      "title": "Axiomatic probability",
+      "objective": "State the axioms of probability and compute the probability of an event from them.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "FORMALISATION",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "set notation",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s14_2_axiomatic_probability_lesson",
+        "ncert_kemh1_s14_2_3_probability_rules_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-PRB-05",
+      "title": "Probabilities of equally likely outcomes",
+      "objective": "Derive that each of n equally likely outcomes has probability one over n and compute the probability of an event as favourable over total.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "FORMALISATION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "set notation",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch14",
+    "officialSectionId": "ncert_kemh1_s14_2",
+    "sectionNumber": "14.2",
+    "cbseEntryId": null,
+    "startPage": 397,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will derive the favourable-over-total rule as the equally likely case of the axioms.",
+    "vocabulary": [
+      {
+        "term": "equally likely",
+        "meaning": "Outcomes modelled as carrying the same probability."
+      }
+    ],
+    "explanation": [
+      "Suppose the 6 outcomes of an experiment are equally likely — each carries the same number. The axioms then decide what that number must be.",
+      "Call it p. The outcomes total 1, and there are 6 of them, so 6p = 1 and p = 1/6. In general, with n equally likely outcomes each has probability 1/n.",
+      "Nothing was assumed about the value; it was forced. Equal likelihood plus a total of 1 leaves no choice.",
+      "Now take an event with k outcomes. Its probability is the sum of k copies of 1/n, which is k/n — the number of favourable outcomes over the total number.",
+      "So the familiar rule is not a definition. It is what the axioms give when, and only when, the outcomes are equally likely. For \"the number is even\" the rule gives 1/2, which is exactly what adding the outcome probabilities gave.",
+      "The condition is doing real work. If the outcomes are not equally likely, counting them is simply the wrong calculation, and the rule gives an answer to a question nobody asked. A weighted die has six outcomes, but its probabilities are not 1/6 each.",
+      "This also explains why the earlier grades' work was correct: every experiment there was modelled with equally likely outcomes, so the condition held even when it was not stated."
+    ],
+    "workedExamples": [
+      {
+        "id": "s1422.we1",
+        "prompt": "Derive the probability of a single outcome of a die is rolled once, modelled as fair.",
+        "answer": "1/6",
+        "steps": [
+          {
+            "text": "Let each outcome have probability p, since they are equally likely.",
+            "reasoning": "Equal likelihood means one common value."
+          },
+          {
+            "text": "There are 6 outcomes and they total 1, so 6p = 1.",
+            "reasoning": "This is the axiom applied, not an assumption."
+          },
+          {
+            "text": "So p = 1/6.",
+            "reasoning": "The value is forced, not chosen."
+          }
+        ]
+      },
+      {
+        "id": "s1422.we2",
+        "prompt": "Find the probability of \"the number is below 4\" two ways.",
+        "answer": "1/2",
+        "steps": [
+          {
+            "text": "Adding outcome probabilities: three lots of 1/6.",
+            "reasoning": "Straight from the assignment."
+          },
+          {
+            "text": "Counting: 3 favourable out of 6.",
+            "reasoning": "The rule derived above."
+          },
+          {
+            "text": "Both give 1/2.",
+            "reasoning": "They agree because the rule came from the assignment."
+          }
+        ]
+      },
+      {
+        "id": "s1422.we3",
+        "prompt": "Why can favourable-over-total not be used for a weighted die?",
+        "answer": "Because its outcomes are not equally likely, so counting them is the wrong calculation.",
+        "steps": [
+          {
+            "text": "Counting outcomes treats them as interchangeable.",
+            "reasoning": "That is only right when they carry equal probability."
+          },
+          {
+            "text": "A weighted die has outcomes carrying different probabilities.",
+            "reasoning": "So counting them answers a different question."
+          },
+          {
+            "text": "The axioms still apply, but the probabilities must come from the assignment itself.",
+            "reasoning": "The rule is unavailable, not merely inaccurate."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s1422.g1",
+        "prompt": "With n equally likely outcomes, what is each one’s probability?",
+        "hint": "What must n equal numbers add to?",
+        "answer": "1/n.",
+        "rationale": "n equal numbers totalling 1 must each be 1/n."
+      },
+      {
+        "id": "s1422.g2",
+        "prompt": "Why does an event with k outcomes have probability k/n?",
+        "hint": "Add them.",
+        "answer": "Because it is k copies of 1/n.",
+        "rationale": "The event probability is the sum of its outcomes’ probabilities."
+      },
+      {
+        "id": "s1422.g3",
+        "prompt": "Is favourable-over-total a definition of probability?",
+        "hint": "What did it come from?",
+        "answer": "No — it is the equally likely case of the axioms.",
+        "rationale": "It is derived, and only valid under that condition."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s1422.i1",
+        "prompt": "What is the probability of \"the number is 6\" for a fair die?",
+        "answer": "1/6",
+        "rationale": "One favourable outcome out of six equally likely ones."
+      },
+      {
+        "id": "s1422.i2",
+        "prompt": "A bag has outcomes that are not equally likely. Can you count to find a probability?",
+        "answer": "No.",
+        "rationale": "Counting assumes the outcomes carry equal probability."
+      },
+      {
+        "id": "s1422.i3",
+        "prompt": "For two fair coins, what is the probability of exactly one head?",
+        "answer": "1/2.",
+        "rationale": "Two of the four equally likely outcomes, HT and TH, are favourable."
+      },
+      {
+        "id": "s1422.i4",
+        "prompt": "Does 1/n depend on which outcome is chosen?",
+        "answer": "No.",
+        "rationale": "Equal likelihood means they all carry the same probability."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s1422.td1",
+        "prompt": "Earlier grades used favourable-over-total without mentioning any condition. Were those answers wrong?",
+        "expectedReasoning": "No, because the condition held every time — the dice were fair, the coins unbiased, the balls identical except in colour. What was missing was not correctness but the statement of what made it correct. That matters as soon as an experiment appears where the condition fails, because nothing in the formula itself announces that it has stopped applying; it will return a number regardless. Naming the assumption converts a rule that happens to work into one whose scope you can check, which is precisely what the axiomatic treatment buys."
+      }
+    ],
+    "summary": "If n outcomes are equally likely, the axioms force each to have probability 1/n, and an event with k of them has probability k/n. The familiar favourable-over-total rule is therefore derived, not defined, and it is valid only under equal likelihood — for \"the number is even\" it gives 1/2, agreeing with the assignment.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-PRB-04",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-PRB-05",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

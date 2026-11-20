@@ -1,0 +1,239 @@
+{
+  "priority": 9,
+  "contentArtifactId": "ncert_kemh1_s8_3_series_sigma_lesson",
+  "title": "You will write the sum of a sequence’s terms in sigma notation and expand it again.",
+  "placement": "chapter-8",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-SEQ-02, C11-SEQ-03"
+  ],
+  "artifactFingerprint": "e94ab5fefee0b6bf06ab259247ad5f2d",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-SEQ-02",
+      "title": "Series and sigma notation",
+      "objective": "Write the sum of a sequence as a series using sigma notation.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "REPRESENTATION_EXTENSION",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "sigma notation",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-SEQ-03",
+      "title": "Arithmetic mean",
+      "objective": "Insert the arithmetic mean between two numbers and insert n arithmetic means.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "A.M. notation",
+      "riskClass": "A",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch08",
+    "officialSectionId": "ncert_kemh1_s8_3",
+    "sectionNumber": "8.3",
+    "cbseEntryId": null,
+    "startPage": 181,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will write the sum of a sequence’s terms in sigma notation and expand it again.",
+    "vocabulary": [
+      {
+        "term": "series",
+        "meaning": "The sum of the terms of a sequence."
+      },
+      {
+        "term": "sigma notation",
+        "meaning": "A compact way of writing a sum, using the Greek letter sigma with an index and bounds."
+      }
+    ],
+    "explanation": [
+      "Take the sequence with a_n = 2n + 1, whose first four terms are 3, 5, 7, 9. Adding them gives 24. That sum is a series.",
+      "A sequence and a series are different objects. The sequence is the ordered list; the series is the single number that results from adding its terms. Writing them the same way invites the error of treating one as the other.",
+      "Writing out long sums is impractical, so there is a notation. Sigma notation records three things: the index variable, where it starts, where it stops, and the expression being summed.",
+      "So the sum from k = 1 to 4 of 2k + 1 means exactly 3 + 5 + 7 + 9, which is 24. Nothing is hidden in the notation: it is the same sum, written compactly.",
+      "The bounds are not decoration. Without them the symbol names no particular sum — it would say to add terms, without saying which. Changing the upper bound changes the sum.",
+      "Another example: the sum from k = 1 to 5 of k² expands to 1 + 4 + 9 + 16 + 25, giving 55.",
+      "The index variable is internal to the sum. Whether it is called k or i makes no difference to the answer, since it only counts the positions being included."
+    ],
+    "workedExamples": [
+      {
+        "id": "s83.we1",
+        "prompt": "Expand and evaluate the sum from k = 1 to 4 of 2k + 1.",
+        "answer": "24",
+        "steps": [
+          {
+            "text": "The index runs from 1 to 4, so there are four terms.",
+            "reasoning": "The bounds say exactly which positions are included."
+          },
+          {
+            "text": "Substituting each value gives 3 + 5 + 7 + 9.",
+            "reasoning": "Each term comes from the summand at that index."
+          },
+          {
+            "text": "Adding gives 24.",
+            "reasoning": "The notation and the written-out sum are the same quantity."
+          }
+        ]
+      },
+      {
+        "id": "s83.we2",
+        "prompt": "Evaluate the sum from k = 1 to 5 of k².",
+        "answer": "55",
+        "steps": [
+          {
+            "text": "The index runs from 1 to 5, so five terms are added.",
+            "reasoning": "One term for each position in the range."
+          },
+          {
+            "text": "The terms are 1 + 4 + 9 + 16 + 25.",
+            "reasoning": "Each is the square of its index."
+          },
+          {
+            "text": "The sum is 55.",
+            "reasoning": "Found by adding the terms, not by any special formula."
+          }
+        ]
+      },
+      {
+        "id": "s83.we3",
+        "prompt": "Why must sigma notation carry bounds?",
+        "answer": "Because without them the notation names no particular sum.",
+        "steps": [
+          {
+            "text": "The symbol says to add terms of a sequence.",
+            "reasoning": "On its own it does not say which terms."
+          },
+          {
+            "text": "The lower and upper bounds fix where the index starts and stops.",
+            "reasoning": "Without them the expression names no particular number."
+          },
+          {
+            "text": "Changing the upper bound from 4 to 3 changes 24 into a different sum.",
+            "reasoning": "So the bounds carry as much meaning as the summand."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s83.g1",
+        "prompt": "What is the difference between a sequence and a series?",
+        "hint": "One is a sum.",
+        "answer": "A sequence is an ordered list; a series is the sum of its terms.",
+        "rationale": "The series is a single number obtained from the sequence."
+      },
+      {
+        "id": "s83.g2",
+        "prompt": "How many terms are in a sum with index from 1 to 6?",
+        "hint": "Count inclusively.",
+        "answer": "6.",
+        "rationale": "Both bounds are included in the range."
+      },
+      {
+        "id": "s83.g3",
+        "prompt": "Does renaming the index from k to i change the sum?",
+        "hint": "What does the index do?",
+        "answer": "No.",
+        "rationale": "The index only counts positions; it does not appear in the answer."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s83.i1",
+        "prompt": "Expand the sum of k from k = 1 to 4.",
+        "answer": "1 + 2 + 3 + 4 = 10.",
+        "rationale": "Each index contributes its own value as the term."
+      },
+      {
+        "id": "s83.i2",
+        "prompt": "Write the sum 2 + 4 + 6 + 8 in sigma notation.",
+        "answer": "The sum of 2k from k = 1 to 4.",
+        "rationale": "Each term is twice its position, and there are four of them."
+      },
+      {
+        "id": "s83.i3",
+        "prompt": "How many terms does a sum with index from 3 to 7 have?",
+        "answer": "5.",
+        "rationale": "The positions 3, 4, 5, 6 and 7 are all included."
+      },
+      {
+        "id": "s83.i4",
+        "prompt": "Is a series an ordered list?",
+        "answer": "No.",
+        "rationale": "It is a single number, the total of the terms."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s83.td1",
+        "prompt": "Sigma notation says nothing a written-out sum does not. Why introduce it at all?",
+        "expectedReasoning": "Because it makes the structure of a sum visible and manipulable. Written out, a sum is a row of numbers whose pattern you have to infer; in sigma form the rule, the starting point and the stopping point are separate, labelled parts, and each can be changed on its own. That is what makes it possible to reason about a sum before computing it — to say what happens as the upper bound grows, or to compare two sums whose summands differ. The compactness is a convenience; the separation of parts is the real gain."
+      }
+    ],
+    "summary": "A series is the sum of a sequence’s terms, and it is a different object from the sequence. Sigma notation records the index, its lower and upper bounds, and the summand: the sum from k = 1 to 4 of 2k + 1 is 3 + 5 + 7 + 9 = 24. The bounds are essential, since without them no particular sum is named.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-SEQ-02",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-SEQ-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

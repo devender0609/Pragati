@@ -1,0 +1,19 @@
+{
+  "generatedBy": "tools/class11/generateReviewReadiness.ts",
+  "scope": "current canonical 93-unit Class 11 scope",
+  "caveat": "READY_FOR_HUMAN_REVIEW means structurally safe to send to a reviewer. It is not material alignment, not human review, and not publishable.",
+  "sourceDecompositionUnits": 93,
+  "requiredUnits": 93,
+  "authoredArtifacts": 90,
+  "requiredCoverage": "93 / 93",
+  "uncovered": [],
+  "orphans": [],
+  "structurallyReadyForHumanReview": 90,
+  "needingFix": 0,
+  "materialAlignmentSettled": 0,
+  "materialAlignmentNeedingHumanCheck": 93,
+  "sentForHumanReview": 0,
+  "humanReviewed": 0,
+  "adjudicated": 0,
+  "published": 0
+}

@@ -1,0 +1,218 @@
+{
+  "checkpoint": "96D",
+  "canonicalVersion": "0.84.0-c11.41-inequalities-hardened",
+  "packageKind": "HARDENED FINAL \u2014 first-green 0.84.0-c11.40 preserved",
+  "verdict": "CLASS_11_LINEAR_INEQUALITIES_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_HALF_PLANE_SOLUTION_SET_EXTENSION",
+  "packageCreatedUtc": "2026-11-16T17:59:40Z",
+  "humanReviewed": false,
+  "productionCodeChanged": false,
+  "firstGreen": {
+    "archive": "pragati-0.84.0-c11.40-inequalities-pilot.zip",
+    "sha256": "8d093855acf208928ab368c346d532a59197eec12593ce3be8095aedf3d9994c",
+    "overwritten": false
+  },
+  "viewports": {
+    "widths": [
+      1280,
+      834,
+      360
+    ],
+    "pageOverflowPx": 0,
+    "offScreenDescendants": 0,
+    "realClipping": 0,
+    "consoleErrors": 0
+  },
+  "numberLineFigures": [
+    {
+      "endpoint": "open",
+      "ray": "right",
+      "ticks": 11,
+      "altChars": 200
+    },
+    {
+      "endpoint": "closed",
+      "ray": "right",
+      "ticks": 11,
+      "altChars": 194
+    },
+    {
+      "endpoint": "open",
+      "ray": "right",
+      "ticks": 13,
+      "altChars": 256
+    },
+    {
+      "endpoint": "closed",
+      "ray": "left",
+      "ticks": 11,
+      "altChars": 178
+    }
+  ],
+  "numberLineMobile": {
+    "widthPx1280": 638,
+    "widthPx360": 270,
+    "endpointAmbiguous": false
+  },
+  "halfPlaneFigures": [
+    {
+      "boundaries": 1,
+      "dashed": 0,
+      "solid": 1,
+      "shadedCells": 1808,
+      "notes": 2,
+      "altChars": 311
+    },
+    {
+      "boundaries": 1,
+      "dashed": 1,
+      "solid": 0,
+      "shadedCells": 768,
+      "notes": 2,
+      "altChars": 270,
+      "kind": "vertical"
+    },
+    {
+      "boundaries": 2,
+      "dashed": 1,
+      "solid": 1,
+      "shadedCells": 392,
+      "notes": 4,
+      "altChars": 250,
+      "kind": "system"
+    }
+  ],
+  "intersectionEvidence": "system shades 392 cells against 768 and 1808 for its members \u2014 smaller than either, which a union could not be",
+  "colourIndependence": "strict/weak carried by dash AND by written notes, never by fill colour alone",
+  "catalogueShell": {
+    "groups": [
+      "Before you continue",
+      "Also required"
+    ],
+    "fo6Group": "Also required",
+    "header": "13 chapters from your textbook \u00b7 82 lessons \u00b7 1 prerequisite lesson outside the textbook \u00b7 1 more required lesson outside the textbook",
+    "fo6CalledPrerequisite": false,
+    "governanceLabelLeak": false,
+    "overflow360": 0,
+    "chapter5Rows": 2
+  },
+  "keyboard": {
+    "fo6RowFocusable": true,
+    "enterOpens": true,
+    "tabbableControls": {
+      "1280": 14,
+      "834": 9,
+      "360": 9
+    },
+    "stageChips": 5,
+    "finishReachable": true,
+    "backReachable": true,
+    "focusTrap": false
+  },
+  "bottomClearance": {
+    "px": 125,
+    "allThreeLessons": true,
+    "firstReading": -59,
+    "firstReadingCause": "the detector measured the fixed bottom bar against its own Home/Learn/Practice buttons, which sit inside it",
+    "classification": "HARNESS",
+    "productLayoutChanged": false
+  },
+  "finish": {
+    "result": "3/3",
+    "runSeparately": true,
+    "distinctArtifactIds": 3
+  },
+  "persistence": {
+    "store": "pragati.learnProgress.v1",
+    "survivesReload": true,
+    "fo6CompletedLabel": true,
+    "fo6KeyedToOwnArtifact": "cbse_fo6_half_plane_lesson",
+    "inq01NeverFinishedShowsIncomplete": true,
+    "inequalitySpecificStores": [],
+    "chapter5OwnershipMutated": false,
+    "limitation": "INQ-02's row sits inside the Chapter 5 group rather than at top level, so only FO-6's Completed label was directly readable; the store confirms both"
+  },
+  "contracts": {
+    "representationContractUnmet": 0,
+    "rawValueCorpus": 84,
+    "leaks": 0,
+    "allFamily": {
+      "discovered": 17,
+      "present": 17,
+      "missing": 0,
+      "allDescribed": true,
+      "rerunReason": "no shared renderer touched; baseline carried from first green"
+    }
+  },
+  "qa": {
+    "targetedSuite": 30,
+    "combinedExtractedSuites": "see extracted verification",
+    "typecheck": 0
+  },
+  "builds": {
+    "preview": {
+      "chapter5": true,
+      "chapter5Rows": 2,
+      "alsoRequired": true,
+      "fo6Openable": true
+    },
+    "publicSafe": {
+      "freshBuild": true,
+      "envLocalRemoved": true,
+      "distDeleted": true,
+      "chapter5Visible": false,
+      "alsoRequiredVisible": false,
+      "routesBlocked": 3,
+      "numberLineRoots": 0,
+      "halfPlaneRoots": 0
+    }
+  },
+  "stability": {
+    "lessonContentChanges": 0,
+    "artifactVersionChanges": 0,
+    "provenanceChanges": 0,
+    "governanceChanges": 0,
+    "qaHarnessesAdded": 2
+  },
+  "governance": {
+    "fo6": {
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "summativeEligible": false,
+      "ncertChapterOwner": null,
+      "prerequisites": [
+        "C11-INQ-02"
+      ],
+      "stl01Edge": false
+    },
+    "governanceDebtUnchanged": true,
+    "humanCheckInventory": 0
+  },
+  "counts": {
+    "officialTextbookChapters": 13,
+    "chapterOwned": 82,
+    "chapterlessPrerequisite": 1,
+    "chapterlessRequiredCore": 1,
+    "total": 84,
+    "officialSections": 47,
+    "authoredModules": 15,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14
+    ]
+  },
+  "next": {
+    "chapter": "3-D Geometry",
+    "begunHere": false
+  }
+}

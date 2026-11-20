@@ -1,0 +1,170 @@
+{
+  "checkpoint": "101G",
+  "canonicalVersion": "0.84.0-c11.53-fo8-hardened",
+  "packageKind": "HARDENED FINAL",
+  "verdict": "CLASS_11_SPECIAL_SUMS_HARDENED_READY_FOR_HUMAN_REVIEW",
+  "packageCreatedUtc": "2026-11-18T17:41:35Z",
+  "humanReviewed": false,
+  "productionSourceChanges": 0,
+  "memoryGate": {
+    "totalMB": 3992,
+    "availableMB": 3812,
+    "sharedMB": 12,
+    "swap": 0,
+    "priorBlockedSession": {
+      "sharedMB": 3183,
+      "availableMB": "450-600",
+      "everyBuildKilled": "exit 137"
+    }
+  },
+  "base": {
+    "archive": "pragati-0.84.0-c11.52-fo8-pilot.zip",
+    "sha256": "9991dae805c342b15e5d4828dd20700ed9911cfb490e8e4967b553711737843c",
+    "checksumVerified": true
+  },
+  "historicalCaveatClosed": {
+    "was": "extracted-copy typecheck exit=137, never a pass",
+    "now": "fresh hardening tree typecheck exit=0 diagnostics=0; build exit=0"
+  },
+  "viewportMatrix": {
+    "1280": {
+      "pageOverflowPx": 0,
+      "realClip": 0.0,
+      "scrollers": 0,
+      "collisions": 0,
+      "minFontPx": 14,
+      "consoleErrors": 0
+    },
+    "834": {
+      "pageOverflowPx": 0,
+      "realClip": 0.0,
+      "scrollers": 0,
+      "collisions": 0,
+      "minFontPx": 14,
+      "consoleErrors": 0
+    },
+    "360": {
+      "pageOverflowPx": 0,
+      "realClip": 0.0,
+      "scrollers": 0,
+      "collisions": 0,
+      "minFontPx": 14,
+      "consoleErrors": 0
+    }
+  },
+  "figuresAt360": [
+    {
+      "sigma": "k",
+      "expanded": "1 + 2 + 3 + 4 + 5 + 6",
+      "closed": "6(6 + 1)/2",
+      "total": "21"
+    },
+    {
+      "sigma": "k\u00b2",
+      "expanded": "1 + 4 + 9 + 16 + 25 + 36",
+      "closed": "6(6 + 1)(2 \u00d7 6 + 1)/6",
+      "total": "91"
+    },
+    {
+      "sigma": "k\u00b3",
+      "expanded": "1 + 8 + 27 + 64 + 125 + 216",
+      "closed": "[6(6 + 1)/2]\u00b2",
+      "total": "441"
+    }
+  ],
+  "cubeExponent": {
+    "lines": 1,
+    "clientRects": 1,
+    "scrollWidth": 142,
+    "clientWidth": 142,
+    "conclusion": "no wrap, so no line break for the superscript to detach across"
+  },
+  "accessibility": {
+    "altChars": [
+      115,
+      212,
+      189
+    ],
+    "allCarry": [
+      "lower bound",
+      "upper bound",
+      "summand",
+      "closed form",
+      "exact total"
+    ],
+    "cubeStatesSquareOfNaturalSum": true,
+    "figureRoot": "figure[data-visual-kind]"
+  },
+  "colorIndependence": {
+    "rowLabels": [
+      "In sigma notation",
+      "Written out",
+      "Closed form",
+      "Exact total"
+    ],
+    "meaningInTextOnly": true
+  },
+  "keyboard": {
+    "rowFocusable": true,
+    "enterOpens": true,
+    "figureInternalTabStops": 0,
+    "finishTabSweep": "INCONCLUSIVE \u2014 harness fault: swept from the first stage, where Finish does not exist; Finish worked after walking stages"
+  },
+  "bottomClearance": {
+    "raw": -43,
+    "verdict": "HARNESS FAULT",
+    "offenders": [
+      "page container, height 1216",
+      "empty h-16 sm:hidden spacer reserving 64px under the mobile nav"
+    ],
+    "lowestRealControl": "visible, elementFromPoint reports not covered",
+    "precedent": "same detector fault at checkpoints 93 and 96"
+  },
+  "qa": {
+    "files": 145,
+    "tests": 3153,
+    "failures": 0,
+    "timeouts": 0,
+    "singleProcess": true,
+    "typecheckExit": 0,
+    "typecheckDiagnostics": 0,
+    "buildExit": 0
+  },
+  "product": {
+    "previewFo8Rows": 1,
+    "duplicates": 0,
+    "finish": true,
+    "persistsAcrossReload": true,
+    "fo8SpecificStores": [],
+    "publicSafe": {
+      "freshBuild": true,
+      "fo8Visible": false,
+      "routeBlocked": true,
+      "specialSumRoots": 0
+    }
+  },
+  "counts": {
+    "authoredArtifacts": 89,
+    "coverage": "92 / 93",
+    "formative": "12 / 13",
+    "summative": "80 / 80",
+    "ownershipBuckets": "82 / 1 / 6 / 89",
+    "chapter8NcertRows": 7,
+    "duplicates": 0,
+    "orphans": 0,
+    "humanCheck": 0,
+    "moved": false
+  },
+  "queue": [
+    "C11-LIM-FO11"
+  ],
+  "requiredIncompleteChapters": [
+    12
+  ],
+  "debts": {
+    "GD-1": "RESOLVED",
+    "GD-2": "RESOLVED",
+    "formatting": "OPEN, untouched"
+  },
+  "next": "C11-LIM-FO11 alone \u2014 the final required Class 11 unit"
+}

@@ -1,0 +1,8 @@
+{
+  "generatedAt": "checkpoint 102C",
+  "dependencyOrderingBetweenThem": "none — all three are simultaneously authorable",
+  "recommendation": "three separate checkpoints; the architectures share no implementation",
+  "suggestedFirst": null,
+  "suggestedFirstRationale": "the required authoring queue is empty for the current canonical 93-unit scope",
+  "queue": []
+}

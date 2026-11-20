@@ -1,0 +1,180 @@
+{
+  "checkpoint": "97C",
+  "canonicalVersion": "0.84.0-c11.43-space-pilot",
+  "packageKind": "FIRST GREEN \u2014 do not overwrite",
+  "verdict": "CLASS_11_3D_GEOMETRY_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_EXACT_COORDINATE_SPACE_EXTENSION",
+  "packageCreatedUtc": "2026-11-16T19:26:34Z",
+  "humanReviewed": false,
+  "baseline": {
+    "archive": "pragati-0.84.0-c11.41-inequalities-hardened.zip",
+    "sha256": "c86567a9f3be8979ddb7375e4d43b044ea1e30b0ffacbced0f507311017db8ab"
+  },
+  "staleAssertion": {
+    "file": "v0840C1117Class11Limits.test.tsx",
+    "was": "expect(c11.some((c) => c.officialChapterId.endsWith('ch11'))).toBe(false)",
+    "purpose": "guarded against an INVENTED placeholder Chapter 11 while unauthored",
+    "now": "chapter present, 3 sections, sectionNumbers 11.2/11.3/11.4",
+    "flippedToTrue": false,
+    "globallyReplaced": false
+  },
+  "architecture": {
+    "reusesRationalRadicalSimplification": true,
+    "twoDPointUnchanged": true,
+    "point3DIsSibling": true,
+    "distanceSquared3D": "distanceSquared2D(planar) + dz^2",
+    "dimensionReductionByConstruction": true
+  },
+  "projectionIsolation": {
+    "proofStyle": "projected at three scales; projections differ, semantics do not",
+    "distanceUnchanged": true,
+    "membershipUnchanged": true,
+    "octantUnchanged": true,
+    "sourceInspectionUsed": false
+  },
+  "octants": {
+    "numbering": "none asserted \u2014 absent from verified source records",
+    "classification": "sign pattern",
+    "allGenerated": 8,
+    "zeroCoordinate": "null, no nearest octant"
+  },
+  "radicalZeroDebt": {
+    "id": "EXACT_RADICAL_ZERO_FORMATTING_DEBT",
+    "file": "class11-source/FORMATTING_DEBT.json",
+    "sharedFormatterChanged": false,
+    "localNormalisation": "inside distance3D only, following the straightLine precedent"
+  },
+  "qa": {
+    "targetedSuite": 27,
+    "combinedWithRegressions": 70,
+    "tests": 3117,
+    "testFiles": 143,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "representationContractUnmet": 0
+  },
+  "allFamily": {
+    "discovered": 18,
+    "present": 18,
+    "missing": 0,
+    "allDescribed": true,
+    "coordinate_3d": {
+      "roots": 4,
+      "primitives": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "entries": [
+        6,
+        6,
+        5,
+        5
+      ]
+    }
+  },
+  "browser": {
+    "distinctIdentities": "3/3",
+    "stages": "15/15",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "finish": "3/3",
+    "selectorUsed": "figure[data-visual-kind]",
+    "wrapperFinding": "LearnSectionView also sets data-visual-kind on a display:contents wrapper with no accessible description"
+  },
+  "productEvidence": {
+    "3DG-01": {
+      "axes": "xyz",
+      "triples": [
+        "(0, 0, 0)",
+        "(2, 3, 4)",
+        "(4, 0, 5)",
+        "(0, 0, 6)"
+      ],
+      "classification": [
+        "signs (+, +, +)",
+        "no octant",
+        "z-axis"
+      ]
+    },
+    "3DG-02": {
+      "axes": "xyz",
+      "triples": [
+        "(2, 3, 4)",
+        "(-3, 1, -2)"
+      ],
+      "classification": [
+        "signs (+, +, +)",
+        "signs (-, +, -)"
+      ]
+    },
+    "3DG-03": {
+      "axes": "xyz",
+      "triples": [
+        "(1, -1, 2)",
+        "(4, 3, -2)",
+        "(1, 2, 3)",
+        "(4, 6, 3)"
+      ],
+      "exact": [
+        "is exactly \u221a41",
+        "is exactly 5"
+      ],
+      "decimalSubstituted": false
+    }
+  },
+  "counts": {
+    "officialTextbookChapters": 14,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "chapter11Rows": 3,
+    "chapterOwned": 85,
+    "chapterlessPrerequisite": 1,
+    "chapterlessRequiredCore": 1,
+    "total": 87,
+    "officialSections": 50,
+    "authoredModules": 16,
+    "rawValueCorpus": 87,
+    "leaks": 0
+  },
+  "milestone": "all 14 current NCERT Class 11 textbook chapters have authored summative-core coverage",
+  "notClaimed": "Class 11 fully authored \u2014 FO10 and nine formative debt units remain",
+  "chapter11Status": "summative-core authored complete; FO10 pending governance debt",
+  "builds": {
+    "preview": {
+      "chapter11Visible": true,
+      "fo10Present": false,
+      "header": "14 chapters from your textbook \u00b7 85 lessons \u00b7 1 prerequisite lesson outside the textbook \u00b7 1 more required lesson outside the textbook"
+    },
+    "publicSafe": {
+      "freshBuild": true,
+      "chapter11Visible": false,
+      "routesBlocked": 3,
+      "coordinate3dRoots": 0
+    }
+  },
+  "governance": {
+    "governanceDebtUnchanged": true,
+    "humanCheckInventory": 0,
+    "fo10Authored": false
+  },
+  "next": {
+    "immediate": "hardening at 1280 / 834 / 360, accessibility, focus, persistence",
+    "then": "Class 11 completeness and formative-governance-debt audit"
+  }
+}

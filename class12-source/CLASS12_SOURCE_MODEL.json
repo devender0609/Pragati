@@ -1,0 +1,438 @@
+{
+ "generatedBy": "checkpoint 113 ; patched at checkpoint 116 (c12.08): lemh201 replaced, denominators promoted by whole-book gate",
+ "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded",
+ "textbookIdentity": {
+  "publisher": "NCERT",
+  "subject": "Mathematics",
+  "class": "XII",
+  "parts": [
+   "Mathematics Part I",
+   "Mathematics Part II"
+  ],
+  "reprintLine": "Reprint 2026-27",
+  "evidence": "read from lemh1ps.pdf and lemh2ps.pdf prelims, not from filenames",
+  "isbnPartI": "81-7450-629-2",
+  "pdCodes": {
+   "PartI": "PD 70T BS",
+   "PartII": "PD 220T BS"
+  },
+  "rationalisationNotice": "both prelims carry the COVID-era content-rationalisation notice; this is a reformatted rationalised edition",
+  "yearMatchesCbse": "Reprint 2026-27 matches the CBSE 041 syllabus year 2026-27"
+ },
+ "contentsFromPrelims": {
+  "partI": [
+   {
+    "n": 1,
+    "title": "Relations and Functions",
+    "startFolio": 1
+   },
+   {
+    "n": 2,
+    "title": "Inverse Trigonometric Functions",
+    "startFolio": 18
+   },
+   {
+    "n": 3,
+    "title": "Matrices",
+    "startFolio": 34
+   },
+   {
+    "n": 4,
+    "title": "Determinants",
+    "startFolio": 76
+   },
+   {
+    "n": 5,
+    "title": "Continuity and Differentiability",
+    "startFolio": 104
+   },
+   {
+    "n": 6,
+    "title": "Application of Derivatives",
+    "startFolio": 147
+   }
+  ],
+  "partIAppendices": [
+   {
+    "title": "Appendix 1: Proofs in Mathematics",
+    "folios": "187-195"
+   },
+   {
+    "title": "Appendix 2: Mathematical Modelling",
+    "folios": "196-207"
+   }
+  ],
+  "partIBackMatter": [
+   {
+    "title": "Answers",
+    "folios": "208-224"
+   },
+   {
+    "title": "Supplementary Material",
+    "startFolio": 223
+   }
+  ],
+  "partIIChapters": [
+   {
+    "n": 7,
+    "title": "Integrals",
+    "startFolio": 225
+   },
+   {
+    "n": 8,
+    "title": "Application of Integrals",
+    "startFolio": 292
+   },
+   {
+    "n": 9,
+    "title": "Differential Equations",
+    "startFolio": 300
+   },
+   {
+    "n": 10,
+    "title": "Vector Algebra",
+    "startFolio": 338
+   },
+   {
+    "n": 11,
+    "title": "Three Dimensional Geometry",
+    "startFolio": 377
+   },
+   {
+    "n": 12,
+    "title": "Linear Programming",
+    "startFolio": 394
+   },
+   {
+    "n": 13,
+    "title": "Probability",
+    "startFolio": 406
+   }
+  ],
+  "partIIBackMatter": [
+   {
+    "title": "Answers",
+    "startFolio": 439
+   }
+  ],
+  "sectionsListedOnContents": "both Contents pages list every numbered section with its start folio; subsections are not listed"
+ },
+ "chapterDenominator": {
+  "partI": 6,
+  "partII": 7,
+  "total": 13,
+  "verification": "PRIMARY_SOURCE_VERIFIED",
+  "basis": "Part I contents lists 1-6; Part II contents lists 7-13 (checkpoint 116); each of the 13 chapter files carries its printed chapter heading"
+ },
+ "files": [
+  {
+   "filename": "lemh101.pdf",
+   "bytes": 1405041,
+   "sha256": "9d2abedec1052e72b51edbe1fe902f070f1debfca02c80d4d77e86003097848a",
+   "pdfPages": 17,
+   "declaredPageObjects": 17,
+   "hasEOF": true,
+   "part": "I",
+   "role": "chapter",
+   "chapter": 1,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh102.pdf",
+   "bytes": 1433383,
+   "sha256": "7387c02883d71d3f07a35f6c59b207677d7f62ad83e28a1f036f75c11e76531a",
+   "pdfPages": 16,
+   "declaredPageObjects": 16,
+   "hasEOF": true,
+   "part": "I",
+   "role": "chapter",
+   "chapter": 2,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh103.pdf",
+   "bytes": 3437138,
+   "sha256": "8d19ddd4eeeedb09d85a4aaedb8eef08f1642d9b48986ea80cc654008e2c5450",
+   "pdfPages": 42,
+   "declaredPageObjects": 42,
+   "hasEOF": true,
+   "part": "I",
+   "role": "chapter",
+   "chapter": 3,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh104.pdf",
+   "bytes": 2053094,
+   "sha256": "919d031e5c8a8cea13361d0ecd3791064d85b58bf315470c952a6fd60593e386",
+   "pdfPages": 28,
+   "declaredPageObjects": 28,
+   "hasEOF": true,
+   "part": "I",
+   "role": "chapter",
+   "chapter": 4,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh105.pdf",
+   "bytes": 3221347,
+   "sha256": "fba3ab4455b472773e03524fb25d263732e3e57c6e1ad7bbcc889a6eaa39ee4b",
+   "pdfPages": 43,
+   "declaredPageObjects": 43,
+   "hasEOF": true,
+   "part": "I",
+   "role": "chapter",
+   "chapter": 5,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh106.pdf",
+   "bytes": 3282999,
+   "sha256": "8fa2f383f84c031011fc1ce2938fe0221f2d7df5570493bcb27e59de9e7a7060",
+   "pdfPages": 40,
+   "declaredPageObjects": 40,
+   "hasEOF": true,
+   "part": "I",
+   "role": "chapter",
+   "chapter": 6,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh1ps.pdf",
+   "bytes": 1975316,
+   "sha256": "96441eb9592091d45369a43aa9f9de8d4a439cf95eaac28baf1a04372feaba65",
+   "pdfPages": 12,
+   "declaredPageObjects": 0,
+   "hasEOF": true,
+   "part": "I",
+   "role": "prelims",
+   "chapter": null,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh201.pdf",
+   "bytes": 5662676,
+   "sha256": "bc4b4a0b2d3ec8d71d479c0ea549969028c2ac28d3613e97a888e2845144112f",
+   "pdfPages": 67,
+   "declaredPageObjects": 67,
+   "hasEOF": true,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 7,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded",
+   "acquiredAt": "checkpoint 116 (c12.08), 2026-11-20 session upload",
+   "validation": {
+    "header": "%PDF-1.4",
+    "terminalEOF": "%%EOF is the final token after startxref 5622331",
+    "qpdfCheck": "No syntax or stream encoding errors found",
+    "strictParse": "pypdf strict=True opened the file",
+    "pageTraversal": "67 of 67 pages traversed with text extraction",
+    "visibleIdentity": "p1: 'Chapter 7' / 'INTEGRALS', running head 'INTEGRALS 225'; every page footer 'Reprint 2026-27'",
+    "producerMetadata": "Title 'Integral ch_7.pmd', Creator PageMaker 7.0, Producer GPL Ghostscript 8.15",
+    "contentsAgreement": "Part II Contents lists Chapter 7 at folio 225 and Chapter 8 at 292: 67 folios = 67 PDF pages",
+    "differsFromInvalidCopy": true
+   }
+  },
+  {
+   "filename": "lemh202.pdf",
+   "bytes": 1395951,
+   "sha256": "d15f9a85ea9e3a478769a37f46db76decbe3505e2453ee165c075cd76906945f",
+   "pdfPages": 8,
+   "declaredPageObjects": 8,
+   "hasEOF": true,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 8,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh203.pdf",
+   "bytes": 3378135,
+   "sha256": "fb6505ab814389b54088295036dde2a803d75520df4f83b942f90f4755c09b58",
+   "pdfPages": 38,
+   "declaredPageObjects": 38,
+   "hasEOF": true,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 9,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh204.pdf",
+   "bytes": 5008653,
+   "sha256": "c41979c010dd06c60aebf29e2a22ff211eff8e5aa64e6f23377dcdf9afcee985",
+   "pdfPages": 39,
+   "declaredPageObjects": 39,
+   "hasEOF": true,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 10,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh205.pdf",
+   "bytes": 2062481,
+   "sha256": "f68fe586ef43f86f5d75dc3210b02860df7b65957133cb63a2ff498e563c1824",
+   "pdfPages": 17,
+   "declaredPageObjects": 17,
+   "hasEOF": true,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 11,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh206.pdf",
+   "bytes": 1567810,
+   "sha256": "279e24218606f8e26d821cfdbf904132dc3c7f9b4064670afd19499bee64e32b",
+   "pdfPages": 12,
+   "declaredPageObjects": 12,
+   "hasEOF": true,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 12,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh207.pdf",
+   "bytes": 2922597,
+   "sha256": "354482a4adbacf6ece1a6a3e2cf49e9b1034cdb0a8cd7831822f790d54cb2b85",
+   "pdfPages": 33,
+   "declaredPageObjects": 33,
+   "hasEOF": true,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 13,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  },
+  {
+   "filename": "lemh2ps.pdf",
+   "bytes": 1969919,
+   "sha256": "288843e5359d15b4bcd559392f7f28a8f8dc5592b7cd3213cbf70255729a202a",
+   "pdfPages": 14,
+   "declaredPageObjects": 15,
+   "hasEOF": true,
+   "part": "II",
+   "role": "prelims",
+   "chapter": null,
+   "structurallyValid": true,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded"
+  }
+ ],
+ "sourceSetCompleteness": {
+  "status": "INCOMPLETE",
+  "validFiles": 15,
+  "suppliedFiles": 15,
+  "chapterAndPrelimFiles": "COMPLETE — 13 chapter files + 2 prelims, all structurally valid",
+  "missing": [
+   {
+    "what": "Part I Answers (folios 208-224)",
+    "filename": "lemh1an.pdf",
+    "filenameEvidence": "OWNER_REPORTED_FROM_OFFICIAL_NCERT_INDEX — not re-verified from this environment, where NCERT is unreachable",
+    "reason": "listed in Part I contents; no file supplied"
+   },
+   {
+    "what": "Appendix 1: Proofs in Mathematics (folios 187-195)",
+    "filename": null,
+    "reason": "listed in Part I contents; no file supplied; filename unverified"
+   },
+   {
+    "what": "Appendix 2: Mathematical Modelling (folios 196-207)",
+    "filename": null,
+    "reason": "listed in Part I contents; no file supplied; filename unverified"
+   },
+   {
+    "what": "Part II Answers (from folio 439)",
+    "filename": null,
+    "reason": "NEW at checkpoint 116: listed on the Part II contents page; no file supplied; filename unverified; end folio unknown"
+   },
+   {
+    "what": "Supplementary Material (folio 223) disposition",
+    "filename": null,
+    "reason": "overlaps the Part I Answers range; UNRESOLVED until the Answers file is inspected"
+   }
+  ],
+  "appendixFilenames": "NOT invented. The contents page proves the appendices exist; their official filenames are unverified and must come from NCERT, not from guessing."
+ },
+ "denominators": {
+  "chapters": {
+   "value": 13,
+   "status": "PRIMARY_SOURCE_VERIFIED",
+   "basis": "Part I contents lists 1-6; Part II contents lists 7-13 (checkpoint 116); each of the 13 chapter files carries its printed chapter heading"
+  },
+  "sections": {
+   "value": 65,
+   "status": "PRIMARY_SOURCE_VERIFIED",
+   "basis": "whole-book gate passed (CLASS12_WHOLE_BOOK_CONSISTENCY.json): all 13 chapters, no gaps, no duplicates, every heading located, every start and end line-anchored, every section matches both printed Contents pages by number, title and start folio, every page folio checked",
+   "verifiedAt": "checkpoint 116 (c12.08)"
+  },
+  "subsections": {
+   "value": 47,
+   "status": "PRIMARY_SOURCE_VERIFIED",
+   "basis": "same gate; subsections are not on the Contents pages, so they rest on the recall-first sweep, line-level location, numbering and parent checks",
+   "verifiedAt": "checkpoint 116 (c12.08)"
+  },
+  "pages": {
+   "value": null,
+   "status": "NOT_VERIFIED",
+   "validFilePages": 426,
+   "basis": "Part I back matter (folios 187-224) and Part II Answers (from 439) absent; see CLASS12_PAGE_ACCOUNTING.json"
+  }
+ },
+ "supplementaryMaterial": {
+  "finding": "listed on the Part I contents page at folio 223, which overlaps the Answers range 208-224",
+  "separateFileSupplied": false,
+  "presentInSuppliedChapterFiles": false,
+  "disposition": "UNRESOLVED — cannot determine from available evidence whether it is a distinct official file or part of the Answers back matter; no filename invented"
+ },
+ "supersededCopies": [
+  {
+   "filename": "lemh201.pdf",
+   "bytes": 253351,
+   "sha256": "428ebd538d8b852c8e06ec648a34e66b00aff022250320caab6730ccd1871043",
+   "pdfPages": null,
+   "declaredPageObjects": 67,
+   "hasEOF": false,
+   "part": "II",
+   "role": "chapter",
+   "chapter": 7,
+   "structurallyValid": false,
+   "acquisitionRoute": "owner_download_from_official_ncert_url_then_uploaded",
+   "defect": {
+    "classification": "TRUNCATED_DOWNLOAD",
+    "notScanned": "The file was flagged as possibly image/scanned. It is not. A scanned PDF has a valid trailer and xref and simply yields no text. This file has NO %%EOF marker, NO trailer dictionary and NO xref table, and its final bytes are mid-stream binary.",
+    "evidence": [
+     "%%EOF marker: ABSENT (present in all 14 other files, 7 bytes from end)",
+     "trailer dictionary: ABSENT",
+     "xref table: unreadable",
+     "declares 67 page objects but holds only 253351 bytes = 3781 bytes/page",
+     "comparable chapter lemh106.pdf averages 82,075 bytes/page",
+     "qpdf: \"file is damaged\", \"can't find startxref\", \"unable to recover stream data\"",
+     "pypdf: PdfStreamError, stream has ended unexpectedly"
+    ],
+    "conclusion": "the download stopped partway; roughly 95% of chapter 7 is missing",
+    "remedy": "re-download lemh201.pdf from the official NCERT URL and re-upload"
+   },
+   "classification": "INVALID_TRUNCATED_DOWNLOAD",
+   "supersededBy": "bc4b4a0b2d3ec8d71d479c0ea549969028c2ac28d3613e97a888e2845144112f",
+   "disposition": "permanently invalid; bytes not retained; not salvaged; record kept as provenance"
+  }
+ ],
+ "knownInvalidSha256": {
+  "428ebd538d8b852c8e06ec648a34e66b00aff022250320caab6730ccd1871043": "lemh201.pdf INVALID_TRUNCATED_DOWNLOAD (253,351 bytes, no %%EOF)"
+ }
+}

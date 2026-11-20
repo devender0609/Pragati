@@ -1,0 +1,2216 @@
+{
+  "generatedBy": "tools/class11/generateReviewReadiness.ts",
+  "scope": "current canonical 93-unit Class 11 scope",
+  "caveat": "structural coverage is proven; material alignment is a human judgement",
+  "alignmentLedger": [
+    {
+      "unitId": "C11-SET-01",
+      "title": "Sets and their representations",
+      "objective": "Write a given collection in roster form and in set-builder form, and convert between the two.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "set notation; no figure required",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s1_2_representations_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-02",
+      "title": "The empty set",
+      "objective": "Decide whether a described collection has any element and name it as the empty set.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "empty-set symbol",
+      "prerequisites": [
+        "C11-SET-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_3_empty_set_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-03",
+      "title": "Finite and infinite sets",
+      "objective": "Classify a set as finite or infinite by whether the counting of its elements terminates.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "cardinality notation",
+      "prerequisites": [
+        "C11-SET-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_4_finite_infinite_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-04",
+      "title": "Equality of sets",
+      "objective": "Decide whether two sets are equal by comparing membership rather than order or repetition.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "set equality",
+      "prerequisites": [
+        "C11-SET-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_5_equal_sets_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-05",
+      "title": "Subsets and proper subsets",
+      "objective": "Decide containment between sets and distinguish a subset from a proper subset.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "subset symbols",
+      "prerequisites": [
+        "C11-SET-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_6_subsets_lesson",
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-SET-06"
+      ],
+      "sharedCoverageKey": "1.6",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-06",
+      "title": "Intervals as subsets of the real numbers",
+      "objective": "Read and write open, closed and half-open intervals as subsets of the reals.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "interval notation and the real line",
+      "prerequisites": [
+        "C11-SET-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_6_subsets_lesson",
+        "ncert_kemh1_s1_6_intervals_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-SET-05"
+      ],
+      "sharedCoverageKey": "1.6",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-07",
+      "title": "The universal set",
+      "objective": "Fix an ambient universal set for a context and explain why complements depend on it.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "universal set notation",
+      "prerequisites": [
+        "C11-SET-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_7_universal_set_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-08",
+      "title": "Venn diagrams",
+      "objective": "Represent membership and containment regionally and read a Venn diagram back as set statements.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "Venn diagram figure",
+      "prerequisites": [
+        "C11-SET-07"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_8_venn_diagrams_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-09",
+      "title": "Union and intersection of sets",
+      "objective": "Compute the union and intersection of sets and read each off a Venn diagram.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "set notation and Venn diagram",
+      "prerequisites": [
+        "C11-SET-08"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson",
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-SET-10"
+      ],
+      "sharedCoverageKey": "1.9",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-10",
+      "title": "Difference of sets",
+      "objective": "Compute the difference of two sets and distinguish it from the complement.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "set notation and Venn diagram",
+      "prerequisites": [
+        "C11-SET-09"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_9_union_intersection_lesson",
+        "ncert_kemh1_s1_9_difference_lesson",
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-SET-09"
+      ],
+      "sharedCoverageKey": "1.9",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-11",
+      "title": "Complement of a set and its properties",
+      "objective": "Take a complement against a fixed universal set and derive De Morgan’s laws.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 1,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "complement notation and Venn diagram",
+      "prerequisites": [
+        "C11-SET-07",
+        "C11-SET-09"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_10_complement_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SET-FO1",
+      "title": "Practical problems on union and intersection of two sets",
+      "objective": "Use the two-set counting relation to solve practical problems about overlapping collections.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 1,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "Venn diagram",
+      "prerequisites": [
+        "C11-SET-09",
+        "C11-SET-10"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s1_9_practical_counting_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-RF-01",
+      "title": "Ordered pairs and the Cartesian product",
+      "objective": "Form the Cartesian product of two sets, count its elements, and extend to R x R x R.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 2,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "ordered-pair notation, grid or arrow diagram",
+      "prerequisites": [
+        "C11-SET-09"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s2_2_cartesian_product_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-RF-02",
+      "title": "Relations",
+      "objective": "Define a relation as a subset of a Cartesian product and identify its domain, codomain and range.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 2,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "arrow diagram",
+      "prerequisites": [
+        "C11-RF-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s2_3_relations_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-RF-03",
+      "title": "Functions as a special kind of relation",
+      "objective": "Test whether a relation is a function and state its domain, codomain and range.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 2,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "arrow diagram",
+      "prerequisites": [
+        "C11-RF-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s2_4_functions_lesson",
+        "ncert_kemh1_s2_4_1_real_functions_lesson",
+        "ncert_kemh1_s2_4_2_algebra_of_functions_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-RF-04",
+      "title": "The standard real functions and their graphs",
+      "objective": "Identify and sketch constant, identity, polynomial, rational, modulus, signum, exponential, logarithmic and greatest-integer functions, stating domain and range.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 2,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "function graphs for nine families",
+      "prerequisites": [
+        "C11-RF-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s2_4_1_real_functions_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-RF-05",
+      "title": "Algebra of real functions",
+      "objective": "Form the sum, difference, product and quotient of real functions and determine the domain of the result.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 2,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "function notation",
+      "prerequisites": [
+        "C11-RF-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s2_4_2_algebra_of_functions_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-RF-FO2",
+      "title": "Composition of functions",
+      "objective": "Form the composition of two functions and determine when it is defined.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": 2,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "riskClass": "C",
+      "representationRequirement": "mapping diagram",
+      "prerequisites": [
+        "C11-RF-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_fo2_composition_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-01",
+      "title": "Positive and negative angles",
+      "objective": "Describe an angle as a rotation and distinguish positive from negative measure.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 3,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "rotation diagram with initial and terminal sides",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s3_2_angles_lesson",
+        "ncert_kemh1_s3_2_1_radian_measure_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-02",
+      "title": "Degree and radian measure",
+      "objective": "Convert between degree and radian measure in both directions, using the relation pi radians = 180 degrees.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 3,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "arc-and-radius diagram",
+      "prerequisites": [
+        "C11-TRG-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s3_2_1_radian_measure_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-03",
+      "title": "Trigonometric functions on the unit circle",
+      "objective": "Define the six trigonometric functions for any real argument using the unit circle and establish that sin squared x plus cos squared x equals one for all x.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 3,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "unit circle figure",
+      "prerequisites": [
+        "C11-TRG-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s3_3_unit_circle_lesson",
+        "ncert_kemh1_s3_3_1_quadrant_signs_lesson",
+        "ncert_kemh1_s3_3_2_domain_range_graphs_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-04",
+      "title": "Signs of the trigonometric functions by quadrant",
+      "objective": "Determine the sign of each trigonometric function in each quadrant and justify it from the unit circle.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 3,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "quadrant sign table and unit circle",
+      "prerequisites": [
+        "C11-TRG-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s3_3_1_quadrant_signs_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-05",
+      "title": "Domain, range and graphs of the trigonometric functions",
+      "objective": "State the domain and range of each trigonometric function and sketch its graph over the reals.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 3,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "periodic function graphs",
+      "prerequisites": [
+        "C11-TRG-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s3_3_2_domain_range_graphs_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-06",
+      "title": "Sum and difference identities",
+      "objective": "Express sin and cos of a sum or difference in terms of the component angles and apply the results.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 3,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "identity statements; no figure required",
+      "prerequisites": [
+        "C11-TRG-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s3_4_sum_difference_lesson",
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-TRG-07"
+      ],
+      "sharedCoverageKey": "3.4",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-07",
+      "title": "Identities for multiple and half angles",
+      "objective": "Deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 3,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "identity statements",
+      "prerequisites": [
+        "C11-TRG-06"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s3_4_sum_difference_lesson",
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-TRG-06"
+      ],
+      "sharedCoverageKey": "3.4",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-TRG-FO3",
+      "title": "General solution of simple trigonometric equations",
+      "objective": "Write the general solution of sin x = sin y, cos x = cos y and tan x = tan y.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": 3,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "periodicity diagram",
+      "prerequisites": [
+        "C11-TRG-05",
+        "C11-TRG-06"
+      ],
+      "artifacts": [
+        "ncert_kemh1_fo3_general_solutions_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CPX-01",
+      "title": "The complex number and the square root of minus one",
+      "objective": "Write a complex number in the form a + ib and identify its real and imaginary parts.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 4,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "a + ib notation",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s4_2_complex_numbers_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CPX-02",
+      "title": "Algebra of complex numbers",
+      "objective": "Add, subtract and multiply complex numbers and state the field properties used.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 4,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "exact complex arithmetic",
+      "prerequisites": [
+        "C11-CPX-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s4_3_algebra_lesson",
+        "ncert_kemh1_s4_3_5_powers_division_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CPX-03",
+      "title": "Powers of i and division of complex numbers",
+      "objective": "Compute powers of i and divide complex numbers using the multiplicative inverse.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 4,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "exact complex arithmetic",
+      "prerequisites": [
+        "C11-CPX-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s4_3_5_powers_division_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CPX-04",
+      "title": "Modulus and conjugate",
+      "objective": "Compute the modulus and conjugate of a complex number and use their properties to simplify quotients.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 4,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "modulus and conjugate notation",
+      "prerequisites": [
+        "C11-CPX-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s4_4_modulus_conjugate_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CPX-05",
+      "title": "The Argand plane",
+      "objective": "Represent a complex number as a point in the Argand plane and interpret its real and imaginary components geometrically.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 4,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "Argand plane figure",
+      "prerequisites": [
+        "C11-CPX-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s4_5_argand_plane_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CPX-FO5a",
+      "title": "Polar representation of a complex number",
+      "objective": "Express a complex number in modulus-argument form and convert between that and a + ib.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 4,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "Argand plane with argument",
+      "prerequisites": [
+        "C11-CPX-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s4_5_polar_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CPX-FO5b",
+      "title": "Quadratic equations over the complex numbers",
+      "objective": "Solve a quadratic with real coefficients over the complex numbers and state the Fundamental Theorem of Algebra.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": 4,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "exact complex arithmetic",
+      "prerequisites": [
+        "C11-CPX-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_fo5b_complex_quadratics_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-INQ-01",
+      "title": "Linear inequalities and their solution sets",
+      "objective": "Distinguish strict from weak inequalities and describe what a solution set is.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 5,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "A",
+      "representationRequirement": "inequality symbols",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s5_2_inequalities_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-INQ-02",
+      "title": "Algebraic solution of a linear inequality in one variable",
+      "objective": "Solve a linear inequality in one variable, handling the sign change on multiplying by a negative, and represent the solution on a number line.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 5,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "number line with open and closed endpoints",
+      "prerequisites": [
+        "C11-INQ-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s5_3_one_variable_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-INQ-FO6",
+      "title": "Graphical solution of linear inequalities in two variables",
+      "objective": "Shade the half-plane satisfying a linear inequality in two variables and find the region satisfying a system of them.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": null,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "half-plane region on a coordinate plane",
+      "prerequisites": [
+        "C11-INQ-02"
+      ],
+      "artifacts": [
+        "cbse_fo6_half_plane_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PNC-01",
+      "title": "The fundamental principle of counting",
+      "objective": "Count the outcomes of a multi-stage choice by multiplying the choices at each stage.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 6,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "tree or stage diagram",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s6_2_counting_principle_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PNC-02",
+      "title": "Factorial notation",
+      "objective": "Read and compute factorial n and simplify quotients of factorials.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 6,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "factorial notation",
+      "prerequisites": [
+        "C11-PNC-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s6_3_1_factorial_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PNC-03",
+      "title": "Permutations and the formula for nPr",
+      "objective": "Derive nPr = n!/(n-r)! and use it to count arrangements of distinct objects.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 6,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "nPr notation",
+      "prerequisites": [
+        "C11-PNC-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s6_3_1_factorial_lesson",
+        "ncert_kemh1_s6_3_permutations_lesson",
+        "ncert_kemh1_s6_3_3_repeated_objects_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PNC-04",
+      "title": "Permutations when objects are not all distinct",
+      "objective": "Count arrangements when some objects repeat, and when a restriction fixes positions.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 6,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "arrangement diagram",
+      "prerequisites": [
+        "C11-PNC-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s6_3_3_repeated_objects_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PNC-05",
+      "title": "Combinations",
+      "objective": "Derive nCr, relate it to nPr, and use it to count selections.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 6,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "nCr notation",
+      "prerequisites": [
+        "C11-PNC-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s6_4_combinations_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-BIN-01",
+      "title": "The binomial theorem for a positive integral index",
+      "objective": "State the binomial theorem for a positive integral index and follow its proof by induction on the index.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 7,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "binomial coefficient and sigma notation",
+      "prerequisites": [
+        "C11-PNC-05",
+        "C11-IND-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ],
+      "sharedCoverageKey": "7.2",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-BIN-02",
+      "title": "Pascal's triangle and the binomial coefficients",
+      "objective": "Generate the binomial coefficients from Pascal’s triangle and relate each entry to nCr.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 7,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "Pascal's triangle figure",
+      "prerequisites": [
+        "C11-PNC-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-BIN-01",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ],
+      "sharedCoverageKey": "7.2",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-BIN-03",
+      "title": "Simple applications of the binomial theorem",
+      "objective": "Expand a binomial power and use the expansion in simple numerical and algebraic applications.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 7,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "expansion notation",
+      "prerequisites": [
+        "C11-BIN-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-FO7"
+      ],
+      "sharedCoverageKey": "7.2",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-BIN-FO7",
+      "title": "General and middle term of a binomial expansion",
+      "objective": "Write the general term of a binomial expansion and identify the middle term.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 7,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "general term notation",
+      "prerequisites": [
+        "C11-BIN-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s7_2_binomial_theorem_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03"
+      ],
+      "sharedCoverageKey": "7.2",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-01",
+      "title": "Sequences and their terms",
+      "objective": "Read a term of a sequence from its rule and write the rule from a pattern.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 8,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "subscript notation",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s8_2_sequences_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-02",
+      "title": "Series and sigma notation",
+      "objective": "Write the sum of a sequence as a series using sigma notation.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 8,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "sigma notation",
+      "prerequisites": [
+        "C11-SEQ-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s8_3_series_sigma_lesson",
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-SEQ-03"
+      ],
+      "sharedCoverageKey": "8.3",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-03",
+      "title": "Arithmetic mean",
+      "objective": "Insert the arithmetic mean between two numbers and insert n arithmetic means.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 8,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "A",
+      "representationRequirement": "A.M. notation",
+      "prerequisites": [
+        "C11-SEQ-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s8_3_series_sigma_lesson",
+        "ncert_kemh1_s8_3_arithmetic_mean_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-SEQ-02"
+      ],
+      "sharedCoverageKey": "8.3",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-04",
+      "title": "Geometric progression and its general term",
+      "objective": "Identify a geometric progression and derive its nth term.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 8,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "G.P. notation",
+      "prerequisites": [
+        "C11-SEQ-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s8_4_geometric_progression_lesson",
+        "ncert_kemh1_s8_4_1_gp_sum_lesson",
+        "ncert_kemh1_s8_4_2_infinite_gp_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-05",
+      "title": "Sum of n terms of a geometric progression",
+      "objective": "Derive and apply the sum of the first n terms of a G.P.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 8,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "G.P. sum notation",
+      "prerequisites": [
+        "C11-SEQ-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s8_4_1_gp_sum_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-06",
+      "title": "Infinite geometric series and the geometric mean",
+      "objective": "Decide when an infinite G.P. has a sum, compute it, and insert the geometric mean between two numbers.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 8,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "limit of a sum; G.M. notation",
+      "prerequisites": [
+        "C11-SEQ-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s8_4_2_infinite_gp_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-07",
+      "title": "Relationship between the arithmetic and geometric means",
+      "objective": "Derive the inequality between the arithmetic and geometric means of two positive numbers.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 8,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "exact radical arithmetic",
+      "prerequisites": [
+        "C11-SEQ-03",
+        "C11-SEQ-06"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s8_5_am_gm_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-SEQ-FO8",
+      "title": "Formulae for the special sums",
+      "objective": "Use the closed forms for the sum of the first n natural numbers, their squares and their cubes.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": 8,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "sigma notation",
+      "prerequisites": [
+        "C11-SEQ-02"
+      ],
+      "artifacts": [
+        "cbse_fo8_special_sums_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STL-01",
+      "title": "Slope of a line",
+      "objective": "Compute the slope of a line from two points or from its angle of inclination.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 9,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "coordinate graph",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s9_2_slope_lesson",
+        "ncert_kemh1_s9_2_1_angle_between_lines_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STL-02",
+      "title": "Angle between two lines",
+      "objective": "Compute the angle between two lines from their slopes and state the conditions for parallel and perpendicular lines.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 9,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "coordinate graph",
+      "prerequisites": [
+        "C11-STL-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s9_2_1_angle_between_lines_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STL-03",
+      "title": "Equations of lines parallel to the axes, and the point-slope form",
+      "objective": "Write the equation of a line parallel to an axis, and of a line through a given point with a given slope.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 9,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "coordinate graph",
+      "prerequisites": [
+        "C11-STL-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson",
+        "ncert_kemh1_s9_3_forms_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-STL-04"
+      ],
+      "sharedCoverageKey": "SF-2-SUMMATIVE",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STL-04",
+      "title": "Slope-intercept, two-point and intercept forms",
+      "objective": "Write the equation of a line in slope-intercept, two-point and intercept form and convert between them.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 9,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "coordinate graph",
+      "prerequisites": [
+        "C11-STL-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s9_3_axis_point_slope_lesson",
+        "ncert_kemh1_s9_3_forms_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-STL-03"
+      ],
+      "sharedCoverageKey": "SF-2-SUMMATIVE",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STL-05",
+      "title": "Distance of a point from a line",
+      "objective": "Derive and apply the distance of a point from a line.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 9,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "coordinate graph",
+      "prerequisites": [
+        "C11-STL-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s9_4_distance_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STL-FO9",
+      "title": "Normal form and the general equation of a line",
+      "objective": "Write a line in normal form and convert the general equation of a line into the other forms.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 9,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "coordinate graph with perpendicular from origin",
+      "prerequisites": [
+        "C11-STL-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s9_3_fo9_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-01",
+      "title": "Sections of a cone",
+      "objective": "Describe how a plane cutting a cone produces a circle, ellipse, parabola or hyperbola according to the angle of the cut.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "cone section diagram",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s10_2_cone_sections_lesson",
+        "ncert_kemh1_s10_2_2_degenerate_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-02",
+      "title": "Degenerate conic sections",
+      "objective": "Identify the point, the straight line and the pair of intersecting lines as degenerate cases of a conic.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "cone section diagram",
+      "prerequisites": [
+        "C11-CON-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s10_2_2_degenerate_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-03",
+      "title": "The circle",
+      "objective": "Derive the standard equation of a circle from the distance definition and find its centre and radius.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "coordinate diagram with centre and radius",
+      "prerequisites": [
+        "C11-CON-01",
+        "C11-STL-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s10_3_circle_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-04",
+      "title": "The parabola and its standard equations",
+      "objective": "Derive the standard equation of a parabola, identify its focus, directrix, axis and vertex, and find the length of its latus rectum.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "parabola diagram with focus and directrix",
+      "prerequisites": [
+        "C11-CON-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s10_4_parabola_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-05",
+      "title": "The ellipse and its standard equations",
+      "objective": "Derive both standard equations of an ellipse and identify the foci, vertices and the major and minor axes.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "ellipse diagram in both orientations",
+      "prerequisites": [
+        "C11-CON-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s10_5_ellipse_lesson",
+        "ncert_kemh1_s10_5_2_ellipse_eccentricity_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-06",
+      "title": "Eccentricity and latus rectum of an ellipse",
+      "objective": "Compute the eccentricity of an ellipse and the length of its latus rectum.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "ellipse diagram",
+      "prerequisites": [
+        "C11-CON-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s10_5_2_ellipse_eccentricity_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-07",
+      "title": "The hyperbola and its standard equation",
+      "objective": "Derive the standard equation of a hyperbola and identify its foci, vertices and axes.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "hyperbola diagram",
+      "prerequisites": [
+        "C11-CON-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s10_6_hyperbola_lesson",
+        "ncert_kemh1_s10_6_1_hyperbola_eccentricity_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-CON-08",
+      "title": "Eccentricity and latus rectum of a hyperbola",
+      "objective": "Compute the eccentricity of a hyperbola and the length of its latus rectum.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 10,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "hyperbola diagram",
+      "prerequisites": [
+        "C11-CON-07"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s10_6_1_hyperbola_eccentricity_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-3DG-01",
+      "title": "Coordinate axes and planes in three dimensions",
+      "objective": "Name the three coordinate planes and the eight octants and locate a region in space.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 11,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "3-D axis diagram",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s11_2_axes_planes_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-3DG-02",
+      "title": "Coordinates of a point in space",
+      "objective": "Read and plot an ordered triple and state the sign pattern of its octant.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 11,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "3-D coordinate diagram",
+      "prerequisites": [
+        "C11-3DG-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s11_3_coordinates_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-3DG-03",
+      "title": "Distance between two points in space",
+      "objective": "Derive the three-dimensional distance formula and use it to test geometric claims.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 11,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "3-D diagram; exact radicals",
+      "prerequisites": [
+        "C11-3DG-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s11_4_distance_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-3DG-FO10",
+      "title": "Section formula in three dimensions",
+      "objective": "Find the point dividing a segment in space in a given ratio.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": 11,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "3-D diagram",
+      "prerequisites": [
+        "C11-3DG-03"
+      ],
+      "artifacts": [
+        "cbse_fo10_section_formula_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-LIM-01",
+      "title": "The derivative as a rate of change",
+      "objective": "Describe the derivative informally as a rate of change, both for a distance function and geometrically as the slope of a tangent.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 12,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "secant and tangent graph",
+      "prerequisites": [
+        "C11-STL-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s12_2_rate_of_change_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-LIM-02",
+      "title": "The intuitive idea of a limit",
+      "objective": "Evaluate a limit informally from values approaching a point and recognise when a limit fails to exist.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 12,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "limit value table and graph",
+      "prerequisites": [
+        "C11-LIM-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s12_3_intuitive_limit_lesson",
+        "ncert_kemh1_s12_3_1_polynomial_rational_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-LIM-03",
+      "title": "Limits of polynomials and rational functions",
+      "objective": "Evaluate limits of polynomial and rational functions, including the cancelling case.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 12,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "limit notation",
+      "prerequisites": [
+        "C11-LIM-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s12_3_1_polynomial_rational_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-LIM-04",
+      "title": "Limits of trigonometric, exponential and logarithmic functions",
+      "objective": "Evaluate limits involving trigonometric, exponential and logarithmic functions using the standard limits.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 12,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "limit notation",
+      "prerequisites": [
+        "C11-LIM-03",
+        "C11-TRG-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s12_4_trig_exp_log_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-LIM-05",
+      "title": "The derivative from first principles",
+      "objective": "Define the derivative as a limit of the difference quotient and compute it from first principles.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 12,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "difference quotient and tangent graph",
+      "prerequisites": [
+        "C11-LIM-03",
+        "C11-IND-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s12_5_first_principles_lesson",
+        "ncert_kemh1_s12_5_1_algebra_of_derivatives_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-LIM-06",
+      "title": "Algebra of derivatives",
+      "objective": "Differentiate sums, differences, products and quotients of polynomial and trigonometric functions.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 12,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "derivative notation as used in the source",
+      "prerequisites": [
+        "C11-LIM-05",
+        "C11-IND-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s12_5_1_algebra_of_derivatives_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-LIM-FO11",
+      "title": "Derivatives of composite functions",
+      "objective": "Differentiate a composite function using the chain rule.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": 12,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "C",
+      "representationRequirement": "derivative notation",
+      "prerequisites": [
+        "C11-LIM-06",
+        "C11-RF-FO2"
+      ],
+      "artifacts": [
+        "cbse_fo11_chain_rule_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STA-01",
+      "title": "Measures of dispersion",
+      "objective": "Explain why a measure of central tendency alone is insufficient and name the measures of dispersion.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 13,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "A",
+      "representationRequirement": "frequency table",
+      "prerequisites": [],
+      "artifacts": [
+        "ncert_kemh1_s13_2_dispersion_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STA-02",
+      "title": "Range",
+      "objective": "Compute the range of a data set and state its limitation as a measure of spread.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 13,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "A",
+      "representationRequirement": "frequency table",
+      "prerequisites": [
+        "C11-STA-01"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s13_3_range_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STA-03",
+      "title": "Mean deviation about the mean",
+      "objective": "Compute the mean deviation about the mean for ungrouped and grouped data.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 13,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "A",
+      "representationRequirement": "deviation table with subscripted observations",
+      "prerequisites": [
+        "C11-STA-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s13_4_md_mean_lesson",
+        "ncert_kemh1_s13_4_md_median_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-STA-04"
+      ],
+      "sharedCoverageKey": "13.4",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STA-04",
+      "title": "Mean deviation about the median",
+      "objective": "Compute the mean deviation about the median for ungrouped and grouped data.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 13,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "A",
+      "representationRequirement": "deviation table",
+      "prerequisites": [
+        "C11-STA-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s13_4_md_mean_lesson",
+        "ncert_kemh1_s13_4_md_median_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-STA-03"
+      ],
+      "sharedCoverageKey": "13.4",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STA-05",
+      "title": "Variance and standard deviation",
+      "objective": "Compute the variance and standard deviation of ungrouped data and explain why deviations are squared.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 13,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "squared deviation table",
+      "prerequisites": [
+        "C11-STA-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson",
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-STA-06"
+      ],
+      "sharedCoverageKey": "13.5",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STA-06",
+      "title": "Variance and standard deviation of grouped data",
+      "objective": "Compute the variance and standard deviation for a grouped frequency distribution.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 13,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "grouped frequency table",
+      "prerequisites": [
+        "C11-STA-05"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson",
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [
+        "C11-STA-05"
+      ],
+      "sharedCoverageKey": "13.5",
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-STA-07",
+      "title": "The shortcut method for standard deviation",
+      "objective": "Use the step-deviation form to compute the standard deviation and show it agrees with the direct method.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 13,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "A",
+      "representationRequirement": "step-deviation table",
+      "prerequisites": [
+        "C11-STA-06"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s13_5_4_shortcut_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PRB-FO12",
+      "title": "Random experiments, outcomes and the sample space",
+      "objective": "Describe a random experiment, list its outcomes and write the sample space in set notation.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 14,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "riskClass": "B",
+      "representationRequirement": "sample space in set notation",
+      "prerequisites": [
+        "C11-SET-09"
+      ],
+      "artifacts": [
+        "ncert_kemh1_sf3_formative_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PRB-01",
+      "title": "Events as subsets of the sample space",
+      "objective": "Define an event as a subset of the sample space and describe when an event occurs.",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "chapter": 14,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "set notation and Venn diagram",
+      "prerequisites": [
+        "C11-PRB-FO12"
+      ],
+      "artifacts": [
+        "ncert_kemh1_sf3_summative_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PRB-02",
+      "title": "Not, and, or events",
+      "objective": "Form the complement, intersection and union of events and read each as a statement about occurrence.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 14,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "set notation and Venn diagram",
+      "prerequisites": [
+        "C11-PRB-01",
+        "C11-SET-11"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s14_1_2_not_and_or_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PRB-03",
+      "title": "Exhaustive and mutually exclusive events",
+      "objective": "Decide whether a set of events is exhaustive, mutually exclusive, or both.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 14,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "set notation and Venn diagram",
+      "prerequisites": [
+        "C11-PRB-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s14_1_4_exhaustive_exclusive_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PRB-04",
+      "title": "Axiomatic probability",
+      "objective": "State the axioms of probability and compute the probability of an event from them.",
+      "sourceKind": "NCERT_SECTION",
+      "chapter": 14,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "set notation",
+      "prerequisites": [
+        "C11-PRB-03"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s14_2_axiomatic_probability_lesson",
+        "ncert_kemh1_s14_2_2_equally_likely_lesson",
+        "ncert_kemh1_s14_2_3_probability_rules_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PRB-05",
+      "title": "Probabilities of equally likely outcomes",
+      "objective": "Derive that each of n equally likely outcomes has probability one over n and compute the probability of an event as favourable over total.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 14,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "set notation",
+      "prerequisites": [
+        "C11-PRB-04"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s14_2_2_equally_likely_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-PRB-06",
+      "title": "Probability of not, and, or events",
+      "objective": "Compute the probability of the complement, intersection and union of events, including the addition rule.",
+      "sourceKind": "NCERT_SUBSECTION",
+      "chapter": 14,
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "riskClass": "B",
+      "representationRequirement": "set notation and Venn diagram",
+      "prerequisites": [
+        "C11-PRB-05",
+        "C11-PRB-02"
+      ],
+      "artifacts": [
+        "ncert_kemh1_s14_2_3_probability_rules_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    },
+    {
+      "unitId": "C11-IND-01",
+      "title": "The principle of mathematical induction",
+      "objective": "Prove a statement about the natural numbers by establishing a base case and an inductive step.",
+      "sourceKind": "CBSE_ONLY",
+      "chapter": null,
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "riskClass": "C",
+      "representationRequirement": "proof layout; no figure required",
+      "prerequisites": [],
+      "artifacts": [
+        "cbse_fo4_induction_lesson"
+      ],
+      "covered": true,
+      "sharesArtifactWith": [],
+      "sharedCoverageKey": null,
+      "structuralCoverage": "COVERED",
+      "materialAlignment": "NEEDS_HUMAN_CHECK",
+      "materialAlignmentReason": "structural coverage proven; material teaching of the objective requires a human reviewer"
+    }
+  ]
+}

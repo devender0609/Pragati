@@ -1,0 +1,138 @@
+{
+  "generatedBy": "tools/class11/generateReviewReadiness.ts (batching pass)",
+  "derivedFrom": "actual catalogue placement and canonical risk class, not assumed subject groups",
+  "reviewerPackageContents": [
+    "artifact identity and learning goal",
+    "canonical unit objectives it covers",
+    "source provenance fields",
+    "structural-alignment summary",
+    "declared and consumed representations",
+    "known debts and caveats",
+    "review questions",
+    "response schema"
+  ],
+  "caveat": "batches are a proposal; nothing has been sent",
+  "batches": [
+    {
+      "batch": "Sets and relations",
+      "artifacts": 19,
+      "riskMix": {
+        "A": 0,
+        "B": 0,
+        "C": 19
+      },
+      "chapterLessIncluded": 2,
+      "priority": "HIGH"
+    },
+    {
+      "batch": "Coordinate geometry",
+      "artifacts": 18,
+      "riskMix": {
+        "A": 0,
+        "B": 10,
+        "C": 8
+      },
+      "chapterLessIncluded": 1,
+      "priority": "HIGH"
+    },
+    {
+      "batch": "Trigonometry",
+      "artifacts": 7,
+      "riskMix": {
+        "A": 0,
+        "B": 0,
+        "C": 7
+      },
+      "chapterLessIncluded": 0,
+      "priority": "MEDIUM"
+    },
+    {
+      "batch": "Calculus",
+      "artifacts": 7,
+      "riskMix": {
+        "A": 0,
+        "B": 0,
+        "C": 7
+      },
+      "chapterLessIncluded": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "batch": "Complex numbers",
+      "artifacts": 6,
+      "riskMix": {
+        "A": 0,
+        "B": 0,
+        "C": 6
+      },
+      "chapterLessIncluded": 0,
+      "priority": "MEDIUM"
+    },
+    {
+      "batch": "Combinatorics",
+      "artifacts": 6,
+      "riskMix": {
+        "A": 0,
+        "B": 1,
+        "C": 5
+      },
+      "chapterLessIncluded": 0,
+      "priority": "MEDIUM"
+    },
+    {
+      "batch": "Complex numbers and inequalities",
+      "artifacts": 2,
+      "riskMix": {
+        "A": 0,
+        "B": 0,
+        "C": 2
+      },
+      "chapterLessIncluded": 2,
+      "priority": "STANDARD"
+    },
+    {
+      "batch": "Sequences",
+      "artifacts": 8,
+      "riskMix": {
+        "A": 2,
+        "B": 8,
+        "C": 1
+      },
+      "chapterLessIncluded": 1,
+      "priority": "STANDARD"
+    },
+    {
+      "batch": "Foundations (induction)",
+      "artifacts": 1,
+      "riskMix": {
+        "A": 0,
+        "B": 0,
+        "C": 1
+      },
+      "chapterLessIncluded": 1,
+      "priority": "STANDARD"
+    },
+    {
+      "batch": "Inequalities",
+      "artifacts": 2,
+      "riskMix": {
+        "A": 1,
+        "B": 1,
+        "C": 0
+      },
+      "chapterLessIncluded": 0,
+      "priority": "STANDARD"
+    },
+    {
+      "batch": "Statistics and probability",
+      "artifacts": 14,
+      "riskMix": {
+        "A": 5,
+        "B": 10,
+        "C": 0
+      },
+      "chapterLessIncluded": 0,
+      "priority": "STANDARD"
+    }
+  ]
+}

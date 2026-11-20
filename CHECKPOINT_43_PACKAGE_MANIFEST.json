@@ -1,0 +1,84 @@
+{
+  "checkpoint": 43,
+  "applicationVersion": "0.83.5",
+  "sourceCommit": null,
+  "sourceCommitNote": "no git repository in the working container; the tree is the source of truth",
+  "packageCreatedUtc": "2026-10-14T15:18:07Z",
+  "humanPolicyDecision": {
+    "policyKey": "historical_material_lesson_vs_context",
+    "resolution": "CONTEXTUAL_MERGE",
+    "resolvedAt": "v0.84.0 checkpoint 43",
+    "affectedUnits": [
+      "pragati_iu_g09_ch03_u1",
+      "pragati_iu_g08_ch01_u4"
+    ]
+  },
+  "testCount": 2042,
+  "testFiles": 102,
+  "class9": {
+    "instructionalUnits": 93,
+    "standaloneLearnArtifacts": 92,
+    "contextuallyCoveredUnits": 1,
+    "unresolvedUnits": 0,
+    "readyRemaining": 0,
+    "humanPolicyBlocked": 0,
+    "sourceCoverageComplete": true,
+    "note": "92 standalone Learn artifacts plus 1 contextually covered historical unit. Not '93 lessons' and not '1 missing'."
+  },
+  "repositoryAuthoredLessons": 104,
+  "revisedArtifacts": [
+    {
+      "contentArtifactId": "ncert_iemh1_s3_2_lesson",
+      "from": 1,
+      "to": 2,
+      "reason": "human policy implementation: \u00a73.1 contextual merge"
+    }
+  ],
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "nodeVersionUsed": "v22.22.2",
+  "npmVersionUsed": "10.9.7",
+  "packageManager": "npm; package-lock.json present, no packageManager field pinned",
+  "cleanInstallPerformed": true,
+  "cleanInstallResult": "CLEAN_INSTALL_REPRODUCIBILITY_VERIFIED",
+  "cleanInstallDetail": "staged source extracted to an empty directory with no node_modules and no symlinks; npm ci succeeded; typecheck clean; 2042 tests / 102 files passed; curriculum validation passed; production build succeeded to dist/ (5.1 MB)",
+  "commands": {
+    "install": "npm ci",
+    "typecheck": "npm run typecheck",
+    "test": "npm test",
+    "validateCurriculum": "npm run validate:curriculum",
+    "build": "npm run build",
+    "preview": "npm run preview",
+    "buildOutput": "dist/"
+  },
+  "environmentVariableNames": [
+    "VITE_FIREBASE_API_KEY",
+    "VITE_FIREBASE_AUTH_DOMAIN",
+    "VITE_FIREBASE_PROJECT_ID",
+    "VITE_FIREBASE_STORAGE_BUCKET",
+    "VITE_FIREBASE_MESSAGING_SENDER_ID",
+    "VITE_FIREBASE_APP_ID"
+  ],
+  "environmentVariableNote": "names only, no values packaged; the app builds and runs without them with teacher login disabled",
+  "hostingConfigDetected": null,
+  "hostingNote": "no vercel.json, netlify.toml or other hosting config in the repository; plain Vite static build",
+  "artifactHashes": {
+    "package.json": "4c3fddbe78d035bf8eb9a81e2c639ac5c7651293caae9f5c3a10317ea1395e1f",
+    "package-lock.json": "b7c9b29f77db92554e4f14979309b0699b9968182a173520e411e9eff89f8326",
+    "CURRICULUM_MASTER_MAP.json": "ad86728cd95e36700fb561490173fb35d5a0c8965325282c124f5e7cda0c0fbf",
+    "CURRICULUM_COVERAGE_MATRIX.md": "d983b3852834ee9f0a72b3fcdca1720785792418f72a2f31a534f9289c11f15a",
+    "CONTENT_BACKLOG.md": "5000f8f574996de53bd9b9d4df3ada44d19cfedb26d892494363a65a00e5b963",
+    "CHECKPOINT_STATUS_COUNTS.json": "7e241ad39cbe008f47ec4eda2c5e4e0242c3f51ca21a13fdb0ed097a0291e8d5",
+    "INSTRUCTIONAL_MASTER_BLUEPRINT.md": "a2f5ce15d44ed664f2407bfb0d656280103792b8410910d7970ab06643ad973c",
+    "src/curriculum/data/instructionalDecomposition.json": "05330ed3bb59fe206ebf0566346cf454440011980452bbae415aa1b28f16c8e3",
+    "src/curriculum/data/mathCurriculumMasterEvidence.json": "07f788e0ad29cb9ef15f46e412547e87b2f8eae8de0fc5438373fd964cae48f5",
+    "src/curriculum/numbersSections.ts": "312a9f4eea4d681cb3d45c9f6fea718c8ec6e0df1be6c9e65cc583511c9693b8",
+    "src/curriculum/instructionalUnits.ts": "80090e19ce24a6c68261be6c3a8b59c3173a852a08b963228e920ec3eb49876d",
+    "src/curriculum/authoredSection.ts": "5506f11b5935d838a7981bdcf449f9fa669ad832aaa7feb48d0509f3c399ac52",
+    "V0.84.0_CHECKPOINT_REPORT.md": "9f8f41607c7e3e7b92340ce3deef5687349227c31f90b91b01e2d126d750b4c1"
+  }
+}

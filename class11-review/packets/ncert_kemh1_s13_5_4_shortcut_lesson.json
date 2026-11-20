@@ -1,0 +1,273 @@
+{
+  "priority": 3,
+  "contentArtifactId": "ncert_kemh1_s13_5_4_shortcut_lesson",
+  "title": "You will use the step-deviation method and show it agrees with the direct method.",
+  "placement": "chapter-13",
+  "selectionReasons": [
+    "carries 3 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-STA-05, C11-STA-06"
+  ],
+  "artifactFingerprint": "324ec7c06418a76cbb7dd80e112b26e5",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-STA-05",
+      "title": "Variance and standard deviation",
+      "objective": "Compute the variance and standard deviation of ungrouped data and explain why deviations are squared.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "squared deviation table",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STA-06",
+      "title": "Variance and standard deviation of grouped data",
+      "objective": "Compute the variance and standard deviation for a grouped frequency distribution.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "grouped frequency table",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s13_5_variance_sd_lesson",
+        "ncert_kemh1_s13_5_grouped_variance_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STA-07",
+      "title": "The shortcut method for standard deviation",
+      "objective": "Use the step-deviation form to compute the standard deviation and show it agrees with the direct method.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "step-deviation table",
+      "riskClass": "A",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch13",
+    "officialSectionId": "ncert_kemh1_s13_5",
+    "sectionNumber": "13.5",
+    "cbseEntryId": null,
+    "startPage": 373,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "grouped_table",
+      "method_comparison"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will use the step-deviation method and show it agrees with the direct method.",
+    "vocabulary": [
+      {
+        "term": "step deviation",
+        "meaning": "The deviation from an assumed mean divided by the class width, written u."
+      }
+    ],
+    "explanation": [
+      "The direct method works, but with large class marks the squared deviations become awkward numbers. The shortcut method reduces the arithmetic without changing the answer.",
+      "Pick an assumed mean a, and divide each deviation by the class width h. That gives the step deviation u = (x − a)/h, usually a small whole number.",
+      "With assumed mean 15 and width 10, the class marks 5, 15, 25 give step deviations -1, 0, 1 — far easier to square than the deviations themselves.",
+      "The variance is then recovered by σ² = h²[Σfu²/n − (Σfu/n)²]. With Σfu = -1 and Σfu² = 5 over 10 observations, this gives 49.",
+      "The direct method gave 49. The two agree, and that is the point: the shortcut is not a different measure or an approximation, it is the same variance reached by easier arithmetic.",
+      "The h² is there because dividing every deviation by h divided the variance by h². Multiplying back restores the original scale.",
+      "The assumed mean can be any convenient value. Choosing 15 rather than another class mark changes the intermediate columns completely but not the final answer — a method that only worked for one lucky choice would not be a method.",
+      "One condition does matter. Step deviations divide by a common class width, so if the classes have different widths there is no single h and the method does not apply. The direct method still does."
+    ],
+    "workedExamples": [
+      {
+        "id": "s1354.we1",
+        "prompt": "Find the step deviations for assumed mean 15.",
+        "answer": "-1, 0, 1",
+        "steps": [
+          {
+            "text": "The class width is 10.",
+            "reasoning": "All classes share it, so the method applies."
+          },
+          {
+            "text": "Each step deviation is (class mark − 15) ÷ 10.",
+            "reasoning": "Subtract, then divide."
+          },
+          {
+            "text": "That gives -1, 0, 1.",
+            "reasoning": "Small whole numbers, easy to square."
+          }
+        ]
+      },
+      {
+        "id": "s1354.we2",
+        "prompt": "Find the variance by the shortcut method and compare with the direct one.",
+        "answer": "49",
+        "steps": [
+          {
+            "text": "Σfu = -1 and Σfu² = 5, over 10 observations.",
+            "reasoning": "Both columns come from the step deviations."
+          },
+          {
+            "text": "σ² = 10²[5/10 − (-1/10)²] = 49.",
+            "reasoning": "The h² restores the scale lost by dividing."
+          },
+          {
+            "text": "The direct method gave 49.",
+            "reasoning": "The same number, as it must be."
+          }
+        ]
+      },
+      {
+        "id": "s1354.we3",
+        "prompt": "Why must the classes share a common width?",
+        "answer": "Because the step deviation divides by one common width h.",
+        "steps": [
+          {
+            "text": "The step deviation divides each deviation by h.",
+            "reasoning": "That assumes one h exists."
+          },
+          {
+            "text": "With unequal widths there is no single divisor.",
+            "reasoning": "Different rows would be scaled differently."
+          },
+          {
+            "text": "So the method does not apply, and the direct method is used instead.",
+            "reasoning": "Inventing an h would give a wrong answer."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s1354.g1",
+        "prompt": "What is a step deviation?",
+        "hint": "Two operations.",
+        "answer": "The deviation from an assumed mean, divided by the class width.",
+        "rationale": "Subtracting then dividing makes the numbers small."
+      },
+      {
+        "id": "s1354.g2",
+        "prompt": "Why does h² appear in the formula?",
+        "hint": "What did dividing do?",
+        "answer": "Because dividing the deviations by h divided the variance by h².",
+        "rationale": "Multiplying by h² restores the original scale."
+      },
+      {
+        "id": "s1354.g3",
+        "prompt": "Must the shortcut agree with the direct method?",
+        "hint": "Same quantity?",
+        "answer": "Yes.",
+        "rationale": "It is the same variance computed another way."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s1354.i1",
+        "prompt": "The classes are 0–10, 10–25, 25–40. Can the shortcut be used?",
+        "answer": "No.",
+        "rationale": "The widths differ, so there is no common h."
+      },
+      {
+        "id": "s1354.i2",
+        "prompt": "Does changing the assumed mean change the variance?",
+        "answer": "No.",
+        "rationale": "Only the intermediate columns change."
+      },
+      {
+        "id": "s1354.i3",
+        "prompt": "If the shortcut and direct answers differ, what follows?",
+        "answer": "One of them has an error.",
+        "rationale": "They compute the same quantity, so they cannot disagree."
+      },
+      {
+        "id": "s1354.i4",
+        "prompt": "What is the step deviation of the class mark equal to the assumed mean?",
+        "answer": "0.",
+        "rationale": "Its deviation is zero, and zero divided by h is zero."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s1354.td1",
+        "prompt": "Why is it worth proving the shortcut agrees rather than just trusting the formula?",
+        "expectedReasoning": "Because a method that gives its own answer is not a shortcut but a second, competing measure, and nothing in the symbols themselves announces which you have. The agreement is what makes it safe to use the easier route and report the result as the variance, full stop. It is also the only way to catch an error in the derivation: a mistaken h² or a dropped term would still produce a plausible number, and only the comparison exposes it. Reconciling methods is how a calculation earns the right to be called the same quantity."
+      }
+    ],
+    "summary": "The step deviation u = (x − a)/h makes the arithmetic small, and σ² = h²[Σfu²/n − (Σfu/n)²] recovers the variance: 49, matching the direct method's 49. The h² restores the scale that dividing removed. Any convenient assumed mean works, but the classes must share a common width or there is no h to divide by.",
+    "visuals": [
+      {
+        "type": "grouped_table",
+        "caption": "Step deviations with assumed mean a = 15",
+        "altText": "A step-deviation table with class marks 5, 15, 25, their deviations from the assumed mean of 15, the step deviations -1, 0, 1 found by dividing by the class width 10, and those weighted by frequency and squared. The small whole numbers are what make this route easier than squaring the deviations directly."
+      },
+      {
+        "type": "method_comparison",
+        "caption": "The same variance by both routes",
+        "altText": "A table giving the variance of the same distribution twice: once by the direct method, squaring each deviation from the mean, and once by the shortcut method with an assumed mean. Both give 49, which is the point — they are two ways of computing one quantity, not two separate answers."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-STA-05",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-STA-06",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-STA-07",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

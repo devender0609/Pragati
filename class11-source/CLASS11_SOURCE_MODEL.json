@@ -1,0 +1,424 @@
+{
+  "scopeFragments": [
+    {
+      "id": "SF-1",
+      "parentSection": "4.5",
+      "parentHeading": "Argand Plane and Polar Representation",
+      "fragments": [
+        {
+          "part": "Argand plane; plotting a complex number",
+          "assessmentStatus": "SUMMATIVE_CORE"
+        },
+        {
+          "part": "polar representation (modulus-argument form)",
+          "assessmentStatus": "FORMATIVE_ONLY",
+          "cbseEntry": "FO-5"
+        }
+      ],
+      "reason": "the section heading names both, and CBSE assesses only the first summatively"
+    },
+    {
+      "id": "SF-2",
+      "parentSection": "9.3",
+      "parentHeading": "Various Forms of the Equation of a Line",
+      "fragments": [
+        {
+          "part": "parallel to axis, point-slope, slope-intercept, two-point, intercept forms",
+          "assessmentStatus": "SUMMATIVE_CORE"
+        },
+        {
+          "part": "normal form; general equation of a line",
+          "assessmentStatus": "FORMATIVE_ONLY",
+          "cbseEntry": "FO-9"
+        }
+      ],
+      "reason": "one section enumerates forms with different assessment statuses"
+    },
+    {
+      "id": "SF-3",
+      "parentSection": "14.1",
+      "parentHeading": "Event",
+      "fragments": [
+        {
+          "part": "random experiments, outcomes, sample space in set representation",
+          "assessmentStatus": "FORMATIVE_ONLY",
+          "cbseEntry": "FO-12",
+          "instructionalStatus": "REQUIRED_PREREQUISITE"
+        },
+        {
+          "part": "event as a subset; not/and/or events; exhaustive and mutually exclusive events",
+          "assessmentStatus": "SUMMATIVE_CORE"
+        }
+      ],
+      "reason": "the formative-only foundation and the summative event language are developed in the same section"
+    }
+  ],
+  "FO4_mathematicalInduction": {
+    "cbseEntry": "FO-4",
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "sourceAuthority": "CBSE curriculum annexure, Class XI 2026-27, PDF page 6; CBSE states relevant NCERT textual material is enclosed for reference",
+    "ncertChapterOwner": null,
+    "evidence": "the rationalised kemh1 has 14 chapters and none of them is Principle of Mathematical Induction; the topic also does not appear in the Class XI course structure, only in the formative-only annexure",
+    "intent": {
+      "object": "the principle of mathematical induction",
+      "procedure": "proof by induction: base case, inductive hypothesis, inductive step",
+      "representation": "the natural numbers as the least inductive subset of the reals",
+      "proofDemand": "PROVE",
+      "application": "simple applications"
+    },
+    "treatment": "recorded as a CBSE-supplied formative source record with no NCERT chapter owner. No kemh1 chapter or section number is invented for it.",
+    "note": "section 7.2 proves the binomial theorem by induction, so the textbook uses induction without any current chapter teaching it"
+  },
+  "FO12_probabilityFoundation": {
+    "cbseEntry": "FO-12",
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "instructionalStatus": "REQUIRED_PREREQUISITE",
+    "dependency": {
+      "from": "sample space in set representation (formative-only)",
+      "to": "probability of an event (summative core, 14.2)",
+      "rule": "the dependency is recorded separately from assessment status; the foundation is NOT promoted to summative because summative material depends on it"
+    }
+  },
+  "governanceRule": "instructionalStatus and assessmentStatus are independent fields. A concept may be REQUIRED_PREREQUISITE instructionally and FORMATIVE_ONLY for assessment. Neither may be inferred from the other.",
+  "appendices": [
+    {
+      "file": "kemh1a1.pdf",
+      "pages": 9,
+      "title": "Infinite Series",
+      "parts": [
+        "A.1.1 Introduction",
+        "A.1.2 Binomial Theorem for any Index",
+        "A.1.3 Infinite Geometric Series",
+        "A.1.4 Exponential Series",
+        "A.1.5 Logarithmic Series"
+      ],
+      "cbseScope": "none of this appears in the Class XI course structure or the formative-only annexure",
+      "disposition": "ENRICHMENT",
+      "futureUnitCandidate": false
+    },
+    {
+      "file": "kemh1a2.pdf",
+      "pages": 12,
+      "title": "Mathematical Modelling",
+      "parts": [
+        "A.2.1 Introduction",
+        "A.2.2 Preliminaries",
+        "A.2.3 What is Mathematical Modelling?"
+      ],
+      "cbseScope": "not in the Class XI course structure or the formative-only annexure",
+      "disposition": "ENRICHMENT",
+      "futureUnitCandidate": false
+    }
+  ],
+  "progressionAudit": {
+    "Sets": "NEW_NAMED_OBJECT \u2014 no prior grade treats a set as an object with operations",
+    "RelationsAndFunctions": "NEW_NAMED_OBJECT \u2014 relation and function as objects; prior grades used function-like rules without naming them",
+    "TrigonometricFunctions": "REPRESENTATION_EXTENSION plus NEW_NAMED_OBJECT \u2014 Class 10 Ch8 established acute right-triangle ratios in degrees; radian measure, the unit circle, signs by quadrant and functions over the reals are new. This is NOT first trigonometry.",
+    "ComplexNumbers": "NEW_NAMED_OBJECT \u2014 motivated by Class 10 quadratics with negative discriminant, which Class 10 declared to have no real roots",
+    "LinearInequalities": "PROCEDURAL_EXTENSION \u2014 extends linear equation solving from Class 9 and 10 to an order relation",
+    "PermutationsAndCombinations": "NEW_NAMED_OBJECT \u2014 systematic counting has no prior-grade equivalent",
+    "BinomialTheorem": "PROCEDURAL_EXTENSION plus PROOF_DEEPENING \u2014 Class 8 and 9 expanded squares and cubes; the general theorem with a proof is new",
+    "SequencesAndSeries": "PROCEDURAL_EXTENSION \u2014 Class 10 Ch5 derived the AP nth term and both sum forms; G.P. is a NEW_NAMED_OBJECT within an established frame",
+    "StraightLines": "PROCEDURAL_EXTENSION \u2014 Class 10 Ch7 gave distance and internal section; slope and line equations extend that coordinate frame",
+    "ConicSections": "NEW_NAMED_OBJECT \u2014 no prior-grade curve beyond the Class 10 parabola as a polynomial graph",
+    "ThreeDimensionalGeometry": "REPRESENTATION_EXTENSION \u2014 the Class 10 coordinate plane extended to space; the distance formula generalises",
+    "LimitsAndDerivatives": "NEW_NAMED_OBJECT \u2014 no prior-grade limit or rate-of-change concept",
+    "Statistics": "PROCEDURAL_EXTENSION \u2014 Class 10 Ch13 did grouped mean, mode and median; dispersion is the new measure family",
+    "Probability": "FORMALISATION \u2014 Class 9 Ch7 and Class 10 Ch14 established sample space, equally likely outcomes and classical probability; the axiomatic set-theoretic treatment formalises it. Probability is NOT new."
+  },
+  "discrepancyLedger": [
+    {
+      "id": "D-1",
+      "source": "kemh1a1.pdf page 1",
+      "content": "Appendix 1 refers to 'the Chapter 9 on Sequences and Series'",
+      "currentStatus": "Sequences and Series is Chapter 8 in the rationalised 14-chapter book",
+      "consequence": "a student following the cross-reference lands on Straight Lines",
+      "guard": "never reproduce the appendix cross-reference verbatim; if the appendix is ever used, renumber or drop the reference"
+    },
+    {
+      "id": "D-2",
+      "source": "CBSE annexure FO-4",
+      "content": "Principle of Mathematical Induction listed as formative-only",
+      "currentStatus": "no chapter in kemh1 contains it",
+      "consequence": "the only formative-only topic with no textbook owner; section 7.2 nonetheless proves the binomial theorem by induction",
+      "guard": "use the CBSE-supplied formative source record; do not invent a kemh1 section, and do not assume students have met induction before 7.2"
+    },
+    {
+      "id": "D-3",
+      "source": "CBSE annexure FO-12",
+      "content": "sample space in set representation is formative-only while probability of events is summative",
+      "currentStatus": "a summative topic rests on a formative-only foundation",
+      "consequence": "assessment status and instructional prerequisite diverge",
+      "guard": "carry instructionalStatus and assessmentStatus as independent fields"
+    },
+    {
+      "id": "D-4",
+      "source": "three sections (4.5, 9.3, 14.1)",
+      "content": "a single numbered section contains both summative core and formative-only material",
+      "currentStatus": "section-level classification is too coarse",
+      "consequence": "classifying any of these sections with one label would misplace content",
+      "guard": "scope fragments SF-1 to SF-3 record the boundaries; decomposition must split these sections"
+    },
+    {
+      "id": "D-5",
+      "source": "checkpoint 72 report",
+      "content": "section 7.3 Pascal's triangle reported as a hidden section",
+      "currentStatus": "retracted at checkpoint 73; it is Fig 7.3",
+      "consequence": "chapter 7 has 2 sections, not 3",
+      "guard": "figure and table numbers share the chapter.number shape and must never be read as headings"
+    },
+    {
+      "id": "D-6",
+      "source": "kemh105.pdf, chapter 5",
+      "issue": "FO-6 graphical solution of linear inequalities in TWO variables has no section, no subsection and no exercise in kemh1. Section 5.3 is titled \"Algebraic Solutions of Linear Inequalities in One Variable and their Graphical Representation\" and its graphical representation is a number line. Two variables are mentioned only in the chapter introduction.",
+      "status": "FORMATIVE_ONLY with no NCERT owner \u2014 a second orphan alongside FO-4",
+      "guard": "treat FO-6 like FO-4: a CBSE-supplied formative source record with ncertChapterOwner null; do not read section 5.3 as covering it"
+    },
+    {
+      "id": "D-7",
+      "source": "kemh105.pdf",
+      "issue": "chapter 5 contains only EXERCISE 5.1; sections 5.2 and 5.3 share it",
+      "status": "structural",
+      "guard": "do not assume one exercise per section when decomposing"
+    },
+    {
+      "id": "D-8",
+      "source": "two downloads during this checkpoint",
+      "issue": "ncert.nic.in returned a 98-byte upstream-failure page that curl saved with a .pdf extension for kemh102 and kemh105; the frozen SHA-256 caught both",
+      "status": "resolved by re-download; all 18 hashes now match",
+      "guard": "verify the %PDF header and the frozen hash on every retrieval, never HTTP 200 alone"
+    },
+    {
+      "id": "D-9",
+      "source": "kemh112.pdf page 30, section 12.5",
+      "issue": "the derivation of d/dx(x^n) reads 'by induction hypothesis', so chapter 12 also reasons by mathematical induction",
+      "currentStatus": "induction is FO-4, formative-only, with no NCERT chapter owner",
+      "risk": "D-2 is broader than recorded: two summative chapters (7 and 12) depend on a method the textbook never teaches",
+      "guard": "when decomposing chapters 7 and 12, treat induction as an unowned prerequisite; do not assume prior exposure"
+    }
+  ],
+  "semanticModelRiskMap": {
+    "A_existingArchitectureProbablySufficient": [
+      "Linear Inequalities (number line, one variable)",
+      "Statistics dispersion (extends groupedDistribution)",
+      "Straight Lines (extends coordinateGeometry)",
+      "Sequences and Series A.P. part (extends arithmeticProgression)"
+    ],
+    "B_generalExtensionLikely": [
+      "3-D coordinate geometry (extend coordinateGeometry to a third ordinate)",
+      "Probability event algebra (extend sampleSpace with not/and/or and exhaustive events)",
+      "G.P. (a sibling model to arithmeticProgression)",
+      "Binomial coefficients (extend the counting model)"
+    ],
+    "C_genuineFrontier": [
+      {
+        "area": "Sets and set operations",
+        "why": "no prior model represents a collection as an object with union, intersection, complement and Venn representation"
+      },
+      {
+        "area": "Functions as objects",
+        "why": "domain, codomain, range, the standard real functions and their graphs; the existing polynomial model describes one curve, not a function space"
+      },
+      {
+        "area": "Trigonometric functions beyond acute angles",
+        "why": "specialAngles assumes degrees and acute arguments throughout; radians, quadrant signs and functions over the reals break that assumption directly"
+      },
+      {
+        "area": "Complex numbers",
+        "why": "exact complex arithmetic and the Argand plane have no analogue in any existing model"
+      },
+      {
+        "area": "Conic sections",
+        "why": "parameterised curves with focus, directrix and eccentricity; the function-graph layer cannot express them"
+      },
+      {
+        "area": "Limits and derivatives",
+        "why": "symbolic limit and derivative semantics; nothing in the repository is symbolic in this sense"
+      },
+      {
+        "area": "Permutations and combinations",
+        "why": "a counting model distinct from the finite sample space model"
+      }
+    ]
+  },
+  "checkpoint75": {
+    "visualRequired": {
+      "final": 127,
+      "checkpoint74LowerBound": 105,
+      "missedByAutomation": 22,
+      "pagesViewed": "368/368",
+      "inspected": "127/127 at contact-sheet resolution"
+    },
+    "notation": {
+      "identified": 40,
+      "inspectedAtReadableResolution": 24,
+      "remaining": 16,
+      "verified": [
+        "set-builder and interval notation",
+        "subset and non-subset symbols",
+        "ordered pairs and Cartesian products",
+        "radian convention including the omitted word radian",
+        "quadrant sign tables",
+        "compound-angle identities",
+        "sum-to-product forms",
+        "modulus and conjugate",
+        "powers of i",
+        "the caution that root minus one means i only",
+        "factorial and nPr notation",
+        "sigma and binomial coefficient notation",
+        "G.P. general term"
+      ]
+    },
+    "newFindings": [
+      {
+        "id": "D-6",
+        "source": "kemh105.pdf, chapter 5",
+        "issue": "FO-6 graphical solution of linear inequalities in TWO variables has no section, no subsection and no exercise in kemh1. Section 5.3 is titled \"Algebraic Solutions of Linear Inequalities in One Variable and their Graphical Representation\" and its graphical representation is a number line. Two variables are mentioned only in the chapter introduction.",
+        "status": "FORMATIVE_ONLY with no NCERT owner \u2014 a second orphan alongside FO-4",
+        "guard": "treat FO-6 like FO-4: a CBSE-supplied formative source record with ncertChapterOwner null; do not read section 5.3 as covering it"
+      },
+      {
+        "id": "D-7",
+        "source": "kemh105.pdf",
+        "issue": "chapter 5 contains only EXERCISE 5.1; sections 5.2 and 5.3 share it",
+        "status": "structural",
+        "guard": "do not assume one exercise per section when decomposing"
+      },
+      {
+        "id": "D-8",
+        "source": "two downloads during this checkpoint",
+        "issue": "ncert.nic.in returned a 98-byte upstream-failure page that curl saved with a .pdf extension for kemh102 and kemh105; the frozen SHA-256 caught both",
+        "status": "resolved by re-download; all 18 hashes now match",
+        "guard": "verify the %PDF header and the frozen hash on every retrieval, never HTTP 200 alone"
+      }
+    ],
+    "miscellaneousExercises": {
+      "1": {
+        "pages": [
+          21
+        ],
+        "approxItems": 8
+      },
+      "2": {
+        "pages": [
+          17
+        ],
+        "approxItems": 10
+      },
+      "3": {
+        "pages": [
+          29
+        ],
+        "approxItems": 3
+      },
+      "4": {
+        "pages": [
+          10
+        ],
+        "approxItems": 2
+      },
+      "5": {
+        "pages": [
+          10
+        ],
+        "approxItems": 12
+      },
+      "6": {
+        "pages": [
+          23
+        ],
+        "approxItems": 4
+      },
+      "7": {
+        "pages": [
+          8
+        ],
+        "approxItems": 17
+      },
+      "8": {
+        "pages": [
+          13
+        ],
+        "approxItems": 7
+      },
+      "9": {
+        "pages": [
+          22
+        ],
+        "approxItems": 2
+      },
+      "10": {
+        "pages": [
+          29
+        ],
+        "approxItems": 8
+      },
+      "11": {
+        "pages": [
+          8
+        ],
+        "approxItems": 4
+      },
+      "12": {
+        "pages": [
+          37
+        ],
+        "approxItems": 16
+      },
+      "13": {
+        "pages": [
+          30
+        ],
+        "approxItems": 6
+      },
+      "14": {
+        "pages": [
+          22
+        ],
+        "approxItems": 2
+      }
+    },
+    "subsectionRecords": {
+      "total": 67,
+      "substantive": 63,
+      "structuralOnly": 4
+    }
+  },
+  "checkpoint76": {
+    "notation": {
+      "total": 40,
+      "inspected": 40,
+      "thisCheckpoint": 16,
+      "checkpoint75ManifestError": "recorded remaining chapters as 10, 12, 13, 14; the remaining 16 actually spanned chapters 8, 9, 10, 11, 12, 13 and 14",
+      "ledger": "NOTATION_LEDGER.json"
+    },
+    "corrections": [
+      {
+        "id": "C-1",
+        "what": "kemh111.pdf page 9 reclassified from notation-critical to historical, non-notational",
+        "effect": "notation-critical denominator stays 40 by count but one entry carries no notation; recorded rather than silently dropped"
+      }
+    ],
+    "newDiscrepancies": [
+      {
+        "id": "D-9",
+        "source": "kemh112.pdf page 30, section 12.5",
+        "issue": "the derivation of d/dx(x^n) reads 'by induction hypothesis', so chapter 12 also reasons by mathematical induction",
+        "currentStatus": "induction is FO-4, formative-only, with no NCERT chapter owner",
+        "risk": "D-2 is broader than recorded: two summative chapters (7 and 12) depend on a method the textbook never teaches",
+        "guard": "when decomposing chapters 7 and 12, treat induction as an unowned prerequisite; do not assume prior exposure"
+      }
+    ],
+    "conicFormsVerified": {
+      "parabola": "y^2 = 4ax",
+      "ellipse": [
+        "x^2/a^2 + y^2/b^2 = 1",
+        "x^2/b^2 + y^2/a^2 = 1"
+      ],
+      "note": "two ellipse orientations, both correct; neither is a swapped-denominator defect"
+    },
+    "structuralImpact": "none \u2014 63 sections and 67 subsections unchanged",
+    "scopeImpact": "none \u2014 3 fragments, 12/12 formative-only, two orphans unchanged; SF-3 gained page-level evidence from kemh114 page 11",
+    "visualImpact": "none \u2014 127/127 unchanged"
+  }
+}

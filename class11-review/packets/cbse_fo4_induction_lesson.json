@@ -1,0 +1,283 @@
+{
+  "priority": 22,
+  "contentArtifactId": "cbse_fo4_induction_lesson",
+  "title": "You will prove a statement about every natural number by checking one case and showing each case carries the next.",
+  "placement": "chapter-less prerequisite",
+  "selectionReasons": [
+    "CBSE-only required content (FO-4)",
+    "chapter-less placement",
+    "risk class C"
+  ],
+  "artifactFingerprint": "6b6bcac7d4a2df170b6fea93db8ef5c1",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-IND-01",
+      "title": "The principle of mathematical induction",
+      "objective": "Prove a statement about the natural numbers by establishing a base case and an inductive step.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": null,
+      "cbseProofExpectation": null,
+      "representationRequirement": "proof layout; no figure required",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "cbse_only",
+    "officialChapterId": "cbse_c11_prerequisite",
+    "officialSectionId": null,
+    "sectionNumber": null,
+    "cbseEntryId": "FO-4",
+    "startPage": 0,
+    "sourceReference": "cbse_fo4",
+    "note": "CBSE-only: no NCERT section or page exists for this content; empty section and page 0 are absence markers, not missing data"
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "proof_layout"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will prove a statement about every natural number by checking one case and showing each case carries the next.",
+    "vocabulary": [
+      {
+        "term": "mathematical induction",
+        "meaning": "A method of proving a statement for every natural number from some starting point onwards."
+      },
+      {
+        "term": "base case",
+        "meaning": "The first value, where the statement is checked directly."
+      },
+      {
+        "term": "induction hypothesis",
+        "meaning": "The assumption that the statement holds for one particular value k."
+      },
+      {
+        "term": "inductive step",
+        "meaning": "The argument that the statement holding at k forces it to hold at k + 1."
+      }
+    ],
+    "explanation": [
+      "Some statements are claimed for every natural number at once. There are infinitely many of them, so they cannot be checked one by one, however long you keep going.",
+      "Checking cases is not a proof. For 1 + 2 + … + n = n(n + 1)/2, you can verify n = 1, 2 and 3 and find them all correct — but all 3 checked cases hold, but every natural number n from 1 upwards contains infinitely many values, so checking cases proves nothing about the rest",
+      "Induction replaces the infinite checking with two finite obligations. First, show the statement holds at the starting value. Second, show that whenever it holds at some value, it must also hold at the next one.",
+      "Meet both and the statement follows for every value from the start onwards. The first obligation gives you one true case; the second turns any true case into the next true case; together they reach every value in turn.",
+      "The dominoes picture is useful but incomplete. Lining up dominoes so each would knock the next over does nothing until one is actually pushed, and pushing one does nothing if the spacing fails somewhere down the line. Both obligations are needed, and the proof is the two arguments, not the picture.",
+      "The hypothesis is where care is needed. You assume the statement for one particular k — not for every k, which is what is being proved. Writing \"Suppose the formula holds for some particular n = k.\" keeps it conditional; writing that it holds for all k assumes the conclusion.",
+      "Set out in parts, a proof of 1 + 2 + … + n = n(n + 1)/2 reads: check n = 1, where both sides come to 1; assume it at k; add the next term and rearrange to reach the same formula at k + 1; conclude for every natural number n from 1 upwards.",
+      "This method is worth learning on its own because several later results depend on it. The binomial theorem is proved this way, and a derivative result about powers uses an induction hypothesis in its derivation. Both are for their own lessons; what transfers is the method."
+    ],
+    "workedExamples": [
+      {
+        "id": "ind.we1",
+        "prompt": "Prove that 1 + 2 + … + n = n(n + 1)/2 for every natural number n from 1 upwards.",
+        "answer": "the proof is complete: the formula holds for every natural number n from 1 upwards.",
+        "steps": [
+          {
+            "text": "Base case. At n = 1 the left side is the single term 1.",
+            "reasoning": "The sum of the first one natural number has only that one term in it."
+          },
+          {
+            "text": "The right side is 1 × 2 ÷ 2, which is also 1.",
+            "reasoning": "Substituting n = 1 into n(n + 1)/2 gives 1 × 2 over 2."
+          },
+          {
+            "text": "Hypothesis. Suppose the formula holds for some particular n = k.",
+            "reasoning": "It is assumed for one particular k, not proved for every k; that is what the step will establish."
+          },
+          {
+            "text": "Step. The sum to k + 1 equals the sum to k, plus the term k + 1.",
+            "reasoning": "The only difference between the two sums is the one extra term on the end."
+          },
+          {
+            "text": "By the hypothesis that sum to k is k(k + 1)/2, so the total is k(k + 1)/2 + (k + 1).",
+            "reasoning": "The hypothesis is used exactly here, and nowhere else in the step."
+          },
+          {
+            "text": "Taking out the common factor k + 1 gives (k + 1)(k + 2)/2.",
+            "reasoning": "Both terms contain k + 1; removing it leaves k/2 + 1, which is (k + 2)/2."
+          },
+          {
+            "text": "That is the formula with k + 1 in place of n.",
+            "reasoning": "Replacing n by k + 1 in n(n + 1)/2 gives exactly (k + 1)(k + 2)/2."
+          },
+          {
+            "text": "Conclusion. The formula holds for every natural number from 1 upwards.",
+            "reasoning": "Both obligations are met: one case is true, and each true case forces the next."
+          }
+        ]
+      },
+      {
+        "id": "ind.we2",
+        "prompt": "Prove that 3 divides n³ − n for every natural number n from 1 upwards.",
+        "answer": "3 divides n³ − n for every natural number from 1 upwards.",
+        "steps": [
+          {
+            "text": "Base case. At n = 1 the expression is 1 − 1, which is 0.",
+            "reasoning": "Substituting n = 1 into n³ − n gives 1 − 1."
+          },
+          {
+            "text": "Zero is divisible by 3.",
+            "reasoning": "Zero is 3 × 0, so 3 goes into it a whole number of times."
+          },
+          {
+            "text": "Hypothesis. Suppose 3 divides k³ − k for some particular k.",
+            "reasoning": "Again assumed for one particular k only."
+          },
+          {
+            "text": "Step. Expanding (k + 1)³ − (k + 1) gives k³ + 3k² + 3k + 1 − k − 1.",
+            "reasoning": "Cubing the bracket and subtracting the bracket, then collecting the terms."
+          },
+          {
+            "text": "That simplifies to (k³ − k) + 3(k² + k).",
+            "reasoning": "The 1 and the −1 cancel, and the remaining 3k² + 3k has a factor of 3."
+          },
+          {
+            "text": "The first part is divisible by 3 by the hypothesis, and the second has a factor of 3.",
+            "reasoning": "A sum of two multiples of 3 is itself a multiple of 3."
+          },
+          {
+            "text": "Conclusion. 3 divides n³ − n for every natural number from 1 upwards.",
+            "reasoning": "The two obligations are met, so the divisibility holds throughout the range."
+          }
+        ]
+      },
+      {
+        "id": "ind.we3",
+        "prompt": "Prove that 2ⁿ ≥ n + 1 for every natural number n from 1 upwards.",
+        "answer": "2ⁿ ≥ n + 1 for every natural number from 1 upwards.",
+        "steps": [
+          {
+            "text": "Base case. At n = 1 the left side is 2¹, which is 2.",
+            "reasoning": "A power with exponent 1 is just the base itself."
+          },
+          {
+            "text": "The right side is 1 + 1, also 2, so the two sides are equal and the claim holds.",
+            "reasoning": "The claim asks for at least, and equal satisfies at least."
+          },
+          {
+            "text": "Hypothesis. Suppose 2ᵏ ≥ k + 1 for some particular k.",
+            "reasoning": "A statement about one particular k, assumed so that the step has something to work from."
+          },
+          {
+            "text": "Step. Doubling both sides of the hypothesis gives 2ᵏ⁺¹ ≥ 2(k + 1).",
+            "reasoning": "Multiplying an inequality by the positive number 2 keeps its direction."
+          },
+          {
+            "text": "2(k + 1) is 2k + 2, which is at least k + 2 whenever k is at least 0.",
+            "reasoning": "The difference between them is k, which is never negative here."
+          },
+          {
+            "text": "So 2ᵏ⁺¹ ≥ k + 2, which is the claim with k + 1 in place of n.",
+            "reasoning": "Replacing n by k + 1 in n + 1 gives k + 2."
+          },
+          {
+            "text": "Conclusion. 2ⁿ ≥ n + 1 for every natural number from 1 upwards.",
+            "reasoning": "This is the shape of argument that later work with powers will reuse."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "ind.g1",
+        "prompt": "What two things must an induction proof establish?",
+        "hint": "One case, and one implication.",
+        "answer": "The base case, and that the statement at k forces it at k + 1.",
+        "rationale": "The first gives one true case and the second turns each true case into the next, so together they reach every value."
+      },
+      {
+        "id": "ind.g2",
+        "prompt": "A student writes: \"Assume the statement is true for all k.\" What is wrong?",
+        "hint": "What is being proved?",
+        "answer": "That assumes the conclusion.",
+        "rationale": "The hypothesis must be about one particular k; assuming it for every k is assuming the very thing the proof is meant to establish."
+      },
+      {
+        "id": "ind.g3",
+        "prompt": "A student checks n = 1 up to n = 20 and calls it proved. Is it?",
+        "hint": "How many natural numbers are there?",
+        "answer": "No.",
+        "rationale": "Twenty cases leave infinitely many unchecked, and without the inductive step nothing carries the claim past the last one checked."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "ind.i1",
+        "prompt": "In the proof of 1 + 2 + … + n = n(n + 1)/2, what is checked in the base case?",
+        "answer": "That both sides equal 1 when n = 1.",
+        "rationale": "The base case is a direct substitution, not an assertion that the claim starts off true."
+      },
+      {
+        "id": "ind.i2",
+        "prompt": "Why must the base case be at the first value of the claimed range?",
+        "answer": "Because the chain starts there.",
+        "rationale": "Checking a later value leaves everything before it unsupported, and the step only ever moves forwards."
+      },
+      {
+        "id": "ind.i3",
+        "prompt": "In the inductive step, where exactly is the hypothesis used?",
+        "answer": "At the point where the expression for k is replaced by what the hypothesis says it equals.",
+        "rationale": "If the hypothesis is never used, the step has not connected k to k + 1 and the proof has a gap."
+      },
+      {
+        "id": "ind.i4",
+        "prompt": "Can a proof conclude from the inductive step alone?",
+        "answer": "No.",
+        "rationale": "Without a base case the implication never starts: each case would depend on a previous one that was never established."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "ind.td1",
+        "prompt": "The base case proves one case and the inductive step proves no cases at all, only an implication. Why do the two together prove infinitely many?",
+        "expectedReasoning": "Because the implication can be applied repeatedly to whatever the base case supplies. On its own, \"if it holds at k then it holds at k + 1\" asserts nothing about any actual number; it is a conditional with nothing feeding it. The base case supplies one true case, and the implication converts that into the next, then the next, with no stopping point. Neither part reaches far by itself, which is why removing either breaks the whole thing: an unanchored chain proves nothing, and a single checked case carries nowhere."
+      }
+    ],
+    "summary": "Mathematical induction proves a statement for every natural number from a starting value by two obligations: check the base case directly, then show the statement at k forces it at k + 1. Checking examples is not a proof — all 3 checked cases hold, but every natural number n from 1 upwards contains infinitely many values, so checking cases proves nothing about the rest",
+    "visuals": [
+      {
+        "type": "proof_layout",
+        "caption": "A proof set out in five labelled parts. The claim states that the sum of the first n natural numbers equals n times n plus one over two. The base case checks n equals 1, where both sides come to 1. The induction hypothesis assumes the claim for one particular value k. The inductive step adds the next term and rearranges to reach the same formula with k plus one in place of n. The conclusion states that the two obligations together establish the claim for every natural number from 1 upwards.",
+        "altText": "A proof set out in five labelled parts. The claim states that the sum of the first n natural numbers equals n times n plus one over two. The base case checks n equals 1, where both sides come to 1. The induction hypothesis assumes the claim for one particular value k. The inductive step adds the next term and rearranges to reach the same formula with k plus one in place of n. The conclusion states that the two obligations together establish the claim for every natural number from 1 upwards."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-IND-01",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

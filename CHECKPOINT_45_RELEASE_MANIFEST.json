@@ -1,0 +1,59 @@
+{
+  "checkpoint": 45,
+  "canonicalVersion": "0.84.0-rc.2",
+  "packageCreatedUtc": "2026-10-14T19:55:41Z",
+  "purpose": "connect the 92 authored Class 9 Learn artifacts to the real student product",
+  "testCount": 2057,
+  "testFileCount": 103,
+  "class9": {
+    "instructionalUnits": 93,
+    "studentLessons": 92,
+    "chapters": 14,
+    "contextuallyCovered": 1,
+    "chapter3Lessons": 8,
+    "chapter9Lessons": 2,
+    "progressDenominator": 92
+  },
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "routeIdentity": "contentArtifactId",
+  "governanceBoundary": "publication eligibility unchanged; RC student-preview reachability is a separate, narrower statement",
+  "gates": {
+    "class9LearnVisibleToStudent": "PASS",
+    "fourteenChapters": "PASS",
+    "ninetyTwoRoutable": "PASS (deterministic test)",
+    "chapter3EightLessons": "PASS",
+    "chapter9TwoLessonsNoFakeSections": "PASS",
+    "splitsDistinct": "PASS",
+    "mergesOnce": "PASS",
+    "realLearnSectionView": "PASS",
+    "artifactBasedProgress": "PASS",
+    "denominator92": "PASS",
+    "hundredPercentReachable": "PASS",
+    "persistenceAcrossReload": "PASS (7 before, 7 after)",
+    "homeLearnConsistent": "PASS",
+    "reviewStateUnchanged": "PASS",
+    "class6Regression": "PASS",
+    "teacherRegression": "PASS",
+    "growthFrozen": "PASS",
+    "cleanBuild": "PASS",
+    "productionBrowserPreview": "PASS",
+    "consoleNetworkErrors": "PASS (0/0)"
+  },
+  "viewports": {
+    "1280": "0px overflow",
+    "834": "0px overflow, 0 over-wide elements",
+    "360": "0px overflow, 0 over-wide elements"
+  },
+  "unverified": [
+    "colour contrast not measured",
+    "no real screen-reader testing",
+    "no human curriculum review"
+  ],
+  "verdict": "CLASS_9_STUDENT_LEARN_INTEGRATION_COMPLETE_RC_ROUTE_VERIFIED",
+  "nextAction": "Checkpoint 46 \u2014 rerun the Class 9 Deployment RC from this package"
+}

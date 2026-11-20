@@ -1,0 +1,270 @@
+{
+  "checkpoint": "85B",
+  "canonicalVersion": "0.84.0-c11.16-conics-hardened",
+  "verdict": "CLASS_11_CONIC_SECTIONS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_CONIC_SEMANTICS_EXTENSION",
+  "packageCreatedUtc": "2026-11-03T20:28:45Z",
+  "durableBaseline": {
+    "archive": "pragati-0.84.0-c11.15-conics-pilot.zip",
+    "sha256": "bebcf81420b5f1628b772bcf36eff16a016ae98d142b7a70641fd725c8179a5a",
+    "verified": "OK",
+    "reAuthored": false,
+    "artifactContentChanges": 0,
+    "versionIncrements": 0
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "overflow": "0px",
+      "wider": 0,
+      "clipped": 0,
+      "controlVsControlOverlaps": 0,
+      "clearance": "nav hidden",
+      "failures": 0
+    },
+    {
+      "width": 834,
+      "overflow": "0px",
+      "wider": 0,
+      "clipped": 0,
+      "controlVsControlOverlaps": 0,
+      "clearance": "nav hidden",
+      "failures": 0
+    },
+    {
+      "width": 360,
+      "overflow": "0px",
+      "wider": 0,
+      "clipped": 0,
+      "controlVsControlOverlaps": 0,
+      "worstGapPx": 124,
+      "minGapPx": 8,
+      "failures": 0
+    }
+  ],
+  "harnessFinding": {
+    "firstPass": "16 overlaps at 360px",
+    "allControlVsNav": true,
+    "anyControlVsControl": false,
+    "classification": "harness, not product",
+    "sameAs": "the checkpoint 84B false positive",
+    "why": "the bottom bar is fixed, so a mid-document control legitimately passes beneath it mid-scroll",
+    "fix": "harness reports control-vs-nav separately; no layout changed"
+  },
+  "visualPresence": {
+    "familiesWithNoFigure": 0,
+    "venn": {
+      "figures": 2,
+      "primitives": [
+        12,
+        12
+      ]
+    },
+    "real_function_graph": {
+      "figures": 4,
+      "primitives": [
+        3,
+        5,
+        9,
+        5
+      ]
+    },
+    "circular_graph": {
+      "figures": 3,
+      "primitives": [
+        3,
+        3,
+        7
+      ]
+    },
+    "argand_plane": {
+      "figures": 2,
+      "primitives": [
+        6,
+        4
+      ]
+    },
+    "coordinate_line_graph": {
+      "figures": 2,
+      "primitives": [
+        5,
+        4
+      ]
+    },
+    "cone_section": {
+      "figures": 4,
+      "primitives": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    "cone_section_degenerate": {
+      "figures": 3,
+      "primitives": [
+        7,
+        7,
+        7
+      ]
+    },
+    "conic_circle": {
+      "figures": 1
+    },
+    "conic_parabola": {
+      "figures": 1
+    },
+    "conic_ellipse": {
+      "figures": 2
+    },
+    "conic_hyperbola": {
+      "figures": 1,
+      "polylines": 2
+    },
+    "decorativeExcludedPerLesson": "11 to 14",
+    "colourDependent": false
+  },
+  "ellipseOrientations": {
+    "distinctInProduct": true,
+    "captions": [
+      "x\u00b2/25 + y\u00b2/9 = 1",
+      "x\u00b2/9 + y\u00b2/25 = 1"
+    ]
+  },
+  "hyperbolaBranches": {
+    "polylines": 2,
+    "joined": false
+  },
+  "negativeFixtures": {
+    "focusDirectrix": {
+      "onCurve": true,
+      "offCurve": false
+    },
+    "focalSum": {
+      "onCurve": 10.0,
+      "offCurve": 8.26
+    },
+    "focalDifference": {
+      "onCurve": 6.0,
+      "offCurve": 1.96
+    },
+    "weakenedToPositiveOnly": false
+  },
+  "exactness": {
+    "ellipseEccentricity": "4/5",
+    "hyperbolaEccentricity": "5/3",
+    "ellipseLatusRectum": "18/5",
+    "hyperbolaLatusRectum": "32/3",
+    "anyDecimals": false
+  },
+  "persistence": {
+    "afterFinishAndReload": [
+      "1 of 47 done",
+      "1 of 8 done on Chapter 10"
+    ]
+  },
+  "accessibility": {
+    "everyFigureDescribed": true,
+    "colourDependent": false,
+    "focusLands": true,
+    "bottomControlFullyVisible": true,
+    "gapToNavPx": 125,
+    "focusOrderUnchanged": true,
+    "notClaimed": "no screen reader used, no contrast measured, no WCAG conformance"
+  },
+  "guards": {
+    "rawValueDynamicDiscovery": true,
+    "hardcodedModuleList": false,
+    "renderedLeaks": 0,
+    "duplicateContentFindings": 0
+  },
+  "builds": {
+    "preview": {
+      "chapters": 6,
+      "lessons": 47,
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        9,
+        10
+      ],
+      "emptyChapters": 0
+    },
+    "publicSafe": {
+      "catalogueRows": 0,
+      "conicTextPresent": false,
+      "directRoutesBlockedAtLookup": true,
+      "routesTested": [
+        "s10_6_hyperbola_lesson",
+        "s10_3_circle_lesson"
+      ],
+      "figuresRendered": 0
+    }
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0,
+    "uncaught": 0
+  },
+  "defects": {
+    "product": 0,
+    "semantic": 0,
+    "content": 0,
+    "environment": 0,
+    "harness": 1
+  },
+  "qa": {
+    "tests": 2790,
+    "testFiles": 132,
+    "failures": 0,
+    "typecheck": 0,
+    "curriculumValidation": "pass"
+  },
+  "class11": {
+    "total": 47,
+    "remaining": 46,
+    "perChapter": [
+      12,
+      6,
+      8,
+      7,
+      6,
+      8
+    ],
+    "order": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10
+    ],
+    "lifecycle": "0/0/0/0",
+    "structuralOnly10_4_2": true,
+    "subsectionProvenanceIntact": true
+  },
+  "priorWork": {
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen",
+    "priorVersionsChanged": 0
+  },
+  "environmentHygiene": {
+    "envLocalBeforePublicSafe": "absent",
+    "envLocalInPackage": false,
+    "previewFlag": "set only for preview runs, removed afterwards"
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "recommendation": "Limits and Derivatives",
+    "rationale": "needs a function-limit model the RealFunctionContract already anticipates, and carries more unresolved risk than Permutations and Combinations",
+    "executed": false
+  }
+}

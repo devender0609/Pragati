@@ -1,0 +1,105 @@
+{
+  "tracks": {
+    "GD-1-FORMATIVE-INSTRUCTIONAL-STATUS": {
+      "status": "RESOLVED",
+      "resolvedAt": "checkpoint 99R (v0.84.0-c11.46r)",
+      "history": {
+        "id": "GD-1-FORMATIVE-INSTRUCTIONAL-STATUS",
+        "raisedAt": "checkpoint 94 (v0.84.0-c11.37)",
+        "restatedAt": "checkpoint 95 (v0.84.0-c11.38)",
+        "policyAdopted": {
+          "REQUIRED_CORE": "inside the official instructional scope, whether or not summatively assessed",
+          "REQUIRED_PREREQUISITE": "required because downstream required content depends on it",
+          "OPTIONAL_ENRICHMENT": "available but OUTSIDE the official instructional scope and not required downstream"
+        },
+        "inconsistency": "The CBSE formative-only preamble states these topics are \"included in the syllabus but will be assessed only formatively\". Under the policy above, inclusion in the syllabus places a topic inside the official instructional scope, so OPTIONAL_ENRICHMENT contradicts the source for every CBSE formative topic.",
+        "affectedUnits": [
+          "C11-RF-FO2",
+          "C11-TRG-FO3",
+          "C11-CPX-FO5a",
+          "C11-CPX-FO5b",
+          "C11-BIN-FO7",
+          "C11-SEQ-FO8",
+          "C11-STL-FO9",
+          "C11-3DG-FO10",
+          "C11-LIM-FO11"
+        ],
+        "currentStatus": "all nine remain OPTIONAL_ENRICHMENT",
+        "changedInCheckpoint95": false,
+        "whyNotRepairedHere": "The nine differ in source kind, placement, authored status, dependency relationships and chapter-completeness implications. A nine-unit policy migration needs its own controlled checkpoint and must not ride along with a single stale-metadata correction.",
+        "alsoNoted": "No stated principle explains the existing assignments: the best structural hypothesis \u2014 scope fragments required, CBSE-only optional \u2014 fails on C11-BIN-FO7, C11-CPX-FO5a, C11-STL-FO9 and C11-IND-01.",
+        "doesNotBlock": "Linear Inequalities authoring. C11-INQ-FO6 is already resolved to REQUIRED_CORE.",
+        "futureAction": "A dedicated migration checkpoint to reconcile the nine against the checkpoint-94 policy."
+      },
+      "migration": {
+        "C11-RF-FO2": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_PREREQUISITE",
+          "reason": "C11-LIM-FO11 depends on it and becomes required"
+        },
+        "C11-TRG-FO3": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        },
+        "C11-CPX-FO5a": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        },
+        "C11-CPX-FO5b": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        },
+        "C11-BIN-FO7": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        },
+        "C11-SEQ-FO8": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        },
+        "C11-STL-FO9": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        },
+        "C11-3DG-FO10": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        },
+        "C11-LIM-FO11": {
+          "from": "OPTIONAL_ENRICHMENT",
+          "to": "REQUIRED_CORE"
+        }
+      },
+      "contentAuthored": 0,
+      "assessmentStatusChanged": false,
+      "optionalEnrichmentRemaining": 0
+    },
+    "GD-2-CBSE-ONLY-CHAPTER-OWNERSHIP": {
+      "status": "RESOLVED",
+      "resolvedAt": "checkpoint 99R (v0.84.0-c11.46r)",
+      "corrections": {
+        "C11-RF-FO2": "ncert_kemh1_ch02 -> cbse_fo2_c11_composition",
+        "C11-TRG-FO3": "ncert_kemh1_ch03 -> cbse_fo3_c11_general_solutions",
+        "C11-CPX-FO5b": "ncert_kemh1_ch04 -> cbse_fo5b_c11_complex_quadratics"
+      },
+      "onlyFalseField": "officialChapterId",
+      "scopeFragmentsUntouched": [
+        "SF-1-FORMATIVE",
+        "SF-2-FORMATIVE",
+        "SF-3-FORMATIVE",
+        "FO-1-APPLICATION",
+        "FO-7-TERMS"
+      ],
+      "duplicationRemoved": "the chapter blocks appended the cbse_only lesson so it displayed last inside the chapter; with chapter-less placement that showed it twice",
+      "catalogueBefore": "85 / 1 / 1 / 87",
+      "catalogueAfter": "82 / 1 / 4 / 87",
+      "chapterRowsAfter": {
+        "2": 5,
+        "3": 7,
+        "4": 6
+      }
+    }
+  },
+  "formattingDebt": "EXACT_RADICAL_ZERO_FORMATTING_DEBT remains open and untouched",
+  "recoveryNote": "rebuilt at checkpoint 99R from pragati-0.84.0-c11.45-class11-audit.zip (187e42fe...) after the 99/99B/99C working trees were lost to a container reset"
+}

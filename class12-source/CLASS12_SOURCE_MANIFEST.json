@@ -1,0 +1,243 @@
+{
+  "generatedBy": "tools/class12/generateSourceManifest.ts",
+  "generatedNote": "Every status below is computed from the files present at generation time. No narrative is carried forward between runs, which is how the earlier CBSE contradiction arose.",
+  "status": "SOURCE_SET_INCOMPLETE",
+  "cbseSource": {
+    "status": "RECORDED_FILE_NOT_PRESENT",
+    "searchedPaths": [
+      "class12-source/pdfs/Maths_SecP2_2026-27.pdf",
+      "/mnt/user-data/uploads/Maths_SecP2_2026-27.pdf"
+    ],
+    "recordedSha256": "5121a0fb9456269fad833abf173090b99232220bd4acfc8f5907f9edc9b405c0",
+    "filename": "Maths_SecP2_2026-27.pdf",
+    "validation": "absent",
+    "bytes": 0,
+    "sha256": null,
+    "identityVerification": "Identity was verified by reading the document at checkpoint 111 and is recorded in CLASS12_CBSE_SOURCE.json. RECORDED_FILE_NOT_PRESENT means the bytes are not in this tree to re-check, not that the identity is in doubt.",
+    "record": "class12-source/CLASS12_CBSE_SOURCE.json",
+    "identity": {
+      "subject": "Mathematics",
+      "subjectCode": "041",
+      "classes": "XI-XII",
+      "academicYear": "2026 - 27",
+      "evidence": "page 1 header reads: Mathematics / Subject Code - 041 / Classes XI-XII (2026 - 27)",
+      "classXIIStructureFound": "pages 7-10 carry COURSE STRUCTURE CLASS - XII (2026-27), One Paper, Max. Marks 80",
+      "prescribedBooks": [
+        "Mathematics Part I - Textbook for Class XII, NCERT",
+        "Mathematics Part II - Textbook for Class XII, NCERT"
+      ]
+    },
+    "note": "Verified by reading the document, not the filename. \"SecP2\" denotes Senior Secondary Part 2; three earlier checkpoints misread it as a Class IX-X syllabus."
+  },
+  "ncertSource": {
+    "status": "PRESENT",
+    "expectedFiles": 15,
+    "acquired": 15,
+    "missing": [],
+    "files": [
+      {
+        "filename": "lemh1ps.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh1ps.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 1975316,
+        "sha256": "96441eb9592091d45369a43aa9f9de8d4a439cf95eaac28baf1a04372feaba65",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh101.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh101.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 1405041,
+        "sha256": "9d2abedec1052e72b51edbe1fe902f070f1debfca02c80d4d77e86003097848a",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh102.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh102.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 1433383,
+        "sha256": "7387c02883d71d3f07a35f6c59b207677d7f62ad83e28a1f036f75c11e76531a",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh103.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh103.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 3437138,
+        "sha256": "8d19ddd4eeeedb09d85a4aaedb8eef08f1642d9b48986ea80cc654008e2c5450",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh104.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh104.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 2053094,
+        "sha256": "919d031e5c8a8cea13361d0ecd3791064d85b58bf315470c952a6fd60593e386",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh105.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh105.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 3221347,
+        "sha256": "fba3ab4455b472773e03524fb25d263732e3e57c6e1ad7bbcc889a6eaa39ee4b",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh106.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh106.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 3282999,
+        "sha256": "8fa2f383f84c031011fc1ce2938fe0221f2d7df5570493bcb27e59de9e7a7060",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh2ps.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh2ps.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 1969919,
+        "sha256": "288843e5359d15b4bcd559392f7f28a8f8dc5592b7cd3213cbf70255729a202a",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh201.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh201.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 5662676,
+        "sha256": "bc4b4a0b2d3ec8d71d479c0ea549969028c2ac28d3613e97a888e2845144112f",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh202.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh202.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 1395951,
+        "sha256": "d15f9a85ea9e3a478769a37f46db76decbe3505e2453ee165c075cd76906945f",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh203.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh203.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 3378135,
+        "sha256": "fb6505ab814389b54088295036dde2a803d75520df4f83b942f90f4755c09b58",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh204.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh204.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 5008653,
+        "sha256": "c41979c010dd06c60aebf29e2a22ff211eff8e5aa64e6f23377dcdf9afcee985",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh205.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh205.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 2062481,
+        "sha256": "f68fe586ef43f86f5d75dc3210b02860df7b65957133cb63a2ff498e563c1824",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh206.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh206.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 1567810,
+        "sha256": "279e24218606f8e26d821cfdbf904132dc3c7f9b4064670afd19499bee64e32b",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      },
+      {
+        "filename": "lemh207.pdf",
+        "present": true,
+        "path": "class12-source/pdfs/lemh207.pdf",
+        "valid": true,
+        "validation": "valid PDF signature",
+        "bytes": 2922597,
+        "sha256": "354482a4adbacf6ece1a6a3e2cf49e9b1034cdb0a8cd7831822f790d54cb2b85",
+        "acquisitionRoute": "owner_download_from_official_ncert_url_then_session_upload"
+      }
+    ],
+    "searchedPaths": [
+      "class12-source/pdfs",
+      "/mnt/user-data/uploads",
+      "class12-source",
+      "."
+    ],
+    "backMatterMissing": [
+      {
+        "what": "Part I Answers (folios 208-224)",
+        "filename": "lemh1an.pdf",
+        "filenameEvidence": "OWNER_REPORTED_FROM_OFFICIAL_NCERT_INDEX — not re-verified from this environment, where NCERT is unreachable",
+        "reason": "listed in Part I contents; no file supplied"
+      },
+      {
+        "what": "Appendix 1: Proofs in Mathematics (folios 187-195)",
+        "filename": null,
+        "reason": "listed in Part I contents; no file supplied; filename unverified"
+      },
+      {
+        "what": "Appendix 2: Mathematical Modelling (folios 196-207)",
+        "filename": null,
+        "reason": "listed in Part I contents; no file supplied; filename unverified"
+      },
+      {
+        "what": "Part II Answers (from folio 439)",
+        "filename": null,
+        "reason": "NEW at checkpoint 116: listed on the Part II contents page; no file supplied; filename unverified; end folio unknown"
+      },
+      {
+        "what": "Supplementary Material (folio 223) disposition",
+        "filename": null,
+        "reason": "overlaps the Part I Answers range; UNRESOLVED until the Answers file is inspected"
+      }
+    ],
+    "note": "The expected filenames come from the official NCERT URL family and are acquisition hints only. They establish nothing about edition, chapters, sections or pages."
+  },
+  "denominators": {
+    "chapters": {
+      "value": 13,
+      "status": "PRIMARY_SOURCE_VERIFIED"
+    },
+    "sections": {
+      "value": 65,
+      "status": "PRIMARY_SOURCE_VERIFIED"
+    },
+    "subsections": {
+      "value": 47,
+      "status": "PRIMARY_SOURCE_VERIFIED"
+    },
+    "pages": {
+      "value": null,
+      "status": "NOT_VERIFIED"
+    }
+  }
+}

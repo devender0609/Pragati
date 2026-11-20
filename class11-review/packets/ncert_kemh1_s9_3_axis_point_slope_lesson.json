@@ -1,0 +1,239 @@
+{
+  "priority": 4,
+  "contentArtifactId": "ncert_kemh1_s9_3_axis_point_slope_lesson",
+  "title": "You will write the equation of a line parallel to an axis, and build the point-slope form from the definition of slope rather than from memory.",
+  "placement": "chapter-9",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-STL-03, C11-STL-04",
+    "scope-fragment source"
+  ],
+  "artifactFingerprint": "b669a62bbdb4bd0a129ec5f6fb668999",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-STL-03",
+      "title": "Equations of lines parallel to the axes, and the point-slope form",
+      "objective": "Write the equation of a line parallel to an axis, and of a line through a given point with a given slope.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "coordinate graph",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s9_3_forms_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-STL-04",
+      "title": "Slope-intercept, two-point and intercept forms",
+      "objective": "Write the equation of a line in slope-intercept, two-point and intercept form and convert between them.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "coordinate graph",
+      "riskClass": "B",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s9_3_forms_lesson"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "scope_fragment",
+    "officialChapterId": "ncert_kemh1_ch09",
+    "officialSectionId": "ncert_kemh1_s9_3",
+    "sectionNumber": "9.3",
+    "cbseEntryId": null,
+    "startPage": 156,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "coordinate_line_graph"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will write the equation of a line parallel to an axis, and build the point-slope form from the definition of slope rather than from memory.",
+    "vocabulary": [
+      {
+        "term": "equation of a line",
+        "meaning": "A relation satisfied by the coordinates of every point of the line and by no others."
+      }
+    ],
+    "explanation": [
+      "An equation of a line is a condition its points satisfy. Two conditions must hold: every point of the line satisfies it, and no other point does.",
+      "Lines parallel to the axes are the simplest. On x = 3 every point has x-coordinate 3 whatever its height, so that single statement is the equation. On y = -2 every point has y-coordinate −2.",
+      "Now a line through a known point with a known slope. Let the point be (x₁, y₁) and let (x, y) be any other point of the line. The slope between them is (y − y₁)/(x − x₁), and that must equal m.",
+      "Multiplying through gives y − y₁ = m(x − x₁), the point-slope form. It is not a formula to remember separately: it is the definition of slope with the denominator cleared.",
+      "For the line through (1, 2) with slope 2, this gives y − 2 = 2(x − 1), and rearranging gives 2x − y = 0.",
+      "The form has a limit worth naming. It contains m, so it cannot describe a vertical line, which has no slope to substitute. That is not a gap in the geometry — x = 3 is a perfectly good equation — but a reminder that no single form covers every line."
+    ],
+    "workedExamples": [
+      {
+        "id": "s93.we1",
+        "prompt": "Write the equation of the vertical line through (3, 5).",
+        "answer": "x = 3",
+        "steps": [
+          {
+            "text": "A vertical line keeps the same x-coordinate at every height.",
+            "reasoning": "That is what being parallel to the y-axis means."
+          },
+          {
+            "text": "The point has x-coordinate 3, so every point of the line does: x = 3.",
+            "reasoning": "The y-coordinate is unconstrained, which is why it does not appear."
+          },
+          {
+            "text": "No slope is needed, and none is available.",
+            "reasoning": "The equation exists even though the point-slope form cannot produce it."
+          }
+        ]
+      },
+      {
+        "id": "s93.we2",
+        "prompt": "Derive the equation of the line through (1, 2) with slope 2.",
+        "answer": "y − 2 = 2(x − 1)",
+        "steps": [
+          {
+            "text": "Let (x, y) be any point of the line other than the given one.",
+            "reasoning": "The equation must describe every such point, so it starts from a general one."
+          },
+          {
+            "text": "The slope between the two points must be the given slope, by definition of the line.",
+            "reasoning": "This is the only condition the line imposes."
+          },
+          {
+            "text": "Clearing the denominator gives y − 2 = 2(x − 1), which rearranges to 2x − y = 0.",
+            "reasoning": "Nothing was memorised; the form is the slope definition with the fraction removed."
+          }
+        ]
+      },
+      {
+        "id": "s93.we3",
+        "prompt": "A student tries to write a vertical line in point-slope form. What goes wrong?",
+        "answer": "No slope exists to substitute; the line is written as x equals a constant instead.",
+        "steps": [
+          {
+            "text": "The form contains m, and a vertical line has no slope.",
+            "reasoning": "There is nothing to substitute, so the expression cannot be completed."
+          },
+          {
+            "text": "The line still has an equation, x = 3, written directly from the constant x-coordinate.",
+            "reasoning": "The limitation belongs to the form, not to the line."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s93.g1",
+        "prompt": "Write the equation of the horizontal line through (4, 7).",
+        "hint": "Which coordinate is fixed?",
+        "answer": "y = 7.",
+        "rationale": "Every point of a horizontal line has the same y-coordinate, and the x-coordinate is free."
+      },
+      {
+        "id": "s93.g2",
+        "prompt": "Write the line through (0, 1) with slope 3 in point-slope form.",
+        "hint": "Substitute into y − y₁ = m(x − x₁).",
+        "answer": "y − 1 = 3(x − 0).",
+        "rationale": "The given point supplies x₁ and y₁ and the given slope supplies m, directly from the derivation."
+      },
+      {
+        "id": "s93.g3",
+        "prompt": "Which lines cannot be written in point-slope form?",
+        "hint": "Which have no slope?",
+        "answer": "Vertical lines.",
+        "rationale": "The form requires a value for m, and a vertical line has none."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s93.i1",
+        "prompt": "Write the equation of the y-axis.",
+        "answer": "x = 0.",
+        "rationale": "Every point on it has x-coordinate zero, and its y-coordinate may be anything, so it is a vertical line through the origin."
+      },
+      {
+        "id": "s93.i2",
+        "prompt": "Does every point satisfying y − 2 = 2(x − 1) lie on the line through (1, 2) with slope 2?",
+        "answer": "Yes.",
+        "rationale": "The equation was derived as the condition for the slope to that point to equal 2, so satisfying it is exactly lying on the line."
+      },
+      {
+        "id": "s93.i3",
+        "prompt": "Why does the point-slope form need a point as well as a slope?",
+        "answer": "Because slope alone fixes only the direction.",
+        "rationale": "Infinitely many parallel lines share a slope; the point selects which one."
+      },
+      {
+        "id": "s93.i4",
+        "prompt": "Is (4, 8) on the line 2x − y = 0?",
+        "answer": "Yes: the point satisfies the equation.",
+        "rationale": "Substituting its coordinates satisfies the equation, which is precisely what being on the line means."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s93.td1",
+        "prompt": "Why does an equation of a line need to exclude points as well as include them?",
+        "expectedReasoning": "Because a condition satisfied by every point of the line but also by others would describe something larger. The equation y = 2x is satisfied by the points of one particular line and by nothing else, which is what makes it an equation of that line rather than of a region containing it. Both halves are needed: inclusion makes it describe the line, exclusion makes it describe only the line."
+      }
+    ],
+    "summary": "A line parallel to an axis is written by fixing the constant coordinate, such as x = 3 or y = -2. The point-slope form y − y₁ = m(x − x₁) is the definition of slope with the denominator cleared, and it cannot describe a vertical line, which has no slope.",
+    "visuals": [
+      {
+        "type": "coordinate_line_graph",
+        "caption": "A coordinate grid showing two lines parallel to the axes. The solid line is x = 3, running straight up and down so that every point on it has the same x-coordinate and it has no slope at all. The dashed line is y = -2, running flat so that every point has the same y-coordinate and its slope is 0.",
+        "altText": "A coordinate grid showing two lines parallel to the axes. The solid line is x = 3, running straight up and down so that every point on it has the same x-coordinate and it has no slope at all. The dashed line is y = -2, running flat so that every point has the same y-coordinate and its slope is 0."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-STL-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-STL-04",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

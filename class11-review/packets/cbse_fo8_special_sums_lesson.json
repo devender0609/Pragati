@@ -1,0 +1,233 @@
+{
+  "priority": 16,
+  "contentArtifactId": "cbse_fo8_special_sums_lesson",
+  "title": "You will use the closed forms for the sums of the first n natural numbers, their squares and their cubes.",
+  "placement": "chapter-less required",
+  "selectionReasons": [
+    "CBSE-only required content (FO-8)",
+    "chapter-less placement",
+    "new visual family: special_sum"
+  ],
+  "artifactFingerprint": "d2297c06c7424d875b9e8bf336dbe97f",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-SEQ-FO8",
+      "title": "Formulae for the special sums",
+      "objective": "Use the closed forms for the sum of the first n natural numbers, their squares and their cubes.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "sigma notation",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "cbse_only",
+    "officialChapterId": "cbse_fo8_c11_special_sums",
+    "officialSectionId": null,
+    "sectionNumber": null,
+    "cbseEntryId": "FO-8",
+    "startPage": 0,
+    "sourceReference": "cbse_fo8",
+    "note": "CBSE-only: no NCERT section or page exists for this content; empty section and page 0 are absence markers, not missing data"
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "special_sum"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will use the closed forms for the sums of the first n natural numbers, their squares and their cubes.",
+    "vocabulary": [
+      {
+        "term": "closed form",
+        "meaning": "A formula giving the total directly, without adding the terms one by one."
+      },
+      {
+        "term": "special sums",
+        "meaning": "The three standard finite sums: of k, of k squared, and of k cubed."
+      }
+    ],
+    "explanation": [
+      "You can already write a finite sum in sigma notation and expand it. Adding 1 + 2 + 3 + 4 + 5 + 6 is no trouble. Adding the first two hundred natural numbers the same way is.",
+      "Each of these three sums has a closed form: a formula that gives the same total without listing a single term. The formula does not change what the sum MEANS. It computes the same finite total by a shorter route.",
+      "For the first n natural numbers, the sum from k = 1 to n of k is n(n + 1)/2. At n = 6 that is 6 x 7 / 2 = 21, which is exactly what writing the terms out gives.",
+      "For their squares, the sum from k = 1 to n of k² is n(n + 1)(2n + 1)/6. At n = 6: 6(6 + 1)(2 × 6 + 1)/6 = 91. The summand is k², so each term is the square of the INDEX — not the square of the running total.",
+      "For their cubes, the sum from k = 1 to n of k³ is [n(n + 1)/2]². Read that carefully: it is the square of the natural-number sum, not the sum of the squares. At n = 6 the natural sum is 21, and 21 squared is 441.",
+      "Those two are genuinely different numbers. At n = 6 the sum of squares is 91 and the sum of cubes is 441. Confusing them is the single most common error here.",
+      "All three totals are whole numbers for every whole n, even though the formulas divide by 2 and by 6. That is not a coincidence: among n, n + 1 and 2n + 1 the product always carries the factors the division needs.",
+      "Choosing the formula is a matter of reading the summand. k means the first; k² the second; k³ the third. The bounds tell you n — the sum from k = 1 to n has n terms, and the upper bound IS the count only because the lower bound is 1."
+    ],
+    "workedExamples": [
+      {
+        "id": "fo8.we1",
+        "prompt": "Find the sum of the first 50 natural numbers.",
+        "answer": "1275",
+        "steps": [
+          {
+            "text": "The summand is k, so use n(n + 1)/2.",
+            "reasoning": "The terms are the counting numbers themselves."
+          },
+          {
+            "text": "Substitute n = 50: 50 x 51 / 2.",
+            "reasoning": "The division is exact because one of 50 and 51 is even."
+          },
+          {
+            "text": "The total is 1275.",
+            "reasoning": "Writing out fifty terms would give the same number."
+          }
+        ]
+      },
+      {
+        "id": "fo8.we2",
+        "prompt": "Find the sum from k = 1 to 10 of k². The formula is not named for you — read the summand.",
+        "answer": "385",
+        "steps": [
+          {
+            "text": "The summand is k², so this is the sum of squares.",
+            "reasoning": "Not k, so the natural-number formula does not apply."
+          },
+          {
+            "text": "Use n(n + 1)(2n + 1)/6 with n = 10: 10 x 11 x 21 / 6.",
+            "reasoning": "The upper bound gives n directly, since the sum starts at k = 1."
+          },
+          {
+            "text": "The total is 385.",
+            "reasoning": "Checking: 1 + 4 + 9 + ... + 100 adds to 385."
+          }
+        ]
+      },
+      {
+        "id": "fo8.we3",
+        "prompt": "Find the sum from k = 1 to 10 of k³.",
+        "answer": "3025",
+        "steps": [
+          {
+            "text": "The summand is k³, so use [n(n + 1)/2]².",
+            "reasoning": "That bracket is the natural-number sum, not the sum of squares."
+          },
+          {
+            "text": "First the natural sum at n = 10: 10 x 11 / 2 = 55.",
+            "reasoning": "This is the quantity that gets squared."
+          },
+          {
+            "text": "Then square it: 55² = 3025.",
+            "reasoning": "Note this is NOT 385², and not 385 either."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "fo8.g1",
+        "prompt": "Which formula sums k², and which sums k?",
+        "hint": "Read the summand, not the name.",
+        "answer": "n(n + 1)(2n + 1)/6 sums k²; n(n + 1)/2 sums k.",
+        "rationale": "The summand names what is being added."
+      },
+      {
+        "id": "fo8.g2",
+        "prompt": "The cube formula squares which quantity?",
+        "hint": "Look inside the bracket.",
+        "answer": "The natural-number sum n(n + 1)/2.",
+        "rationale": "The sum of cubes equals the square of the sum of the first n natural numbers."
+      },
+      {
+        "id": "fo8.g3",
+        "prompt": "How many terms are in the sum from k = 1 to 9?",
+        "hint": "Count from the lower bound.",
+        "answer": "Nine.",
+        "rationale": "Starting at k = 1, the upper bound is also the number of terms."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "fo8.i1",
+        "prompt": "A student computes the sum from k = 1 to 10 of k² and answers 55. What went wrong?",
+        "answer": "They used the wrong formula; the answer is 385.",
+        "rationale": "55 is n(n + 1)/2, which sums k, not k². The summand here is k², so each term is squared before adding."
+      },
+      {
+        "id": "fo8.i2",
+        "prompt": "Another student computes the sum from k = 1 to 10 of k³ by squaring 385. What went wrong?",
+        "answer": "They squared the wrong sum; the answer is 3025.",
+        "rationale": "The identity is the sum of cubes = (sum of k)², not (sum of k²)². The quantity to square is 55, giving 3025 — squaring 385 gives something far larger."
+      },
+      {
+        "id": "fo8.i3",
+        "prompt": "For the sum from k = 1 to 7 of k, a student substitutes n = 8 \"because there are 8 numbers from 0 to 7\". What went wrong?",
+        "answer": "n is 7, so the total is 28.",
+        "rationale": "The sum starts at k = 1, not k = 0. The bounds are 1 to 7, so there are seven terms and n = 7. Substituting 8 adds a term that is not in the sum."
+      },
+      {
+        "id": "fo8.i4",
+        "prompt": "Find the sum from k = 1 to 5 of k³.",
+        "answer": "225.",
+        "rationale": "The natural sum at n = 5 is 15, and 15 squared is 225."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "fo8.td1",
+        "prompt": "Compare the two closed forms for the sum of cubes and the sum of the first n natural numbers. What does the comparison tell you?",
+        "expectedReasoning": "The cube formula is literally the natural-number formula squared — [n(n + 1)/2]² against n(n + 1)/2. So the sum of the first n cubes is the square of the sum of the first n natural numbers, for every n, which is a surprising thing to be true: adding cubes and then stopping gives exactly the same number as adding the plain counting numbers and squaring the result. At n = 6 that is 441 either way. Noticing this is useful beyond the curiosity, because it gives a second route to the same answer and therefore a way to check your work. It is worth being careful about what it does NOT say: the sum of SQUARES has no such relationship, and squaring the sum of squares gives a different and much larger number."
+      }
+    ],
+    "summary": "Three closed forms: the sum of k is n(n + 1)/2, the sum of k² is n(n + 1)(2n + 1)/6, and the sum of k³ is [n(n + 1)/2]² — the square of the natural-number sum, not the sum of the squares. Choose by reading the summand, and take n from the upper bound, which counts the terms because the sum starts at k = 1. At n = 6 the three totals are 21, 91 and 441.",
+    "visuals": [
+      {
+        "type": "special_sum",
+        "caption": "The first six natural numbers",
+        "altText": "The sum from k = 1 to 6 of k, written out as 1 + 2 + 3 + 4 + 5 + 6, with closed form 6(6 + 1)/2 and exact total 21."
+      },
+      {
+        "type": "special_sum",
+        "caption": "The first six squares",
+        "altText": "The sum from k = 1 to 6 of k squared, written out as 1 + 4 + 9 + 16 + 25 + 36, with closed form 6(6 + 1)(2 × 6 + 1)/6 and exact total 91. Each term is the square of the index, not the square of the running total."
+      },
+      {
+        "type": "special_sum",
+        "caption": "The first six cubes",
+        "altText": "The sum from k = 1 to 6 of k cubed, written out as 1 + 8 + 27 + 64 + 125 + 216, with exact total 441. Its closed form is the square of the natural-number sum 21, not the sum of the squares."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-SEQ-FO8",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

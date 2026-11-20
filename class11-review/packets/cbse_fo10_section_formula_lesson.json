@@ -1,0 +1,232 @@
+{
+  "priority": 23,
+  "contentArtifactId": "cbse_fo10_section_formula_lesson",
+  "title": "You will find the point that divides a segment in space in a given ratio.",
+  "placement": "chapter-less required",
+  "selectionReasons": [
+    "CBSE-only required content (FO-10)",
+    "chapter-less placement"
+  ],
+  "artifactFingerprint": "3c0c9fe88ee394ff2b2a66933490d7ac",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-3DG-FO10",
+      "title": "Section formula in three dimensions",
+      "objective": "Find the point dividing a segment in space in a given ratio.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "3-D diagram",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "cbse_only",
+    "officialChapterId": "cbse_fo10_c11_section_formula",
+    "officialSectionId": null,
+    "sectionNumber": null,
+    "cbseEntryId": "FO-10",
+    "startPage": 0,
+    "sourceReference": "cbse_fo10",
+    "note": "CBSE-only: no NCERT section or page exists for this content; empty section and page 0 are absence markers, not missing data"
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "coordinate_3d"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will find the point that divides a segment in space in a given ratio.",
+    "vocabulary": [
+      {
+        "term": "divides internally",
+        "meaning": "Lies on the segment between the two endpoints, not beyond either."
+      },
+      {
+        "term": "ratio AP : PB",
+        "meaning": "How the point splits the segment: the part from A to P against the part from P to B."
+      }
+    ],
+    "explanation": [
+      "In a plane you already find the point dividing a segment in a given ratio by taking a weighted average of the two endpoints, one coordinate at a time. Space changes nothing about that idea. It only adds a third coordinate to average.",
+      "Say P divides AB internally so that AP : PB = m : n. Then each coordinate of P is the weighted average of the matching coordinates of A and B: P = (nA + mB) divided by (m + n).",
+      "The weights look backwards at first, and that is the one thing worth slowing down for. A LARGER m means a longer AP, which puts P further from A and closer to B — so B is the endpoint that carries m.",
+      "Checking it on the ends makes this concrete. If n is tiny, P sits almost at B; if m is tiny, P sits almost at A. The weight on an endpoint measures the distance to the OTHER one.",
+      "For A at (1, 2, 3) and B at (7, 8, 9) with AP : PB = 1 : 2, each coordinate takes two parts of A and one part of B, over three. That gives P at (3, 4, 5), one third of the way along.",
+      "The answer is kept exact. For (0, 0, 0) and (7, 11, 5) in the ratio 1 : 2 the point is (7/3, 11/3, 5/3) — fractions, not rounded decimals, because those fractions ARE the coordinates.",
+      "The midpoint is not a separate rule. It is this one with the ratio 1 : 1, where each coordinate is the plain average: (1, 2, 3) and (7, 8, 9) give (4, 5, 6).",
+      "And if the two endpoints share a coordinate, the formula still works and simply returns it. E and F are both at z = 5, so their dividing point is too: (7, 5, 5). The x and y come out exactly as the plane formula would give them."
+    ],
+    "workedExamples": [
+      {
+        "id": "fo10.we1",
+        "prompt": "Find the point dividing (1, 2, 3) to (7, 8, 9) in the ratio 1 : 2.",
+        "answer": "(3, 4, 5)",
+        "steps": [
+          {
+            "text": "Weight B by 1 and A by 2, then divide by 3.",
+            "reasoning": "The larger part of the ratio goes to the far endpoint."
+          },
+          {
+            "text": "For x: (2 x 1 + 1 x 7) / 3 = 3. The same for y and z.",
+            "reasoning": "One coordinate at a time, exactly as in a plane."
+          },
+          {
+            "text": "So the point is (3, 4, 5).",
+            "reasoning": "It sits a third of the way from A, which matches AP : PB = 1 : 2."
+          }
+        ]
+      },
+      {
+        "id": "fo10.we2",
+        "prompt": "Divide (0, 0, 0) to (7, 11, 5) in the ratio 1 : 2.",
+        "answer": "(7/3, 11/3, 5/3)",
+        "steps": [
+          {
+            "text": "Apply the same weighting.",
+            "reasoning": "Nothing about fractions changes the method."
+          },
+          {
+            "text": "For x: (2 x 0 + 1 x 7) / 3 = 7/3.",
+            "reasoning": "The result is not a whole number, and that is fine."
+          },
+          {
+            "text": "The point is (7/3, 11/3, 5/3), left exactly as fractions.",
+            "reasoning": "Rounding here would make later comparisons unreliable."
+          }
+        ]
+      },
+      {
+        "id": "fo10.we3",
+        "prompt": "Divide (1, 2, 5) to (9, 6, 5) in the ratio 3 : 1, where both ends are at the same height.",
+        "answer": "(7, 5, 5)",
+        "steps": [
+          {
+            "text": "Both z coordinates are 5.",
+            "reasoning": "A weighted average of 5 and 5 is 5, whatever the weights."
+          },
+          {
+            "text": "So z stays 5, and only x and y move: (7, 5, 5).",
+            "reasoning": "The formula handles a constant coordinate without a special case."
+          },
+          {
+            "text": "Those x and y are exactly what the plane formula gives for (1, 2) and (9, 6).",
+            "reasoning": "The space formula contains the plane one rather than replacing it."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "fo10.g1",
+        "prompt": "In AP : PB = m : n, which endpoint carries m?",
+        "hint": "Which end does a larger m move P toward?",
+        "answer": "B, the far endpoint.",
+        "rationale": "A larger m means a longer AP, so P moves toward B."
+      },
+      {
+        "id": "fo10.g2",
+        "prompt": "What ratio gives the midpoint?",
+        "hint": "Equal parts.",
+        "answer": "1 : 1.",
+        "rationale": "Equal weights make each coordinate the plain average."
+      },
+      {
+        "id": "fo10.g3",
+        "prompt": "Both endpoints have z = 4. What is z at the dividing point?",
+        "hint": "Average of 4 and 4.",
+        "answer": "4.",
+        "rationale": "A weighted average of equal values is that value."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "fo10.i1",
+        "prompt": "Divide (0, 0, 0) to (6, 9, 3) in the ratio 1 : 2.",
+        "answer": "(2, 3, 1).",
+        "rationale": "Two parts of the first end and one of the second, over three."
+      },
+      {
+        "id": "fo10.i2",
+        "prompt": "A student divides (1, 2, 3) to (7, 8, 9) in the ratio 1 : 2 and writes (5, 6, 7). What went wrong?",
+        "answer": "The weights were reversed.",
+        "rationale": "(5, 6, 7) is the 2 : 1 point. A larger first part pulls P toward B, so B carries m, not A. The correct answer is (3, 4, 5)."
+      },
+      {
+        "id": "fo10.i3",
+        "prompt": "Can the ratio 0 : 1 divide a segment internally?",
+        "answer": "No.",
+        "rationale": "A zero part would put the point at an endpoint rather than between them."
+      },
+      {
+        "id": "fo10.i4",
+        "prompt": "Is (7/3, 11/3, 5/3) or (2.33, 3.67, 1.67) the dividing point?",
+        "answer": "(7/3, 11/3, 5/3).",
+        "rationale": "The decimal is a rounded description of it."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "fo10.td1",
+        "prompt": "Swapping the ratio from m : n to n : m moves the point somewhere specific. Where, and why?",
+        "expectedReasoning": "It lands on the mirror image of the original point through the midpoint. Each coordinate is a weighted average, and swapping the weights swaps how far the result sits from each end: a point one third from A becomes one third from B. The midpoint is the one place this changes nothing, because 1 : 1 is its own swap — which is another way of seeing that the midpoint is the balance point of the segment. It also explains why the ratio must say which end it starts from: m : n is a statement about AP first and PB second, and reading it the other way round gives a different, equally valid point."
+      }
+    ],
+    "summary": "A point dividing AB internally in the ratio AP : PB = m : n has each coordinate equal to (n times A plus m times B) over (m + n). B carries m because a larger m lengthens AP and pulls the point toward B. The method is the plane formula with one more coordinate, the midpoint is the 1 : 1 case, and results stay exact: (0, 0, 0) to (7, 11, 5) in 1 : 2 gives (7/3, 11/3, 5/3), not a decimal.",
+    "visuals": [
+      {
+        "type": "coordinate_3d",
+        "caption": "P divides AB internally in the ratio 1 : 2",
+        "altText": "A three-dimensional axis diagram with A at (1, 2, 3) and B at (7, 8, 9) joined by a straight segment, and P at (3, 4, 5) marked on that segment between them. P lies internally, one third of the way from A, because AP : PB is 1 : 2."
+      },
+      {
+        "type": "coordinate_3d",
+        "caption": "A division whose coordinates are not whole numbers",
+        "altText": "A three-dimensional axis diagram with C at (0, 0, 0) and D at (7, 11, 5) joined by a segment, and Q at (7/3, 11/3, 5/3) marked on it. Q divides the segment internally, lying between C and D, with CQ : QD = 1 : 2. Its coordinates are exact fractions, not rounded decimals."
+      },
+      {
+        "type": "coordinate_3d",
+        "caption": "A segment at constant height",
+        "altText": "A three-dimensional axis diagram with E at (1, 2, 5) and F at (9, 6, 5), both at z = 5, joined by a segment with R at (7, 5, 5) on it. R divides the segment internally, lying between E and F, with ER : RF = 3 : 1. Because the two heights are equal the z coordinate of R is also 5, and the x and y coordinates are what the flat section formula would give."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-3DG-FO10",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

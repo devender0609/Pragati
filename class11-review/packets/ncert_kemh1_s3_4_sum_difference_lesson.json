@@ -1,0 +1,235 @@
+{
+  "priority": 6,
+  "contentArtifactId": "ncert_kemh1_s3_4_sum_difference_lesson",
+  "title": "You will derive the sine and cosine of a sum and a difference of two angles, and use them to find values the standard angles alone could not give.",
+  "placement": "chapter-3",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "covers a tracked shared source key",
+    "shares unit(s) with another lesson: C11-TRG-06, C11-TRG-07",
+    "risk class C"
+  ],
+  "artifactFingerprint": "e8aba9128c52ea2cbc7d2995ccd12c9e",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-TRG-06",
+      "title": "Sum and difference identities",
+      "objective": "Express sin and cos of a sum or difference in terms of the component angles and apply the results.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROOF_DEEPENING",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "identity statements; no figure required",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-TRG-07",
+      "title": "Identities for multiple and half angles",
+      "objective": "Deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROOF_DEEPENING",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "identity statements",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s3_4_multiple_angles_lesson"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch03",
+    "officialSectionId": "ncert_kemh1_s3_4",
+    "sectionNumber": "3.4",
+    "cbseEntryId": null,
+    "startPage": 49,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will derive the sine and cosine of a sum and a difference of two angles, and use them to find values the standard angles alone could not give.",
+    "vocabulary": [
+      {
+        "term": "identity",
+        "meaning": "An equation true for every value of the variables for which both sides are defined."
+      }
+    ],
+    "explanation": [
+      "An identity is not an equation to solve. It holds for every argument, so it can be used as a substitution anywhere.",
+      "The central result is the cosine of a difference. Take two angles x and y, and the points on the unit circle at those angles. The distance between them can be computed in two ways: from the coordinates, and from the fact that the same chord subtends the angle x minus y at the centre. Setting the two expressions equal and simplifying with sin² + cos² = 1 gives cos(x − y) = cos x cos y + sin x sin y.",
+      "Notice the sign. The cosine of a difference carries a plus between the products, and the cosine of a sum carries a minus. Replacing y by −y in the result above, and using that cos is unchanged by a change of sign while sin reverses, gives cos(x + y) = cos x cos y − sin x sin y.",
+      "The sine results follow from the same identity by shifting through a right angle: sin(x + y) = sin x cos y + cos x sin y, and sin(x − y) = sin x cos y − cos x sin y. Here the sine of a sum carries the plus, which is the opposite way round from cosine and the most common place to slip.",
+      "Dividing the sine result by the cosine result gives the tangent of a sum, tan(x + y) = (tan x + tan y) / (1 − tan x tan y), valid wherever every tangent in it is defined and the denominator is not zero.",
+      "These let us reach angles the standard table does not list. For instance 15° is 45° − 30°, so cos 15° can be written from values we already have, even though 15° has no row of its own."
+    ],
+    "workedExamples": [
+      {
+        "id": "s34.we1",
+        "prompt": "Derive cos(x + y) from cos(x − y).",
+        "answer": "cos(x + y) = cos x cos y − sin x sin y.",
+        "steps": [
+          {
+            "text": "Start from cos(x − y) = cos x cos y + sin x sin y, which the chord argument established.",
+            "reasoning": "The sum result is not derived afresh; it is obtained from the difference result."
+          },
+          {
+            "text": "Replace y by −y throughout. The left side becomes cos(x + y).",
+            "reasoning": "Substitution is legitimate because an identity holds for every value of its variables."
+          },
+          {
+            "text": "On the right, cos(−y) = cos y because cos is the x-coordinate and reflecting the angle does not move it, while sin(−y) = −sin y because the y-coordinate reverses.",
+            "reasoning": "These two facts come from the circle, not from a separate rule."
+          },
+          {
+            "text": "So cos(x + y) = cos x cos y − sin x sin y.",
+            "reasoning": "The sign change in the second term is produced by the substitution, which is why it must be the other way round from the difference."
+          }
+        ]
+      },
+      {
+        "id": "s34.we2",
+        "prompt": "Find cos 15° using the difference identity.",
+        "answer": "cos 15° = cos 45° cos 30° + sin 45° sin 30°, evaluated exactly from the standard values.",
+        "steps": [
+          {
+            "text": "Write 15° as 45° − 30°, both of which are standard angles.",
+            "reasoning": "The identity turns an unlisted angle into two listed ones."
+          },
+          {
+            "text": "Apply cos(x − y) = cos x cos y + sin x sin y with those values: cos 45° = √2/2, cos 30° = √3/2, sin 45° = √2/2, sin 30° = 1/2.",
+            "reasoning": "Each value comes from the unit circle, so the result is exact."
+          },
+          {
+            "text": "Substituting and simplifying gives cos 15° as an exact surd expression.",
+            "reasoning": "No decimal is needed at any point, which is the advantage of working from exact coordinates."
+          }
+        ]
+      },
+      {
+        "id": "s34.we3",
+        "prompt": "A student writes sin(x − y) = sin x cos y + cos x sin y. What has gone wrong?",
+        "answer": "sin(x − y) = sin x cos y − cos x sin y.",
+        "steps": [
+          {
+            "text": "They have used the plus belonging to the sine of a SUM.",
+            "reasoning": "The sine identities differ only in that sign, so the two are easy to exchange."
+          },
+          {
+            "text": "The difference carries a minus: sin(x − y) = sin x cos y − cos x sin y.",
+            "reasoning": "A quick check at x = y makes the error visible: the correct form gives sin 0 = 0, while theirs gives 2 sin x cos x, which is not zero in general."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s34.g1",
+        "prompt": "Write cos(x − y) in terms of functions of x and y.",
+        "hint": "Which sign sits between the products?",
+        "answer": "cos x cos y + sin x sin y.",
+        "rationale": "The cosine of a difference takes the plus sign; the cosine of a sum takes the minus."
+      },
+      {
+        "id": "s34.g2",
+        "prompt": "Write sin(x + y).",
+        "hint": "Which sign for a sum?",
+        "answer": "sin x cos y + cos x sin y.",
+        "rationale": "The sine identities carry the same sign as the operation, which is the reverse of the cosine ones."
+      },
+      {
+        "id": "s34.g3",
+        "prompt": "Why is tan(x + y) only valid where the denominator is not zero?",
+        "hint": "It came from a division.",
+        "answer": "Because the identity was obtained by dividing, and a zero denominator leaves the quotient undefined.",
+        "rationale": "Where 1 − tan x tan y is zero the right side has no value, so the identity makes no claim there."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s34.i1",
+        "prompt": "Express sin 75° using standard angles.",
+        "answer": "sin(45° + 30°) = sin 45° cos 30° + cos 45° sin 30°.",
+        "rationale": "Splitting 75° into two standard angles lets exact values be substituted, giving an exact surd rather than a decimal."
+      },
+      {
+        "id": "s34.i2",
+        "prompt": "Check the sum identity for cosine at x = y = 0.",
+        "answer": "Both sides give 1.",
+        "rationale": "cos 0 is 1 and sin 0 is 0, so the right side is 1 × 1 − 0 × 0 = 1, matching cos 0."
+      },
+      {
+        "id": "s34.i3",
+        "prompt": "Does checking an identity at three angles prove it?",
+        "answer": "No.",
+        "rationale": "An identity claims something for every argument, and finitely many agreements cannot establish infinitely many cases. A check can only reveal an error."
+      },
+      {
+        "id": "s34.i4",
+        "prompt": "Why does cos(−y) = cos y?",
+        "answer": "Because cos is the x-coordinate, and reflecting an angle in the x-axis leaves that coordinate unchanged.",
+        "rationale": "The reflection reverses the y-coordinate only, which is why sin changes sign and cos does not."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s34.td1",
+        "prompt": "Why are the signs in the cosine identities the reverse of those in the sine identities?",
+        "expectedReasoning": "Because the cosine identity comes from a distance, which is symmetric in the two points, while the sine identity comes from it by a shift through a right angle, and that shift carries sin into cos and cos into minus sin. The reversed sign is inherited from the minus in that exchange. It is not an arbitrary convention to be memorised, and the x = y check in worked example 3 recovers the right version in a few seconds if memory fails."
+      }
+    ],
+    "summary": "cos(x − y) = cos x cos y + sin x sin y is derived from the distance between two unit-circle points; replacing y by −y gives the sum form with the opposite sign. The sine identities carry the sign of the operation, and the tangent form follows by division wherever its denominator is not zero.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-TRG-06",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-TRG-07",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

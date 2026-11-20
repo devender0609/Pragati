@@ -1,0 +1,230 @@
+{
+  "checkpoint": "93B-first-green",
+  "canonicalVersion": "0.84.0-c11.33-statistics-pilot",
+  "packageKind": "FIRST_GREEN \u2014 created on primary-gate success, before hardening",
+  "verdict": "CLASS_11_STATISTICS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_REUSED_GROUPED_DISTRIBUTION_DISPERSION_EXTENSION",
+  "packageCreatedUtc": "2026-11-13T16:20:46Z",
+  "phase0": {
+    "correctionsMade": 3,
+    "provenanceCorrectionRecordsRetained": 5,
+    "unitCount": 7,
+    "sta08Invented": false,
+    "verifiedInAuthoredArtifacts": true,
+    "artifactProvenance": {
+      "STA-03": {
+        "section": "13.4",
+        "covered": [
+          "13.4.1",
+          "13.4.2"
+        ]
+      },
+      "STA-04": {
+        "section": "13.4",
+        "covered": [
+          "13.4.1",
+          "13.4.2"
+        ],
+        "was": "13.4.2 alone"
+      },
+      "STA-05": {
+        "section": "13.5",
+        "covered": [
+          "13.5.1"
+        ]
+      },
+      "STA-06": {
+        "section": "13.5",
+        "covered": [
+          "13.5.2",
+          "13.5.3"
+        ],
+        "was": "13.5.2 alone"
+      },
+      "STA-07": {
+        "section": "13.5",
+        "subsection": "13.5.4",
+        "was": "13.5.3"
+      }
+    },
+    "instructionalVsSourceOrganisation": "lessons split by mean/median; source splits by ungrouped/grouped; recorded, not hidden"
+  },
+  "cleanup": {
+    "deadImportsRemoved": [
+      "median",
+      "methodsReconcile"
+    ],
+    "artificialReferencesAdded": false
+  },
+  "qa": {
+    "targetedStatistics": 31,
+    "tests": 3049,
+    "testFiles": 140,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0
+  },
+  "class10Regression": {
+    "directMean": 14,
+    "classMark": 5,
+    "medianReturns": true,
+    "modeReturns": true,
+    "secondGroupedModelDeclared": false,
+    "outputsAltered": false
+  },
+  "oracles": {
+    "groupedVsExpanded": {
+      "variance": 49,
+      "agrees": true,
+      "formulaVerifiesItself": false
+    },
+    "shortcutVsDirect": {
+      "assumedMeans": [
+        0,
+        5,
+        15,
+        25
+      ],
+      "allAgree": true
+    },
+    "unequalWidth": {
+      "refused": true,
+      "hInvented": false
+    },
+    "translation": {
+      "varianceUnchanged": true,
+      "meanShiftsByConstant": true
+    },
+    "scale": {
+      "k": 3,
+      "rangeTimes": 3,
+      "sdTimes": 3,
+      "varianceTimes": 9
+    },
+    "meanDeviationCentres": {
+      "aboutMean": 5.12,
+      "aboutMedian": 3.6,
+      "oneOperator": true
+    },
+    "signedDeviationsTotalZeroWhileMdNonzero": true,
+    "denominator": {
+      "used": "n",
+      "nMinusOneDiffers": true,
+      "nMinusOneInProduct": false
+    }
+  },
+  "browser": {
+    "lessons": "7/7",
+    "stages": "35/35",
+    "finish": "7/7",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "productEvidence": {
+    "STA-01": "same centre, different spread rendered",
+    "STA-02": "largest, smallest, range, limitation",
+    "STA-03": "absolute deviation + frequency weighting",
+    "STA-04": "both centres named; not the mean-centred table re-rendered",
+    "STA-05": "squared deviations with variance and standard deviation",
+    "STA-06": "discrete AND continuous rendered; provenance not wider than content",
+    "STA-07": {
+      "stepDeviation": true,
+      "directResultShown": true,
+      "agreementLanguage": true,
+      "variance49VisibleToStudent": true,
+      "criticalGate": "passed"
+    }
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "leaks": 0,
+    "corpus": 81
+  },
+  "catalogue": {
+    "officialTextbookChapters": 12,
+    "chapterOwnedLessons": 80,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 81,
+    "officialSections": 45,
+    "chapter13Rows": 7,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14
+    ],
+    "chapter11Present": false
+  },
+  "sectionDenominator": {
+    "value": 45,
+    "added": [
+      "13.2",
+      "13.3",
+      "13.4",
+      "13.5"
+    ],
+    "section131Counted": false,
+    "reason": "Introduction has no decomposed lesson; counting it would give 46",
+    "subsectionsCountedAsSections": false
+  },
+  "chapter13Status": {
+    "fullyAuthoredCurrentScope": true,
+    "formativeExtensionExists": false,
+    "humanReviewed": false
+  },
+  "environmentHygiene": {
+    "envLocalRemoved": true,
+    "distDeletedBeforeRebuild": true
+  },
+  "publicSafe": {
+    "chapter13Shown": false,
+    "rows": 0,
+    "tableRoots": 0,
+    "visualRoots": 0,
+    "directRoutesContent": false
+  },
+  "priorWork": {
+    "class11PriorLessons": 74,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "formativeExtensions": {
+    "C11-SEQ-FO8": "unauthored",
+    "C11-LIM-FO11": "unauthored"
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "accessibility",
+    "keyboard/focus",
+    "persistence"
+  ],
+  "next": {
+    "options": [
+      "Linear Inequalities",
+      "3-D Geometry"
+    ],
+    "fo8OrFo11Automatic": false,
+    "hardeningWatch": "wide statistics tables at 360px"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "checkpoint": "109",
+  "canonicalVersion": "0.84.0-c12.02-source-acquisition-blocked",
+  "verdict": "CLASS_12_SOURCE_SET_INCOMPLETE",
+  "packageCreatedUtc": "2026-11-19T22:32:44Z",
+  "baseVerifiedLocally": {
+    "archive": "pragati-0.84.0-c12.01-source-gate.zip",
+    "sha256": "d78ae510ee27af9c4ba291f9160901b99a35fc8ce94355631adb62ccc9e1b704",
+    "match": true,
+    "bytes": 87931220,
+    "note": "handoff warned ChatGPT received the wrong archive; verified here rather than trusted"
+  },
+  "acquisition": {
+    "result": "FAILED",
+    "cause": "official source hosts unreachable from this environment",
+    "hosts": {
+      "ncert.nic.in": 503,
+      "www.ncert.nic.in": 503,
+      "epathshala.nic.in": 503,
+      "cbseacademic.nic.in": 503,
+      "www.cbse.gov.in": 200
+    },
+    "networkControl": {
+      "example.com": 200,
+      "www.nic.in": 302,
+      "dnsResolves": "ncert.nic.in 45.127.73.36"
+    },
+    "diagnosis": "host-specific refusal at the egress proxy, not a container network failure"
+  },
+  "secondaryEvidence": {
+    "usedFor": "confirming which files to request only",
+    "found": [
+      "lemh1 Part I",
+      "lemh2 Part II",
+      "lemh1ps/lemh101 naming",
+      "appendix files lemh1a1/a2/an",
+      "mirrors report 13 chapters"
+    ],
+    "notUsedFor": "any denominator, structure, edition or scope claim",
+    "rejected": [
+      "archive.org 2019-era scan \u2014 real but stale and not official infrastructure",
+      "coaching sites",
+      "blog chapter lists"
+    ]
+  },
+  "denominators": {
+    "chapters": null,
+    "sections": null,
+    "subsections": null,
+    "pages": null,
+    "status": "NOT_VERIFIED"
+  },
+  "priorMemoryClaim": {
+    "claim": "13 chapters, 65 sections",
+    "status": "STILL_NOT_VERIFIED"
+  },
+  "legacyAudit": {
+    "class12AuthoredArtifacts": 0,
+    "totalAuthoredArtifacts": 259,
+    "verdict": "NO_LEGACY_CLASS12_LEARN_CONTENT"
+  },
+  "openPolicyQuestions": 5,
+  "newQuestion": "C12-Q5 how to obtain primary sources when official hosts are unreachable",
+  "class11Freeze": {
+    "tests": 7,
+    "passed": 7,
+    "units": 93,
+    "artifacts": 90,
+    "coverage": "93 / 93",
+    "queue": 0,
+    "lifecycle": {
+      "sent": 0,
+      "humanReviewed": 0,
+      "adjudicated": 0,
+      "published": 0
+    },
+    "packets": 25,
+    "fingerprintsMatch": true,
+    "gate": "AWAITING_HUMAN_REVIEW"
+  },
+  "notAttempted": [
+    "checksums",
+    "edition evidence",
+    "page ledger",
+    "section extents",
+    "section intents",
+    "subsection records",
+    "misc exercise scopes",
+    "CBSE units",
+    "decomposition",
+    "prerequisite graph",
+    "transition audit"
+  ],
+  "qa": {
+    "files": 151,
+    "tests": 3224,
+    "failures": 0,
+    "typecheckExit": 0,
+    "class11StateChanged": false,
+    "lessonsAltered": 0
+  },
+  "next": "owner uploads the NCERT Class 12 source set and CBSE Class XII syllabus to /mnt/user-data/uploads, as Class 8 and Class 11 sources arrived"
+}

@@ -1,0 +1,207 @@
+{
+ "generatedBy": "tools/class12/buildHierarchy.py (checkpoint 116, c12.08)",
+ "gate": {
+  "allThirteenChaptersRepresented": true,
+  "noSectionNumberingGaps": true,
+  "noDuplicatePrintedSectionNumbers": true,
+  "subsectionsCorrectlyParentedNoGapsNoDuplicates": true,
+  "everySectionHasSourceLocation": true,
+  "everySectionAgreesWithPrintedContents": true,
+  "everySectionStartVerified": true,
+  "everySectionEndVerified": true,
+  "everyPageFolioMatchesContentsMapping": true,
+  "headingsMonotonicInReadingOrder": true
+ },
+ "gatePassed": true,
+ "result": {
+  "sections": 65,
+  "subsections": 47
+ },
+ "perChapterSections": {
+  "1": 4,
+  "2": 3,
+  "3": 7,
+  "4": 6,
+  "5": 7,
+  "6": 4,
+  "7": 10,
+  "8": 2,
+  "9": 4,
+  "10": 6,
+  "11": 5,
+  "12": 2,
+  "13": 5
+ },
+ "perChapterSubsections": {
+  "1": 0,
+  "2": 0,
+  "3": 9,
+  "4": 5,
+  "5": 4,
+  "6": 1,
+  "7": 8,
+  "8": 0,
+  "9": 5,
+  "10": 6,
+  "11": 4,
+  "12": 2,
+  "13": 3
+ },
+ "gaps": "none",
+ "duplicates": "none",
+ "subsectionIssues": "none",
+ "folioMismatches": "none",
+ "readingOrderInversions": "none",
+ "boundaryNotVerified": "none",
+ "contentsCrossCheck": {
+  "sectionsCompared": 65,
+  "mismatches": []
+ },
+ "folioContinuity": [
+  {
+   "chapter": 1,
+   "startFolio": 1,
+   "endFolio": 17,
+   "pdfPages": 17,
+   "nextStart": 18,
+   "nextIs": "chapter 2",
+   "contiguous": true
+  },
+  {
+   "chapter": 2,
+   "startFolio": 18,
+   "endFolio": 33,
+   "pdfPages": 16,
+   "nextStart": 34,
+   "nextIs": "chapter 3",
+   "contiguous": true
+  },
+  {
+   "chapter": 3,
+   "startFolio": 34,
+   "endFolio": 75,
+   "pdfPages": 42,
+   "nextStart": 76,
+   "nextIs": "chapter 4",
+   "contiguous": true
+  },
+  {
+   "chapter": 4,
+   "startFolio": 76,
+   "endFolio": 103,
+   "pdfPages": 28,
+   "nextStart": 104,
+   "nextIs": "chapter 5",
+   "contiguous": true
+  },
+  {
+   "chapter": 5,
+   "startFolio": 104,
+   "endFolio": 146,
+   "pdfPages": 43,
+   "nextStart": 147,
+   "nextIs": "chapter 6",
+   "contiguous": true
+  },
+  {
+   "chapter": 6,
+   "startFolio": 147,
+   "endFolio": 186,
+   "pdfPages": 40,
+   "nextStart": 187,
+   "nextIs": "Appendix 1: Proofs in Mathematics",
+   "contiguous": true
+  },
+  {
+   "chapter": 7,
+   "startFolio": 225,
+   "endFolio": 291,
+   "pdfPages": 67,
+   "nextStart": 292,
+   "nextIs": "chapter 8",
+   "contiguous": true
+  },
+  {
+   "chapter": 8,
+   "startFolio": 292,
+   "endFolio": 299,
+   "pdfPages": 8,
+   "nextStart": 300,
+   "nextIs": "chapter 9",
+   "contiguous": true
+  },
+  {
+   "chapter": 9,
+   "startFolio": 300,
+   "endFolio": 337,
+   "pdfPages": 38,
+   "nextStart": 338,
+   "nextIs": "chapter 10",
+   "contiguous": true
+  },
+  {
+   "chapter": 10,
+   "startFolio": 338,
+   "endFolio": 376,
+   "pdfPages": 39,
+   "nextStart": 377,
+   "nextIs": "chapter 11",
+   "contiguous": true
+  },
+  {
+   "chapter": 11,
+   "startFolio": 377,
+   "endFolio": 393,
+   "pdfPages": 17,
+   "nextStart": 394,
+   "nextIs": "chapter 12",
+   "contiguous": true
+  },
+  {
+   "chapter": 12,
+   "startFolio": 394,
+   "endFolio": 405,
+   "pdfPages": 12,
+   "nextStart": 406,
+   "nextIs": "chapter 13",
+   "contiguous": true
+  },
+  {
+   "chapter": 13,
+   "startFolio": 406,
+   "endFolio": 438,
+   "pdfPages": 33,
+   "nextStart": 439,
+   "nextIs": "Answers",
+   "contiguous": true
+  }
+ ],
+ "visuallyInspected": [
+  {
+   "file": "lemh105.pdf",
+   "pdfPage": 1,
+   "why": "sidebar caption merged into 5.2 heading line"
+  },
+  {
+   "file": "lemh201.pdf",
+   "pdfPage": 38,
+   "why": "notation inside 7.6.1 heading"
+  },
+  {
+   "file": "lemh201.pdf",
+   "pdfPage": 43,
+   "why": "four headings on one page (7.7, 7.8, 7.8.1, 7.8.2); 7.7 is one paragraph"
+  },
+  {
+   "file": "lemh201.pdf",
+   "pdfPage": 44,
+   "why": "7.8.3 at page top (page-break heading)"
+  },
+  {
+   "file": "lemh204.pdf",
+   "pdfPage": 18,
+   "why": "10.6.1 near page bottom"
+  }
+ ],
+ "independence": "Sections are corroborated by two independent sources: the recall-first sweep of the chapter files and the printed Contents pages of both prelims (number, title and start folio). Subsections do not appear on the Contents pages; they rest on the sweep plus line-level location, numbering and parent checks."
+}

@@ -1,0 +1,175 @@
+{
+  "checkpoint": 82,
+  "canonicalVersion": "0.84.0-c11.11-browser-gates",
+  "verdict": "CLASS_11_RELATIONS_FUNCTIONS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_FUNCTION_SEMANTICS_EXTENSION",
+  "packageCreatedUtc": "2026-10-29T20:23:55Z",
+  "rootCause": "the harness walked the onboarding wizard and set a grade select that creates a teacher classroom, never a Student record; the app fell back to Class 6 and the script reported stages against a welcome screen",
+  "gradeAuthority": {
+    "key": "pragati.students.v1",
+    "resolvedBy": "App.tsx active student then normalizeGrade(active.grade)",
+    "notAuthoritative": "pragati.selected_grade.v1",
+    "assertedByTest": true
+  },
+  "harness": {
+    "module": "tools/browser-qa/studentFixture.mjs",
+    "reusable": true,
+    "sequence": [
+      "navigate to origin first",
+      "clear owned fixture keys",
+      "seed canonical Student plus app mode and onboarding",
+      "reload",
+      "enter Learn by the real route",
+      "assert a product-visible grade and throw on Class 6"
+    ],
+    "productBypassAdded": false,
+    "regressionTests": 8
+  },
+  "activation": {
+    "renderedGrade": "Class 11 Mathematics",
+    "previewNotice": true,
+    "catalogue": {
+      "chapters": [
+        {
+          "n": 1,
+          "title": "Sets",
+          "lessons": 12
+        },
+        {
+          "n": 2,
+          "title": "Relations and Functions",
+          "lessons": 6
+        },
+        {
+          "n": 3,
+          "title": "Trigonometric Functions",
+          "lessons": 8
+        }
+      ],
+      "total": 26
+    },
+    "chapter2": {
+      "rows": 6,
+      "unique": 6,
+      "nonClass11Rows": 0
+    }
+  },
+  "walkthrough": {
+    "lessons": "6/6",
+    "stages": "5/5 plus Finish",
+    "maxOverflow": "0px"
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "pageOverflow": "0px",
+      "elementsWiderThanViewport": 0,
+      "clippedTextNodes": 0
+    },
+    {
+      "width": 834,
+      "pageOverflow": "0px",
+      "elementsWiderThanViewport": 0,
+      "clippedTextNodes": 0
+    },
+    {
+      "width": 360,
+      "pageOverflow": "0px",
+      "elementsWiderThanViewport": 0,
+      "clippedTextNodes": 0
+    }
+  ],
+  "defects": [
+    {
+      "category": "product",
+      "what": "VisualSpec contained neither circular_graph nor real_function_graph, so every Class 11 function graph from checkpoints 80 and 81 rendered as nothing",
+      "evidence": "before fix 14 SVGs all decorative, 0 named",
+      "fix": "both specs added to the union and validateVisual; one BranchedGraph component renders both, each branch its own polyline",
+      "survivedCheckpoints": 2,
+      "caughtBy": "the browser gate, not unit tests"
+    },
+    {
+      "category": "harness",
+      "what": "a leftover .env.local leaked the preview flag into the test run; 19 tests failed with public-safe returning 26 instead of 0",
+      "fix": "removed; the gate was working correctly"
+    }
+  ],
+  "graphFidelity": {
+    "svgs": 18,
+    "named": 4,
+    "modulus": "1 curve",
+    "signum": "3 branches",
+    "greatestInteger": "7 steps",
+    "reciprocal": "2 branches, excluded argument marked not bridged"
+  },
+  "accessibility": {
+    "graphsNamed": "4/4 with role=img, aria-label and title",
+    "altTextChars": [
+      205,
+      271,
+      224,
+      165
+    ],
+    "namesFunction": true,
+    "describesBehaviour": true,
+    "colourDependent": false,
+    "stageControls": 11,
+    "allRealButtons": true,
+    "allFocusable": true,
+    "imagesMissingAlt": 0,
+    "notClaimed": "no screen reader used, no contrast measured, no WCAG conformance claim"
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0,
+    "uncaught": 0
+  },
+  "persistence": {
+    "afterFinishAndReload": [
+      "1 of 26 done",
+      "0 of 12 done",
+      "1 of 6 done"
+    ]
+  },
+  "publicSafe": {
+    "class11WithoutFlag": 0,
+    "class11WithFlag": 26
+  },
+  "artifactVersions": {
+    "changed": 0,
+    "class11": 26,
+    "allVersion1": true
+  },
+  "qa": {
+    "tests": 2662,
+    "testFiles": 128,
+    "typecheck": 0,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass",
+    "previousTotal": 2654,
+    "addedByHarnessRegressions": 8
+  },
+  "priorWork": {
+    "class9": 92,
+    "class10": 65,
+    "class6": "S74-v1-DFC56A frozen",
+    "class11": 26,
+    "contentChanged": false
+  },
+  "humanCheckUnits": {
+    "C11-IND-01": "untouched",
+    "C11-INQ-FO6": "untouched"
+  },
+  "growth": "FROZEN",
+  "assessment": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED"
+  },
+  "gitPreflight": ".git is not present in the packaged source, so the queries could not be run; stated rather than guessed. Matters more now because the harness lives in tools/browser-qa/",
+  "next": {
+    "recommendation": "Chapter 4 Complex Numbers",
+    "executed": false,
+    "carryForward": "a visual can validate perfectly and still render as nothing; wire any Argand spec into VisualSpec and the dispatch in the same checkpoint that creates it, and browser-check before closing"
+  }
+}

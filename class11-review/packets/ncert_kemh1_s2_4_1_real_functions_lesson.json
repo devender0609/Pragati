@@ -1,0 +1,265 @@
+{
+  "priority": 11,
+  "contentArtifactId": "ncert_kemh1_s2_4_1_real_functions_lesson",
+  "title": "You will recognise the standard real functions by rule, domain, range and graph, and see why some of their graphs must be drawn in pieces.",
+  "placement": "chapter-2",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "shares unit(s) with another lesson: C11-RF-03",
+    "risk class C"
+  ],
+  "artifactFingerprint": "0f564b73e3aff072e5e571dac76313bd",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-RF-03",
+      "title": "Functions as a special kind of relation",
+      "objective": "Test whether a relation is a function and state its domain, codomain and range.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "arrow diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s2_4_functions_lesson",
+        "ncert_kemh1_s2_4_2_algebra_of_functions_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-RF-04",
+      "title": "The standard real functions and their graphs",
+      "objective": "Identify and sketch constant, identity, polynomial, rational, modulus, signum, exponential, logarithmic and greatest-integer functions, stating domain and range.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "REPRESENTATION_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "function graphs for nine families",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch02",
+    "officialSectionId": "ncert_kemh1_s2_4",
+    "sectionNumber": "2.4",
+    "cbseEntryId": null,
+    "startPage": 32,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "real_function_graph"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will recognise the standard real functions by rule, domain, range and graph, and see why some of their graphs must be drawn in pieces.",
+    "vocabulary": [
+      {
+        "term": "real function",
+        "meaning": "A function whose domain and codomain are sets of real numbers."
+      },
+      {
+        "term": "modulus function",
+        "meaning": "The function assigning each real number its distance from zero."
+      },
+      {
+        "term": "signum function",
+        "meaning": "The function recording only the sign of its argument."
+      },
+      {
+        "term": "greatest integer function",
+        "meaning": "The function assigning each real number the greatest integer not exceeding it."
+      }
+    ],
+    "explanation": [
+      "A real function takes real numbers to real numbers. Its graph is simply the set of pairs (x, f(x)), so the picture and the rule are the same object seen two ways.",
+      "The simplest are the constant function, f(x) = 3, whose domain is all real numbers and whose range is the single value {3}; and the identity function, f(x) = x, where domain and range are both all real numbers.",
+      "The modulus function f(x) = |x| has domain all real numbers and range all non-negative real numbers, since a distance is never negative. Its graph is the familiar V, and it comes from the rule rather than being drawn by hand.",
+      "The signum function records only the sign: f(x) = −1 for x < 0, 0 for x = 0, 1 for x > 0. Its range is just {−1, 0, 1}. Its graph cannot be one line, because the value jumps as the argument passes zero, so it is drawn in 3 separate pieces.",
+      "The greatest integer function f(x) = [x] assigns each number the greatest integer not above it, giving range all integers. Its graph is a staircase: over the sampled range it needs 7 separate steps, because the value jumps at every integer instead of sliding.",
+      "Some functions exclude arguments outright. The reciprocal f(x) = 1/x has domain all real numbers except 0, so its graph has 2 branches with nothing drawn at the excluded argument. The logarithmic function has domain all positive real numbers, so no part of its graph lies to the left of zero.",
+      "In every case the domain belongs to the function. A drawn curve that passes over an excluded argument is not a neater picture of the same function; it is a picture of a different claim."
+    ],
+    "workedExamples": [
+      {
+        "id": "s241.we1",
+        "prompt": "Why is the range of f(x) = 3 only {3}?",
+        "answer": "{3}",
+        "steps": [
+          {
+            "text": "The range is the set of values actually attained.",
+            "reasoning": "Range is read off what the function produces, not off the codomain it is declared into."
+          },
+          {
+            "text": "This rule produces the same value whatever the argument, so only one value is ever attained.",
+            "reasoning": "Every input gives the same output, which is permitted since many-to-one is allowed."
+          },
+          {
+            "text": "So the range is the single-element set {3}, while the codomain may be all of the reals.",
+            "reasoning": "The gap between them is exactly the codomain-range distinction from the previous lesson."
+          }
+        ]
+      },
+      {
+        "id": "s241.we2",
+        "prompt": "Why must the graph of the greatest integer function be drawn in separate pieces?",
+        "answer": "7 separate steps.",
+        "steps": [
+          {
+            "text": "Between two consecutive integers the value is constant, giving a horizontal step.",
+            "reasoning": "On that stretch the greatest integer below the argument does not change."
+          },
+          {
+            "text": "At each integer the value jumps by one rather than passing through the values in between.",
+            "reasoning": "Nothing is attained strictly between the two step heights, so no connecting line belongs there."
+          },
+          {
+            "text": "Over the sampled range this gives 7 pieces, each drawn separately.",
+            "reasoning": "Joining them would show values the function never takes."
+          }
+        ]
+      },
+      {
+        "id": "s241.we3",
+        "prompt": "A student draws the graph of f(x) = 1/x as one continuous curve sweeping through the origin. What has gone wrong?",
+        "answer": "Two separate branches, with nothing drawn at the excluded argument.",
+        "steps": [
+          {
+            "text": "The domain is all real numbers except 0, so the excluded argument has no value at all.",
+            "reasoning": "The restriction is part of the function, not a remark about the picture."
+          },
+          {
+            "text": "A curve drawn through it asserts a point there, so the correct graph has 2 separate branches.",
+            "reasoning": "A line is a set of points, and drawing one over an excluded argument claims a point the function does not provide."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s241.g1",
+        "prompt": "What is the domain of the logarithmic function?",
+        "hint": "Which arguments are allowed?",
+        "answer": "all positive real numbers",
+        "rationale": "The logarithm is defined only for positive arguments, so zero and negatives are excluded from the domain."
+      },
+      {
+        "id": "s241.g2",
+        "prompt": "What is the range of f(x) = |x|?",
+        "hint": "Can a distance be negative?",
+        "answer": "all non-negative real numbers",
+        "rationale": "The modulus is a distance from zero, so it is never negative, and every non-negative value is attained."
+      },
+      {
+        "id": "s241.g3",
+        "prompt": "What is the value of the signum function at zero?",
+        "hint": "Read the rule.",
+        "answer": "0.",
+        "rationale": "The rule assigns zero at zero, between the value below and the value above: f(x) = −1 for x < 0, 0 for x = 0, 1 for x > 0."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s241.i1",
+        "prompt": "What is the greatest integer of 2.7, and of −2.3?",
+        "answer": "2 and -3.",
+        "rationale": "The greatest integer not exceeding a number lies below it, which for a negative argument means further from zero rather than nearer."
+      },
+      {
+        "id": "s241.i2",
+        "prompt": "Why is the range of the signum function finite?",
+        "answer": "Because it has only three possible outputs.",
+        "rationale": "The rule distinguishes only negative, zero and positive arguments, so the range is {−1, 0, 1}."
+      },
+      {
+        "id": "s241.i3",
+        "prompt": "Can a graph be used to read off the domain?",
+        "answer": "Only partly.",
+        "rationale": "A graph shows the sampled part of the domain. The domain belongs to the function, and the picture is a representation of it rather than the authority on it."
+      },
+      {
+        "id": "s241.i4",
+        "prompt": "Is the modulus function one-to-one?",
+        "answer": "No.",
+        "rationale": "Two arguments equally far from zero share an image, which is many-to-one and perfectly permitted for a function."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s241.td1",
+        "prompt": "Two of these functions jump and one simply has an argument missing. Why are those different situations, even though both graphs come in pieces?",
+        "expectedReasoning": "The signum and greatest integer functions are defined everywhere; their graphs break because the value changes abruptly, so there is no point to draw between the pieces. The reciprocal is different: at the excluded argument the function has no value at all, so the gap is in the domain rather than in the values. One picture is missing a connection and the other is missing a point, and only the second changes what the function is defined on."
+      }
+    ],
+    "summary": "The standard real functions carry their domains and ranges with them: the constant has a single-value range, the modulus never goes negative, the signum takes only {−1, 0, 1}, and the greatest integer steps through the integers. Graphs are drawn in pieces wherever the function jumps or has no value.",
+    "visuals": [
+      {
+        "type": "real_function_graph",
+        "caption": "The graph of the modulus function from minus four to four. Two straight pieces meeting at the origin in a V shape, the left falling to the origin and the right rising from it, so no value is ever negative.",
+        "altText": "The graph of the modulus function from minus four to four. Two straight pieces meeting at the origin in a V shape, the left falling to the origin and the right rising from it, so no value is ever negative."
+      },
+      {
+        "type": "real_function_graph",
+        "caption": "The graph of the signum function. A horizontal piece at minus one for every negative argument, a single isolated point at the origin, and a horizontal piece at one for every positive argument. The three pieces are drawn separately because the function jumps between them.",
+        "altText": "The graph of the signum function. A horizontal piece at minus one for every negative argument, a single isolated point at the origin, and a horizontal piece at one for every positive argument. The three pieces are drawn separately because the function jumps between them."
+      },
+      {
+        "type": "real_function_graph",
+        "caption": "The graph of the greatest integer function. A sequence of horizontal steps, each one unit long, rising by one at every integer. Each step is drawn as its own piece because the value jumps at the integers rather than sliding.",
+        "altText": "The graph of the greatest integer function. A sequence of horizontal steps, each one unit long, rising by one at every integer. Each step is drawn as its own piece because the value jumps at the integers rather than sliding."
+      },
+      {
+        "type": "real_function_graph",
+        "caption": "The graph of one over x. Two separate branches, one in the lower left and one in the upper right, with nothing drawn at zero because the function has no value there.",
+        "altText": "The graph of one over x. Two separate branches, one in the lower left and one in the upper right, with nothing drawn at zero because the function has no value there."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-RF-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-RF-04",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

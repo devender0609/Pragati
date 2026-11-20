@@ -1,0 +1,203 @@
+{
+  "checkpoint": 65,
+  "canonicalVersion": "0.84.0-c10.11",
+  "packageCreatedUtc": "2026-10-22T15:09:54Z",
+  "checkpoint64Correction": {
+    "retracted": "checkpoint 64's report called Chapter 14 'the only remaining genuinely new frontier'",
+    "canonicalRecord": "CLASS10_SOURCE_MODEL.json records Chapter 14 progression as FORMALISATION",
+    "evidence": "Class 9 Chapter 7 established the theoretical approach, sample space and equally likely outcomes; six frozen Class 9 lessons confirm it",
+    "cause": "reasoned from how new the topic felt rather than from the frozen record",
+    "class9RecordChanged": false
+  },
+  "waveScope": {
+    "units": [
+      "c10:14.1a",
+      "c10:14.1b",
+      "c10:14.1c",
+      "c10:14.1d"
+    ],
+    "authored": 4,
+    "section": "14.1 (folio 202); 14.2 is REVIEW and earns no unit",
+    "cbseConstraint": "classical definition; simple problems only",
+    "excluded": [
+      "conditional probability",
+      "independence",
+      "mutually exclusive formula",
+      "Bayes",
+      "random variables",
+      "distributions",
+      "addition theorem",
+      "multiplication theorem"
+    ],
+    "legacyPrototypeItemsUsedAsSource": false
+  },
+  "architecture": {
+    "verdict": "GENERAL_SAMPLE_SPACE_EXTENSION",
+    "reason": "probability() refuses to compute when equal likelihood is not established, which no existing structure could express; event, complement, counts and probabilities all derive from one experiment",
+    "added": [
+      "Experiment",
+      "Event",
+      "complement",
+      "partitionsSampleSpace",
+      "areComplementary",
+      "probability",
+      "isImpossible",
+      "isSure",
+      "validateExperiment",
+      "validateEvent",
+      "statedCountMatches",
+      "auditProbabilityNovelty"
+    ],
+    "extendedNotDuplicated": "probabilityAudit.ts gained 4 Class 10 detectors and one general rejection-framing exemption; Class 9 detectors untouched",
+    "notAdded": [
+      "Chapter14ProbabilitySpec",
+      "weighted outcomes",
+      "conditional probability",
+      "any distribution engine"
+    ]
+  },
+  "equalLikelihood": {
+    "isAnAssumptionNotACount": true,
+    "refusesToComputeWithoutIt": true,
+    "witness": "uneven spinner with two outcomes throws rather than returning 1/2",
+    "modelLanguageOnly": "every justification says 'modelled as' or 'treated as', never claims a physical object is exactly fair"
+  },
+  "sampleSpaceFidelity": {
+    "experiments": 6,
+    "duplicateOutcomesRejected": true,
+    "orderedOutcomesPreserved": {
+      "twoCoins": [
+        "HH",
+        "HT",
+        "TH",
+        "TT"
+      ],
+      "twoDice": "36 distinct ordered pairs incl (1,6) and (6,1)"
+    },
+    "sizes": {
+      "die": 6,
+      "twoCoins": 4,
+      "twoDice": 36,
+      "deck": 52,
+      "marbles": 10
+    }
+  },
+  "eventAndComplement": {
+    "eventsValidated": 12,
+    "allSubsetsOfTheirSampleSpace": true,
+    "outOfSpaceEventReportedNotThrown": true,
+    "complementDerivedNeverAuthored": true,
+    "partitionHoldsForEveryEvent": true,
+    "probabilitiesSumToExactly1": true,
+    "disjointIsNotEnough": "'even' and '1 or 3' on a die share nothing yet miss 5, summing to 5/6; refused"
+  },
+  "recomputation": {
+    "exactRationals": true,
+    "values": {
+      "even": "1/2",
+      "impossible": "0",
+      "sure": "1",
+      "oneHead": "1/2",
+      "sum7": "1/6",
+      "sum2": "1/36",
+      "redCard": "1/2",
+      "king": "1/13",
+      "redMarble": "1/2",
+      "notWhite": "7/10"
+    },
+    "diceSumsNotEquallyLikely": {
+      "sum7Pairs": 6,
+      "sum2Pairs": 1
+    },
+    "oneOverElevenAppearsOnlyAsRefutedClaim": true,
+    "jokersAppearOnlyAsExclusion": true,
+    "decimalsMarkedApproximate": true
+  },
+  "audits": {
+    "noveltyOverclaimsCaught": 5,
+    "honestFramingsPassed": 4,
+    "trueNoveltyAllowed": "'Complementary events are new in Class 10' passes",
+    "quotedMisconceptionPasses": true,
+    "bareAssertionStillFails": true
+  },
+  "defectsFound": [
+    "validateEvent threw instead of returning its errors on an out-of-scope event (checkpoint 61 defect class)",
+    "a template literal written with single quotes would have rendered a literal ${PC(DIE, E_EVEN)} to students",
+    "two over-reaching detectors narrowed, not weakened: the Class 9 count-then-conclusion pattern and the new impossible-wording pattern",
+    "two of my own test assertions were wrong: 'no jokers' and the refuted 1/11 claim both belong in the prose",
+    "three browser-probe errors of my own, none in the product: reading only step 1, checking after Finish closed the lesson, and expecting '1/36' as text where KaTeX renders a stacked fraction"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch14Rows": 4,
+      "stages": "5 of 5 at all three viewports",
+      "finishAction": "fired at all three",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "confirmedOnScreenAllThreeWidths": [
+        "n(S) = 36",
+        "ordered pairs (1,6) and (6,1)",
+        "no unevaluated placeholders",
+        "no internal IDs"
+      ],
+      "fractionsRenderAsStackedKaTeX": true
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 50,
+    "remaining": 15,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "heightsDistances": 3,
+    "realNumbers": 4,
+    "polynomials": 4,
+    "arithmeticProgressions": 5,
+    "allAtVersion1": true,
+    "class9": 92,
+    "class9ProbabilityLessons": {
+      "count": 6,
+      "version": 1,
+      "stillPassExtendedAudit": true
+    }
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2357,
+    "testFiles": 118,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_PROBABILITY_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_GENERAL_SAMPLE_SPACE_EXTENSION",
+  "nextRecommendation": {
+    "method": "check each chapter's recorded progression category before framing the wave, not how new the topic feels",
+    "1": "Chapter 11 Areas Related to Circles \u2014 segment as sector minus triangle, derived from one figure; checkpoint 56 pattern",
+    "2": "Chapter 10 Circles \u2014 tangent properties, mostly PROVE; checkpoint 57 auditProofScope",
+    "3": "Chapter 7 Coordinate Geometry \u2014 figure and computed coordinates must agree",
+    "4": "remaining units of opened chapters \u2014 ordinary authoring"
+  }
+}

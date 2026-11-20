@@ -1,0 +1,327 @@
+{
+  "ncert_jemh1_s1_2_fta_lesson": {
+    "handle": "c10:1.2a",
+    "expectation": "STATE_WITHOUT_PROOF",
+    "section": "1.2"
+  },
+  "ncert_jemh1_s1_2_hcf_lcm_lesson": {
+    "handle": "c10:1.2b",
+    "expectation": "APPLY",
+    "section": "1.2"
+  },
+  "ncert_jemh1_s1_3_root2_proof_lesson": {
+    "handle": "c10:1.3a",
+    "expectation": "PROVE",
+    "section": "1.3"
+  },
+  "ncert_jemh1_s1_3_more_irrationals_lesson": {
+    "handle": "c10:1.3b",
+    "expectation": "PROVE",
+    "section": "1.3"
+  },
+  "ncert_jemh1_s2_2_zeroes_meaning_lesson": {
+    "handle": "c10:2.2a",
+    "expectation": "DERIVE",
+    "section": "2.2"
+  },
+  "ncert_jemh1_s2_2_counting_zeroes_lesson": {
+    "handle": "c10:2.2b",
+    "expectation": "APPLY",
+    "section": "2.2"
+  },
+  "ncert_jemh1_s2_3_zeroes_coefficients_lesson": {
+    "handle": "c10:2.3a",
+    "expectation": "DERIVE",
+    "section": "2.3"
+  },
+  "ncert_jemh1_s2_3_construct_lesson": {
+    "handle": "c10:2.3b",
+    "expectation": "APPLY",
+    "section": "2.3"
+  },
+  "ncert_jemh1_s3_2_graphical_lesson": {
+    "handle": "c10:3.2a",
+    "expectation": "APPLY",
+    "section": "3.2"
+  },
+  "ncert_jemh1_s3_2_consistency_lesson": {
+    "handle": "c10:3.2b",
+    "expectation": "DERIVE",
+    "section": "3.2"
+  },
+  "ncert_jemh1_s3_3_substitution_lesson": {
+    "handle": "c10:3.3a",
+    "expectation": "APPLY",
+    "section": "3.3,3.3.1"
+  },
+  "ncert_jemh1_s3_3_elimination_lesson": {
+    "handle": "c10:3.3b",
+    "expectation": "APPLY",
+    "section": "3.3,3.3.2"
+  },
+  "ncert_jemh1_s3_3_modelling_lesson": {
+    "handle": "c10:3.3c",
+    "expectation": "APPLY",
+    "section": "3.3"
+  },
+  "ncert_jemh1_s4_2_standard_form_lesson": {
+    "handle": "c10:4.2a",
+    "expectation": "UNDERSTAND",
+    "section": "4.2"
+  },
+  "ncert_jemh1_s4_3_factorisation_lesson": {
+    "handle": "c10:4.3a",
+    "expectation": "APPLY",
+    "section": "4.3"
+  },
+  "ncert_jemh1_s4_4_discriminant_lesson": {
+    "handle": "c10:4.4a",
+    "expectation": "DERIVE",
+    "section": "4.4"
+  },
+  "ncert_jemh1_s4_4_formula_apply_lesson": {
+    "handle": "c10:4.4b",
+    "expectation": "APPLY",
+    "section": "4.4"
+  },
+  "ncert_jemh1_s5_2_identify_ap_lesson": {
+    "handle": "c10:5.2a",
+    "expectation": "UNDERSTAND",
+    "section": "5.2"
+  },
+  "ncert_jemh1_s5_3_nth_term_lesson": {
+    "handle": "c10:5.3a",
+    "expectation": "DERIVE",
+    "section": "5.3"
+  },
+  "ncert_jemh1_s5_3_missing_parts_lesson": {
+    "handle": "c10:5.3b",
+    "expectation": "APPLY",
+    "section": "5.3"
+  },
+  "ncert_jemh1_s5_4_sum_derivation_lesson": {
+    "handle": "c10:5.4a",
+    "expectation": "DERIVE",
+    "section": "5.4"
+  },
+  "ncert_jemh1_s5_4_applications_lesson": {
+    "handle": "c10:5.4b",
+    "expectation": "APPLY",
+    "section": "5.4"
+  },
+  "ncert_jemh1_s6_2_similar_figures_lesson": {
+    "handle": "c10:6.2a",
+    "expectation": "UNDERSTAND",
+    "section": "6.2"
+  },
+  "ncert_jemh1_s6_3_bpt_proof_lesson": {
+    "handle": "c10:6.3a",
+    "expectation": "PROVE",
+    "section": "6.3"
+  },
+  "ncert_jemh1_s6_3_bpt_apply_lesson": {
+    "handle": "c10:6.3b",
+    "expectation": "APPLY",
+    "section": "6.3"
+  },
+  "ncert_jemh1_s6_4_aaa_lesson": {
+    "handle": "c10:6.4a",
+    "expectation": "STATE_WITHOUT_PROOF",
+    "section": "6.4"
+  },
+  "ncert_jemh1_s6_4_sss_sas_lesson": {
+    "handle": "c10:6.4b",
+    "expectation": "STATE_WITHOUT_PROOF",
+    "section": "6.4"
+  },
+  "ncert_jemh1_s6_4_apply_lesson": {
+    "handle": "c10:6.4c",
+    "expectation": "APPLY",
+    "section": "6.4"
+  },
+  "ncert_jemh1_s7_2_distance_lesson": {
+    "handle": "c10:7.2a",
+    "expectation": "DERIVE",
+    "section": "7.1,7.2"
+  },
+  "ncert_jemh1_s7_2_applications_lesson": {
+    "handle": "c10:7.2b",
+    "expectation": "APPLY",
+    "section": "7.2"
+  },
+  "ncert_jemh1_s7_3_section_formula_lesson": {
+    "handle": "c10:7.3a",
+    "expectation": "DERIVE",
+    "section": "7.3"
+  },
+  "ncert_jemh1_s7_3_midpoint_ratio_lesson": {
+    "handle": "c10:7.3b",
+    "expectation": "APPLY",
+    "section": "7.3"
+  },
+  "ncert_jemh1_s8_2_ratios_lesson": {
+    "handle": "c10:8.2a",
+    "expectation": "UNDERSTAND",
+    "section": "8.2"
+  },
+  "ncert_jemh1_s8_2_welldefined_lesson": {
+    "handle": "c10:8.2b",
+    "expectation": "PROVE",
+    "section": "8.2"
+  },
+  "ncert_jemh1_s8_2_from_ratio_lesson": {
+    "handle": "c10:8.2c",
+    "expectation": "APPLY",
+    "section": "8.2"
+  },
+  "ncert_jemh1_s8_3_special_angles_lesson": {
+    "handle": "c10:8.3a",
+    "expectation": "DERIVE",
+    "section": "8.3"
+  },
+  "ncert_jemh1_s8_3_boundary_angles_lesson": {
+    "handle": "c10:8.3b",
+    "expectation": "UNDERSTAND",
+    "section": "8.3"
+  },
+  "ncert_jemh1_s8_4_pythagorean_identity_lesson": {
+    "handle": "c10:8.4a",
+    "expectation": "PROVE",
+    "section": "8.4"
+  },
+  "ncert_jemh1_s8_4_proving_identities_lesson": {
+    "handle": "c10:8.4b",
+    "expectation": "APPLY",
+    "section": "8.4"
+  },
+  "ncert_jemh1_s9_1_setup_lesson": {
+    "handle": "c10:9.1a",
+    "expectation": "UNDERSTAND",
+    "section": "9.1"
+  },
+  "ncert_jemh1_s9_1_one_triangle_lesson": {
+    "handle": "c10:9.1b",
+    "expectation": "APPLY",
+    "section": "9.1"
+  },
+  "ncert_jemh1_s9_1_two_triangles_lesson": {
+    "handle": "c10:9.1c",
+    "expectation": "APPLY",
+    "section": "9.1"
+  },
+  "ncert_jemh1_s10_2_tangent_definition_lesson": {
+    "handle": "c10:10.2a",
+    "expectation": "UNDERSTAND",
+    "section": "10.2"
+  },
+  "ncert_jemh1_s10_2_radius_perpendicular_lesson": {
+    "handle": "c10:10.2b",
+    "expectation": "PROVE",
+    "section": "10.2"
+  },
+  "ncert_jemh1_s10_3_tangent_count_lesson": {
+    "handle": "c10:10.3a",
+    "expectation": "DERIVE",
+    "section": "10.3"
+  },
+  "ncert_jemh1_s10_3_equal_tangents_lesson": {
+    "handle": "c10:10.3b",
+    "expectation": "PROVE",
+    "section": "10.3"
+  },
+  "ncert_jemh1_s10_3_applications_lesson": {
+    "handle": "c10:10.3c",
+    "expectation": "APPLY",
+    "section": "10.3"
+  },
+  "ncert_jemh1_s11_1_sector_lesson": {
+    "handle": "c10:11.1a",
+    "expectation": "DERIVE",
+    "section": "11.1"
+  },
+  "ncert_jemh1_s11_1_segment_lesson": {
+    "handle": "c10:11.1b",
+    "expectation": "APPLY",
+    "section": "11.1"
+  },
+  "ncert_jemh1_s11_1_combined_lesson": {
+    "handle": "c10:11.1c",
+    "expectation": "APPLY",
+    "section": "11.1"
+  },
+  "ncert_jemh1_s12_2_exposed_lesson": {
+    "handle": "c10:12.2a",
+    "expectation": "UNDERSTAND",
+    "section": "12.2"
+  },
+  "ncert_jemh1_s12_2_area_lesson": {
+    "handle": "c10:12.2b",
+    "expectation": "APPLY",
+    "section": "12.2"
+  },
+  "ncert_jemh1_s12_3_volume_lesson": {
+    "handle": "c10:12.3a",
+    "expectation": "APPLY",
+    "section": "12.3"
+  },
+  "ncert_jemh1_s13_2_direct_mean_lesson": {
+    "handle": "c10:13.2a",
+    "expectation": "DERIVE",
+    "section": "13.2"
+  },
+  "ncert_jemh1_s13_2_assumed_mean_lesson": {
+    "handle": "c10:13.2b",
+    "expectation": "DERIVE",
+    "section": "13.2"
+  },
+  "ncert_jemh1_s13_2_step_deviation_lesson": {
+    "handle": "c10:13.2c",
+    "expectation": "DERIVE",
+    "section": "13.2"
+  },
+  "ncert_jemh1_s13_3_mode_lesson": {
+    "handle": "c10:13.3a",
+    "expectation": "DERIVE",
+    "section": "13.3"
+  },
+  "ncert_jemh1_s13_3_mean_vs_mode_lesson": {
+    "handle": "c10:13.3b",
+    "expectation": "UNDERSTAND",
+    "section": "13.3"
+  },
+  "ncert_jemh1_s13_4_cumulative_frequency_lesson": {
+    "handle": "c10:13.4a",
+    "expectation": "DERIVE",
+    "section": "13.4"
+  },
+  "ncert_jemh1_s13_4_median_lesson": {
+    "handle": "c10:13.4b",
+    "expectation": "DERIVE",
+    "section": "13.4"
+  },
+  "ncert_jemh1_s13_4_comparing_averages_lesson": {
+    "handle": "c10:13.4c",
+    "expectation": "UNDERSTAND",
+    "section": "13.4"
+  },
+  "ncert_jemh1_s14_1_classical_definition_lesson": {
+    "handle": "c10:14.1a",
+    "expectation": "UNDERSTAND",
+    "section": "14.1"
+  },
+  "ncert_jemh1_s14_1_range_lesson": {
+    "handle": "c10:14.1b",
+    "expectation": "DERIVE",
+    "section": "14.1"
+  },
+  "ncert_jemh1_s14_1_complement_lesson": {
+    "handle": "c10:14.1c",
+    "expectation": "DERIVE",
+    "section": "14.1"
+  },
+  "ncert_jemh1_s14_1_applications_lesson": {
+    "handle": "c10:14.1d",
+    "expectation": "APPLY",
+    "section": "14.1"
+  }
+}

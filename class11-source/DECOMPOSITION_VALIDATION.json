@@ -1,0 +1,28 @@
+{
+ "validators": {
+  "passed": [
+   "unique unit ids",
+   "valid assessment status",
+   "valid instructional status",
+   "statuses independent",
+   "no fabricated NCERT id on CBSE-only units",
+   "all prerequisite references exist :: []",
+   "no self prerequisite",
+   "prerequisite graph acyclic :: []",
+   "no formative-only unit summative eligible",
+   "every fragment parent carries a formative part in the frozen model :: []",
+   "three canonical mixed sections split both ways",
+   "all subsection references exist in the frozen 67 :: []",
+   "no structural-only subsection given its own unit :: []",
+   "67 subsection records accounted :: 24 own units, 43 in parent",
+   "63 sections accounted :: 50 unit, 13 disposition",
+   "12/12 formative-only topics",
+   "FO-4 and FO-6 retain null owner",
+   "objectives distinct",
+   "B/C risk carries a rationale",
+   "no appendix unit"
+  ],
+  "failed": []
+ },
+ "unitCount": 93
+}

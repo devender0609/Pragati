@@ -1,0 +1,307 @@
+{
+  "priority": 2,
+  "contentArtifactId": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+  "title": "You will state the binomial theorem for a positive integral index and follow its proof by induction.",
+  "placement": "chapter-7",
+  "selectionReasons": [
+    "carries 4 canonical units — the hardest granularity case",
+    "covers a tracked shared source key",
+    "scope-fragment source"
+  ],
+  "artifactFingerprint": "d721cc79c8850f1bf2d981529aa51f92",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-BIN-01",
+      "title": "The binomial theorem for a positive integral index",
+      "objective": "State the binomial theorem for a positive integral index and follow its proof by induction on the index.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROOF_DEEPENING",
+      "textbookBodyDemand": "PROVE",
+      "cbseProofExpectation": "PROVE",
+      "representationRequirement": "binomial coefficient and sigma notation",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    },
+    {
+      "unitId": "C11-BIN-02",
+      "title": "Pascal's triangle and the binomial coefficients",
+      "objective": "Generate the binomial coefficients from Pascal’s triangle and relate each entry to nCr.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "REPRESENTATION_EXTENSION",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "Pascal's triangle figure",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    },
+    {
+      "unitId": "C11-BIN-03",
+      "title": "Simple applications of the binomial theorem",
+      "objective": "Expand a binomial power and use the expansion in simple numerical and algebraic applications.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "APPLICATION_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "expansion notation",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    },
+    {
+      "unitId": "C11-BIN-FO7",
+      "title": "General and middle term of a binomial expansion",
+      "objective": "Write the general term of a binomial expansion and identify the middle term.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "general term notation",
+      "riskClass": "B",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch07",
+    "officialSectionId": "ncert_kemh1_s7_2",
+    "sectionNumber": "7.2",
+    "cbseEntryId": null,
+    "startPage": 160,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "coefficient_rows",
+      "proof_layout"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will state the binomial theorem for a positive integral index and follow its proof by induction.",
+    "vocabulary": [
+      {
+        "term": "binomial",
+        "meaning": "A sum of two terms, such as a + b."
+      },
+      {
+        "term": "binomial coefficient",
+        "meaning": "The number nCr multiplying a term in the expansion."
+      },
+      {
+        "term": "general term",
+        "meaning": "The term at index r, carrying nCr with exponents n − r and r."
+      }
+    ],
+    "explanation": [
+      "Multiplying (a + b) by itself a few times shows a pattern. a^2 + 2ab + b^2 for the square, and a^3 + 3a^2b + 3ab^2 + b^3 for the cube.",
+      "Two things stay true in every line. Each term has a power of a and a power of b that add to the index, and the coefficients are not arbitrary.",
+      "Where do the coefficients come from? Expanding (a + b)^3 means choosing, from each of the 3 brackets, either a or b, and adding up every way of doing it. A term with b^2 comes from choosing b in exactly 2 of the 3 brackets — and the number of ways to do that is 3C2, which is 3. The coefficient is a count, which is why it is a combination.",
+      "That gives the theorem. For a positive integral index n, (a + b)^n is the sum over r from 0 to n of nCr a^(n−r) b^r. The term at index r is nCr a^(n−r) b^r, and the exponents add to n because every bracket contributes exactly one of the two symbols.",
+      "The ends behave without any special rule. The first coefficient is nC0, which is 1, because there is one way to choose none of the brackets; the last is nCn, also 1, because there is one way to choose all of them. The same formula gives both.",
+      "Laying the rows out shows the structure: row n holds nC0 up to nCn, and 4 gives 1, 4, 6, 4, 1.",
+      "Checking a few indices is not a proof, though. The claim is about every positive integer, and no number of verified cases settles a statement with infinitely many instances. The source proves it by induction on the index.",
+      "The step turns on one fact about the coefficients: two adjacent ones in a row add to the coefficient below them between them. That is not a coincidence of the numbers. Choosing r objects from k + 1 either leaves the new object out, which can be done kCr ways, or takes it, which can be done kC(r−1) ways — separate cases covering everything, so the counts add."
+    ],
+    "workedExamples": [
+      {
+        "id": "s72.we1",
+        "prompt": "Expand (a + b)^4 using the theorem.",
+        "answer": "a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4",
+        "steps": [
+          {
+            "text": "The index is 4, so there are 5 terms, with r running from 0 to 4.",
+            "reasoning": "One term for each number of brackets that can contribute b."
+          },
+          {
+            "text": "The coefficients are 4C0 up to 4C4, which are 1, 4, 6, 4, 1.",
+            "reasoning": "Each is a count of ways to choose that many brackets."
+          },
+          {
+            "text": "Writing the exponents so they add to 4 gives a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4.",
+            "reasoning": "The power of a falls as the power of b rises, and the pair always totals the index."
+          }
+        ]
+      },
+      {
+        "id": "s72.we2",
+        "prompt": "In the expansion of (a + b)^4, why is the coefficient of 6a^2b^2 equal to 6 rather than something else?",
+        "answer": "6, because it counts the ways of choosing which 2 brackets give b.",
+        "steps": [
+          {
+            "text": "The term with b^2 arises whenever exactly 2 of the 4 brackets contribute b.",
+            "reasoning": "The other brackets must then contribute a, which fixes the power of a."
+          },
+          {
+            "text": "The number of ways to choose which 2 of the 4 brackets those are is 4C2.",
+            "reasoning": "Order does not matter here: choosing brackets 1 and 3 is the same selection as 3 and 1."
+          },
+          {
+            "text": "So the coefficient is 6, a count rather than a quoted number.",
+            "reasoning": "Every coefficient in the theorem arises this way."
+          }
+        ]
+      },
+      {
+        "id": "s72.we3",
+        "prompt": "Why does the inductive step need two adjacent coefficients to combine?",
+        "answer": "Because collecting like terms makes each new coefficient the sum of two old ones.",
+        "steps": [
+          {
+            "text": "Multiplying the expansion at index k by one more (a + b) produces two sums, one from multiplying by a and one by b.",
+            "reasoning": "Each original term appears twice, with a different exponent raised."
+          },
+          {
+            "text": "Terms with the same power of b must then be collected, and each such term picks up a contribution from each sum.",
+            "reasoning": "The term in b^r gets kCr from the a-multiplication and kC(r−1) from the b-multiplication."
+          },
+          {
+            "text": "Those add to (k+1)Cr — for k = 4 and r = 2, 6 + 4 = 10 — which is exactly the coefficient the claim needs at index k + 1.",
+            "reasoning": "Without this the step would stop at two uncollected sums and the claim at k + 1 would not have been reached."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s72.g1",
+        "prompt": "How many terms are in the expansion of a binomial with index 6?",
+        "hint": "Count the possible values of r.",
+        "answer": "7.",
+        "rationale": "r runs from 0 to 6 inclusive, giving one more term than the index."
+      },
+      {
+        "id": "s72.g2",
+        "prompt": "What is the coefficient at index r = 1 when n = 5?",
+        "hint": "It is a combination.",
+        "answer": "5",
+        "rationale": "There are 5 ways to choose which single bracket contributes the second symbol."
+      },
+      {
+        "id": "s72.g3",
+        "prompt": "In a term of the expansion of index 7, the power of a is 3. What is the power of b?",
+        "hint": "They add to the index.",
+        "answer": "4.",
+        "rationale": "Every bracket contributes exactly one symbol, so the two exponents total the index."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s72.i1",
+        "prompt": "Write the expansion of a binomial with index 3.",
+        "answer": "a^3 + 3a^2b + 3ab^2 + b^3",
+        "rationale": "The coefficients are 3C0 to 3C3 and the exponents add to 3 in every term."
+      },
+      {
+        "id": "s72.i2",
+        "prompt": "What is the coefficient of the term with b^3 when n = 5?",
+        "answer": "10",
+        "rationale": "It counts the ways of choosing which 3 of the 5 brackets contribute b."
+      },
+      {
+        "id": "s72.i3",
+        "prompt": "Someone writes an expansion of index 4 in which one term is a^2b^3. What is wrong?",
+        "answer": "The exponents add to 5, not 4.",
+        "rationale": "Each of the 4 brackets gives exactly one symbol, so the powers must total 4."
+      },
+      {
+        "id": "s72.i4",
+        "prompt": "Why is the first coefficient always 1, whatever the index?",
+        "answer": "Because nC0 is 1.",
+        "rationale": "There is exactly one way to choose none of the brackets, so no special rule is needed for the end."
+      },
+      {
+        "id": "s72.i5",
+        "prompt": "A proof checks the expansion at n = 1, 2, 3 and 4 and stops. Is the theorem proved?",
+        "answer": "No.",
+        "rationale": "Four cases leave infinitely many unchecked; only the inductive step carries the claim to every index."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s72.td1",
+        "prompt": "Why should counting have anything to do with expanding an algebraic power? The two look like different subjects.",
+        "expectedReasoning": "Because the expansion is a counting problem wearing algebraic notation. Multiplying out (a + b)^n means forming every product that takes one symbol from each bracket, and then collecting the ones that look alike. A term with b^r comes from every selection of r brackets that gave b, so its coefficient is the number of such selections — which is nCr by definition, not by analogy. Once that is seen, the coefficients stop being a table to memorise and become the answer to a question about choosing. The same move explains why the ends are 1 and why adjacent coefficients add: both are facts about choosing that happen to show up as facts about algebra."
+      },
+      {
+        "id": "s72.td2",
+        "prompt": "The base case here is almost trivial, and the inductive step does all the work. Why is the base case needed at all?",
+        "expectedReasoning": "Because the step proves an implication, not a statement. It establishes that IF the expansion holds at k THEN it holds at k + 1 — a chain of conditionals that reaches nothing unless something anchors it. Without a verified starting index the chain floats: the same step would equally carry a false claim from one index to the next, since an implication from a false premise tells you nothing. The base case being easy is not the same as it being optional, and a proof that skips it has shown only that the claim is self-propagating, never that it is true."
+      }
+    ],
+    "summary": "For a positive integral index n, (a + b)^n is the sum over r from 0 to n of nCr a^(n−r) b^r. The coefficients are combinations because each counts the ways of choosing which brackets contribute the second symbol, and the exponents in every term add to n. The source proves the theorem by induction on the index, with the step resting on two adjacent coefficients adding to the next.",
+    "visuals": [
+      {
+        "type": "coefficient_rows",
+        "caption": "Rows of binomial coefficients from n = 0 to n = 5, each row one line of numbers. Row 0 is a single 1; row 1 is 1 and 1; row 4 is 1, 4, 6, 4, 1. Each entry in row n is the number of ways of choosing that many of the n factors to contribute the second symbol, and every row begins and ends with 1 because there is exactly one way to choose none and one way to choose all.",
+        "altText": "Rows of binomial coefficients from n = 0 to n = 5, each row one line of numbers. Row 0 is a single 1; row 1 is 1 and 1; row 4 is 1, 4, 6, 4, 1. Each entry in row n is the number of ways of choosing that many of the n factors to contribute the second symbol, and every row begins and ends with 1 because there is exactly one way to choose none and one way to choose all."
+      },
+      {
+        "type": "proof_layout",
+        "caption": "The proof of the binomial theorem set out in five labelled parts. The claim states the expansion for a positive integral index. The base case checks n = 1, where both sides come to a + b. The induction hypothesis assumes the expansion for one particular index k. The inductive step multiplies that expansion by one more factor of a + b, collects the terms with the same power of b, and uses the fact that two adjacent coefficients of one row add to a coefficient of the next. The conclusion states the result for every positive integer, resting on the base case and the step together.",
+        "altText": "The proof of the binomial theorem set out in five labelled parts. The claim states the expansion for a positive integral index. The base case checks n = 1, where both sides come to a + b. The induction hypothesis assumes the expansion for one particular index k. The inductive step multiplies that expansion by one more factor of a + b, collects the terms with the same power of b, and uses the fact that two adjacent coefficients of one row add to a coefficient of the next. The conclusion states the result for every positive integer, resting on the base case and the step together."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-BIN-01",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-BIN-02",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-BIN-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-BIN-FO7",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

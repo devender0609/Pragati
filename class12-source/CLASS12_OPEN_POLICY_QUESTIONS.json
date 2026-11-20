@@ -1,0 +1,41 @@
+{
+  "generatedBy": "checkpoint 108",
+  "questions": [
+    {
+      "id": "C12-Q1",
+      "question": "Which NCERT Class 12 edition/reprint is canonical for this project?",
+      "why": "Class 11 decomposition is bound to a specific reprint. Class 12 must name its own, read from the prelims file rather than a filename, before any section denominator is fixed.",
+      "blocks": "source manifest completion",
+      "status": "RESOLVED",
+      "resolution": "Reprint 2026-27, read from both prelims. Matches the CBSE 041 syllabus year. Rationalised reformatted edition."
+    },
+    {
+      "id": "C12-Q2",
+      "question": "Does the current CBSE Class XII syllabus contain required scope with no clear NCERT owner?",
+      "why": "Class 11 had twelve such entries (the FO-series), and two governance defects came from giving them false NCERT ownership. If Class 12 has an equivalent, the CBSE-only sentinel pattern should be planned in from the start rather than retrofitted.",
+      "blocks": "instructional-status assignment"
+    },
+    {
+      "id": "C12-Q3",
+      "question": "Does Class 12 have formative-only topics, and does the Class 11 policy carry over?",
+      "why": "Class 11's GD-1 arose from labelling official formative content OPTIONAL_ENRICHMENT. The policy \u2014 REQUIRED_CORE means inside official instructional scope regardless of summative assessment \u2014 should be re-applied only after Class 12's assessment structure is verified, not assumed.",
+      "blocks": "assessment/instructional status separation"
+    },
+    {
+      "id": "C12-Q4",
+      "question": "Should the many-to-many unit-to-lesson mapping be carried into Class 12?",
+      "why": "Class 11 ended with 35 of 90 lessons carrying several units and 26 units spread across several lessons. Whether that is pedagogically sound is precisely what the deferred Wave 1 review would answer. Deferring review does not make the question go away; it means Class 12 decomposition proceeds without that evidence.",
+      "blocks": "nothing yet \u2014 decomposition fixes units, not artifacts; the question arrives at authoring",
+      "ownerDecision": "review deferred deliberately"
+    },
+    {
+      "id": "C12-Q5",
+      "question": "How should the project obtain NCERT and CBSE primary sources when their hosts are unreachable from the build environment?",
+      "why": "Class 11 sources arrived as session uploads. Class 12 cannot be acquired by the agent directly: ncert.nic.in, epathshala.nic.in and cbseacademic.nic.in all refuse connections here, while unrelated hosts respond normally. Either the owner supplies the files as uploads, as happened for Classes 8 and 11, or the project accepts a documented acquisition route it can actually reach.",
+      "blocks": "all Class 12 source inspection and decomposition",
+      "openedAt": "checkpoint 109",
+      "status": "PARTIALLY_RESOLVED",
+      "resolution": "14 of 15 files arrived valid. lemh201.pdf (Chapter 7) is truncated, and the Part I appendices, Answers and Supplementary Material were never part of the 15. Re-download lemh201 and obtain the appendix files from NCERT."
+    }
+  ]
+}

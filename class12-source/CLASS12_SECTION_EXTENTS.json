@@ -1,0 +1,2708 @@
+{
+ "generatedBy": "tools/class12/buildHierarchy.py (checkpoint 116, c12.08)",
+ "status": "WHOLE_BOOK_RECONCILED_13_OF_13",
+ "method": "Recall-first sweep: every line beginning <chapter>.<n> (optionally <chapter>.<n>.<m>, with an optional trailing period) was captured with NO title constraint, then classified, then reconciled. Unchanged from checkpoint 115; now a checked-in tool (tools/class12/recallFirstSweep.py) that reproduces the stored 12-chapter result exactly before being applied to Chapter 7.",
+ "convergence": "At checkpoint 115 two methods built on different assumptions (the recall-first sweep and detector revision 2) agreed on sections for 12 chapters; three revisions of one regex disagreeing was evidence only that it was unreliable. Checkpoint 116 adds a third, independent source: every one of the 13 chapters' sections matches the printed Contents pages by number, title and start folio.",
+ "sectionsReconciled": 65,
+ "subsectionsReconciled": 47,
+ "perChapterSections": {
+  "1": 4,
+  "2": 3,
+  "3": 7,
+  "4": 6,
+  "5": 7,
+  "6": 4,
+  "7": 10,
+  "8": 2,
+  "9": 4,
+  "10": 6,
+  "11": 5,
+  "12": 2,
+  "13": 5
+ },
+ "gaps": "none",
+ "duplicatePrintedNumbers": "none",
+ "chaptersCovered": 13,
+ "chaptersMissing": [],
+ "boundarySemantics": "start = the heading line; end = the line before the next heading of the same level. When that heading is mid-page the earlier section ends on the same page. A chapter's last section ends on the line before the Miscellaneous Exercise (or Summary where there is none); that end matter is recorded per chapter in CLASS12_MISC_EXERCISE_SCOPES.json.",
+ "c1207Correction": "Checkpoint 115 ended each section on the page BEFORE the next heading. Where the next heading is mid-page that understated the end by one page; such records keep the old value as c1207EndPdfPage.",
+ "c1207PageOnlyEnds": {
+  "1.1": 1,
+  "1.2": 6,
+  "1.3": 11,
+  "1.4": 17,
+  "2.1": 1,
+  "2.2": 9,
+  "2.3": 16,
+  "3.1": 1,
+  "3.2": 5,
+  "3.3": 9,
+  "3.4": 27,
+  "3.5": 29,
+  "3.6": 34,
+  "3.7": 42,
+  "4.1": 1,
+  "4.2": 6,
+  "4.3": 8,
+  "4.4": 11,
+  "4.5": 17,
+  "4.6": 28,
+  "5.1": 1,
+  "5.2": 14,
+  "5.3": 21,
+  "5.4": 26,
+  "5.5": 30,
+  "5.6": 33,
+  "5.7": 43,
+  "6.1": 1,
+  "6.2": 5,
+  "6.3": 12,
+  "6.4": 40,
+  "8.1": 1,
+  "8.2": 8,
+  "9.1": 1,
+  "9.2": 4,
+  "9.3": 6,
+  "9.4": 38,
+  "10.1": 1,
+  "10.2": 3,
+  "10.3": 5,
+  "10.4": 8,
+  "10.5": 17,
+  "10.6": 39,
+  "11.1": 1,
+  "11.2": 4,
+  "11.3": 6,
+  "11.4": 8,
+  "11.5": 17,
+  "12.1": 1,
+  "12.2": 12,
+  "13.1": 1,
+  "13.2": 9,
+  "13.3": 11,
+  "13.4": 17,
+  "13.5": 33
+ },
+ "historicalComparison": "Only after the source-derived count existed was it compared with the remembered figure: the primary-source total and the remembered total coincide. The remembered figure was never an input, a target or a test oracle; agreement is noted, not used as evidence.",
+ "sections": [
+  {
+   "chapter": 1,
+   "printed": "1.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh101.pdf",
+   "pdfPage": 1,
+   "printedFolio": 1,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 7
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 32,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 1.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 1,
+   "printed": "1.2",
+   "title": "Types of Relations",
+   "extractedTitle": "Types of Relations",
+   "sourceFile": "lemh101.pdf",
+   "pdfPage": 2,
+   "printedFolio": 2,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 7,
+    "bodyLine": 8,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 1.3"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 7,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 6
+  },
+  {
+   "chapter": 1,
+   "printed": "1.3",
+   "title": "Types of Functions",
+   "extractedTitle": "Types of Functions",
+   "sourceFile": "lemh101.pdf",
+   "pdfPage": 7,
+   "printedFolio": 7,
+   "start": {
+    "pdfPage": 7,
+    "bodyLine": 9
+   },
+   "end": {
+    "pdfPage": 11,
+    "bodyLine": 32,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 1.4"
+   },
+   "startPdfPage": 7,
+   "endPdfPage": 11,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 1,
+   "printed": "1.4",
+   "title": "Composition of Functions and Invertible Function",
+   "extractedTitle": "Composition of Functions and Invertible Function",
+   "sourceFile": "lemh101.pdf",
+   "pdfPage": 12,
+   "printedFolio": 12,
+   "start": {
+    "pdfPage": 12,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 15,
+    "bodyLine": 16,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 12,
+   "endPdfPage": 15,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 17
+  },
+  {
+   "chapter": 2,
+   "printed": "2.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh102.pdf",
+   "pdfPage": 1,
+   "printedFolio": 18,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 5
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 20,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 2.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 2,
+   "printed": "2.2",
+   "title": "Basic Concepts",
+   "extractedTitle": "Basic Concepts",
+   "sourceFile": "lemh102.pdf",
+   "pdfPage": 1,
+   "printedFolio": 18,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 21
+   },
+   "end": {
+    "pdfPage": 10,
+    "bodyLine": 18,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 2.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 10,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 9
+  },
+  {
+   "chapter": 2,
+   "printed": "2.3",
+   "title": "Properties of Inverse Trigonometric Functions",
+   "extractedTitle": "Properties of Inverse Trigonometric Functions",
+   "sourceFile": "lemh102.pdf",
+   "pdfPage": 10,
+   "printedFolio": 27,
+   "start": {
+    "pdfPage": 10,
+    "bodyLine": 19
+   },
+   "end": {
+    "pdfPage": 13,
+    "bodyLine": 38,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 10,
+   "endPdfPage": 13,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 16
+  },
+  {
+   "chapter": 3,
+   "printed": "3.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 1,
+   "printedFolio": 34,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 3
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 19,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 3.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 3,
+   "printed": "3.2",
+   "title": "Matrix",
+   "extractedTitle": "Matrix",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 1,
+   "printedFolio": 34,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 20
+   },
+   "end": {
+    "pdfPage": 5,
+    "bodyLine": 37,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 3.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 5,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 3,
+   "printed": "3.3",
+   "title": "Types of Matrices",
+   "extractedTitle": "Types of Matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 6,
+   "printedFolio": 39,
+   "start": {
+    "pdfPage": 6,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 10,
+    "bodyLine": 13,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 3.4"
+   },
+   "startPdfPage": 6,
+   "endPdfPage": 10,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 9
+  },
+  {
+   "chapter": 3,
+   "printed": "3.4",
+   "title": "Operations on Matrices",
+   "extractedTitle": "Operations on Matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 10,
+   "printedFolio": 43,
+   "start": {
+    "pdfPage": 10,
+    "bodyLine": 14
+   },
+   "end": {
+    "pdfPage": 28,
+    "bodyLine": 10,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 3.5"
+   },
+   "startPdfPage": 10,
+   "endPdfPage": 28,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 27
+  },
+  {
+   "chapter": 3,
+   "printed": "3.5",
+   "title": "Transpose of a Matrix",
+   "extractedTitle": "Transpose of a Matrix",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 28,
+   "printedFolio": 61,
+   "start": {
+    "pdfPage": 28,
+    "bodyLine": 11
+   },
+   "end": {
+    "pdfPage": 30,
+    "bodyLine": 22,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 3.6"
+   },
+   "startPdfPage": 28,
+   "endPdfPage": 30,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 29
+  },
+  {
+   "chapter": 3,
+   "printed": "3.6",
+   "title": "Symmetric and Skew Symmetric Matrices",
+   "extractedTitle": "Symmetric and Skew Symmetric Matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 30,
+   "printedFolio": 63,
+   "start": {
+    "pdfPage": 30,
+    "bodyLine": 23
+   },
+   "end": {
+    "pdfPage": 35,
+    "bodyLine": 22,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 3.7"
+   },
+   "startPdfPage": 30,
+   "endPdfPage": 35,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 34
+  },
+  {
+   "chapter": 3,
+   "printed": "3.7",
+   "title": "Invertible Matrices",
+   "extractedTitle": "Invertible Matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 35,
+   "printedFolio": 68,
+   "start": {
+    "pdfPage": 35,
+    "bodyLine": 23
+   },
+   "end": {
+    "pdfPage": 39,
+    "bodyLine": 2,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 35,
+   "endPdfPage": 39,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 42
+  },
+  {
+   "chapter": 4,
+   "printed": "4.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 1,
+   "printedFolio": 76,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 3
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 28,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 4.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 4,
+   "printed": "4.2",
+   "title": "Determinant",
+   "extractedTitle": "Determinant",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 1,
+   "printedFolio": 76,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 29
+   },
+   "end": {
+    "pdfPage": 7,
+    "bodyLine": 14,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 4.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 7,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 6
+  },
+  {
+   "chapter": 4,
+   "printed": "4.3",
+   "title": "Area of a Triangle",
+   "extractedTitle": "Area of a Triangle",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 7,
+   "printedFolio": 82,
+   "start": {
+    "pdfPage": 7,
+    "bodyLine": 15
+   },
+   "end": {
+    "pdfPage": 8,
+    "bodyLine": 39,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 4.4"
+   },
+   "startPdfPage": 7,
+   "endPdfPage": 8,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 4,
+   "printed": "4.4",
+   "title": "Minors and Cofactors",
+   "extractedTitle": "Minors and Cofactors",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 9,
+   "printedFolio": 84,
+   "start": {
+    "pdfPage": 9,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 12,
+    "bodyLine": 18,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 4.5"
+   },
+   "startPdfPage": 9,
+   "endPdfPage": 12,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 11
+  },
+  {
+   "chapter": 4,
+   "printed": "4.5",
+   "title": "Adjoint and Inverse of a Matrix",
+   "extractedTitle": "Adjoint and Inverse of a Matrix",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 12,
+   "printedFolio": 87,
+   "start": {
+    "pdfPage": 12,
+    "bodyLine": 19
+   },
+   "end": {
+    "pdfPage": 18,
+    "bodyLine": 34,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 4.6"
+   },
+   "startPdfPage": 12,
+   "endPdfPage": 18,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 17
+  },
+  {
+   "chapter": 4,
+   "printed": "4.6",
+   "title": "Applications of Determinants and Matrices",
+   "extractedTitle": "Applications of Determinants and Matrices",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 18,
+   "printedFolio": 93,
+   "start": {
+    "pdfPage": 18,
+    "bodyLine": 35
+   },
+   "end": {
+    "pdfPage": 24,
+    "bodyLine": 10,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 18,
+   "endPdfPage": 24,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 28
+  },
+  {
+   "chapter": 5,
+   "printed": "5.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 1,
+   "printedFolio": 104,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 5
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 18,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 5.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 5,
+   "printed": "5.2",
+   "title": "Continuity",
+   "extractedTitle": "Continuity                                                      (1642-1727)",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 1,
+   "printedFolio": 104,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 19
+   },
+   "end": {
+    "pdfPage": 15,
+    "bodyLine": 32,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 5.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 15,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "visualCorrection": "lemh105.pdf p1 rendered: '(1642-1727)' is the caption under the Newton portrait in the right column, not part of the heading",
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 14
+  },
+  {
+   "chapter": 5,
+   "printed": "5.3",
+   "title": "Differentiability",
+   "extractedTitle": "Differentiability",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 15,
+   "printedFolio": 118,
+   "start": {
+    "pdfPage": 15,
+    "bodyLine": 33
+   },
+   "end": {
+    "pdfPage": 22,
+    "bodyLine": 30,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 5.4"
+   },
+   "startPdfPage": 15,
+   "endPdfPage": 22,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 21
+  },
+  {
+   "chapter": 5,
+   "printed": "5.4",
+   "title": "Exponential and Logarithmic Functions",
+   "extractedTitle": "Exponential and Logarithmic Functions",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 22,
+   "printedFolio": 125,
+   "start": {
+    "pdfPage": 22,
+    "bodyLine": 31
+   },
+   "end": {
+    "pdfPage": 27,
+    "bodyLine": 20,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 5.5"
+   },
+   "startPdfPage": 22,
+   "endPdfPage": 27,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 26
+  },
+  {
+   "chapter": 5,
+   "printed": "5.5",
+   "title": "Logarithmic Differentiation",
+   "extractedTitle": "Logarithmic Differentiation",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 27,
+   "printedFolio": 130,
+   "start": {
+    "pdfPage": 27,
+    "bodyLine": 21
+   },
+   "end": {
+    "pdfPage": 31,
+    "bodyLine": 33,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 5.6"
+   },
+   "startPdfPage": 27,
+   "endPdfPage": 31,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 30
+  },
+  {
+   "chapter": 5,
+   "printed": "5.6",
+   "title": "Derivatives of Functions in Parametric Forms",
+   "extractedTitle": "Derivatives of Functions in Parametric Forms",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 31,
+   "printedFolio": 134,
+   "start": {
+    "pdfPage": 31,
+    "bodyLine": 34
+   },
+   "end": {
+    "pdfPage": 34,
+    "bodyLine": 19,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 5.7"
+   },
+   "startPdfPage": 31,
+   "endPdfPage": 34,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 33
+  },
+  {
+   "chapter": 5,
+   "printed": "5.7",
+   "title": "Second Order Derivative",
+   "extractedTitle": "Second Order Derivative",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 34,
+   "printedFolio": 137,
+   "start": {
+    "pdfPage": 34,
+    "bodyLine": 20
+   },
+   "end": {
+    "pdfPage": 41,
+    "bodyLine": 25,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 34,
+   "endPdfPage": 41,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 43
+  },
+  {
+   "chapter": 6,
+   "printed": "6.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh106.pdf",
+   "pdfPage": 1,
+   "printedFolio": 147,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 5
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 15,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 6.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 6,
+   "printed": "6.2",
+   "title": "Rate of Change of Quantities",
+   "extractedTitle": "Rate of Change of Quantities",
+   "sourceFile": "lemh106.pdf",
+   "pdfPage": 1,
+   "printedFolio": 147,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 16
+   },
+   "end": {
+    "pdfPage": 6,
+    "bodyLine": 3,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 6.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 6,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 5
+  },
+  {
+   "chapter": 6,
+   "printed": "6.3",
+   "title": "Increasing and Decreasing Functions",
+   "extractedTitle": "Increasing and Decreasing Functions",
+   "sourceFile": "lemh106.pdf",
+   "pdfPage": 6,
+   "printedFolio": 152,
+   "start": {
+    "pdfPage": 6,
+    "bodyLine": 4
+   },
+   "end": {
+    "pdfPage": 13,
+    "bodyLine": 32,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 6.4"
+   },
+   "startPdfPage": 6,
+   "endPdfPage": 13,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 12
+  },
+  {
+   "chapter": 6,
+   "printed": "6.4",
+   "title": "Maxima and Minima",
+   "extractedTitle": "Maxima and Minima",
+   "sourceFile": "lemh106.pdf",
+   "pdfPage": 13,
+   "printedFolio": 159,
+   "start": {
+    "pdfPage": 13,
+    "bodyLine": 33
+   },
+   "end": {
+    "pdfPage": 37,
+    "bodyLine": 22,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 13,
+   "endPdfPage": 37,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 40
+  },
+  {
+   "chapter": 7,
+   "printed": "7.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 1,
+   "printedFolio": 225,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 5
+   },
+   "end": {
+    "pdfPage": 2,
+    "bodyLine": 5,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 2,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.2",
+   "title": "Integration as an Inverse Process of Differentiation",
+   "extractedTitle": "Integration as an Inverse Process of Differentiation",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 2,
+   "printedFolio": 226,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 6
+   },
+   "end": {
+    "pdfPage": 11,
+    "bodyLine": 28,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.3"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 11,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.3",
+   "title": "Methods of Integration",
+   "extractedTitle": "Methods of Integration",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 11,
+   "printedFolio": 235,
+   "start": {
+    "pdfPage": 11,
+    "bodyLine": 29
+   },
+   "end": {
+    "pdfPage": 19,
+    "bodyLine": 32,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.4"
+   },
+   "startPdfPage": 11,
+   "endPdfPage": 19,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.4",
+   "title": "Integrals of Some Particular Functions",
+   "extractedTitle": "Integrals of Some Particular Functions",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 19,
+   "printedFolio": 243,
+   "start": {
+    "pdfPage": 19,
+    "bodyLine": 33
+   },
+   "end": {
+    "pdfPage": 28,
+    "bodyLine": 38,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.5"
+   },
+   "startPdfPage": 19,
+   "endPdfPage": 28,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.5",
+   "title": "Integration by Partial Fractions",
+   "extractedTitle": "Integration by Partial Fractions",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 28,
+   "printedFolio": 252,
+   "start": {
+    "pdfPage": 28,
+    "bodyLine": 39
+   },
+   "end": {
+    "pdfPage": 35,
+    "bodyLine": 29,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.6"
+   },
+   "startPdfPage": 28,
+   "endPdfPage": 35,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.6",
+   "title": "Integration by Parts",
+   "extractedTitle": "Integration by Parts",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 35,
+   "printedFolio": 259,
+   "start": {
+    "pdfPage": 35,
+    "bodyLine": 30
+   },
+   "end": {
+    "pdfPage": 42,
+    "bodyLine": 51,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.7"
+   },
+   "startPdfPage": 35,
+   "endPdfPage": 42,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.7",
+   "title": "Definite Integral",
+   "extractedTitle": "Definite Integral",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 43,
+   "printedFolio": 267,
+   "start": {
+    "pdfPage": 43,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 43,
+    "bodyLine": 10,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.8"
+   },
+   "startPdfPage": 43,
+   "endPdfPage": 43,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.8",
+   "title": "Fundamental Theorem of Calculus",
+   "extractedTitle": "Fundamental Theorem of Calculus",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 43,
+   "printedFolio": 267,
+   "start": {
+    "pdfPage": 43,
+    "bodyLine": 11
+   },
+   "end": {
+    "pdfPage": 47,
+    "bodyLine": 31,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.9"
+   },
+   "startPdfPage": 43,
+   "endPdfPage": 47,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.9",
+   "title": "Evaluation of Definite Integrals by Substitution",
+   "extractedTitle": "Evaluation of Definite Integrals by Substitution",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 47,
+   "printedFolio": 271,
+   "start": {
+    "pdfPage": 47,
+    "bodyLine": 32
+   },
+   "end": {
+    "pdfPage": 49,
+    "bodyLine": 43,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 7.10"
+   },
+   "startPdfPage": 47,
+   "endPdfPage": 49,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 7,
+   "printed": "7.10",
+   "title": "Some Properties of Definite Integrals",
+   "extractedTitle": "Some Properties of Definite Integrals",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 49,
+   "printedFolio": 273,
+   "start": {
+    "pdfPage": 49,
+    "bodyLine": 44
+   },
+   "end": {
+    "pdfPage": 61,
+    "bodyLine": 34,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 49,
+   "endPdfPage": 61,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 8,
+   "printed": "8.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh202.pdf",
+   "pdfPage": 1,
+   "printedFolio": 292,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 4
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 21,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 8.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 8,
+   "printed": "8.2",
+   "title": "Area under Simple Curves",
+   "extractedTitle": "Area under Simple Curves",
+   "sourceFile": "lemh202.pdf",
+   "pdfPage": 1,
+   "printedFolio": 292,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 22
+   },
+   "end": {
+    "pdfPage": 6,
+    "bodyLine": 41,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 6,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 8
+  },
+  {
+   "chapter": 9,
+   "printed": "9.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 1,
+   "printedFolio": 300,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 4
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 24,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 9.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 9,
+   "printed": "9.2",
+   "title": "Basic Concepts",
+   "extractedTitle": "Basic Concepts",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 1,
+   "printedFolio": 300,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 25
+   },
+   "end": {
+    "pdfPage": 5,
+    "bodyLine": 12,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 9.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 5,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 4
+  },
+  {
+   "chapter": 9,
+   "printed": "9.3",
+   "title": "General and Particular Solutions of a Differential Equation",
+   "extractedTitle": "General and Particular Solutions of a Differential Equation",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 5,
+   "printedFolio": 304,
+   "start": {
+    "pdfPage": 5,
+    "bodyLine": 13
+   },
+   "end": {
+    "pdfPage": 7,
+    "bodyLine": 31,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 9.4"
+   },
+   "startPdfPage": 5,
+   "endPdfPage": 7,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 6
+  },
+  {
+   "chapter": 9,
+   "printed": "9.4",
+   "title": "Methods of Solving First Order, First Degree Differential Equations",
+   "extractedTitle": "Methods of Solving First Order, First Degree Differential Equations",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 7,
+   "printedFolio": 306,
+   "start": {
+    "pdfPage": 7,
+    "bodyLine": 32
+   },
+   "end": {
+    "pdfPage": 34,
+    "bodyLine": 38,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 7,
+   "endPdfPage": 34,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 38
+  },
+  {
+   "chapter": 10,
+   "printed": "10.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 1,
+   "printedFolio": 338,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 5
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 26,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 10.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 10,
+   "printed": "10.2",
+   "title": "Some Basic Concepts",
+   "extractedTitle": "Some Basic Concepts",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 1,
+   "printedFolio": 338,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 27
+   },
+   "end": {
+    "pdfPage": 4,
+    "bodyLine": 1,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 10.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 4,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 3
+  },
+  {
+   "chapter": 10,
+   "printed": "10.3",
+   "title": "Types of Vectors",
+   "extractedTitle": "Types of Vectors",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 4,
+   "printedFolio": 341,
+   "start": {
+    "pdfPage": 4,
+    "bodyLine": 2
+   },
+   "end": {
+    "pdfPage": 5,
+    "bodyLine": 29,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 10.4"
+   },
+   "startPdfPage": 4,
+   "endPdfPage": 5,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 10,
+   "printed": "10.4",
+   "title": "Addition of Vectors",
+   "extractedTitle": "Addition of Vectors",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 6,
+   "printedFolio": 343,
+   "start": {
+    "pdfPage": 6,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 9,
+    "bodyLine": 6,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 10.5"
+   },
+   "startPdfPage": 6,
+   "endPdfPage": 9,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 8
+  },
+  {
+   "chapter": 10,
+   "printed": "10.5",
+   "title": "Multiplication of a Vector by a Scalar",
+   "extractedTitle": "Multiplication of a Vector by a Scalar",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 9,
+   "printedFolio": 346,
+   "start": {
+    "pdfPage": 9,
+    "bodyLine": 7
+   },
+   "end": {
+    "pdfPage": 18,
+    "bodyLine": 14,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 10.6"
+   },
+   "startPdfPage": 9,
+   "endPdfPage": 18,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 17
+  },
+  {
+   "chapter": 10,
+   "printed": "10.6",
+   "title": "Product of Two Vectors",
+   "extractedTitle": "Product of Two Vectors",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 18,
+   "printedFolio": 355,
+   "start": {
+    "pdfPage": 18,
+    "bodyLine": 15
+   },
+   "end": {
+    "pdfPage": 34,
+    "bodyLine": 28,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 18,
+   "endPdfPage": 34,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 39
+  },
+  {
+   "chapter": 11,
+   "printed": "11.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 1,
+   "printedFolio": 377,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 4
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 22,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 11.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 11,
+   "printed": "11.2",
+   "title": "Direction Cosines and Direction Ratios of a Line",
+   "extractedTitle": "Direction Cosines and Direction Ratios of a Line",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 1,
+   "printedFolio": 377,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 23
+   },
+   "end": {
+    "pdfPage": 5,
+    "bodyLine": 21,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 11.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 5,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 4
+  },
+  {
+   "chapter": 11,
+   "printed": "11.3",
+   "title": "Equation of a Line in Space",
+   "extractedTitle": "Equation of a Line in Space",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 5,
+   "printedFolio": 381,
+   "start": {
+    "pdfPage": 5,
+    "bodyLine": 22
+   },
+   "end": {
+    "pdfPage": 7,
+    "bodyLine": 9,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 11.4"
+   },
+   "startPdfPage": 5,
+   "endPdfPage": 7,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 6
+  },
+  {
+   "chapter": 11,
+   "printed": "11.4",
+   "title": "Angle between Two Lines",
+   "extractedTitle": "Angle between Two Lines",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 7,
+   "printedFolio": 383,
+   "start": {
+    "pdfPage": 7,
+    "bodyLine": 10
+   },
+   "end": {
+    "pdfPage": 9,
+    "bodyLine": 30,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 11.5"
+   },
+   "startPdfPage": 7,
+   "endPdfPage": 9,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 8
+  },
+  {
+   "chapter": 11,
+   "printed": "11.5",
+   "title": "Shortest Distance between Two Lines",
+   "extractedTitle": "Shortest Distance between Two Lines",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 9,
+   "printedFolio": 385,
+   "start": {
+    "pdfPage": 9,
+    "bodyLine": 31
+   },
+   "end": {
+    "pdfPage": 14,
+    "bodyLine": 38,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 9,
+   "endPdfPage": 14,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 17
+  },
+  {
+   "chapter": 12,
+   "printed": "12.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh206.pdf",
+   "pdfPage": 1,
+   "printedFolio": 394,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 4
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 31,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 12.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 12,
+   "printed": "12.2",
+   "title": "Linear Programming Problem and its Mathematical Formulation",
+   "extractedTitle": "Linear Programming Problem and its Mathematical Formulation",
+   "sourceFile": "lemh206.pdf",
+   "pdfPage": 2,
+   "printedFolio": 395,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 11,
+    "bodyLine": 17,
+    "anchor": "LINE_BEFORE_SUMMARY"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 11,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 12
+  },
+  {
+   "chapter": 13,
+   "printed": "13.1",
+   "title": "Introduction",
+   "extractedTitle": "Introduction",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 1,
+   "printedFolio": 406,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 4
+   },
+   "end": {
+    "pdfPage": 1,
+    "bodyLine": 24,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 13.2"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 1,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true
+  },
+  {
+   "chapter": 13,
+   "printed": "13.2",
+   "title": "Conditional Probability",
+   "extractedTitle": "Conditional Probability",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 1,
+   "printedFolio": 406,
+   "start": {
+    "pdfPage": 1,
+    "bodyLine": 25
+   },
+   "end": {
+    "pdfPage": 10,
+    "bodyLine": 2,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 13.3"
+   },
+   "startPdfPage": 1,
+   "endPdfPage": 10,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 9
+  },
+  {
+   "chapter": 13,
+   "printed": "13.3",
+   "title": "Multiplication Theorem on Probability",
+   "extractedTitle": "Multiplication Theorem on Probability",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 10,
+   "printedFolio": 415,
+   "start": {
+    "pdfPage": 10,
+    "bodyLine": 3
+   },
+   "end": {
+    "pdfPage": 12,
+    "bodyLine": 7,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 13.4"
+   },
+   "startPdfPage": 10,
+   "endPdfPage": 12,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 11
+  },
+  {
+   "chapter": 13,
+   "printed": "13.4",
+   "title": "Independent Events",
+   "extractedTitle": "Independent Events",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 12,
+   "printedFolio": 417,
+   "start": {
+    "pdfPage": 12,
+    "bodyLine": 8
+   },
+   "end": {
+    "pdfPage": 18,
+    "bodyLine": 18,
+    "anchor": "LINE_BEFORE_NEXT_SECTION 13.5"
+   },
+   "startPdfPage": 12,
+   "endPdfPage": 18,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 17
+  },
+  {
+   "chapter": 13,
+   "printed": "13.5",
+   "title": "Bayes' Theorem",
+   "extractedTitle": "Bayes' Theorem",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 18,
+   "printedFolio": 423,
+   "start": {
+    "pdfPage": 18,
+    "bodyLine": 19
+   },
+   "end": {
+    "pdfPage": 30,
+    "bodyLine": 14,
+    "anchor": "LINE_BEFORE_MISCELLANEOUS_EXERCISE"
+   },
+   "startPdfPage": 18,
+   "endPdfPage": 30,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "contentsPageAgreement": true,
+   "c1207EndPdfPage": 33
+  }
+ ],
+ "subsections": [
+  {
+   "chapter": 3,
+   "printed": "3.2.1",
+   "title": "Order of a matrix",
+   "extractedTitle": "Order of a matrix",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 3,
+   "printedFolio": 36,
+   "start": {
+    "pdfPage": 3,
+    "bodyLine": 20
+   },
+   "end": {
+    "pdfPage": 5,
+    "bodyLine": 37,
+    "anchor": "ENDS_WITH_PARENT 3.2 (LINE_BEFORE_NEXT_SECTION 3.3)"
+   },
+   "startPdfPage": 3,
+   "endPdfPage": 5,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.2"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.3.1",
+   "title": "Equality of matrices",
+   "extractedTitle": "Equality of matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 8,
+   "printedFolio": 41,
+   "start": {
+    "pdfPage": 8,
+    "bodyLine": 6
+   },
+   "end": {
+    "pdfPage": 10,
+    "bodyLine": 13,
+    "anchor": "ENDS_WITH_PARENT 3.3 (LINE_BEFORE_NEXT_SECTION 3.4)"
+   },
+   "startPdfPage": 8,
+   "endPdfPage": 10,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.3"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.4.1",
+   "title": "Addition of matrices",
+   "extractedTitle": "Addition of matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 10,
+   "printedFolio": 43,
+   "start": {
+    "pdfPage": 10,
+    "bodyLine": 17
+   },
+   "end": {
+    "pdfPage": 11,
+    "bodyLine": 31,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 3.4.2"
+   },
+   "startPdfPage": 10,
+   "endPdfPage": 11,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.4"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.4.2",
+   "title": "Multiplication of a matrix by a scalar",
+   "extractedTitle": "Multiplication of a matrix by a scalar",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 11,
+   "printedFolio": 44,
+   "start": {
+    "pdfPage": 11,
+    "bodyLine": 32
+   },
+   "end": {
+    "pdfPage": 13,
+    "bodyLine": 22,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 3.4.3"
+   },
+   "startPdfPage": 11,
+   "endPdfPage": 13,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.4"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.4.3",
+   "title": "Properties of matrix addition",
+   "extractedTitle": "Properties of matrix addition",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 13,
+   "printedFolio": 46,
+   "start": {
+    "pdfPage": 13,
+    "bodyLine": 23
+   },
+   "end": {
+    "pdfPage": 14,
+    "bodyLine": 5,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 3.4.4"
+   },
+   "startPdfPage": 13,
+   "endPdfPage": 14,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.4"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.4.4",
+   "title": "Properties of scalar multiplication of a matrix",
+   "extractedTitle": "Properties of scalar multiplication of a matrix",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 14,
+   "printedFolio": 47,
+   "start": {
+    "pdfPage": 14,
+    "bodyLine": 6
+   },
+   "end": {
+    "pdfPage": 17,
+    "bodyLine": 8,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 3.4.5"
+   },
+   "startPdfPage": 14,
+   "endPdfPage": 17,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.4"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.4.5",
+   "title": "Multiplication of matrices",
+   "extractedTitle": "Multiplication of matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 17,
+   "printedFolio": 50,
+   "start": {
+    "pdfPage": 17,
+    "bodyLine": 9
+   },
+   "end": {
+    "pdfPage": 21,
+    "bodyLine": 16,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 3.4.6"
+   },
+   "startPdfPage": 17,
+   "endPdfPage": 21,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.4"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.4.6",
+   "title": "Properties of multiplication of matrices",
+   "extractedTitle": "Properties of multiplication of matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 21,
+   "printedFolio": 54,
+   "start": {
+    "pdfPage": 21,
+    "bodyLine": 17
+   },
+   "end": {
+    "pdfPage": 28,
+    "bodyLine": 10,
+    "anchor": "ENDS_WITH_PARENT 3.4 (LINE_BEFORE_NEXT_SECTION 3.5)"
+   },
+   "startPdfPage": 21,
+   "endPdfPage": 28,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.4"
+  },
+  {
+   "chapter": 3,
+   "printed": "3.5.1",
+   "title": "Properties of transpose of the matrices",
+   "extractedTitle": "Properties of transpose of the matrices",
+   "sourceFile": "lemh103.pdf",
+   "pdfPage": 28,
+   "printedFolio": 61,
+   "start": {
+    "pdfPage": 28,
+    "bodyLine": 24
+   },
+   "end": {
+    "pdfPage": 30,
+    "bodyLine": 22,
+    "anchor": "ENDS_WITH_PARENT 3.5 (LINE_BEFORE_NEXT_SECTION 3.6)"
+   },
+   "startPdfPage": 28,
+   "endPdfPage": 30,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "3.5"
+  },
+  {
+   "chapter": 4,
+   "printed": "4.2.1",
+   "title": "Determinant of a matrix of order one",
+   "extractedTitle": "Determinant of a matrix of order one",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 2,
+   "printedFolio": 77,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 10
+   },
+   "end": {
+    "pdfPage": 2,
+    "bodyLine": 11,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 4.2.2"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 2,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "4.2"
+  },
+  {
+   "chapter": 4,
+   "printed": "4.2.2",
+   "title": "Determinant of a matrix of order two",
+   "extractedTitle": "Determinant of a matrix of order two",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 2,
+   "printedFolio": 77,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 12
+   },
+   "end": {
+    "pdfPage": 2,
+    "bodyLine": 30,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 4.2.3"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 2,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "4.2"
+  },
+  {
+   "chapter": 4,
+   "printed": "4.2.3",
+   "title": "Determinant of a matrix of order 3 × 3",
+   "extractedTitle": "Determinant of a matrix of order 3 × 3",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 2,
+   "printedFolio": 77,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 31
+   },
+   "end": {
+    "pdfPage": 7,
+    "bodyLine": 14,
+    "anchor": "ENDS_WITH_PARENT 4.2 (LINE_BEFORE_NEXT_SECTION 4.3)"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 7,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "4.2"
+  },
+  {
+   "chapter": 4,
+   "printed": "4.5.1",
+   "title": "Adjoint of a matrix",
+   "extractedTitle": "Adjoint of a matrix",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 12,
+   "printedFolio": 87,
+   "start": {
+    "pdfPage": 12,
+    "bodyLine": 23
+   },
+   "end": {
+    "pdfPage": 18,
+    "bodyLine": 34,
+    "anchor": "ENDS_WITH_PARENT 4.5 (LINE_BEFORE_NEXT_SECTION 4.6)"
+   },
+   "startPdfPage": 12,
+   "endPdfPage": 18,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "4.5"
+  },
+  {
+   "chapter": 4,
+   "printed": "4.6.1",
+   "title": "Solution of system of linear equations using inverse of a matrix",
+   "extractedTitle": "Solution of system of linear equations using inverse of a matrix",
+   "sourceFile": "lemh104.pdf",
+   "pdfPage": 19,
+   "printedFolio": 94,
+   "start": {
+    "pdfPage": 19,
+    "bodyLine": 6
+   },
+   "end": {
+    "pdfPage": 24,
+    "bodyLine": 10,
+    "anchor": "ENDS_WITH_PARENT 4.6 (LINE_BEFORE_MISCELLANEOUS_EXERCISE)"
+   },
+   "startPdfPage": 19,
+   "endPdfPage": 24,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "4.6"
+  },
+  {
+   "chapter": 5,
+   "printed": "5.2.1",
+   "title": "Algebra of continuous functions",
+   "extractedTitle": "Algebra of continuous functions",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 10,
+   "printedFolio": 113,
+   "start": {
+    "pdfPage": 10,
+    "bodyLine": 12
+   },
+   "end": {
+    "pdfPage": 15,
+    "bodyLine": 32,
+    "anchor": "ENDS_WITH_PARENT 5.2 (LINE_BEFORE_NEXT_SECTION 5.3)"
+   },
+   "startPdfPage": 10,
+   "endPdfPage": 15,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "5.2"
+  },
+  {
+   "chapter": 5,
+   "printed": "5.3.1",
+   "title": "Derivatives of composite functions",
+   "extractedTitle": "Derivatives of composite functions",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 17,
+   "printedFolio": 120,
+   "start": {
+    "pdfPage": 17,
+    "bodyLine": 37
+   },
+   "end": {
+    "pdfPage": 19,
+    "bodyLine": 21,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 5.3.2"
+   },
+   "startPdfPage": 17,
+   "endPdfPage": 19,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "5.3"
+  },
+  {
+   "chapter": 5,
+   "printed": "5.3.2",
+   "title": "Derivatives of implicit functions",
+   "extractedTitle": "Derivatives of implicit functions",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 19,
+   "printedFolio": 122,
+   "start": {
+    "pdfPage": 19,
+    "bodyLine": 22
+   },
+   "end": {
+    "pdfPage": 20,
+    "bodyLine": 40,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 5.3.3"
+   },
+   "startPdfPage": 19,
+   "endPdfPage": 20,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "5.3"
+  },
+  {
+   "chapter": 5,
+   "printed": "5.3.3",
+   "title": "Derivatives of inverse trigonometric functions",
+   "extractedTitle": "Derivatives of inverse trigonometric functions",
+   "sourceFile": "lemh105.pdf",
+   "pdfPage": 21,
+   "printedFolio": 124,
+   "start": {
+    "pdfPage": 21,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 22,
+    "bodyLine": 30,
+    "anchor": "ENDS_WITH_PARENT 5.3 (LINE_BEFORE_NEXT_SECTION 5.4)"
+   },
+   "startPdfPage": 21,
+   "endPdfPage": 22,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "5.3"
+  },
+  {
+   "chapter": 6,
+   "printed": "6.4.1",
+   "title": "Maximum and Minimum Values of a Function in a Closed Interval",
+   "extractedTitle": "Maximum and Minimum Values of a Function in a Closed Interval",
+   "sourceFile": "lemh106.pdf",
+   "pdfPage": 25,
+   "printedFolio": 171,
+   "start": {
+    "pdfPage": 25,
+    "bodyLine": 24
+   },
+   "end": {
+    "pdfPage": 37,
+    "bodyLine": 22,
+    "anchor": "ENDS_WITH_PARENT 6.4 (LINE_BEFORE_MISCELLANEOUS_EXERCISE)"
+   },
+   "startPdfPage": 25,
+   "endPdfPage": 37,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "6.4"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.2.1",
+   "title": "Some properties of indefinite integral",
+   "extractedTitle": "Some properties of indefinite integral",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 5,
+   "printedFolio": 229,
+   "start": {
+    "pdfPage": 5,
+    "bodyLine": 12
+   },
+   "end": {
+    "pdfPage": 11,
+    "bodyLine": 28,
+    "anchor": "ENDS_WITH_PARENT 7.2 (LINE_BEFORE_NEXT_SECTION 7.3)"
+   },
+   "startPdfPage": 5,
+   "endPdfPage": 11,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "7.2"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.3.1",
+   "title": "Integration by substitution",
+   "extractedTitle": "Integration by substitution",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 11,
+   "printedFolio": 235,
+   "start": {
+    "pdfPage": 11,
+    "bodyLine": 39
+   },
+   "end": {
+    "pdfPage": 17,
+    "bodyLine": 39,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 7.3.2"
+   },
+   "startPdfPage": 11,
+   "endPdfPage": 17,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "7.3"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.3.2",
+   "title": "Integration using trigonometric identities",
+   "extractedTitle": "Integration using trigonometric identities",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 17,
+   "printedFolio": 241,
+   "start": {
+    "pdfPage": 17,
+    "bodyLine": 40
+   },
+   "end": {
+    "pdfPage": 19,
+    "bodyLine": 32,
+    "anchor": "ENDS_WITH_PARENT 7.3 (LINE_BEFORE_NEXT_SECTION 7.4)"
+   },
+   "startPdfPage": 17,
+   "endPdfPage": 19,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "7.3"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.6.1",
+   "title": "Integral of the type ∫ eˣ [f(x) + f′(x)] dx",
+   "extractedTitle": "Integral of the type ∫ e x [ f (x) + f ′ (x )] dx",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 38,
+   "printedFolio": 262,
+   "start": {
+    "pdfPage": 38,
+    "bodyLine": 30
+   },
+   "end": {
+    "pdfPage": 40,
+    "bodyLine": 24,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 7.6.2"
+   },
+   "startPdfPage": 38,
+   "endPdfPage": 40,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "visualCorrection": "lemh201.pdf p38 rendered: extraction drops the superscript x on e",
+   "parent": "7.6"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.6.2",
+   "title": "Integrals of some more types",
+   "extractedTitle": "Integrals of some more types",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 40,
+   "printedFolio": 264,
+   "start": {
+    "pdfPage": 40,
+    "bodyLine": 25
+   },
+   "end": {
+    "pdfPage": 42,
+    "bodyLine": 51,
+    "anchor": "ENDS_WITH_PARENT 7.6 (LINE_BEFORE_NEXT_SECTION 7.7)"
+   },
+   "startPdfPage": 40,
+   "endPdfPage": 42,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "7.6"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.8.1",
+   "title": "Area function",
+   "extractedTitle": "Area function",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 43,
+   "printedFolio": 267,
+   "start": {
+    "pdfPage": 43,
+    "bodyLine": 12
+   },
+   "end": {
+    "pdfPage": 43,
+    "bodyLine": 33,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 7.8.2"
+   },
+   "startPdfPage": 43,
+   "endPdfPage": 43,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "7.8"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.8.2",
+   "title": "First fundamental theorem of integral calculus",
+   "extractedTitle": "First fundamental theorem of integral calculus",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 43,
+   "printedFolio": 267,
+   "start": {
+    "pdfPage": 43,
+    "bodyLine": 34
+   },
+   "end": {
+    "pdfPage": 43,
+    "bodyLine": 36,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 7.8.3"
+   },
+   "startPdfPage": 43,
+   "endPdfPage": 43,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "7.8"
+  },
+  {
+   "chapter": 7,
+   "printed": "7.8.3",
+   "title": "Second fundamental theorem of integral calculus",
+   "extractedTitle": "Second fundamental theorem of integral calculus",
+   "sourceFile": "lemh201.pdf",
+   "pdfPage": 44,
+   "printedFolio": 268,
+   "start": {
+    "pdfPage": 44,
+    "bodyLine": 0
+   },
+   "end": {
+    "pdfPage": 47,
+    "bodyLine": 31,
+    "anchor": "ENDS_WITH_PARENT 7.8 (LINE_BEFORE_NEXT_SECTION 7.9)"
+   },
+   "startPdfPage": 44,
+   "endPdfPage": 47,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "7.8"
+  },
+  {
+   "chapter": 9,
+   "printed": "9.2.1",
+   "title": "Order of a differential equation",
+   "extractedTitle": "Order of a differential equation",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 2,
+   "printedFolio": 301,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 30
+   },
+   "end": {
+    "pdfPage": 3,
+    "bodyLine": 8,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 9.2.2"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 3,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "9.2"
+  },
+  {
+   "chapter": 9,
+   "printed": "9.2.2",
+   "title": "Degree of a differential equation",
+   "extractedTitle": "Degree of a differential equation",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 3,
+   "printedFolio": 302,
+   "start": {
+    "pdfPage": 3,
+    "bodyLine": 9
+   },
+   "end": {
+    "pdfPage": 5,
+    "bodyLine": 12,
+    "anchor": "ENDS_WITH_PARENT 9.2 (LINE_BEFORE_NEXT_SECTION 9.3)"
+   },
+   "startPdfPage": 3,
+   "endPdfPage": 5,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "9.2"
+  },
+  {
+   "chapter": 9,
+   "printed": "9.4.1",
+   "title": "Differential equations with variables separable",
+   "extractedTitle": "Differential equations with variables separable",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 7,
+   "printedFolio": 306,
+   "start": {
+    "pdfPage": 7,
+    "bodyLine": 35
+   },
+   "end": {
+    "pdfPage": 13,
+    "bodyLine": 12,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 9.4.2"
+   },
+   "startPdfPage": 7,
+   "endPdfPage": 13,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "9.4"
+  },
+  {
+   "chapter": 9,
+   "printed": "9.4.2",
+   "title": "Homogeneous differential equations",
+   "extractedTitle": "Homogeneous differential equations",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 13,
+   "printedFolio": 312,
+   "start": {
+    "pdfPage": 13,
+    "bodyLine": 13
+   },
+   "end": {
+    "pdfPage": 23,
+    "bodyLine": 4,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 9.4.3"
+   },
+   "startPdfPage": 13,
+   "endPdfPage": 23,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "9.4"
+  },
+  {
+   "chapter": 9,
+   "printed": "9.4.3",
+   "title": "Linear differential equations",
+   "extractedTitle": "Linear differential equations",
+   "sourceFile": "lemh203.pdf",
+   "pdfPage": 23,
+   "printedFolio": 322,
+   "start": {
+    "pdfPage": 23,
+    "bodyLine": 5
+   },
+   "end": {
+    "pdfPage": 34,
+    "bodyLine": 38,
+    "anchor": "ENDS_WITH_PARENT 9.4 (LINE_BEFORE_MISCELLANEOUS_EXERCISE)"
+   },
+   "startPdfPage": 23,
+   "endPdfPage": 34,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "9.4"
+  },
+  {
+   "chapter": 10,
+   "printed": "10.5.1",
+   "title": "Components of a vector",
+   "extractedTitle": "Components of a vector",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 10,
+   "printedFolio": 347,
+   "start": {
+    "pdfPage": 10,
+    "bodyLine": 5
+   },
+   "end": {
+    "pdfPage": 14,
+    "bodyLine": 12,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 10.5.2"
+   },
+   "startPdfPage": 10,
+   "endPdfPage": 14,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "10.5"
+  },
+  {
+   "chapter": 10,
+   "printed": "10.5.2",
+   "title": "Vector joining two points",
+   "extractedTitle": "Vector joining two points",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 14,
+   "printedFolio": 351,
+   "start": {
+    "pdfPage": 14,
+    "bodyLine": 13
+   },
+   "end": {
+    "pdfPage": 15,
+    "bodyLine": 6,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 10.5.3"
+   },
+   "startPdfPage": 14,
+   "endPdfPage": 15,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "10.5"
+  },
+  {
+   "chapter": 10,
+   "printed": "10.5.3",
+   "title": "Section formula",
+   "extractedTitle": "Section formula",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 15,
+   "printedFolio": 352,
+   "start": {
+    "pdfPage": 15,
+    "bodyLine": 7
+   },
+   "end": {
+    "pdfPage": 18,
+    "bodyLine": 14,
+    "anchor": "ENDS_WITH_PARENT 10.5 (LINE_BEFORE_NEXT_SECTION 10.6)"
+   },
+   "startPdfPage": 15,
+   "endPdfPage": 18,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "10.5"
+  },
+  {
+   "chapter": 10,
+   "printed": "10.6.1",
+   "title": "Scalar (or dot) product of two vectors",
+   "extractedTitle": "Scalar (or dot) product of two vectors",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 18,
+   "printedFolio": 355,
+   "start": {
+    "pdfPage": 18,
+    "bodyLine": 26
+   },
+   "end": {
+    "pdfPage": 20,
+    "bodyLine": 8,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 10.6.2"
+   },
+   "startPdfPage": 18,
+   "endPdfPage": 20,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "10.6"
+  },
+  {
+   "chapter": 10,
+   "printed": "10.6.2",
+   "title": "Projection of a vector on a line",
+   "extractedTitle": "Projection of a vector on a line",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 20,
+   "printedFolio": 357,
+   "start": {
+    "pdfPage": 20,
+    "bodyLine": 9
+   },
+   "end": {
+    "pdfPage": 25,
+    "bodyLine": 24,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 10.6.3"
+   },
+   "startPdfPage": 20,
+   "endPdfPage": 25,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "10.6"
+  },
+  {
+   "chapter": 10,
+   "printed": "10.6.3",
+   "title": "Vector (or cross) product of two vectors",
+   "extractedTitle": "Vector (or cross) product of two vectors",
+   "sourceFile": "lemh204.pdf",
+   "pdfPage": 25,
+   "printedFolio": 362,
+   "start": {
+    "pdfPage": 25,
+    "bodyLine": 25
+   },
+   "end": {
+    "pdfPage": 34,
+    "bodyLine": 28,
+    "anchor": "ENDS_WITH_PARENT 10.6 (LINE_BEFORE_MISCELLANEOUS_EXERCISE)"
+   },
+   "startPdfPage": 25,
+   "endPdfPage": 34,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "10.6"
+  },
+  {
+   "chapter": 11,
+   "printed": "11.2.1",
+   "title": "Direction cosines of a line passing through two points",
+   "extractedTitle": "Direction cosines of a line passing through two points",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 3,
+   "printedFolio": 379,
+   "start": {
+    "pdfPage": 3,
+    "bodyLine": 11
+   },
+   "end": {
+    "pdfPage": 5,
+    "bodyLine": 21,
+    "anchor": "ENDS_WITH_PARENT 11.2 (LINE_BEFORE_NEXT_SECTION 11.3)"
+   },
+   "startPdfPage": 3,
+   "endPdfPage": 5,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "11.2"
+  },
+  {
+   "chapter": 11,
+   "printed": "11.3.1",
+   "title": "Equation of a line through a given point and parallel to given vector",
+   "extractedTitle": "Equation of a line through a given point and parallel to given vector",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 5,
+   "printedFolio": 381,
+   "start": {
+    "pdfPage": 5,
+    "bodyLine": 28
+   },
+   "end": {
+    "pdfPage": 7,
+    "bodyLine": 9,
+    "anchor": "ENDS_WITH_PARENT 11.3 (LINE_BEFORE_NEXT_SECTION 11.4)"
+   },
+   "startPdfPage": 5,
+   "endPdfPage": 7,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "11.3"
+  },
+  {
+   "chapter": 11,
+   "printed": "11.5.1",
+   "title": "Distance between two skew lines",
+   "extractedTitle": "Distance between two skew lines",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 10,
+   "printedFolio": 386,
+   "start": {
+    "pdfPage": 10,
+    "bodyLine": 8
+   },
+   "end": {
+    "pdfPage": 11,
+    "bodyLine": 17,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 11.5.2"
+   },
+   "startPdfPage": 10,
+   "endPdfPage": 11,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "11.5"
+  },
+  {
+   "chapter": 11,
+   "printed": "11.5.2",
+   "title": "Distance between parallel lines",
+   "extractedTitle": "Distance between parallel lines",
+   "sourceFile": "lemh205.pdf",
+   "pdfPage": 11,
+   "printedFolio": 387,
+   "start": {
+    "pdfPage": 11,
+    "bodyLine": 18
+   },
+   "end": {
+    "pdfPage": 14,
+    "bodyLine": 38,
+    "anchor": "ENDS_WITH_PARENT 11.5 (LINE_BEFORE_MISCELLANEOUS_EXERCISE)"
+   },
+   "startPdfPage": 11,
+   "endPdfPage": 14,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "11.5"
+  },
+  {
+   "chapter": 12,
+   "printed": "12.2.1",
+   "title": "Mathematical formulation of the problem",
+   "extractedTitle": "Mathematical formulation of the problem",
+   "sourceFile": "lemh206.pdf",
+   "pdfPage": 2,
+   "printedFolio": 395,
+   "start": {
+    "pdfPage": 2,
+    "bodyLine": 23
+   },
+   "end": {
+    "pdfPage": 4,
+    "bodyLine": 3,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 12.2.2"
+   },
+   "startPdfPage": 2,
+   "endPdfPage": 4,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "12.2"
+  },
+  {
+   "chapter": 12,
+   "printed": "12.2.2",
+   "title": "Graphical method of solving linear programming problems",
+   "extractedTitle": "Graphical method of solving linear programming problems",
+   "sourceFile": "lemh206.pdf",
+   "pdfPage": 4,
+   "printedFolio": 397,
+   "start": {
+    "pdfPage": 4,
+    "bodyLine": 4
+   },
+   "end": {
+    "pdfPage": 11,
+    "bodyLine": 17,
+    "anchor": "ENDS_WITH_PARENT 12.2 (LINE_BEFORE_SUMMARY)"
+   },
+   "startPdfPage": 4,
+   "endPdfPage": 11,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "12.2"
+  },
+  {
+   "chapter": 13,
+   "printed": "13.2.1",
+   "title": "Properties of conditional probability",
+   "extractedTitle": "Properties of conditional probability",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 3,
+   "printedFolio": 408,
+   "start": {
+    "pdfPage": 3,
+    "bodyLine": 22
+   },
+   "end": {
+    "pdfPage": 10,
+    "bodyLine": 2,
+    "anchor": "ENDS_WITH_PARENT 13.2 (LINE_BEFORE_NEXT_SECTION 13.3)"
+   },
+   "startPdfPage": 3,
+   "endPdfPage": 10,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "13.2"
+  },
+  {
+   "chapter": 13,
+   "printed": "13.5.1",
+   "title": "Partition of a sample space",
+   "extractedTitle": "Partition of a sample space",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 18,
+   "printedFolio": 423,
+   "start": {
+    "pdfPage": 18,
+    "bodyLine": 35
+   },
+   "end": {
+    "pdfPage": 19,
+    "bodyLine": 10,
+    "anchor": "LINE_BEFORE_NEXT_SUBSECTION 13.5.2"
+   },
+   "startPdfPage": 18,
+   "endPdfPage": 19,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "13.5"
+  },
+  {
+   "chapter": 13,
+   "printed": "13.5.2",
+   "title": "Theorem of total probability",
+   "extractedTitle": "Theorem of total probability",
+   "sourceFile": "lemh207.pdf",
+   "pdfPage": 19,
+   "printedFolio": 424,
+   "start": {
+    "pdfPage": 19,
+    "bodyLine": 11
+   },
+   "end": {
+    "pdfPage": 30,
+    "bodyLine": 14,
+    "anchor": "ENDS_WITH_PARENT 13.5 (LINE_BEFORE_MISCELLANEOUS_EXERCISE)"
+   },
+   "startPdfPage": 19,
+   "endPdfPage": 30,
+   "verificationStatus": "BOUNDARY_VERIFIED",
+   "issues": [],
+   "parent": "13.5"
+  }
+ ]
+}

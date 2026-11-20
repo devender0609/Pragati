@@ -1,0 +1,34 @@
+{
+  "_instructions": "Fill every field. Copy artifactId and reviewedFingerprint exactly as given. A response without a named reviewer cannot be accepted as a human review.",
+  "reviewer": null,
+  "reviewDate": null,
+  "artifactId": "ncert_kemh1_s3_4_sum_difference_lesson",
+  "reviewedFingerprint": "e8aba9128c52ea2cbc7d2995ccd12c9e",
+  "unitResults": [
+    {
+      "unitId": "C11-TRG-06",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    },
+    {
+      "unitId": "C11-TRG-07",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    }
+  ],
+  "workedExamples": null,
+  "practiceFeedback": null,
+  "representationQuality": null,
+  "accessibilityEquivalence": null,
+  "lessonGranularity": null,
+  "overallRecommendation": null,
+  "issues": []
+}

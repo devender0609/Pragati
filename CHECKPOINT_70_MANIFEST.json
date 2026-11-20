@@ -1,0 +1,292 @@
+{
+  "checkpoint": 70,
+  "canonicalVersion": "0.84.0-c10.16",
+  "packageCreatedUtc": "2026-10-23T20:23:26Z",
+  "purpose": "integration and review readiness \u2014 not authoring, not human review, not AI pre-review",
+  "reconciliation": {
+    "units": 65,
+    "artifacts": 65,
+    "oneToOne": true,
+    "chapters": 14,
+    "duplicateArtifactIds": 0,
+    "orphans": 0,
+    "artifactsOutsideTheirChapter": 0,
+    "everyUnitSectionRepresented": true,
+    "allAtVersion1": true,
+    "allAuthoredDraft": true
+  },
+  "routeability": {
+    "routes": 65,
+    "unique": 65,
+    "routeSetEqualsArtifactSet": true,
+    "allRenderThroughLearnSectionView": true,
+    "internalIdLeakage": false
+  },
+  "semanticModels": {
+    "correctedCount": 13,
+    "previousReportSaid": 14,
+    "reasonForDifference": "quadraticAudit and probabilityAudit are audit modules with no lesson consumer, exercised only by tests \u2014 not semantic models",
+    "inventory": [
+      {
+        "module": "specialAngles",
+        "owns": "standard trig values and undefined ratios",
+        "lessonModules": 2,
+        "singleSource": true
+      },
+      {
+        "module": "visualSpecification",
+        "owns": "figure semantics and triangle roles",
+        "lessonModules": 18,
+        "singleSource": true
+      },
+      {
+        "module": "compositeSolidSpecification",
+        "owns": "exposed versus internal surface",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "groupedDistribution",
+        "owns": "class marks, three means, mode, median",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "linearSystem",
+        "owns": "classification and exact solutions",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "observationModel",
+        "owns": "eye height, elevation and depression",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "numberTheory",
+        "owns": "primality, HCF/LCM, factorisation",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "polynomial",
+        "owns": "zeroes, factors, sampled graph",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "arithmeticProgression",
+        "owns": "nth term, sums, membership",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "sampleSpace",
+        "owns": "events, complement, probability",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "circleRegion",
+        "owns": "sector, triangle, segment",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "tangency",
+        "owns": "point position and tangent counts",
+        "lessonModules": 1,
+        "singleSource": true
+      },
+      {
+        "module": "coordinateGeometry",
+        "owns": "distance, section point, ratio",
+        "lessonModules": 1,
+        "singleSource": true
+      }
+    ]
+  },
+  "duplicateStateAudit": {
+    "candidatesFound": 3,
+    "classified": {
+      "SAFE_DISPLAY_DUPLICATION": [
+        "'36 ordered pairs' in probability prose \u2014 now reconciled by test against sampleSpaceSize(DICE2), with 52 and 10"
+      ],
+      "DERIVED_NOT_DUPLICATE": [
+        "STANDARD_ANGLE_RATIOS derives from specialAngles since checkpoint 69",
+        "statisticsSections calls groupedDistribution 61 times and types no mean"
+      ],
+      "UNSAFE_SECOND_SOURCE": []
+    },
+    "hardCodedTrigDecimalScan": "no lesson module contains 0.8660, 0.7071, 0.5773 or 1.7320",
+    "repairsRequired": 0
+  },
+  "contentChanges": {
+    "lessonsChanged": 0,
+    "artifactVersionsBumped": 0,
+    "reviewIdentitiesRegenerated": 0
+  },
+  "reviewInfrastructure": {
+    "approach": "generalised, not forked",
+    "changes": [
+      "artifactReviewCodeFor(section, gradePrefix, instrumentVersion) generates the code; artifactReviewCode delegates with C9 so all 92 Class 9 codes are byte-identical",
+      "reviewCandidatesForGrade(spec) builds candidates; class9ReviewCandidates delegates unchanged"
+    ],
+    "newModule": "class10Review.ts \u2014 the Class 10 half only",
+    "parallelStackCreated": false
+  },
+  "reviewIdentity": {
+    "scheme": "C10-<artifact hash>-v<version>i<instrument>-<semantic prefix>",
+    "derivedFromArtifactNotSection": true,
+    "witness": "three Chapter 8 artifacts share section 8.4 and carry different codes and fingerprints",
+    "candidates": 65,
+    "unique": 65,
+    "collisionsWithClass9": 0,
+    "collisionWithClass6": false,
+    "combinedDistinctCodes": 157
+  },
+  "reviewBuild": {
+    "id": "C10RB-88B56AE6",
+    "presentationFiles": 13,
+    "includesClass10Renderers": [
+      "GroupedTableFigure",
+      "LinearSystemGraph",
+      "PolynomialGraph",
+      "CompositeSolidFigure"
+    ],
+    "repoWideHash": false,
+    "immutableUrl": null
+  },
+  "instrument": {
+    "coreQuestions": 10,
+    "adaptiveRules": 11,
+    "totalResponses": 872,
+    "artifacts": 65,
+    "averagePerArtifact": 13.4,
+    "minPerArtifact": 11,
+    "maxPerArtifact": 17,
+    "fixedThirtySevenFormWouldHaveBeen": 2405,
+    "noLessonReceivesEveryRule": true,
+    "dualAuthorityInCore": "S1 asks about NCERT scope, S2 about CBSE 2026-27 depth"
+  },
+  "readiness": {
+    "checks": 10,
+    "reviewReady": 65,
+    "total": 65,
+    "allChecksPassed": true
+  },
+  "chapterPackages": {
+    "count": 14,
+    "lessons": 65
+  },
+  "pilot": {
+    "artifacts": 10,
+    "chapters": [
+      2,
+      3,
+      6,
+      7,
+      8,
+      10,
+      11,
+      13,
+      14
+    ],
+    "sent": false,
+    "coverage": [
+      "boundary angles",
+      "trig identity proof",
+      "assumed-mean statistics",
+      "linear-system graph",
+      "polynomial zeroes",
+      "equal likelihood",
+      "tangent proof",
+      "circle segment",
+      "section formula",
+      "similarity stated without proof"
+    ]
+  },
+  "lifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "note": "generating a package is not sending it; no artifact has been seen by a human"
+  },
+  "deliveryGovernance": {
+    "publicSafeVerifiedInBrowser": {
+      "previewNotice": false,
+      "lessonRows": 0,
+      "chaptersListed": false
+    },
+    "internalPreview": {
+      "class10": 65,
+      "class9": 92
+    },
+    "statedTruthfully": "a delivery gate, not a confidentiality measure; draft lesson text may remain in bundled JavaScript and no build-time exclusion exists"
+  },
+  "browserWalk": {
+    "chaptersWalked": 13,
+    "allReached": "5 of 5 stages plus Finish",
+    "maxOverflow": "0px",
+    "consoleErrors": 0
+  },
+  "accessibilityStructural": {
+    "viewports": [
+      "1280",
+      "834",
+      "360"
+    ],
+    "overflow": "0px at all three",
+    "scopedTableHeaders": 20,
+    "screenReaderOnlyDescriptions": 4,
+    "decorativeSvgAriaHidden": 12,
+    "notClaimed": "no screen-reader session and no contrast measurement was performed; no WCAG conformance is claimed"
+  },
+  "priorGradeRegressions": {
+    "class6Section74": {
+      "reviewCode": "S74-v1-DFC56A",
+      "contentFingerprint": "dfc56ab5",
+      "provenanceFingerprint": "efeccb48",
+      "artifactVersion": 1
+    },
+    "class9": {
+      "artifacts": 92,
+      "reviewCodes": 92,
+      "allC9Prefixed": true,
+      "byteIdenticalAfterGeneralisation": true,
+      "allAuthoredDraft": true
+    }
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2511,
+    "testFiles": 123,
+    "curriculumValidation": "pass",
+    "publicSafeBuild": "pass",
+    "previewBuild": "pass",
+    "existingBaselinesChanged": 0
+  },
+  "verdict": "CLASS_10_HUMAN_REVIEW_READY_65_ARTIFACTS_FROZEN",
+  "nextRecommendation": {
+    "checkpoint": "Class 10 AI Adversarial Pre-Review \u2014 not started here",
+    "why": "no human reviewers are available; Class 9 took the same route",
+    "shouldDo": [
+      "deterministic full-corpus audit",
+      "fresh qualitative read of all 65 lessons",
+      "defects repaired and versioned",
+      "human lifecycle untouched"
+    ],
+    "carryForward": [
+      "any repair must bump the artifact version and regenerate that artifact's review identity; the machinery is now in place and tested",
+      "read the lessons against the semantic models, not merely alongside them \u2014 this checkpoint proved the models are the single source of truth, which lets a prose/model disagreement count as a defect rather than a judgement call"
+    ]
+  }
+}

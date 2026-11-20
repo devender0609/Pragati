@@ -1,0 +1,12 @@
+{
+  "id": "EXACT_RADICAL_ZERO_FORMATTING_DEBT",
+  "raisedAt": "checkpoint 97 (v0.84.0-c11.42), recorded at 97C",
+  "issue": "The shared formatRadical renders a zero distance as \u221a0. It special-cases a radicand of 1 but not 0, so d(P,P) displays as \u221a0 rather than 0.",
+  "mathematicallyCorrect": true,
+  "sharedFormatterChanged": false,
+  "whyDeferred": "No project-wide invariant requires canonical zero display. The only precedent is a code comment in straightLine.ts \u2014 'A zero distance is zero, with no radical left hanging beside it' \u2014 which normalises inside that module's own simplifier, with no test and no stated policy. Changing the shared formatter would reach Classes 9 and 10 on no mandate.",
+  "localActionTaken": "distance3D normalises zero inside its own simplifier, following the straightLine precedent. This touches no other grade.",
+  "semanticGateUnaffected": "distanceSquared3D(P,P).num is 0 and distance3D(P,P).coefficient.num is 0; the mathematical identity test asserts the value, not the typography.",
+  "studentVisible": false,
+  "futureAction": "A shared canonical-format decision with an explicit policy and Class 9/10 regressions."
+}

@@ -1,0 +1,109 @@
+{
+  "checkpoint": "100C",
+  "canonicalVersion": "0.84.0-c11.50-fo10-hardened",
+  "packageKind": "HARDENED FINAL",
+  "verdict": "CLASS_11_3D_SECTION_FORMULA_HARDENED_READY_FOR_HUMAN_REVIEW",
+  "packageCreatedUtc": "2026-11-17T19:55:26Z",
+  "authoredAnything": false,
+  "humanReviewed": false,
+  "bases": {
+    "firstGreen": "1629a70beb8666e072c51a56f7601c6f2ba4bdea1bf82d31ff0135ce926f70c6",
+    "governance": "79c74a37fc110cdfb568273a39294635cfa33f2ea5ef79c6e39dafb1dd901624",
+    "hardeningWip": "2135760f5540fe431cd38864aa5c56bcaaaa0a3a8f45732e54b63be750b88680",
+    "hardenedInFreshCopy": true
+  },
+  "defects": [
+    {
+      "name": "point label collisions",
+      "scope": "all three viewports",
+      "cause": "every label used the same fixed +7/-5 offset; a divided segment is collinear",
+      "worst": "\"C (0, 0, 0)\" vs \"Q (7/3, 11/3, 5/3)\", 50x13px",
+      "fix": "general declutter pass: first of eight candidate offsets that clears placed labels",
+      "geometryUntouched": true,
+      "lessonSpecific": false
+    },
+    {
+      "name": "incomplete figure descriptions",
+      "scope": "two of three figures",
+      "cause": "fractional figure omitted 'internal'; constant-z figure omitted ratio AND internal division",
+      "fix": "both rewritten; all three now state triples, ratio and internal division"
+    }
+  ],
+  "hardening": {
+    "1280": {
+      "overflowPx": 0,
+      "realClip": 0.0,
+      "offScreen": 0.0,
+      "collisions": 0,
+      "subNinePx": 0,
+      "consoleErrors": 0
+    },
+    "834": {
+      "overflowPx": 0,
+      "realClip": 0.0,
+      "offScreen": 0.0,
+      "collisions": 0,
+      "subNinePx": 0,
+      "consoleErrors": 0
+    },
+    "360": {
+      "overflowPx": 0,
+      "realClip": 0.0,
+      "offScreen": 0.0,
+      "collisions": 0,
+      "subNinePx": 0,
+      "consoleErrors": 0
+    }
+  },
+  "accessibility": {
+    "figureRoot": "figure[data-visual-kind]",
+    "altChars": [
+      231,
+      271,
+      354
+    ],
+    "eachStates": [
+      "three coordinate triples",
+      "the ratio",
+      "the internal division"
+    ]
+  },
+  "qa": {
+    "tests": 3133,
+    "testFiles": 144,
+    "failures": 0,
+    "typecheck": 0,
+    "batches": [
+      771,
+      709,
+      1031,
+      622
+    ],
+    "batchNote": "run in four batches after two whole-suite runs were killed with EXIT=137, a memory kill rather than a test failure",
+    "stateDocsRegenerated": true
+  },
+  "publicSafe": {
+    "freshBuild": true,
+    "fo10Visible": false,
+    "directRouteBlocked": true,
+    "coordinate3dRoots": 0
+  },
+  "governanceUnchanged": {
+    "authoredArtifacts": 88,
+    "coverage": "91 / 93",
+    "formative": "11 / 13",
+    "summative": "80 / 80",
+    "buckets": "82 / 1 / 5 / 88",
+    "chapter11OwnedRows": 3,
+    "duplicates": 0,
+    "humanCheck": 0,
+    "GD-1": "RESOLVED",
+    "GD-2": "RESOLVED",
+    "formattingDebt": "OPEN, untouched"
+  },
+  "queue": [
+    "C11-SEQ-FO8",
+    "C11-LIM-FO11"
+  ],
+  "next": "C11-SEQ-FO8 in its own checkpoint"
+}

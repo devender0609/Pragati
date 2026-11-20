@@ -1,0 +1,431 @@
+{
+  "1": {
+    "headings": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "subsectionParents": [
+      "1.6",
+      "1.9"
+    ],
+    "exerciseImplied": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5"
+    ],
+    "union": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "count": 10,
+    "contiguous": true,
+    "subsections": {
+      "1.6.1": "Subsets of set of real numbers",
+      "1.6.2": "Intervals as subsets of R Let a, b \u2208R and a < b. Then the ",
+      "1.9.1": "Union of sets Let A and B be any two sets. The union of A ",
+      "1.9.2": "Intersection of sets The intersection of sets A and B is t",
+      "1.9.3": "Difference of sets The difference of the sets A and B in t"
+    }
+  },
+  "2": {
+    "headings": [
+      "2.1",
+      "2.2",
+      "2.3"
+    ],
+    "subsectionParents": [
+      "2.4"
+    ],
+    "exerciseImplied": [
+      "2.1",
+      "2.2",
+      "2.3"
+    ],
+    "union": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4"
+    ],
+    "count": 4,
+    "contiguous": true,
+    "subsections": {
+      "2.4.1": "Some functions and their graphs",
+      "2.4.2": "Algebra of real functions In this Section, we shall learn "
+    }
+  },
+  "3": {
+    "headings": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "subsectionParents": [
+      "3.2",
+      "3.3"
+    ],
+    "exerciseImplied": [
+      "3.1",
+      "3.2",
+      "3.3"
+    ],
+    "union": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "count": 4,
+    "contiguous": true,
+    "subsections": {
+      "3.2.1": "Degree measure If a rotation from the initial side to term",
+      "3.2.2": "Radian measure There is another unit for measurement of an",
+      "3.2.3": "Relation between radian and real numbers",
+      "3.2.4": "Relation between degree and radian Since a circle subtends",
+      "3.3.1": "Sign of trigonometric functions",
+      "3.3.2": "Domain and range of trigonometric functions From the defin"
+    }
+  },
+  "4": {
+    "headings": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5"
+    ],
+    "subsectionParents": [
+      "4.3"
+    ],
+    "exerciseImplied": [
+      "4.1"
+    ],
+    "union": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5"
+    ],
+    "count": 5,
+    "contiguous": true,
+    "subsections": {
+      "4.3.1": "Addition of two complex numbersLet z1 = a + ib and z2 = c ",
+      "4.3.2": "Difference of two complex numbersGiven any two complex num",
+      "4.3.3": "Multiplication of two complex numbers Let z1 = a + ib and ",
+      "4.3.4": "Division of two complex numbersGiven any two complex numbe",
+      "4.3.5": "Power of i we know that",
+      "4.3.6": "The square roots of a negative real number",
+      "4.3.7": "Identities We prove the following identity"
+    }
+  },
+  "5": {
+    "headings": [
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "subsectionParents": [],
+    "exerciseImplied": [
+      "5.1"
+    ],
+    "union": [
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "count": 3,
+    "contiguous": true,
+    "subsections": {}
+  },
+  "6": {
+    "headings": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "subsectionParents": [
+      "6.3"
+    ],
+    "exerciseImplied": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "union": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "count": 4,
+    "contiguous": true,
+    "subsections": {
+      "6.3.1": "Permutations when all the objects are distinct",
+      "6.3.2": "Factorial notation The notation n! represents the product ",
+      "6.3.3": "Derivation of the formula for nPr",
+      "6.3.4": "Permutations when all the objects are not distinct objects"
+    }
+  },
+  "7": {
+    "headings": [
+      "7.1",
+      "7.2"
+    ],
+    "subsectionParents": [],
+    "exerciseImplied": [
+      "7.1"
+    ],
+    "union": [
+      "7.1",
+      "7.2"
+    ],
+    "count": 2,
+    "contiguous": true,
+    "subsections": {}
+  },
+  "8": {
+    "headings": [
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "subsectionParents": [
+      "8.4"
+    ],
+    "exerciseImplied": [
+      "8.1",
+      "8.2"
+    ],
+    "union": [
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "count": 5,
+    "contiguous": true,
+    "subsections": {
+      "8.4.1": "General term of a G .P.Let us consider a G.P. with first n",
+      "8.4.2": ".",
+      "8.4.3": "Geometric Mean (G .M.)The geometric mean of two positive n"
+    }
+  },
+  "9": {
+    "headings": [
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4"
+    ],
+    "subsectionParents": [
+      "9.2",
+      "9.3",
+      "9.4"
+    ],
+    "exerciseImplied": [
+      "9.1",
+      "9.2",
+      "9.3"
+    ],
+    "union": [
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4"
+    ],
+    "count": 4,
+    "contiguous": true,
+    "subsections": {
+      "9.2.1": "Slope of a line when coordinates of any two points on the ",
+      "9.2.2": "Conditions for parallelism and perpendicularity of lines i",
+      "9.2.3": "Angle between two linesWhen we think about more than one l",
+      "9.3.1": "Horizontal and vertical lines If a horizontal line L is at",
+      "9.3.2": "Point-slope form Suppose that",
+      "9.3.3": "Two-point form Let the",
+      "9.3.4": "Slope-intercept form Sometimes a line is known to us with ",
+      "9.3.5": "Intercept - formSuppose a line L makes x-intercept a and y",
+      "9.4.1": "Distance between two"
+    }
+  },
+  "10": {
+    "headings": [
+      "10.4"
+    ],
+    "subsectionParents": [
+      "10.2",
+      "10.4",
+      "10.5",
+      "10.6"
+    ],
+    "exerciseImplied": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4"
+    ],
+    "union": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.5",
+      "10.6"
+    ],
+    "count": 6,
+    "contiguous": true,
+    "subsections": {
+      "10.2.1": "Circle, ellipse, parabola and hyperbolaWhen the plane cuts",
+      "10.2.2": "Degenerated conic sections",
+      "10.4.1": "Standard equations of parabola",
+      "10.4.2": "Latus rectum",
+      "10.5.1": "Relationship between semi-major",
+      "10.5.2": "Eccentricity",
+      "10.5.3": "Standard equations of an ellipseThe equation of an ellipse",
+      "10.5.4": "Latus rectum",
+      "10.6.1": "Eccentricity",
+      "10.6.2": "Standard equation of Hyperbola The equation of a hyperbola",
+      "10.6.3": "Latus rectum"
+    }
+  },
+  "11": {
+    "headings": [
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4"
+    ],
+    "subsectionParents": [],
+    "exerciseImplied": [
+      "11.1",
+      "11.2"
+    ],
+    "union": [
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4"
+    ],
+    "count": 4,
+    "contiguous": true,
+    "subsections": {}
+  },
+  "12": {
+    "headings": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5"
+    ],
+    "subsectionParents": [
+      "12.3",
+      "12.5"
+    ],
+    "exerciseImplied": [
+      "12.1",
+      "12.2"
+    ],
+    "union": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5"
+    ],
+    "count": 5,
+    "contiguous": true,
+    "subsections": {
+      "12.3.1": "Algebra of limitsIn the above illustrations, we have obser",
+      "12.3.2": "Limits of polynomials and rational functionsA function f i",
+      "12.5.1": "Algebra of derivative of functions Since the very definiti",
+      "12.5.2": "Derivative of polynomials and trigonometric functions We s"
+    }
+  },
+  "13": {
+    "headings": [
+      "13.1",
+      "13.2"
+    ],
+    "subsectionParents": [
+      "13.4",
+      "13.5"
+    ],
+    "exerciseImplied": [
+      "13.1",
+      "13.2"
+    ],
+    "union": [
+      "13.1",
+      "13.2",
+      "13.4",
+      "13.5"
+    ],
+    "count": 4,
+    "contiguous": false,
+    "subsections": {
+      "13.4.1": "Mean deviation for ungrouped data Let n observations be x1",
+      "13.4.2": "Mean deviation for grouped data We know that data can be g",
+      "13.4.3": "Limitations of mean deviation In a series, where the degre",
+      "13.5.1": "Standard Deviation In the calculation of variance, we find",
+      "13.5.2": "Standard deviation of a discrete frequency distribution Le",
+      "13.5.3": "Standard deviation of a continuous frequency distributionT",
+      "13.5.4": ". Shortcut method to find variance and standard deviation "
+    }
+  },
+  "14": {
+    "headings": [
+      "14.1",
+      "14.2"
+    ],
+    "subsectionParents": [
+      "14.1",
+      "14.2"
+    ],
+    "exerciseImplied": [
+      "14.1",
+      "14.2"
+    ],
+    "union": [
+      "14.1",
+      "14.2"
+    ],
+    "count": 2,
+    "contiguous": true,
+    "subsections": {
+      "14.1.1": "Occurrence of an event Consider the experiment of throwing",
+      "14.1.2": "Types of events Events can be classified into various type",
+      "14.1.3": "Algebra of events In the Chapter on Sets, we have studied ",
+      "14.1.4": "Mutually exclusive events In the experiment of rolling a d",
+      "14.1.5": "Exhaustive events Consider the experiment of throwing a di",
+      "14.2.1": "Probability of an event Let S be a sample space associated",
+      "14.2.2": "Probabilities of equally likely outcomes Let a sample spac",
+      "14.2.3": "Probability of the event \u2018A or B\u2019Let us now find the proba",
+      "14.2.4": "Probability of event \u2018not A\u2019 Consider the event A = {2, 4,"
+    }
+  }
+}

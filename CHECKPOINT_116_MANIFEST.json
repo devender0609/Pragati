@@ -1,0 +1,102 @@
+{
+ "checkpoint": "116",
+ "canonicalVersion": "0.84.0-c12.08-whole-book-hierarchy-WIP",
+ "archiveClass": "WIP-NOT-FIRST-GREEN",
+ "verdict": "CLASS_12_SOURCE_SET_INCOMPLETE",
+ "base": {
+  "archive": "pragati-c12_07-wip.zip",
+  "sha256": "8e5301774ab98f2f8d49d0250dd144a837bcc03859b20f6eb9975a8d92b66f07",
+  "longNameArchive": {
+   "name": "pragati-0.84.0-c12.07-hierarchy-reconciled-WIP-NOT-FIRST-GREEN.zip",
+   "sha256": "1a1ba6d30cb1b6f9bda7f0ab3678d5ffc7c4a6ee0b30103f2202895164f57e5a",
+   "compared": false,
+   "note": "not uploaded to this environment; outer-zip equivalence not assumed"
+  }
+ },
+ "newSource": {
+  "filename": "lemh201.pdf",
+  "sha256": "bc4b4a0b2d3ec8d71d479c0ea549969028c2ac28d3613e97a888e2845144112f",
+  "bytes": 5662676,
+  "pdfPages": 67,
+  "folios": "225-291",
+  "valid": true,
+  "replaces": {
+   "sha256": "428ebd538d8b852c8e06ec648a34e66b00aff022250320caab6730ccd1871043",
+   "classification": "INVALID_TRUNCATED_DOWNLOAD"
+  }
+ },
+ "nonSourceUploadsThisSession": [
+  "NCERT_Class12_Maths_PDFs.zip (15 PDFs byte-identical to c12.07)",
+  "16 copies of lemh1ps.pdf (identical to c12.07)",
+  "Class 6 Chapter 7 Fractions reviewer packets (not Class 12)"
+ ],
+ "denominators": {
+  "chapters": {
+   "value": 13,
+   "status": "PRIMARY_SOURCE_VERIFIED"
+  },
+  "sections": {
+   "value": 65,
+   "status": "PRIMARY_SOURCE_VERIFIED"
+  },
+  "subsections": {
+   "value": 47,
+   "status": "PRIMARY_SOURCE_VERIFIED"
+  },
+  "pages": {
+   "value": null,
+   "status": "NOT_VERIFIED"
+  }
+ },
+ "wholeBookGate": {
+  "allThirteenChaptersRepresented": true,
+  "noSectionNumberingGaps": true,
+  "noDuplicatePrintedSectionNumbers": true,
+  "subsectionsCorrectlyParentedNoGapsNoDuplicates": true,
+  "everySectionHasSourceLocation": true,
+  "everySectionAgreesWithPrintedContents": true,
+  "everySectionStartVerified": true,
+  "everySectionEndVerified": true,
+  "everyPageFolioMatchesContentsMapping": true,
+  "headingsMonotonicInReadingOrder": true
+ },
+ "perChapterSections": {
+  "1": 4,
+  "2": 3,
+  "3": 7,
+  "4": 6,
+  "5": 7,
+  "6": 4,
+  "7": 10,
+  "8": 2,
+  "9": 4,
+  "10": 6,
+  "11": 5,
+  "12": 2,
+  "13": 5
+ },
+ "perChapterSubsections": {
+  "1": 0,
+  "2": 0,
+  "3": 9,
+  "4": 5,
+  "5": 4,
+  "6": 1,
+  "7": 8,
+  "8": 0,
+  "9": 5,
+  "10": 6,
+  "11": 4,
+  "12": 2,
+  "13": 3
+ },
+ "stillMissing": [
+  "Part I Answers (folios 208-224)",
+  "Appendix 1: Proofs in Mathematics (folios 187-195)",
+  "Appendix 2: Mathematical Modelling (folios 196-207)",
+  "Part II Answers (from folio 439)",
+  "Supplementary Material (folio 223) disposition"
+ ],
+ "decompositionGate": "CLOSED",
+ "class11": "frozen; not mutated"
+}

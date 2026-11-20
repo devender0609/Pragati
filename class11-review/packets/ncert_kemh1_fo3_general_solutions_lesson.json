@@ -1,0 +1,213 @@
+{
+  "priority": 20,
+  "contentArtifactId": "ncert_kemh1_fo3_general_solutions_lesson",
+  "title": "You will write the complete solution of a simple trigonometric equation as an infinite family parameterised by an integer, rather than as a single value.",
+  "placement": "chapter-less required",
+  "selectionReasons": [
+    "CBSE-only required content (FO-3)",
+    "chapter-less placement",
+    "risk class C"
+  ],
+  "artifactFingerprint": "d042968746f87c087988c0d778d1f228",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-TRG-FO3",
+      "title": "General solution of simple trigonometric equations",
+      "objective": "Write the general solution of sin x = sin y, cos x = cos y and tan x = tan y.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "periodicity diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "cbse_only",
+    "officialChapterId": "cbse_fo3_c11_general_solutions",
+    "officialSectionId": null,
+    "sectionNumber": null,
+    "cbseEntryId": "FO-3",
+    "startPage": 0,
+    "sourceReference": "Maths_SecP2_2026-27",
+    "note": "CBSE-only: no NCERT section or page exists for this content; empty section and page 0 are absence markers, not missing data"
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will write the complete solution of a simple trigonometric equation as an infinite family parameterised by an integer, rather than as a single value.",
+    "vocabulary": [
+      {
+        "term": "general solution",
+        "meaning": "An expression giving every solution of a trigonometric equation, parameterised by an integer."
+      },
+      {
+        "term": "principal solution",
+        "meaning": "A solution lying in one chosen turn, from which the general solution is built."
+      }
+    ],
+    "explanation": [
+      "An equation such as sin x = sin y does not have one solution. Because sin repeats after every full turn, any solution can be shifted by a whole turn and remain a solution, so there are infinitely many.",
+      "Writing down one value is therefore an incomplete answer. The complete answer is a family, described by a formula containing an integer parameter n which may be positive, negative or zero: n ∈ ℤ.",
+      "For sine the general solution of sin x = sin y is x = nπ + (−1)ⁿ  y, n ∈ ℤ, in the form x = nπ + (−1)ⁿ y. The alternating sign reflects that within each turn there are two arguments with the same sine, placed symmetrically.",
+      "For cosine the general solution of cos x = cos y is of the form x = 2nπ ± y. The plus-or-minus appears because cos takes the same value at an angle and at its negative, and the step is a full turn rather than a half turn.",
+      "For tangent the general solution of tan x = tan y is x = nπ + y, a simpler form because tan repeats after a half turn rather than a full one.",
+      "Taking a concrete reference, the solutions of the sine equation with y = π/6 are given by x = nπ + (−1)ⁿ π/6, n ∈ ℤ. Substituting n = 0, 1 and −1 gives three different solutions, and every other integer gives another."
+    ],
+    "workedExamples": [
+      {
+        "id": "fo3.we1",
+        "prompt": "Why does sin x = 1/2 have infinitely many solutions?",
+        "answer": "Because sin is periodic, so every solution generates infinitely many more.",
+        "steps": [
+          {
+            "text": "sin repeats after every full turn, so if x solves the equation then so does x plus any whole number of turns.",
+            "reasoning": "Periodicity is the whole reason; nothing about the particular value 1/2 matters."
+          },
+          {
+            "text": "There are also two arguments within each single turn giving the same sine, placed symmetrically about the vertical.",
+            "reasoning": "This is why the sine family needs an alternating sign rather than a simple shift."
+          },
+          {
+            "text": "So the solutions form an infinite family rather than a short list.",
+            "reasoning": "Listing any finite number of them would leave out infinitely many others."
+          }
+        ]
+      },
+      {
+        "id": "fo3.we2",
+        "prompt": "Write the general solution of sin x = sin π/6.",
+        "answer": "x = nπ + (−1)ⁿ π/6, n ∈ ℤ",
+        "steps": [
+          {
+            "text": "Use the sine form x = nπ + (−1)ⁿ y with y = π/6.",
+            "reasoning": "The reference angle is the one whose sine the equation matches."
+          },
+          {
+            "text": "This gives x = nπ + (−1)ⁿ π/6, n ∈ ℤ.",
+            "reasoning": "The integer n ranges over all of ℤ, so negative shifts are included."
+          },
+          {
+            "text": "Checking n = 0, 1 and −1 gives three distinct arguments, all with the same sine: every member of the family solves the equation.",
+            "reasoning": "The check confirms the family is right; it does not replace the periodicity argument that produced it."
+          }
+        ]
+      },
+      {
+        "id": "fo3.we3",
+        "prompt": "A student answers sin x = sin π/6 with x = π/6 alone. What is missing?",
+        "answer": "The infinite family; one value is only a single member of it.",
+        "steps": [
+          {
+            "text": "That is one solution, not the solution set.",
+            "reasoning": "The equation asks which arguments satisfy it, and there are infinitely many."
+          },
+          {
+            "text": "Every shift by a full turn gives another, and there is a second argument within each turn as well.",
+            "reasoning": "Both sources of extra solutions are consequences of how sine behaves, not special cases."
+          },
+          {
+            "text": "The complete answer is x = nπ + (−1)ⁿ π/6, n ∈ ℤ.",
+            "reasoning": "The parameter is what makes the answer complete."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "fo3.g1",
+        "prompt": "Why does the tangent form use nπ rather than 2nπ?",
+        "hint": "What is the period of tan?",
+        "answer": "Because tan has period π.",
+        "rationale": "A shift of half a turn already returns tan to the same value, so the step between consecutive solutions is half what it is for sine."
+      },
+      {
+        "id": "fo3.g2",
+        "prompt": "What values may n take?",
+        "hint": "Can a solution lie before the reference angle?",
+        "answer": "Any integer, positive, negative or zero.",
+        "rationale": "Shifting backwards by whole turns gives solutions just as legitimate as shifting forwards, so restricting n to the naturals would lose half the family."
+      },
+      {
+        "id": "fo3.g3",
+        "prompt": "Is a general solution a number?",
+        "hint": "How many values does it describe?",
+        "answer": "No, it is a family of numbers.",
+        "rationale": "It describes infinitely many arguments at once, one for each integer value of the parameter."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "fo3.i1",
+        "prompt": "Write the general solution of cos x = cos y.",
+        "answer": "x = 2nπ ± y, with n any integer.",
+        "rationale": "cos takes the same value at an angle and its negative, which the plus-or-minus records, and it repeats after a full turn."
+      },
+      {
+        "id": "fo3.i2",
+        "prompt": "How many solutions of sin x = sin y lie in one full turn?",
+        "answer": "Generally two.",
+        "rationale": "Within a turn there are two arguments with the same sine, placed symmetrically; the alternating sign in the general form produces exactly those."
+      },
+      {
+        "id": "fo3.i3",
+        "prompt": "Why is the general solution written with a parameter rather than as a list?",
+        "answer": "Because the set is infinite.",
+        "rationale": "No list can be complete, whereas one formula with an integer parameter names every member at once."
+      },
+      {
+        "id": "fo3.i4",
+        "prompt": "Give two members of the family x = nπ + π/4, n ∈ ℤ.",
+        "answer": "Taking n = 0 and n = 1 gives two arguments one half-turn apart.",
+        "rationale": "Each integer gives a distinct solution, and consecutive integers differ by the period of tan."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "fo3.td1",
+        "prompt": "How does periodicity turn one solution into infinitely many, and why does that make the integer parameter necessary?",
+        "expectedReasoning": "A periodic function takes the same value at arguments spaced one period apart, so a single solution immediately produces a whole arithmetic sequence of them in both directions. Describing that sequence needs something that ranges over all the integers, because the shifts go backwards as well as forwards and never stop. A finite list could only ever show a window of the family, and would misrepresent a complete answer as a partial one."
+      }
+    ],
+    "summary": "Because the trigonometric functions are periodic, an equation such as sin x = sin y has infinitely many solutions, written as a family parameterised by an integer: x = nπ + (−1)ⁿ π/6, n ∈ ℤ for the sine case, x = 2nπ ± y for cosine and x = nπ + y for tangent.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-TRG-FO3",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

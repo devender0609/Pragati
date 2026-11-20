@@ -1,0 +1,45 @@
+{
+  "checkpoint": 50,
+  "canonicalVersion": "0.84.0-review.3",
+  "packageCreatedUtc": "2026-10-16T13:28:22Z",
+  "correction": "checkpoint 49 said 'all 92 reviewed, none sampled'; that held for the deterministic harness (92/92) but not the qualitative reading (13/92). The two claims are now counted separately and pinned by test.",
+  "coverage": {
+    "deterministic": "92/92",
+    "qualitativeAtCheckpoint49": 13,
+    "qualitativeAtCheckpoint50": 79,
+    "qualitativeTotal": 92
+  },
+  "auditClassification": "AI_PRE_REVIEW",
+  "notHumanReview": "Claude reading Claude-authored material; the reader shares every blind spot of the author",
+  "findings": {
+    "BLOCKER": 0,
+    "MAJOR": 0,
+    "MINOR": 16,
+    "OPTIONAL": 0,
+    "artifactsWithNoFindings": 78,
+    "newAtCheckpoint50": "ncert_iemh1_s8_6_visual_lesson \u2014 'their areas form a GP' does not say whether per-triangle (ratio 1/4) or total remaining (ratio 3/4) area is meant"
+  },
+  "repairs": {
+    "count": 0,
+    "rationale": "no blocker or major; each minor admits two defensible corrections, so the choice belongs to a human reviewer"
+  },
+  "refreeze": {
+    "unchangedCandidates": 92,
+    "changedCandidates": 0
+  },
+  "humanLifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "state": "HUMAN_REVIEW_DEFERRED_NO_REVIEWERS_AVAILABLE"
+  },
+  "gates": {
+    "publicSafeDelivery": "closed, unchanged",
+    "previewFlag": "defaults off, unchanged"
+  },
+  "testCount": 2102,
+  "testFileCount": 107,
+  "verdict": "CLASS_9_AI_PRE_REVIEW_COMPLETE_HUMAN_REVIEW_DEFERRED",
+  "nextMilestone": "human curriculum review \u2014 not technical"
+}

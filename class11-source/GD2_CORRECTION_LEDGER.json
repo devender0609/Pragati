@@ -1,0 +1,45 @@
+{
+  "generatedAt": "checkpoint 99R",
+  "ownershipBefore": "85 / 1 / 1 / 87",
+  "ownershipAfter": "82 / 1 / 4 / 87",
+  "chapterRows": {
+    "2": 5,
+    "3": 7,
+    "4": 6
+  },
+  "corrections": [
+    {
+      "unitId": "C11-RF-FO2",
+      "artifactId": "ncert_kemh1_fo2_composition_lesson",
+      "oldOfficialChapterId": "ncert_kemh1_ch02",
+      "newOfficialChapterId": "cbse_fo2_c11_composition",
+      "canonicalNcertOwner": null,
+      "duplicateAppendRemoved": true,
+      "reachability": "chapter-less required group",
+      "appearsOnce": true,
+      "rationale": "CBSE-only topic with no NCERT section owner; officialSectionId, sectionNumber and startPage were already truthful."
+    },
+    {
+      "unitId": "C11-TRG-FO3",
+      "artifactId": "ncert_kemh1_fo3_general_solutions_lesson",
+      "oldOfficialChapterId": "ncert_kemh1_ch03",
+      "newOfficialChapterId": "cbse_fo3_c11_general_solutions",
+      "canonicalNcertOwner": null,
+      "duplicateAppendRemoved": true,
+      "reachability": "chapter-less required group",
+      "appearsOnce": true,
+      "rationale": "CBSE-only topic with no NCERT section owner; officialSectionId, sectionNumber and startPage were already truthful."
+    },
+    {
+      "unitId": "C11-CPX-FO5b",
+      "artifactId": "ncert_kemh1_fo5b_complex_quadratics_lesson",
+      "oldOfficialChapterId": "ncert_kemh1_ch04",
+      "newOfficialChapterId": "cbse_fo5b_c11_complex_quadratics",
+      "canonicalNcertOwner": null,
+      "duplicateAppendRemoved": true,
+      "reachability": "chapter-less required group",
+      "appearsOnce": true,
+      "rationale": "CBSE-only topic with no NCERT section owner; officialSectionId, sectionNumber and startPage were already truthful."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "generatedBy": "checkpoint 112 \u2014 CBSE topic-level pass deferred from c12.03",
+  "source": "Maths_SecP2_2026-27.pdf pages 7-10",
+  "sourceSha256": "5121a0fb9456269fad833abf173090b99232220bd4acfc8f5907f9edc9b405c0",
+  "subject": "Mathematics",
+  "subjectCode": "041",
+  "class": "XII",
+  "academicYear": "2026-27",
+  "paperMarks": 80,
+  "internalAssessment": 20,
+  "axisNote": "This is the CBSE SYLLABUS axis. It is not the NCERT chapter denominator, which remains unverified.",
+  "units": [
+    {
+      "unit": "Unit-I: Relations and Functions",
+      "topics": [
+        {
+          "number": 1,
+          "title": "Relations and Functions",
+          "scope": "Types of relations: reflexive, symmetric, transitive and equivalence relations. One to one and onto functions."
+        },
+        {
+          "number": 2,
+          "title": "Inverse Trigonometric Functions",
+          "scope": "Definition, range, domain, principal value branch. Graphs of inverse trigonometric functions."
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "unit": "Unit-II: Algebra",
+      "topics": [
+        {
+          "number": 1,
+          "title": "Matrices",
+          "scope": "Concept, notation, order, equality, types of matrices, zero and identity matrix, transpose of a matrix, symmetric and skew symmetric matrices. Operations on matrices: Addition and multiplication and multiplication with a scalar. Simple properties of addition, multiplication and scalar multiplication. Non- commutativity of multiplication of matrices and existence of non- zero matrices whose product is the zero matrix (restrict to square matrices of order 2). Invertible matrices and proof of the uniqueness of inverse, if it exists; (Here all matrices will have real entries)."
+        },
+        {
+          "number": 2,
+          "title": "Determinants",
+          "scope": "Determinant of a square matrix (up to 3 x 3 matrices), minors, co-factors and applications of determinants in finding the area of a triangle. Adjoint and inverse of a square matrix. Consistency, inconsistency and number of solutions of system of linear equations by examples, solving system of linear equations in two or three variables (having unique solution) using inverse of a matrix."
+        }
+      ],
+      "marks": 10
+    },
+    {
+      "unit": "Unit-III: Calculus",
+      "topics": [
+        {
+          "number": 1,
+          "title": "Continuity and Differentiability",
+          "scope": "Continuity and differentiability, chain rule, derivative of composite functions, derivatives of inverse trigonometric functions like sin\u22121 \ue04b, cos\u22121 \ue04b and tan\u22121 \ue04b, derivative of implicit functions. Concept of exponential and logarithmic functions. Derivatives of logarithmic and exponential functions. Logarithmic differentiation, derivative of functions expressed in parametric forms. Second order derivatives."
+        },
+        {
+          "number": 2,
+          "title": "Applications of Derivatives",
+          "scope": "Applications of derivatives: rate of change of quantities, increasing/decreasing functions, maxima and minima (first derivative test motivated geometrically and second derivative test given as a provable tool). Simple problems (that illustrate basic principles and understanding of the subject as well as real- life situations)."
+        },
+        {
+          "number": 3,
+          "title": "Integrals",
+          "scope": "Integration as inverse process of differentiation. Integration of a variety of functions by substitution, by partial fractions and by parts, Evaluation of simple integrals of the following types and problems based on them. \ue052\ue055 \ue052\ue055 \ue052\ue055 \ue052\ue055 \ue052\ue055 \ue053\ue055\ue05c\ue054 \u222b \ue055\ue056 \u00b1\ue04f\ue056 , \u222b \u221a \ue056 ,\u222b ,\u222b \ue04f\ue055\ue056 \ue05c\ue050\ue055\ue05c\ue051 ,\u222b ,\u222b \ue04f\ue055\ue056 \ue05c\ue050\ue055\ue05c\ue051 \ue052\ue055, \ue055 \u00b1\ue04f\ue056 \u221a\ue04f\ue056 \ue05d\ue055\ue056 \u221a\ue04f\ue055\ue056 \ue05c\ue050\ue055\ue05c\ue051 \ue053\ue055\ue05c\ue054 \u222b\u221a \ue052\ue055, \u222b \u221a\ue04f\ue056 \u00b1 \ue055\ue056 \ue052\ue055 , \u222b \ue03b\ue055\ue056 \u2212 \ue04f\ue056 \ue052\ue055 , \u222b \ue03b\ue04f\ue055\ue056 + \ue050\ue055 + \ue051 \ue052\ue055 \ue04f\ue055\ue056 \ue05c\ue050\ue055\ue05c\ue051 Fundamental Theorem of Calculus (without proof). Basic properties of definite integrals and evaluation of definite integrals."
+        },
+        {
+          "number": 4,
+          "title": "Application of the Integrals",
+          "scope": "Applications in finding the area under simple curves, especially lines, circles/ parabolas/ellipses (in standard form only)"
+        },
+        {
+          "number": 5,
+          "title": "Differential Equations",
+          "scope": "Definition, order and degree, general and particular solutions of a differential equation. Solution of differential equations by method of separation of variables, solutions of homogeneous differential equations of first order and first degree. Solutions of linear differential equation of the type: \ue06b\ue074 + \ue048\ue04c = \ue049, where \ue048 and \ue049 are functions of \ue04b or constants. \ue06b\ue073 \ue06b\ue073 + \ue048\ue04b = \ue049, where \ue048 and \ue049 are functions of \ue04c or constants. \ue06b\ue074"
+        }
+      ],
+      "marks": 35
+    },
+    {
+      "unit": "Unit-IV: Vectors and Three-dimensional Geometry",
+      "topics": [
+        {
+          "number": 1,
+          "title": "Vectors",
+          "scope": "Vectors and scalars, magnitude and direction of a vector. Direction cosines and direction ratios of a vector. Types of vectors (equal, unit, zero, parallel and collinear vectors), position vector of a point, negative of a vector, components of a vector, addition of vectors, multiplication of a vector by a scalar, position vector of a point dividing a line segment in a given ratio. Definition, Geometrical Interpretation, properties and application of scalar (dot) product of vectors, vector (cross) product of vectors."
+        },
+        {
+          "number": 2,
+          "title": "Three-dimensional Geometry",
+          "scope": "Direction cosines and direction ratios of a line joining two points. Cartesian equation and vector equation of a line, skew lines, shortest distance between two lines. Angle between two lines."
+        }
+      ],
+      "marks": 14
+    },
+    {
+      "unit": "Unit-V: Linear Programming Problem",
+      "topics": [
+        {
+          "number": 1,
+          "title": "Linear Programming",
+          "scope": "Introduction, related terminology such as constraints, objective function, optimization, graphical method of solution for problems in two variables, feasible and infeasible regions (bounded or unbounded), feasible and infeasible solutions, optimal feasible solutions (up to three non-trivial constraints)."
+        }
+      ],
+      "marks": 5
+    },
+    {
+      "unit": "Unit-VI: Probability",
+      "topics": [
+        {
+          "number": 1,
+          "title": "Probability",
+          "scope": "Conditional probability, multiplication theorem on probability, independent events, total probability, Bayes\u2019 theorem. MATHEMATICS (Code No. \u2013 041) QUESTION PAPER DESIGN CLASS \u2013 XII (2026-27) Time: 3 hours Max. Marks: 80 S. % Typology of Questions Total No. Weightage Marks Remembering: Exhibit memory of previously learned material by recalling facts, terms, basic concepts, and 44 55 answers. 1 Understanding: Demonstrate understanding of facts and ideas by organizing, comparing, translating, interpreting, giving descriptions, and stating main ideas Applying: Solve problems to new situations by applying 2 20 25 acquired knowledge, facts, techniques and rules in a different way. Analysing : Examine and break information into parts by identifying motives or causes. Make inferences and find evidence to support generalizations Evaluating: 3 Present and defend opinions by making judgments about 16 20 information, validity of ideas, or quality of work based on a set of criteria. Creating: Compile information together in a different way by combining elements in a new pattern or proposing alternative solutions Total 80 100"
+        }
+      ],
+      "marks": 8,
+      "extractionNote": "One trailing paragraph beginning \"No chapter wise weightage\" was removed: it is an assessment instruction in the syllabus, not a topic. The numbered-heading regex caught it because it follows the same shape on the page."
+    }
+  ],
+  "totalNamedTopics": 13,
+  "topicCountNote": "13 named CBSE topics across 6 units. Secondary sources report 13 NCERT chapters. These two 13s are NOT established as the same thing and must not be assumed to correspond one-to-one; the NCERT axis is still unverified."
+}

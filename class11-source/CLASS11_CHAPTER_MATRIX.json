@@ -1,0 +1,103 @@
+{
+  "generatedAt": "checkpoint 102C",
+  "chapters": [
+    {
+      "chapter": 1,
+      "units": 12,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 2,
+      "units": 6,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 3,
+      "units": 8,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 4,
+      "units": 7,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 5,
+      "units": 2,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 6,
+      "units": 5,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 7,
+      "units": 4,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 8,
+      "units": 8,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 9,
+      "units": 6,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 10,
+      "units": 8,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 11,
+      "units": 4,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 12,
+      "units": 7,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 13,
+      "units": 7,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    },
+    {
+      "chapter": 14,
+      "units": 7,
+      "summativeComplete": true,
+      "requiredComplete": true,
+      "missing": []
+    }
+  ]
+}

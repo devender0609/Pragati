@@ -1,0 +1,31 @@
+{
+  "gate": "CLASS_12_DECOMPOSITION_START",
+  "state": "AWAITING_HUMAN_REVIEW",
+  "note": "No CLEAR / MANAGEABLE / BLOCKING judgement exists. The gate is decided by real human findings, never by structural automation.",
+  "whyThisGateExists": "The Class 11 audit found the unit-to-lesson mapping is many-to-many: 35 of 90 lessons carry several canonical units, and 26 units are taught across several lessons. That is structurally legal and materially unchecked. Class 12 would inherit the same decomposition approach, so Wave 1 tests it first.",
+  "outcomes": {
+    "CLEAR": "No systemic granularity or source-mapping issue found. Class 12 may inherit the architecture.",
+    "MANAGEABLE": "Findings are local and repairable without changing the decomposition approach. Class 12 may proceed, with the local repairs tracked.",
+    "BLOCKING": "Human review shows a repeated structural problem — multi-unit lessons regularly failing a mapped objective, materially confusing duplication across lessons, repeated SHOULD_SPLIT, or a source-mapping architecture needing revision. Class 12 decomposition does not begin until the architecture is corrected."
+  },
+  "systemicMetrics": {
+    "computed": false,
+    "note": "Computed only once real responses exist. Computing them now would produce numbers from an empty set.",
+    "planned": [
+      "share of multi-unit artifacts recommended SHOULD_SPLIT",
+      "share of multi-artifact units flagged DUPLICATIVE_ACROSS_ARTIFACTS",
+      "shared-key artifacts with any PARTIAL or MISALIGNED unit result",
+      "CBSE-only alignment problem rate",
+      "representation-related issue rate",
+      "severe issue rate by risk class"
+    ]
+  },
+  "verifiedWaveFacts": {
+    "packets": 25,
+    "multiUnitPackets": 15,
+    "cbseOnlyPackets": 8,
+    "hardestCase": "ncert_kemh1_s7_2_binomial_theorem_lesson carries C11-BIN-01, C11-BIN-02, C11-BIN-03, C11-BIN-FO7",
+    "corpusWideMultiUnitArtifacts": 35,
+    "corpusWideUnitsTaughtByMultipleArtifacts": 26
+  }
+}

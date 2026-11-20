@@ -1,0 +1,250 @@
+{
+  "priority": 14,
+  "contentArtifactId": "ncert_kemh1_s10_2_2_degenerate_lesson",
+  "title": "You will see what the four conics collapse to when the cutting plane passes through the vertex of the cone.",
+  "placement": "chapter-10",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "shares unit(s) with another lesson: C11-CON-01",
+    "risk class C"
+  ],
+  "artifactFingerprint": "207345634a30817dbe516049f5dd4e5a",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-CON-01",
+      "title": "Sections of a cone",
+      "objective": "Describe how a plane cutting a cone produces a circle, ellipse, parabola or hyperbola according to the angle of the cut.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "cone section diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s10_2_cone_sections_lesson"
+      ]
+    },
+    {
+      "unitId": "C11-CON-02",
+      "title": "Degenerate conic sections",
+      "objective": "Identify the point, the straight line and the pair of intersecting lines as degenerate cases of a conic.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "cone section diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch10",
+    "officialSectionId": "ncert_kemh1_s10_2",
+    "sectionNumber": "10.2",
+    "cbseEntryId": null,
+    "startPage": 170,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "cone_section"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will see what the four conics collapse to when the cutting plane passes through the vertex of the cone.",
+    "vocabulary": [
+      {
+        "term": "degenerate conic",
+        "meaning": "The curve obtained when the cutting plane passes through the vertex of the cone, which collapses to a point, a line, or a pair of intersecting lines."
+      }
+    ],
+    "explanation": [
+      "Every cut so far has missed the vertex. Move the plane so that it passes through the vertex and the same four tilts give something much smaller.",
+      "A plane perpendicular to the axis through the vertex touches the cone at the vertex alone. The circle has shrunk to a single point.",
+      "A plane parallel to a generator through the vertex meets the cone along that one generator. The parabola has collapsed to a straight line.",
+      "A plane parallel to the axis through the vertex cuts along two generators, one on each nappe. The hyperbola has collapsed to a pair of intersecting lines, crossing at the vertex.",
+      "These three are called degenerate conic sections. They are not failures of the method; they are what the ordinary cases become in a limiting position, and they are still sections of a cone.",
+      "The name is worth taking literally. Something has degenerated: a curve with extent has lost it, and what remains is a point or straight lines with no curvature at all."
+    ],
+    "workedExamples": [
+      {
+        "id": "s1022.we1",
+        "prompt": "What does the plane perpendicular to the axis give when it passes through the vertex?",
+        "answer": "A single point.",
+        "steps": [
+          {
+            "text": "Away from the vertex this cut gives a circle whose radius shrinks as the plane nears the vertex.",
+            "reasoning": "The cone narrows towards the vertex, so the section narrows with it."
+          },
+          {
+            "text": "At the vertex the radius has reached zero.",
+            "reasoning": "There is no width left for a circle to have."
+          },
+          {
+            "text": "So the section is a single point.",
+            "reasoning": "The circle has not disappeared; it has shrunk to nothing but its centre."
+          }
+        ]
+      },
+      {
+        "id": "s1022.we2",
+        "prompt": "Why does a plane through the vertex parallel to a generator give one line rather than two?",
+        "answer": "A single straight line.",
+        "steps": [
+          {
+            "text": "Such a plane touches the cone along the generator it is parallel to.",
+            "reasoning": "Being parallel and sharing the vertex means it contains that generator."
+          },
+          {
+            "text": "It does not reach across to the other nappe, because a plane parallel to a generator stays on one side.",
+            "reasoning": "That is the same reason the ordinary parabola uses only one nappe."
+          },
+          {
+            "text": "So the section is a single straight line.",
+            "reasoning": "One nappe can supply only one generator here."
+          }
+        ]
+      },
+      {
+        "id": "s1022.we3",
+        "prompt": "Why do two intersecting lines rather than two parallel ones come from the vertex cut parallel to the axis?",
+        "answer": "Because both lines pass through the vertex.",
+        "steps": [
+          {
+            "text": "The plane meets both nappes, so it cuts a line from each.",
+            "reasoning": "This is the hyperbola case, moved onto the vertex."
+          },
+          {
+            "text": "Both lines pass through the vertex, because the plane contains it.",
+            "reasoning": "Every generator passes through the vertex by definition."
+          },
+          {
+            "text": "Two lines sharing a point intersect there, so they cannot be parallel.",
+            "reasoning": "The vertex is the point of intersection, which is also where the two branches of the ordinary hyperbola would have been closest."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s1022.g1",
+        "prompt": "What distinguishes a degenerate section from an ordinary one?",
+        "hint": "Where is the plane?",
+        "answer": "The plane passes through the vertex.",
+        "rationale": "The same tilts give ordinary conics when the plane misses the vertex and degenerate ones when it does not."
+      },
+      {
+        "id": "s1022.g2",
+        "prompt": "Which ordinary conic degenerates to a point?",
+        "hint": "Which one closes most tightly?",
+        "answer": "The circle.",
+        "rationale": "Its radius shrinks to zero as the cutting plane approaches the vertex."
+      },
+      {
+        "id": "s1022.g3",
+        "prompt": "Which degenerates to a pair of intersecting lines?",
+        "hint": "Which one has two pieces?",
+        "answer": "The hyperbola.",
+        "rationale": "Its two branches become two generators, one from each nappe, meeting at the vertex."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s1022.i1",
+        "prompt": "Is a point a conic section?",
+        "answer": "Yes, a degenerate one.",
+        "rationale": "It is still obtained by cutting a cone with a plane; the plane simply passes through the vertex."
+      },
+      {
+        "id": "s1022.i2",
+        "prompt": "Can a degenerate section be curved?",
+        "answer": "No.",
+        "rationale": "All three cases are a point or straight lines, which is what makes them degenerate rather than merely small."
+      },
+      {
+        "id": "s1022.i3",
+        "prompt": "What does an ellipse degenerate to?",
+        "answer": "A point.",
+        "rationale": "Like the circle, it closes around the axis and shrinks to the vertex as the plane approaches it."
+      },
+      {
+        "id": "s1022.i4",
+        "prompt": "Why study these cases at all?",
+        "answer": "Because they show what the ordinary cases become in a limiting position.",
+        "rationale": "They also appear later as the exceptional solutions of second-degree equations, so recognising them prevents treating a point or a line as a failed curve."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s1022.td1",
+        "prompt": "The degenerate cases are a point and some straight lines. Why call them conic sections at all, rather than saying the cut produced nothing interesting?",
+        "expectedReasoning": "Because they arise from exactly the same construction, and excluding them would make the classification untidy rather than tidier. If you move the plane gradually towards the vertex, the circle shrinks continuously to a point; there is no moment at which the section stops being a section. The same algebra that produces a circle produces a point when the radius reaches zero. A rule with no exceptions is more useful than one that works except at the vertex."
+      }
+    ],
+    "summary": "When the cutting plane passes through the vertex, the conic sections collapse: the circle and ellipse to a point, the parabola to a single straight line, and the hyperbola to a pair of lines intersecting at the vertex. These are the degenerate conic sections.",
+    "visuals": [
+      {
+        "type": "cone_section",
+        "caption": "The same double cone, cut by a plane perpendicular to the axis but passing through the vertex itself. The circle has shrunk until nothing is left of it but the vertex, marked as a single dot.",
+        "altText": "The same double cone, cut by a plane perpendicular to the axis but passing through the vertex itself. The circle has shrunk until nothing is left of it but the vertex, marked as a single dot."
+      },
+      {
+        "type": "cone_section",
+        "caption": "The double cone cut by a plane through the vertex, parallel to one slanting edge. The plane now contains that edge, so the section is the single straight generator drawn from the vertex down the surface.",
+        "altText": "The double cone cut by a plane through the vertex, parallel to one slanting edge. The plane now contains that edge, so the section is the single straight generator drawn from the vertex down the surface."
+      },
+      {
+        "type": "cone_section",
+        "caption": "The double cone cut by a plane through the vertex, running parallel to the axis so that it meets both nappes. It cuts one generator from each, and the two straight lines cross at the vertex.",
+        "altText": "The double cone cut by a plane through the vertex, running parallel to the axis so that it meets both nappes. It cuts one generator from each, and the two straight lines cross at the vertex."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-CON-01",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-CON-02",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

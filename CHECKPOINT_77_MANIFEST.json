@@ -1,0 +1,168 @@
+{
+  "checkpoint": 77,
+  "canonicalVersion": "0.84.0-c11.6-decomposition",
+  "verdict": "CLASS_11_INSTRUCTIONAL_DECOMPOSITION_COMPLETE",
+  "authored": false,
+  "packageCreatedUtc": "2026-10-27T19:31:36Z",
+  "unitCount": 93,
+  "byChapter": {
+    "1": 12,
+    "2": 6,
+    "3": 8,
+    "4": 7,
+    "5": 2,
+    "6": 5,
+    "7": 4,
+    "8": 8,
+    "9": 6,
+    "10": 8,
+    "11": 4,
+    "12": 7,
+    "13": 7,
+    "14": 7
+  },
+  "cbseOnlyNoChapterOwner": [
+    "C11-INQ-FO6",
+    "C11-IND-01"
+  ],
+  "status": {
+    "READY_FOR_AUTHORING": 91,
+    "NEEDS_HUMAN_CHECK": 2
+  },
+  "assessmentStatus": {
+    "SUMMATIVE_CORE": 80,
+    "FORMATIVE_ONLY": 13
+  },
+  "instructionalStatus": {
+    "REQUIRED_CORE": 81,
+    "OPTIONAL_ENRICHMENT": 10,
+    "REQUIRED_PREREQUISITE": 2
+  },
+  "riskClass": {
+    "C": 56,
+    "A": 7,
+    "B": 30
+  },
+  "sourceKind": {
+    "NCERT_SECTION": 52,
+    "NCERT_SUBSECTION": 24,
+    "SCOPE_FRAGMENT": 9,
+    "CBSE_ONLY": 8
+  },
+  "progression": {
+    "NEW_NAMED_OBJECT": 35,
+    "REPRESENTATION_EXTENSION": 12,
+    "APPLICATION_EXTENSION": 2,
+    "PROCEDURAL_EXTENSION": 32,
+    "PROOF_DEEPENING": 5,
+    "FORMALISATION": 7
+  },
+  "sourceRelationships": {
+    "sectionsOneToOne": 43,
+    "sectionsSplit": 4,
+    "fromSubsections": 24,
+    "fromScopeFragments": 9,
+    "cbseOnly": 8,
+    "dispositionOnlySections": 13
+  },
+  "FO4": {
+    "unitId": "C11-IND-01",
+    "ncertChapterOwner": null,
+    "textbookBodyDemand": null,
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "instructionalStatus": "REQUIRED_PREREQUISITE",
+    "downstreamSummativeUnits": [
+      "C11-BIN-01",
+      "C11-LIM-05",
+      "C11-LIM-06"
+    ],
+    "status": "NEEDS_HUMAN_CHECK"
+  },
+  "FO6": {
+    "unitId": "C11-INQ-FO6",
+    "ncertChapterOwner": null,
+    "chapter": null,
+    "placement": "after C11-INQ-02 and after coordinate axes exist",
+    "status": "NEEDS_HUMAN_CHECK"
+  },
+  "FO12": {
+    "unitId": "C11-PRB-FO12",
+    "assessmentStatus": "FORMATIVE_ONLY",
+    "instructionalStatus": "REQUIRED_PREREQUISITE",
+    "summativeDependent": "C11-PRB-01"
+  },
+  "mixedSections": {
+    "frozenFragments": [
+      "4.5",
+      "9.3",
+      "14.1"
+    ],
+    "additionalFragmentsCreated": [
+      "1.9",
+      "7.2"
+    ],
+    "rationale": "both parents are sections the frozen model already records as carrying a formative part"
+  },
+  "statusIndependence": {
+    "formativeOnlyButRequiredCore": [
+      "C11-SET-FO1"
+    ],
+    "formativeOnlyButRequiredPrerequisite": [
+      "C11-PRB-FO12",
+      "C11-IND-01"
+    ],
+    "assertedByValidator": true
+  },
+  "proofExpectation": {
+    "explicitCbsePROVE": [
+      "C11-BIN-01"
+    ],
+    "note": "the only explicit proof prescription in the Class XI curriculum; CBSE silence was not read as STATE_WITHOUT_PROOF"
+  },
+  "selfCorrections": [
+    {
+      "what": "four subsection references (3.4.1, 7.2.1, 7.2.2, 8.3.1) were invented and are not among the frozen 67",
+      "fix": "units repointed to their parent sections; each carries a sourceCorrection field; a validator now rejects any subsection outside the frozen set"
+    },
+    {
+      "what": "10.4.2 was given its own unit although the frozen model records it STRUCTURAL_ONLY",
+      "fix": "merged into the parabola unit rather than overriding the freeze"
+    }
+  ],
+  "coverage": {
+    "sections": "63/63 (50 unit, 13 disposition)",
+    "subsections": "67/67 (25 own unit, 42 in parent)",
+    "formativeOnlyTopics": "12/12",
+    "appendices": "2/2 ENRICHMENT, no units",
+    "miscExercises": "evidence only"
+  },
+  "validators": {
+    "total": 20,
+    "passed": 20
+  },
+  "assessmentMetadata": {
+    "itemsCreated": 0,
+    "catImplemented": false,
+    "calibration": "UNCALIBRATED",
+    "formativeOnlySummativeEligible": 0
+  },
+  "buildPreflight": {
+    "typecheckUsesFullStrictConfig": true,
+    "buildUsesTsconfigBuild": true,
+    "routeContractsPresentInPackage": true,
+    "gitChecksStillOpen": "package carries no .git; run git ls-files tools, git check-ignore -v and git config --get core.excludesfile on the clone"
+  },
+  "priorGrades": {
+    "class9": "92 lessons 0/0/0/0",
+    "class10": "65 lessons 0/0/0/0",
+    "class6": "S74-v1-DFC56A frozen",
+    "regression": "48 tests passing, typecheck 0, production build clean"
+  },
+  "growth": "FROZEN",
+  "next": {
+    "recommendation": "first Class 11 authoring pilot \u2014 Chapter 1, Sets",
+    "executed": false,
+    "rationale": "12 units, all risk class C, all needing one missing model: a collection as an object with membership, containment, operations and Venn rendering. Chapter 2 functions, Chapter 14 event algebra and parts of Chapter 10 sit on set semantics, so the model pays three times.",
+    "secondPilot": "Chapter 3 trigonometry \u2014 build a radian-based function model beside specialAngles rather than stretching it, since 65 frozen Class 10 lessons depend on its current behaviour"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "checkpoint": "107",
+  "canonicalVersion": "0.84.0-c11.63-review-pilot",
+  "verdict": "CLASS_11_HUMAN_REVIEW_WAVE_1_PILOT_READY_TO_SEND",
+  "packageCreatedUtc": "2026-11-19T21:27:51Z",
+  "lifecycle": {
+    "pilotPackets": 4,
+    "sent": 0,
+    "humanReviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "reviewerAssigned": false
+  },
+  "pilotSet": [
+    {
+      "artifactId": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+      "units": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ],
+      "source": "NCERT 7.2",
+      "risk": "B",
+      "tests": "many units to one lesson"
+    },
+    {
+      "artifactId": "ncert_kemh1_s3_4_sum_difference_lesson",
+      "units": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ],
+      "source": "NCERT 3.4",
+      "risk": "C",
+      "tests": "one unit across many lessons",
+      "partner": "ncert_kemh1_s3_4_multiple_angles_lesson"
+    },
+    {
+      "artifactId": "cbse_fo11_chain_rule_lesson",
+      "units": [
+        "C11-LIM-FO11"
+      ],
+      "source": "CBSE-only FO-11",
+      "risk": "C",
+      "visualFamily": "chain_rule"
+    },
+    {
+      "artifactId": "cbse_fo8_special_sums_lesson",
+      "units": [
+        "C11-SEQ-FO8"
+      ],
+      "source": "CBSE-only FO-8",
+      "risk": "B",
+      "visualFamily": "special_sum"
+    }
+  ],
+  "briefCorrection": {
+    "what": "7.2 implied high risk",
+    "actual": "its units are risk B",
+    "note": "it earns selection on granularity, not risk"
+  },
+  "overlapContext": {
+    "suppliedFor": "ncert_kemh1_s3_4_sum_difference_lesson",
+    "partnerContent": [
+      "learningGoal",
+      "explanation",
+      "summary"
+    ],
+    "why": "the duplication question is unanswerable from one lesson alone",
+    "secondReviewRequired": false
+  },
+  "preReviewObservations": [
+    {
+      "artifactId": "ncert_kemh1_s3_4_sum_difference_lesson",
+      "observation": "carries no figures",
+      "curriculumRecord": "both units specify identity statements; no figure required",
+      "classification": "consistent with the record, not an omission",
+      "repaired": false,
+      "why": "repairing before review would mean the pilot tests something other than the architecture as authored"
+    }
+  ],
+  "versionLock": {
+    "fingerprintPrintedForReviewer": true,
+    "mismatchStatus": "STALE_REVIEW_RESPONSE",
+    "applied": false
+  },
+  "emptiness": {
+    "templatesCreated": 4,
+    "allJudgementFieldsNull": true,
+    "untouchedTemplateRejected": true,
+    "reason": "an unfilled form is not a review"
+  },
+  "splitVerdictSupported": {
+    "example": "BIN-01 ALIGNED, BIN-02 ALIGNED, BIN-03 PARTIAL, BIN-FO7 MISALIGNED with REVISE and SHOULD_SPLIT",
+    "validated": true
+  },
+  "bundleWording": {
+    "states": "automated checks establish well-formed, not teaching",
+    "invitesDisagreement": true,
+    "forbiddenPhrasesAsserted": [
+      "already aligned",
+      "pre-reviewed",
+      "approved"
+    ]
+  },
+  "deliveryOptions": [
+    "one reviewer all four",
+    "two reviewers split by area",
+    "independent double review of 7.2"
+  ],
+  "validator": "reused tools/class11/reviewIntake.ts; no second validator created",
+  "qa": {
+    "pilotSuite": 16,
+    "files": 150,
+    "tests": 3217,
+    "failures": 0,
+    "typecheckExit": 0,
+    "runtimeSourceChanged": false,
+    "lessonsAltered": 0
+  },
+  "class12Gate": "AWAITING_HUMAN_REVIEW",
+  "next": "user confirms a send, or supplies completed responses"
+}

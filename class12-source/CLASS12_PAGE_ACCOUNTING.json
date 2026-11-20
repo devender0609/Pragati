@@ -1,0 +1,69 @@
+{
+ "generatedBy": "tools/class12/buildHierarchy.py (checkpoint 116, c12.08)",
+ "status": "PARTIAL_BACK_MATTER_ABSENT",
+ "validPdfPagesPresent": 426,
+ "prelimPdfPages": {
+  "lemh1ps.pdf": 12,
+  "lemh2ps.pdf": 14
+ },
+ "chapterBodyPdfPages": {
+  "partI": 186,
+  "partII": 214,
+  "total": 400,
+  "perFile": {
+   "lemh101.pdf": 17,
+   "lemh102.pdf": 16,
+   "lemh103.pdf": 42,
+   "lemh104.pdf": 28,
+   "lemh105.pdf": 43,
+   "lemh106.pdf": 40,
+   "lemh201.pdf": 67,
+   "lemh202.pdf": 8,
+   "lemh203.pdf": 38,
+   "lemh204.pdf": 39,
+   "lemh205.pdf": 17,
+   "lemh206.pdf": 12,
+   "lemh207.pdf": 33
+  }
+ },
+ "chapterFolioRuns": {
+  "partI": "1-186",
+  "partII": "225-438"
+ },
+ "everyChapterPageFolioVerified": true,
+ "partIBackMatterFromContents": [
+  {
+   "title": "Appendix 1: Proofs in Mathematics",
+   "startFolio": 187
+  },
+  {
+   "title": "Appendix 2: Mathematical Modelling",
+   "startFolio": 196
+  },
+  {
+   "title": "Answers",
+   "startFolio": 208
+  },
+  {
+   "title": "Supplementary Material",
+   "startFolio": 223
+  }
+ ],
+ "partIBackMatterFolios": "187-224 (38 folios) — no source file present",
+ "partIIBackMatterFromContents": [
+  {
+   "title": "Answers",
+   "startFolio": 439
+  }
+ ],
+ "partIIBackMatterFolios": "439-? — Answers start at 439; end folio unknown, no source file present",
+ "answersPdfPages": null,
+ "appendixIPdfPages": null,
+ "appendixIIPdfPages": null,
+ "supplementaryPdfPages": null,
+ "pageDenominator": {
+  "value": null,
+  "status": "NOT_VERIFIED",
+  "why": "Part I appendices/answers/supplementary (folios 187-224) and Part II Answers (from folio 439) are absent; a total over the book cannot be stated."
+ }
+}

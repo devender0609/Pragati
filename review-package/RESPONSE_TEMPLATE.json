@@ -1,0 +1,21 @@
+{
+  "reviewCode": "<paste the code from the lesson screen>",
+  "contentArtifactId": "<copied from the candidate record>",
+  "contentArtifactVersion": 0,
+  "semanticFingerprint": "<from the candidate record>",
+  "provenanceFingerprint": "<from the candidate record>",
+  "instrumentVersion": 1,
+  "reviewBuildId": "C9RB-FEF1EF46",
+  "reviewerName": "",
+  "reviewerPerspective": "practising_educator",
+  "submittedAt": "YYYY-MM-DD",
+  "answers": [
+    {
+      "questionId": "M1",
+      "verdict": "yes|no|unsure",
+      "comment": ""
+    }
+  ],
+  "disposition": "approve|approve_with_changes|revise|reject",
+  "comments": ""
+}

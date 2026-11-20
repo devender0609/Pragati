@@ -1,0 +1,194 @@
+{
+  "auditClassification": "AI_PRE_REVIEW",
+  "notHumanReview": "Claude reviewing Claude-authored material. Additional QA, not independent validation.",
+  "artifactsReviewed": 92,
+  "sampled": false,
+  "passes": [
+    {
+      "pass": 1,
+      "method": "deterministic recomputation harness v1 (fragment-matching)",
+      "blockersFlagged": 31,
+      "blockersConfirmed": 0,
+      "note": "every one was a false positive: the harness matched fragments of longer expressions. Harness rewritten."
+    },
+    {
+      "pass": 2,
+      "method": "deterministic recomputation harness v2 (complete-expression evaluation)",
+      "blockersFlagged": 2,
+      "blockersConfirmed": 0,
+      "note": "both false positives from chained equalities and fraction right-hand sides. Pattern tightened."
+    },
+    {
+      "pass": 3,
+      "method": "harness v3 plus independent reading of the highest-risk chapters",
+      "blockersFlagged": 0,
+      "blockersConfirmed": 0
+    }
+  ],
+  "readIndependently": [
+    "ch07 probability (6 lessons, full)",
+    "ch11 algorithms (4 lessons, full, step counts recomputed by hand)",
+    "ch09 source-segment (2 lessons, full)",
+    "ch03 §3.2 version 2 (full)"
+  ],
+  "findings": {
+    "BLOCKER": 0,
+    "MAJOR": 0,
+    "MINOR": 15,
+    "OPTIONAL": 0
+  },
+  "minorFindings": [
+    {
+      "artifact": "ncert_iemh2_s12_1_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"4-gon\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s1_3_signs_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"quadrant\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s4_2_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"area model\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s4_7_cube_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"solid dissection\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh2_s13_5_elimination_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"degenerate case\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh2_s13_6_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"point of intersection\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s6_9_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"squaring a figure\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s3_4_density_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"midpoint\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh2_s11_1_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"trace\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh2_s11_3_euclid_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"iteration\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh2_s11_3_euclid_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"input dependence\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s7_1_random_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"outcome\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s8_5_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"sum of a progression\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh1_s8_6_visual_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"growth\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    },
+    {
+      "artifact": "ncert_iemh2_s14_5_sphere_lesson",
+      "category": "pedagogy/clarity",
+      "severity": "MINOR",
+      "location": "vocabulary glossary",
+      "current": "defines \"curvature\"",
+      "whyDefective": "the lesson teaches the idea under a synonym, so a student never meets the defined term",
+      "recommendation": "either remove the glossary entry or use the term in the prose — a content decision, not a mechanical fix"
+    }
+  ],
+  "repairs": {
+    "count": 0,
+    "rationale": "no BLOCKER or MAJOR finding was confirmed. The 15 MINOR findings each admit two defensible corrections (remove the entry, or rewrite the prose), so the correction is not unambiguous and the choice belongs to a human reviewer rather than a silent edit."
+  },
+  "refreeze": {
+    "unchangedCandidates": 92,
+    "changedCandidates": 0,
+    "versionChanges": 0,
+    "note": "no artifact was modified, so every checkpoint-48 review identity still applies exactly"
+  },
+  "humanLifecycle": {
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0,
+    "state": "HUMAN_REVIEW_DEFERRED_NO_REVIEWERS_AVAILABLE"
+  }
+}

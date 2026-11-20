@@ -1,0 +1,172 @@
+{
+  "checkpoint": "91C-first-green",
+  "canonicalVersion": "0.84.0-c11.29-sequences-pilot",
+  "packageKind": "FIRST_GREEN \u2014 created on primary-gate success, before hardening",
+  "verdict": "CLASS_11_SEQUENCES_SERIES_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_SEQUENCE_CONVERGENCE_EXTENSION",
+  "packageCreatedUtc": "2026-11-12T15:23:24Z",
+  "defect": {
+    "what": "SEQ-06 reused the two-sided limit table for a forward-indexed partial-sum sequence",
+    "symptom": "six leading 'no value' cells before the first real value",
+    "classification": "product",
+    "modelCorrect": true,
+    "dataCorrect": true,
+    "fix": "replaced the representation contract, not the cells",
+    "rejectedFixes": [
+      "hide the left half",
+      "blank the cells",
+      "invent values at n <= 0"
+    ]
+  },
+  "forwardFigure": {
+    "type": "indexed_sequence",
+    "firstIndex": 1,
+    "leadingNoValueCells": 0,
+    "valuesFromModel": true,
+    "driftRejected": "row 3 shows 9 but the model gives 1.75",
+    "limitFromConvergenceResult": true,
+    "divergentHasNoTarget": true,
+    "divergentContainsInfinityOrNaN": false,
+    "bothLimitAndReasonRejected": true,
+    "secondConvergenceEngine": false
+  },
+  "registration": {
+    "spec": true,
+    "validator": true,
+    "visualSpecUnion": true,
+    "rendererDispatch": true,
+    "learnSectionViewTest": true,
+    "browserWalk": true,
+    "dataVisualKind": true,
+    "presenceByKindNotTechnology": true
+  },
+  "accessibility": {
+    "realTableSemantics": true,
+    "columnHeaders": [
+      "n",
+      "S_n"
+    ],
+    "indexAsRowHeader": true,
+    "colourDependent": false
+  },
+  "productEvidence": {
+    "figuresInSeq06": 2,
+    "leadingNoValueCells": 0,
+    "convergentCaption": "closer to 2",
+    "divergentCaption": "no sum",
+    "walkChecks": [
+      "partialSums",
+      "settling",
+      "convergenceCondition",
+      "divergentNamed",
+      "exactRadical",
+      "positivity"
+    ]
+  },
+  "qa": {
+    "targetedChapter8": 40,
+    "targetedBefore": 34,
+    "supersededTestRemoved": true,
+    "tests": 2988,
+    "testFiles": 138,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0
+  },
+  "browser": {
+    "lessons": "7/7",
+    "stages": "35/35",
+    "finish": "7/7",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "sequencesFilenameHardcoded": false,
+    "leaks": 0,
+    "corpus": 67
+  },
+  "fo8": {
+    "authored": false,
+    "artifactId": false,
+    "prose": false
+  },
+  "catalogue": {
+    "officialTextbookChapters": 10,
+    "chapterOwnedLessons": 66,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 67,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "chapter8Lessons": 7
+  },
+  "provenance": {
+    "SEQ-05": {
+      "parent": "8.4",
+      "subsection": "8.4.1"
+    },
+    "SEQ-06": {
+      "parent": "8.4",
+      "subsection": "8.4.2"
+    }
+  },
+  "chapter8Status": {
+    "summativeCoreAuthoredComplete": true,
+    "fullyAuthored": false,
+    "pending": "C11-SEQ-FO8"
+  },
+  "environmentHygiene": {
+    "envLocalRemoved": true,
+    "distDeletedBeforeRebuild": true
+  },
+  "publicSafe": {
+    "chapter8Shown": false,
+    "rows": 0,
+    "visualRoots": 0,
+    "directSeq06Content": false,
+    "directSeq06VisualRoots": 0
+  },
+  "priorWork": {
+    "class11PriorLessons": 60,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "accessibility",
+    "keyboard/focus",
+    "persistence"
+  ],
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "options": [
+      "Linear Inequalities",
+      "3-D Geometry",
+      "Statistics",
+      "Probability"
+    ],
+    "fo8OrFo11Automatic": false
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "checkpoint": "102E",
+  "canonicalVersion": "0.84.0-c11.58-fo11-hardened",
+  "packageKind": "HARDENED FINAL",
+  "verdict": "CLASS_11_CHAIN_RULE_HARDENED_READY_FOR_HUMAN_REVIEW",
+  "milestone": "CLASS_11_REQUIRED_INSTRUCTIONAL_AUTHORING_COMPLETE",
+  "milestoneQualifier": "current canonical 93-unit scope; nothing human-reviewed, adjudicated, or published",
+  "packageCreatedUtc": "2026-11-19T15:23:25Z",
+  "humanReviewed": false,
+  "base": {
+    "firstGreen": "eb727e98da927c0a6a8bd2a0a8c811ab8cfeb8e1bc160ba8086f53e4556fb96a",
+    "hardenedInFreshCopy": true
+  },
+  "memory": {
+    "totalMB": 3992,
+    "availableMB": 3812,
+    "sharedMB": 12,
+    "swap": 0
+  },
+  "viewportMatrix": {
+    "1280": {
+      "pageOverflowPx": 0,
+      "realClip": 0.0,
+      "scrollers": 0,
+      "collisions": 0,
+      "minFontPx": 14,
+      "consoleErrors": 0
+    },
+    "834": {
+      "pageOverflowPx": 0,
+      "realClip": 0.0,
+      "scrollers": 0,
+      "collisions": 0,
+      "minFontPx": 14,
+      "consoleErrors": 0
+    },
+    "360": {
+      "pageOverflowPx": 0,
+      "realClip": 0.0,
+      "scrollers": 0,
+      "collisions": 0,
+      "minFontPx": 14,
+      "consoleErrors": 0
+    }
+  },
+  "figures": [
+    {
+      "composite": "(x\u00b2 + 1)\u00b3",
+      "derivative": "3(x\u00b2 + 1)\u00b2 \u00d7 2x",
+      "worked": "75 \u00d7 4 = 300"
+    },
+    {
+      "composite": "(3x + 2)\u2075",
+      "derivative": "5(3x + 2)\u2074 \u00d7 3",
+      "worked": "3125 \u00d7 3 = 9375"
+    }
+  ],
+  "multiplicationStructural": "own labelled row plus a worked sentence in words",
+  "contentChanges": [
+    {
+      "what": "linear figure description",
+      "why": "it ended at \"multiply the two factors together\" without naming the resulting derivative \u2014 method but not answer for a screen-reader user",
+      "type": "accessibility fix",
+      "count": 1
+    },
+    {
+      "what": "cube figure description",
+      "why": "matched for consistency; both now end on the derivative",
+      "type": "accessibility fix"
+    }
+  ],
+  "accessibility": {
+    "figureRoot": "figure[data-visual-kind]",
+    "altChars": [
+      381,
+      408
+    ],
+    "eachStates": [
+      "composite",
+      "inner function",
+      "outer function",
+      "outer derivative at inner",
+      "inner derivative",
+      "multiplication",
+      "final derivative"
+    ]
+  },
+  "keyboard": {
+    "rowFocusable": true,
+    "enterOpens": true,
+    "figureInternalTabStops": 0
+  },
+  "bottomClearance": {
+    "px": 125,
+    "covered": false,
+    "method": "hit-tested the lowest real interactive control, not container boxes"
+  },
+  "qa": {
+    "files": 145,
+    "tests": 3154,
+    "failures": 0,
+    "timeouts": 0,
+    "singleProcess": true,
+    "typecheckExit": 0,
+    "typecheckDiagnostics": 0
+  },
+  "publicSafe": {
+    "freshBuild": true,
+    "visible": false,
+    "routeBlocked": true,
+    "chainRuleRoots": 0
+  },
+  "counts": {
+    "authoredArtifacts": 90,
+    "requiredCoverage": "93 / 93",
+    "formative": "13 / 13",
+    "summative": "80 / 80",
+    "ownershipBuckets": "82 / 1 / 7 / 90",
+    "chapter12NcertRows": 6,
+    "duplicates": 0,
+    "queue": [],
+    "moved": false
+  },
+  "debts": {
+    "GD-1": "RESOLVED",
+    "GD-2": "RESOLVED",
+    "formatting": "OPEN, untouched"
+  },
+  "next": "Class 11 Final Authoring-Completeness + Source-Alignment + Review-Readiness Audit; Class 12 only after"
+}

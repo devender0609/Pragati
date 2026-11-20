@@ -1,0 +1,116 @@
+{
+  "generatedAt": "checkpoint 99R",
+  "policy": "checkpoint 94",
+  "units": [
+    {
+      "unitId": "C11-RF-FO2",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_PREREQUISITE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "CBSE_ONLY",
+      "downstreamRequiredDependents": [
+        "C11-LIM-FO11"
+      ],
+      "authored": true,
+      "artifactId": "ncert_kemh1_fo2_composition_lesson",
+      "placementRole": "chapter-less required group",
+      "migrationRationale": "C11-LIM-FO11 declares this unit as a prerequisite and becomes required under the same migration, meeting the bar C11-IND-01 and C11-PRB-FO12 met"
+    },
+    {
+      "unitId": "C11-TRG-FO3",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "CBSE_ONLY",
+      "downstreamRequiredDependents": [],
+      "authored": true,
+      "artifactId": "ncert_kemh1_fo3_general_solutions_lesson",
+      "placementRole": "chapter-less required group",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    },
+    {
+      "unitId": "C11-CPX-FO5a",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "downstreamRequiredDependents": [],
+      "authored": true,
+      "artifactId": "ncert_kemh1_s4_5_polar_lesson",
+      "placementRole": "chapter-4",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    },
+    {
+      "unitId": "C11-CPX-FO5b",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "CBSE_ONLY",
+      "downstreamRequiredDependents": [],
+      "authored": true,
+      "artifactId": "ncert_kemh1_fo5b_complex_quadratics_lesson",
+      "placementRole": "chapter-less required group",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    },
+    {
+      "unitId": "C11-BIN-FO7",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "downstreamRequiredDependents": [],
+      "authored": true,
+      "artifactId": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+      "placementRole": "chapter-7",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    },
+    {
+      "unitId": "C11-SEQ-FO8",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "CBSE_ONLY",
+      "downstreamRequiredDependents": [],
+      "authored": false,
+      "artifactId": null,
+      "placementRole": "not authored",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    },
+    {
+      "unitId": "C11-STL-FO9",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "SCOPE_FRAGMENT",
+      "downstreamRequiredDependents": [],
+      "authored": true,
+      "artifactId": "ncert_kemh1_s9_3_fo9_lesson",
+      "placementRole": "chapter-9",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    },
+    {
+      "unitId": "C11-3DG-FO10",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "CBSE_ONLY",
+      "downstreamRequiredDependents": [],
+      "authored": false,
+      "artifactId": null,
+      "placementRole": "not authored",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    },
+    {
+      "unitId": "C11-LIM-FO11",
+      "oldInstructionalStatus": "OPTIONAL_ENRICHMENT",
+      "newInstructionalStatus": "REQUIRED_CORE",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "sourceKind": "CBSE_ONLY",
+      "downstreamRequiredDependents": [],
+      "authored": false,
+      "artifactId": null,
+      "placementRole": "not authored",
+      "migrationRationale": "no unit declares this one as a prerequisite"
+    }
+  ]
+}

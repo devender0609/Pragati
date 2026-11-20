@@ -1,0 +1,52 @@
+{
+  "_instructions": "Fill every field. Copy artifactId and reviewedFingerprint exactly as given. A response without a named reviewer cannot be accepted as a human review.",
+  "reviewer": null,
+  "reviewDate": null,
+  "artifactId": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+  "reviewedFingerprint": "d721cc79c8850f1bf2d981529aa51f92",
+  "unitResults": [
+    {
+      "unitId": "C11-BIN-01",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    },
+    {
+      "unitId": "C11-BIN-02",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    },
+    {
+      "unitId": "C11-BIN-03",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    },
+    {
+      "unitId": "C11-BIN-FO7",
+      "materialAlignment": null,
+      "mathematicalCorrectness": null,
+      "scopeDiscipline": null,
+      "explanationQuality": null,
+      "crowdedOut": null,
+      "comments": null
+    }
+  ],
+  "workedExamples": null,
+  "practiceFeedback": null,
+  "representationQuality": null,
+  "accessibilityEquivalence": null,
+  "lessonGranularity": null,
+  "overallRecommendation": null,
+  "issues": []
+}

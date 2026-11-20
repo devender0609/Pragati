@@ -1,0 +1,193 @@
+{
+  "checkpoint": "88D-first-green",
+  "canonicalVersion": "0.84.0-c11.22-counting-pilot",
+  "packageKind": "FIRST_GREEN \u2014 created on primary-gate success, before hardening",
+  "verdict": "CLASS_11_PERMUTATIONS_COMBINATIONS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_COUNTING_SEMANTICS_EXTENSION",
+  "packageCreatedUtc": "2026-11-09T15:56:56Z",
+  "correctedDiagnosis": {
+    "wrong": "deterministic state docs generated before the version bump",
+    "actual": "JSON.stringify cannot serialise bigint; canonicalPayload threw in the artifact fingerprint path",
+    "whyTargetedSuiteStayedGreen": "the failure lives only in the fingerprint path"
+  },
+  "serialisationBoundary": {
+    "model": "exact bigint",
+    "artifactPayload": "canonical decimal string",
+    "validator": "recomputes expected count from the semantic model and compares",
+    "numberConversion": false,
+    "rounding": false,
+    "scientificNotation": false,
+    "example": {
+      "semantic": "25! as bigint",
+      "serialised": "15511210043330985984000000"
+    },
+    "allFiveArtifactsSerialise": true,
+    "tamperedStringRejected": true
+  },
+  "countingModel": {
+    "redesigned": false,
+    "orderMattersExplicit": true,
+    "repetitionMultiplicities": true,
+    "exactFactorial": true,
+    "exactPermutation": true,
+    "exactCombination": true
+  },
+  "enumerationOracle": [
+    "staged outcomes",
+    "5P0-5P4",
+    "5C0-5C5",
+    "distinct AABC arrangements",
+    "nPr = nCr * r! up to n=10"
+  ],
+  "negativeFixtures": [
+    "r>n",
+    "negative inputs",
+    "non-integers",
+    "empty-choice stage",
+    "multiplicities not summing to total"
+  ],
+  "pageOrderException": {
+    "registryKey": "INSTRUCTIONAL_ORDER_OVERRIDES_SOURCE_ORDER",
+    "chapter": "ncert_kemh1_ch06",
+    "silentSkip": false,
+    "reason": "C11-PNC-02 factorial (6.3.1, p119) is a frozen prerequisite of C11-PNC-03 permutations (6.3, p118)",
+    "globalInvariantStillActive": true,
+    "staleOverrideWouldFail": true,
+    "reasonMustBeSubstantive": true,
+    "provenanceUnchanged": {
+      "PNC-02": 119,
+      "PNC-03": 118
+    },
+    "productOrder": {
+      "factorialIndex": 1,
+      "permutationsIndex": 2,
+      "factorialBeforePermutations": true
+    }
+  },
+  "baselines": {
+    "fixedByMeaning": "raw-value guard Class 11 corpus 52 -> 57",
+    "leftAlone": "three toBe(52) deck-of-cards assertions in Class 10 probability tests",
+    "blanketSubstitutionUsed": false
+  },
+  "catalogue": {
+    "officialTextbookChapters": 8,
+    "chapterOwnedLessons": 56,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 57,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      9,
+      10,
+      12
+    ],
+    "perChapterCounts": [
+      12,
+      6,
+      8,
+      7,
+      5,
+      6,
+      8,
+      4
+    ],
+    "chapter5Invented": false,
+    "header": "8 chapters from your textbook \u00b7 56 lessons \u00b7 1 prerequisite lesson outside the textbook"
+  },
+  "browser": {
+    "lessons": 5,
+    "stages": "25/25",
+    "finish": "5/5",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "stageTrees": {
+      "lesson": "6_2_counting_principle",
+      "trees": 2,
+      "branchLines": 35
+    },
+    "arrangementFigure": {
+      "lesson": "6_3_3_repeated_objects",
+      "distinctArrangementsListed": 12
+    },
+    "scientificNotationInProse": false
+  },
+  "harnessNotes": [
+    {
+      "what": "a separate notation probe returned empty text for every lesson",
+      "classification": "harness",
+      "countedAsPass": false,
+      "note": "the walkthrough had already captured those pages; the probe is not evidence either way"
+    }
+  ],
+  "guards": {
+    "dynamicDiscovery": true,
+    "chapter6FilenameHardcoded": false,
+    "leaks": 0
+  },
+  "binomialGate": {
+    "prerequisites": [
+      "C11-IND-01",
+      "C11-PNC-05"
+    ],
+    "bothAuthored": true,
+    "edgesPresent": true,
+    "edgesDeleted": false,
+    "binAuthored": false
+  },
+  "builds": {
+    "preview": {
+      "chapters": 8,
+      "chapterOwned": 56,
+      "prerequisite": 1,
+      "total": 57
+    },
+    "publicSafe": {
+      "chapter6Shown": false,
+      "rows": 0,
+      "headerShown": false,
+      "directRouteContent": false,
+      "directRouteFigures": 0,
+      "directRouteSvg": 0,
+      "gateAtLookup": true
+    }
+  },
+  "qa": {
+    "tests": 2888,
+    "testFiles": 135,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "targetedChapter6": 36
+  },
+  "priorWork": {
+    "class11PriorLessons": 52,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "notYetRun": [
+    "viewports 1280/834/360",
+    "accessibility structural",
+    "persistence",
+    "focus visibility"
+  ],
+  "next": {
+    "recommendation": "C11-BIN-01, then C11-LIM-05 and C11-LIM-06",
+    "executed": false
+  }
+}

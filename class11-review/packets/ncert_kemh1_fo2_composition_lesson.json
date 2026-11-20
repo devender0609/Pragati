@@ -1,0 +1,209 @@
+{
+  "priority": 18,
+  "contentArtifactId": "ncert_kemh1_fo2_composition_lesson",
+  "title": "You will feed the output of one function into another, and see why the order and the domain both need care.",
+  "placement": "chapter-less required",
+  "selectionReasons": [
+    "CBSE-only required content (FO-2)",
+    "chapter-less placement",
+    "risk class C"
+  ],
+  "artifactFingerprint": "95c2e24603b76e2587f094433acff3ec",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-RF-FO2",
+      "title": "Composition of functions",
+      "objective": "Form the composition of two functions and determine when it is defined.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_PREREQUISITE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "mapping diagram",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "cbse_only",
+    "officialChapterId": "cbse_fo2_c11_composition",
+    "officialSectionId": null,
+    "sectionNumber": null,
+    "cbseEntryId": "FO-2",
+    "startPage": 0,
+    "sourceReference": "Maths_SecP2_2026-27",
+    "note": "CBSE-only: no NCERT section or page exists for this content; empty section and page 0 are absence markers, not missing data"
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will feed the output of one function into another, and see why the order and the domain both need care.",
+    "vocabulary": [
+      {
+        "term": "composition",
+        "meaning": "The function g ∘ f assigning to each x the value g(f(x)), where f(x) lies in the domain of g."
+      }
+    ],
+    "explanation": [
+      "Combining functions by arithmetic keeps them side by side. Composition does something different: it feeds the output of one into the other.",
+      "For functions f and g, the composition g ∘ f assigns to each argument x the value g(f(x)). The inner function acts first, even though it is written second, which is a common place to slip.",
+      "This is not multiplication. The two functions are not multiplied together, and the symbol does not distribute. It records an order of application.",
+      "Because it is an order, reversing it generally changes the result. Taking the logarithm of a modulus and taking the modulus of a logarithm are different functions: the two orders disagree at several arguments is what comparing them at several arguments shows.",
+      "The domain needs two conditions, not one. An argument x belongs to the domain of g ∘ f only when x is in the domain of f AND the value f(x) lies in the domain of g. The second condition is the one most easily forgotten.",
+      "For logarithmic after modulus the domain is the arguments x where f is defined and f(x) lies in the domain of logarithmic. At −2 the inner function gives 2, which the logarithm accepts, so the composition has the value 0.6931. At zero the inner function gives zero, which the logarithm does not accept, so the composition has no value at all."
+    ],
+    "workedExamples": [
+      {
+        "id": "fo2.we1",
+        "prompt": "In g ∘ f, which function acts first?",
+        "answer": "f acts first.",
+        "steps": [
+          {
+            "text": "Read the definition: the value is g(f(x)).",
+            "reasoning": "The expression is evaluated from the inside out."
+          },
+          {
+            "text": "The inner expression f(x) must be computed before g can be applied to it.",
+            "reasoning": "So f acts first even though it appears to the right in the symbol."
+          },
+          {
+            "text": "The notation records the order of application read right to left.",
+            "reasoning": "This is a convention worth stating explicitly, because the reading order misleads."
+          }
+        ]
+      },
+      {
+        "id": "fo2.we2",
+        "prompt": "Does reversing the order change the result?",
+        "answer": "Yes, in general the two orders give different functions.",
+        "steps": [
+          {
+            "text": "Compose in one order and then the other, and compare values at several arguments.",
+            "reasoning": "A single disagreement settles that the two functions are different."
+          },
+          {
+            "text": "The two disagree: the two orders disagree at several arguments.",
+            "reasoning": "Order is part of what composition means, so the two are genuinely different functions."
+          },
+          {
+            "text": "So composition is not commutative in general.",
+            "reasoning": "Occasionally two functions do commute, but that is a fact about those functions, not about composition."
+          }
+        ]
+      },
+      {
+        "id": "fo2.we3",
+        "prompt": "Why does logarithmic after modulus have no value at zero?",
+        "answer": "Because the inner value falls outside the domain of the outer function.",
+        "steps": [
+          {
+            "text": "Check the first condition: zero is in the domain of the inner function, which is defined everywhere.",
+            "reasoning": "The first condition alone would admit the argument."
+          },
+          {
+            "text": "Now the second: the inner function gives zero there, and the outer function does not accept zero.",
+            "reasoning": "The output of the inner function has to be an argument the outer one can take."
+          },
+          {
+            "text": "So zero is outside the domain, and it has no value at all.",
+            "reasoning": "Dropping the second condition would wrongly admit this argument."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "fo2.g1",
+        "prompt": "Is composition the same as multiplying two functions?",
+        "hint": "What is the value at x in each case?",
+        "answer": "No.",
+        "rationale": "A product multiplies the two values at x, while a composition uses one value as the argument of the other."
+      },
+      {
+        "id": "fo2.g2",
+        "prompt": "What two conditions must an argument satisfy to lie in the domain of g ∘ f?",
+        "hint": "One about x, one about f(x).",
+        "answer": "x must be in the domain of f, and f(x) in the domain of g.",
+        "rationale": "Both are needed: the inner function must produce a value, and that value must be acceptable to the outer one."
+      },
+      {
+        "id": "fo2.g3",
+        "prompt": "If f and g are both defined on all the reals, is g ∘ f defined everywhere?",
+        "hint": "Can the second condition fail?",
+        "answer": "Yes.",
+        "rationale": "Every inner value is a real number and the outer function accepts every real number, so both conditions hold everywhere."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "fo2.i1",
+        "prompt": "If f doubles its argument and g adds three, what does g ∘ f do?",
+        "answer": "It doubles and then adds three.",
+        "rationale": "The inner function acts first, so the argument is doubled before three is added."
+      },
+      {
+        "id": "fo2.i2",
+        "prompt": "What does f ∘ g do with the same two functions?",
+        "answer": "It adds three and then doubles.",
+        "rationale": "Reversing the order changes which operation happens first, and the two results differ for every argument except one."
+      },
+      {
+        "id": "fo2.i3",
+        "prompt": "Can the domain of g ∘ f be smaller than the domain of f?",
+        "answer": "Yes.",
+        "rationale": "An argument where the inner value is unacceptable to the outer function is excluded even though f is defined there."
+      },
+      {
+        "id": "fo2.i4",
+        "prompt": "Evaluate logarithmic after modulus at −2.",
+        "answer": "0.6931",
+        "rationale": "The inner function turns −2 into 2, which lies in the domain of the outer function, so the outer rule is then applied to 2."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "fo2.td1",
+        "prompt": "Why does composition need a domain condition that addition and multiplication do not?",
+        "expectedReasoning": "Because the two operations use the functions differently. Adding two functions asks each for a value at the same argument, so the only requirement is that both are defined there. Composition asks the inner function for a value and then hands that value to the outer one as an argument, so the outer function is being used at a point nobody chose directly. Whether it is defined there depends on what the inner function produced, which is why the second condition is about f(x) rather than about x."
+      }
+    ],
+    "summary": "The composition g ∘ f assigns g(f(x)), with the inner function acting first. It is not multiplication, the order generally matters, and an argument belongs to its domain only when x is in the domain of f and f(x) is in the domain of g.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-RF-FO2",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "1.6.1": {
+    "heading": "Subsets of set of real numbers",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "1.6.2": {
+    "heading": "Intervals as subsets of R Let a, b \u2208R and a < b. Then the ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "1.9.1": {
+    "heading": "Union of sets Let A and B be any two sets. The union of A ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "1.9.2": {
+    "heading": "Intersection of sets The intersection of sets A and B is t",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "1.9.3": {
+    "heading": "Difference of sets The difference of the sets A and B in t",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "2.4.1": {
+    "heading": "Some functions and their graphs",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "2.4.2": {
+    "heading": "Algebra of real functions In this Section, we shall learn ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "3.2.1": {
+    "heading": "Degree measure If a rotation from the initial side to term",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "3.2.2": {
+    "heading": "Radian measure There is another unit for measurement of an",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "3.2.3": {
+    "heading": "Relation between radian and real numbers",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "3.2.4": {
+    "heading": "Relation between degree and radian Since a circle subtends",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "3.3.1": {
+    "heading": "Sign of trigonometric functions",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "3.3.2": {
+    "heading": "Domain and range of trigonometric functions From the defin",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "4.3.1": {
+    "heading": "Addition of two complex numbersLet z1 = a + ib and z2 = c ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "4.3.2": {
+    "heading": "Difference of two complex numbersGiven any two complex num",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "4.3.3": {
+    "heading": "Multiplication of two complex numbers Let z1 = a + ib and ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "4.3.4": {
+    "heading": "Division of two complex numbersGiven any two complex numbe",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "4.3.5": {
+    "heading": "Power of i we know that",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "4.3.6": {
+    "heading": "The square roots of a negative real number",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "4.3.7": {
+    "heading": "Identities We prove the following identity",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "6.3.1": {
+    "heading": "Permutations when all the objects are distinct",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "6.3.2": {
+    "heading": "Factorial notation The notation n! represents the product ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "6.3.3": {
+    "heading": "Derivation of the formula for nPr",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "6.3.4": {
+    "heading": "Permutations when all the objects are not distinct objects",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "8.4.1": {
+    "heading": "General term of a G .P.Let us consider a G.P. with first n",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "8.4.2": {
+    "heading": ".",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "8.4.3": {
+    "heading": "Geometric Mean (G .M.)The geometric mean of two positive n",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.2.1": {
+    "heading": "Slope of a line when coordinates of any two points on the ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.2.2": {
+    "heading": "Conditions for parallelism and perpendicularity of lines i",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.2.3": {
+    "heading": "Angle between two linesWhen we think about more than one l",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.3.1": {
+    "heading": "Horizontal and vertical lines If a horizontal line L is at",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.3.2": {
+    "heading": "Point-slope form Suppose that",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.3.3": {
+    "heading": "Two-point form Let the",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.3.4": {
+    "heading": "Slope-intercept form Sometimes a line is known to us with ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.3.5": {
+    "heading": "Intercept - formSuppose a line L makes x-intercept a and y",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "9.4.1": {
+    "heading": "Distance between two",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.2.1": {
+    "heading": "Circle, ellipse, parabola and hyperbolaWhen the plane cuts",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.2.2": {
+    "heading": "Degenerated conic sections",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.4.1": {
+    "heading": "Standard equations of parabola",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.4.2": {
+    "heading": "Latus rectum",
+    "disposition": "STRUCTURAL_ONLY",
+    "note": "repeats a definition already established in a sibling subsection"
+  },
+  "10.5.1": {
+    "heading": "Relationship between semi-major",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.5.2": {
+    "heading": "Eccentricity",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.5.3": {
+    "heading": "Standard equations of an ellipseThe equation of an ellipse",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.5.4": {
+    "heading": "Latus rectum",
+    "disposition": "STRUCTURAL_ONLY",
+    "note": "repeats a definition already established in a sibling subsection"
+  },
+  "10.6.1": {
+    "heading": "Eccentricity",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.6.2": {
+    "heading": "Standard equation of Hyperbola The equation of a hyperbola",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "10.6.3": {
+    "heading": "Latus rectum",
+    "disposition": "STRUCTURAL_ONLY",
+    "note": "repeats a definition already established in a sibling subsection"
+  },
+  "12.3.1": {
+    "heading": "Algebra of limitsIn the above illustrations, we have obser",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "12.3.2": {
+    "heading": "Limits of polynomials and rational functionsA function f i",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "12.5.1": {
+    "heading": "Algebra of derivative of functions Since the very definiti",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "12.5.2": {
+    "heading": "Derivative of polynomials and trigonometric functions We s",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "13.4.1": {
+    "heading": "Mean deviation for ungrouped data Let n observations be x1",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "13.4.2": {
+    "heading": "Mean deviation for grouped data We know that data can be g",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "13.4.3": {
+    "heading": "Limitations of mean deviation In a series, where the degre",
+    "disposition": "STRUCTURAL_ONLY",
+    "note": "repeats a definition already established in a sibling subsection"
+  },
+  "13.5.1": {
+    "heading": "Standard Deviation In the calculation of variance, we find",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "13.5.2": {
+    "heading": "Standard deviation of a discrete frequency distribution Le",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "13.5.3": {
+    "heading": "Standard deviation of a continuous frequency distributionT",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "13.5.4": {
+    "heading": ". Shortcut method to find variance and standard deviation ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.1.1": {
+    "heading": "Occurrence of an event Consider the experiment of throwing",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.1.2": {
+    "heading": "Types of events Events can be classified into various type",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.1.3": {
+    "heading": "Algebra of events In the Chapter on Sets, we have studied ",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.1.4": {
+    "heading": "Mutually exclusive events In the experiment of rolling a d",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.1.5": {
+    "heading": "Exhaustive events Consider the experiment of throwing a di",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.2.1": {
+    "heading": "Probability of an event Let S be a sample space associated",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.2.2": {
+    "heading": "Probabilities of equally likely outcomes Let a sample spac",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.2.3": {
+    "heading": "Probability of the event \u2018A or B\u2019Let us now find the proba",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  },
+  "14.2.4": {
+    "heading": "Probability of event \u2018not A\u2019 Consider the event A = {2, 4,",
+    "disposition": "SUBSTANTIVE",
+    "note": null
+  }
+}

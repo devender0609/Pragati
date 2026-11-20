@@ -1,0 +1,229 @@
+{
+  "priority": 10,
+  "contentArtifactId": "cbse_fo11_chain_rule_lesson",
+  "title": "You will differentiate a composite function using the chain rule.",
+  "placement": "chapter-less required",
+  "selectionReasons": [
+    "CBSE-only required content (FO-11)",
+    "chapter-less placement",
+    "risk class C",
+    "new visual family: chain_rule"
+  ],
+  "artifactFingerprint": "9b1c590b87fd25aca82bf1fa935befb0",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-LIM-FO11",
+      "title": "Derivatives of composite functions",
+      "objective": "Differentiate a composite function using the chain rule.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "APPLY",
+      "cbseProofExpectation": null,
+      "representationRequirement": "derivative notation",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "cbse_only",
+    "officialChapterId": "cbse_fo11_c11_chain_rule",
+    "officialSectionId": null,
+    "sectionNumber": null,
+    "cbseEntryId": "FO-11",
+    "startPage": 0,
+    "sourceReference": "cbse_fo11",
+    "note": "CBSE-only: no NCERT section or page exists for this content; empty section and page 0 are absence markers, not missing data"
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": [
+      "chain_rule"
+    ]
+  },
+  "lessonContent": {
+    "learningGoal": "You will differentiate a composite function using the chain rule.",
+    "vocabulary": [
+      {
+        "term": "inner function",
+        "meaning": "The function applied first, written inside."
+      },
+      {
+        "term": "outer function",
+        "meaning": "The function applied last, wrapped around the inner one."
+      }
+    ],
+    "explanation": [
+      "You already know what x² + 1 does to a number, and what cubing does to a number. A composite does both, one after the other: x² + 1 first, then the cube. The inner function acts first; the outer function acts on its result.",
+      "To differentiate that, take the layers in turn. Differentiate the OUTER function, leaving the inner one sitting inside it, then multiply by the derivative of the INNER function. In symbols: d/dx[g(f(x))] = g′(f(x)) · f′(x).",
+      "Both factors are there for a reason. The outer derivative says how fast the outer function changes with respect to its own input. But its input is not x — it is the inner function, which is changing too. The second factor accounts for that.",
+      "For (x² + 1)³: the inner function is x² + 1 and the outer is u³. The outer derivative is 3u², which with the inner put back is 3(x² + 1)². The inner derivative is 2x. Multiply: 3(x² + 1)² × 2x.",
+      "Check it at a number. At x = 2 the inner function is 5, so the outer derivative there is 75, the inner derivative is 4, and the derivative is 75 × 4 = 300.",
+      "There is a memory phrase for this — differentiate the outside, leave the inside alone, multiply by the derivative of the inside. It is a good phrase as long as you can say what the outside and the inside ARE. Applied without that, it gets used on things that are not composites at all.",
+      "That is the trap worth naming. You met the product rule just before this. f(x)·g(x) is a PRODUCT: two functions multiplied. g(f(x)) is a COMPOSITE: one function inside another. They look alike on the page and need different rules. Ask what is being done to what.",
+      "The answers here are left unsimplified, like 3(x² + 1)² × 2x. That is a correct derivative. Tidying it is arithmetic you can do afterwards; the structure is what the rule gives you, and it is the structure that shows whether you applied the rule properly."
+    ],
+    "workedExamples": [
+      {
+        "id": "fo11.we1",
+        "prompt": "Differentiate (x² + 1)³.",
+        "answer": "3(x² + 1)² × 2x",
+        "steps": [
+          {
+            "text": "Name the layers: inner x² + 1, outer u³.",
+            "reasoning": "Do this before differentiating anything."
+          },
+          {
+            "text": "Differentiate the outer: 3u². Put the inner back in: 3(x² + 1)².",
+            "reasoning": "The outer derivative is evaluated AT the inner function, not at x."
+          },
+          {
+            "text": "Multiply by the inner derivative 2x: 3(x² + 1)² × 2x.",
+            "reasoning": "At x = 2 this is 300."
+          }
+        ]
+      },
+      {
+        "id": "fo11.we2",
+        "prompt": "Differentiate (3x + 2)⁵.",
+        "answer": "5(3x + 2)⁴ × 3",
+        "steps": [
+          {
+            "text": "Inner 3x + 2, outer u⁵.",
+            "reasoning": "A linear inner function is the clearest case."
+          },
+          {
+            "text": "Outer derivative with the inner back in: 5(3x + 2)⁴.",
+            "reasoning": "Same move as before."
+          },
+          {
+            "text": "The inner derivative is just 3, so the answer is 5(3x + 2)⁴ × 3.",
+            "reasoning": "At x = 1: 3125 × 3 = 9375. The extra factor is visibly a 3."
+          }
+        ]
+      },
+      {
+        "id": "fo11.we3",
+        "prompt": "Differentiate sin(x²), with x in radians.",
+        "answer": "cos(x²) × 2x",
+        "steps": [
+          {
+            "text": "Inner x², outer sine.",
+            "reasoning": "The sine is applied last, so it is the outer function."
+          },
+          {
+            "text": "The derivative of sine is cosine, evaluated at the inner: cos(x²).",
+            "reasoning": "Not cos x — the sine was never applied to x."
+          },
+          {
+            "text": "Multiply by the inner derivative 2x: cos(x²) × 2x.",
+            "reasoning": "Radians throughout; the derivative of sine is cosine only in radian measure."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "fo11.g1",
+        "prompt": "In (x² + 1)³, which function acts first?",
+        "hint": "Which one is inside?",
+        "answer": "x² + 1.",
+        "rationale": "The inner function acts first; the outer acts on its result."
+      },
+      {
+        "id": "fo11.g2",
+        "prompt": "The outer derivative is evaluated at what?",
+        "hint": "Not at x.",
+        "answer": "At the inner function.",
+        "rationale": "The outer function's input is the inner function, so its derivative is taken there."
+      },
+      {
+        "id": "fo11.g3",
+        "prompt": "f(x)·g(x) — product rule or chain rule?",
+        "hint": "Is one inside the other?",
+        "answer": "Product rule.",
+        "rationale": "Two functions multiplied is a product. Neither is inside the other."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "fo11.i1",
+        "prompt": "A student differentiates (x² + 1)³ and writes 3(x² + 1)². What is missing?",
+        "answer": "The inner derivative: the answer is 3(x² + 1)² × 2x.",
+        "rationale": "The outer derivative is right, but the inner function changes too and nothing accounts for that. At x = 2 the student's answer gives 75 where the derivative is 300 — a factor of 4 out."
+      },
+      {
+        "id": "fo11.i2",
+        "prompt": "Differentiate (3x + 2)⁵.",
+        "answer": "5(3x + 2)⁴ × 3.",
+        "rationale": "Outer derivative at the inner is 5(3x + 2)⁴, inner derivative 3."
+      },
+      {
+        "id": "fo11.i3",
+        "prompt": "Let f(x) = x² + 1 and g(u) = u³. Is g(f(x)) the same as f(g(x))?",
+        "answer": "No.",
+        "rationale": "g(f(x)) cubes x² + 1; f(g(x)) cubes x first and then adds 1 to the square of that. Different functions, so different derivatives. Composition order is not optional."
+      },
+      {
+        "id": "fo11.i4",
+        "prompt": "Which rule for sin(x) · x², and which for sin(x²)?",
+        "answer": "Product rule for the first; chain rule for the second.",
+        "rationale": "The first multiplies two functions. The second puts x² inside the sine. The page looks similar; the structure does not."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "fo11.td1",
+        "prompt": "If the inner function is just x, the chain rule gives g′(x)·1. Why does the extra factor vanish, and what does that tell you?",
+        "expectedReasoning": "Because the derivative of x is 1, and multiplying by 1 changes nothing. That is worth more than a special case: it says the ordinary derivative rules you already had are the chain rule with a trivial inner function. Differentiating u³ with respect to u is the same move as differentiating (x² + 1)³ with respect to x, except that in the second the inside is changing and its rate has to be counted. So the chain rule does not replace what you knew — it is what you knew, applied honestly when the input is itself a function. It also explains why the factor is easy to forget: for every example before this one, it was there and equal to 1."
+      }
+    ],
+    "summary": "A composite g(f(x)) has an inner function applied first and an outer function applied to the result. Its derivative is g′(f(x)) · f′(x): differentiate the outer function with the inner left in place, then multiply by the derivative of the inner. For (x² + 1)³ that is 3(x² + 1)² × 2x, which at x = 2 equals 300. The forgotten factor is the inner derivative. A product of two functions is a different structure and needs the product rule instead.",
+    "visuals": [
+      {
+        "type": "chain_rule",
+        "caption": "One composite, taken apart",
+        "altText": "A table for the composite (x² + 1) cubed. The inner function is x squared plus 1 and the outer function is u cubed. The derivative of the outer function is 3u squared, which at the inner function is 3 times (x squared plus 1) squared. The derivative of the inner function is 2x. Multiply the two factors together to get the derivative, 3 times (x squared plus 1) squared, times 2x."
+      },
+      {
+        "type": "chain_rule",
+        "caption": "A linear inner function contributes a constant factor",
+        "altText": "A table for the composite (3x + 2) to the fifth power. The inner function is 3x plus 2 and the outer function is u to the fifth. The derivative of the outer function is 5u to the fourth, which at the inner function is 5 times (3x plus 2) to the fourth. The derivative of the inner function is 3, a constant. Multiply the two factors together to get the derivative, 5 times (3x plus 2) to the fourth, times 3."
+      }
+    ]
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-LIM-FO11",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

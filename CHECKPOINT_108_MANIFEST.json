@@ -1,0 +1,89 @@
+{
+  "checkpoint": "108",
+  "canonicalVersion": "0.84.0-c12.01-source-gate",
+  "verdict": "CLASS_12_SOURCE_SET_INCOMPLETE",
+  "packageCreatedUtc": "2026-11-19T21:49:25Z",
+  "sourceSearch": {
+    "repositoryPdfs": 0,
+    "class12SourceDir": false,
+    "archivesSearched": [
+      "files-68.zip",
+      "files-69.zip",
+      "files-99.zip",
+      "Class8-Ganita-Prakash-Sources.zip",
+      "pragati-checkpoint-23-prefetch-fixes-only.zip"
+    ],
+    "lemhMatches": 0,
+    "onlyTextbookPdfsPresent": "Class 8 Ganita Prakash (hegp10*.pdf)",
+    "MathsSecP2": "Secondary-stage syllabus, not Class 12"
+  },
+  "denominators": {
+    "chapters": null,
+    "sections": null,
+    "subsections": null,
+    "pages": null,
+    "reason": "no primary source; secondary sites identify which files to obtain but cannot establish canonical structure"
+  },
+  "priorMemoryClaim": {
+    "claim": "13 chapters, 65 sections",
+    "status": "NOT_VERIFIED",
+    "chapterCount": "echoed by secondary sources only",
+    "sectionCount": "no evidence in this repository; must not be used as a denominator"
+  },
+  "filesRequired": {
+    "partI": "lemh1ps.pdf + lemh1 chapter files",
+    "partII": "lemh2ps.pdf + lemh2 chapter files",
+    "alsoRequired": "current CBSE Class XII Mathematics syllabus, kept separate from NCERT structure",
+    "editionEvidence": "read the reprint line from the prelims file, never inferred from a filename"
+  },
+  "legacyAudit": {
+    "class12AuthoredArtifacts": 0,
+    "totalAuthoredArtifacts": 259,
+    "class12Presence": "grade enum and route string only",
+    "classification": "structural only",
+    "adopted": 0
+  },
+  "openPolicyQuestions": [
+    "C12-Q1 canonical edition",
+    "C12-Q2 CBSE scope with no NCERT owner",
+    "C12-Q3 formative-only policy",
+    "C12-Q4 many-to-many mapping carryover"
+  ],
+  "class11Protection": {
+    "regressionTests": 7,
+    "canonicalUnits": 93,
+    "artifacts": 90,
+    "coverage": "93 / 93",
+    "queue": 0,
+    "lifecycle": {
+      "sent": 0,
+      "humanReviewed": 0,
+      "adjudicated": 0,
+      "published": 0
+    },
+    "packetsIntact": 25,
+    "fingerprintsMatch": true,
+    "gate": "AWAITING_HUMAN_REVIEW",
+    "gateNote": "not BLOCKING (deferral is the owner sequencing choice) and not CLEAR (no human evidence)"
+  },
+  "notAttempted": [
+    "source inspection",
+    "section extents",
+    "section intents",
+    "subsection records",
+    "decomposition",
+    "prerequisite graph",
+    "transition audit"
+  ],
+  "qa": {
+    "immutabilitySuite": 7,
+    "files": 151,
+    "tests": 3224,
+    "failures": 0,
+    "typecheckExit": 0,
+    "lessonsAltered": 0,
+    "class11StateChanged": false,
+    "runtimeSourceChanged": false
+  },
+  "next": "supply the NCERT Class 12 source set and the CBSE Class XII syllabus; checkpoint 109 runs the real source gate"
+}

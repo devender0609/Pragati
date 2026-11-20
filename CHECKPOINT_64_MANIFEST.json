@@ -1,0 +1,192 @@
+{
+  "checkpoint": 64,
+  "canonicalVersion": "0.84.0-c10.10",
+  "packageCreatedUtc": "2026-10-22T14:03:20Z",
+  "waveScope": {
+    "units": [
+      "c10:5.2a",
+      "c10:5.3a",
+      "c10:5.3b",
+      "c10:5.4a",
+      "c10:5.4b"
+    ],
+    "authored": 5,
+    "sections": {
+      "5.2": "folio 51",
+      "5.3": "folio 56",
+      "5.4": "folio 63"
+    },
+    "excluded": [
+      "arithmetic means",
+      "inserting terms",
+      "geometric progressions"
+    ]
+  },
+  "progressionFidelity": {
+    "class9AlreadyCovered": [
+      "sequence and term by position",
+      "explicit rule in n and membership",
+      "naming an AP by its constant difference",
+      "deriving a + (n-1)d",
+      "deriving the pairing sum and extending it to any AP"
+    ],
+    "class9Source": "src/curriculum/sequencesSections.ts (frozen Class 9 Chapter 8)",
+    "genuinelyNewInClass10": [
+      "finite AP with a named last term l",
+      "a term counted from the end",
+      "the second sum form n/2(a+l) and choosing between the forms",
+      "contextual totals where term-vs-sum is the work"
+    ],
+    "auditor": "auditNoveltyClaims",
+    "bansTheWordNew": false,
+    "negativeFixtures": 4,
+    "positiveFixtures": 4
+  },
+  "architecture": {
+    "verdict": "ARCHITECTURE_STABLE",
+    "reason": "a general arithmetic-sequence mathematical model was added; no visual spec, renderer or shell changed",
+    "added": [
+      "ArithmeticProgression",
+      "term",
+      "firstTerms",
+      "positionOf",
+      "isTermOf",
+      "lastTerm",
+      "termFromEnd",
+      "sum",
+      "sumWithLast",
+      "directSum",
+      "auditNoveltyClaims"
+    ],
+    "notAdded": [
+      "Chapter5APSpec",
+      "any new visual specification",
+      "any new renderer"
+    ]
+  },
+  "commonDifference": {
+    "signed": true,
+    "absoluteDifferenceRejected": true,
+    "dZeroAccepted": true,
+    "everyConsecutivePairChecked": true,
+    "witness": "2,5,8,12 agrees on its first two differences and is rejected"
+  },
+  "nthTerm": {
+    "invariant": "term(ap,1) === a for every canonical AP",
+    "aPlusNdRejected": true,
+    "crossCheckedAgainstRepeatedAddition": true,
+    "nonIntegerPositionThrows": true
+  },
+  "membership": {
+    "exactRationalPositions": true,
+    "neverRounded": true,
+    "witnesses": {
+      "74": "n=24, is a term",
+      "73": "n=71/3, not a term",
+      "100": "n=98/3, not a term",
+      "12 in a=1 d=2": "n=13/2, not a term",
+      "2 in a=5 d=3": "n=0, not a term"
+    },
+    "roundedPositionNamesADifferentValue": true,
+    "constantAPNoDivideByZero": true
+  },
+  "sum": {
+    "derivation": "reverse and add column by column; cancellation is between the two ROWS",
+    "pairingLanguageAvoided": true,
+    "oddNTestedFrom1To11": true,
+    "bothFormsAgreeAtEveryN": true,
+    "directReconciliation": [
+      185,
+      -165,
+      348,
+      740,
+      110,
+      7500,
+      630,
+      3125,
+      87
+    ],
+    "aNEqualsSNMinusSNMinus1Tested": true
+  },
+  "termVersusTotal": {
+    "sameAPTwice": {
+      "a20": 56,
+      "S20": 740
+    },
+    "decreasingContextTermsStayPositive": true,
+    "endlessRuleSeparatedFromFiniteRange": true
+  },
+  "defectsFound": [
+    "the lessons described formalisation without ever using the word, though the decomposition classifies three units as FORMALISATION",
+    "three baseline counters in earlier checkpoints' tests",
+    "two browser-probe errors of my own: a probe reading only step 1 of a worked example, and Puppeteer's element click landing on a sticky bar at 360px"
+  ],
+  "governance": {
+    "publicSafe": {
+      "class9": 0,
+      "class10": 0
+    },
+    "internalPreview": {
+      "ch5Rows": 5,
+      "stages": "5 of 5 at all three viewports",
+      "finishAction": "fired at all three",
+      "consoleErrors": 0,
+      "viewports": {
+        "1280": "0px overflow",
+        "834": "0px overflow",
+        "360": "0px overflow"
+      },
+      "authoredValuesConfirmedRendered": {
+        "at1280and834": [
+          56,
+          740,
+          350
+        ]
+      },
+      "internalIdsVisible": false
+    }
+  },
+  "class10State": {
+    "units": 65,
+    "authored": 46,
+    "remaining": 19,
+    "sent": 0,
+    "reviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "regressions": {
+    "trigonometry": 4,
+    "compositeSolids": 3,
+    "similarity": 6,
+    "quadratics": 4,
+    "statistics": 8,
+    "linearSystems": 5,
+    "heightsDistances": 3,
+    "realNumbers": 4,
+    "polynomials": 4,
+    "allAtVersion1": true,
+    "class9": 92
+  },
+  "assessment": {
+    "itemBank": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "qa": {
+    "typecheck": 0,
+    "tests": 2328,
+    "testFiles": 117,
+    "curriculumValidation": "pass",
+    "build": "pass"
+  },
+  "verdict": "CLASS_10_ARITHMETIC_PROGRESSIONS_AUTHORING_WAVE_READY_FOR_HUMAN_REVIEW_ARCHITECTURE_STABLE",
+  "nextRecommendation": {
+    "ranking": "by residual mathematical risk, not chapter number",
+    "1": "Chapter 14 Probability \u2014 equally likely outcomes, sample space and complement; the only remaining genuinely new frontier",
+    "2": "Chapter 11 Areas Related to Circles \u2014 segment as sector minus triangle, derived not authored; checkpoint 56 pattern transfers",
+    "3": "Chapter 10 Circles \u2014 tangent properties, mostly PROVE; checkpoint 57 proof-scope machinery applies",
+    "4": "Chapter 7 Coordinate Geometry and remaining units of opened chapters \u2014 ordinary authoring"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "checkpoint": "100B",
+  "canonicalVersion": "0.84.0-c11.49-fo10-pilot",
+  "packageKind": "FIRST GREEN \u2014 not a WIP archive",
+  "verdict": "CLASS_11_3D_SECTION_FORMULA_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_EXACT_INTERNAL_DIVISION_EXTENSION",
+  "packageCreatedUtc": "2026-11-17T18:50:10Z",
+  "humanReviewed": false,
+  "bases": {
+    "governance": "79c74a37fc110cdfb568273a39294635cfa33f2ea5ef79c6e39dafb1dd901624",
+    "wipSnapshot": "99f7004a1a1c8982b696240092b6a251351128c41f9bd676fd02fcee20ec7f9d"
+  },
+  "architecture": {
+    "sectionPoint3D": "composes on 2-D sectionPoint for x and y; only z is new",
+    "dimensionReduction": "by construction",
+    "midpoint": "the 1:1 section point, no second formula",
+    "scope": "internal division only; no external division, vectors, line equations or centroid"
+  },
+  "oracles": {
+    "independent": {
+      "a": [
+        1,
+        2,
+        3
+      ],
+      "b": [
+        7,
+        8,
+        9
+      ],
+      "ratio": "1:2",
+      "result": "(3, 4, 5)"
+    },
+    "dimensionReduction": {
+      "a": [
+        1,
+        2,
+        5
+      ],
+      "b": [
+        9,
+        6,
+        5
+      ],
+      "ratio": "3:1",
+      "result": "(7, 5, 5)"
+    },
+    "exactFraction": "(7/3, 11/3, 5/3)",
+    "symmetry": "A,B at 2:5 equals B,A at 5:2"
+  },
+  "ratioRecoveryBug": {
+    "firstVersion": "floating point",
+    "symptom": "1:2 recovered as 333333:666667",
+    "fix": "exact Rational recovery",
+    "axisAligned": "recovers from the coordinates that move, skipping constants"
+  },
+  "refusals": [
+    "m1 = 0",
+    "m2 = 0",
+    "negative ratio part",
+    "A = B",
+    "mismatched divides annotation"
+  ],
+  "visual": {
+    "familyReused": "coordinate_3d",
+    "newFamily": false,
+    "extension": "divides: { point, from, to, m1, m2 }",
+    "validatorRecomputes": true
+  },
+  "ownership": {
+    "officialChapterId": "cbse_fo10_c11_section_formula",
+    "ncertChapter": null,
+    "officialSectionId": "",
+    "sectionNumber": "",
+    "startPage": 0,
+    "cbseEntryId": "FO-10",
+    "chapter11OwnedRows": 3,
+    "chapter11RequiredComplete": true
+  },
+  "staleBaselines": {
+    "initial": 37,
+    "rewrittenByMeaning": 2,
+    "denominators": 35,
+    "chapterOwnedUnchanged": 82,
+    "rewritten": [
+      "records the three NCERT sections as owned, and FO-10 as neither",
+      "registers Chapter 11 with three OWNED rows, FO-10 reachable elsewhere"
+    ]
+  },
+  "qa": {
+    "tests": 3133,
+    "testFiles": 144,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "representationContractUnmet": 0,
+    "stateDocsRegenerated": true
+  },
+  "product": {
+    "walk": "5/5",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "figures": [
+      {
+        "endpoints": [
+          "(1, 2, 3)",
+          "(7, 8, 9)"
+        ],
+        "point": "(3, 4, 5)",
+        "ratio": "1 : 2",
+        "altChars": 231
+      },
+      {
+        "endpoints": [
+          "(0, 0, 0)",
+          "(7, 11, 5)"
+        ],
+        "point": "(7/3, 11/3, 5/3)",
+        "ratio": "1 : 2",
+        "altChars": 223
+      },
+      {
+        "endpoints": [
+          "(1, 2, 5)",
+          "(9, 6, 5)"
+        ],
+        "point": "(7, 5, 5)",
+        "ratio": "3 : 1",
+        "altChars": 275
+      }
+    ],
+    "exactFractionsSurviveToProduct": true,
+    "finish": true,
+    "persistsAcrossReload": true,
+    "fo10SpecificStores": []
+  },
+  "counts": {
+    "authoredArtifacts": 88,
+    "coverage": "91 / 93",
+    "formative": "11 / 13",
+    "summative": "80 / 80",
+    "ownershipBuckets": "82 / 1 / 5 / 88",
+    "duplicates": 0,
+    "requiredDenominator": 93,
+    "optionalEnrichment": 0,
+    "humanCheck": 0,
+    "rawValueCorpus": 88,
+    "leaks": 0,
+    "header": "14 chapters from your textbook \u00b7 82 lessons \u00b7 1 prerequisite lesson outside the textbook \u00b7 5 more required lessons outside the textbook"
+  },
+  "queue": [
+    "C11-SEQ-FO8",
+    "C11-LIM-FO11"
+  ],
+  "requiredIncompleteChapters": [
+    8,
+    12
+  ],
+  "debts": {
+    "GD-1": "RESOLVED",
+    "GD-2": "RESOLVED",
+    "formatting": "OPEN, untouched"
+  },
+  "publicSafe": {
+    "freshBuild": true,
+    "fo10Visible": false,
+    "directRouteBlocked": true,
+    "coordinate3dRoots": 0
+  },
+  "next": "FO-10 delivery hardening, packaged separately; then C11-SEQ-FO8"
+}

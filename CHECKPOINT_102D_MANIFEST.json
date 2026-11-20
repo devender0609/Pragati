@@ -1,0 +1,89 @@
+{
+  "checkpoint": "102D",
+  "canonicalVersion": "0.84.0-c11.57-fo11-pilot",
+  "packageKind": "FIRST GREEN",
+  "verdict": "CLASS_11_CHAIN_RULE_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_COMPOSITE_DERIVATIVE_EXTENSION",
+  "milestone": "CLASS_11_REQUIRED_INSTRUCTIONAL_AUTHORING_COMPLETE",
+  "milestoneQualifier": "current canonical 93-unit scope; nothing human-reviewed, adjudicated, or published",
+  "packageCreatedUtc": "2026-11-18T19:49:50Z",
+  "humanReviewed": false,
+  "qa": {
+    "files": 145,
+    "tests": 3154,
+    "failures": 0,
+    "timeouts": 0,
+    "singleProcess": true,
+    "typecheckExit": 0,
+    "typecheckDiagnostics": 0
+  },
+  "staleAssertions": {
+    "count": 5,
+    "deleted": 0,
+    "approach": "each rewritten to the invariant it protected"
+  },
+  "chapter12Defect": {
+    "symptom": "91 artifacts, 1 duplicate",
+    "cause": "two-module merge sorted by startPage; FO-11 page 0 sorted to the chapter front",
+    "fix": "chapter filters to what it owns",
+    "occurrence": 3
+  },
+  "oracle": {
+    "classification": "ORACLE_LIMIT_SETTLING_DEFECT",
+    "sharedLimitOfChanged": false,
+    "correctAccepted": {
+      "(x2+1)3": "8/8",
+      "(3x+2)5": "4/4"
+    },
+    "worstRelativeError": "2.9e-10",
+    "wrongRejected": {
+      "omittedInnerFactor": "5/6, x=0 legitimately equal",
+      "linearMissing3": "0/4",
+      "nearZeroPlus1e-3": "rejected"
+    },
+    "sinXSquared": "5/5"
+  },
+  "product": {
+    "walk": "5/5",
+    "rawLeaks": 0,
+    "consoleErrors": 0,
+    "governanceLeak": false,
+    "altChars": [
+      335,
+      342
+    ],
+    "gates": [
+      "missing factor 75 vs 300",
+      "composition order",
+      "product vs composition",
+      "linear factor explicit"
+    ],
+    "finish": true,
+    "persists": true,
+    "fo11SpecificStores": []
+  },
+  "publicSafe": {
+    "freshBuild": true,
+    "visible": false,
+    "routeBlocked": true,
+    "chainRuleRoots": 0
+  },
+  "counts": {
+    "authoredArtifacts": 90,
+    "requiredCoverage": "93 / 93",
+    "uncovered": [],
+    "formative": "13 / 13",
+    "summative": "80 / 80",
+    "ownershipBuckets": "82 / 1 / 7 / 90",
+    "chapter12NcertRows": 6,
+    "duplicates": 0,
+    "orphans": 0,
+    "humanCheck": 0,
+    "queue": []
+  },
+  "debts": {
+    "GD-1": "RESOLVED",
+    "GD-2": "RESOLVED",
+    "formatting": "OPEN, untouched"
+  },
+  "next": "FO-11 hardening, then the final Class 11 review-readiness audit"
+}

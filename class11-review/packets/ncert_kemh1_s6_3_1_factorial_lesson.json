@@ -1,0 +1,234 @@
+{
+  "priority": 13,
+  "contentArtifactId": "ncert_kemh1_s6_3_1_factorial_lesson",
+  "title": "You will write and use factorial notation for the products that counting keeps producing.",
+  "placement": "chapter-6",
+  "selectionReasons": [
+    "carries 2 canonical units",
+    "shares unit(s) with another lesson: C11-PNC-03",
+    "risk class C"
+  ],
+  "artifactFingerprint": "e2df9815581248a6cdff6016968e4c7d",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-PNC-02",
+      "title": "Factorial notation",
+      "objective": "Read and compute factorial n and simplify quotients of factorials.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "factorial notation",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    },
+    {
+      "unitId": "C11-PNC-03",
+      "title": "Permutations and the formula for nPr",
+      "objective": "Derive nPr = n!/(n-r)! and use it to count arrangements of distinct objects.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "NEW_NAMED_OBJECT",
+      "textbookBodyDemand": "DERIVE",
+      "cbseProofExpectation": null,
+      "representationRequirement": "nPr notation",
+      "riskClass": "C",
+      "alsoTaughtBy": [
+        "ncert_kemh1_s6_3_permutations_lesson",
+        "ncert_kemh1_s6_3_3_repeated_objects_lesson"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch06",
+    "officialSectionId": "ncert_kemh1_s6_3",
+    "sectionNumber": "6.3",
+    "cbseEntryId": null,
+    "startPage": 119,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will write and use factorial notation for the products that counting keeps producing.",
+    "vocabulary": [
+      {
+        "term": "factorial",
+        "meaning": "The product of all the whole numbers from 1 up to n, written n!."
+      }
+    ],
+    "explanation": [
+      "Counting problems keep producing the same shape of product: a run of consecutive whole numbers multiplied together. Writing that out becomes unwieldy, so it gets a name.",
+      "For a whole number n, n! means the product of every whole number from 1 up to n. So 5! is 1 × 2 × 3 × 4 × 5, which is 120.",
+      "Factorials grow very fast. 5! is 120, 10! is already 3628800, and 20! is 2432902008176640000. That growth is why the shorthand earns its place, and why these counts must be kept as exact whole numbers rather than rounded.",
+      "The source also defines 0! = 1. That is a definition rather than a product with no factors evaluated by accident, and it is made so that the formulas in the next lessons work without a special case at the ends.",
+      "A useful relationship falls out immediately: n! is n times (n − 1)!. Each factorial contains the one below it, which is exactly why large factorials cancel so neatly in a quotient.",
+      "That cancelling matters in practice. The quotient 7!/4! does not need both factorials worked out: everything from 1 up to 4 appears in both, so what remains is 5 × 6 × 7, which is 210.",
+      "Factorials are defined only for whole numbers that are not negative. A factorial of a negative number or a fraction has no meaning at this level, and asking for one is a question without an answer rather than a calculation that returns something odd."
+    ],
+    "workedExamples": [
+      {
+        "id": "s631.we1",
+        "prompt": "Work out 6!.",
+        "answer": "720",
+        "steps": [
+          {
+            "text": "6! means the product of every whole number from 1 up to 6.",
+            "reasoning": "That is the definition, read directly."
+          },
+          {
+            "text": "So it is 1 × 2 × 3 × 4 × 5 × 6.",
+            "reasoning": "Six factors, in order."
+          },
+          {
+            "text": "That comes to 720.",
+            "reasoning": "It is also 6 × 5!, which is 6 × 120, a useful check."
+          }
+        ]
+      },
+      {
+        "id": "s631.we2",
+        "prompt": "Simplify 7!/4! without working out either factorial.",
+        "answer": "210",
+        "steps": [
+          {
+            "text": "7! is 1 × 2 × … × 7, and 4! is 1 × 2 × 3 × 4.",
+            "reasoning": "Both products start the same way."
+          },
+          {
+            "text": "Every factor of 4! appears in 7!, so those factors cancel.",
+            "reasoning": "This is why factorial quotients are easier than they look."
+          },
+          {
+            "text": "What remains is 5 × 6 × 7, which is 210.",
+            "reasoning": "Working both out first would have meant 5040 divided by 24 — the same answer by a much longer route."
+          }
+        ]
+      },
+      {
+        "id": "s631.we3",
+        "prompt": "Why is 0! defined to be 1 rather than 0?",
+        "answer": "1",
+        "steps": [
+          {
+            "text": "A product with no factors is not obviously anything, so the value is fixed by definition.",
+            "reasoning": "This is a choice the source makes explicitly, not something derived."
+          },
+          {
+            "text": "The definition is chosen so the formulas of the next lessons need no special case.",
+            "reasoning": "With 0! = 1 the general expressions stay correct at the extreme values."
+          },
+          {
+            "text": "So 0! = 1.",
+            "reasoning": "Defining it as 0 would make those formulas collapse to zero, which would be useless."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s631.g1",
+        "prompt": "What is 4!?",
+        "hint": "Multiply from 1 up to 4.",
+        "answer": "24",
+        "rationale": "The factorial is the product of every whole number up to that value."
+      },
+      {
+        "id": "s631.g2",
+        "prompt": "Simplify 9!/8!.",
+        "hint": "How much of 9! is 8!?",
+        "answer": "9.",
+        "rationale": "9! is 9 × 8!, so everything but the 9 cancels."
+      },
+      {
+        "id": "s631.g3",
+        "prompt": "Does (−3)! have a value?",
+        "hint": "What does the product run over?",
+        "answer": "No.",
+        "rationale": "Factorials are defined only for whole numbers that are not negative; there is no product to form."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s631.i1",
+        "prompt": "What is 7!?",
+        "answer": "5040",
+        "rationale": "The product of every whole number from 1 up to 7."
+      },
+      {
+        "id": "s631.i2",
+        "prompt": "Simplify 10!/7!.",
+        "answer": "720",
+        "rationale": "Everything up to 7 cancels, leaving 8 × 9 × 10."
+      },
+      {
+        "id": "s631.i3",
+        "prompt": "Express 8! using 6!.",
+        "answer": "8 × 7 × 6!.",
+        "rationale": "Each factorial contains the one below it, so the extra factors can be written separately."
+      },
+      {
+        "id": "s631.i4",
+        "prompt": "Which is larger, 5! or 2 × 4!?",
+        "answer": "5!.",
+        "rationale": "5! is 5 × 4! while the other is 2 × 4!, so comparing the multipliers is enough: 120 against 48."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s631.td1",
+        "prompt": "Factorials grow faster than almost anything else you have met. Why does that matter for counting rather than being a curiosity?",
+        "expectedReasoning": "Because it explains why counting problems cannot be solved by listing. Arranging ten objects gives 10! orders, which is over three million; arranging twenty gives a number with nineteen digits. No list of that length can be written, let alone checked, so the only route to the answer is structural. It also explains why the arithmetic must stay exact: a number that large cannot be held approximately and still be a count, since a count is a specific whole number of things and rounding it makes it false."
+      }
+    ],
+    "summary": "n! is the product of every whole number from 1 up to n, with 0! defined as 1. The values grow quickly — 5! is 120 and 20! is 2432902008176640000 — and each factorial contains the one below it, which lets quotients such as 7!/4! be simplified by cancelling to 210.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-PNC-02",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      },
+      {
+        "unitId": "C11-PNC-03",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

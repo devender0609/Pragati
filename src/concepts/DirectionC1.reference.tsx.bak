@@ -1,0 +1,340 @@
+// ===========================================================================
+// v0.77 — DIRECTION C: "MATH STUDIO"
+//
+// THE IDEA
+//
+// The mathematics is not illustrated on this page. It is ON the page,
+// at working size, doing something.
+//
+// A and B both draw pictures OF fractions. C makes the fraction the
+// largest live object on the screen: a bar that divides itself into
+// fifths, three of which fill, while a point travels to the same length
+// on a number line underneath. Two representations of three-fifths,
+// animating in step, at 600px wide. That is the one thing on any of
+// these three concepts that a screenshot cannot fully carry — which is
+// both its strength and the reason to be suspicious of it.
+//
+// Around the canvas, modular panels dock and OVERLAP the ink field's
+// lower edge, so the page has a genuine foreground and background
+// rather than sections stacked in a column. That overlap is where the
+// depth §7 asks for actually comes from — not from shadows.
+//
+// The chapter shelf is a filmstrip of large plates in chapter colour,
+// which is where most of the page's colour lives.
+//
+// MOTION (§11). Only the two figures move, only once on load, and only
+// to show a fraction being made. The global reduced-motion rule in
+// index.css stops all of it dead.
+//
+// WHERE IT IS STRONG   it is the only one that looks like software for
+//                      DOING mathematics rather than reading about it.
+//                      Most colour, most energy, most obviously modern.
+// WHERE IT IS WEAK     a live object per chapter is ten bespoke
+//                      interactive builds, not ten SVGs. It is the most
+//                      expensive direction by a wide margin, and the
+//                      most likely to look thin on a chapter nobody has
+//                      built the interactive for yet.
+// ===========================================================================
+
+import { ChapterArtwork } from '../design/ChapterArtwork';
+import { chapterAccent, motifForChapter } from '../design/ChapterMotif';
+import { PragatiMark } from '../design/Brand';
+import type { ConceptData } from './main';
+
+/**
+ * Three-fifths, twice, at working size.
+ *
+ * The bar divides and fills; the point runs to the same length on the
+ * line below. The two are drawn to the SAME unit so the equivalence is
+ * visible rather than asserted — the third division of the bar sits
+ * exactly above the point on the line.
+ */
+function LiveFraction() {
+  const cells = 5;
+  const filled = 3;
+  const W = 640;
+  const H = 260;
+  const left = 30;
+  const cellW = (W - 60) / cells;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="h-full w-full" aria-hidden>
+      <style>{`
+        @keyframes pragatiFill { from { opacity: 0; transform: scaleY(0.15); } to { opacity: 1; transform: scaleY(1); } }
+        @keyframes pragatiRun  { from { transform: translateX(-${cellW * filled}px); } to { transform: translateX(0); } }
+        @keyframes pragatiDraw { from { stroke-dashoffset: 400; } to { stroke-dashoffset: 0; } }
+        .pf { transform-origin: center bottom; animation: pragatiFill .55s cubic-bezier(.2,.7,.3,1) backwards; }
+        .pr { animation: pragatiRun 1.1s cubic-bezier(.4,0,.2,1) .7s backwards; }
+        .pd { stroke-dasharray: 400; animation: pragatiDraw 1.2s ease-out backwards; }
+      `}</style>
+
+      {/* the bar */}
+      {Array.from({ length: cells }).map((_, i) => (
+        <rect
+          key={`c${i}`}
+          x={left + i * cellW}
+          y={26}
+          width={cellW}
+          height={86}
+          fill={i < filled ? '#8B7BF7' : 'transparent'}
+          className={i < filled ? 'pf' : undefined}
+          style={i < filled ? { animationDelay: `${0.15 + i * 0.16}s` } : undefined}
+        />
+      ))}
+      {Array.from({ length: cells }).map((_, i) => (
+        <rect
+          key={`o${i}`}
+          x={left + i * cellW}
+          y={26}
+          width={cellW}
+          height={86}
+          fill="none"
+          stroke="rgba(255,255,255,0.85)"
+          strokeWidth={2.5}
+        />
+      ))}
+
+      {/* the same length, on a line */}
+      <line
+        x1={left}
+        y1={196}
+        x2={W - 30}
+        y2={196}
+        stroke="rgba(255,255,255,0.5)"
+        strokeWidth={2.5}
+      />
+      {Array.from({ length: cells + 1 }).map((_, i) => (
+        <line
+          key={`t${i}`}
+          x1={left + i * cellW}
+          y1={186}
+          x2={left + i * cellW}
+          y2={206}
+          stroke="rgba(255,255,255,0.35)"
+          strokeWidth={2}
+        />
+      ))}
+      <line
+        x1={left}
+        y1={196}
+        x2={left + cellW * filled}
+        y2={196}
+        stroke="#F7BE4C"
+        strokeWidth={6}
+        strokeLinecap="round"
+        className="pd"
+        style={{ animationDelay: '0.7s' }}
+      />
+      <g className="pr">
+        <circle cx={left + cellW * filled} cy={196} r={11} fill="#F7BE4C" />
+      </g>
+      <text
+        x={left}
+        y={236}
+        fill="rgba(255,255,255,0.55)"
+        fontSize={17}
+        fontFamily="Inter, sans-serif"
+      >
+        0
+      </text>
+      <text
+        x={W - 38}
+        y={236}
+        fill="rgba(255,255,255,0.55)"
+        fontSize={17}
+        fontFamily="Inter, sans-serif"
+      >
+        1
+      </text>
+    </svg>
+  );
+}
+
+export function DirectionC({ data }: { data: ConceptData }) {
+  const accent = chapterAccent(data.current.number);
+  return (
+    <div className="min-h-screen bg-paper-100">
+      {/* THE CANVAS */}
+      <section className="relative bg-ink-950 pb-36 lg:pb-48">
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(70% 90% at 78% 18%, ${accent}66 0%, transparent 62%), radial-gradient(60% 70% at 6% 88%, #0D948866 0%, transparent 58%)`,
+          }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-lattice text-white/[0.08] [background-size:34px_34px]"
+        />
+
+        <header className="relative mx-auto flex max-w-[92rem] items-center justify-between px-6 py-6 lg:px-10">
+          <div className="flex items-center gap-3">
+            <PragatiMark className="h-9 w-9" />
+            <span className="font-display text-xl font-extrabold tracking-tight text-white">
+              Pragati
+            </span>
+          </div>
+          <nav className="hidden gap-1 rounded-full bg-white/10 p-1 text-sm font-semibold text-white/70 sm:flex">
+            <span className="rounded-full bg-white px-4 py-1.5 text-ink-900">Home</span>
+            <span className="px-4 py-1.5">Learn</span>
+            <span className="px-4 py-1.5">Practice</span>
+            <span className="px-4 py-1.5">Progress</span>
+          </nav>
+          <p className="text-sm text-white/60">
+            <span className="font-semibold text-white">{data.studentName}</span>
+            <span className="mx-2 text-white/25">/</span>
+            {data.gradeLabel}
+          </p>
+        </header>
+
+        <div className="relative mx-auto grid max-w-[92rem] items-center gap-10 overflow-hidden px-6 pt-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16 lg:px-10 lg:pt-12">
+          <div>
+            <p className="num text-sm font-bold text-saffron-300">
+              Chapter {data.current.number} · {data.gradeLabel}
+            </p>
+            <h1 className="mt-3 font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-white lg:text-7xl">
+              {data.current.title}
+            </h1>
+            <p className="mt-5 max-w-[36ch] text-lg leading-relaxed text-white/70">
+              Three of five equal parts. The bar and the number line are saying
+              the same thing — that is the whole chapter.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <button className="tap rounded-full bg-white px-8 py-3.5 font-display text-base font-bold text-ink-950">
+                Continue learning
+              </button>
+              <button className="tap rounded-full px-7 py-3.5 font-display text-base font-bold text-white ring-1 ring-white/25">
+                {data.partsTotal} parts
+              </button>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -inset-4 rounded-[3rem]"
+              style={{ background: `radial-gradient(closest-side, ${accent}33, transparent)` }}
+            />
+            <div className="relative h-56 sm:h-72 lg:h-[22rem]">
+              <LiveFraction />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DOCKED PANELS — they overlap the canvas edge, which is where the
+          depth comes from. Not shadows on cards. */}
+      {/* z-10 matters: without it the ink section's own background
+          paints over the panels and the overlap that creates the depth
+          reads as a clipping bug. Caught in the first capture. */}
+      <section className="relative z-10 mx-auto -mt-28 max-w-[92rem] px-6 lg:-mt-40 lg:px-10">
+        <div className="grid gap-5 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)]">
+          <div className="rounded-[1.75rem] bg-white p-7 shadow-[0_24px_70px_-30px_rgba(13,20,38,0.55)]">
+            <h2 className="font-display text-2xl font-extrabold text-ink-900">
+              Open now
+            </h2>
+            <ul className="mt-5 space-y-1">
+              {data.parts.map((p) => (
+                <li
+                  key={p.officialSectionId}
+                  className="flex items-center gap-4 rounded-xl px-3 py-3 transition hover:bg-paper-100"
+                >
+                  <span
+                    className="num grid h-9 w-12 shrink-0 place-items-center rounded-lg text-xs font-bold"
+                    style={{ background: `${accent}1A`, color: accent }}
+                  >
+                    {p.sectionNumber}
+                  </span>
+                  <span className="flex-1 font-semibold leading-snug text-ink-800">
+                    {p.title}
+                  </span>
+                  <span className="text-ink-300">›</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 border-t border-ink-100 pt-4 text-sm text-ink-400">
+              {data.partsTotal - data.parts.length} more parts of this chapter
+              are still being written.
+            </p>
+          </div>
+
+          <div className="rounded-[1.75rem] bg-practice-600 p-7 text-white shadow-[0_24px_70px_-30px_rgba(13,20,38,0.55)]">
+            <h2 className="font-display text-2xl font-extrabold">Practice</h2>
+            <p className="mt-3 leading-relaxed text-white/80">
+              Short sets built only from parts you have already worked through.
+            </p>
+            <button className="tap mt-6 rounded-full bg-white px-6 py-2.5 font-display text-sm font-bold text-practice-800">
+              Start a set
+            </button>
+          </div>
+
+          <div className="rounded-[1.75rem] bg-ink-900 p-7 text-white shadow-[0_24px_70px_-30px_rgba(13,20,38,0.55)]">
+            <h2 className="font-display text-2xl font-extrabold">Your record</h2>
+            <p className="mt-3 leading-relaxed text-white/60">
+              Nothing here yet. Sets finished and questions answered are counted
+              from what you did — never estimated.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* THE SHELF — chapter plates in chapter colour, at size. */}
+      <section className="mx-auto max-w-[92rem] px-6 py-16 lg:px-10 lg:py-20">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <h2 className="font-display text-3xl font-extrabold tracking-tight text-ink-900 lg:text-4xl">
+            The rest of Class 6
+          </h2>
+          <p className="text-ink-400">Ganita Prakash, in the book's order</p>
+        </div>
+        <ul className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+          {data.chapters.map((c) => {
+            const a = chapterAccent(c.number);
+            return (
+              <li
+                key={c.officialChapterId}
+                className="overflow-hidden rounded-[1.5rem]"
+                style={{
+                  background: c.available
+                    ? `linear-gradient(160deg, ${a}F2, ${a}A6)`
+                    : `${a}12`,
+                }}
+              >
+                <div className="px-4 pt-4">
+                  <ChapterArtwork
+                    motif={motifForChapter(c.officialChapterId)}
+                    accent={a}
+                    tone={c.available ? 'onDark' : 'quiet'}
+                    className="h-28 w-full lg:h-32"
+                  />
+                </div>
+                <div className="px-5 pb-5 pt-3">
+                  <p
+                    className={`num text-xs font-bold ${
+                      c.available ? 'text-white/70' : 'text-ink-300'
+                    }`}
+                  >
+                    Chapter {c.number}
+                  </p>
+                  <p
+                    className={`mt-1 font-display text-base font-bold leading-tight ${
+                      c.available ? 'text-white' : 'text-ink-500'
+                    }`}
+                  >
+                    {c.title}
+                  </p>
+                  <p
+                    className={`mt-1 text-xs ${
+                      c.available ? 'text-white/70' : 'text-ink-300'
+                    }`}
+                  >
+                    {c.statusLine}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,94 @@
+{
+  "checkpoint": "103A",
+  "canonicalVersion": "0.84.0-c11.59-class11-evidence-reconciled",
+  "verdict": "CLASS_11_FINAL_EVIDENCE_RECONCILIATION_COMPLETE",
+  "milestone": "CLASS_11_REQUIRED_INSTRUCTIONAL_AUTHORING_COMPLETE",
+  "milestoneQualifier": "current canonical 93-unit scope; nothing human-reviewed, adjudicated, or published",
+  "packageCreatedUtc": "2026-11-19T16:01:33Z",
+  "humanReviewed": false,
+  "base": {
+    "hardened": "8d15e2926cae9d221e7ef8c9c0299759dc1505042b60acfee1c2e8675a312859"
+  },
+  "memory": {
+    "totalMB": 3992,
+    "availableMB": 3811,
+    "sharedMB": 12,
+    "swap": 0
+  },
+  "extractedTypecheck": {
+    "exit": 0,
+    "diagnostics": 0,
+    "note": "run before any build or browser work; closes the c11.58 exit=137 gap"
+  },
+  "discrepancy": {
+    "was": 91,
+    "is": 90,
+    "rootCause": "ledger generated at checkpoint 102C from arts.length while Chapter 12 still merged two modules and sorted by page, so FO-11 appeared twice; the catalogue was fixed minutes later and the ledger was never regenerated",
+    "whyUnnoticed": "ledger rows key on artifact id, so the duplicate collapsed and rows stayed correct at 90 unique ids; only the top-level scalar carried it",
+    "classification": "stale generated scalar from a generator run against a transiently-broken state"
+  },
+  "evidence": {
+    "registryEntries": 90,
+    "uniqueArtifactIds": 90,
+    "duplicates": 0,
+    "catalogueRows": 90,
+    "unitToArtifactReferences": 129,
+    "referencesAreNotAnArtifactCount": true
+  },
+  "repair": {
+    "generatorAdded": "tools/class11/generateCompletenessLedger.ts",
+    "countsDistinctIdentities": true,
+    "ledgerNamesItsGenerator": true,
+    "handEdited": false
+  },
+  "regression": {
+    "file": "v0840C1159Class11LedgerConsistency.test.ts",
+    "tests": 6,
+    "checks": [
+      "distinct count matches registry",
+      "reference sum is not the artifact count",
+      "rows reconcile to scalar",
+      "all coverage scalars re-derived",
+      "generator named and exists",
+      "queue and matrix consistent"
+    ]
+  },
+  "qa": {
+    "focused": 22,
+    "files": 146,
+    "tests": 3160,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheckExit": 0,
+    "typecheckDiagnostics": 0,
+    "baselineWas": {
+      "files": 145,
+      "tests": 3154
+    },
+    "delta": "six new consistency tests"
+  },
+  "counts": {
+    "canonicalUnits": 93,
+    "required": 93,
+    "authoredArtifacts": 90,
+    "coverage": "93 / 93",
+    "formative": "13 / 13",
+    "summative": "80 / 80",
+    "ownershipBuckets": "82 / 1 / 7 / 90",
+    "chapter12NcertRows": 6,
+    "duplicates": 0,
+    "orphans": 0,
+    "queue": [],
+    "humanCheck": 0,
+    "moved": false
+  },
+  "unchanged": [
+    "lesson content",
+    "chain-rule mathematics",
+    "visual layout",
+    "shared limitOf",
+    "governance",
+    "formatting debt"
+  ],
+  "next": "Class 11 Final Authoring-Completeness + Source-Alignment + Review-Readiness Audit; Class 12 only after"
+}

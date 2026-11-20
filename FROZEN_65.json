@@ -1,0 +1,652 @@
+[
+  {
+    "artifactId": "ncert_jemh1_s8_2_ratios_lesson",
+    "version": 1,
+    "reviewCode": "C10-4134B-v1i1-DC6B80",
+    "semantic": "dc6b8096",
+    "provenance": "3460ba92",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 8
+  },
+  {
+    "artifactId": "ncert_jemh1_s8_2_welldefined_lesson",
+    "version": 1,
+    "reviewCode": "C10-1A1CB-v1i1-EA61A4",
+    "semantic": "ea61a4f7",
+    "provenance": "3460ba92",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 8
+  },
+  {
+    "artifactId": "ncert_jemh1_s8_2_from_ratio_lesson",
+    "version": 1,
+    "reviewCode": "C10-439BD-v1i1-3342AB",
+    "semantic": "3342abc2",
+    "provenance": "3460ba92",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 8
+  },
+  {
+    "artifactId": "ncert_jemh1_s8_3_special_angles_lesson",
+    "version": 1,
+    "reviewCode": "C10-610EF-v1i1-A2A49A",
+    "semantic": "a2a49a79",
+    "provenance": "8c39fbbb",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 8
+  },
+  {
+    "artifactId": "ncert_jemh1_s8_3_boundary_angles_lesson",
+    "version": 1,
+    "reviewCode": "C10-D514A-v1i1-EB55CD",
+    "semantic": "eb55cd16",
+    "provenance": "8c39fbbb",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 8
+  },
+  {
+    "artifactId": "ncert_jemh1_s8_4_pythagorean_identity_lesson",
+    "version": 1,
+    "reviewCode": "C10-82AF0-v1i1-FD8D1B",
+    "semantic": "fd8d1b39",
+    "provenance": "5a1179bb",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 8
+  },
+  {
+    "artifactId": "ncert_jemh1_s8_4_proving_identities_lesson",
+    "version": 1,
+    "reviewCode": "C10-40A5D-v1i1-D0799B",
+    "semantic": "d0799b77",
+    "provenance": "5a1179bb",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 8
+  },
+  {
+    "artifactId": "ncert_jemh1_s12_2_exposed_lesson",
+    "version": 1,
+    "reviewCode": "C10-B801E-v1i1-E88AD1",
+    "semantic": "e88ad127",
+    "provenance": "aacb7052",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 12
+  },
+  {
+    "artifactId": "ncert_jemh1_s12_2_area_lesson",
+    "version": 1,
+    "reviewCode": "C10-4CF90-v1i1-1B1243",
+    "semantic": "1b124383",
+    "provenance": "aacb7052",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 12
+  },
+  {
+    "artifactId": "ncert_jemh1_s12_3_volume_lesson",
+    "version": 1,
+    "reviewCode": "C10-D221D-v1i1-16B496",
+    "semantic": "16b496bc",
+    "provenance": "9e0a9890",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 12
+  },
+  {
+    "artifactId": "ncert_jemh1_s6_2_similar_figures_lesson",
+    "version": 1,
+    "reviewCode": "C10-3F956-v1i1-3DB96A",
+    "semantic": "3db96a75",
+    "provenance": "c241dddb",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 6
+  },
+  {
+    "artifactId": "ncert_jemh1_s6_3_bpt_proof_lesson",
+    "version": 1,
+    "reviewCode": "C10-44859-v1i1-AE8C22",
+    "semantic": "ae8c228d",
+    "provenance": "637aedf1",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 6
+  },
+  {
+    "artifactId": "ncert_jemh1_s6_3_bpt_apply_lesson",
+    "version": 1,
+    "reviewCode": "C10-4868A-v1i1-E99609",
+    "semantic": "e99609dd",
+    "provenance": "637aedf1",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 6
+  },
+  {
+    "artifactId": "ncert_jemh1_s6_4_aaa_lesson",
+    "version": 1,
+    "reviewCode": "C10-6F84D-v1i1-CCDA5A",
+    "semantic": "ccda5a75",
+    "provenance": "fc02d390",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 6
+  },
+  {
+    "artifactId": "ncert_jemh1_s6_4_sss_sas_lesson",
+    "version": 1,
+    "reviewCode": "C10-62095-v1i1-DCD685",
+    "semantic": "dcd68570",
+    "provenance": "fc02d390",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 6
+  },
+  {
+    "artifactId": "ncert_jemh1_s6_4_apply_lesson",
+    "version": 1,
+    "reviewCode": "C10-39038-v1i1-F8DD6D",
+    "semantic": "f8dd6d33",
+    "provenance": "fc02d390",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 6
+  },
+  {
+    "artifactId": "ncert_jemh1_s4_2_standard_form_lesson",
+    "version": 1,
+    "reviewCode": "C10-7142A-v1i1-2AE310",
+    "semantic": "2ae3107f",
+    "provenance": "a84b98a3",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 4
+  },
+  {
+    "artifactId": "ncert_jemh1_s4_3_factorisation_lesson",
+    "version": 1,
+    "reviewCode": "C10-C8C97-v1i1-2C996B",
+    "semantic": "2c996ba8",
+    "provenance": "1e8a74a6",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 4
+  },
+  {
+    "artifactId": "ncert_jemh1_s4_4_discriminant_lesson",
+    "version": 1,
+    "reviewCode": "C10-FBA3F-v1i1-FD2697",
+    "semantic": "fd26974f",
+    "provenance": "afbe3333",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 4
+  },
+  {
+    "artifactId": "ncert_jemh1_s4_4_formula_apply_lesson",
+    "version": 1,
+    "reviewCode": "C10-BF2FA-v1i1-CD5902",
+    "semantic": "cd59020e",
+    "provenance": "afbe3333",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 4
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_2_direct_mean_lesson",
+    "version": 1,
+    "reviewCode": "C10-8D2DC-v1i1-63AB5E",
+    "semantic": "63ab5e35",
+    "provenance": "5c76d48b",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_2_assumed_mean_lesson",
+    "version": 1,
+    "reviewCode": "C10-120D7-v1i1-828F20",
+    "semantic": "828f20b4",
+    "provenance": "5c76d48b",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_2_step_deviation_lesson",
+    "version": 1,
+    "reviewCode": "C10-B78D5-v1i1-F3F65A",
+    "semantic": "f3f65a02",
+    "provenance": "5c76d48b",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_3_mode_lesson",
+    "version": 1,
+    "reviewCode": "C10-2C783-v1i1-DF7B37",
+    "semantic": "df7b3723",
+    "provenance": "67567b7a",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_3_mean_vs_mode_lesson",
+    "version": 1,
+    "reviewCode": "C10-78270-v1i1-6A3D47",
+    "semantic": "6a3d47be",
+    "provenance": "67567b7a",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_4_cumulative_frequency_lesson",
+    "version": 1,
+    "reviewCode": "C10-3534B-v1i1-7F1AD8",
+    "semantic": "7f1ad85b",
+    "provenance": "4391f76e",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_4_median_lesson",
+    "version": 1,
+    "reviewCode": "C10-9F52D-v1i1-BA1B7A",
+    "semantic": "ba1b7ad8",
+    "provenance": "4391f76e",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s13_4_comparing_averages_lesson",
+    "version": 1,
+    "reviewCode": "C10-1EF7F-v1i1-2293D1",
+    "semantic": "2293d1c4",
+    "provenance": "4391f76e",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 13
+  },
+  {
+    "artifactId": "ncert_jemh1_s3_2_graphical_lesson",
+    "version": 1,
+    "reviewCode": "C10-5E5CC-v1i1-D2ABD1",
+    "semantic": "d2abd16b",
+    "provenance": "445a5d05",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 3
+  },
+  {
+    "artifactId": "ncert_jemh1_s3_2_consistency_lesson",
+    "version": 1,
+    "reviewCode": "C10-1F0C8-v1i1-B66BDB",
+    "semantic": "b66bdba5",
+    "provenance": "445a5d05",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 3
+  },
+  {
+    "artifactId": "ncert_jemh1_s3_3_substitution_lesson",
+    "version": 1,
+    "reviewCode": "C10-E0613-v1i1-88B4C2",
+    "semantic": "88b4c29b",
+    "provenance": "5a2a1f75",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 3
+  },
+  {
+    "artifactId": "ncert_jemh1_s3_3_elimination_lesson",
+    "version": 1,
+    "reviewCode": "C10-2C640-v1i1-0621D3",
+    "semantic": "0621d333",
+    "provenance": "5a2a1f75",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 3
+  },
+  {
+    "artifactId": "ncert_jemh1_s3_3_modelling_lesson",
+    "version": 1,
+    "reviewCode": "C10-805B0-v1i1-50790A",
+    "semantic": "50790adf",
+    "provenance": "5a2a1f75",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 3
+  },
+  {
+    "artifactId": "ncert_jemh1_s9_1_setup_lesson",
+    "version": 1,
+    "reviewCode": "C10-55385-v1i1-6DA8FD",
+    "semantic": "6da8fd57",
+    "provenance": "63274377",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 9
+  },
+  {
+    "artifactId": "ncert_jemh1_s9_1_one_triangle_lesson",
+    "version": 1,
+    "reviewCode": "C10-CF99B-v1i1-E9A053",
+    "semantic": "e9a053b6",
+    "provenance": "63274377",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 9
+  },
+  {
+    "artifactId": "ncert_jemh1_s9_1_two_triangles_lesson",
+    "version": 1,
+    "reviewCode": "C10-BBB70-v1i1-342A31",
+    "semantic": "342a317b",
+    "provenance": "63274377",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 9
+  },
+  {
+    "artifactId": "ncert_jemh1_s1_2_fta_lesson",
+    "version": 1,
+    "reviewCode": "C10-CB848-v1i1-CB9E00",
+    "semantic": "cb9e003e",
+    "provenance": "25d9ddca",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 1
+  },
+  {
+    "artifactId": "ncert_jemh1_s1_2_hcf_lcm_lesson",
+    "version": 1,
+    "reviewCode": "C10-BE823-v1i1-59F1C5",
+    "semantic": "59f1c5d8",
+    "provenance": "25d9ddca",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 1
+  },
+  {
+    "artifactId": "ncert_jemh1_s1_3_root2_proof_lesson",
+    "version": 1,
+    "reviewCode": "C10-90730-v1i1-57CBEB",
+    "semantic": "57cbeb51",
+    "provenance": "00bd2d8e",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 1
+  },
+  {
+    "artifactId": "ncert_jemh1_s1_3_more_irrationals_lesson",
+    "version": 1,
+    "reviewCode": "C10-316FA-v1i1-0D8D53",
+    "semantic": "0d8d53b2",
+    "provenance": "00bd2d8e",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 1
+  },
+  {
+    "artifactId": "ncert_jemh1_s2_2_zeroes_meaning_lesson",
+    "version": 1,
+    "reviewCode": "C10-55B14-v1i1-FBD139",
+    "semantic": "fbd1390d",
+    "provenance": "da39a1e5",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 2
+  },
+  {
+    "artifactId": "ncert_jemh1_s2_2_counting_zeroes_lesson",
+    "version": 1,
+    "reviewCode": "C10-42142-v1i1-B74B65",
+    "semantic": "b74b65c0",
+    "provenance": "da39a1e5",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 2
+  },
+  {
+    "artifactId": "ncert_jemh1_s2_3_zeroes_coefficients_lesson",
+    "version": 1,
+    "reviewCode": "C10-F7C09-v1i1-B2BB28",
+    "semantic": "b2bb2820",
+    "provenance": "9222e848",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 2
+  },
+  {
+    "artifactId": "ncert_jemh1_s2_3_construct_lesson",
+    "version": 1,
+    "reviewCode": "C10-778E4-v1i1-7BEAB0",
+    "semantic": "7beab072",
+    "provenance": "9222e848",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 2
+  },
+  {
+    "artifactId": "ncert_jemh1_s5_2_identify_ap_lesson",
+    "version": 1,
+    "reviewCode": "C10-71276-v1i1-91ABE4",
+    "semantic": "91abe491",
+    "provenance": "56f69743",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 5
+  },
+  {
+    "artifactId": "ncert_jemh1_s5_3_nth_term_lesson",
+    "version": 1,
+    "reviewCode": "C10-4FD78-v1i1-EA89E6",
+    "semantic": "ea89e617",
+    "provenance": "f4fcc9e3",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 5
+  },
+  {
+    "artifactId": "ncert_jemh1_s5_3_missing_parts_lesson",
+    "version": 1,
+    "reviewCode": "C10-7A534-v1i1-D7808C",
+    "semantic": "d7808c50",
+    "provenance": "f4fcc9e3",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 5
+  },
+  {
+    "artifactId": "ncert_jemh1_s5_4_sum_derivation_lesson",
+    "version": 1,
+    "reviewCode": "C10-47B3F-v1i1-A3DC77",
+    "semantic": "a3dc779c",
+    "provenance": "2796b506",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 5
+  },
+  {
+    "artifactId": "ncert_jemh1_s5_4_applications_lesson",
+    "version": 1,
+    "reviewCode": "C10-29D4D-v1i1-58BD91",
+    "semantic": "58bd9100",
+    "provenance": "2796b506",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 5
+  },
+  {
+    "artifactId": "ncert_jemh1_s14_1_classical_definition_lesson",
+    "version": 1,
+    "reviewCode": "C10-3C69B-v1i1-6EAE43",
+    "semantic": "6eae43e5",
+    "provenance": "8a954487",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 14
+  },
+  {
+    "artifactId": "ncert_jemh1_s14_1_range_lesson",
+    "version": 1,
+    "reviewCode": "C10-E7EE6-v1i1-D6C717",
+    "semantic": "d6c71716",
+    "provenance": "8a954487",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 14
+  },
+  {
+    "artifactId": "ncert_jemh1_s14_1_complement_lesson",
+    "version": 1,
+    "reviewCode": "C10-8FECD-v1i1-034FFD",
+    "semantic": "034ffda8",
+    "provenance": "8a954487",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 14
+  },
+  {
+    "artifactId": "ncert_jemh1_s14_1_applications_lesson",
+    "version": 1,
+    "reviewCode": "C10-1F282-v1i1-0802B2",
+    "semantic": "0802b226",
+    "provenance": "8a954487",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 14
+  },
+  {
+    "artifactId": "ncert_jemh1_s11_1_sector_lesson",
+    "version": 1,
+    "reviewCode": "C10-4EC9A-v1i1-43F59A",
+    "semantic": "43f59ab1",
+    "provenance": "4b04efb9",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 11
+  },
+  {
+    "artifactId": "ncert_jemh1_s11_1_segment_lesson",
+    "version": 1,
+    "reviewCode": "C10-8B77A-v1i1-FFB9C1",
+    "semantic": "ffb9c1cd",
+    "provenance": "4b04efb9",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 11
+  },
+  {
+    "artifactId": "ncert_jemh1_s11_1_combined_lesson",
+    "version": 1,
+    "reviewCode": "C10-4EE2F-v1i1-62B073",
+    "semantic": "62b0738b",
+    "provenance": "4b04efb9",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 11
+  },
+  {
+    "artifactId": "ncert_jemh1_s10_2_tangent_definition_lesson",
+    "version": 1,
+    "reviewCode": "C10-8FE59-v1i1-D9EEEB",
+    "semantic": "d9eeeb8a",
+    "provenance": "86ad2b40",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 10
+  },
+  {
+    "artifactId": "ncert_jemh1_s10_2_radius_perpendicular_lesson",
+    "version": 1,
+    "reviewCode": "C10-7187F-v1i1-57B038",
+    "semantic": "57b03894",
+    "provenance": "86ad2b40",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 10
+  },
+  {
+    "artifactId": "ncert_jemh1_s10_3_tangent_count_lesson",
+    "version": 1,
+    "reviewCode": "C10-304E0-v1i1-D9A624",
+    "semantic": "d9a62445",
+    "provenance": "d6506d04",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 10
+  },
+  {
+    "artifactId": "ncert_jemh1_s10_3_equal_tangents_lesson",
+    "version": 1,
+    "reviewCode": "C10-497F5-v1i1-AAE836",
+    "semantic": "aae836cf",
+    "provenance": "d6506d04",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 10
+  },
+  {
+    "artifactId": "ncert_jemh1_s10_3_applications_lesson",
+    "version": 1,
+    "reviewCode": "C10-A7857-v1i1-12BEF7",
+    "semantic": "12bef780",
+    "provenance": "d6506d04",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 10
+  },
+  {
+    "artifactId": "ncert_jemh1_s7_2_distance_lesson",
+    "version": 1,
+    "reviewCode": "C10-DAB2A-v1i1-E378A4",
+    "semantic": "e378a4c8",
+    "provenance": "c9c4c0e5",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 7
+  },
+  {
+    "artifactId": "ncert_jemh1_s7_2_applications_lesson",
+    "version": 1,
+    "reviewCode": "C10-5BDEF-v1i1-71F3F8",
+    "semantic": "71f3f8b8",
+    "provenance": "c9c4c0e5",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 7
+  },
+  {
+    "artifactId": "ncert_jemh1_s7_3_section_formula_lesson",
+    "version": 1,
+    "reviewCode": "C10-D9DE0-v1i1-4642DA",
+    "semantic": "4642da33",
+    "provenance": "5a8653f5",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 7
+  },
+  {
+    "artifactId": "ncert_jemh1_s7_3_midpoint_ratio_lesson",
+    "version": 1,
+    "reviewCode": "C10-B1919-v1i1-44FF8E",
+    "semantic": "44ff8e35",
+    "provenance": "5a8653f5",
+    "build": "C10RB-88B56AE6",
+    "instrument": 1,
+    "chapter": 7
+  }
+]

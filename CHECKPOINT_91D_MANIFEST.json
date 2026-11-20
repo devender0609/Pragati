@@ -1,0 +1,182 @@
+{
+  "checkpoint": "91D",
+  "canonicalVersion": "0.84.0-c11.30-sequences-hardened",
+  "packageKind": "HARDENED FINAL \u2014 first-green 0.84.0-c11.29 preserved",
+  "verdict": "CLASS_11_SEQUENCES_SERIES_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_GENERAL_SEQUENCE_CONVERGENCE_EXTENSION",
+  "packageCreatedUtc": "2026-11-12T15:47:42Z",
+  "firstGreen": {
+    "archive": "pragati-0.84.0-c11.29-sequences-pilot.zip",
+    "sha256": "73f34e69aa7c047f66adee7c70f16596459bfe74e26935050a11c398cde156d9",
+    "verified": "OK",
+    "overwritten": false
+  },
+  "contentChanges": 0,
+  "artifactVersionIncrements": 0,
+  "sourceChanges": "QA tooling only",
+  "viewports": [
+    {
+      "width": 1280,
+      "pageOverflow": "0px",
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 0
+    },
+    {
+      "width": 834,
+      "pageOverflow": "0px",
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 0
+    },
+    {
+      "width": 360,
+      "pageOverflow": "0px",
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 1
+    }
+  ],
+  "bottomClearance": {
+    "worstGapPx": 125,
+    "minGapPx": 8
+  },
+  "indexedSequenceInProduct": {
+    "columnHeaders": [
+      "n",
+      "S_n"
+    ],
+    "rowHeaders": 6,
+    "firstIndex": "1",
+    "firstValue": "1",
+    "leadingNoValueCells": 0,
+    "convergentCaption": "closer to 2",
+    "divergentSaysNoSum": true,
+    "divergentHasTarget": false,
+    "limitDescribedOutsideTable": true,
+    "infinityOrNaN": false,
+    "ariaLabelChars": [
+      277,
+      211
+    ],
+    "tableCaptionChars": [
+      277,
+      211
+    ],
+    "colourDependent": false
+  },
+  "harnessNote": {
+    "what": "first probe read altLen 0",
+    "cause": "looked for aria-label on the data-visual-kind wrapper rather than the figure inside",
+    "classification": "harness",
+    "productDefect": false
+  },
+  "exactness": {
+    "radicalsRender": true,
+    "amGmPositivityVisible": true
+  },
+  "keyboard": {
+    "chapter8Rows": 7,
+    "allButtons": true,
+    "enterOpensSeq06": true,
+    "bottomControlFullyVisible": true,
+    "gapPx": 125
+  },
+  "persistence": {
+    "progressAfterReload": "1 of 7 done",
+    "rows": 7,
+    "header": "10 chapters from your textbook \u00b7 66 lessons \u00b7 1 prerequisite lesson outside the textbook"
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "leaks": 0,
+    "corpus": 67
+  },
+  "fo8": {
+    "artifact": false,
+    "materialInAnyClass11Module": false
+  },
+  "visualRegression": {
+    "sharedDispatchChanged": false,
+    "verified": [
+      "indexed_sequence",
+      "per-lesson figure checks across all seven lessons"
+    ]
+  },
+  "counts": {
+    "officialTextbookChapters": 10,
+    "chapterOwnedLessons": 66,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 67,
+    "chapter8Rows": 7,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "changedByCompletionState": false
+  },
+  "qa": {
+    "tests": 2988,
+    "testFiles": 138,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "environmentHygiene": {
+    "envLocalRemoved": true,
+    "distDeletedBeforeRebuild": true,
+    "stalePreviewBundleUsedAsEvidence": false
+  },
+  "publicSafe": {
+    "chapter8Shown": false,
+    "rows": 0,
+    "indexedSequenceRoots": 0,
+    "anyVisualRoots": 0,
+    "directSeq06Content": false
+  },
+  "chapter8Status": {
+    "summativeCoreAuthoredComplete": true,
+    "fullyAuthored": false,
+    "pending": "C11-SEQ-FO8"
+  },
+  "priorWork": {
+    "class11PriorLessons": 60,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "formativeExtensions": {
+    "C11-SEQ-FO8": "unauthored",
+    "C11-LIM-FO11": "unauthored"
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "recommendation": "Probability",
+    "why": [
+      "six summative units",
+      "deep reuse of Sets and event semantics",
+      "C11-PRB-FO12 is FORMATIVE_ONLY and REQUIRED_PREREQUISITE, testing the governance split from checkpoint 87"
+    ],
+    "executed": false
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "priority": 21,
+  "contentArtifactId": "ncert_kemh1_fo5b_complex_quadratics_lesson",
+  "title": "You will find the roots of a real-coefficient quadratic whose discriminant is negative, and see that they form a conjugate pair.",
+  "placement": "chapter-less required",
+  "selectionReasons": [
+    "CBSE-only required content (FO-5)",
+    "chapter-less placement",
+    "risk class C"
+  ],
+  "artifactFingerprint": "5beb62bc3b019e8fb74f2adea0c49b8b",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-CPX-FO5b",
+      "title": "Quadratic equations over the complex numbers",
+      "objective": "Solve a quadratic with real coefficients over the complex numbers and state the Fundamental Theorem of Algebra.",
+      "assessmentStatus": "FORMATIVE_ONLY",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROOF_DEEPENING",
+      "textbookBodyDemand": "STATE_WITHOUT_PROOF",
+      "cbseProofExpectation": null,
+      "representationRequirement": "exact complex arithmetic",
+      "riskClass": "C",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "cbse_only",
+    "officialChapterId": "cbse_fo5b_c11_complex_quadratics",
+    "officialSectionId": null,
+    "sectionNumber": null,
+    "cbseEntryId": "FO-5",
+    "startPage": 0,
+    "sourceReference": "Maths_SecP2_2026-27",
+    "note": "CBSE-only: no NCERT section or page exists for this content; empty section and page 0 are absence markers, not missing data"
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will find the roots of a real-coefficient quadratic whose discriminant is negative, and see that they form a conjugate pair.",
+    "vocabulary": [
+      {
+        "term": "complex root",
+        "meaning": "A root of an equation that is a complex number and not a real one."
+      }
+    ],
+    "explanation": [
+      "In Class 10 a quadratic with a negative discriminant was reported as having no real roots, and the matter ended there. The number system has since been enlarged, and the sentence can now be completed.",
+      "The quadratic formula still applies. The difficulty was always √D with D negative, and that is no longer an obstacle: take the negative out as i, so √(−k) is i√k for positive k. The caution from earlier in the chapter still holds, which is why the i comes out before anything is multiplied.",
+      "Take x² + 2x + 5 = 0. The discriminant is -16, which is negative, so there are no real roots. The formula now gives -1 ± 2i.",
+      "The two roots are -1 + 2i and -1 − 2i, and they are conjugates of each other: each is the conjugate of the other. That happens whenever the coefficients are real, because the two roots differ only in the sign in front of the radical.",
+      "Not every surd disappears. For 2x² + x + 3 = 0 the discriminant is -23 and the roots are -1/4 ± 1/4i√23, exact and irrational. A decimal would lose information the exact form keeps.",
+      "There is a general result in the background. The fundamental theorem of algebra states that every polynomial equation of degree at least one with complex coefficients has at least one complex root. At this level the theorem is stated and used, not proved: nothing in this chapter establishes it, and its proof belongs to later study."
+    ],
+    "workedExamples": [
+      {
+        "id": "fo5b.we1",
+        "prompt": "Solve x² + 2x + 5 = 0.",
+        "answer": "-1 ± 2i",
+        "steps": [
+          {
+            "text": "Find the discriminant: -16.",
+            "reasoning": "It is negative, so Class 10 would have stopped here with no real roots."
+          },
+          {
+            "text": "Apply the formula, taking the negative out of the radical as i.",
+            "reasoning": "This is the safe convention: the sign leaves the radical before any multiplication."
+          },
+          {
+            "text": "That gives -1 ± 2i, so the roots are -1 + 2i and -1 − 2i.",
+            "reasoning": "The surd reduced to a whole number here, which does not always happen."
+          }
+        ]
+      },
+      {
+        "id": "fo5b.we2",
+        "prompt": "Solve 2x² + x + 3 = 0 and leave the answer exact.",
+        "answer": "-1/4 ± 1/4i√23",
+        "steps": [
+          {
+            "text": "The discriminant is -23, again negative.",
+            "reasoning": "The method is the same whatever the size of the discriminant."
+          },
+          {
+            "text": "Take the negative out as i; the remaining radical does not simplify.",
+            "reasoning": "23 has no square factor, so the surd stays."
+          },
+          {
+            "text": "The roots are -1/4 ± 1/4i√23.",
+            "reasoning": "Leaving the radical is exact; a decimal would be an approximation of a number we can write down."
+          }
+        ]
+      },
+      {
+        "id": "fo5b.we3",
+        "prompt": "Why do the two roots always form a conjugate pair when the coefficients are real?",
+        "answer": "Because they differ only in the sign of the radical, which carries the i.",
+        "steps": [
+          {
+            "text": "The formula gives the same real expression for both roots, with the radical added in one and subtracted in the other.",
+            "reasoning": "Everything outside the radical is identical for the two roots."
+          },
+          {
+            "text": "With a negative discriminant the radical carries the i, so the two roots differ only in the sign of their imaginary part.",
+            "reasoning": "That is precisely the relationship between a number and its conjugate."
+          },
+          {
+            "text": "So the roots are conjugates, and in particular they have the same modulus.",
+            "reasoning": "This fails if the coefficients are not real, which is why the condition matters."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "fo5b.g1",
+        "prompt": "Solve x² + 1 = 0.",
+        "hint": "What is the discriminant?",
+        "answer": "0 ± i",
+        "rationale": "The discriminant is −4, so the roots are purely imaginary and are conjugates of one another."
+      },
+      {
+        "id": "fo5b.g2",
+        "prompt": "Solve x² + 9 = 0.",
+        "hint": "Take the negative out as i.",
+        "answer": "0 ± 3i",
+        "rationale": "The discriminant is −36, whose size is a perfect square, so the surd reduces to a whole number."
+      },
+      {
+        "id": "fo5b.g3",
+        "prompt": "Was Class 10 wrong to say such an equation has no real roots?",
+        "hint": "What did the statement claim?",
+        "answer": "No.",
+        "rationale": "The statement was about the real numbers and remains true. The roots exist, and they lie outside the real line."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "fo5b.i1",
+        "prompt": "Solve x² − 2x + 5 = 0.",
+        "answer": "1 ± 2i",
+        "rationale": "The discriminant is −16, and the formula gives a conjugate pair with real part 1."
+      },
+      {
+        "id": "fo5b.i2",
+        "prompt": "If one root of a real-coefficient quadratic is 3 + 2i, what is the other?",
+        "answer": "3 − 2i",
+        "rationale": "With real coefficients the roots come in conjugate pairs, so the second is the conjugate of the first."
+      },
+      {
+        "id": "fo5b.i3",
+        "prompt": "Does the fundamental theorem of algebra get proved in this chapter?",
+        "answer": "No.",
+        "rationale": "It is stated at this level and used; the proof belongs to later study and nothing here establishes it."
+      },
+      {
+        "id": "fo5b.i4",
+        "prompt": "Can a real-coefficient quadratic have exactly one complex root and one real root?",
+        "answer": "No.",
+        "rationale": "The roots differ only in the sign of the radical, so either both are real or they form a conjugate pair."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "fo5b.td1",
+        "prompt": "Class 10 said these equations had no real roots. What exactly changed, and what did not?",
+        "expectedReasoning": "What changed is the set of numbers available to be a root. What did not change is a single fact about the real numbers: there is still no real number satisfying x² + 2x + 5 = 0, and the Class 10 statement remains true as stated. The careful wording turns out to have been doing real work. \"No real roots\" was never a claim that no roots exist, and the complex numbers supply what the real line could not hold."
+      }
+    ],
+    "summary": "With a negative discriminant the quadratic formula still applies once the negative is taken out of the radical as i, giving a conjugate pair of complex roots: x² + 2x + 5 = 0 has roots -1 ± 2i. The fundamental theorem of algebra is stated at this level, not proved.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-CPX-FO5b",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}

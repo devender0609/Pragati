@@ -1,0 +1,167 @@
+{
+  "generatedBy": "tools/class11/generateReviewPilot.ts",
+  "pilot": "Class 11 Human Review Wave 1 — four-packet pilot",
+  "caveat": "Preparation only. sent 0, human-reviewed 0, adjudicated 0, published 0. Every reviewer judgement is null and no lesson was altered.",
+  "testsBothDirections": {
+    "manyUnitsOneLesson": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+    "oneUnitManyLessons": "ncert_kemh1_s3_4_sum_difference_lesson"
+  },
+  "deliveryOptions": [
+    "one reviewer takes all four — most consistent granularity judgements",
+    "two reviewers split them by mathematical area",
+    "independent double review of §7.2 only — the highest-granularity case"
+  ],
+  "assignmentNote": "No reviewer is assigned. Assignment is the user's to make.",
+  "totals": {
+    "pilotPackets": 4,
+    "sent": 0,
+    "humanReviewed": 0,
+    "adjudicated": 0,
+    "published": 0
+  },
+  "entries": [
+    {
+      "order": 1,
+      "artifactId": "ncert_kemh1_s7_2_binomial_theorem_lesson",
+      "artifactFingerprint": "d721cc79c8850f1bf2d981529aa51f92",
+      "packetPath": "class11-review/packets/ncert_kemh1_s7_2_binomial_theorem_lesson.json",
+      "whySelected": "Four canonical units on one lesson — the strongest test of whether several objectives can share a lesson without any of them being crowded into a mention.",
+      "mappedUnits": [
+        "C11-BIN-01",
+        "C11-BIN-02",
+        "C11-BIN-03",
+        "C11-BIN-FO7"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "sourceKind": "ncert",
+      "cbseOnly": false,
+      "cbseEntryId": null,
+      "sourceLabel": "NCERT section 7.2, page 160",
+      "multiUnit": true,
+      "involvesMultiArtifactUnit": false,
+      "overlapContext": [],
+      "visualFamilies": [
+        "coefficient_rows",
+        "proof_layout"
+      ],
+      "requiresUnitByUnitAnswers": true,
+      "reviewer": null,
+      "sentAt": null,
+      "responseReceived": false,
+      "reviewStatus": "UNREVIEWED",
+      "responseFingerprint": null,
+      "adjudicationStatus": "NOT_STARTED"
+    },
+    {
+      "order": 2,
+      "artifactId": "ncert_kemh1_s3_4_sum_difference_lesson",
+      "artifactFingerprint": "e8aba9128c52ea2cbc7d2995ccd12c9e",
+      "packetPath": "class11-review/packets/ncert_kemh1_s3_4_sum_difference_lesson.json",
+      "whySelected": "Both its units are also taught by a second lesson — the mirror question: is spreading an objective across lessons complementary, or redundant?",
+      "mappedUnits": [
+        "C11-TRG-06",
+        "C11-TRG-07"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "sourceKind": "ncert",
+      "cbseOnly": false,
+      "cbseEntryId": null,
+      "sourceLabel": "NCERT section 3.4, page 49",
+      "multiUnit": true,
+      "involvesMultiArtifactUnit": true,
+      "overlapContext": [
+        {
+          "artifactId": "ncert_kemh1_s3_4_multiple_angles_lesson",
+          "sharedUnits": [
+            "C11-TRG-06",
+            "C11-TRG-07"
+          ],
+          "inWave1": true,
+          "learningGoal": "You will deduce the double- and triple-angle identities and the sum-to-product forms from the sum and difference identities, rather than collecting them as separate formulas.",
+          "explanation": [
+            "Every identity in this lesson comes from the previous one. None is new information; each is the sum or difference identity used in a particular way.",
+            "Setting y = x in sin(x + y) = sin x cos y + cos x sin y gives sin 2x = 2 sin x cos x immediately, because both products become the same.",
+            "The same substitution in cos(x + y) = cos x cos y − sin x sin y gives cos 2x = cos²x − sin²x. Using sin²x + cos²x = 1 to remove one term at a time gives the other two forms, 2cos²x − 1 and 1 − 2sin²x, which are the same identity wearing different clothes.",
+            "The triple-angle results come from writing 3x as 2x + x and applying the sum identity, then substituting the double-angle results just obtained. That dependency is worth noticing: the triple-angle identity rests on the double-angle one, which rests on the sum identity.",
+            "The sum-to-product forms are the sum and difference identities read backwards. Adding sin(A + B) and sin(A − B) cancels the second term of each and leaves 2 sin A cos B; writing the two angles as the half-sum and half-difference of the original pair turns that into a rule for sin C + sin D.",
+            "So the chain is: the chord argument gives cos(x − y); substitution gives the other three sum and difference identities; setting the angles equal gives the double-angle forms; combining those gives the triple-angle forms; and adding or subtracting pairs gives the sum-to-product forms."
+          ],
+          "summary": "Setting y = x in the sum identities gives the double-angle forms, the Pythagorean identity gives the three versions of cos 2x, writing 3x as 2x + x gives the triple-angle forms, and adding or subtracting pairs gives the sum-to-product forms. Every result traces back to the chord argument for cos(x − y).",
+          "note": "full instructional content supplied as context; a separate review of this lesson is not required"
+        }
+      ],
+      "visualFamilies": [],
+      "requiresUnitByUnitAnswers": true,
+      "reviewer": null,
+      "sentAt": null,
+      "responseReceived": false,
+      "reviewStatus": "UNREVIEWED",
+      "responseFingerprint": null,
+      "adjudicationStatus": "NOT_STARTED"
+    },
+    {
+      "order": 3,
+      "artifactId": "cbse_fo11_chain_rule_lesson",
+      "artifactFingerprint": "9b1c590b87fd25aca82bf1fa935befb0",
+      "packetPath": "class11-review/packets/cbse_fo11_chain_rule_lesson.json",
+      "whySelected": "CBSE-only, chapter-less, newest semantic model and visual family. Structural verification is strong here; whether it teaches the chain rule at the right depth is untested.",
+      "mappedUnits": [
+        "C11-LIM-FO11"
+      ],
+      "riskClasses": [
+        "C"
+      ],
+      "sourceKind": "cbse_only",
+      "cbseOnly": true,
+      "cbseEntryId": "FO-11",
+      "sourceLabel": "CBSE-only, entry FO-11 — no NCERT section or page exists for this content; its chapter adjacency is instructional placement, not bibliographic ownership",
+      "multiUnit": false,
+      "involvesMultiArtifactUnit": false,
+      "overlapContext": [],
+      "visualFamilies": [
+        "chain_rule"
+      ],
+      "requiresUnitByUnitAnswers": true,
+      "reviewer": null,
+      "sentAt": null,
+      "responseReceived": false,
+      "reviewStatus": "UNREVIEWED",
+      "responseFingerprint": null,
+      "adjudicationStatus": "NOT_STARTED"
+    },
+    {
+      "order": 4,
+      "artifactId": "cbse_fo8_special_sums_lesson",
+      "artifactFingerprint": "d2297c06c7424d875b9e8bf336dbe97f",
+      "packetPath": "class11-review/packets/cbse_fo8_special_sums_lesson.json",
+      "whySelected": "CBSE-only, chapter-less, new visual family, and three formulas in one lesson — is that one coherent lesson or too dense?",
+      "mappedUnits": [
+        "C11-SEQ-FO8"
+      ],
+      "riskClasses": [
+        "B"
+      ],
+      "sourceKind": "cbse_only",
+      "cbseOnly": true,
+      "cbseEntryId": "FO-8",
+      "sourceLabel": "CBSE-only, entry FO-8 — no NCERT section or page exists for this content; its chapter adjacency is instructional placement, not bibliographic ownership",
+      "multiUnit": false,
+      "involvesMultiArtifactUnit": false,
+      "overlapContext": [],
+      "visualFamilies": [
+        "special_sum"
+      ],
+      "requiresUnitByUnitAnswers": true,
+      "reviewer": null,
+      "sentAt": null,
+      "responseReceived": false,
+      "reviewStatus": "UNREVIEWED",
+      "responseFingerprint": null,
+      "adjudicationStatus": "NOT_STARTED"
+    }
+  ]
+}

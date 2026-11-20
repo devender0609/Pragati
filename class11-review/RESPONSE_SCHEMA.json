@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Class 11 human review response",
+  "description": "One response per artifact. Unit results are required and must not be collapsed to the artifact verdict: an artifact may be REVISE while three of its four units are ALIGNED.",
+  "type": "object",
+  "required": ["reviewer", "reviewDate", "artifactId", "reviewedFingerprint", "unitResults", "overallRecommendation"],
+  "properties": {
+    "reviewer": { "type": "string", "minLength": 1, "description": "Reviewer name or approved reviewer code. A response without this is not a human review." },
+    "reviewDate": { "type": "string", "format": "date" },
+    "artifactId": { "type": "string" },
+    "reviewedFingerprint": { "type": "string", "description": "Copy from the packet. Binds this review to the exact instructional content read. If the lesson's content changes, the fingerprint changes and the review no longer applies." },
+    "decompositionVersion": { "type": "string" },
+    "unitResults": {
+      "type": "array", "minItems": 1,
+      "description": "One entry per canonical unit the artifact claims to cover. All must be answered.",
+      "items": {
+        "type": "object",
+        "required": ["unitId", "materialAlignment", "mathematicalCorrectness", "scopeDiscipline"],
+        "properties": {
+          "unitId": { "type": "string" },
+          "materialAlignment": { "enum": ["ALIGNED", "PARTIAL", "MISALIGNED", "CANNOT_DETERMINE"], "description": "Does the lesson MATERIALLY TEACH this objective — instructed, not merely mentioned?" },
+          "mathematicalCorrectness": { "enum": ["CORRECT", "MINOR_CORRECTION_NEEDED", "MAJOR_CORRECTION_NEEDED"] },
+          "scopeDiscipline": { "enum": ["WITHIN_SCOPE", "INTRODUCES_LATER_CONTENT", "OMITS_REQUIRED_MATERIAL", "PRESENTS_ENRICHMENT_AS_REQUIRED"] },
+          "explanationQuality": { "enum": ["SUFFICIENT", "THIN_FOR_DEMAND_LEVEL", "UNCLEAR", null] },
+          "crowdedOut": { "type": ["boolean", "null"], "description": "For multi-unit artifacts: was this objective squeezed by the others?" },
+          "comments": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "workedExamples": { "enum": ["CORRECT_AND_REPRESENTATIVE", "CORRECT_BUT_UNREPRESENTATIVE", "CONTAINS_ERROR", null] },
+    "practiceFeedback": { "enum": ["EXPLAINS_THE_MISCONCEPTION", "MARKS_CORRECTNESS_ONLY", "MISLEADING", null] },
+    "representationQuality": { "enum": ["SUPPORTS_UNDERSTANDING", "PRESENT_BUT_UNHELPFUL", "MISSING_WHERE_NEEDED", null] },
+    "accessibilityEquivalence": { "enum": ["PRESERVES_MEANING", "LOSES_MEANING", null] },
+    "lessonGranularity": { "enum": ["ONE_LESSON_APPROPRIATE", "SHOULD_SPLIT", "SHOULD_MERGE_DIFFERENTLY", "UNCERTAIN", null], "description": "The architectural question. A SHOULD_SPLIT here matters beyond this lesson — it bears on whether Class 12 should inherit the same unit-to-lesson mapping." },
+    "overallRecommendation": { "enum": ["ACCEPT", "ACCEPT_WITH_MINOR_EDITS", "REVISE", "MAJOR_REWORK", "ESCALATE_SCOPE_QUESTION"] },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["unitIds", "stage", "category", "severity", "explanation"],
+        "properties": {
+          "unitIds": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "stage": { "enum": ["learn_the_idea", "see_it", "worked_examples", "try_it", "think_deeper", "visual", "accessibility", "whole_lesson"] },
+          "category": { "enum": ["mathematical_error", "source_misalignment", "scope_violation", "missing_objective", "explanation_quality", "example_quality", "feedback_quality", "representation", "accessibility", "granularity"] },
+          "severity": { "enum": ["CRITICAL", "MAJOR", "MODERATE", "MINOR"], "description": "CRITICAL: instruction is unsafe or materially wrong. MAJOR: a required objective is missing, a serious conceptual problem, or wrong granularity. Typography alone is MINOR unless it changes mathematical meaning." },
+          "explanation": { "type": "string", "minLength": 1 },
+          "requestedChange": { "type": ["string", "null"] },
+          "sourceBasis": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

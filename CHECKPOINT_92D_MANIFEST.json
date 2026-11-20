@@ -1,0 +1,179 @@
+{
+  "checkpoint": "92D",
+  "canonicalVersion": "0.84.0-c11.32-probability-hardened",
+  "packageKind": "HARDENED FINAL \u2014 first-green 0.84.0-c11.31 preserved",
+  "verdict": "CLASS_11_PROBABILITY_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_REUSED_SET_EVENT_PROBABILITY_SEMANTICS",
+  "packageCreatedUtc": "2026-11-12T21:31:12Z",
+  "firstGreen": {
+    "archive": "pragati-0.84.0-c11.31-probability-pilot.zip",
+    "sha256": "530e078c1c4b615bb6f49a66eb3d6427d45bd01eea25c5efb10eca767d56907e",
+    "verified": "OK",
+    "overwritten": false
+  },
+  "contentChanges": 0,
+  "artifactVersionIncrements": 0,
+  "sourceChanges": "QA probe only",
+  "exactFractionDefect": {
+    "symptom": "probe never fired at first green",
+    "rootCause": "the product renders an exact probability as a STACKED fraction, numerator and denominator in separate elements, so the string '1/6' never appears in page text",
+    "firstGreenProbe": "searched for a slash; could not have matched at any stage",
+    "repair": "read the stacked structure plus the literal slash form, and report the values found",
+    "productAltered": false,
+    "hiddenTextAdded": false,
+    "classification": "harness"
+  },
+  "exactFractionProductEvidence": {
+    "PRB-04": [
+      "6/5"
+    ],
+    "PRB-05": [
+      "1/6",
+      "1/2"
+    ],
+    "PRB-06": [
+      "1/2",
+      "1/6",
+      "5/6"
+    ],
+    "survives360": true,
+    "decimalProbability": false,
+    "note": "6/5 is the invalid total the lesson refuses, shown exactly rather than rescaled"
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "pageOverflow": "0px",
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 0
+    },
+    {
+      "width": 834,
+      "pageOverflow": "0px",
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 0
+    },
+    {
+      "width": 360,
+      "pageOverflow": "0px",
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 1
+    }
+  ],
+  "bottomClearance": {
+    "worstGapPx": 124,
+    "minGapPx": 8
+  },
+  "governance": {
+    "fo12First": true,
+    "prb01Second": true,
+    "enterOpensFo12": true,
+    "fragmentsSeparate": [
+      "SF-3-FORMATIVE",
+      "SF-3-SUMMATIVE"
+    ],
+    "internalLabelsExposed": false
+  },
+  "architecture": {
+    "ownExperimentEventRationalTypes": 0,
+    "setNotationRenders": true,
+    "axiomsRender": true,
+    "oneOverNForcingRenders": true,
+    "overlapCountedTwiceRenders": true,
+    "complementTiedToPartition": true
+  },
+  "accessibility": {
+    "headingsPerLesson": 2,
+    "setNotationAsText": true,
+    "glyphPositioningOnly": false
+  },
+  "keyboard": {
+    "rows": 7,
+    "allButtons": true,
+    "focusedBottomControlFullyVisible": true,
+    "gapPx": 124
+  },
+  "persistence": {
+    "progressAfterReload": "1 of 7 done",
+    "rows": 7,
+    "header": "11 chapters from your textbook \u00b7 73 lessons \u00b7 1 prerequisite lesson outside the textbook"
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "leaks": 0,
+    "corpus": 74,
+    "negativeFixturesRetained": 13
+  },
+  "counts": {
+    "officialTextbookChapters": 11,
+    "chapterOwnedLessons": 73,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 74,
+    "chapter14Rows": 7,
+    "officialSections": 41,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      14
+    ],
+    "changedByHardening": false
+  },
+  "qa": {
+    "tests": 3018,
+    "testFiles": 139,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "environmentHygiene": {
+    "envLocalRemoved": true,
+    "distDeletedBeforeRebuild": true
+  },
+  "publicSafe": {
+    "chapter14Shown": false,
+    "rows": 0,
+    "visualRoots": 0,
+    "directFormativeRouteContent": false,
+    "directSummativeRouteContent": false
+  },
+  "priorWork": {
+    "class11PriorLessons": 67,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "formativeExtensions": {
+    "C11-SEQ-FO8": "unauthored",
+    "C11-LIM-FO11": "unauthored"
+  },
+  "governanceState": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN",
+    "fo12SummativeEligible": false
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "recommendation": "Statistics",
+    "why": "heavy reuse of the Class 10 grouped-distribution architecture; tests whether measures of dispersion can be added without rebuilding the data model",
+    "executed": false
+  }
+}

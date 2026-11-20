@@ -1,0 +1,215 @@
+{
+  "checkpoint": "93I",
+  "canonicalVersion": "0.84.0-c11.36-statistics-hardened",
+  "packageKind": "HARDENED FINAL \u2014 first-green 0.84.0-c11.33 preserved",
+  "verdict": "CLASS_11_STATISTICS_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_REUSED_GROUPED_DISTRIBUTION_DISPERSION_EXTENSION",
+  "packageCreatedUtc": "2026-11-16T14:51:11Z",
+  "humanReviewed": false,
+  "firstGreen": {
+    "archive": "pragati-0.84.0-c11.33-statistics-pilot.zip",
+    "sha256": "ebc64e90d72286653116e131076da6a145b90b2f1d16c42878dabfe4cf6131ec",
+    "overwritten": false
+  },
+  "allFamilyRegistry": {
+    "added": [
+      "indexed_sequence",
+      "deviation_table",
+      "grouped_table",
+      "method_comparison"
+    ],
+    "note": "four, not three: checkpoint 91's indexed_sequence was also absent",
+    "discovered": 17,
+    "present": 17,
+    "missing": 0,
+    "results": {
+      "indexed_sequence": {
+        "roots": 2,
+        "present": 2,
+        "cells": [
+          6,
+          6
+        ]
+      },
+      "deviation_table": {
+        "roots": 4,
+        "present": 4,
+        "cells": [
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      "grouped_table": {
+        "roots": 2,
+        "present": 2,
+        "cells": [
+          16,
+          16
+        ]
+      },
+      "method_comparison": {
+        "roots": 2,
+        "present": 2,
+        "cells": [
+          2,
+          2
+        ]
+      }
+    },
+    "allDescribed": true,
+    "colourDependent": false,
+    "matcherCorrection": "the label chain searched descendants only; these families ARE the figure, so the root itself is now read",
+    "productionRenderingChanged": true,
+    "fullSuiteRerun": true
+  },
+  "qa": {
+    "tests": 3060,
+    "testFiles": 141,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "targetedTrio": 68
+  },
+  "representationContract": {
+    "explicitDeclarations": 7,
+    "satisfied": 7,
+    "unmet": 0,
+    "enforcement": "declared field only",
+    "proseInference": "diagnostic, non-blocking"
+  },
+  "class10Regression": {
+    "directMean": 14,
+    "classMark": 5,
+    "medianReturns": true,
+    "modeReturns": true,
+    "cumulativeFrequency": true,
+    "outputsAltered": false,
+    "secondGroupedModel": false
+  },
+  "browser": {
+    "walk": "7/7 distinct lessons, 35/35 stages",
+    "finish": "7/7 distinct identities",
+    "rawLeaks": 0,
+    "consoleErrors": 0
+  },
+  "persistence": {
+    "store": "pragati.learnProgress.v1",
+    "completed": [
+      "ncert_kemh1_s13_3_range_lesson"
+    ],
+    "survivesReload": true,
+    "catalogueRow": "Completed",
+    "statisticsSpecificStorage": false
+  },
+  "mobile": {
+    "pageOverflow": "0px",
+    "offScreenRaw": 8,
+    "realClip": 0,
+    "bottomClearancePx": 124,
+    "localScrollProven": true,
+    "productLayoutChanged": false
+  },
+  "criticalGates": {
+    "STA-04": {
+      "centre": "median = 4",
+      "comparison": "mean = 7.2",
+      "evidence": "from the figure"
+    },
+    "STA-07": {
+      "direct": 49,
+      "shortcut": 49,
+      "assumedMean": 15,
+      "agreement": "Both routes give 49",
+      "oneReconciliationObject": true
+    }
+  },
+  "oracles": {
+    "groupedEqualsExpanded": 49,
+    "shortcutEqualsDirect": true,
+    "assumedMeans": [
+      0,
+      5,
+      15,
+      25
+    ],
+    "mdAboutMean": 5.12,
+    "mdAboutMedian": 3.6,
+    "denominator": "n",
+    "translationInvariant": true,
+    "scaleBy3VarianceTimes9": true,
+    "allEqualSpreadZero": true
+  },
+  "provenance": {
+    "STA-03": [
+      "13.4.1",
+      "13.4.2"
+    ],
+    "STA-04": [
+      "13.4.1",
+      "13.4.2"
+    ],
+    "STA-05": [
+      "13.5.1"
+    ],
+    "STA-06": [
+      "13.5.2",
+      "13.5.3"
+    ],
+    "STA-07": "13.5.4",
+    "provenanceCorrectionRecords": 5
+  },
+  "counts": {
+    "officialTextbookChapters": 12,
+    "chapterOwnedLessons": 80,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 81,
+    "officialSections": 45,
+    "chapter13Rows": 7,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14
+    ]
+  },
+  "environment": {
+    "envLocalInTree": false,
+    "envLocalInArchive": false,
+    "finding": "a stray .env.local made the preview flag default true, exposing 65 Class 10 lessons to a closed-gate test",
+    "classification": "environment"
+  },
+  "priorWork": {
+    "class11PriorLessons": 74,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "formativeExtensions": {
+    "C11-SEQ-FO8": "unauthored",
+    "C11-LIM-FO11": "unauthored"
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "chapter": "Linear Inequalities",
+    "firstAction": "resolve C11-INQ-FO6, the last NEEDS_HUMAN_CHECK unit, before authoring"
+  }
+}

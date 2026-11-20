@@ -1,0 +1,212 @@
+{
+  "checkpoint": "89C",
+  "canonicalVersion": "0.84.0-c11.25-binomial-hardened",
+  "packageKind": "HARDENED FINAL \u2014 first-green 0.84.0-c11.24 preserved",
+  "verdict": "CLASS_11_BINOMIAL_THEOREM_AUTHORING_PILOT_READY_FOR_HUMAN_REVIEW_REUSED_INDUCTION_AND_COUNTING_SEMANTICS",
+  "packageCreatedUtc": "2026-11-10T17:14:43Z",
+  "firstGreen": {
+    "archive": "pragati-0.84.0-c11.24-binomial-pilot.zip",
+    "sha256": "808457614df52cbbb343a2e1feb32ec99d97781d51856423e70ba86455e21c03",
+    "verified": "OK",
+    "overwritten": false
+  },
+  "contentChanges": 0,
+  "artifactVersionIncrements": 0,
+  "sourceChanges": "QA tooling only",
+  "viewports": [
+    {
+      "width": 1280,
+      "pageOverflow": "0px",
+      "wideUncontained": 0,
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 0
+    },
+    {
+      "width": 834,
+      "pageOverflow": "0px",
+      "wideUncontained": 0,
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 0
+    },
+    {
+      "width": 360,
+      "pageOverflow": "0px",
+      "wideUncontained": 0,
+      "clipped": 0,
+      "overlaps": 0,
+      "localScrollers": 1
+    }
+  ],
+  "bottomClearance": {
+    "worstGapPx": 124,
+    "minGapPx": 8
+  },
+  "proofInProduct": {
+    "present": true,
+    "semanticHeadings": 5,
+    "parts": [
+      "Claim",
+      "Base case",
+      "Induction hypothesis",
+      "Inductive step",
+      "Conclusion"
+    ],
+    "colourDependent": false,
+    "atEveryWidth": true
+  },
+  "coefficientsInProduct": {
+    "present": true,
+    "row4": [
+      "1",
+      "4",
+      "6",
+      "4",
+      "1"
+    ],
+    "row5": [
+      "1",
+      "5",
+      "10",
+      "10",
+      "5",
+      "1"
+    ],
+    "descriptionSaysCombination": true,
+    "descriptionCallsItPascal": false
+  },
+  "exactness": {
+    "modelAndTests": "40C20 = 137846528820",
+    "productVisible": "only the small coefficient rows; no large coefficient is displayed",
+    "claimOfLargeProductDisplay": false
+  },
+  "independentOracle": {
+    "indices": "1 through 8",
+    "agrees": true,
+    "usesNCr": false
+  },
+  "identity": {
+    "statement": "kCr + kC(r\u22121) = (k+1)Cr",
+    "recomputedFromModel": true,
+    "range": "k up to 15",
+    "holds": true
+  },
+  "negativeFixtures": {
+    "count": 8,
+    "allReject": true
+  },
+  "keyboard": {
+    "rowIsButton": true,
+    "tabIndex": 0,
+    "enterOpens": true,
+    "bottomControlFullyVisible": true,
+    "gapPx": 124
+  },
+  "harnessNonEvidence": [
+    {
+      "probe": "expansion-in-prose at 360px",
+      "result": "null",
+      "classification": "harness",
+      "why": "stage clicks after keyboard activation did not register in that run",
+      "countedAsPass": false,
+      "countedAsFail": false,
+      "actualEvidence": "observed at checkpoint 89B: a^3 + 3a^2b + 3ab^2 + b^3 in prose at 1280px"
+    },
+    {
+      "probe": "persistence at 360px",
+      "result": "no progress string",
+      "classification": "harness",
+      "countedAsPass": false,
+      "countedAsFail": false,
+      "actualEvidence": "checkpoint 89B walkthrough reached Finish 1/1"
+    }
+  ],
+  "environmentDefect": {
+    "what": "first public-safe run reported Chapter 7 visible with 1 row",
+    "cause": "removed .env.local but did not rebuild; dist still had the preview flag baked in",
+    "classification": "environment",
+    "productDefect": false,
+    "afterRebuild": {
+      "chapter7Shown": false,
+      "rows": 0,
+      "visualRoots": 0,
+      "directRouteContent": false,
+      "directRouteVisualRoots": 0
+    }
+  },
+  "guards": {
+    "dynamicDiscovery": true,
+    "binomialFilenameHardcoded": false,
+    "leaks": 0,
+    "class11Corpus": 58
+  },
+  "pascalGovernance": {
+    "section73": false,
+    "standalonePascalLesson": false,
+    "fakeS73Id": false,
+    "coefficientRows": "representation inside \u00a77.2"
+  },
+  "dependencyGraph": {
+    "unit": "C11-BIN-01",
+    "edges": [
+      "C11-IND-01",
+      "C11-PNC-05"
+    ],
+    "satisfied": true,
+    "retained": true
+  },
+  "limitsDependents": {
+    "C11-LIM-05": "untouched",
+    "C11-LIM-06": "untouched",
+    "inductionPrerequisiteSatisfied": true
+  },
+  "qa": {
+    "tests": 2916,
+    "testFiles": 136,
+    "failures": 0,
+    "timeouts": 0,
+    "typecheck": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "catalogue": {
+    "officialTextbookChapters": 9,
+    "chapterOwnedLessons": 57,
+    "prerequisiteLessons": 1,
+    "totalAuthoredLessons": 58,
+    "chapterOrder": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      12
+    ]
+  },
+  "priorWork": {
+    "class11PriorLessons": 57,
+    "versionChanges": 0,
+    "class10": 65,
+    "class9": 92,
+    "class6": "S74 frozen"
+  },
+  "humanCheck": {
+    "remaining": "C11-INQ-FO6",
+    "untouched": true
+  },
+  "governance": {
+    "items": 0,
+    "cat": false,
+    "calibration": "UNCALIBRATED",
+    "growth": "FROZEN"
+  },
+  "gitPreflight": ".git is not present in this source; tracking status cannot be determined. Stated, not inferred.",
+  "next": {
+    "recommendation": "C11-LIM-05 and C11-LIM-06",
+    "executed": false
+  }
+}

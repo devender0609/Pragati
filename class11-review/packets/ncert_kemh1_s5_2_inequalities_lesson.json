@@ -1,0 +1,218 @@
+{
+  "priority": 24,
+  "contentArtifactId": "ncert_kemh1_s5_2_inequalities_lesson",
+  "title": "You will tell a strict inequality from a weak one and say what its solution set is.",
+  "placement": "chapter-5",
+  "selectionReasons": [],
+  "artifactFingerprint": "b8f078eac77689994126c9abf87e748c",
+  "decompositionVersion": "tools/class11/generateCompletenessLedger.ts",
+  "canonicalUnits": [
+    {
+      "unitId": "C11-INQ-01",
+      "title": "Linear inequalities and their solution sets",
+      "objective": "Distinguish strict from weak inequalities and describe what a solution set is.",
+      "assessmentStatus": "SUMMATIVE_CORE",
+      "instructionalStatus": "REQUIRED_CORE",
+      "progression": "PROCEDURAL_EXTENSION",
+      "textbookBodyDemand": "UNDERSTAND",
+      "cbseProofExpectation": null,
+      "representationRequirement": "inequality symbols",
+      "riskClass": "A",
+      "alsoTaughtBy": []
+    }
+  ],
+  "sourceProvenance": {
+    "kind": "ncert",
+    "officialChapterId": "ncert_kemh1_ch05",
+    "officialSectionId": "ncert_kemh1_s5_2",
+    "sectionNumber": "5.2",
+    "cbseEntryId": null,
+    "startPage": 98,
+    "sourceReference": "kemh1",
+    "note": null
+  },
+  "structuralChecks": {
+    "note": "Automated structural checks passed. These say the lesson is well-formed and truthfully mapped. They say nothing about whether it teaches the objectives.",
+    "representationContract": "SATISFIED",
+    "provenance": "PROVENANCE_COMPLETE",
+    "rawValues": "CLEAN",
+    "visualFamiliesUsed": []
+  },
+  "lessonContent": {
+    "learningGoal": "You will tell a strict inequality from a weak one and say what its solution set is.",
+    "vocabulary": [
+      {
+        "term": "inequality",
+        "meaning": "A statement that one quantity is less than or greater than another."
+      },
+      {
+        "term": "strict inequality",
+        "meaning": "One using < or >, where the two sides are never equal."
+      },
+      {
+        "term": "weak inequality",
+        "meaning": "One using ≤ or ≥, where equality is allowed."
+      },
+      {
+        "term": "solution set",
+        "meaning": "The set of all values that make the statement true."
+      }
+    ],
+    "explanation": [
+      "An equation such as x = 3 is satisfied by one number. An inequality such as x > 3 is satisfied by many: 4 works, so does 3.5, so does 1000.",
+      "That is the first thing to notice. An inequality usually has no single answer, and asking \"what is x?\" is the wrong question. The right one is: which values make it true?",
+      "Those values together form the solution set. For x > 3 it is values greater than 3, with 3 excluded.",
+      "The symbol matters at exactly one point: the boundary. In x > 3 the value 3 does not satisfy the statement, because 3 is not greater than itself. These are the strict inequalities, < and >.",
+      "In x ≥ 3 the value 3 does satisfy it, because the symbol allows equality. These are the weak ones, ≤ and ≥, and their solution sets include the boundary.",
+      "So the two statements differ by a single number, 3 — and in every other respect agree. Testing the boundary is the way to tell them apart, and it is where mistakes happen.",
+      "Checking a candidate is simple: put the value in and see whether the statement is true. For x > 3, the value 2 gives a false statement, 3 gives a false statement, and 4 gives a true one."
+    ],
+    "workedExamples": [
+      {
+        "id": "s52.we1",
+        "prompt": "Which of 2, 3 and 4 satisfy x > 3?",
+        "answer": "Only 4.",
+        "steps": [
+          {
+            "text": "Put each value into the statement in turn.",
+            "reasoning": "Checking is substitution, nothing more."
+          },
+          {
+            "text": "2 is greater than 3 is false; 3 is greater than 3 is false.",
+            "reasoning": "A number is not greater than itself."
+          },
+          {
+            "text": "4 is greater than 3 is true.",
+            "reasoning": "So only 4 of the three belongs to the solution set."
+          }
+        ]
+      },
+      {
+        "id": "s52.we2",
+        "prompt": "How does the answer change for x ≥ 3?",
+        "answer": "3 and 4 both satisfy it.",
+        "steps": [
+          {
+            "text": "The symbol now allows equality.",
+            "reasoning": "That changes the boundary and nothing else."
+          },
+          {
+            "text": "3 is greater than or equal to 3 is true.",
+            "reasoning": "So 3 now belongs."
+          },
+          {
+            "text": "2 is still outside and 4 is still inside.",
+            "reasoning": "The two statements differ by exactly one number."
+          }
+        ]
+      },
+      {
+        "id": "s52.we3",
+        "prompt": "Why does an inequality not have a single answer?",
+        "answer": "Because many values satisfy the comparison, so the answer is a set.",
+        "steps": [
+          {
+            "text": "An equation names a value; an inequality names a comparison.",
+            "reasoning": "Many values can compare the same way."
+          },
+          {
+            "text": "Every number past 3 satisfies x > 3.",
+            "reasoning": "There is no largest one to report."
+          },
+          {
+            "text": "So the answer is a set, not a number.",
+            "reasoning": "That set is what the rest of the chapter finds and draws."
+          }
+        ]
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "s52.g1",
+        "prompt": "Which symbols are strict?",
+        "hint": "Which exclude equality?",
+        "answer": "< and >.",
+        "rationale": "They never allow the two sides to be equal."
+      },
+      {
+        "id": "s52.g2",
+        "prompt": "Does 3 satisfy x ≥ 3?",
+        "hint": "Does the symbol allow equality?",
+        "answer": "Yes.",
+        "rationale": "The weak symbol permits the two sides to be equal."
+      },
+      {
+        "id": "s52.g3",
+        "prompt": "What is a solution set?",
+        "hint": "One value or many?",
+        "answer": "The set of all values making the statement true.",
+        "rationale": "An inequality is usually satisfied by many values."
+      }
+    ],
+    "independentPractice": [
+      {
+        "id": "s52.i1",
+        "prompt": "Does 5 satisfy x < 5?",
+        "answer": "No.",
+        "rationale": "The symbol is strict, so equality does not count."
+      },
+      {
+        "id": "s52.i2",
+        "prompt": "Does 5 satisfy x ≤ 5?",
+        "answer": "Yes.",
+        "rationale": "The weak symbol allows equality."
+      },
+      {
+        "id": "s52.i3",
+        "prompt": "Is x > 1 satisfied by more than one value?",
+        "answer": "Yes.",
+        "rationale": "Every number past 1 satisfies it."
+      },
+      {
+        "id": "s52.i4",
+        "prompt": "Where do a strict and a weak inequality with the same boundary differ?",
+        "answer": "Only at the boundary value itself.",
+        "rationale": "Everywhere else the two statements agree."
+      }
+    ],
+    "reasoningApplication": [
+      {
+        "id": "s52.td1",
+        "prompt": "Why does so much depend on one value at the boundary, when every other number behaves the same in both statements?",
+        "expectedReasoning": "Because the boundary is the only place the two statements can be told apart, which makes it the only place an error shows. Everywhere else a mistake about strict versus weak is invisible — 4 and 1000 satisfy both forms — so a student can carry the confusion a long way without it costing anything, and then meet it at exactly the moment it matters. That is also why the picture of a solution set marks the boundary specially rather than just shading: the shading agrees in both cases, and only the endpoint carries the distinction."
+      }
+    ],
+    "summary": "An inequality is usually satisfied by many values, and those values form its solution set. Strict symbols, < and >, exclude the boundary: 3 does not satisfy x > 3. Weak symbols, ≤ and ≥, include it. The two forms differ at the boundary and nowhere else, so testing that value is how to tell them apart.",
+    "visuals": []
+  },
+  "reviewerResponse": {
+    "reviewer": null,
+    "reviewDate": null,
+    "reviewedFingerprint": null,
+    "unitResults": [
+      {
+        "unitId": "C11-INQ-01",
+        "materialAlignment": null,
+        "mathematicalCorrectness": null,
+        "scopeDiscipline": null,
+        "explanationQuality": null,
+        "comments": null
+      }
+    ],
+    "workedExamples": null,
+    "practiceFeedback": null,
+    "representationQuality": null,
+    "accessibilityEquivalence": null,
+    "lessonGranularity": null,
+    "overallRecommendation": null,
+    "issues": []
+  },
+  "lifecycle": {
+    "state": "PREPARED",
+    "sentForHumanReview": false,
+    "sentDate": null,
+    "humanReviewed": false,
+    "adjudicated": false,
+    "published": false
+  }
+}
